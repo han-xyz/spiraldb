@@ -68,3 +68,110 @@ The retail catalogue is not available, so the prices are placeholders to retune:
 L0-19 1500, L20-39 2500, L40-59 3500, L60-79 4500, L80-99 5500, L100 and up 6500 crowns; 2500 when the name has no
 level; wands 500 more. `goldCost` is 0: crowns only. The bands are `LEVEL_BANDS`, `UNLEVELLED_PRICE` and
 `WAND_SURCHARGE` at the top of the script.
+
+## questgen.py
+
+Writes a quest template and its drop table from one JSON spec per quest. Python 3, standard library only (so the
+specs are JSON, not YAML):
+
+```sh
+python3 -I tools/questgen.py tools/quest-specs/celestia/*.json           # list what it would write
+python3 -I tools/questgen.py --check tools/quest-specs/celestia/*.json   # validate the specs against the client
+python3 -I tools/questgen.py --apply tools/quest-specs/celestia/*.json   # write them
+python3 -I tools/questgen.py --diff tools/quest-specs/roundtrip/*.json   # compare with the pack's own templates
+```
+
+`--rootwad` and `--gamedata` point at another client, as in the other tools.
+
+It writes `QuestTemplates/questtemplates_<id>.json`, and the drop table to `DropTables/droptables_<id>.json` (the
+folder the server loads) and to its copy in `QuestTemplates/droptables/`. A file that would not change is left alone,
+drop-table timestamps included.
+
+### Spec
+
+```json
+{
+  "id": "CL-CAMP-C03-002",
+  "lang": "371B8",
+  "title": "QuestTitle_00000103",
+  "giver": {"persona": "CL-CAMP-NPC08", "zone": "Celestia/CL_Z01_Survey_Camp"},
+  "requires": ["CL-CAMP-C03-003"],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {"xp": 2155, "gold": 160},
+  "dialogs": {"prep": [{"speaker": "giver", "line": "00000005"}], "underway": [{"speaker": "giver", "line": "00000004"}]},
+  "goals": [
+    {"type": "bountycollect", "mobs": ["CL-Eel-Green-R9.AdjRef"], "count": 3, "descriptor": "WizQst371B8_00000002",
+     "target": "WizardMobs_00000748", "zone": "Celestia/CL_Z02_Crab_Realm", "loc": "ZoneLocName_227135"},
+    {"type": "persona", "persona": "giver", "zone": "Celestia/CL_Z01_Survey_Camp", "loc": "Celestia|Survey Camp",
+     "completion": [{"speaker": "giver", "line": "00000003"}]}
+  ],
+  "personas": {"CL-CAMP-NPC08": {"portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_03.dds", "template_id": 227163}}
+}
+```
+
+- `lang` is the hex of the quest's `WizQst<lang>.lang`. A dialog `line` is a key of that file; a key with `_` in it
+  (`WizQst1625C1_00000011`) is used as written. `speaker` is `giver`, a persona, or `""` for narration.
+- `title` defaults to `QuestTitle_<lang>`. Many Celestia quests carry their internal name there; use the key of the
+  real title instead (`Gone Fishing` is `QuestTitle_00000103`).
+- `requires` becomes `ReqHasEntry Complete` on each quest; `min_level` a `ReqMagicLevel` at or above it. Every quest
+  also gets a `ReqHasEntry Completed` NOT on its successors, taken from the other specs of the same run that require
+  it, or from a `successors` list.
+- `reward` is the drop table's XP and gold. Without it the tool takes the median quest reward of the pack's world for
+  `level`: `REWARD_BANDS` at the top of the script (40 and up is Dragonspyre's 3805 XP and 103 gold).
+- Goals run in order; a goal with `"with_previous": true` runs alongside the one before it. Each is named
+  `<n>_<title>`, its `m_goalNameID` the string id of `Goal` / `Goal <n-1>`, as in the builder-made pack quests.
+
+| `type` | template | needs |
+| --- | --- | --- |
+| `persona` | PersonaGoalTemplate, `WizardQuestGoals_TalkNPC` | `persona`; `completion` lines become its Completion dialog |
+| `bounty` | BountyGoalTemplate `GOAL_TYPE_BOUNTY`, `WizardQuestGoals_Kill` | `mobs` (adjectives), `count`, `target` (mob name key) |
+| `bountycollect` | BountyGoalTemplate `GOAL_TYPE_BOUNTYCOLLECT`, `WizardQuestGoals_KillCollect` | as bounty, plus `descriptor` (item name key), `chance` (default 1.0) |
+| `waypoint` | WaypointGoalTemplate, zone entry, `WizardQuestGoals_ExploreZone` | `zone` |
+| `usage` | ScavengeGoalTemplate `GOAL_TYPE_USAGE`, `WizardQuestGoals_UseItem` | `items` (object adjectives), `count`, `descriptor` |
+
+Every goal takes `zone` (its destination), `loc` (a `ZoneLocName_<key>`, any other lang key, or a
+`World|Place` text that the tool looks up in ZoneLocName.lang, first match), `portrait`, `client_tags` and `title`.
+`personas` gives a persona's portrait and template id for its dialog lines and goal; the server fills the speaker's
+name, and a missing portrait, from the persona.
+
+`--check` reports, per spec: a missing `WizQst<lang>.lang`, a title or line key the lang files lack, a `loc` text
+ZoneLocName.lang lacks, a zone with no ZoneTransfer entry, and a persona whose zone wad does not place it.
+
+### Not generated
+
+`--diff` lists the fields where a generated template differs from the pack's. On the three WC quests in
+`quest-specs/roundtrip` (built from the pack's own templates) the goals, goal logic, requirements, dialog keys and
+speakers match; what differs is dialog presentation the client keeps nowhere a tool can read: sound files, cinematic
+cameras, animations and music, the `m_nameSTKey`/`m_nameOverride` name format, per-line template ids, and `m_madlibs`
+(the server builds the quest madlibs). The tool also writes Completion lines on the turn-in goal rather than at quest
+level, an empty goal dialog list as `null`, and `m_bountyType`/`m_bountyTotal` where some captured quests omit them.
+
+## mob-adjectives-from-wad.py and npc-personas-from-wad.py
+
+The lookups a spec needs, from the root wad's object templates (`ObjectData/<folder>`, a world's mobs and NPCs) and
+the zone wads:
+
+```sh
+python3 -I tools/mob-adjectives-from-wad.py            # CL: display name, template, template id, adjectives
+python3 -I tools/npc-personas-from-wad.py               # CL / Celestia: persona, name, template id, portrait, zones
+python3 -I tools/npc-personas-from-wad.py --folder WC --world WizardCity
+```
+
+A bounty goal counts a defeated mob once for each of its adjectives in `mobs`, so name one adjective per mob: its
+own `<template>.AdjRef`. A shared adjective (`Crustacean_Pincer`, `MONST_Fish`) catches every template that has it.
+A persona goal's `persona` is the persona without `_Persona`; the zones column is where to send the player.
+
+## Authoring a world
+
+1. List the world's quests: `QuestTitle.lang` keys next to `WizQst<hex>.lang` files, and the zone wads' quest names.
+2. For each quest, read its `WizQst<hex>.lang` and order the lines: the offer (Prep), the reminder (Underway), the
+   turn-in (Completion), and which persona says each.
+3. Take givers, turn-in NPCs and their zones from `npc-personas-from-wad.py`, and mob adjectives and name keys from
+   `mob-adjectives-from-wad.py` and `WizardMobs.lang`.
+4. Write the spec, run `--check`, then `--apply`. A zone the check reports without ZoneTransfer is added with
+   `zone-transfer-from-wad.py`.
+
+The client does not hold quest order and prerequisites, goal sequence, counts beyond what the lines say, rewards,
+or which NPC says a line; those come from a walkthrough. `quest-specs/celestia` is the Survey Camp pilot.
