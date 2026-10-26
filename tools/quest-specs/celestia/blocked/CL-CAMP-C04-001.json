@@ -1,0 +1,89 @@
+{
+  "id": "CL-CAMP-C04-001",
+  "lang": "371B5",
+  "title": "QuestTitle_00000106",
+  "giver": {
+    "persona": "CL-CAMP-NPC09",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [
+    "CL-Q-37734"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1260,
+    "gold": 65
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Excavator_Diver_01.dds",
+      "template_id": 227262
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Rub-A-Dub",
+    "timestamp": "20231124090416"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371B5 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "a Rubbing near The Grotto",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "CL-Q-symbollife",
+  "giver": {
+    "persona": "CL-DIST-NPC01",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 3005,
+    "gold": 140
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-DIST-NPC02",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-StrangeDevice.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizQst3D8CB_00000011",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 227117
+    },
+    "CL-DIST-NPC02": {
+      "portrait": "",
+      "template_id": 227131
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Symbol_Life",
+    "timestamp": "20231124092219"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Symbol Life",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Worlds Beyond",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Hall of Congruencies",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "CL-Q-meandmyarrow",
+  "giver": {
+    "persona": "CL-CAMP-NPC10",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 2100,
+    "gold": 180
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Upper08.dds",
+      "template_id": 268128
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Me_and_My_Arrow",
+    "timestamp": "20231124085813"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Me and My Arrow",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Special",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Tennant Wastelander",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Regent's Square",
+      "blocking": false
+    }
+  ]
+}

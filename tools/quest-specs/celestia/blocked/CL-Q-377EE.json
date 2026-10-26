@@ -1,0 +1,85 @@
+{
+  "id": "CL-Q-377EE",
+  "lang": "377EE",
+  "giver": {
+    "persona": "CL-HUB-NPC05",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [
+    "CL-MAIN-C00-001"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 200,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {
+    "CL-HUB-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Lady_Lower_Bowl_Hat_Purple02.dds",
+      "template_id": 227311
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:About_the_Astrals",
+    "timestamp": "20250828143714"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst377EE matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Celestial Trainers",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Visit Celestial Trainers"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "CL-Q-37201",
+  "lang": "37201",
+  "giver": {
+    "persona": "CL-SCI-NPC04",
+    "zone": "Celestia/CL_Z09_Science_Center"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 3375,
+    "gold": 230
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-FishbotGold-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000773",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizQst37201_00000006",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139"
+    }
+  ],
+  "personas": {
+    "CL-SCI-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_03.dds",
+      "template_id": 268152
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fish_Tricks",
+    "timestamp": "20250902215627"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst37201 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Scavenger Hunt",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Amphibaton's Asylum",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

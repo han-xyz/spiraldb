@@ -1,0 +1,122 @@
+{
+  "id": "CL-Q-371EB",
+  "lang": "371EB",
+  "giver": {
+    "persona": "CL-RIVEN-NPC03",
+    "zone": "Celestia/Interiors/CL_Z06i1_StormHaven"
+  },
+  "requires": [
+    "CL-Q-371E0"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 8280,
+    "gold": 230
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-KrakenHead.AdjRef",
+        "CL-DIST-C02-002Pedestal.AdjRef",
+        "CL-PedestalForTranslation.AdjRef",
+        "CL-RivenC02001PedistalEvent.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "descriptor": "WizardGameObjects_00000331",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-ShadowWeaverBoss-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000768",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-RIVEN-NPC01",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142",
+      "completion": [
+        {
+          "speaker": "CL-RIVEN-NPC01",
+          "line": "00000003"
+        },
+        {
+          "speaker": "CL-RIVEN-NPC01",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 225824
+    },
+    "CL-RIVEN-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Shadow_Weaver_Boss_NPC.dds",
+      "template_id": 225832
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Inevitable_Betrayal",
+    "timestamp": "20240409061221"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Celestian Portal piece",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Celestia/Interiors/CL_Z06i1_StormHaven",
+      "blocking": true
+    }
+  ]
+}

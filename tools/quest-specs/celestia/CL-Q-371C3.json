@@ -1,0 +1,132 @@
+{
+  "id": "CL-Q-371C3",
+  "lang": "371C3",
+  "giver": {
+    "persona": "CL-DIST-NPC02",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 9705,
+    "gold": 360
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-DIST-C02-002Pedestal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizItems_00001671",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-DIST-NPC01",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Cl-SharkWarrior-GreyShoulder-BossR10-2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000786",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizQst371C3_00000015",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-DIST-NPC01",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 227117
+    },
+    "CL-DIST-NPC02": {
+      "portrait": "",
+      "template_id": 227131
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Teeth_of_the_Shark",
+    "timestamp": "20231124091923"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371C3 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Con Job",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Starkwave's Lair",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

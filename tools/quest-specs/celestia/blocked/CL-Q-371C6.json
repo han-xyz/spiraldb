@@ -1,0 +1,113 @@
+{
+  "id": "CL-Q-371C6",
+  "lang": "371C6",
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1595,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Protector-Black-Boss-R10-2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000799",
+      "zone": "",
+      "loc": "ZoneLocName_227137"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-SolvePuzzle.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst371C6_00000000",
+      "loc": "ZoneLocName_227137"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-CelestianGhost-BlueEyes-Boss-R10-2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000800",
+      "zone": "",
+      "loc": "ZoneLocName_227137"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Star_Is_Born",
+    "timestamp": "20231124092722"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Into the Stellarium",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Unimatus",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Selwyn's Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

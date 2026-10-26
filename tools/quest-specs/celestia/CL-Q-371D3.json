@@ -1,0 +1,104 @@
+{
+  "id": "CL-Q-371D3",
+  "lang": "371D3",
+  "giver": {
+    "persona": "CL-LAND-NPC01",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 3190,
+    "gold": 140
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-SeaFoam-Crystal.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000255",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-StormLordAltar.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000385",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Sun_Boss.dds",
+      "template_id": 211522
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Stormy_Offering",
+    "timestamp": "20250912013714"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371D3 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Spirit of the Sea",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

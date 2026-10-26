@@ -1,0 +1,109 @@
+{
+  "id": "CL-Q-3780E",
+  "lang": "3780E",
+  "giver": {
+    "persona": "CL-HUB-NPC001",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [
+    "CL-Q-371E3"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 5250,
+    "gold": 185
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-Protector-Purple-R9-Boss.AdjRef",
+        "CL-Protector-Purple-R9.AdjRef",
+        "CL_DormantProtector01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000747",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_227140"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Senses_Working_Overtime",
+    "timestamp": "20250828125941"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "a Sensorium in The Portico",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Lunarium",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "CL-Q-44E05",
+  "lang": "44E05",
+  "giver": {
+    "persona": "CL-LAND-NPC05",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [
+    "CL-Q-44E03"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 3985,
+    "gold": 180
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-Water-Mole01.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00000808",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Platypus_Warrior_03.dds",
+      "template_id": 211537
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shake_a_Spear",
+    "timestamp": "20231124093214"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Spears",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

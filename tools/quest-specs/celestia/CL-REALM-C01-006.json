@@ -1,0 +1,155 @@
+{
+  "id": "CL-REALM-C01-006",
+  "lang": "371BE",
+  "title": "QuestTitle_00000130",
+  "giver": {
+    "persona": "CL-REALM-NPC01",
+    "zone": "Celestia/CL_Z02_Crab_Realm"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 13205,
+    "gold": 500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-CrabHermit-Grey-R10.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000720",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "descriptor": "WizQst371BE_00000000",
+      "loc": "ZoneLocName_227109"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-StarfishDoor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "descriptor": "WizItems_00001641",
+      "loc": "ZoneLocName_227109"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-CrabKing-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000754",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-CrabPortalPiece.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "descriptor": "WizItems_00001687",
+      "loc": "ZoneLocName_227109"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-CAMP-NPC05",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197"
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator01.dds",
+      "template_id": 227125
+    },
+    "CL-REALM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_DogWorker_08_NPC.dds",
+      "template_id": 227130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:My_Dinner_with_Algae",
+    "timestamp": "20231124090943"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371BE matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "The Starfish Chamber",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Governor Nereus",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

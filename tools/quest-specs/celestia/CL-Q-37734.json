@@ -1,0 +1,187 @@
+{
+  "id": "CL-Q-37734",
+  "lang": "37734",
+  "giver": {
+    "persona": "CL-CAMP-NPC05",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [
+    "CL-CAMP-C01-003"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 3670,
+    "gold": 500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-CLUE01.AdjRef",
+        "CL-CLUE02.AdjRef",
+        "CL-CLUE03.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "descriptor": "WizItems_00001635",
+      "loc": "ZoneLocName_227197"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-CrabSoldier-Brown-R9-1.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000718",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "descriptor": "WizQst37734_00000003",
+      "loc": "ZoneLocName_227197"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-CAMP-NPC06",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-CrabSoldier-Brown--Boss-R9-2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000750",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "descriptor": "WizQst37734_00000035",
+      "loc": "ZoneLocName_227197"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-CAMP-NPC09",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197"
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator01.dds",
+      "template_id": 227125
+    },
+    "CL-CAMP-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_Excavator_D_NPC.dds",
+      "template_id": 227126
+    },
+    "CL-CAMP-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Excavator_Diver_01.dds",
+      "template_id": 227262
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Off_the_Map",
+    "timestamp": "20240424015612"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Optio Agenor's Camp",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

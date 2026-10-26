@@ -1,0 +1,39 @@
+{
+  "id": "CL-Q-celestiaquesttree",
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Celestia_Quest_Tree",
+    "timestamp": "20251019131232"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Celestia Quest Tree",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goals",
+      "value": [],
+      "blocking": true
+    }
+  ]
+}

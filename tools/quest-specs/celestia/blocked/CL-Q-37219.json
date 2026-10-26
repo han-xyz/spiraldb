@@ -1,0 +1,77 @@
+{
+  "id": "CL-Q-37219",
+  "lang": "37219",
+  "requires": [
+    "CL-Q-37218"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 10345,
+    "gold": 530
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-ObeliskSunTemple02.AdjRef",
+        "CL_SunStand_01.AdjRef"
+      ],
+      "count": 6,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000286",
+      "loc": "ZoneLocName_227134"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Protector-Purple-R9-Boss.AdjRef",
+        "CL-Protector-Purple-R9.AdjRef",
+        "CL_DormantProtector01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000747",
+      "zone": "",
+      "loc": "ZoneLocName_227134"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Sun_Also_Rises",
+    "timestamp": "20250828003827"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Back Door to the Solarium",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

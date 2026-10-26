@@ -1,0 +1,90 @@
+{
+  "id": "CL-Q-barkingmad",
+  "giver": {
+    "persona": "CL-LAND-NPC05",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 4765,
+    "gold": 395
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-LAND-NPC04",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-Treant-Light-R9.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000735",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-ColossusEarth-R10.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000736",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC04": {
+      "portrait": "",
+      "template_id": 211529
+    },
+    "CL-LAND-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Platypus_Warrior_03.dds",
+      "template_id": 211537
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Barking_Mad",
+    "timestamp": "20231124093526"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Barking Mad",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Moles Gone Wild",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Sacred Bark",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Magic Stones",
+      "blocking": false
+    }
+  ]
+}

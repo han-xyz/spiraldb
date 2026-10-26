@@ -1,0 +1,70 @@
+{
+  "id": "CL-Q-poweringup",
+  "giver": {
+    "persona": "CL-SCI-NPC02",
+    "zone": "Celestia/CL_Z09_Science_Center"
+  },
+  "requires": [
+    "CL-SCI-C02-004"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 4270,
+    "gold": 265
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-FishbotBrown-R9-2.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000731",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-FishFountain.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001653",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139"
+    }
+  ],
+  "personas": {
+    "CL-SCI-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Master_Engineer.dds",
+      "template_id": 227168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Powering_Up",
+    "timestamp": "20240319213255"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Powering Up",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Power Cores",
+      "blocking": false
+    }
+  ]
+}

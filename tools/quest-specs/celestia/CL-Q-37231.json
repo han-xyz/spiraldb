@@ -1,0 +1,86 @@
+{
+  "id": "CL-Q-37231",
+  "lang": "37231",
+  "giver": {
+    "persona": "CL-RIVEN-NPC02",
+    "zone": "Celestia/CL_Z06_StormHaven"
+  },
+  "requires": [
+    "CL-Q-3722F"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 2225,
+    "gold": 185
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL_MorgantineGhost-Grey-R9.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000743",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "descriptor": "WizQst37231_00000001",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Celestian_Legion_Ghost_01_NPC.dds",
+      "template_id": 225831
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Cloak_of_Souls",
+    "timestamp": "20250827080653"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

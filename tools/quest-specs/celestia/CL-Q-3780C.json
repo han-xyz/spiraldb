@@ -1,0 +1,89 @@
+{
+  "id": "CL-Q-3780C",
+  "lang": "3780C",
+  "giver": {
+    "persona": "CL-CAMP-NPC09",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1800,
+    "gold": 65
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-GhostPearl.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "descriptor": "WizItems_00001688",
+      "loc": "ZoneLocName_227197"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197"
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Excavator_Diver_01.dds",
+      "template_id": 227262
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Keep_Clam",
+    "timestamp": "20231124090710"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Breathing Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

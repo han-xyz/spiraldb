@@ -1,0 +1,64 @@
+{
+  "id": "CL-Q-throughthisdoor",
+  "giver": {
+    "persona": "CL-HUB-NPC001",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 2010,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Through_This_Door...",
+    "timestamp": "20240119020709"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Through This Door...",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Sun of All Fears",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Sanctum in the Sanctum of the Sun",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Halston Balestrom",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Halston Balestrom",
+      "blocking": true
+    }
+  ]
+}

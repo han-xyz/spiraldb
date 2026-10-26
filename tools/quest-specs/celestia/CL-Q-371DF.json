@@ -1,0 +1,91 @@
+{
+  "id": "CL-Q-371DF",
+  "lang": "371DF",
+  "giver": {
+    "persona": "CL-RIVEN-NPC01",
+    "zone": "Celestia/CL_Z06_StormHaven"
+  },
+  "requires": [
+    "CL-Q-371AC"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 3380,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-SpareParts.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "descriptor": "WizardGameObjects_00000251",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-WaterPump.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "descriptor": "WizardGameObjects_00000253",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 225824
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:It's_the_Plumber",
+    "timestamp": "20231124093603"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

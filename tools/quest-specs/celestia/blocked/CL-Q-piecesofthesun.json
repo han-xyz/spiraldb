@@ -1,0 +1,59 @@
+{
+  "id": "CL-Q-piecesofthesun",
+  "giver": {
+    "persona": "CL-SCI-NPC02",
+    "zone": "Celestia/CL_Z09_Science_Center"
+  },
+  "requires": [
+    "CL-Q-371FE"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 18790,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL_Teleporter_Sun.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001670",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-HUB-NPC001",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    },
+    "CL-SCI-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Master_Engineer.dds",
+      "template_id": 227168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pieces_of_the_Sun",
+    "timestamp": "20240119020708"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Pieces of the Sun",
+      "blocking": true
+    }
+  ]
+}

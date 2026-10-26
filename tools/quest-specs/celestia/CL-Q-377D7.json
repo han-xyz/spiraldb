@@ -1,0 +1,103 @@
+{
+  "id": "CL-Q-377D7",
+  "lang": "377D7",
+  "giver": {
+    "persona": "CL-LAND-NPC04",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 795,
+    "gold": 35
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000015"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC04": {
+      "portrait": "",
+      "template_id": 211529
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Let's_Go_Bowling",
+    "timestamp": "20250827142956"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst377D7 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Barking up the Tree",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Lake in The Floating Land",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

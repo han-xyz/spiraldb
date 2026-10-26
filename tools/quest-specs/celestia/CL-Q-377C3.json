@@ -1,0 +1,114 @@
+{
+  "id": "CL-Q-377C3",
+  "lang": "377C3",
+  "giver": {
+    "persona": "CL-REALM-NPC01",
+    "zone": "Celestia/CL_Z02_Crab_Realm"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 670,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-KrakenHead.AdjRef",
+        "CL-DIST-C02-002Pedestal.AdjRef",
+        "CL-PedestalForTranslation.AdjRef",
+        "CL-RivenC02001PedistalEvent.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "descriptor": "WizardGameObjects_00000331",
+      "loc": "ZoneLocName_227109"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    }
+  ],
+  "personas": {
+    "CL-REALM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_DogWorker_08_NPC.dds",
+      "template_id": 227130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lost_in_Translation",
+    "timestamp": "20250831053534"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst377C3 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Call of Cablooey",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

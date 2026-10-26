@@ -1,0 +1,145 @@
+{
+  "id": "CL-Q-13D640",
+  "lang": "13D640",
+  "giver": {
+    "persona": "CL-HUB-NPC001",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 83055,
+    "gold": 705
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-GolemWorker-R9-2.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001949",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dr._Egghead",
+    "timestamp": "20240829113832"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Egg of the Storm (Deep Leviathan)",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "for Dr. Vittek in his laboratory in the Science Center",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Deep Leviathan Egg",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

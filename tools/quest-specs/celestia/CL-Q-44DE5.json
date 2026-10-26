@@ -1,0 +1,103 @@
+{
+  "id": "CL-Q-44DE5",
+  "lang": "44DE5",
+  "giver": {
+    "persona": "CL-LAND-NPC02",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [
+    "CL-Q-44DE4"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 3180,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-WaterMoleTorch.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000285",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-VillageFire.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000316",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Platypus_Chief_NPC.dds",
+      "template_id": 211525
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Light_My_Fire",
+    "timestamp": "20250828103617"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

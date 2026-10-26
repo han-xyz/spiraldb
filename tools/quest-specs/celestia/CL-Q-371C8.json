@@ -1,0 +1,86 @@
+{
+  "id": "CL-Q-371C8",
+  "lang": "371C8",
+  "giver": {
+    "persona": "CL-DIST-NPC01",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [
+    "CL-Q-371C7"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1420,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-StarForge.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizQst371C8_00000016",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 227117
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Forging_Ahead",
+    "timestamp": "20231124091823"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

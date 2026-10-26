@@ -1,0 +1,54 @@
+{
+  "id": "CL-Q-coralofthestory",
+  "giver": {
+    "persona": "CL-REALM-NPC01",
+    "zone": "Celestia/CL_Z02_Crab_Realm"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1190,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    }
+  ],
+  "personas": {
+    "CL-REALM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_DogWorker_08_NPC.dds",
+      "template_id": 227130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Coral_of_the_Story",
+    "timestamp": "20231124090827"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Coral of the Story",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Crustacean Nation",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Pieces of Coral",
+      "blocking": true
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "CL-Q-371E4",
+  "lang": "371E4",
+  "giver": {
+    "persona": "CL-RIVEN-NPC05",
+    "zone": "Celestia/CL_Z06_StormHaven"
+  },
+  "requires": [
+    "CL-Q-371EB"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 2225,
+    "gold": 185
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL_MorgantineGhost-Grey-R9.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000743",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morgantine_Ghost_02_NPC.dds",
+      "template_id": 225838
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Please_Release_Me",
+    "timestamp": "20250906102150"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "CL-Q-spiritofthesea",
+  "giver": {
+    "persona": "CL-LAND-NPC01",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 2985,
+    "gold": 180
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Elemental-SeaWater-R9.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000733",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Sun_Boss.dds",
+      "template_id": 211522
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Spirit_of_the_Sea",
+    "timestamp": "20231124092821"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Spirit of the Sea",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "On the Waterfront",
+      "blocking": false
+    }
+  ]
+}

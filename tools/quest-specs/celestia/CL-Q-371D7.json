@@ -1,0 +1,115 @@
+{
+  "id": "CL-Q-371D7",
+  "lang": "371D7",
+  "giver": {
+    "persona": "CL-LAND-NPC02",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 3760,
+    "gold": 440
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Jungletooth.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000018",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Treant-Dark-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000756",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Platypus_Chief_NPC.dds",
+      "template_id": 211525
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Almost_Friends",
+    "timestamp": "20250916165149"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371D7 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Celestian Idol",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Tangleroot's Grove",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

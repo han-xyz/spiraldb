@@ -1,0 +1,60 @@
+{
+  "id": "CL-Q-shockingnews",
+  "giver": {
+    "persona": "CL-REALM-NPC01",
+    "zone": "Celestia/CL_Z02_Crab_Realm"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1190,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-EelCaveObject.AdjRef",
+        "CL-GatePieceRIVEN.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "descriptor": "WizItems_00001639",
+      "loc": "ZoneLocName_227109"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    }
+  ],
+  "personas": {
+    "CL-REALM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_DogWorker_08_NPC.dds",
+      "template_id": 227130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shocking_News",
+    "timestamp": "20231124090837"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Shocking News",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Coral of the Story",
+      "blocking": false
+    }
+  ]
+}

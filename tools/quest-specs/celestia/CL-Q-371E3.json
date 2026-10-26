@@ -1,0 +1,81 @@
+{
+  "id": "CL-Q-371E3",
+  "lang": "371E3",
+  "giver": {
+    "persona": "CL-DIST-NPC02",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [
+    "CL-Q-371E2"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 5690,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL_Teleporter_Moon.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizItems_00001669",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-HUB-NPC001",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC02": {
+      "portrait": "",
+      "template_id": 227131
+    },
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lunarium_Tunes",
+    "timestamp": "20231124094801"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

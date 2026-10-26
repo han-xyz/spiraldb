@@ -1,0 +1,129 @@
+{
+  "id": "CL-Q-3772E",
+  "lang": "3772E",
+  "giver": {
+    "persona": "CL-SHOP-NPC01",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [
+    "CL-MAIN-C00-001"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 6295,
+    "gold": 250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-DIST-C02-002Pedestal.AdjRef"
+      ],
+      "count": 10,
+      "zone": "Celestia/CL_Hub",
+      "descriptor": "WizItems_00001671",
+      "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-SHOP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 227110
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lounging_Lizards",
+    "timestamp": "20231124084536"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Celestia Base Camp",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Survey Camp",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Grotto",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "District of the Stars",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Stormriven",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Stormriven Hall",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Portico",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Science Center",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Crustacean Empire",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Talk To Prospector Zeke",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

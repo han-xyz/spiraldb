@@ -1,0 +1,53 @@
+{
+  "id": "CL-Q-helpingclaw",
+  "giver": {
+    "persona": "CL-CRAB-NPC04",
+    "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+  },
+  "requires": [
+    "CL-Q-3720F"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 950,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-CRAB-NPC07",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "CL-CRAB-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Lobster_Senator_NPC.dds",
+      "template_id": 225851
+    },
+    "CL-CRAB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Lobster_Senator03_NPC.dds",
+      "template_id": 225861
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Helping_Claw",
+    "timestamp": "20240119020723"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Helping Claw",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Senator Nellek",
+      "blocking": true
+    }
+  ]
+}

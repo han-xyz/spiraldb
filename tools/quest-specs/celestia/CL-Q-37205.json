@@ -1,0 +1,105 @@
+{
+  "id": "CL-Q-37205",
+  "lang": "37205",
+  "giver": {
+    "persona": "CL-CRAB-NPC01",
+    "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 4500,
+    "gold": 390
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-SharkWarrior-Tiger-R9-1.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000723",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-AnglerGreen-R9.AdjRef",
+        "CL-AnglerYellow-T9.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000737",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
+    }
+  ],
+  "personas": {
+    "CL-CRAB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_Hermit_02.dds",
+      "template_id": 225847
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Something's_Fishy",
+    "timestamp": "20231124095148"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "To the Solarium?",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

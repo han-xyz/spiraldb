@@ -1,0 +1,102 @@
+{
+  "id": "CL-Q-371C1",
+  "lang": "371C1",
+  "giver": {
+    "persona": "CL-CAMP-NPC05",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [
+    "CL-REALM-C01-006"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 7595,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-HUB-NPC001",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-EelCaveObject.AdjRef",
+        "CL-GatePieceRIVEN.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "descriptor": "WizItems_00001639",
+      "loc": "ZoneLocName_227197"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-HUB-NPC001",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792",
+      "completion": [
+        {
+          "speaker": "CL-HUB-NPC001",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator01.dds",
+      "template_id": 227125
+    },
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Johnny-on-the-Spot",
+    "timestamp": "20231124091523"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

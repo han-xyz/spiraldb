@@ -1,0 +1,73 @@
+{
+  "id": "CL-Q-AB3CA",
+  "lang": "AB3CA",
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 25,
+    "gold": 145
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-PageEvent-Boss.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "NPCs_01748040",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Vanitas_Vanitatum",
+    "timestamp": "20240104060054"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Semi-Charmed Life",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Spellwrit Wildclaws",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Carson Spritethief",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

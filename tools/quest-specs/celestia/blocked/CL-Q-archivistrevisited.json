@@ -1,0 +1,49 @@
+{
+  "id": "CL-Q-archivistrevisited",
+  "giver": {
+    "persona": "CL-DIST-NPC01",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [
+    "CL-Q-371CC"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 710,
+    "gold": 35
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-DIST-NPC02",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 227117
+    },
+    "CL-DIST-NPC02": {
+      "portrait": "",
+      "template_id": 227131
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Archivist,_Revisited",
+    "timestamp": "20250831230838"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Archivist, Revisited",
+      "blocking": true
+    }
+  ]
+}

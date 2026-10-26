@@ -1,0 +1,61 @@
+{
+  "id": "CL-Q-forceofarms",
+  "giver": {
+    "persona": "CL-RIVEN-NPC01",
+    "zone": "Celestia/CL_Z06_StormHaven"
+  },
+  "requires": [
+    "CL-Q-371E8"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 4225,
+    "gold": 185
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL_MorgantineGhost-Grey-R9.AdjRef",
+        "CL_MorgantineGhost-Blue-R9.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000743",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 225824
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Force_of_Arms",
+    "timestamp": "20231124093923"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Force of Arms",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Weapons",
+      "blocking": false
+    }
+  ]
+}

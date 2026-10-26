@@ -1,0 +1,91 @@
+{
+  "id": "CL-Q-B4F39",
+  "lang": "B4F39",
+  "giver": {
+    "persona": "CL-HUB-NPC001",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [
+    "CL-Q-B4F37"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 10,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Conscience_Be_Your_Guide",
+    "timestamp": "20240121093551"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona",
+      "value": "Harold Argleston",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Arthur Wethersfield",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Arthur Wethersfield",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Talk to [NPC:Harold Argleston] in [Location:The Commons]",
+        "@Talk to [NPC:Arthur Wethersfield] in [Location:Ravenwood]"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

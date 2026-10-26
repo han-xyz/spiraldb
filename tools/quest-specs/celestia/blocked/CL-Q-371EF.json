@@ -1,0 +1,89 @@
+{
+  "id": "CL-Q-371EF",
+  "lang": "371EF",
+  "giver": {
+    "persona": "CL-STORM-NPC01",
+    "zone": "Celestia/CL_Z07_Storm_Lord_Temple"
+  },
+  "requires": [
+    "CL-Q-371E5"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 6125,
+    "gold": 265
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-FlyingFish-Yellow-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000709",
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "loc": "ZoneLocName_227127"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "loc": "ZoneLocName_227127",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-STORM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morgantine_Ghost_03_NPC.dds",
+      "template_id": 227129
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:In_Too_Deep",
+    "timestamp": "20250826230942"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Cave of Night",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "blocking": true
+    }
+  ]
+}

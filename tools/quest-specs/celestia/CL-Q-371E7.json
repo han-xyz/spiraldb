@@ -1,0 +1,82 @@
+{
+  "id": "CL-Q-371E7",
+  "lang": "371E7",
+  "giver": {
+    "persona": "CL-RIVEN-NPC01",
+    "zone": "Celestia/CL_Z06_StormHaven"
+  },
+  "requires": [
+    "CL-Q-371E6"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1690,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-EelCaveObject.AdjRef",
+        "CL-GatePieceRIVEN.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "descriptor": "WizItems_00001639",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 225824
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Moon_Below",
+    "timestamp": "20231124093802"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

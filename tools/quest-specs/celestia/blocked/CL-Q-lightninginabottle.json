@@ -1,0 +1,88 @@
+{
+  "id": "CL-Q-lightninginabottle",
+  "giver": {
+    "persona": "CL-SCI-NPC01",
+    "zone": "Celestia/CL_Z09_Science_Center"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1580,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-LeydenJars.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139"
+    }
+  ],
+  "personas": {
+    "CL-SCI-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_02.dds",
+      "template_id": 227165
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lightning_in_a_Bottle",
+    "timestamp": "20231124094901"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Lightning in a Bottle",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Spare Parts",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Leyden Jars",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Galvanic Tower 1",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Galvanic Tower 2",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Galvanic Tower 3",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Galvanic Tower 4",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Galvanic Tower 5",
+      "blocking": true
+    }
+  ]
+}

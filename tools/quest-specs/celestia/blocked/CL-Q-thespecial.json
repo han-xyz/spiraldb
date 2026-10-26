@@ -1,0 +1,75 @@
+{
+  "id": "CL-Q-thespecial",
+  "giver": {
+    "persona": "CL-CAMP-NPC10",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [
+    "CL-MAIN-C00-001"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 4500,
+    "gold": 430
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Upper08.dds",
+      "template_id": 268128
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Special",
+    "timestamp": "20250827101141"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Special",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Gordon Sumner",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Nettle Root",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Medium Fish",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Stinky Cheese",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Golden Squash",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Gordon Sumner",
+      "blocking": true
+    }
+  ]
+}

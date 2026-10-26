@@ -1,0 +1,91 @@
+{
+  "id": "CL-Q-44DE4",
+  "lang": "44DE4",
+  "giver": {
+    "persona": "CL-LAND-NPC01",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [
+    "CL-Q-44DE3"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 4750,
+    "gold": 220
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Bloodbat-Brown-R9.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00000790",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-LAND-NPC02",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Sun_Boss.dds",
+      "template_id": 211522
+    },
+    "CL-LAND-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Platypus_Chief_NPC.dds",
+      "template_id": 211525
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Up_to_Bat",
+    "timestamp": "20250907144411"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

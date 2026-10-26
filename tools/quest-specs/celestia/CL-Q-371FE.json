@@ -1,0 +1,207 @@
+{
+  "id": "CL-Q-371FE",
+  "lang": "371FE",
+  "giver": {
+    "persona": "CL-SCI-NPC02",
+    "zone": "Celestia/CL_Z09_Science_Center"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 6450,
+    "gold": 655
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-HydraulicChanneler.AdjRef",
+        "CL-HydraulicChanneler2.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001658",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-FishbotBrown-R9-2.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000731",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizQst371FE_00000006",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-HydraulicChanneler.AdjRef",
+        "CL-HydraulicChanneler2.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001658",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-HydraulicChanneler.AdjRef",
+        "CL-HydraulicChanneler2.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001658",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-FishbotGold-R9.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000732",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizQst371FE_00000006",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-HydraulicChanneler.AdjRef",
+        "CL-HydraulicChanneler2.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001658",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-GateControl.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001660",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-FishbotYellow-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000755",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139"
+    }
+  ],
+  "personas": {
+    "CL-SCI-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Master_Engineer.dds",
+      "template_id": 227168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Crystal_Fight",
+    "timestamp": "20231124095117"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371FE matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Cracking the Books",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Crystal Reactor",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

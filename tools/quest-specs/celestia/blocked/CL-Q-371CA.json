@@ -1,0 +1,102 @@
+{
+  "id": "CL-Q-371CA",
+  "lang": "371CA",
+  "giver": {
+    "persona": "CL-DIST-NPC01",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [
+    "CL-Q-371C9"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1420,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 227117
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Putting_Pieces_Together",
+    "timestamp": "20250827073738"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371CA matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "The Chantry (the Celestian mosaic)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Chantry (a closer examination)",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

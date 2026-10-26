@@ -1,0 +1,125 @@
+{
+  "id": "CL-Q-towerofpower",
+  "giver": {
+    "persona": "CL-SCI-NPC02",
+    "zone": "Celestia/CL_Z09_Science_Center"
+  },
+  "requires": [
+    "CL-Q-371F8"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1790,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-TeslaTower.AdjRef",
+        "CL-TeslaTower1b.AdjRef",
+        "CL-TeslaTower2.AdjRef",
+        "CL-TeslaTower2b.AdjRef",
+        "CL-TeslaTower3.AdjRef",
+        "CL-TeslaTower3b.AdjRef",
+        "CL-TeslaTower4.AdjRef",
+        "CL-TeslaTower4b.AdjRef",
+        "CL-TeslaTower5.AdjRef",
+        "CL-TeslaTower5b.AdjRef",
+        "CL-TeslaTower6b.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001664",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-TeslaTower.AdjRef",
+        "CL-TeslaTower1b.AdjRef",
+        "CL-TeslaTower2.AdjRef",
+        "CL-TeslaTower2b.AdjRef",
+        "CL-TeslaTower3.AdjRef",
+        "CL-TeslaTower3b.AdjRef",
+        "CL-TeslaTower4.AdjRef",
+        "CL-TeslaTower4b.AdjRef",
+        "CL-TeslaTower5.AdjRef",
+        "CL-TeslaTower5b.AdjRef",
+        "CL-TeslaTower6b.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001664",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-TeslaTower.AdjRef",
+        "CL-TeslaTower1b.AdjRef",
+        "CL-TeslaTower2.AdjRef",
+        "CL-TeslaTower2b.AdjRef",
+        "CL-TeslaTower3.AdjRef",
+        "CL-TeslaTower3b.AdjRef",
+        "CL-TeslaTower4.AdjRef",
+        "CL-TeslaTower4b.AdjRef",
+        "CL-TeslaTower5.AdjRef",
+        "CL-TeslaTower5b.AdjRef",
+        "CL-TeslaTower6b.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001664",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-TeslaTower.AdjRef",
+        "CL-TeslaTower1b.AdjRef",
+        "CL-TeslaTower2.AdjRef",
+        "CL-TeslaTower2b.AdjRef",
+        "CL-TeslaTower3.AdjRef",
+        "CL-TeslaTower3b.AdjRef",
+        "CL-TeslaTower4.AdjRef",
+        "CL-TeslaTower4b.AdjRef",
+        "CL-TeslaTower5.AdjRef",
+        "CL-TeslaTower5b.AdjRef",
+        "CL-TeslaTower6b.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001664",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139"
+    }
+  ],
+  "personas": {
+    "CL-SCI-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Master_Engineer.dds",
+      "template_id": 227168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tower_of_Power",
+    "timestamp": "20250827104624"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Tower of Power",
+      "blocking": true
+    }
+  ]
+}

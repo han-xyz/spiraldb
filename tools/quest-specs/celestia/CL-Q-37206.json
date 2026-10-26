@@ -1,0 +1,131 @@
+{
+  "id": "CL-Q-37206",
+  "lang": "37206",
+  "giver": {
+    "persona": "CL-CRAB-NPC02",
+    "zone": "Celestia/Interiors/CL_Z10i2_Kingdom_Of_The_Crabs"
+  },
+  "requires": [
+    "CL-Q-3720F"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 4450,
+    "gold": 430
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-CRAB-NPC01",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-SharkWarrior-Tiger-R9-1.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00000723",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-PirateSkinny-R9.AdjRef",
+        "Heroic_CL_Seabooter.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000740",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-CRAB-NPC05",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
+    }
+  ],
+  "personas": {
+    "CL-CRAB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_Hermit_02.dds",
+      "template_id": 225847
+    },
+    "CL-CRAB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Thurston_Plunkett.dds",
+      "template_id": 225849
+    },
+    "CL-CRAB-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Undead_Skinny_Pirate_02_NPC.dds",
+      "template_id": 225854
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Back_Door",
+    "timestamp": "20231124095252"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst37206 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

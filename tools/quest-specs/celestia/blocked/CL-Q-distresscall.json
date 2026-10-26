@@ -1,0 +1,53 @@
+{
+  "id": "CL-Q-distresscall",
+  "giver": {
+    "persona": "CL-LAND-NPC01",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 7795,
+    "gold": 35
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-LAND-NPC02",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Sun_Boss.dds",
+      "template_id": 211522
+    },
+    "CL-LAND-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Platypus_Chief_NPC.dds",
+      "template_id": 211525
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Distress_Call",
+    "timestamp": "20231124092743"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Distress Call",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Claw of the Jungle",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "CL-Q-37232",
+  "lang": "37232",
+  "giver": {
+    "persona": "CL-RIVEN-NPC02",
+    "zone": "Celestia/CL_Z06_StormHaven"
+  },
+  "requires": [
+    "CL-Q-37231"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 6225,
+    "gold": 185
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-Pylon01.AdjRef",
+        "CL-Pylon02.AdjRef",
+        "CL-Pylon03.AdjRef",
+        "CL-Pylon04.AdjRef",
+        "CL-Pylon05.AdjRef",
+        "CL-Pylon06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "descriptor": "WizardGameObjects_00000284",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Celestian_Legion_Ghost_01_NPC.dds",
+      "template_id": 225831
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Piercing_the_Veil",
+    "timestamp": "20240118180054"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Kraken Statue in Stormriven Hall",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

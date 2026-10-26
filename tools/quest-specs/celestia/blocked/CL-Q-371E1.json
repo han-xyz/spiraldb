@@ -1,0 +1,132 @@
+{
+  "id": "CL-Q-371E1",
+  "lang": "371E1",
+  "giver": {
+    "persona": "CL-STORM-NPC01",
+    "zone": "Celestia/CL_Z07_Storm_Lord_Temple"
+  },
+  "requires": [
+    "CL-Q-371E9"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 6140,
+    "gold": 445
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-DeepOne-GreenHead-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000744",
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "loc": "ZoneLocName_227127"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL_MorgantineGhost-Blue-R9.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000742",
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "loc": "ZoneLocName_227127"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-KrakenHead.AdjRef",
+        "CL-DIST-C02-002Pedestal.AdjRef",
+        "CL-PedestalForTranslation.AdjRef",
+        "CL-RivenC02001PedistalEvent.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "descriptor": "WizardGameObjects_00000331",
+      "loc": "ZoneLocName_227127"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "loc": "ZoneLocName_227127"
+    }
+  ],
+  "personas": {
+    "CL-STORM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morgantine_Ghost_03_NPC.dds",
+      "template_id": 227129
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Storm_Shards",
+    "timestamp": "20240515214801"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "first Artifact",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "second Artifact",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "third Artifact",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "blocking": true
+    }
+  ]
+}

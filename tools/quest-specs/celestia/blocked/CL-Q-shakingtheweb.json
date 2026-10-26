@@ -1,0 +1,88 @@
+{
+  "id": "CL-Q-shakingtheweb",
+  "giver": {
+    "persona": "CL-RIVEN-NPC01",
+    "zone": "Celestia/CL_Z06_StormHaven"
+  },
+  "requires": [
+    "CL-Q-371E8"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 16500,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL_MorgantineGhost-Grey-R9.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000743",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-ShadowWeaver-R9.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000745",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142",
+      "with_previous": true
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL_MorgantineGhost-Blue-R9.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000742",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142",
+      "with_previous": true
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-ShadowWeaver-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000746",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 225824
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shaking_the_Web",
+    "timestamp": "20231124093953"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Shaking the Web",
+      "blocking": true
+    }
+  ]
+}

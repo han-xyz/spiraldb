@@ -1,0 +1,54 @@
+{
+  "id": "CL-Q-timefortea",
+  "giver": {
+    "persona": "CL-CAMP-NPC10",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1790,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Upper08.dds",
+      "template_id": 268128
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Time_for_Tea",
+    "timestamp": "20231124085733"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Time for Tea",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Me and My Arrow",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "a Tea Set (recipe from Torald Wayfinder)",
+      "blocking": true
+    }
+  ]
+}

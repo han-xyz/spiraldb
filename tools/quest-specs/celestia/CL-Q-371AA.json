@@ -1,0 +1,72 @@
+{
+  "id": "CL-Q-371AA",
+  "lang": "371AA",
+  "giver": {
+    "persona": "CL-HUB-NPC001",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [
+    "CL-Q-371C1"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 560,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-DIST-NPC01",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 227117
+    },
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Just_Popping_In",
+    "timestamp": "20231124091635"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371AA matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "CL-Q-3722F",
+  "lang": "3722F",
+  "giver": {
+    "persona": "CL-RIVEN-NPC02",
+    "zone": "Celestia/CL_Z06_StormHaven"
+  },
+  "requires": [
+    "CL-Q-371EB"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1690,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-Pylon01.AdjRef",
+        "CL-Pylon02.AdjRef",
+        "CL-Pylon03.AdjRef",
+        "CL-Pylon04.AdjRef",
+        "CL-Pylon05.AdjRef",
+        "CL-Pylon06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "descriptor": "WizardGameObjects_00000284",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Celestian_Legion_Ghost_01_NPC.dds",
+      "template_id": 225831
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pylon_and_On",
+    "timestamp": "20250831133524"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

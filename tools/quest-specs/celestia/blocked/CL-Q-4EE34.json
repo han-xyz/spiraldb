@@ -1,0 +1,109 @@
+{
+  "id": "CL-Q-4EE34",
+  "lang": "4EE34",
+  "giver": {
+    "persona": "CL-HUB-NPC001",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 2000,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Cl-SharkWarrior-Blue-R9-2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000724",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Closed_Sun_Days",
+    "timestamp": "20240519192349"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "The Sun of All Fears",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Chancel",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Phaeton",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

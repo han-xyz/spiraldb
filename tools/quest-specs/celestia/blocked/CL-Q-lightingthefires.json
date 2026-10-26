@@ -1,0 +1,69 @@
+{
+  "id": "CL-Q-lightingthefires",
+  "giver": {
+    "persona": "CL-LAND-NPC05",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 11575,
+    "gold": 295
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-WaterMoleTorch.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000285",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Soultearer-Boss01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000809",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Platypus_Warrior_03.dds",
+      "template_id": 211537
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lighting_the_Fires",
+    "timestamp": "20231124093441"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Lighting the Fires",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Barking Mad",
+      "blocking": false
+    }
+  ]
+}

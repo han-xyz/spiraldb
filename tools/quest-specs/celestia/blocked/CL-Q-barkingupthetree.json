@@ -1,0 +1,59 @@
+{
+  "id": "CL-Q-barkingupthetree",
+  "giver": {
+    "persona": "CL-LAND-NPC04",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 795,
+    "gold": 35
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-LAND-NPC02",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Platypus_Chief_NPC.dds",
+      "template_id": 211525
+    },
+    "CL-LAND-NPC04": {
+      "portrait": "",
+      "template_id": 211529
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Barking_up_the_Tree",
+    "timestamp": "20250904124059"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Barking up the Tree",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "As the Water Falls",
+      "blocking": false
+    }
+  ]
+}

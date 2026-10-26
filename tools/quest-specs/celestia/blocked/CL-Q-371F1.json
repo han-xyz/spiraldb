@@ -1,0 +1,140 @@
+{
+  "id": "CL-Q-371F1",
+  "lang": "371F1",
+  "requires": [
+    "CL-Q-371F0"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 17420,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL_MoonCrystalPylon1.AdjRef",
+        "CL-MoonCrystalPylon2.AdjRef",
+        "CL_MoonCrystalPylon3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst371F1_00000024",
+      "loc": "ZoneLocName_227140"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL_MoonCrystalPylon1.AdjRef",
+        "CL-MoonCrystalPylon2.AdjRef",
+        "CL_MoonCrystalPylon3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst371F1_00000024",
+      "loc": "ZoneLocName_227140"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL_MoonCrystalPylon1.AdjRef",
+        "CL-MoonCrystalPylon2.AdjRef",
+        "CL_MoonCrystalPylon3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst371F1_00000024",
+      "loc": "ZoneLocName_227140"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Protector-Purple-R9-Boss.AdjRef",
+        "CL-Protector-Purple-R9.AdjRef",
+        "CL_DormantProtector01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000747",
+      "zone": "",
+      "loc": "ZoneLocName_227140"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Protector-Gold-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000766",
+      "zone": "",
+      "loc": "ZoneLocName_227140"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-MoonRelic.AdjRef",
+        "CL_Grand_Astrolabe_Relic_Moon.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00001684",
+      "loc": "ZoneLocName_227140"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pylon_Raiders",
+    "timestamp": "20231124094814"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371F1 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Stellar Protector in The Lunarium",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "CL-Q-37216",
+  "lang": "37216",
+  "giver": {
+    "persona": "CL-CRAB-NPC07",
+    "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 2750,
+    "gold": 195
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-PirateSkinny-R9.AdjRef",
+        "Heroic_CL_Seabooter.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000740",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "descriptor": "WizQst37216_00000006",
+      "loc": "ZoneLocName_227135"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "CL-CRAB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Lobster_Senator03_NPC.dds",
+      "template_id": 225861
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Turn_of_the_Tide",
+    "timestamp": "20250830102413"
+  },
+  "needs_review": [
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Senator Nellek",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Charter Course",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Senator Nellek",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "CL-Q-371E8",
+  "lang": "371E8",
+  "giver": {
+    "persona": "CL-RIVEN-NPC01",
+    "zone": "Celestia/CL_Z06_StormHaven"
+  },
+  "requires": [
+    "CL-Q-371E7"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 845,
+    "gold": 35
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-RIVEN-NPC04",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-RIVEN-NPC03",
+      "zone": "Celestia/Interiors/CL_Z06i1_StormHaven",
+      "loc": "ZoneLocName_227142"
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 225824
+    },
+    "CL-RIVEN-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Shadow_Weaver_Boss_NPC.dds",
+      "template_id": 225832
+    },
+    "CL-RIVEN-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Celestian_Legion_Ghost_03_NPC.dds",
+      "template_id": 225833
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Celestian_Leftovers",
+    "timestamp": "20231124093656"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Celestia/Interiors/CL_Z06i1_StormHaven",
+      "blocking": true
+    }
+  ]
+}

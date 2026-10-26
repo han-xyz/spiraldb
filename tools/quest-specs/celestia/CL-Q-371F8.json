@@ -1,0 +1,99 @@
+{
+  "id": "CL-Q-371F8",
+  "lang": "371F8",
+  "giver": {
+    "persona": "CL-SCI-NPC02",
+    "zone": "Celestia/CL_Z09_Science_Center"
+  },
+  "requires": [
+    "CL-Q-371F3"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 3580,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-EngineeringTools.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001651",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-PowerGenerator.AdjRef",
+        "CL-PowerGenerator2.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizItems_00001648",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-SCI-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Master_Engineer.dds",
+      "template_id": 227168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Galvanic_Company",
+    "timestamp": "20231124095024"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371F8 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

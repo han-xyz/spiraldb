@@ -1,0 +1,60 @@
+{
+  "id": "CL-Q-thestarfishchamber",
+  "giver": {
+    "persona": "CL-REALM-NPC01",
+    "zone": "Celestia/CL_Z02_Crab_Realm"
+  },
+  "requires": [
+    "CL-REALM-C01-004"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 2945,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-CrabSoldier-Green-Boss-R9-1.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000751",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    }
+  ],
+  "personas": {
+    "CL-REALM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_DogWorker_08_NPC.dds",
+      "template_id": 227130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Starfish_Chamber",
+    "timestamp": "20231124090910"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Starfish Chamber",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Misemos's Retreat",
+      "blocking": false
+    }
+  ]
+}

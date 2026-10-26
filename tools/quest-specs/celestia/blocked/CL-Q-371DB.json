@@ -1,0 +1,119 @@
+{
+  "id": "CL-Q-371DB",
+  "lang": "371DB",
+  "giver": {
+    "persona": "CL-LAND-NPC04",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [
+    "CL-Q-377D7"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 6785,
+    "gold": 210
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-LAND-NPC06",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-SubParts.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000281",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-HUB-NPC001",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    },
+    "CL-LAND-NPC04": {
+      "portrait": "",
+      "template_id": 211529
+    },
+    "CL-LAND-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Captain.dds",
+      "template_id": 282113
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cutting_Crew",
+    "timestamp": "20231124092945"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona",
+      "value": "Crew",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Crew",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Crew",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Crew",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

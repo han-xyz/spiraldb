@@ -1,0 +1,64 @@
+{
+  "id": "CL-Q-callofcablooey",
+  "giver": {
+    "persona": "CL-REALM-NPC01",
+    "zone": "Celestia/CL_Z02_Crab_Realm"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 4180,
+    "gold": 220
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-DeepOne-BlueSkin-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000707",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    }
+  ],
+  "personas": {
+    "CL-REALM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_DogWorker_08_NPC.dds",
+      "template_id": 227130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Call_of_Cablooey",
+    "timestamp": "20250901122557"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Call of Cablooey",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Fishing Pieces",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Deep One's Cave",
+      "blocking": false
+    }
+  ]
+}

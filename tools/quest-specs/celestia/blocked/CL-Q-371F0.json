@@ -1,0 +1,208 @@
+{
+  "id": "CL-Q-371F0",
+  "lang": "371F0",
+  "requires": [
+    "CL-Q-371AD"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 21125,
+    "gold": 1200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "1111"
+      },
+      {
+        "speaker": "giver",
+        "line": "11111"
+      },
+      {
+        "speaker": "giver",
+        "line": "1235"
+      },
+      {
+        "speaker": "giver",
+        "line": "2222"
+      },
+      {
+        "speaker": "giver",
+        "line": "22222"
+      },
+      {
+        "speaker": "giver",
+        "line": "3333"
+      },
+      {
+        "speaker": "giver",
+        "line": "33333"
+      },
+      {
+        "speaker": "giver",
+        "line": "4444"
+      },
+      {
+        "speaker": "giver",
+        "line": "44444"
+      },
+      {
+        "speaker": "giver",
+        "line": "5555"
+      },
+      {
+        "speaker": "giver",
+        "line": "55555"
+      },
+      {
+        "speaker": "giver",
+        "line": "6666"
+      },
+      {
+        "speaker": "giver",
+        "line": "66666"
+      },
+      {
+        "speaker": "giver",
+        "line": "77777"
+      },
+      {
+        "speaker": "giver",
+        "line": "8888"
+      },
+      {
+        "speaker": "giver",
+        "line": "88888"
+      },
+      {
+        "speaker": "giver",
+        "line": "9999"
+      },
+      {
+        "speaker": "giver",
+        "line": "99999"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-Protector-Purple-R9-Boss.AdjRef",
+        "CL-Protector-Purple-R9.AdjRef",
+        "CL_DormantProtector01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000747",
+      "zone": "",
+      "descriptor": "WizQst371F0_00000003",
+      "loc": "ZoneLocName_227140"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-DownedProtector.AdjRef",
+        "CL-DownedProtectors.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst371C7_00000008",
+      "loc": "ZoneLocName_227140"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL_MorgantineGhost-Blue-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000817",
+      "zone": "",
+      "loc": "ZoneLocName_227140"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL_MorgantineGhost-Grey-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000818",
+      "zone": "",
+      "loc": "ZoneLocName_227140",
+      "with_previous": true
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL_MorgantineGhost-Blue-R10b.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000819",
+      "zone": "",
+      "loc": "ZoneLocName_227140",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-DownedProtector.AdjRef",
+        "CL-DownedProtectors.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst371C7_00000008",
+      "loc": "ZoneLocName_227140"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dark_Side_of_the_Moon",
+    "timestamp": "20231124094809"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371F0 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Inactive Protector",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Koltan Grimfane",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Koltan Grimfane",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

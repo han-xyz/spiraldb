@@ -1,0 +1,118 @@
+{
+  "id": "CL-Q-371E2",
+  "lang": "371E2",
+  "giver": {
+    "persona": "CL-DIST-NPC02",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [
+    "CL-Q-371EA"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1070,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-MagicItemRepair.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizardGameObjects_00000349",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-DeviceItemRepair.AdjRef",
+        "CL-DevicesPort.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizardGameObjects_00000269",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-RepairPedestal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizardGameObjects_00000274",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC02": {
+      "portrait": "",
+      "template_id": 227131
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:In_For_Repairs",
+    "timestamp": "20250907170223"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

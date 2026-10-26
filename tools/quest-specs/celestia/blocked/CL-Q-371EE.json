@@ -1,0 +1,126 @@
+{
+  "id": "CL-Q-371EE",
+  "lang": "371EE",
+  "giver": {
+    "persona": "CL-STORM-NPC01",
+    "zone": "Celestia/CL_Z07_Storm_Lord_Temple"
+  },
+  "requires": [
+    "CL-Q-371E1"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 12660,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-MoonDial.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "descriptor": "WizardGameObjects_00000247",
+      "loc": "ZoneLocName_227127"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-StormAltar.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "descriptor": "WizardGameObjects_00000249",
+      "loc": "ZoneLocName_227127"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-StormAvatar-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000770",
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "loc": "ZoneLocName_227127"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-RIVEN-NPC01",
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    }
+  ],
+  "personas": {
+    "CL-RIVEN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 225824
+    },
+    "CL-STORM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morgantine_Ghost_03_NPC.dds",
+      "template_id": 227129
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Kraken_Up",
+    "timestamp": "20240516115137"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "blocking": true
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "CL-Q-37202",
+  "lang": "37202",
+  "giver": {
+    "persona": "CL-SCI-NPC04",
+    "zone": "Celestia/CL_Z09_Science_Center"
+  },
+  "requires": [
+    "CL-Q-37201"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 14495,
+    "gold": 280
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-GolemDigger-Boss-R10.AdjRef",
+        "CL-SCI-NPC03.AdjRef",
+        "CL_Praxus_Obj.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000710",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z09_Science_Center",
+      "loc": "ZoneLocName_227139"
+    }
+  ],
+  "personas": {
+    "CL-SCI-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_03.dds",
+      "template_id": 268152
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tower_of_Destruction",
+    "timestamp": "20250917195840"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst37202 matched by the words it shares with the goals",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Crystal Tower",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "CL-Q-intothestellarium",
+  "giver": {
+    "persona": "CL-DIST-NPC01",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [
+    "CL-Q-371C3"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 7550,
+    "gold": 175
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-StarTempleRelic.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizQst371CE_00000008",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-StarTempleRelic.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizQst371CE_00000008",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-HUB-NPC001",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 227117
+    },
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Into_the_Stellarium",
+    "timestamp": "20231124092045"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Into the Stellarium",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Key on the Stellarium Pedestal",
+      "blocking": true
+    }
+  ]
+}

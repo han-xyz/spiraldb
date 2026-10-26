@@ -1,0 +1,115 @@
+{
+  "id": "CL-Q-44DE3",
+  "lang": "44DE3",
+  "giver": {
+    "persona": "CL-LAND-NPC01",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [
+    "CL-Q-371D7"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1595,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL_DockWorker_RaleighWaterson.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000386",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL_DockWorker_AlbertCavanaugh.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000387",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL_DockWorker_TomSanderson.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000388",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Sun_Boss.dds",
+      "template_id": 211522
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Like_Dockwork",
+    "timestamp": "20250901114704"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

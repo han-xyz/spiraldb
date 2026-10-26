@@ -1,0 +1,60 @@
+{
+  "id": "CL-Q-breathingroom",
+  "giver": {
+    "persona": "CL-CAMP-NPC09",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [
+    "CL-CAMP-C04-001"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 4260,
+    "gold": 65
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-TabletObject01.AdjRef",
+        "CL-WaterBreathingObject.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "descriptor": "WizItems_00001636",
+      "loc": "ZoneLocName_227197"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-CAMP-NPC05",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197"
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator01.dds",
+      "template_id": 227125
+    },
+    "CL-CAMP-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Excavator_Diver_01.dds",
+      "template_id": 227262
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Breathing_Room",
+    "timestamp": "20250831075118"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Breathing Room",
+      "blocking": true
+    }
+  ]
+}

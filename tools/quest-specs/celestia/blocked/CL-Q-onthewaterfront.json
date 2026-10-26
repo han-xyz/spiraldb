@@ -1,0 +1,53 @@
+{
+  "id": "CL-Q-onthewaterfront",
+  "giver": {
+    "persona": "CL-HUB-NPC001",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1120,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-LAND-NPC01",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    },
+    "CL-LAND-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Sun_Boss.dds",
+      "template_id": 211522
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:On_the_Waterfront",
+    "timestamp": "20231124092643"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "On the Waterfront",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Into the Stellarium",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "CL-Q-clawofthejungle",
+  "giver": {
+    "persona": "CL-LAND-NPC01",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [
+    "CL-Q-371D3"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 3960,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Wildclaw-White-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000711",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Wildclaw-Sick-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000712",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227206",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Sun_Boss.dds",
+      "template_id": 211522
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Claw_of_the_Jungle",
+    "timestamp": "20231124092835"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Claw of the Jungle",
+      "blocking": true
+    }
+  ]
+}

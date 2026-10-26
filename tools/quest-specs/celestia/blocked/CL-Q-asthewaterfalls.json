@@ -1,0 +1,64 @@
+{
+  "id": "CL-Q-asthewaterfalls",
+  "giver": {
+    "persona": "CL-LAND-NPC04",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1985,
+    "gold": 180
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-Treant-Light-R9.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000735",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC04": {
+      "portrait": "",
+      "template_id": 211529
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:As_the_Water_Falls",
+    "timestamp": "20250827031005"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "As the Water Falls",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Crash of the Sky-Fish",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Sacred Bark",
+      "blocking": false
+    }
+  ]
+}

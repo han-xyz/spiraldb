@@ -1,0 +1,79 @@
+{
+  "id": "CL-Q-371C0",
+  "lang": "371C0",
+  "giver": {
+    "persona": "CL-CAMP-NPC05",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 595,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-REALM-NPC01",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator01.dds",
+      "template_id": 227125
+    },
+    "CL-REALM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_DogWorker_08_NPC.dds",
+      "template_id": 227130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Whole_Lotta_Grotto",
+    "timestamp": "20231124090337"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Breathing Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

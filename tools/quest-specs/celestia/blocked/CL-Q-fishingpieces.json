@@ -1,0 +1,69 @@
+{
+  "id": "CL-Q-fishingpieces",
+  "giver": {
+    "persona": "CL-REALM-NPC01",
+    "zone": "Celestia/CL_Z02_Crab_Realm"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 5355,
+    "gold": 220
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-Eel-Green-R9.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000748",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109"
+    }
+  ],
+  "personas": {
+    "CL-REALM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_DogWorker_08_NPC.dds",
+      "template_id": 227130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fishing_Pieces",
+    "timestamp": "20250902045817"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Fishing Pieces",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Starfish Chamber",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Ancient Tablet pieces",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "final Piece of Ancient Tablet",
+      "blocking": true
+    }
+  ]
+}

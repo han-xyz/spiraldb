@@ -1,0 +1,100 @@
+{
+  "id": "CL-Q-3720F",
+  "lang": "3720F",
+  "giver": {
+    "persona": "CL-CRAB-NPC04",
+    "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+  },
+  "requires": [
+    "CL-Q-3720E"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 8890,
+    "gold": 285
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-AnglerBoss-R10-2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000758",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-CRAB-NPC02",
+      "zone": "Celestia/Interiors/CL_Z10i2_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135",
+      "completion": [
+        {
+          "speaker": "CL-CRAB-NPC02",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-CRAB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Thurston_Plunkett.dds",
+      "template_id": 225849
+    },
+    "CL-CRAB-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Lobster_Senator_NPC.dds",
+      "template_id": 225851
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Armed_to_the_Gills",
+    "timestamp": "20250905111846"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Senate Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

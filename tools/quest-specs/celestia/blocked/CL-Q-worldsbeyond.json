@@ -1,0 +1,55 @@
+{
+  "id": "CL-Q-worldsbeyond",
+  "giver": {
+    "persona": "CL-DIST-NPC01",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [
+    "CL-Q-371CA"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 750,
+    "gold": 35
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-Grand_Spiral_Chart.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizItems_00001686",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator02.dds",
+      "template_id": 227117
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Worlds_Beyond",
+    "timestamp": "20231124092023"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Worlds Beyond",
+      "blocking": true
+    }
+  ]
+}

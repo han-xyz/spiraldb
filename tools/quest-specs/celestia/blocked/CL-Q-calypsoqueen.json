@@ -1,0 +1,69 @@
+{
+  "id": "CL-Q-calypsoqueen",
+  "giver": {
+    "persona": "CL-CRAB-NPC05",
+    "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+  },
+  "requires": [
+    "CL-Q-37211"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 11890,
+    "gold": 285
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-UndeadMaiden-Boss-R10.AdjRef",
+        "Heroic_CL_Calypso.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000767",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-CRAB-NPC06",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "CL-CRAB-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Undead_Skinny_Pirate_02_NPC.dds",
+      "template_id": 225854
+    },
+    "CL-CRAB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Undead_Figurehead_NPC.dds",
+      "template_id": 225856
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Calypso_Queen",
+    "timestamp": "20240602224503"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Calypso Queen",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Calypso's Cavern",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Queen Calypso",
+      "blocking": true
+    }
+  ]
+}

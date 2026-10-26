@@ -1,0 +1,76 @@
+{
+  "id": "CL-Q-4EE33",
+  "lang": "4EE33",
+  "giver": {
+    "persona": "CL-HUB-NPC05",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [
+    "CL-Q-37214"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 2000,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Lady_Lower_Bowl_Hat_Purple02.dds",
+      "template_id": 227311
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lending_Library",
+    "timestamp": "20250831082525"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Chancel",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "id": "CL-Q-4EE23",
+  "lang": "4EE23",
+  "requires": [],
+  "min_level": 48,
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 25000,
+    "gold": 900
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-Puzzle.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst4EE23_00000016",
+      "loc": "ZoneLocName_227138"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Star-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000715",
+      "zone": "",
+      "loc": "ZoneLocName_227138"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Boss-Duplicate2.AdjRef",
+        "CL-Boss-Duplicate3.AdjRef",
+        "CL-Moon-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000797",
+      "zone": "",
+      "loc": "ZoneLocName_227138"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Sun-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000716",
+      "zone": "",
+      "loc": "ZoneLocName_227138"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Trial_of_the_Spheres",
+    "timestamp": "20240118174650"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Through This Door...",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Test of the Stars (in Sanctum of the Stars)",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Test of Vision",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Test of Constellation",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Test of the Shining Stars",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Lunar Sanctum",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Solar Sanctum",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

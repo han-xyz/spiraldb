@@ -1,0 +1,55 @@
+{
+  "id": "CL-Q-dinneronthebeach",
+  "giver": {
+    "persona": "CL-LAND-NPC05",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [
+    "CL-Q-371D7"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1595,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-WaterMoleSupplies.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000283",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Platypus_Warrior_03.dds",
+      "template_id": 211537
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dinner_on_the_Beach",
+    "timestamp": "20231124093501"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Dinner on the Beach",
+      "blocking": true
+    }
+  ]
+}

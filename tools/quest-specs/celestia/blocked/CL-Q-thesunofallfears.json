@@ -1,0 +1,70 @@
+{
+  "id": "CL-Q-thesunofallfears",
+  "giver": {
+    "persona": "CL-HUB-NPC001",
+    "zone": "Celestia/CL_Hub"
+  },
+  "requires": [
+    "CL-Q-37214"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 7390,
+    "gold": 315
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Cl-SharkWarrior-Grey-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000763",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Sun_of_All_Fears",
+    "timestamp": "20250827044213"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Sun of All Fears",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Chancel",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Sun Relic)",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Sun Relic on the Grand Astrolabe in the Celestia Base Camp",
+      "blocking": true
+    }
+  ]
+}

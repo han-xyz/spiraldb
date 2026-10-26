@@ -1,0 +1,87 @@
+{
+  "id": "CL-Q-thewholetooth",
+  "giver": {
+    "persona": "CL-DIST-NPC02",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 9460,
+    "gold": 395
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Cl-SharkWarrior-Blue-R9-1.AdjRef",
+        "CL-SharkWarrior-Tiger-R9-1.AdjRef",
+        "CL-SharkWarrior-Tiger-R9-2.AdjRef",
+        "Cl-SharkWarrior-Blue-R9-2.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000721",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Cl-SharkWarrior-Green-Boss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000795",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805"
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC02": {
+      "portrait": "",
+      "template_id": 227131
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Whole_Tooth",
+    "timestamp": "20241209131824"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Whole Tooth",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Eviction Notices",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Shark Teeth",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Charmtooth's Lair",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Charmtooth's Tooth",
+      "blocking": false
+    }
+  ]
+}

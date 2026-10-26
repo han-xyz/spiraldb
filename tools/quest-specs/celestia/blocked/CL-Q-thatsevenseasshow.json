@@ -1,0 +1,59 @@
+{
+  "id": "CL-Q-thatsevenseasshow",
+  "giver": {
+    "persona": "CL-LAND-NPC01",
+    "zone": "Celestia/CL_Z05_The_Floating_Land"
+  },
+  "requires": [],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 3000,
+    "gold": 7278
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    }
+  ],
+  "personas": {
+    "CL-LAND-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Sun_Boss.dds",
+      "template_id": 211522
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:That_Seven_Seas_Show",
+    "timestamp": "20250824063143"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "That Seven Seas Show",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "To the Seas",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "On the Waterfront",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "a Seal of the Seven Seas",
+      "blocking": true
+    }
+  ]
+}
