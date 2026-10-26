@@ -133,6 +133,17 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Triton_HideoutPetes"
       }
+    },
+    {
+      "TriggerName": "Teleport SigilRottenRob",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_RottenRobHideout"
+      }
     }
   ]
 }
