@@ -1,0 +1,78 @@
+{
+  "id": "CL-CAMP-C03-003",
+  "lang": "371B3",
+  "giver": {
+    "persona": "CL-CAMP-NPC08",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [
+    "CL-CAMP-C01-003"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1260,
+    "gold": 65
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-ScrapMetal.AdjRef"
+      ],
+      "count": 3,
+      "descriptor": "WizItems_00001645",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_00000038",
+      "portrait": "GUI/QuestButtons/Art_Quest_Resource_ScrapIron.dds"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_03.dds",
+      "template_id": 227163
+    }
+  }
+}

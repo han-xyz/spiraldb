@@ -1,0 +1,99 @@
+{
+  "id": "CL-CAMP-C01-001",
+  "lang": "37730",
+  "giver": {
+    "persona": "CL-CAMP-NPC05",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [
+    "CL-MAIN-C01-001"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1785,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-CAMP-NPC01",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197",
+      "completion": [
+        {
+          "speaker": "CL-CAMP-NPC01",
+          "line": "00000002"
+        },
+        {
+          "speaker": "CL-CAMP-NPC01",
+          "line": "00000006"
+        }
+      ]
+    },
+    {
+      "type": "persona",
+      "persona": "CL-CAMP-NPC02",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197",
+      "completion": [
+        {
+          "speaker": "CL-CAMP-NPC02",
+          "line": "00000007"
+        },
+        {
+          "speaker": "CL-CAMP-NPC02",
+          "line": "00000008"
+        }
+      ],
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "CL-CAMP-NPC03",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197",
+      "completion": [
+        {
+          "speaker": "CL-CAMP-NPC03",
+          "line": "00000004"
+        }
+      ],
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Upper09.dds",
+      "template_id": 227113
+    },
+    "CL-CAMP-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Lower01.dds",
+      "template_id": 227114
+    },
+    "CL-CAMP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Upper05.dds",
+      "template_id": 227115
+    },
+    "CL-CAMP-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator01.dds",
+      "template_id": 227125
+    }
+  }
+}

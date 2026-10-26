@@ -1,0 +1,17 @@
+{
+  "Name": "CL-MAIN-C00-001",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 30,
+  "MaxGold": 30,
+  "ExperienceAmount": 505,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-26T22:30:36.315797Z",
+  "ModifiedAt": "2026-10-26T22:30:36.315797Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

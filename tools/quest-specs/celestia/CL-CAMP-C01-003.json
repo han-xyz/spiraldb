@@ -1,0 +1,82 @@
+{
+  "id": "CL-CAMP-C01-003",
+  "lang": "37733",
+  "giver": {
+    "persona": "CL-CAMP-NPC05",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [
+    "CL-CAMP-C01-002"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 3760,
+    "gold": 245
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-CrabSoldier-Red-R9-1.AdjRef"
+      ],
+      "count": 4,
+      "descriptor": "WizQst37733_00000012",
+      "target": "WizardMobs_00000717",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227135"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-WaterLeak01.AdjRef",
+        "CL-WaterLeak02.AdjRef",
+        "CL-WaterLeak03.AdjRef",
+        "CL-WaterLeak04.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator01.dds",
+      "template_id": 227125
+    }
+  }
+}

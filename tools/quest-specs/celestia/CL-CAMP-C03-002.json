@@ -1,0 +1,76 @@
+{
+  "id": "CL-CAMP-C03-002",
+  "lang": "371B8",
+  "title": "QuestTitle_00000103",
+  "giver": {
+    "persona": "CL-CAMP-NPC08",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [
+    "CL-CAMP-C03-003"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 2155,
+    "gold": 160
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-Eel-Green-R9.AdjRef",
+        "CL-FlyingFish-Green-R9.AdjRef"
+      ],
+      "count": 3,
+      "descriptor": "WizQst371B8_00000002",
+      "target": "WizardMobs_00000748",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227135"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_03.dds",
+      "template_id": 227163
+    }
+  }
+}

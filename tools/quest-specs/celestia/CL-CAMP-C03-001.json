@@ -1,0 +1,79 @@
+{
+  "id": "CL-CAMP-C03-001",
+  "lang": "371B9",
+  "title": "QuestTitle_00000104",
+  "giver": {
+    "persona": "CL-CAMP-NPC08",
+    "zone": "Celestia/CL_Z01_Survey_Camp"
+  },
+  "requires": [
+    "CL-CAMP-C03-002"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 5100,
+    "gold": 360
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Celestia/Interiors/CL_Z02i5_Crab_Realm",
+      "loc": "WizQst371B9_00000009"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-CrabSoldier-Green-Boss-R9-2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000752",
+      "zone": "Celestia/Interiors/CL_Z02i5_Crab_Realm",
+      "loc": "WizQst371B9_00000009"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-CAMP-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_03.dds",
+      "template_id": 227163
+    }
+  }
+}
