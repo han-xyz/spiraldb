@@ -12,6 +12,28 @@
         "m_destinationLoc": "-10865.58,4461.362,-270.8002,-1.559304",
         "m_destinationZone": "Novus/NV_Z04_NewVicorgia"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_NV_Z04_Storeroom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_I03_GovernorsStoreroom"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_NV_Z04_IrkPen",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_I04_IrkPen"
+      }
     }
   ]
 }

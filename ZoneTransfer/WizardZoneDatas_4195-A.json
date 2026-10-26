@@ -12,6 +12,17 @@
         "m_destinationLoc": "-12739.85,-144.1712,-270.8002,-2.219909",
         "m_destinationZone": "Novus/NV_Z04_NewVicorgia"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_NV_Z04_Splinter",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_Splinter"
+      }
     }
   ]
 }

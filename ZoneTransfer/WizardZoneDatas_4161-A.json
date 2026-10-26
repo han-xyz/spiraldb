@@ -12,6 +12,105 @@
         "m_destinationLoc": "284.7092,284.6836,1.795323,1.650791",
         "m_destinationZone": "Novus/Interiors/NV_Z05_BasseSteele"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-CabalBase",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z05_CabalBase"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-ToCafe",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z05_CafeMelee"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-ToGallery",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z05_Gallery"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-1stHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z05_MathildasHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-MaxineOffice",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z05_MaxineOffice"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-NegotationChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_LaVilleRose",
+        "m_destinationZone": "Novus/Interiors/NV_Z05_NegotiationChamber"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-SafeHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z05_SafeHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-SournoisPas",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z05_SournoisPas"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-Theater",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z05_Theater"
+      }
     }
   ]
 }

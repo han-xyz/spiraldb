@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Novus/Interiors/NV_Z04_WateringHole",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport source",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_WateringHole",
+        "m_destinationZone": "Novus/NV_Z04_NewVicorgia"
+      }
+    }
+  ]
+}

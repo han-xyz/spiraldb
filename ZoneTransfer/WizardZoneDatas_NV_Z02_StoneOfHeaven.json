@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Novus/NV_Z02_StoneOfHeaven",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Sigil_Floor03_Encounter_Fortress",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z02_Fortress"
+      }
+    }
+  ]
+}

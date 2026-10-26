@@ -12,6 +12,17 @@
         "m_destinationLoc": "-10.29387,159.9355,-14.96541,0",
         "m_destinationZone": "Novus/NV_Z07_DoomMoon"
       }
+    },
+    {
+      "TriggerName": "Teleport to NV_Z07_I04_NovusSkies",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z07_I04_NovusSkies_Hard"
+      }
     }
   ]
 }

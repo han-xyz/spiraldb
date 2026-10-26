@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Novus/Interiors/NV_Z03_SoldiersHideout",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_2_PuertoNuovo",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_SoldiersHideout",
+        "m_destinationZone": "Novus/NV_Z03_PuertoNuovo_VA"
+      }
+    }
+  ]
+}

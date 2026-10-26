@@ -34,6 +34,72 @@
         "m_destinationLoc": "-19141.35,19613.69,-1873.714,-2.192398",
         "m_destinationZone": "Novus/NV_Z03_PuertoNuovo_VA"
       }
+    },
+    {
+      "TriggerName": "Telepor_To_CabalCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_PuertoNuovo",
+        "m_destinationZone": "Novus/Interiors/NV_Z03_CabalCave"
+      }
+    },
+    {
+      "TriggerName": "Sigil_to_ChronomongersWorkshop",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_ValeOfPerfection",
+        "m_destinationZone": "Novus/Interiors/NV_Z03_ChronomongerWorkshop"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_ContestedShard",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_PuertoNuovo",
+        "m_destinationZone": "Novus/Interiors/NV_Z03_ContestedShard"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_Saferoom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_PuertoNuovo",
+        "m_destinationZone": "Novus/Interiors/NV_Z03_Safehouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_SoldierHideout",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_PuertoNuovo",
+        "m_destinationZone": "Novus/Interiors/NV_Z03_SoldiersHideout"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_UnicornTower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_PuertoNuovo",
+        "m_destinationZone": "Novus/Interiors/NV_Z03_UnicornTent"
+      }
     }
   ]
 }
