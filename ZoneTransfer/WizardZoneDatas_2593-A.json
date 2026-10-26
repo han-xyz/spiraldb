@@ -309,6 +309,17 @@
         "m_destinationLoc": "-911.017,1072.74,1156.932,-0.5493745",
         "m_destinationZone": "Arcanum/AR_Z01_Hub"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_CursedRepository_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Arcanum/Interiors/AR_Z01_CursedRepository"
+      }
     }
   ]
 }

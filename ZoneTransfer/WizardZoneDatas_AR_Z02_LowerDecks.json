@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Arcanum/AR_Z02_LowerDecks",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_to_Lumi_Hostage_Room_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Arcanum/Interiors/AR_Z02_LumiHostageRoom"
+      }
+    }
+  ]
+}
