@@ -1,0 +1,72 @@
+{
+  "ZoneName": "Darkmoor/DM_Z04_BlackLagoon",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Sigil_To_DM_Z04I12_FirstBog_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z04I12_FirstBog"
+      }
+    },
+    {
+      "TriggerName": "Sigil_To_DM_Z04I03_DarkBog_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z04I03_DarkBog"
+      }
+    },
+    {
+      "TriggerName": "Sigil-ToHairdiniMysteriousBog",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z04I14_MysteriousHairdiniBog"
+      }
+    },
+    {
+      "TriggerName": "Sigil-BogOfVengeance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z04I08_BogOfVengeanceAdv"
+      }
+    },
+    {
+      "TriggerName": "SigilRitualBog",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z04I13_RitualBog"
+      }
+    },
+    {
+      "TriggerName": "TeleportBurblingBlog",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z04I15_BurblingBog"
+      }
+    }
+  ]
+}

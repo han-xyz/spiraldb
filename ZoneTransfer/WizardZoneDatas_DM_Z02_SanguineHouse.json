@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Darkmoor/Interiors/DM_Z02_SanguineHouse",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport source",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-FromSanguine House",
+        "m_destinationZone": "Darkmoor/DM_Z02_MortalPlain"
+      }
+    }
+  ]
+}

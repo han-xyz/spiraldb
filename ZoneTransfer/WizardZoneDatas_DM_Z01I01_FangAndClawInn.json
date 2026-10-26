@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Darkmoor/Interiors/DM_Z01I01_FangAndClawInn",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_to_Fang_and_Claw_Inn_Room_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z01I02_InnRoom"
+      }
+    }
+  ]
+}

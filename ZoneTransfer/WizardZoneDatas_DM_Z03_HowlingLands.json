@@ -1,0 +1,94 @@
+{
+  "ZoneName": "Darkmoor/DM_Z03_HowlingLands",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_2_HuntingGrounds",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_HowlingLands",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z03_HuntingGrounds"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_HOWL_Hideout",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_HowlingLands",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z03_Hideout"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_Were-Hollow",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_HowlingLands",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z03_WereHollow"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_WoodedClearing",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_HowlingLands",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z03_WoodedClearing"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_OvergrownEstate",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_HowlingLands",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z03_OvergrownEstate_Adv"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_AlphaHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_HowlingLands",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z03_AlphaHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_KingdomofWareaLot",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_HowlingLands",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z03_KingdomofWereaLot"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_LoudbaysDen",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z03_LoudbaysDen"
+      }
+    }
+  ]
+}
