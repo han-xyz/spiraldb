@@ -78,6 +78,17 @@
         "m_destinationLoc": "FromRedClaw3",
         "m_destinationZone": "Grizzleheim/Interiors/GH_RedClaw_T1"
       }
+    },
+    {
+      "TriggerName": "ToGH_Redclaw_T3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRedClawOutpost",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RedClaw_T3"
+      }
     }
   ]
 }

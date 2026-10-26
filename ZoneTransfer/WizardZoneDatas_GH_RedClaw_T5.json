@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Grizzleheim/Interiors/GH_RedClaw_T5",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location WC-LIFE-C07-001",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRedClawT5",
+        "m_destinationZone": "Grizzleheim/GH_RedClaw"
+      }
+    }
+  ]
+}
