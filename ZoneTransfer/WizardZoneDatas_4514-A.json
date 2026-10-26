@@ -34,6 +34,50 @@
         "m_destinationLoc": "56.63822,-1175.857,4.183777,-3.141593",
         "m_destinationZone": "Polaris/Interiors/Z01_I02_LaNettoyage"
       }
+    },
+    {
+      "TriggerName": "Teleport-HarborMaster",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z01_I03_HeadQuarters_A"
+      }
+    },
+    {
+      "TriggerName": "Teleport-TorcidosOffice",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z01_TorcidosOffice"
+      }
+    },
+    {
+      "TriggerName": "Teleport-CustomStorage",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/Z01_CustomsStorage"
+      }
+    },
+    {
+      "TriggerName": "Teleport-PirateSihip",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/Z01_I01_PirateShip01"
+      }
     }
   ]
 }

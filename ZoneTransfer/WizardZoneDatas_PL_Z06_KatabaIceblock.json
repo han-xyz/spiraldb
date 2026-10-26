@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Polaris/PL_Z06_KatabaIceblock",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to PL_KabataUnderwater",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z06_KambataUnderwater"
+      }
+    }
+  ]
+}

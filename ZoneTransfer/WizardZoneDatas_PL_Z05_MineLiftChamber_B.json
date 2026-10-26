@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Polaris/Interiors/PL_Z05_MineLiftChamber_B",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_To_FrigidMine",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-FromLiftChamber",
+        "m_destinationZone": "Polaris/PL_Z05_FrigidMine"
+      }
+    }
+  ]
+}

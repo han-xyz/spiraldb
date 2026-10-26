@@ -34,6 +34,50 @@
         "m_destinationLoc": "-1497.637,-8292.254,-1942.838,3.097436",
         "m_destinationZone": "Polaris/PL_Z05_FrigidMine"
       }
+    },
+    {
+      "TriggerName": "TelepotTo_BeastMaster",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z04_BeastMaster01"
+      }
+    },
+    {
+      "TriggerName": "TelepotTo_PL_Z04_Cave01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z04_Cave01"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_CommandantsQuarters",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z04_MayorsHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_SecretCabalHideout",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_UrvilleStation",
+        "m_destinationZone": "Polaris/Interiors/PL_Z04_SecretCabalHideout"
+      }
     }
   ]
 }
