@@ -23,6 +23,17 @@
         "m_destinationLoc": "-5384.634,-657.0391,2.500244,-1.570796",
         "m_destinationZone": "Karamelle/KM_Z04_Sweetzburg"
       }
+    },
+    {
+      "TriggerName": "To_TreemuggerHideout",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z03_I03_TreemuggerHideout"
+      }
     }
   ]
 }

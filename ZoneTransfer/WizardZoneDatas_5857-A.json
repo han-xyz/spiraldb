@@ -23,6 +23,39 @@
         "m_destinationLoc": "-34.47274,-3896.099,1.925076E-05,3.136443",
         "m_destinationZone": "Karamelle/Interiors/KM_Z05_TreacleFoundry"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_Choc Shoppe",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Nibbleheim",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z05_ChocShoppe"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_PipeJunction",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Nibbleheim",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z05_PipeJunction"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_ToffeeHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Nibbleheim",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z05_ToffeeHouse"
+      }
     }
   ]
 }

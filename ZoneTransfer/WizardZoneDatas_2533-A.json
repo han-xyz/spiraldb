@@ -34,6 +34,17 @@
         "m_destinationLoc": "-506.6318,117.3594,89.43866,-1.220324",
         "m_destinationZone": "Karamelle/KM_Z03_GumdropForest"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil The_Lobby",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z00_TheLobby"
+      }
     }
   ]
 }

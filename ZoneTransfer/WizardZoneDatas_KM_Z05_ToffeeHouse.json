@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Karamelle/Interiors/KM_Z05_ToffeeHouse",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_To_Nibbleheim",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_ToffeeHouse",
+        "m_destinationZone": "Karamelle/KM_Z05_Nibbleheim"
+      }
+    }
+  ]
+}

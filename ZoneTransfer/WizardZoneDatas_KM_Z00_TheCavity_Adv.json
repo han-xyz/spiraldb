@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Karamelle/Interiors/KM_Z00_TheCavity_Adv",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location Glockenspiel",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Paradox",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z00_CavityDining"
+      }
+    }
+  ]
+}

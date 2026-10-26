@@ -34,6 +34,50 @@
         "m_destinationLoc": "649.4406,-1208.251,-91.30134,2.202814",
         "m_destinationZone": "Karamelle/KM_Z08_LicoriceForest"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-ToCupcake",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z07_CupcakeFactory"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-GutenShoppe",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z07_GutenShoppe"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-HeidisHideout",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z07_HeidisHideout"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior Sigil-OutsideRegionalOffice",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z07_RegionalOffice"
+      }
     }
   ]
 }

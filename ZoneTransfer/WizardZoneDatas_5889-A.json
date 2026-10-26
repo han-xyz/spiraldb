@@ -56,6 +56,28 @@
         "m_destinationLoc": "2842.838,-344.9457,881.501,1.520923",
         "m_destinationZone": "Karamelle/Interiors/KM_Z05_TreacleFoundry"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_OrsonOffice",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_TreacleFoundry",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z05_OrsonOffice"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_PumpRoom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_FromTreacleFoundry",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z05_PumpRoom"
+      }
     }
   ]
 }

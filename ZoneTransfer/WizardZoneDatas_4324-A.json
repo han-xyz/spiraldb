@@ -34,6 +34,50 @@
         "m_destinationLoc": "-1102.781,-47.25948,1.074796,-1.554069",
         "m_destinationZone": "Karamelle/Interiors/KM_Z04_Playhouse"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-Les Bon-Bon Mots",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z04_BonBon"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-IceCream",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z04_IceCreamParlor"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-Jamburglar",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z04_Jamburglar"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-UweWorkshop",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z04_UwesWorkshop"
+      }
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Karamelle/Interiors/KM_Z03_I03_TreemuggerHideout",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_GumdropForest",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_TreemuggerHideout",
+        "m_destinationZone": "Karamelle/KM_Z03_GumdropForest"
+      }
+    }
+  ]
+}

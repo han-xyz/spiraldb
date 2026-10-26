@@ -12,6 +12,17 @@
         "m_destinationLoc": "-3724.129,2333.946,2.5,0",
         "m_destinationZone": "Karamelle/KM_Z04_Sweetzburg"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-To PowerRoom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z04_PowerRoom"
+      }
     }
   ]
 }
