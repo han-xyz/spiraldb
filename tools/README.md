@@ -38,3 +38,28 @@ A zone without a file gets `ZoneTransfer/WizardZoneDatas_<last path segment>.jso
 the client looks a name up in the destination zone's location list (`gamedata.bin`). The tool writes names, because the
 wad gives them. Write coordinates only for a spot with no named location, as the shortest float32 text
 (`484.1623,31.0982,1.989745,1.167386`), the same style as the entries captured from the live game.
+
+## crown-shop-gear-from-wad.py
+
+Lists the crowns-only gear of the client's root wad (`ObjectData/CrownItems`, unpacked at `/kioxia/generator-input/rootwad`,
+read-only) in the Gear tab, `CrownShop/Tab7.json`. Python 3, standard library only:
+
+```sh
+python3 -I tools/crown-shop-gear-from-wad.py --dry-run   # count the entries per category
+python3 -I tools/crown-shop-gear-from-wad.py --apply     # append them to CrownShop/Tab7.json
+```
+
+`--rootwad <dir>` points at another unpacked root wad.
+
+It reads the `Series<N>` and `Starter` folders (not `Stitch`) and takes the templates that carry `FLAG_CrownsOnly`,
+skipping names containing `DONOTUSE`, `Test` or `Stitch`. The template id comes from `TemplateManifest.xml`. The
+folder sets the category: `Wands` 15, `Hat`/`Hats` 11, `Robe`/`Robes` 9, `Shoes` 10, `Rings` 12, `Athames` 14.
+
+`--apply` is append-only: an entry whose `templateId` the tab already has is left as it is, and nothing is removed.
+
+### Placeholder prices
+
+The retail catalogue is not available, so the prices are placeholders to retune: by the level in the name (`-L<n>`),
+L0-19 1500, L20-39 2500, L40-59 3500, L60-79 4500, L80-99 5500, L100 and up 6500 crowns; 2500 when the name has no
+level; wands 500 more. `goldCost` is 0: crowns only. The bands are `LEVEL_BANDS`, `UNLEVELLED_PRICE` and
+`WAND_SURCHARGE` at the top of the script.
