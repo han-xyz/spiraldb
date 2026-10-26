@@ -24,6 +24,14 @@ TRIGGER_NAME = b"\x10\x0c\xc9\xb8"
 VECTOR_FIELD = rb"(?s)\xa0\x00\x00\x00\x1b\xdc\x7e\x85(.{12})"
 NAMED_LOCATION = rb"(?s)([\x01-\x7f])\x00([ -~]{1,127})\xa0\x00\x00\x00\x1b\xdc\x7e\x85(.{12})"
 TELEPORT_VOLUME_EVENT = "Enter_TeleportVol_"
+VOLUME_NAME = b"\x8b\x04\xe6\xc6"
+VOLUME_POSITION = re.compile(rb"(?s)`\x00\x00\x00\(\xf8\xb3\}(.{4})`\x00\x00\x00\)\xf8\xb3\}(.{4})"
+                             rb"`\x00\x00\x00\*\xf8\xb3\}(.{4})")
+TELEPORT_VOLUME = "TeleportVol_"
+TO_WORD = re.compile(r"(?:^|(?<=[^A-Za-z])|(?<=[a-z]))[Tt]o(?=[A-Z0-9_ \-])|(?<=[_ -])2(?=[_ -])")
+FROM_WORD = re.compile(r"(?:^|(?<=[^A-Za-z])|(?<=[a-z]))[Ff]rom(?=[A-Z0-9_ \-])")
+MIN_NAME_KEY = 4
+MIN_SHORT_TEXT = 3
 DEFAULT_LOCATION = "Start"
 MAX_PAD_DISTANCE = 1000
 MIN_SHORT_NAME = 8
@@ -82,6 +90,7 @@ class Zone:
         self.path = path
         self.gamedata = files.get("gamedata.bin", b"")
         self.triggers = files.get("triggers.xml", b"")
+        self.volumes = files.get("volumes.xml", b"")
         self.locations = self._named_locations()
 
     def _named_locations(self):
@@ -89,6 +98,16 @@ class Zone:
         for m in re.finditer(NAMED_LOCATION, self.gamedata):
             if m.group(1)[0] == len(m.group(2)):
                 found[m.group(2).decode()] = struct.unpack("<3f", m.group(3))
+        return found
+
+    def volume_positions(self):
+        """{volume: (x, y, z)} for the teleport volumes of volumes.xml."""
+        found = {}
+        for offset, name in compact_strings(self.volumes, VOLUME_NAME):
+            end = offset + 9 + len(name)
+            m = VOLUME_POSITION.match(self.volumes, end)
+            if name.startswith(TELEPORT_VOLUME) and m:
+                found[name[len(TELEPORT_VOLUME):]] = tuple(struct.unpack("<f", g)[0] for g in m.groups())
         return found
 
     def pads(self):
@@ -138,7 +157,7 @@ class Wads:
     def zone(self, zone):
         if zone not in self.cache:
             path = self.wad_path(zone)
-            files = read_wad(path, {"gamedata.bin", "triggers.xml"}) if os.path.exists(path) else None
+            files = read_wad(path, {"gamedata.bin", "triggers.xml", "volumes.xml"}) if os.path.exists(path) else None
             self.cache[zone] = Zone(zone, files) if files is not None else None
         return self.cache[zone]
 
@@ -149,12 +168,13 @@ class Wads:
         return self.paths
 
     def confirmed_exits(self, zone):
-        """{trigger: (zone path, location)} for the exits of the zone that confirmed_exit places."""
+        """{trigger: (zone path, location)} for the exits of the zone that confirmed_exit or neighbour_exit
+        places."""
         if zone.path not in self.confirmed:
             parents = list(self.zones_with_pads_to(zone.path))
             found = {}
             for trigger, volume in exit_volumes(zone):
-                destination = confirmed_exit(zone, volume, parents, self)
+                destination = confirmed_exit(zone, volume, parents, self) or neighbour_exit(zone, trigger, volume, self)
                 if destination is not None:
                     found[trigger] = destination
             self.confirmed[zone.path] = found
@@ -304,6 +324,77 @@ def confirmed_exit(zone, volume, parents, wads):
     by_pad = [(math.dist(street.locations[key[1]], pad), key) for key, street in confirmed
               if (pad := inbound_pad_position(street, zone)) is not None]
     return min(by_pad)[1] if by_pad else None
+
+
+def name_key(zone_path):
+    """AV_Z13_KeepOfGanelon -> keepofganelon: the zone's name without world prefix and zone number."""
+    parts = zone_path.rsplit("/", 1)[-1].split("_")
+    if len(parts) > 1 and parts[0].isupper() and len(parts[0]) <= 3:
+        parts = parts[1:]
+    if len(parts) > 1 and re.fullmatch(r"Z\d+[a-z]?\d*", parts[0]):
+        parts = parts[1:]
+    return re.sub(r"[^a-z0-9]", "", "".join(parts).lower())
+
+
+def destination_text(name):
+    """The part of a trigger name after its last "To"; "" for a name with "From", which names where one came from."""
+    if FROM_WORD.search(name):
+        return ""
+    return re.sub(r"[^a-z0-9]", "", TO_WORD.split(name)[-1].lower())
+
+
+def names_zone(name, zone):
+    """The trigger name sends to the zone: the destination text is the zone's key or its end (To_Hub for
+    EM_Z00_Aeriel_HUB), contains a key of MIN_NAME_KEY characters or more, or is the numbered end of the zone's name
+    (To_80_03 for KH_Gauntlet80_03)."""
+    key, text = name_key(zone.path), destination_text(name)
+    last = re.sub(r"[^a-z0-9]", "", zone.path.rsplit("/", 1)[-1].lower())
+    if len(text) >= MIN_NAME_KEY and re.search(r"\d", text) and last.endswith(text):
+        return True
+    return key.endswith(text) and len(text) >= MIN_SHORT_TEXT or (len(key) >= MIN_NAME_KEY and key in text)
+
+
+def neighbours_named(zone, trigger, volume, wads):
+    """The world's zones the exit's trigger or volume name sends to: those whose key is the destination text, else
+    those whose key is not part of a longer named key. A key that several zones of the world share counts only with
+    the zone's full last path segment in the name (ToDS_Tier1ExteriorPreview1, not MS_Tier1_Exterior_Preview)."""
+    world = [z for z in wads.world_zones(zone.path.split("/")[0]) if z.path != zone.path and z.gamedata]
+    shared = {k for k, n in collections.Counter(name_key(z.path) for z in world).items() if n > 1}
+    text = re.sub(r"[^a-z0-9]", "", (trigger + volume).lower())
+    named = [z for z in world if (names_zone(trigger, z) or names_zone(volume, z)) and (
+        name_key(z.path) not in shared or re.sub(r"[^a-z0-9]", "", z.path.rsplit("/", 1)[-1].lower()) in text)]
+    exact = [z for z in named if name_key(z.path) in (destination_text(trigger), destination_text(volume))]
+    if exact:
+        return exact
+    return [z for z in named if not any(name_key(z.path) != name_key(o.path) and name_key(z.path) in name_key(o.path)
+                                        for o in named)]
+
+
+def neighbour_exit(zone, trigger, volume, wads):
+    """(zone path, location) for an exit whose name sends to one neighbour that names the zone back, by an exit of
+    its own or a location (FromMandoria). The landing is the neighbour's one location naming the zone, else its
+    location nearest the volume of its exit back (within MAX_PAD_DISTANCE). None otherwise."""
+    confirmed = []
+    for neighbour in neighbours_named(zone, trigger, volume, wads):
+        back = [v for t, v in exit_volumes(neighbour) if names_zone(t, zone) or names_zone(v, zone)]
+        key = name_key(zone.path)
+        arrivals = [n for n in neighbour.locations
+                    if len(key) >= MIN_NAME_KEY and key in re.sub(r"[^a-z0-9]", "", n.lower())]
+        if back or arrivals:
+            confirmed.append((neighbour, back, arrivals))
+    if len(confirmed) != 1:
+        return None
+    neighbour, back, arrivals = confirmed[0]
+    if len(arrivals) == 1:
+        return neighbour.path, arrivals[0]
+    positions = [p for v in back if (p := neighbour.volume_positions().get(v)) is not None]
+    candidates = arrivals or list(neighbour.locations)
+    if not positions or not candidates:
+        return None
+    nearest = min(candidates, key=lambda n: math.dist(neighbour.locations[n], positions[0]))
+    if math.dist(neighbour.locations[nearest], positions[0]) > MAX_PAD_DISTANCE:
+        return None
+    return neighbour.path, nearest
 
 
 def safe_pads(source, entries, wads, covered, review):
