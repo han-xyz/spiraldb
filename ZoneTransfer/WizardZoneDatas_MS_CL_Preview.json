@@ -1,0 +1,17 @@
+{
+  "ZoneName": "MooShu/MS_Death/Interiors/MS_CL_Preview",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "MS_Celestia_Entrance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromMS_CL_Preview",
+        "m_destinationZone": "MooShu/MS_Death/MS_Death_Zone2_HauntedVillage"
+      }
+    }
+  ]
+}
