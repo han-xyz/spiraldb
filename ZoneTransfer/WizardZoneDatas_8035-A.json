@@ -23,6 +23,72 @@
         "m_destinationLoc": "7864.354,5253.314,2895.524,1.818914",
         "m_destinationZone": "Azteca/AZ_Z07_TierraDeBrea"
       }
+    },
+    {
+      "TriggerName": "ToCloudCave01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z06_Cave01"
+      }
+    },
+    {
+      "TriggerName": "ToCloudCave02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z06_Cave02"
+      }
+    },
+    {
+      "TriggerName": "AZ-CloudClearing",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z06_Clearing01"
+      }
+    },
+    {
+      "TriggerName": "To Clearing02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z06_Clearing02"
+      }
+    },
+    {
+      "TriggerName": "To HouseofFlowers",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z06_HouseOfFlowers"
+      }
+    },
+    {
+      "TriggerName": "AZ-ALTO-C05-004_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Cloudburst",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z06_WhirlpoolCave"
+      }
     }
   ]
 }

@@ -34,6 +34,39 @@
         "m_destinationLoc": "2.571533,-1043.103,0.1008606,3.032209",
         "m_destinationZone": "Azteca/Interiors/AZ_Z00_TezcatlipocaCave"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_CryingSkyShrine",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zozalo",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z00_CryingSkyShrine"
+      }
+    },
+    {
+      "TriggerName": "To AZ-Z00-TeuchHungryLizard",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z00_HungryLizard"
+      }
+    },
+    {
+      "TriggerName": "to AZ-Z00-YacateFarwalkerHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z00_YacatesHouse"
+      }
     }
   ]
 }

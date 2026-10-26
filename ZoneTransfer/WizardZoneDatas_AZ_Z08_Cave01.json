@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Azteca/Interiors/AZ_Z08_Cave01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport-OutsideNauyotl",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-FromNauyotl",
+        "m_destinationZone": "Azteca/AZ_Z08_PitchBlackLake"
+      }
+    }
+  ]
+}

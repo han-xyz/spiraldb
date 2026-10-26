@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Azteca/Interiors/AZ_Z05_Weave_Balance_Room1",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-FromWeave-5_Balance",
+        "m_destinationZone": "Azteca/AZ_Z05_ZultunDock"
+      }
+    }
+  ]
+}

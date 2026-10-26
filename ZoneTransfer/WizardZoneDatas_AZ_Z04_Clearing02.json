@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Azteca/Interiors/AZ_Z04_Clearing02",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BackToSwamp",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromClearing02",
+        "m_destinationZone": "Azteca/AZ_Z04_SaltmeadowSwamp"
+      }
+    }
+  ]
+}

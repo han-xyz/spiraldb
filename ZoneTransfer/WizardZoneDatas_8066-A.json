@@ -23,6 +23,83 @@
         "m_destinationLoc": "-1697.304,-8428.59,-104.359,-2.368684",
         "m_destinationZone": "Azteca/AZ_Z08_PitchBlackLake"
       }
+    },
+    {
+      "TriggerName": "Sigil-Nauyotl",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-FromNauyotlSigil",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z08_Cave01"
+      }
+    },
+    {
+      "TriggerName": "Sigil-Tzapotec",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "location-InsideTzapotec",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z08_CaveOfTzapotec"
+      }
+    },
+    {
+      "TriggerName": "Sigil-CorazonCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_PitchBlackLake",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z08_CorazonCave"
+      }
+    },
+    {
+      "TriggerName": "Sigil-MakTheKnife",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideMakCave",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z08_MakKnifeCave"
+      }
+    },
+    {
+      "TriggerName": "Sigin-SunkenCanoeCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-CanoeCave",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z08_SunkCanoe_Cave"
+      }
+    },
+    {
+      "TriggerName": "Sigil-OzelTheCat",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideUnderwaterCat",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z08_UnderwaterCat"
+      }
+    },
+    {
+      "TriggerName": "To_WatermurkGrotto",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z08_WatermurkGrotto"
+      }
     }
   ]
 }

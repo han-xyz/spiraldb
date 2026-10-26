@@ -45,6 +45,28 @@
         "m_destinationLoc": "-11655.39,10980.73,2155.639,-1.230324",
         "m_destinationZone": "Azteca/AZ_Z10_FloatingMountains"
       }
+    },
+    {
+      "TriggerName": "AZ-A09-Xolotl-Bottom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Alto_Alto",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z09_XolotlTower01"
+      }
+    },
+    {
+      "TriggerName": "AZ-A09-Xolotl-Top",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Alto_Alto",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z09_XolotlTower02"
+      }
     }
   ]
 }

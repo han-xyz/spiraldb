@@ -45,6 +45,72 @@
         "m_destinationLoc": "-0.2675781,-1695.179,21.66998,-3.141593",
         "m_destinationZone": "Azteca/Interiors/AZ_Z02_Tomb02"
       }
+    },
+    {
+      "TriggerName": "AZ-CenoteHouse02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z02_House02"
+      }
+    },
+    {
+      "TriggerName": "To AZ-Z02-Mine2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z02_Mine02"
+      }
+    },
+    {
+      "TriggerName": "To AZ-Z02-Mine3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z02_Mine03"
+      }
+    },
+    {
+      "TriggerName": "AZ-MANG-C06-001_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z02_Mine04"
+      }
+    },
+    {
+      "TriggerName": "AZ-CenoteTomb1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z02_Tomb01"
+      }
+    },
+    {
+      "TriggerName": "To WhiteFirePyramid",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z02_WhiteFirePyramid"
+      }
     }
   ]
 }

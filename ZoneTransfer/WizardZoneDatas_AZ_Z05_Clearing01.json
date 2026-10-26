@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Azteca/Interiors/AZ_Z05_Clearing01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToZultun",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-FromSideQuestAZ-ZULT-C05-001",
+        "m_destinationZone": "Azteca/AZ_Z05_ZultunDock"
+      }
+    }
+  ]
+}

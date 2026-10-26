@@ -45,6 +45,28 @@
         "m_destinationLoc": "1.635101,-415.1774,-18.96699,-3.115933",
         "m_destinationZone": "Azteca/Interiors/AZ_Z00_TeocalliSacredWar"
       }
+    },
+    {
+      "TriggerName": "SkeletonKey_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_SkelKey_Pyramid_01"
+      }
+    },
+    {
+      "TriggerName": "Teleport_IceWeaving-005",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z01_Weave_Ice_Room1"
+      }
     }
   ]
 }

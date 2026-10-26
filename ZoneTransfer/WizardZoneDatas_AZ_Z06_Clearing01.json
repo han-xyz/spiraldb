@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Azteca/Interiors/AZ_Z06_Clearing01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToCloudburst",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromNest",
+        "m_destinationZone": "Azteca/AZ_Z06_CloudburstIsland"
+      }
+    }
+  ]
+}

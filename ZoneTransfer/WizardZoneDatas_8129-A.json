@@ -12,6 +12,61 @@
         "m_destinationLoc": "-8550.257,8480.535,814.1915,0",
         "m_destinationZone": "Azteca/AZ_Z11_TwinGiants"
       }
+    },
+    {
+      "TriggerName": "AZ-SigilToCave01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "InsideCave01",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z10_Cave01"
+      }
+    },
+    {
+      "TriggerName": "AZ-SigilToFireCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "InsideFireCave",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z10_FireCave"
+      }
+    },
+    {
+      "TriggerName": "AZ-Sigil-ToSevenStabs",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-Inside7Stabs",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z10_SevenStabs"
+      }
+    },
+    {
+      "TriggerName": "AZ-Sigil-TurquoiseCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "InsideTurqoiseCave",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z10_TurqoiseCave"
+      }
+    },
+    {
+      "TriggerName": "AZ-SigilToWell",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "InsideWell",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z10_Well"
+      }
     }
   ]
 }

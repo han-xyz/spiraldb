@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Azteca/Interiors/AZ_Z02_Tomb01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToCenote",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From AZ-Z02-Tomb1",
+        "m_destinationZone": "Azteca/AZ_Z02_Cenote"
+      }
+    }
+  ]
+}

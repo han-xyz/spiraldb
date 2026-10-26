@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Azteca/Interiors/AZ_Z03_Tomb03",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Mangrove_Marsh",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Mozar_Tomb",
+        "m_destinationZone": "Azteca/AZ_Z03_MangroveMarsh"
+      }
+    }
+  ]
+}
