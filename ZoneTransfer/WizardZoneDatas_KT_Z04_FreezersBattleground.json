@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Krokotopia/KT_Selenopolis/Interiors/KT_Z04_FreezersBattleground",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_2_Sele",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_JuliusFreezerBattle",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z04I01_BlendedGrove"
+      }
+    }
+  ]
+}

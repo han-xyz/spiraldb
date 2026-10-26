@@ -1,0 +1,50 @@
+{
+  "ZoneName": "Krokotopia/KT_Selenopolis/Interiors/KT_Z07I02_Gutter",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Interior sigil-1MBoss",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z07_Unknown"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-SecretBase",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z07I05_SecretBase"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-Aqueduct",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z07_Aqueduct"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_MemoriesofGalkoth",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Gutter",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z07_MemoryofGalkoth_01"
+      }
+    }
+  ]
+}
