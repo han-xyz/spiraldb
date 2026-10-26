@@ -5,6 +5,7 @@ See tools/README.md for the spec format, the lookups and how to author a world.
 """
 import argparse
 import datetime
+import glob
 import json
 import os
 import sys
@@ -364,7 +365,9 @@ def output_paths(quest_id):
 
 def load_specs(paths, rootwad):
     specs = [dict(tolerant_load(path), _path=path) for path in paths]
-    zone_locations = {text: key for key, text in read_lang(rootwad, "ZoneLocName").items()}
+    zone_locations = {}
+    for key, text in read_lang(rootwad, "ZoneLocName").items():
+        zone_locations.setdefault(text, key)
     successors = {}
     for spec in specs:
         for quest in spec.get("requires", []):
@@ -432,7 +435,7 @@ def compare(specs):
             print("  " + line)
 
 
-def check_spec(spec, rootwad, gamedata, zone_cache):
+def check_spec(spec, rootwad, gamedata, zone_cache, known_zones):
     problems = []
     lang_name = f"WizQst{spec['lang']}"
     if not lang_exists(rootwad, lang_name):
@@ -451,7 +454,7 @@ def check_spec(spec, rootwad, gamedata, zone_cache):
     personas += [(goal["persona"], goal.get("zone", "")) for goal in spec["goals"] if goal["type"] == "persona"]
     zones = {spec["giver"]["zone"]} | {goal["zone"] for goal in spec["goals"] if goal.get("zone")}
     for zone in sorted(zones):
-        if not zone_transfer_has(zone):
+        if zone not in known_zones:
             problems.append(f"zone {zone} has no ZoneTransfer file")
     for persona, zone in personas:
         if persona == GIVER or not zone:
@@ -470,16 +473,16 @@ def check_spec(spec, rootwad, gamedata, zone_cache):
     return problems
 
 
-def zone_transfer_has(zone):
-    name = zone.rsplit("/", 1)[-1]
-    return os.path.exists(os.path.join(PACK, "ZoneTransfer", f"WizardZoneDatas_{name}.json"))
+def zone_transfer_zones():
+    return {tolerant_load(path)["ZoneName"] for path in glob.glob(os.path.join(PACK, "ZoneTransfer", "*.json"))}
 
 
 def check(specs, rootwad, gamedata):
     zone_cache = {}
+    known_zones = zone_transfer_zones()
     failed = 0
     for spec in specs:
-        problems = check_spec(spec, rootwad, gamedata, zone_cache)
+        problems = check_spec(spec, rootwad, gamedata, zone_cache, known_zones)
         failed += bool(problems)
         print(f"{spec['id']}: {'ok' if not problems else ''}")
         for problem in problems:
