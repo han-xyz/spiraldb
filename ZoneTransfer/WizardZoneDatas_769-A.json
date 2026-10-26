@@ -12,6 +12,28 @@
         "m_destinationLoc": "-9914.004,8531.67,31.20578,-2.158016",
         "m_destinationZone": "WizardCity/WC_Streets/WC_Cyclops"
       }
+    },
+    {
+      "TriggerName": "To Z01_Olympus",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Aquila/AQ_Z01_MountOlympus_Hard"
+      }
+    },
+    {
+      "TriggerName": "AQ-To_FinalBoss",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Aquila/Interiors/AQ_Z01_TempleOfSisyphus_Hard"
+      }
     }
   ]
 }
