@@ -1719,15 +1719,6 @@
         "m_operatorType": "OPERATOR_GREATER_THAN_EQ",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "Complete",
-        "m_displayName": null,
-        "m_isQuestRegistry": true,
-        "m_questName": "WC-CRAFT-C01-002",
-        "m_applyNOT": false,
-        "m_operator": "ROP_AND"
       }
     ],
     "m_applyNOT": false,

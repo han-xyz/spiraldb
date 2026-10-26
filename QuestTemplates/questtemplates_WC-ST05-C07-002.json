@@ -233,21 +233,7 @@
     "m_operator": "ROP_AND"
   },
   "m_prepRequirements": null,
-  "m_pruneRequirements": {
-    "m_requirements": [
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "WC-midMR-MAIN-001_Complete",
-        "m_displayName": "QuestTitle_1551AB",
-        "m_isQuestRegistry": false,
-        "m_questName": "",
-        "m_applyNOT": false,
-        "m_operator": "ROP_AND"
-      }
-    ],
-    "m_applyNOT": false,
-    "m_operator": "ROP_AND"
-  },
+  "m_pruneRequirements": null,
   "m_prepAlways": true,
   "m_clientTags": null,
   "m_goalLogic": [

@@ -281,15 +281,6 @@
         "m_questName": "WC-TUG-C01-001",
         "m_applyNOT": false,
         "m_operator": "ROP_OR"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "Complete",
-        "m_displayName": null,
-        "m_isQuestRegistry": true,
-        "m_questName": "WC-TUG-C01-001A",
-        "m_applyNOT": false,
-        "m_operator": "ROP_AND"
       }
     ],
     "m_applyNOT": false,

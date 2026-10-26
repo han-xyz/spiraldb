@@ -330,66 +330,7 @@
                 "m_entryName": "Complete",
                 "m_displayName": null,
                 "m_isQuestRegistry": true,
-                "m_questName": "WC-ST03-C01-006",
-                "m_applyNOT": false,
-                "m_operator": "ROP_AND"
-              },
-              {
-                "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-                "m_entryName": "Complete",
-                "m_displayName": null,
-                "m_isQuestRegistry": true,
-                "m_questName": "WC-ST04-C01-005",
-                "m_applyNOT": false,
-                "m_operator": "ROP_AND"
-              },
-              {
-                "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-                "m_entryName": "Complete",
-                "m_displayName": null,
-                "m_isQuestRegistry": true,
-                "m_questName": "WC-ST05-C01-006",
-                "m_applyNOT": false,
-                "m_operator": "ROP_AND"
-              }
-            ],
-            "m_applyNOT": false,
-            "m_operator": "ROP_AND"
-          }
-        ],
-        "m_applyNOT": false,
-        "m_operator": "ROP_OR"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.RequirementList, Imcodec.ObjectProperty",
-        "m_requirements": [
-          {
-            "$type": "Imcodec.ObjectProperty.TypeCache.RequirementList, Imcodec.ObjectProperty",
-            "m_requirements": [
-              {
-                "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-                "m_entryName": "Complete",
-                "m_displayName": null,
-                "m_isQuestRegistry": true,
-                "m_questName": "WC-ST03-C01-006",
-                "m_applyNOT": false,
-                "m_operator": "ROP_AND"
-              },
-              {
-                "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-                "m_entryName": "Complete",
-                "m_displayName": null,
-                "m_isQuestRegistry": true,
                 "m_questName": "WC-TRITON-MAIN-009",
-                "m_applyNOT": false,
-                "m_operator": "ROP_AND"
-              },
-              {
-                "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-                "m_entryName": "Complete",
-                "m_displayName": null,
-                "m_isQuestRegistry": true,
-                "m_questName": "WC-ST05-C01-006",
                 "m_applyNOT": false,
                 "m_operator": "ROP_AND"
               }
