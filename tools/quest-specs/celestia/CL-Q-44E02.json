@@ -5,8 +5,9 @@
     "persona": "CL-LAND-NPC01",
     "zone": "Celestia/CL_Z05_The_Floating_Land"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371D4"
+  ],
   "mainline": false,
   "level": 48,
   "reward": {
@@ -75,6 +76,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Distress Call replaced by CL-Q-371D4",
       "blocking": false
     }
   ]

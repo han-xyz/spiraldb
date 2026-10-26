@@ -6,7 +6,6 @@
     "zone": "Celestia/CL_Z03_District_Of_The_Stars"
   },
   "requires": [],
-  "min_level": 48,
   "mainline": true,
   "level": 48,
   "reward": {
@@ -74,6 +73,12 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Tide and Tile replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 48
 }

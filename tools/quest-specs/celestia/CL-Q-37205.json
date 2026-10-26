@@ -6,7 +6,7 @@
     "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
   },
   "requires": [
-    "CL-SCI-C02-009"
+    "CL-Q-371FE"
   ],
   "mainline": true,
   "level": 48,
@@ -95,6 +95,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To the Solarium? replaced by CL-Q-371FE",
       "blocking": false
     }
   ]

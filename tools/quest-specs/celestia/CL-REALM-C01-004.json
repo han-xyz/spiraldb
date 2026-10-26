@@ -6,8 +6,9 @@
     "persona": "CL-REALM-NPC01",
     "zone": "Celestia/CL_Z02_Crab_Realm"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-REALM-C01-001"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -107,6 +108,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Shocking News replaced by CL-REALM-C01-001",
       "blocking": false
     }
   ]

@@ -5,9 +5,7 @@
     "persona": "CL-RIVEN-NPC01",
     "zone": "Celestia/CL_Z06_StormHaven"
   },
-  "requires": [
-    "CL-Q-371AC"
-  ],
+  "requires": [],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -86,6 +84,12 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To Stormriven! replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 48
 }

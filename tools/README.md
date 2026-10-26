@@ -197,8 +197,9 @@ newest capture, and the CDX timestamp when the newest capture is an error page.
 - prerequisites to the ids of the other specs, or of the pack's quests with that title.
 
 The id is the hand-authored spec's for the same lang, else the internal name in `QuestTitle.lang`, else
-`<folder>-Q-<lang>`. The wiki has no level, so every quest gets the world's; a quest whose prerequisites do not
-resolve gets `min_level`.
+`<folder>-Q-<lang>`. The wiki has no level, so every quest gets the world's. A ready spec's prerequisite that will
+not be generated (blocked, or no archived page) is replaced by its nearest generated ancestors on the wiki's Prequest
+chain, listed as `requires (not generated)`; a quest left with no prerequisite gets `min_level`.
 
 Dialog keys are guessed from the text of each `WizQst` line: lines that remind the player of the task are Underway,
 lines that thank the player are the hand-in NPC's Completion, the rest are the giver's Prep in key order. The server

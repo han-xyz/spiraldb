@@ -863,6 +863,37 @@ def match_by_window(data, pages, by_title, langs, free):
     return {page: hit for page, hit in found.items() if keys.count(hit[0]) == 1}
 
 
+def is_blocked_spec(spec):
+    return any(item["blocking"] for item in spec["needs_review"])
+
+
+def rewire_requires(ready, pages, by_title, ids, generated, level):
+    """Point each ready spec's prerequisites that will not be generated at their nearest generated ancestors on the
+    wiki's Prequest chain, so the chain stays playable; with none left the spec gets the world's min_level."""
+    def ancestors(title, seen):
+        key = title_norm(title)
+        if ids.get(key) in generated:
+            return [ids[key]]
+        if key in seen or by_title.get(key) not in pages:
+            return []
+        seen.add(key)
+        return [found for earlier in pages[by_title[key]]["prequests"] for found in ancestors(earlier, seen)]
+
+    for fields, spec in ready:
+        requires = []
+        for title in fields["prequests"]:
+            found = ancestors(title, set())
+            if ids.get(title_norm(title)) not in generated:
+                spec["needs_review"].append({"field": "requires (not generated)",
+                                             "value": f"{title} replaced by {', '.join(found) or 'min_level'}",
+                                             "blocking": False})
+            requires += found
+        spec["requires"] = list(dict.fromkeys(requires))
+        spec.pop("min_level", None)
+        if not spec["requires"]:
+            spec["min_level"] = level
+
+
 def hand_authored(world_dir):
     """lang key -> spec of the specs in the world's folder that did not come from this tool."""
     found = {}
@@ -956,6 +987,7 @@ def parse_world(cache, world):
             ids.setdefault(title_norm(data.titles[title_key]), name)
     known_zones = questgen.zone_transfer_zones()
     unresolved, written, blocked, compared = {}, 0, [], []
+    built = []
     for entry in index:
         if entry["page"] not in pages:
             continue
@@ -964,11 +996,18 @@ def parse_world(cache, world):
         builder = SpecBuilder(data, entry, pages[entry["page"]], zone_paths, ids, known_zones)
         if entry["page"] in evidence:
             builder.unresolved("lang", evidence[entry["page"]], False)
-        spec = builder.build(lang, quest_id)
+        built.append((entry, lang, builder.build(lang, quest_id)))
+    blocked_ids = {spec["id"] for _, _, spec in built if is_blocked_spec(spec)}
+    generated = ({spec["id"] for _, _, spec in built} | {spec["id"] for spec in authored.values()}
+                 | set(data.pack_quests.values())) - blocked_ids
+    rewire_requires([(pages[entry["page"]], spec) for entry, _, spec in built if spec["id"] not in blocked_ids],
+                    pages, by_title, ids, generated, WORLDS[world]["level"])
+    for _, lang, spec in built:
+        quest_id = spec["id"]
         for item in spec["needs_review"]:
             counts = unresolved.setdefault(item["field"], [0, 0])
             counts[0 if item["blocking"] else 1] += 1
-        is_blocked = any(item["blocking"] for item in spec["needs_review"])
+        is_blocked = quest_id in blocked_ids
         if lang in authored:
             target = os.path.join(reference_dir, f"{quest_id}.json")
             compared.append((authored[lang], spec))

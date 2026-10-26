@@ -5,8 +5,9 @@
     "persona": "CL-CAMP-NPC09",
     "zone": "Celestia/CL_Z01_Survey_Camp"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-37734"
+  ],
   "mainline": false,
   "level": 48,
   "reward": {
@@ -83,6 +84,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Breathing Room replaced by CL-Q-37734",
       "blocking": false
     }
   ]

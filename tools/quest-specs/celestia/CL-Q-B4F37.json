@@ -86,6 +86,11 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Carpe Diem Society replaced by min_level",
+      "blocking": false
     }
   ]
 }

@@ -5,8 +5,9 @@
     "persona": "CL-CRAB-NPC06",
     "zone": "Celestia/Interiors/CL_Z10i3_Kingdom_Of_The_Crabs"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-37211"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -97,6 +98,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Calypso Queen replaced by CL-Q-37211",
       "blocking": false
     }
   ]

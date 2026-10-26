@@ -6,7 +6,6 @@
     "zone": "Celestia/CL_Z09_Science_Center"
   },
   "requires": [],
-  "min_level": 48,
   "mainline": false,
   "level": 48,
   "reward": {
@@ -107,6 +106,12 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Scavenger Hunt replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 48
 }

@@ -5,8 +5,9 @@
     "persona": "CL-DIST-NPC03",
     "zone": "Celestia/CL_Z03_District_Of_The_Stars"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371CC"
+  ],
   "mainline": false,
   "level": 48,
   "reward": {
@@ -96,6 +97,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Archivist, Revisited replaced by CL-Q-371CC",
       "blocking": false
     }
   ]
