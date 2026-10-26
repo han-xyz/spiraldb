@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z02_Gatehouse",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_To_Zanadu",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Gatehouse",
+        "m_destinationZone": "Empyrea/EM_Z02_Zanadu"
+      }
+    }
+  ]
+}

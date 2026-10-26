@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z01_MonkeySpiderNest",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_to_MonkeySpiderCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MonkeySpiderNest",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z01_MonkeySpiderCave"
+      }
+    }
+  ]
+}

@@ -12,6 +12,17 @@
         "m_destinationLoc": "-6.883026,-2229.969,0.1956045,-3.024449",
         "m_destinationZone": "Empyrea/EM_Z07_NimbusCitadel"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-Aeroship",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z10_FieldPartyCrash"
+      }
     }
   ]
 }

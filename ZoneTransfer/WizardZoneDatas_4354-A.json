@@ -45,6 +45,39 @@
         "m_destinationLoc": "-149.5299,557.2676,24.63312,0.09682629",
         "m_destinationZone": "Empyrea/Interiors/EM_Z01_MonkeySpiderCave"
       }
+    },
+    {
+      "TriggerName": "Teleport to EM_Z01_CrushersLair",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z01_CrushersLair"
+      }
+    },
+    {
+      "TriggerName": "Teleport to EM_Z01_HiddenClearing",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z01_HiddenClearing"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior EM_Z01_JungleClearing01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z01_JungleClearing01"
+      }
     }
   ]
 }

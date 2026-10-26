@@ -12,6 +12,39 @@
         "m_destinationLoc": "-1260.954,8625.21,359.7616,-0.8382238",
         "m_destinationZone": "Empyrea/EM_Z01_Jungle"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil Winch01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z01_BeastmanWinchHouse01"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil Winch02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z01_BeastmanWinchHouse02"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil EM_Z01_MountainPath",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z01_MountainPath"
+      }
     }
   ]
 }

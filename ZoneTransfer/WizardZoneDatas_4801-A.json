@@ -56,6 +56,39 @@
         "m_destinationLoc": "-60.64296,29.89417,5.079163,0",
         "m_destinationZone": "Empyrea/Interiors/EM_Z04_JulietHouse"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-Cistern",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-InsideCistern",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z04_Cistern"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-ToTempleOfLight",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z04_I03_LightTemple"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-SteamPlant",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-SteamVentControl",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z04_SteamVentControl"
+      }
     }
   ]
 }

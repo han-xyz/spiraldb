@@ -56,6 +56,17 @@
         "m_destinationLoc": "2312.898,-6044.86,0.195709,1.445893",
         "m_destinationZone": "Empyrea/Interiors/EM_Z07_Courtyard"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-ControlRoom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z07_ControlRoom"
+      }
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z02_BryinsVault",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_To_Sewers",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_ByrinsVault",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_Sewers"
+      }
+    }
+  ]
+}

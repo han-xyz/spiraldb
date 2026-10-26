@@ -23,6 +23,50 @@
         "m_destinationLoc": "-17294.9,-2744.814,-442.0761,-0.9662743",
         "m_destinationZone": "Empyrea/EM_Z08_SWAeroplains"
       }
+    },
+    {
+      "TriggerName": "Teleport_2_1stDwarfHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_PortAero",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z10_1stAeroDwarfHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_2ndDwarfHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_PortVelo",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z10_2ndAeroDwarfHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_3rdDwarfHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_PortAero",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z10_3rdAeroDwarfHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_EbenezersHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_PortAero",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z10_EbenezerHouse"
+      }
     }
   ]
 }

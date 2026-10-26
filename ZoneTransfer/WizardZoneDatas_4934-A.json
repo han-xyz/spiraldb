@@ -23,6 +23,17 @@
         "m_destinationLoc": "15.16205,-1219.425,4.603098,-3.133797",
         "m_destinationZone": "Empyrea/Interiors/EM_Z11_HunterGuild"
       }
+    },
+    {
+      "TriggerName": "Teleport_2_VeloCityInn",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_VeloCity",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z11_VeloCityInn"
+      }
     }
   ]
 }
