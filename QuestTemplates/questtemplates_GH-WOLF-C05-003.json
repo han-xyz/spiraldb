@@ -121,7 +121,7 @@
       "m_genericEvents": null,
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Grizzleheim/Interiors/GH_Wolf_T3",
+      "m_destinationZone": "Grizzleheim/GH_Wolf",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": [

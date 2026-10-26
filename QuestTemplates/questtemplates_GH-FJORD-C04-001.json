@@ -765,7 +765,7 @@
       "m_genericEvents": null,
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Grizzleheim/GH_HFjord/GH_HFjord",
+      "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_HFjord_Shop03",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": [
@@ -1150,7 +1150,7 @@
       "m_genericEvents": null,
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Grizzleheim/GH_HFjord/GH_HFjord",
+      "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_HFjord_Shop03",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": [

@@ -84,7 +84,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library",
+      "m_destinationZone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_Library_Interior",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": [
