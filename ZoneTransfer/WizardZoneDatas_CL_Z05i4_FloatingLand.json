@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Celestia/Interiors/CL_Z05i4_FloatingLand",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To Zone05",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From Zone05i4",
+        "m_destinationZone": "Celestia/CL_Z05_The_Floating_Land"
+      }
+    }
+  ]
+}

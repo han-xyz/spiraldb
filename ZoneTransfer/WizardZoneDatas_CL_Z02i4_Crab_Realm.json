@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Celestia/Interiors/CL_Z02i4_Crab_Realm",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location 1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From Z02i4 - Optio Misemos",
+        "m_destinationZone": "Celestia/CL_Z02_Crab_Realm"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Celestia/Interiors/CL_Z03i4_District_of_the_Stars",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location 1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_CelestianResearchLab",
+        "m_destinationZone": "Celestia/CL_Z03_District_Of_The_Stars"
+      }
+    }
+  ]
+}

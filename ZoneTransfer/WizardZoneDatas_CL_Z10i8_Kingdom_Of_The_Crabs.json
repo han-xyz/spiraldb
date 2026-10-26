@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Celestia/Interiors/CL_Z10i8_Kingdom_Of_The_Crabs",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "FromHexfin",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_CL_Z10i8-Hexifins Hideout",
+        "m_destinationZone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+      }
+    }
+  ]
+}

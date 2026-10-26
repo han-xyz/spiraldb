@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Celestia/Interiors/CL_Z01i1_Survey_Camp",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location 1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From Crab_Lieutentant",
+        "m_destinationZone": "Celestia/CL_Z01_Survey_Camp"
+      }
+    }
+  ]
+}

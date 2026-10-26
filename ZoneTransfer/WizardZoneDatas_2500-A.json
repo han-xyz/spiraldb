@@ -56,6 +56,94 @@
         "m_destinationLoc": "-1010.959,-30.00113,25.83283,1.58041",
         "m_destinationZone": "Celestia/Interiors/CL_Z10i11_Kingdom_Of_The_Crabs"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_VicegripsHideout",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z10I12_VicegripsHideout"
+      }
+    },
+    {
+      "TriggerName": "To CL_Z10i1 - Nuncio",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z10i1_Kingdom_Of_The_Crabs"
+      }
+    },
+    {
+      "TriggerName": "To CL_Z10i3 - Calypso",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z10i3_Kingdom_Of_The_Crabs"
+      }
+    },
+    {
+      "TriggerName": "To CL_Z10i4 - Barbican",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromCL_Z10toCL_Z10i4",
+        "m_destinationZone": "Celestia/Interiors/CL_Z10i4_Kingdom_Of_The_Crabs"
+      }
+    },
+    {
+      "TriggerName": "To CL_Z10i5 - Senate",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z10i5_Kingdom_Of_The_Crabs"
+      }
+    },
+    {
+      "TriggerName": "To CL_Z10i6 - Achaelos",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z10i6_Kingdom_Of_The_Crabs"
+      }
+    },
+    {
+      "TriggerName": "To CL_Z10i7 - Senetor Nellek",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z10i7_Kingdom_Of_The_Crabs"
+      }
+    },
+    {
+      "TriggerName": "CL_Z10i08-Hexfin",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromZ10_CL-CRAB-C03-003",
+        "m_destinationZone": "Celestia/Interiors/CL_Z10i8_Kingdom_Of_The_Crabs"
+      }
     }
   ]
 }

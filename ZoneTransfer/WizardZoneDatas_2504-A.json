@@ -12,6 +12,61 @@
         "m_destinationLoc": "29992.96,-8882.807,-1053.059,1.461486",
         "m_destinationZone": "Celestia/CL_Z01_Survey_Camp"
       }
+    },
+    {
+      "TriggerName": "ToZ02i01-Crab Castle",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z02i1_Crab_Realm"
+      }
+    },
+    {
+      "TriggerName": "ToZ02i02- EelCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z02i2_Crab_Realm"
+      }
+    },
+    {
+      "TriggerName": "ToZ02i03-Deep One",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z02i3_Crab_Realm"
+      }
+    },
+    {
+      "TriggerName": "ToZ02i04-Optio Misemo",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z02i4_Crab_Realm"
+      }
+    },
+    {
+      "TriggerName": "ToZ02i05-OptioVerdis",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z02i5_Crab_Realm"
+      }
     }
   ]
 }

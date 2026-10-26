@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Celestia/Interiors/PageEvent/CL_LandingZone",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "CL_PageEventSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/PageEvent/CL_TrashMobs"
+      }
+    }
+  ]
+}
