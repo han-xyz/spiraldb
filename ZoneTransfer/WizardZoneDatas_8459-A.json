@@ -12,6 +12,50 @@
         "m_destinationLoc": "5118.702,-8197.716,447.143,2.151587",
         "m_destinationZone": "Khrysalis/KR_Z11_TheHive"
       }
+    },
+    {
+      "TriggerName": "ToPOF-Chamber1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z11_I14_PalFangsChamb01"
+      }
+    },
+    {
+      "TriggerName": "ToPOFSecondChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z11_I15_PalFangsChamb02"
+      }
+    },
+    {
+      "TriggerName": "KR-NightOrbChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z11_I16_PalFangsChamb03"
+      }
+    },
+    {
+      "TriggerName": "KR-ToTamulus",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z11_I17_PalFangsChamb04"
+      }
     }
   ]
 }

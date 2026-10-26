@@ -23,6 +23,50 @@
         "m_destinationLoc": "11.18372,592.7195,-21.47235,-3.138654",
         "m_destinationZone": "Khrysalis/Interiors/KR_Z05_I07_HallOfTrophies"
       }
+    },
+    {
+      "TriggerName": "InterrogationChamberFortRachias",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z05_I08_InteroChamber"
+      }
+    },
+    {
+      "TriggerName": "ToTestChamberRachias",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z05_I09_ChamberOfWeapons"
+      }
+    },
+    {
+      "TriggerName": "ToGhostDog",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z05_I11_Keep_01"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Z05_Teleport to Keep04",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z05_Keep_04"
+      }
     }
   ]
 }

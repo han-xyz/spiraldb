@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Khrysalis/Interiors/KR_Z11_I12_MagiHouseChamb05",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BacktoHOM",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromOrbWeavers",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z11_I07_MagiHouseMain"
+      }
+    }
+  ]
+}

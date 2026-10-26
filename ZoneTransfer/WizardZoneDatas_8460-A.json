@@ -34,6 +34,50 @@
         "m_destinationLoc": "-137.7052,-311.1662,-2.723755,0",
         "m_destinationZone": "Khrysalis/KR_Z12_ShadowPalace"
       }
+    },
+    {
+      "TriggerName": "KR-SpiderAdeptChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z11_I08_MagiHouseChamb01"
+      }
+    },
+    {
+      "TriggerName": "KR-ReflectionChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z11_I09_MagiHouseChamb02"
+      }
+    },
+    {
+      "TriggerName": "KR-MetastasisChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z11_I10_MagiHouseChamb03"
+      }
+    },
+    {
+      "TriggerName": "KR_OrbweaversChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z11_I12_MagiHouseChamb05"
+      }
     }
   ]
 }

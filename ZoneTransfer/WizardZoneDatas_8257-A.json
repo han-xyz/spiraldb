@@ -78,6 +78,138 @@
         "m_destinationLoc": "-0.8059044,-265.3592,37.02874,-0.06762048",
         "m_destinationZone": "Khrysalis/KR_Z03_LastWood"
       }
+    },
+    {
+      "TriggerName": "Teleport-ButternutTower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideButternutTower",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_ButternutTower"
+      }
+    },
+    {
+      "TriggerName": "Teleport-KR-Grotto",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideKR-Grotto",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_Grotto"
+      }
+    },
+    {
+      "TriggerName": "Teleport-HiddenCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideHiddenCave",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_HiddenCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport-Honeymill",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideHoneymill",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_Honeymill"
+      }
+    },
+    {
+      "TriggerName": "Teleport-NightwatchTower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideHornetTower",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_I02_HornetTower"
+      }
+    },
+    {
+      "TriggerName": "Teleport-GoldenHordeChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-GoldenHoardChamber",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_I07_Treasure"
+      }
+    },
+    {
+      "TriggerName": "Teleport-TamarindTower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-TamarindTower",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_I08_QueenCine"
+      }
+    },
+    {
+      "TriggerName": "Teleport-ThroneRoom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-ThroneRoom",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_I09_ThroneRoom"
+      }
+    },
+    {
+      "TriggerName": "Teleport-WaterCavern",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-WaterCavern",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_I10_WaterCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport-MandibleCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideMandableCave",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_MandibleCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport-StingerCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideStingersCave",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_StingersCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport-VespaCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideVespaCave",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_VespaCave"
+      }
     }
   ]
 }

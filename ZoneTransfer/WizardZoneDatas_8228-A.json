@@ -23,6 +23,83 @@
         "m_destinationLoc": "3312.939,-8089.994,259.1588,2.853952",
         "m_destinationZone": "Khrysalis/KR_Z05_FortRachias"
       }
+    },
+    {
+      "TriggerName": "NestCaveSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z04_I02_DragonflyNest"
+      }
+    },
+    {
+      "TriggerName": "CanyonWatchTowerSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z04_I03CanyonWatchTower_01"
+      }
+    },
+    {
+      "TriggerName": "AbyssalCaveSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z04_I07_AbyssalCave"
+      }
+    },
+    {
+      "TriggerName": "WampeyCaveSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z04_I08_WampyCave"
+      }
+    },
+    {
+      "TriggerName": "ChiropteraCaveSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z04_I09_ChiroCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to UgorCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z04_I10_UgorCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Combat Sigil Overlook",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z04_Overlook"
+      }
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Khrysalis/Interiors/KR_Z10_I16_SolarArcChambShadow",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Kondha",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_ShadowArc",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I08_SolarArcMain"
+      }
+    }
+  ]
+}

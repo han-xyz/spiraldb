@@ -12,6 +12,94 @@
         "m_destinationLoc": "4086.555,-7854.148,-528.9449,1.297504",
         "m_destinationZone": "Khrysalis/KR_Z10_KondhaDesert"
       }
+    },
+    {
+      "TriggerName": "To_BalanceArc",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SolarArc",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I09_SolarArcChambBalance"
+      }
+    },
+    {
+      "TriggerName": "To_DeathArc",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SolarArc",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I10_SolarArcChambDeath"
+      }
+    },
+    {
+      "TriggerName": "To_StormArc",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SolarArc",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I11_SolarArcChambStorm"
+      }
+    },
+    {
+      "TriggerName": "To_MythArc",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SolarArc",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I12_SolarArcChambMyth"
+      }
+    },
+    {
+      "TriggerName": "To_IceArc",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SolarArc",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I13_SolarArcChambIce"
+      }
+    },
+    {
+      "TriggerName": "To_FireArc",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SolarArc",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I14_SolarArcChambFire"
+      }
+    },
+    {
+      "TriggerName": "To_LifeArc",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SolarArc",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I15_SolarArcChambLife"
+      }
+    },
+    {
+      "TriggerName": "To_ShadowArc",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SolarArc",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I16_SolarArcChambShadow"
+      }
     }
   ]
 }
