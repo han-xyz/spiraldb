@@ -1,0 +1,17 @@
+{
+  "Name": "CL-Q-37201",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 230,
+  "MaxGold": 230,
+  "ExperienceAmount": 3375,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-26T23:44:46.381895Z",
+  "ModifiedAt": "2026-10-26T23:44:46.381895Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

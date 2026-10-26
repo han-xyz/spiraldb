@@ -1,0 +1,17 @@
+{
+  "Name": "CL-Q-37734",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 500,
+  "MaxGold": 500,
+  "ExperienceAmount": 3670,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-26T23:44:46.381895Z",
+  "ModifiedAt": "2026-10-26T23:44:46.381895Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

@@ -1,0 +1,17 @@
+{
+  "Name": "CL-Q-371E3",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 75,
+  "MaxGold": 75,
+  "ExperienceAmount": 5690,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-26T23:44:46.381895Z",
+  "ModifiedAt": "2026-10-26T23:44:46.381895Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
