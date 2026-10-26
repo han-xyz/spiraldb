@@ -148,6 +148,53 @@ cameras, animations and music, the `m_nameSTKey`/`m_nameOverride` name format, p
 (the server builds the quest madlibs). The tool also writes Completion lines on the turn-in goal rather than at quest
 level, an empty goal dialog list as `null`, and `m_bountyType`/`m_bountyTotal` where some captured quests omit them.
 
+## wiki-archive-quests.py
+
+Builds questgen specs for a world from the Internet Archive's copies of the Wizard101 Central wiki (the wiki itself
+refuses requests). Python 3, standard library only; read-only GET requests to web.archive.org, one a second, with
+exponential backoff on 429 and 5xx for up to five minutes:
+
+```sh
+python3 -I tools/wiki-archive-quests.py --enumerate Celestia   # list the world's quests from the archived categories
+python3 -I tools/wiki-archive-quests.py --fetch Celestia       # download each quest page's newest capture
+python3 -I tools/wiki-archive-quests.py --parse Celestia       # write the specs, print what did not resolve
+python3 -I tools/questgen.py --check tools/quest-specs/celestia/*.json
+```
+
+`--cache <dir>` holds the fetched pages, as `<capture timestamp>_<page>.html`, and the index
+`index-<world>.json` (quest, first capture in the CDX index or `missing_snapshot`, zone categories, type). The default
+is `.scratch/friends-server/task-A1/cache` in the checkout; the cache is not committed. A page already in the cache is
+not fetched again. `WORLDS` at the top of the script gives each world its ObjectData folder, its quest lang range and
+its level.
+
+`--enumerate` walks `Category:<World>_Quests` and its subcategories, and reads the CDX index of `Quest:` pages. A
+category with no capture is reported; its quests still come in through the other categories. `--fetch` takes the
+newest capture, and the CDX timestamp when the newest capture is an error page.
+
+`--parse` reads each page's Prequest, Given By, Giver Location, type sentence, Goals, Hand In and Reward, and resolves:
+
+- the title to `lang` through `QuestTitle.lang`. Most Celestia quests keep their real title under a placeholder key
+  (`QuestTitle_00000103`) and the internal name, or nothing, under the lang key; those are matched to a `WizQst` file by
+  the rare words it shares with the goal lines, one to one, and only when the best match clearly beats the second.
+- NPC names to personas with `npc-personas-from-wad.py`, mobs to their `.AdjRef` adjectives with
+  `mob-adjectives-from-wad.py`, objects to the adjectives of the world's object templates by display name or template
+  name, and item names to a line of the quest's own `WizQst` file.
+- the zone from the zone category, else the giver's location, to the zone where most of that zone's givers stand.
+- prerequisites to the ids of the other specs, or of the pack's quests with that title.
+
+The id is the hand-authored spec's for the same lang, else the internal name in `QuestTitle.lang`, else
+`<folder>-Q-<lang>`. The wiki has no level, so every quest gets the world's; a quest whose prerequisites do not
+resolve gets `min_level`.
+
+Dialog keys are guessed from the text of each `WizQst` line: lines that remind the player of the task are Underway,
+lines that thank the player are the hand-in NPC's Completion, the rest are the giver's Prep in key order. The server
+offers a quest through its first Prep line, so a spec needs at least one.
+
+Each spec carries `source` (page and capture) and `needs_review`: what did not resolve, `blocking` or not. A spec with
+a blocking gap goes to `quest-specs/<world>/blocked/`, where the questgen glob does not reach; a waypoint whose place
+has no zone path is left out and listed. A spec for a lang that a hand-authored spec already covers is written to
+`<cache>/reference-<world>/` instead, and the differences are printed. A rerun replaces the specs it wrote before.
+
 ## mob-adjectives-from-wad.py and npc-personas-from-wad.py
 
 The lookups a spec needs, from the root wad's object templates (`ObjectData/<folder>`, a world's mobs and NPCs) and
