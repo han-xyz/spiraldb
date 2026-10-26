@@ -177,6 +177,17 @@
         "m_destinationLoc": "9706.285,-18905.45,753.892,0.7854096",
         "m_destinationZone": "DragonSpire/DS_A1_Knowledge/DS_A1Z1_WizardTower"
       }
+    },
+    {
+      "TriggerName": "ToTower10FromDS_WizardTower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (DS_T10 fromToK)",
+        "m_destinationZone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_ToK_T10"
+      }
     }
   ]
 }

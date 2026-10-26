@@ -122,6 +122,28 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_ChamberOfTrials_01"
       }
+    },
+    {
+      "TriggerName": "ToTower4FromDS_CrystalGrove",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (DS_T4 from CrystalGrove)",
+        "m_destinationZone": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_T4"
+      }
+    },
+    {
+      "TriggerName": "ToTower6FromDS_CrystalGrove",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (DS_T6 from CrystalGrove)",
+        "m_destinationZone": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_T6"
+      }
     }
   ]
 }
