@@ -23,6 +23,17 @@
         "m_destinationLoc": "6053.535,2368.445,-1464.001,0",
         "m_destinationZone": "Lemuria/LM_Z07_Heap"
       }
+    },
+    {
+      "TriggerName": "Teleport_LockUp",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Pricinct",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z07_LockUp"
+      }
     }
   ]
 }

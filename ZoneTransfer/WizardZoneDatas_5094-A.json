@@ -12,6 +12,17 @@
         "m_destinationLoc": "-1325.432,1085.357,-1.424923E-05,-0.728813",
         "m_destinationZone": "Lemuria/Interiors/LM_Z07_TamarinHouse"
       }
+    },
+    {
+      "TriggerName": "Teleport_Wellspring",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Heap",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z07_Wellspring"
+      }
     }
   ]
 }

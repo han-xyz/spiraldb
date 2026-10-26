@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Lemuria/Interiors/LM_Z07_Wellspring",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_TamarinCellar",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_WellSpring",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z07_TamarinCellar"
+      }
+    }
+  ]
+}

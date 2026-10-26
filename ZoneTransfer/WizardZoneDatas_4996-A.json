@@ -56,6 +56,72 @@
         "m_destinationLoc": "4651.722,-9939.259,-1733.201,2.394519",
         "m_destinationZone": "Lemuria/LM_Z07_Heap"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-CentaurCabin",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z01_CentaurzanCabin"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-NIGHT-SIDE-004",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z01_CombatClearing"
+      }
+    },
+    {
+      "TriggerName": "TeleportT0_HeartOfTheWilds",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z01_HeartOfTheWilds"
+      }
+    },
+    {
+      "TriggerName": "Teleport to LM_Z01_I06_CarnosaurClearing",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z01_I06_CarnosaurClearing"
+      }
+    },
+    {
+      "TriggerName": "Sigil-TempleOfAnswers",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z01_TempleofAnswers"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-WingsRoost",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z01_WingsRoost"
+      }
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Lemuria/Interiors/LM_Z03_StoryTombTwo",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport source",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-From2",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z03_Crypt"
+      }
+    }
+  ]
+}

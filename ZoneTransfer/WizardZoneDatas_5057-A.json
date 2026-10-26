@@ -45,6 +45,39 @@
         "m_destinationLoc": "-666.4769,7665.536,-0.0001525879,0",
         "m_destinationZone": "Lemuria/Interiors/LM_Z06_Headquarters"
       }
+    },
+    {
+      "TriggerName": "Teleport_Fortress",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SkyCity",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z06_Fortress"
+      }
+    },
+    {
+      "TriggerName": "Teleport_GuestQuarters",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SkyCity",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z06_GuestQuarters"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-KRoolsInn",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z06_RoolsHouse"
+      }
     }
   ]
 }

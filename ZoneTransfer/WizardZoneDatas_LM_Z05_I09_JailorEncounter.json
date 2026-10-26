@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Lemuria/Interiors/LM_Z05_I09_JailorEncounter",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_CellRoom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_CellRoom",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z05_I10_CellRoom"
+      }
+    }
+  ]
+}

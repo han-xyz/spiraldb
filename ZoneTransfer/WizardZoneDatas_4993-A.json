@@ -210,6 +210,72 @@
         "m_destinationLoc": "5321.972,1859.333,-676.6063,1.642173",
         "m_destinationZone": "Lemuria/LM_Z00_Hub"
       }
+    },
+    {
+      "TriggerName": "TeleportTo_SupremeHierarch",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z00_I01_HierarchsSanctum"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_DonnyKong",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location Teleport02",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z00_I01_Vertical"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_SactumOfPurpose",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z00_I04_SanctumOfPurpose"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_SanctumOfLifeforce",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z00_I04_SanctumofLifeforce"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_SanctumOfMana",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z00_I04_SanctumofMana"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_SanctumOfDiscord",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z00_SanctumOfDiscord"
+      }
     }
   ]
 }

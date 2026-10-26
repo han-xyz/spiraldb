@@ -45,6 +45,17 @@
         "m_destinationLoc": "-1240.771,-2893.114,-64.4339,-1.117836",
         "m_destinationZone": "Lemuria/LM_Z02_UrsaiVillage"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-ToVolcano",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z02_VolcanoClimb"
+      }
     }
   ]
 }

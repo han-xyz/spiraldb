@@ -45,6 +45,72 @@
         "m_destinationLoc": "2.171668,165.9506,2.199942,3.125988",
         "m_destinationZone": "Lemuria/Interiors/LM_Z07_MooCafe"
       }
+    },
+    {
+      "TriggerName": "Teleport_AngusPlace",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Heap",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z07_AngusPlace"
+      }
+    },
+    {
+      "TriggerName": "Teleport_ChattyCafe",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Heap",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z07_ChattyCafe"
+      }
+    },
+    {
+      "TriggerName": "Teleport_CommandCenter",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Heap",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z07_CommandCenter"
+      }
+    },
+    {
+      "TriggerName": "Teleport_HoneybeeDiner",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Heap",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z07_Diner"
+      }
+    },
+    {
+      "TriggerName": "Teleport_RoolsHideout",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Heap",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z07_KRoolsHideout"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_ThugLife",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z07_ThugLifeandBeyond"
+      }
     }
   ]
 }
