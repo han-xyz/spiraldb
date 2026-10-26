@@ -31,6 +31,11 @@ WAND_CATEGORY = 15
 WAND_SURCHARGE = 500
 UNLEVELLED_PRICE = 2500
 LEVEL_BANDS = ((100, 6500), (80, 5500), (60, 4500), (40, 3500), (20, 2500), (0, 1500))
+SERIES_PER_BAND = 3
+MAX_PER_CATEGORY = 500
+MAYCAST = "-Maycast-"
+MAYCAST_KEPT_ENCHANT = "-E3-"
+STARTER = "Starter"
 
 MANIFEST_ENTRY = re.compile(
     rb"(?s)\xbc\x90\xce\xb9(.)(ObjectData/CrownItems/[ -~]+?\.xml)\x60\x00\x00\x00\x3a\x8f\x35\x89(.{4})")
@@ -70,17 +75,23 @@ def series_order(folder):
     return (0, int(digits)) if digits else (1, folder)
 
 
-def price(name, category):
+def level_band(name):
+    """The LEVEL_BANDS floor for the level in the name, None without one."""
     level = re.search(r"-L(\d+)(?!\d)", name)
     if level is None:
-        crowns = UNLEVELLED_PRICE
-    else:
-        crowns = next(cost for floor, cost in LEVEL_BANDS if int(level.group(1)) >= floor)
+        return None
+    return next(floor for floor, _ in LEVEL_BANDS if int(level.group(1)) >= floor)
+
+
+def price(name, category):
+    band = level_band(name)
+    crowns = UNLEVELLED_PRICE if band is None else dict(LEVEL_BANDS)[band]
     return crowns + (WAND_SURCHARGE if category == WAND_CATEGORY else 0)
 
 
 def gear(rootwad):
-    """(name, entry) for each crowns-only gear template, in series and file order; also the skipped counts."""
+    """(series folder, name, entry) for each crowns-only gear template, in series and file order;
+    also the skipped counts."""
     ids = template_ids(rootwad)
     crown_items = os.path.join(rootwad, "ObjectData", "CrownItems")
     found, skipped = [], {"excluded name": 0, "no FLAG_CrownsOnly": 0, "not in manifest": 0}
@@ -102,13 +113,34 @@ def gear(rootwad):
                 if template_id is None:
                     skipped["not in manifest"] += 1
                     continue
-                found.append((name, {
+                found.append((folder, name, {
                     "templateId": template_id,
                     "crownsCost": price(name, category),
                     "displayPriority": [category],
                     "goldCost": 0,
                 }))
     return found, skipped
+
+
+def curate(found, series_per_band, max_per_category):
+    """Starter sets, plus per category and level band the newest series_per_band series, Maycast wands at E3 only;
+    over max_per_category, the oldest series go first."""
+    found = [f for f in found if MAYCAST not in f[1] or MAYCAST_KEPT_ENCHANT in f[1]]
+    series_in = {}
+    for folder, name, e in found:
+        if folder != STARTER:
+            series_in.setdefault((e["displayPriority"][0], level_band(name)), set()).add(series_order(folder))
+    newest = {key: sorted(s)[-series_per_band:] for key, s in series_in.items()}
+    kept = [f for f in found
+            if f[0] == STARTER or series_order(f[0]) in newest[(f[2]["displayPriority"][0], level_band(f[1]))]]
+    by_category = {}
+    for index, f in enumerate(kept):
+        by_category.setdefault(f[2]["displayPriority"][0], []).append((index, f))
+    capped = []
+    for members in by_category.values():
+        members.sort(key=lambda m: (m[1][0] != STARTER, -series_order(m[1][0])[1] if m[1][0] != STARTER else 0))
+        capped.extend(members[:max_per_category])
+    return [f for _, f in sorted(capped, key=lambda m: m[0])]
 
 
 def render_entry(item):
@@ -145,9 +177,13 @@ def main():
     action.add_argument("--dry-run", action="store_true", help="print the counts per category")
     action.add_argument("--apply", action="store_true", help="append the entries to CrownShop/Tab7.json")
     parser.add_argument("--rootwad", default=ROOTWAD_DIR, help="the unpacked root wad")
+    parser.add_argument("--series-per-band", type=int, default=SERIES_PER_BAND,
+                        help="newest series kept per category and level band")
+    parser.add_argument("--max-per-category", type=int, default=MAX_PER_CATEGORY,
+                        help="entries kept per category, the oldest series dropped first")
     args = parser.parse_args()
     found, skipped = gear(args.rootwad)
-    entries = [e for _, e in found]
+    entries = [e for _, _, e in curate(found, args.series_per_band, args.max_per_category)]
     if args.apply:
         entries = merge(entries)
     counts = {}

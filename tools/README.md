@@ -55,6 +55,11 @@ It reads the `Series<N>` and `Starter` folders (not `Stitch`) and takes the temp
 skipping names containing `DONOTUSE`, `Test` or `Stitch`. The template id comes from `TemplateManifest.xml`. The
 folder sets the category: `Wands` 15, `Hat`/`Hats` 11, `Robe`/`Robes` 9, `Shoes` 10, `Rings` 12, `Athames` 14.
 
+It lists a curated set, because the whole shop goes to the client in one response: the Starter sets, plus for each
+category and level band (the price bands below, and one for names without a level) the `--series-per-band` newest
+series (default 3), all schools, with Maycast wands at the E3 enchant only. A category over `--max-per-category`
+(default 500) drops its oldest series first. Raise either flag to widen the list.
+
 `--apply` is append-only: an entry whose `templateId` the tab already has is left as it is, and nothing is removed.
 
 ### Placeholder prices
