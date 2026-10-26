@@ -1,0 +1,17 @@
+{
+  "ZoneName": "MooShu/Interiors/MS_Master_Sin_Pagoda",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Shoshun_Village",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "MooShu/MS_Hub"
+      }
+    }
+  ]
+}

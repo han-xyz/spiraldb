@@ -1,0 +1,83 @@
+{
+  "ZoneName": "Grizzleheim/Interiors/GH_RedClaw_4Room",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportTo2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start2",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RedClaw_4Room"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start3",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RedClaw_4Room"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo4",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start4",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RedClaw_4Room"
+      }
+    },
+    {
+      "TriggerName": "TeleportOut1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRedClaw3",
+        "m_destinationZone": "Grizzleheim/GH_RedClaw"
+      }
+    },
+    {
+      "TriggerName": "TeleportOut2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRedClaw3",
+        "m_destinationZone": "Grizzleheim/GH_RedClaw"
+      }
+    },
+    {
+      "TriggerName": "TeleportOut3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRedClaw3",
+        "m_destinationZone": "Grizzleheim/GH_RedClaw"
+      }
+    },
+    {
+      "TriggerName": "TeleportOut4",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRedClaw3",
+        "m_destinationZone": "Grizzleheim/GH_RedClaw"
+      }
+    }
+  ]
+}

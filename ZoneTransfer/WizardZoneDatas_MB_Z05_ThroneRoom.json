@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Marleybone/G14_Gauntlet/MB_Z05_ThroneRoom",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To G14MBMain02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From MB-ThroneRoom",
+        "m_destinationZone": "Marleybone/G14_Gauntlet/MB_Z11_MainHall_02"
+      }
+    }
+  ]
+}

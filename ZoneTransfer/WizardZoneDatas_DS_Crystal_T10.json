@@ -1,0 +1,17 @@
+{
+  "ZoneName": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_T10",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_DS_Academy_Hub",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "DragonSpire/DS_A3_Kings/DS_A3Hub_Academy"
+      }
+    }
+  ]
+}
