@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z07_I04_Amedras_Tower",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BackToTown",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Amedras_Tower",
+        "m_destinationZone": "Zafaria/ZF_Z07_Stone_Town"
+      }
+    }
+  ]
+}

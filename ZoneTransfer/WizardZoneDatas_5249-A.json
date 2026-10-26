@@ -23,6 +23,61 @@
         "m_destinationLoc": "-246.7015,12.52358,-2.895256,1.623242",
         "m_destinationZone": "Zafaria/Interiors/ZF_Z08_I08_Librarians_Hideout"
       }
+    },
+    {
+      "TriggerName": "StoneTown_Barge_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z08_I01_Stone_Town_Barge"
+      }
+    },
+    {
+      "TriggerName": "Belloqs_Tent_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z08_I02_Belloqs_Tent"
+      }
+    },
+    {
+      "TriggerName": "Black_Palace_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z08_I03_Black_Palace"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_KingTusksBungalow",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Waterfront",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z08_KingTusksBungalow"
+      }
+    },
+    {
+      "TriggerName": "Teleport to SkeletonKey (1)",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z08_SkeletonKeyLandingRoom"
+      }
     }
   ]
 }

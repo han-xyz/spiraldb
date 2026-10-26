@@ -56,6 +56,39 @@
         "m_destinationLoc": "2.729847,-1055.009,2.999921,3.138775",
         "m_destinationZone": "Zafaria/Interiors/ZF_Z07_I08_MinionQuest"
       }
+    },
+    {
+      "TriggerName": "AmedrasSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z07_I04_Amedras_Tower"
+      }
+    },
+    {
+      "TriggerName": "Aleksis_Tower_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z07_I05_Aleksis_Tower"
+      }
+    },
+    {
+      "TriggerName": "ToMarketTower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z07_I06_Market_Tower"
+      }
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z09_I03_Barge_from_Stone_Town",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Barge Exterior",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Barge_Interior",
+        "m_destinationZone": "Zafaria/ZF_Z09_Drum_Jungle"
+      }
+    }
+  ]
+}

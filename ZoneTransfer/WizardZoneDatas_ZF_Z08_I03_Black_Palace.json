@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z08_I03_Black_Palace",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BackToWaterfront",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Black_Palace",
+        "m_destinationZone": "Zafaria/ZF_Z08_Waterfront"
+      }
+    }
+  ]
+}

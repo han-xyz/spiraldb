@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z05_I05_Jungle_Clearing_02",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BackToTown",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_ZF_Z05_JungleClearing02",
+        "m_destinationZone": "Zafaria/ZF_Z05_Zamunda_Outskirts"
+      }
+    }
+  ]
+}

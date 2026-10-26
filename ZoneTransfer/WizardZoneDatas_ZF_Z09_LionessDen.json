@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z09_LionessDen",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Drum_Jungle",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_LionessDen",
+        "m_destinationZone": "Zafaria/ZF_Z09_Drum_Jungle"
+      }
+    }
+  ]
+}

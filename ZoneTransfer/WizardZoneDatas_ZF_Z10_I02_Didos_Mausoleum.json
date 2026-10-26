@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z10_I02_Didos_Mausoleum",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BackToGraveyard",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Didos_Tomb",
+        "m_destinationZone": "Zafaria/ZF_Z10_Elephant_Graveyard"
+      }
+    }
+  ]
+}
