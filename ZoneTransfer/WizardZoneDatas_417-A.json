@@ -122,6 +122,17 @@
         "m_destinationLoc": "-11090.53,339.5967,-674.5453,0",
         "m_destinationZone": "WizardCity/WC_Streets/WC_Triton"
       }
+    },
+    {
+      "TriggerName": "WC-QuestLight instance - HideoutPetes",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Triton_HideoutPetes"
+      }
     }
   ]
 }

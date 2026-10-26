@@ -23,6 +23,39 @@
         "m_destinationLoc": "13297.12,-9130.349,534.874,3.124293",
         "m_destinationZone": "WizardCity/WC_Streets/WC_Catacombs"
       }
+    },
+    {
+      "TriggerName": "WC-FalloutTeleport instance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Drains/WC_Drains_FalloutShelter"
+      }
+    },
+    {
+      "TriggerName": "WC-FalloutTeleport02 instance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Drains/WC_Drains_FalloutShelter"
+      }
+    },
+    {
+      "TriggerName": "WC-QuestLight instance - FallutShelter",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Drains/WC_Drains_FalloutShelter"
+      }
     }
   ]
 }

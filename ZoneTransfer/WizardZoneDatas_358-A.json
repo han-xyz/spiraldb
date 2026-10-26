@@ -23,6 +23,50 @@
         "m_destinationLoc": "464.7949,33.36941,1.103638,1.601829",
         "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Colossus_H1"
       }
+    },
+    {
+      "TriggerName": "Street 6 CustTower 1 Instance Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (Street6 CustTower01 Entrance)",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Colossus_T1"
+      }
+    },
+    {
+      "TriggerName": "Street 6 Tower 1 Instance Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (Street6 Tower1 Entrance)",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Colossus_T2"
+      }
+    },
+    {
+      "TriggerName": "Street 6 Tower 2 Instance Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (Street6 Tower2 Entrance)",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Colossus_T3"
+      }
+    },
+    {
+      "TriggerName": "WC-QuestLight instance - HideoutEar",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Colossus_HideoutEarl"
+      }
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "WizardCity/WC_Streets/Interiors/WC_Triton_HideoutPetes",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "-26164.25,-9251.135,28.71281,-0.8148844",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Triton"
+      }
+    }
+  ]
+}

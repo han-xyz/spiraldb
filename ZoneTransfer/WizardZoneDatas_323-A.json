@@ -78,6 +78,39 @@
         "m_destinationLoc": "Target (Street5 FireTheatre Entrance)",
         "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Firecat_Theatre"
       }
+    },
+    {
+      "TriggerName": "TeleportSigil_Wormguts",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (Street5 Tower2 Entrance)",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Firecat_T2"
+      }
+    },
+    {
+      "TriggerName": "Street 5 Tower 3 Instance Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (Street5 Tower3 Entrance)",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Firecat_T3"
+      }
+    },
+    {
+      "TriggerName": "WC-QuestLight instance - HideoutMauler",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_FireCat_HideoutMauler"
+      }
     }
   ]
 }

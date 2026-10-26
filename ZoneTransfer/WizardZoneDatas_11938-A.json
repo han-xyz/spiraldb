@@ -12,6 +12,17 @@
         "m_destinationLoc": "17402.69,-12039.83,-755.9771,0",
         "m_destinationZone": "WizardCity/WC_Streets/WC_Drains/Z00_Drains_HUB"
       }
+    },
+    {
+      "TriggerName": "Sigil_to_CaveOfTheLiving",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "23.67889,1287.812,-434.7563,-3.098411",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Catacombs_LivingTomb"
+      }
     }
   ]
 }
