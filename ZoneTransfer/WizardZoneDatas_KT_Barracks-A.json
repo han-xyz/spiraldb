@@ -23,6 +23,28 @@
         "m_destinationLoc": "Target (KT_Crypt_Level03 KT_Crypt_Hub Exit)",
         "m_destinationZone": "Krokotopia/KT_Tomb/KT_WellOfSpirits"
       }
+    },
+    {
+      "TriggerName": "ToTower1FromCrypt3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (Crypt03 Tower01 Entrance)",
+        "m_destinationZone": "Krokotopia/KT_Tomb/Interiors/KT_Barracks_T1"
+      }
+    },
+    {
+      "TriggerName": "ToTower2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromBarracks",
+        "m_destinationZone": "Krokotopia/KT_Tomb/Interiors/KT_Barracks_T2"
+      }
     }
   ]
 }

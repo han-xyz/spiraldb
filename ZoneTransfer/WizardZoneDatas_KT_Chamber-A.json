@@ -45,6 +45,17 @@
         "m_destinationLoc": "Target location (Pyramid3 Tower3 Entrance)",
         "m_destinationZone": "Krokotopia/KT_Pyramid/Interiors/KT_Chamber_T3"
       }
+    },
+    {
+      "TriggerName": "ToTower4FromPyramid3 Entrance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location Crypt06 Map02 Entrance",
+        "m_destinationZone": "Krokotopia/KT_Pyramid/Interiors/KT_Chamber_T4"
+      }
     }
   ]
 }

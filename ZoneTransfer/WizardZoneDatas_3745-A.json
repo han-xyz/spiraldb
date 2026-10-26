@@ -78,6 +78,28 @@
         "m_destinationLoc": "Target location (Sphinx03 Tower01 Entrance)",
         "m_destinationZone": "Krokotopia/KT_Krokosphinx/Interiors/KT_Arena_T1"
       }
+    },
+    {
+      "TriggerName": "Trophy Room",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (Sphinx03 Tower03 Entrance) Trophy Room",
+        "m_destinationZone": "Krokotopia/KT_Krokosphinx/Interiors/KT_Arena_T3"
+      }
+    },
+    {
+      "TriggerName": "HourGlass Chamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (Sphinx03 Tower01 Entrance)",
+        "m_destinationZone": "Krokotopia/KT_Krokosphinx/Interiors/KT_Arena_T4"
+      }
     }
   ]
 }

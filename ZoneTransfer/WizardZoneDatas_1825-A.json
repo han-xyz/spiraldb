@@ -23,6 +23,17 @@
         "m_destinationLoc": "-327.0438,2937.603,46.88971,0",
         "m_destinationZone": "Krokotopia/KT_Tomb/Interiors/KT_Djeserit_CL_Preview"
       }
+    },
+    {
+      "TriggerName": "ToTower1FromCrypt2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location (Crypt02 Tower01 Entrance)",
+        "m_destinationZone": "Krokotopia/KT_Tomb/Interiors/KT_DjeseritTomb_T1"
+      }
     }
   ]
 }

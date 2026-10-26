@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Krokotopia/KT_Pyramid/Interiors/KT_Chamber_T4",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location 0",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "ToTower4FromPyramid3 Exit",
+        "m_destinationZone": "Krokotopia/KT_Pyramid/KT_Chamber"
+      }
+    }
+  ]
+}

@@ -12,6 +12,17 @@
         "m_destinationLoc": "-2254.269,6245.15,0.09376827,0",
         "m_destinationZone": "Krokotopia/KT_Tomb/KT_WellOfSpirits"
       }
+    },
+    {
+      "TriggerName": "Teleport location 0",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "GauntletReturn",
+        "m_destinationZone": "Krokotopia/KT_Tomb/KT_WellOfSpirits"
+      }
     }
   ]
 }
