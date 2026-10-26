@@ -56,6 +56,50 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "WizardCity/WC_Streets/WC_Drains/WC_Drains_FalloutShelter"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior MrDeadsLair",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Drains/WC_Drains_DeadsLair"
+      }
+    },
+    {
+      "TriggerName": "Telepot-NinjaTunnel",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start-BetterNinjaTunnel",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Drains/Z00_BetterNinjaTunnel"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-SheddersLair",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-SheddersLair",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Drains/Z00_ShedderLair"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-ShedderTunnel",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-ShedderTunnel",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Drains/Z00_ShedderTunnel"
+      }
     }
   ]
 }

@@ -67,6 +67,17 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Colossus_HideoutEarl"
       }
+    },
+    {
+      "TriggerName": "Street 6 Castle Instance Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target (Street6 WC_Street6_GobblerKing_ThroneRoom Entrance)",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Colossus_ThroneRoom"
+      }
     }
   ]
 }

@@ -89,6 +89,17 @@
         "m_destinationLoc": "-48.15467,30.26001,6.103516E-05,-3.141593",
         "m_destinationZone": "Housing_WizardCommonsApt/House_WizardCommonsApt_Int"
       }
+    },
+    {
+      "TriggerName": "To_RobertoHideout",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Unicorn_H4_WoodKey",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_OldeTwon_H1"
+      }
     }
   ]
 }

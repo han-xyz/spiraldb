@@ -111,6 +111,17 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_FireCat_HideoutMauler"
       }
+    },
+    {
+      "TriggerName": "Teleport to BerniceAndLarryHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_FireCat_BerniceAndLarryHouse"
+      }
     }
   ]
 }
