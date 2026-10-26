@@ -4,8 +4,9 @@
     "persona": "CL-LAND-NPC01",
     "zone": "Celestia/CL_Z05_The_Floating_Land"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371D4"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -43,11 +44,6 @@
       "field": "lang",
       "value": "Distress Call",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Claw of the Jungle",
-      "blocking": false
     }
   ]
 }

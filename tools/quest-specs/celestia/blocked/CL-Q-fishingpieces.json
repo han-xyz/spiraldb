@@ -4,8 +4,9 @@
     "persona": "CL-REALM-NPC01",
     "zone": "Celestia/CL_Z02_Crab_Realm"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-REALM-C01-005"
+  ],
   "mainline": false,
   "level": 48,
   "reward": {
@@ -49,11 +50,6 @@
       "field": "lang",
       "value": "Fishing Pieces",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "The Starfish Chamber",
-      "blocking": false
     },
     {
       "field": "goal.descriptor",

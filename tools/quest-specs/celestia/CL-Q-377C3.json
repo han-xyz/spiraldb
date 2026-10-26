@@ -5,8 +5,9 @@
     "persona": "CL-REALM-NPC01",
     "zone": "Celestia/CL_Z02_Crab_Realm"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-REALM-C02-002"
+  ],
   "mainline": false,
   "level": 48,
   "reward": {
@@ -97,12 +98,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst377C3 matched by the words it shares with the goals",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Call of Cablooey",
+      "value": "WizQst377C3 matched by the words it shares with the goals; its lines name Rupert Fleming",
       "blocking": false
     },
     {

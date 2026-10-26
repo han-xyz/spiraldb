@@ -1,5 +1,6 @@
 {
-  "id": "CL-Q-clawofthejungle",
+  "id": "CL-Q-371D4",
+  "lang": "371D4",
   "giver": {
     "persona": "CL-LAND-NPC01",
     "zone": "Celestia/CL_Z05_The_Floating_Land"
@@ -14,7 +15,28 @@
     "gold": 450
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -59,8 +81,13 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Claw of the Jungle",
-      "blocking": true
+      "value": "WizQst371D4, the only free key within 16 of its chain neighbour WizQst371D3 whose lines name the page's names: Wildcrag, Bristleclaw",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

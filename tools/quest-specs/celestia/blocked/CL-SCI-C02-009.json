@@ -1,5 +1,7 @@
 {
-  "id": "CL-Q-tothesolarium",
+  "id": "CL-SCI-C02-009",
+  "lang": "371FF",
+  "title": "QuestTitle_00000137",
   "giver": {
     "persona": "CL-HUB-NPC001",
     "zone": "Celestia/CL_Hub"
@@ -13,7 +15,32 @@
     "gold": 35
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -41,8 +68,8 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "To the Solarium?",
-      "blocking": true
+      "value": "WizQst371FF, the only free key within 16 of its chain neighbour WizQst371FE and WizQst37205 whose lines name the page's names: Edith Benchley",
+      "blocking": false
     },
     {
       "field": "requires",
@@ -53,6 +80,11 @@
       "field": "goal.items",
       "value": "the Crustacean Empire",
       "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

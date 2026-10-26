@@ -76,7 +76,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst3720B matched by the words it shares with the goals",
+      "value": "WizQst3720B matched by the words it shares with the goals; its lines name none of the page's names",
       "blocking": false
     },
     {

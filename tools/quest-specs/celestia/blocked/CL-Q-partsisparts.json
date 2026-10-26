@@ -4,8 +4,9 @@
     "persona": "CL-SCI-NPC02",
     "zone": "Celestia/CL_Z09_Science_Center"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-SCI-C02-005"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -49,11 +50,6 @@
       "field": "lang",
       "value": "Parts is Parts",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Powering Up",
-      "blocking": false
     }
   ]
 }

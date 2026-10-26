@@ -5,8 +5,9 @@
     "persona": "CL-LAND-NPC01",
     "zone": "Celestia/CL_Z05_The_Floating_Land"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371CF"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -87,12 +88,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst371D3 matched by the words it shares with the goals",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Spirit of the Sea",
+      "value": "WizQst371D3 matched by the words it shares with the goals; its lines name none of the page's names",
       "blocking": false
     },
     {

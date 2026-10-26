@@ -35,6 +35,7 @@ RETRY_STATUSES = {429, 500, 502, 503, 504}
 BACKOFF_START, BACKOFF_CAP, BACKOFF_TOTAL = 2.0, 60.0, 300.0
 QUEST_TYPES = ("storyline", "side", "instance")
 MIN_SHARED_WEIGHT, CLEAR_MARGIN = 4.0, 1.5
+CHAIN_WINDOW = 16
 WORLDS = {"Celestia": {"folder": "CL", "lang_range": (0x371A8, 0x3780E), "level": 48}}
 
 
@@ -268,6 +269,7 @@ def read_page(page):
         icon = re.match(r"\[File:\(Icon\)_(Gold|XP)\.png\]", line)
         if icon and re.fullmatch(r"[\d,]+", reward[i + 1]):
             amounts[icon.group(1).lower()] = int(reward[i + 1].replace(",", ""))
+    leads_to = section(lines, "Leads to:", "<")[1:]
     sentence = next((line for line in head if line.startswith("This is a")), "")
     place = next((line for line in head if re.match(r"(Giver|Start) Location:", line)), "")
     return {
@@ -280,6 +282,7 @@ def read_page(page):
         "goals": goal_lines,
         "hand_in": (links(hand_in, "NPC") or [None])[0],
         "reward": amounts,
+        "leads_to": [q for line in leads_to for q in links(line, "Quest")],
     }
 
 
@@ -300,6 +303,10 @@ def grouped_goals(goal_lines):
 
 def norm(text):
     return re.sub(r"[^a-z0-9]", "", text.lower().replace("’", "'"))
+
+
+def title_norm(title):
+    return norm(re.sub(r"^the\s+", "", title.strip(), flags=re.I))
 
 
 def singular_forms(text):
@@ -396,8 +403,8 @@ class ClientData:
         return os.path.exists(os.path.join(self.lang_dir, f"WizQst{key}.lang"))
 
     def title_keys(self, title):
-        wanted = norm(title)
-        return [key for key, text in self.titles.items() if norm(text) == wanted]
+        wanted = title_norm(title)
+        return [key for key, text in self.titles.items() if title_norm(text) == wanted]
 
     def internal_name(self, key):
         text = self.titles.get(key, "")
@@ -643,7 +650,7 @@ class SpecBuilder:
             self.unresolved("giver", "starts automatically" if fields["auto_start"] else "none", True)
         requires = []
         for title in fields["prequests"]:
-            found = self.quest_ids.get(norm(title))
+            found = self.quest_ids.get(title_norm(title))
             if found:
                 requires.append(found)
             else:
@@ -716,6 +723,93 @@ def match_placeholders(data, pages, unmatched, candidates):
         taken.add(best[2])
 
 
+def quest_names(fields):
+    """The NPCs, creatures and items a quest page names: what its WizQst lines should mention too."""
+    names = [fields["giver"], fields["hand_in"]]
+    for line in fields["goals"]:
+        names += links(line, "NPC") + links(line, "Creature")
+        names += re.findall(r"\b(?:for|collect|find|gather)\s+(?:\d+\s+)?([A-Z][\w'-]*(?:\s+(?:of\s+)?[A-Z][\w'-]*)*)",
+                            plain(line))
+    return [name for name in dict.fromkeys(names) if name]
+
+
+def named_in(data, fields, lang):
+    """The page's names that the lines of WizQst<lang> mention: the full name, or an NPC's last name."""
+    text = norm(" ".join(data.quest_lines(lang).values()))
+    people = {fields["giver"], fields["hand_in"]} | {n for line in fields["goals"] for n in links(line, "NPC")}
+    found = []
+    for name in quest_names(fields):
+        forms = singular_forms(name)
+        last = norm(name.split()[-1])
+        if any(form and form in text for form in forms) or (name in people and len(last) >= 4 and last in text):
+            found.append(name)
+    return found
+
+
+def chain_anchor(page, pages, by_title, langs, link):
+    """Walk the page's single prequest (or leads-to) link to the first quest with a lang: (lang, pages passed)."""
+    passed, current, seen = [], page, {page}
+    while True:
+        steps = [by_title[title_norm(t)] for t in pages[current][link] if title_norm(t) in by_title]
+        steps = [step for step in steps if step not in seen]
+        if len(steps) != 1:
+            return None, passed
+        current = steps[0]
+        seen.add(current)
+        if langs.get(current):
+            return langs[current], passed
+        if current not in pages:
+            return None, passed
+        passed.append(current)
+
+
+def match_by_chain(data, pages, by_title, langs, free):
+    """page -> (lang, evidence) for unmatched pages that sit in a chain between two quests with langs, when the free
+    lang keys between those two are exactly as many as the unmatched pages between them and each key's lines name
+    something its page names."""
+    matched = {}
+    for page in pages:
+        if langs.get(page) or page in matched:
+            continue
+        before, back = chain_anchor(page, pages, by_title, langs, "prequests")
+        after, forward = chain_anchor(page, pages, by_title, langs, "leads_to")
+        if not before or not after or int(before, 16) >= int(after, 16):
+            continue
+        run = back[::-1] + [page] + forward
+        between = sorted((key for key in free if int(before, 16) < int(key, 16) < int(after, 16)),
+                         key=lambda key: int(key, 16))
+        if len(between) != len(run):
+            continue
+        for member, key in zip(run, between):
+            names = named_in(data, pages[member], key)
+            if names:
+                matched[member] = (key, f"WizQst{key} by chain order between WizQst{before} and WizQst{after}; "
+                                        f"its lines name {', '.join(names)}")
+    return matched
+
+
+def match_by_window(data, pages, by_title, langs, free):
+    """page -> (lang, evidence) for unmatched pages where exactly one free lang key within CHAIN_WINDOW of a chain
+    neighbour's key names something the page names, and no other page claims that key the same way."""
+    found = {}
+    for page in pages:
+        if langs.get(page):
+            continue
+        before, _ = chain_anchor(page, pages, by_title, langs, "prequests")
+        after, _ = chain_anchor(page, pages, by_title, langs, "leads_to")
+        near = {key for key in free
+                if (before and 0 < int(key, 16) - int(before, 16) <= CHAIN_WINDOW)
+                or (after and 0 < int(after, 16) - int(key, 16) <= CHAIN_WINDOW)}
+        named = {key: names for key in sorted(near) if (names := named_in(data, pages[page], key))}
+        if len(named) == 1:
+            key, names = next(iter(named.items()))
+            anchors = " and ".join(f"WizQst{k}" for k in (before, after) if k)
+            found[page] = (key, f"WizQst{key}, the only free key within {CHAIN_WINDOW} of its chain neighbour "
+                                f"{anchors} whose lines name the page's names: {', '.join(names)}")
+    keys = [key for key, _ in found.values()]
+    return {page: hit for page, hit in found.items() if keys.count(hit[0]) == 1}
+
+
 def hand_authored(world_dir):
     """lang key -> spec of the specs in the world's folder that did not come from this tool."""
     found = {}
@@ -776,29 +870,47 @@ def parse_world(cache, world):
         keys = sorted((k for k in data.title_keys(entry["name"]) if data.has_quest_lang(k)),
                       key=lambda k: not data.in_range(k))
         langs[entry["page"]] = keys[0] if keys else None
+    by_title = {title_norm(entry["name"]): entry["page"] for entry in index}
+    evidence = {}
+
+    def chain_pass(rules):
+        while True:
+            claimed = set(langs.values()) | set(authored)
+            free = [k for k in placeholders if k not in claimed]
+            found = next((hits for rule in rules if (hits := rule(data, pages, by_title, langs, free))), None)
+            if not found:
+                return
+            for page, (key, note) in found.items():
+                langs[page], evidence[page] = key, note
+
+    chain_pass([match_by_chain])
     unmatched = [page for page, lang in langs.items() if lang is None and page in pages]
     claimed = set(langs.values())
-    by_text = match_placeholders(data, pages, unmatched, [k for k in placeholders if k not in claimed])
-    langs.update(by_text)
+    for page, key in match_placeholders(data, pages, unmatched, [k for k in placeholders if k not in claimed]).items():
+        langs[page] = key
+        names = named_in(data, pages[page], key)
+        evidence[page] = (f"WizQst{key} matched by the words it shares with the goals; its lines name "
+                          + (", ".join(names) if names else "none of the page's names"))
+    chain_pass([match_by_chain, match_by_window])
     for entry in index:
         lang = langs[entry["page"]]
         if lang in authored:
-            ids[norm(entry["name"])] = authored[lang]["id"]
+            ids[title_norm(entry["name"])] = authored[lang]["id"]
         elif lang:
-            ids[norm(entry["name"])] = data.internal_name(lang) or f"{data.folder}-Q-{lang}"
+            ids[title_norm(entry["name"])] = data.internal_name(lang) or f"{data.folder}-Q-{lang}"
     for title_key, name in data.pack_quests.items():
         if title_key in data.titles:
-            ids.setdefault(norm(data.titles[title_key]), name)
+            ids.setdefault(title_norm(data.titles[title_key]), name)
     known_zones = questgen.zone_transfer_zones()
     unresolved, written, blocked, compared = {}, 0, [], []
     for entry in index:
         if entry["page"] not in pages:
             continue
         lang = langs[entry["page"]]
-        quest_id = ids.get(norm(entry["name"])) or f"{data.folder}-Q-{norm(entry['name'])}"
+        quest_id = ids.get(title_norm(entry["name"])) or f"{data.folder}-Q-{norm(entry['name'])}"
         builder = SpecBuilder(data, entry, pages[entry["page"]], zone_paths, ids, known_zones)
-        if entry["page"] in by_text:
-            builder.unresolved("lang", f"WizQst{lang} matched by the words it shares with the goals", False)
+        if entry["page"] in evidence:
+            builder.unresolved("lang", evidence[entry["page"]], False)
         spec = builder.build(lang, quest_id)
         for item in spec["needs_review"]:
             counts = unresolved.setdefault(item["field"], [0, 0])

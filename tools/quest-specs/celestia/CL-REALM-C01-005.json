@@ -1,5 +1,7 @@
 {
-  "id": "CL-Q-thestarfishchamber",
+  "id": "CL-REALM-C01-005",
+  "lang": "371BD",
+  "title": "QuestTitle_00000129",
   "giver": {
     "persona": "CL-REALM-NPC01",
     "zone": "Celestia/CL_Z02_Crab_Realm"
@@ -14,7 +16,40 @@
     "gold": 200
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -48,12 +83,17 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "The Starfish Chamber",
-      "blocking": true
+      "value": "WizQst371BD, the only free key within 16 of its chain neighbour WizQst371BC whose lines name the page's names: Optio Misemos",
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Misemos's Retreat",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]

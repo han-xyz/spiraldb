@@ -173,9 +173,18 @@ newest capture, and the CDX timestamp when the newest capture is an error page.
 
 `--parse` reads each page's Prequest, Given By, Giver Location, type sentence, Goals, Hand In and Reward, and resolves:
 
-- the title to `lang` through `QuestTitle.lang`. Most Celestia quests keep their real title under a placeholder key
-  (`QuestTitle_00000103`) and the internal name, or nothing, under the lang key; those are matched to a `WizQst` file by
-  the rare words it shares with the goal lines, one to one, and only when the best match clearly beats the second.
+- the title to `lang` through `QuestTitle.lang`, compared without case, punctuation or a leading "The". Most Celestia
+  quests keep their real title under a placeholder key (`QuestTitle_00000103`) and the internal name, or nothing, under
+  the lang key; those are matched to a free `WizQst` file in three ways, each recorded with its evidence under `lang`
+  in `needs_review`:
+  - chain order: the quests of a chain hold consecutive keys, so the unmatched quests between two matched ones on the
+    Prequest / Leads to chain take the free keys between those two, when there are exactly as many;
+  - shared words: the rare words a key's lines share with the goal lines, one to one, and only when the best match
+    clearly beats the second;
+  - chain window: the only free key within `CHAIN_WINDOW` of a chain neighbour's key.
+
+  Chain order and chain window keep a key only when its lines name the page's giver, hand-in NPC, or a goal NPC,
+  creature or item.
 - NPC names to personas with `npc-personas-from-wad.py`, mobs to their `.AdjRef` adjectives with
   `mob-adjectives-from-wad.py`, objects to the adjectives of the world's object templates by display name or template
   name, and item names to a line of the quest's own `WizQst` file.

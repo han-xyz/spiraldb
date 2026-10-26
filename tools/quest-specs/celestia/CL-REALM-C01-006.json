@@ -6,8 +6,9 @@
     "persona": "CL-REALM-NPC01",
     "zone": "Celestia/CL_Z02_Crab_Realm"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-REALM-C01-005"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -133,12 +134,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst371BE matched by the words it shares with the goals",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "The Starfish Chamber",
+      "value": "WizQst371BE matched by the words it shares with the goals; its lines name Dalton Prescott, Crustacean Waverunners, Governor Nereus",
       "blocking": false
     },
     {

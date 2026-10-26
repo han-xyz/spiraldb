@@ -5,8 +5,9 @@
     "persona": "CL-CRAB-NPC01",
     "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-SCI-C02-009"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -91,11 +92,6 @@
     "timestamp": "20231124095148"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "To the Solarium?",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

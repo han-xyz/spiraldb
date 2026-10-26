@@ -1,11 +1,13 @@
 {
-  "id": "CL-Q-lightingthefires",
+  "id": "CL-Q-371DE",
+  "lang": "371DE",
   "giver": {
     "persona": "CL-LAND-NPC05",
     "zone": "Celestia/CL_Z05_The_Floating_Land"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371DD"
+  ],
   "mainline": false,
   "level": 48,
   "reward": {
@@ -13,7 +15,36 @@
     "gold": 295
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -57,12 +88,12 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Lighting the Fires",
-      "blocking": true
+      "value": "WizQst371DE, the only free key within 16 of its chain neighbour WizQst371D7 whose lines name the page's names: Soultearer",
+      "blocking": false
     },
     {
-      "field": "requires",
-      "value": "Barking Mad",
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]

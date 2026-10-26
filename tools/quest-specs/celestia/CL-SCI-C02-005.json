@@ -1,5 +1,7 @@
 {
-  "id": "CL-Q-poweringup",
+  "id": "CL-SCI-C02-005",
+  "lang": "371FB",
+  "title": "QuestTitle_00000220",
   "giver": {
     "persona": "CL-SCI-NPC02",
     "zone": "Celestia/CL_Z09_Science_Center"
@@ -14,8 +16,46 @@
     "gold": 265
   },
   "dialogs": {
-    "prep": [],
-    "underway": []
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ]
   },
   "goals": [
     {
@@ -26,6 +66,7 @@
       "count": 3,
       "target": "WizardMobs_00000731",
       "zone": "Celestia/CL_Z09_Science_Center",
+      "descriptor": "WizQst371FB_00000000",
       "loc": "ZoneLocName_227139"
     },
     {
@@ -58,12 +99,12 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Powering Up",
-      "blocking": true
+      "value": "WizQst371FB by chain order between WizQst371FA and WizQst371FE; its lines name Water-Matons",
+      "blocking": false
     },
     {
-      "field": "goal.descriptor",
-      "value": "Power Cores",
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]

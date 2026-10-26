@@ -1,5 +1,6 @@
 {
-  "id": "CL-Q-molesgonewild",
+  "id": "CL-Q-371DC",
+  "lang": "371DC",
   "giver": {
     "persona": "CL-LAND-NPC05",
     "zone": "Celestia/CL_Z05_The_Floating_Land"
@@ -13,7 +14,28 @@
     "gold": 180
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -47,12 +69,17 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Moles Gone Wild",
-      "blocking": true
+      "value": "WizQst371DC, the only free key within 16 of its chain neighbour WizQst371D7 whose lines name the page's names: Crazy Water-Moles",
+      "blocking": false
     },
     {
       "field": "requires",
       "value": "Dinner on the Beach",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]

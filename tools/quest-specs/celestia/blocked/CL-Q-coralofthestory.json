@@ -4,8 +4,9 @@
     "persona": "CL-REALM-NPC01",
     "zone": "Celestia/CL_Z02_Crab_Realm"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-REALM-C01-001"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -39,11 +40,6 @@
       "field": "lang",
       "value": "Coral of the Story",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Crustacean Nation",
-      "blocking": false
     },
     {
       "field": "goal.items",

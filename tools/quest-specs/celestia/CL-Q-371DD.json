@@ -1,11 +1,13 @@
 {
-  "id": "CL-Q-barkingmad",
+  "id": "CL-Q-371DD",
+  "lang": "371DD",
   "giver": {
     "persona": "CL-LAND-NPC05",
     "zone": "Celestia/CL_Z05_The_Floating_Land"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371DC"
+  ],
   "mainline": false,
   "level": 48,
   "reward": {
@@ -13,7 +15,32 @@
     "gold": 395
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -48,7 +75,13 @@
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Z05_The_Floating_Land",
-      "loc": "ZoneLocName_227141"
+      "loc": "ZoneLocName_227141",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
     }
   ],
   "personas": {
@@ -68,12 +101,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Barking Mad",
-      "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Moles Gone Wild",
+      "value": "WizQst371DD by chain order between WizQst371DC and WizQst371DE; its lines name Coruscade",
       "blocking": false
     },
     {
@@ -84,6 +112,11 @@
     {
       "field": "goal.descriptor",
       "value": "Magic Stones",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]
