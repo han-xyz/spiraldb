@@ -34,6 +34,50 @@
         "m_destinationLoc": "1815.015,-1431.599,528.3292,1.165627",
         "m_destinationZone": "Mirage/Interiors/MR_Z01_DrujCave"
       }
+    },
+    {
+      "TriggerName": "Teleport to BarracksBarrow",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z01_Barracks"
+      }
+    },
+    {
+      "TriggerName": "Teleport to ForbiddenVault",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z01_ForbiddenVault"
+      }
+    },
+    {
+      "TriggerName": "Teleport to OverlordsOssuary",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z01_OverlordsOssuary"
+      }
+    },
+    {
+      "TriggerName": "Teleport to TombForgotten",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z01_TombForgotten"
+      }
     }
   ]
 }

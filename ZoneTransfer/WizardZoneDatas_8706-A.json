@@ -111,6 +111,17 @@
         "m_destinationLoc": "-6003.755,-4088.099,-4768.519,0.8021935",
         "m_destinationZone": "Mirage/MR_Z06_YakhalMountain"
       }
+    },
+    {
+      "TriggerName": "To_RotwangLab",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Yakhal",
+        "m_destinationZone": "Mirage/Interiors/MR_Z06_RotwangLab"
+      }
     }
   ]
 }

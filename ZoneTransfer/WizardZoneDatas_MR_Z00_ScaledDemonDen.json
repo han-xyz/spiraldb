@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Mirage/Interiors/MR_Z00_ScaledDemonDen",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Hub",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From ScaledDemonDen",
+        "m_destinationZone": "Mirage/MR_Z00_Hub"
+      }
+    }
+  ]
+}

@@ -23,6 +23,28 @@
         "m_destinationLoc": "2635.722,399.603,-2060.253,2.501038",
         "m_destinationZone": "Mirage/MR_Z04_RubalWastes"
       }
+    },
+    {
+      "TriggerName": "Teleport_MR_Z04_AudienceChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z04_BaronsAudienceChamber"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-BaronsRetreat",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z04_BaronsRetreat"
+      }
     }
   ]
 }

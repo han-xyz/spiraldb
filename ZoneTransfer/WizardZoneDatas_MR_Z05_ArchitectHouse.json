@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Mirage/Interiors/MR_Z05_ArchitectHouse",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location-ToOutsideSankesHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-OutsideArchitect",
+        "m_destinationZone": "Mirage/MR_Z05_Istanboa"
+      }
+    }
+  ]
+}

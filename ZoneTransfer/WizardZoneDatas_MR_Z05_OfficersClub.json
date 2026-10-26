@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Mirage/Interiors/MR_Z05_OfficersClub",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Istanboa",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From OfficersClub",
+        "m_destinationZone": "Mirage/MR_Z05_Istanboa"
+      }
+    }
+  ]
+}

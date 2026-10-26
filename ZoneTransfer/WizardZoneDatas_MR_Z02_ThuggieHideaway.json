@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Mirage/Interiors/MR_Z02_ThuggieHideaway",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Aggrobah",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Teleport from ThuggieHideaway",
+        "m_destinationZone": "Mirage/MR_Z02_Aggrobah"
+      }
+    }
+  ]
+}

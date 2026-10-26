@@ -89,6 +89,72 @@
         "m_destinationLoc": "-2200.971,-18331.62,-474.9224,-2.928443",
         "m_destinationZone": "Mirage/MR_Z04_RubalWastes"
       }
+    },
+    {
+      "TriggerName": "MR_Z00_DumoozidsTent",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z00_DumoozidsTent"
+      }
+    },
+    {
+      "TriggerName": "MR_Z00_NestInterior",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z00_GhulturesNest"
+      }
+    },
+    {
+      "TriggerName": "MR_Z00_TringleCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z00_HideyHole"
+      }
+    },
+    {
+      "TriggerName": "Teleport to ScaledDemonDen",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z00_ScaledDemonDen"
+      }
+    },
+    {
+      "TriggerName": "KM-Z00-SnakeCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z00_SnakeCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to UlnarCrypt",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z00_UlnarCrypt"
+      }
     }
   ]
 }

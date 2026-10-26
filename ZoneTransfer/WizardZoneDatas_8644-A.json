@@ -12,6 +12,17 @@
         "m_destinationLoc": "5618.193,150.7197,-5082.746,-3.141593",
         "m_destinationZone": "Mirage/MR_Z05_Istanboa"
       }
+    },
+    {
+      "TriggerName": "Teleport to MR_CastanArchives",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z05_CatstanArchives"
+      }
     }
   ]
 }

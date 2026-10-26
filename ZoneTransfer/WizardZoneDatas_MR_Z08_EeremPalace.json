@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Mirage/MR_Z08_EeremPalace",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Interior sigil-EeremGarden",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z08_EeremGardens"
+      }
+    }
+  ]
+}

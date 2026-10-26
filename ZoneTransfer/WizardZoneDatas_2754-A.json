@@ -45,6 +45,17 @@
         "m_destinationLoc": "10.01348,-2578.728,3.75554,3.126704",
         "m_destinationZone": "Mirage/Interiors/MR_Z07_ThievesVault"
       }
+    },
+    {
+      "TriggerName": "Teleport toMR_Z07_Backroom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z07_SerpentSocialClub"
+      }
     }
   ]
 }

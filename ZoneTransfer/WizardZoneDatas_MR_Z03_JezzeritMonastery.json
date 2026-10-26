@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Mirage/Interiors/MR_Z03_JezzeritMonastery",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_JezzeritMonastery",
+        "m_destinationZone": "Mirage/MR_Z03_CaterwaulCanyon"
+      }
+    }
+  ]
+}

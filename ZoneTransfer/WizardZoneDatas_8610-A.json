@@ -12,6 +12,17 @@
         "m_destinationLoc": "-12426.84,-4545.441,-4280.99,-0.5491917",
         "m_destinationZone": "Mirage/MR_Z03_CaterwaulCanyon"
       }
+    },
+    {
+      "TriggerName": "Teleport to MR_Z03_LordsRetreat",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z03_LordsRetreat"
+      }
     }
   ]
 }

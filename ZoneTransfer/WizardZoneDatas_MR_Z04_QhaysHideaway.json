@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Mirage/Interiors/MR_Z04_QhaysHideaway",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Rubal Wastes (1)",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_QhaysHideaway",
+        "m_destinationZone": "Mirage/MR_Z04_RubalWastes"
+      }
+    }
+  ]
+}
