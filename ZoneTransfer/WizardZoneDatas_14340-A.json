@@ -23,6 +23,39 @@
         "m_destinationLoc": "701.5983,669.7164,2161.808,0.1330171",
         "m_destinationZone": "Wallaru/Interiors/WL_Z04_I06_Dreamspeak"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_JoannLockesDream_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z04_I01_JoanLockeDream"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_JudgeVegDream_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z04_I02_JudgeVegDream"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_FreddiesDomain_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z04_I05_FreddiesDomain_Hard"
+      }
     }
   ]
 }

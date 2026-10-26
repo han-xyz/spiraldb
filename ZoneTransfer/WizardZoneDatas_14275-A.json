@@ -56,6 +56,50 @@
         "m_destinationLoc": "23.1665,17927.08,1.999939,0",
         "m_destinationZone": "Wallaru/WL_Z01_Hub"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_DustyCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z02_I01_DustyCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_CannonLedge",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Outback",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z02_I03_CannonLedge"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_DistressCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z02_I04_DistressCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to TransmitterShack",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z02_I06_TransmitterShack"
+      }
     }
   ]
 }

@@ -67,6 +67,105 @@
         "m_destinationLoc": "-2.258362,1381.413,1.24523,3.039244",
         "m_destinationZone": "Wallaru/Interiors/WL_Z01_I02_Courthouse"
       }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z01_I01_Bank",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z01_I01_Bank"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z01_I03_HallOfJudgement",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z01_I03_HallOfJudgement"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z01_I03_MarleyboneEmbassy",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z01_I03_MarleyboneEmbassy"
+      }
+    },
+    {
+      "TriggerName": "Teleport to MonquistanEmbassy",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z01_I05_MonquistanEmbassy"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z01_OutbackStakeHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z01_I06_SupplyStore"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z01_I07_GroceryStore",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z01_I07_GroceryStore"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z01_BingBangBoomerang",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z01_I08_BoomerangDepot"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z01_I09_DundarasAlley",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z01_I09_DundarasAlley"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z01_I13_WitnessAlley",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z01_I13_WitnessAlley"
+      }
     }
   ]
 }

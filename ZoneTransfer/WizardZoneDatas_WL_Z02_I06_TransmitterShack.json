@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Wallaru/Interiors/WL_Z02_I06_TransmitterShack",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_To_Outback",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_TransmitterShack",
+        "m_destinationZone": "Wallaru/WL_Z02_Outback"
+      }
+    }
+  ]
+}
