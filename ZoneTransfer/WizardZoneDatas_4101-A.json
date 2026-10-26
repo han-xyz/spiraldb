@@ -34,6 +34,72 @@
         "m_destinationLoc": "-221.434,-1663.253,8.062927,-3.141593",
         "m_destinationZone": "Grizzleheim/Interiors/GH_Hero_T1"
       }
+    },
+    {
+      "TriggerName": "TeleportToHeroT2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromHeroCamp",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Hero_T2"
+      }
+    },
+    {
+      "TriggerName": "TeleportToHeroT3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromHeroCamp",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Hero_T3"
+      }
+    },
+    {
+      "TriggerName": "TeleportToHeroT4",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromHeroCamp",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Hero_T4"
+      }
+    },
+    {
+      "TriggerName": "TeleportToHeroT5",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromHeroCamp",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Hero_T5"
+      }
+    },
+    {
+      "TriggerName": "TeleportToHeroT6",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromHeroCamp",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Hero_T6"
+      }
+    },
+    {
+      "TriggerName": "GH-MAIN-C01-002-Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromHeroCamp7",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Hero_T7"
+      }
     }
   ]
 }

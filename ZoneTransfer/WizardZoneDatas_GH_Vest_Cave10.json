@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Cave10",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToGHVestCave10",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromGHVestCave10",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/GH_Vestrilund"
+      }
+    }
+  ]
+}

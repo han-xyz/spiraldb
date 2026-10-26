@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Grizzleheim/Interiors/GH_Wolf_T2",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportOutsideWolfT2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-OutsideT2",
+        "m_destinationZone": "Grizzleheim/GH_Wolf"
+      }
+    }
+  ]
+}

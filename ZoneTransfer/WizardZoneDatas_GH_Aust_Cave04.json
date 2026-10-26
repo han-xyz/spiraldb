@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Grizzleheim/GH_HFjord/Interiors/GH_Aust_Cave04",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Austrilund",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromNaliCave",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/GH_Austrilund"
+      }
+    }
+  ]
+}

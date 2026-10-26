@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Grizzleheim/GH_HFjord/Interiors/GH_Aust_Cave03",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport To Aus",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromGrimaldi",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/GH_Austrilund"
+      }
+    }
+  ]
+}

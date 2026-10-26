@@ -23,6 +23,83 @@
         "m_destinationLoc": "8810.429,5647.934,651.5374,0.3695047",
         "m_destinationZone": "Grizzleheim/GH_MainHub"
       }
+    },
+    {
+      "TriggerName": "GH-WOLF-C02-002-SigilTo_T2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetInsideWolfT2",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Wolf_T2"
+      }
+    },
+    {
+      "TriggerName": "GH-WOLF-C05-003-SigilTo_T3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetInsideWolfT3",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Wolf_T3"
+      }
+    },
+    {
+      "TriggerName": "GH-WOLF-C02-002-SigilTo_T4",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetInsideWolfT4",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Wolf_T4"
+      }
+    },
+    {
+      "TriggerName": "GH-WOLF-C02-002-SigilTo_T5",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetInsideWolfT5",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Wolf_T5"
+      }
+    },
+    {
+      "TriggerName": "GH-WOLF-C02-002-SigilTo_T6",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetInsideWolfT6",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Wolf_T6"
+      }
+    },
+    {
+      "TriggerName": "GH-WOLF-C02-002-SigilTo_T7",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-InsideT7",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Wolf_T7"
+      }
+    },
+    {
+      "TriggerName": "GH-WOLF_C02-002-SigilTo_T8",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetInsideWolfT8",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_Wolf_T8"
+      }
     }
   ]
 }

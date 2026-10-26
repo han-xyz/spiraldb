@@ -34,6 +34,116 @@
         "m_destinationLoc": "-163.2622,-1290.597,1.950071,-2.974292",
         "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Cave03"
       }
+    },
+    {
+      "TriggerName": "GurzSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromVestCave01",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Cave01"
+      }
+    },
+    {
+      "TriggerName": "ThurnirCaveSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromVestCave02",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Cave02"
+      }
+    },
+    {
+      "TriggerName": "HalfangSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromVestCave04",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Cave04"
+      }
+    },
+    {
+      "TriggerName": "OsvudSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromVestCave05",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Cave05"
+      }
+    },
+    {
+      "TriggerName": "AsrikSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromVestCave06",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Cave06"
+      }
+    },
+    {
+      "TriggerName": "GerdaSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromVestCave07",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Cave07"
+      }
+    },
+    {
+      "TriggerName": "GH-SUD-C03-001sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Cave09"
+      }
+    },
+    {
+      "TriggerName": "SvieprSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromVestCave10",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Cave10"
+      }
+    },
+    {
+      "TriggerName": "GH-SUD-C01-001sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Tower02"
+      }
+    },
+    {
+      "TriggerName": "VestriHallSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Vest_Vestri_Hall"
+      }
     }
   ]
 }

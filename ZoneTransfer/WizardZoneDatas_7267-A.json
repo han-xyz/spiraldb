@@ -56,6 +56,39 @@
         "m_destinationLoc": "-228.6082,-1604.153,1.825348,-2.904054",
         "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Sud_Cave04"
       }
+    },
+    {
+      "TriggerName": "GH-SUD-C04-001Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Sud_Cave01"
+      }
+    },
+    {
+      "TriggerName": "GH2-FJORD-C05-003 sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Sud_Cave02"
+      }
+    },
+    {
+      "TriggerName": "GH-SUD-C05-001sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Sud_Cave03"
+      }
     }
   ]
 }

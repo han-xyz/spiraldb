@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Grizzleheim/GH_HFjord/Interiors/GH_Nord_Cave02",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location 0",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromNord_Cave02",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/GH_Nordrilund"
+      }
+    }
+  ]
+}

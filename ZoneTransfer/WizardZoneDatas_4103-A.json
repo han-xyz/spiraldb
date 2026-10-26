@@ -23,6 +23,116 @@
         "m_destinationLoc": "-216.4232,-1230.988,1.950071,-3.007079",
         "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T8"
       }
+    },
+    {
+      "TriggerName": "ToRavenFortressT1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortress",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T1"
+      }
+    },
+    {
+      "TriggerName": "ToRavenFortressT10",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortress",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T10"
+      }
+    },
+    {
+      "TriggerName": "ToRavenFortressT11",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortress",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T11"
+      }
+    },
+    {
+      "TriggerName": "ToRavenFortressT2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortress",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T2"
+      }
+    },
+    {
+      "TriggerName": "ToRavenFortressT3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortress",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T3"
+      }
+    },
+    {
+      "TriggerName": "ToRavenFortressT4",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortress",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T4"
+      }
+    },
+    {
+      "TriggerName": "ToRavenFortressT5",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortress",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T5"
+      }
+    },
+    {
+      "TriggerName": "ToRavenFortressT6",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortress",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T6"
+      }
+    },
+    {
+      "TriggerName": "ToRavenFortressT7",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortress",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T7"
+      }
+    },
+    {
+      "TriggerName": "ToRavenFortressT9",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortress",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T9"
+      }
     }
   ]
 }

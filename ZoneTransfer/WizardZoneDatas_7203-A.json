@@ -34,6 +34,83 @@
         "m_destinationLoc": "-222.8489,-1620.531,0.946167,-3.037932",
         "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Aust_Cave09"
       }
+    },
+    {
+      "TriggerName": "GH-AUS-C04-001_Instance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Aust_Cave01"
+      }
+    },
+    {
+      "TriggerName": "GH-AUS-C01-004_Instance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Aust_Cave02"
+      }
+    },
+    {
+      "TriggerName": "GH-AUS-C01-005-A_Instance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Aust_Cave03"
+      }
+    },
+    {
+      "TriggerName": "GH-AUS-C01-005-B_Instance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Aust_Cave04"
+      }
+    },
+    {
+      "TriggerName": "GH-AUS-C01-005-C_Instance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Aust_Cave05"
+      }
+    },
+    {
+      "TriggerName": "GH-AUS-C03-001 instance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Aust_Cave06"
+      }
+    },
+    {
+      "TriggerName": "GH-AUS-C05-002 instance",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Aust_Cave07"
+      }
     }
   ]
 }

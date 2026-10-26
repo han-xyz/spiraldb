@@ -34,6 +34,50 @@
         "m_destinationLoc": "5300.551,24701.54,1898.339,-0.8935336",
         "m_destinationZone": "Grizzleheim/GH_RedClaw"
       }
+    },
+    {
+      "TriggerName": "ToGH_RedClaw_4Room",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RedClaw_4Room"
+      }
+    },
+    {
+      "TriggerName": "ToGH_RedClaw_T2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRedClawOutpost",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RedClaw_T2"
+      }
+    },
+    {
+      "TriggerName": "ToGH_RedClaw_T4",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RedClaw_T4"
+      }
+    },
+    {
+      "TriggerName": "ToGH_RedClaw_T1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRedClaw3",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_RedClaw_T1"
+      }
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Grizzleheim/GH_HFjord/GH_Nastrond",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BacktoHub",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromNastrond",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/GH_HFjord"
+      }
+    }
+  ]
+}

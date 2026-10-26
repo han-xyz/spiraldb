@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Grizzleheim/Interiors/GH_RavenFortress_T6",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToRavenFortress",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromRavenFortressT6",
+        "m_destinationZone": "Grizzleheim/GH_Raven"
+      }
+    }
+  ]
+}

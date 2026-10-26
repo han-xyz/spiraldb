@@ -89,6 +89,72 @@
         "m_destinationLoc": "-6031.118,7565.118,-986.381,0",
         "m_destinationZone": "Grizzleheim/GH_HFjord/GH_Sudrilund"
       }
+    },
+    {
+      "TriggerName": "Sigil to Nastrond",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/GH_Nastrond"
+      }
+    },
+    {
+      "TriggerName": "Sigil for GH_HFjord_Cave01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_HFjord_Cave01"
+      }
+    },
+    {
+      "TriggerName": "Sigil for GH_HFjord_Cave02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_HFjord_Cave02"
+      }
+    },
+    {
+      "TriggerName": "Sigil for GH_HFjord_Cave08",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_HFjord_Cave08"
+      }
+    },
+    {
+      "TriggerName": "Sigil for GH_HFjord_Tower01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_HFjord_Tower01"
+      }
+    },
+    {
+      "TriggerName": "Sigil for GH_HFjord_Well",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_HFjord_Well"
+      }
     }
   ]
 }

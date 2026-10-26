@@ -34,6 +34,28 @@
         "m_destinationLoc": "-170.6479,-1329.962,9.659271,-2.810724",
         "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Nord_Cave03"
       }
+    },
+    {
+      "TriggerName": "Sigil_GH_Nord_Cave01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Nord_Cave01"
+      }
+    },
+    {
+      "TriggerName": "Minigame for 4 semi sigil (5)",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Grizzleheim/GH_HFjord/Interiors/GH_Nord_Cave02"
+      }
     }
   ]
 }

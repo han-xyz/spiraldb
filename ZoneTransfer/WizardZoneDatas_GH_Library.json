@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Grizzleheim/GH_AbandCity/GH_Library",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToEntranceHall",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromDaZoo",
+        "m_destinationZone": "Grizzleheim/GH_AbandCity/GH_EntranceHall"
+      }
+    }
+  ]
+}
