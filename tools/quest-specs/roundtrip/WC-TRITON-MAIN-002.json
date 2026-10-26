@@ -1,0 +1,117 @@
+{
+  "id": "WC-TRITON-MAIN-002",
+  "lang": "1627B2",
+  "giver": {
+    "persona": "WC-TRITON-NPC02-B",
+    "zone": ""
+  },
+  "mainline": true,
+  "level": 1,
+  "requires": [
+    "WC-TRITON-MAIN-001"
+  ],
+  "successors": [],
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "WC-TRITON-NPC01-B",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "",
+        "line": ""
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_581128",
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Death02.dds",
+      "client_tags": [
+        "Ddl_WC_TA_DuncanGrimwater"
+      ],
+      "persona": "WC-TRITON-NPC01-B",
+      "completion": [
+        {
+          "speaker": "WC-TRITON-NPC01-B",
+          "line": "00000005"
+        },
+        {
+          "speaker": "WC-TRITON-NPC01-B",
+          "line": "00000006"
+        },
+        {
+          "speaker": "WC-TRITON-NPC01-B",
+          "line": "00000007"
+        },
+        {
+          "speaker": "WC-TRITON-NPC01-B",
+          "line": "00000008"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        },
+        {
+          "speaker": "WC-TRITON-NPC01-B",
+          "line": "00000010"
+        }
+      ]
+    },
+    {
+      "type": "bountycollect",
+      "zone": "",
+      "loc": "ZoneLocName_581128",
+      "portrait": "|_Shared|WorldData|GUI/NpcPortraits/Art_Portrait_CL_Electric_Eel.dds",
+      "client_tags": [
+        "Ddl_WC_TA_Eels"
+      ],
+      "mobs": [
+        "MONST_Fish"
+      ],
+      "count": 1,
+      "descriptor": "WizQst1627B2_00000011",
+      "target": "WizardMobs_00003536"
+    },
+    {
+      "type": "persona",
+      "zone": "",
+      "loc": "ZoneLocName_581128",
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Death02.dds",
+      "client_tags": [
+        "Ddl_WC_TA_DuncanGrimwater"
+      ],
+      "persona": "WC-TRITON-NPC01-B",
+      "completion": [
+        {
+          "speaker": "WC-TRITON-NPC01-B",
+          "line": "00000012"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-TRITON-NPC02-B": {
+      "portrait": "|_Shared|WorldData|GUI/NpcPortraits/Art_Portrait_Boy_Storm02.dds",
+      "template_id": 1451951
+    },
+    "WC-TRITON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Death02.dds",
+      "template_id": 0
+    }
+  }
+}

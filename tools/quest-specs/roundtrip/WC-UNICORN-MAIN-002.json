@@ -1,0 +1,120 @@
+{
+  "id": "WC-UNICORN-MAIN-002",
+  "lang": "1625C1",
+  "giver": {
+    "persona": "WC-ST01-NPC01",
+    "zone": ""
+  },
+  "mainline": true,
+  "level": 0,
+  "requires": [
+    "WC-UNICORN-MAIN-001"
+  ],
+  "successors": [
+    "WC-UNICORN-MAIN-003"
+  ],
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "WC-ST01-NPC03",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "",
+        "line": ""
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "",
+        "line": "00000004"
+      },
+      {
+        "speaker": "",
+        "line": "00000017"
+      },
+      {
+        "speaker": "",
+        "line": "00000006"
+      },
+      {
+        "speaker": "",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_595390",
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Skeletal_Pirate.dds",
+      "mobs": [
+        "Skeletal_Pirate"
+      ],
+      "count": 2,
+      "descriptor": "WizQst1625C1_00000011",
+      "target": "WizQst1625C1_00000011"
+    },
+    {
+      "type": "persona",
+      "zone": "",
+      "loc": "ZoneLocName_595390",
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Life02.dds",
+      "client_tags": [
+        "Ddl_WC_UW_CerenNightchant"
+      ],
+      "persona": "giver",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000012"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Life02.dds",
+      "template_id": 38121
+    },
+    "WC-ST01-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeepF_A_NPC.dds",
+      "template_id": 38121
+    }
+  }
+}

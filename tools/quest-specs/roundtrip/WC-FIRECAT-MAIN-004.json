@@ -1,0 +1,147 @@
+{
+  "id": "WC-FIRECAT-MAIN-004",
+  "lang": "173599",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC04",
+    "zone": ""
+  },
+  "mainline": true,
+  "level": 1,
+  "requires": [
+    "WC-FIRECAT-MAIN-003"
+  ],
+  "successors": [],
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "zone": "WizardCity/WC_Streets/WC_DarkCave",
+      "loc": "ZoneLocName_406747",
+      "portrait": "|_Shared|WorldData|GUI/NpcPortraits/Portrait_Ghoul_Base_C_MOB.dds",
+      "client_tags": [
+        "Ddl_WC_DC_RottingFodder"
+      ],
+      "mobs": [
+        "Rotting_Fodder"
+      ],
+      "count": 1,
+      "descriptor": "WizQst173599_00000008",
+      "target": "WizardMobs_00000002"
+    },
+    {
+      "type": "persona",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2",
+      "loc": "ZoneLocName_114526",
+      "portrait": "GUI/NpcPortraits/Portrait_Human_GrettaDK_A_NPC.dds",
+      "client_tags": [
+        "Ddl_WC_FA_GrettaDarkkettle",
+        "WC_Firecat_H06"
+      ],
+      "persona": "giver",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000012"
+        }
+      ]
+    },
+    {
+      "type": "waypoint",
+      "title": "WizardQuestGoals_Explore",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_T1",
+      "loc": "ZoneLocName_479175",
+      "portrait": "|_Shared|WorldData|GUI/QuestButtons/Art_Quest_Teal_Tower.dds",
+      "client_tags": [
+        "WC_Firecat_T1",
+        "Ddl_WC_FA_BastillaGravewynd"
+      ],
+      "descriptor": "WizQst173599_00000013"
+    },
+    {
+      "type": "bounty",
+      "zone": "",
+      "loc": "ZoneLocName_479175",
+      "portrait": "GUI/NpcPortraits/Portrait_Banshee_Stepsister_A_Ghost_MOB.dds",
+      "client_tags": [
+        "WC_Firecat_T1",
+        "Ddl_WC_FA_BastillaGravewynd"
+      ],
+      "mobs": [
+        "Bastilla_Gravewynd"
+      ],
+      "count": 1,
+      "descriptor": "",
+      "target": "WizardMobs_00000007"
+    },
+    {
+      "type": "persona",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2",
+      "loc": "ZoneLocName_114526",
+      "portrait": "GUI/NpcPortraits/Portrait_Human_GrettaDK_A_NPC.dds",
+      "client_tags": [
+        "Ddl_WC_FA_GrettaDarkkettle",
+        "WC_Firecat_H06"
+      ],
+      "persona": "giver",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000017"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000018"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000019"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000020"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_GrettaDK_A_NPC.dds",
+      "template_id": 1521048
+    }
+  }
+}
