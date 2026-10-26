@@ -196,8 +196,7 @@ def exit_volumes(zone):
 def exit_entries(zone, parents, wads, notes):
     """Teleport volumes in the zone, sent to the zone holding a location of the volume's name,
     else, for a zone with one exit, to the one location in the world named after the zone,
-    else, with one parent, to the parent's location nearest the pad into the zone (within MAX_PAD_DISTANCE),
-    else to the parent's Start."""
+    else, with one parent, to the parent's location nearest the pad into the zone (within MAX_PAD_DISTANCE)."""
     exits = exit_volumes(zone)
     out = []
     for trigger, volume in exits:
@@ -218,27 +217,58 @@ def exit_entries(zone, parents, wads, notes):
             continue
         parent = parents[0]
         pad_positions = [pos for _, z, _, pos in parent.pads() if z == zone.path and pos is not None]
-        location = None
-        if pad_positions and parent.locations:
-            nearest = min(parent.locations, key=lambda n: math.dist(parent.locations[n], pad_positions[0]))
-            distance = math.dist(parent.locations[nearest], pad_positions[0])
-            if distance <= MAX_PAD_DISTANCE:
-                location = nearest
-                notes.append(f"{zone.path}: exit {trigger!r} -> {parent.path} {location!r}, "
-                             f"{distance:.0f} units from the pad")
-        if location is None and DEFAULT_LOCATION in parent.locations:
-            location = DEFAULT_LOCATION
-            notes.append(f"{zone.path}: exit {trigger!r} -> {parent.path} {location!r}, no location near the pad")
-        if location is None:
-            notes.append(f"{zone.path}: exit {trigger!r} skipped, no location near the pad and no Start "
-                         f"in {parent.path}")
+        if not pad_positions or not parent.locations:
+            notes.append(f"{zone.path}: exit {trigger!r} skipped, no located pad in {parent.path}")
             continue
+        location = min(parent.locations, key=lambda n: math.dist(parent.locations[n], pad_positions[0]))
+        distance = math.dist(parent.locations[location], pad_positions[0])
+        if distance > MAX_PAD_DISTANCE:
+            notes.append(f"{zone.path}: exit {trigger!r} skipped, nearest location {location!r} in {parent.path} "
+                         f"is {distance:.0f} units from the pad")
+            continue
+        notes.append(f"{zone.path}: exit {trigger!r} -> {parent.path} {location!r}, {distance:.0f} units from the pad")
         out.append(entry(trigger, parent.path, location))
     return out
 
 
 def pad_entries(zone):
+    return [entry(name, dest, location) for name, dest, location, _ in zone.pads() if dest != zone.path]
+
+
+def stated_pad_entries(zone):
+    """Every pad that names a destination zone, the zone itself included (a teleport within the zone)."""
     return [entry(name, dest, location) for name, dest, location, _ in zone.pads() if dest]
+
+
+def safe_pads(source, entries, wads, covered, review):
+    """The pads of the source zone whose location the destination zone's wad names and whose destination has a
+    way out: a ZoneTransfer file from before the run, or no teleport volume. The rest go to review."""
+    out = []
+    for e in entries:
+        zone, location = e["Teleport"]["m_destinationZone"], e["Teleport"]["m_destinationLoc"]
+        destination = wads.zone(zone)
+        if destination is None or location not in destination.locations:
+            review.append((source, e["TriggerName"], f"pad to {zone} {location!r}: no such location in that wad"))
+        elif zone != source and zone not in covered and exit_volumes(destination):
+            review.append((source, e["TriggerName"], f"pad to {zone} {location!r}: its exits are withheld"))
+        else:
+            out.append(e)
+    return out
+
+
+def exit_review(zone, parents, wads):
+    """(zone, trigger, candidates) for each exit: the wad names no destination for a teleport volume, so the
+    exit_entries guess and each parent's Start are listed for a person to choose from."""
+    notes = []
+    guessed = {e["TriggerName"]: e["Teleport"] for e in exit_entries(zone, parents, wads, notes)}
+    rows = []
+    for trigger, _ in exit_volumes(zone):
+        candidates = []
+        if trigger in guessed:
+            candidates.append(f"{guessed[trigger]['m_destinationZone']} {guessed[trigger]['m_destinationLoc']!r}")
+        candidates += [f"{p.path} {DEFAULT_LOCATION!r}" for p in parents]
+        rows.append((zone.path, trigger, "; ".join(dict.fromkeys(candidates)) or "none"))
+    return rows
 
 
 def inbound_entries(street, zone):
@@ -361,8 +391,10 @@ def client_zones(wads):
     return worlds
 
 
-def plan_world(zones, wads, known, notes):
-    """Entries for the world's zones without a ZoneTransfer file, and the pads into them from zones with one."""
+def plan_world(zones, wads, known, covered, notes, review):
+    """Entries for the world's zones without a ZoneTransfer file, and the pads into them from zones with one.
+    Only pads go in: exits are appended to review, and a pad into a zone with a withheld exit is held back
+    so that no door leads into a zone without its way out."""
     counts = collections.Counter()
     planned = {}
     for zone in zones:
@@ -371,20 +403,27 @@ def plan_world(zones, wads, known, notes):
             counts["covered"] += 1
             continue
         parents = list(wads.zones_with_pads_to(zone.path))
+        exits = exit_review(zone, parents, wads)
+        review.extend(exits)
+        counts["withheld exits"] += len(exits)
         for parent in parents:
             if parent.path in known:
                 present = {t["TriggerName"] for t in tolerant_load(known[parent.path]).get("Teleports", [])}
-                inbound = [e for e in inbound_entries(parent, zone) if e["TriggerName"] not in present]
+                proposed = [e for e in inbound_entries(parent, zone) if e["TriggerName"] not in present]
+                inbound = safe_pads(parent.path, proposed, wads, covered, review)
+                counts["withheld inbound"] += len(proposed) - len(inbound)
                 planned.setdefault(parent.path, []).extend(inbound)
                 counts["inbound"] += len(inbound)
-        entries = pad_entries(zone) + exit_entries(zone, parents, wads, notes)
+        stated = stated_pad_entries(zone)
+        entries = safe_pads(zone.path, stated, wads, covered, review)
+        counts["withheld pads"] += len(stated) - len(entries)
         if entries:
             planned.setdefault(zone.path, []).extend(entries)
             counts["generated"] += 1
             counts["entries"] += len(entries)
-        elif exit_volumes(zone):
-            counts["exits unresolved"] += 1
-            notes.append(f"{zone.path}: skipped, no exit resolved and no pad")
+        elif exits or stated:
+            counts["all withheld"] += 1
+            notes.append(f"{zone.path}: skipped, every teleport is in --review")
         else:
             counts["no teleport"] += 1
             notes.append(f"{zone.path}: skipped, the wad has no pad and no teleport volume")
@@ -398,27 +437,36 @@ def world_order(worlds, known):
     return listed + sorted((w for w in worlds if w not in WORLD_ORDER), key=lambda w: (-uncovered(w), w))
 
 
-def run_all(wads, only_worlds, apply):
+def run_all(wads, only_worlds, mode):
+    """mode: "dry-run" prints the per-world counts, "apply" also writes, "review" prints the withheld exits."""
     known = zone_transfer_files()
     worlds = client_zones(wads)
     unknown = [w for w in only_worlds if w not in worlds]
     if unknown:
         raise SystemExit(f"no zone wads for {unknown}")
-    columns = ("zones", "covered", "generated", "entries", "inbound", "no teleport", "exits unresolved")
-    print("world\t" + "\t".join(columns))
+    covered = frozenset(known)
+    columns = ("zones", "covered", "generated", "entries", "inbound", "withheld inbound", "withheld pads", "withheld exits", "no teleport", "all withheld")
+    if mode != "review":
+        print("world\t" + "\t".join(columns))
     total = collections.Counter()
     notes = []
     for world in world_order(worlds, known):
         if only_worlds and world not in only_worlds:
             continue
-        planned, counts = plan_world(worlds[world], wads, known, notes)
+        review = []
+        planned, counts = plan_world(worlds[world], wads, known, covered, notes, review)
         total.update(counts)
+        if mode == "review":
+            for row in review:
+                print("\t".join(row))
+            continue
         print(world + "\t" + "\t".join(str(counts[c]) for c in columns))
-        if apply:
+        if mode == "apply":
             for target, entries in planned.items():
                 if entries:
                     merge(target, entries, known)
-    print("total\t" + "\t".join(str(total[c]) for c in columns))
+    if mode != "review":
+        print("total\t" + "\t".join(str(total[c]) for c in columns))
     for note in notes:
         print(note, file=sys.stderr)
 
@@ -447,6 +495,8 @@ def main():
     parser.add_argument("--all", action="store_true", help="every client zone wad without a ZoneTransfer file")
     parser.add_argument("--world", action="append", default=[], help="with --all: only this world (repeatable)")
     parser.add_argument("--dry-run", action="store_true", help="with --all: print the per-world counts only")
+    parser.add_argument("--review", action="store_true",
+                        help="with --all: list the withheld exits and their candidate destinations")
     parser.add_argument("--gamedata", default=GAMEDATA_DIR, help="the client's Data/GameData directory")
     args = parser.parse_args()
     if args.check:
@@ -456,9 +506,10 @@ def main():
             check()
         return
     if args.all:
-        if args.apply == args.dry_run:
-            parser.error("--all takes one of --dry-run or --apply")
-        run_all(Wads(args.gamedata), args.world, args.apply)
+        modes = [m for m, on in (("dry-run", args.dry_run), ("apply", args.apply), ("review", args.review)) if on]
+        if len(modes) != 1:
+            parser.error("--all takes one of --dry-run, --apply or --review")
+        run_all(Wads(args.gamedata), args.world, modes[0])
         return
     if not args.zones:
         parser.error("give a zone path or --check")

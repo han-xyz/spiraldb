@@ -13,6 +13,7 @@ python3 -I tools/zone-transfer-from-wad.py <zone> --street WizardCity/WC_Streets
 python3 -I tools/zone-transfer-from-wad.py --check                                     # quest zones absent from ZoneTransfer
 python3 -I tools/zone-transfer-from-wad.py --all --dry-run                             # per-world counts for every client zone
 python3 -I tools/zone-transfer-from-wad.py --all --world Celestia --apply              # write one world
+python3 -I tools/zone-transfer-from-wad.py --all --review                              # what --all held back, with candidates
 python3 -I tools/zone-transfer-from-wad.py --check --all-zones                         # client zones still without a file
 ```
 
@@ -20,14 +21,12 @@ python3 -I tools/zone-transfer-from-wad.py --check --all-zones                  
 
 What it emits, from `gamedata.bin` and `triggers.xml` of the zone's wad:
 
-- **Pads and sigils** in the zone: an object whose teleport behaviour names a zone, the zone itself included (a
-  teleport within the zone). `TriggerName` is the object name, the location is the pad's own destination location, or
-  `Start` when the pad has none.
+- **Pads and sigils** in the zone: an object whose teleport behaviour names another zone. `TriggerName` is the object
+  name, the location is the pad's own destination location, or `Start` when the pad has none.
 - **Exits**: a trigger fired by `Enter_TeleportVol_<volume>`. The client keeps no destination for these, so the tool
   picks, in order: the one zone of the world that has a location named `<volume>`; the one location of the world named
   after the zone (`GH_Hero_T2` matches `FromHeroT2`); the parent's location nearest the pad into the zone, within 1000
-  units; else the parent's `Start`. The parent is the zone whose pad leads here, or the `--street` zone. The last three
-  rules need a single exit and a single parent. Anything else is skipped and listed on stderr.
+  units. The parent is the zone whose pad leads here, or the `--street` zone. Anything else is skipped and listed on stderr.
 - **Inbound** (`--street`): the street's pads into the zone, else the street's triggers fired by `Enter_<location>`
   where `<location>` is a location of the zone (the door volumes of houses).
 
@@ -38,22 +37,33 @@ A zone without a file gets `ZoneTransfer/WizardZoneDatas_<last path segment>.jso
 
 `--all` takes every wad of `Data/GameData` that holds a `gamedata.bin` (3356 in the current client) as a zone, whose
 path is the wad name with `-` read as `/` (`Celestia-Interiors-CL_Z09i1_Science_Center.wad` is
-`Celestia/Interiors/CL_Z09i1_Science_Center`). A zone that already has a ZoneTransfer file is left alone. Every other
-zone gets its pads, sigils and exits by the rules above, the parents being the zones of the same world whose pads lead
-into it; a parent that has a file gets those pads appended. `--world <World>` (repeatable) limits the run to one world.
+`Celestia/Interiors/CL_Z09i1_Science_Center`). A zone that already has a ZoneTransfer file is left alone. `--world
+<World>` (repeatable) limits the run to one world.
+
+It writes only what the wad states, because a wrong teleport sends a player to the wrong place:
+
+- **Pads and sigils** of each uncovered zone, teleports within the zone included, and the pads of covered zones (the
+  same world) into it, appended to their files.
+- A pad is held back when the destination wad has no location of the pad's name, or when the destination has no file
+  from before the run and has a teleport volume: its exits are withheld, so the door would lead into a zone with no way
+  out.
+- **Exits are never written.** `triggers.xml` names no destination for a teleport volume (the destination is the
+  server's), so every exit is withheld.
+
+`--review` prints what was held back, one line per trigger: zone, trigger, and the candidates (for an exit, the guess
+of the single-zone rules above and each parent's `Start`; for a pad, why it was held). A person picks the destination
+and writes the entry, by hand or with the single-zone mode.
 
 `--dry-run` prints, per world: the zones, those already covered, those generated and their entries, the pads appended
-to covered parents, and the zones skipped because the wad has no pad or teleport volume (`no teleport`) or because no
-exit resolved and the zone has no pad (`exits unresolved`). The notes on stderr name each skipped exit and each exit
-placed by nearest pad or `Start`.
+to covered parents, the pads and exits withheld, and the zones skipped because the wad has no teleport (`no teleport`)
+or every teleport was withheld (`all withheld`).
 
 A file name already taken by another zone gets the parent segments in front (`WizardZoneDatas_Interiors_<zone>.json`).
 
-Checked against the 1406 zones the pack covers, regenerated as if absent: pads matched in 211 of 213 entries the pack
-also has, exits by nearest pad in 189 of 205, exits by volume name in 118 of 144 (the misses are mostly street exits
-whose volume name is also a location of the hub), and the `Start` fallback reached the right zone in 8 of 8 but the
-right spot in 1. Most zones still skipped are reached only by quest scripts or other worlds: nothing in the world's
-wads leads into them, so their exits have no parent.
+Checked against the 1406 zones the pack covers, regenerated as if absent: pads have no zone difference in the 213
+entries the pack also has, and the 2 location differences are pads whose location the destination wad lacks, which
+`--all` now holds back. The single-zone exit rules, measured the same way, pick a wrong zone in 24 of 144 volume-name
+exits and 6 of 205 nearest-pad exits, which is why `--all` writes no exit.
 
 `--check` lists the zones the quest templates send a player to (`m_destinationZone`, goal `m_zoneTag`, `ReqInZone`,
 `ResAddDynaMod`) that have no ZoneTransfer file, then those that have one but no teleport leading into them.
