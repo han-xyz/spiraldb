@@ -45,17 +45,23 @@ It writes only what the wad states, because a wrong teleport sends a player to t
 - **Pads and sigils** of each uncovered zone, teleports within the zone included, and the pads of covered zones (the
   same world) into it, appended to their files.
 - A pad is held back when the destination wad has no location of the pad's name, or when the destination has no file
-  from before the run and has a teleport volume: its exits are withheld, so the door would lead into a zone with no way
-  out.
-- **Exits are never written.** `triggers.xml` names no destination for a teleport volume (the destination is the
-  server's), so every exit is withheld.
+  from before the run, has a teleport volume and no exit was written for it: the door would lead into a zone with no
+  way out.
+- **Exits** only of interiors, and only when the street confirms the interior. `triggers.xml` names no destination
+  for a teleport volume, so the candidates are: the world's locations named after the volume; with a single exit, the
+  world's locations named after the interior and each parent's location nearest its pad into the interior (within
+  1000 units). A candidate counts only when its own wad names the interior (the full path, or the last path segment
+  of 8 characters or more) and the interior has no pad into it (a child room). One such candidate is written; with
+  several, the one nearest its pad into the interior; with none, the exit is withheld. An interior that other zones
+  extend (`<path>_...`: gauntlet `_Sub` rooms, `_C02` variants) gets no exit, because its volumes lead on to the
+  next room. Exits of streets and hubs are always withheld.
 
 `--review` prints what was held back, one line per trigger: zone, trigger, and the candidates (for an exit, the guess
 of the single-zone rules above and each parent's `Start`; for a pad, why it was held). A person picks the destination
 and writes the entry, by hand or with the single-zone mode.
 
 `--dry-run` prints, per world: the zones, those already covered, those generated and their entries, the pads appended
-to covered parents, the pads and exits withheld, and the zones skipped because the wad has no teleport (`no teleport`)
+to covered parents, the exits written, the pads and exits withheld, and the zones skipped because the wad has no teleport (`no teleport`)
 or every teleport was withheld (`all withheld`).
 
 A file name already taken by another zone gets the parent segments in front (`WizardZoneDatas_Interiors_<zone>.json`).
@@ -63,7 +69,10 @@ A file name already taken by another zone gets the parent segments in front (`Wi
 Checked against the 1406 zones the pack covers, regenerated as if absent: pads have no zone difference in the 213
 entries the pack also has, and the 2 location differences are pads whose location the destination wad lacks, which
 `--all` now holds back. The single-zone exit rules, measured the same way, pick a wrong zone in 24 of 144 volume-name
-exits and 6 of 205 nearest-pad exits, which is why `--all` writes no exit.
+exits and 6 of 205 nearest-pad exits. The confirmed rule of `--all` places 244 of the 1860 covered exits the pack
+defines and withholds 1616: 232 match the pack, 11 land beside the street's door into the interior where the pack
+lands elsewhere in the same zone, and 1 (GH_Wolf_T1 `TeleportToWOLF`) goes to GH_Wolf, where the pack names
+DragonSpire although the wad's own pad says GH_Wolf.
 
 `--check` lists the zones the quest templates send a player to (`m_destinationZone`, goal `m_zoneTag`, `ReqInZone`,
 `ResAddDynaMod`) that have no ZoneTransfer file, then those that have one but no teleport leading into them.

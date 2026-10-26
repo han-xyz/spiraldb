@@ -26,6 +26,7 @@ NAMED_LOCATION = rb"(?s)([\x01-\x7f])\x00([ -~]{1,127})\xa0\x00\x00\x00\x1b\xdc\
 TELEPORT_VOLUME_EVENT = "Enter_TeleportVol_"
 DEFAULT_LOCATION = "Start"
 MAX_PAD_DISTANCE = 1000
+MIN_SHORT_NAME = 8
 WORLD_ORDER = ("Celestia", "Zafaria", "Avalon", "Azteca", "Khrysalis", "Polaris", "Mirage", "Empyrea", "Karamelle",
                "Lemuria", "Novus", "Wallaru")
 
@@ -128,6 +129,8 @@ class Wads:
     def __init__(self, gamedata_dir):
         self.dir = gamedata_dir
         self.cache = {}
+        self.confirmed = {}
+        self.paths = None
 
     def wad_path(self, zone):
         return os.path.join(self.dir, zone.replace("/", "-") + ".wad")
@@ -138,6 +141,24 @@ class Wads:
             files = read_wad(path, {"gamedata.bin", "triggers.xml"}) if os.path.exists(path) else None
             self.cache[zone] = Zone(zone, files) if files is not None else None
         return self.cache[zone]
+
+    def zone_paths(self):
+        if self.paths is None:
+            wads = glob.glob(os.path.join(self.dir, "*-*.wad"))
+            self.paths = [os.path.basename(p)[:-4].replace("-", "/") for p in wads]
+        return self.paths
+
+    def confirmed_exits(self, zone):
+        """{trigger: (zone path, location)} for the exits of the zone that confirmed_exit places."""
+        if zone.path not in self.confirmed:
+            parents = list(self.zones_with_pads_to(zone.path))
+            found = {}
+            for trigger, volume in exit_volumes(zone):
+                destination = confirmed_exit(zone, volume, parents, self)
+                if destination is not None:
+                    found[trigger] = destination
+            self.confirmed[zone.path] = found
+        return self.confirmed[zone.path]
 
     def world_zones(self, world):
         for path in sorted(glob.glob(os.path.join(self.dir, world + "-*.wad"))):
@@ -240,16 +261,63 @@ def stated_pad_entries(zone):
     return [entry(name, dest, location) for name, dest, location, _ in zone.pads() if dest]
 
 
+def knows(street, interior):
+    """The street's wad names the interior: its full path, or its last path segment when that is distinctive."""
+    short = interior.path.rsplit("/", 1)[-1].encode()
+    return interior.path.encode() in street.gamedata or (
+        len(short) >= MIN_SHORT_NAME and (short in street.gamedata or short in street.triggers))
+
+
+def inbound_pad_position(street, interior):
+    return next((pos for _, z, _, pos in street.pads() if z == interior.path and pos is not None), None)
+
+
+def exit_candidates(zone, volume, parents, wads):
+    """{(zone path, location): zone}: the world's locations named after the volume; with a single exit, also the
+    world's locations named after the zone and each parent's location nearest its pad into the zone."""
+    world = zone.path.split("/")[0]
+    out = {(z.path, volume): z for z in wads.zones_with_location(world, volume) if z.path != zone.path}
+    if len(exit_volumes(zone)) != 1:
+        return out
+    out.update({(z.path, name): z for z, name in wads.locations_naming(zone.path)})
+    for parent in parents:
+        pad = inbound_pad_position(parent, zone)
+        if pad is None or not parent.locations:
+            continue
+        nearest = min(parent.locations, key=lambda n: math.dist(parent.locations[n], pad))
+        if math.dist(parent.locations[nearest], pad) <= MAX_PAD_DISTANCE:
+            out[(parent.path, nearest)] = parent
+    return out
+
+
+def confirmed_exit(zone, volume, parents, wads):
+    """(zone path, location) for an interior's exit when one candidate's wad names the interior back; with several,
+    the one nearest its pad into the interior. None for a zone outside Interiors, one with derived zones (gauntlet
+    rooms, variants), or no single choice."""
+    if "/Interiors/" not in zone.path or any(p.startswith(zone.path + "_") for p in wads.zone_paths()):
+        return None
+    children = {z for _, z, _, _ in zone.pads()}
+    confirmed = [(key, street) for key, street in exit_candidates(zone, volume, parents, wads).items()
+                 if street.path not in children and knows(street, zone)]
+    if len(confirmed) == 1:
+        return confirmed[0][0]
+    by_pad = [(math.dist(street.locations[key[1]], pad), key) for key, street in confirmed
+              if (pad := inbound_pad_position(street, zone)) is not None]
+    return min(by_pad)[1] if by_pad else None
+
+
 def safe_pads(source, entries, wads, covered, review):
     """The pads of the source zone whose location the destination zone's wad names and whose destination has a
-    way out: a ZoneTransfer file from before the run, or no teleport volume. The rest go to review."""
+    way out: a ZoneTransfer file from before the run, no teleport volume, or a confirmed exit. The rest go to
+    review."""
     out = []
     for e in entries:
         zone, location = e["Teleport"]["m_destinationZone"], e["Teleport"]["m_destinationLoc"]
         destination = wads.zone(zone)
         if destination is None or location not in destination.locations:
             review.append((source, e["TriggerName"], f"pad to {zone} {location!r}: no such location in that wad"))
-        elif zone != source and zone not in covered and exit_volumes(destination):
+        elif (zone != source and zone not in covered and exit_volumes(destination)
+              and not wads.confirmed_exits(destination)):
             review.append((source, e["TriggerName"], f"pad to {zone} {location!r}: its exits are withheld"))
         else:
             out.append(e)
@@ -393,8 +461,8 @@ def client_zones(wads):
 
 def plan_world(zones, wads, known, covered, notes, review):
     """Entries for the world's zones without a ZoneTransfer file, and the pads into them from zones with one.
-    Only pads go in: exits are appended to review, and a pad into a zone with a withheld exit is held back
-    so that no door leads into a zone without its way out."""
+    Exits go in only when confirmed_exit places them, the rest are appended to review; a pad into a zone whose
+    exits are all withheld is held back so that no door leads into a zone without its way out."""
     counts = collections.Counter()
     planned = {}
     for zone in zones:
@@ -403,9 +471,11 @@ def plan_world(zones, wads, known, covered, notes, review):
             counts["covered"] += 1
             continue
         parents = list(wads.zones_with_pads_to(zone.path))
-        exits = exit_review(zone, parents, wads)
+        confirmed = wads.confirmed_exits(zone)
+        exits = [row for row in exit_review(zone, parents, wads) if row[1] not in confirmed]
         review.extend(exits)
         counts["withheld exits"] += len(exits)
+        counts["exits"] += len(confirmed)
         for parent in parents:
             if parent.path in known:
                 present = {t["TriggerName"] for t in tolerant_load(known[parent.path]).get("Teleports", [])}
@@ -415,8 +485,9 @@ def plan_world(zones, wads, known, covered, notes, review):
                 planned.setdefault(parent.path, []).extend(inbound)
                 counts["inbound"] += len(inbound)
         stated = stated_pad_entries(zone)
-        entries = safe_pads(zone.path, stated, wads, covered, review)
-        counts["withheld pads"] += len(stated) - len(entries)
+        pads = safe_pads(zone.path, stated, wads, covered, review)
+        counts["withheld pads"] += len(stated) - len(pads)
+        entries = [entry(trigger, *destination) for trigger, destination in confirmed.items()] + pads
         if entries:
             planned.setdefault(zone.path, []).extend(entries)
             counts["generated"] += 1
@@ -445,7 +516,8 @@ def run_all(wads, only_worlds, mode):
     if unknown:
         raise SystemExit(f"no zone wads for {unknown}")
     covered = frozenset(known)
-    columns = ("zones", "covered", "generated", "entries", "inbound", "withheld inbound", "withheld pads", "withheld exits", "no teleport", "all withheld")
+    columns = ("zones", "covered", "generated", "entries", "exits", "inbound", "withheld inbound", "withheld pads",
+               "withheld exits", "no teleport", "all withheld")
     if mode != "review":
         print("world\t" + "\t".join(columns))
     total = collections.Counter()
