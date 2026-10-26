@@ -4,6 +4,7 @@
 See tools/README.md for usage and the location convention.
 """
 import argparse
+import collections
 import glob
 import json
 import math
@@ -25,6 +26,8 @@ NAMED_LOCATION = rb"(?s)([\x01-\x7f])\x00([ -~]{1,127})\xa0\x00\x00\x00\x1b\xdc\
 TELEPORT_VOLUME_EVENT = "Enter_TeleportVol_"
 DEFAULT_LOCATION = "Start"
 MAX_PAD_DISTANCE = 1000
+WORLD_ORDER = ("Celestia", "Zafaria", "Avalon", "Azteca", "Khrysalis", "Polaris", "Mirage", "Empyrea", "Karamelle",
+               "Lemuria", "Novus", "Wallaru")
 
 
 def tolerant_load(path):
@@ -180,15 +183,22 @@ def entry(trigger, zone, location):
     }
 
 
-def exit_entries(zone, parents, wads, notes):
-    """Teleport volumes in the zone, sent to the zone holding a location of the volume's name,
-    else, for a zone with one exit, to the one location in the world named after the zone,
-    else, with one parent, to the parent's location nearest the pad into the zone (within MAX_PAD_DISTANCE)."""
+def exit_volumes(zone):
+    """(trigger, volume) for each trigger fired by entering a teleport volume."""
     exits = []
     for trigger, events in zone.triggers_with_events():
         volumes = [e[len(TELEPORT_VOLUME_EVENT):] for e in events if e.startswith(TELEPORT_VOLUME_EVENT)]
         if volumes:
             exits.append((trigger, volumes[0]))
+    return exits
+
+
+def exit_entries(zone, parents, wads, notes):
+    """Teleport volumes in the zone, sent to the zone holding a location of the volume's name,
+    else, for a zone with one exit, to the one location in the world named after the zone,
+    else, with one parent, to the parent's location nearest the pad into the zone (within MAX_PAD_DISTANCE),
+    else to the parent's Start."""
+    exits = exit_volumes(zone)
     out = []
     for trigger, volume in exits:
         named = [p for p in parents if volume in p.locations]
@@ -208,22 +218,27 @@ def exit_entries(zone, parents, wads, notes):
             continue
         parent = parents[0]
         pad_positions = [pos for _, z, _, pos in parent.pads() if z == zone.path and pos is not None]
-        if not pad_positions or not parent.locations:
-            notes.append(f"{zone.path}: exit {trigger!r} skipped, no located pad in {parent.path}")
+        location = None
+        if pad_positions and parent.locations:
+            nearest = min(parent.locations, key=lambda n: math.dist(parent.locations[n], pad_positions[0]))
+            distance = math.dist(parent.locations[nearest], pad_positions[0])
+            if distance <= MAX_PAD_DISTANCE:
+                location = nearest
+                notes.append(f"{zone.path}: exit {trigger!r} -> {parent.path} {location!r}, "
+                             f"{distance:.0f} units from the pad")
+        if location is None and DEFAULT_LOCATION in parent.locations:
+            location = DEFAULT_LOCATION
+            notes.append(f"{zone.path}: exit {trigger!r} -> {parent.path} {location!r}, no location near the pad")
+        if location is None:
+            notes.append(f"{zone.path}: exit {trigger!r} skipped, no location near the pad and no Start "
+                         f"in {parent.path}")
             continue
-        location = min(parent.locations, key=lambda n: math.dist(parent.locations[n], pad_positions[0]))
-        distance = math.dist(parent.locations[location], pad_positions[0])
-        if distance > MAX_PAD_DISTANCE:
-            notes.append(f"{zone.path}: exit {trigger!r} skipped, nearest location {location!r} in {parent.path} "
-                         f"is {distance:.0f} units from the pad")
-            continue
-        notes.append(f"{zone.path}: exit {trigger!r} -> {parent.path} {location!r}, {distance:.0f} units from the pad")
         out.append(entry(trigger, parent.path, location))
     return out
 
 
 def pad_entries(zone):
-    return [entry(name, dest, location) for name, dest, location, _ in zone.pads() if dest != zone.path]
+    return [entry(name, dest, location) for name, dest, location, _ in zone.pads() if dest]
 
 
 def inbound_entries(street, zone):
@@ -241,6 +256,16 @@ def zone_transfer_files():
     return {tolerant_load(p)["ZoneName"]: p for p in sorted(glob.glob(os.path.join(PACK, "ZoneTransfer", "*.json")))}
 
 
+def new_file_path(zone_name):
+    """WizardZoneDatas_<last segment>.json, widened by parent segments while the name is taken."""
+    segments = zone_name.split("/")
+    for n in range(1, len(segments) + 1):
+        path = os.path.join(PACK, "ZoneTransfer", f"WizardZoneDatas_{'_'.join(segments[-n:])}.json")
+        if not os.path.exists(path):
+            return path
+    raise SystemExit(f"{zone_name}: every file name is taken; name the file by hand")
+
+
 def render_entry(item):
     return "\n".join("    " + line for line in json.dumps(item, indent=2, ensure_ascii=False).splitlines())
 
@@ -249,9 +274,7 @@ def merge(zone_name, entries, known):
     """Append the entries whose TriggerName the zone's file lacks; returns the names added."""
     path = known.get(zone_name)
     if path is None:
-        path = os.path.join(PACK, "ZoneTransfer", f"WizardZoneDatas_{zone_name.rsplit('/', 1)[-1]}.json")
-        if os.path.exists(path):
-            raise SystemExit(f"{path} exists for another zone; name the file by hand")
+        path = new_file_path(zone_name)
         unique = list({e["TriggerName"]: e for e in entries}.values())
         doc = {"ZoneName": zone_name, "Events": [], "Teleports": unique}
         with open(path, "w", encoding="utf-8") as f:
@@ -328,6 +351,91 @@ def check():
           f"in ZoneTransfer without an inbound teleport: {len(no_inbound)}")
 
 
+def client_zones(wads):
+    """{world: [Zone]} for every zone wad (one holding a gamedata.bin) in the client."""
+    worlds = {}
+    for path in sorted(glob.glob(os.path.join(wads.dir, "*-*.wad"))):
+        zone = wads.zone(os.path.basename(path)[:-4].replace("-", "/"))
+        if zone is not None and zone.gamedata:
+            worlds.setdefault(zone.path.split("/")[0], []).append(zone)
+    return worlds
+
+
+def plan_world(zones, wads, known, notes):
+    """Entries for the world's zones without a ZoneTransfer file, and the pads into them from zones with one."""
+    counts = collections.Counter()
+    planned = {}
+    for zone in zones:
+        counts["zones"] += 1
+        if zone.path in known:
+            counts["covered"] += 1
+            continue
+        parents = list(wads.zones_with_pads_to(zone.path))
+        for parent in parents:
+            if parent.path in known:
+                present = {t["TriggerName"] for t in tolerant_load(known[parent.path]).get("Teleports", [])}
+                inbound = [e for e in inbound_entries(parent, zone) if e["TriggerName"] not in present]
+                planned.setdefault(parent.path, []).extend(inbound)
+                counts["inbound"] += len(inbound)
+        entries = pad_entries(zone) + exit_entries(zone, parents, wads, notes)
+        if entries:
+            planned.setdefault(zone.path, []).extend(entries)
+            counts["generated"] += 1
+            counts["entries"] += len(entries)
+        elif exit_volumes(zone):
+            counts["exits unresolved"] += 1
+            notes.append(f"{zone.path}: skipped, no exit resolved and no pad")
+        else:
+            counts["no teleport"] += 1
+            notes.append(f"{zone.path}: skipped, the wad has no pad and no teleport volume")
+    return planned, counts
+
+
+def world_order(worlds, known):
+    def uncovered(world):
+        return sum(zone.path not in known for zone in worlds[world])
+    listed = [w for w in WORLD_ORDER if w in worlds]
+    return listed + sorted((w for w in worlds if w not in WORLD_ORDER), key=lambda w: (-uncovered(w), w))
+
+
+def run_all(wads, only_worlds, apply):
+    known = zone_transfer_files()
+    worlds = client_zones(wads)
+    unknown = [w for w in only_worlds if w not in worlds]
+    if unknown:
+        raise SystemExit(f"no zone wads for {unknown}")
+    columns = ("zones", "covered", "generated", "entries", "inbound", "no teleport", "exits unresolved")
+    print("world\t" + "\t".join(columns))
+    total = collections.Counter()
+    notes = []
+    for world in world_order(worlds, known):
+        if only_worlds and world not in only_worlds:
+            continue
+        planned, counts = plan_world(worlds[world], wads, known, notes)
+        total.update(counts)
+        print(world + "\t" + "\t".join(str(counts[c]) for c in columns))
+        if apply:
+            for target, entries in planned.items():
+                if entries:
+                    merge(target, entries, known)
+    print("total\t" + "\t".join(str(total[c]) for c in columns))
+    for note in notes:
+        print(note, file=sys.stderr)
+
+
+def check_all_zones(wads):
+    known = zone_transfer_files()
+    missing = collections.Counter()
+    for world, zones in sorted(client_zones(wads).items()):
+        for zone in zones:
+            if zone.path not in known:
+                missing[world] += 1
+                print(f"missing\t{zone.path}")
+    for world, n in missing.most_common():
+        print(f"{world}\t{n} zones without a ZoneTransfer file")
+    print(f"client zones without a ZoneTransfer file: {sum(missing.values())}")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("zones", nargs="*", help="zone paths, e.g. Grizzleheim/Interiors/GH_Hero_T2")
@@ -335,10 +443,22 @@ def main():
     parser.add_argument("--street", nargs="?", const="", default=None,
                         help="also add the inbound entry to this street's file (bare: the zone's discovered parent)")
     parser.add_argument("--check", action="store_true", help="list quest zones absent from ZoneTransfer")
+    parser.add_argument("--all-zones", action="store_true", help="with --check: every client zone without a file")
+    parser.add_argument("--all", action="store_true", help="every client zone wad without a ZoneTransfer file")
+    parser.add_argument("--world", action="append", default=[], help="with --all: only this world (repeatable)")
+    parser.add_argument("--dry-run", action="store_true", help="with --all: print the per-world counts only")
     parser.add_argument("--gamedata", default=GAMEDATA_DIR, help="the client's Data/GameData directory")
     args = parser.parse_args()
     if args.check:
-        check()
+        if args.all_zones:
+            check_all_zones(Wads(args.gamedata))
+        else:
+            check()
+        return
+    if args.all:
+        if args.apply == args.dry_run:
+            parser.error("--all takes one of --dry-run or --apply")
+        run_all(Wads(args.gamedata), args.world, args.apply)
         return
     if not args.zones:
         parser.error("give a zone path or --check")
