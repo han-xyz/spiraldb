@@ -10,7 +10,8 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from client_data import (DISPLAY_NAME, GAMEDATA_DIR, ROOTWAD_DIR, read_binary_xml, read_lang, read_wad, string_field,
+from client_data import (DISPLAY_NAME, GAMEDATA_DIR, ROOTWAD_DIR, lang_exists, read_binary_xml, read_lang, read_wad,
+                         string_field,
                          template_ids)
 
 PERSONA_SUFFIX = b"_Persona"
@@ -35,7 +36,7 @@ def persona_of(data):
 def display_name(rootwad, key, langs):
     lang_name, _, entry = key.rpartition("_")
     if lang_name not in langs:
-        langs[lang_name] = read_lang(rootwad, lang_name)
+        langs[lang_name] = read_lang(rootwad, lang_name) if lang_name and lang_exists(rootwad, lang_name) else {}
     return langs[lang_name].get(entry, key)
 
 

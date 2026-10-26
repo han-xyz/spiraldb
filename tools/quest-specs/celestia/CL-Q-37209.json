@@ -3,7 +3,7 @@
   "lang": "37209",
   "giver": {
     "persona": "CL-CRAB-NPC06",
-    "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+    "zone": "Celestia/Interiors/CL_Z10i3_Kingdom_Of_The_Crabs"
   },
   "requires": [],
   "min_level": 48,
@@ -59,7 +59,8 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": ""
+      "zone": "Celestia/Interiors/CL_Z10i3_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
     }
   ],
   "personas": {
@@ -79,11 +80,6 @@
       "blocking": false
     },
     {
-      "field": "giver.zone (placed in no zone)",
-      "value": "Queen Calypso",
-      "blocking": true
-    },
-    {
       "field": "requires",
       "value": "Calypso Queen",
       "blocking": false
@@ -97,11 +93,6 @@
       "field": "goal.descriptor",
       "value": "(Collect) Treasure",
       "blocking": false
-    },
-    {
-      "field": "goal.persona.zone (placed in no zone)",
-      "value": "Queen Calypso",
-      "blocking": true
     },
     {
       "field": "dialogs",

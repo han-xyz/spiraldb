@@ -4,6 +4,7 @@
 See tools/README.md for the modes, the cache and what a spec needs after parsing.
 """
 import argparse
+import difflib
 import glob
 import gzip
 import html
@@ -19,6 +20,7 @@ import urllib.parse
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from client_data import GAMEDATA_DIR, ROOTWAD_DIR
 
 PACK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_CACHE = os.path.join(PACK, ".scratch", "friends-server", "task-A1", "cache")
@@ -36,6 +38,7 @@ BACKOFF_START, BACKOFF_CAP, BACKOFF_TOTAL = 2.0, 60.0, 300.0
 QUEST_TYPES = ("storyline", "side", "instance")
 MIN_SHARED_WEIGHT, CLEAR_MARGIN = 4.0, 1.5
 CHAIN_WINDOW = 16
+NAME_CUTOFF = 0.8
 WORLDS = {"Celestia": {"folder": "CL", "lang_range": (0x371A8, 0x3780E), "level": 48}}
 
 
@@ -340,25 +343,29 @@ class ClientData:
         self.titles = self.read_lang("QuestTitle")
         self.lang_range = config["lang_range"]
         self.lang_dir = os.path.join(ROOTWAD_DIR, "Locale", "en-US")
-        npc_module = load_module("npc-personas-from-wad")
-        rows = list(npc_module.npcs(ROOTWAD_DIR, self.folder))
-        placed = npc_module.zone_placements(GAMEDATA_DIR, world, [row["template"] for row in rows])
+        self.npc_module = load_module("npc-personas-from-wad")
+        self.mob_module = load_module("mob-adjectives-from-wad")
+        rows = list(self.npc_module.npcs(ROOTWAD_DIR, self.folder))
+        placed = self.npc_module.zone_placements(GAMEDATA_DIR, world, [row["template"] for row in rows])
+        zones_of_persona = {}
+        for row in rows:
+            zones_of_persona.setdefault(row["persona"], []).extend(placed[row["template"]])
         self.personas = {}
         for row in rows:
             if row["name"]:
-                row["zones"] = placed[row["template"]]
+                # A named template that no zone places may share its persona with an unnamed one that is placed.
+                row["zones"] = placed[row["template"]] or list(dict.fromkeys(zones_of_persona[row["persona"]]))
                 row["persona"] = row["persona"][:-len("_Persona")].strip()
+                row["folder"] = self.folder
                 self.personas.setdefault(norm(row["name"]), []).append(row)
-        mob_names = self.read_lang("WizardMobs")
-        mob_keys = {}
-        for key, text in mob_names.items():
-            mob_keys.setdefault(text, key)
-        self.mobs = {}
-        for name, template, _id, adjectives in load_module("mob-adjectives-from-wad").mobs(ROOTWAD_DIR, self.folder):
-            own = f"{template}.AdjRef"
-            self.mobs.setdefault(norm(name), []).append(
-                {"adjective": own if own in adjectives else (adjectives or [None])[0],
-                 "target": f"WizardMobs_{mob_keys[name]}" if name in mob_keys else ""})
+        self.mob_keys = {}
+        for key, text in self.read_lang("WizardMobs").items():
+            self.mob_keys.setdefault(text, key)
+        self.mobs = self.mob_index([self.folder])
+        self.other_folders = sorted(folder for folder in os.listdir(os.path.join(ROOTWAD_DIR, "ObjectData"))
+                                    if folder != self.folder
+                                    and os.path.isdir(os.path.join(ROOTWAD_DIR, "ObjectData", folder)))
+        self.other_mobs, self.other_personas = None, None
         self.objects = {}
         langs = {}
         directory = os.path.join(ROOTWAD_DIR, "ObjectData", self.folder)
@@ -396,6 +403,35 @@ class ClientData:
             if title and name:
                 self.pack_quests.setdefault(title.group(1), name.group(1))
 
+    def mob_index(self, folders):
+        found = {}
+        for folder in folders:
+            for name, template, _id, adjectives in self.mob_module.mobs(ROOTWAD_DIR, folder):
+                own = f"{template}.AdjRef"
+                found.setdefault(norm(name), []).append(
+                    {"adjective": own if own in adjectives else (adjectives or [None])[0],
+                     "target": f"WizardMobs_{self.mob_keys[name]}" if name in self.mob_keys else "",
+                     "folder": folder})
+        return found
+
+    def other_world_personas(self, wanted):
+        """The persona rows of other ObjectData folders for a name, with the zones of any world that place them."""
+        if self.other_personas is None:
+            self.other_personas = {}
+            for folder in self.other_folders:
+                for row in self.npc_module.npcs(ROOTWAD_DIR, folder):
+                    if row["name"]:
+                        row["persona"] = row["persona"][:-len("_Persona")].strip()
+                        row["folder"], row["zones"] = folder, None
+                        self.other_personas.setdefault(norm(row["name"]), []).append(row)
+        rows = self.other_personas.get(wanted, [])
+        unplaced = [row for row in rows if row["zones"] is None]
+        if unplaced:
+            placed = self.npc_module.zone_placements(GAMEDATA_DIR, "*", [row["template"] for row in unplaced])
+            for row in unplaced:
+                row["zones"] = placed[row["template"]]
+        return rows
+
     def in_range(self, key):
         return re.fullmatch(r"[0-9A-F]+", key) and self.lang_range[0] <= int(key, 16) <= self.lang_range[1]
 
@@ -426,12 +462,22 @@ class ClientData:
         wanted = norm(name)
         rows = self.personas.get(wanted) or [row for key, rows in self.personas.items() if key.endswith(wanted)
                                              for row in rows]
+        close = difflib.get_close_matches(wanted, self.personas, n=2, cutoff=NAME_CUTOFF)
+        if not rows and len(close) == 1:
+            rows = self.personas[close[0]]
+        rows = rows or self.other_world_personas(wanted)
         if not rows:
             return None
         return next((row for row in rows if zone in row["zones"]), next((r for r in rows if r["zones"]), rows[0]))
 
     def mob_entries(self, name):
-        return next((self.mobs[form] for form in singular_forms(name) if form in self.mobs), [])
+        """The mob entries for a name, from the world's folder, else from any other folder."""
+        found = next((self.mobs[form] for form in singular_forms(name) if form in self.mobs), [])
+        if found:
+            return found
+        if self.other_mobs is None:
+            self.other_mobs = self.mob_index(self.other_folders)
+        return next((self.other_mobs[form] for form in singular_forms(name) if form in self.other_mobs), [])
 
     def object_entries(self, name):
         name = re.sub(r"\s*\(.*?\)|\s+(in|at|on|with|for|from)\s+.*$|#", "", name)
@@ -493,6 +539,11 @@ class SpecBuilder:
         if row is None:
             self.unresolved(field, name, True)
             return None, ""
+        if norm(row["name"]) != norm(name) and not norm(row["name"]).endswith(norm(name)):
+            self.unresolved(f"{field} (closest name)", f"{name} read as {row['name']}", False)
+        if row["folder"] != self.data.folder:
+            self.unresolved(f"{field} (other world)", f"{name}: {row['template']} from ObjectData/{row['folder']}",
+                            False)
         self.personas[row["persona"]] = {"portrait": row["portrait"], "template_id": row["template_id"]}
         zone = self.zone if self.zone in row["zones"] else (row["zones"] or [""])[0]
         if not zone:
@@ -520,6 +571,8 @@ class SpecBuilder:
             entries = self.data.mob_entries(creature)
             if not entries:
                 self.unresolved("goal.mobs", creature, True)
+            for folder in sorted({e["folder"] for e in entries} - {self.data.folder}):
+                self.unresolved("goal.mobs (other folder)", f"{creature}: ObjectData/{folder}", False)
             mobs += [e["adjective"] for e in entries if e["adjective"]]
             target = target or next((e["target"] for e in entries if e["target"]), "")
         if not mobs:
@@ -592,7 +645,7 @@ class SpecBuilder:
         if subs:
             return self.header_goals(line, text, verb, subs, number)
         if verb == "talk":
-            name = (links(line, "NPC") or [re.sub(r"^Talk to\s+|\s+in\s+.*$", "", text)])[0]
+            name = (links(line, "NPC") or [re.sub(r"^Talk to\s+|\s+in\s+.*$", "", text, flags=re.I)])[0]
             return [self.persona_goal(name)]
         if verb == "defeat":
             creatures = links(line, "Creature") or [re.sub(r"^Defeat\s+(\d+\s+)?|\s+and\s+.*$|\s+in\s+.*$", "", text)]

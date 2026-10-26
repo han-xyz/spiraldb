@@ -12,6 +12,17 @@
         "m_destinationLoc": "5681.921,7694.496,-855.4439,1.520456",
         "m_destinationZone": "Celestia/CL_Hub"
       }
+    },
+    {
+      "TriggerName": "To_Z06i1_SorcererSanctum",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z06i1_StormHaven"
+      }
     }
   ]
 }

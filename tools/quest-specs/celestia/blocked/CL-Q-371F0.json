@@ -125,6 +125,12 @@
       "loc": "ZoneLocName_227140"
     },
     {
+      "type": "persona",
+      "persona": "CL-MOON-NPC01",
+      "zone": "Celestia/CL_Z08_Temple_Of_The_Moon/MoonC1",
+      "loc": "ZoneLocName_227140"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "CL_MorgantineGhost-Blue-R10.AdjRef"
@@ -157,6 +163,12 @@
       "with_previous": true
     },
     {
+      "type": "persona",
+      "persona": "CL-MOON-NPC01",
+      "zone": "Celestia/CL_Z08_Temple_Of_The_Moon/MoonC1",
+      "loc": "ZoneLocName_227140"
+    },
+    {
       "type": "usage",
       "items": [
         "CL-DownedProtector.AdjRef",
@@ -168,7 +180,12 @@
       "loc": "ZoneLocName_227140"
     }
   ],
-  "personas": {},
+  "personas": {
+    "CL-MOON-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morgantine_Ghost_04_NPC.dds",
+      "template_id": 227227
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Dark_Side_of_the_Moon",
     "timestamp": "20231124094809"
@@ -190,14 +207,14 @@
       "blocking": false
     },
     {
-      "field": "goal.persona",
-      "value": "Koltan Grimfane",
-      "blocking": true
+      "field": "goal.persona (closest name)",
+      "value": "Koltan Grimfane read as Koltan Gloomfane",
+      "blocking": false
     },
     {
-      "field": "goal.persona",
-      "value": "Koltan Grimfane",
-      "blocking": true
+      "field": "goal.persona (closest name)",
+      "value": "Koltan Grimfane read as Koltan Gloomfane",
+      "blocking": false
     },
     {
       "field": "dialogs",

@@ -22,12 +22,22 @@
       "persona": "giver",
       "zone": "Celestia/CL_Hub",
       "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "persona",
+      "persona": "ME1-YoungHalston-A",
+      "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z02_Prison",
+      "loc": "ZoneLocName_1161792"
     }
   ],
   "personas": {
     "CL-HUB-NPC001": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
       "template_id": 211488
+    },
+    "ME1-YoungHalston-A": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Halston_Balestrum.dds",
+      "template_id": 1206764
     }
   },
   "source": {
@@ -51,14 +61,9 @@
       "blocking": true
     },
     {
-      "field": "goal.persona",
-      "value": "Halston Balestrom",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona",
-      "value": "Halston Balestrom",
-      "blocking": true
+      "field": "goal.persona (other world)",
+      "value": "Halston Balestrom: ME1-YoungHalston-A from ObjectData/MaestroEvent",
+      "blocking": false
     }
   ]
 }

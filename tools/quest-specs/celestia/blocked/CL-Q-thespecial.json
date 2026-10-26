@@ -20,6 +20,18 @@
   "goals": [
     {
       "type": "persona",
+      "persona": "MB-SHOP-Snacks01",
+      "zone": "Marleybone/MB_Hub",
+      "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-SHOP-Snacks01",
+      "zone": "Marleybone/MB_Hub",
+      "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Hub",
       "loc": "ZoneLocName_1161792"
@@ -29,6 +41,10 @@
     "CL-CAMP-NPC10": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Upper08.dds",
       "template_id": 268128
+    },
+    "MB-SHOP-Snacks01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Shopkeeper_MB_Yellow.dds",
+      "template_id": 227095
     }
   },
   "source": {
@@ -42,9 +58,9 @@
       "blocking": true
     },
     {
-      "field": "goal.persona",
-      "value": "Gordon Sumner",
-      "blocking": true
+      "field": "goal.persona (other world)",
+      "value": "Gordon Sumner: MB-SHOP-Snacks01 from ObjectData/MB",
+      "blocking": false
     },
     {
       "field": "goal.items",
@@ -67,9 +83,9 @@
       "blocking": true
     },
     {
-      "field": "goal.persona",
-      "value": "Gordon Sumner",
-      "blocking": true
+      "field": "goal.persona (other world)",
+      "value": "Gordon Sumner: MB-SHOP-Snacks01 from ObjectData/MB",
+      "blocking": false
     }
   ]
 }

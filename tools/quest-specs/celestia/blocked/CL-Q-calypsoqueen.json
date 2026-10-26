@@ -32,7 +32,8 @@
     {
       "type": "persona",
       "persona": "CL-CRAB-NPC06",
-      "zone": ""
+      "zone": "Celestia/Interiors/CL_Z10i3_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
     }
   ],
   "personas": {
@@ -59,11 +60,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Calypso's Cavern",
       "blocking": false
-    },
-    {
-      "field": "goal.persona.zone (placed in no zone)",
-      "value": "Queen Calypso",
-      "blocking": true
     }
   ]
 }

@@ -187,7 +187,12 @@ newest capture, and the CDX timestamp when the newest capture is an error page.
   creature or item.
 - NPC names to personas with `npc-personas-from-wad.py`, mobs to their `.AdjRef` adjectives with
   `mob-adjectives-from-wad.py`, objects to the adjectives of the world's object templates by display name or template
-  name, and item names to a line of the quest's own `WizQst` file.
+  name, and item names to a line of the quest's own `WizQst` file. A named NPC template that no zone wad places takes
+  the zones of an unnamed template with the same persona (Queen Calypso is placed as `CL-CalypsoReset`). A name the
+  world's folder lacks is taken from the one world name close to it (`NAME_CUTOFF`; the wiki's Koltan Grimfane is
+  Koltan Gloomfane), else from the other ObjectData folders, placed by every zone wad; a mob the world's folder lacks
+  comes from the other folders too (the Spellwrit Wildclaws are in `PageEvent`). Each of these is listed in
+  `needs_review`.
 - the zone from the zone category, else the giver's location, to the zone where most of that zone's givers stand.
 - prerequisites to the ids of the other specs, or of the pack's quests with that title.
 

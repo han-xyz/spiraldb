@@ -3,7 +3,7 @@
   "lang": "37213",
   "giver": {
     "persona": "CL-CRAB-NPC06",
-    "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+    "zone": "Celestia/Interiors/CL_Z10i3_Kingdom_Of_The_Crabs"
   },
   "requires": [
     "CL-Q-37209"
@@ -88,11 +88,6 @@
       "field": "lang",
       "value": "WizQst37213 matched by the words it shares with the goals; its lines name Praetor Mako",
       "blocking": false
-    },
-    {
-      "field": "giver.zone (placed in no zone)",
-      "value": "Queen Calypso",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",

@@ -108,11 +108,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Celestia/Interiors/CL_Z06i1_StormHaven",
-      "blocking": true
     }
   ]
 }

@@ -56,6 +56,17 @@
         "m_destinationLoc": "-1010.959,-30.00113,25.83283,1.58041",
         "m_destinationZone": "Celestia/Interiors/CL_Z10i11_Kingdom_Of_The_Crabs"
       }
+    },
+    {
+      "TriggerName": "To CL_Z10i3 - Calypso",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z10i3_Kingdom_Of_The_Crabs"
+      }
     }
   ]
 }

@@ -116,11 +116,6 @@
       "blocking": true
     },
     {
-      "field": "goal.persona",
-      "value": "Talk To Prospector Zeke",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false

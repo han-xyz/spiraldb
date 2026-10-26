@@ -28,6 +28,16 @@
   },
   "goals": [
     {
+      "type": "bounty",
+      "mobs": [
+        "CL-Wildclaw-Brown-PageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001470",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
       "type": "usage",
       "items": [
         "CL-PageEvent-Boss.AdjRef"
@@ -35,6 +45,16 @@
       "count": 1,
       "zone": "Celestia/CL_Z05_The_Floating_Land",
       "descriptor": "NPCs_01748040",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Student-Life-PageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001469",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
       "loc": "ZoneLocName_227141"
     }
   ],
@@ -55,14 +75,14 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Spellwrit Wildclaws",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Spellwrit Wildclaws: ObjectData/PageEvent",
+      "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Carson Spritethief",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Carson Spritethief: ObjectData/PageEvent",
+      "blocking": false
     },
     {
       "field": "dialogs",

@@ -1,18 +1,18 @@
 {
-  "id": "CL-Q-B4F39",
-  "lang": "B4F39",
+  "id": "CL-Q-B4F37",
+  "lang": "B4F37",
   "giver": {
     "persona": "CL-HUB-NPC001",
     "zone": "Celestia/CL_Hub"
   },
   "requires": [
-    "CL-Q-B4F37"
+    "CL-MAIN-C00-001"
   ],
   "mainline": false,
   "level": 48,
   "reward": {
-    "xp": 10,
-    "gold": 30
+    "xp": 15,
+    "gold": 80
   },
   "dialogs": {
     "prep": [
@@ -39,15 +39,28 @@
       {
         "speaker": "giver",
         "line": "00000005"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000006"
       }
     ],
     "underway": []
   },
-  "goals": [],
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CL-Wildclaw-Brown-PageEvent.AdjRef"
+      ],
+      "count": 10,
+      "target": "WizardMobs_00001470",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_1161792"
+    }
+  ],
   "personas": {
     "CL-HUB-NPC001": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
@@ -55,32 +68,19 @@
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Conscience_Be_Your_Guide",
-    "timestamp": "20240121093551"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ardor's_Song",
+    "timestamp": "20240104055924"
   },
   "needs_review": [
     {
-      "field": "goal.persona",
-      "value": "Harold Argleston",
-      "blocking": true
+      "field": "requires",
+      "value": "The Carpe Diem Society",
+      "blocking": false
     },
     {
-      "field": "goal.persona",
-      "value": "Arthur Wethersfield",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona",
-      "value": "Arthur Wethersfield",
-      "blocking": true
-    },
-    {
-      "field": "goals",
-      "value": [
-        "@Talk to [NPC:Harold Argleston] in [Location:The Commons]",
-        "@Talk to [NPC:Arthur Wethersfield] in [Location:Ravenwood]"
-      ],
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Spellwrit Wildclaws: ObjectData/PageEvent",
+      "blocking": false
     },
     {
       "field": "dialogs",

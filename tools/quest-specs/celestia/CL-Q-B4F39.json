@@ -1,18 +1,18 @@
 {
-  "id": "CL-Q-B4F37",
-  "lang": "B4F37",
+  "id": "CL-Q-B4F39",
+  "lang": "B4F39",
   "giver": {
     "persona": "CL-HUB-NPC001",
     "zone": "Celestia/CL_Hub"
   },
   "requires": [
-    "CL-MAIN-C00-001"
+    "CL-Q-B4F37"
   ],
   "mainline": false,
   "level": 48,
   "reward": {
-    "xp": 15,
-    "gold": 80
+    "xp": 10,
+    "gold": 30
   },
   "dialogs": {
     "prep": [
@@ -39,6 +39,10 @@
       {
         "speaker": "giver",
         "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
       }
     ],
     "underway": []
@@ -46,8 +50,14 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "giver",
-      "zone": "Celestia/CL_Hub",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC12",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
       "loc": "ZoneLocName_1161792"
     }
   ],
@@ -55,22 +65,30 @@
     "CL-HUB-NPC001": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
       "template_id": 211488
+    },
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-PARTY-NPC12": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 1452008
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Ardor's_Song",
-    "timestamp": "20240104055924"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Conscience_Be_Your_Guide",
+    "timestamp": "20240121093551"
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "The Carpe Diem Society",
+      "field": "goal.persona (other world)",
+      "value": "Harold Argleston: WC-HUB-NPC03 from ObjectData/WC",
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Spellwrit Wildclaws",
-      "blocking": true
+      "field": "goal.persona (other world)",
+      "value": "Arthur Wethersfield: WC-PARTY-NPC12 from ObjectData/WC",
+      "blocking": false
     },
     {
       "field": "dialogs",

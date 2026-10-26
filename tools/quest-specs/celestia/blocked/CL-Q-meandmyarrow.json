@@ -19,6 +19,11 @@
   "goals": [
     {
       "type": "persona",
+      "persona": "WC-PARK-NPC01",
+      "zone": ""
+    },
+    {
+      "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Hub",
       "loc": "ZoneLocName_1161792"
@@ -28,6 +33,10 @@
     "CL-CAMP-NPC10": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Upper08.dds",
       "template_id": 268128
+    },
+    "WC-PARK-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Park_Player_1.dds",
+      "template_id": 175491
     }
   },
   "source": {
@@ -46,7 +55,12 @@
       "blocking": false
     },
     {
-      "field": "goal.persona",
+      "field": "goal.persona (other world)",
+      "value": "Tennant Wastelander: WC-PARK-NPC01 from ObjectData/WC",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
       "value": "Tennant Wastelander",
       "blocking": true
     },
