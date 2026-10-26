@@ -45,6 +45,72 @@
         "m_destinationLoc": "-73.25754,-1167.946,47.89569,-3.141593",
         "m_destinationZone": "Avalon/Interiors/AV_Z02_LonelyTower"
       }
+    },
+    {
+      "TriggerName": "To AV_02_FireSpitter",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z02_FireSpitter"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Forlorn Tower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z02_ForlonTower"
+      }
+    },
+    {
+      "TriggerName": "Jabberwock Teleport",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z02_JabberwockLair"
+      }
+    },
+    {
+      "TriggerName": "To AV_02_TowerHarlequin",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z02_TowerHarlequin"
+      }
+    },
+    {
+      "TriggerName": "To AV_Z02_RedThornTower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z02_TowerRedThorn"
+      }
+    },
+    {
+      "TriggerName": "To AV_Z02_Well",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z02_Well"
+      }
     }
   ]
 }

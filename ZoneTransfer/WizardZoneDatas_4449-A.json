@@ -34,6 +34,17 @@
         "m_destinationLoc": "7.338181,-2612.302,-9.60013,-2.305089",
         "m_destinationZone": "Avalon/AV_Z00_Hub"
       }
+    },
+    {
+      "TriggerName": "Teleport to AV_Z00_Cave01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z00_FairyCircle_Cave"
+      }
     }
   ]
 }

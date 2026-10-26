@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/Interiors/AV_Z02_TowerRedThorn",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport To High Road",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From TowerRedthorn",
+        "m_destinationZone": "Avalon/AV_Z02_HighRoad"
+      }
+    }
+  ]
+}

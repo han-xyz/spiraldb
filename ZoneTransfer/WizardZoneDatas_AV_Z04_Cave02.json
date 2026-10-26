@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/Interiors/AV_Z04_Cave02",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToZ04-WILD",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Location-FromCave2",
+        "m_destinationZone": "Avalon/AV_Z04_TheWild"
+      }
+    }
+  ]
+}

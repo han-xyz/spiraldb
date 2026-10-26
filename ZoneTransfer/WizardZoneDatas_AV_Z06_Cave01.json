@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/Interiors/AV_Z06_Cave01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Dun_Dara",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Catalan_Cave",
+        "m_destinationZone": "Avalon/AV_Z06_DunDara"
+      }
+    }
+  ]
+}

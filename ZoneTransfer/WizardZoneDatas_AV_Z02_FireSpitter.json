@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/Interiors/AV_Z02_FireSpitter",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location to High Road",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From AV_Z02_Cave01",
+        "m_destinationZone": "Avalon/AV_Z02_HighRoad"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/Interiors/AV_Z05_IndigoGiant",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_TheWyrd",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Indigo_Giant",
+        "m_destinationZone": "Avalon/AV_Z05_TheWyrd"
+      }
+    }
+  ]
+}

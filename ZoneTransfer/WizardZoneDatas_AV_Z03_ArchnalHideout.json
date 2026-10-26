@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/Interiors/AV_Z03_ArchnalHideout",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_High_Road_Spell",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_ArchnalHideout",
+        "m_destinationZone": "Avalon/AV_Z03_CaerLyon"
+      }
+    }
+  ]
+}

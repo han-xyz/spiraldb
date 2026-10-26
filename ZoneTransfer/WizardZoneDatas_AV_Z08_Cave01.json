@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/Interiors/AV_Z08_Cave01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To Lake Shore",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From AV_Z08_Cave01",
+        "m_destinationZone": "Avalon/AV_Z08_LakeShore"
+      }
+    }
+  ]
+}
