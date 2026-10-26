@@ -23,6 +23,17 @@
         "m_destinationLoc": "-4.633265,-235.9482,2.283325,0",
         "m_destinationZone": "G14_DM/Interiors/DM_Z01_I01_HouseOfHorror"
       }
+    },
+    {
+      "TriggerName": "TeleportDarkmoorDungeon",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "G14_DM/Interiors/DM_Z01I02_CastleDMPrison"
+      }
     }
   ]
 }

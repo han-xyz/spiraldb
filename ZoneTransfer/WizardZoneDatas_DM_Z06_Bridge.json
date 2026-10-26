@@ -1,0 +1,17 @@
+{
+  "ZoneName": "G14_DM/DM_Z06_Bridge",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "DM_CastleDarkmoor_Instance3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "G14_DM/DM_Z07_Graveyard"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "G14_DM/Interiors/DM_Z01I02_CastleDMPrison",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportSource_Exit01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "ReturnFromDarkmoorDungeon",
+        "m_destinationZone": "G14_DM/DM_Z01_CastleDarkmoor"
+      }
+    }
+  ]
+}
