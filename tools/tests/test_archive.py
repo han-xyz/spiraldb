@@ -1,7 +1,10 @@
+import os
 import unittest
 
 import client  # noqa: F401
-from spiraltools.quests.archive import match_by_proper_nouns
+from spiraltools.quests.archive import match_by_proper_nouns, read_page
+
+FIXTURES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures")
 
 
 class Lines:
@@ -52,6 +55,23 @@ class ProperNounTest(unittest.TestCase):
                  "Q:Taua": page(["Talk to Tupa Taua"])}
         found = self.match(pages, {"Q:Known": "100"}, ["105"])
         self.assertEqual(found, {"Q:Bark": found["Q:Bark"]})
+
+
+class RewardTest(unittest.TestCase):
+    def read(self, name):
+        with open(os.path.join(FIXTURES, name), encoding="utf-8") as f:
+            return read_page(f.read())
+
+    def test_a_spell_without_a_school_icon_is_a_plain_name(self):
+        fields = self.read("quest_page_spell_reward.html")
+        self.assertEqual(fields["reward"], {"gold": 350, "xp": 325})
+        self.assertEqual(fields["reward_spells"], ["Buoy Chests 1"])
+
+    def test_one_spell_per_school_names_the_school_of_its_icon(self):
+        fields = self.read("quest_page_school_spell_rewards.html")
+        self.assertEqual(fields["reward_spells"], [{"spell": "Shadow Sentinel", "school": "Death"},
+                                                   {"spell": "Shadow Shrike", "school": "Fire"},
+                                                   {"spell": "Shadow Sentinel", "school": "Ice"}])
 
 
 if __name__ == "__main__":

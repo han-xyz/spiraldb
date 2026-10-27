@@ -38,6 +38,7 @@ BACKOFF_START, BACKOFF_CAP, BACKOFF_TOTAL = 2.0, 60.0, 300.0
 QUEST_TYPES = ("storyline", "side", "instance")
 MIN_SHARED_WEIGHT, CLEAR_MARGIN = 4.0, 1.5
 CHAIN_WINDOW = 16
+SCHOOL_ICON = re.compile(r"\[File:\(Icon\)_(Balance|Death|Fire|Ice|Life|Myth|Storm)\.png\]")
 NAME_CUTOFF = 0.8
 
 
@@ -272,6 +273,11 @@ def read_page(page):
         icon = re.match(r"\[File:\(Icon\)_(Gold|XP)\.png\]", line)
         if icon and re.fullmatch(r"[\d,]+", reward[i + 1]):
             amounts[icon.group(1).lower()] = int(reward[i + 1].replace(",", ""))
+    spells, school = [], None
+    for line in reward:
+        spells += [{"spell": name, "school": school} if school else name for name in links(line, "Spell")]
+        icon = SCHOOL_ICON.fullmatch(line)
+        school = icon.group(1) if icon else None
     leads_to = section(lines, "Leads to:", "<")[1:]
     sentence = next((line for line in head if line.startswith("This is a")), "")
     place = next((line for line in head if re.match(r"(Giver|Start) Location:", line)), "")
@@ -285,6 +291,7 @@ def read_page(page):
         "goals": goal_lines,
         "hand_in": (links(hand_in, "NPC") or [None])[0],
         "reward": amounts,
+        "reward_spells": spells,
         "leads_to": [q for line in leads_to for q in links(line, "Quest")],
     }
 
@@ -727,6 +734,8 @@ class SpecBuilder:
             spec["reward"] = {"xp": fields["reward"]["xp"], "gold": fields["reward"]["gold"]}
         else:
             self.unresolved("reward", fields["reward"], False)
+        if fields["reward_spells"]:
+            spec.setdefault("reward", {})["spells"] = fields["reward_spells"]
         goals = self.goals()
         hand_in_row = self.data.persona(fields["hand_in"], self.zone) if fields["hand_in"] else None
         ends_at_hand_in = bool(goals) and hand_in_row is not None and goals[-1].get("persona") == hand_in_row["persona"]

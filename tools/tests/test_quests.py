@@ -9,9 +9,10 @@ from client import needs_gamedata, needs_rootwad
 from spiraltools.lang import ROOTWAD_DIR
 from spiraltools.pack import QUEST_SPECS_DIR, quest_output_paths, tolerant_load
 from spiraltools.quests.generate import diff, quest_template, requirements, reward, steps
-from spiraltools.quests.spec import SpecError, check_spec, load_specs, location_key
+from spiraltools.quests.spec import SpecError, check_spec, load_specs, location_key, spell_id
 from spiraltools.wad import GAMEDATA_DIR
 
+FIXTURES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures")
 ROUNDTRIP = sorted(glob.glob(os.path.join(QUEST_SPECS_DIR, "roundtrip", "*.json")))
 # What the client keeps nowhere a tool can read, and the known shape differences (tools/README.md, "Not generated").
 KNOWN_DIFFERENCES = {
@@ -23,6 +24,13 @@ KNOWN_DIFFERENCES = {
     "WC-UNICORN-MAIN-002": {".m_requirements.$type: only generated", ".m_dialogList.m_dialogs: differs",
                             ".m_goals[0].m_dialogList: differs"},
 }
+
+
+def write_spec(directory, loaded):
+    path = os.path.join(directory, f"{loaded['id']}.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({k: v for k, v in loaded.items() if not k.startswith("_")}, f)
+    return path
 
 
 def spec(**fields):
@@ -62,6 +70,29 @@ class SpecTest(unittest.TestCase):
         problems = check_spec(broken, rootwad, gamedata, {}, set())
         self.assertIn(f"line 99999999 not in WizQst{broken['lang']}.lang", problems)
 
+    @needs_rootwad
+    def test_spell_names_resolve_by_file_or_display_name_and_an_ambiguous_one_names_its_candidates(self):
+        spells = ["fire cat", "Blood Bat", "Pixie", {"spell": "No Such Spell", "school": "Fire"}]
+        written = write_spec(tempfile.mkdtemp(), spec(reward={"spells": spells}))
+        loaded = load_specs([written], ROOTWAD_DIR)[0]
+        self.assertEqual(spell_id(loaded, "fire cat"), 103007158)
+        self.assertEqual(spell_id(loaded, "Blood Bat"), 1067010286)
+        with self.assertRaisesRegex(SpecError, "Spells/Pixie.xml, Spells/CastleMagic/Pixie.xml"):
+            spell_id(loaded, "Pixie")
+        with self.assertRaisesRegex(SpecError, "no spell template"):
+            spell_id(loaded, "No Such Spell")
+
+    @needs_rootwad
+    @needs_gamedata
+    def test_check_reports_an_unresolved_spell_reward(self):
+        base = load_specs(ROUNDTRIP[:1], ROOTWAD_DIR)[0]
+        base["reward"] = {**base.get("reward", {}), "spells": ["Fire Cat", "Pixie"]}
+        loaded = load_specs([write_spec(tempfile.mkdtemp(), base)], ROOTWAD_DIR)[0]
+        problems = check_spec(loaded, ROOTWAD_DIR, GAMEDATA_DIR, {}, set())
+        self.assertEqual([p for p in problems if "spell" in p],
+                         [f"{loaded['id']}: spell 'Pixie' matches several templates: "
+                          "Spells/Pixie.xml, Spells/CastleMagic/Pixie.xml"])
+
 
 class GenerateTest(unittest.TestCase):
     def test_a_goal_with_previous_joins_the_step_before(self):
@@ -78,6 +109,24 @@ class GenerateTest(unittest.TestCase):
     def test_reward_falls_back_to_the_level_band(self):
         self.assertEqual(reward(spec(level=48)), (3805, 103))
         self.assertEqual(reward(spec(level=12, reward={"xp": 7})), (7, 43))
+
+    def test_spell_rewards_become_learn_spell_end_results_shaped_as_the_pack(self):
+        spells = {"Spirit Shield": [("Spells/Spirit Shield.xml", 878360657)],
+                  "Buoy Chests 1": [("Spells/Fishing Spells/BuoyChests1.xml", 766279669)]}
+        built = quest_template(spec(goals=[{"type": "persona", "persona": "giver"}], _spell_ids=spells,
+                                    reward={"spells": [{"spell": "Spirit Shield", "school": "Balance"},
+                                                       "Buoy Chests 1"]}))
+        pack = tolerant_load(os.path.join(FIXTURES, "questtemplates_WC-CYCLOPS-MAIN-005.json"))
+        results = built["m_endResults"]["m_results"]
+        self.assertEqual(results[1], pack["m_endResults"]["m_results"][1])
+        self.assertEqual(results[2], {"$type": "Imcodec.ObjectProperty.TypeCache.ResLearnSpell, Imcodec.ObjectProperty",
+                                      "m_templateID": 766279669, "m_requirements": None})
+
+    def test_an_unresolved_spell_reward_blocks_generation(self):
+        unresolved = spec(goals=[{"type": "persona", "persona": "giver"}], _spell_ids={"Pixie": []},
+                          reward={"spells": ["Pixie"]})
+        with self.assertRaises(SpecError):
+            quest_template(unresolved)
 
     @needs_rootwad
     def test_round_trip_specs_differ_from_the_pack_only_in_presentation(self):

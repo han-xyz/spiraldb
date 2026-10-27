@@ -8,7 +8,7 @@ import sys
 from ..lang import ROOTWAD_DIR
 from ..pack import PACK, quest_output_paths, tolerant_load, write_unless_same
 from ..wad import GAMEDATA_DIR
-from .spec import GIVER, SpecError, check, load_specs, location_key
+from .spec import GIVER, SpecError, check, load_specs, location_key, reward_spells, spell_id, spell_name
 
 DESCRIPTION = "Generate quest templates and their drop tables from one JSON spec per quest."
 TYPE = "Imcodec.ObjectProperty.TypeCache.{}, Imcodec.ObjectProperty"
@@ -264,6 +264,16 @@ def requirements(spec):
     return {"$type": TYPE.format("RequirementList"), "m_requirements": reqs, "m_applyNOT": False, "m_operator": "ROP_AND"}
 
 
+def learn_spell(spec, item):
+    requirements = None
+    if not isinstance(item, str):
+        school = {"$type": TYPE.format("ReqSchoolOfFocus"), "m_magicSchool": item["school"], "m_applyNOT": False,
+                  "m_operator": "ROP_AND"}
+        requirements = {"m_requirements": [school], "m_applyNOT": False, "m_operator": "ROP_AND"}
+    return {"$type": TYPE.format("ResLearnSpell"), "m_templateID": spell_id(spec, spell_name(item)),
+            "m_requirements": requirements}
+
+
 def quest_template(spec):
     goals = spec["goals"]
     built_goals = [GOAL_BUILDERS[goal["type"]](spec, goal, n) for n, goal in enumerate(goals, 1)]
@@ -282,7 +292,8 @@ def quest_template(spec):
         "m_startGoals": grouped[0],
         "m_goals": built_goals,
         "m_startResults": {"m_results": []},
-        "m_endResults": {"m_results": [{"$type": TYPE.format("ResDropTable"), "m_tableName": spec["id"], "m_maxRolls": 1}]},
+        "m_endResults": {"m_results": [{"$type": TYPE.format("ResDropTable"), "m_tableName": spec["id"], "m_maxRolls": 1},
+                                       *(learn_spell(spec, item) for item in reward_spells(spec))]},
         "m_requirements": requirements(spec),
         "m_prepRequirements": None,
         "m_pruneRequirements": None,

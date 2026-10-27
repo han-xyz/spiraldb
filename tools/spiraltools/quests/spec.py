@@ -1,7 +1,7 @@
 """Quest specs: loading, the lookups they share, and validation against the client data."""
 from ..lang import lang_exists, read_lang, zone_location_keys
 from ..pack import tolerant_load, zone_transfer_files
-from ..templates import persona_templates
+from ..templates import persona_templates, spell_candidates
 from ..wad import zone_strings
 
 GIVER = "giver"
@@ -21,15 +21,37 @@ def location_key(spec, loc):
     return "ZoneLocName_" + keys[loc]
 
 
+def spell_name(item):
+    """A reward spell item is a name, or {"spell": name, "school": school} for a spell only that school learns."""
+    return item if isinstance(item, str) else item["spell"]
+
+
+def reward_spells(spec):
+    return spec.get("reward", {}).get("spells", [])
+
+
+def spell_id(spec, name):
+    candidates = spec["_spell_ids"][name]
+    if not candidates:
+        raise SpecError(f"{spec['id']}: spell {name!r} has no spell template")
+    if len(candidates) > 1:
+        raise SpecError(f"{spec['id']}: spell {name!r} matches several templates: "
+                        + ", ".join(path for path, _ in candidates))
+    return candidates[0][1]
+
+
 def load_specs(paths, rootwad):
     specs = [dict(tolerant_load(path), _path=path) for path in paths]
     zone_locations = zone_location_keys(rootwad)
+    names = {spell_name(item) for spec in specs for item in reward_spells(spec)}
+    spell_ids = {name: spell_candidates(rootwad, name) for name in names}
     successors = {}
     for spec in specs:
         for quest in spec.get("requires", []):
             successors.setdefault(quest, []).append(spec["id"])
     for spec in specs:
         spec["_zone_locations"] = zone_locations
+        spec["_spell_ids"] = spell_ids
         spec.setdefault("successors", successors.get(spec["id"], []))
     return specs
 
@@ -70,6 +92,11 @@ def check_spec(spec, rootwad, gamedata, zone_cache, known_zones):
     for goal in spec["goals"]:
         try:
             location_key(spec, goal.get("loc", ""))
+        except SpecError as e:
+            problems.append(str(e))
+    for item in reward_spells(spec):
+        try:
+            spell_id(spec, spell_name(item))
         except SpecError as e:
             problems.append(str(e))
     return problems
