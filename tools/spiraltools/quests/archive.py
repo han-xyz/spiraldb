@@ -653,7 +653,8 @@ class ClientData:
         self.other_mobs, self.other_personas, self.other_items = None, None, None
         item_rows = list(templates.items(ROOTWAD_DIR, self.folder))
         self.objects = item_index(item_rows, self.folder)
-        self.item_words = item_words(item_rows, self.folder)
+        self.item_words = item_words([row for row in item_rows if not is_unmatched(row)], self.folder)
+        self.unmatched_words = item_words([row for row in item_rows if is_unmatched(row)], self.folder)
         self.item_ids = {row["template"]: row["template_id"] for row in item_rows}
         self.item_zones = {}
         self.known_zones = set(zone_transfer_files())
@@ -846,18 +847,22 @@ class ClientData:
         """The entries of the item a usage goal names: by its name, else by its words when one item reads them, or
         one of the items they read that a zone places: the one in the goal's zone, else the one placed at all. A goal
         counting several reads, failing that, the as many items one zone places under its head word (`6 Unlit
-        Lanterns`: AV-CRYS-Lanterns, Lanterns2 to Lanterns6)."""
+        Lanterns`: AV-CRYS-Lanterns, Lanterns2 to Lanterns6). Only a name no item of the world reads, not even one
+        the quest helper skips, is looked for in other folders."""
         found = self.object_entries(name)
         if found:
             return found
-        candidates = word_entries(self.item_words, name)
+        candidates = read = word_entries(self.item_words, name)
         if len(candidates) > 1:
             zones = self.zones_of_items(candidates)
             placed = {template: entry for template, entry in candidates.items() if zones[template]}
             candidates = {template: entry for template, entry in placed.items() if zone in zones[template]} or placed
         if len(candidates) == 1:
             return list(candidates.values())
-        return (count > 1 and self.counted_entries(name, zone, count)) or self.other_world_items(name)
+        counted = count > 1 and self.counted_entries(name, zone, count)
+        if counted or read or word_entries(self.unmatched_words, name):
+            return counted or []
+        return self.other_world_items(name)
 
     def counted_entries(self, name, zone, count):
         words = re.findall(r"[A-Za-z]+", ITEM_PLACE.sub("", name))
@@ -874,14 +879,15 @@ class ClientData:
         return fits[0] if fits else []
 
     def other_world_items(self, name):
-        """The entries of the item the name reads whole, without place or article, in the nearest other ObjectData folder
-        that has one, each with its folder."""
+        """The entries of the one item the name reads whole, without place or article, in the nearest other ObjectData
+        folder that has it, each with its folder; none when that folder has several."""
         if self.other_items is None:
             self.other_items = [(folder, item_index(list(templates.items(ROOTWAD_DIR, folder)), folder))
                                 for folder in self.other_folders]
         forms = singular_forms(ITEM_ORDINAL.sub("", ITEM_PLACE.sub("", name).strip()))
-        return next(([dict(entry, folder=folder) for entry in index[form]] for folder, index in self.other_items
-                     for form in forms if form in index), [])
+        found = next(([dict(entry, folder=folder) for entry in index[form]] for folder, index in self.other_items
+                      for form in forms if form in index), [])
+        return found if len(found) == 1 else []
 
     def zones_of_items(self, names):
         """template name -> the zones of the world that place the item."""
@@ -932,13 +938,15 @@ def name_words(text):
     return frozenset(singular(word) for word in words if word not in ITEM_STOP_WORDS)
 
 
+def is_unmatched(row):
+    """Whether an item is an editor's stand-in or an object the quest helper skips, which no goal names."""
+    return bool(UNMATCHED_ADJECTIVES.intersection(row["adjectives"]))
+
+
 def item_words(rows, folder):
-    """(template, word sets of its display name, quest icon and template name, usage goal entry) per item that a
-    goal can name: not the editor's stand-ins or the objects the quest helper skips."""
+    """(template, word sets of its display name, quest icon and template name, usage goal entry) per item."""
     found = []
     for row in rows:
-        if UNMATCHED_ADJECTIVES.intersection(row["adjectives"]):
-            continue
         own = f"{row['template']}.AdjRef"
         adjective = own if own in row["adjectives"] else row["adjectives"][0]
         descriptor = row["name_key"] if row["name"] and not row["name_key"].startswith("WizardMobs_") else ""
