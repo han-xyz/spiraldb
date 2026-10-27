@@ -1,5 +1,10 @@
 {
   "id": "KR-Q-endgame",
+  "auto_start": true,
+  "giver": {
+    "persona": "KR-ShadowPalace-NPC02",
+    "zone": "Khrysalis/KR_Z12_ShadowPalace"
+  },
   "requires": [],
   "min_level": 88,
   "mainline": true,
@@ -35,7 +40,7 @@
     },
     {
       "type": "persona",
-      "persona": "KR-ShadowPalace-NPC02",
+      "persona": "giver",
       "zone": "Khrysalis/KR_Z12_ShadowPalace",
       "loc": "ZoneLocName_1233442"
     }
@@ -59,11 +64,6 @@
     {
       "field": "lang",
       "value": "End Game",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {

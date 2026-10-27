@@ -1,6 +1,7 @@
 {
   "id": "KR-Q-12D0B0",
   "lang": "12D0B0",
+  "auto_start": true,
   "requires": [],
   "min_level": 88,
   "mainline": true,
@@ -147,8 +148,8 @@
       "blocking": false
     },
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {

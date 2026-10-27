@@ -1,6 +1,7 @@
 {
   "id": "KR-Q-13D69A",
   "lang": "13D69A",
+  "auto_start": true,
   "requires": [],
   "min_level": 88,
   "mainline": false,
@@ -102,8 +103,8 @@
   },
   "needs_review": [
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {
