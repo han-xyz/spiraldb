@@ -1,0 +1,82 @@
+{
+  "id": "NV-Q-173364",
+  "lang": "173364",
+  "giver": {
+    "persona": "NV-ROSE-NPC04",
+    "zone": "Novus/Interiors/NV_Z05_CafeMelee"
+  },
+  "requires": [
+    "NV-Q-173359"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 110280,
+    "gold": 320
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Irk_Base_D_01.AdjRef",
+        "NV_Irk_Base_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004148",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Irk_Base_D_01.AdjRef",
+        "NV_Irk_Base_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004148",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    }
+  ],
+  "personas": {
+    "NV-ROSE-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Townie_C_NPC.dds",
+      "template_id": 1520455
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Caf%C3%A9_Melee",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "NV-Q-17D618",
+  "lang": "17D618",
+  "giver": {
+    "persona": "NV-PUERT-NPC14",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-17D617"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 183800,
+    "gold": 540
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC13",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Mustache_Bird_B_01.AdjRef",
+        "NV_Mustache_Bird_B_02.AdjRef",
+        "NV_Mustache_Bird_B_03.AdjRef",
+        "NV_Mustache_Bird_B_04.AdjRef",
+        "NV_Mustache_Bird_B_05.AdjRef",
+        "NV_Mustache_Bird_B_06.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004195",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-Nest.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000972",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC13",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portraits_Unicorn_Guard_A_NPC.dds",
+      "template_id": 1562160
+    },
+    "NV-PUERT-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
+      "template_id": 1562164
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/A_Hairy_Problem",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Phollicle Phoenix Nests",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "id": "NV-Q-18088F",
+  "lang": "18088F",
+  "giver": {
+    "persona": "NV-StandIn-Dasein_v3",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-18088D"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 119470,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_AeonOfAtavus_01.AdjRef",
+        "NV_Monstrosity_Croneberg_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004186",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1563028"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC16-C",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC16-C": {
+      "portrait": "GUI/NpcPortraits/Unicorn_NobleF_A_NPC.dds",
+      "template_id": 1608268
+    },
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Manticore_Meltdown",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst18088F is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Manticore's Paradise",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Return Safely",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "NV-Q-17338D",
+  "lang": "17338D",
+  "giver": {
+    "persona": "NV-ROSE-NPC21",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
+  "requires": [
+    "NV-Q-17CDE1"
+  ],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV-ROSE-Magazine.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "descriptor": "Items_00025064",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    }
+  ],
+  "personas": {
+    "NV-ROSE-NPC21": {
+      "portrait": "GUI/NpcPortraits/Penguin_Revolutionary_A_NPC.dds",
+      "template_id": 1520520
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Trust_the_Press",
+    "from": "archive",
+    "timestamp": "20240323103024"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17338D is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Piece Conference replaced by NV-Q-17CDE1",
+      "blocking": false
+    }
+  ]
+}

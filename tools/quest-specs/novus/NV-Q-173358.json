@@ -6,7 +6,7 @@
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
-    "NV-Q-179809"
+    "NV-Q-17CDE1"
   ],
   "mainline": true,
   "level": 142,
@@ -90,7 +90,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Piece Conference replaced by NV-Q-179809",
+      "value": "Piece Conference replaced by NV-Q-17CDE1",
       "blocking": false
     }
   ]

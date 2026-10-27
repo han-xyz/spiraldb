@@ -1,0 +1,139 @@
+{
+  "id": "NV-Q-17554A",
+  "lang": "17554A",
+  "title": "QuestTitle_00001903",
+  "giver": {
+    "persona": "NV-CON-NPC01-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-17CDDE"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 174610,
+    "gold": 510
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Irks_Super_A_01.AdjRef",
+        "NV_Irks_Super_A_02.AdjRef",
+        "NV_Irks_Super_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004146",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Irks_Super_A_01.AdjRef",
+        "NV_Irks_Super_A_02.AdjRef",
+        "NV_Irks_Super_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004146",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Horse_AberrantTungAk_A_01.AdjRef",
+        "NV_Horse_AberrantTungAk_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004138",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1529152"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1575004
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Moo_Bu_and_You_Too",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17554A is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Tantrum",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Level",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Last Level",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "NV-Q-18088D",
+  "lang": "18088D",
+  "giver": {
+    "persona": "NV-StandIn-Dasein_v3",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-173391"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 110280,
+    "gold": 320
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Moose_AberrantMant_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004185",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1563028"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Manticore_Concept",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst18088D is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Manticore's Plan",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

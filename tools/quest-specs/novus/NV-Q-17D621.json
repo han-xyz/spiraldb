@@ -5,7 +5,9 @@
     "persona": "NV-PUERT-NPC31",
     "zone": "Novus/NV_Z03_PuertoNuovo_VA"
   },
-  "requires": [],
+  "requires": [
+    "NV-Q-17985D"
+  ],
   "mainline": false,
   "level": 142,
   "reward": {
@@ -160,20 +162,9 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Dogs of the Regiment",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Dogs of the Regiment replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 142
+  ]
 }

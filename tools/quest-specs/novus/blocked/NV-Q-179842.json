@@ -1,0 +1,106 @@
+{
+  "id": "NV-Q-179842",
+  "lang": "179842",
+  "giver": {
+    "persona": "NV-StandIn-Dasein_v3",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-179840"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 174610,
+    "gold": 510
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Truth_of_Cats_and_Dogs",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Abberant Marleybonian Dog",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Island",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Abberant Marleybonians Cat",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Island",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Abberant Marleybonian Dog",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Defeat Abberant Marleybonian Dog",
+        "@Go To Next Island",
+        "@Defeat Abberant Marleybonians Cat",
+        "@Go To Next Island",
+        "@Defeat Abberant Marleybonian Dog"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

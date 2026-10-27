@@ -6,7 +6,7 @@
     "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
   },
   "requires": [
-    "NV-Q-17D61D"
+    "NV-Q-179826"
   ],
   "mainline": true,
   "level": 142,
@@ -159,11 +159,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Great Balls of Ire",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Phileas' Lab",
       "blocking": false
@@ -186,11 +181,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Great Balls of Ire replaced by NV-Q-17D61D",
       "blocking": false
     }
   ]

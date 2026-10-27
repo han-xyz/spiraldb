@@ -1,0 +1,133 @@
+{
+  "id": "NV-Q-17980A",
+  "lang": "17980A",
+  "giver": {
+    "persona": "NV-CON-NPC01-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-179809"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 165420,
+    "gold": 490
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_DogofWarF_A_03.AdjRef",
+        "NV_Dog_DogofWar_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004131",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-CageDoor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "WizQst17980A_00000016",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Mustache_Bird_A_01.AdjRef",
+        "NV_Mustache_Bird_A_02.AdjRef",
+        "NV_Mustache_Bird_A_03.AdjRef",
+        "NV_Mustache_Bird_A_04.AdjRef",
+        "NV_Mustache_Bird_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004194",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546199"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1575004
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Small_World_After_All_%28Novus%29",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17980A is The Repository's id; the title reads 173685",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

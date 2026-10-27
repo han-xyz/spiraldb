@@ -1,0 +1,17 @@
+{
+  "Name": "NV-Q-17980A",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 490,
+  "MaxGold": 490,
+  "ExperienceAmount": 165420,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T10:00:06.019762Z",
+  "ModifiedAt": "2026-10-27T10:00:06.019762Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

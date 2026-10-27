@@ -5,8 +5,9 @@
     "persona": "NV-StandIn-Dasein_v3",
     "zone": "Novus/NV_Z01_Conatus"
   },
-  "requires": [],
-  "min_level": 142,
+  "requires": [
+    "NV-Q-17CDE4"
+  ],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -118,12 +119,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst180860 matched by the words it shares with the goals; its lines name none of the page's names",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Tung-Lashing",
+      "value": "WizQst180860 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {

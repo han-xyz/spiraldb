@@ -1,0 +1,105 @@
+{
+  "id": "NV-Q-17CDE0",
+  "lang": "17CDE0",
+  "giver": {
+    "persona": "NV-CON-NPC01-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-17CDDE"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 137850,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Mustache_Bird_B_01.AdjRef",
+        "NV_Mustache_Bird_B_02.AdjRef",
+        "NV_Mustache_Bird_B_03.AdjRef",
+        "NV_Mustache_Bird_B_04.AdjRef",
+        "NV_Mustache_Bird_B_05.AdjRef",
+        "NV_Mustache_Bird_B_06.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00004195",
+      "zone": "",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Mustache_Bird_B_01.AdjRef",
+        "NV_Mustache_Bird_B_02.AdjRef",
+        "NV_Mustache_Bird_B_03.AdjRef",
+        "NV_Mustache_Bird_B_04.AdjRef",
+        "NV_Mustache_Bird_B_05.AdjRef",
+        "NV_Mustache_Bird_B_06.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00004195",
+      "zone": "",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1575004
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cannon,_Cann-Off",
+    "from": "archive",
+    "timestamp": "20240323102709"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17CDE0 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "NV-Q-17D61E",
+  "lang": "17D61E",
+  "giver": {
+    "persona": "NV-PUERT-NPC13",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-179845"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 91900,
+    "gold": 270
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Standin_AberrantGuard.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_01.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_02.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_03.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004174",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portraits_Unicorn_Guard_A_NPC.dds",
+      "template_id": 1562160
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Aberrants_Go_Marching",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter Soldier Hideout",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

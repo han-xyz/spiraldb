@@ -1,0 +1,123 @@
+{
+  "id": "NV-Q-17CDDE",
+  "lang": "17CDDE",
+  "giver": {
+    "persona": "NV-CON-NPC01-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-180862"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 91900,
+    "gold": 270
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Horse_AberrantTungAk_A_01.AdjRef",
+        "NV_Horse_AberrantTungAk_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004138",
+      "zone": "",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1575004
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Step_By_Step",
+    "from": "archive",
+    "timestamp": "20240323102706"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17CDDE is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Lower Passage: Novus/Interiors/NV_Z02_LowerPassage",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Lower Passage",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Throwing Stones (Novus) replaced by NV-Q-180862",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "NV-Q-173366",
+  "lang": "173366",
+  "giver": {
+    "persona": "NV-ROSE-NPC01-B",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
+  "requires": [
+    "NV-Q-17335F"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 174610,
+    "gold": 510
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Cat_MonkF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004152",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Player_Cabal_C_01.AdjRef",
+        "NV_Player_Cabal_C_02.AdjRef",
+        "NV_Player_Cabal_C_03.AdjRef",
+        "NV_Player_Cabal_C_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004153",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    }
+  ],
+  "personas": {
+    "NV-ROSE-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1520457
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Dupli-Qhat",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Cabal Bosses",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "NV-Q-17D68E",
+  "lang": "17D68E",
+  "title": "QuestTitle_17D68B",
+  "giver": {
+    "persona": "NV-CON-NPC04",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-17D60E"
+  ],
+  "mainline": true,
+  "level": 142,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Tessellate_Base_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004125",
+      "zone": "Novus/NV_Z01_Conatus"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_SoldierBoss_A_NPC.dds",
+      "template_id": 1546273
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Puzzles_%26_Mazes",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17D68E is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Door to the Clockwork Surveyor",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Correct Door",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

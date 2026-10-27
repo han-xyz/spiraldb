@@ -112,8 +112,17 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "NV-Q-17D61D",
+        "m_questName": "NV-Q-179826",
         "m_applyNOT": false,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "NV-Q-179833",
+        "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }
     ],

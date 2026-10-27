@@ -1,0 +1,125 @@
+{
+  "id": "NV-Q-17D696",
+  "lang": "17D696",
+  "title": "QuestTitle_17D690",
+  "giver": {
+    "persona": "NV_Standin_DemonMonkey",
+    "zone": "Novus/Interiors/NV_Z03_FlowerCave"
+  },
+  "requires": [
+    "NV-Q-17D613"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 192990,
+    "gold": 655
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Monkey_Zombie_A_01.AdjRef",
+        "NV_Monkey_Zombie_A_02.AdjRef",
+        "NV_Monkey_Zombie_A_03.AdjRef",
+        "NV_Monkey_Zombie_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004191",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-DarkCrucible-InvisoCol.AdjRef",
+        "NV-DarkCrucible.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000971",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_DogofWarF_A_03.AdjRef",
+        "NV_Dog_DogofWar_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004131",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-DarkCrucible-InvisoCol.AdjRef",
+        "NV-DarkCrucible.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000971",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_DogofWar_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004132",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV_Standin_DemonMonkey": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Zombie_A_MOB.dds",
+      "template_id": 1562162
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Brigands_and_Beasties",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17D696 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "id": "NV-Q-179833",
+  "lang": "179833",
+  "giver": {
+    "persona": "NV-NEWV-NPC03-B",
+    "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
+  },
+  "requires": [
+    "NV-Q-17982F"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 275700,
+    "gold": 810
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_RoyalGuard_A_01.AdjRef",
+        "NV_Dog_RoyalGuard_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004206",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Flag_Monster_A_03.AdjRef",
+        "NV_Flag_Monster_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004165",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Penguin_RevolutionaryF_A_01.AdjRef",
+        "NV_Penguin_Revolutionary_A_03.AdjRef",
+        "NV_Penguin_Revolutionary_A_04.AdjRef",
+        "NV_Penguin_Revolutionary_A_05.AdjRef",
+        "NV_Penguin_Revolutionary_D_01.AdjRef",
+        "NV_Penguin_Revolutionary_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004207",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC06-B",
+      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "loc": "ZoneLocName_1546199",
+      "completion": [
+        {
+          "speaker": "NV-CON-NPC06-B",
+          "line": "00000029"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1575019
+    },
+    "NV-NEWV-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
+      "template_id": 1546206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Our_Flag_Means_Stress",
+    "from": "archive",
+    "timestamp": "20240323103724"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst179833 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "First Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Second Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Third Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Leave Tower",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

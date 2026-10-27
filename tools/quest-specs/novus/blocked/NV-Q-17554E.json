@@ -1,0 +1,180 @@
+{
+  "id": "NV-Q-17554E",
+  "lang": "17554E",
+  "title": "QuestTitle_00001906",
+  "giver": {
+    "persona": "NV-CON-NPC01-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-17CDE1"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 174610,
+    "gold": 510
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-StandIn-STONE_GoldenTung_01",
+      "zone": "Novus/Interiors/NV_Z02_UpperPassage",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Horse_HordeOfficer_B_01.AdjRef",
+        "NV_Horse_TungAk_B_01.AdjRef",
+        "NV_Horse_TungAk_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004196",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Horse_HordeOfficer_B_01.AdjRef",
+        "NV_Horse_TungAk_B_01.AdjRef",
+        "NV_Horse_TungAk_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004196",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Horse_HordeOfficer_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004141",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1529152"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1575004
+    },
+    "NV-StandIn-STONE_GoldenTung_01": {
+      "portrait": "GUI/NpcPortraits/Horse_TungAk_B_Mob.dds",
+      "template_id": 1529181
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Horse_Tower",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17554E is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Level",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Last Level",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Novus/Interiors/NV_Z02_UpperPassage",
+      "blocking": true
+    }
+  ]
+}

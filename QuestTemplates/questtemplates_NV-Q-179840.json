@@ -193,10 +193,11 @@
     "$type": "Imcodec.ObjectProperty.TypeCache.RequirementList, Imcodec.ObjectProperty",
     "m_requirements": [
       {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqMagicLevel, Imcodec.ObjectProperty",
-        "m_magicSchool": "",
-        "m_numericValue": 142,
-        "m_operatorType": "OPERATOR_GREATER_THAN_EQ",
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Complete",
+        "m_displayName": null,
+        "m_isQuestRegistry": true,
+        "m_questName": "NV-Q-17983E",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -205,7 +206,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "NV-Q-179845",
+        "m_questName": "NV-Q-18088C",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

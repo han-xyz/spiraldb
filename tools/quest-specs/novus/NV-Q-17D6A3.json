@@ -1,0 +1,147 @@
+{
+  "id": "NV-Q-17D6A3",
+  "lang": "17D6A3",
+  "title": "QuestTitle_17D68D",
+  "giver": {
+    "persona": "NV-PUERT-NPC03",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-17D611"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 96495,
+    "gold": 655
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Monkey_SoldierBoss_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001358",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Monkey_Monquistador_A_03.AdjRef",
+        "NV_Monkey_Monquistador_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004189",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-CON-NPC04.AdjRef",
+        "NV-PUERT-NPC03.AdjRef",
+        "NV-PUERT-NPC03_C.AdjRef",
+        "NV-PUERT-NPC03_D.AdjRef",
+        "NV-PUERT-NPC03_b.AdjRef",
+        "NV-PUERT-NPC27.AdjRef",
+        "NV_Standin_Ponce.AdjRef",
+        "NV_Standin_Ponce_02.AdjRef",
+        "NV_Standin_Ponce_03.AdjRef",
+        "NV_Standin_Ponce_04.AdjRef",
+        "NV_Standin_Ponce_05.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WC-NPCs_00002634",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Monkey_SoldierBoss_B_01.AdjRef",
+        "NV_Monkey_SoldierBoss_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004190",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_SoldierBoss_A_NPC.dds",
+      "template_id": 1562150
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Ponce_Upon_a_Time",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17D6A3 is The Repository's id; the title reads 17D68D",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

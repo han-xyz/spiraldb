@@ -5,8 +5,9 @@
     "persona": "NV-CON-NPC16-C",
     "zone": "Novus/NV_Z01_Conatus"
   },
-  "requires": [],
-  "min_level": 142,
+  "requires": [
+    "NV-Q-18088F"
+  ],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -136,12 +137,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst1808BB matched by the words it shares with the goals; its lines name Zander",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Manticore Meltdown",
+      "value": "WizQst1808BB by the proper nouns its lines share with the page (Door, Leaders, Leyline, Zander), within 16 of a key of the zone's quests; next best WizQst1808E2 with 0",
       "blocking": false
     },
     {

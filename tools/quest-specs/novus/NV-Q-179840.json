@@ -5,7 +5,9 @@
     "persona": "NV-CON-NPC06-B",
     "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
   },
-  "requires": [],
+  "requires": [
+    "NV-Q-17983E"
+  ],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -196,12 +198,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Naval Razing replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 142
+  ]
 }

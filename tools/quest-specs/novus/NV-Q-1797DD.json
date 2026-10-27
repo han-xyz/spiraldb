@@ -1,0 +1,129 @@
+{
+  "id": "NV-Q-1797DD",
+  "lang": "1797DD",
+  "giver": {
+    "persona": "NV-NEWV-NPC03-B",
+    "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
+  },
+  "requires": [
+    "NV-Q-1797D8"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 119470,
+    "gold": 402
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Irks_Base_A_01.AdjRef",
+        "NV_Irks_Base_A_02.AdjRef",
+        "NV_Irks_Base_A_03.AdjRef",
+        "NV_Irks_Base_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004192",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC15-B",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC15-B": {
+      "portrait": "GUI/NpcPortraits/Dog_Governor_A_NPC.dds",
+      "template_id": 1575027
+    },
+    "NV-NEWV-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
+      "template_id": 1546206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:What_Works_on_Irks",
+    "from": "archive",
+    "timestamp": "20240323102251"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1797DD is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Storeroom",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

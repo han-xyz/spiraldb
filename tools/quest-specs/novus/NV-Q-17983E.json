@@ -1,0 +1,84 @@
+{
+  "id": "NV-Q-17983E",
+  "lang": "17983E",
+  "giver": {
+    "persona": "NV-CON-NPC06-B",
+    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+  },
+  "requires": [
+    "NV-Q-179833"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 73520,
+    "gold": 220
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_NavyOfficer_A_01.AdjRef",
+        "NV_Dog_NavyOfficer_A_02.AdjRef",
+        "NV_Dog_NavyOfficer_A_03.AdjRef",
+        "NV_Dog_NavyOfficer_A_05.AdjRef",
+        "NV_Dog_NavyOfficer_A_06.AdjRef",
+        "NV_Dog_NavyOfficer_A_07.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004135",
+      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "loc": "ZoneLocName_1546199"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1575019
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Naval_Razing",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

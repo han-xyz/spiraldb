@@ -1,0 +1,150 @@
+{
+  "id": "NV-Q-17D616",
+  "lang": "17D616",
+  "giver": {
+    "persona": "NV-PUERT-NPC04",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-180889"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 147040,
+    "gold": 430
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC14",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC06-B",
+      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Penguin_Revolutionary_A_01.AdjRef",
+        "NV_Penguin_Revolutionary_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004201",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC14",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1575019
+    },
+    "NV-PUERT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ExplorerF_A_NPC.dds",
+      "template_id": 1562151
+    },
+    "NV-PUERT-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
+      "template_id": 1562164
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Something_Smells_Fishy",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Leyline Door to La Ville Rose",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "in Negotiations",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

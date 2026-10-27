@@ -1,0 +1,138 @@
+{
+  "id": "NV-Q-18089D",
+  "lang": "18089D",
+  "title": "QuestTitle_00001930",
+  "auto_start": true,
+  "giver": {
+    "persona": "NV-CON-NPC08-B",
+    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+  },
+  "requires": [
+    "NV-Q-18088A"
+  ],
+  "mainline": true,
+  "level": 142,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Monkey_AberrantSoldierBoss_A_01.AdjRef",
+        "NV_Monkey_AberrantSoldierBoss_A_02.AdjRef",
+        "NV_Monkey_AberrantSoldierBoss_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004161",
+      "zone": "",
+      "loc": "ZoneLocName_1563028"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Standin_AberrantGuard.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_01.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_02.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_03.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004174",
+      "zone": "",
+      "loc": "ZoneLocName_1563028"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dino_AberrantUndead_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004163",
+      "zone": "",
+      "loc": "ZoneLocName_1563028"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC08-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
+      "template_id": 1575022
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wowzer",
+    "from": "archive",
+    "timestamp": "20240409061204"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst18089D is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {
+        "gold": 570
+      },
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue exploring the Next Dueling Space",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue exploring the Next Dueling Space",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

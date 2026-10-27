@@ -1,0 +1,83 @@
+{
+  "id": "NV-Q-1808BA",
+  "lang": "1808BA",
+  "giver": {
+    "persona": "NV-CON-NPC16-C",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-173391"
+  ],
+  "mainline": true,
+  "level": 142,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_AeonOfAtavus_01.AdjRef",
+        "NV_Monstrosity_Croneberg_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004186",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1563028"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC16-C": {
+      "portrait": "GUI/NpcPortraits/Unicorn_NobleF_A_NPC.dds",
+      "template_id": 1608268
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Manticore%27s_Madness",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1808BA is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {
+        "xp": 1600
+      },
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Manticore Meltdown replaced by NV-Q-173391",
+      "blocking": false
+    }
+  ]
+}

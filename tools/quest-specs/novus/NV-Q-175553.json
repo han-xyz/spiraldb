@@ -1,0 +1,93 @@
+{
+  "id": "NV-Q-175553",
+  "lang": "175553",
+  "giver": {
+    "persona": "NV-STONE-NPC-05-A",
+    "zone": "Novus/NV_Z02_StoneOfHeaven"
+  },
+  "requires": [
+    "NV-Q-180862"
+  ],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Mustache_Bird_A_01.AdjRef",
+        "NV_Mustache_Bird_A_02.AdjRef",
+        "NV_Mustache_Bird_A_03.AdjRef",
+        "NV_Mustache_Bird_A_04.AdjRef",
+        "NV_Mustache_Bird_A_05.AdjRef"
+      ],
+      "count": 6,
+      "target": "WizardMobs_00004194",
+      "zone": "",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
+      "loc": "ZoneLocName_1529152",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-STONE-NPC-05-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_DesertExplorer_C_NPC.dds",
+      "template_id": 1529172
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Alone_on_the_Stone",
+    "from": "archive",
+    "timestamp": "20240323102637"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst175553 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

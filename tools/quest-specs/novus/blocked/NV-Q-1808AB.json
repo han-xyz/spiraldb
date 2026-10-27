@@ -1,0 +1,146 @@
+{
+  "id": "NV-Q-1808AB",
+  "lang": "1808AB",
+  "title": "QuestTitle_00001933",
+  "giver": {
+    "persona": "NV-NUCLEUS-NPC05-D",
+    "zone": "Novus/NV_Z06_NucleusGallery"
+  },
+  "requires": [
+    "NV-Q-18088D"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 110280,
+    "gold": 320
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Wyrm_Aberrant_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004182",
+      "zone": "Novus/NV_Z06_NucleusGallery",
+      "loc": "ZoneLocName_1563028"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Standin_AberrantGuard.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_01.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_02.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_03.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004174",
+      "zone": "Novus/NV_Z06_NucleusGallery",
+      "loc": "ZoneLocName_1563028"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Moose_AberrantMant_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004185",
+      "zone": "Novus/NV_Z06_NucleusGallery",
+      "loc": "ZoneLocName_1563028"
+    }
+  ],
+  "personas": {
+    "NV-NUCLEUS-NPC05-D": {
+      "portrait": "GUI/NpcPortraits/Portrait_Moose_Manticore_A_NPC.dds",
+      "template_id": 1575087
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Folly_of_Manticore",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1808AB is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Manticore's Plan: Novus/Interiors/NV_Z06_ManticoresPlan",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue Exploring Manticore's Plan",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Manticore's Plan",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

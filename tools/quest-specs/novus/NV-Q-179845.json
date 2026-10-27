@@ -6,7 +6,7 @@
     "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
   },
   "requires": [
-    "NV-Q-179840"
+    "NV-Q-179843"
   ],
   "mainline": true,
   "level": 142,
@@ -92,11 +92,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Vive La Several Revolutions",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (no ZoneTransfer)",
       "value": "Invading Fleet: Novus/Interiors/NV_Z04_InvadingFleet",
       "blocking": false
@@ -109,11 +104,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Vive La Several Revolutions replaced by NV-Q-179840",
       "blocking": false
     }
   ]

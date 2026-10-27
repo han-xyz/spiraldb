@@ -1,0 +1,252 @@
+{
+  "id": "NV-Q-17D615",
+  "lang": "17D615",
+  "giver": {
+    "persona": "NV-PUERT-NPC04",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-173361"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 238940,
+    "gold": 700
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-StandIn-Dasein_v3",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_BananaSpider_Base_A_01.AdjRef",
+        "NV_BananaSpider_Base_A_02.AdjRef",
+        "NV_BananaSpider_Base_A_03.AdjRef",
+        "NV_BananaSpider_Base_A_04.AdjRef",
+        "NV_BananaSpider_Base_A_05.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00004126",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-Fireflies.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizQst17D615_00000030",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC16",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-FrameOfMind.AdjRef",
+        "NV-NEWVIC-FrameOfMind.AdjRef",
+        "NV-PUERT-FrameOfMind.AdjRef",
+        "NV-ROSE-FrameOfMind.AdjRef",
+        "NV-STONE-FrameOfMind.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "Items_00025065",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-FrameOfMind.AdjRef",
+        "NV-NEWVIC-FrameOfMind.AdjRef",
+        "NV-PUERT-FrameOfMind.AdjRef",
+        "NV-ROSE-FrameOfMind.AdjRef",
+        "NV-STONE-FrameOfMind.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "Items_00025065",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-StandIn-Dasein_v3",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ExplorerF_A_NPC.dds",
+      "template_id": 1562151
+    },
+    "NV-PUERT-NPC16": {
+      "portrait": "",
+      "template_id": 1562166
+    },
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Monkey_Business_(Novus)",
+    "from": "archive",
+    "timestamp": "20231216235126"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17D615 is The Repository's id; the title reads 155196",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Dasein on High",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

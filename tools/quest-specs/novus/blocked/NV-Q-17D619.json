@@ -1,0 +1,158 @@
+{
+  "id": "NV-Q-17D619",
+  "lang": "17D619",
+  "giver": {
+    "persona": "NV-PUERT-NPC14",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-17D618"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 110280,
+    "gold": 320
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Player_Cabal_C_01.AdjRef",
+        "NV_Player_Cabal_C_02.AdjRef",
+        "NV_Player_Cabal_C_03.AdjRef",
+        "NV_Player_Cabal_C_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004153",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000020"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
+      "template_id": 1562164
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Setting_Things_Straight",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Mario to Dasein",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Cabal Goons",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

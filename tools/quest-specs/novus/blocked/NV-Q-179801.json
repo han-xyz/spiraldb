@@ -1,0 +1,111 @@
+{
+  "id": "NV-Q-179801",
+  "lang": "179801",
+  "giver": {
+    "persona": "NV_Standin_DogofWarPN",
+    "zone": "Novus/Interiors/NV_Z03_SabotuerCave"
+  },
+  "requires": [
+    "NV-Q-1797FE"
+  ],
+  "mainline": true,
+  "level": 142,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_DogofWarF_A_03.AdjRef",
+        "NV_Dog_DogofWar_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004131",
+      "zone": "Novus/Interiors/NV_Z03_SabotuerCave"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_DogofWarF_A_03.AdjRef",
+        "NV_Dog_DogofWar_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004131",
+      "zone": "Novus/Interiors/NV_Z03_SabotuerCave"
+    }
+  ],
+  "personas": {
+    "NV_Standin_DogofWarPN": {
+      "portrait": "GUI/NpcPortraits/Dog_DogOfWar_A_NPC.dds",
+      "template_id": 1562163
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/War_is_Well",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Novus/Interiors/NV_Z03_SabotuerCave",
+      "blocking": true
+    }
+  ]
+}

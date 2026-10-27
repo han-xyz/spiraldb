@@ -1,0 +1,120 @@
+{
+  "id": "NV-Q-173375",
+  "lang": "173375",
+  "giver": {
+    "persona": "NV-ROSE-NPC17-B",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
+  "requires": [
+    "NV-Q-180863"
+  ],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {
+    "NV-ROSE-NPC17-B": {
+      "portrait": "GUI/NpcPortraits/Penguin_AvantGuardF_A_NPC.dds",
+      "template_id": 1520504
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Devil_Wears_Dada",
+    "from": "archive",
+    "timestamp": "20240323103059"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst173375 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Readymade Gallery",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Combat Piece",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Enter [Location:Readymade Gallery]",
+        "@Defeat the [Creature:Combat Piece]"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

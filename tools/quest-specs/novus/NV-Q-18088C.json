@@ -1,0 +1,93 @@
+{
+  "id": "NV-Q-18088C",
+  "lang": "18088C",
+  "giver": {
+    "persona": "NV-StandIn-Dasein_v3",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-179840"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 45950,
+    "gold": 130
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC03-B",
+      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "loc": "ZoneLocName_1563028"
+    }
+  ],
+  "personas": {
+    "NV-NEWV-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
+      "template_id": 1546206
+    },
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dasein_Divided",
+    "from": "archive",
+    "timestamp": "20231216235125"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst18088C is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

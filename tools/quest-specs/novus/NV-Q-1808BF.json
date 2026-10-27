@@ -1,0 +1,133 @@
+{
+  "id": "NV-Q-1808BF",
+  "lang": "1808BF",
+  "giver": {
+    "persona": "NV-CON-NPC17",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 600
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV_TalkingHead.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 1575104
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:This_Must_Be_The_Place",
+    "from": "archive",
+    "timestamp": "20241225011224"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1808BF is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Scaredy Cats",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Talking Head in Conatus",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Scaredy Cats replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 142
+}

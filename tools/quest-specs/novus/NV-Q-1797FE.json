@@ -6,7 +6,7 @@
     "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
-    "NV-Q-1797D8"
+    "NV-Q-1797DD"
   ],
   "mainline": true,
   "level": 142,
@@ -101,18 +101,13 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "A Classic Tale",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
     },
     {
       "field": "requires (not generated)",
-      "value": "A Classic Tale replaced by NV-Q-1797D8",
+      "value": "A Classic Tale replaced by NV-Q-1797DD",
       "blocking": false
     }
   ]

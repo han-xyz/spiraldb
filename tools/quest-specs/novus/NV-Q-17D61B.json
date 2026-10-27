@@ -5,7 +5,9 @@
     "persona": "NV-PUERT-NPC14",
     "zone": "Novus/NV_Z03_PuertoNuovo_VA"
   },
-  "requires": [],
+  "requires": [
+    "NV-Q-180889"
+  ],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -124,9 +126,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Thou Shalt Not Steel replaced by min_level",
+      "value": "Thou Shalt Not Steel replaced by NV-Q-180889",
       "blocking": false
     }
-  ],
-  "min_level": 142
+  ]
 }

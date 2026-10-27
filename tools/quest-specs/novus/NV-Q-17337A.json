@@ -7,7 +7,7 @@
   },
   "requires": [
     "NV-Q-173359",
-    "NV-Q-179809"
+    "NV-Q-17CDE1"
   ],
   "mainline": false,
   "level": 142,
@@ -88,11 +88,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "The Devil Wears Dada",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Theater of the Absurd",
       "blocking": false
@@ -104,7 +99,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "The Devil Wears Dada replaced by NV-Q-179809",
+      "value": "The Devil Wears Dada replaced by NV-Q-17CDE1",
       "blocking": false
     }
   ]

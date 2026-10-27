@@ -1,0 +1,182 @@
+{
+  "id": "NV-Q-17D698",
+  "lang": "17D698",
+  "title": "QuestTitle_17D694",
+  "auto_start": true,
+  "giver": {
+    "persona": "NV-CON-NPC06-B",
+    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+  },
+  "requires": [
+    "NV-Q-17D620"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 257320,
+    "gold": 760
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Penguin_RevolutionaryF_A_01.AdjRef",
+        "NV_Penguin_Revolutionary_A_03.AdjRef",
+        "NV_Penguin_Revolutionary_A_04.AdjRef",
+        "NV_Penguin_Revolutionary_A_05.AdjRef",
+        "NV_Penguin_Revolutionary_D_01.AdjRef",
+        "NV_Penguin_Revolutionary_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004207",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Unicorn_Guard_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004298",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Standin_AberrantGuard.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_01.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_02.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_03.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004174",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_Governor_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004179",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1575019
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Battle_of_the_Three_Armies",
+    "from": "archive",
+    "timestamp": "20240409061203"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17D698 is The Repository's id; the title reads 17D694",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Take Rowboat to Shore",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Shore",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search for the Exit",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue on",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

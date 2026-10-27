@@ -5,7 +5,9 @@
     "persona": "NV-PUERT-NPC13",
     "zone": "Novus/NV_Z03_PuertoNuovo_VA"
   },
-  "requires": [],
+  "requires": [
+    "NV-Q-17D61E"
+  ],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -106,12 +108,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Aberrants Go Marching replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 142
+  ]
 }
