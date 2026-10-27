@@ -79,10 +79,12 @@
         "AZ-CENOTE-WEAVE-NPC01.AdjRef",
         "AZ-CENOTE-WEAVE-NPC02-B.AdjRef",
         "AZ-CENOTE-WEAVE-NPC02.AdjRef",
+        "AZ-TELEPORT-ZULTUNDOCK.AdjRef",
         "AZ_FloatingMountain_Teleport.AdjRef"
       ],
       "count": 11,
       "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "WizItems_00001884",
       "loc": "ZoneLocName_643250"
     },
     {
@@ -121,11 +123,6 @@
     },
     {
       "field": "goal.items",
-      "value": "Zultun Dock",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
       "value": "Cloudburst Forest",
       "blocking": true
     },
@@ -143,11 +140,6 @@
       "field": "goal.items",
       "value": "Twin Giants",
       "blocking": true
-    },
-    {
-      "field": "goal.descriptor",
-      "value": "The Zocalo",
-      "blocking": false
     },
     {
       "field": "dialogs",

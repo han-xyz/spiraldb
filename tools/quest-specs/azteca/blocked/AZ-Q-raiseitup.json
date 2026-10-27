@@ -28,6 +28,36 @@
       "loc": "ZoneLocName_701124"
     },
     {
+      "type": "usage",
+      "items": [
+        "AZ-FierceQuetzalEgg.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "WizardGameObjects_00000544",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-FierceQuetzalEgg.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "WizardGameObjects_00000544",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-FierceQuetzalEgg.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "WizardGameObjects_00000544",
+      "loc": "ZoneLocName_701124"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
@@ -55,21 +85,6 @@
       "field": "goal.descriptor",
       "value": "Tree of Secrets",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Eggs in First Quetzal Nest",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Eggs in Second Nest",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Eggs in Third Nest",
-      "blocking": true
     }
   ]
 }
