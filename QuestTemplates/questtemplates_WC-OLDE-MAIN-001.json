@@ -774,7 +774,7 @@
                 "m_cameraOffsetX": 463.3359,
                 "m_cameraOffsetY": 703.2638,
                 "m_cameraOffsetZ": 106.9088,
-                "m_pitch": -1.192488E-08,
+                "m_pitch": -1.192488e-08,
                 "m_yaw": 0.3941146,
                 "m_roll": 0.0,
                 "m_cameraShakeType": "",
@@ -1772,7 +1772,19 @@
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": {
-        "m_results": []
+        "m_results": [
+          {
+            "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
+            "m_dynaModClientTag": "WC-OLDE-NPC03-B instance",
+            "m_dynaModRemove": false,
+            "m_useQuestAsOriginator": false,
+            "m_dynaModState": "",
+            "m_zoneName": "WizardCity/WC_Streets/Interiors/WC_OldeTown_T1",
+            "m_bShowsObject": true,
+            "m_persist": true,
+            "m_requirements": null
+          }
+        ]
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,

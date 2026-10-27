@@ -289,7 +289,19 @@
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": {
-        "m_results": []
+        "m_results": [
+          {
+            "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
+            "m_dynaModClientTag": "WC-FIRECAT-NPC02 instance",
+            "m_dynaModRemove": false,
+            "m_useQuestAsOriginator": false,
+            "m_dynaModState": "",
+            "m_zoneName": "WizardCity/WC_Streets/WC_Firecat",
+            "m_bShowsObject": true,
+            "m_persist": true,
+            "m_requirements": null
+          }
+        ]
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,

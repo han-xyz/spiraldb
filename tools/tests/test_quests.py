@@ -16,8 +16,10 @@ ROUNDTRIP = sorted(glob.glob(os.path.join(QUEST_SPECS_DIR, "roundtrip", "*.json"
 # What the client keeps nowhere a tool can read, and the known shape differences (tools/README.md, "Not generated").
 KNOWN_DIFFERENCES = {
     "WC-FIRECAT-MAIN-004": {".m_goals[0].m_bountyTotal: only generated", ".m_goals[0].m_bountyType: only generated",
-                            ".m_goals[3].m_bountyType: only generated"},
-    "WC-TRITON-MAIN-002": {".m_goals[1].m_bountyTotal: only generated", ".m_goals[1].m_bountyType: only generated"},
+                            ".m_goals[3].m_bountyType: only generated",
+                            ".m_goals[1].m_activateResults.m_results: differs"},
+    "WC-TRITON-MAIN-002": {".m_goals[1].m_bountyTotal: only generated", ".m_goals[1].m_bountyType: only generated",
+                           ".m_goals[0].m_activateResults.m_results: differs"},
     "WC-UNICORN-MAIN-002": {".m_requirements.$type: only generated", ".m_dialogList.m_dialogs: differs",
                             ".m_goals[0].m_dialogList: differs"},
 }
