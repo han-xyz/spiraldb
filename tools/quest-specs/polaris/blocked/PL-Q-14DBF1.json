@@ -1,18 +1,18 @@
 {
-  "id": "PL-Q-14DBE2",
-  "lang": "14DBE2",
+  "id": "PL-Q-14DBF1",
+  "lang": "14DBF1",
   "giver": {
-    "persona": "AV-HUB-NPC14-B",
-    "zone": "Avalon/AV_Z03_CaerLyon"
+    "persona": "ZF-SAVA-NPC20-B",
+    "zone": "Zafaria/Interiors/ZF_Z04_CavePainting"
   },
   "requires": [
-    "PL-Q-14DBDF"
+    "PL-Q-14DBED"
   ],
   "mainline": true,
   "level": 100,
   "reward": {
-    "xp": 251800,
-    "gold": 1260
+    "xp": 296770,
+    "gold": 1490
   },
   "dialogs": {
     "prep": [
@@ -34,7 +34,7 @@
       },
       {
         "speaker": "giver",
-        "line": "00000004"
+        "line": "00000005"
       },
       {
         "speaker": "giver",
@@ -59,65 +59,75 @@
       {
         "speaker": "giver",
         "line": "00000011"
-      },
+      }
+    ],
+    "underway": [
       {
         "speaker": "giver",
         "line": "00000012"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000014"
       }
-    ],
-    "underway": []
+    ]
   },
   "goals": [
     {
       "type": "bounty",
       "mobs": [
-        "AV-CAER-POLARIS-NPC01.AdjRef",
-        "PL_Arachna_B.AdjRef"
+        "PL_Painted_Monster_A.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00002256",
+      "target": "WizardMobs_00002224",
       "zone": ""
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/AV_Z03_CaerLyon"
+      "zone": "Zafaria/Interiors/ZF_Z04_CavePainting"
+    },
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC07-B",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
     }
   ],
   "personas": {
-    "AV-HUB-NPC14-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_VampireHunterF_A_NPC.dds",
-      "template_id": 1367013
+    "AR-ARC-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jackalope_Professor_A_NPC.dds",
+      "template_id": 1521310
+    },
+    "ZF-SAVA-NPC20-B": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_Excavator_A_NPC.dds",
+      "template_id": 1367026
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Morganthe's_Legacy",
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cave_of_Bad_Seeds",
     "from": "archive",
-    "timestamp": "20240406005135"
+    "timestamp": "20250819005148"
   },
   "needs_review": [
     {
       "field": "giver (other world)",
-      "value": "Velma von Venkman: AV-HUB-NPC14-B from ObjectData/AV",
+      "value": "Airdale Guthrie: ZF-SAVA-NPC20-B from ObjectData/ZF",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Arachna Hideout, Caer Lyon",
-      "blocking": false
+      "field": "giver (other world)",
+      "value": "Airdale Guthrie is placed in Zafaria/Interiors/ZF_Z04_CavePainting",
+      "blocking": true
     },
     {
       "field": "goal.mobs (other folder)",
-      "value": "Ofiera Chillvenom: ObjectData/AV",
+      "value": "Painted Cave Monster: ObjectData/ZF",
       "blocking": false
     },
     {
       "field": "goal.persona (other world)",
-      "value": "Velma von Venkman: AV-HUB-NPC14-B from ObjectData/AV",
+      "value": "Airdale Guthrie: ZF-SAVA-NPC20-B from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jaki Whisperwind: AR-ARC-NPC07-B from ObjectData/AR",
       "blocking": false
     },
     {

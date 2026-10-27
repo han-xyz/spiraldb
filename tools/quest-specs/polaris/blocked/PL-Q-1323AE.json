@@ -197,6 +197,11 @@
       "blocking": false
     },
     {
+      "field": "giver (other world)",
+      "value": "Taylor Coleridge is placed in Khrysalis/Interiors/KR_Z06_I01_Hermitcave",
+      "blocking": true
+    },
+    {
       "field": "requires",
       "value": "Captain No Captain",
       "blocking": false

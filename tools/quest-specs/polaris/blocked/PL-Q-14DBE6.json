@@ -64,6 +64,11 @@
       "blocking": false
     },
     {
+      "field": "giver (other world)",
+      "value": "Velma von Venkman is placed in Avalon/AV_Z03_CaerLyon",
+      "blocking": true
+    },
+    {
       "field": "goal.persona (other world)",
       "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
       "blocking": false

@@ -165,6 +165,11 @@
       "blocking": false
     },
     {
+      "field": "giver (other world)",
+      "value": "Mr. Lincoln is placed in WizardCity/WC_Ravenwood",
+      "blocking": true
+    },
+    {
       "field": "goal.persona (other world)",
       "value": "Merle Ambrose: KR-Bastion-NPC40 from ObjectData/KR",
       "blocking": false

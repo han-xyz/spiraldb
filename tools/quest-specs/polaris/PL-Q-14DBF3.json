@@ -6,7 +6,7 @@
     "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
   },
   "requires": [
-    "PL-Q-14DBF1"
+    "PL-Q-14DBED"
   ],
   "mainline": true,
   "level": 100,
@@ -66,6 +66,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Cave of Bad Seeds replaced by PL-Q-14DBED",
       "blocking": false
     }
   ]

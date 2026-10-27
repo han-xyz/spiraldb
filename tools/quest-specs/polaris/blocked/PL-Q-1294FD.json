@@ -6,6 +6,7 @@
     "zone": "Khrysalis/KR_Z00_Hub"
   },
   "requires": [],
+  "min_level": 100,
   "mainline": true,
   "level": 100,
   "reward": {
@@ -74,6 +75,11 @@
       "blocking": false
     },
     {
+      "field": "giver (other world)",
+      "value": "Merle Ambrose is placed in Khrysalis/KR_Z00_Hub",
+      "blocking": true
+    },
+    {
       "field": "requires",
       "value": "Light and Shadow",
       "blocking": false
@@ -87,12 +93,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Light and Shadow replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 100
+  ]
 }
