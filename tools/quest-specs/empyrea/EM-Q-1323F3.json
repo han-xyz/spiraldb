@@ -1,0 +1,100 @@
+{
+  "id": "EM-Q-1323F3",
+  "lang": "1323F3",
+  "giver": {
+    "persona": "EM-ZANA-NPC19",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [
+    "EM-Q-1323C2"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 4000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC20",
+      "zone": "Empyrea/Interiors/EM_Z02_DusksHouse",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC19": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_Merchant_C_NPC.dds",
+      "template_id": 1254388
+    },
+    "EM-ZANA-NPC20": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_MerchantF_C_NPC.dds",
+      "template_id": 1254389
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Underground_Package_Service",
+    "timestamp": "20231016063246"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Ruumbaya replaced by EM-Q-1323C2",
+      "blocking": false
+    }
+  ]
+}

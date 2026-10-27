@@ -1,0 +1,324 @@
+{
+  "id": "EM-Q-15615D",
+  "lang": "15615D",
+  "giver": {
+    "persona": "EM-AERI-NPC17",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-15615C"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 231525,
+    "gold": 3030
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000058"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000059"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000060"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000062"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000063"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000064"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000065"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000066"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000067"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000071"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-Accompany-Melori_C.AdjRef",
+        "EM-Accompany-Melori_C_ENC.AdjRef",
+        "EM-CHAOS-NPC05-B.AdjRef",
+        "EM-CHAOS-NPC05-C.AdjRef",
+        "EM-CHAOS-NPC05-RIFT.AdjRef",
+        "EM-CHAOS-NPC05.AdjRef",
+        "EM-HUSK-NPC02-A.AdjRef",
+        "EM-HUSK-NPC02-B-ENC01.AdjRef",
+        "EM-HUSK-NPC02-B.AdjRef",
+        "EM-HUSK-NPC02-C.AdjRef",
+        "EM-HUSK-NPC02-D.AdjRef",
+        "EM-HUSK-NPC02-E.AdjRef",
+        "EM-HUSK-NPC02-F.AdjRef",
+        "EM-HUSK-NPC02-G.AdjRef",
+        "EM-HUSK-NPC02-H.AdjRef",
+        "EM-HUSK-NPC02-I.AdjRef",
+        "EM-HUSK-NPC02-J.AdjRef",
+        "EM-HUSK-NPC02-L.AdjRef",
+        "EM-HUSK-NPC02-M.AdjRef",
+        "EM-REV-NPC02.AdjRef",
+        "EM-SAMS-NPC10.AdjRef",
+        "EM-ZANA-NPC29.AdjRef",
+        "EM_StandIn_Mallori.AdjRef",
+        "EM_StandIn_Mallori_02.AdjRef",
+        "EM_StandIn_Mallori_BatEssence.AdjRef",
+        "EM_StandIn_Mallori_C.AdjRef",
+        "EM_Standin_DreamMellori.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01748482"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Streamportal.AdjRef",
+        "EM-StreamportalBrainVersion.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00002025"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Streamportal.AdjRef",
+        "EM-StreamportalBrainVersion.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00002025"
+    },
+    {
+      "type": "persona",
+      "persona": "EM_StandIn_DreamBabaYaga",
+      "zone": "Empyrea/Interiors/EM_Z15_DreamBabaYaga",
+      "completion": [
+        {
+          "speaker": "EM_StandIn_DreamBabaYaga",
+          "line": "00000009"
+        },
+        {
+          "speaker": "EM_StandIn_DreamBabaYaga",
+          "line": "00000017"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    },
+    "EM_StandIn_DreamBabaYaga": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_WitchF_A_NPC.dds",
+      "template_id": 1459020
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Brain_Drain",
+    "timestamp": "20240119022628"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Medulla (Standard)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Power Supply",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Mellori to the Scholars in Dry Dock",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Empyrea/Interiors/EM_Z15_DreamBabaYaga",
+      "blocking": true
+    }
+  ]
+}

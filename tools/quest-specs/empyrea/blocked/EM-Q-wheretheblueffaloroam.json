@@ -1,0 +1,78 @@
+{
+  "id": "EM-Q-wheretheblueffaloroam",
+  "giver": {
+    "persona": "EM-AERO-NPC07",
+    "zone": "Empyrea/EM_Z09_NWAeroplains"
+  },
+  "requires": [],
+  "min_level": 112,
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 109618,
+    "gold": 910
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Oxen_Shaggy_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003051",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Doll_Scientist_A_01.AdjRef",
+        "EM_StandIn_DocDemented.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003006",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC01-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    },
+    "EM-AERO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_HelenaF_A_NPC.dds",
+      "template_id": 1447331
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Where_the_Blue-ffalo_Roam...",
+    "timestamp": "20231126092251"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Where the Blue-ffalo Roam...",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "When the Whirlyburly's Done",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Ox Alarm to Dark Cloud Base",
+      "blocking": true
+    }
+  ]
+}

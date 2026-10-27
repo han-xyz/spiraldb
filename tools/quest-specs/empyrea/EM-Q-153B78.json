@@ -1,0 +1,144 @@
+{
+  "id": "EM-Q-153B78",
+  "lang": "153B78",
+  "giver": {
+    "persona": "EM-OUTER-NPC12",
+    "zone": "Empyrea/EM_Z03_OuterAthanor"
+  },
+  "requires": [
+    "EM-Q-153B75"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 56958,
+    "gold": 880
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-OUTER-NPC07",
+      "zone": "Empyrea/Interiors/EM_Z03_IceCouncilChamber",
+      "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "persona",
+      "persona": "EM_Standin_Lars",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-OUTER-NPC13",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    }
+  ],
+  "personas": {
+    "EM-OUTER-NPC07": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
+      "template_id": 1391500
+    },
+    "EM-OUTER-NPC12": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCitizenF_A_NPC.dds",
+      "template_id": 1391509
+    },
+    "EM-OUTER-NPC13": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceSoldier_C_NPC.dds",
+      "template_id": 1391513
+    },
+    "EM_Standin_Lars": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_E_NPC.dds",
+      "template_id": 1413116
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tunnel_Visions",
+    "timestamp": "20231126090110"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Vault",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

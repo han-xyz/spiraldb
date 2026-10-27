@@ -1,0 +1,86 @@
+{
+  "id": "EM-Q-1624B0",
+  "lang": "1624B0",
+  "giver": {
+    "persona": "EM-SAMS-NPC07",
+    "zone": "Empyrea/Interiors/EM_Z12_DyingJungle"
+  },
+  "requires": [
+    "EM-Q-1624A7"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 86891,
+    "gold": 900
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/Interiors/EM_Z12_DyingJungle",
+      "loc": "ZoneLocName_1451161"
+    }
+  ],
+  "personas": {
+    "EM-SAMS-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_G_NPC.dds",
+      "template_id": 1451177
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Quest_Bears_Fruit",
+    "timestamp": "20231126091345"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Gulmohar Tree Fruit in the Dying Glade",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "to the Dying Jungle",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

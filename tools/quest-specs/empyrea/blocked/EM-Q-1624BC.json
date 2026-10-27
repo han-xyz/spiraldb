@@ -1,0 +1,134 @@
+{
+  "id": "EM-Q-1624BC",
+  "lang": "1624BC",
+  "giver": {
+    "persona": "EM-SAMS-NPC08-B",
+    "zone": "Empyrea/Interiors/EM_Z12_DyingJungle"
+  },
+  "requires": [
+    "EM-Q-1624B4"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 56900,
+    "gold": 905
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-SAMS-NPC09",
+      "zone": "Empyrea/Interiors/EM_Z12_CaveOfQuickening",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-REV-NPC01",
+      "zone": "Empyrea/EM_Z15_Nexus",
+      "loc": "ZoneLocName_1451161",
+      "completion": [
+        {
+          "speaker": "EM-REV-NPC01",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-REV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_WispCustodian_A_NPC.dds",
+      "template_id": 1459003
+    },
+    "EM-SAMS-NPC08-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_WolfGryphon_Warrior_E_NPC.dds",
+      "template_id": 1451190
+    },
+    "EM-SAMS-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_LadyoftheLake_A_NPC.dds",
+      "template_id": 1451198
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pretty_Darn_Quickening",
+    "timestamp": "20231126091452"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Pillar of Light",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Reverie",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Empyrea/Interiors/EM_Z12_CaveOfQuickening",
+      "blocking": true
+    }
+  ]
+}

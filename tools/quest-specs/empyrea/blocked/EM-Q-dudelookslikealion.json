@@ -1,0 +1,64 @@
+{
+  "id": "EM-Q-dudelookslikealion",
+  "giver": {
+    "persona": "EM-AERO-NPC03",
+    "zone": "Empyrea/EM_Z08_SWAeroplains"
+  },
+  "requires": [],
+  "min_level": 112,
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 69034,
+    "gold": 680
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Meowl_Base_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003035",
+      "zone": "",
+      "loc": "ZoneLocName_1413361"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z08_SWAeroplains",
+      "loc": "ZoneLocName_1413361"
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC03": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_Q_NPC.dds",
+      "template_id": 1447327
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dude_Looks_Like_a_Lion",
+    "timestamp": "20240328001234"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Dude Looks Like a Lion",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Stream On",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Meowl Den",
+      "blocking": true
+    }
+  ]
+}

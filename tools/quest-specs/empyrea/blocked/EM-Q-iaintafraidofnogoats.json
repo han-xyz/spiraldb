@@ -1,0 +1,64 @@
+{
+  "id": "EM-Q-iaintafraidofnogoats",
+  "giver": {
+    "persona": "EM-AERO-NPC12",
+    "zone": "Empyrea/EM_Z11_VeloCity"
+  },
+  "requires": [],
+  "min_level": 112,
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 4550
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Goat_Ninja_E_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003018",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Troll_Base_A_NPC.dds",
+      "template_id": 1447369
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:I_Ain't_Afraid_of_No_Goats",
+    "timestamp": "20231126100201"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "I Ain't Afraid of No Goats",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Take Me Down to Velo City",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Northeast Aero Plains",
+      "blocking": false
+    }
+  ]
+}

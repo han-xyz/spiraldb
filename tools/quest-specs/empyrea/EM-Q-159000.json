@@ -1,0 +1,80 @@
+{
+  "id": "EM-Q-159000",
+  "lang": "159000",
+  "giver": {
+    "persona": "EM-OUTER-NPC21",
+    "zone": "Empyrea/EM_Z04_InnerAthanor"
+  },
+  "requires": [
+    "EM-Q-153B7F"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 4000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Titan_SmallLava_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002894",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "descriptor": "WizQst159000_00000005",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-OUTER-NPC21": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireSoldier_D_NPC.dds",
+      "template_id": 1391569
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mostly_Armless",
+    "timestamp": "20231126095528"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

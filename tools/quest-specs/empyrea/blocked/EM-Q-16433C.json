@@ -1,0 +1,114 @@
+{
+  "id": "EM-Q-16433C",
+  "lang": "16433C",
+  "giver": {
+    "persona": "EM-REV-NPC01",
+    "zone": "Empyrea/EM_Z15_Nexus"
+  },
+  "requires": [
+    "EM-Q-1624BC"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 69034,
+    "gold": 680
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-Accompany-Melori_C.AdjRef",
+        "EM-Accompany-Melori_C_ENC.AdjRef",
+        "EM-CHAOS-NPC05-B.AdjRef",
+        "EM-CHAOS-NPC05-C.AdjRef",
+        "EM-CHAOS-NPC05-RIFT.AdjRef",
+        "EM-CHAOS-NPC05.AdjRef",
+        "EM-HUSK-NPC02-A.AdjRef",
+        "EM-HUSK-NPC02-B-ENC01.AdjRef",
+        "EM-HUSK-NPC02-B.AdjRef",
+        "EM-HUSK-NPC02-C.AdjRef",
+        "EM-HUSK-NPC02-D.AdjRef",
+        "EM-HUSK-NPC02-E.AdjRef",
+        "EM-HUSK-NPC02-F.AdjRef",
+        "EM-HUSK-NPC02-G.AdjRef",
+        "EM-HUSK-NPC02-H.AdjRef",
+        "EM-HUSK-NPC02-I.AdjRef",
+        "EM-HUSK-NPC02-J.AdjRef",
+        "EM-HUSK-NPC02-L.AdjRef",
+        "EM-HUSK-NPC02-M.AdjRef",
+        "EM-REV-NPC02.AdjRef",
+        "EM-SAMS-NPC10.AdjRef",
+        "EM-ZANA-NPC29.AdjRef",
+        "EM_StandIn_Mallori.AdjRef",
+        "EM_StandIn_Mallori_02.AdjRef",
+        "EM_StandIn_Mallori_BatEssence.AdjRef",
+        "EM_StandIn_Mallori_C.AdjRef",
+        "EM_Standin_DreamMellori.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01748482"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z15_Nexus"
+    }
+  ],
+  "personas": {
+    "EM-REV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_WispCustodian_A_NPC.dds",
+      "template_id": 1459003
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Into_the_Great_Beyond",
+    "timestamp": "20240328000048"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Mellori's Dream",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

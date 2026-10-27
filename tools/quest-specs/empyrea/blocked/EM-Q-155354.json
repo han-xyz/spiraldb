@@ -1,0 +1,126 @@
+{
+  "id": "EM-Q-155354",
+  "lang": "155354",
+  "giver": {
+    "persona": "EM-JUNG-NPC01",
+    "zone": "Empyrea/EM_Z01_Jungle"
+  },
+  "requires": [
+    "EM-Q-15531D"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 486624,
+    "gold": 2660
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-JUNG-NPC02-B",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-JUNG-NPC02-B.AdjRef",
+        "EM-JUNG-NPC02-C.AdjRef",
+        "EM-JUNG-NPC02-D.AdjRef",
+        "EM-JUNG-NPC02-E.AdjRef",
+        "EM-JUNG-NPC02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "descriptor": "NPCs_01748772",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    }
+  ],
+  "personas": {
+    "EM-JUNG-NPC01": {
+      "portrait": "GUI/NpcPortraits/Beastman_WarriorF_B_NPC.dds",
+      "template_id": 1397538
+    },
+    "EM-JUNG-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Beastman_Child_A_NPC.dds",
+      "template_id": 1397541
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:May_the_Beastman_Win",
+    "timestamp": "20240327235212"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Monkey Spider Cave",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Defeat Monkey Spiders and",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Gather 5 Cave Fungus",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

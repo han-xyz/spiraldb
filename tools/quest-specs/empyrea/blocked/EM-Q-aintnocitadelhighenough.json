@@ -1,0 +1,125 @@
+{
+  "id": "EM-Q-aintnocitadelhighenough",
+  "giver": {
+    "persona": "EM-AERO-NPC07",
+    "zone": "Empyrea/EM_Z09_NWAeroplains"
+  },
+  "requires": [],
+  "min_level": 112,
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 282000,
+    "gold": 2965
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Robot_Drone_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003055",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Druid_Agent_A_02.AdjRef",
+        "EM_StandIn_DarkCloudCabalistA.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003084",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Oxen_Shaggy_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003052",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC02",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447324"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z09_NWAeroplains",
+      "loc": "ZoneLocName_1447290"
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC02": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_D_NPC.dds",
+      "template_id": 1447326
+    },
+    "EM-AERO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_HelenaF_A_NPC.dds",
+      "template_id": 1447331
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ain't_No_Citadel_High_Enough",
+    "timestamp": "20231126092511"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Ain't No Citadel High Enough",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Truth Hurts",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "to Port Aero",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "First Aero Dwarf House",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Second Aero Dwarf House",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Third Aero Dwarf House",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "your friends in Port Aero",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Aeroship",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Aeroship to Nimbus",
+      "blocking": true
+    }
+  ]
+}

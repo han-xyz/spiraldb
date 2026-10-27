@@ -1,0 +1,53 @@
+{
+  "id": "EM-Q-tilwizardvoiceswakeus",
+  "giver": {
+    "persona": "EM-REV-NPC01",
+    "zone": "Empyrea/EM_Z15_Nexus"
+  },
+  "requires": [
+    "EM-Q-16433E"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 28450,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC03-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    },
+    "EM-REV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_WispCustodian_A_NPC.dds",
+      "template_id": 1459003
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:'Til_Wizard_Voices_Wake_Us",
+    "timestamp": "20250904002907"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "'Til Wizard Voices Wake Us",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "to the Waking World",
+      "blocking": true
+    }
+  ]
+}

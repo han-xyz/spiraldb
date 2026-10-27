@@ -1,0 +1,104 @@
+{
+  "id": "EM-Q-15909A",
+  "lang": "15909A",
+  "giver": {
+    "persona": "EM-AERO-NPC07",
+    "zone": "Empyrea/EM_Z09_NWAeroplains"
+  },
+  "requires": [
+    "EM-Q-1624DE"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 69034,
+    "gold": 685
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Nimbari_JusticarF_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003046",
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z09_NWAeroplains",
+      "loc": "ZoneLocName_1413254"
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_HelenaF_A_NPC.dds",
+      "template_id": 1447331
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Search_for_Sparck",
+    "timestamp": "20240328003000"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Ain't No Citadel High Enough",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Rear Courtyard",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Ain't No Citadel High Enough replaced by EM-Q-1624DE",
+      "blocking": false
+    }
+  ]
+}

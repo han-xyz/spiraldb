@@ -1,0 +1,87 @@
+{
+  "id": "EM-Q-162485",
+  "lang": "162485",
+  "giver": {
+    "persona": "EM-CHAOS-NPC11",
+    "zone": "Empyrea/EM_Z14_ChaosJungle"
+  },
+  "requires": [
+    "EM-Q-1624D9"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 11250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Bramble_Death_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003001",
+      "zone": "",
+      "loc": "ZoneLocName_1451078"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z14_ChaosJungle",
+      "loc": "ZoneLocName_1451078"
+    }
+  ],
+  "personas": {
+    "EM-CHAOS-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_CitizenF_J_NPC.dds",
+      "template_id": 1451140
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Recovering_the_Stones",
+    "timestamp": "20231126100837"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Glade of Shavarram",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Sacred Stones",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

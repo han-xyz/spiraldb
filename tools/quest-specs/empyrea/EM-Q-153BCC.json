@@ -1,0 +1,169 @@
+{
+  "id": "EM-Q-153BCC",
+  "lang": "153BCC",
+  "giver": {
+    "persona": "EM-OUTER-NPC07",
+    "zone": "Empyrea/Interiors/EM_Z03_IceCouncilChamber"
+  },
+  "requires": [
+    "EM-Q-158FE1"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 76413,
+    "gold": 1060
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC05",
+      "zone": "Empyrea/Interiors/EM_Z04_Praesidium",
+      "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC08",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    }
+  ],
+  "personas": {
+    "EM-INNER-NPC05": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCouncilor_C_NPC.dds",
+      "template_id": 1413081
+    },
+    "EM-INNER-NPC08": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_D_NPC.dds",
+      "template_id": 1391566
+    },
+    "EM-OUTER-NPC07": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
+      "template_id": 1391500
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Re-Counciliation",
+    "timestamp": "20231126090254"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Streamportal",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Steam Vent Control Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Bunker Busters replaced by EM-Q-158FE1",
+      "blocking": false
+    }
+  ]
+}

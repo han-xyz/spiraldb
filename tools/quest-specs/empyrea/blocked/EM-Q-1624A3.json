@@ -1,0 +1,91 @@
+{
+  "id": "EM-Q-1624A3",
+  "lang": "1624A3",
+  "giver": {
+    "persona": "EM-SAMS-NPC04",
+    "zone": "Empyrea/EM_Z12_SamsaraVillage"
+  },
+  "requires": [
+    "EM-Q-16249F"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 200785,
+    "gold": 1575
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z12_SamsaraVillage",
+      "loc": "ZoneLocName_1451161"
+    }
+  ],
+  "personas": {
+    "EM-SAMS-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_F_NPC.dds",
+      "template_id": 1451168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Purify_Me",
+    "timestamp": "20231126091108"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Use Black Urn",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Use Red Urn",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Use Gold Urn",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Empyrea/EM_Z12_SamsaraVillage",
+      "blocking": true
+    }
+  ]
+}

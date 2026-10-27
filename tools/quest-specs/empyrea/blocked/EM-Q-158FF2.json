@@ -1,0 +1,319 @@
+{
+  "id": "EM-Q-158FF2",
+  "lang": "158FF2",
+  "giver": {
+    "persona": "EM-INNER-NPC05",
+    "zone": "Empyrea/Interiors/EM_Z04_Praesidium"
+  },
+  "requires": [
+    "EM-Q-158FF1"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 216927,
+    "gold": 3250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-AERI-NPC17.AdjRef",
+        "EM-Accompany-Bat.AdjRef",
+        "EM-Accompany-Bat_ENC-B.AdjRef",
+        "EM-Accompany-Bat_ENC.AdjRef",
+        "EM-CHAOS-NPC07-B.AdjRef",
+        "EM-CHAOS-NPC07-C.AdjRef",
+        "EM-CHAOS-NPC07-D.AdjRef",
+        "EM-CHAOS-NPC07-RIFT.AdjRef",
+        "EM-CHAOS-NPC07.AdjRef",
+        "EM-HUSK-NPC03-A.AdjRef",
+        "EM-HUSK-NPC03-B-ENC01.AdjRef",
+        "EM-HUSK-NPC03-B.AdjRef",
+        "EM-HUSK-NPC03-C.AdjRef",
+        "EM-HUSK-NPC03-D.AdjRef",
+        "EM-HUSK-NPC03-E.AdjRef",
+        "EM-HUSK-NPC03-F.AdjRef",
+        "EM-HUSK-NPC03-G.AdjRef",
+        "EM-HUSK-NPC03-H.AdjRef",
+        "EM-HUSK-NPC03-I.AdjRef",
+        "EM-HUSK-NPC03-J.AdjRef",
+        "EM-HUSK-NPC03-K.AdjRef",
+        "EM-HUSK-NPC03-L.AdjRef",
+        "EM-HUSK-NPC03-M.AdjRef",
+        "EM-INNER-NPC09.AdjRef",
+        "EM-NIMB-NPC15.AdjRef",
+        "EM-OUTER-NPC28.AdjRef",
+        "EM-SEP-002-A.AdjRef",
+        "EM-SEP-002-B.AdjRef",
+        "EM-SEP-002-C.AdjRef",
+        "EM-SEP-002-D.AdjRef",
+        "EM-SEP-002-E.AdjRef",
+        "EM-SEP-002-F.AdjRef",
+        "EM-SEP-002-G.AdjRef",
+        "EM-SEP-002.AdjRef",
+        "EM-SEP-BatTalker.AdjRef",
+        "EM-ZANA-NPC30.AdjRef",
+        "EM-ZANA-NPC30_Beacon.AdjRef",
+        "EM-ZANA-NPC30_LightNet.AdjRef",
+        "EM_Bat_Cinematics_01.AdjRef",
+        "EM_StandIn_DreamBat.AdjRef",
+        "EM_StandIn_LightNetBat.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "descriptor": "NPCs_01748829",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC17",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-BatWing.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "descriptor": "Items_00019788",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-OUTER-NPC07",
+      "zone": "Empyrea/Interiors/EM_Z03_IceCouncilChamber",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC17",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC17",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "completion": [
+        {
+          "speaker": "EM-AERI-NPC17",
+          "line": "00000024"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    },
+    "EM-INNER-NPC05": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCouncilor_C_NPC.dds",
+      "template_id": 1413081
+    },
+    "EM-OUTER-NPC07": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
+      "template_id": 1391500
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Athano-More",
+    "timestamp": "20231126090320"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Temple of Light",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "to the Pod in Outer Athanor",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Aeriel Shore",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

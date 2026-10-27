@@ -1,0 +1,67 @@
+{
+  "id": "EM-Q-gofullcircle",
+  "giver": {
+    "persona": "EM-AERI-NPC01-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [],
+  "min_level": 112,
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 162500,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC03-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    },
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Go_Full_Circle",
+    "timestamp": "20231126090548"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Go Full Circle",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Communications Officer",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "(Approach) the Pod to Mandalla",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Use the Pod",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Search for Samsara Village",
+      "blocking": true
+    }
+  ]
+}

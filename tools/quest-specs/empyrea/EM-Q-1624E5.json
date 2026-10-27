@@ -1,0 +1,77 @@
+{
+  "id": "EM-Q-1624E5",
+  "lang": "1624E5",
+  "giver": {
+    "persona": "EM-DEST-NPC06",
+    "zone": "Empyrea/EM_Z13_SamsaraDestroyed"
+  },
+  "requires": [
+    "EM-Q-1624CD"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 6750
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-SupplyBundle.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizItems_00002047",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161"
+    }
+  ],
+  "personas": {
+    "EM-DEST-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_CitizenF_K_NPC.dds",
+      "template_id": 1451238
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Need_Food_Badly!",
+    "timestamp": "20231126100659"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

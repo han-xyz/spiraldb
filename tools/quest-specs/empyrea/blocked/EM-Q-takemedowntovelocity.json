@@ -1,0 +1,89 @@
+{
+  "id": "EM-Q-takemedowntovelocity",
+  "giver": {
+    "persona": "EM-AERO-NPC03",
+    "zone": "Empyrea/EM_Z08_SWAeroplains"
+  },
+  "requires": [],
+  "min_level": 112,
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 104748,
+    "gold": 1135
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Cracklelope_Base_B_01.AdjRef",
+        "EM_Dwarf_AeroHunter_F_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002991",
+      "zone": "",
+      "loc": "ZoneLocName_1413361"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC04",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC06",
+      "zone": "Empyrea/Interiors/EM_Z11_HunterGuild",
+      "loc": "ZoneLocName_1413361"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC05",
+      "zone": "Empyrea/Interiors/EM_Z11_HunterGuild",
+      "loc": "ZoneLocName_1413361"
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC03": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_Q_NPC.dds",
+      "template_id": 1447327
+    },
+    "EM-AERO-NPC04": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroHunterF_A_NPC.dds",
+      "template_id": 1447328
+    },
+    "EM-AERO-NPC05": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_M_NPC.dds",
+      "template_id": 1447329
+    },
+    "EM-AERO-NPC06": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroHunter_A_NPC.dds",
+      "template_id": 1447330
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Take_Me_Down_to_Velo_City",
+    "timestamp": "20240328000842"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Take Me Down to Velo City",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Dude Looks Like a Lion",
+      "blocking": false
+    }
+  ]
+}

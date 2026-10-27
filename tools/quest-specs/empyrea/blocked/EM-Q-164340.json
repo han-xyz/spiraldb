@@ -1,0 +1,216 @@
+{
+  "id": "EM-Q-164340",
+  "lang": "164340",
+  "requires": [
+    "EM-Q-16433C"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 69361,
+    "gold": 905
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-CHAOS-NPC12.AdjRef",
+        "EM-HUSK-NPC01-A.AdjRef",
+        "EM-HUSK-NPC01-B.AdjRef",
+        "EM-HUSK-NPC01-C.AdjRef",
+        "EM-HUSK-NPC01-E.AdjRef",
+        "EM-REV-NPC07.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01748880"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Accompany-Melori_C.AdjRef",
+        "EM-Accompany-Melori_C_ENC.AdjRef",
+        "EM-CHAOS-NPC05-B.AdjRef",
+        "EM-CHAOS-NPC05-C.AdjRef",
+        "EM-CHAOS-NPC05-RIFT.AdjRef",
+        "EM-CHAOS-NPC05.AdjRef",
+        "EM-HUSK-NPC02-A.AdjRef",
+        "EM-HUSK-NPC02-B-ENC01.AdjRef",
+        "EM-HUSK-NPC02-B.AdjRef",
+        "EM-HUSK-NPC02-C.AdjRef",
+        "EM-HUSK-NPC02-D.AdjRef",
+        "EM-HUSK-NPC02-E.AdjRef",
+        "EM-HUSK-NPC02-F.AdjRef",
+        "EM-HUSK-NPC02-G.AdjRef",
+        "EM-HUSK-NPC02-H.AdjRef",
+        "EM-HUSK-NPC02-I.AdjRef",
+        "EM-HUSK-NPC02-J.AdjRef",
+        "EM-HUSK-NPC02-L.AdjRef",
+        "EM-HUSK-NPC02-M.AdjRef",
+        "EM-REV-NPC02.AdjRef",
+        "EM-SAMS-NPC10.AdjRef",
+        "EM-ZANA-NPC29.AdjRef",
+        "EM_StandIn_Mallori.AdjRef",
+        "EM_StandIn_Mallori_02.AdjRef",
+        "EM_StandIn_Mallori_BatEssence.AdjRef",
+        "EM_StandIn_Mallori_C.AdjRef",
+        "EM_Standin_DreamMellori.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01748482"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Dreaming_Begins",
+    "timestamp": "20250827080858"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Dream Shrine",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "The Headmaster",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

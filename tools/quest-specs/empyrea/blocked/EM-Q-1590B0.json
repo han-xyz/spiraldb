@@ -1,0 +1,167 @@
+{
+  "id": "EM-Q-1590B0",
+  "lang": "1590B0",
+  "requires": [
+    "EM-Q-15909D"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 153531,
+    "gold": 1370
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Robot_Drone_D_01.AdjRef",
+        "EM_Robot_Drone_D_02.AdjRef",
+        "EM_Robot_Drone_D_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003057",
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Robot_Drone_D_01.AdjRef",
+        "EM_Robot_Drone_D_02.AdjRef",
+        "EM_Robot_Drone_D_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003057",
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Nimbari_Noble_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003047",
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Only_Thing_to_Fear...",
+    "timestamp": "20231126092517"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Private Wing",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Private Wing",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Private Wing",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

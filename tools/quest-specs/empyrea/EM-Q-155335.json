@@ -1,0 +1,106 @@
+{
+  "id": "EM-Q-155335",
+  "lang": "155335",
+  "giver": {
+    "persona": "EM-JUNG-NPC04-B",
+    "zone": "Empyrea/EM_Z01_Jungle"
+  },
+  "requires": [
+    "EM-Q-155334"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 441723,
+    "gold": 2040
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_MonkeySpider_Hunter_A_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002794",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-StatueEyes.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "descriptor": "WizardQuestGoals_00000556",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    }
+  ],
+  "personas": {
+    "EM-JUNG-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_A_NPC.dds",
+      "template_id": 1397564
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Web_Head",
+    "timestamp": "20231126085858"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Webbing",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

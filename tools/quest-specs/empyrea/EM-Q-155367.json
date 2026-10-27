@@ -1,0 +1,76 @@
+{
+  "id": "EM-Q-155367",
+  "lang": "155367",
+  "giver": {
+    "persona": "EM-AERI-NPC05-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 2500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-JUNG-NPC07",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Elder_A_NPC.dds",
+      "template_id": 1397722
+    },
+    "EM-JUNG-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_TraderF_B_NPC.dds",
+      "template_id": 1397608
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Brainstorm!",
+    "timestamp": "20231126094436"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Presporo's Books replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

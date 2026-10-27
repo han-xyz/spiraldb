@@ -1,0 +1,122 @@
+{
+  "id": "EM-Q-1615CC",
+  "lang": "1615CC",
+  "giver": {
+    "persona": "EM-AERO-NPC13",
+    "zone": "Empyrea/EM_Z10_PortAero"
+  },
+  "requires": [
+    "EM-Q-1624DE"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 13600
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Cracklelope_Base_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003005",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447324",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Robot_Drone_C_NPC.dds",
+      "template_id": 1447371
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Aerobots_Are_Da_Bombs",
+    "timestamp": "20231126100026"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Take Me Down to Velo City",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Bolts in Northeast Aero Plains",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Take Me Down to Velo City replaced by EM-Q-1624DE",
+      "blocking": false
+    }
+  ]
+}

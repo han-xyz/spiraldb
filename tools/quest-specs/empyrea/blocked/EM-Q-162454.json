@@ -1,0 +1,111 @@
+{
+  "id": "EM-Q-162454",
+  "lang": "162454",
+  "giver": {
+    "persona": "EM-CHAOS-NPC01-B",
+    "zone": "Empyrea/Interiors/EM_Z14_FeralClearing"
+  },
+  "requires": [
+    "EM-Q-162449"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 90220,
+    "gold": 1140
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Bramble_Death_A_01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00003000",
+      "zone": "",
+      "loc": "ZoneLocName_1451078"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC01-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    },
+    "EM-CHAOS-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_H_NPC.dds",
+      "template_id": 1451088
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Jungle_Chaos!",
+    "timestamp": "20240328003043"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "a Reading (use quest tracker to find)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "First Reading",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Second Reading in Kalamar Clearing",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

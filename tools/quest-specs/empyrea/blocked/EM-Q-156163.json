@@ -1,0 +1,95 @@
+{
+  "id": "EM-Q-156163",
+  "lang": "156163",
+  "requires": [
+    "EM-Q-15615D"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 96540,
+    "gold": 2340
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-SEP-NPC006.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WC-NPCs_00002496"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-SEP-NPC007.AdjRef",
+        "EM_StandIn_MedullaChained_01.AdjRef",
+        "EM_StandIn_Medulla_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WC-NPCs_00002497"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Massive_Headache",
+    "timestamp": "20240409061220"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "The Quizzler",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Medulla (Standard)",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "EM-Q-1590A6",
+  "lang": "1590A6",
+  "giver": {
+    "persona": "EM-AERI-NPC01-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-15909D"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 28450,
+    "gold": 455
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-DEST-NPC01",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-DEST-NPC01",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161",
+      "completion": [
+        {
+          "speaker": "EM-DEST-NPC01",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    },
+    "EM-DEST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_E_NPC.dds",
+      "template_id": 1451215
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:We_Got_a_Mandalla_Down!",
+    "timestamp": "20231126092711"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Celestial Loophole replaced by EM-Q-15909D",
+      "blocking": false
+    }
+  ]
+}

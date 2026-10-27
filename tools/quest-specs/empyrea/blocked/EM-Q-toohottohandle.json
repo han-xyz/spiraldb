@@ -1,0 +1,55 @@
+{
+  "id": "EM-Q-toohottohandle",
+  "giver": {
+    "persona": "EM-INNER-NPC06",
+    "zone": "Empyrea/EM_Z04_InnerAthanor"
+  },
+  "requires": [
+    "EM-Q-158FDC"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 54336,
+    "gold": 1170
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Titan_SmallLava_A_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002894",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    }
+  ],
+  "personas": {
+    "EM-INNER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireSoldier_B_NPC.dds",
+      "template_id": 1413082
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Too_Hot_to_Handle",
+    "timestamp": "20240327235746"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Too Hot to Handle",
+      "blocking": true
+    }
+  ]
+}

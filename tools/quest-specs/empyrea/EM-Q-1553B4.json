@@ -1,0 +1,140 @@
+{
+  "id": "EM-Q-1553B4",
+  "lang": "1553B4",
+  "giver": {
+    "persona": "EM-AERI-NPC16",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 5000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-CrownEmpyreal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "WizItems_00002023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-CrownEmpyreal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "WizItems_00002023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-CrownEmpyreal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "WizItems_00002023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-CrownEmpyreal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "WizItems_00002023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-CrownEmpyreal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "WizItems_00002023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-CrownEmpyreal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "WizItems_00002023"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZekeWife.dds",
+      "template_id": 1397685
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Turn_That_Crown_Upside-Down",
+    "timestamp": "20240118175836"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To Boldly Crash... replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

@@ -1,0 +1,91 @@
+{
+  "id": "EM-Q-155332",
+  "lang": "155332",
+  "giver": {
+    "persona": "EM-JUNG-NPC03-B",
+    "zone": "Empyrea/EM_Z01_Jungle"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 25446,
+    "gold": 440
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-JUNG-NPC04-B.AdjRef",
+        "EM-JUNG-NPC04-C.AdjRef",
+        "EM-JUNG-NPC04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "descriptor": "NPCs_01748774",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-JUNG-NPC04-B",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    }
+  ],
+  "personas": {
+    "EM-JUNG-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Beastman_Leader_A_NPC.dds",
+      "template_id": 1397660
+    },
+    "EM-JUNG-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_A_NPC.dds",
+      "template_id": 1397564
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Whaeriel?",
+    "timestamp": "20231126085852"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Khan Found It! replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

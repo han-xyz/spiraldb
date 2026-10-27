@@ -1,0 +1,100 @@
+{
+  "id": "EM-Q-1323C8",
+  "lang": "1323C8",
+  "requires": [
+    "EM-Q-1323C7"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 96540,
+    "gold": 2340
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Robot_Drone_A_Boss_01.AdjRef",
+        "EM_StandIn_Huuver.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002856",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Shadow_Trickster_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002952",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sparck_in_Charge",
+    "timestamp": "20231126100011"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Charging Station",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "for the Negativity Transmutator",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

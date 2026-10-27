@@ -1,0 +1,75 @@
+{
+  "id": "EM-Q-158FE0",
+  "lang": "158FE0",
+  "giver": {
+    "persona": "EM-INNER-NPC06",
+    "zone": "Empyrea/EM_Z04_InnerAthanor"
+  },
+  "requires": [
+    "EM-Q-158FDF"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 15756,
+    "gold": 220
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC05",
+      "zone": "Empyrea/Interiors/EM_Z04_Praesidium",
+      "loc": "ZoneLocName_1413071"
+    }
+  ],
+  "personas": {
+    "EM-INNER-NPC05": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCouncilor_C_NPC.dds",
+      "template_id": 1413081
+    },
+    "EM-INNER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireSoldier_B_NPC.dds",
+      "template_id": 1413082
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Getting_Warmer",
+    "timestamp": "20231126090303"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "EM-Q-158FF1",
+  "lang": "158FF1",
+  "giver": {
+    "persona": "EM-INNER-NPC08",
+    "zone": "Empyrea/EM_Z04_InnerAthanor"
+  },
+  "requires": [
+    "EM-Q-153BCC"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 50967,
+    "gold": 620
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC05",
+      "zone": "Empyrea/Interiors/EM_Z04_Praesidium",
+      "loc": "ZoneLocName_1413071",
+      "completion": [
+        {
+          "speaker": "EM-INNER-NPC05",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-INNER-NPC05": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCouncilor_C_NPC.dds",
+      "template_id": 1413081
+    },
+    "EM-INNER-NPC08": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_D_NPC.dds",
+      "template_id": 1391566
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Full_Steam_Ahead",
+    "timestamp": "20231126090407"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Insulation Insurrection",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Insulation Insurrection replaced by EM-Q-153BCC",
+      "blocking": false
+    }
+  ]
+}

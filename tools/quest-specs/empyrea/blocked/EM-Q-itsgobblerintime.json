@@ -1,0 +1,63 @@
+{
+  "id": "EM-Q-itsgobblerintime",
+  "giver": {
+    "persona": "EM-ZANA-NPC18",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [],
+  "min_level": 112,
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 4000
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-ZANA-NPC18.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "NPCs_01748831",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Alphoi_Prophet_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002871",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_Prophet_A_NPC.dds",
+      "template_id": 1254382
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:It's_Gobblerin'_Time!",
+    "timestamp": "20231126094943"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "It's Gobblerin' Time!",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Electrolyte At the End of the Tunnel",
+      "blocking": false
+    }
+  ]
+}

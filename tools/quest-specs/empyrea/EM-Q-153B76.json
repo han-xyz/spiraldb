@@ -1,0 +1,84 @@
+{
+  "id": "EM-Q-153B76",
+  "lang": "153B76",
+  "giver": {
+    "persona": "EM_StandIn_Jonas",
+    "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall"
+  },
+  "requires": [
+    "EM-Q-1323CA"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 15756,
+    "gold": 220
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-OUTER-NPC12",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    }
+  ],
+  "personas": {
+    "EM-OUTER-NPC12": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCitizenF_A_NPC.dds",
+      "template_id": 1391509
+    },
+    "EM_StandIn_Jonas": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCitizen_A_NPC.dds",
+      "template_id": 1435020
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lava_Trouble!",
+    "timestamp": "20240327235414"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Real Politics replaced by EM-Q-1323CA",
+      "blocking": false
+    }
+  ]
+}

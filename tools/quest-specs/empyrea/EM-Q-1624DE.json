@@ -1,0 +1,93 @@
+{
+  "id": "EM-Q-1624DE",
+  "lang": "1624DE",
+  "giver": {
+    "persona": "EM-AERI-NPC03-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-16249D"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 17857,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC02-B",
+      "zone": "Empyrea/Interiors/EM_Z00_ArkHold",
+      "loc": "ZoneLocName_1451161"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Crewman_A_NPC.dds",
+      "template_id": 1397727
+    },
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Zana-Redo",
+    "timestamp": "20240409061123"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "'Til Wizard Voices Wake Us",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "'Til Wizard Voices Wake Us replaced by EM-Q-16249D",
+      "blocking": false
+    }
+  ]
+}

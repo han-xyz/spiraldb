@@ -1,0 +1,159 @@
+{
+  "id": "EM-Q-1624D9",
+  "lang": "1624D9",
+  "giver": {
+    "persona": "EM-DEST-NPC04",
+    "zone": "Empyrea/EM_Z13_SamsaraDestroyed"
+  },
+  "requires": [
+    "EM-Q-1624D4"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 114547,
+    "gold": 1140
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-DEST-NPC01",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-DEST-NPC05",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Streamportal.AdjRef",
+        "EM-StreamportalBrainVersion.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizItems_00002025",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-CHAOS-NPC01-B",
+      "zone": "Empyrea/Interiors/EM_Z14_FeralClearing",
+      "loc": "ZoneLocName_1451161"
+    }
+  ],
+  "personas": {
+    "EM-CHAOS-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_H_NPC.dds",
+      "template_id": 1451088
+    },
+    "EM-DEST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_E_NPC.dds",
+      "template_id": 1451215
+    },
+    "EM-DEST-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1451224
+    },
+    "EM-DEST-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_CitizenF_H_NPC.dds",
+      "template_id": 1451263
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Cry_for_Help",
+    "timestamp": "20231126092914"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Save Our Scrolls replaced by EM-Q-1624D4",
+      "blocking": false
+    }
+  ]
+}

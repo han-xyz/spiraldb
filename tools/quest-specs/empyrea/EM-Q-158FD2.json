@@ -1,0 +1,131 @@
+{
+  "id": "EM-Q-158FD2",
+  "lang": "158FD2",
+  "giver": {
+    "persona": "EM-INNER-NPC01",
+    "zone": "Empyrea/EM_Z04_InnerAthanor"
+  },
+  "requires": [
+    "EM-Q-153B7F"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 108927,
+    "gold": 2010
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-Streamportal.AdjRef",
+        "EM-StreamportalBrainVersion.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "descriptor": "WizItems_00002025",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Elementals_BallLava_A_01.AdjRef",
+        "EM_Elementals_BallLava_A_01_Minion.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002882",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC03",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    }
+  ],
+  "personas": {
+    "EM-INNER-NPC01": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_A_NPC.dds",
+      "template_id": 1413076
+    },
+    "EM-INNER-NPC03": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireSoldier_C_NPC.dds",
+      "template_id": 1413078
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Simmering_Tensions",
+    "timestamp": "20231126090128"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Praesidium",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Praesidium",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

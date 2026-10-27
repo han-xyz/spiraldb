@@ -1,0 +1,111 @@
+{
+  "id": "EM-Q-gutbomb",
+  "giver": {
+    "persona": "EM-AERI-NPC17",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-1553EA"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 217257,
+    "gold": 2660
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-SulphurBarrel.AdjRef"
+      ],
+      "count": 3,
+      "zone": ""
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-CharcoalBarrel.AdjRef"
+      ],
+      "count": 3,
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC01-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Blockage.AdjRef"
+      ],
+      "count": 1,
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "EM-NIMB-NPC16",
+      "zone": "Empyrea/Interiors/EM_Z07_ControlRoom"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    },
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    },
+    "EM-NIMB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mutant_Dynt_A_NPC.dds",
+      "template_id": 1413353
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gut_Bomb",
+    "timestamp": "20231126090330"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Gut Bomb",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Shipwrecks",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Sulfur Barrels",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Charcoal Crates",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Sulfur and Charcoal",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Salpetre",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "the Blockage",
+      "blocking": false
+    }
+  ]
+}

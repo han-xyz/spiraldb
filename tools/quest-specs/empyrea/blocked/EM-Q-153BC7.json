@@ -1,0 +1,130 @@
+{
+  "id": "EM-Q-153BC7",
+  "lang": "153BC7",
+  "giver": {
+    "persona": "EM-OUTER-NPC06",
+    "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall"
+  },
+  "requires": [
+    "EM-Q-158FE1"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 95538,
+    "gold": 1830
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-OUTER-NPC09-B",
+      "zone": ""
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Titan_SmallIce_A_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002893",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-OUTER-NPC09-B",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "EM-OUTER-NPC07",
+      "zone": "Empyrea/Interiors/EM_Z03_IceCouncilChamber",
+      "loc": "ZoneLocName_1391567"
+    }
+  ],
+  "personas": {
+    "EM-OUTER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_B_NPC.dds",
+      "template_id": 1391499
+    },
+    "EM-OUTER-NPC07": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
+      "template_id": 1391500
+    },
+    "EM-OUTER-NPC09-B": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceSoldier_B_NPC.dds",
+      "template_id": 1391560
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bunker_Busters",
+    "timestamp": "20231126090257"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Bunker",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Einar Iceaxe",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Einar Iceaxe",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

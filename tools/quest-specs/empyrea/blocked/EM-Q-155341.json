@@ -1,0 +1,162 @@
+{
+  "id": "EM-Q-155341",
+  "lang": "155341",
+  "giver": {
+    "persona": "EM-AERI-NPC03-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-15533D"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 152901,
+    "gold": 1860
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC02-D",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-LuxCapacitor.AdjRef",
+        "EM-LuxCapacitorStation.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "Items_00019787"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Cyclolabe.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "WizQst155341_00000013"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC02-D",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC06-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "completion": [
+        {
+          "speaker": "EM-AERI-NPC06-B",
+          "line": "00000014"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC02-D": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Crewman_A_NPC.dds",
+      "template_id": 1397728
+    },
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    },
+    "EM-AERI-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
+      "template_id": 1397725
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:From_A_to_Z",
+    "timestamp": "20240327235342"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Pod to Zanadu",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

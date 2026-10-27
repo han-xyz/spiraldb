@@ -1,0 +1,45 @@
+{
+  "id": "EM-Q-alessthanadmirableadmiral",
+  "requires": [
+    "EM-Q-1590A0"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 40584,
+    "gold": 230
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Mutant_Dynt_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003114",
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Less_Than_Admirable_Admiral",
+    "timestamp": "20250906091211"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A Less Than Admirable Admiral",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "id": "EM-Q-1615EA",
+  "lang": "1615EA",
+  "giver": {
+    "persona": "EM-AERO-NPC04",
+    "zone": "Empyrea/EM_Z11_VeloCity"
+  },
+  "requires": [],
+  "min_level": 112,
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 13800
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-AERO-NPC25.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "descriptor": "NPCs_01748925",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_StandIn_BadWolf.AdjRef",
+        "EM_Werewolf_Warrior_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003074",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-AERO-NPC26.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "descriptor": "NPCs_01748918",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Human_SeamstressF_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003024",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000027"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC04": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroHunterF_A_NPC.dds",
+      "template_id": 1447328
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:What_Big_Lies_You_Have",
+    "timestamp": "20231126100452"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Newts Hate Frogs",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Grandma's House",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
