@@ -42,7 +42,7 @@ WORLDS = (
     World("Zafaria", "ZF", "Zafaria", 60, (0x718AF, 0x71A69)),
     World("Avalon", "AV", "Avalon", 68),
     World("Azteca", "AZ", "Azteca", 78),
-    World("Khrysalis", "KR", "Khrysalis", 88),
+    World("Khrysalis", "KR", "Khrysalis", 88, (0x126322, 0x13D76F)),
     World("Polaris", "PL", "Polaris", 100, (0x14DBD8, 0x14DC0D)),
     World("Mirage", "MR", "Mirage", 105),
     World("Empyrea", "EM", "Empyrea", 112, (0x132297, 0x16437F)),

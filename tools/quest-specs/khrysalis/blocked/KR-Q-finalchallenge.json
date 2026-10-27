@@ -1,0 +1,59 @@
+{
+  "id": "KR-Q-finalchallenge",
+  "giver": {
+    "persona": "KR-HIVE-NPC27",
+    "zone": "Khrysalis/KR_Z11_TheHive"
+  },
+  "requires": [
+    "KR-Q-12D206"
+  ],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 56175,
+    "gold": 545
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Morganth.AdjRef",
+        "KR_MorgantheBlue_A_Bossfight.AdjRef",
+        "KR_MorgantheBnW_A_Bossfight.AdjRef",
+        "KR_MorgantheGrey_A_Bossfight.AdjRef",
+        "KR_MorganthePurple_A_Bossfight.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001069",
+      "zone": "",
+      "loc": "ZoneLocName_1233442"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    }
+  ],
+  "personas": {
+    "KR-HIVE-NPC27": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
+      "template_id": 1233519
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Final_Challenge",
+    "timestamp": "20240409061116"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Final Challenge",
+      "blocking": true
+    }
+  ]
+}

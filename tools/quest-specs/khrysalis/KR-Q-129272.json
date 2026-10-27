@@ -1,0 +1,92 @@
+{
+  "id": "KR-Q-129272",
+  "lang": "129272",
+  "giver": {
+    "persona": "KR-MoonCliffs-NPC04",
+    "zone": "Khrysalis/Interiors/KR_Z02_MoonCliffs_Int01_01"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 15500,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mouse_Summoner_A.AdjRef",
+        "Tutorial-Pacts-Sofia-Accompany-001.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001645",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/Interiors/KR_Z02_MoonCliffs_Int01_01",
+      "loc": "ZoneLocName_1205048",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-MoonCliffs-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Summoner_A_NPC.dds",
+      "template_id": 1223183
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shadow_Dancer",
+    "timestamp": "20240118180135"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Free Shadows replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

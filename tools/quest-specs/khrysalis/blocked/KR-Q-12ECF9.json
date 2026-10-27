@@ -1,0 +1,110 @@
+{
+  "id": "KR-Q-12ECF9",
+  "lang": "12ECF9",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC26",
+    "zone": "Khrysalis/KR_Z09_MantisCity"
+  },
+  "requires": [
+    "KR-Q-12ECF8"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 69735,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mantis_HunterF_Z_Officer.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001930",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Sardonyx-NPC26": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_Drone_J_NPC.dds",
+      "template_id": 1283207
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Let's_Duet!",
+    "timestamp": "20231126063150"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ECF9, the only free key within 16 of its chain neighbour WizQst12ECF8 whose lines name the page's names: Catapult Shot",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Munitions Entrance",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Catapult Shot",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

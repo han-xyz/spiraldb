@@ -1,0 +1,39 @@
+{
+  "id": "KR-Q-khrysalisquesttree",
+  "requires": [],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Khrysalis_Quest_Tree",
+    "timestamp": "20240409061213"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Khrysalis Quest Tree",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goals",
+      "value": [],
+      "blocking": true
+    }
+  ]
+}

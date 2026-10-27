@@ -1,0 +1,189 @@
+{
+  "id": "KR-Q-129320",
+  "lang": "129320",
+  "giver": {
+    "persona": "KR-RadianceReborn-NPC03",
+    "zone": "Khrysalis/KR_Z08_RadianceReborn"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 87170,
+    "gold": 845
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-RadianceReborn-NPC10",
+      "zone": "Khrysalis/Interiors/KR_Z08_I06_Dreamroom1",
+      "loc": "ZoneLocName_1217288"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-RadianceReborn-NPC01",
+      "zone": "Khrysalis/Interiors/KR_Z08_I06_Dreamroom1",
+      "loc": "ZoneLocName_1217288"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_SprigganGisela_A_Bossfight.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001827",
+      "zone": "",
+      "loc": "ZoneLocName_1217288"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-HornedCrown.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00009450",
+      "loc": "ZoneLocName_1217288"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z08_RadianceReborn",
+      "loc": "ZoneLocName_1217288"
+    }
+  ],
+  "personas": {
+    "KR-RadianceReborn-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Froudlings_Spriggan_01_A_NPC.dds",
+      "template_id": 1283162
+    },
+    "KR-RadianceReborn-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_RougeF_C_NPC.dds",
+      "template_id": 1217303
+    },
+    "KR-RadianceReborn-NPC10": {
+      "portrait": "GUI/NpcPortraits/AV_Human_Knight_Malory_NPC.dds",
+      "template_id": 1217313
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Dream_of_Avalon",
+    "timestamp": "20250904043634"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Chambers of the Mind",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "First Chamber of the Mind",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Chambers of the Mind replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

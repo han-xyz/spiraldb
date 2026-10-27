@@ -1,0 +1,83 @@
+{
+  "id": "KR-Q-129299",
+  "lang": "129299",
+  "requires": [
+    "KR-Q-129276"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 34740,
+    "gold": 420
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Bloodbat_Canyon_A.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001671",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-MoonCliffs-NPC20",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    }
+  ],
+  "personas": {
+    "KR-MoonCliffs-NPC20": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bee_Drone_A_NPC.dds",
+      "template_id": 1223230
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bats,_Man!",
+    "timestamp": "20240409061145"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "Ozzy (Khrysalis)",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Ozzy (Khrysalis)",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

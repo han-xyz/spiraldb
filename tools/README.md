@@ -52,6 +52,9 @@ title, so their row declares `lang_range`; a declared `lang_range` wins over the
 run holds 11 of its files). A world outside the table is refused with the list of the known ones.
 title, so their row declares `lang_range`; Empyrea's anchored run holds few of its quests, so its row declares one
 too. A declared `lang_range` wins over the derived cluster. A world outside the table is refused with the list of the known ones.
+names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`. A row's declared `lang_range`
+wins: Zafaria and Polaris have no such title, and Khrysalis's quests lie in runs from 0x126322 to 0x13D76F that its
+few titles do not anchor. A world outside the table is refused with the list of the known ones.
 
 ## check
 

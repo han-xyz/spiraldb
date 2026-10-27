@@ -1,0 +1,125 @@
+{
+  "id": "KR-Q-130FC0",
+  "lang": "130FC0",
+  "giver": {
+    "persona": "KR-CrescentBeach-NPC26",
+    "zone": "Khrysalis/KR_Z06_CrescentBeach"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 79420,
+    "gold": 770
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z05_FortRachias",
+      "loc": "ZoneLocName_1205054"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Shdweave_Lord_H.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001746",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-WarHorn.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "descriptor": "SigilText_00000341",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097"
+    }
+  ],
+  "personas": {
+    "KR-CrescentBeach-NPC26": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_A_NPC.dds",
+      "template_id": 1249221
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:He_Heard_the_Loud_Bassoon",
+    "timestamp": "20231125224403"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "The Mariner Hath His Will!",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Mariner Hath His Will! replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

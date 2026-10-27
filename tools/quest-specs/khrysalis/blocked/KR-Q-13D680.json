@@ -1,0 +1,119 @@
+{
+  "id": "KR-Q-13D680",
+  "lang": "13D680",
+  "giver": {
+    "persona": "KR-Bastion-NPC23",
+    "zone": "Khrysalis/KR_Z00_Hub"
+  },
+  "requires": [
+    "KR-Q-130F08"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 92970,
+    "gold": 1050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-Sardonyx-NPC00",
+      "zone": "Khrysalis/Interiors/KR_Z09_I12_LostLightMain",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR_Obelisk_Central.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "descriptor": "GUI_00007124",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Sardonyx-NPC00",
+      "zone": "Khrysalis/Interiors/KR_Z09_I12_LostLightMain",
+      "loc": "ZoneLocName_1205023",
+      "completion": [
+        {
+          "speaker": "KR-Sardonyx-NPC00",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_B_NPC.dds",
+      "template_id": 1223156
+    },
+    "KR-Sardonyx-NPC00": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_Drone_B_NPC.dds",
+      "template_id": 1299044
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shades_of_Shadow",
+    "timestamp": "20241203203722"
+  },
+  "needs_review": [
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Zaltanna the Mirrormask",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Khrysalis Obelisks",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

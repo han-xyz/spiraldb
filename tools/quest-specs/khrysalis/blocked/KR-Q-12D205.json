@@ -1,0 +1,173 @@
+{
+  "id": "KR-Q-12D205",
+  "lang": "12D205",
+  "giver": {
+    "persona": "KR-HIVE-NPC27",
+    "zone": "Khrysalis/KR_Z11_TheHive"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 79425,
+    "gold": 770
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-ShadowPalace-NPC01",
+      "zone": "Khrysalis/KR_Z12_ShadowPalace",
+      "loc": "ZoneLocName_1233442"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Nymph_DrkMage_A.AdjRef",
+        "KR_Nymph_DrkMage_A25.AdjRef",
+        "KR_Nymph_DrkMage_A50.AdjRef",
+        "KR_Nymph_DrkMage_B.AdjRef",
+        "KR_Nymph_DrkMage_B25.AdjRef",
+        "KR_Nymph_DrkMage_B50.AdjRef",
+        "KR_Nymph_DrkMage_C.AdjRef",
+        "KR_Nymph_DrkMage_C25.AdjRef",
+        "KR_Nymph_DrkMage_C50.AdjRef",
+        "KR_Nymph_DrkMage_D.AdjRef",
+        "KR_Nymph_DrkMage_D25.AdjRef",
+        "KR_Nymph_DrkMage_D50.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001806",
+      "zone": "",
+      "loc": "ZoneLocName_1233442"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    }
+  ],
+  "personas": {
+    "KR-HIVE-NPC27": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
+      "template_id": 1233519
+    },
+    "KR-ShadowPalace-NPC01": {
+      "portrait": "GUI/NpcPortraits/GiantTree_Evil_A_NPC.dds",
+      "template_id": 1283143
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Doom_Tree",
+    "timestamp": "20260331205621"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Way of Night",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Celestial Plane",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "to Moros",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Ethereal Bridge",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

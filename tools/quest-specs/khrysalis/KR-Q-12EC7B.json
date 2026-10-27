@@ -1,0 +1,151 @@
+{
+  "id": "KR-Q-12EC7B",
+  "lang": "12EC7B",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC07",
+    "zone": "Khrysalis/KR_Z09_MantisCity"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 54240,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-Sardonyx-NPC40.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "descriptor": "NPCs_01748321",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mantis_HunterF_U.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001888",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000012"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Sardonyx-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_J_NPC.dds",
+      "template_id": 1283121
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Delusions_Of_Grandeur",
+    "timestamp": "20231126063327"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12EC7B by the proper nouns its lines share with the page (House, PhantomKnight, Sardonyx, Zelda), within 16 of a key of the zone's quests; next best WizQst12ED00 with 3",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Beauty Revisited",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Beauty Revisited replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

@@ -1,0 +1,91 @@
+{
+  "id": "KR-Q-130F19",
+  "lang": "130F19",
+  "giver": {
+    "persona": "KR-Bastion-NPC04",
+    "zone": "Khrysalis/KR_Z01_SilentMarket"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 56885,
+    "gold": 605
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-DocumentPages.AdjRef"
+      ],
+      "count": 8,
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "descriptor": "QuestTitle_00001267",
+      "loc": "ZoneLocName_1205051"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_1205051",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Vendor_B_NPC.dds",
+      "template_id": 1223137
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Twisting_In_the_Wind",
+    "timestamp": "20231126060901"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "War Plans replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

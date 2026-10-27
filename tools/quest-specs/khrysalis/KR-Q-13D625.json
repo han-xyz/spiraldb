@@ -1,0 +1,180 @@
+{
+  "id": "KR-Q-13D625",
+  "lang": "13D625",
+  "giver": {
+    "persona": "KR-CrescentBeach-NPC10",
+    "zone": "Khrysalis/KR_Z06_CrescentBeach"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 100730,
+    "gold": 975
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-TyrianGorge-NPC02",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Treant_Tormented_B.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001594",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "descriptor": "WizQst13D625_00000010",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-TyrianGorge-NPC02",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-SeaWeedBait-Object.AdjRef",
+        "KR-SeaWeedBait.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "descriptor": "WizItems_00001982",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-SeaWeedBait-Object.AdjRef",
+        "KR-SeaWeedBait.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "descriptor": "WizItems_00001982",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-CrescentBeach-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Hunter_B_NPC.dds",
+      "template_id": 1283101
+    },
+    "KR-TyrianGorge-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Millipede_Warrior_H_NPC.dds",
+      "template_id": 1223193
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Goat_Weaver_Wrangler",
+    "timestamp": "20231126062049"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Band of Brothers replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

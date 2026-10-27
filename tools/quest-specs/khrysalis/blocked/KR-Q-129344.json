@@ -1,0 +1,88 @@
+{
+  "id": "KR-Q-129344",
+  "lang": "129344",
+  "giver": {
+    "persona": "KR-SilentMarket-NPC11",
+    "zone": "Khrysalis/KR_Z01_SilentMarket"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 23245,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_1205051"
+    }
+  ],
+  "personas": {
+    "KR-SilentMarket-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Morganth_E_MOB.dds",
+      "template_id": 1206374
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stop!_HammerTail",
+    "timestamp": "20250824134529"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Way of the Crafter",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "an Ornate Burrower Chair",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

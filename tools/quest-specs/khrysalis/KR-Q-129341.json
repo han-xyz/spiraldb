@@ -1,0 +1,94 @@
+{
+  "id": "KR-Q-129341",
+  "lang": "129341",
+  "giver": {
+    "persona": "KR-RuinedAlcazar-NPC12",
+    "zone": "Khrysalis/KR_Z07_RuinedAlcazar"
+  },
+  "requires": [
+    "KR-Q-129340"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 54250,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_SuGlider_Warrior_F.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001915",
+      "zone": "Khrysalis/KR_Z07_RuinedAlcazar",
+      "loc": "ZoneLocName_1217254"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z07_RuinedAlcazar",
+      "loc": "ZoneLocName_1217254"
+    }
+  ],
+  "personas": {
+    "KR-RuinedAlcazar-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_RougeF_C_NPC.dds",
+      "template_id": 1283206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bringing_the_Light,_Bringing_Noise",
+    "timestamp": "20231126062757"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Hall of the Planisphere",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

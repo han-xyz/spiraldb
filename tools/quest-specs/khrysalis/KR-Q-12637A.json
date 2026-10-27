@@ -1,0 +1,127 @@
+{
+  "id": "KR-Q-12637A",
+  "lang": "12637A",
+  "giver": {
+    "persona": "KR-Bastion-NPC29",
+    "zone": "Khrysalis/Interiors/KR_Z00_I08_ThroneRoom"
+  },
+  "requires": [
+    "KR-Q-12927B"
+  ],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 92980,
+    "gold": 900
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Bee_Warrior_H.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001670",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Shdweave_Warrior_A.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001678",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-LastWood-NPC04",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-LastWood-NPC16",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052",
+      "completion": [
+        {
+          "speaker": "KR-LastWood-NPC16",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC29": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_King_A_NPC.dds",
+      "template_id": 1223221
+    },
+    "KR-LastWood-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Knight_C_NPC.dds",
+      "template_id": 1223168
+    },
+    "KR-LastWood-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_WarriorM_C_NPC.dds",
+      "template_id": 1223219
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bastion_Found",
+    "timestamp": "20250909032958"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

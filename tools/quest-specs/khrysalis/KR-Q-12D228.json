@@ -1,0 +1,90 @@
+{
+  "id": "KR-Q-12D228",
+  "lang": "12D228",
+  "giver": {
+    "persona": "KR-Hive-NPC17",
+    "zone": "Khrysalis/KR_Z11_TheHive"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 46490,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Scorpion_Warrior_B_AlbinoLasher.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001838",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "descriptor": "WizQst12D228_00000005",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    }
+  ],
+  "personas": {
+    "KR-Hive-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Barbarian_D_NPC.dds",
+      "template_id": 1283234
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Friend_In_Deed",
+    "timestamp": "20231126063939"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Panopticon replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

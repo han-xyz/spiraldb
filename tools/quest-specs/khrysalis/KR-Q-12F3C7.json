@@ -1,0 +1,121 @@
+{
+  "id": "KR-Q-12F3C7",
+  "lang": "12F3C7",
+  "giver": {
+    "persona": "KR-LastWood-NPC23",
+    "zone": "Khrysalis/KR_Z03_LastWood"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 34740,
+    "gold": 420
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Milipede_Warrior_C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001611",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "descriptor": "WizQst12F3C7_00000013",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Guard_D_NPC.dds",
+      "template_id": 1223224
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hat_Trick",
+    "timestamp": "20231126061439"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Cry Havoc",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Cry Havoc replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

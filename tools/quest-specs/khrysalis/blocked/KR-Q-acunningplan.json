@@ -1,0 +1,58 @@
+{
+  "id": "KR-Q-acunningplan",
+  "giver": {
+    "persona": "KR-LastWood-NPC14",
+    "zone": "Khrysalis/KR_Z03_LastWood"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 0,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-LastWood-NPC16",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_RougeF_A_NPC.dds",
+      "template_id": 1223178
+    },
+    "KR-LastWood-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_WarriorM_C_NPC.dds",
+      "template_id": 1223219
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Cunning_Plan",
+    "timestamp": "20251114183750"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A Cunning Plan",
+      "blocking": true
+    },
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Sabra SoaringKnife",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Soaring Free",
+      "blocking": false
+    }
+  ]
+}

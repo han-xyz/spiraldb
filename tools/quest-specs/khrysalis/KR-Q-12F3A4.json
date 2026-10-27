@@ -1,0 +1,85 @@
+{
+  "id": "KR-Q-12F3A4",
+  "lang": "12F3A4",
+  "giver": {
+    "persona": "KR-LastWood-NPC06",
+    "zone": "Khrysalis/Interiors/KR_Z03_GlassShop"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 7750,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-MoonCliffs-NPC06",
+      "zone": "Khrysalis/Interiors/KR_Z02_I09_ThroneRoom",
+      "loc": "ZoneLocName_1205052"
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Merchant_B_NPC.dds",
+      "template_id": 1223170
+    },
+    "KR-MoonCliffs-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bee_QueenF_A_NPC.dds",
+      "template_id": 1223185
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Heart_of_Glass",
+    "timestamp": "20240205172716"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12F3A4 matched by the words it shares with the goals; its lines name Chihooly GlassShaper",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Mended Tears",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Mended Tears replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

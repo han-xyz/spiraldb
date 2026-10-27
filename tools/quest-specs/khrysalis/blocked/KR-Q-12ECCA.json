@@ -1,0 +1,163 @@
+{
+  "id": "KR-Q-12ECCA",
+  "lang": "12ECCA",
+  "giver": {
+    "persona": "KR-KondhaDesert-NPC13",
+    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 116230,
+    "gold": 1125
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mouse_Barbarian_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001907",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-KondhaDesert-NPC14",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    }
+  ],
+  "personas": {
+    "KR-KondhaDesert-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Elder_C_NPC.dds",
+      "template_id": 1283171
+    },
+    "KR-KondhaDesert-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_BarbQueenF_A_NPC.dds",
+      "template_id": 1283172
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shame_About_That",
+    "timestamp": "20240121083450"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ECCA matched by the words it shares with the goals; its lines name Sonya Jade-Eye, White Furs",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Under Their Noses",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "a Friendly Barbarian",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Big Water",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Mouse Sign",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Mouse Sign",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Tent (and Defeat Sonya Jade-Eye)",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

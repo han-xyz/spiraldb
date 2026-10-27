@@ -1,0 +1,93 @@
+{
+  "id": "KR-Q-129310",
+  "lang": "129310",
+  "giver": {
+    "persona": "KR-RuinedAlcazar-NPC06",
+    "zone": "Khrysalis/KR_Z07_RuinedAlcazar"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 15500,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-PhoenixEgg.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z07_RuinedAlcazar",
+      "descriptor": "WizardQuestGoals_00000429",
+      "loc": "ZoneLocName_1217254"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-RuinedAlcazar-NPC16",
+      "zone": "Khrysalis/KR_Z07_RuinedAlcazar",
+      "loc": "ZoneLocName_1217254"
+    }
+  ],
+  "personas": {
+    "KR-RuinedAlcazar-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_RougeF_C_NPC.dds",
+      "template_id": 1283157
+    },
+    "KR-RuinedAlcazar-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_D_NPC.dds",
+      "template_id": 1217298
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ashes_On_Your_Eyes",
+    "timestamp": "20250917185308"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Rarest Egg replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

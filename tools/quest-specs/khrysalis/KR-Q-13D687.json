@@ -1,0 +1,78 @@
+{
+  "id": "KR-Q-13D687",
+  "lang": "13D687",
+  "giver": {
+    "persona": "KR-KondhaDesert-NPC22",
+    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+  },
+  "requires": [
+    "KR-Q-12ECC2"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 46490,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Scorpion_Warrior_A_Deathstalker.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001841",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    }
+  ],
+  "personas": {
+    "KR-KondhaDesert-NPC22": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Hunter_F_NPC.dds",
+      "template_id": 1283224
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Divining_Intervention",
+    "timestamp": "20231126063526"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Rymond's Dowsing Rod",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

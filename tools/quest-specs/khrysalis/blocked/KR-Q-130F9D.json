@@ -1,0 +1,101 @@
+{
+  "id": "KR-Q-130F9D",
+  "lang": "130F9D",
+  "giver": {
+    "persona": "KR-CrescentBeach-NPC26",
+    "zone": "Khrysalis/KR_Z06_CrescentBeach"
+  },
+  "requires": [
+    "KR-Q-130FC3"
+  ],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 23245,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097"
+    }
+  ],
+  "personas": {
+    "KR-CrescentBeach-NPC26": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_A_NPC.dds",
+      "template_id": 1249221
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Diver_Down_(Khrysalis)",
+    "timestamp": "20231125224432"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst130F9D by the proper nouns its lines share with the page (Sea, StarFall), within 16 of a key of the zone's quests; next best WizQst130FB9 with 1",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Across the StarFall Sea",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

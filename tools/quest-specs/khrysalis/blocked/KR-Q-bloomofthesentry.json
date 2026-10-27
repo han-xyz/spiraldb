@@ -1,0 +1,54 @@
+{
+  "id": "KR-Q-bloomofthesentry",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC01",
+    "zone": "Khrysalis/KR_Z09_MantisCity"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 15500,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    }
+  ],
+  "personas": {
+    "KR-Sardonyx-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_Drone_B_NPC.dds",
+      "template_id": 1283115
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bloom_of_the_Sentry",
+    "timestamp": "20231126063042"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Bloom of the Sentry",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Shoulders of Giants",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Garden of Vida",
+      "blocking": false
+    }
+  ]
+}

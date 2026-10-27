@@ -1,0 +1,153 @@
+{
+  "id": "KR-Q-12932F",
+  "lang": "12932F",
+  "giver": {
+    "persona": "KR-RadianceReborn-NPC03",
+    "zone": "Khrysalis/KR_Z08_RadianceReborn"
+  },
+  "requires": [
+    "KR-Q-129323"
+  ],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 59664,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-CrescentBeach-NPC01",
+      "zone": "Khrysalis/Interiors/KR_Z06_I01_Hermitcave",
+      "loc": "ZoneLocName_1217288"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Spider_Mage_E.AdjRef",
+        "KR_Spider_Mage_E_DR3.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001759",
+      "zone": "",
+      "loc": "ZoneLocName_1217288"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z08_RadianceReborn",
+      "loc": "ZoneLocName_1217288"
+    }
+  ],
+  "personas": {
+    "KR-CrescentBeach-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_A_NPC.dds",
+      "template_id": 1283092
+    },
+    "KR-RadianceReborn-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_RougeF_C_NPC.dds",
+      "template_id": 1217303
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Dream_of_Khrysalis",
+    "timestamp": "20250904181745"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Third Chamber of the Mind",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

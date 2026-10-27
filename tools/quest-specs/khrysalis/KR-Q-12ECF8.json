@@ -1,0 +1,106 @@
+{
+  "id": "KR-Q-12ECF8",
+  "lang": "12ECF8",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC26",
+    "zone": "Khrysalis/KR_Z09_MantisCity"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 46490,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Shdweave_Warrior_I_NightFeeder.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001764",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "descriptor": "WizQst12ECF8_00000007",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Sardonyx-NPC26": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_Drone_J_NPC.dds",
+      "template_id": 1283207
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Major_Minor_Problem",
+    "timestamp": "20231126063207"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ECF8 matched by the words it shares with the goals; its lines name Night Feeders",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Shoulders of Giants",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Shoulders of Giants replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

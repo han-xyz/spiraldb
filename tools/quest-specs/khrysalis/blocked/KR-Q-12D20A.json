@@ -1,0 +1,159 @@
+{
+  "id": "KR-Q-12D20A",
+  "lang": "12D20A",
+  "giver": {
+    "persona": "KR-HIVE-NPC27",
+    "zone": "Khrysalis/KR_Z11_TheHive"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 61990,
+    "gold": 600
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-Bastion-NPC23",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-TyrianGorge-NPC07",
+      "zone": "Khrysalis/Interiors/KR_Z04_I07_AbyssalCave",
+      "loc": "ZoneLocName_1233442",
+      "completion": [
+        {
+          "speaker": "KR-TyrianGorge-NPC07",
+          "line": "00000001"
+        },
+        {
+          "speaker": "KR-TyrianGorge-NPC07",
+          "line": "00000016"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_B_NPC.dds",
+      "template_id": 1223156
+    },
+    "KR-HIVE-NPC27": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
+      "template_id": 1233519
+    },
+    "KR-TyrianGorge-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Headmaster_A_NPC.dds",
+      "template_id": 1223198
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Light_and_Shadow",
+    "timestamp": "20240205172758"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Final Challenge",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Zealous Colossus in Sardonyx",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Rubicund Colossus in Bastion",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Zaltanna the Mirrormask",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

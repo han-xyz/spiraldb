@@ -1,0 +1,118 @@
+{
+  "id": "KR-Q-130EFA",
+  "lang": "130EFA",
+  "giver": {
+    "persona": "KR-Bastion-NPC01",
+    "zone": "Khrysalis/KR_Z00_Hub"
+  },
+  "requires": [
+    "KR-Q-130EF8"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 53560,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mouse_Knight_King.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001714",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-LastWood-NPC26",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Guard_B_NPC.dds",
+      "template_id": 1223134
+    },
+    "KR-LastWood-NPC26": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Knight_B_NPC.dds",
+      "template_id": 1223227
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Don't_Slay_the_Messenger!",
+    "timestamp": "20231126060550"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "King Alric FateSailor",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
