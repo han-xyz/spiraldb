@@ -387,11 +387,20 @@ without a snapshot is fetched only live.
   Conatus)`), a use or defeat line repeated on consecutive lines is one goal with that count, and a header whose
   sub-items are goal lines or places (`Complete the following:`, `Explore:`) is one step of those goals. A place resolves to the zone path
   of its category,
-  else to the world's one zone wad named for it (`the Drum House`: `ZF_Z10_I03_Drum_House`) when that zone has a
+  else to the world's one zone wad named for it, read without its article and else without its possessive (`the Drum
+  House`: `ZF_Z10_I03_Drum_House`, `Centaurzan's Cabin`: `LM_Z01_CentaurzanCabin`) when that zone has a
   ZoneTransfer file; a waypoint line naming one of the world's NPCs instead (`Go to Governor Nereus`) is a persona
   goal, and one that resolves to neither is left out and listed. A find-like line that names no item but a place is a
   waypoint. A defeat in a place with its own zone (`Defeat Morganthe (in Morganthe's Chamber)`) sends the player
-  there.
+  there. A movement header over names no item reads (`Go to:` Test of Vision...) is one step of waypoints.
+- a goal line no item reads, unless its verb collects (collect, gather, recover...): a waypoint to the place a
+  parenthesised note enters (`Rest by the fire (Enter Rage Dream)`), else to what follows its "to" or "into" (`Follow
+  Freddie to the Next Room`), else to the place its whole target names (`Clear out Centaurzan's Cabin`), or a persona
+  goal when that names an NPC (`Lead the Nobles to Dasein`). An item verb (use, open, examine...) reads only the
+  whole target, and only when it is a place link. A line that resolves to none of these blocks under the field its
+  verb asks for: `goal.waypoint` (movement and find-like verbs, reach, ascend, infiltrate, "make your way"..., or a
+  line with a destination), `goal.usage` (item verbs), `goal.persona` (person verbs), `goal.unknown-verb` (any
+  other verb); a collect line no item reads stays `goal.items`. `update` is a talk verb.
 - the zone from the zone category, else the giver's location, to the zone where most of that zone's givers stand.
 - a giver placed in another registered world's zone blocks the spec (`giver (other world)`): the quest belongs to that
   world. Zones of unregistered hubs such as Arcanum are allowed.

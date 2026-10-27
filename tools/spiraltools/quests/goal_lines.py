@@ -3,7 +3,7 @@ wiki's notes."""
 import re
 
 KILL_VERBS = {"defeat", "fight", "battle", "beat", "vanquish", "duel", "slay", "kill", "subdue", "banish"}
-TALK_VERBS = {"talk", "speak", "meet", "visit", "report", "ask", "greet", "tell", "consult", "seek"}
+TALK_VERBS = {"talk", "speak", "meet", "visit", "report", "ask", "greet", "tell", "consult", "seek", "update"}
 MOVE_VERBS = {"go", "enter", "explore", "search", "return", "exit", "continue", "head", "travel", "journey",
               "proceed", "venture", "leave", "climb", "descend", "ride", "sail", "fly", "teleport", "flee",
               "escape", "walk", "run", "board", "press"}
@@ -11,11 +11,15 @@ MOVE_VERBS = {"go", "enter", "explore", "search", "return", "exit", "continue", 
 ITEM_VERBS = {"use", "activate", "examine", "inspect", "interact", "photomance", "photograph", "open", "light",
               "place", "plant", "fish", "release", "repair", "fix", "read", "restore", "remove", "clear", "collect",
               "gather", "recover", "retrieve", "craft", "destroy"}
+# Item verbs whose line names an item to collect, which stays a usage goal even when no item reads it.
+COLLECT_VERBS = {"collect", "gather", "recover", "retrieve", "craft"}
 FIND_VERBS = {"find", "locate", "look", "investigate", "check", "survey", "track"}
 PERSON_VERBS = {"rescue", "free", "save", "escort", "follow", "approach", "help", "assist", "deliver", "give",
                 "bring", "show", "wake", "pursue", "confront", "protect", "heal", "aid", "warn", "catch", "chase",
                 "take"} | FIND_VERBS
 GOAL_VERBS = KILL_VERBS | TALK_VERBS | MOVE_VERBS | ITEM_VERBS | PERSON_VERBS
+# Verbs of lines that move the player somewhere without being read as waypoints: one they do not reach stays blocked.
+WAY_VERBS = {"reach", "ascend", "cross", "pass", "infiltrate", "assault", "sneak", "jump", "lead", "launch"}
 
 PHOTOMANCE = re.compile(r"^Press Z to Photomance\b", re.I)
 VERB_HINT = re.compile(r"^\(?(\w+)\)?(?:\s+\((\w+)[^)]*\))?")
@@ -23,6 +27,9 @@ PARTICLE = re.compile(r"^(?:(?:to|into|for|through|out|up|on|off|with|at|back|on
                       r"investigating|pressing|onward|the|a|an)\b\s*)+", re.I)
 NOTE = re.compile(r"\s*\([^)]*\)")
 COUNT = re.compile(r"^\d+\s+")
+DESTINATION_NOTE = re.compile(r"\((?:enter|into|in|inside)\s+(?:the\s+)?([^)]+)\)", re.I)
+DESTINATION = re.compile(r"\s(?:to|into)\s+(?:the\s+)?(.+)$", re.I)
+MAKE_WAY = re.compile(r"^make (?:your|their) way\b", re.I)
 LINK = re.compile(r"\[\w+:([^\]]*)\]")
 
 
@@ -57,6 +64,27 @@ def place_readings(text):
     """The place names a target may mean, the most specific first: the whole, then each side of an " in "."""
     parts = [part.strip() for part in re.split(r"\s+(?:in|at|inside|near|of)\s+(?:the\s+)?", text) if part.strip()]
     return list(dict.fromkeys([text] + parts))
+
+
+def destinations(verb, text):
+    """Where a line no item reads sends the player: a parenthesised note entering a place (`(Enter Rage Dream)`),
+    else what follows its " to " or " into " (`Lead the Nobles to Dasein`). None for an item verb, whose place is
+    where the item stands."""
+    if verb in ITEM_VERBS:
+        return []
+    after = DESTINATION.search(NOTE.sub("", text))
+    return DESTINATION_NOTE.findall(text) + ([after.group(1).strip()] if after else [])
+
+
+def unread_field(verb, text):
+    """The needs_review field of a line nothing reads, by what its verb asks for."""
+    if verb in MOVE_VERBS | WAY_VERBS | FIND_VERBS or MAKE_WAY.match(text):
+        return "goal.waypoint"
+    if verb in ITEM_VERBS:
+        return "goal.usage"
+    if verb in PERSON_VERBS:
+        return "goal.persona"
+    return "goal.unknown-verb"
 
 
 def goal_kind(verb, text, npcs, creatures):

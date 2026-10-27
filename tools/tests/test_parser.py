@@ -248,6 +248,57 @@ class GoalLineTest(unittest.TestCase):
         self.assertEqual([summary(goal)[:2] for goal in spec["goals"]][0], ("usage", ["W-statueofartorius.AdjRef"]))
         self.assertNotIn("goal.persona", [field for field, _ in blocking(spec)])
 
+    def goals_of(self, lines, data, known_zones=(ZONE,)):
+        fields = {**fields_of("Survivors"), "goals": lines}
+        spec = build("Like_Dockwork", data, known_zones=known_zones, fields=fields)
+        return [summary(goal)[:2] for goal in spec["goals"]][:-1], blocking(spec)
+
+    def test_a_line_with_a_note_entering_a_place_is_a_waypoint_there(self):
+        data = Data(personas=["Dalton Prescott"], places={"Rage Dream": "W/Rage", "Sanctum": "W/Sanctum"})
+        goals, _ = self.goals_of(["@Rest by the fire (Enter [Location:Rage Dream])",
+                                  "@Follow Lemurs (into [Location:Sanctum])"], data, (ZONE, "W/Rage", "W/Sanctum"))
+        self.assertEqual(goals, [("waypoint", "W/Rage"), ("waypoint", "W/Sanctum")])
+
+    def test_a_line_leading_someone_to_a_place_or_an_npc_ends_there(self):
+        data = Data(personas=["Dalton Prescott", "Dasein"], places={"Next Room": "W/Next"})
+        goals, _ = self.goals_of(["@Lead the Nobles to Dasein", "@Follow Freddie to the Next Room"], data,
+                                 (ZONE, "W/Next"))
+        self.assertEqual(goals, [("persona", "Dasein"), ("waypoint", "W/Next")])
+
+    def test_a_line_whose_whole_target_is_a_place_is_a_waypoint_there(self):
+        data = Data(personas=["Dalton Prescott"], places={"Cabin": "W/Cabin", "Imperial Palace": "W/Palace"})
+        goals, _ = self.goals_of(["@Clear out [Location:Cabin]", "@Assault the Imperial Palace"], data,
+                                 (ZONE, "W/Cabin", "W/Palace"))
+        self.assertEqual(goals, [("waypoint", "W/Cabin"), ("waypoint", "W/Palace")])
+
+    def test_an_item_verb_does_not_go_to_the_place_its_item_stands_in(self):
+        data = Data(personas=["Dalton Prescott"], places={"Library": "W/Library"})
+        goals, blocked = self.goals_of(["@Use the Way of Itz (in the [Location:Library])"], data, (ZONE, "W/Library"))
+        self.assertEqual((goals, blocked), ([], [("goal.usage", "Use the Way of Itz (in the Library)")]))
+
+    def test_update_is_a_talk_verb(self):
+        goals, _ = self.goals_of(["@Update the Villagers"], Data(personas=["Dalton Prescott", "Villagers"]))
+        self.assertEqual(goals, [("persona", "Villagers")])
+
+    def test_a_line_read_as_nothing_blocks_under_the_field_its_verb_asks_for(self):
+        lines = ["@Make Your Way Up", "@Investigate Strange Noise", "@Celebrate Your Victory", "@Open Cell Door",
+                 "@Collect 5 Comestibles", "@Rescue Principe Mario", "@Follow the Ox Alarm to Dark Cloud Base"]
+        _, blocked = self.goals_of(lines, Data(personas=["Dalton Prescott"]))
+        self.assertEqual(blocked, [("goal.waypoint", "Make Your Way Up"),
+                                   ("goal.waypoint", "Investigate Strange Noise"),
+                                   ("goal.unknown-verb", "Celebrate Your Victory"),
+                                   ("goal.usage", "Open Cell Door"),
+                                   ("goal.items", "Comestibles"),
+                                   ("goal.persona", "Rescue Principe Mario"),
+                                   ("goal.waypoint", "Follow the Ox Alarm to Dark Cloud Base")])
+
+    def test_a_movement_header_over_names_no_item_reads_is_one_step_of_waypoints(self):
+        data = Data(personas=["Dalton Prescott"], places={"Test of Vision": "W/Vision"})
+        goals, blocked = self.goals_of(["@Go to:", "@@Test of Vision", "@@Test of Constellation"], data,
+                                       (ZONE, "W/Vision"))
+        self.assertEqual((goals, blocked), ([("waypoint", "W/Vision")], [("goal.waypoint", "Test of Constellation")]))
+
+
 class Langs:
     """Quest lang files by key."""
 
@@ -371,6 +422,10 @@ class ClientLookupTest(unittest.TestCase):
         data = ClientData(world("Zafaria"))
         self.assertEqual(data.zone_by_place("the Drum House"), "Zafaria/Interiors/ZF_Z10_I03_Drum_House")
         self.assertIsNone(data.zone_by_place("Nowhere At All"))
+
+    def test_a_place_resolves_without_its_possessive(self):
+        data = ClientData(world("Lemuria"))
+        self.assertEqual(data.zone_by_place("Centaurzan's Cabin"), "Lemuria/Interiors/LM_Z01_CentaurzanCabin")
 
     def test_a_title_with_the_wiki_world_tag_matches_the_title(self):
         data = ClientData(world("Novus"))

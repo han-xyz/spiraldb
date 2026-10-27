@@ -23,8 +23,9 @@ from ..pack import PACK, QUEST_SPECS_DIR, quest_template_paths, zone_transfer_fi
 from ..wad import GAMEDATA_DIR, zone_of_wad
 from ..worlds import WORLDS, lang_cluster, world
 from .generate import diff
-from .goal_lines import (FIND_VERBS, PERSON_VERBS, TALK_VERBS, goal_kind, is_goal_line, place_readings, repeated,
-                         strip_notes, target_text, verb_of)
+from .goal_lines import (COLLECT_VERBS, FIND_VERBS, ITEM_VERBS, MOVE_VERBS, PERSON_VERBS, TALK_VERBS, destinations,
+                         goal_kind, is_goal_line, place_readings, repeated, strip_notes, target_text, unread_field,
+                         verb_of)
 
 DESCRIPTION = ("Build questgen specs for a world from the Wizard101 Central wiki, live first, else the Internet "
                "Archive's copies.")
@@ -698,9 +699,11 @@ class ClientData:
         return self.zone_locations.get(norm(f"{self.world}|{place}"))
 
     def zone_by_place(self, place):
-        """The world's one zone whose wad is named for the place (`the Drum House`: ZF_Z10_I03_Drum_House), else
+        """The world's one zone whose wad is named for the place, read without its article and else without its
+        possessive (`the Drum House`: ZF_Z10_I03_Drum_House, `Centaurzan's Cabin`: LM_Z01_CentaurzanCabin), else
         None."""
-        zones = self.zone_names.get(norm(re.sub(r"^the\s+", "", place.strip(), flags=re.I)), [])
+        name = re.sub(r"^(the|a|an)\s+", "", place.strip(), flags=re.I)
+        zones = self.zone_names.get(norm(name)) or self.zone_names.get(norm(re.sub(r"['’]s\b", "", name)), [])
         return zones[0] if len(zones) == 1 else None
 
     def has_persona(self, name):
@@ -1093,7 +1096,23 @@ class SpecBuilder:
             found = self.waypoint_goal(places, text, quiet=not places)
             if found or places:
                 return [found]
-        return [self.usage_goal([item], number * times)]
+        if verb in COLLECT_VERBS or self.data.usage_entries(item, self.zone):
+            return [self.usage_goal([item], number * times)]
+        return [self.goal_elsewhere(verb, text, places)]
+
+    def goal_elsewhere(self, verb, text, places):
+        """A line no item reads: a waypoint to where it sends the player or to the place it names whole, else a talk
+        with the NPC it ends at; blocked under the field its verb asks for when none resolves."""
+        ends = destinations(verb, text)
+        whole = target_text(text)
+        for place in ends + ([whole] if verb not in ITEM_VERBS or whole in places else []):
+            goal = self.waypoint_goal([place], text, quiet=True)
+            if goal:
+                return goal
+            if self.data.has_persona(place):
+                return self.persona_goal(place)
+        self.unresolved("goal.waypoint" if ends else unread_field(verb, text), text, True)
+        return None
 
     def header_goals(self, line, text, verb, subs, number):
         if verb == "talk" or all(links(sub, "NPC") and not links(sub, "Creature") for sub in subs):
@@ -1122,7 +1141,17 @@ class SpecBuilder:
                     built[0]["with_previous"] = True
                 goals += built
             return goals
+        if verb in MOVE_VERBS and not any(self.data.usage_entries(plain(sub), self.zone) for sub in subs):
+            return [self.waypoint_of_list(sub, i > 0) for i, sub in enumerate(subs)]
         return [self.usage_goal([plain(sub) for sub in subs], len(subs))]
+
+    def waypoint_of_list(self, sub, with_previous):
+        goal = self.waypoint_goal(links(sub, "Location") or [plain(sub)], plain(sub), quiet=True)
+        if goal is None:
+            self.unresolved("goal.waypoint", plain(sub), True)
+        elif with_previous:
+            goal["with_previous"] = True
+        return goal
 
     def build(self, lang, quest_id):
         self.lang = lang
