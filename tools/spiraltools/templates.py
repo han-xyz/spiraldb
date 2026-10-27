@@ -159,7 +159,7 @@ def zone_placements(gamedata, world, templates):
         data = read_wad(path, {"gamedata.bin"}).get("gamedata.bin", b"")
         zone = zone_of_wad(path)
         for name, template_id in templates.items():
-            if name.encode() in data or (template_id and TEMPLATE_ID_FIELD + struct.pack("<Q", template_id) in data):
+            if name.encode() in data or places_template(data, template_id):
                 placed[name].append(zone)
     return placed
 
@@ -197,6 +197,17 @@ def persona_templates(rootwad):
         if persona:
             templates.setdefault(persona[:-len(PERSONA_SUFFIX)], []).append(os.path.basename(path)[:-4])
     return templates
+
+
+@functools.cache
+def template_ids_by_name(rootwad):
+    """object template name -> template id, over every ObjectData folder."""
+    return {os.path.basename(path)[:-4]: template_id for path, template_id in template_ids(rootwad).items()}
+
+
+def places_template(data, template_id):
+    """Whether a zone's gamedata.bin places an object by this template id."""
+    return bool(template_id) and TEMPLATE_ID_FIELD + struct.pack("<Q", template_id) in data
 
 
 def add_mobs_arguments(parser):

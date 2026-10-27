@@ -1,8 +1,8 @@
 """Quest specs: loading, the lookups they share, and validation against the client data."""
 from ..lang import lang_exists, read_lang, zone_location_keys
 from ..pack import tolerant_load, zone_transfer_files
-from ..templates import persona_templates
-from ..wad import zone_strings
+from ..templates import persona_templates, places_template, template_ids_by_name
+from ..wad import read_wad, wad_path, zone_strings
 
 GIVER = "giver"
 
@@ -64,8 +64,7 @@ def check_spec(spec, rootwad, gamedata, zone_cache, known_zones):
             zone_cache[zone] = zone_strings(gamedata, zone)
         if zone_cache[zone] is None:
             problems.append(f"zone {zone} has no wad")
-        elif not any(s.startswith(name) for name in [persona, *persona_templates(rootwad).get(persona, [])]
-                     for s in zone_cache[zone]):
+        elif not is_placed(persona, zone, rootwad, gamedata, zone_cache):
             problems.append(f"persona {persona} not placed in {zone}")
     for goal in spec["goals"]:
         try:
@@ -73,6 +72,17 @@ def check_spec(spec, rootwad, gamedata, zone_cache, known_zones):
         except SpecError as e:
             problems.append(str(e))
     return problems
+
+
+def is_placed(persona, zone, rootwad, gamedata, zone_cache):
+    """Whether the zone names the persona or one of its templates, or places one of them by template id."""
+    names = [persona, *persona_templates(rootwad).get(persona, [])]
+    if any(s.startswith(name) for name in names for s in zone_cache[zone]):
+        return True
+    if (zone, "gamedata.bin") not in zone_cache:
+        zone_cache[zone, "gamedata.bin"] = read_wad(wad_path(gamedata, zone), {"gamedata.bin"}).get("gamedata.bin", b"")
+    ids = template_ids_by_name(rootwad)
+    return any(places_template(zone_cache[zone, "gamedata.bin"], ids.get(name, 0)) for name in names)
 
 
 def check(specs, rootwad, gamedata):

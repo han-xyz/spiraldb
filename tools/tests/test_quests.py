@@ -62,6 +62,14 @@ class SpecTest(unittest.TestCase):
 
     @needs_rootwad
     @needs_gamedata
+    def test_check_finds_a_persona_placed_by_template_id(self):
+        placed = load_specs(ROUNDTRIP[:1], ROOTWAD_DIR)[0]
+        placed["giver"] = {"persona": "KR-Bastion-NPC23", "zone": "Khrysalis/KR_Z00_Hub"}
+        problems = check_spec(placed, ROOTWAD_DIR, GAMEDATA_DIR, {}, {"Khrysalis/KR_Z00_Hub"})
+        self.assertNotIn("persona KR-Bastion-NPC23 not placed in Khrysalis/KR_Z00_Hub", problems)
+
+    @needs_rootwad
+    @needs_gamedata
     def test_check_passes_the_round_trip_specs_whose_giver_has_no_zone(self):
         for loaded in load_specs(ROUNDTRIP, ROOTWAD_DIR):
             with self.subTest(loaded["id"]):
