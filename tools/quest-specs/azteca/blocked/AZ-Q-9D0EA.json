@@ -74,8 +74,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Gem in Celestial Bow in Twin Giants",
+      "field": "goal.usage",
+      "value": "Place Gem in Celestial Bow in Twin Giants",
       "blocking": true
     },
     {

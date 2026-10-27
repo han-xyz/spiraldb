@@ -47,18 +47,18 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Ax-Xolotl in The Zocalo",
+      "field": "goal.unknown-verb",
+      "value": "Get an Ax-Xolotl in The Zocalo",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Pirahptor in Mangrove Marsh",
+      "field": "goal.unknown-verb",
+      "value": "Get a Pirahptor in Mangrove Marsh",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Chupacarpe in Saltmeadow Swamp",
+      "field": "goal.unknown-verb",
+      "value": "Get a Chupacarpe in Saltmeadow Swamp",
       "blocking": true
     }
   ]

@@ -63,8 +63,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Away the Web Barrier",
+      "field": "goal.unknown-verb",
+      "value": "Tear Away the Web Barrier",
       "blocking": true
     },
     {

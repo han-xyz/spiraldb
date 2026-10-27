@@ -47,8 +47,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Way of Itz in the Calmecac Library",
+      "field": "goal.unknown-verb",
+      "value": "Paint The Way of Itz in the Calmecac Library",
       "blocking": true
     }
   ]

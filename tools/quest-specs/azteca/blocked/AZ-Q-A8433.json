@@ -139,8 +139,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Trail of Papers",
+      "field": "goal.persona",
+      "value": "Follow the Trail of Papers",
       "blocking": true
     },
     {

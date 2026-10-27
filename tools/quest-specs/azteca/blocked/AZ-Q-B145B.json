@@ -77,8 +77,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Ritual at the Petal Door",
+      "field": "goal.unknown-verb",
+      "value": "Perform Ritual at the Petal Door",
       "blocking": true
     },
     {

@@ -60,12 +60,12 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.waypoint",
       "value": "3 Moon Skull Zombies",
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.waypoint",
       "value": "3 Thunder Horn Zombies",
       "blocking": true
     },

@@ -51,17 +51,17 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.waypoint",
       "value": "Avian House",
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.waypoint",
       "value": "Avian House",
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.waypoint",
       "value": "Avian House",
       "blocking": true
     }

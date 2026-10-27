@@ -270,8 +270,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Broken Obsidian Fragments",
+      "field": "goal.usage",
+      "value": "Examine the Broken Obsidian Fragments",
       "blocking": true
     },
     {
@@ -285,8 +285,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Broken Obsidian Fragments",
+      "field": "goal.usage",
+      "value": "Examine the Broken Obsidian Fragments",
       "blocking": true
     },
     {
@@ -300,13 +300,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Obsidian Ice Mirror",
+      "field": "goal.usage",
+      "value": "Destroy the Obsidian Ice Mirror",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Broken Obsidian Fragments",
+      "field": "goal.usage",
+      "value": "Examine the Broken Obsidian Fragments",
       "blocking": true
     },
     {
@@ -320,8 +320,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Morganthe's Dark Servant",
+      "field": "goal.unknown-verb",
+      "value": "Stop Morganthe's Dark Servant",
       "blocking": true
     },
     {
