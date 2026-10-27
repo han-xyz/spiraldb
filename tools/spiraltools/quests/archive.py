@@ -1,5 +1,5 @@
-"""Questgen specs for a world, built from the Internet Archive's copies of the Wizard101 Central wiki: enumerate the
-world's quest pages, fetch them, parse them into specs."""
+"""Questgen specs for a world, built from the Wizard101 Central wiki, live or the Internet Archive's copies: enumerate
+the world's quest pages, fetch them, parse them into specs."""
 import argparse
 import difflib
 import glob
@@ -10,7 +10,9 @@ import math
 import os
 import re
 import sys
+from typing import NamedTuple
 import time
+import urllib.robotparser
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -22,18 +24,25 @@ from ..wad import GAMEDATA_DIR
 from ..worlds import lang_cluster, world
 from .generate import diff
 
-DESCRIPTION = "Build questgen specs for a world from the Internet Archive's copies of the Wizard101 Central wiki."
+DESCRIPTION = ("Build questgen specs for a world from the Wizard101 Central wiki, live first, else the Internet "
+               "Archive's copies.")
 DEFAULT_CACHE = os.path.join(PACK, ".scratch", "friends-server", "task-A1", "cache")
-WIKI = "https://wiki.wizard101central.com/wiki/"
+SITE = "https://wiki.wizard101central.com/"
+WIKI = SITE + "wiki/"
+API = SITE + "api.php?"
 ARCHIVE = "https://web.archive.org/web/"
 CDX = ("https://web.archive.org/cdx/search/cdx?url=wiki.wizard101central.com/wiki/Quest:*"
        "&fl=original,timestamp,statuscode&filter=statuscode:200&collapse=urlkey")
 # A partial timestamp redirects to the capture nearest to it, so this year asks for the newest capture.
 NEWEST = "2026"
 CATEGORY_YEARS = (NEWEST, "2024", "2023")
-USER_AGENT = "spiraldb-wiki-archive-quests/1.0 (read-only; one request per second)"
+USER_AGENT = "spiraltools/1.0 (+https://github.com/han-xyz/spiraldb)"
 REQUEST_INTERVAL = 1.0
+LIVE_INTERVAL = 2.0
 RETRY_STATUSES = {429, 500, 502, 503, 504}
+LIVE_RETRY_STATUSES = {429, 503}
+CHALLENGE = re.compile(rb"<title>Just a moment|challenge-platform|cf-chl-|cf_chl_", re.I)
+LIVE, ARCHIVED = "live", "archive"
 BACKOFF_START, BACKOFF_CAP, BACKOFF_TOTAL = 2.0, 60.0, 300.0
 QUEST_TYPES = ("storyline", "side", "instance")
 MIN_SHARED_WEIGHT, CLEAR_MARGIN = 4.0, 1.5
@@ -75,6 +84,105 @@ class Archive:
             delay = min(delay * 2, BACKOFF_CAP)
 
 
+class LiveUnavailable(Exception):
+    pass
+
+
+def is_challenge(headers, body):
+    return headers.get("cf-mitigated") == "challenge" or bool(CHALLENGE.search(body[:20000]))
+
+
+class LiveWiki:
+    """GET requests to the live wiki: an honest User-Agent, robots.txt obeyed, one request every LIVE_INTERVAL
+    seconds, exponential backoff on 429 and 503. A 403, a challenge page or an outage ends live fetching for the run,
+    after one attempt: nothing here retries past a refusal."""
+
+    def __init__(self, urlopen=urllib.request.urlopen, interval=LIVE_INTERVAL):
+        self.urlopen, self.interval, self.last = urlopen, interval, 0.0
+        self.robots = None
+        self.stopped = None
+
+    def page(self, key):
+        """A quest page's HTML from the API's parse, else the page itself; None when neither answers."""
+        query = {"action": "parse", "page": page_key(key), "prop": "text", "format": "json"}
+        answer = self.attempt(lambda: self.json(API + urllib.parse.urlencode(query)))
+        text = (answer or {}).get("parse", {}).get("text", {}).get("*")
+        if text is None:
+            data = self.attempt(lambda: self.get(WIKI + urllib.parse.quote(page_key(key), safe=":_()/,!")))
+            text = data.decode("utf-8", errors="replace") if data is not None else None
+        return text
+
+    def category(self, category):
+        """The subcategories and the Quest: pages of a category, by page key, from the API; None when it does not
+        answer."""
+        query = {"action": "query", "list": "categorymembers", "cmtitle": category, "cmlimit": "500",
+                 "format": "json"}
+        titles = []
+        while True:
+            answer = self.attempt(lambda: self.json(API + urllib.parse.urlencode(query)))
+            if not answer or "query" not in answer:
+                return None
+            titles += [page_key(member["title"]) for member in answer["query"]["categorymembers"]]
+            if "continue" not in answer:
+                break
+            query.update(answer["continue"])
+        return ([t for t in titles if t.startswith("Category:")], [t for t in titles if t.startswith("Quest:")])
+
+    def attempt(self, request):
+        if self.stopped:
+            return None
+        try:
+            return request()
+        except LiveUnavailable as e:
+            self.stopped = str(e)
+            print(f"live wiki: {e}; using the Internet Archive from here on", file=sys.stderr)
+            return None
+
+    def json(self, url):
+        data = self.get(url)
+        return json.loads(data) if data is not None else None
+
+    def get(self, url):
+        """The body of a GET, or None on 404 and other refusals of this URL alone, and for a URL robots.txt
+        disallows."""
+        if self.robots is None:
+            self.robots = urllib.robotparser.RobotFileParser()
+            self.robots.parse((self.request(SITE + "robots.txt") or b"").decode("utf-8", errors="replace").splitlines())
+            self.interval = max(self.interval, float(self.robots.crawl_delay(USER_AGENT) or 0))
+        if not self.robots.can_fetch(USER_AGENT, url):
+            return None
+        return self.request(url)
+
+    def request(self, url):
+        delay, waited = BACKOFF_START, 0.0
+        while True:
+            time.sleep(max(0.0, self.last + self.interval - time.monotonic()))
+            self.last = time.monotonic()
+            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            try:
+                with self.urlopen(request, timeout=60) as response:
+                    data = response.read()
+                if is_challenge({}, data):
+                    raise LiveUnavailable(f"{url}: a challenge page")
+                return data
+            except urllib.error.HTTPError as e:
+                with e:
+                    body = e.read()
+                if e.code == 403 or is_challenge(e.headers, body):
+                    raise LiveUnavailable(f"{url}: HTTP {e.code}{' (challenge)' if e.code != 403 else ''}")
+                if e.code not in LIVE_RETRY_STATUSES:
+                    return None
+                reason = f"HTTP {e.code}"
+            except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+                raise LiveUnavailable(f"{url}: {e}")
+            if waited >= BACKOFF_TOTAL:
+                raise LiveUnavailable(f"{url}: {reason}, gave up after {waited:.0f}s")
+            print(f"  {reason}; retrying in {delay:.0f}s", file=sys.stderr)
+            time.sleep(delay)
+            waited += delay
+            delay = min(delay * 2, BACKOFF_CAP)
+
+
 def page_key(title):
     """A wiki page title as the archive's URL path writes it: underscores, no percent escapes."""
     return urllib.parse.unquote(title).replace(" ", "_")
@@ -84,24 +192,63 @@ def file_name(key):
     return re.sub(r"[^A-Za-z0-9_.()'-]", "_", key)
 
 
+class Cached(NamedTuple):
+    stamp: str
+    source: str
+    path: str
+
+
+# <timestamp>_<live|archive>_<page>.html; the pages cached before the live wiki was asked have no source and are
+# archive captures.
+CACHED_NAME = re.compile(r"(\d{14})_(?:(live|archive)_)?(.+)\.html")
+
+
 def cached(cache, key):
-    """The newest cached capture of a page as (timestamp, path), or None."""
-    paths = sorted(glob.glob(os.path.join(cache, f"[0-9]*_{glob.escape(file_name(key))}.html")))
-    return (os.path.basename(paths[-1])[:14], paths[-1]) if paths else None
+    """The cached copy of a page, live before archived and newest first, or None."""
+    name = file_name(key)
+    hits = []
+    for path in glob.glob(os.path.join(cache, f"[0-9]*_{glob.escape(name)}.html")):
+        match = CACHED_NAME.fullmatch(os.path.basename(path))
+        if match and match.group(3) == name:
+            hits.append(Cached(match.group(1), match.group(2) or ARCHIVED, path))
+    return max(hits, key=lambda hit: (hit.source == LIVE, hit.stamp)) if hits else None
+
+
+def save_page(cache, key, stamp, source, text):
+    with open(os.path.join(cache, f"{stamp}_{source}_{file_name(key)}.html"), "w", encoding="utf-8") as f:
+        f.write(text)
 
 
 def fetch_page(archive, cache, key, raw=True, at=NEWEST):
-    """A wiki page's newest capture, from the cache or the archive; cached as <timestamp>_<page>.html."""
+    """A wiki page's newest capture, from the cache or the archive."""
     hit = cached(cache, key)
     if hit:
-        with open(hit[1], encoding="utf-8") as f:
-            return hit[0], f.read()
+        with open(hit.path, encoding="utf-8") as f:
+            return hit.stamp, f.read()
     url, data = archive.get(f"{ARCHIVE}{at}{'id_' if raw else ''}/{WIKI}{urllib.parse.quote(key, safe=':_()/,!')}")
     stamp = re.search(r"/web/(\d{14})", url).group(1)
     text = data.decode("utf-8", errors="replace")
-    with open(os.path.join(cache, f"{stamp}_{file_name(key)}.html"), "w", encoding="utf-8") as f:
-        f.write(text)
+    save_page(cache, key, stamp, ARCHIVED, text)
     return stamp, text
+
+
+def fetch_quest(live, archive, cache, entry):
+    """Fetches a quest page from the live wiki, else from the archive unless an archived copy is cached or none
+    exists; the source fetched from, or None."""
+    text = live.page(entry["page"])
+    if text is not None:
+        save_page(cache, entry["page"], time.strftime("%Y%m%d%H%M%S", time.gmtime()), LIVE, text)
+        return LIVE
+    if cached(cache, entry["page"]) or entry.get("missing_snapshot"):
+        return None
+    try:
+        fetch_page(archive, cache, entry["page"])
+    except urllib.error.HTTPError as e:
+        if e.code not in (403, 404):
+            raise
+        # The newest capture can be an error page or refused; the CDX timestamp is a capture with status 200.
+        fetch_page(archive, cache, entry["page"], at=entry["timestamp"])
+    return ARCHIVED
 
 
 def category_members(page):
@@ -131,7 +278,7 @@ def fetch_category(archive, cache, category):
     return None
 
 
-def walk_categories(archive, cache, registered):
+def walk_categories(live, archive, cache, registered):
     """quest page key -> {"zones": set, "types": set}, from the world's category tree."""
     root = registered.category
     quests = {}
@@ -142,11 +289,14 @@ def walk_categories(archive, cache, registered):
         if category in seen:
             continue
         seen.add(category)
-        page = fetch_category(archive, cache, category)
-        if page is None:
-            print(f"{category}: no capture found; its pages are listed only through other categories")
-            continue
-        subcategories, members = category_members(page)
+        found = live.category(category)
+        if found is None:
+            page = fetch_category(archive, cache, category)
+            if page is None:
+                print(f"{category}: no capture found; its pages are listed only through other categories")
+                continue
+            found = category_members(page)
+        subcategories, members = found
         kind = quest_type_of(category)
         for quest in members:
             entry = quests.setdefault(quest, {"zones": set(), "types": set()})
@@ -178,9 +328,9 @@ def index_path(cache, world):
     return os.path.join(cache, f"index-{world.lower()}.json")
 
 
-def enumerate_world(archive, cache, registered):
+def enumerate_world(live, archive, cache, registered):
     world = registered.name
-    quests = walk_categories(archive, cache, registered)
+    quests = walk_categories(live, archive, cache, registered)
     archived = archived_quests(archive)
     index = []
     for key in sorted(quests):
@@ -207,26 +357,24 @@ def load_index(cache, world):
         return json.load(f)
 
 
-def fetch_world(archive, cache, world):
-    fetched = failed = 0
+def fetch_world(live, archive, cache, world):
+    counts = {LIVE: 0, ARCHIVED: 0, "kept": 0, "none": 0, "failed": 0}
     for entry in load_index(cache, world):
-        if entry.get("missing_snapshot") or cached(cache, entry["page"]):
+        hit = cached(cache, entry["page"])
+        if hit and hit.source == LIVE:
             continue
         try:
-            try:
-                stamp, _ = fetch_page(archive, cache, entry["page"])
-            except urllib.error.HTTPError as e:
-                if e.code not in (403, 404):
-                    raise
-                # The newest capture can be an error page or refused; the CDX timestamp is a capture with status 200.
-                stamp, _ = fetch_page(archive, cache, entry["page"], at=entry["timestamp"])
+            source = fetch_quest(live, archive, cache, entry)
         except urllib.error.HTTPError as e:
             print(f"{entry['name']}: HTTP {e.code}")
-            failed += 1
+            counts["failed"] += 1
             continue
-        fetched += 1
-        print(f"{entry['name']}: {stamp}")
-    print(f"{world}: {fetched} fetched, {failed} failed")
+        outcome = source or ("kept" if hit else "none")
+        counts[outcome] += 1
+        if source:
+            print(f"{entry['name']}: {source} {cached(cache, entry['page']).stamp}")
+    print(f"{world}: {counts[LIVE]} live, {counts[ARCHIVED]} from the archive, {counts['kept']} archived copies kept, "
+          f"{counts['none']} without a page, {counts['failed']} failed")
 
 
 def page_lines(page):
@@ -755,7 +903,8 @@ class SpecBuilder:
         for zone in sorted(zone for zone in zones if zone and zone not in self.known_zones):
             self.unresolved("zone (no ZoneTransfer)", zone, True)
         spec["personas"] = dict(sorted(self.personas.items()))
-        spec["source"] = {"page": WIKI + self.entry["page"], "timestamp": self.entry["fetched"]}
+        spec["source"] = {"page": WIKI + self.entry["page"], "from": self.entry["fetched_from"],
+                          "timestamp": self.entry["fetched"]}
         spec["needs_review"] = self.review
         return spec
 
@@ -997,8 +1146,8 @@ def parse_world(cache, registered):
     for entry in index:
         hit = cached(cache, entry["page"])
         if hit:
-            entry["fetched"] = hit[0]
-            with open(hit[1], encoding="utf-8") as f:
+            entry["fetched"], entry["fetched_from"] = hit.stamp, hit.source
+            with open(hit.path, encoding="utf-8") as f:
                 pages[entry["page"]] = read_page(f.read())
     zone_paths = zone_paths_by_vote(data, pages, index)
     world_dir = os.path.join(QUEST_SPECS_DIR, world.lower())
@@ -1104,7 +1253,7 @@ def parse_world(cache, registered):
 
 def add_arguments(parser):
     mode = parser.add_mutually_exclusive_group(required=True)
-    mode.add_argument("--enumerate", metavar="WORLD", help="list the world's quests from the archived categories")
+    mode.add_argument("--enumerate", metavar="WORLD", help="list the world's quests from the wiki's categories")
     mode.add_argument("--fetch", metavar="WORLD", help="download the listed quest pages into the cache")
     mode.add_argument("--parse", metavar="WORLD", help="write a questgen spec per cached quest page")
     add_cache_argument(parser)
@@ -1117,12 +1266,12 @@ def add_cache_argument(parser):
 def run(args):
     registered = world(args.enumerate or args.fetch or args.parse)
     os.makedirs(args.cache, exist_ok=True)
-    archive = Archive()
+    archive, live = Archive(), LiveWiki()
     try:
         if args.enumerate:
-            enumerate_world(archive, args.cache, registered)
+            enumerate_world(live, archive, args.cache, registered)
         elif args.fetch:
-            fetch_world(archive, args.cache, registered.name)
+            fetch_world(live, archive, args.cache, registered.name)
         else:
             parse_world(args.cache, registered)
     except ArchiveUnavailable as e:
