@@ -153,12 +153,13 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Mandar_the_Swordsmander",
+    "from": "archive",
     "timestamp": "20240322085735"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst170120 by the proper nouns its lines share with the page (Cliff, Sword), within 16 of a key of the zone's quests; next best WizQst170126 with 1",
+      "value": "WizQst170120, the only free key within 16 of its chain neighbour WizQst17011F whose lines name the page's names: Mandar",
       "blocking": false
     },
     {

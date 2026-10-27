@@ -1,0 +1,17 @@
+{
+  "Name": "LM-Q-17321D",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 1250,
+  "MaxGold": 1250,
+  "ExperienceAmount": 120900,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:11:33.867920Z",
+  "ModifiedAt": "2026-10-27T09:11:33.867920Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

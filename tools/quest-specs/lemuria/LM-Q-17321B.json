@@ -5,7 +5,9 @@
     "persona": "LM-Standin-Dasein",
     "zone": "Lemuria/LM_Z01_WildLands"
   },
-  "requires": [],
+  "requires": [
+    "LM-Q-173219"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -119,6 +121,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:No_Crane,_No_Gain",
+    "from": "archive",
     "timestamp": "20250907124253"
   },
   "needs_review": [
@@ -129,9 +132,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "From One Darkness to the Next replaced by min_level",
+      "value": "From One Darkness to the Next replaced by LM-Q-173219",
       "blocking": false
     }
-  ],
-  "min_level": 132
+  ]
 }

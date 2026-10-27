@@ -1,28 +1,24 @@
 {
-  "id": "LM-Q-173219",
-  "lang": "173219",
+  "id": "LM-Q-173220",
+  "lang": "173220",
   "giver": {
-    "persona": "LM-Standin-Bantam",
-    "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber"
+    "persona": "LM-NIGHT-NPC05-B",
+    "zone": "Lemuria/LM_Z03_NightForest"
   },
   "requires": [
-    "LM-Q-173217"
+    "LM-Q-17321F"
   ],
   "mainline": true,
   "level": 132,
   "reward": {
-    "xp": 120900,
-    "gold": 950
+    "xp": 96720,
+    "gold": 1050
   },
   "dialogs": {
     "prep": [
       {
         "speaker": "giver",
         "line": "00000000"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000001"
       },
       {
         "speaker": "giver",
@@ -46,10 +42,6 @@
       },
       {
         "speaker": "giver",
-        "line": "00000007"
-      },
-      {
-        "speaker": "giver",
         "line": "00000008"
       },
       {
@@ -62,15 +54,7 @@
       },
       {
         "speaker": "giver",
-        "line": "00000011"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000012"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000013"
+        "line": "00000014"
       },
       {
         "speaker": "giver",
@@ -85,42 +69,54 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "LM_AttunementStone-1.AdjRef",
-        "LM_AttunementStone-2-Life.AdjRef",
-        "LM_AttunementStone-3-Death.AdjRef",
-        "LM_AttunementStone-4-Myth.AdjRef",
-        "LM_AttunementStone-Heap.AdjRef",
-        "LM_AttunementStone-Sky.AdjRef"
+      "type": "bounty",
+      "mobs": [
+        "LM_Malughast_Base_01.AdjRef",
+        "LM_Malughast_Base_02.AdjRef"
       ],
       "count": 1,
-      "zone": "",
-      "descriptor": "WizItems_00002089",
-      "loc": "ZoneLocName_1520099"
+      "target": "WizardMobs_00003898",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "persona",
+      "persona": "LM_Standin_Malughast",
+      "zone": "Lemuria/Interiors/LM_Z03_WendigoNest",
+      "loc": "ZoneLocName_1520100"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
-      "loc": "ZoneLocName_1520099"
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
     }
   ],
   "personas": {
-    "LM-Standin-Bantam": {
-      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Hero_A_NPC.dds",
-      "template_id": 1521362
+    "LM-NIGHT-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
+      "template_id": 1520186
+    },
+    "LM_Standin_Malughast": {
+      "portrait": "GUI/NpcPortraits/Portrait_Malughast_Base_A_MOB.dds",
+      "template_id": 1520267
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Existence_Redefined",
-    "timestamp": "20250920014150"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Fool's_Rules",
+    "from": "archive",
+    "timestamp": "20250919143126"
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Virtual Old One",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Solomon Crane's House",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Solomon Crane's Basement",
+      "blocking": false
     },
     {
       "field": "dialogs",

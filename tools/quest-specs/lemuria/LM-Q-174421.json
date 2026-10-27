@@ -6,7 +6,7 @@
     "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
   },
   "requires": [
-    "LM-Q-174419"
+    "LM-Q-17441F"
   ],
   "mainline": true,
   "level": 132,
@@ -92,17 +92,13 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:As_the_Mana_Flows",
+    "from": "archive",
     "timestamp": "20250913112249"
   },
   "needs_review": [
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "To the Rescue! replaced by LM-Q-174419",
       "blocking": false
     }
   ]

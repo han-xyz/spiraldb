@@ -6,7 +6,7 @@
     "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
   },
   "requires": [
-    "LM-Q-17441C"
+    "LM-Q-174419"
   ],
   "mainline": true,
   "level": 132,
@@ -97,6 +97,15 @@
       "loc": "ZoneLocName_1520281"
     },
     {
+      "type": "usage",
+      "items": [
+        "LM_BuckEnergyShackles.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
       "type": "persona",
       "persona": "LM-BAD-NPC03",
       "zone": "Lemuria/LM_Z04_Badlands",
@@ -121,17 +130,23 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:To_the_Rescue!",
+    "from": "archive",
     "timestamp": "20240322090710"
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.descriptor",
       "value": "Buck's Energy Shackles",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Secret Struggle replaced by LM-Q-174419",
       "blocking": false
     }
   ]

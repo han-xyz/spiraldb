@@ -104,6 +104,16 @@
       "loc": "ZoneLocName_1507599"
     },
     {
+      "type": "usage",
+      "items": [
+        "LM_MandoriaRubble.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst170118_00000016",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Lemuria/LM_Z05_Mandoria",
@@ -124,6 +134,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Lost_Realm_of_Mandoria",
+    "from": "archive",
     "timestamp": "20240322085555"
   },
   "needs_review": [
@@ -145,11 +156,6 @@
     {
       "field": "goal.items",
       "value": "Duck's Camp",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Rubble",
       "blocking": true
     },
     {

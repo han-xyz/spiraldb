@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z03_NightForest"
   },
   "requires": [
-    "LM-Q-17321E"
+    "LM-Q-17321D"
   ],
   "mainline": true,
   "level": 132,
@@ -153,6 +153,16 @@
     {
       "type": "usage",
       "items": [
+        "LM-WILD-NPC03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "NPCs_01749136",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "usage",
+      "items": [
         "LM_AttunementStone-1.AdjRef",
         "LM_AttunementStone-2-Life.AdjRef",
         "LM_AttunementStone-3-Death.AdjRef",
@@ -194,6 +204,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Scion,_Sci-Off",
+    "from": "archive",
     "timestamp": "20240322084836"
   },
   "needs_review": [
@@ -213,13 +224,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Virtual Old One",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Savage Taunts of Solomon Crane replaced by LM-Q-17321D",
       "blocking": false
     }
   ]

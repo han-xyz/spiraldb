@@ -1,18 +1,18 @@
 {
-  "id": "LM-Q-188A0B",
-  "lang": "188A0B",
+  "id": "LM-Q-17321D",
+  "lang": "17321D",
   "giver": {
-    "persona": "LM-TELOS-NPC10-D",
-    "zone": "Lemuria/LM_Z00_Hub"
+    "persona": "LM-NIGHT-NPC02",
+    "zone": "Lemuria/LM_Z03_NightForest"
   },
   "requires": [
-    "NV-Q-188A06"
+    "LM-Q-17321C"
   ],
   "mainline": true,
   "level": 132,
   "reward": {
-    "xp": 139440,
-    "gold": 410
+    "xp": 120900,
+    "gold": 1250
   },
   "dialogs": {
     "prep": [
@@ -23,10 +23,6 @@
       {
         "speaker": "giver",
         "line": "00000001"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000003"
       },
       {
         "speaker": "giver",
@@ -66,10 +62,6 @@
       },
       {
         "speaker": "giver",
-        "line": "00000013"
-      },
-      {
-        "speaker": "giver",
         "line": "00000014"
       },
       {
@@ -86,75 +78,88 @@
       },
       {
         "speaker": "giver",
-        "line": "00000018"
-      },
-      {
-        "speaker": "giver",
         "line": "00000019"
       },
       {
         "speaker": "giver",
-        "line": "00000023"
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
       }
     ],
-    "underway": []
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ]
   },
   "goals": [
     {
-      "type": "waypoint",
-      "zone": "Lemuria/LM_Z01_WildLands",
-      "loc": "ZoneLocName_1520110"
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC01",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
     },
     {
       "type": "bounty",
       "mobs": [
-        "WL_TRex_Base_B_01.AdjRef"
+        "LM_Malughast_Base_01.AdjRef",
+        "LM_Malughast_Base_02.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00004442",
-      "zone": "Lemuria/LM_Z00_Hub",
-      "loc": "ZoneLocName_1520271"
+      "target": "WizardMobs_00003898",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC06-B",
-      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
-      "loc": "ZoneLocName_1520271"
+      "persona": "LM_Standin_Malughast",
+      "zone": "Lemuria/Interiors/LM_Z03_WendigoNest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC05-B",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100",
+      "completion": [
+        {
+          "speaker": "LM-NIGHT-NPC05-B",
+          "line": "00000003"
+        }
+      ]
     }
   ],
   "personas": {
-    "LM-TELOS-NPC10-D": {
-      "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
-      "template_id": 1487584
+    "LM-NIGHT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Lemur_Resistance_E_NPC.dds",
+      "template_id": 1520132
     },
-    "NV-CON-NPC06-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1575019
+    "LM-NIGHT-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_CitizenF_A_NPC.dds",
+      "template_id": 1520133
+    },
+    "LM-NIGHT-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
+      "template_id": 1520186
+    },
+    "LM_Standin_Malughast": {
+      "portrait": "GUI/NpcPortraits/Portrait_Malughast_Base_A_MOB.dds",
+      "template_id": 1520267
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Heroes_of_Old",
-    "timestamp": "20240815201542"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gasp!_Malughast!",
+    "from": "archive",
+    "timestamp": "20240322084805"
   },
   "needs_review": [
     {
-      "field": "goal.mobs (other folder)",
-      "value": "Dr. T. Rex: ObjectData/WL",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
-      "value": "Hall of Heroes",
-      "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Heroes to Conatus",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona (other world)",
-      "value": "Maxine Rockhoppierre: NV-CON-NPC06-B from ObjectData/NV",
+      "value": "his nest",
       "blocking": false
     },
     {

@@ -69,6 +69,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "LM-AttunementStone-Storm.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z00_Hub",
+      "descriptor": "WizQst174425_00000016",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
       "type": "persona",
       "persona": "LM-StandIn-StallionQuartermane-B",
       "zone": "Lemuria/LM_Z00_Hub",
@@ -102,14 +112,10 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Heap_of_Trouble",
+    "from": "archive",
     "timestamp": "20240322090606"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Storm Attunement Stone",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

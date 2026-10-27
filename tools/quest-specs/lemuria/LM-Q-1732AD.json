@@ -5,7 +5,9 @@
     "persona": "LM-URSAI-NPC04",
     "zone": "Lemuria/LM_Z02_UrsaiVillage"
   },
-  "requires": [],
+  "requires": [
+    "LM-Q-173219"
+  ],
   "mainline": false,
   "level": 132,
   "reward": {
@@ -79,6 +81,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Tosh_Him_Back",
+    "from": "archive",
     "timestamp": "20240322084347"
   },
   "needs_review": [
@@ -89,9 +92,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Bald-Faced Truth replaced by min_level",
+      "value": "Bald-Faced Truth replaced by LM-Q-173219",
       "blocking": false
     }
-  ],
-  "min_level": 132
+  ]
 }

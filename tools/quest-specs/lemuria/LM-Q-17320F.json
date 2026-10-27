@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z01_WildLands"
   },
   "requires": [
-    "LM-Q-1736B6"
+    "LM-Q-17320B"
   ],
   "mainline": true,
   "level": 132,
@@ -165,6 +165,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Welcome_to_Bearadise",
+    "from": "archive",
     "timestamp": "20240322084425"
   },
   "needs_review": [
@@ -180,7 +181,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Grease a Few Hooves replaced by LM-Q-1736B6",
+      "value": "Grease a Few Hooves replaced by LM-Q-17320B",
       "blocking": false
     }
   ]

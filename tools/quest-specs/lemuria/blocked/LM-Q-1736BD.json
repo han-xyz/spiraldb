@@ -5,9 +5,8 @@
     "persona": "LM-Mandoria-NPC01-02",
     "zone": "Lemuria/LM_Z05_Mandoria"
   },
-  "requires": [
-    "LM-Q-170126"
-  ],
+  "requires": [],
+  "min_level": 132,
   "mainline": true,
   "level": 132,
   "reward": {
@@ -87,9 +86,15 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Another_Stone_Down",
+    "from": "archive",
     "timestamp": "20250904192612"
   },
   "needs_review": [
+    {
+      "field": "requires",
+      "value": "The Fane of the Ancient One",
+      "blocking": false
+    },
     {
       "field": "goal.items",
       "value": "Stone",

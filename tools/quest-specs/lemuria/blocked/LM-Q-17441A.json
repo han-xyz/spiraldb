@@ -191,6 +191,16 @@
     {
       "type": "usage",
       "items": [
+        "LM-WILD-NPC03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01749136",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
         "LM_AttunementStone-1.AdjRef",
         "LM_AttunementStone-2-Life.AdjRef",
         "LM_AttunementStone-3-Death.AdjRef",
@@ -278,6 +288,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Tour_You_Know",
+    "from": "archive",
     "timestamp": "20240322090433"
   },
   "needs_review": [
@@ -290,11 +301,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Enter the Old One's Monitoring Station",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Virtual Old One",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",

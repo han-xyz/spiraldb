@@ -165,6 +165,16 @@
     {
       "type": "usage",
       "items": [
+        "LM-WILD-NPC03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "NPCs_01749136",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "usage",
+      "items": [
         "LM_AttunementStone-1.AdjRef",
         "LM_AttunementStone-2-Life.AdjRef",
         "LM_AttunementStone-3-Death.AdjRef",
@@ -196,6 +206,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Detective_Mission",
+    "from": "archive",
     "timestamp": "20240322090731"
   },
   "needs_review": [
@@ -203,11 +214,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Enter Monitoring Station",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Virtual Old One",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",

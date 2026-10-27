@@ -6,7 +6,7 @@
     "zone": "Lemuria/Interiors/LM_Z03_Crypt"
   },
   "requires": [
-    "LM-Q-173283"
+    "LM-Q-173228"
   ],
   "mainline": false,
   "level": 132,
@@ -61,6 +61,16 @@
   },
   "goals": [
     {
+      "type": "bounty",
+      "mobs": [
+        "LM_Player_Demanding_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003977",
+      "zone": "",
+      "loc": "ZoneLocName_1520268"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Lemuria/Interiors/LM_Z03_Crypt",
@@ -75,6 +85,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Vault_of_Lorer",
+    "from": "archive",
     "timestamp": "20240322085439"
   },
   "needs_review": [
@@ -84,13 +95,13 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "The Writer",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Tales from the Script replaced by LM-Q-173228",
       "blocking": false
     }
   ]

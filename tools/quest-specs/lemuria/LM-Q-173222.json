@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z03_NightForest"
   },
   "requires": [
-    "LM-Q-17321C"
+    "LM-Q-173220"
   ],
   "mainline": true,
   "level": 132,
@@ -103,17 +103,13 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Banishment_Hammer",
+    "from": "archive",
     "timestamp": "20250904162106"
   },
   "needs_review": [
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "A Fool's Rules replaced by LM-Q-17321C",
       "blocking": false
     }
   ]

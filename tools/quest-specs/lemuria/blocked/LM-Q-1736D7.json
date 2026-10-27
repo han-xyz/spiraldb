@@ -49,6 +49,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "LM_WildlandCherries.AdjRef"
+      ],
+      "count": 7,
+      "zone": "Lemuria/LM_Z00_Hub",
+      "descriptor": "WizItems_00002097",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Lemuria/LM_Z00_Hub",
@@ -63,14 +73,10 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Photo_Aplomb",
+    "from": "archive",
     "timestamp": "20240322084151"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "in Wildlands",
-      "blocking": true
-    },
     {
       "field": "goal.items",
       "value": "in Ursai Village",
