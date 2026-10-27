@@ -1,6 +1,7 @@
 {
   "id": "CL-Q-37219",
   "lang": "37219",
+  "auto_start": true,
   "requires": [
     "CL-Q-37218"
   ],
@@ -60,8 +61,8 @@
   },
   "needs_review": [
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {

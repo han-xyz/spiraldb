@@ -1,6 +1,7 @@
 {
   "id": "CL-Q-371F0",
   "lang": "371F0",
+  "auto_start": true,
   "requires": [
     "CL-Q-371AD"
   ],
@@ -212,8 +213,8 @@
       "blocking": false
     },
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {

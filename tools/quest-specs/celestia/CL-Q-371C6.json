@@ -1,6 +1,11 @@
 {
   "id": "CL-Q-371C6",
   "lang": "371C6",
+  "auto_start": true,
+  "giver": {
+    "persona": "CL-HUB-NPC001",
+    "zone": "Celestia/CL_Hub"
+  },
   "requires": [
     "CL-Q-371CE"
   ],
@@ -79,18 +84,18 @@
       "loc": "ZoneLocName_227137"
     }
   ],
-  "personas": {},
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:A_Star_Is_Born",
     "from": "archive",
     "timestamp": "20231124092722"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Unimatus",

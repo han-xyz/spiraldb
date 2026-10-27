@@ -1,6 +1,7 @@
 {
   "id": "CL-Q-AB3CA",
   "lang": "AB3CA",
+  "auto_start": true,
   "requires": [],
   "min_level": 48,
   "mainline": false,
@@ -67,8 +68,8 @@
   },
   "needs_review": [
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {

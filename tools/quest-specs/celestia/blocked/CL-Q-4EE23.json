@@ -1,6 +1,11 @@
 {
   "id": "CL-Q-4EE23",
   "lang": "4EE23",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-PARTY-NPC08",
+    "zone": "WizardCity/Interiors/WC_PartyRoom"
+  },
   "requires": [
     "CL-Q-371B1"
   ],
@@ -95,7 +100,12 @@
       "loc": "ZoneLocName_227138"
     }
   ],
-  "personas": {},
+  "personas": {
+    "WC-PARTY-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 1452003
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Trial_of_the_Spheres",
     "from": "archive",
@@ -103,9 +113,9 @@
   },
   "needs_review": [
     {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
+      "field": "giver (other world)",
+      "value": "Halston Balestrom: WC-PARTY-NPC08 from ObjectData/WC",
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",
