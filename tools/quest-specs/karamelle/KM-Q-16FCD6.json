@@ -1,0 +1,116 @@
+{
+  "id": "KM-Q-16FCD6",
+  "lang": "16FCD6",
+  "giver": {
+    "persona": "KM-NIBB-NPC08",
+    "zone": "Karamelle/KM_Z05_Nibbleheim"
+  },
+  "requires": [
+    "KM-Q-171641"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 10350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Witches_Fairy_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003727",
+      "zone": "",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-EverlastingGobblerstopper.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00021907",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
+      "loc": "ZoneLocName_1506578",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KM-NIBB-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",
+      "template_id": 1506493
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Case_of_Charlene_Ward",
+    "timestamp": "20250616183845"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCD6 matched by the words it shares with the goals; its lines name Charlene Ward",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nibbleheim Mines",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Local Color Out of Space replaced by KM-Q-171641",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "KM-Q-16FCCA",
+  "lang": "16FCCA",
+  "giver": {
+    "persona": "KM-NIBB-NPC08",
+    "zone": "Karamelle/KM_Z05_Nibbleheim"
+  },
+  "requires": [
+    "KM-GUM-MAIN-003"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 105932,
+    "gold": 740
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-NIBB-NPC13",
+      "zone": "Karamelle/Interiors/KM_Z05_TreacleFoundry",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-NIBB-NPC13",
+      "zone": "Karamelle/Interiors/KM_Z05_TreacleFoundry",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-NIBB-NPC13",
+      "zone": "Karamelle/Interiors/KM_Z05_TreacleFoundry",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-ESTATE-NPC08",
+      "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02",
+      "loc": "ZoneLocName_1506578"
+    }
+  ],
+  "personas": {
+    "KM-ESTATE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1513159
+    },
+    "KM-NIBB-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",
+      "template_id": 1506493
+    },
+    "KM-NIBB-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Foundry_A_NPC.dds",
+      "template_id": 1506498
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Better_Choco-Late_Than_Never",
+    "timestamp": "20240322074018"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCCA, the only free key within 16 of its chain neighbour WizQst16FFAD and WizQst16FCCB whose lines name the page's names: Orson",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "There's a Hole in Your Mine replaced by KM-GUM-MAIN-003",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": "KM-Q-171690",
+  "lang": "171690",
+  "giver": {
+    "persona": "KM-BLACK-NPC01-C",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
+  },
+  "requires": [
+    "KM-Q-16B56E"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 176553,
+    "gold": 1385
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC08",
+      "zone": "Karamelle/Interiors/KM_Z08_WitchsTreehouse",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC04",
+      "zone": "Karamelle/Interiors/KM_Z08_WitchsTreehouse",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Moose_Chocolate_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003698",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-BlackLicorice.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "descriptor": "Items_00021903",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC06",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC01-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513121
+    },
+    "KM-BLACK-NPC04": {
+      "portrait": "GUI/NpcPortraits/Fairy_SisterF_B_NPC.dds",
+      "template_id": 1513074
+    },
+    "KM-BLACK-NPC06": {
+      "portrait": "GUI/NpcPortraits/Fairy_BakerF_A_NPC.dds",
+      "template_id": 1513076
+    },
+    "KM-BLACK-NPC08": {
+      "portrait": "GUI/NpcPortraits/Fairy_SisterF_A_NPC.dds",
+      "template_id": 1513106
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Witch_Way",
+    "timestamp": "20250814082649"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Witch's Treehouse",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Forest Stumps replaced by KM-Q-16B56E",
+      "blocking": false
+    }
+  ]
+}

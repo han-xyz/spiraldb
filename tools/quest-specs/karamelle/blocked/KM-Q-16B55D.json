@@ -1,0 +1,174 @@
+{
+  "id": "KM-Q-16B55D",
+  "lang": "16B55D",
+  "giver": {
+    "persona": "KM-KCITY-NPC21",
+    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+  },
+  "requires": [
+    "KM-Q-16B559"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185381,
+    "gold": 1405
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KM-Cavity-GummyPlant.AdjRef"
+      ],
+      "count": 2,
+      "zone": "",
+      "descriptor": "Items_00021784",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KM_Gummy_Worm_A_01.AdjRef",
+        "KM_Gummy_Worm_A_02.AdjRef",
+        "KM_Gummy_Worm_B_01.AdjRef",
+        "KM_Gummy_Worm_B_02.AdjRef",
+        "KM_Gummy_Worm_C_01.AdjRef",
+        "KM_Gummy_Worm_C_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003663",
+      "zone": "",
+      "descriptor": "WizQst16B55D_00000016",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC09",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC01-B",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "loc": "ZoneLocName_1488252"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513114
+    },
+    "KM-BLACK-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Hamster_ImperfectF_A_NPC.dds",
+      "template_id": 1513110
+    },
+    "KM-KCITY-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
+      "template_id": 1513270
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Holey_Factory_Floor!",
+    "timestamp": "20250605094351"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B55D by the proper nouns its lines share with the page (Greta, Plant, Samples, Worms), within 16 of a key of the zone's quests; next best WizQst16B559 with 1",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "mysterious 'big hole'",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Gummy Worms",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

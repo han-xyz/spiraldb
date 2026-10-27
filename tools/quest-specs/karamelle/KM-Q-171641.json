@@ -1,0 +1,119 @@
+{
+  "id": "KM-Q-171641",
+  "lang": "171641",
+  "giver": {
+    "persona": "KM-FARM-NPC01-B",
+    "zone": "Karamelle/KM_Z09_CandyCornFarm"
+  },
+  "requires": [
+    "KM-Q-171699"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 167725,
+    "gold": 1410
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KM-Candy-Corn.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "descriptor": "Items_00021915",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC04",
+      "zone": "Karamelle/Interiors/KM_Z08_WitchsTreehouse",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Brudel_Toasted_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003701",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-FARM-NPC02",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC04": {
+      "portrait": "GUI/NpcPortraits/Fairy_SisterF_B_NPC.dds",
+      "template_id": 1513074
+    },
+    "KM-FARM-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513095
+    },
+    "KM-FARM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Fairy_FarmerF_A_NPC.dds",
+      "template_id": 1513080
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:What's_the_Farm?",
+    "timestamp": "20240322074115"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Gummy Plant",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Candy Corn Silo",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

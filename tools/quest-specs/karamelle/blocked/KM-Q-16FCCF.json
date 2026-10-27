@@ -1,0 +1,121 @@
+{
+  "id": "KM-Q-16FCCF",
+  "lang": "16FCCF",
+  "giver": {
+    "persona": "KM-BLACK-NPC01-B",
+    "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
+  },
+  "requires": [],
+  "min_level": 122,
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 105932,
+    "gold": 815
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-ESTATE-NPC08",
+      "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-EnrichedChocolate.AdjRef"
+      ],
+      "count": 3,
+      "zone": "",
+      "descriptor": "Items_00021906",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-ESTATE-NPC08",
+      "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02",
+      "loc": "ZoneLocName_1506578"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513114
+    },
+    "KM-ESTATE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1513159
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Oh_Me,_Oh_Mine",
+    "timestamp": "20250623220205"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCCF by the proper nouns its lines share with the page (Chocolate, Enriched, Orson), within 16 of a key of the zone's quests; next best WizQst16FCD0 with 2",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "The Proofing is in the Pudding",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "for Enriched Chocolate in Nibbleheim Mines",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

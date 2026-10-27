@@ -1,0 +1,75 @@
+{
+  "id": "KM-Q-surveyvalofthepickiest",
+  "requires": [
+    "KM-Q-170A9B"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 18150
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_Counter_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003719",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_Ambassador_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003720",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Surveyval_of_the_Pickiest",
+    "timestamp": "20240322073347"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Surveyval of the Pickiest",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Tour",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Whatchamagolem (Death)",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to next room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to next room",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "KM-Q-16FFBC",
+  "lang": "16FFBC",
+  "giver": {
+    "persona": "KM-MINES-NPC03",
+    "zone": ""
+  },
+  "requires": [
+    "KM-Q-16FCD5"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 7950
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gummy_Bear_Uber_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003661",
+      "zone": "",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC02-B",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
+      "template_id": 1510012
+    },
+    "KM-MINES-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",
+      "template_id": 1506596
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hightails_from_the_Crypt",
+    "timestamp": "20240322072730"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FFBC matched by the words it shares with the goals; its lines name Burgomaster, Uber-Bear",
+      "blocking": false
+    },
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Jurgen",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "for the Burgomaster in Crumbling Mineshaft",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

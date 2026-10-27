@@ -1,0 +1,121 @@
+{
+  "id": "KM-Q-16B550",
+  "lang": "16B550",
+  "giver": {
+    "persona": "KM-KCITY-NPC21",
+    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+  },
+  "requires": [
+    "KM-Q-16FF70"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 123587,
+    "gold": 995
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gummy_Bear_Uber_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003781",
+      "zone": "",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-FizzleGenerator.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00021782",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/Interiors/KM_Z00_NanasHQ",
+      "loc": "ZoneLocName_1488252"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
+      "template_id": 1513270
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fizzling,_Right?",
+    "timestamp": "20250615160647"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Power Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Sweetzburg Right Ahead! replaced by KM-Q-16FF70",
+      "blocking": false
+    }
+  ]
+}

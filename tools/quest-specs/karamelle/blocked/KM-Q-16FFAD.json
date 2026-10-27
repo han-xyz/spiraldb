@@ -1,0 +1,174 @@
+{
+  "id": "KM-Q-16FFAD",
+  "lang": "16FFAD",
+  "giver": {
+    "persona": "KM-NIBB-NPC08",
+    "zone": "Karamelle/KM_Z05_Nibbleheim"
+  },
+  "requires": [
+    "KM-Q-16FCC8"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185380,
+    "gold": 1620
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Player_Cabal_A_01.AdjRef",
+        "KM_Player_Cabal_A_02.AdjRef",
+        "KM_Player_Cabal_A_03.AdjRef",
+        "KM_Player_Cabal_A_04.AdjRef",
+        "KM_Player_Cabal_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003671",
+      "zone": "",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-MineCart-Chocolate.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst16FFAD_00000008",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
+      "loc": "ZoneLocName_1506597"
+    }
+  ],
+  "personas": {
+    "KM-NIBB-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",
+      "template_id": 1506493
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:There's_a_Hole_in_Your_Mine",
+    "timestamp": "20240322074111"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FFAD matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Obstruction",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Entrance",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Mine Cart",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "to Main Mines",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

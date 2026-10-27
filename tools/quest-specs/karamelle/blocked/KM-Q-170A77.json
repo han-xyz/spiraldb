@@ -1,0 +1,148 @@
+{
+  "id": "KM-Q-170A77",
+  "lang": "170A77",
+  "giver": {
+    "persona": "KM-KCITY-NPC01-B",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [],
+  "min_level": 122,
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 150070,
+    "gold": 1175
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KM-Accompany-Maulwurf-ENC.AdjRef",
+        "KM-Accompany-Maulwurf.AdjRef",
+        "KM-BLACK-NPC10.AdjRef",
+        "KM-ESTATE-NPC06-B.AdjRef",
+        "KM-ESTATE-NPC06.AdjRef",
+        "KM-GUTEN-NPC05-C.AdjRef",
+        "KM-GUTEN-NPC05.AdjRef",
+        "KM-KCITY-NPC01-B.AdjRef",
+        "KM-KCITY-NPC01-C.AdjRef",
+        "KM-KCITY-NPC01-D.AdjRef",
+        "KM-KCITY-NPC01-E.AdjRef",
+        "KM-KCITY-NPC01-F.AdjRef",
+        "KM-KCITY-NPC01-G.AdjRef",
+        "KM-KCITY-NPC01-H.AdjRef",
+        "KM-KCITY-NPC01-J.AdjRef",
+        "KM-KCITY-NPC01-K.AdjRef",
+        "KM-KCITY-NPC01.AdjRef",
+        "KM-NIBB-NPC06-B.AdjRef",
+        "KM-NIBB-NPC06.AdjRef",
+        "KM-RCM-NPC01-B.AdjRef",
+        "KM-RCM-NPC01.AdjRef",
+        "KM_StandIn_Maulwurf-B.AdjRef",
+        "KM_StandIn_Maulwurf-C.AdjRef",
+        "KM_StandIn_Maulwurf-D.AdjRef",
+        "KM_StandIn_Maulwurf.AdjRef",
+        "KM_StandIn_Maulwurf_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z00_HUB",
+      "descriptor": "NPCs_01748992",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gummy_Bear_Uber_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003661",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC02-B",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006",
+      "completion": [
+        {
+          "speaker": "KM-KCITY-NPC02-B",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1510011
+    },
+    "KM-KCITY-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
+      "template_id": 1510012
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Willkommen!",
+    "timestamp": "20240322061900"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Mole Problems",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to City Square",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Trapped Singers in the Glockenspiel",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

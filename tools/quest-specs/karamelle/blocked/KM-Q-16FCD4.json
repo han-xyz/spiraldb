@@ -1,0 +1,118 @@
+{
+  "id": "KM-Q-16FCD4",
+  "lang": "16FCD4",
+  "giver": {
+    "persona": "KM-KCITY-NPC02-B",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [],
+  "min_level": 122,
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 10100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_StandIn_CinnamonTroll_01.AdjRef",
+        "KM_Troll_Sweets_A_01.AdjRef",
+        "KM_Troll_Sweets_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003676",
+      "zone": "",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-NIBB-NPC12",
+      "zone": "Karamelle/Interiors/KM_Z05_TreacleFoundry",
+      "loc": "ZoneLocName_1506578"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
+      "template_id": 1510012
+    },
+    "KM-NIBB-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Foundry_A_NPC.dds",
+      "template_id": 1506497
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Coming_Down_in_the_World",
+    "timestamp": "20250616181353"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCD4 matched by the words it shares with the goals; its lines name Burgomaster",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "My Stars and Gobblers!",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Pipe Junction",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "to Former Burgomaster",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

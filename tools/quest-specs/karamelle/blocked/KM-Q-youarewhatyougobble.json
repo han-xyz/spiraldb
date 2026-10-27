@@ -1,0 +1,89 @@
+{
+  "id": "KM-Q-youarewhatyougobble",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [],
+  "min_level": 122,
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 132415,
+    "gold": 925
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC02",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC03",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC04",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC07",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    },
+    "KM-GOBB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gobbler_Hick_Skinny_NPC.dds",
+      "template_id": 1487152
+    },
+    "KM-GOBB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Gobbler_SkinnyF_A_NPC.dds",
+      "template_id": 1487153
+    },
+    "KM-GOBB-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gobbler_Pink_Skinny_NPC.dds",
+      "template_id": 1487154
+    },
+    "KM-GOBB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_Skinny_A_NPC.dds",
+      "template_id": 1487158
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:You_Are_What_You_Gobble",
+    "timestamp": "20250822005607"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "You Are What You Gobble",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Get to Gobblering",
+      "blocking": false
+    }
+  ]
+}

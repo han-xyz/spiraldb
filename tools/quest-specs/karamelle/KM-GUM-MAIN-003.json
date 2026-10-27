@@ -1,0 +1,91 @@
+{
+  "id": "KM-GUM-MAIN-003",
+  "lang": "16FF74",
+  "title": "QuestTitle_00001761",
+  "giver": {
+    "persona": "KM-GUM-NPC03",
+    "zone": "Karamelle/KM_Z03_GumdropForest"
+  },
+  "requires": [
+    "KM-Q-16B559"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 88276,
+    "gold": 765
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_StandIn_CinnamonTroll_01.AdjRef",
+        "KM_Troll_Sweets_A_01.AdjRef",
+        "KM_Troll_Sweets_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003676",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    }
+  ],
+  "personas": {
+    "KM-GUM-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1507241
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Time_to_Nibbleheim",
+    "timestamp": "20240322063919"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FF74 by the proper nouns its lines share with the page (Entrance, Forest, Gumdrop, Pipeline), within 16 of a key of the zone's quests; next best WizQst16FF73 with 0",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Pipeline Entrance",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Face Eaters replaced by KM-Q-16B559",
+      "blocking": false
+    }
+  ]
+}

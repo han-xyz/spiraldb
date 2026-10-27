@@ -1,0 +1,177 @@
+{
+  "id": "KM-Q-16FCCB",
+  "lang": "16FCCB",
+  "giver": {
+    "persona": "KM-ESTATE-NPC08",
+    "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02"
+  },
+  "requires": [
+    "KM-Q-16FCCA"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 141242,
+    "gold": 1425
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC12-E",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KM_Gummy_Bunny_A_01.AdjRef",
+        "KM_Gummy_Bunny_B_01.AdjRef",
+        "KM_Gummy_Bunny_C_01.AdjRef",
+        "KM_Gummy_Bunny_D_01.AdjRef",
+        "KM_Gummy_Bunny_E_01.AdjRef",
+        "KM_Gummy_Bunny_F_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003679",
+      "zone": "",
+      "descriptor": "WizQst16FCCB_00000021",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC01-B",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "loc": "ZoneLocName_1506578"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513114
+    },
+    "KM-BLACK-NPC12-E": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_A_NPC.dds",
+      "template_id": 1513133
+    },
+    "KM-ESTATE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1513159
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Overtasking",
+    "timestamp": "20240322073932"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCCB by the proper nouns its lines share with the page (Greta, Hans, Recipe, Samples), within 16 of a key of the zone's quests; next best WizQst16FCD0 with 2",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "for Treacle Recipe",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Up With Greta in Nibbleheim Mines",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

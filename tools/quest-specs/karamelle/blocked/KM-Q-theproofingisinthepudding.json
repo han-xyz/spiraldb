@@ -1,0 +1,66 @@
+{
+  "id": "KM-Q-theproofingisinthepudding",
+  "giver": {
+    "persona": "KM-BLACK-NPC01-B",
+    "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
+  },
+  "requires": [
+    "KM-Q-16FFB7"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 123587,
+    "gold": 1015
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_Hazmatt_A_01.AdjRef",
+        "KM_Hamster_Hazmatt_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003687",
+      "zone": "",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "loc": "ZoneLocName_1506578"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513114
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Proofing_is_in_the_Pudding",
+    "timestamp": "20250623214235"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Proofing is in the Pudding",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Pump Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance Treacle Vats",
+      "blocking": true
+    }
+  ]
+}

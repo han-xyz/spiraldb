@@ -1,0 +1,185 @@
+{
+  "id": "KM-Q-16FCE9",
+  "lang": "16FCE9",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [
+    "KM-Q-16FCE6"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 176553,
+    "gold": 1415
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC15",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC16_B",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_StandIn_RedVelvetTroll_01.AdjRef",
+        "KM_Troll_Sweets_B_01.AdjRef",
+        "KM_Troll_Sweets_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003682",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM_GobblerTools.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "descriptor": "WizardGameObjects_00000931",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC16_B",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC16",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147",
+      "completion": [
+        {
+          "speaker": "KM-GOBB-NPC16",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    },
+    "KM-GOBB-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_Skinny_A_NPC.dds",
+      "template_id": 1506529
+    },
+    "KM-GOBB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_Skinny_A_NPC.dds",
+      "template_id": 1506530
+    },
+    "KM-GOBB-NPC16_B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_Builder_A_NPC.dds",
+      "template_id": 1487196
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Just_What_They_Kneaded",
+    "timestamp": "20240322071535"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCE9 matched by the words it shares with the goals; its lines name Gob the Builder, Red Velvet Troll",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Abandoned Store",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Good Kind of Crop Dusting replaced by KM-Q-16FCE6",
+      "blocking": false
+    }
+  ]
+}

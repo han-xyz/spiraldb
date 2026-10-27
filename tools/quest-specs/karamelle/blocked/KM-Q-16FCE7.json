@@ -1,0 +1,146 @@
+{
+  "id": "KM-Q-16FCE7",
+  "lang": "16FCE7",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [
+    "KM-Q-16FCE6"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 203036,
+    "gold": 1645
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KM_Jellyfish_Base_A_01.AdjRef",
+        "KM_Jellyfish_Base_B_01.AdjRef",
+        "KM_Jellyfish_Base_C_01.AdjRef",
+        "KM_Jellyfish_Base_D_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003707",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "descriptor": "WizQst16FCE7_00000011",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM_SweetishFishEggs.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "descriptor": "WizardGameObjects_00000928",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM_OrganicGumdrops.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "descriptor": "WizardGameObjects_00000929",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GUM-NPC01",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    },
+    "KM-GUM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Fairy_GuideF_A_NPC.dds",
+      "template_id": 1507192
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Good_Kind_of_Crop_Dusting",
+    "timestamp": "20240322071536"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCE7 matched by the words it shares with the goals; its lines name Rosina, Organic Ingredients, Jelly Fish",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "for Organic Ingredients in Soda Lake Grotto",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "to Rosina",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

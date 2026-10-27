@@ -1,0 +1,228 @@
+{
+  "id": "KM-Q-16FCC8",
+  "lang": "16FCC8",
+  "giver": {
+    "persona": "KM-BLACK-NPC10",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
+  },
+  "requires": [
+    "KM-Q-16FCB4"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 211863,
+    "gold": 1695
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-ESTATE-NPC08",
+      "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC01-B",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-NIBB-NPC03",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-BLACK-NPC12-E.AdjRef",
+        "KM-BLACK-NPC12-C.AdjRef",
+        "KM-BLACK-NPC12-D.AdjRef",
+        "KM-BLACK-NPC12-F.AdjRef",
+        "KM-BLACK-NPC12.AdjRef",
+        "KM-ESTATE-NPC10.AdjRef",
+        "KM-KCITY-NPC06.AdjRef",
+        "KM-NIBB-NPC07.AdjRef",
+        "KM_StandIn_Hans-B.AdjRef",
+        "KM_StandIn_Hans-C.AdjRef",
+        "KM_StandIn_Hans-D.AdjRef",
+        "KM_StandIn_Hans-E.AdjRef",
+        "KM_StandIn_Hans.AdjRef",
+        "KM_StandIn_Hans_Sour.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01748997",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Mole_Miner_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003681",
+      "zone": "",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-NIBB-NPC08",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
+      "loc": "ZoneLocName_1506578"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513114
+    },
+    "KM-BLACK-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1513116
+    },
+    "KM-ESTATE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1513159
+    },
+    "KM-NIBB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Guard_A_NPC.dds",
+      "template_id": 1506488
+    },
+    "KM-NIBB-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",
+      "template_id": 1506493
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Forever_Mines",
+    "timestamp": "20240322065934"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCC8 by the proper nouns its lines share with the page (Guard, Gunter, Hans, Trap), within 16 of a key of the zone's quests; next best WizQst16FCCA with 1",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Nibbleheim Mines",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

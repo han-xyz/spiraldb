@@ -1,0 +1,126 @@
+{
+  "id": "KM-GUM-ENC-002",
+  "lang": "16FF76",
+  "title": "QuestTitle_00001762",
+  "requires": [
+    "KM-GUM-MAIN-003"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185379,
+    "gold": 1755
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Marshmallow_Critter_A_01.AdjRef",
+        "KM_Marshmallow_Critter_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003674",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Robot_Candy_A_01.AdjRef",
+        "KM_Robot_Candy_A_02.AdjRef",
+        "KM_Robot_Candy_A_03.AdjRef",
+        "KM_Robot_Candy_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003675",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_StandIn_CinnamonTroll_01.AdjRef",
+        "KM_Troll_Sweets_A_01.AdjRef",
+        "KM_Troll_Sweets_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003676",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Candy_Critter_Party_Bag",
+    "timestamp": "20240322063948"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FF76 matched by the words it shares with the goals; its lines name Whatchamagolem, Cinnamon Troll",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Through",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Further",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Further",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -46,7 +46,7 @@ WORLDS = (
     World("Polaris", "PL", "Polaris", 100, (0x14DBD8, 0x14DC0D)),
     World("Mirage", "MR", "Mirage", 105),
     World("Empyrea", "EM", "Empyrea", 112),
-    World("Karamelle", "KM", "Karamelle", 122),
+    World("Karamelle", "KM", "Karamelle", 122, (0x16B48E, 0x1716FA)),
     World("Lemuria", "LM", "Lemuria", 132, (0x170115, 0x1744C6)),
     World("Novus", "NV", "Novus", 142),
     World("Wallaru", "WL", "Wallaru", 152),

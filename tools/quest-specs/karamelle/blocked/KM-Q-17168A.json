@@ -1,0 +1,101 @@
+{
+  "id": "KM-Q-17168A",
+  "lang": "17168A",
+  "requires": [
+    "KM-Q-171641"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185379,
+    "gold": 1785
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Brudel_Apple_A_01.AdjRef",
+        "KM_Brudel_Apple_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003677",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Brudel_Apple_B_01.AdjRef",
+        "KM_Brudel_Apple_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003688",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Brudel_Toasted_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003701",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Brudel_Legend",
+    "timestamp": "20251223090131"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17168A matched by the words it shares with the goals; its lines name Apple Brudel, Green Apple Brudel, Toasted Brudel",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

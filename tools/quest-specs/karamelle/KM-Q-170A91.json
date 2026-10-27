@@ -1,0 +1,146 @@
+{
+  "id": "KM-Q-170A91",
+  "lang": "170A91",
+  "giver": {
+    "persona": "KM-KCITY-NPC08",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [
+    "KM-Q-170A86"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 52966,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC04-B",
+      "zone": "Arcanum/Interiors/AR_Z01_I01_DryDock",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-HUSK-NPC01-A",
+      "zone": "Empyrea/EM_Z16_Husk",
+      "loc": "ZoneLocName_1510006",
+      "completion": [
+        {
+          "speaker": "EM-HUSK-NPC01-A",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
+      "template_id": 1254305
+    },
+    "EM-HUSK-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",
+      "template_id": 1448067
+    },
+    "KM-KCITY-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1510023
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Everything_And_Nothing",
+    "timestamp": "20240322074951"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ione Virga: AR-ARC-NPC04-B from ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Bartleby: EM-HUSK-NPC01-A from ObjectData/EM",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Ultimate Mystery replaced by KM-Q-170A86",
+      "blocking": false
+    }
+  ]
+}

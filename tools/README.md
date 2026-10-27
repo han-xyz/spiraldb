@@ -48,6 +48,8 @@ most `CLUSTER_GAP` apart) holding the most `QuestTitle.lang` entries that read a
 names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`. Zafaria and Polaris have no such
 title, so their row declares `lang_range`; Lemuria's one title (`LM-URSAI-ENC-002a`) sits in a run of encounter
 quests, so its row declares one too. A declared `lang_range` wins. A world outside the table is refused with the list of the known ones.
+title, so their row declares `lang_range`; a declared `lang_range` wins over the derived one (Karamelle's anchored
+run holds 11 of its files). A world outside the table is refused with the list of the known ones.
 
 ## check
 

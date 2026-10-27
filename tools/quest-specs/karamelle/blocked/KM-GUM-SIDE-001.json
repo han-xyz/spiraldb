@@ -1,0 +1,120 @@
+{
+  "id": "KM-GUM-SIDE-001",
+  "lang": "16FF77",
+  "title": "QuestTitle_00001763",
+  "giver": {
+    "persona": "KM-GUM-NPC02",
+    "zone": "Karamelle/KM_Z03_GumdropForest"
+  },
+  "requires": [
+    "KM-Q-16FF70"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 7950
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gnome_Mugger_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003729",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    }
+  ],
+  "personas": {
+    "KM-GUM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Ranger_A_NPC.dds",
+      "template_id": 1507193
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mug_vs._Nature",
+    "timestamp": "20231011001156"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FF77, the only free key within 16 of its chain neighbour WizQst16FF70 whose lines name the page's names: Treemugger",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "for the Treemugger in Treemugger's Hideout",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

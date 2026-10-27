@@ -1,0 +1,134 @@
+{
+  "id": "KM-Q-16B562",
+  "lang": "16B562",
+  "giver": {
+    "persona": "KM-GUTEN-NPC01-B",
+    "zone": "Karamelle/KM_Z07_Gutenstadt"
+  },
+  "requires": [
+    "KM-Q-16FCD0"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 105931,
+    "gold": 990
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Cat_WarriorF_F_01.AdjRef",
+        "KM_Cat_WarriorF_F_02.AdjRef",
+        "KM_Cat_WarriorF_F_Minion_Moon.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003691",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GUTEN-NPC10-C",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    }
+  ],
+  "personas": {
+    "KM-GUTEN-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Factory_B_NPC.dds",
+      "template_id": 1506595
+    },
+    "KM-GUTEN-NPC10-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Constable_A_NPC.dds",
+      "template_id": 1488267
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Copy_Waste-Ya!",
+    "timestamp": "20250623220057"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B562 by the proper nouns its lines share with the page (Copy, Cupcake, Qhat), within 16 of a key of the zone's quests; next best WizQst16B55D with 2",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Cupcake Factory",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "to outside Cupcake Factory",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

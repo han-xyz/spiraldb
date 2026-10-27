@@ -28,6 +28,8 @@ class WorldsTest(unittest.TestCase):
     @needs_rootwad
     def test_a_declared_range_wins_over_an_anchor_outside_the_worlds_quests(self):
         self.assertEqual(lang_cluster(world("Lemuria"), ROOTWAD_DIR), (0x170115, 0x1744C6))
+    def test_a_declared_range_wins_over_the_anchored_cluster(self):
+        self.assertEqual(lang_cluster(world("Karamelle"), ROOTWAD_DIR), (0x16B48E, 0x1716FA))
 
 
 if __name__ == "__main__":

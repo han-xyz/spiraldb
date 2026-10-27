@@ -1,0 +1,17 @@
+{
+  "Name": "KM-Q-16B550",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 995,
+  "MaxGold": 995,
+  "ExperienceAmount": 123587,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T05:55:01.352413Z",
+  "ModifiedAt": "2026-10-27T05:55:01.352413Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

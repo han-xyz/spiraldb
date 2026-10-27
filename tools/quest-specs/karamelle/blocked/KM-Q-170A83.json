@@ -1,0 +1,106 @@
+{
+  "id": "KM-Q-170A83",
+  "lang": "170A83",
+  "giver": {
+    "persona": "KM-KCITY-NPC06",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [
+    "KM-Q-170A81"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 88276,
+    "gold": 795
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC07",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_A_NPC.dds",
+      "template_id": 1510018
+    },
+    "KM-KCITY-NPC07": {
+      "portrait": "GUI/NpcPortraits/Fairy_SisterF_A_NPC.dds",
+      "template_id": 1510020
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:What_is_your_Function?",
+    "timestamp": "20240322071542"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170A83 matched by the words it shares with the goals; its lines name Hans, Samantha, The Jellymancer",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Production Junction",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "The Jellymancer",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

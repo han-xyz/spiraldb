@@ -1,0 +1,218 @@
+{
+  "id": "KM-Q-16FCEA",
+  "lang": "16FCEA",
+  "giver": {
+    "persona": "KM-GOBB-NPC16",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [
+    "KM-Q-16FCE9"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 176553,
+    "gold": 1430
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC17",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM_Treadmills_01.AdjRef",
+        "KM_Treadmills_02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "descriptor": "WizardGameObjects_00000932",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC01",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC04-B",
+      "zone": "Karamelle/Interiors/KM_Z00_NanasHQ",
+      "loc": "ZoneLocName_1487147"
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    },
+    "KM-GOBB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_Skinny_A_NPC.dds",
+      "template_id": 1506530
+    },
+    "KM-GOBB-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_Skinny_A_NPC.dds",
+      "template_id": 1506531
+    },
+    "KM-KCITY-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Hamster_GrandF_A_NPC.dds",
+      "template_id": 1487274
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gobb-u-ler_Mechanics",
+    "timestamp": "20240119022700"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCEA matched by the words it shares with the goals; its lines name Grand Nana, Rosina",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Treadmills to Geoff Gobowski",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Rosina's speech",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

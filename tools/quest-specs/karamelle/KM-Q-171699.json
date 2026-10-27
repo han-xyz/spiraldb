@@ -1,0 +1,116 @@
+{
+  "id": "KM-Q-171699",
+  "lang": "171699",
+  "giver": {
+    "persona": "KM-BLACK-NPC06",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
+  },
+  "requires": [
+    "KM-Q-171694"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 105932,
+    "gold": 1005
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC04",
+      "zone": "Karamelle/Interiors/KM_Z08_WitchsTreehouse",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KM_Ram_Sour_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003700",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "descriptor": "WizQst171699_00000010",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC01-C",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC01-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513121
+    },
+    "KM-BLACK-NPC04": {
+      "portrait": "GUI/NpcPortraits/Fairy_SisterF_B_NPC.dds",
+      "template_id": 1513074
+    },
+    "KM-BLACK-NPC06": {
+      "portrait": "GUI/NpcPortraits/Fairy_BakerF_A_NPC.dds",
+      "template_id": 1513076
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Power_of_Sour",
+    "timestamp": "20250814021640"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

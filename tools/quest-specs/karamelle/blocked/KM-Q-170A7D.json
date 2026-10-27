@@ -1,0 +1,196 @@
+{
+  "id": "KM-Q-170A7D",
+  "lang": "170A7D",
+  "giver": {
+    "persona": "KM-KCITY-NPC02-B",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [
+    "KM-Q-16B549"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 141242,
+    "gold": 1205
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC03",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC04-B",
+      "zone": "Karamelle/Interiors/KM_Z00_NanasHQ",
+      "loc": "ZoneLocName_1510006",
+      "completion": [
+        {
+          "speaker": "KM-KCITY-NPC04-B",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
+      "template_id": 1510012
+    },
+    "KM-KCITY-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Hamster_GrandF_A_NPC.dds",
+      "template_id": 1510014
+    },
+    "KM-KCITY-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Hamster_GrandF_A_NPC.dds",
+      "template_id": 1487274
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Nana_Nana_Nana_Nana_Pet_Man!",
+    "timestamp": "20240322062215"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170A7D matched by the words it shares with the goals; its lines name Grand Nana, Nana, Key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nana's Headquarters",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nana's Office",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Pet Mode to find Key",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the President",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

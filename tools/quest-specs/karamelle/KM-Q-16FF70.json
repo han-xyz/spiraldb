@@ -1,0 +1,113 @@
+{
+  "id": "KM-Q-16FF70",
+  "lang": "16FF70",
+  "giver": {
+    "persona": "KM-GUM-NPC02",
+    "zone": "Karamelle/KM_Z03_GumdropForest"
+  },
+  "requires": [
+    "KM-Q-16B549"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 88276,
+    "gold": 765
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KM_GobblerSkinnyF_StandIn.AdjRef",
+        "KM_Gobblers_Treadmills_01.AdjRef",
+        "KM_Gobblers_Treadmills_02.AdjRef",
+        "KM_Gobblers_Treadmills_03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_GobblerFat_StandIn.AdjRef",
+        "KM_Gobbler_Fat_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003666",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    }
+  ],
+  "personas": {
+    "KM-GUM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Ranger_A_NPC.dds",
+      "template_id": 1507193
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Job_from_the_Gnome_Ranger",
+    "timestamp": "20250906034709"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FF70 matched by the words it shares with the goals; its lines name Hangriest Gobbler",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "the Gobblers in Hangry Gobbler Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Sweets-N-Stuff replaced by KM-Q-16B549",
+      "blocking": false
+    }
+  ]
+}

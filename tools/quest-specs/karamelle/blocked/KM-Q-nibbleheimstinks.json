@@ -1,0 +1,56 @@
+{
+  "id": "KM-Q-nibbleheimstinks",
+  "giver": {
+    "persona": "KM-BLACK-NPC01-B",
+    "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
+  },
+  "requires": [
+    "KM-GUM-MAIN-003"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 70621,
+    "gold": 560
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Brudel_Apple_A_01.AdjRef",
+        "KM_Brudel_Apple_A_02.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003677",
+      "zone": "",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "loc": "ZoneLocName_1506578"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513114
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Nibbleheim_Stinks!",
+    "timestamp": "20240322063904"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Nibbleheim Stinks!",
+      "blocking": true
+    }
+  ]
+}
