@@ -38,7 +38,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "m_destinationZone": "Empyrea/Interiors/EM_Z01_TrollRallyCave",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_WAYPOINT",
       "m_noQuestHelper": false,
@@ -49,7 +49,7 @@
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
       "m_zoneEntry": true,
-      "m_zoneTag": "Empyrea/EM_Z00_Aeriel_HUB",
+      "m_zoneTag": "Empyrea/Interiors/EM_Z01_TrollRallyCave",
       "m_proximityTag": "",
       "m_zoneExit": false
     },

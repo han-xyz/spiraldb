@@ -1,0 +1,17 @@
+{
+  "Name": "EM-Q-153B70",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 1170,
+  "MaxGold": 1170,
+  "ExperienceAmount": 54336,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T06:30:18.638335Z",
+  "ModifiedAt": "2026-10-27T06:30:18.638335Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

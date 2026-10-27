@@ -24,7 +24,7 @@
       "m_goalRequirements": null,
       "m_tallyCounter": {
         "m_percentChance": 1.0,
-        "m_descriptor": "",
+        "m_descriptor": "WizQst16249D_00000009",
         "m_descriptor2": "",
         "m_count": 1,
         "m_tallyResults": {
@@ -114,7 +114,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "EM-Q-162814",
+        "m_questName": "EM-Q-162493",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -123,7 +123,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "EM-Q-1624DE",
+        "m_questName": "EM-Q-1624B4",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

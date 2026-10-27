@@ -38,7 +38,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Empyrea/EM_Z01_Jungle",
+      "m_destinationZone": "Empyrea/Interiors/EM_Z01_MonkeySpiderCave",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_BOUNTYCOLLECT",
       "m_noQuestHelper": false,
@@ -201,16 +201,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "EM-Q-1323C2",
-        "m_applyNOT": true,
-        "m_operator": "ROP_AND"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "Completed",
-        "m_displayName": null,
-        "m_isQuestRegistry": false,
-        "m_questName": "EM-Q-1323ED",
+        "m_questName": "EM-Q-15533D",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

@@ -266,7 +266,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "EM-Q-161580",
+        "m_questName": "EM-Q-159089",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -275,7 +275,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "EM-Q-161585",
+        "m_questName": "EM-Q-161584",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

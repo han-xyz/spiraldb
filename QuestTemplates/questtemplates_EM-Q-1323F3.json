@@ -181,8 +181,17 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "EM-Q-1323C2",
+        "m_questName": "EM-Q-1323C3",
         "m_applyNOT": false,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "EM-Q-1323F8",
+        "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }
     ],
