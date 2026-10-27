@@ -183,7 +183,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "LM-Q-173224",
+        "m_questName": "LM-Q-173225",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -192,7 +192,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "LM-Q-174419",
+        "m_questName": "LM-Q-173228",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }
