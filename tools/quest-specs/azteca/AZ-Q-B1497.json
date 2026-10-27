@@ -1,0 +1,97 @@
+{
+  "id": "AZ-Q-B1497",
+  "lang": "B1497",
+  "giver": {
+    "persona": "AZ-MANG-NPC04",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [
+    "AZ-Q-AB2D0"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 25955,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Quetzal-Messenger-F.AdjRef"
+      ],
+      "count": 6,
+      "target": "WizardMobs_00001390",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_G_NPC.dds",
+      "template_id": 726112
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Schrodinger's_Quetzals",
+    "from": "archive",
+    "timestamp": "20231125113504"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB1497 by the proper nouns its lines share with the page (Fierce, Quetzals, Saltmeadow, Swamp), within 16 of a key of the zone's quests; next best WizQstB1498 with 3",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

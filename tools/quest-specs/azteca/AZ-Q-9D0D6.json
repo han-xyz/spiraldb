@@ -1,0 +1,81 @@
+{
+  "id": "AZ-Q-9D0D6",
+  "lang": "9D0D6",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC01",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [
+    "AZ-Q-9D0D5"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 6460,
+    "gold": 110
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-ZOCOLO-NPC04",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
+      "template_id": 643252
+    },
+    "AZ-ZOCOLO-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parasaur_PriestF_A_NPC.dds",
+      "template_id": 643255
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Trouble_in_Paradise",
+    "from": "archive",
+    "timestamp": "20231125100238"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst9D0D6, the only free key within 16 of its chain neighbour WizQst9D0D5 whose lines name the page's names: Zaylin Reedwalker",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

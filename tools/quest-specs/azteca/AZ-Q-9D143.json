@@ -7,7 +7,7 @@
   },
   "requires": [
     "AZ-Q-9D141",
-    "AZ-Q-B0CB3"
+    "AZ-Q-B1454"
   ],
   "mainline": false,
   "level": 78,
@@ -85,7 +85,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Lost Land of the Jaguars replaced by AZ-Q-B0CB3",
+      "value": "Lost Land of the Jaguars replaced by AZ-Q-B1454",
       "blocking": false
     }
   ]

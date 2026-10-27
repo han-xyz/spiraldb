@@ -97,6 +97,11 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
+      "loc": "ZoneLocName_643370"
+    },
+    {
       "type": "persona",
       "persona": "AZ-TIERRA-NPC04",
       "zone": "Azteca/AZ_Z07_TierraDeBrea",
@@ -171,11 +176,6 @@
     {
       "field": "requires",
       "value": "In My Eyes",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Tierra de Brea",
       "blocking": false
     },
     {

@@ -1,0 +1,89 @@
+{
+  "id": "AZ-Q-A6CC3",
+  "lang": "A6CC3",
+  "giver": {
+    "persona": "AZ-TWIN-NPC13",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A843B",
+    "AZ-Q-A6C96"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 25955,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Pteranodon-Knight-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001384",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "descriptor": "WizQstA6CC3_00000001",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Ladies_Upper01.dds",
+      "template_id": 683204
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Leap_of_Faith",
+    "from": "archive",
+    "timestamp": "20231125115202"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6CC3, the only free key within 16 of its chain neighbour WizQstA6CC6 whose lines name the page's names: Winged Tooth Knight",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

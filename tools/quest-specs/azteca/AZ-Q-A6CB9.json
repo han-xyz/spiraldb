@@ -1,0 +1,105 @@
+{
+  "id": "AZ-Q-A6CB9",
+  "lang": "A6CB9",
+  "giver": {
+    "persona": "AZ-TWIN-NPC02",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A6CB8"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 47770,
+    "gold": 570
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Jaguar-Shaman-E.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001355",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Queen_A_NPC.dds",
+      "template_id": 470606
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Jaguar_Pounces_on_a_Wizard",
+    "from": "archive",
+    "timestamp": "20240205172927"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6CB9, the only free key within 16 of its chain neighbour WizQstA6CAF and WizQst9D0E9 whose lines name the page's names: Nezahual Savage Paw",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Sky Above, Fields Below",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Sky Above, Fields Below replaced by AZ-Q-A6CB8",
+      "blocking": false
+    }
+  ]
+}

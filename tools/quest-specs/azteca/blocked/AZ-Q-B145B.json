@@ -1,0 +1,90 @@
+{
+  "id": "AZ-Q-B145B",
+  "lang": "B145B",
+  "giver": {
+    "persona": "AZ-ALTO-NPC01-2",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [
+    "AZ-Q-B1454"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-FLOAT-NPC03",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC01-2": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_B_NPC.dds",
+      "template_id": 726145
+    },
+    "AZ-FLOAT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_A_NPC.dds",
+      "template_id": 470553
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Your_Hand_in_Mine",
+    "from": "archive",
+    "timestamp": "20240205173126"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB145B matched by the words it shares with the goals; its lines name Ocuhaje Mirror Knife",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Ritual at the Petal Door",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

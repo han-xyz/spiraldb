@@ -1,0 +1,75 @@
+{
+  "id": "AZ-Q-A6CB6",
+  "lang": "A6CB6",
+  "giver": {
+    "persona": "AZ-TWIN-NPC02",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A6CB3"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 5790,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Tritops-Warrior-K.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001435",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Queen_A_NPC.dds",
+      "template_id": 470606
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Not_A_Cold_Dead_Place",
+    "from": "archive",
+    "timestamp": "20231125103842"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6CB6 by the proper nouns its lines share with the page (Falling, Star), within 16 of a key of the zone's quests; next best WizQstA6CBA with 1",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

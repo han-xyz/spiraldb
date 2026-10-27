@@ -1,0 +1,82 @@
+{
+  "id": "AZ-Q-A6C95",
+  "lang": "A6C95",
+  "giver": {
+    "persona": "AZ-TWIN-NPC01",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A6C94"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 11580,
+    "gold": 130
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_Hunter_C_NPC.dds",
+      "template_id": 470603
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Behind_Closed_Doors",
+    "from": "archive",
+    "timestamp": "20240123212501"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6C95 matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to The Great Doors",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

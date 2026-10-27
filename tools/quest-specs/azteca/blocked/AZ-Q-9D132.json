@@ -1,0 +1,139 @@
+{
+  "id": "AZ-Q-9D132",
+  "lang": "9D132",
+  "giver": {
+    "persona": "AZ-3POINTS-NPC01",
+    "zone": "Azteca/AZ_Z01_ThreePoints"
+  },
+  "requires": [
+    "MB-DETH-C01-002"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 73825,
+    "gold": 625
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Raptor-Undead-B.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001393",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_643242",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-3POINTS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_D_NPC.dds",
+      "template_id": 643260
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fossil_Fuel",
+    "from": "archive",
+    "timestamp": "20231125115952"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst9D132 by the proper nouns its lines share with the page (Cenote, Zombies), within 16 of a key of the zone's quests",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Undying Scales in Cenote",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Bitumen Tar in Tierra de Brea",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

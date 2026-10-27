@@ -1,0 +1,73 @@
+{
+  "id": "AZ-Q-A6CB8",
+  "lang": "A6CB8",
+  "giver": {
+    "persona": "AZ-TWIN-NPC02",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A6CB6"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 5790,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-FLOAT-NPC05-Sick-B",
+      "zone": "Azteca/Interiors/AZ_Z10_TurqoiseCave",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-FLOAT-NPC05-Sick-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_C_NPC.dds",
+      "template_id": 1397238
+    },
+    "AZ-TWIN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Queen_A_NPC.dds",
+      "template_id": 470606
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Remember_Me_As_A_Time_of_Day",
+    "from": "archive",
+    "timestamp": "20231125103914"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6CB8 by the proper nouns its lines share with the page (Floating, Mountains, Turquoise, Water-Sun), within 16 of a key of the zone's quests; next best WizQstA6CBA with 1",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "AZ-Q-B0C9F",
+  "lang": "B0C9F",
+  "giver": {
+    "persona": "AZ-CLOUD-NPC02",
+    "zone": "Azteca/AZ_Z06_CloudburstIsland"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 53050,
+    "gold": 825
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Elemental-Spirit-D.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001344",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parasaur-drkPriestF-C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001363",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Prickly-Pear.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "Items_00007461",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-CLOUD-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_B_NPC.dds",
+      "template_id": 724126
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wind_Driving_In_My_Face",
+    "from": "archive",
+    "timestamp": "20231125102418"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB0C9F matched by the words it shares with the goals; its lines name Tehuano Spirits, Poison Water Flower",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Don't Be Long",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Don't Be Long replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

@@ -1,0 +1,170 @@
+{
+  "id": "AZ-Q-B14A2",
+  "lang": "B14A2",
+  "giver": {
+    "persona": "AZ-MANG-NPC03",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [
+    "AZ-Q-B1445"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 70295,
+    "gold": 1045
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Tritops-Undead-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001427",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Raptor-Undead-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001393",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ_Avian_Egg.AdjRef",
+        "AZ_Humungo_Egg.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "descriptor": "GUI_00006704",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_C_NPC.dds",
+      "template_id": 726111
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Aggravated_Avians",
+    "from": "archive",
+    "timestamp": "20231125113419"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB14A2 matched by the words it shares with the goals; its lines name Thunder Horn Zombies",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Avian Hatchery",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Huascar Bent Wing's Mine",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Avian Hatchery",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Thorn in My Pride replaced by AZ-Q-B1445",
+      "blocking": false
+    }
+  ]
+}

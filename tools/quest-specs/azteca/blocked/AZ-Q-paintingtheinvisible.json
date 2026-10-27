@@ -4,8 +4,9 @@
     "persona": "AZ-ALTO-NPC04",
     "zone": "Azteca/AZ_Z09_AltoAlto"
   },
-  "requires": [],
-  "min_level": 78,
+  "requires": [
+    "AZ-Q-B1452"
+  ],
   "mainline": true,
   "level": 78,
   "reward": {
@@ -46,13 +47,8 @@
       "blocking": true
     },
     {
-      "field": "requires",
-      "value": "Brush with the Blues",
-      "blocking": false
-    },
-    {
       "field": "goal.items",
-      "value": "The Way of Itz in the Calmecac Library",
+      "value": "Way of Itz in the Calmecac Library",
       "blocking": true
     }
   ]

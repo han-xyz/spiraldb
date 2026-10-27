@@ -4,8 +4,9 @@
     "persona": "AZ-FLOAT-NPC03",
     "zone": "Azteca/AZ_Z10_FloatingMountains"
   },
-  "requires": [],
-  "min_level": 78,
+  "requires": [
+    "AZ-Q-B145B"
+  ],
   "mainline": true,
   "level": 78,
   "reward": {
@@ -17,6 +18,16 @@
     "underway": []
   },
   "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Seamonster-Ancient-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001400",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    },
     {
       "type": "bounty",
       "mobs": [
@@ -42,7 +53,7 @@
     },
     {
       "type": "persona",
-      "persona": "AZ-FLOAT-NPC02",
+      "persona": "AZ-FLOAT-NPC02-2",
       "zone": "Azteca/AZ_Z10_FloatingMountains",
       "loc": "ZoneLocName_470547"
     },
@@ -64,9 +75,9 @@
     }
   ],
   "personas": {
-    "AZ-FLOAT-NPC02": {
+    "AZ-FLOAT-NPC02-2": {
       "portrait": "GUI/NpcPortraits/Portrait_Quetzal_Messenger_D_NPC.dds",
-      "template_id": 470552
+      "template_id": 470590
     },
     "AZ-FLOAT-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_A_NPC.dds",
@@ -82,16 +93,6 @@
     {
       "field": "lang",
       "value": "Lost Land of the Jaguars",
-      "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Your Hand in Mine",
-      "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "(should be Locate) Ahuizotl Drowned Dog",
       "blocking": true
     }
   ]

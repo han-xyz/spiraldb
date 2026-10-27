@@ -4,8 +4,9 @@
     "persona": "AZ-MANG-NPC03",
     "zone": "Azteca/AZ_Z03_MangroveMarsh"
   },
-  "requires": [],
-  "min_level": 78,
+  "requires": [
+    "AZ-Q-B1446"
+  ],
   "mainline": false,
   "level": 78,
   "reward": {
@@ -50,11 +51,6 @@
       "field": "lang",
       "value": "Follow My Nose",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Thorn in My Pride",
-      "blocking": false
     },
     {
       "field": "goal.descriptor",

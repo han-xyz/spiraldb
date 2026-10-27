@@ -66,59 +66,7 @@
         "AZ-Cloud-Youngling-04.AdjRef",
         "AZ-Cloud-Youngling.AdjRef"
       ],
-      "count": 1,
-      "zone": "Azteca/AZ_Z06_CloudburstIsland",
-      "descriptor": "WizardGameObjects_00000550",
-      "loc": "ZoneLocName_724108"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "AZ-Cloud-Youngling-02.AdjRef",
-        "AZ-Cloud-Youngling-03.AdjRef",
-        "AZ-Cloud-Youngling-04.AdjRef",
-        "AZ-Cloud-Youngling.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Azteca/AZ_Z06_CloudburstIsland",
-      "descriptor": "WizardGameObjects_00000550",
-      "loc": "ZoneLocName_724108"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "AZ-Cloud-Youngling-02.AdjRef",
-        "AZ-Cloud-Youngling-03.AdjRef",
-        "AZ-Cloud-Youngling-04.AdjRef",
-        "AZ-Cloud-Youngling.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Azteca/AZ_Z06_CloudburstIsland",
-      "descriptor": "WizardGameObjects_00000550",
-      "loc": "ZoneLocName_724108"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "AZ-Cloud-Youngling-02.AdjRef",
-        "AZ-Cloud-Youngling-03.AdjRef",
-        "AZ-Cloud-Youngling-04.AdjRef",
-        "AZ-Cloud-Youngling.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Azteca/AZ_Z06_CloudburstIsland",
-      "descriptor": "WizardGameObjects_00000550",
-      "loc": "ZoneLocName_724108"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "AZ-Cloud-Youngling-02.AdjRef",
-        "AZ-Cloud-Youngling-03.AdjRef",
-        "AZ-Cloud-Youngling-04.AdjRef",
-        "AZ-Cloud-Youngling.AdjRef"
-      ],
-      "count": 1,
+      "count": 5,
       "zone": "Azteca/AZ_Z06_CloudburstIsland",
       "descriptor": "WizardGameObjects_00000550",
       "loc": "ZoneLocName_724108"

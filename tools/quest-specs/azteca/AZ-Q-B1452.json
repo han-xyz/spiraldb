@@ -1,0 +1,89 @@
+{
+  "id": "AZ-Q-B1452",
+  "lang": "B1452",
+  "giver": {
+    "persona": "AZ-ALTO-NPC04",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 25955,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Shdweave-Warrior-A.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001407",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "descriptor": "WizQstB1452_00000003",
+      "loc": "ZoneLocName_726071"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_A_NPC.dds",
+      "template_id": 726116
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Brush_with_the_Blues",
+    "from": "archive",
+    "timestamp": "20231125102612"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB1452 by the proper nouns its lines share with the page (Brushes, Gliders, Stolen, Weaver), within 16 of a key of the zone's quests; next best WizQstB144D with 3",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Red Paint",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Red Paint replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

@@ -6,7 +6,7 @@
     "zone": "Azteca/AZ_Z00_Zocalo"
   },
   "requires": [
-    "AZ-Q-72E4A"
+    "AZ-Q-A6CBB"
   ],
   "mainline": true,
   "level": 78,
@@ -84,16 +84,12 @@
     },
     {
       "type": "persona",
-      "persona": "AR-ARC-NPC22",
-      "zone": "Arcanum/AR_Z01_Hub",
+      "persona": "KR-Bastion-NPC40",
+      "zone": "Khrysalis/KR_Z00_Hub",
       "loc": "ZoneLocName_643250"
     }
   ],
   "personas": {
-    "AR-ARC-NPC22": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
-      "template_id": 1459029
-    },
     "AZ-ZOCOLO-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
       "template_id": 643252
@@ -101,6 +97,10 @@
     "DS-HUB-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
       "template_id": 126291
+    },
+    "KR-Bastion-NPC40": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Headmaster_A_NPC.dds",
+      "template_id": 1249169
     }
   },
   "source": {
@@ -116,7 +116,7 @@
     },
     {
       "field": "goal.persona (other world)",
-      "value": "Merle Ambrose: AR-ARC-NPC22 from ObjectData/AR",
+      "value": "Merle Ambrose: KR-Bastion-NPC40 from ObjectData/KR",
       "blocking": false
     },
     {
@@ -126,7 +126,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Tall Enough to Meet the Sun replaced by AZ-Q-72E4A",
+      "value": "Tall Enough to Meet the Sun replaced by AZ-Q-A6CBB",
       "blocking": false
     }
   ]

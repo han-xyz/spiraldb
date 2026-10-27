@@ -1,0 +1,113 @@
+{
+  "id": "AZ-Q-A6CA9",
+  "lang": "A6CA9",
+  "giver": {
+    "persona": "AZ-TWIN-NPC07",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A6C96"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 65140,
+    "gold": 780
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Dino-Undead-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001415",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-DawnOfDayAxe.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "descriptor": "Items_00007914",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Knight_E_NPC.dds",
+      "template_id": 684550
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Sun_Will_Light_the_Way",
+    "from": "archive",
+    "timestamp": "20240123212824"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6CA9 by chain order between WizQstA6C96 and WizQstA6CAD; its lines name El Marrow",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Cave of the Dawn",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Strong Smooth Words replaced by AZ-Q-A6C96",
+      "blocking": false
+    }
+  ]
+}

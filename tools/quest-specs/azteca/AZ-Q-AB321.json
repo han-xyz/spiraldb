@@ -1,0 +1,171 @@
+{
+  "id": "AZ-Q-AB321",
+  "lang": "AB321",
+  "giver": {
+    "persona": "AZ-SWAMP-NPC03",
+    "zone": "Azteca/AZ_Z04_SaltmeadowSwamp"
+  },
+  "requires": [
+    "AZ-Q-AB2DA"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 43255,
+    "gold": 640
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC08",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC09",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Parasaur-drkPriestF-A.AdjRef",
+        "AZ_StandIn_MSkullPriestess_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001361",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "WizQstAB321_00000011",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC09",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC08",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000017"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-SWAMP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_SoldierBoss_A_NPC.dds",
+      "template_id": 701130
+    },
+    "AZ-SWAMP-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Soldier_B_NPC.dds",
+      "template_id": 684546
+    },
+    "AZ-SWAMP-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Soldier_A_NPC.dds",
+      "template_id": 684545
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mutiny_on_the_Bounty",
+    "from": "archive",
+    "timestamp": "20240409061134"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstAB321 matched by the words it shares with the goals; its lines name Mr. Bligh, Lt. Fletcher, Moon Skull Priestesses",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

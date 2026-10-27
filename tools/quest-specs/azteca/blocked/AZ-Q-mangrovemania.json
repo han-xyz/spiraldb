@@ -18,6 +18,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "AZ_Mangrove_Bark.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "descriptor": "WizItems_00001920",
+      "loc": "ZoneLocName_726071"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Azteca/AZ_Z09_AltoAlto",
@@ -45,11 +55,6 @@
       "field": "requires",
       "value": "Painting the Invisible",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "(Collect) 6 Mangrove Bark in Mangrove Marsh",
-      "blocking": true
     }
   ]
 }

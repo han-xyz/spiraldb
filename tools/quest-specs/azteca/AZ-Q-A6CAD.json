@@ -1,0 +1,151 @@
+{
+  "id": "AZ-Q-A6CAD",
+  "lang": "A6CAD",
+  "giver": {
+    "persona": "AZ-TWIN-NPC07",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A6CA9"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 99880,
+    "gold": 1200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-StoneRibs.AdjRef",
+        "AZ-StoneRibsCollision.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "descriptor": "WizardGameObjects_00000561",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-TWIN-NPC02",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Shdweave-Lord-C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001406",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "descriptor": "WizQstA6CAD_00000011",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Raptor-Warrior-H.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001398",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-TWIN-NPC02",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-TWIN-NPC02",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131",
+      "completion": [
+        {
+          "speaker": "AZ-TWIN-NPC02",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Queen_A_NPC.dds",
+      "template_id": 470606
+    },
+    "AZ-TWIN-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Knight_E_NPC.dds",
+      "template_id": 684550
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Have_You_Seen_Her_Face",
+    "from": "archive",
+    "timestamp": "20250820030813"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6CAD matched by the words it shares with the goals; its lines name Pachakutiq Who Shakes the Earth, Chasca Dawn Hour, Night Terrors, Zolton Zero Hour",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

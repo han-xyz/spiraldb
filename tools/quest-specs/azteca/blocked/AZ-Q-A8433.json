@@ -134,19 +134,19 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Kathleen Wilder's Cottage",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Trail of Papers",
+      "value": "Trail of Papers",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Forest Clearing",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Forest Clearing",
+      "blocking": false
     },
     {
       "field": "dialogs",

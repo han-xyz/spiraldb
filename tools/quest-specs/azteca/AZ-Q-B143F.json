@@ -1,0 +1,127 @@
+{
+  "id": "AZ-Q-B143F",
+  "lang": "B143F",
+  "giver": {
+    "persona": "AZ-MANG-NPC02",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 35115,
+    "gold": 610
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Tritops-Undead-G.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001433",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ_War_Challenge.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "descriptor": "WizQstB143F_00000006",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_D_NPC.dds",
+      "template_id": 726110
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:War,_What_Is_It_Good_For?",
+    "from": "archive",
+    "timestamp": "20231125100911"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB143F by the proper nouns its lines share with the page (Challenge, Hunter, Mozar, Tomb, Turtle, War), within 16 of a key of the zone's quests; next best WizQstB1445 with 4",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Don't Know If I Am Wrong",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Mozar Turtle Hunter's Tomb",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Don't Know If I Am Wrong replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

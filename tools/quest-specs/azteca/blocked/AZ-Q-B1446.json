@@ -1,0 +1,94 @@
+{
+  "id": "AZ-Q-B1446",
+  "lang": "B1446",
+  "giver": {
+    "persona": "AZ-MANG-NPC03",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [
+    "AZ-Q-B1445"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 10895,
+    "gold": 175
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC01",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_C_NPC.dds",
+      "template_id": 726111
+    },
+    "AZ-SWAMP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_A_NPC.dds",
+      "template_id": 701128
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Thorn_in_My_Pride",
+    "from": "archive",
+    "timestamp": "20231125101238"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB1446 matched by the words it shares with the goals; its lines name Jade Wind-Sun",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Away Iron Thorn Bramble",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

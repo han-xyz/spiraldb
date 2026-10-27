@@ -161,19 +161,6 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "AZ-ALTO-WEAVE-NPC02-B.AdjRef",
-        "AZ-ALTO-WEAVE-NPC02-C.AdjRef",
-        "AZ-ALTO-WEAVE-NPC02.AdjRef",
-        "AZ-TWIN-NPC17.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "NPCs_01749746",
-      "loc": "ZoneLocName_701121"
-    },
-    {
       "type": "bounty",
       "mobs": [
         "AZ-Raptor-Warrior-F.AdjRef"
@@ -268,34 +255,59 @@
       "blocking": true
     },
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Xibalba: Azteca/AZ_Z12_Xibalba",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Xibalba",
+      "blocking": false
+    },
+    {
       "field": "goal.items",
-      "value": "the Broken Obsidian Fragments",
+      "value": "Broken Obsidian Fragments",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Xibalba: Azteca/AZ_Z12_Xibalba",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Xibalba",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Broken Obsidian Fragments",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Xibalba: Azteca/AZ_Z12_Xibalba",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Xibalba",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Obsidian Ice Mirror",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "Exploring Xibalba",
+      "value": "Broken Obsidian Fragments",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Broken Obsidian Fragments",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Exploring Xibalba",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Obsidian Ice Mirror",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Broken Obsidian Fragments",
-      "blocking": true
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Xibalba: Azteca/AZ_Z12_Xibalba",
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

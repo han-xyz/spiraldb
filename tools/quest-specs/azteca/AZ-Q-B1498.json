@@ -1,0 +1,114 @@
+{
+  "id": "AZ-Q-B1498",
+  "lang": "B1498",
+  "giver": {
+    "persona": "AZ-MANG-NPC04",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [
+    "AZ-Q-AB2D0"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 25955,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Monkey-Soldier-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001356",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "WizQstB1498_00000011",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_G_NPC.dds",
+      "template_id": 726112
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Thinking_Rock",
+    "from": "archive",
+    "timestamp": "20231125120300"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB1498 by the proper nouns its lines share with the page (Monquistan, Philosoraptor, Rock, Saltmeadow, Swamp, Thinking), within 16 of a key of the zone's quests; next best WizQstB1497 with 2",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

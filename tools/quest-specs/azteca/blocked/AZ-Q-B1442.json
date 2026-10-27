@@ -1,0 +1,98 @@
+{
+  "id": "AZ-Q-B1442",
+  "lang": "B1442",
+  "giver": {
+    "persona": "AZ-MANG-NPC03",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 27405,
+    "gold": 475
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ_Orbs_Of_Natron.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "descriptor": "WizItems_00001894",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_C_NPC.dds",
+      "template_id": 726111
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Induction_Then_Destruction",
+    "from": "archive",
+    "timestamp": "20231125101039"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB1442 by the proper nouns its lines share with the page (Left, Natron, Orbs, Sky, Talons), within 16 of a key of the zone's quests; next best WizQstB1443 with 3",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "War Means Tears",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Left Talons of the Sky",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

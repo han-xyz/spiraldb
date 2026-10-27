@@ -1,0 +1,105 @@
+{
+  "id": "AZ-Q-A6C96",
+  "lang": "A6C96",
+  "giver": {
+    "persona": "AZ-TWIN-NPC01",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A6C95"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 34740,
+    "gold": 410
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-HiddenDoor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Pteranodon-Knight-A.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001384",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-TWIN-NPC03",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_Hunter_C_NPC.dds",
+      "template_id": 470603
+    },
+    "AZ-TWIN-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Knight_C_NPC.dds",
+      "template_id": 683161
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Explosions_in_the_Sky",
+    "from": "archive",
+    "timestamp": "20240123212542"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6C96 matched by the words it shares with the goals; its lines name Yupanqui With Honor, Winged Tooth Knights",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Hidden Door",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

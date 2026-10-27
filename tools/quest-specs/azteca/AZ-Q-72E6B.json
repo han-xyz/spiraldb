@@ -59,13 +59,9 @@
       "loc": "ZoneLocName_470546"
     },
     {
-      "type": "usage",
-      "items": [
-        "AZ-LAKE-NPC05.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "AZ-LAKE-NPC05",
       "zone": "Azteca/AZ_Z08_PitchBlackLake",
-      "descriptor": "WC-NPCs_00002166",
       "loc": "ZoneLocName_470546"
     },
     {

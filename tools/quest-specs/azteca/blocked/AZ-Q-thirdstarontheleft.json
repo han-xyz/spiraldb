@@ -4,8 +4,9 @@
     "persona": "AZ-ZOCOLO-NPC03",
     "zone": "Azteca/AZ_Z00_Zocalo"
   },
-  "requires": [],
-  "min_level": 78,
+  "requires": [
+    "AZ-Q-A6C85"
+  ],
   "mainline": false,
   "level": 78,
   "reward": {
@@ -19,8 +20,7 @@
   "goals": [
     {
       "type": "waypoint",
-      "zone": "Azteca/AZ_Z02_Cenote",
-      "loc": "ZoneLocName_643349"
+      "zone": "Azteca/Interiors/AZ_Z02_GlimmeringChamber"
     },
     {
       "type": "bounty",
@@ -71,11 +71,6 @@
       "field": "lang",
       "value": "Third Star on the Left",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Across the Universe",
-      "blocking": false
     }
   ]
 }

@@ -1,0 +1,86 @@
+{
+  "id": "AZ-Q-B1458",
+  "lang": "B1458",
+  "giver": {
+    "persona": "AZ-ALTO-NPC07",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [
+    "AZ-Q-B0CB3"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 30920,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Spider-Starfall-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001140",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "descriptor": "WizQstB1458_00000004",
+      "loc": "ZoneLocName_726071"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_NPC.dds",
+      "template_id": 726119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Catastrophe_and_the_Cure",
+    "from": "archive",
+    "timestamp": "20231125103446"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB1458 by the proper nouns its lines share with the page (Essence, Spider, Spiders, Starfall, Tower, Xolotl), within 16 of a key of the zone's quests; next best WizQstB1454 with 5",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -74,9 +74,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Pyramid of Mother Moon",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Pyramid of Mother Moon",
+      "blocking": false
     },
     {
       "field": "dialogs.prep",

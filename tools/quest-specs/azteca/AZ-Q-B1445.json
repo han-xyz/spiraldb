@@ -1,0 +1,97 @@
+{
+  "id": "AZ-Q-B1445",
+  "lang": "B1445",
+  "giver": {
+    "persona": "AZ-MANG-NPC03",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [
+    "AZ-Q-B1441"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 7620,
+    "gold": 110
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-MANG-NPC02",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_D_NPC.dds",
+      "template_id": 726110
+    },
+    "AZ-MANG-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_C_NPC.dds",
+      "template_id": 726111
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:There's_Got_to_Be_a_Better_Way",
+    "from": "archive",
+    "timestamp": "20231125101217"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB1445 by chain order between WizQstB1441 and WizQstB1446; its lines name Techotl Redsmoke",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "AZ-Q-B144B",
+  "lang": "B144B",
+  "giver": {
+    "persona": "AZ-ALTO-NPC07",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [
+    "AZ-Q-B1458"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_NPC.dds",
+      "template_id": 726119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Chimes_of_Freedom",
+    "from": "archive",
+    "timestamp": "20240123210024"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB144B, the only free key within 16 of its chain neighbour WizQstB1458 and WizQstB1454 whose lines name the page's names: Zenzen Seven Star",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Away the Web Barrier",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

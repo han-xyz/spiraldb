@@ -1,0 +1,123 @@
+{
+  "id": "AZ-Q-B1443",
+  "lang": "B1443",
+  "requires": [
+    "AZ-Q-B1441"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 18160,
+    "gold": 940
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-MANG-NPC05",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Toucan-Warrior-C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001419",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parrot-Hunter-G.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001375",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ_Orbs_Natron_Stack.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "descriptor": "WizItems_00001917",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parrot-Darkshaman-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001373",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Toucan_Warrior_C_NPC.dds",
+      "template_id": 726126
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Enemy_to_All_Azteca_Kind",
+    "from": "archive",
+    "timestamp": "20231125101221"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstB1443 by the proper nouns its lines share with the page (Caquix, Guard, Left, Natron, Nine, Orbs, Shadows, Talon), within 16 of a key of the zone's quests; next best WizQstB1442 with 7",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Caquix Nine Shadows",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

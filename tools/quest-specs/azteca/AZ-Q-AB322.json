@@ -1,0 +1,158 @@
+{
+  "id": "AZ-Q-AB322",
+  "lang": "AB322",
+  "giver": {
+    "persona": "AZ-SWAMP-NPC02",
+    "zone": "Azteca/AZ_Z04_SaltmeadowSwamp"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 65970,
+    "gold": 980
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-MANG-NPC02",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Monkey-Soldier-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001356",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC10",
+      "zone": "Azteca/Interiors/AZ_Z04_Clearing02",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Raptor-Undead-F.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001446",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC10",
+      "zone": "Azteca/Interiors/AZ_Z04_Clearing02",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000014"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000015"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_D_NPC.dds",
+      "template_id": 726110
+    },
+    "AZ-SWAMP-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_B_NPC.dds",
+      "template_id": 701129
+    },
+    "AZ-SWAMP-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parasaur_Priest_B_NPC.dds",
+      "template_id": 684547
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Night_of_the_Hungry_Dead",
+    "from": "archive",
+    "timestamp": "20231125113548"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstAB322 matched by the words it shares with the goals; its lines name Cantares Five Flowers, Techotl Redsmoke, Monquistans, Zope Broad Seer, Xiuhcoatl Barbed Tooth",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Whereabouts of Zope Broad Seer",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Monkey Men replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

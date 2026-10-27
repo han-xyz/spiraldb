@@ -1,0 +1,127 @@
+{
+  "id": "AZ-Q-A6CB7",
+  "lang": "A6CB7",
+  "requires": [
+    "AZ-Q-A6CB6"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 99880,
+    "gold": 1200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Shdweave-Lord-C.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001406",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Dino-Undead-A.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001414",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Tritops-Warrior-K.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001435",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Birth_and_Death_of_the_Day",
+    "from": "archive",
+    "timestamp": "20231125103859"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6CB7 matched by the words it shares with the goals; its lines name Huracan Vicious Sky",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Pyramid of the Falling Star's Second Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Pyramid of the Falling Star's Ritual Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -19,6 +19,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/Interiors/AZ_Z10_FireCave"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Toucan-Warrior-B.AdjRef"
@@ -29,14 +33,9 @@
       "loc": "ZoneLocName_470547"
     },
     {
-      "type": "usage",
-      "items": [
-        "AZ-FLOAT-NPC01-2.AdjRef",
-        "AZ-FLOAT-NPC01.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "AZ-FLOAT-NPC01",
       "zone": "Azteca/AZ_Z10_FloatingMountains",
-      "descriptor": "NPCs_01747898",
       "loc": "ZoneLocName_470547"
     },
     {
@@ -77,11 +76,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Isla del Fuego",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "the Fire Cave",
-      "blocking": true
     }
   ]
 }

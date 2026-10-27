@@ -61,6 +61,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/Interiors/AZ_Z06_HouseOfFlowers"
+    },
+    {
       "type": "usage",
       "items": [
         "AZ-Starfall-Lily.AdjRef"
@@ -103,11 +107,6 @@
     "timestamp": "20240118174705"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "House of Flowers",
-      "blocking": false
-    },
     {
       "field": "goal.mobs",
       "value": "Yaxche",

@@ -1,0 +1,169 @@
+{
+  "id": "AZ-Q-A6C9C",
+  "lang": "A6C9C",
+  "giver": {
+    "persona": "AZ-TWIN-NPC03",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A6C96"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 88300,
+    "gold": 1060
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-ChascaCage.AdjRef",
+        "AZ-PachakutiqCage.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "descriptor": "WizardGameObjects_00000559",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Shdweave-Lord-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001404",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-TWIN-NPC07",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131",
+      "completion": [
+        {
+          "speaker": "AZ-TWIN-NPC07",
+          "line": "00000001"
+        },
+        {
+          "speaker": "AZ-TWIN-NPC07",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Knight_C_NPC.dds",
+      "template_id": 683161
+    },
+    "AZ-TWIN-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Knight_E_NPC.dds",
+      "template_id": 684550
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Strong_Smooth_Words",
+    "from": "archive",
+    "timestamp": "20240123212536"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6C9C by chain order between WizQstA6C96 and WizQstA6CAD; its lines name Yupanqui With Honor, Pachakutiq Who Shakes the Earth, First Trapped Wing Tooth Knight, Second Trapped Wing Tooth Knight, Third Trapped Wing Tooth Knight, Final Trapped Wing Tooth Knight",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "First Trapped Wing Tooth Knight",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Second Trapped Wing Tooth Knight",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Third Trapped Wing Tooth Knight",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Final Trapped Wing Tooth Knight",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Black Tooth Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

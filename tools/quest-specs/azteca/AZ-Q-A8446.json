@@ -6,7 +6,8 @@
     "zone": "Azteca/AZ_Z00_Zocalo"
   },
   "requires": [
-    "AZ-Q-9D0F2"
+    "AZ-Q-A6C85",
+    "AZ-Q-B1445"
   ],
   "mainline": false,
   "level": 78,
@@ -177,23 +178,18 @@
       "blocking": false
     },
     {
-      "field": "requires",
-      "value": "Thorn in My Pride",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
     },
     {
       "field": "requires (not generated)",
-      "value": "Third Star on the Left replaced by AZ-Q-9D0F2",
+      "value": "Third Star on the Left replaced by AZ-Q-A6C85",
       "blocking": false
     },
     {
       "field": "requires (not generated)",
-      "value": "Thorn in My Pride replaced by min_level",
+      "value": "Thorn in My Pride replaced by AZ-Q-B1445",
       "blocking": false
     }
   ]

@@ -5,8 +5,9 @@
     "persona": "AZ-ZOCOLO-NPC01",
     "zone": "Azteca/AZ_Z00_Zocalo"
   },
-  "requires": [],
-  "min_level": 78,
+  "requires": [
+    "AZ-Q-A6CBB"
+  ],
   "mainline": true,
   "level": 78,
   "reward": {
@@ -95,11 +96,6 @@
     "timestamp": "20240123214800"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "The Lost World",
-      "blocking": false
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Quilla Blood Sky's Hideout",

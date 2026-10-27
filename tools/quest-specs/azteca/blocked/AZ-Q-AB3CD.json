@@ -24,13 +24,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "AZ-PageEvent-Boss.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Azteca/AZ_Z11_TwinGiants",
-      "descriptor": "NPCs_01748050",
+      "type": "persona",
+      "persona": "AZ-PageEvent-Boss",
+      "zone": "Azteca/Interiors/PageEvent/AZ_BossRoom",
       "loc": "ZoneLocName_683131"
     },
     {
@@ -44,7 +40,12 @@
       "loc": "ZoneLocName_683131"
     }
   ],
-  "personas": {},
+  "personas": {
+    "AZ-PageEvent-Boss": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_GrimoireKid_Fire_NPC.dds",
+      "template_id": 808261
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Pale_Fire",
     "from": "archive",

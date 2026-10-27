@@ -4,8 +4,9 @@
     "persona": "AZ-CLOUD-NPC02",
     "zone": "Azteca/AZ_Z06_CloudburstIsland"
   },
-  "requires": [],
-  "min_level": 78,
+  "requires": [
+    "AZ-Q-B0CA0"
+  ],
   "mainline": true,
   "level": 78,
   "reward": {
@@ -50,11 +51,6 @@
       "field": "lang",
       "value": "Touch the Sky",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "The Smell of Prickly Pear",
-      "blocking": false
     }
   ]
 }

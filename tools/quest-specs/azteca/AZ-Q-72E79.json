@@ -1,0 +1,113 @@
+{
+  "id": "AZ-Q-72E79",
+  "lang": "72E79",
+  "giver": {
+    "persona": "AZ-LAKE-NPC07",
+    "zone": "Azteca/AZ_Z08_PitchBlackLake"
+  },
+  "requires": [
+    "AZ-Q-72E75"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 15460,
+    "gold": 190
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-MoonDoor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "descriptor": "WizQst72E79_00000005",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parrot-King-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001380",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-LAKE-NPC08",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    }
+  ],
+  "personas": {
+    "AZ-LAKE-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_C_NPC.dds",
+      "template_id": 470570
+    },
+    "AZ-LAKE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_King_B_NPC.dds",
+      "template_id": 470648
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hum_a_Few_Bars",
+    "from": "archive",
+    "timestamp": "20240123010152"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Pyramid of Mother Moon",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

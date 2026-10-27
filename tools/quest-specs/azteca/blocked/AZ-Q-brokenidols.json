@@ -18,6 +18,58 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "AZ-Raw-Gold.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "descriptor": "Items_00007457",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Fire-Quetzal-Cage1.AdjRef",
+        "AZ-Fire-Quetzal-Cage2.AdjRef",
+        "AZ-Fire-Quetzal-Cage3.AdjRef",
+        "AZ-Fire-Quetzal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "descriptor": "Items_00007458",
+      "loc": "ZoneLocName_643349",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Fire-Quetzal-Cage1.AdjRef",
+        "AZ-Fire-Quetzal-Cage2.AdjRef",
+        "AZ-Fire-Quetzal-Cage3.AdjRef",
+        "AZ-Fire-Quetzal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "descriptor": "Items_00007458",
+      "loc": "ZoneLocName_643349",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Fire-Quetzal-Cage1.AdjRef",
+        "AZ-Fire-Quetzal-Cage2.AdjRef",
+        "AZ-Fire-Quetzal-Cage3.AdjRef",
+        "AZ-Fire-Quetzal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "descriptor": "Items_00007458",
+      "loc": "ZoneLocName_643349",
+      "with_previous": true
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "AZ-Parasaur-Undead-A.AdjRef"
@@ -55,26 +107,6 @@
       "field": "requires",
       "value": "The Lightless Depths",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Collect 3 Raw Gold",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Open (first) Fire Quetzal Cage",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Open (second) Fire Quetzal Cage",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Open (third) Fire Quetzal Cage",
-      "blocking": true
     },
     {
       "field": "goal.descriptor",

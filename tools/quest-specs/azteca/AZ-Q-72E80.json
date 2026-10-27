@@ -6,7 +6,7 @@
     "zone": "Azteca/AZ_Z08_PitchBlackLake"
   },
   "requires": [
-    "AZ-Q-72E75"
+    "AZ-Q-72E79"
   ],
   "mainline": true,
   "level": 78,
@@ -74,11 +74,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Hum a Few Bars replaced by AZ-Q-72E75",
       "blocking": false
     }
   ]

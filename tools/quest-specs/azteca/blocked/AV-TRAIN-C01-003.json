@@ -1,0 +1,141 @@
+{
+  "id": "AV-TRAIN-C01-003",
+  "lang": "9D00C",
+  "title": "QuestTitle_00000924",
+  "giver": {
+    "persona": "AZ-SWAMP-NPC05",
+    "zone": "Azteca/AZ_Z04_SaltmeadowSwamp"
+  },
+  "requires": [
+    "AZ-Q-AB2DC"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 14525,
+    "gold": 235
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-TreeOfSecretsDoor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000012"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-SWAMP-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parasaur_Priest_A_NPC.dds",
+      "template_id": 701132
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Raise_It_Up",
+    "from": "archive",
+    "timestamp": "20231125101555"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst9D00C matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Tree of Secrets",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Eggs in First Quetzal Nest",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Eggs in Second Nest",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Eggs in Third Nest",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

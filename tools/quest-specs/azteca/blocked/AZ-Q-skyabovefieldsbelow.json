@@ -4,8 +4,9 @@
     "persona": "AZ-FLOAT-NPC05-Sick",
     "zone": "Azteca/AZ_Z10_FloatingMountains"
   },
-  "requires": [],
-  "min_level": 78,
+  "requires": [
+    "AZ-Q-A6CB8"
+  ],
   "mainline": true,
   "level": 78,
   "reward": {
@@ -44,11 +45,6 @@
       "field": "lang",
       "value": "Sky Above, Fields Below",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Remember Me As A Time of Day",
-      "blocking": false
     }
   ]
 }

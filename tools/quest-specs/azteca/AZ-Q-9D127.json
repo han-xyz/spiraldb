@@ -68,8 +68,7 @@
     },
     {
       "type": "waypoint",
-      "zone": "Azteca/AZ_Z08_PitchBlackLake",
-      "loc": "ZoneLocName_470546"
+      "zone": "Azteca/Interiors/AZ_Z08_WatermurkGrotto"
     },
     {
       "type": "bounty",

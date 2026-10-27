@@ -45,31 +45,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "AZ-ALTO-WEAVE-NPC02-B.AdjRef",
-        "AZ-ALTO-WEAVE-NPC02-C.AdjRef",
-        "AZ-ALTO-WEAVE-NPC02.AdjRef",
-        "AZ-TWIN-NPC17.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Azteca/AZ_Z00_Zocalo",
-      "descriptor": "NPCs_01749746",
-      "loc": "ZoneLocName_643250"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "AZ-COMET-NPC01.AdjRef",
-        "AZ-LAKE-NPC09.AdjRef",
-        "AZ-Morganthe-Pitch.AdjRef",
-        "AZ-PyramidMorganthe.AdjRef",
-        "AZ-TWIN-NPC14.AdjRef",
-        "AZ_Morganthe_FeatherPalace.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Azteca/AZ_Z00_Zocalo",
-      "descriptor": "NPCs_01747805",
+      "type": "persona",
+      "persona": "AZ-COMET-NPC01",
+      "zone": "Azteca/Interiors/AZ_Z11_PyramidFallingStar_Room03",
       "loc": "ZoneLocName_643250"
     },
     {
@@ -80,6 +58,10 @@
     }
   ],
   "personas": {
+    "AZ-COMET-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morganthe.dds",
+      "template_id": 701161
+    },
     "AZ-ZOCOLO-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
       "template_id": 643252
@@ -97,9 +79,24 @@
       "blocking": true
     },
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Xibalba: Azteca/AZ_Z12_Xibalba",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Xibalba",
+      "blocking": false
+    },
+    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Azteca/Interiors/AZ_Z11_PyramidFallingStar_Room03",
+      "blocking": true
     }
   ]
 }

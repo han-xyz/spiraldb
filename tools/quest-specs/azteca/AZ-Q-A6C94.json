@@ -1,0 +1,83 @@
+{
+  "id": "AZ-Q-A6C94",
+  "lang": "A6C94",
+  "giver": {
+    "persona": "AZ-TWIN-NPC01",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A6C93"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 47770,
+    "gold": 570
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parasaur-drkPriestF-D.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001359",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_Hunter_C_NPC.dds",
+      "template_id": 470603
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Glittering_Blackness",
+    "from": "archive",
+    "timestamp": "20240123212347"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA6C94 matched by the words it shares with the goals; its lines name Malinche Tears of Night",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
