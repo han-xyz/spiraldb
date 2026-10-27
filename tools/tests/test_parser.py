@@ -128,8 +128,8 @@ class GoalLineTest(unittest.TestCase):
 
     def test_a_giver_placed_in_an_unregistered_hub_does_not_block_the_spec(self):
         personas = ["Edgar Ableton", "Mackenzie Trowel", "Peter Cheswick", "Dalton Prescott"]
-        spec = build("Survivors", GiverPlacedIn("Arcanum/AR_Z01_Hub", personas=personas))
-        self.assertEqual(spec["giver"]["zone"], "Arcanum/AR_Z01_Hub")
+        spec = build("Survivors", GiverPlacedIn("MonthlyEvents/ME_Z00_Hub", personas=personas))
+        self.assertEqual(spec["giver"]["zone"], "MonthlyEvents/ME_Z00_Hub")
         self.assertNotIn("giver (other world)", [field for field, _ in blocking(spec)])
 
     def test_a_talk_to_header_is_one_step_of_its_npcs(self):

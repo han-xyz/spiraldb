@@ -427,7 +427,7 @@ and Reward, and resolves:
 - `Note: Level N is needed to start this quest.` to `level` and `min_level` N, kept when prerequisites are rewired;
   `must be in the School of Fire` to a `{"school": "Fire"}` entry first in `requires`.
 - a giver placed in another registered world's zone blocks the spec (`giver (other world)`): the quest belongs to that
-  world. Zones of unregistered hubs such as Arcanum are allowed.
+  world. Zones of unregistered worlds such as MonthlyEvents are allowed.
 - prerequisites to the ids of the other specs, or of the pack's quests with that title.
 - the Reward section's `[Spell:...]` links to `reward.spells`: the school form when a school icon comes just before
   the link (a page with one spell per school), a plain name otherwise. A cantrip (`Spells/Cantrips/`, `To
