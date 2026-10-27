@@ -49,6 +49,61 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "CL-Crewman.AdjRef",
+        "CL-Crewman2.AdjRef",
+        "CL-Crewman3.AdjRef",
+        "CL-Crewman4.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000279",
+      "loc": "ZoneLocName_227141"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-Crewman.AdjRef",
+        "CL-Crewman2.AdjRef",
+        "CL-Crewman3.AdjRef",
+        "CL-Crewman4.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000279",
+      "loc": "ZoneLocName_227141",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-Crewman.AdjRef",
+        "CL-Crewman2.AdjRef",
+        "CL-Crewman3.AdjRef",
+        "CL-Crewman4.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000279",
+      "loc": "ZoneLocName_227141",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "CL-Crewman.AdjRef",
+        "CL-Crewman2.AdjRef",
+        "CL-Crewman3.AdjRef",
+        "CL-Crewman4.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizardGameObjects_00000279",
+      "loc": "ZoneLocName_227141",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "CL-LAND-NPC06",
       "zone": "Celestia/CL_Z05_The_Floating_Land",
@@ -87,29 +142,10 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Cutting_Crew",
+    "from": "archive",
     "timestamp": "20231124092945"
   },
   "needs_review": [
-    {
-      "field": "goal.persona",
-      "value": "Crew",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona",
-      "value": "Crew",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona",
-      "value": "Crew",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona",
-      "value": "Crew",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

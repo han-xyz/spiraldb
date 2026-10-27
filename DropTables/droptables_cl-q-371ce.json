@@ -1,0 +1,17 @@
+{
+  "Name": "CL-Q-371CE",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 175,
+  "MaxGold": 175,
+  "ExperienceAmount": 7550,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:11:33.321962Z",
+  "ModifiedAt": "2026-10-27T09:11:33.321962Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

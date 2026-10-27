@@ -43,6 +43,16 @@
     {
       "type": "usage",
       "items": [
+        "CL-DIST-C02-002Pedestal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "descriptor": "WizItems_00001671",
+      "loc": "ZoneLocName_1161805"
+    },
+    {
+      "type": "usage",
+      "items": [
         "CL-StarTempleRelic.AdjRef"
       ],
       "count": 1,
@@ -85,6 +95,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Into_the_Stellarium",
+    "from": "archive",
     "timestamp": "20231124092045"
   },
   "needs_review": [
@@ -92,11 +103,6 @@
       "field": "lang",
       "value": "WizQst371CE by the proper nouns its lines share with the page (Astrolabe, Base, Camp, Grand, Star), within 16 of a key of the zone's quests; next best WizQst371BB with 2",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Key on the Stellarium Pedestal",
-      "blocking": true
     },
     {
       "field": "dialogs",
