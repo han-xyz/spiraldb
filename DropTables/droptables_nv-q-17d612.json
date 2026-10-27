@@ -1,0 +1,17 @@
+{
+  "Name": "NV-Q-17D612",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 570,
+  "MaxGold": 570,
+  "ExperienceAmount": 192990,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T05:51:25.350535Z",
+  "ModifiedAt": "2026-10-27T05:51:25.350535Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
