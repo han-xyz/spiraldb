@@ -1,0 +1,49 @@
+{{Quest
+|name={{PAGENAME}}
+|game=''[[Wizard101]]''
+|world=[[Novus]]
+|partof=[[Wizard101#Arc 4|Arc 4]], [[Wallaru#Mainline Quests|Wallaru]]
+|level=
+|type=Mainline Quest
+|activity=
+|repeatable=No
+|release=November 27, 2023
+|prev=[[Heroes of Old]]
+|next=[[The Man on the Moon is the Engineer]] <small>(Instance Quest, returns here)</small><br>[[Moon Magic!]] <small>(Mainline Quest, continues storyline)</small>
+|id=WizQst188A1E<br>WizQst188A11 <small>(unfinished version)</small>
+}}
+"'''{{PAGENAME}}'''" is a Mainline Quest in ''[[Wizard101]]'' and the 77th Mainline Quest for the [[Wallaru]] storyline. It was released on the Live Realm with the rest of the Wallaru expansion on November 27, 2023. The Quest continues from "[[Heroes of Old]]" and leads to the Instance Quest "[[The Man on the Moon is the Engineer]]," which returns here upon completion and leads to "[[Dreams of Nothing]]."
+
+==Quest Goals==
+#Go To [[File:Location Universal.png|28px]] Rocket
+#Use [[File:Quest WL BuckGordonShip.png|28px|Rocket]] Rocket
+#Go To [[File:Location Universal.png|28px]] Doom Moon
+#Talk To [[File:Portrait_Horse_Explorer_A_NPC.png|28px|Stallion Quartermane]] [[Stallion Quartermane]]
+#Go To [[File:Location Universal.png|28px]] Engineering
+#Defeat [[File:Dog NavyOfficer A MOB.png|28px|Mr. Montgomery]] [[Mr. Montgomery]]
+#Talk To [[File:Portrait_Horse_Explorer_A_NPC.png|28px|Stallion Quartermane]] [[Stallion Quartermane]]
+
+==Characters==
+''In order of appearance:''
+*'''[[Maxine Rockhoppierre]]''' <small>(Maxine_Rockhoppierre_NV-PostWL)</small> &mdash; [[Jill C. Holmes]]
+*'''[[Stallion Quartermane]]''' <small>(Stallion_Quartermane_NV-PostWL)</small> &mdash; [[Sam Johnson]]
+
+==Dialogue==
+<center>Previous: "[[Heroes of Old#Dialogue|Heroes of Old]]"</center>
+
+(''Talking to Maxine Rockhoppierre in Conatus, Novus'')
+:[[File:Portrait_Penguin_MaxineF_A_NPC.png|28px|Maxine Rockhoppierre]] {{D|Maxine Rockhoppierre NV-PostWL 003.mp3}} '''[[Maxine Rockhoppierre]]:''' Wizard, the Spiral is for Spiral only. Forget Dasein. How do you even think to fight our terrible weapon? It is way up there. And you are alone.
+:[[File:Portrait_Horse_Explorer_A_NPC.png|28px|Stallion Quartermane]] {{D|Stallion Quartermane NV-PostWL 006.mp3}} '''[[Stallion Quartermane]]:''' Stop right there, fiends!
+:[[File:Dog_Governor_A_NPC.png|28px|Rottingham Weiler]] {{D|Rottingham Weiler NV-PostWL 003.mp3}} '''[[Rottingham Weiler]]:''' Who the blazes-
+
+
+
+
+<center>Dialogue continues in "[[The Man on the Moon is the Engineer#Dialogue|The Man on the Moon is the Engineer]]" and returns here once completed</center>
+
+
+
+<center>Next: "[[Moon Magic!#Dialogue|Moon Magic!]]"</center>
+
+[[Category:Wizard101 Mainline Quests]]
+[[Category:Wizard101 Wallaru Mainline Quests]]

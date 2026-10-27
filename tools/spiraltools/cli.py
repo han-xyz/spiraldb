@@ -6,7 +6,7 @@ import os
 from . import crownshop, templates, zones
 from .lang import ROOTWAD_DIR
 from .pack import PACK, QUEST_SPECS_DIR, duplicate_trigger_names
-from .quests import archive, generate
+from .quests import archive, generate, repository, tracker
 from .quests.spec import check as check_specs
 from .quests.spec import load_specs
 from .wad import GAMEDATA_DIR
@@ -21,6 +21,10 @@ ARCHIVE_MODES = {
     "enumerate": "list the world's quests from the wiki's categories",
     "fetch": "download the listed quest pages into the cache",
     "parse": "write a questgen spec per cached quest page",
+}
+REPOSITORY_MODES = {
+    "fetch": "download the worlds' quest pages from The Repository into the cache",
+    "parse": "write index-repository-<world>.json from the cached pages",
 }
 
 
@@ -42,6 +46,21 @@ def run_quests(args, parser):
 def run_archive(args, parser):
     args.enumerate, args.fetch, args.parse = (args.world if args.mode == mode else None for mode in ARCHIVE_MODES)
     archive.run(args)
+
+
+def run_repository(args, parser):
+    client = repository.Polite()
+    for name in args.worlds:
+        if args.mode == "fetch":
+            repository.fetch_world(client, args.cache, world(name))
+        else:
+            repository.parse_world(args.cache, world(name))
+
+
+def run_tracker(args, parser):
+    client = repository.Polite()
+    for name in args.worlds:
+        tracker.fetch_world(client, args.cache, world(name))
 
 
 def run_check(args, parser):
@@ -114,6 +133,22 @@ def build_parser():
         sub.add_argument("world", help=f"one of {', '.join(w.name for w in WORLDS)}")
         archive.add_cache_argument(sub)
         sub.set_defaults(run=run_archive)
+
+    wiki = commands.add_parser("repository", help=repository.__doc__.splitlines()[0],
+                               description=repository.__doc__)
+    modes = wiki.add_subparsers(dest="mode", required=True)
+    for mode, text in REPOSITORY_MODES.items():
+        sub = modes.add_parser(mode, help=text, description=text)
+        sub.add_argument("worlds", nargs="+", help=f"of {', '.join(w.name for w in WORLDS)}")
+        archive.add_cache_argument(sub)
+        sub.set_defaults(run=run_repository)
+
+    sites = commands.add_parser("tracker", help=tracker.__doc__, description=tracker.__doc__)
+    modes = sites.add_subparsers(dest="mode", required=True)
+    sub = modes.add_parser("fetch", help="download the worlds' quest lists into the cache")
+    sub.add_argument("worlds", nargs="+", help=f"of {', '.join(w.name for w in WORLDS)}")
+    archive.add_cache_argument(sub)
+    sub.set_defaults(run=run_tracker)
 
     sub = commands.add_parser("check", help=run_check.__doc__, description=run_check.__doc__)
     client_arguments(sub)
