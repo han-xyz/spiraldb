@@ -357,8 +357,8 @@ line that names the giver is the Prep line, else the file's first line, listed a
 
 Each spec carries `source` (page, `live` or `archive`, and the timestamp) and `needs_review`: what did not resolve,
 `blocking` or not. A spec with a blocking gap goes to `quest-specs/<world>/blocked/`, where the questgen glob does not
-reach; a waypoint whose place has no zone path is left out and listed. A spec for a lang that a hand-authored spec already covers is written to
-`<cache>/reference-<world>/` instead, and the differences are printed. A rerun replaces the specs it wrote before.
+reach; a waypoint whose place has no zone path is left out and listed. A spec for a lang that a hand-authored spec
+already covers is written to `<cache>/reference-<world>/` instead, and the differences are printed. A rerun replaces the specs it wrote before.
 
 ## mobs and npcs
 
