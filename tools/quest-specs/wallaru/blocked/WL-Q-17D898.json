@@ -94,8 +94,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Krok Hunter",
+      "field": "goal.waypoint",
+      "value": "Locate the Krok Hunter",
       "blocking": true
     },
     {

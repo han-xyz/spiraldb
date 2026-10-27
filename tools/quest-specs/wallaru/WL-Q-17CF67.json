@@ -89,6 +89,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z04_I01_JoanLockeDream"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Frog_Tourist_E_01.AdjRef"
@@ -135,11 +139,6 @@
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Explore the Waters",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Joan Locke's Dream",
       "blocking": false
     },
     {

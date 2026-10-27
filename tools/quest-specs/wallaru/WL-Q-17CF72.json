@@ -85,6 +85,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z04_I02_JudgeVegDream"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Kangaroo_Cabal_A_01.AdjRef"
@@ -121,11 +125,6 @@
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Explore the Waters",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Judge Veg's Dream",
       "blocking": false
     },
     {

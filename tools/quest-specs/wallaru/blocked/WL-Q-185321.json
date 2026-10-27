@@ -88,8 +88,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Metal Detector",
+      "field": "goal.waypoint",
+      "value": "Pass through Metal Detector",
       "blocking": true
     },
     {

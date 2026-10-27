@@ -154,8 +154,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "by the fire",
+      "field": "goal.waypoint",
+      "value": "Rest by the fire (Enter Rage Dream)",
       "blocking": true
     },
     {

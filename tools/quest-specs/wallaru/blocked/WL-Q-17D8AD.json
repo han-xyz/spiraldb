@@ -107,8 +107,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Journey",
+      "field": "goal.waypoint",
+      "value": "Being Journey (in Desperation Dream)",
       "blocking": true
     },
     {

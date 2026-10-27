@@ -164,8 +164,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Wallabies",
+      "field": "goal.persona",
+      "value": "Follow Wallabies",
       "blocking": true
     },
     {

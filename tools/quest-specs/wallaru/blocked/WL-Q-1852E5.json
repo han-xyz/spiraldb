@@ -221,8 +221,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Ned outside the House",
+      "field": "goal.persona",
+      "value": "Follow Ned outside the House",
       "blocking": true
     },
     {

@@ -89,8 +89,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Drovers",
+      "field": "goal.waypoint",
+      "value": "Look for Drovers",
       "blocking": true
     },
     {

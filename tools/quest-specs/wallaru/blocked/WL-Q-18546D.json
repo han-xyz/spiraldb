@@ -181,8 +181,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Play Just ahead",
+      "field": "goal.unknown-verb",
+      "value": "Attend Play Just ahead",
       "blocking": true
     },
     {

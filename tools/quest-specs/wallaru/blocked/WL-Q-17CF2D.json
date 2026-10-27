@@ -144,8 +144,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Freddie to the Next Room",
+      "field": "goal.waypoint",
+      "value": "Follow Freddie to the Next Room",
       "blocking": true
     },
     {
