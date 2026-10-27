@@ -5,7 +5,9 @@
     "persona": "AZ-MANG-NPC03",
     "zone": "Azteca/AZ_Z03_MangroveMarsh"
   },
-  "requires": [],
+  "requires": [
+    "AZ-Q-B1442"
+  ],
   "mainline": true,
   "level": 78,
   "reward": {
@@ -102,12 +104,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Induction Then Destruction replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 78
+  ]
 }

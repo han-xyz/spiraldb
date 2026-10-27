@@ -1,0 +1,17 @@
+{
+  "Name": "AZ-Q-9D0E9",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 850,
+  "MaxGold": 850,
+  "ExperienceAmount": 70930,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:11:33.532166Z",
+  "ModifiedAt": "2026-10-27T09:11:33.532166Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

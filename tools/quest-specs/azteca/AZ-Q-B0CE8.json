@@ -6,7 +6,7 @@
     "zone": "Azteca/AZ_Z02_Cenote"
   },
   "requires": [
-    "AZ-Q-9D0EC"
+    "AZ-Q-9D0EE"
   ],
   "mainline": false,
   "level": 78,
@@ -72,11 +72,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Break Stuff replaced by AZ-Q-9D0EC",
       "blocking": false
     }
   ]

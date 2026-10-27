@@ -6,7 +6,7 @@
     "zone": "Azteca/AZ_Z03_MangroveMarsh"
   },
   "requires": [
-    "AZ-Q-B1445"
+    "AZ-Q-B1446"
   ],
   "mainline": false,
   "level": 78,
@@ -159,11 +159,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Thorn in My Pride replaced by AZ-Q-B1445",
       "blocking": false
     }
   ]

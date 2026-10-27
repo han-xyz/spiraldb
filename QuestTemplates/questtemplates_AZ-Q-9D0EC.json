@@ -273,25 +273,16 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
+        "m_questName": "AZ-Q-9D0EE",
+        "m_applyNOT": true,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
         "m_questName": "AZ-Q-9D12C",
-        "m_applyNOT": true,
-        "m_operator": "ROP_AND"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "Completed",
-        "m_displayName": null,
-        "m_isQuestRegistry": false,
-        "m_questName": "AZ-Q-9D144",
-        "m_applyNOT": true,
-        "m_operator": "ROP_AND"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "Completed",
-        "m_displayName": null,
-        "m_isQuestRegistry": false,
-        "m_questName": "AZ-Q-B0CE8",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

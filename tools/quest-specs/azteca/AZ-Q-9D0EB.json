@@ -6,7 +6,7 @@
     "zone": "Azteca/AZ_Z00_Zocalo"
   },
   "requires": [
-    "AZ-Q-A6CBB"
+    "AZ-Q-9D0E9"
   ],
   "mainline": true,
   "level": 78,
@@ -126,7 +126,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Tall Enough to Meet the Sun replaced by AZ-Q-A6CBB",
+      "value": "Tall Enough to Meet the Sun replaced by AZ-Q-9D0E9",
       "blocking": false
     }
   ]

@@ -61,6 +61,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "AZ-PyramidRubble.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "descriptor": "QuestTitle_00000993",
+      "loc": "ZoneLocName_643242"
+    },
+    {
       "type": "persona",
       "persona": "AZ-CENOTE-NPC01",
       "zone": "Azteca/AZ_Z02_Cenote",
@@ -83,11 +93,6 @@
     "timestamp": "20231125115906"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Explosives on Rubble",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

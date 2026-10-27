@@ -72,6 +72,16 @@
       "loc": "ZoneLocName_643250"
     },
     {
+      "type": "usage",
+      "items": [
+        "AZ-ManaGemstone.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "WizItems_00001895",
+      "loc": "ZoneLocName_643250"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Azteca/AZ_Z00_Zocalo",
@@ -100,11 +110,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Quilla Blood Sky's Hideout",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Gemstone",
-      "blocking": true
     },
     {
       "field": "dialogs",

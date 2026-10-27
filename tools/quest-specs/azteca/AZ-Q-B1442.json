@@ -6,7 +6,6 @@
     "zone": "Azteca/AZ_Z03_MangroveMarsh"
   },
   "requires": [],
-  "min_level": 78,
   "mainline": true,
   "level": 78,
   "reward": {
@@ -50,6 +49,16 @@
       "loc": "ZoneLocName_643245"
     },
     {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Toucan-Warrior-C.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001419",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Azteca/AZ_Z03_MangroveMarsh",
@@ -85,14 +94,15 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Left Talons of the Sky",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "War Means Tears replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 78
 }
