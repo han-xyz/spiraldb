@@ -79,7 +79,7 @@ class ApplyFixesTest(unittest.TestCase):
 
     def test_apply_reveals_on_the_kill_once(self):
         path = self.write(render(quest()).rstrip("\n"))
-        fix = Fix("Goal 1", "m_completeResults", ZONE, ["Akilles"])
+        fix = Fix("Goal 1", "m_completeResults", ZONE, ["Akilles"], True)
         self.assertEqual(apply_fixes(path, [fix]), ["Akilles"])
         first = self.read(path)
         self.assertEqual(apply_fixes(path, [fix]), [])
@@ -90,7 +90,7 @@ class ApplyFixesTest(unittest.TestCase):
     def test_the_akilles_hide_rows_become_reveals_and_stay_so(self):
         with open(AKILLES_FIXTURE, encoding="utf-8") as f:
             path = self.write(f.read())
-        fix = Fix("Goal 1", "m_completeResults", ZONE, ["WC-ST03-AkilliesNPC", "WC-AkillesPet-GreatOne"])
+        fix = Fix("Goal 1", "m_completeResults", ZONE, ["WC-ST03-AkilliesNPC", "WC-AkillesPet-GreatOne"], True)
         self.assertEqual(apply_fixes(path, [fix]), ["WC-ST03-AkilliesNPC", "WC-AkillesPet-GreatOne"])
         first = self.read(path)
         self.assertEqual(apply_fixes(path, [fix]), [])
@@ -98,10 +98,16 @@ class ApplyFixesTest(unittest.TestCase):
         self.assertEqual(self.dynamods(path),
                          [("Goal 1", "m_completeResults", tag, True, False, True, ZONE) for tag in fix.tags])
 
+    def test_reformat_writes_a_trailing_comma_file(self):
+        path = self.write(render(quest()).rstrip()[:-1].rstrip() + ",\n}\n")
+        fix = Fix("Goal 1", "m_completeResults", ZONE, ["Akilles"], True)
+        self.assertEqual(apply_fixes(path, [fix], reformat=True), ["Akilles"])
+        self.assertEqual(self.read(path), render(tolerant_load(path)))
+
     def test_a_trailing_comma_file_that_would_change_is_refused(self):
         path = self.write(render(quest()).rstrip()[:-1].rstrip() + ",\n}\n")
         with self.assertRaises(LayoutError):
-            apply_fixes(path, [Fix("Goal 1", "m_completeResults", ZONE, ["Akilles"])])
+            apply_fixes(path, [Fix("Goal 1", "m_completeResults", ZONE, ["Akilles"], True)])
 
 
 if __name__ == "__main__":

@@ -155,7 +155,7 @@
                   "m_cameraOffsetZ": 148.6737,
                   "m_pitch": 0.2400002,
                   "m_yaw": -1.646388,
-                  "m_roll": -1.745329E-09,
+                  "m_roll": -1.745329e-09,
                   "m_cameraShakeType": "",
                   "m_cameraShakeDuration": 0,
                   "m_cameraShakeAmplitude": 0,
@@ -650,7 +650,7 @@
                   "m_cameraOffsetZ": 173.1444,
                   "m_pitch": 0.1500004,
                   "m_yaw": -1.706388,
-                  "m_roll": 5.235988E-08,
+                  "m_roll": 5.235988e-08,
                   "m_cameraShakeType": "",
                   "m_cameraShakeDuration": 0,
                   "m_cameraShakeAmplitude": 0,
@@ -722,7 +722,7 @@
                   "m_cameraOffsetZ": 147.3151,
                   "m_pitch": 0.2400004,
                   "m_yaw": -1.736388,
-                  "m_roll": 5.235988E-08,
+                  "m_roll": 5.235988e-08,
                   "m_cameraShakeType": "",
                   "m_cameraShakeDuration": 0,
                   "m_cameraShakeAmplitude": 0,
@@ -1176,7 +1176,21 @@
       "m_goalType": "GOAL_TYPE_PERSONA",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
-      "m_activateResults": null,
+      "m_activateResults": {
+        "m_results": [
+          {
+            "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
+            "m_dynaModClientTag": "WC-CATA-NPC16",
+            "m_dynaModRemove": false,
+            "m_useQuestAsOriginator": false,
+            "m_dynaModState": "",
+            "m_zoneName": "WizardCity/WC_Streets/WC_Catacombs",
+            "m_bShowsObject": true,
+            "m_persist": true,
+            "m_requirements": null
+          }
+        ]
+      },
       "m_hideGoalFloatyText": false,
       "m_hideGoal": false,
       "m_requiresMagicWeavingSchool": "",

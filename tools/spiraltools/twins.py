@@ -32,7 +32,7 @@ class LayoutError(Exception):
 PlacedObject = namedtuple("PlacedObject", "tag template_id location undetectable start_state has_requirements")
 Template = namedtuple("Template", "name display_key display_name persona is_npc")
 BountyCase = namedtuple("BountyCase", "goal zone mob_key adjectives")
-Fix = namedtuple("Fix", "goal results zone tags")
+Fix = namedtuple("Fix", "goal results zone tags drops_hides")
 REVEAL_ON_KILL = "m_completeResults"
 
 
@@ -149,10 +149,11 @@ def shown_tags(quest):
             if r.get("$type") == DYNAMOD_TYPE and r.get("m_bShowsObject")}
 
 
-def apply_fixes(path, fixes):
-    """Show each fix's objects from the fix's results list of its goal, skipping tags the quest already shows, and
-    drop the hide-on-entry dynamods of the tags it shows. A file whose layout differs from pack.py's render by more than
-    whitespace (trailing commas, exponent case) raises LayoutError."""
+def apply_fixes(path, fixes, reformat=False):
+    """Show each fix's objects from the fix's results list of its goal, skipping tags the quest already shows; a
+    fix that drops_hides also drops the hide-on-entry dynamods of the tags it shows. A file whose layout differs
+    from pack.py's render by more than whitespace (trailing commas, exponent case) raises LayoutError unless
+    reformat allows rewriting it in that layout."""
     with open(path, encoding="utf-8") as f:
         text = f.read()
     quest = parse_tolerant(text)
@@ -164,14 +165,14 @@ def apply_fixes(path, fixes):
         tags = [tag for tag in fix.tags if tag not in shown]
         if not tags:
             continue
-        for holder in result_lists(quest):
+        for holder in result_lists(quest) if fix.drops_hides else ():
             holder["m_results"] = [r for r in holder["m_results"] if not is_hide(r, tags, fix.zone)]
         results = goals[fix.goal].get(fix.results) or {"m_results": []}
         results["m_results"] = (results.get("m_results") or []) + [reveal(tag, fix.zone) for tag in tags]
         goals[fix.goal][fix.results] = results
         shown.update(tags)
         added += tags
-    if added and not in_layout:
+    if added and not in_layout and not reformat:
         raise LayoutError("not in the pack's JSON layout; edit by hand")
     if added:
         with open(path, "w", encoding="utf-8") as f:
@@ -212,14 +213,14 @@ def run(args):
                              describe(companions, templates), case.goal, verdict,
                              describe(hidden, templates) if not twins else "-"]))
             if verdict == TWIN:
-                fixes.append(Fix(case.goal, REVEAL_ON_KILL, case.zone, [o.tag for o in twins + companions]))
+                fixes.append(Fix(case.goal, REVEAL_ON_KILL, case.zone, [o.tag for o in twins + companions], True))
         if args.apply and fixes:
-            apply_and_print(path, fixes)
+            apply_and_print(path, fixes, args.reformat)
 
 
-def apply_and_print(path, fixes):
+def apply_and_print(path, fixes, reformat):
     try:
-        added = apply_fixes(path, fixes)
+        added = apply_fixes(path, fixes, reformat)
     except LayoutError as error:
         print(f"refused\t{os.path.relpath(path, PACK)}\t{error}")
         return
@@ -246,5 +247,7 @@ def verdict_of(case, objects, twins):
 
 def add_arguments(parser):
     parser.add_argument("--apply", action="store_true", help="write the dynamod results into the quest files")
+    parser.add_argument("--reformat", action="store_true",
+                        help="with --apply, also write files not in pack.py's layout, in that layout")
     parser.add_argument("--rootwad", default=ROOTWAD_DIR, help="the unpacked root wad")
     parser.add_argument("--gamedata", default=GAMEDATA_DIR, help="the client's Data/GameData directory")

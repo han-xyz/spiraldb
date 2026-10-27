@@ -4,7 +4,7 @@ from collections import namedtuple
 from .lang import ROOTWAD_DIR
 from .pack import QUEST_TEMPLATES_DIR, parse_tolerant, quest_template_paths
 from .templates import PERSONA_SUFFIX, persona_templates
-from .twins import DYNAMOD_TYPE, Fix, Templates, apply_and_print, goal_zone, result_lists, zone_objects
+from .twins import DYNAMOD_TYPE, Fix, Templates, apply_and_print, goal_zone, result_lists, reveal, zone_objects
 from .wad import GAMEDATA_DIR
 
 DESCRIPTION = ("List the persona goals whose NPC is placed only hidden (m_bUndetectable) in the goal's zone and that "
@@ -38,12 +38,15 @@ def persona_fix(case, objects, templates, shown_in_pack):
     if any((case.zone, o.tag) in shown_in_pack for o in placements):
         return "shown by a quest", None
     verdict = REVEAL if len(placements) == 1 else REVEAL_SEVERAL
-    return verdict, Fix(case.goal, REVEAL_ON_ACTIVATE, case.zone, [o.tag for o in placements])
+    return verdict, Fix(case.goal, REVEAL_ON_ACTIVATE, case.zone, [o.tag for o in placements], False)
 
 
 def shown_in(quests):
+    """(zone, tag) of the quests' show results, except the reveals this tool writes, so a rerun decides as the
+    first run did."""
     return {(r.get("m_zoneName"), r["m_dynaModClientTag"]) for quest in quests for holder in result_lists(quest)
-            for r in holder["m_results"] if r.get("$type") == DYNAMOD_TYPE and r.get("m_bShowsObject")}
+            for r in holder["m_results"] if r.get("$type") == DYNAMOD_TYPE and r.get("m_bShowsObject")
+            and r != reveal(r["m_dynaModClientTag"], r.get("m_zoneName"))}
 
 
 def run(args):
@@ -75,10 +78,12 @@ def run(args):
             if fix:
                 fixes.append(fix)
         if args.apply and fixes:
-            apply_and_print(path, fixes)
+            apply_and_print(path, fixes, args.reformat)
 
 
 def add_arguments(parser):
     parser.add_argument("--apply", action="store_true", help="write the reveals into the quest files")
+    parser.add_argument("--reformat", action="store_true",
+                        help="with --apply, also write files not in pack.py's layout, in that layout")
     parser.add_argument("--rootwad", default=ROOTWAD_DIR, help="the unpacked root wad")
     parser.add_argument("--gamedata", default=GAMEDATA_DIR, help="the client's Data/GameData directory")

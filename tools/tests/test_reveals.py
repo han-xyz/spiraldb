@@ -4,8 +4,8 @@ import unittest
 
 import client  # noqa: F401
 from spiraltools.pack import render, tolerant_load
-from spiraltools.reveals import persona_cases, persona_fix
-from spiraltools.twins import PlacedObject, Template, apply_fixes
+from spiraltools.reveals import persona_cases, persona_fix, shown_in
+from spiraltools.twins import DYNAMOD_TYPE, PlacedObject, Template, apply_fixes, reveal
 
 ZONE = "WizardCity/WC_Streets/WC_Triton"
 TEMPLATES = {1: Template("WC-TRITON-NPC05", "", "", "WC-TRITON-NPC05_Persona", True),
@@ -47,13 +47,30 @@ class PersonaFixTest(unittest.TestCase):
     def test_only_hidden_placements_are_revealed_on_activate(self):
         objects = [placed("NPC05-B", 2, True), placed("Lamp", 3, True)]
         _, fix = persona_fix(self.case, objects, TEMPLATES, set())
-        self.assertEqual(fix, ("Goal 1", "m_activateResults", ZONE, ["NPC05-B"]))
+        self.assertEqual(fix, ("Goal 1", "m_activateResults", ZONE, ["NPC05-B"], False))
 
     def test_a_placement_another_quest_shows_is_left_to_it(self):
         objects = [placed("NPC05-B", 2, True)]
         verdict, fix = persona_fix(self.case, objects, TEMPLATES, {(ZONE, "NPC05-B")})
         self.assertIsNone(fix)
         self.assertEqual(verdict, "shown by a quest")
+
+    def test_a_reveal_this_tool_wrote_does_not_count_as_shown(self):
+        other = quest()
+        other["m_goals"][1]["m_activateResults"]["m_results"] = [reveal("NPC05-B", ZONE)]
+        self.assertEqual(shown_in([other]), set())
+
+    def test_the_reveal_keeps_the_quest_dynamods_that_name_the_tag(self):
+        q = quest()
+        kept = {"$type": DYNAMOD_TYPE, "m_dynaModClientTag": "NPC05-B", "m_zoneName": ZONE, "m_bShowsObject": False,
+                "m_dynaModState": "", "m_dynaModRemove": False}
+        q["m_goals"][0]["m_completeResults"]["m_results"] = [kept]
+        path = os.path.join(tempfile.mkdtemp(), "questtemplates_Q.json")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(render(q))
+        _, fix = persona_fix(self.case, [placed("NPC05-B", 2, True)], TEMPLATES, set())
+        apply_fixes(path, [fix])
+        self.assertEqual(tolerant_load(path)["m_goals"][0]["m_completeResults"]["m_results"], [kept])
 
     def test_the_reveal_is_written_once(self):
         path = os.path.join(tempfile.mkdtemp(), "questtemplates_Q.json")

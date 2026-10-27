@@ -397,7 +397,8 @@ hide-on-entry pattern for those tags (`m_bShowsObject` false, no state, same zon
 review: `visible match, not hidden` (a stand-in the quest needs before the fight), `several candidates`, `gated by
 start state or requirements`, `no twin, hidden NPCs in the zone` (listed in the last column), `no zone`, `no zone
 wad`. A quest file that differs from `pack.py`'s layout by more than whitespace (trailing commas, `E` in a float) is not
-written; `--apply` prints it as `refused` and goes on.
+written; `--apply` prints it as `refused` and goes on, unless `--reformat` is given: then it is written in
+`pack.py`'s layout (trailing commas dropped, `e` exponents).
 
 ## reveals
 
