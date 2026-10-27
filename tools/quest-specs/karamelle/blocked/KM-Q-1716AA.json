@@ -74,6 +74,27 @@
       "loc": "ZoneLocName_1513103"
     },
     {
+      "type": "usage",
+      "items": [
+        "KM-BLACK-NPC11-B.AdjRef",
+        "KM-BLACK-NPC11-C.AdjRef",
+        "KM-BLACK-NPC11.AdjRef",
+        "KM-GOBB-NPC01.AdjRef",
+        "KM-GOBB-NPC01_B.AdjRef",
+        "KM-GOBB-NPC01_C.AdjRef",
+        "KM-GOBB-NPC01_D.AdjRef",
+        "KM-GOBB-NPC01_E.AdjRef",
+        "KM-KCITY-NPC20.AdjRef",
+        "KM_StandIn_Rosina_01.AdjRef",
+        "KM_StandIn_Rosina_02.AdjRef",
+        "KM_StandIn_Rosina_03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "descriptor": "NPCs_01749055",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Karamelle/KM_Z08_LicoriceForest",
@@ -99,11 +120,6 @@
     {
       "field": "goal.items",
       "value": "in Lake",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "with Rosina in Gobblerton",
       "blocking": true
     },
     {

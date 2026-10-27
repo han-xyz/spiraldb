@@ -61,6 +61,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z00_ProductionJunction"
+    },
+    {
       "type": "persona",
       "persona": "KM-KCITY-NPC07",
       "zone": "Karamelle/KM_Z00_HUB",
@@ -85,11 +89,6 @@
     {
       "field": "lang",
       "value": "WizQst170A83 matched by the words it shares with the goals; its lines name Hans, Samantha, The Jellymancer",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Production Junction",
       "blocking": false
     },
     {

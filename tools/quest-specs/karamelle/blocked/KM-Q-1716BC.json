@@ -130,8 +130,7 @@
   "goals": [
     {
       "type": "waypoint",
-      "zone": "Karamelle/KM_Z08_LicoriceForest",
-      "loc": "ZoneLocName_1513103"
+      "zone": "Karamelle/Interiors/KM_Z08_WitchsTreehouse"
     },
     {
       "type": "persona",

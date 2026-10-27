@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z07_Gutenstadt"
   },
   "requires": [
-    "KM-Q-16FCCA"
+    "KM-Q-16B562"
   ],
   "mainline": true,
   "level": 122,
@@ -89,6 +89,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_CandyBar"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_GutenShoppe"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gnome_Worker_C_01.AdjRef"
@@ -121,23 +129,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Candy Bar",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Guten Shoppe",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Copy Waste-Ya! replaced by KM-Q-16FCCA",
       "blocking": false
     }
   ]

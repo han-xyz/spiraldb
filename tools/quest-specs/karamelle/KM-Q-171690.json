@@ -101,6 +101,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z08_WitchsTreehouse"
+    },
+    {
       "type": "persona",
       "persona": "KM-BLACK-NPC08",
       "zone": "Karamelle/Interiors/KM_Z08_WitchsTreehouse",
@@ -162,11 +166,6 @@
     "timestamp": "20250814082649"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Witch's Treehouse",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

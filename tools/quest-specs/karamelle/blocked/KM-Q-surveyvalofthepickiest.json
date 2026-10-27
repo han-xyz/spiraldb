@@ -17,6 +17,19 @@
     {
       "type": "bounty",
       "mobs": [
+        "KM_Robot_Candy_A_01.AdjRef",
+        "KM_Robot_Candy_A_02.AdjRef",
+        "KM_Robot_Candy_A_03.AdjRef",
+        "KM_Robot_Candy_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003675",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
         "KM_Hamster_Counter_A_04.AdjRef"
       ],
       "count": 1,
@@ -54,11 +67,6 @@
     {
       "field": "goal.items",
       "value": "Tour",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Whatchamagolem (Death)",
       "blocking": true
     },
     {

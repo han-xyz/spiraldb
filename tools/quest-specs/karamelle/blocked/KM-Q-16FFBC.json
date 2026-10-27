@@ -119,9 +119,14 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "for the Burgomaster in Crumbling Mineshaft",
-      "blocking": true
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Crumbling Mineshaft: Karamelle/Interiors/KM_Z06_CrumblingMineshaft",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Crumbling Mineshaft",
+      "blocking": false
     },
     {
       "field": "dialogs",

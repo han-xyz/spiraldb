@@ -51,6 +51,16 @@
       "loc": "ZoneLocName_1513103"
     },
     {
+      "type": "usage",
+      "items": [
+        "KM-StolenGummies.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "descriptor": "WizQst171697_00000005",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Hamster_GrandF_A_01.AdjRef",
@@ -73,11 +83,6 @@
     {
       "field": "giver",
       "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "for Stolen Gummies",
       "blocking": true
     },
     {

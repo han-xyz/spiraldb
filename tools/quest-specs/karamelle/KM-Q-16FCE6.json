@@ -5,7 +5,9 @@
     "persona": "KM-GOBB-NPC01",
     "zone": "Karamelle/KM_Z10_Gobblerton"
   },
-  "requires": [],
+  "requires": [
+    "KM-Q-16FCE5"
+  ],
   "mainline": true,
   "level": 122,
   "reward": {
@@ -189,12 +191,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Gobbsmacked! replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 122
+  ]
 }

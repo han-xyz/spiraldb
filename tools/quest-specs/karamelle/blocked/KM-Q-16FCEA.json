@@ -160,6 +160,12 @@
     },
     {
       "type": "persona",
+      "persona": "KM-GOBB-NPC17",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
       "persona": "KM-GOBB-NPC01",
       "zone": "Karamelle/KM_Z10_Gobblerton",
       "loc": "ZoneLocName_1487147"
@@ -198,11 +204,6 @@
       "field": "lang",
       "value": "WizQst16FCEA matched by the words it shares with the goals; its lines name Grand Nana, Rosina",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Treadmills to Geoff Gobowski",
-      "blocking": true
     },
     {
       "field": "goal.items",

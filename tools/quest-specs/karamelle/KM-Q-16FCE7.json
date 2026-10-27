@@ -105,6 +105,12 @@
       "persona": "giver",
       "zone": "Karamelle/KM_Z10_Gobblerton",
       "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
     }
   ],
   "personas": {
@@ -128,14 +134,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "for Organic Ingredients in Soda Lake Grotto",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "to Rosina",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Soda Lake Grotto",
+      "blocking": false
     },
     {
       "field": "dialogs",

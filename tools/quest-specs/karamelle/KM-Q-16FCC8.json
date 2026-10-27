@@ -143,27 +143,10 @@
       "loc": "ZoneLocName_1506578"
     },
     {
-      "type": "usage",
-      "items": [
-        "KM-BLACK-NPC12-E.AdjRef",
-        "KM-BLACK-NPC12-C.AdjRef",
-        "KM-BLACK-NPC12-D.AdjRef",
-        "KM-BLACK-NPC12-F.AdjRef",
-        "KM-BLACK-NPC12.AdjRef",
-        "KM-ESTATE-NPC10.AdjRef",
-        "KM-KCITY-NPC06.AdjRef",
-        "KM-NIBB-NPC07.AdjRef",
-        "KM_StandIn_Hans-B.AdjRef",
-        "KM_StandIn_Hans-C.AdjRef",
-        "KM_StandIn_Hans-D.AdjRef",
-        "KM_StandIn_Hans-E.AdjRef",
-        "KM_StandIn_Hans.AdjRef",
-        "KM_StandIn_Hans_Sour.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "NPCs_01748997",
-      "loc": "ZoneLocName_1506578"
+      "type": "persona",
+      "persona": "KM-BLACK-NPC12-E",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
     },
     {
       "type": "bounty",
@@ -191,6 +174,10 @@
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
       "template_id": 1513116
     },
+    "KM-BLACK-NPC12-E": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_A_NPC.dds",
+      "template_id": 1513133
+    },
     "KM-ESTATE-NPC08": {
       "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
       "template_id": 1513159
@@ -215,9 +202,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Nibbleheim Mines",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nibbleheim Mines",
+      "blocking": false
     },
     {
       "field": "dialogs",

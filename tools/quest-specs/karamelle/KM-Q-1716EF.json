@@ -91,6 +91,10 @@
       "loc": "ZoneLocName_1510005"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z08_BlackLicoriceCave"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Ram_Sour_B_01.AdjRef"
@@ -99,6 +103,10 @@
       "target": "WizardMobs_00003733",
       "zone": "Karamelle/KM_Z09_CandyCornFarm",
       "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z08_CinnamonTrollCave"
     },
     {
       "type": "bounty",
@@ -140,16 +148,6 @@
     "timestamp": "20240322074526"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Black Licorice Cave",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Cinnamon Troll Cave",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

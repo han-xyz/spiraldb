@@ -85,6 +85,12 @@
   },
   "goals": [
     {
+      "type": "persona",
+      "persona": "KM-FARM-NPC03",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Fairy_FarmhandF_A_01.AdjRef"
@@ -106,6 +112,10 @@
       "portrait": "GUI/NpcPortraits/Fairy_FarmerF_A_NPC.dds",
       "template_id": 1513080
     },
+    "KM-FARM-NPC03": {
+      "portrait": "GUI/NpcPortraits/Fairy_FarmerF_B_NPC.dds",
+      "template_id": 1513207
+    },
     "KM-NIBB-NPC08": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",
       "template_id": 1506493
@@ -124,11 +134,6 @@
     {
       "field": "goal.items",
       "value": "Strange Blight",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Tullah into Cave",
       "blocking": true
     },
     {

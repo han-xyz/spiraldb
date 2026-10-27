@@ -1,7 +1,6 @@
 {
-  "id": "KM-GUM-SIDE-001",
-  "lang": "16FF77",
-  "title": "QuestTitle_00001763",
+  "id": "KM-Q-16FF73",
+  "lang": "16FF73",
   "giver": {
     "persona": "KM-GUM-NPC02",
     "zone": "Karamelle/KM_Z03_GumdropForest"
@@ -9,11 +8,11 @@
   "requires": [
     "KM-Q-16FF70"
   ],
-  "mainline": false,
+  "mainline": true,
   "level": 122,
   "reward": {
-    "xp": 0,
-    "gold": 7950
+    "xp": 105931,
+    "gold": 970
   },
   "dialogs": {
     "prep": [
@@ -35,23 +34,11 @@
       },
       {
         "speaker": "giver",
-        "line": "00000004"
-      },
-      {
-        "speaker": "giver",
         "line": "00000006"
       },
       {
         "speaker": "giver",
-        "line": "00000007"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000008"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000009"
+        "line": "00000010"
       },
       {
         "speaker": "giver",
@@ -68,25 +55,46 @@
       {
         "speaker": "giver",
         "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
       }
     ],
     "underway": []
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z04_GummyPlant"
+    },
+    {
       "type": "bounty",
       "mobs": [
-        "KM_Gnome_Mugger_A_01.AdjRef"
+        "KM_Gummy_Worm_A_01.AdjRef",
+        "KM_Gummy_Worm_A_02.AdjRef",
+        "KM_Gummy_Worm_B_01.AdjRef",
+        "KM_Gummy_Worm_B_02.AdjRef",
+        "KM_Gummy_Worm_C_01.AdjRef",
+        "KM_Gummy_Worm_C_02.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00003729",
+      "target": "WizardMobs_00003663",
       "zone": "Karamelle/KM_Z03_GumdropForest",
       "loc": "ZoneLocName_1507183"
     },
     {
       "type": "persona",
-      "persona": "giver",
-      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "persona": "KM-KCITY-NPC21",
+      "zone": "Karamelle/Interiors/KM_Z00_NanasHQ",
       "loc": "ZoneLocName_1507183"
     }
   ],
@@ -94,22 +102,21 @@
     "KM-GUM-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Gnome_Ranger_A_NPC.dds",
       "template_id": 1507193
+    },
+    "KM-KCITY-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
+      "template_id": 1513270
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Mug_vs._Nature",
-    "timestamp": "20231011001156"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sweetzburg_Right_Ahead!",
+    "timestamp": "20250615161414"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst16FF77, the only free key within 16 of its chain neighbour WizQst16FF70 whose lines name the page's names: Treemugger",
+      "value": "WizQst16FF73 by the proper nouns its lines share with the page (Plant, Sweetzburg, Worms), within 16 of a key of the zone's quests; next best WizQst16FF74 with 2",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "for the Treemugger in Treemugger's Hideout",
-      "blocking": true
     },
     {
       "field": "dialogs",

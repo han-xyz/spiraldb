@@ -37,19 +37,10 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "KM-KCITY-NPC02-B.AdjRef",
-        "KM-KCITY-NPC02-C.AdjRef",
-        "KM-KCITY-NPC02.AdjRef",
-        "KM-NIBB-NPC10.AdjRef",
-        "KM-StandIn-Burgomaster.AdjRef",
-        "KM-StandIn-Burgomaster_02.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "NPCs_01748994",
-      "loc": "ZoneLocName_1506578"
+      "type": "persona",
+      "persona": "KM-KCITY-NPC02-B",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
     },
     {
       "type": "bountycollect",
@@ -80,6 +71,10 @@
     }
   ],
   "personas": {
+    "KM-KCITY-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
+      "template_id": 1510012
+    },
     "KM-MINES-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",
       "template_id": 1506596

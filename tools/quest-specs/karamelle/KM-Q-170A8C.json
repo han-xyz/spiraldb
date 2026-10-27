@@ -1,18 +1,18 @@
 {
-  "id": "KM-Q-17169B",
-  "lang": "17169B",
+  "id": "KM-Q-170A8C",
+  "lang": "170A8C",
   "giver": {
-    "persona": "KM-BLACK-NPC10",
-    "zone": "Karamelle/KM_Z08_LicoriceForest"
+    "persona": "KM-KCITY-NPC01-B",
+    "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
-    "KM-Q-1716BC"
+    "KM-Q-170A86"
   ],
   "mainline": true,
   "level": 122,
   "reward": {
-    "xp": 141242,
-    "gold": 1225
+    "xp": 79448,
+    "gold": 645
   },
   "dialogs": {
     "prep": [
@@ -30,6 +30,10 @@
       },
       {
         "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
         "line": "00000004"
       },
       {
@@ -42,11 +46,7 @@
       },
       {
         "speaker": "giver",
-        "line": "00000007"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000009"
+        "line": "00000008"
       },
       {
         "speaker": "giver",
@@ -70,6 +70,10 @@
       },
       {
         "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
         "line": "00000016"
       },
       {
@@ -86,71 +90,75 @@
       },
       {
         "speaker": "giver",
-        "line": "00000027"
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "Adv_KM_Kangaroo_Cabal_A_01.AdjRef",
-        "KM_Kangaroo_Cabal_A_01.AdjRef"
-      ],
-      "count": 1,
-      "target": "WizardMobs_00003706",
-      "zone": "Karamelle/KM_Z08_LicoriceForest",
-      "loc": "ZoneLocName_1513103"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "KM-Cage-Greta.AdjRef",
-        "KM-Cage-Gustav.AdjRef",
-        "KM-Cage-Hans.AdjRef",
-        "KM-Cage-Rosina.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Karamelle/KM_Z08_LicoriceForest",
-      "descriptor": "NPCs_01749056",
-      "loc": "ZoneLocName_1513103"
-    },
-    {
       "type": "persona",
-      "persona": "KM-BLACK-NPC11-B",
-      "zone": "Karamelle/KM_Z08_LicoriceForest",
-      "loc": "ZoneLocName_1513103"
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
     }
   ],
   "personas": {
-    "KM-BLACK-NPC10": {
+    "KM-KCITY-NPC01-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
-      "template_id": 1513116
-    },
-    "KM-BLACK-NPC11-B": {
-      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
-      "template_id": 1513122
+      "template_id": 1510011
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Screams_in_the_Witch-House",
-    "timestamp": "20250624210359"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Supervillain_Team-Up",
+    "timestamp": "20240322074939"
   },
   "needs_review": [
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Rosina's House",
+      "value": "Nana's Office",
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Outside",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Executive Dining Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Cavity",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Worm Notice replaced by KM-Q-170A86",
       "blocking": false
     }
   ]

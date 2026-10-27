@@ -101,9 +101,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "exploring The Glockenspiel",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue exploring The Glockenspiel",
+      "blocking": false
     },
     {
       "field": "goal.mobs",
@@ -111,9 +111,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "exploring The Glockenspiel",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue exploring The Glockenspiel",
+      "blocking": false
     },
     {
       "field": "dialogs",

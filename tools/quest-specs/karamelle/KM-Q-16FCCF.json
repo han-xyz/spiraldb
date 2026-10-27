@@ -5,8 +5,9 @@
     "persona": "KM-BLACK-NPC01-B",
     "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
   },
-  "requires": [],
-  "min_level": 122,
+  "requires": [
+    "KM-Q-16FCCA"
+  ],
   "mainline": true,
   "level": 122,
   "reward": {
@@ -108,13 +109,18 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "for Enriched Chocolate in Nibbleheim Mines",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nibbleheim Mines",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Proofing is in the Pudding replaced by KM-Q-16FCCA",
       "blocking": false
     }
   ]

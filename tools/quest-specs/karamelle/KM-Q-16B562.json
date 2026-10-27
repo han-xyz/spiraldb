@@ -77,6 +77,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_CupcakeFactory"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Cat_WarriorF_F_01.AdjRef",
@@ -117,13 +121,8 @@
     },
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Cupcake Factory",
+      "value": "Return to outside Cupcake Factory",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "to outside Cupcake Factory",
-      "blocking": true
     },
     {
       "field": "dialogs",

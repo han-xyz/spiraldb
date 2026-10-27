@@ -1,0 +1,155 @@
+{
+  "id": "KM-Q-170A80",
+  "lang": "170A80",
+  "giver": {
+    "persona": "KM-KCITY-NPC04-B",
+    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+  },
+  "requires": [
+    "KM-Q-16B549"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 114759,
+    "gold": 945
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GUM-NPC02",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KM_Marshmallow_Critter_A_01.AdjRef",
+        "KM_Marshmallow_Critter_A_02.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003674",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "descriptor": "WizQst170A80_00000019",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GUM-NPC02",
+      "zone": "Karamelle/KM_Z03_GumdropForest",
+      "loc": "ZoneLocName_1507183"
+    }
+  ],
+  "personas": {
+    "KM-GUM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Ranger_A_NPC.dds",
+      "template_id": 1507193
+    },
+    "KM-KCITY-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Hamster_GrandF_A_NPC.dds",
+      "template_id": 1487274
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sweets-N-Stuff",
+    "timestamp": "20240322062415"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Nana Nana Nana Nana Pet Man! replaced by KM-Q-16B549",
+      "blocking": false
+    }
+  ]
+}

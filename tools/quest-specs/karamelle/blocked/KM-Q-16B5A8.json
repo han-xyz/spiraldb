@@ -77,6 +77,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_RegionalOffice"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gobbler_Fruit_B_01.AdjRef"
@@ -87,12 +91,33 @@
       "loc": "ZoneLocName_1488224"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_RegionalOffice"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gobbler_Fruit_A_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00003696",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_RegionalOffice"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_GrandF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_02.AdjRef",
+        "KM_Hamster_ImperfectF_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003656",
       "zone": "Karamelle/KM_Z07_Gutenstadt",
       "loc": "ZoneLocName_1488224"
     }
@@ -111,26 +136,6 @@
     {
       "field": "giver",
       "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Regional Office",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Regional Office",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Regional Office",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Nana (Shadow)",
       "blocking": true
     },
     {

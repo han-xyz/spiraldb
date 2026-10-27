@@ -47,38 +47,15 @@
       "loc": "ZoneLocName_1510006"
     },
     {
-      "type": "usage",
-      "items": [
-        "KM-Accompany-Maulwurf-ENC.AdjRef",
-        "KM-Accompany-Maulwurf.AdjRef",
-        "KM-BLACK-NPC10.AdjRef",
-        "KM-ESTATE-NPC06-B.AdjRef",
-        "KM-ESTATE-NPC06.AdjRef",
-        "KM-GUTEN-NPC05-C.AdjRef",
-        "KM-GUTEN-NPC05.AdjRef",
-        "KM-KCITY-NPC01-B.AdjRef",
-        "KM-KCITY-NPC01-C.AdjRef",
-        "KM-KCITY-NPC01-D.AdjRef",
-        "KM-KCITY-NPC01-E.AdjRef",
-        "KM-KCITY-NPC01-F.AdjRef",
-        "KM-KCITY-NPC01-G.AdjRef",
-        "KM-KCITY-NPC01-H.AdjRef",
-        "KM-KCITY-NPC01-J.AdjRef",
-        "KM-KCITY-NPC01-K.AdjRef",
-        "KM-KCITY-NPC01.AdjRef",
-        "KM-NIBB-NPC06-B.AdjRef",
-        "KM-NIBB-NPC06.AdjRef",
-        "KM-RCM-NPC01-B.AdjRef",
-        "KM-RCM-NPC01.AdjRef",
-        "KM_StandIn_Maulwurf-B.AdjRef",
-        "KM_StandIn_Maulwurf-C.AdjRef",
-        "KM_StandIn_Maulwurf-D.AdjRef",
-        "KM_StandIn_Maulwurf.AdjRef",
-        "KM_StandIn_Maulwurf_01.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "KM-ESTATE-NPC05",
+      "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC01-B",
       "zone": "Karamelle/KM_Z00_HUB",
-      "descriptor": "NPCs_01748992",
       "loc": "ZoneLocName_1510006"
     },
     {
@@ -89,6 +66,10 @@
     }
   ],
   "personas": {
+    "KM-ESTATE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Lincoln_A_NPC.dds",
+      "template_id": 1487138
+    },
     "KM-KCITY-NPC01-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
       "template_id": 1510011
@@ -115,17 +96,7 @@
     },
     {
       "field": "goal.items",
-      "value": "the Summit",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Old One's hand",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "up to Maulwurf von Trap in Rock Candy Mountains",
+      "value": "Summit",
       "blocking": true
     },
     {

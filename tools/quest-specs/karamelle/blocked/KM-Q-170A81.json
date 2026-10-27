@@ -103,6 +103,11 @@
       "loc": "ZoneLocName_1510006"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z01_VonTrapEstate",
+      "loc": "ZoneLocName_1487130"
+    },
+    {
       "type": "persona",
       "persona": "KM-KCITY-NPC06",
       "zone": "Karamelle/KM_Z00_HUB",
@@ -130,13 +135,8 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "the Explodey Thing",
+      "value": "Explodey Thing",
       "blocking": true
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Von Trap Estate",
-      "blocking": false
     },
     {
       "field": "dialogs",

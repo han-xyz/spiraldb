@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z07_Gutenstadt"
   },
   "requires": [
-    "KM-Q-16B549",
+    "KM-Q-16FCD4",
     "KM-Q-16B5A1"
   ],
   "mainline": false,
@@ -92,7 +92,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Hightails from the Crypt replaced by KM-Q-16B549",
+      "value": "Hightails from the Crypt replaced by KM-Q-16FCD4",
       "blocking": false
     }
   ]

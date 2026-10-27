@@ -19,6 +19,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z05_PumpRoom"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Hamster_Hazmatt_A_01.AdjRef",
@@ -27,6 +31,16 @@
       "count": 1,
       "target": "WizardMobs_00003687",
       "zone": "",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-TreacleVats.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00021912",
       "loc": "ZoneLocName_1506578"
     },
     {
@@ -50,16 +64,6 @@
     {
       "field": "lang",
       "value": "The Proofing is in the Pudding",
-      "blocking": true
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Pump Room",
-      "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Z to Photomance Treacle Vats",
       "blocking": true
     }
   ]

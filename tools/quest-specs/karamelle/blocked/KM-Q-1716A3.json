@@ -65,17 +65,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "KM-BLACK-NPC18.AdjRef",
-        "KM-ESTATE-NPC04.AdjRef",
-        "KM-KCITY-NPC19.AdjRef",
-        "KM_StandIn_JudgeVeg-B.AdjRef",
-        "KM_StandIn_JudgeVeg.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Karamelle/KM_Z08_LicoriceForest",
-      "descriptor": "NPCs_01749058",
+      "type": "persona",
+      "persona": "KM-BLACK-NPC18",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
       "loc": "ZoneLocName_1513103"
     },
     {
@@ -144,7 +136,12 @@
       "loc": "ZoneLocName_1513103"
     }
   ],
-  "personas": {},
+  "personas": {
+    "KM-BLACK-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_A_NPC.dds",
+      "template_id": 1487326
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Kangaroo's_Court",
     "timestamp": "20250624210341"

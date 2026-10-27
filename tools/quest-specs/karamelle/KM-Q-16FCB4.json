@@ -1,18 +1,18 @@
 {
-  "id": "KM-Q-1716B5",
-  "lang": "1716B5",
+  "id": "KM-Q-16FCB4",
+  "lang": "16FCB4",
   "giver": {
-    "persona": "KM-FARM-NPC01-B",
-    "zone": "Karamelle/KM_Z09_CandyCornFarm"
+    "persona": "KM-ESTATE-NPC08",
+    "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02"
   },
   "requires": [
-    "KM-Q-17168E"
+    "KM-Q-16FCAE"
   ],
   "mainline": true,
   "level": 122,
   "reward": {
-    "xp": 123587,
-    "gold": 1015
+    "xp": 105931,
+    "gold": 970
   },
   "dialogs": {
     "prep": [
@@ -50,11 +50,15 @@
       },
       {
         "speaker": "giver",
-        "line": "00000008"
+        "line": "00000009"
       },
       {
         "speaker": "giver",
         "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
       },
       {
         "speaker": "giver",
@@ -78,14 +82,6 @@
       },
       {
         "speaker": "giver",
-        "line": "00000017"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000018"
-      },
-      {
-        "speaker": "giver",
         "line": "00000019"
       }
     ],
@@ -93,47 +89,54 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z05_ToffeeHouse"
+    },
+    {
       "type": "bounty",
       "mobs": [
-        "KM_Hamster_Wonky_A_01.AdjRef"
+        "KM_Player_Cabal_A_01.AdjRef",
+        "KM_Player_Cabal_A_02.AdjRef",
+        "KM_Player_Cabal_A_03.AdjRef",
+        "KM_Player_Cabal_A_04.AdjRef",
+        "KM_Player_Cabal_A_05.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00003703",
-      "zone": "Karamelle/KM_Z09_CandyCornFarm",
-      "loc": "ZoneLocName_1510005"
+      "target": "WizardMobs_00003671",
+      "zone": "",
+      "loc": "ZoneLocName_1506578"
     },
     {
       "type": "persona",
-      "persona": "giver",
-      "zone": "Karamelle/KM_Z09_CandyCornFarm",
-      "loc": "ZoneLocName_1510005"
+      "persona": "KM-BLACK-NPC10",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
     }
   ],
   "personas": {
-    "KM-FARM-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513095
+    "KM-BLACK-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1513116
+    },
+    "KM-ESTATE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1513159
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Something_Wonky_This_Way_Comes",
-    "timestamp": "20240118173359"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Foundry_Most_Foul",
+    "timestamp": "20250907195152"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst1716B5 matched by the words it shares with the goals; its lines name Wilhelm Wonky",
+      "value": "WizQst16FCB4 matched by the words it shares with the goals; its lines name Maulwurf von Trap",
       "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Farmer's House Branch",
+      "value": "Search for a Way into the Mines",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Z to Photomance SCRUM Board",
-      "blocking": true
     },
     {
       "field": "dialogs",

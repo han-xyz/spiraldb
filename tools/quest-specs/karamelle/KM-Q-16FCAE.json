@@ -1,18 +1,18 @@
 {
-  "id": "KM-Q-16FCD0",
-  "lang": "16FCD0",
+  "id": "KM-Q-16FCAE",
+  "lang": "16FCAE",
   "giver": {
     "persona": "KM-BLACK-NPC01-B",
     "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
   },
   "requires": [
-    "KM-Q-16FCCF"
+    "KM-GUM-MAIN-003"
   ],
   "mainline": true,
   "level": 122,
   "reward": {
-    "xp": 114759,
-    "gold": 965
+    "xp": 150069,
+    "gold": 1355
   },
   "dialogs": {
     "prep": [
@@ -62,6 +62,10 @@
       },
       {
         "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
         "line": "00000012"
       },
       {
@@ -86,39 +90,55 @@
       },
       {
         "speaker": "giver",
-        "line": "00000018"
-      }
-    ],
-    "underway": [
+        "line": "00000019"
+      },
       {
         "speaker": "giver",
-        "line": "00000011"
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
       }
-    ]
+    ],
+    "underway": []
   },
   "goals": [
     {
-      "type": "persona",
-      "persona": "giver",
-      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
-      "loc": "ZoneLocName_1506578"
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z05_ChocShoppe"
     },
     {
       "type": "bounty",
       "mobs": [
-        "KM_Brudel_Apple_B_01.AdjRef",
-        "KM_Brudel_Apple_B_02.AdjRef"
+        "KM_Mole_Thief_A_01.AdjRef"
       ],
-      "count": 3,
-      "target": "WizardMobs_00003688",
+      "count": 1,
+      "target": "WizardMobs_00003678",
       "zone": "",
       "loc": "ZoneLocName_1506578"
     },
     {
       "type": "persona",
-      "persona": "KM-GUTEN-NPC01-B",
-      "zone": "Karamelle/KM_Z07_Gutenstadt",
-      "loc": "ZoneLocName_1488224"
+      "persona": "KM-NIBB-NPC02-B",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z05_TreacleFoundry"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-ESTATE-NPC08",
+      "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02",
+      "loc": "ZoneLocName_1506578",
+      "completion": [
+        {
+          "speaker": "KM-ESTATE-NPC08",
+          "line": "00000018"
+        }
+      ]
     }
   ],
   "personas": {
@@ -126,29 +146,43 @@
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
       "template_id": 1513114
     },
-    "KM-GUTEN-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Factory_B_NPC.dds",
-      "template_id": 1506595
+    "KM-ESTATE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1513159
+    },
+    "KM-NIBB-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Shopkeep_A_NPC.dds",
+      "template_id": 1506767
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Under_the_Candy_Coating",
-    "timestamp": "20250623220533"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Trouble_with_Nibbles",
+    "timestamp": "20240322064104"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst16FCD0 by the proper nouns its lines share with the page (Gutenstadt, Trolly), within 16 of a key of the zone's quests; next best WizQst16FCD9 with 1",
+      "value": "WizQst16FCAE matched by the words it shares with the goals; its lines name Nibbelung Thief, Olga",
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Trolly to Gutenstadt",
-      "blocking": true
+      "field": "requires",
+      "value": "Nibbleheim Stinks!",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nibbleheim Mines",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Nibbleheim Stinks! replaced by KM-GUM-MAIN-003",
       "blocking": false
     }
   ]

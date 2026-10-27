@@ -104,6 +104,11 @@
       "loc": "ZoneLocName_1510006"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
       "type": "persona",
       "persona": "KM-KCITY-NPC08",
       "zone": "Karamelle/KM_Z00_HUB",
@@ -128,11 +133,6 @@
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Gingerbread Room Academy",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to City Square in Karamelle City",
       "blocking": false
     },
     {

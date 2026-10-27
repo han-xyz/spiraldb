@@ -63,7 +63,6 @@
     {
       "type": "bounty",
       "mobs": [
-        "DM-GRAVE-NPC45A.AdjRef",
         "NV_Chicken_Miner_A_01.AdjRef"
       ],
       "count": 1,
@@ -97,11 +96,6 @@
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Les Bon-Bon Mots",
-      "blocking": false
-    },
-    {
-      "field": "goal.mobs (other folder)",
-      "value": "The Quake Charmer: ObjectData/DM",
       "blocking": false
     },
     {

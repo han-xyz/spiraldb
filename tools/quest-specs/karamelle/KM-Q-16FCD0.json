@@ -1,18 +1,18 @@
 {
-  "id": "KM-Q-170A80",
-  "lang": "170A80",
+  "id": "KM-Q-16FCD0",
+  "lang": "16FCD0",
   "giver": {
-    "persona": "KM-KCITY-NPC04-B",
-    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+    "persona": "KM-BLACK-NPC01-B",
+    "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
   },
   "requires": [
-    "KM-Q-170A7D"
+    "KM-Q-16FCCF"
   ],
   "mainline": true,
   "level": 122,
   "reward": {
     "xp": 114759,
-    "gold": 945
+    "gold": 965
   },
   "dialogs": {
     "prep": [
@@ -62,10 +62,6 @@
       },
       {
         "speaker": "giver",
-        "line": "00000011"
-      },
-      {
-        "speaker": "giver",
         "line": "00000012"
       },
       {
@@ -93,53 +89,62 @@
         "line": "00000018"
       }
     ],
-    "underway": []
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ]
   },
   "goals": [
     {
       "type": "persona",
-      "persona": "KM-GUM-NPC02",
-      "zone": "Karamelle/KM_Z03_GumdropForest",
-      "loc": "ZoneLocName_1507183"
+      "persona": "giver",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "loc": "ZoneLocName_1506578"
     },
     {
-      "type": "bountycollect",
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    },
+    {
+      "type": "bounty",
       "mobs": [
-        "KM_Marshmallow_Critter_A_01.AdjRef",
-        "KM_Marshmallow_Critter_A_02.AdjRef"
+        "KM_Brudel_Apple_B_01.AdjRef",
+        "KM_Brudel_Apple_B_02.AdjRef"
       ],
       "count": 3,
-      "target": "WizardMobs_00003674",
-      "zone": "Karamelle/KM_Z00_HUB",
-      "descriptor": "WizQst170A80_00000019",
-      "loc": "ZoneLocName_1510006"
+      "target": "WizardMobs_00003688",
+      "zone": "",
+      "loc": "ZoneLocName_1506578"
     },
     {
       "type": "persona",
-      "persona": "KM-GUM-NPC02",
-      "zone": "Karamelle/KM_Z03_GumdropForest",
-      "loc": "ZoneLocName_1507183"
+      "persona": "KM-GUTEN-NPC01-B",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
     }
   ],
   "personas": {
-    "KM-GUM-NPC02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Ranger_A_NPC.dds",
-      "template_id": 1507193
+    "KM-BLACK-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513114
     },
-    "KM-KCITY-NPC04-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Hamster_GrandF_A_NPC.dds",
-      "template_id": 1487274
+    "KM-GUTEN-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Factory_B_NPC.dds",
+      "template_id": 1506595
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Sweets-N-Stuff",
-    "timestamp": "20240322062415"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Under_the_Candy_Coating",
+    "timestamp": "20250623220533"
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "for witches in Gumdrop Forest",
-      "blocking": true
+      "field": "lang",
+      "value": "WizQst16FCD0 by the proper nouns its lines share with the page (Gutenstadt, Trolly), within 16 of a key of the zone's quests; next best WizQst16FCD9 with 1",
+      "blocking": false
     },
     {
       "field": "dialogs",

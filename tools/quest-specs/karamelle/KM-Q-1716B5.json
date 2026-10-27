@@ -1,18 +1,18 @@
 {
-  "id": "KM-Q-170A8C",
-  "lang": "170A8C",
+  "id": "KM-Q-1716B5",
+  "lang": "1716B5",
   "giver": {
-    "persona": "KM-KCITY-NPC01-B",
-    "zone": "Karamelle/KM_Z00_HUB"
+    "persona": "KM-FARM-NPC01-B",
+    "zone": "Karamelle/KM_Z09_CandyCornFarm"
   },
   "requires": [
-    "KM-Q-170A8A"
+    "KM-Q-171686"
   ],
   "mainline": true,
   "level": 122,
   "reward": {
-    "xp": 79448,
-    "gold": 645
+    "xp": 123587,
+    "gold": 1015
   },
   "dialogs": {
     "prep": [
@@ -46,15 +46,15 @@
       },
       {
         "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
         "line": "00000008"
       },
       {
         "speaker": "giver",
         "line": "00000010"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000011"
       },
       {
         "speaker": "giver",
@@ -87,78 +87,67 @@
       {
         "speaker": "giver",
         "line": "00000019"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000020"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000021"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000028"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000029"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000032"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "KM-Cavity-GummyPlant.AdjRef"
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_Wonky_A_01.AdjRef"
       ],
       "count": 1,
-      "zone": "Karamelle/KM_Z00_HUB",
-      "descriptor": "Items_00021784",
-      "loc": "ZoneLocName_1510006"
+      "target": "WizardMobs_00003703",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-SCRUM-Board.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "descriptor": "Items_00022417",
+      "loc": "ZoneLocName_1510005"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Karamelle/KM_Z00_HUB",
-      "loc": "ZoneLocName_1510006",
-      "completion": [
-        {
-          "speaker": "giver",
-          "line": "00000009"
-        }
-      ]
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
     }
   ],
   "personas": {
-    "KM-KCITY-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
-      "template_id": 1510011
+    "KM-FARM-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513095
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Supervillain_Team-Up",
-    "timestamp": "20240322074939"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Something_Wonky_This_Way_Comes",
+    "timestamp": "20240118173359"
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Nana's Office",
+      "field": "lang",
+      "value": "WizQst1716B5 matched by the words it shares with the goals; its lines name Wilhelm Wonky",
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Executive Dining Room",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Farmer's House Branch",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Words of Power replaced by KM-Q-171686",
       "blocking": false
     }
   ]

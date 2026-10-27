@@ -5,8 +5,9 @@
     "persona": "KM-KCITY-NPC02-B",
     "zone": "Karamelle/KM_Z00_HUB"
   },
-  "requires": [],
-  "min_level": 122,
+  "requires": [
+    "KM-Q-16B549"
+  ],
   "mainline": false,
   "level": 122,
   "reward": {
@@ -56,6 +57,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z05_PipeJunction"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_StandIn_CinnamonTroll_01.AdjRef",
@@ -101,17 +106,17 @@
     },
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Pipe Junction",
+      "value": "Return to Former Burgomaster",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "to Former Burgomaster",
-      "blocking": true
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "My Stars and Gobblers! replaced by KM-Q-16B549",
       "blocking": false
     }
   ]

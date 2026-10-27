@@ -75,6 +75,10 @@
       "loc": "ZoneLocName_1510005"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z09_HotHouse"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_GobblerSkinny_StandIn.AdjRef",
@@ -114,11 +118,6 @@
     {
       "field": "lang",
       "value": "WizQst171686, the only free key within 16 of its chain neighbour WizQst171684 whose lines name the page's names: Farmer Esther",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Hot House",
       "blocking": false
     },
     {

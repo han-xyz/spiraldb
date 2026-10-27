@@ -135,15 +135,9 @@
       "loc": "ZoneLocName_1506597"
     },
     {
-      "type": "usage",
-      "items": [
-        "KM-ESTATE-NPC08.AdjRef",
-        "KM-KCITY-NPC22.AdjRef",
-        "KM-NIBB-NPC04.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "NPCs_01749064",
+      "type": "persona",
+      "persona": "KM-ESTATE-NPC08",
+      "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02",
       "loc": "ZoneLocName_1506597"
     },
     {
@@ -157,6 +151,10 @@
     "KM-BLACK-NPC01-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
       "template_id": 1513114
+    },
+    "KM-ESTATE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1513159
     }
   },
   "source": {
@@ -175,9 +173,14 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "for Witches in Witch Tunnel",
-      "blocking": true
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Witch Tunnel: Karamelle/Interiors/KM_Z06_WitchTunnel",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Witch Tunnel",
+      "blocking": false
     },
     {
       "field": "goal.items",

@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z03_GumdropForest"
   },
   "requires": [
-    "KM-Q-16B549"
+    "KM-Q-170A80"
   ],
   "mainline": true,
   "level": 122,
@@ -96,17 +96,12 @@
     },
     {
       "field": "goal.descriptor",
-      "value": "the Gobblers in Hangry Gobbler Cave",
+      "value": "Gobblers in Hangry Gobbler Cave",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Sweets-N-Stuff replaced by KM-Q-16B549",
       "blocking": false
     }
   ]

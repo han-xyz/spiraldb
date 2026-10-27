@@ -85,6 +85,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "KM-GummyVat.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "descriptor": "Items_00022224",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gummy_BearHat_A_01.AdjRef",
@@ -119,18 +129,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Z to Photomance Gummy Vats",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Barn Division",
       "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "Z to Photomance Molds",
+      "value": "Molds",
       "blocking": true
     },
     {

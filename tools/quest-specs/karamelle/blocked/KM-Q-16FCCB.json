@@ -112,6 +112,12 @@
       "loc": "ZoneLocName_1513103"
     },
     {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC01-B",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "KM_Gummy_Bunny_A_01.AdjRef",
@@ -160,12 +166,7 @@
     },
     {
       "field": "goal.items",
-      "value": "for Treacle Recipe",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Up With Greta in Nibbleheim Mines",
+      "value": "Treacle Recipe",
       "blocking": true
     },
     {

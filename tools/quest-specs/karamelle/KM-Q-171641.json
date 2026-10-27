@@ -65,6 +65,10 @@
       "loc": "ZoneLocName_1510005"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z04_GummyPlant"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Brudel_Toasted_A_01.AdjRef"
@@ -100,11 +104,6 @@
     "timestamp": "20240322074115"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Gummy Plant",
-      "blocking": false
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Candy Corn Silo",

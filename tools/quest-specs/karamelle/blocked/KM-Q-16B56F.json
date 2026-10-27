@@ -129,6 +129,10 @@
       "loc": "ZoneLocName_1488224"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_RegionalOffice"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Hamster_GrandF_A_01.AdjRef",
@@ -173,11 +177,6 @@
       "field": "goal.items",
       "value": "Mysterious Fanfare",
       "blocking": true
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Regional Office",
-      "blocking": false
     },
     {
       "field": "dialogs",

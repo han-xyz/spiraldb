@@ -6,7 +6,6 @@
     "zone": "Karamelle/KM_Z10_Gobblerton"
   },
   "requires": [],
-  "min_level": 122,
   "mainline": true,
   "level": 122,
   "reward": {
@@ -132,6 +131,12 @@
   },
   "goals": [
     {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC09",
+      "zone": "Karamelle/Interiors/KM_Z10_ThroneRoom_A",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "Adv_KM_Trash_Booger_A_01.AdjRef",
@@ -174,6 +179,10 @@
     "KM-GOBB-NPC01": {
       "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
       "template_id": 1487149
+    },
+    "KM-GOBB-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_King_D_NPC.dds",
+      "template_id": 1506523
     }
   },
   "source": {
@@ -192,24 +201,25 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "to Castle Gobbsmack",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Return to Castle Gobbsmack",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "audience with King Gobbsmack in Castle Gobbsmack Throne Room",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Hoard for Alphoi Relics",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search Hoard for Alphoi Relics",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Mmmmm, Knowledge replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 122
 }

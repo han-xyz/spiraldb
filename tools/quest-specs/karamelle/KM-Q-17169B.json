@@ -1,18 +1,18 @@
 {
-  "id": "KM-Q-16FCB4",
-  "lang": "16FCB4",
+  "id": "KM-Q-17169B",
+  "lang": "17169B",
   "giver": {
-    "persona": "KM-ESTATE-NPC08",
-    "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02"
+    "persona": "KM-BLACK-NPC10",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
   },
   "requires": [
-    "KM-Q-16FCAE"
+    "KM-Q-1716B5"
   ],
   "mainline": true,
   "level": 122,
   "reward": {
-    "xp": 105931,
-    "gold": 970
+    "xp": 141242,
+    "gold": 1225
   },
   "dialogs": {
     "prep": [
@@ -27,10 +27,6 @@
       {
         "speaker": "giver",
         "line": "00000002"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000003"
       },
       {
         "speaker": "giver",
@@ -74,37 +70,59 @@
       },
       {
         "speaker": "giver",
-        "line": "00000015"
-      },
-      {
-        "speaker": "giver",
         "line": "00000016"
       },
       {
         "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
         "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
       }
     ],
     "underway": []
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
+    },
+    {
       "type": "bounty",
       "mobs": [
-        "KM_Player_Cabal_A_01.AdjRef",
-        "KM_Player_Cabal_A_02.AdjRef",
-        "KM_Player_Cabal_A_03.AdjRef",
-        "KM_Player_Cabal_A_04.AdjRef",
-        "KM_Player_Cabal_A_05.AdjRef"
+        "Adv_KM_Kangaroo_Cabal_A_01.AdjRef",
+        "KM_Kangaroo_Cabal_A_01.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00003671",
-      "zone": "",
-      "loc": "ZoneLocName_1506578"
+      "target": "WizardMobs_00003706",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-Cage-Greta.AdjRef",
+        "KM-Cage-Gustav.AdjRef",
+        "KM-Cage-Hans.AdjRef",
+        "KM-Cage-Rosina.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "descriptor": "NPCs_01749056",
+      "loc": "ZoneLocName_1513103"
     },
     {
       "type": "persona",
-      "persona": "KM-BLACK-NPC10",
+      "persona": "KM-BLACK-NPC11-B",
       "zone": "Karamelle/KM_Z08_LicoriceForest",
       "loc": "ZoneLocName_1513103"
     }
@@ -114,34 +132,29 @@
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
       "template_id": 1513116
     },
-    "KM-ESTATE-NPC08": {
-      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
-      "template_id": 1513159
+    "KM-BLACK-NPC11-B": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1513122
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Foundry_Most_Foul",
-    "timestamp": "20250907195152"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Screams_in_the_Witch-House",
+    "timestamp": "20250624210359"
   },
   "needs_review": [
     {
-      "field": "lang",
-      "value": "WizQst16FCB4 matched by the words it shares with the goals; its lines name Maulwurf von Trap",
-      "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "for a Way into the Mines",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
-      "value": "Toffee House",
+      "value": "Return Outside",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Witch in the Woods replaced by KM-Q-1716B5",
       "blocking": false
     }
   ]

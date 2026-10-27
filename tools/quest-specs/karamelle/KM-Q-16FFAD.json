@@ -161,9 +161,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "to Main Mines",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Return to Main Mines",
+      "blocking": false
     },
     {
       "field": "dialogs",

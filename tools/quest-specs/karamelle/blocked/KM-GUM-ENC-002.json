@@ -103,19 +103,19 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Through",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Venture Through",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Further",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Head Further",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Further",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Head Further",
+      "blocking": false
     },
     {
       "field": "dialogs",

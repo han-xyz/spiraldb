@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z10_Gobblerton"
   },
   "requires": [
-    "KM-Q-16FCE6"
+    "KM-Q-16FCE7"
   ],
   "mainline": true,
   "level": 122,
@@ -174,11 +174,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Good Kind of Crop Dusting replaced by KM-Q-16FCE6",
       "blocking": false
     }
   ]

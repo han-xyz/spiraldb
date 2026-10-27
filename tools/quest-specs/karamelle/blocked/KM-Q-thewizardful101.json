@@ -46,7 +46,7 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.persona",
       "value": "Uwe's Workshop",
       "blocking": true
     }

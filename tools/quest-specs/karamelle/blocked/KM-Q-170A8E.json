@@ -85,19 +85,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "KM-KCITY-NPC04-B.AdjRef",
-        "KM-KCITY-NPC04-C.AdjRef",
-        "KM-KCITY-NPC04-D.AdjRef",
-        "KM-KCITY-NPC04.AdjRef",
-        "KM_StandIn_GrandNana-B.AdjRef",
-        "KM_StandIn_GrandNana-C.AdjRef",
-        "KM_StandIn_GrandNana.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Karamelle/KM_Z00_HUB",
-      "descriptor": "NPCs_01748996",
+      "type": "persona",
+      "persona": "KM-KCITY-NPC04-B",
+      "zone": "Karamelle/Interiors/KM_Z00_NanasHQ",
       "loc": "ZoneLocName_1510006"
     },
     {
@@ -111,6 +101,10 @@
     "KM-KCITY-NPC01-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
       "template_id": 1510011
+    },
+    "KM-KCITY-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Hamster_GrandF_A_NPC.dds",
+      "template_id": 1487274
     },
     "KM-KCITY-NPC08": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",

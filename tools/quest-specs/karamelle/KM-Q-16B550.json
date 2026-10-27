@@ -6,7 +6,7 @@
     "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
   },
   "requires": [
-    "KM-Q-16FF70"
+    "KM-Q-16FF73"
   ],
   "mainline": true,
   "level": 122,
@@ -65,6 +65,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z04_PowerRoom"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gummy_Bear_Uber_A_02.AdjRef"
@@ -103,18 +107,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Power Room",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Sweetzburg Right Ahead! replaced by KM-Q-16FF70",
       "blocking": false
     }
   ]

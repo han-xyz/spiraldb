@@ -118,6 +118,11 @@
   },
   "needs_review": [
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Ratings Board: Karamelle/Interiors/KM_Z00_RatingsBoard",
+      "blocking": false
+    },
+    {
       "field": "goal.zone (waypoint left out)",
       "value": "Ratings Board",
       "blocking": false

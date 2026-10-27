@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
-    "KM-Q-170A86"
+    "KM-Q-170A8C"
   ],
   "mainline": true,
   "level": 122,
@@ -86,8 +86,8 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "AR-ARC-NPC04-B",
-      "zone": "Arcanum/Interiors/AR_Z01_I01_DryDock",
+      "persona": "AR_StandIn_Ione",
+      "zone": "Arcanum/AR_Z01_Hub",
       "loc": "ZoneLocName_1510006"
     },
     {
@@ -104,9 +104,9 @@
     }
   ],
   "personas": {
-    "AR-ARC-NPC04-B": {
+    "AR_StandIn_Ione": {
       "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
-      "template_id": 1254305
+      "template_id": 1401051
     },
     "EM-HUSK-NPC01-A": {
       "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",
@@ -124,7 +124,7 @@
   "needs_review": [
     {
       "field": "goal.persona (other world)",
-      "value": "Ione Virga: AR-ARC-NPC04-B from ObjectData/AR",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
       "blocking": false
     },
     {
@@ -139,7 +139,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "The Ultimate Mystery replaced by KM-Q-170A86",
+      "value": "The Ultimate Mystery replaced by KM-Q-170A8C",
       "blocking": false
     }
   ]

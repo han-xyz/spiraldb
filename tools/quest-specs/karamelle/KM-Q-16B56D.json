@@ -105,6 +105,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_CandyBar"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gnome_Witch_A_01.AdjRef"
@@ -142,11 +146,6 @@
     "timestamp": "20240322074227"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Candy Bar",
-      "blocking": false
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Candy Bar Back Room",
