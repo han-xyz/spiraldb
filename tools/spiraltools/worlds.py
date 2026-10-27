@@ -17,6 +17,7 @@ class World(NamedTuple):
     wiki: str
     level: int
     lang_range: tuple = None
+    object_folder: str = None
 
     @property
     def category(self):
@@ -24,8 +25,8 @@ class World(NamedTuple):
 
     @property
     def folder(self):
-        """The ObjectData folder of the world's templates."""
-        return self.prefix
+        """The ObjectData folder of the world's templates; the quest prefix unless the world names another."""
+        return self.object_folder or self.prefix
 
 
 # name: the zone wad prefix (Celestia-*.wad); prefix: the quest names (CL-CAMP-C01-001) and the ObjectData folder.
@@ -50,6 +51,11 @@ WORLDS = (
     World("Lemuria", "LM", "Lemuria", 132),
     World("Novus", "NV", "Novus", 142),
     World("Wallaru", "WL", "Wallaru", 152),
+    # The side worlds: their quests sit beside the main line at these levels.
+    World("Wysteria", "PA", "Wysteria", 25, None, "Wysteria"),
+    World("Aquila", "AQ", "Aquila", 30, (0x19BE0D, 0x19BEF2)),
+    World("Darkmoor", "DM", "Darkmoor", 100),
+    World("Arcanum", "AR", "Arcanum", 100),
 )
 
 
