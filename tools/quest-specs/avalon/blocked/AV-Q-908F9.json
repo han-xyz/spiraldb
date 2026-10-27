@@ -71,8 +71,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Root of Mother Oak",
+      "field": "goal.usage",
+      "value": "Use Root of Mother Oak",
       "blocking": true
     },
     {

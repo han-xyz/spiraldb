@@ -68,8 +68,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Unlit Lanterns",
+      "field": "goal.usage",
+      "value": "Use 6 Unlit Lanterns",
       "blocking": true
     },
     {

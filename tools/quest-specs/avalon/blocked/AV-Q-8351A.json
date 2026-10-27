@@ -171,8 +171,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Cell Door",
+      "field": "goal.usage",
+      "value": "Open Cell Door",
       "blocking": true
     },
     {

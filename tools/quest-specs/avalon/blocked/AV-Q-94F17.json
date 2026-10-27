@@ -170,8 +170,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Zarathax Essence in Zarathax's Tower",
+      "field": "goal.unknown-verb",
+      "value": "Extract Zarathax Essence in Zarathax's Tower",
       "blocking": true
     },
     {

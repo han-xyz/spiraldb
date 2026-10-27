@@ -87,8 +87,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Tapestry Plaque",
+      "field": "goal.usage",
+      "value": "Read the Tapestry Plaque",
       "blocking": true
     },
     {

@@ -73,8 +73,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Well of Annwn",
+      "field": "goal.usage",
+      "value": "Use Well of Annwn",
       "blocking": true
     },
     {

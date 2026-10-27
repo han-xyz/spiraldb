@@ -249,8 +249,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "King's Cure (in the Keep of Ganelon}",
+      "field": "goal.usage",
+      "value": "Use the King's Cure (in the Keep of Ganelon}",
       "blocking": true
     },
     {

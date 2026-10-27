@@ -58,8 +58,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Gulag Guard in Urville Station",
+      "field": "goal.unknown-verb",
+      "value": "Extract 3 Gulag Guard in Urville Station",
       "blocking": true
     },
     {

@@ -80,8 +80,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Broken Tower",
+      "field": "goal.waypoint",
+      "value": "Locate Broken Tower",
       "blocking": true
     },
     {

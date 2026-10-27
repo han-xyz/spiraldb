@@ -78,8 +78,11 @@
   "goals": [
     {
       "type": "waypoint",
-      "zone": "Avalon/AV_Z02_HighRoad",
-      "loc": "ZoneLocName_537904"
+      "zone": "Avalon/Interiors/AV_Z02_JabberwockLair"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/Interiors/AV_Z02_JabberwockLair"
     },
     {
       "type": "bountycollect",
@@ -136,11 +139,6 @@
     {
       "field": "lang",
       "value": "WizQst834F3 is The Repository's id; the title reads no key",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to (Enter) Jabberwock's Lair",
       "blocking": false
     },
     {

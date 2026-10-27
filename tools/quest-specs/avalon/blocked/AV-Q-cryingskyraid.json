@@ -53,13 +53,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Pet Mode to Sniff Aztecan Undead in Cenote",
+      "field": "goal.usage",
+      "value": "Use Pet Mode to Sniff Aztecan Undead in Cenote",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Crying Sky Revenant in Three Points",
+      "field": "goal.unknown-verb",
+      "value": "Extract Crying Sky Revenant in Three Points",
       "blocking": true
     }
   ]
