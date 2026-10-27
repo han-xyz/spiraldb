@@ -445,6 +445,8 @@ def check_spec(spec, rootwad, gamedata, zone_cache, known_zones):
     title = spec.get("title", f"QuestTitle_{spec['lang']}")
     if title and title.split("_", 1)[1] not in titles:
         problems.append(f"title {title} not in QuestTitle.lang")
+    if not spec.get("dialogs", {}).get("prep"):
+        problems.append("no prep line: no NPC offers the quest")
     dialog_lines = [entry for key in ("prep", "underway") for entry in spec.get("dialogs", {}).get(key, [])]
     dialog_lines += [entry for goal in spec["goals"] for entry in goal.get("completion", [])]
     for entry in dialog_lines:

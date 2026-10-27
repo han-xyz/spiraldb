@@ -15,7 +15,12 @@
     "gold": 90
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -95,5 +100,12 @@
       "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Excavator01.dds",
       "template_id": 227125
     }
-  }
+  },
+  "needs_review": [
+    {
+      "field": "dialogs.prep",
+      "value": "no offer line; 00000000 is the first line of the file",
+      "blocking": false
+    }
+  ]
 }

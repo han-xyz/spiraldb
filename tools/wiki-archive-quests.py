@@ -623,6 +623,16 @@ class SpecBuilder:
             goal["loc"] = loc
         return goal
 
+    def fallback_prep(self, giver):
+        """The line that offers the quest when no line reads as an offer: the first naming the giver, else the first."""
+        keys = sorted(self.lines)
+        last = norm(giver.split()[-1]) if giver else ""
+        named = [key for key in keys if last and last in norm(self.lines[key])]
+        key = (named or keys)[0]
+        self.unresolved("dialogs.prep", f"no offer line; {key} is the first line "
+                        + ("naming the giver" if named else "of the file"), False)
+        return key
+
     def descriptor(self, item):
         """The key of a line of the quest's own lang file that names the item, else ''."""
         forms = set(singular_forms(re.sub(r"^\d+\s+", "", item)))
@@ -727,6 +737,8 @@ class SpecBuilder:
         if not goals:
             self.unresolved("goals", fields["goals"], True)
         prep, underway, completion = heuristic_dialogs(self.lines, self.data.internal_name(lang) if lang else None)
+        if self.lines and not prep:
+            prep = [self.fallback_prep(fields["giver"])]
         spec["dialogs"] = {"prep": [{"speaker": "giver", "line": k} for k in prep],
                            "underway": [{"speaker": "giver", "line": k} for k in underway]}
         if goals and goals[-1]["type"] == "persona" and completion:

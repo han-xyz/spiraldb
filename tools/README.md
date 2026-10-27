@@ -136,7 +136,7 @@ Every goal takes `zone` (its destination), `loc` (a `ZoneLocName_<key>`, any oth
 `personas` gives a persona's portrait and template id for its dialog lines and goal; the server fills the speaker's
 name, and a missing portrait, from the persona.
 
-`--check` reports, per spec: a missing `WizQst<lang>.lang`, a title or line key the lang files lack, a `loc` text
+`--check` reports, per spec: a missing `WizQst<lang>.lang`, an empty `dialogs.prep` (no NPC would offer the quest), a title or line key the lang files lack, a `loc` text
 ZoneLocName.lang lacks, a zone with no ZoneTransfer entry, and a persona whose zone wad does not place it.
 
 ### Not generated
@@ -203,7 +203,8 @@ chain, listed as `requires (not generated)`; a quest left with no prerequisite g
 
 Dialog keys are guessed from the text of each `WizQst` line: lines that remind the player of the task are Underway,
 lines that thank the player are the hand-in NPC's Completion, the rest are the giver's Prep in key order. The server
-offers a quest through its first Prep line, so a spec needs at least one.
+offers a quest through its first Prep line, so a spec needs at least one: when no line reads as an offer, the first
+line that names the giver is the Prep line, else the file's first line, listed as `dialogs.prep`.
 
 Each spec carries `source` (page and capture) and `needs_review`: what did not resolve, `blocking` or not. A spec with
 a blocking gap goes to `quest-specs/<world>/blocked/`, where the questgen glob does not reach; a waypoint whose place
