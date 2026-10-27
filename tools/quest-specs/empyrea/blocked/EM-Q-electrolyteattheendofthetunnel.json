@@ -1,0 +1,64 @@
+{
+  "id": "EM-Q-electrolyteattheendofthetunnel",
+  "giver": {
+    "persona": "EM-ZANA-NPC18",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [],
+  "min_level": 112,
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 4000
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Eel_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002859",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254333"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_Prophet_A_NPC.dds",
+      "template_id": 1254382
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Electrolyte_At_the_End_of_the_Tunnel",
+    "timestamp": "20231126094747"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Electrolyte At the End of the Tunnel",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Treat Relief",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Electrolytes",
+      "blocking": false
+    }
+  ]
+}

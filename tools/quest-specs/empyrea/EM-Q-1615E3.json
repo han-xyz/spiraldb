@@ -1,0 +1,86 @@
+{
+  "id": "EM-Q-1615E3",
+  "lang": "1615E3",
+  "giver": {
+    "persona": "EM-AERO-NPC08",
+    "zone": "Empyrea/EM_Z11_VeloCity"
+  },
+  "requires": [
+    "EM-Q-161585"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 4600
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Meowl_Base_A_01.AdjRef",
+        "EM_Meowl_Base_A_02.AdjRef",
+        "EM_Meowl_Base_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003034",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447290"
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC08": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizenF_A_NPC.dds",
+      "template_id": 1447332
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Constance_and_Variables",
+    "timestamp": "20231126100538"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "When the Whirlyburly's Done replaced by EM-Q-161585",
+      "blocking": false
+    }
+  ]
+}

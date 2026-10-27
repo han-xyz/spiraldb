@@ -1,0 +1,93 @@
+{
+  "id": "EM-Q-153BA4",
+  "lang": "153BA4",
+  "giver": {
+    "persona": "EM-OUTER-NPC17",
+    "zone": "Empyrea/EM_Z03_OuterAthanor"
+  },
+  "requires": [
+    "EM-Q-153B76"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 4000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-OUTER-NPC17": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_F_NPC.dds",
+      "template_id": 1391525
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sconce_Upon_a_Time",
+    "timestamp": "20231126095354"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "(first) Sconce",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "(second) Sconce",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "(third) Sconce",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "(fourth) Sconce",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

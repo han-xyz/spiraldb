@@ -1,0 +1,219 @@
+{
+  "id": "EM-Q-161580",
+  "lang": "161580",
+  "giver": {
+    "persona": "EM-ZANA-NPC36",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [
+    "EM-Q-1624DE"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 85350,
+    "gold": 1355
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC14",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-BeaconofHope.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizItems_00002035",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-AERI-NPC17.AdjRef",
+        "EM-Accompany-Bat.AdjRef",
+        "EM-Accompany-Bat_ENC-B.AdjRef",
+        "EM-Accompany-Bat_ENC.AdjRef",
+        "EM-CHAOS-NPC07-B.AdjRef",
+        "EM-CHAOS-NPC07-C.AdjRef",
+        "EM-CHAOS-NPC07-D.AdjRef",
+        "EM-CHAOS-NPC07-RIFT.AdjRef",
+        "EM-CHAOS-NPC07.AdjRef",
+        "EM-HUSK-NPC03-A.AdjRef",
+        "EM-HUSK-NPC03-B-ENC01.AdjRef",
+        "EM-HUSK-NPC03-B.AdjRef",
+        "EM-HUSK-NPC03-C.AdjRef",
+        "EM-HUSK-NPC03-D.AdjRef",
+        "EM-HUSK-NPC03-E.AdjRef",
+        "EM-HUSK-NPC03-F.AdjRef",
+        "EM-HUSK-NPC03-G.AdjRef",
+        "EM-HUSK-NPC03-H.AdjRef",
+        "EM-HUSK-NPC03-I.AdjRef",
+        "EM-HUSK-NPC03-J.AdjRef",
+        "EM-HUSK-NPC03-K.AdjRef",
+        "EM-HUSK-NPC03-L.AdjRef",
+        "EM-HUSK-NPC03-M.AdjRef",
+        "EM-INNER-NPC09.AdjRef",
+        "EM-NIMB-NPC15.AdjRef",
+        "EM-OUTER-NPC28.AdjRef",
+        "EM-SEP-002-A.AdjRef",
+        "EM-SEP-002-B.AdjRef",
+        "EM-SEP-002-C.AdjRef",
+        "EM-SEP-002-D.AdjRef",
+        "EM-SEP-002-E.AdjRef",
+        "EM-SEP-002-F.AdjRef",
+        "EM-SEP-002-G.AdjRef",
+        "EM-SEP-002.AdjRef",
+        "EM-SEP-BatTalker.AdjRef",
+        "EM-ZANA-NPC30.AdjRef",
+        "EM-ZANA-NPC30_Beacon.AdjRef",
+        "EM-ZANA-NPC30_LightNet.AdjRef",
+        "EM_Bat_Cinematics_01.AdjRef",
+        "EM_StandIn_DreamBat.AdjRef",
+        "EM_StandIn_LightNetBat.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "NPCs_01748829",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC14",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC01-C",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355",
+      "completion": [
+        {
+          "speaker": "EM-ZANA-NPC01-C",
+          "line": "00000014"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC01-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_C_NPC.dds",
+      "template_id": 1254433
+    },
+    "EM-ZANA-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_CasterF_A_NPC.dds",
+      "template_id": 1254375
+    },
+    "EM-ZANA-NPC36": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_CaptainF_A_NPC.dds",
+      "template_id": 1447315
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:This_Little_Light_Net_of_Mine...",
+    "timestamp": "20240328000440"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst161580, the only free key within 16 of its chain neighbour WizQst16157F whose lines name the page's names: Captain Thuria, King Khan",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Pretty Standard Procedure replaced by EM-Q-1624DE",
+      "blocking": false
+    }
+  ]
+}

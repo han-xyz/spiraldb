@@ -1,0 +1,173 @@
+{
+  "id": "EM-Q-15533D",
+  "lang": "15533D",
+  "giver": {
+    "persona": "EM-JUNG-NPC04-B",
+    "zone": "Empyrea/EM_Z01_Jungle"
+  },
+  "requires": [
+    "EM-Q-155338"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 99162,
+    "gold": 2050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM-Accompany-Kahn-B.AdjRef",
+        "EM-Accompany-Kahn.AdjRef",
+        "EM_Alphoi_King_A_Boss_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002762",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC03-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "completion": [
+        {
+          "speaker": "EM-AERI-NPC03-B",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    },
+    "EM-JUNG-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_A_NPC.dds",
+      "template_id": 1397564
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Khan_Games",
+    "timestamp": "20240327235105"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Tower of Sycorax",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Tower of Sycorax",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "to the Ark in Aeriel Shores",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

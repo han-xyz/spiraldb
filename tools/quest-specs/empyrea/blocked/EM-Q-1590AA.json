@@ -1,0 +1,120 @@
+{
+  "id": "EM-Q-1590AA",
+  "lang": "1590AA",
+  "requires": [
+    "EM-Q-159078"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 153531,
+    "gold": 1360
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Nimbari_JusticarF_A_01.AdjRef",
+        "EM_Nimbari_JusticarF_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003045",
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Nimbari_JusticarF_A_01.AdjRef",
+        "EM_Nimbari_JusticarF_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003045",
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Nimbari_ExemplarF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003043",
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Light_Fight",
+    "timestamp": "20250906050459"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Military Training Grounds",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Military Training Grounds",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Military Training Grounds",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

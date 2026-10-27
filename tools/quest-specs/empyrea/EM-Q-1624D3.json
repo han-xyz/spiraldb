@@ -1,0 +1,83 @@
+{
+  "id": "EM-Q-1624D3",
+  "lang": "1624D3",
+  "giver": {
+    "persona": "EM-DEST-NPC02",
+    "zone": "Empyrea/EM_Z13_SamsaraDestroyed"
+  },
+  "requires": [
+    "EM-Q-1624D1"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 58441,
+    "gold": 455
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Bramble_Life_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003003",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-DEST-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_G_NPC.dds",
+      "template_id": 1451218
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Maizes_and_Monsters",
+    "timestamp": "20240328002935"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

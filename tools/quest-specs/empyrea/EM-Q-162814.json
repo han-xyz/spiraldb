@@ -1,0 +1,194 @@
+{
+  "id": "EM-Q-162814",
+  "lang": "162814",
+  "giver": {
+    "persona": "EM-AERI-NPC01-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 394480,
+    "gold": 1800
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC02-D",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Hornet_Zapper_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00002790",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "WizQst162814_00000012"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC02-D",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000026"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    },
+    "EM-AERI-NPC02-D": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Crewman_A_NPC.dds",
+      "template_id": 1397728
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Communications_Officer",
+    "timestamp": "20231126090534"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst162814 matched by the words it shares with the goals; its lines name Pork, Sparck, Lightning Bugs",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Empyre-B",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Empyre-B replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

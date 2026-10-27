@@ -1,0 +1,87 @@
+{
+  "id": "EM-Q-intheelementalgroove",
+  "requires": [
+    "EM-Q-161887"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 153531,
+    "gold": 1375
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC17",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Shadow_Tank_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002934",
+      "zone": "",
+      "loc": "ZoneLocName_1448066"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Spider_WarriorMage_A_01.AdjRef",
+        "EM_StandIn_ArachnaSoldier.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003066",
+      "zone": "",
+      "loc": "ZoneLocName_1448066"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Spider_Mage_E_01.AdjRef",
+        "EM_StandIn_Arachna.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003065",
+      "zone": "",
+      "loc": "ZoneLocName_1448066"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:In_the_Elemental_Groove",
+    "timestamp": "20240409061155"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "In the Elemental Groove",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "On",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Pressing Onward",
+      "blocking": true
+    }
+  ]
+}

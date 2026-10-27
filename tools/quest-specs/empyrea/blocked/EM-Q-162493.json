@@ -1,0 +1,123 @@
+{
+  "id": "EM-Q-162493",
+  "lang": "162493",
+  "giver": {
+    "persona": "EM-AERI-NPC03-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-162815"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 171388,
+    "gold": 1575
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Ant_Giant_A_01.AdjRef",
+        "EM_Ant_Giant_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002996",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Ant_Giant_A_01.AdjRef",
+        "EM_Ant_Giant_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002996",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Frog_Horned_A_01.AdjRef",
+        "EM_Frog_Horned_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003020",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-CHAOS-NPC01-B",
+      "zone": "Empyrea/Interiors/EM_Z14_FeralClearing",
+      "loc": "ZoneLocName_1451161"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    },
+    "EM-CHAOS-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_H_NPC.dds",
+      "template_id": 1451088
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Into_the_Jungle",
+    "timestamp": "20231126090726"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Wild Thicket",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Wild Thicket",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Wild Thicket",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

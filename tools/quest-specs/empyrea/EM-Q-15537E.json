@@ -1,0 +1,118 @@
+{
+  "id": "EM-Q-15537E",
+  "lang": "15537E",
+  "giver": {
+    "persona": "EM-JUNG-NPC01",
+    "zone": "Empyrea/EM_Z01_Jungle"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 6000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC11",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Kalamar_Raider_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00002695",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC11",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Crewman_B_NPC.dds",
+      "template_id": 1397631
+    },
+    "EM-JUNG-NPC01": {
+      "portrait": "GUI/NpcPortraits/Beastman_WarriorF_B_NPC.dds",
+      "template_id": 1397538
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Thirst_Crusher",
+    "timestamp": "20231126094228"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Filters",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "May the Beastman Win replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

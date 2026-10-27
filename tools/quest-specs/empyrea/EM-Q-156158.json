@@ -1,0 +1,155 @@
+{
+  "id": "EM-Q-156158",
+  "lang": "156158",
+  "giver": {
+    "persona": "EM-NIMB-NPC16",
+    "zone": "Empyrea/Interiors/EM_Z07_ControlRoom"
+  },
+  "requires": [
+    "EM-Q-158FF1"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 441723,
+    "gold": 2040
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Globulin_Hunter_A_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002785",
+      "zone": "",
+      "descriptor": "WizQst156158_00000008"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-GastricFissure.AdjRef"
+      ],
+      "count": 4,
+      "zone": "",
+      "descriptor": "WizQst156158_00000009"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/Interiors/EM_Z07_ControlRoom"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC17",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    },
+    "EM-NIMB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mutant_Dynt_A_NPC.dds",
+      "template_id": 1413353
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Belly_Aching",
+    "timestamp": "20231126090332"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Gut Bomb replaced by EM-Q-158FF1",
+      "blocking": false
+    }
+  ]
+}

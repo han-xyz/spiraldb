@@ -1,0 +1,75 @@
+{
+  "id": "EM-Q-fromravensbeak",
+  "giver": {
+    "persona": "EM-ZANA-NPC37",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [
+    "EM-Q-1627FA"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 5000
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM_RavenEdict_Aeriel.AdjRef",
+        "EM_RavenEdict_AeroPlains.AdjRef",
+        "EM_RavenEdict_Mandalla.AdjRef",
+        "EM_RavenEdict_Sepidious.AdjRef",
+        "EM_RavenEdict_ZanaduSewers.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizardGameObjects_00000845",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM_RavenEdict_Tableau.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizardGameObjects_00000854",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC37": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_Caster_A_NPC.dds",
+      "template_id": 1452029
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:From_Raven's_Beak",
+    "timestamp": "20231126094548"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "From Raven's Beak",
+      "blocking": true
+    }
+  ]
+}

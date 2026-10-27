@@ -1,0 +1,114 @@
+{
+  "id": "EM-Q-162815",
+  "lang": "162815",
+  "giver": {
+    "persona": "EM-AERI-NPC01-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-162814"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 162500,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC03-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    },
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Go_Full_Circle",
+    "timestamp": "20231126090548"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst162815, the only free key within 16 of its chain neighbour WizQst162814 and WizQst162493 whose lines name the page's names: Beans, Samsara Village",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "(Approach) the Pod to Mandalla",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Use the Pod",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Search for Samsara Village",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

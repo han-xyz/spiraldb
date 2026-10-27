@@ -1,0 +1,148 @@
+{
+  "id": "EM-Q-15903B",
+  "lang": "15903B",
+  "giver": {
+    "persona": "EM-OUTER-NPC21",
+    "zone": "Empyrea/EM_Z04_InnerAthanor"
+  },
+  "requires": [
+    "EM-Q-159000"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 6000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC15",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC16",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC14",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC18",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC19",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "EM-INNER-NPC20",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    }
+  ],
+  "personas": {
+    "EM-INNER-NPC14": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_C_NPC.dds",
+      "template_id": 1413185
+    },
+    "EM-INNER-NPC15": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizen_C_NPC.dds",
+      "template_id": 1413186
+    },
+    "EM-INNER-NPC16": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizen_D_NPC.dds",
+      "template_id": 1413188
+    },
+    "EM-INNER-NPC18": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizen_B_NPC.dds",
+      "template_id": 1413190
+    },
+    "EM-INNER-NPC19": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_G_NPC.dds",
+      "template_id": 1413177
+    },
+    "EM-INNER-NPC20": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_E_NPC.dds",
+      "template_id": 1413178
+    },
+    "EM-OUTER-NPC21": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireSoldier_D_NPC.dds",
+      "template_id": 1391569
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:We_Happy_Few",
+    "timestamp": "20231126095532"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

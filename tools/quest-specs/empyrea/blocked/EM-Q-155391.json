@@ -1,0 +1,124 @@
+{
+  "id": "EM-Q-155391",
+  "lang": "155391",
+  "giver": {
+    "persona": "EM-JUNG-NPC07",
+    "zone": "Empyrea/EM_Z01_Jungle"
+  },
+  "requires": [
+    "EM-Q-155369"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 10000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Hornet_Burner_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002901",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Hornet_Zapper_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002902",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Beastman_Warrior_B_Boss_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002841",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    }
+  ],
+  "personas": {
+    "EM-JUNG-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_TraderF_B_NPC.dds",
+      "template_id": 1397608
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bug's_Strife",
+    "timestamp": "20231126094458"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Jungle Clearing",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Jungle Clearing",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Jungle Clearing",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

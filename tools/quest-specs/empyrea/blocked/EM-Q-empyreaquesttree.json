@@ -1,0 +1,39 @@
+{
+  "id": "EM-Q-empyreaquesttree",
+  "requires": [],
+  "min_level": 112,
+  "mainline": false,
+  "level": 112,
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Empyrea_Quest_Tree",
+    "timestamp": "20231121233047"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Empyrea Quest Tree",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goals",
+      "value": [],
+      "blocking": true
+    }
+  ]
+}

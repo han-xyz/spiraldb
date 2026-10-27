@@ -1,0 +1,388 @@
+{
+  "id": "EM-Q-164346",
+  "lang": "164346",
+  "requires": [
+    "EM-Q-16433E"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 571732,
+    "gold": 3615
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000054"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-Accompany-Melori_C.AdjRef",
+        "EM-Accompany-Melori_C_ENC.AdjRef",
+        "EM-CHAOS-NPC05-B.AdjRef",
+        "EM-CHAOS-NPC05-C.AdjRef",
+        "EM-CHAOS-NPC05-RIFT.AdjRef",
+        "EM-CHAOS-NPC05.AdjRef",
+        "EM-HUSK-NPC02-A.AdjRef",
+        "EM-HUSK-NPC02-B-ENC01.AdjRef",
+        "EM-HUSK-NPC02-B.AdjRef",
+        "EM-HUSK-NPC02-C.AdjRef",
+        "EM-HUSK-NPC02-D.AdjRef",
+        "EM-HUSK-NPC02-E.AdjRef",
+        "EM-HUSK-NPC02-F.AdjRef",
+        "EM-HUSK-NPC02-G.AdjRef",
+        "EM-HUSK-NPC02-H.AdjRef",
+        "EM-HUSK-NPC02-I.AdjRef",
+        "EM-HUSK-NPC02-J.AdjRef",
+        "EM-HUSK-NPC02-L.AdjRef",
+        "EM-HUSK-NPC02-M.AdjRef",
+        "EM-REV-NPC02.AdjRef",
+        "EM-SAMS-NPC10.AdjRef",
+        "EM-ZANA-NPC29.AdjRef",
+        "EM_StandIn_Mallori.AdjRef",
+        "EM_StandIn_Mallori_02.AdjRef",
+        "EM_StandIn_Mallori_BatEssence.AdjRef",
+        "EM_StandIn_Mallori_C.AdjRef",
+        "EM_Standin_DreamMellori.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01748482"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-REV-NPC03",
+      "zone": "Empyrea/Interiors/EM_Z15_NightmareRealm"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Shadow_QueenF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003062",
+      "zone": ""
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Wyrm_Jabberwock_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003039",
+      "zone": ""
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-NightmareCrystal.AdjRef"
+      ],
+      "count": 1,
+      "zone": ""
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Elephant_Belloq_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003010",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "EM-REV-NPC04",
+      "zone": "",
+      "completion": [
+        {
+          "speaker": "EM-REV-NPC04",
+          "line": "00000040"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-REV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Belloq.dds",
+      "template_id": 1459018
+    },
+    "EM-REV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portraits_Human_Malistaire_A_NPC.dds",
+      "template_id": 1459019
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dreams_and_Nightmares",
+    "timestamp": "20250827164610"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Spider's Lair",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Nightmare Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Top of the Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Crystal",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Dream Malistaire",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Mellori's Deepest Memory",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Empyrea/Interiors/EM_Z15_NightmareRealm",
+      "blocking": true
+    }
+  ]
+}

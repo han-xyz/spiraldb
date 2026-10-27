@@ -1,0 +1,282 @@
+{
+  "id": "EM-Q-1615E5",
+  "lang": "1615E5",
+  "giver": {
+    "persona": "EM-AERO-NPC20",
+    "zone": "Empyrea/EM_Z09_NWAeroplains"
+  },
+  "requires": [
+    "EM-Q-1615E3"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 20600
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Dwarf_FireSoldier_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003011",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Dwarf_AeroHunter_H_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002992",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Meowl_Base_C_02.AdjRef",
+        "EM_StandIn_Sphinx.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003088",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z09_NWAeroplains",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC08",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344",
+      "completion": [
+        {
+          "speaker": "EM-AERO-NPC08",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC08": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizenF_A_NPC.dds",
+      "template_id": 1447332
+    },
+    "EM-AERO-NPC20": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroHunter_G_NPC.dds",
+      "template_id": 1447396
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:This_Insubstantial_Pageant",
+    "timestamp": "20231126100530"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "into the Cavern",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Sphinx's Cavern",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "to Round 2",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Final Round",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

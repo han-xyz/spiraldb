@@ -1,0 +1,132 @@
+{
+  "id": "EM-Q-1323CF",
+  "lang": "1323CF",
+  "giver": {
+    "persona": "EM-ZANA-NPC01-C",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [
+    "EM-Q-1323CC"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 50892,
+    "gold": 880
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-OUTER-NPC01",
+      "zone": "",
+      "completion": [
+        {
+          "speaker": "EM-OUTER-NPC01",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-OUTER-NPC01": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCitizen_B_NPC.dds",
+      "template_id": 1391489
+    },
+    "EM-ZANA-NPC01-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_C_NPC.dds",
+      "template_id": 1254433
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Chain_of_Ice_and_Fire",
+    "timestamp": "20250905070658"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "to the Ark in Aeriel Shores",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Pod to Outer Athanor",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Pod to Athanor",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Sven Icecutter",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

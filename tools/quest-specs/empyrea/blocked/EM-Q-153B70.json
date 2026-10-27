@@ -1,0 +1,95 @@
+{
+  "id": "EM-Q-153B70",
+  "lang": "153B70",
+  "giver": {
+    "persona": "EM-OUTER-NPC01",
+    "zone": "Empyrea/EM_Z03_OuterAthanor"
+  },
+  "requires": [
+    "EM-Q-1323CF"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 54336,
+    "gold": 1170
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Elementals_BallIce_A_01.AdjRef",
+        "EM_Elementals_BallIce_A_01_Minion.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00002881",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "EM-OUTER-NPC01": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCitizen_B_NPC.dds",
+      "template_id": 1391489
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Avalanche!",
+    "timestamp": "20250905001718"
+  },
+  "needs_review": [
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Sven Icecutter",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Sven Icecutter",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

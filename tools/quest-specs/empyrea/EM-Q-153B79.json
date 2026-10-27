@@ -1,0 +1,82 @@
+{
+  "id": "EM-Q-153B79",
+  "lang": "153B79",
+  "giver": {
+    "persona": "EM-OUTER-NPC13",
+    "zone": "Empyrea/EM_Z03_OuterAthanor"
+  },
+  "requires": [
+    "EM-Q-153B78"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 54336,
+    "gold": 1170
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Elementals_BallIce_A_01.AdjRef",
+        "EM_Elementals_BallIce_A_01_Minion.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002881",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    }
+  ],
+  "personas": {
+    "EM-OUTER-NPC13": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceSoldier_C_NPC.dds",
+      "template_id": 1391513
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Snowballistic!",
+    "timestamp": "20231126090115"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

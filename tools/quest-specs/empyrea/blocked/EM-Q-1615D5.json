@@ -1,0 +1,109 @@
+{
+  "id": "EM-Q-1615D5",
+  "lang": "1615D5",
+  "giver": {
+    "persona": "EM-AERO-NPC14",
+    "zone": "Empyrea/EM_Z10_PortAero"
+  },
+  "requires": [
+    "EM-Q-1615D2"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 9100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC17",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447324"
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC14": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroHunter_C_NPC.dds",
+      "template_id": 1447374
+    },
+    "EM-AERO-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Robot_Drone_E_NPC.dds",
+      "template_id": 1447377
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Did_the_Butler_Really_Do_It?",
+    "timestamp": "20231126095941"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Evidence Locker",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Ebenezer's Memory Core",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

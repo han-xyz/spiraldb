@@ -1,0 +1,175 @@
+{
+  "id": "EM-Q-161585",
+  "lang": "161585",
+  "giver": {
+    "persona": "EM-AERO-NPC03",
+    "zone": "Empyrea/EM_Z08_SWAeroplains"
+  },
+  "requires": [
+    "EM-Q-161583"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 104748,
+    "gold": 1135
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Cracklelope_Base_B_01.AdjRef",
+        "EM_Dwarf_AeroHunter_F_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002991",
+      "zone": "",
+      "loc": "ZoneLocName_1413361"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC04",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC06",
+      "zone": "Empyrea/Interiors/EM_Z11_HunterGuild",
+      "loc": "ZoneLocName_1413361"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC05",
+      "zone": "Empyrea/Interiors/EM_Z11_HunterGuild",
+      "loc": "ZoneLocName_1413361",
+      "completion": [
+        {
+          "speaker": "EM-AERO-NPC05",
+          "line": "00000012"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC03": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_Q_NPC.dds",
+      "template_id": 1447327
+    },
+    "EM-AERO-NPC04": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroHunterF_A_NPC.dds",
+      "template_id": 1447328
+    },
+    "EM-AERO-NPC05": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_M_NPC.dds",
+      "template_id": 1447329
+    },
+    "EM-AERO-NPC06": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroHunter_A_NPC.dds",
+      "template_id": 1447330
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Take_Me_Down_to_Velo_City",
+    "timestamp": "20240328000842"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst161585 matched by the words it shares with the goals; its lines name Newt, Head Hunter Hiram",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Dude Looks Like a Lion replaced by EM-Q-161583",
+      "blocking": false
+    }
+  ]
+}

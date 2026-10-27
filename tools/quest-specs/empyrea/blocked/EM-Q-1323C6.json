@@ -1,0 +1,253 @@
+{
+  "id": "EM-Q-1323C6",
+  "lang": "1323C6",
+  "giver": {
+    "persona": "EM-ZANA-NPC14",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [
+    "EM-Q-1323C4"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 164124,
+    "gold": 1580
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000056"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-HiddenCommunicator.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizardGameObjects_00000797",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Shadow_Healer_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002932",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-HiddenPages.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst1323C6_00000041",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Robot_Drone_A_01.AdjRef",
+        "EM_Robot_Drone_A_04.AdjRef",
+        "EM_Robot_Drone_A_05.AdjRef",
+        "EM_Robot_Drone_A_06.AdjRef",
+        "EM_Robot_Drone_A_07.AdjRef",
+        "EM_Robot_Drone_A_08.AdjRef",
+        "EM_Robot_Drone_A_09.AdjRef",
+        "EM_StandIn_SaniBot_A.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00002855",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254333"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC01-D",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC01-D": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
+      "template_id": 1404201
+    },
+    "EM-ZANA-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_CasterF_A_NPC.dds",
+      "template_id": 1254375
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Hazy_Cosmic_Jive",
+    "timestamp": "20250911025734"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Zigi's Estate",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Secret Hiding Place Statue",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "to Sewers",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Sewer Main Exit",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Leisure Dome",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

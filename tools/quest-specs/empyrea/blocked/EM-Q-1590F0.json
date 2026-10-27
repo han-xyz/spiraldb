@@ -1,0 +1,178 @@
+{
+  "id": "EM-Q-1590F0",
+  "lang": "1590F0",
+  "giver": {
+    "persona": "EM-NIMB-NPC14",
+    "zone": "Empyrea/Interiors/EM_Z07_TechnologistAcademy"
+  },
+  "requires": [
+    "EM-Q-1590EA"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 29400,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC27",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Sandworm_Larvae_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003090",
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC27",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC27": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizenF_D_NPC.dds",
+      "template_id": 1447406
+    },
+    "EM-NIMB-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Support_B_NPC.dds",
+      "template_id": 1413348
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Music_on_the_Aero_Plains",
+    "timestamp": "20231126095811"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Northeast Aero Plains",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Defeat Fangles and collect 3 Saliva",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "in the Northeast Aero Plains",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Collect 3 Lightning Bottles",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "in the Southwest Aero Plains",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Defeat 3 Ear Worms",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Hookworm Tunnel",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

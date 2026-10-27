@@ -1,0 +1,129 @@
+{
+  "id": "EM-Q-16158A",
+  "lang": "16158A",
+  "giver": {
+    "persona": "EM-AERO-NPC07",
+    "zone": "Empyrea/EM_Z09_NWAeroplains"
+  },
+  "requires": [
+    "EM-Q-161589"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 109618,
+    "gold": 910
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Oxen_Shaggy_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003051",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Doll_Scientist_A_01.AdjRef",
+        "EM_StandIn_DocDemented.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003006",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC01-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    },
+    "EM-AERO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_HelenaF_A_NPC.dds",
+      "template_id": 1447331
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Where_the_Blue-ffalo_Roam...",
+    "timestamp": "20231126092251"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16158A, the only free key within 16 of its chain neighbour WizQst161589 whose lines name the page's names: Blue Ox",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Ox Alarm to Dark Cloud Base",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

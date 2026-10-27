@@ -1,0 +1,79 @@
+{
+  "id": "EM-Q-155366",
+  "lang": "155366",
+  "giver": {
+    "persona": "EM-AERI-NPC05-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-155354"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 5000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Elder_A_NPC.dds",
+      "template_id": 1397722
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Presporo's_Books",
+    "timestamp": "20231126094414"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Beastmen",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

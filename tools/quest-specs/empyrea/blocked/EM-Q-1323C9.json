@@ -1,0 +1,142 @@
+{
+  "id": "EM-Q-1323C9",
+  "lang": "1323C9",
+  "giver": {
+    "persona": "EM-ZANA-NPC01-D",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [
+    "EM-Q-1323C7"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 476934,
+    "gold": 2440
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-Wood.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "Items_00009763",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Shadow_DPS_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00002899",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst1323C9_00000013",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-SignalFire.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst1323C9_00000014",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000012"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC01-D": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
+      "template_id": 1404201
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Rebel_Rebel",
+    "timestamp": "20240327235222"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "up with Khan in the Palace District",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Wood Back to Khan at the Rendezvous Point",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "EM-Q-astralprojectyourvoice",
+  "requires": [
+    "EM-Q-161881"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 153531,
+    "gold": 1375
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-AERI-NPC17.AdjRef",
+        "EM-Accompany-Bat.AdjRef",
+        "EM-Accompany-Bat_ENC-B.AdjRef",
+        "EM-Accompany-Bat_ENC.AdjRef",
+        "EM-CHAOS-NPC07-B.AdjRef",
+        "EM-CHAOS-NPC07-C.AdjRef",
+        "EM-CHAOS-NPC07-D.AdjRef",
+        "EM-CHAOS-NPC07-RIFT.AdjRef",
+        "EM-CHAOS-NPC07.AdjRef",
+        "EM-HUSK-NPC03-A.AdjRef",
+        "EM-HUSK-NPC03-B-ENC01.AdjRef",
+        "EM-HUSK-NPC03-B.AdjRef",
+        "EM-HUSK-NPC03-C.AdjRef",
+        "EM-HUSK-NPC03-D.AdjRef",
+        "EM-HUSK-NPC03-E.AdjRef",
+        "EM-HUSK-NPC03-F.AdjRef",
+        "EM-HUSK-NPC03-G.AdjRef",
+        "EM-HUSK-NPC03-H.AdjRef",
+        "EM-HUSK-NPC03-I.AdjRef",
+        "EM-HUSK-NPC03-J.AdjRef",
+        "EM-HUSK-NPC03-K.AdjRef",
+        "EM-HUSK-NPC03-L.AdjRef",
+        "EM-HUSK-NPC03-M.AdjRef",
+        "EM-INNER-NPC09.AdjRef",
+        "EM-NIMB-NPC15.AdjRef",
+        "EM-OUTER-NPC28.AdjRef",
+        "EM-SEP-002-A.AdjRef",
+        "EM-SEP-002-B.AdjRef",
+        "EM-SEP-002-C.AdjRef",
+        "EM-SEP-002-D.AdjRef",
+        "EM-SEP-002-E.AdjRef",
+        "EM-SEP-002-F.AdjRef",
+        "EM-SEP-002-G.AdjRef",
+        "EM-SEP-002.AdjRef",
+        "EM-SEP-BatTalker.AdjRef",
+        "EM-ZANA-NPC30.AdjRef",
+        "EM-ZANA-NPC30_Beacon.AdjRef",
+        "EM-ZANA-NPC30_LightNet.AdjRef",
+        "EM_Bat_Cinematics_01.AdjRef",
+        "EM_StandIn_DreamBat.AdjRef",
+        "EM_StandIn_LightNetBat.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01748829",
+      "loc": "ZoneLocName_1448066"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Standin_LuphilimSoldier_01.AdjRef",
+        "EM_WolfGryphon_Warrior_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003075",
+      "zone": "",
+      "loc": "ZoneLocName_1448066"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Shadow_Tank_A_01.AdjRef",
+        "EM_StandIn_ShadowTank_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002861",
+      "zone": "",
+      "loc": "ZoneLocName_1448066"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_WolfGryphon_Warrior_D_01.AdjRef",
+        "EM_WolfGryphon_Warrior_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003076",
+      "zone": "",
+      "loc": "ZoneLocName_1448066"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Astral_Project_Your_Voice!",
+    "timestamp": "20250904155915"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Astral Project Your Voice!",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "On",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Pressing On",
+      "blocking": true
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "EM-Q-thesporethemerrier",
+  "requires": [
+    "EM-Q-1624B4"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 153531,
+    "gold": 1355
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_WolfGryphon_Warrior_D_01.AdjRef",
+        "EM_WolfGryphon_Warrior_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003076",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Spore_the_Merrier",
+    "timestamp": "20231126091324"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Spore the Merrier",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Ashen Caves",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Death Fungi",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Ashen Caves",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "the Death Fungi",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Ashen Caves",
+      "blocking": true
+    }
+  ]
+}

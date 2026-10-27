@@ -1,0 +1,131 @@
+{
+  "id": "EM-Q-16246E",
+  "lang": "16246E",
+  "giver": {
+    "persona": "EM-AERI-NPC17",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-16246A"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 376623,
+    "gold": 1605
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-CHAOS-NPC05-B",
+      "zone": "Empyrea/EM_Z14_ChaosJungle",
+      "loc": "ZoneLocName_1451078",
+      "completion": [
+        {
+          "speaker": "EM-CHAOS-NPC05-B",
+          "line": "00000010"
+        },
+        {
+          "speaker": "EM-CHAOS-NPC05-B",
+          "line": "00000019"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    },
+    "EM-CHAOS-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
+      "template_id": 1451121
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gathering_Shadows",
+    "timestamp": "20231126093020"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Shadow Infused Creatures",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

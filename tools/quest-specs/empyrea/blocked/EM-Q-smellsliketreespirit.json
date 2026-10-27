@@ -1,0 +1,55 @@
+{
+  "id": "EM-Q-smellsliketreespirit",
+  "requires": [
+    "EM-Q-16188F"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 61770,
+    "gold": 685
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC17",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Smells_Like_Tree_Spirit",
+    "timestamp": "20231126093402"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Smells Like Tree Spirit",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "for the Primordial Trees",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "The Rat",
+      "blocking": true
+    }
+  ]
+}

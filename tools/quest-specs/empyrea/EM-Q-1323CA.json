@@ -1,0 +1,128 @@
+{
+  "id": "EM-Q-1323CA",
+  "lang": "1323CA",
+  "giver": {
+    "persona": "EM-ZANA-NPC01-D",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 64026,
+    "gold": 1390
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-ZANA-NPC34_B.AdjRef",
+        "EM_StandIn_Alphoi_PalaceGuard_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizardNPC_00000814",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Krok_Cabalist_A_01.AdjRef",
+        "EM_StandIn_KillerKrok.AdjRef",
+        "EM_StandIn_KillerKrok_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002793",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC01-C",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC01-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_C_NPC.dds",
+      "template_id": 1254433
+    },
+    "EM-ZANA-NPC01-D": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
+      "template_id": 1404201
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Return_of_the_King",
+    "timestamp": "20240327235432"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Rebel Rebel replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

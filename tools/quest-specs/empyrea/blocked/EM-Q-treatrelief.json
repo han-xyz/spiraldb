@@ -1,0 +1,77 @@
+{
+  "id": "EM-Q-treatrelief",
+  "giver": {
+    "persona": "EM-ZANA-NPC18",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [
+    "EM-Q-1323EF"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 4000
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-AlphoiCake_01.AdjRef",
+        "EM_AlphoiTreat_01.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizardGameObjects_00000798",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Alphoi_Warrior_C_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002898",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_Prophet_A_NPC.dds",
+      "template_id": 1254382
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Treat_Relief",
+    "timestamp": "20231126094739"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Treat Relief",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Zanadu Sewers",
+      "blocking": false
+    }
+  ]
+}

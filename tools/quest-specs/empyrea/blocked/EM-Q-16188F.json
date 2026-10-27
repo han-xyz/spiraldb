@@ -1,0 +1,129 @@
+{
+  "id": "EM-Q-16188F",
+  "lang": "16188F",
+  "giver": {
+    "persona": "EM-AERI-NPC17",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-161887"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 119417,
+    "gold": 915
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-CHAOS-NPC05-B",
+      "zone": "Empyrea/EM_Z14_ChaosJungle",
+      "loc": "ZoneLocName_1448066"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    },
+    "EM-CHAOS-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
+      "template_id": 1451121
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Spirit_of_the_Grove",
+    "timestamp": "20231126093226"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Grim Brothers",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Spiritual Trees",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

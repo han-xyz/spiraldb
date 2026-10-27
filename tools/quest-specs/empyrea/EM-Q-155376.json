@@ -1,0 +1,91 @@
+{
+  "id": "EM-Q-155376",
+  "lang": "155376",
+  "giver": {
+    "persona": "EM-AERI-NPC09",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 5000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Hornet_Zapper_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002790",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-CrabApple.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "Items_00019793"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_CitizenF_B_NPC.dds",
+      "template_id": 1397621
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Crab_Apple_a_Day",
+    "timestamp": "20231126094005"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Terrible Trio replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

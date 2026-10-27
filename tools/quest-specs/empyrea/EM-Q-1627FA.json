@@ -1,0 +1,151 @@
+{
+  "id": "EM-Q-1627FA",
+  "lang": "1627FA",
+  "giver": {
+    "persona": "EM-AERI-NPC04",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 13800
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_MonkeySpider_Hunter_D_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003081",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM_RavenEdict_Aeriel.AdjRef",
+        "EM_RavenEdict_AeroPlains.AdjRef",
+        "EM_RavenEdict_Mandalla.AdjRef",
+        "EM_RavenEdict_Sepidious.AdjRef",
+        "EM_RavenEdict_ZanaduSewers.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "WizardGameObjects_00000845"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC37",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC04": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_B_NPC.dds",
+      "template_id": 1397529
+    },
+    "EM-ZANA-NPC37": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_Caster_A_NPC.dds",
+      "template_id": 1452029
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Word_Search",
+    "timestamp": "20231126094521"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1627FA matched by the words it shares with the goals; its lines name The Custodian, Mother Monkey Spider",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Monkey Spider Nest",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

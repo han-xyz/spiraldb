@@ -30,6 +30,8 @@ class WorldsTest(unittest.TestCase):
         self.assertEqual(lang_cluster(world("Lemuria"), ROOTWAD_DIR), (0x170115, 0x1744C6))
     def test_a_declared_range_wins_over_the_anchored_cluster(self):
         self.assertEqual(lang_cluster(world("Karamelle"), ROOTWAD_DIR), (0x16B48E, 0x1716FA))
+    def test_a_declared_range_wins_over_the_derived_cluster(self):
+        self.assertEqual(lang_cluster(world("Empyrea"), ROOTWAD_DIR), (0x132297, 0x16437F))
 
 
 if __name__ == "__main__":

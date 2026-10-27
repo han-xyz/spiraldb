@@ -1,0 +1,184 @@
+{
+  "id": "EM-Q-1553B1",
+  "lang": "1553B1",
+  "giver": {
+    "persona": "EM-AERI-NPC15",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 5000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-Blowfish.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Blowfish.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Blowfish.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Blowfish.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Blowfish.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Blowfish.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Blowfish.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 1397682
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hootie's_Blowfish!",
+    "timestamp": "20241225011232"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Blowfish in Aeriel Shores",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Blowfish in Aeriel Jungle",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Blowfish in Inner Athanor",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Blowfish in Outer Athanor",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Blowfish in Zanadu",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Blowfish in Zanadu Sewers",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Blowfish in The Stomach",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To Boldly Crash... replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

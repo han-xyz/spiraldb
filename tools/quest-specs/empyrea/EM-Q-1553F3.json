@@ -1,0 +1,96 @@
+{
+  "id": "EM-Q-1553F3",
+  "lang": "1553F3",
+  "giver": {
+    "persona": "EM-JUNG-NPC11",
+    "zone": "Empyrea/EM_Z01_Jungle"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 5000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Beastman_Warrior_A_Boss_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002842",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    }
+  ],
+  "personas": {
+    "EM-JUNG-NPC11": {
+      "portrait": "GUI/NpcPortraits/Beastman_Child_B_NPC.dds",
+      "template_id": 1397745
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fight_For_Your_Right",
+    "timestamp": "20240119020200"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Beastman Fight Club",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Crusher? We Barely Know Her! replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

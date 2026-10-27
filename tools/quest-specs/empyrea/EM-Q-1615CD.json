@@ -1,0 +1,160 @@
+{
+  "id": "EM-Q-1615CD",
+  "lang": "1615CD",
+  "giver": {
+    "persona": "EM-AERO-NPC14",
+    "zone": "Empyrea/EM_Z10_PortAero"
+  },
+  "requires": [
+    "EM-Q-161580"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 9100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC15",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447324"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC16",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447324",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC17",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447324",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447324"
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC14": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroHunter_C_NPC.dds",
+      "template_id": 1447374
+    },
+    "EM-AERO-NPC15": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroHunter_D_NPC.dds",
+      "template_id": 1447375
+    },
+    "EM-AERO-NPC16": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizenF_B_NPC.dds",
+      "template_id": 1447376
+    },
+    "EM-AERO-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Robot_Drone_E_NPC.dds",
+      "template_id": 1447377
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Labors_for_Hercules",
+    "timestamp": "20231126095833"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "More Like Scare-O Plains replaced by EM-Q-161580",
+      "blocking": false
+    }
+  ]
+}

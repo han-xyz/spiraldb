@@ -1,0 +1,134 @@
+{
+  "id": "EM-Q-155331",
+  "lang": "155331",
+  "giver": {
+    "persona": "EM-AERI-NPC03-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-15532B"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 41202,
+    "gold": 660
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC05-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-JUNG-NPC03-B",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    },
+    "EM-AERI-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Elder_A_NPC.dds",
+      "template_id": 1397722
+    },
+    "EM-JUNG-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Beastman_Leader_A_NPC.dds",
+      "template_id": 1397660
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Khan_Found_It!",
+    "timestamp": "20231126085850"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Tower of Sycorax in Aeriel Jungle",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

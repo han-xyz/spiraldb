@@ -1,0 +1,17 @@
+{
+  "Name": "EM-Q-155372",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 4000,
+  "MaxGold": 4000,
+  "ExperienceAmount": 0,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T05:52:18.794164Z",
+  "ModifiedAt": "2026-10-27T05:52:18.794164Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

@@ -50,6 +50,8 @@ title, so their row declares `lang_range`; Lemuria's one title (`LM-URSAI-ENC-00
 quests, so its row declares one too. A declared `lang_range` wins. A world outside the table is refused with the list of the known ones.
 title, so their row declares `lang_range`; a declared `lang_range` wins over the derived one (Karamelle's anchored
 run holds 11 of its files). A world outside the table is refused with the list of the known ones.
+title, so their row declares `lang_range`; Empyrea's anchored run holds few of its quests, so its row declares one
+too. A declared `lang_range` wins over the derived cluster. A world outside the table is refused with the list of the known ones.
 
 ## check
 

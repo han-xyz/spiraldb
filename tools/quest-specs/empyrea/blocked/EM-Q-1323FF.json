@@ -1,0 +1,129 @@
+{
+  "id": "EM-Q-1323FF",
+  "lang": "1323FF",
+  "giver": {
+    "persona": "EM-ZANA-NPC25",
+    "zone": "Empyrea/Interiors/EM_Z02_ThroneRoom"
+  },
+  "requires": [
+    "EM-Q-1323CA"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 20000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AR_SpellMob_ShadowTrickster.AdjRef",
+        "AR_StandIn_ShadowTrickster.AdjRef",
+        "DM_Shadow_Trickster_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002662",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/Interiors/EM_Z02_ThroneRoom",
+      "loc": "ZoneLocName_1254355",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000044"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC25": {
+      "portrait": "GUI/NpcPortraits/Portraits_Alphoi_Warrior_A_NPC.dds",
+      "template_id": 1254400
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:House_Oddity",
+    "timestamp": "20231126095231"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Shadow House",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Shadow Trickster: ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Shadow Trickster: ObjectData/DM",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "id": "EM-Q-156159",
+  "lang": "156159",
+  "giver": {
+    "persona": "EM-NIMB-NPC16",
+    "zone": "Empyrea/Interiors/EM_Z07_ControlRoom"
+  },
+  "requires": [
+    "EM-Q-156158"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 118617,
+    "gold": 2230
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Cat_CabalistF_A_Boss_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002845",
+      "zone": "",
+      "loc": "ZoneLocName_1401191"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-HeartConsole.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst156159_00000028"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC17",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "completion": [
+        {
+          "speaker": "EM-AERI-NPC17",
+          "line": "00000018"
+        },
+        {
+          "speaker": "EM-AERI-NPC17",
+          "line": "00000032"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    },
+    "EM-NIMB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mutant_Dynt_A_NPC.dds",
+      "template_id": 1413353
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:He's_Good_for_the_Heart",
+    "timestamp": "20231126090434"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Notochord",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Heart Sector",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Stomach",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

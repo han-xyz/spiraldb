@@ -1,0 +1,90 @@
+{
+  "id": "EM-Q-153B75",
+  "lang": "153B75",
+  "giver": {
+    "persona": "EM-OUTER-NPC12",
+    "zone": "Empyrea/EM_Z03_OuterAthanor"
+  },
+  "requires": [
+    "EM-Q-153B76"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 64026,
+    "gold": 1390
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Vapor_Monster_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002895",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    }
+  ],
+  "personas": {
+    "EM-OUTER-NPC12": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCitizenF_A_NPC.dds",
+      "template_id": 1391509
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Hot_Mess",
+    "timestamp": "20250904070136"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Melting House",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

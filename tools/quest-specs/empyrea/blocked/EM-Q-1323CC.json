@@ -1,0 +1,193 @@
+{
+  "id": "EM-Q-1323CC",
+  "lang": "1323CC",
+  "giver": {
+    "persona": "EM-ZANA-NPC01-C",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [
+    "EM-Q-1323CA"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 532197,
+    "gold": 4380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Robot_Drone_A_01.AdjRef",
+        "EM_Robot_Drone_A_04.AdjRef",
+        "EM_Robot_Drone_A_05.AdjRef",
+        "EM_Robot_Drone_A_06.AdjRef",
+        "EM_Robot_Drone_A_07.AdjRef",
+        "EM_Robot_Drone_A_08.AdjRef",
+        "EM_Robot_Drone_A_09.AdjRef",
+        "EM_StandIn_SaniBot_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002855",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst1323CC_00000022",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Shadow_Healer_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002860",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst1323CC_00000024",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Sheep_Brute_E_01.AdjRef",
+        "EM_StandIn_Baane.AdjRef",
+        "EM_StandIn_Baane_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002811",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254410"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC01-D",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC01-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_C_NPC.dds",
+      "template_id": 1254433
+    },
+    "EM-ZANA-NPC01-D": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
+      "template_id": 1404201
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:To_the_Bat's_Cave",
+    "timestamp": "20231126090035"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Bat's Lair in Zanadu Sewers",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the West Channel Bulkhead",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Runoff Drain",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

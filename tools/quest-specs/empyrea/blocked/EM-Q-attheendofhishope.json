@@ -1,0 +1,136 @@
+{
+  "id": "EM-Q-attheendofhishope",
+  "requires": [
+    "EM-Q-161580"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 139882,
+    "gold": 2035
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-BeaconofHope.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizItems_00002035",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Robot_Tank_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003059",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Robot_Tank_B_01.AdjRef",
+        "EM_StandIn_Tumbler.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003060",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Robot_Tank_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003080",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-AERI-NPC17.AdjRef",
+        "EM-Accompany-Bat.AdjRef",
+        "EM-Accompany-Bat_ENC-B.AdjRef",
+        "EM-Accompany-Bat_ENC.AdjRef",
+        "EM-CHAOS-NPC07-B.AdjRef",
+        "EM-CHAOS-NPC07-C.AdjRef",
+        "EM-CHAOS-NPC07-D.AdjRef",
+        "EM-CHAOS-NPC07-RIFT.AdjRef",
+        "EM-CHAOS-NPC07.AdjRef",
+        "EM-HUSK-NPC03-A.AdjRef",
+        "EM-HUSK-NPC03-B-ENC01.AdjRef",
+        "EM-HUSK-NPC03-B.AdjRef",
+        "EM-HUSK-NPC03-C.AdjRef",
+        "EM-HUSK-NPC03-D.AdjRef",
+        "EM-HUSK-NPC03-E.AdjRef",
+        "EM-HUSK-NPC03-F.AdjRef",
+        "EM-HUSK-NPC03-G.AdjRef",
+        "EM-HUSK-NPC03-H.AdjRef",
+        "EM-HUSK-NPC03-I.AdjRef",
+        "EM-HUSK-NPC03-J.AdjRef",
+        "EM-HUSK-NPC03-K.AdjRef",
+        "EM-HUSK-NPC03-L.AdjRef",
+        "EM-HUSK-NPC03-M.AdjRef",
+        "EM-INNER-NPC09.AdjRef",
+        "EM-NIMB-NPC15.AdjRef",
+        "EM-OUTER-NPC28.AdjRef",
+        "EM-SEP-002-A.AdjRef",
+        "EM-SEP-002-B.AdjRef",
+        "EM-SEP-002-C.AdjRef",
+        "EM-SEP-002-D.AdjRef",
+        "EM-SEP-002-E.AdjRef",
+        "EM-SEP-002-F.AdjRef",
+        "EM-SEP-002-G.AdjRef",
+        "EM-SEP-002.AdjRef",
+        "EM-SEP-BatTalker.AdjRef",
+        "EM-ZANA-NPC30.AdjRef",
+        "EM-ZANA-NPC30_Beacon.AdjRef",
+        "EM-ZANA-NPC30_LightNet.AdjRef",
+        "EM_Bat_Cinematics_01.AdjRef",
+        "EM_StandIn_DreamBat.AdjRef",
+        "EM_StandIn_LightNetBat.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "NPCs_01748829",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:At_the_End_of_His_Hope",
+    "timestamp": "20250911010023"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "At the End of His Hope",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Next Floor",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "on to Next Floor",
+      "blocking": true
+    }
+  ]
+}

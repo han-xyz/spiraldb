@@ -1,0 +1,150 @@
+{
+  "id": "EM-Q-1624ED",
+  "lang": "1624ED",
+  "giver": {
+    "persona": "EM-DEST-NPC09",
+    "zone": "Empyrea/EM_Z13_SamsaraDestroyed"
+  },
+  "requires": [
+    "EM-Q-1590A6",
+    "EM-Q-1624CD"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 15750
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-PrayerColumn01.AdjRef",
+        "EM-PrayerColumn02.AdjRef",
+        "EM-PrayerColumn03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizQst1624ED_00000016",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-PrayerColumn01.AdjRef",
+        "EM-PrayerColumn02.AdjRef",
+        "EM-PrayerColumn03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizQst1624ED_00000016",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-PrayerColumn01.AdjRef",
+        "EM-PrayerColumn02.AdjRef",
+        "EM-PrayerColumn03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizQst1624ED_00000016",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-DEST-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_F_NPC.dds",
+      "template_id": 1451323
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ancient_Kalamar_Secrets",
+    "timestamp": "20250417185804"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

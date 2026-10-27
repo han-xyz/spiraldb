@@ -1,0 +1,129 @@
+{
+  "id": "EM-Q-158FEC",
+  "lang": "158FEC",
+  "giver": {
+    "persona": "EM-INNER-NPC08",
+    "zone": "Empyrea/EM_Z04_InnerAthanor"
+  },
+  "requires": [
+    "EM-Q-153BCC"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 60657,
+    "gold": 840
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Robot_Batbot_B_01.AdjRef",
+        "EM_Robot_Batbot_B_03.AdjRef",
+        "EM_Robot_Batbot_B_04.AdjRef",
+        "EM_Robot_Batbot_B_05.AdjRef",
+        "EM_Robot_Batbot_B_06.AdjRef",
+        "EM_Robot_Batbot_B_07.AdjRef",
+        "EM_Robot_Batbot_B_08.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002854",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "descriptor": "WizQst158FEC_00000006",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-HeatingElement.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-HydraulicLever.AdjRef",
+        "EM_ElementLevers.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "descriptor": "WizItems_00002031",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000016"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-INNER-NPC08": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_D_NPC.dds",
+      "template_id": 1391566
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Insulation_Insurrection",
+    "timestamp": "20231126090305"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst158FEC matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Steam Plant",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "the Heating Element",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

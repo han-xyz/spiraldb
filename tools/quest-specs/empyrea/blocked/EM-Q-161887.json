@@ -1,0 +1,103 @@
+{
+  "id": "EM-Q-161887",
+  "lang": "161887",
+  "giver": {
+    "persona": "EM-AERI-NPC17",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-161881"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 119417,
+    "gold": 915
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Spider_Mage_E_01.AdjRef",
+        "EM_StandIn_Arachna.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003065",
+      "zone": "",
+      "loc": "ZoneLocName_1448066"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Battling_the_Elementals",
+    "timestamp": "20260603034435"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst161887 matched by the words it shares with the goals; its lines name Bat, Arachna Magna Magus",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Elemental Trees",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

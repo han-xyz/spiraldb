@@ -1,0 +1,109 @@
+{
+  "id": "EM-Q-158FDF",
+  "lang": "158FDF",
+  "giver": {
+    "persona": "EM-INNER-NPC06",
+    "zone": "Empyrea/EM_Z04_InnerAthanor"
+  },
+  "requires": [
+    "EM-Q-158FDD"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 99237,
+    "gold": 1790
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Titan_MediumLava_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002864",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-CisternValve.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "descriptor": "WizardGameObjects_00000785",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    }
+  ],
+  "personas": {
+    "EM-INNER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireSoldier_B_NPC.dds",
+      "template_id": 1413082
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lava_at_First_Sight",
+    "timestamp": "20231126090238"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Cistern",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Peace Pipe replaced by EM-Q-158FDD",
+      "blocking": false
+    }
+  ]
+}

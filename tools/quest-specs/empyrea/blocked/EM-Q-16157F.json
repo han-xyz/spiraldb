@@ -1,0 +1,211 @@
+{
+  "id": "EM-Q-16157F",
+  "lang": "16157F",
+  "giver": {
+    "persona": "EM-ZANA-NPC06",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [
+    "EM-Q-1624DE"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 1194155,
+    "gold": 4295
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC02",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC14",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Shadow_DPS_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002899",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst16157F_00000031",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Shadow_Tank_A_01.AdjRef",
+        "EM_StandIn_ShadowTank_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002861",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst16157F_00000031",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Shadow_Healer_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002860",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst16157F_00000031",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC36",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1254352
+    },
+    "EM-ZANA-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Crewman_A_NPC.dds",
+      "template_id": 1254357
+    },
+    "EM-ZANA-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_CasterF_A_NPC.dds",
+      "template_id": 1254375
+    },
+    "EM-ZANA-NPC36": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_CaptainF_A_NPC.dds",
+      "template_id": 1447315
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pretty_Standard_Procedure",
+    "timestamp": "20231126091755"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16157F matched by the words it shares with the goals; its lines name Sparck, Pork, Zigi Stardust",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "the Nimbari Delegation (in the Throne Room)",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

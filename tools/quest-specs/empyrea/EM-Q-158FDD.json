@@ -1,0 +1,82 @@
+{
+  "id": "EM-Q-158FDD",
+  "lang": "158FDD",
+  "giver": {
+    "persona": "EM-INNER-NPC06",
+    "zone": "Empyrea/EM_Z04_InnerAthanor"
+  },
+  "requires": [
+    "EM-Q-158FDC"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 54336,
+    "gold": 1170
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Titan_SmallLava_A_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002894",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    }
+  ],
+  "personas": {
+    "EM-INNER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireSoldier_B_NPC.dds",
+      "template_id": 1413082
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Too_Hot_to_Handle",
+    "timestamp": "20240327235746"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst158FDD by chain order between WizQst158FDC and WizQst158FDE; its lines name Lava Spawn",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

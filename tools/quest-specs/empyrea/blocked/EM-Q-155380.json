@@ -1,0 +1,72 @@
+{
+  "id": "EM-Q-155380",
+  "lang": "155380",
+  "giver": {
+    "persona": "EM-AERI-NPC12",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-155329"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 5000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_CitizenF_A_NPC.dds",
+      "template_id": 1397633
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Home_Improvement",
+    "timestamp": "20231126094419"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Recover 5 Debris",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Defeat Monkey Spiders and",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
