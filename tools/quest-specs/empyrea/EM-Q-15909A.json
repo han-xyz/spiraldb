@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z09_NWAeroplains"
   },
   "requires": [
-    "EM-Q-1624DE"
+    "EM-Q-161585"
   ],
   "mainline": true,
   "level": 112,
@@ -81,11 +81,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Ain't No Citadel High Enough",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Rear Courtyard",
       "blocking": false
@@ -97,7 +92,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Ain't No Citadel High Enough replaced by EM-Q-1624DE",
+      "value": "Ain't No Citadel High Enough replaced by EM-Q-161585",
       "blocking": false
     }
   ]

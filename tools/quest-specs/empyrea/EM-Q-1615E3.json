@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z11_VeloCity"
   },
   "requires": [
-    "EM-Q-1624DE"
+    "EM-Q-161585"
   ],
   "mainline": false,
   "level": 112,
@@ -73,18 +73,13 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "When the Whirlyburly's Done",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
     },
     {
       "field": "requires (not generated)",
-      "value": "When the Whirlyburly's Done replaced by EM-Q-1624DE",
+      "value": "When the Whirlyburly's Done replaced by EM-Q-161585",
       "blocking": false
     }
   ]

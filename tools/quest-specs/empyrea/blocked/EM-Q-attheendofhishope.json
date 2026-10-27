@@ -1,7 +1,8 @@
 {
   "id": "EM-Q-attheendofhishope",
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-161580"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -120,11 +121,6 @@
       "field": "giver",
       "value": "starts automatically",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "This Little Light Net of Mine...",
-      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

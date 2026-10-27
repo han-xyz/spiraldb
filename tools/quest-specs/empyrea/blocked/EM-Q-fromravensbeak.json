@@ -4,8 +4,9 @@
     "persona": "EM-ZANA-NPC37",
     "zone": "Empyrea/EM_Z02_Zanadu"
   },
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-1627FA"
+  ],
   "mainline": false,
   "level": 112,
   "reward": {
@@ -69,11 +70,6 @@
       "field": "lang",
       "value": "From Raven's Beak",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Word Search",
-      "blocking": false
     }
   ]
 }

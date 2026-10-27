@@ -1,7 +1,8 @@
 {
   "id": "EM-Q-astralprojectyourvoice",
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-161881"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -112,11 +113,6 @@
       "field": "giver",
       "value": "starts automatically",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Timber Timbre",
-      "blocking": false
     },
     {
       "field": "goal.items",

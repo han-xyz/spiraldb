@@ -1,5 +1,6 @@
 {
-  "id": "EM-Q-prettystandardprocedure",
+  "id": "EM-Q-16157F",
+  "lang": "16157F",
   "giver": {
     "persona": "EM-ZANA-NPC06",
     "zone": "Empyrea/EM_Z02_Zanadu"
@@ -14,7 +15,104 @@
     "gold": 4295
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -38,6 +136,7 @@
       "count": 1,
       "target": "WizardMobs_00002899",
       "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst16157F_00000031",
       "loc": "ZoneLocName_1254355"
     },
     {
@@ -49,6 +148,7 @@
       "count": 1,
       "target": "WizardMobs_00002861",
       "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst16157F_00000031",
       "loc": "ZoneLocName_1254355"
     },
     {
@@ -59,6 +159,7 @@
       "count": 1,
       "target": "WizardMobs_00002860",
       "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizQst16157F_00000031",
       "loc": "ZoneLocName_1254355"
     },
     {
@@ -93,8 +194,8 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Pretty Standard Procedure",
-      "blocking": true
+      "value": "WizQst16157F matched by the words it shares with the goals; its lines name Sparck, Pork, Zigi Stardust",
+      "blocking": false
     },
     {
       "field": "goal.persona",
@@ -102,18 +203,8 @@
       "blocking": true
     },
     {
-      "field": "goal.descriptor",
-      "value": "Beacon Key",
-      "blocking": false
-    },
-    {
-      "field": "goal.descriptor",
-      "value": "Beacon Key",
-      "blocking": false
-    },
-    {
-      "field": "goal.descriptor",
-      "value": "Beacon Key",
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]

@@ -4,8 +4,9 @@
     "persona": "EM-AERO-NPC05",
     "zone": "Empyrea/Interiors/EM_Z11_HunterGuild"
   },
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-161585"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -53,11 +54,6 @@
       "field": "lang",
       "value": "Newts Hate Frogs",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Take Me Down to Velo City",
-      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

@@ -1,7 +1,8 @@
 {
   "id": "EM-Q-intheelementalgroove",
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-161887"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -71,11 +72,6 @@
       "field": "giver",
       "value": "starts automatically",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Battling the Elementals",
-      "blocking": false
     },
     {
       "field": "goal.items",

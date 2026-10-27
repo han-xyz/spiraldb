@@ -1,5 +1,6 @@
 {
-  "id": "EM-Q-aforrealsnipehunt",
+  "id": "EM-Q-161588",
+  "lang": "161588",
   "giver": {
     "persona": "EM-AERO-NPC07",
     "zone": "Empyrea/EM_Z09_NWAeroplains"
@@ -13,8 +14,42 @@
     "gold": 1590
   },
   "dialogs": {
-    "prep": [],
-    "underway": []
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ]
   },
   "goals": [
     {
@@ -61,8 +96,8 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "A For Real Snipe Hunt",
-      "blocking": true
+      "value": "WizQst161588 by chain order between WizQst161585 and WizQst161589; its lines name Snipes",
+      "blocking": false
     },
     {
       "field": "requires",
@@ -73,6 +108,11 @@
       "field": "goal.items",
       "value": "(Defeat and Collect) 3 Snipes",
       "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

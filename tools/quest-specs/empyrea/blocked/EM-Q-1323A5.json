@@ -1,0 +1,117 @@
+{
+  "id": "EM-Q-1323A5",
+  "lang": "1323A5",
+  "requires": [
+    "EM-Q-1323C0"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 99237,
+    "gold": 1790
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-DJBooth.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizardGameObjects_00000789",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Little_Khan_and_Dance",
+    "timestamp": "20231126100053"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1323A5 matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Dance Floor",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

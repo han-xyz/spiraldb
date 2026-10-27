@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z04_InnerAthanor"
   },
   "requires": [
-    "EM-Q-158FDC"
+    "EM-Q-158FDD"
   ],
   "mainline": true,
   "level": 112,
@@ -102,7 +102,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Peace Pipe replaced by EM-Q-158FDC",
+      "value": "Peace Pipe replaced by EM-Q-158FDD",
       "blocking": false
     }
   ]

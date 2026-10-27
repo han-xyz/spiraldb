@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z10_PortAero"
   },
   "requires": [
-    "EM-Q-1624DE"
+    "EM-Q-161580"
   ],
   "mainline": false,
   "level": 112,
@@ -153,7 +153,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "More Like Scare-O Plains replaced by EM-Q-1624DE",
+      "value": "More Like Scare-O Plains replaced by EM-Q-161580",
       "blocking": false
     }
   ]

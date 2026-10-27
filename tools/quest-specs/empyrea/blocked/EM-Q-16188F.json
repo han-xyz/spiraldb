@@ -5,8 +5,9 @@
     "persona": "EM-AERI-NPC17",
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-161887"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -109,11 +110,6 @@
     "timestamp": "20231126093226"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "Battling the Elementals",
-      "blocking": false
-    },
     {
       "field": "goal.mobs",
       "value": "Grim Brothers",

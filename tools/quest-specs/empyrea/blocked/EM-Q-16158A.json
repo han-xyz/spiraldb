@@ -1,11 +1,13 @@
 {
-  "id": "EM-Q-wheretheblueffaloroam",
+  "id": "EM-Q-16158A",
+  "lang": "16158A",
   "giver": {
     "persona": "EM-AERO-NPC07",
     "zone": "Empyrea/EM_Z09_NWAeroplains"
   },
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-161589"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -13,7 +15,56 @@
     "gold": 910
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -61,18 +112,18 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Where the Blue-ffalo Roam...",
-      "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "When the Whirlyburly's Done",
+      "value": "WizQst16158A, the only free key within 16 of its chain neighbour WizQst161589 whose lines name the page's names: Blue Ox",
       "blocking": false
     },
     {
       "field": "goal.items",
       "value": "Ox Alarm to Dark Cloud Base",
       "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

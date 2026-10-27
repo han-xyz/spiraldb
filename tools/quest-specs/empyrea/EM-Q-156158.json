@@ -142,11 +142,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Gut Bomb",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false

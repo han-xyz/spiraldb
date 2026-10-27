@@ -1,5 +1,6 @@
 {
-  "id": "EM-Q-toohottohandle",
+  "id": "EM-Q-158FDD",
+  "lang": "158FDD",
   "giver": {
     "persona": "EM-INNER-NPC06",
     "zone": "Empyrea/EM_Z04_InnerAthanor"
@@ -14,7 +15,28 @@
     "gold": 1170
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -48,8 +70,13 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Too Hot to Handle",
-      "blocking": true
+      "value": "WizQst158FDD by chain order between WizQst158FDC and WizQst158FDE; its lines name Lava Spawn",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

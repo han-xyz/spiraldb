@@ -5,8 +5,9 @@
     "persona": "EM-AERI-NPC02-B",
     "zone": "Empyrea/Interiors/EM_Z00_ArkHold"
   },
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-161582"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -236,11 +237,6 @@
     "timestamp": "20240328000412"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "The Voyage Home",
-      "blocking": false
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Academy of Technologists",

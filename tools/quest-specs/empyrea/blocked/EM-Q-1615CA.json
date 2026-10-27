@@ -1,8 +1,9 @@
 {
   "id": "EM-Q-1615CA",
   "lang": "1615CA",
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-16158E"
+  ],
   "mainline": false,
   "level": 112,
   "reward": {
@@ -136,11 +137,6 @@
       "field": "giver",
       "value": "starts automatically",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "I Ain't Afraid of No Goats",
-      "blocking": false
     },
     {
       "field": "goal.items",

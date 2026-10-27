@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z10_PortAero"
   },
   "requires": [
-    "EM-Q-1624DE"
+    "EM-Q-161585"
   ],
   "mainline": false,
   "level": 112,
@@ -99,11 +99,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Take Me Down to Velo City",
-      "blocking": false
-    },
-    {
       "field": "goal.descriptor",
       "value": "Bolts in Northeast Aero Plains",
       "blocking": false
@@ -111,11 +106,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Take Me Down to Velo City replaced by EM-Q-1624DE",
       "blocking": false
     }
   ]

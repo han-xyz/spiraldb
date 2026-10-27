@@ -5,8 +5,9 @@
     "persona": "EM-INNER-NPC06",
     "zone": "Empyrea/EM_Z04_InnerAthanor"
   },
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-158FDD"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -77,11 +78,6 @@
     "timestamp": "20240327235744"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "Too Hot to Handle",
-      "blocking": false
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Control Room",

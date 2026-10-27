@@ -1,0 +1,185 @@
+{
+  "id": "EM-Q-156157",
+  "lang": "156157",
+  "giver": {
+    "persona": "EM-AERI-NPC17",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-1553EA"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 217257,
+    "gold": 2660
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-SulphurBarrel.AdjRef"
+      ],
+      "count": 3,
+      "zone": "",
+      "descriptor": "WizQst156157_00000001"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-CharcoalBarrel.AdjRef"
+      ],
+      "count": 3,
+      "zone": "",
+      "descriptor": "WizQst156157_00000002"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC01-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Blockage.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst156157_00000005"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-NIMB-NPC16",
+      "zone": "Empyrea/Interiors/EM_Z07_ControlRoom",
+      "completion": [
+        {
+          "speaker": "EM-NIMB-NPC16",
+          "line": "00000020"
+        },
+        {
+          "speaker": "EM-NIMB-NPC16",
+          "line": "00000029"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    },
+    "EM-AERI-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1397735
+    },
+    "EM-NIMB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mutant_Dynt_A_NPC.dds",
+      "template_id": 1413353
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gut_Bomb",
+    "timestamp": "20231126090330"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst156157 matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Shipwrecks",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Sulfur and Charcoal",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Salpetre",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

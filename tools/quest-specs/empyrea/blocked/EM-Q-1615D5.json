@@ -5,8 +5,9 @@
     "persona": "EM-AERO-NPC14",
     "zone": "Empyrea/EM_Z10_PortAero"
   },
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-1615D2"
+  ],
   "mainline": false,
   "level": 112,
   "reward": {
@@ -89,11 +90,6 @@
     "timestamp": "20231126095941"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "The Thrill is in the Chase",
-      "blocking": false
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Evidence Locker",

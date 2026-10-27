@@ -1,0 +1,293 @@
+{
+  "id": "EM-Q-161589",
+  "lang": "161589",
+  "giver": {
+    "persona": "EM-AERO-NPC07",
+    "zone": "Empyrea/EM_Z09_NWAeroplains"
+  },
+  "requires": [
+    "EM-Q-161588"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 280271,
+    "gold": 2725
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC08",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Dwarf_AeroHunter_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002988",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC09",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC09",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC08",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z09_NWAeroplains",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z09_NWAeroplains",
+      "loc": "ZoneLocName_1447290",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000036"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_HelenaF_A_NPC.dds",
+      "template_id": 1447331
+    },
+    "EM-AERO-NPC08": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizenF_A_NPC.dds",
+      "template_id": 1447332
+    },
+    "EM-AERO-NPC09": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_G_NPC.dds",
+      "template_id": 1447333
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:When_the_Whirlyburly's_Done",
+    "timestamp": "20231126092151"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst161589 matched by the words it shares with the goals; its lines name Helena, Constance",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Velo City Inn",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Whirlyburly",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "up Injured Justicar",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

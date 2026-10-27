@@ -61,11 +61,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Insulation Insurrection",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false

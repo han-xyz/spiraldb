@@ -5,7 +5,9 @@
     "persona": "EM-CHAOS-NPC01-B",
     "zone": "Empyrea/Interiors/EM_Z14_FeralClearing"
   },
-  "requires": [],
+  "requires": [
+    "EM-Q-162814"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -100,9 +102,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Into the Jungle replaced by min_level",
+      "value": "Into the Jungle replaced by EM-Q-162814",
       "blocking": false
     }
-  ],
-  "min_level": 112
+  ]
 }

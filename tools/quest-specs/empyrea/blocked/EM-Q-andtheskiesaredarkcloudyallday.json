@@ -1,7 +1,8 @@
 {
   "id": "EM-Q-andtheskiesaredarkcloudyallday",
-  "requires": [],
-  "min_level": 112,
+  "requires": [
+    "EM-Q-16158A"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -115,11 +116,6 @@
       "field": "giver",
       "value": "starts automatically",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Where the Blue-ffalo Roam...",
-      "blocking": false
     },
     {
       "field": "goal.items",
