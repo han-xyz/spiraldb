@@ -1,6 +1,11 @@
 {
   "id": "AZ-Q-72E87",
   "lang": "72E87",
+  "auto_start": true,
+  "giver": {
+    "persona": "AZ-LAKE-NPC08",
+    "zone": "Azteca/AZ_Z08_PitchBlackLake"
+  },
   "requires": [
     "AZ-Q-72E79"
   ],
@@ -61,18 +66,18 @@
       "loc": "ZoneLocName_470546"
     }
   ],
-  "personas": {},
+  "personas": {
+    "AZ-LAKE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_King_B_NPC.dds",
+      "template_id": 470648
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Moon_Is_Down",
     "from": "archive",
     "timestamp": "20231125103342"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Pyramid of Mother Moon",

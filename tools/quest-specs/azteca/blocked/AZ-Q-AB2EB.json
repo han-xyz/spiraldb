@@ -1,6 +1,11 @@
 {
   "id": "AZ-Q-AB2EB",
   "lang": "AB2EB",
+  "auto_start": true,
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC01",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
   "requires": [
     "AZ-Q-9D0EA"
   ],
@@ -242,18 +247,18 @@
       "loc": "ZoneLocName_701121"
     }
   ],
-  "personas": {},
+  "personas": {
+    "AZ-ZOCOLO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
+      "template_id": 643252
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:This_Is_the_Way_the_World_Ends",
     "from": "archive",
     "timestamp": "20231125104117"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (no ZoneTransfer)",
       "value": "Xibalba: Azteca/AZ_Z12_Xibalba",

@@ -1,6 +1,11 @@
 {
   "id": "AZ-Q-B1443",
   "lang": "B1443",
+  "auto_start": true,
+  "giver": {
+    "persona": "AZ-MANG-NPC03",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
   "requires": [
     "AZ-Q-B1441"
   ],
@@ -88,6 +93,10 @@
     }
   ],
   "personas": {
+    "AZ-MANG-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_C_NPC.dds",
+      "template_id": 726111
+    },
     "AZ-MANG-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Toucan_Warrior_C_NPC.dds",
       "template_id": 726126
@@ -103,11 +112,6 @@
       "field": "lang",
       "value": "WizQstB1443 by the proper nouns its lines share with the page (Caquix, Guard, Left, Natron, Nine, Orbs, Shadows, Talon), within 16 of a key of the zone's quests; next best WizQstB1442 with 7",
       "blocking": false
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",

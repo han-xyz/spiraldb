@@ -1,0 +1,17 @@
+{
+  "Name": "AZ-Q-B1443",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 940,
+  "MaxGold": 940,
+  "ExperienceAmount": 18160,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:21:19.047881Z",
+  "ModifiedAt": "2026-10-27T09:21:19.047881Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

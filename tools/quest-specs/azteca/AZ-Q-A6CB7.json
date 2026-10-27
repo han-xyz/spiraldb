@@ -1,6 +1,11 @@
 {
   "id": "AZ-Q-A6CB7",
   "lang": "A6CB7",
+  "auto_start": true,
+  "giver": {
+    "persona": "AZ-TWIN-NPC02",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
   "requires": [
     "AZ-Q-A6CB6"
   ],
@@ -91,7 +96,12 @@
       "loc": "ZoneLocName_683131"
     }
   ],
-  "personas": {},
+  "personas": {
+    "AZ-TWIN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Queen_A_NPC.dds",
+      "template_id": 470606
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Birth_and_Death_of_the_Day",
     "from": "archive",
@@ -102,11 +112,6 @@
       "field": "lang",
       "value": "WizQstA6CB7 matched by the words it shares with the goals; its lines name Huracan Vicious Sky",
       "blocking": false
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",

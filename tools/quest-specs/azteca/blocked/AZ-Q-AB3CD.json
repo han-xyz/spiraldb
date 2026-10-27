@@ -1,6 +1,7 @@
 {
   "id": "AZ-Q-AB3CD",
   "lang": "AB3CD",
+  "auto_start": true,
   "requires": [],
   "min_level": 78,
   "mainline": false,
@@ -53,8 +54,8 @@
   },
   "needs_review": [
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {
