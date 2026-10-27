@@ -1,6 +1,7 @@
 {
   "id": "ZF-Q-82A78",
   "lang": "82A78",
+  "auto_start": true,
   "requires": [
     "ZF-Q-82A77"
   ],
@@ -165,8 +166,8 @@
   },
   "needs_review": [
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {

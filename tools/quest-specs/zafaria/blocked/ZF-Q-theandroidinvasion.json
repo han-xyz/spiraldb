@@ -1,5 +1,10 @@
 {
   "id": "ZF-Q-theandroidinvasion",
+  "auto_start": true,
+  "giver": {
+    "persona": "ZF_Professor_Who",
+    "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox"
+  },
   "requires": [],
   "min_level": 60,
   "mainline": false,
@@ -15,7 +20,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "ZF_Professor_Who",
+      "persona": "giver",
       "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_466160"
     },
@@ -37,7 +42,7 @@
     },
     {
       "type": "persona",
-      "persona": "ZF_Professor_Who",
+      "persona": "giver",
       "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_466160"
     },
@@ -64,7 +69,7 @@
     },
     {
       "type": "persona",
-      "persona": "ZF_Professor_Who",
+      "persona": "giver",
       "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_466160"
     },
@@ -119,11 +124,6 @@
     {
       "field": "lang",
       "value": "The Android Invasion",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {

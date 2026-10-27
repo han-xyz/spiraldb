@@ -1,5 +1,10 @@
 {
   "id": "ZF-Q-prideinthename",
+  "auto_start": true,
+  "giver": {
+    "persona": "ZF-SAV-NPC06",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
   "requires": [
     "ZF-Q-82A38"
   ],
@@ -46,6 +51,10 @@
     "ZF-HUB-NPC09": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Student_Johanna_Crowflyer_NPC.dds",
       "template_id": 1546126
+    },
+    "ZF-SAV-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Behki_Blackhoof_NPC.dds",
+      "template_id": 466167
     }
   },
   "source": {
@@ -57,11 +66,6 @@
     {
       "field": "lang",
       "value": "Pride in the Name",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {
