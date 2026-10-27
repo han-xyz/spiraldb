@@ -146,6 +146,15 @@
       "count": 1,
       "target": "WizardMobs_00004455",
       "zone": "Wallaru/Interiors/WL_Z01_JuggernautCrabTheater"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Card_Spiral_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004459",
+      "zone": "Wallaru/Interiors/WL_Z01_JuggernautCrabTheater"
     }
   ],
   "personas": {
@@ -190,11 +199,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Go To Next Play",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Spiral",
-      "blocking": true
     },
     {
       "field": "dialogs",
