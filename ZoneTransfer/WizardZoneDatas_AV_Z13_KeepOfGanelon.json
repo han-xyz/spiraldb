@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/AV_Z13_KeepOfGanelon",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BackToYard",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From Keep-Of-Ganelon-Real",
+        "m_destinationZone": "Avalon/AV_Z07_OuterYard"
+      }
+    }
+  ]
+}

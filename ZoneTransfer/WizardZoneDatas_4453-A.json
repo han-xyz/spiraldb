@@ -111,6 +111,17 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "Avalon/Interiors/AV_Z02_Well"
       }
+    },
+    {
+      "TriggerName": "Teleport_2MemoryHollow",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_High",
+        "m_destinationZone": "Avalon/Interiors/AV_Z02_MemoryHollow"
+      }
     }
   ]
 }

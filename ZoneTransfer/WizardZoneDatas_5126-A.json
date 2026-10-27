@@ -89,6 +89,17 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "Avalon/Interiors/AV_Z07_Well"
       }
+    },
+    {
+      "TriggerName": "Keep-Of-Ganelon-Real",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/AV_Z13_KeepOfGanelon"
+      }
     }
   ]
 }
