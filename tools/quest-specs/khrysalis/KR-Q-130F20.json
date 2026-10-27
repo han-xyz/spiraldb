@@ -1,0 +1,116 @@
+{
+  "id": "KR-Q-130F20",
+  "lang": "130F20",
+  "giver": {
+    "persona": "KR-SilentMarket-NPC10",
+    "zone": "Khrysalis/KR_Z01_SilentMarket"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 75270,
+    "gold": 910
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_1205051",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z05_FortRachias",
+      "loc": "ZoneLocName_1205054",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_1205051",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-SilentMarket-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZekeWife.dds",
+      "template_id": 1206088
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Another_Exotic_Exhibit",
+    "timestamp": "20231125230539"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Market Street replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

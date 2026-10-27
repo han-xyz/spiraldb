@@ -85,7 +85,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "(Aemon's) Music Box under the Harmony Tree in the Last Wood",
+      "value": "Music Box under the Harmony Tree in the Last Wood",
       "blocking": true
     },
     {

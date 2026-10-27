@@ -119,12 +119,12 @@
     },
     {
       "field": "goal.items",
-      "value": "the Burrower Staff",
+      "value": "Burrower Staff",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "the Baleful Empress",
+      "value": "Baleful Empress",
       "blocking": true
     },
     {

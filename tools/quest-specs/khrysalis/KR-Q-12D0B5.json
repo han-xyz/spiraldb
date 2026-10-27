@@ -1,0 +1,168 @@
+{
+  "id": "KR-Q-12D0B5",
+  "lang": "12D0B5",
+  "giver": {
+    "persona": "KR-Rachias-NPC05",
+    "zone": "Khrysalis/KR_Z05_FortRachias"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 123970,
+    "gold": 1200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Goliath_Behemoth_D.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001672",
+      "zone": "Khrysalis/KR_Z05_FortRachias",
+      "loc": "ZoneLocName_1205054"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Shdweave_Warrior_M.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001728",
+      "zone": "Khrysalis/KR_Z05_FortRachias",
+      "loc": "ZoneLocName_1205054"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-BeePrisoner.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Khrysalis/KR_Z05_FortRachias",
+      "descriptor": "WizQst12D0B5_00000010",
+      "loc": "ZoneLocName_1205054"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-Rachias-Lever.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z05_FortRachias",
+      "descriptor": "WizardGameObjects_00000089",
+      "loc": "ZoneLocName_1205054"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z05_FortRachias",
+      "loc": "ZoneLocName_1205054",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000016"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Rachias-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Knight_A_NPC.dds",
+      "template_id": 1223163
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bees_in_Their_Mouths",
+    "timestamp": "20231125223624"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D0B5 matched by the words it shares with the goals; its lines name Jovan HopeDrinker, Bee Prisoners",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Into Rachias",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Metamorphosis Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Into Rachias replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

@@ -1,0 +1,128 @@
+{
+  "id": "KR-Q-12D0B6",
+  "lang": "12D0B6",
+  "giver": {
+    "persona": "KR-Rachias-NPC01",
+    "zone": "Khrysalis/Interiors/KR_Z05_I10_CentralKeep"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 23250,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z05_FortRachias",
+      "loc": "ZoneLocName_1205054"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Bastion-NPC23",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023",
+      "completion": [
+        {
+          "speaker": "KR-Bastion-NPC23",
+          "line": "00000014"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_B_NPC.dds",
+      "template_id": 1223156
+    },
+    "KR-Rachias-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_SageF_C_NPC.dds",
+      "template_id": 1223159
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Edge_of_Forever",
+    "timestamp": "20240409061130"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D0B6 by the proper nouns its lines share with the page (Fort, Mirrormask, Rachias, Zaltanna), within 16 of a key of the zone's quests; next best WizQst12D0C2 with 3",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Way of the Samoorai",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Way of the Samoorai replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

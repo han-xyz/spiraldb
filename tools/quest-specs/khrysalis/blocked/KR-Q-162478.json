@@ -96,15 +96,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "KR-MorganthShadow.AdjRef",
-        "KR-MorgantheShadow.AdjRef",
-        "KR-ShadowPalace-NPC03.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WC-NPCs_00001548",
+      "type": "persona",
+      "persona": "KR-ShadowPalace-NPC03",
+      "zone": "Khrysalis/Interiors/KR_Z12_I04_MorgantheBossRoom",
       "loc": "ZoneLocName_1233442"
     },
     {
@@ -123,15 +117,19 @@
     },
     {
       "type": "persona",
-      "persona": "KR-HIVE-NPC27",
-      "zone": "Khrysalis/KR_Z11_TheHive",
-      "loc": "ZoneLocName_1233346"
+      "persona": "KR-ShadowPalace-NPC02",
+      "zone": "Khrysalis/KR_Z12_ShadowPalace",
+      "loc": "ZoneLocName_1233442"
     }
   ],
   "personas": {
-    "KR-HIVE-NPC27": {
+    "KR-ShadowPalace-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
-      "template_id": 1233519
+      "template_id": 1283142
+    },
+    "KR-ShadowPalace-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morganthe.dds",
+      "template_id": 1233475
     }
   },
   "source": {

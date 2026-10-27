@@ -109,12 +109,12 @@
     },
     {
       "field": "goal.items",
-      "value": "the Courtyard Gate",
+      "value": "Courtyard Gate",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "up the Mystic Colossus piece",
+      "value": "Mystic Colossus piece",
       "blocking": true
     },
     {

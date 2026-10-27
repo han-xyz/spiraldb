@@ -3,7 +3,7 @@
   "lang": "12ECBE",
   "giver": {
     "persona": "KR-KondhaDesert-NPC10",
-    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+    "zone": "Khrysalis/Interiors/KR_Z10_I18_FoodCave"
   },
   "requires": [],
   "min_level": 88,
@@ -68,7 +68,8 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": ""
+      "zone": "Khrysalis/Interiors/KR_Z10_I18_FoodCave",
+      "loc": "ZoneLocName_1240239"
     }
   ],
   "personas": {
@@ -88,11 +89,6 @@
       "blocking": false
     },
     {
-      "field": "giver.zone (placed in no zone)",
-      "value": "Bolthy PatternDancer",
-      "blocking": true
-    },
-    {
       "field": "requires",
       "value": "Free Pattern!",
       "blocking": false
@@ -100,11 +96,6 @@
     {
       "field": "goal.items",
       "value": "Comestibles",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona.zone (placed in no zone)",
-      "value": "Bolthy PatternDancer",
       "blocking": true
     },
     {

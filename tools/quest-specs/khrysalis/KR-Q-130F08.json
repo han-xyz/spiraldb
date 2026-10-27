@@ -1,0 +1,153 @@
+{
+  "id": "KR-Q-130F08",
+  "lang": "130F08",
+  "giver": {
+    "persona": "KR-Bastion-NPC23",
+    "zone": "Khrysalis/KR_Z00_Hub"
+  },
+  "requires": [
+    "KR-Q-130F8B"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 85220,
+    "gold": 1050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-ObeliskOrb01.AdjRef",
+        "KR-ObeliskOrb02.AdjRef",
+        "KR-ObeliskOrb03.AdjRef",
+        "KR-ObeliskOrb04.AdjRef",
+        "KR-ObeliskOrb05.AdjRef",
+        "KR-ObeliskOrb06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "descriptor": "WizItems_00001983",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-ObeliskOrb01.AdjRef",
+        "KR-ObeliskOrb02.AdjRef",
+        "KR-ObeliskOrb03.AdjRef",
+        "KR-ObeliskOrb04.AdjRef",
+        "KR-ObeliskOrb05.AdjRef",
+        "KR-ObeliskOrb06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "descriptor": "WizItems_00001983",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-ObeliskOrb01.AdjRef",
+        "KR-ObeliskOrb02.AdjRef",
+        "KR-ObeliskOrb03.AdjRef",
+        "KR-ObeliskOrb04.AdjRef",
+        "KR-ObeliskOrb05.AdjRef",
+        "KR-ObeliskOrb06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "descriptor": "WizItems_00001983",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-ObeliskOrb01.AdjRef",
+        "KR-ObeliskOrb02.AdjRef",
+        "KR-ObeliskOrb03.AdjRef",
+        "KR-ObeliskOrb04.AdjRef",
+        "KR-ObeliskOrb05.AdjRef",
+        "KR-ObeliskOrb06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "descriptor": "WizItems_00001983",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-ObeliskOrb01.AdjRef",
+        "KR-ObeliskOrb02.AdjRef",
+        "KR-ObeliskOrb03.AdjRef",
+        "KR-ObeliskOrb04.AdjRef",
+        "KR-ObeliskOrb05.AdjRef",
+        "KR-ObeliskOrb06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "descriptor": "WizItems_00001983",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-ObeliskOrb01.AdjRef",
+        "KR-ObeliskOrb02.AdjRef",
+        "KR-ObeliskOrb03.AdjRef",
+        "KR-ObeliskOrb04.AdjRef",
+        "KR-ObeliskOrb05.AdjRef",
+        "KR-ObeliskOrb06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "descriptor": "WizItems_00001983",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_B_NPC.dds",
+      "template_id": 1223156
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shadows_of_History",
+    "timestamp": "20231126061948"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

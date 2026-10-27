@@ -5,7 +5,9 @@
     "persona": "KR-FortRachias-NPC01",
     "zone": "Khrysalis/KR_Z05_FortRachias"
   },
-  "requires": [],
+  "requires": [
+    "KR-Q-130FF2"
+  ],
   "mainline": true,
   "level": 88,
   "reward": {
@@ -60,12 +62,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Alone, Alone, All, All, Alone replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 88
+  ]
 }

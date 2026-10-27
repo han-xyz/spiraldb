@@ -69,7 +69,8 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": ""
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
     }
   ],
   "personas": {
@@ -88,18 +89,8 @@
   },
   "needs_review": [
     {
-      "field": "giver.zone (placed in no zone)",
-      "value": "Zaltanna the Mirrormask",
-      "blocking": true
-    },
-    {
       "field": "goal.items",
-      "value": "the Mysterious Activity",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona.zone (placed in no zone)",
-      "value": "Zaltanna the Mirrormask",
+      "value": "Mysterious Activity",
       "blocking": true
     },
     {

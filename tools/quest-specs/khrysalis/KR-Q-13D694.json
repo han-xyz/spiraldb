@@ -51,6 +51,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/Interiors/KR_Z10_I05_DryGulchCave"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Mice_Barbarian_D.AdjRef",
@@ -82,11 +86,6 @@
     {
       "field": "requires",
       "value": "Creeping Water",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Dry Gulch Cave",
       "blocking": false
     },
     {

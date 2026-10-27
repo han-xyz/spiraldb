@@ -45,11 +45,6 @@
       "blocking": true
     },
     {
-      "field": "giver.zone (placed in no zone)",
-      "value": "Sabra SoaringKnife",
-      "blocking": true
-    },
-    {
       "field": "requires",
       "value": "Soaring Free",
       "blocking": false

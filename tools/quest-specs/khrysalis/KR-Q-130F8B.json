@@ -1,0 +1,125 @@
+{
+  "id": "KR-Q-130F8B",
+  "lang": "130F8B",
+  "giver": {
+    "persona": "KR-Bastion-NPC23",
+    "zone": "Khrysalis/KR_Z00_Hub"
+  },
+  "requires": [
+    "KR-Q-12D0B6"
+  ],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 23250,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-Bastion-NPC40",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Bastion-NPC39",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_B_NPC.dds",
+      "template_id": 1223156
+    },
+    "KR-Bastion-NPC39": {
+      "portrait": "GUI/NpcPortraits/Portraits_Inyanga_Whitestripes.dds",
+      "template_id": 1249168
+    },
+    "KR-Bastion-NPC40": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Headmaster_A_NPC.dds",
+      "template_id": 1249169
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Back_in_the_Saddle",
+    "timestamp": "20250911032044"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

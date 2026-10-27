@@ -1,0 +1,160 @@
+{
+  "id": "KR-Q-130F0C",
+  "lang": "130F0C",
+  "giver": {
+    "persona": "KR-SilentMarket-NPC01",
+    "zone": "Khrysalis/KR_Z01_SilentMarket"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 53560,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-MoonCliffs-NPC21",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Shdweave_Lord_F.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001708",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_1205051"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_1205051"
+    }
+  ],
+  "personas": {
+    "KR-MoonCliffs-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bee_Warrior_A_NPC.dds",
+      "template_id": 1223231
+    },
+    "KR-SilentMarket-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Goliath_Crusher_E_NPC.dds",
+      "template_id": 1242050
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Scroll_Call",
+    "timestamp": "20240205172706"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Blind Leads replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

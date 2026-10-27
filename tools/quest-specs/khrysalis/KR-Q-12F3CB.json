@@ -1,0 +1,170 @@
+{
+  "id": "KR-Q-12F3CB",
+  "lang": "12F3CB",
+  "giver": {
+    "persona": "KR-LastWood-NPC25",
+    "zone": "Khrysalis/KR_Z03_LastWood"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 63690,
+    "gold": 770
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-MoonCliffs-NPC21",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mouse_Knight_G.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001681",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-BAST-TomeRind.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "descriptor": "WizardGameObjects_00000647",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000016"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC25": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Merchant_A_NPC.dds",
+      "template_id": 1223226
+    },
+    "KR-MoonCliffs-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bee_Warrior_A_NPC.dds",
+      "template_id": 1223231
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:One_Cheesy_Book",
+    "timestamp": "20231126061310"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Mouse Tracks",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "CurdWright Crypt, Lost Bastion",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "CurdWright Crypt",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Mouse Tracks replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

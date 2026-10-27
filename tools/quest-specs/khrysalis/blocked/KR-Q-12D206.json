@@ -2,8 +2,8 @@
   "id": "KR-Q-12D206",
   "lang": "12D206",
   "giver": {
-    "persona": "KR-HIVE-NPC27",
-    "zone": "Khrysalis/KR_Z11_TheHive"
+    "persona": "KR-ShadowPalace-NPC02",
+    "zone": "Khrysalis/KR_Z12_ShadowPalace"
   },
   "requires": [
     "KR-Q-12D205"
@@ -43,14 +43,14 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Khrysalis/KR_Z11_TheHive",
-      "loc": "ZoneLocName_1233346"
+      "zone": "Khrysalis/KR_Z12_ShadowPalace",
+      "loc": "ZoneLocName_1233442"
     }
   ],
   "personas": {
-    "KR-HIVE-NPC27": {
+    "KR-ShadowPalace-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
-      "template_id": 1233519
+      "template_id": 1283142
     }
   },
   "source": {
@@ -60,7 +60,7 @@
   "needs_review": [
     {
       "field": "goal.mobs",
-      "value": "Morganthe's Guards (in The Galleries)",
+      "value": "Morganthe's Guards",
       "blocking": true
     },
     {

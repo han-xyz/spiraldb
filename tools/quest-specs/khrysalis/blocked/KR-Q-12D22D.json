@@ -90,7 +90,8 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": ""
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
     }
   ],
   "personas": {
@@ -110,11 +111,6 @@
       "blocking": false
     },
     {
-      "field": "giver.zone (placed in no zone)",
-      "value": "Zharellia the RunningOne",
-      "blocking": true
-    },
-    {
       "field": "requires",
       "value": "Stop 'Em Before They Start",
       "blocking": false
@@ -127,11 +123,6 @@
     {
       "field": "goal.items",
       "value": "Undrek BlightClaw",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona.zone (placed in no zone)",
-      "value": "Zharellia the RunningOne",
       "blocking": true
     },
     {

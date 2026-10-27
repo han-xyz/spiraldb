@@ -101,11 +101,6 @@
   },
   "needs_review": [
     {
-      "field": "giver.zone (placed in no zone)",
-      "value": "Zaltanna the Mirrormask",
-      "blocking": true
-    },
-    {
       "field": "goal.items",
       "value": "Khrysalis Obelisks",
       "blocking": true

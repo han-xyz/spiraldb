@@ -93,13 +93,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "(enter) the Guarded Tent",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Guarded Tent",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Silk",
+      "value": "Silk",
       "blocking": true
     },
     {

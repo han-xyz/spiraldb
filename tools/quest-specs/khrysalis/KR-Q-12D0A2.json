@@ -1,0 +1,152 @@
+{
+  "id": "KR-Q-12D0A2",
+  "lang": "12D0A2",
+  "giver": {
+    "persona": "KR-TyrianGorge-NPC08",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 65785,
+    "gold": 670
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-TyrianGorge-NPC10",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Bloodbat_Canyon_A.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001671",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-Gorge-MosquitoLarvae.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizardGameObjects_00000654",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {
+    "KR-TyrianGorge-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Paladin_B_NPC.dds",
+      "template_id": 1223199
+    },
+    "KR-TyrianGorge-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Millipede_Warrior_B_NPC.dds",
+      "template_id": 1233092
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Feed_Me",
+    "timestamp": "20231125222228"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D0A2 matched by the words it shares with the goals; its lines name Z'ur Grush",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Sticky Situation",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Chiroptera Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Sticky Situation replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

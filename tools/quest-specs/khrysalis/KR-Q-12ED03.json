@@ -63,6 +63,10 @@
       "loc": "ZoneLocName_1240239"
     },
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/Interiors/KR_Z10_I05_AlluviumCave"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Milipede_Warrior_K.AdjRef"
@@ -104,11 +108,6 @@
     {
       "field": "goal.descriptor",
       "value": "Mandyll's Oreaxe",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Alluvium Cave",
       "blocking": false
     },
     {

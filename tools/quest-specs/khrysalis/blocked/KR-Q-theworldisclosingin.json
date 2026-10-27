@@ -20,7 +20,8 @@
     {
       "type": "persona",
       "persona": "KR-LastWood-NPC14",
-      "zone": ""
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
     }
   ],
   "personas": {
@@ -47,11 +48,6 @@
       "field": "requires",
       "value": "Cry Havoc",
       "blocking": false
-    },
-    {
-      "field": "goal.persona.zone (placed in no zone)",
-      "value": "Sabra SoaringKnife",
-      "blocking": true
     }
   ]
 }

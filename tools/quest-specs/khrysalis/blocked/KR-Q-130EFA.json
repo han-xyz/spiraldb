@@ -58,8 +58,7 @@
   "goals": [
     {
       "type": "waypoint",
-      "zone": "Khrysalis/KR_Z03_LastWood",
-      "loc": "ZoneLocName_1205052"
+      "zone": "Khrysalis/Interiors/KR_Z03_ReverenceCave"
     },
     {
       "type": "bounty",

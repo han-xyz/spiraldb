@@ -1,0 +1,100 @@
+{
+  "id": "KR-Q-13D629",
+  "lang": "13D629",
+  "giver": {
+    "persona": "KR-CrescentBeach-NPC19",
+    "zone": "Khrysalis/KR_Z06_CrescentBeach"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 61985,
+    "gold": 600
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-FoodCrate.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "descriptor": "WizItems_00001981",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mantis_HunterF_F_Driftwood.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001815",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097"
+    }
+  ],
+  "personas": {
+    "KR-CrescentBeach-NPC19": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Hunter_D_NPC.dds",
+      "template_id": 1283155
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Welcome_Distraction",
+    "timestamp": "20231126062049"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Band of Brothers replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

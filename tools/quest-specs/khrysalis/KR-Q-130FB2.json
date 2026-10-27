@@ -1,0 +1,89 @@
+{
+  "id": "KR-Q-130FB2",
+  "lang": "130FB2",
+  "giver": {
+    "persona": "KR-CrescentBeach-NPC02",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 15500,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-CrescentBeach-NPC05",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-CrescentBeach-NPC01",
+      "zone": "Khrysalis/Interiors/KR_Z06_I01_Hermitcave",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {
+    "KR-CrescentBeach-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_A_NPC.dds",
+      "template_id": 1283092
+    },
+    "KR-CrescentBeach-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Troll_Pirate_A_NPC.dds",
+      "template_id": 1283093
+    },
+    "KR-CrescentBeach-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Pirate_A_NPC.dds",
+      "template_id": 1283096
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Nor_Any_Drop_To_Drink",
+    "timestamp": "20231125224122"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Oh Hai replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

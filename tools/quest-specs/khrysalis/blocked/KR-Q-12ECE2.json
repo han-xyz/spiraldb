@@ -87,9 +87,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Shadow Arc",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Shadow Arc",
+      "blocking": false
     },
     {
       "field": "dialogs",

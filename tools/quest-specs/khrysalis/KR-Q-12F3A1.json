@@ -1,0 +1,177 @@
+{
+  "id": "KR-Q-12F3A1",
+  "lang": "12F3A1",
+  "giver": {
+    "persona": "KR-LastWood-NPC13",
+    "zone": "Khrysalis/KR_Z03_LastWood"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 73100,
+    "gold": 750
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-Accompany-Dorian-NPC.AdjRef",
+        "KR-LastWood-NPC13.AdjRef",
+        "KR-TyrianGorge-NPC08.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "descriptor": "NPCs_01748126",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-Accompany-Dorian-NPC.AdjRef",
+        "KR-LastWood-NPC13.AdjRef",
+        "KR-TyrianGorge-NPC08.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "descriptor": "NPCs_01748126",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-Accompany-Dorian-NPC.AdjRef",
+        "KR-LastWood-NPC13.AdjRef",
+        "KR-TyrianGorge-NPC08.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "descriptor": "NPCs_01748126",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-Accompany-Dorian-NPC.AdjRef",
+        "KR-LastWood-NPC13.AdjRef",
+        "KR-TyrianGorge-NPC08.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "descriptor": "NPCs_01748126",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-Accompany-Dorian-NPC.AdjRef",
+        "KR-LastWood-NPC13.AdjRef",
+        "KR-TyrianGorge-NPC08.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "descriptor": "NPCs_01748126",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Paladin_B_NPC.dds",
+      "template_id": 1223177
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:How_I_Learned_to_Stop_Worrying",
+    "timestamp": "20231125222045"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12F3A1 matched by the words it shares with the goals; its lines name Dorian",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "New Plan",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "New Plan replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

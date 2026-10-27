@@ -131,7 +131,7 @@
     },
     {
       "field": "goal.items",
-      "value": "a Friendly Barbarian",
+      "value": "Friendly Barbarian",
       "blocking": true
     },
     {
@@ -141,18 +141,18 @@
     },
     {
       "field": "goal.items",
-      "value": "the Mouse Sign",
+      "value": "Mouse Sign",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "the Mouse Sign",
+      "value": "Mouse Sign",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Tent (and Defeat Sonya Jade-Eye)",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Tent",
+      "blocking": false
     },
     {
       "field": "dialogs",

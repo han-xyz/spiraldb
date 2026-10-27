@@ -2,8 +2,8 @@
   "id": "KR-Q-126397",
   "lang": "126397",
   "giver": {
-    "persona": "KR-Bastion-NPC32",
-    "zone": "Khrysalis/KR_Z01_SilentMarket"
+    "persona": "KR-Bastion-NPC31",
+    "zone": "Khrysalis/KR_Z00_Hub"
   },
   "requires": [
     "KR-Q-126391"
@@ -59,8 +59,8 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Khrysalis/KR_Z01_SilentMarket",
-      "loc": "ZoneLocName_1205051",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023",
       "completion": [
         {
           "speaker": "giver",
@@ -70,9 +70,9 @@
     }
   ],
   "personas": {
-    "KR-Bastion-NPC32": {
+    "KR-Bastion-NPC31": {
       "portrait": "GUI/NpcPortraits/Mole_Gardener_B_NPC.dds",
-      "template_id": 1223222
+      "template_id": 1205142
     }
   },
   "source": {

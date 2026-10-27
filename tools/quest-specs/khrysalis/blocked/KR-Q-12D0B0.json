@@ -105,14 +105,12 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "KR-AbyssalCave-Exit.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Khrysalis/KR_Z04_TyrianGorge",
-      "descriptor": "WizQst12D0B0_00000000",
-      "loc": "ZoneLocName_1233046"
+      "type": "waypoint",
+      "zone": "Khrysalis/Interiors/KR_Z04_I07_AbyssalCave"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/Interiors/KR_Z04_I07_AbyssalCave"
     },
     {
       "type": "bountycollect",
@@ -148,18 +146,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Exploring the Abyssal Cave",
-      "blocking": true
-    },
-    {
       "field": "goal.mobs",
       "value": "Mantis Phantoms",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "the 3 Mantis' Remains Due to a bug, this may not appear as a Goal in the Quest Log.",
+      "value": "Mantis' Remains Due to a bug, this may not appear as a Goal in the Quest Log.",
       "blocking": true
     },
     {

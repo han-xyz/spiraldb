@@ -5,7 +5,9 @@
     "persona": "KR-LastWood-NPC21",
     "zone": "Khrysalis/KR_Z03_LastWood"
   },
-  "requires": [],
+  "requires": [
+    "KR-Q-12638B"
+  ],
   "mainline": false,
   "level": 88,
   "reward": {
@@ -70,12 +72,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Bring The Green replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 88
+  ]
 }

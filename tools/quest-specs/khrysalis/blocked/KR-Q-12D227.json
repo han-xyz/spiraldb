@@ -57,13 +57,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "KR-Hive-NPC21.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "KR-Hive-NPC21",
       "zone": "Khrysalis/KR_Z11_TheHive",
-      "descriptor": "NPCs_01748341",
       "loc": "ZoneLocName_1233346"
     },
     {
@@ -87,6 +83,10 @@
     "KR-Hive-NPC16": {
       "portrait": "GUI/NpcPortraits/Portrait_Mice_Barbarian_C_NPC.dds",
       "template_id": 1283233
+    },
+    "KR-Hive-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Barbarian_E_NPC.dds",
+      "template_id": 1299032
     }
   },
   "source": {
@@ -95,7 +95,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.persona",
       "value": "Bawb",
       "blocking": true
     },

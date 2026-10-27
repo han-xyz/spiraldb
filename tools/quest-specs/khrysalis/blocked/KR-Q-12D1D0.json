@@ -80,6 +80,12 @@
   },
   "goals": [
     {
+      "type": "persona",
+      "persona": "KR-Hive-NPC23",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "KR_Goliath_Behemoth_H.AdjRef",
@@ -102,6 +108,10 @@
     "KR-HIVE-NPC27": {
       "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
       "template_id": 1233519
+    },
+    "KR-Hive-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_A_NPC.dds",
+      "template_id": 1233354
     }
   },
   "source": {
@@ -115,18 +125,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Taylor Coleridge through the Hive",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Mutation Chamber B",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the True Essence",
+      "value": "True Essence",
       "blocking": true
     },
     {

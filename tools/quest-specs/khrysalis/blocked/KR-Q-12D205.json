@@ -2,8 +2,8 @@
   "id": "KR-Q-12D205",
   "lang": "12D205",
   "giver": {
-    "persona": "KR-HIVE-NPC27",
-    "zone": "Khrysalis/KR_Z11_TheHive"
+    "persona": "KR-ShadowPalace-NPC02",
+    "zone": "Khrysalis/KR_Z12_ShadowPalace"
   },
   "requires": [],
   "min_level": 88,
@@ -124,19 +124,25 @@
     },
     {
       "type": "persona",
+      "persona": "KR-ShadowPalace-NPC01",
+      "zone": "Khrysalis/KR_Z12_ShadowPalace",
+      "loc": "ZoneLocName_1233442"
+    },
+    {
+      "type": "persona",
       "persona": "giver",
-      "zone": "Khrysalis/KR_Z11_TheHive",
-      "loc": "ZoneLocName_1233346"
+      "zone": "Khrysalis/KR_Z12_ShadowPalace",
+      "loc": "ZoneLocName_1233442"
     }
   ],
   "personas": {
-    "KR-HIVE-NPC27": {
-      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
-      "template_id": 1233519
-    },
     "KR-ShadowPalace-NPC01": {
       "portrait": "GUI/NpcPortraits/GiantTree_Evil_A_NPC.dds",
       "template_id": 1283143
+    },
+    "KR-ShadowPalace-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
+      "template_id": 1283142
     }
   },
   "source": {
@@ -150,18 +156,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Celestial Plane",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Celestial Plane",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "to Moros",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Ethereal Bridge",
+      "value": "Ethereal Bridge",
       "blocking": true
     },
     {

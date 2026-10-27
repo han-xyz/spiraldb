@@ -1,0 +1,98 @@
+{
+  "id": "KR-Q-130EF4",
+  "lang": "130EF4",
+  "giver": {
+    "persona": "KR-Bastion-NPC35",
+    "zone": "Khrysalis/KR_Z00_Hub"
+  },
+  "requires": [
+    "KR-Q-130EF2"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 40530,
+    "gold": 490
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_1205051"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mantis_HunterF_I.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001704",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC35": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Vendor_A_NPC.dds",
+      "template_id": 1249031
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Robbing_Us_Blind",
+    "timestamp": "20231126060713"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

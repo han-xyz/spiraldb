@@ -73,6 +73,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/Interiors/KR_Z11_I02_RecluseChamber"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "KR_Moth_Priest_F.AdjRef"
@@ -107,12 +111,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "the Recluse Chamber",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Spinner Crystals",
+      "value": "Spinner Crystals",
       "blocking": true
     },
     {

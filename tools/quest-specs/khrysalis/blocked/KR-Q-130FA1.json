@@ -75,13 +75,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "the Ant Lion's Warren",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Ant Lion's Warren",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Desert Hoppers",
+      "field": "goal.persona",
+      "value": "Desert Hoppers",
       "blocking": true
     },
     {

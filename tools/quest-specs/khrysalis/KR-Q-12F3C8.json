@@ -1,0 +1,132 @@
+{
+  "id": "KR-Q-12F3C8",
+  "lang": "12F3C8",
+  "giver": {
+    "persona": "KR-LastWood-NPC24",
+    "zone": "Khrysalis/KR_Z03_LastWood"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 81060,
+    "gold": 980
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Shdweave_Warrior_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001678",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "descriptor": "WizQst12F3C8_00000010",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Shdweave_Lord_E.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001687",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-LAST-BurrowShovel.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "descriptor": "WizardGameObjects_00000646",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC24": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Guard_E_NPC.dds",
+      "template_id": 1223225
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:I_Can't_Dig_It",
+    "timestamp": "20231126061508"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Cry Havoc",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "WorldRazer's Tent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Cry Havoc replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}
