@@ -78,6 +78,39 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "Lemuria/Interiors/LM_Z06_RoolsHouse"
       }
+    },
+    {
+      "TriggerName": "Teleport_EthylsHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SkyCity",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z06_EthylsHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_GuardComplex",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SkyCity",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z06_GuardComplex"
+      }
+    },
+    {
+      "TriggerName": "Teleport_LucysHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SkyCity",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z06_LucysHouse"
+      }
     }
   ]
 }
