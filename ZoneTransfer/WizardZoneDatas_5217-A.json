@@ -89,6 +89,17 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "Zafaria/Interiors/ZF_Z07_I06_Market_Tower"
       }
+    },
+    {
+      "TriggerName": "Teleport_2_HallOfFury",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_StoneTown",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z07_HallOfFury"
+      }
     }
   ]
 }

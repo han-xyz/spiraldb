@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z07_HallOfFury",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BackToStoneTown",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_HallOfFury",
+        "m_destinationZone": "Zafaria/ZF_Z07_Stone_Town"
+      }
+    }
+  ]
+}
