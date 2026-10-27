@@ -113,8 +113,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Drum Near King's Cage",
+      "field": "goal.unknown-verb",
+      "value": "Play Drum Near King's Cage",
       "blocking": true
     },
     {

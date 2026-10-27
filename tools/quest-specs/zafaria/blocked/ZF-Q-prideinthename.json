@@ -74,8 +74,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Johanna's Cage",
+      "field": "goal.unknown-verb",
+      "value": "Unlock Johanna's Cage",
       "blocking": true
     }
   ]

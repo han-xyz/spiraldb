@@ -52,8 +52,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Grave Marker",
+      "field": "goal.usage",
+      "value": "Use Grave Marker",
       "blocking": true
     },
     {

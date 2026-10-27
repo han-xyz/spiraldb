@@ -87,8 +87,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Down Poisonous Vine",
+      "field": "goal.unknown-verb",
+      "value": "Chop Down Poisonous Vine",
       "blocking": true
     },
     {

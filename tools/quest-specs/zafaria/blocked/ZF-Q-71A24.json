@@ -100,8 +100,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Watering Hole in the Savannah",
+      "field": "goal.usage",
+      "value": "Restore Watering Hole in the Savannah",
       "blocking": true
     },
     {

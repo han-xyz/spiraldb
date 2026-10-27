@@ -171,8 +171,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Bracelets on Pedestal",
+      "field": "goal.usage",
+      "value": "Place Bracelets on (first) Pedestal",
       "blocking": true
     },
     {

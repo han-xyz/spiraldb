@@ -74,8 +74,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Fire at Tower",
+      "field": "goal.unknown-verb",
+      "value": "Put Out Fire at Tower",
       "blocking": true
     },
     {

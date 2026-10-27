@@ -76,8 +76,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Broken Bridge",
+      "field": "goal.usage",
+      "value": "Repair Broken Bridge",
       "blocking": true
     },
     {

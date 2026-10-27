@@ -207,14 +207,14 @@
           "m_results": []
         }
       },
-      "m_locationName": "ZoneLocName_465392",
+      "m_locationName": "",
       "m_displayImage1": "",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Zafaria/ZF_Z07_Stone_Town",
+      "m_destinationZone": "Zafaria/Interiors/ZF_Z07_I04_Amedras_Tower",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_WAYPOINT",
       "m_noQuestHelper": false,
@@ -225,7 +225,7 @@
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
       "m_zoneEntry": true,
-      "m_zoneTag": "Zafaria/ZF_Z07_Stone_Town",
+      "m_zoneTag": "Zafaria/Interiors/ZF_Z07_I04_Amedras_Tower",
       "m_proximityTag": "",
       "m_zoneExit": false
     },

@@ -124,8 +124,7 @@
     },
     {
       "type": "waypoint",
-      "zone": "Zafaria/ZF_Z07_Stone_Town",
-      "loc": "ZoneLocName_465392"
+      "zone": "Zafaria/Interiors/ZF_Z07_I04_Amedras_Tower"
     },
     {
       "type": "bountycollect",

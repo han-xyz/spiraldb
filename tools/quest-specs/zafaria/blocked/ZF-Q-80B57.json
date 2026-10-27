@@ -129,8 +129,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Palace Door",
+      "field": "goal.persona",
+      "value": "Approach Palace Door",
       "blocking": true
     },
     {

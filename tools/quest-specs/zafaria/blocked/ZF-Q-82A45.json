@@ -77,8 +77,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Mousetrap",
+      "field": "goal.usage",
+      "value": "Place Mousetrap",
       "blocking": true
     },
     {

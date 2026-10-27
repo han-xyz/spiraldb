@@ -132,8 +132,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Skull Island Tavern",
+      "field": "goal.waypoint",
+      "value": "Investigate Skull Island Tavern",
       "blocking": true
     },
     {
@@ -167,8 +167,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Coconut Crawler",
+      "field": "goal.waypoint",
+      "value": "Investigate the Coconut Crawler",
       "blocking": true
     },
     {
@@ -192,8 +192,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Lifeboat",
+      "field": "goal.waypoint",
+      "value": "Find a Lifeboat",
       "blocking": true
     }
   ]
