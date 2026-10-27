@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z05_Nibbleheim"
   },
   "requires": [
-    "KM-Q-171641"
+    "KM-Q-171684"
   ],
   "mainline": false,
   "level": 122,
@@ -110,7 +110,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Local Color Out of Space replaced by KM-Q-171641",
+      "value": "Local Color Out of Space replaced by KM-Q-171684",
       "blocking": false
     }
   ]

@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z09_CandyCornFarm"
   },
   "requires": [
-    "KM-Q-171641"
+    "KM-Q-171684"
   ],
   "mainline": true,
   "level": 122,
@@ -124,11 +124,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Moose Spit replaced by KM-Q-171641",
       "blocking": false
     }
   ]

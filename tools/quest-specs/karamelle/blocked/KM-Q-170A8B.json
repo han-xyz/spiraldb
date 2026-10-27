@@ -173,6 +173,16 @@
       "target": "WizardMobs_00003715",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Alphoi_DarkF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003716",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
     }
   ],
   "personas": {
@@ -205,11 +215,6 @@
     {
       "field": "goal.items",
       "value": "Spirit Eater",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Spirit Gobbler",
       "blocking": true
     },
     {

@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z09_CandyCornFarm"
   },
   "requires": [
-    "KM-Q-171641"
+    "KM-Q-171684"
   ],
   "mainline": false,
   "level": 122,
@@ -156,7 +156,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Cotton Candy for the Soul replaced by KM-Q-171641",
+      "value": "Cotton Candy for the Soul replaced by KM-Q-171684",
       "blocking": false
     }
   ]

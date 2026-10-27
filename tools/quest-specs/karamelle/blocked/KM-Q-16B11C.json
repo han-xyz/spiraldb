@@ -127,6 +127,16 @@
       "loc": "ZoneLocName_1510006"
     },
     {
+      "type": "usage",
+      "items": [
+        "KM-GondolaToEstate.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z00_HUB",
+      "descriptor": "Monsters Cabal",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
       "type": "persona",
       "persona": "KM-ESTATE-NPC05",
       "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge",
@@ -204,11 +214,6 @@
       "field": "lang",
       "value": "WizQst16B11C is The Repository's id; the title reads 170A93",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Gondola to von Trap Estate",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",

@@ -48,6 +48,16 @@
       "loc": "ZoneLocName_1510005"
     },
     {
+      "type": "usage",
+      "items": [
+        "KM-BrundleTrap.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "descriptor": "WizQst171684_00000005",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Karamelle/KM_Z09_CandyCornFarm",
@@ -66,11 +76,6 @@
     "timestamp": "20240322074301"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Traps",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

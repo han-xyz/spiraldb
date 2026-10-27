@@ -113,6 +113,16 @@
       "loc": "ZoneLocName_1506578"
     },
     {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gummy_BunnyUber_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003680",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
       "type": "persona",
       "persona": "KM-BLACK-NPC12",
       "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
@@ -150,11 +160,6 @@
       "field": "lang",
       "value": "WizQst16FF9C is The Repository's id; the title reads no key",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Bundozer",
-      "blocking": true
     },
     {
       "field": "dialogs",
