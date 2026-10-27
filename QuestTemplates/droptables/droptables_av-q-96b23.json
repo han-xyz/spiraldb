@@ -1,0 +1,17 @@
+{
+  "Name": "AV-Q-96B23",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 845,
+  "MaxGold": 845,
+  "ExperienceAmount": 34370,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:11:33.476332Z",
+  "ModifiedAt": "2026-10-27T09:11:33.476332Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

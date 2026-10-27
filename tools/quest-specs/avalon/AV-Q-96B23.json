@@ -6,7 +6,6 @@
     "zone": "Avalon/AV_Z00_Hub"
   },
   "requires": [],
-  "min_level": 68,
   "mainline": false,
   "level": 68,
   "reward": {
@@ -95,6 +94,17 @@
       "with_previous": true
     },
     {
+      "type": "bounty",
+      "mobs": [
+        "AV-SpectreOfTheBrocken-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001256",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602089",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "AV-CAER-NPC12",
       "zone": "Avalon/AV_Z03_CaerLyon",
@@ -129,14 +139,15 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Spectres of the Brocken",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Taste of Victory replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 68
 }

@@ -47,6 +47,7 @@
     {
       "type": "usage",
       "items": [
+        "AV_EventTeleportToHighRoad.AdjRef",
         "AV_DunDara_Raven.AdjRef"
       ],
       "count": 6,
@@ -72,11 +73,6 @@
     "timestamp": "20231125093336"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "High Road (in Red Thorn Tower)",
-      "blocking": true
-    },
     {
       "field": "goal.items",
       "value": "Caer Lyon (in Nosebiter's Hideout)",

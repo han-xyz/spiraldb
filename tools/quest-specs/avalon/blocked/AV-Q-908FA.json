@@ -89,6 +89,38 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "AV-CATA-Statue-Artorius.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000518",
+      "loc": "ZoneLocName_592130"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-CATA-Statue-Gwen.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000519",
+      "loc": "ZoneLocName_592130",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-CATA-Statue-Morganthe.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000520",
+      "loc": "ZoneLocName_592130",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z10_Catacombs",
@@ -111,21 +143,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Night Garden",
       "blocking": false
-    },
-    {
-      "field": "goal.persona",
-      "value": "Statue of Artorius",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona",
-      "value": "Statue of Gwendolyn",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona",
-      "value": "Statue of Morganthe",
-      "blocking": true
     },
     {
       "field": "goal.persona",

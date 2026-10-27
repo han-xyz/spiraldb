@@ -58,6 +58,15 @@
       "loc": "ZoneLocName_537904"
     },
     {
+      "type": "usage",
+      "items": [
+        "AV_DunDara_Raven.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z06_DunDara",
@@ -107,9 +116,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.descriptor",
       "value": "Ravens in Dun Dara",
-      "blocking": true
+      "blocking": false
     }
   ]
 }

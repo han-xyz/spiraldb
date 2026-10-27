@@ -1,8 +1,7 @@
 {
   "id": "AV-Q-arcofinfinity",
-  "requires": [
-    "AV-Q-13D702"
-  ],
+  "requires": [],
+  "min_level": 68,
   "mainline": false,
   "level": 68,
   "reward": {
@@ -164,6 +163,11 @@
       "field": "giver",
       "value": "starts automatically",
       "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Time-Flight",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",

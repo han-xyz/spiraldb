@@ -263,6 +263,16 @@
       "loc": "ZoneLocName_592145"
     },
     {
+      "type": "usage",
+      "items": [
+        "AV-GHOST-ShrineJustice.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst9092B_00000044",
+      "loc": "ZoneLocName_592145"
+    },
+    {
       "type": "persona",
       "persona": "AV-CATA-NPC01",
       "zone": "Avalon/AV_Z10_Catacombs",
@@ -323,11 +333,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "The Shrine to Justice",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Shrine to Justice",
-      "blocking": true
     },
     {
       "field": "dialogs",
