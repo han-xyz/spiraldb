@@ -122,6 +122,15 @@
       "loc": "ZoneLocName_1217799"
     },
     {
+      "type": "usage",
+      "items": [
+        "PL_DumpedFishCrates.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Polaris/PL_Z01_Harbor",
@@ -150,9 +159,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.descriptor",
       "value": "Crate",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

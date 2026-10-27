@@ -19,6 +19,15 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "PL_Walruskberg_Fireworks.AdjRef"
+      ],
+      "count": 7,
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Polaris/PL_Z00_Walruskberg",
@@ -40,11 +49,6 @@
     {
       "field": "lang",
       "value": "Plotting Out Polar Roses",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "in Walruskberg",
       "blocking": true
     },
     {
@@ -76,6 +80,11 @@
       "field": "goal.items",
       "value": "in Kataba IceBlock",
       "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "in Walruskberg",
+      "blocking": false
     }
   ]
 }

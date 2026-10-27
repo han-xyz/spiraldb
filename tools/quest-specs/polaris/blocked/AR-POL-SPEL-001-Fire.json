@@ -90,6 +90,15 @@
       "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
     },
     {
+      "type": "usage",
+      "items": [
+        "PL-BLEAK-NPC10.AdjRef"
+      ],
+      "count": 7,
+      "zone": "",
+      "descriptor": "NPCs_01748491"
+    },
+    {
       "type": "persona",
       "persona": "AR-ARC-NPC03-E",
       "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice",
@@ -141,11 +150,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Arcanum Crafting Room",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Baba Yaga's Legendary Mace (for Myth)",
-      "blocking": true
     },
     {
       "field": "goal.items",
