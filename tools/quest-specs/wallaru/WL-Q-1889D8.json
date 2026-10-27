@@ -1,0 +1,118 @@
+{
+  "id": "WL-Q-1889D8",
+  "lang": "1889D8",
+  "giver": {
+    "persona": "WL-HOPE-NPC06-B",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-18898F"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 99600,
+    "gold": 290
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z03_I01_KangaGuruShrine"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Spider_WarriorMage_C_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004392",
+      "zone": "",
+      "loc": "ZoneLocName_1608151"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-KING-NPC03-B",
+      "zone": "Wallaru/WL_Z03_Kingsland",
+      "loc": "ZoneLocName_1608151"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
+      "template_id": 1608076
+    },
+    "WL-KING-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portraits_ShamanF_A_NPC.dds",
+      "template_id": 1608159
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wrong_Place,_Wrong_Shrine",
+    "from": "archive",
+    "timestamp": "20240808065103"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "WL-Q-freddiesdread",
+  "giver": {
+    "persona": "WL-DREAM-NPC03-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [],
+  "min_level": 152,
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 119520,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z04_I05_FreddiesDomain"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-FreddieKroaker.AdjRef",
+        "WL_Toad_EvilClaw_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004383",
+      "zone": "",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z04_I06_Dreamspeak"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-DREAM-NPC01-A",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560395"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    },
+    "WL-DREAM-NPC03-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_KoalaRider_BaseF_B_NPC.dds",
+      "template_id": 1560425
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Freddie's_Dread",
+    "from": "archive",
+    "timestamp": "20240205171630"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Freddie's Dread",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Dream Child",
+      "blocking": false
+    }
+  ]
+}

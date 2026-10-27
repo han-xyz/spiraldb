@@ -1,0 +1,149 @@
+{
+  "id": "WL-Q-17D896",
+  "lang": "17D896",
+  "giver": {
+    "persona": "WL-HOPE-NPC06-B",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 129480,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z02_I01_DustyCave"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-EmuRider-B.AdjRef",
+        "WL-StandIn-EmuRider.AdjRef",
+        "WL-StandIn-EmuRiderF_A.AdjRef",
+        "WL_KoalaRider_BaseF_A_01.AdjRef",
+        "WL_KoalaRider_BaseF_A_02.AdjRef",
+        "WL_KoalaRider_Base_A_01.AdjRef",
+        "WL_KoalaRider_Base_A_02.AdjRef",
+        "WL_KoalaRider_NightmareLeaderF_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004377",
+      "zone": "",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-DREAM-NPC01-A",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1562752",
+      "completion": [
+        {
+          "speaker": "WL-DREAM-NPC01-A",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    },
+    "WL-HOPE-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
+      "template_id": 1608076
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ride_or_Cry",
+    "from": "archive",
+    "timestamp": "20240121112221"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Stop and Goanna replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 152
+}

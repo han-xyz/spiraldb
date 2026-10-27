@@ -1,0 +1,81 @@
+{
+  "id": "WL-Q-1852F2",
+  "lang": "1852F2",
+  "giver": {
+    "persona": "WL-EUC-NPC01-A",
+    "zone": "Wallaru/WL_Z07_EucalyptusForest"
+  },
+  "requires": [
+    "WL-Q-1852EA"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 99600,
+    "gold": 290
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Koala_Giant_A_01.AdjRef",
+        "WL_Koala_Giant_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004421",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC02-A",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    }
+  ],
+  "personas": {
+    "WL-EUC-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Joan_A_NPC.dds",
+      "template_id": 1560323
+    },
+    "WL-EUC-NPC02-A": {
+      "portrait": "GUI/NpcPortraits/Koala_LeaderF_A_NPC.dds",
+      "template_id": 1560328
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Drop_Bear_Gorgeous",
+    "from": "archive",
+    "timestamp": "20240813105243"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1852F2, the only free key within 16 of its chain neighbour WizQst1852EA whose lines name the page's names: Drovers",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Drovers",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

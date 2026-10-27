@@ -1,0 +1,199 @@
+{
+  "id": "WL-Q-1889A1",
+  "lang": "1889A1",
+  "giver": {
+    "persona": "WL-HOPE-NPC02",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 189240,
+    "gold": 550
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-StandIn-EmuRider",
+      "zone": "Wallaru/Interiors/WL_Z02_I01_DustyCave",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-StandIn-EmuRider",
+      "zone": "Wallaru/Interiors/WL_Z02_I01_DustyCave",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-StandIn-EmuRider",
+      "zone": "Wallaru/Interiors/WL_Z02_I01_DustyCave",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Dingo_Base_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004397",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC05-B",
+      "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000021"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Judge_A_NPC.dds",
+      "template_id": 1608053
+    },
+    "WL-HOPE-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Koala_MinisterF_A_NPC.dds",
+      "template_id": 1608106
+    },
+    "WL-StandIn-EmuRider": {
+      "portrait": "GUI/NpcPortraits/Portrait_KoalaRider_Base_A_MOB.dds",
+      "template_id": 1562772
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Up_in_the_Sky,_It's_a_Bird!",
+    "from": "archive",
+    "timestamp": "20240808084459"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1889A1 matched by the words it shares with the goals; its lines name Judge Hopner, Chris Collie",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go Outside",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "I Dream of Meanie replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 152
+}

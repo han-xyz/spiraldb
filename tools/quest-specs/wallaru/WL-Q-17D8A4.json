@@ -1,0 +1,210 @@
+{
+  "id": "WL-Q-17D8A4",
+  "lang": "17D8A4",
+  "giver": {
+    "persona": "WL-HOPE-NPC02-B",
+    "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister"
+  },
+  "requires": [
+    "WL-Q-1889A1"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 159360,
+    "gold": 470
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z02_I05_RidgeCave"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_WL_Toad_EvilClaw_B_01.AdjRef",
+        "Adv_WL_Toad_EvilClaw_B_02.AdjRef",
+        "WL_Toad_EvilClaw_B_01.AdjRef",
+        "WL_Toad_EvilClaw_B_02.AdjRef",
+        "WL_Toad_EvilClaw_B_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004400",
+      "zone": "",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC26-B",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-DREAM-NPC01-A",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1562752",
+      "completion": [
+        {
+          "speaker": "WL-DREAM-NPC01-A",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    },
+    "WL-HOPE-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Judge_A_NPC.dds",
+      "template_id": 1608108
+    },
+    "WL-HOPE-NPC26-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
+      "template_id": 1608478
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hero_of_the_Trails",
+    "from": "archive",
+    "timestamp": "20240808092116"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17D8A4, the only free key within 16 of its chain neighbour WizQst17D8A0 whose lines name the page's names: Ned Collie",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "High Ridge",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go Outside",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "There and Outback Again replaced by WL-Q-1889A1",
+      "blocking": false
+    }
+  ]
+}

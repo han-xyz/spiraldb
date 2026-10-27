@@ -1,0 +1,90 @@
+{
+  "id": "WL-Q-185318",
+  "lang": "185318",
+  "requires": [
+    "WL-Q-1852DF"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 89640,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Kangaroo_Judge_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004415",
+      "zone": "",
+      "loc": "ZoneLocName_1594105"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:War,_What_is_He_Good_for?",
+    "from": "archive",
+    "timestamp": "20240205171641"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Prison Barn",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Metal Detector",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

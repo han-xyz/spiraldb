@@ -1,0 +1,225 @@
+{
+  "id": "WL-Q-1852E5",
+  "lang": "1852E5",
+  "giver": {
+    "persona": "WL-HOPE-NPC26-B",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-1852DF"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 219120,
+    "gold": 640
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WL-RobotGuard.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst1852E5_00000037",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-DartTurret.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst1852E5_00000039",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z06_I06_CollieHomestead"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Koala_JudgeF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004419",
+      "zone": "",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC26-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
+      "template_id": 1608478
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Red_Ned_Redemption",
+    "from": "archive",
+    "timestamp": "20240813101813"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Shutters near Fuse Box",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Ned Collie near front entrance of the House",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Ned outside the House",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

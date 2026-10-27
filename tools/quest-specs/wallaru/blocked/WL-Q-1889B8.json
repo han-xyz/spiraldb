@@ -1,0 +1,110 @@
+{
+  "id": "WL-Q-1889B8",
+  "lang": "1889B8",
+  "giver": {
+    "persona": "WL-HOPE-NPC15",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [],
+  "min_level": 152,
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 190
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Drover_A_NPC.dds",
+      "template_id": 1608119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Where_is_Wally?",
+    "from": "archive",
+    "timestamp": "20231215065455"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1889B8 matched by the words it shares with the goals; its lines name Riley, Wally",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Walla-Me-And-You",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Pet Mode to find Wally in Outback",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

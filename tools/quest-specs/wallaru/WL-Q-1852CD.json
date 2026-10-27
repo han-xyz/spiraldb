@@ -1,0 +1,104 @@
+{
+  "id": "WL-Q-1852CD",
+  "lang": "1852CD",
+  "giver": {
+    "persona": "WL-HOPE-NPC34",
+    "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse"
+  },
+  "requires": [
+    "WL-Q-1852CC"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 99600,
+    "gold": 290
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Dingo_Ned_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004406",
+      "zone": "",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse",
+      "loc": "ZoneLocName_1594105"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC34": {
+      "portrait": "GUI/NpcPortraits/Koala_JudgeF_A_NPC.dds",
+      "template_id": 1608377
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Good_Golly,_Ned_Collie!",
+    "from": "archive",
+    "timestamp": "20240812183707"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "West Pasture: Wallaru/Interiors/WL_Z06_I02_WestPasture",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "West Pasture",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

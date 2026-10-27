@@ -1,0 +1,110 @@
+{
+  "id": "WL-Q-17D897",
+  "lang": "17D897",
+  "giver": {
+    "persona": "WL-DREAM-NPC01-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-17D896"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 129480,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "WL-StandIn-EmuRider-B.AdjRef",
+        "WL-StandIn-EmuRider.AdjRef",
+        "WL-StandIn-EmuRiderF_A.AdjRef",
+        "WL_KoalaRider_BaseF_A_01.AdjRef",
+        "WL_KoalaRider_BaseF_A_02.AdjRef",
+        "WL_KoalaRider_Base_A_01.AdjRef",
+        "WL_KoalaRider_Base_A_02.AdjRef",
+        "WL_KoalaRider_NightmareLeaderF_A.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00004377",
+      "zone": "",
+      "descriptor": "WizQst17D897_00000009",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-OUT-WaterPump.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00001019",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1562752",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:What_a_Crock..._Hunter",
+    "from": "archive",
+    "timestamp": "20240808081834"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

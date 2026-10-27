@@ -1,0 +1,66 @@
+{
+  "id": "WL-Q-dreamsofnothing",
+  "giver": {
+    "persona": "WL-DREAM-NPC01-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [],
+  "min_level": 152,
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 69720,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WL-Sybil_Twig-InteractObject.AdjRef",
+        "WL-Sybil_Twig.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst17CF77_00000059",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560395"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dreams_of_Nothing",
+    "from": "archive",
+    "timestamp": "20240815193156"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Dreams of Nothing",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Freddie's Dread",
+      "blocking": false
+    }
+  ]
+}

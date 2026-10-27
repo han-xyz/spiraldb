@@ -1,0 +1,95 @@
+{
+  "id": "WL-Q-thegreatdreamscape",
+  "giver": {
+    "persona": "WL-EUC-NPC10-A",
+    "zone": "Wallaru/WL_Z07_EucalyptusForest"
+  },
+  "requires": [
+    "WL-Q-1852F4"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 149400,
+    "gold": 440
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WL-Campfire-BillabongResort.AdjRef",
+        "WL-Campfire-Kingsland.AdjRef",
+        "WL-Campfire.AdjRef",
+        "WL-EUC-Campfire-01.AdjRef",
+        "WL-WobbegongCampfire.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "descriptor": "WizQst1889F2_00000049",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-FreddieKroaker.AdjRef",
+        "WL_Toad_EvilClaw_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004383",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC02-A",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC05-A",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    }
+  ],
+  "personas": {
+    "WL-EUC-NPC02-A": {
+      "portrait": "GUI/NpcPortraits/Koala_LeaderF_A_NPC.dds",
+      "template_id": 1560328
+    },
+    "WL-EUC-NPC05-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560335
+    },
+    "WL-EUC-NPC10-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_KoalaRider_BaseF_B_NPC.dds",
+      "template_id": 1560358
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Great_Dreamscape",
+    "from": "archive",
+    "timestamp": "20231220050539"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Great Dreamscape",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Freddie's Dreamscape",
+      "blocking": false
+    }
+  ]
+}

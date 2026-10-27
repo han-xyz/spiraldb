@@ -1,0 +1,95 @@
+{
+  "id": "WL-Q-1889B3",
+  "lang": "1889B3",
+  "giver": {
+    "persona": "WL-HOPE-NPC14",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WL-GoldenWattle.AdjRef"
+      ],
+      "count": 7,
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC14": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZekeWife.dds",
+      "template_id": 1608114
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wattle_You_Talkin'_About",
+    "from": "archive",
+    "timestamp": "20240119021347"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Walla-Me-And-You",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Golden Wattle in Hope Springs",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Walla-Me-And-You replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 152
+}

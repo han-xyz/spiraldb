@@ -1,0 +1,84 @@
+{
+  "id": "WL-Q-188A01",
+  "lang": "188A01",
+  "giver": {
+    "persona": "WL-HOPE-NPC05-B",
+    "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister"
+  },
+  "requires": [
+    "WL-Q-1889A1"
+  ],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 580
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-OUT-NPC05",
+      "zone": "Wallaru/WL_Z02_Outback",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z02_I06_TransmitterShack"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Koala_MinisterF_A_NPC.dds",
+      "template_id": 1608106
+    },
+    "WL-OUT-NPC05": {
+      "portrait": "GUI/NpcPortraits/Koala_DroverF_A_NPC.dds",
+      "template_id": 1562768
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:No_News_is_Good_News",
+    "from": "archive",
+    "timestamp": "20240121111652"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Outback Gate",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Judge Saboteurs",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

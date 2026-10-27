@@ -1,0 +1,94 @@
+{
+  "id": "WL-Q-18534C",
+  "lang": "18534C",
+  "giver": {
+    "persona": "WL-HOPE-NPC15",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-185344"
+  ],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Kangaroo_Drover_F_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004466",
+      "zone": "",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Drover_A_NPC.dds",
+      "template_id": 1608119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:More_Like_Kanga-Boo!",
+    "from": "archive",
+    "timestamp": "20231216235130"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Phantom Trail: Wallaru/Interiors/WL_Z05_I05_PhantomTrail",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Phantom Trail",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

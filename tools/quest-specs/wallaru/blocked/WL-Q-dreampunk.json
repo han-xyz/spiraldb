@@ -1,0 +1,93 @@
+{
+  "id": "WL-Q-dreampunk",
+  "requires": [],
+  "min_level": 152,
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 209160,
+    "gold": 610
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Dromel_Fighter_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004428",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-Dungeon-TownieA.AdjRef",
+        "WL_Kangaroo_Judge_B_04.AdjRef",
+        "WL_Kangaroo_Judge_B_06.AdjRef",
+        "WL_Koala_JudgeF_B_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004429",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-Dungeon-DroverB.AdjRef",
+        "WL_Kangaroo_Drover_B_01.AdjRef",
+        "WL_Koala_DroverF_A_01.AdjRef",
+        "WL_Koala_DroverF_A_02.AdjRef",
+        "WL_Koala_Drover_A_01.AdjRef",
+        "WL_Koala_KnightmareLeaderF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004430",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dreampunk",
+    "from": "archive",
+    "timestamp": "20240813134553"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Dreampunk",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Lake of Ire",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Dreaming",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Freddie to the Next Room",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Final Room",
+      "blocking": false
+    }
+  ]
+}
