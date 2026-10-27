@@ -1,0 +1,17 @@
+{
+  "Name": "AZ-Q-72E31",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 675,
+  "MaxGold": 675,
+  "ExperienceAmount": 49820,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T07:23:57.082606Z",
+  "ModifiedAt": "2026-10-27T07:23:57.082606Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
