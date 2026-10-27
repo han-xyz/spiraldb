@@ -1,0 +1,313 @@
+{
+  "id": "AV-Q-13D705",
+  "lang": "13D705",
+  "requires": [
+    "AV-Q-13D702"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 122780,
+    "gold": 2280
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MB_Professor_Who",
+      "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z00_TelepgraphBox",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "ME1_VasekAshweaver",
+      "zone": "Avalon/Interiors/AV_MaestroEvent/AV_Z01_School",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-HUB-NPC01",
+      "zone": "DragonSpire/DS_Hub_Cathedral",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-StandIn-Malistaire",
+      "zone": "Marleybone/MB_ScotlandYard/Interiors/MB_Prison_T5",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "MB_Professor_Who",
+      "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z00_TelepgraphBox",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-LIB2-NPC02",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "MB_Professor_Who",
+      "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z00_TelepgraphBox",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-StandIn-Malistaire",
+      "zone": "Marleybone/MB_ScotlandYard/Interiors/MB_Prison_T5",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-HUB-NPC01",
+      "zone": "DragonSpire/DS_Hub_Cathedral",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Loremaster.AdjRef",
+        "ME1_Loremaster_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001575",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-HUB-NPC01",
+      "zone": "DragonSpire/DS_Hub_Cathedral",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-LIB2-NPC02",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ME1_BattleMage_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002007",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "MB_Professor_Who",
+      "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z00_TelepgraphBox",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ME1_DragonClaw_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002009",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ME1_Sylvia_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001983",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "DS-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 126291
+    },
+    "DS-LIB2-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_1_Ghost_NPC.dds",
+      "template_id": 126298
+    },
+    "MB-StandIn-Malistaire": {
+      "portrait": "GUI/NpcPortraits/Portraits_Human_Malistaire_A_NPC.dds",
+      "template_id": 1521258
+    },
+    "MB_Professor_Who": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_The_Professor.dds",
+      "template_id": 465499
+    },
+    "ME1_VasekAshweaver": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_3BLUE.dds",
+      "template_id": 1300231
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Arc_of_Infinity",
+    "from": "archive",
+    "timestamp": "20250911130007"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: MB_Professor_Who from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Vasek Ashweaver: ME1_VasekAshweaver from ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Cyrus Drake: DS-HUB-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Malistaire Drake: MB-StandIn-Malistaire from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: MB_Professor_Who from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Laszlo Starblade: DS-LIB2-NPC02 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: MB_Professor_Who from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Malistaire Drake: MB-StandIn-Malistaire from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Cyrus Drake: DS-HUB-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Loremaster's Chamber",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Loremaster: ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Loremaster: ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Cyrus Drake: DS-HUB-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Laszlo Starblade: DS-LIB2-NPC02 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Grand General's Quarters",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Elite Battle Mage: ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: MB_Professor_Who from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the War Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Dragonclaw Guards: ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the War Room upper level",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Sylvia Spitfire: ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

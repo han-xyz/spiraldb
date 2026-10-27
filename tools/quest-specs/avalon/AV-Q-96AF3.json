@@ -1,0 +1,136 @@
+{
+  "id": "AV-Q-96AF3",
+  "lang": "96AF3",
+  "giver": {
+    "persona": "AV-ABBEY-NPC14",
+    "zone": "Avalon/AV_Z01_AbbeyRoad"
+  },
+  "requires": [
+    "AV-Q-96A85"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 7640,
+    "gold": 190
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC15",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-BTeddyBearArm.AdjRef",
+        "AV-BTeddyBearBody.AdjRef",
+        "AV-BTeddyBearHead.AdjRef",
+        "AV-BTeddyBearLeg.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "descriptor": "WizItems_00001848",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-BTeddyBearArm.AdjRef",
+        "AV-BTeddyBearBody.AdjRef",
+        "AV-BTeddyBearHead.AdjRef",
+        "AV-BTeddyBearLeg.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "descriptor": "WizItems_00001848",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC15",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC14": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Courtney_NPC.dds",
+      "template_id": 617204
+    },
+    "AV-ABBEY-NPC15": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Siban_NPC.dds",
+      "template_id": 617205
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Foxes,_Goblins,_and_Bears",
+    "from": "archive",
+    "timestamp": "20250912025818"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst96AF3 matched by the words it shares with the goals; its lines name Courtney, Siban",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Around Here Someplace",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Around Here Someplace replaced by AV-Q-96A85",
+      "blocking": false
+    }
+  ]
+}

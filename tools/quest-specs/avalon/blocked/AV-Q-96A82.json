@@ -1,0 +1,101 @@
+{
+  "id": "AV-Q-96A82",
+  "lang": "96A82",
+  "giver": {
+    "persona": "AV-HUB-NPC02",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [
+    "AV-Q-96A81"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 25245,
+    "gold": 630
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-Shrine-Z02-Object.AdjRef",
+        "AV-Shrine-Z02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z00_Hub",
+      "descriptor": "WizItems_00001816",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Nolan.dds",
+      "template_id": 602075
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Arrow_to_the_Face",
+    "from": "archive",
+    "timestamp": "20231125085122"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Courageous Shield",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Courageous Sword",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

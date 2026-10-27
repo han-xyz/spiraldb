@@ -1,0 +1,108 @@
+{
+  "id": "AZ-Q-13D64E",
+  "lang": "13D64E",
+  "giver": {
+    "persona": "AZ-3POINTS-NPC01",
+    "zone": "Azteca/AZ_Z01_ThreePoints"
+  },
+  "requires": [
+    "MB-BAL-C01-002"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 73825,
+    "gold": 625
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Tritops-Undead-D.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001430",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "descriptor": "WizQst13D64E_00000007",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_643242"
+    }
+  ],
+  "personas": {
+    "AZ-3POINTS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_D_NPC.dds",
+      "template_id": 643260
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Let_The_Cat_Out!",
+    "from": "archive",
+    "timestamp": "20231125120159"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Salt Mud in Saltmeadow Swamp",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

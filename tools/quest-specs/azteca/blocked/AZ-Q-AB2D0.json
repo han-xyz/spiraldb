@@ -1,0 +1,114 @@
+{
+  "id": "AZ-Q-AB2D0",
+  "lang": "AB2D0",
+  "giver": {
+    "persona": "AZ-SWAMP-NPC01",
+    "zone": "Azteca/AZ_Z04_SaltmeadowSwamp"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 29055,
+    "gold": 485
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Goliath-Crusher-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001348",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-SWAMP-Jade-Wind-Sun.AdjRef",
+        "AZ-SWAMP-NPC01.AdjRef",
+        "AZ-SWAMP-NPC04.AdjRef",
+        "AZ-SWAMP-NPC06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "WC-NPCs_00002177",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-SWAMP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_A_NPC.dds",
+      "template_id": 701128
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:My_Only_Hope",
+    "from": "archive",
+    "timestamp": "20231125113501"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Thorn in My Pride",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Dead Tree Cave",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

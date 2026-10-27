@@ -1,0 +1,122 @@
+{
+  "id": "AZ-Q-B0CAD",
+  "lang": "B0CAD",
+  "giver": {
+    "persona": "AZ-CLOUD-NPC04",
+    "zone": "Azteca/AZ_Z06_CloudburstIsland"
+  },
+  "requires": [
+    "AZ-Q-B0CAC"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 47005,
+    "gold": 665
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Starfall-Lily.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "Items_00007466",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-CLOUD-NPC07",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108",
+      "completion": [
+        {
+          "speaker": "AZ-CLOUD-NPC07",
+          "line": "00000007"
+        },
+        {
+          "speaker": "AZ-CLOUD-NPC07",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-CLOUD-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_2NPC -.dds",
+      "template_id": 724133
+    },
+    "AZ-CLOUD-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Treant_Flower_A_NPC.dds",
+      "template_id": 724151
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wilting_Flowers",
+    "from": "archive",
+    "timestamp": "20240118174705"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "House of Flowers",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Yaxche",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

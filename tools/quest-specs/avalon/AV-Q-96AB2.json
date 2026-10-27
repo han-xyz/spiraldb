@@ -1,0 +1,94 @@
+{
+  "id": "AV-Q-96AB2",
+  "lang": "96AB2",
+  "giver": {
+    "persona": "AV-LAKE-NPC04",
+    "zone": "Avalon/AV_Z08_LakeShore"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 31635,
+    "gold": 630
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Goblin-Strangler-R12-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001216",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Deer-Knight-StagCharger-R12-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001213",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    }
+  ],
+  "personas": {
+    "AV-LAKE-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 617137
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:As_Above_So_Below",
+    "from": "archive",
+    "timestamp": "20250918034044"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (closest name)",
+      "value": "the Lady of the Lake read as Lady of the Lake",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "A Hero By Any Other Name replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

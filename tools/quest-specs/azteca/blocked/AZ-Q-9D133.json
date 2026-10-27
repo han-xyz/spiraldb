@@ -1,0 +1,156 @@
+{
+  "id": "AZ-Q-9D133",
+  "lang": "9D133",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC11",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 82190,
+    "gold": 1300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Parasaur-Undead-A.AdjRef",
+        "AZ-Tritops-Undead-A.AdjRef",
+        "AZ-Raptor-Undead-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001367",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "WizQst9D133_00000005",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-ZOCALO-Ambient_Guard.AdjRef",
+        "AZ-ZOCALO-Ambient_Guard_02.AdjRef",
+        "AZ-ZOCALO-Ambient_Guard_03.AdjRef",
+        "AZ-ZOCALO-Ambient_Guard_04.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch02.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch03.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch04.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch05.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch06.AdjRef",
+        "AZ-ZOCALO-Ambient_Pray_01.AdjRef",
+        "AZ-ZOCALO-Ambient_Pray_02.AdjRef",
+        "AZ-ZOCALO-Ambient_Pray_03.AdjRef",
+        "AZ-ZOCALO-Ambient_Preach.AdjRef",
+        "AZ-ZOCALO-Ambient_SignGuy.AdjRef",
+        "AZ-ZOCALO-Ambient_Young.AdjRef",
+        "AZ-ZOCALO-WEAVE-NPC01.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parasaur_PriestF_B_NPC.dds",
+      "template_id": 643382
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ward_to_the_Wise",
+    "from": "archive",
+    "timestamp": "20231125113140"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Day Watch",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Three Points at the Maw leading to the Cenote",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Three Points at the Maw leading to the Cenote",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

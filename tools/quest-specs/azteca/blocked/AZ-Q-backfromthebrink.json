@@ -1,0 +1,50 @@
+{
+  "id": "AZ-Q-backfromthebrink",
+  "giver": {
+    "persona": "AZ-CENOTE-NPC01",
+    "zone": "Azteca/AZ_Z02_Cenote"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 3230,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    }
+  ],
+  "personas": {
+    "AZ-CENOTE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_C_NPC.dds",
+      "template_id": 724110
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Back_from_the_Brink",
+    "from": "archive",
+    "timestamp": "20250915022524"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Back from the Brink",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Everbroken Axe",
+      "blocking": false
+    }
+  ]
+}

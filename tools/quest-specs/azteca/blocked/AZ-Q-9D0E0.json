@@ -1,0 +1,100 @@
+{
+  "id": "AZ-Q-9D0E0",
+  "lang": "9D0E0",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC01",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [
+    "AZ-Q-9D0DF"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 31765,
+    "gold": 515
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Shdweave-Warrior-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001408",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
+      "template_id": 643252
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Apocalypto_Now",
+    "from": "archive",
+    "timestamp": "20250908163932"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Yacate's House",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Yacate's House",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

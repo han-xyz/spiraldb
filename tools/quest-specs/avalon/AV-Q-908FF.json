@@ -1,0 +1,98 @@
+{
+  "id": "AV-Q-908FF",
+  "lang": "908FF",
+  "giver": {
+    "persona": "AV-OUTER-NPC04",
+    "zone": "Avalon/AV_Z07_OuterYard"
+  },
+  "requires": [
+    "AV-Q-908EC"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 24420,
+    "gold": 500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Pantera-Whiptail-R12-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001243",
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "loc": "ZoneLocName_592078"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-OUTER-PomTree-StateObject-Test.AdjRef",
+        "AV-OUTER-PomTree.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "descriptor": "WizardGameObjects_00000511",
+      "loc": "ZoneLocName_592078"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-OUTER-NPC03",
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "loc": "ZoneLocName_592078"
+    }
+  ],
+  "personas": {
+    "AV-OUTER-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Constance.dds",
+      "template_id": 592084
+    },
+    "AV-OUTER-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Squire_Billy_NPC.dds",
+      "template_id": 592085
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Creatures_of_Habit",
+    "from": "archive",
+    "timestamp": "20240912195237"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Royal Gardens",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

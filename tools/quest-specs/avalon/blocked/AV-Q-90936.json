@@ -1,0 +1,275 @@
+{
+  "id": "AV-Q-90936",
+  "lang": "90936",
+  "requires": [
+    "AV-Q-96AB5"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 105030,
+    "gold": 1950
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Deer-Knight-HartLancer-R12-01.AdjRef",
+        "AV_StandIn_HartLancer.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001232",
+      "zone": "",
+      "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV_Sword_of_Kings_TZ.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-CATA-NPC01",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Deer-Knight-GreatHorned-R12-02.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001231",
+      "zone": "",
+      "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Pendragon-R12-01.AdjRef",
+        "AV_StandIn_Pendragon.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001233",
+      "zone": "",
+      "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC26",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-CATA-NPC01",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Wyrm-WhiteDragon-R12-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001226",
+      "zone": "",
+      "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC26",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_592126",
+      "completion": [
+        {
+          "speaker": "AV-ABBEY-NPC26",
+          "line": "00000012"
+        },
+        {
+          "speaker": "AV-ABBEY-NPC26",
+          "line": "00000016"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC26": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Artorius_NPC.dds",
+      "template_id": 1205069
+    },
+    "AV-CATA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 592086
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Head_of_the_Dragon",
+    "from": "archive",
+    "timestamp": "20231125092822"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Entry Hall",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "(Collect) the Sword of Kings",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Throne Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (closest name)",
+      "value": "the Lady of the Lake read as Lady of the Lake",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the King's Cure (in the Keep of Ganelon}",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Castle Hallway",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "King Artorius (after much rejoicing)",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

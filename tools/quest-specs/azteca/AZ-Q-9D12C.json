@@ -1,0 +1,112 @@
+{
+  "id": "AZ-Q-9D12C",
+  "lang": "9D12C",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC08",
+    "zone": "Azteca/AZ_Z01_ThreePoints"
+  },
+  "requires": [
+    "AZ-Q-9D0EC"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 47580,
+    "gold": 710
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-CENOTE-NPC04",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-CENOTE-NPC05",
+      "zone": "Azteca/Interiors/AZ_Z02_Mine02",
+      "loc": "ZoneLocName_643242"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-CENOTE-NPC04",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349",
+      "completion": [
+        {
+          "speaker": "AZ-CENOTE-NPC04",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-CENOTE-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Young_A_NPC.dds",
+      "template_id": 643373
+    },
+    "AZ-CENOTE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_A_NPC.dds",
+      "template_id": 643374
+    },
+    "AZ-ZOCOLO-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_MerchF_E_NPC.dds",
+      "template_id": 643259
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Land_of_the_Lost..._and_Found",
+    "from": "archive",
+    "timestamp": "20231125120100"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Motecuma's Mine",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Game, Set... Match replaced by AZ-Q-9D0EC",
+      "blocking": false
+    }
+  ]
+}

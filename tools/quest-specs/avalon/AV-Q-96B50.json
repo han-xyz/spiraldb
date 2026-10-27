@@ -1,0 +1,132 @@
+{
+  "id": "AV-Q-96B50",
+  "lang": "96B50",
+  "giver": {
+    "persona": "AV-HIGH-NPC06",
+    "zone": "Avalon/AV_Z02_HighRoad"
+  },
+  "requires": [
+    "AV-Q-96B29",
+    "AV-Q-96B4D"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 36465,
+    "gold": 490
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Knight-Redthorn-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001164",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-DogKnight-AmberKnight-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001171",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_470339",
+      "with_previous": true
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Fox-Knight-Male-Logres-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001172",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Coconuts.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "descriptor": "WizItems_00001865",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    }
+  ],
+  "personas": {
+    "AV-HIGH-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_KnightOfSecretWords_NPC.dds",
+      "template_id": 617294
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hasty_Retreat",
+    "from": "archive",
+    "timestamp": "20231125094736"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (closest name)",
+      "value": "the Knight of the Sacred Words read as Knight of the Sacred Words",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

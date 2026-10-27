@@ -1,0 +1,54 @@
+{
+  "id": "AZ-Q-backtoyourheart",
+  "giver": {
+    "persona": "AZ-ZULTUN-NPC03",
+    "zone": "Azteca/AZ_Z05_ZultunDock"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 4080,
+    "gold": 55
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-ZULTUN-NPC01",
+      "zone": "Azteca/AZ_Z05_ZultunDock",
+      "loc": "ZoneLocName_689128"
+    }
+  ],
+  "personas": {
+    "AZ-ZULTUN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_B_NPC.dds",
+      "template_id": 689136
+    },
+    "AZ-ZULTUN-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_I_NPC.dds",
+      "template_id": 689138
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Back_to_Your_Heart",
+    "from": "archive",
+    "timestamp": "20250907181545"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Back to Your Heart",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Start Choppin",
+      "blocking": false
+    }
+  ]
+}

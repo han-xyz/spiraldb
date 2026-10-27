@@ -1,0 +1,122 @@
+{
+  "id": "AV-Q-96AE9",
+  "lang": "96AE9",
+  "giver": {
+    "persona": "AV-ABBEY-NPC02",
+    "zone": "Avalon/AV_Z01_AbbeyRoad"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 23465,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV_DunDara_Raven.AdjRef",
+        "AV-Lakeshore_Collision.AdjRef"
+      ],
+      "count": 9,
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 617157
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Crowology",
+    "from": "archive",
+    "timestamp": "20231125093231"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Who Knows?",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Caliburn",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Abbey Road",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "High Road",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Caer Lyon",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Wild",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Wyrd",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Outer Yard",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Caliburn",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

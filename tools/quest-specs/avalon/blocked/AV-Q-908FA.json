@@ -1,0 +1,141 @@
+{
+  "id": "AV-Q-908FA",
+  "lang": "908FA",
+  "giver": {
+    "persona": "AV-CATA-NPC02",
+    "zone": "Avalon/AV_Z10_Catacombs"
+  },
+  "requires": [
+    "AV-Q-908F9"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 9690,
+    "gold": 175
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_592130"
+    }
+  ],
+  "personas": {
+    "AV-CATA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Patrick_NPC.dds",
+      "template_id": 592087
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Déjà_Vu",
+    "from": "archive",
+    "timestamp": "20231125092541"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Night Garden",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Statue of Artorius",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Statue of Gwendolyn",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Statue of Morganthe",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Statue of Merle Ambrose",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

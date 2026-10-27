@@ -1,0 +1,150 @@
+{
+  "id": "AZ-Q-72E70",
+  "lang": "72E70",
+  "giver": {
+    "persona": "AZ-LAKE-NPC05",
+    "zone": "Azteca/AZ_Z08_PitchBlackLake"
+  },
+  "requires": [
+    "AZ-Q-72E6B"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 113015,
+    "gold": 1545
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Seamonster-Ancient-D.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001402",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Piranha-Hunter-B.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001382",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Crab-Warrior-A.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001334",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Crab-Warrior-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001335",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Crab-Warrior-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001335",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-LAKE-NPC06",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    }
+  ],
+  "personas": {
+    "AZ-LAKE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AZ_Tonatiuh_Drowned_Moon_NPC.dds",
+      "template_id": 470560
+    },
+    "AZ-LAKE-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crab_Warrior_B_NPC.dds",
+      "template_id": 470561
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Schooling_Fish",
+    "from": "archive",
+    "timestamp": "20240123005628"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

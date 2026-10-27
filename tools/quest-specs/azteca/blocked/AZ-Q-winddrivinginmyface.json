@@ -1,0 +1,80 @@
+{
+  "id": "AZ-Q-winddrivinginmyface",
+  "giver": {
+    "persona": "AZ-CLOUD-NPC02",
+    "zone": "Azteca/AZ_Z06_CloudburstIsland"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 53050,
+    "gold": 825
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Elemental-Spirit-D.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001344",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parasaur-drkPriestF-C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001363",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Prickly-Pear.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "Items_00007461",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    }
+  ],
+  "personas": {
+    "AZ-CLOUD-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_B_NPC.dds",
+      "template_id": 724126
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wind_Driving_In_My_Face",
+    "from": "archive",
+    "timestamp": "20231125102418"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Wind Driving In My Face",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Don't Be Long",
+      "blocking": false
+    }
+  ]
+}

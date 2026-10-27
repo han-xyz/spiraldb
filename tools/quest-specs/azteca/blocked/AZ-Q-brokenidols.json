@@ -1,0 +1,85 @@
+{
+  "id": "AZ-Q-brokenidols",
+  "giver": {
+    "persona": "AZ-CENOTE-NPC03",
+    "zone": "Azteca/AZ_Z02_Cenote"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 34255,
+    "gold": 595
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Parasaur-Undead-A.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001367",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    }
+  ],
+  "personas": {
+    "AZ-CENOTE-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parasaur_PriestF_B_NPC.dds",
+      "template_id": 724115
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Broken_Idols",
+    "from": "archive",
+    "timestamp": "20250827101139"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Broken Idols",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Lightless Depths",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Collect 3 Raw Gold",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Open (first) Fire Quetzal Cage",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Open (second) Fire Quetzal Cage",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Open (third) Fire Quetzal Cage",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Broken Calendar Stone Pieces",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "AZ-Q-A83FD",
+  "lang": "A83FD",
+  "giver": {
+    "persona": "AZ-MANG-NPC02",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 23980,
+    "gold": 415
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parrot-Hunter-G.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001375",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-MANG-NPC03",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_D_NPC.dds",
+      "template_id": 726110
+    },
+    "AZ-MANG-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_C_NPC.dds",
+      "template_id": 726111
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:They_Say_We_Must_Fight",
+    "from": "archive",
+    "timestamp": "20240409061138"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA83FD matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "War, What Is It Good For?",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Tula Gate",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "War, What Is It Good For? replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

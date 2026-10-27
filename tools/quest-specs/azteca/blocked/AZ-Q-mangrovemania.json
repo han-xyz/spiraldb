@@ -1,0 +1,55 @@
+{
+  "id": "AZ-Q-mangrovemania",
+  "giver": {
+    "persona": "AZ-ALTO-NPC09",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 12975,
+    "gold": 185
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_B_2NPC - Copy.dds",
+      "template_id": 726142
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mangrove_Mania",
+    "from": "archive",
+    "timestamp": "20231125114213"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Mangrove Mania",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Painting the Invisible",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "(Collect) 6 Mangrove Bark in Mangrove Marsh",
+      "blocking": true
+    }
+  ]
+}

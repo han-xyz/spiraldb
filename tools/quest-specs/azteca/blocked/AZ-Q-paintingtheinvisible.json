@@ -1,0 +1,59 @@
+{
+  "id": "AZ-Q-paintingtheinvisible",
+  "giver": {
+    "persona": "AZ-ALTO-NPC04",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 12975,
+    "gold": 185
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-ALTO-NPC05",
+      "zone": "Azteca/Interiors/AZ_Z09_FeatherPalace",
+      "loc": "ZoneLocName_726071"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_A_NPC.dds",
+      "template_id": 726116
+    },
+    "AZ-ALTO-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_King_A_NPC.dds",
+      "template_id": 726117
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Painting_the_Invisible",
+    "from": "archive",
+    "timestamp": "20231125114155"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Painting the Invisible",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Brush with the Blues",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "The Way of Itz in the Calmecac Library",
+      "blocking": true
+    }
+  ]
+}

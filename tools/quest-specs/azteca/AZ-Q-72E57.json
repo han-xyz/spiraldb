@@ -1,0 +1,96 @@
+{
+  "id": "AZ-Q-72E57",
+  "lang": "72E57",
+  "giver": {
+    "persona": "AZ-LAKE-NPC01-1",
+    "zone": "Azteca/AZ_Z08_PitchBlackLake"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 29165,
+    "gold": 390
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Crab-Warrior-A.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001334",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    }
+  ],
+  "personas": {
+    "AZ-LAKE-NPC01-1": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seamonster_Ancient_A_NPC2.dds",
+      "template_id": 470621
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Straight_and_Narrow_Track",
+    "from": "archive",
+    "timestamp": "20231125130326"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "In My Eyes",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Light Staves",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "In My Eyes replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

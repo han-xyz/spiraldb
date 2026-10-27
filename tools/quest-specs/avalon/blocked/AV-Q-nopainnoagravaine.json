@@ -1,0 +1,67 @@
+{
+  "id": "AV-Q-nopainnoagravaine",
+  "giver": {
+    "persona": "AV-HUB-NPC02",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [
+    "AV-Q-96A81"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 16715,
+    "gold": 415
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-SirAgravaine-R11-01.AdjRef",
+        "AV_StandIn_SirAgravaine.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001280",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Nolan.dds",
+      "template_id": 602075
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:No_Pain,_No_Agravaine",
+    "from": "archive",
+    "timestamp": "20250623230005"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "No Pain, No Agravaine",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Runedown",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Sir Agravaine on the High Road",
+      "blocking": true
+    }
+  ]
+}

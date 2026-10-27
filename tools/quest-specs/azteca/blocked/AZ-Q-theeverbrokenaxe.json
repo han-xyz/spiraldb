@@ -1,0 +1,61 @@
+{
+  "id": "AZ-Q-theeverbrokenaxe",
+  "giver": {
+    "persona": "AZ-CENOTE-NPC01",
+    "zone": "Azteca/AZ_Z02_Cenote"
+  },
+  "requires": [
+    "AZ-Q-148B04"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 13390,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Parasaur-Undead-A.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001367",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    }
+  ],
+  "personas": {
+    "AZ-CENOTE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_C_NPC.dds",
+      "template_id": 724110
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Everbroken_Axe",
+    "from": "archive",
+    "timestamp": "20250908053534"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Everbroken Axe",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Axe Pieces",
+      "blocking": false
+    }
+  ]
+}

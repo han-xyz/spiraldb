@@ -1,0 +1,149 @@
+{
+  "id": "AZ-Q-9D0DE",
+  "lang": "9D0DE",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC03",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 58715,
+    "gold": 385
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Raptor-Undead-B.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001393",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "WizQst9D0DE_00000006",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Raptor-Undead-D.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001395",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Calendar-Stone.AdjRef",
+        "AZ-Calendar-Stone2.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "Items_00007459",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_C_NPC.dds",
+      "template_id": 643254
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:13_Death",
+    "from": "archive",
+    "timestamp": "20250905154635"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Fire Ant's Tomb",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Grave Concerns replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

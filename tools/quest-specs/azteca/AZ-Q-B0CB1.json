@@ -1,0 +1,79 @@
+{
+  "id": "AZ-Q-B0CB1",
+  "lang": "B0CB1",
+  "giver": {
+    "persona": "AZ-CLOUD-NPC07",
+    "zone": "Azteca/AZ_Z06_CloudburstIsland"
+  },
+  "requires": [
+    "AZ-Q-B0CB0"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 30920,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Shdweave-Warrior-F.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001411",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "WizQstB0CB1_00000004",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    }
+  ],
+  "personas": {
+    "AZ-CLOUD-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Treant_Flower_A_NPC.dds",
+      "template_id": 724151
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Smart_Food",
+    "from": "archive",
+    "timestamp": "20231125103425"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

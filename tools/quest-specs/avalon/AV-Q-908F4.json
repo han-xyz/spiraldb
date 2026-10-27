@@ -1,0 +1,129 @@
+{
+  "id": "AV-Q-908F4",
+  "lang": "908F4",
+  "giver": {
+    "persona": "AV-CATA-NPC02",
+    "zone": "Avalon/AV_Z10_Catacombs"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 25155,
+    "gold": 480
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Froudling-BloodCaptain-R12-01.AdjRef",
+        "AV_StandIn_BloodCaptain.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001222",
+      "zone": "",
+      "descriptor": "WizQst908F4_00000013",
+      "loc": "ZoneLocName_592140"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_592140"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-CATA-NPC01",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_592140"
+    }
+  ],
+  "personas": {
+    "AV-CATA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 592086
+    },
+    "AV-CATA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Patrick_NPC.dds",
+      "template_id": 592087
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Another_Life",
+    "from": "archive",
+    "timestamp": "20250904000109"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Running Free (Avalon)",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Blood Captain's Chamber",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (closest name)",
+      "value": "the Lady of the Lake read as Lady of the Lake",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Running Free (Avalon) replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

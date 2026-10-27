@@ -1,0 +1,54 @@
+{
+  "id": "AZ-Q-skyabovefieldsbelow",
+  "giver": {
+    "persona": "AZ-FLOAT-NPC05-Sick",
+    "zone": "Azteca/AZ_Z10_FloatingMountains"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 5790,
+    "gold": 89
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-TWIN-NPC02",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-FLOAT-NPC05-Sick": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_C_NPC.dds",
+      "template_id": 470600
+    },
+    "AZ-TWIN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Queen_A_NPC.dds",
+      "template_id": 470606
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sky_Above,_Fields_Below",
+    "from": "archive",
+    "timestamp": "20240123214509"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Sky Above, Fields Below",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Remember Me As A Time of Day",
+      "blocking": false
+    }
+  ]
+}

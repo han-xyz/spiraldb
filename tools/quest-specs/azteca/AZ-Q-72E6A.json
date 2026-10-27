@@ -1,0 +1,90 @@
+{
+  "id": "AZ-Q-72E6A",
+  "lang": "72E6A",
+  "giver": {
+    "persona": "AZ-LAKE-NPC03",
+    "zone": "Azteca/AZ_Z08_PitchBlackLake"
+  },
+  "requires": [
+    "AZ-Q-72E69"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 14580,
+    "gold": 190
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-SeaCuecumbers.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "descriptor": "WizardQuestGoals_00000384",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    }
+  ],
+  "personas": {
+    "AZ-LAKE-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Piranha_Hunter_A_NPC.dds",
+      "template_id": 470558
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Scarlet_Billows",
+    "from": "archive",
+    "timestamp": "20240205173259"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

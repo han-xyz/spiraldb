@@ -1,0 +1,59 @@
+{
+  "id": "AV-Q-andtheydolivewell",
+  "giver": {
+    "persona": "AV-WYRD-NPC10",
+    "zone": "Avalon/AV_Z05_TheWyrd"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 2415,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-DARA-NPC01",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Aodh.dds",
+      "template_id": 611129
+    },
+    "AV-WYRD-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Doran.dds",
+      "template_id": 611130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:And_They_Do_Live_Well",
+    "from": "archive",
+    "timestamp": "20250911134210"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "And They Do Live Well",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Where The Demons Dwell",
+      "blocking": false
+    }
+  ]
+}

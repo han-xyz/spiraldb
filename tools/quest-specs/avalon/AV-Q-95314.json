@@ -1,0 +1,92 @@
+{
+  "id": "AV-Q-95314",
+  "lang": "95314",
+  "giver": {
+    "persona": "AV-WYRD-NPC01",
+    "zone": "Avalon/AV_Z05_TheWyrd"
+  },
+  "requires": [
+    "AV-Q-72D3B"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 19920,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-LordOfTheBrocken-R11-01.AdjRef",
+        "AV_StandIn_LordoftheBrocken.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001253",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WYRD-NPC02",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    }
+  ],
+  "personas": {
+    "AV-WYRD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Faux_Fire_Lights.dds",
+      "template_id": 611090
+    },
+    "AV-WYRD-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Belenos_NPC.dds",
+      "template_id": 611091
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Speed_of_Darkness",
+    "from": "archive",
+    "timestamp": "20240827185842"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Lost Abbey",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

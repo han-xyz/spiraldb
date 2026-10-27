@@ -1,0 +1,123 @@
+{
+  "id": "AZ-Q-72E2E",
+  "lang": "72E2E",
+  "giver": {
+    "persona": "AZ-FLOAT-NPC03",
+    "zone": "Azteca/AZ_Z10_FloatingMountains"
+  },
+  "requires": [
+    "AZ-Q-B0CB3"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 14580,
+    "gold": 185
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-PrismaticBlade.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "descriptor": "Items_00007480",
+      "loc": "ZoneLocName_470547"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-FLOAT-NPC01-2.AdjRef",
+        "AZ-FLOAT-NPC01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "descriptor": "NPCs_01747898",
+      "loc": "ZoneLocName_470547"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    }
+  ],
+  "personas": {
+    "AZ-FLOAT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_A_NPC.dds",
+      "template_id": 470553
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Place_of_the_Cactus_Stone",
+    "from": "archive",
+    "timestamp": "20231125103547"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Lost Land of the Jaguars",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lost Land of the Jaguars replaced by AZ-Q-B0CB3",
+      "blocking": false
+    }
+  ]
+}

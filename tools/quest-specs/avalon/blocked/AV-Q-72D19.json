@@ -1,0 +1,90 @@
+{
+  "id": "AV-Q-72D19",
+  "lang": "72D19",
+  "giver": {
+    "persona": "AV-WILD-NPC08",
+    "zone": "Avalon/AV_Z04_TheWild"
+  },
+  "requires": [
+    "AV-Q-72D12"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 18215,
+    "gold": 320
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-Caer-Teleporter.AdjRef",
+        "AV-TeleporterArch.AdjRef",
+        "AV-TeleporterArchEffects-StateObject-Test.AdjRef",
+        "AV-TeleporterArchEffects.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z04_TheWild",
+      "descriptor": "Items_00006558",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    }
+  ],
+  "personas": {
+    "AV-WILD-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_SirRobinBravely_NPC.dds",
+      "template_id": 470296
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Out_of_the_Woods",
+    "from": "archive",
+    "timestamp": "20231125085754"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona",
+      "value": "Sir Robin Bravely (in Caliburn)",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

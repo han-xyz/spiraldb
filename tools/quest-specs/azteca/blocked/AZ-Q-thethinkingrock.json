@@ -1,0 +1,61 @@
+{
+  "id": "AZ-Q-thethinkingrock",
+  "giver": {
+    "persona": "AZ-MANG-NPC04",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [
+    "AZ-Q-AB2D0"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 25955,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Monkey-Soldier-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001356",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_G_NPC.dds",
+      "template_id": 726112
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Thinking_Rock",
+    "from": "archive",
+    "timestamp": "20231125120300"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Thinking Rock",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "the Thinking Rock",
+      "blocking": false
+    }
+  ]
+}

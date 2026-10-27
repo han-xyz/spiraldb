@@ -27,8 +27,8 @@ the same flags and the same output; each calls the package.
 ## Adding a world
 
 ```sh
-python3 -I tools/spiraltools.py archive enumerate Zafaria         # the world's quests from the archived categories
-python3 -I tools/spiraltools.py archive fetch Zafaria             # each quest page's newest capture (network)
+python3 -I tools/spiraltools.py archive enumerate Zafaria         # the world's quests from the wiki's categories
+python3 -I tools/spiraltools.py archive fetch Zafaria             # each quest page, live else archived (network)
 python3 -I tools/spiraltools.py archive parse Zafaria             # specs into tools/quest-specs/zafaria
 python3 -I tools/spiraltools.py quests check --world Zafaria      # validate them against the client
 python3 -I tools/spiraltools.py quests generate --world Zafaria --apply   # write templates and drop tables
@@ -45,16 +45,12 @@ then check. `quests` takes spec files or `--world <World>` (every spec of `tools
 quest names and ObjectData folder (`ZF`), its wiki category (`Category:Zafaria_Quests`) and the quest level a spec
 gets when the wiki gives none. The world's `WizQst` lang cluster is derived: the run of quest lang files (keys at
 most `CLUSTER_GAP` apart) holding the most `QuestTitle.lang` entries that read as one of the world's internal quest
-names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`. Zafaria and Polaris have no such
-title, so their row declares `lang_range`; Lemuria's one title (`LM-URSAI-ENC-002a`) sits in a run of encounter
-quests, so its row declares one too. A declared `lang_range` wins. A world outside the table is refused with the list of the known ones.
-title, so their row declares `lang_range`; a declared `lang_range` wins over the derived one (Karamelle's anchored
-run holds 11 of its files). A world outside the table is refused with the list of the known ones.
-title, so their row declares `lang_range`; Empyrea's anchored run holds few of its quests, so its row declares one
-too. A declared `lang_range` wins over the derived cluster. A world outside the table is refused with the list of the known ones.
 names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`. A row's declared `lang_range`
-wins: Zafaria and Polaris have no such title, and Khrysalis's quests lie in runs from 0x126322 to 0x13D76F that its
-few titles do not anchor. A world outside the table is refused with the list of the known ones.
+wins over the derived cluster: Zafaria and Polaris have no such title, Lemuria's one title (`LM-URSAI-ENC-002a`) sits
+in a run of encounter quests, Karamelle's anchored run holds 11 of its files, Empyrea's holds few of its quests, and
+Khrysalis's quests lie in runs from 0x126322 to 0x13D76F that its few titles do not anchor. Polaris and Wallaru have
+`source="none"`: the archive holds no 200 capture of their quest category and the live wiki refuses, so
+`archive enumerate` stops on them. A world outside the table is refused with the list of the known ones.
 
 ## check
 
@@ -296,25 +292,36 @@ level, an empty goal dialog list as `null`, and `m_bountyType`/`m_bountyTotal` w
 
 ## archive
 
-Builds questgen specs for a world from the Internet Archive's copies of the Wizard101 Central wiki (the wiki itself
-refuses requests): read-only GET requests to web.archive.org, one a second, with
-exponential backoff on 429 and 5xx for up to five minutes:
+Builds questgen specs for a world from the Wizard101 Central wiki: the live wiki first, the Internet Archive's copies
+when the live wiki refuses. Read-only GET requests, identified as `spiraltools/1.0 (+https://github.com/han-xyz/spiraldb)`:
 
 ```sh
-python3 -I tools/spiraltools.py archive enumerate Celestia   # list the world's quests from the archived categories
-python3 -I tools/spiraltools.py archive fetch Celestia       # download each quest page's newest capture
+python3 -I tools/spiraltools.py archive enumerate Celestia   # list the world's quests from the wiki's categories
+python3 -I tools/spiraltools.py archive fetch Celestia       # download each quest page, live else archived
 python3 -I tools/spiraltools.py archive parse Celestia       # write the specs, print what did not resolve
 python3 -I tools/spiraltools.py quests check --world Celestia   # validate the specs
 ```
 
-`--cache <dir>` holds the fetched pages, as `<capture timestamp>_<page>.html`, and the index
-`index-<world>.json` (quest, first capture in the CDX index or `missing_snapshot`, zone categories, type). The default
-is `.scratch/friends-server/task-A1/cache` in the checkout; the cache is not committed. A page already in the cache is
-not fetched again. The world comes from the registry ([Worlds](#worlds)): its ObjectData folder, quest lang cluster and level.
+The live wiki is asked through its API first (`api.php?action=parse` for a page, `list=categorymembers` for a
+category), then the page itself; robots.txt is obeyed, one request every two seconds (longer when robots.txt sets a
+crawl delay), exponential backoff on 429 and 503. A 403, a challenge page or an outage is not retried: the rest of the
+run goes to the archive. The archive is web.archive.org, one request a second, with exponential backoff on 429 and 5xx
+for up to five minutes.
 
-`enumerate` walks `Category:<World>_Quests` and its subcategories, and reads the CDX index of `Quest:` pages. A
-category with no capture is reported; its quests still come in through the other categories. `fetch` takes the
-newest capture, and the CDX timestamp when the newest capture is an error page.
+`--cache <dir>` holds the fetched pages, as `<timestamp>_<live|archive>_<page>.html` (the fetch time of a live page,
+the capture time of an archived one; a name without a source is an archive capture), and the index
+`index-<world>.json` (quest, first capture in the CDX index or `missing_snapshot`, zone categories, type). The default
+is `.scratch/friends-server/task-A1/cache` in the checkout; the cache is not committed. A live copy in the cache is not
+fetched again; a page with only an archived copy is asked of the live wiki, and the archived copy is kept when the live
+wiki does not answer. The world comes from the registry ([Worlds](#worlds)): its ObjectData folder, quest lang cluster
+and level.
+
+`enumerate` walks `Category:<World>_Quests` and its subcategories, live or archived, and reads the CDX index of
+`Quest:` pages. An archived category is the newest capture with status 200 in its CDX list that lists members (the
+newest captures can be recorded refusals, served by the archive as a page of its own). A category with no answer is
+reported; its quests still come in through the other categories. `fetch`
+takes the live page, else the newest capture, and the CDX timestamp when the newest capture is an error page; a quest
+without a snapshot is fetched only live.
 
 `parse` reads each page's Prequest, Given By, Giver Location, type sentence, Goals, Hand In and Reward, and resolves:
 
@@ -369,10 +376,10 @@ lines that thank the player are the hand-in NPC's Completion, the rest are the g
 offers a quest through its first Prep line, so a spec needs at least one: when no line reads as an offer, the first
 line that names the giver is the Prep line, else the file's first line, listed as `dialogs.prep`.
 
-Each spec carries `source` (page and capture) and `needs_review`: what did not resolve, `blocking` or not. A spec with
-a blocking gap goes to `quest-specs/<world>/blocked/`, where the questgen glob does not reach; a waypoint whose place
-has no zone path is left out and listed. A spec for a lang that a hand-authored spec already covers is written to
-`<cache>/reference-<world>/` instead, and the differences are printed. A rerun replaces the specs it wrote before.
+Each spec carries `source` (page, `live` or `archive`, and the timestamp) and `needs_review`: what did not resolve,
+`blocking` or not. A spec with a blocking gap goes to `quest-specs/<world>/blocked/`, where the questgen glob does not
+reach; a waypoint whose place has no zone path is left out and listed. A spec for a lang that a hand-authored spec
+already covers is written to `<cache>/reference-<world>/` instead, and the differences are printed. A rerun replaces the specs it wrote before.
 
 ## mobs and npcs
 

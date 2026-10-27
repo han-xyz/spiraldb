@@ -1,0 +1,113 @@
+{
+  "id": "AV-Q-96AF1",
+  "lang": "96AF1",
+  "giver": {
+    "persona": "AV-ABBEY-NPC13",
+    "zone": "Avalon/AV_Z01_AbbeyRoad"
+  },
+  "requires": [
+    "AV-Q-96AF0"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 13375,
+    "gold": 340
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Deer-Knight-Lancer-Boss-R11-01.AdjRef",
+        "AV_StandIn_MatkisAxethief.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001267",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Squire_Jimmy_NPC.dds",
+      "template_id": 617196
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Coda",
+    "from": "archive",
+    "timestamp": "20240822170615"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst96AF1 matched by the words it shares with the goals; its lines name Matkis Axethief",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Hart's Hideaway",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

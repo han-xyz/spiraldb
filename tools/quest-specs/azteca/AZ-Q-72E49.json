@@ -1,0 +1,99 @@
+{
+  "id": "AZ-Q-72E49",
+  "lang": "72E49",
+  "giver": {
+    "persona": "AZ-FLOAT-NPC05-Sick",
+    "zone": "Azteca/AZ_Z10_FloatingMountains"
+  },
+  "requires": [
+    "AZ-Q-72E47"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 5460,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Eagle-Hunter-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001336",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-FLOAT-NPC04",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    }
+  ],
+  "personas": {
+    "AZ-FLOAT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_Hunter_A_NPC.dds",
+      "template_id": 470554
+    },
+    "AZ-FLOAT-NPC05-Sick": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_C_NPC.dds",
+      "template_id": 470600
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Snow_and_Lights",
+    "from": "archive",
+    "timestamp": "20240205173041"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Seven Stabs of the Knife Temple",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "AZ-Q-72E87",
+  "lang": "72E87",
+  "requires": [
+    "AZ-Q-72E79"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 92760,
+    "gold": 1325
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Raptor-Undead-C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001394",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Dino-Undead-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001414",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parrot-King-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001380",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parrot-King-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001380",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Moon_Is_Down",
+    "from": "archive",
+    "timestamp": "20231125103342"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Pyramid of Mother Moon",
+      "blocking": true
+    },
+    {
+      "field": "dialogs.prep",
+      "value": "no offer line; 00000000 is the first line of the file",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "AZ-Q-72E4A",
+  "lang": "72E4A",
+  "giver": {
+    "persona": "AZ-FLOAT-NPC04",
+    "zone": "Azteca/AZ_Z10_FloatingMountains"
+  },
+  "requires": [
+    "AZ-Q-72E49"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 5790,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-NobleRock.AdjRef",
+        "AZ-NobleRockTwinGiants.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "descriptor": "WizardGameObjects_00000594",
+      "loc": "ZoneLocName_470547"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-TWIN-NPC01",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-FLOAT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_Hunter_A_NPC.dds",
+      "template_id": 470554
+    },
+    "AZ-TWIN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_Hunter_C_NPC.dds",
+      "template_id": 470603
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Eagle_of_Fire",
+    "from": "archive",
+    "timestamp": "20250830190129"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

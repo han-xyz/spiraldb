@@ -1,0 +1,64 @@
+{
+  "id": "AV-Q-manydreamscometrue",
+  "giver": {
+    "persona": "AV-DARA-NPC08",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 5120,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-WYRD-NPC09",
+      "zone": "Avalon/Interiors/AV_Z05_TowerChromatic",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-DARA-NPC07",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Mermaid_Melusine_NPC.dds",
+      "template_id": 611150
+    },
+    "AV-DARA-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Lewelyn.dds",
+      "template_id": 611152
+    },
+    "AV-WYRD-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Wyrm_Three_Color_NPC.dds",
+      "template_id": 611126
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Many_Dreams_Come_True",
+    "from": "archive",
+    "timestamp": "20240911131750"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Many Dreams Come True",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Over the Hills and Far Away",
+      "blocking": false
+    }
+  ]
+}

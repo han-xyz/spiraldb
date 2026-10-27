@@ -1,0 +1,102 @@
+{
+  "id": "AV-Q-72D42",
+  "lang": "72D42",
+  "giver": {
+    "persona": "AV-WILD-NPC04",
+    "zone": "Avalon/AV_Z04_TheWild"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 13660,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Deer-Knight-StagCharger-Boss-R12-01.AdjRef",
+        "AV_StandIn_MoragBloodtine.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001266",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "descriptor": "WizQst72D42_00000005",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    }
+  ],
+  "personas": {
+    "AV-WILD-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Ceara_NPC.dds",
+      "template_id": 470275
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Crush_Crush_Crush",
+    "from": "archive",
+    "timestamp": "20231125094316"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Dread of Knight",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Dread of Knight replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

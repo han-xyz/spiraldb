@@ -1,0 +1,92 @@
+{
+  "id": "AZ-Q-9D0E6",
+  "lang": "9D0E6",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC04",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 20400,
+    "gold": 315
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Drum_Huehuetl.AdjRef",
+        "AZ-Drum_Huehuetl2.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "GUI_00006665",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parasaur_PriestF_A_NPC.dds",
+      "template_id": 643255
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:How_Do_Dinosaurs_Build_A_Raft?",
+    "from": "archive",
+    "timestamp": "20231125101904"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Zocalo Dock",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Secret of the Winds replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

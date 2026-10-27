@@ -1,0 +1,65 @@
+{
+  "id": "AZ-Q-followmynose",
+  "giver": {
+    "persona": "AZ-MANG-NPC03",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 25955,
+    "gold": 375
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Tritops-Undead-D.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001430",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_C_NPC.dds",
+      "template_id": 726111
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Follow_My_Nose",
+    "from": "archive",
+    "timestamp": "20231125113425"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Follow My Nose",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Thorn in My Pride",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Jeweled Beak",
+      "blocking": false
+    }
+  ]
+}

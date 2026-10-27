@@ -1,0 +1,120 @@
+{
+  "id": "AV-Q-96AA5",
+  "lang": "96AA5",
+  "giver": {
+    "persona": "AV-LAKE-NPC02",
+    "zone": "Avalon/AV_Z08_LakeShore"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 23005,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Skirker-Foul-R12-01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001215",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-KegOfEffluent.AdjRef",
+        "AV-KegOfEffluent-StateObject-Test.AdjRef",
+        "AV-KegOfEffluent02.AdjRef",
+        "AV-KegOfEffluent03.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "descriptor": "WizItems_00001829",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    }
+  ],
+  "personas": {
+    "AV-LAKE-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Abbot.dds",
+      "template_id": 589661
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Wee_Bit_O_The_Brogue",
+    "from": "archive",
+    "timestamp": "20250907115409"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst96AA5 by chain order between WizQst96AA2 and WizQst96AA9; its lines name Foul Skirkers",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Straight Edge replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

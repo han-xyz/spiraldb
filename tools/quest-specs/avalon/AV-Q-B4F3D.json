@@ -1,0 +1,104 @@
+{
+  "id": "AV-Q-B4F3D",
+  "lang": "B4F3D",
+  "giver": {
+    "persona": "AV-HUB-NPC01",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [
+    "AV-Q-B4F3C"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 10,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC12",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
+      "template_id": 602074
+    },
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-PARTY-NPC12": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 1452008
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Untold_True_Story",
+    "from": "archive",
+    "timestamp": "20250930073635"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Harold Argleston: WC-HUB-NPC03 from ObjectData/WC",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Arthur Wethersfield: WC-PARTY-NPC12 from ObjectData/WC",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

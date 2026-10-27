@@ -1,0 +1,158 @@
+{
+  "id": "AV-Q-96A94",
+  "lang": "96A94",
+  "giver": {
+    "persona": "AV-HIGH-NPC02",
+    "zone": "Avalon/AV_Z02_HighRoad"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 40510,
+    "gold": 1000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-Bell-StateObject-Test.AdjRef",
+        "AV-Bell.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "descriptor": "WizItems_00001824",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Knight-Redthorn-Boss-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001196",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Ogre-R11-01.AdjRef",
+        "AV_StandIn_Porrich.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001293",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    }
+  ],
+  "personas": {
+    "AV-HIGH-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_DogKnight_Gilliam.dds",
+      "template_id": 617088
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Every_Rose_Has_Its_Thorn",
+    "from": "archive",
+    "timestamp": "20231125085000"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Red Thorn Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Dungeon in Red Thorn Tower",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Vexing Thoughts replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

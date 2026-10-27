@@ -1,0 +1,83 @@
+{
+  "id": "AZ-Q-B0CE8",
+  "lang": "B0CE8",
+  "giver": {
+    "persona": "AZ-CENOTE-NPC06",
+    "zone": "Azteca/AZ_Z02_Cenote"
+  },
+  "requires": [
+    "AZ-Q-9D0EC"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 20555,
+    "gold": 355
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Tritops-Undead-A.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001427",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    }
+  ],
+  "personas": {
+    "AZ-CENOTE-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_E_NPC.dds",
+      "template_id": 724201
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Alone_in_the_Dark",
+    "from": "archive",
+    "timestamp": "20231125112633"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Break Stuff replaced by AZ-Q-9D0EC",
+      "blocking": false
+    }
+  ]
+}

@@ -63,7 +63,8 @@ class Data:
 
 def build(name, data, known_zones=(ZONE,), fields=None):
     fields = fields or fields_of(name)
-    entry = {"name": name, "page": f"Quest:{name}", "zones": ["Quest Zone"], "fetched": "20250101000000"}
+    entry = {"name": name, "page": f"Quest:{name}", "zones": ["Quest Zone"], "fetched": "20250101000000",
+             "fetched_from": "archive"}
     builder = SpecBuilder(data, entry, fields, {"Quest Zone": ZONE}, {}, set(known_zones))
     return builder.build("ABC", "T-1")
 

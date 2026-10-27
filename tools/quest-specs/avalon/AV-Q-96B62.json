@@ -1,0 +1,72 @@
+{
+  "id": "AV-Q-96B62",
+  "lang": "96B62",
+  "giver": {
+    "persona": "AV-HUB-NPC01",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [
+    "AV-Q-96A91"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 2450,
+    "gold": 55
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC20",
+      "zone": "Avalon/Interiors/AV_Z01_Library",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC20": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Scribe_Francis.dds",
+      "template_id": 617241
+    },
+    "AV-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
+      "template_id": 602074
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Down_in_the_Bayeux",
+    "from": "archive",
+    "timestamp": "20231125093325"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

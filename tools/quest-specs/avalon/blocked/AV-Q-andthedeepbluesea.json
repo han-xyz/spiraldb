@@ -1,0 +1,84 @@
+{
+  "id": "AV-Q-andthedeepbluesea",
+  "giver": {
+    "persona": "AV-CATA-NPC01",
+    "zone": "Avalon/AV_Z10_Catacombs"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 9150,
+    "gold": 175
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Giant-Boss-R12-02.AdjRef",
+        "AV_StandIn_TarntheDrowned.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001219",
+      "zone": "",
+      "loc": "ZoneLocName_537857"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Deep-Teleporter-Piece01.AdjRef",
+        "AV-Deep-Teleporter-Piece02.AdjRef",
+        "AV-Deep-Teleporter-Piece03.AdjRef",
+        "AV-Deep-Teleporter-Piece04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00006570",
+      "loc": "ZoneLocName_537857"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_537857"
+    }
+  ],
+  "personas": {
+    "AV-CATA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 592086
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:And_The_Deep_Blue_Sea",
+    "from": "archive",
+    "timestamp": "20250907062134"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "And The Deep Blue Sea",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "I'se the B'y",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Diabhal Cave",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (closest name)",
+      "value": "the Lady of the Lake read as Lady of the Lake",
+      "blocking": false
+    }
+  ]
+}

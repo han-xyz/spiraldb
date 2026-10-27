@@ -1,0 +1,80 @@
+{
+  "id": "AZ-Q-AB3CD",
+  "lang": "AB3CD",
+  "requires": [],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 25,
+    "gold": 145
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-PageEvent-Boss.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "descriptor": "NPCs_01748050",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Student-Fire-PageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001475",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pale_Fire",
+    "from": "archive",
+    "timestamp": "20231125120223"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Fire Fly",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Spellwrit Winged Teeth",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Bentley Daysong: ObjectData/PageEvent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

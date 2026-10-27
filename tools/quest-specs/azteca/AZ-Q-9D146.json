@@ -1,0 +1,133 @@
+{
+  "id": "AZ-Q-9D146",
+  "lang": "9D146",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC06",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [
+    "AZ-Q-9D141"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 34605,
+    "gold": 510
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-TIERRA-NPC03",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Tritops-SpkWarrior-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001425",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "WizQst9D146_00000009",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-TIERRA-NPC03",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-TIERRA-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_SpkChief_A_NPC.dds",
+      "template_id": 701127
+    },
+    "AZ-ZOCOLO-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_B_NPC.dds",
+      "template_id": 643258
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:By_the_Letter",
+    "from": "archive",
+    "timestamp": "20231125114316"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Lost Key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lost Key replaced by min_level",
+      "blocking": false
+    }
+  ]
+}

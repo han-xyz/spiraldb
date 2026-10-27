@@ -1,0 +1,54 @@
+{
+  "id": "AZ-Q-remembermeasatimeofday",
+  "giver": {
+    "persona": "AZ-TWIN-NPC02",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 5790,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-FLOAT-NPC05-Sick-B",
+      "zone": "Azteca/Interiors/AZ_Z10_TurqoiseCave",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-FLOAT-NPC05-Sick-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_C_NPC.dds",
+      "template_id": 1397238
+    },
+    "AZ-TWIN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Queen_A_NPC.dds",
+      "template_id": 470606
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Remember_Me_As_A_Time_of_Day",
+    "from": "archive",
+    "timestamp": "20231125103914"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Remember Me As A Time of Day",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Not A Cold Dead Place",
+      "blocking": false
+    }
+  ]
+}

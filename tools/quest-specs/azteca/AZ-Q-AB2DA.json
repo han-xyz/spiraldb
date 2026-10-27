@@ -1,0 +1,74 @@
+{
+  "id": "AZ-Q-AB2DA",
+  "lang": "AB2DA",
+  "giver": {
+    "persona": "AZ-SWAMP-NPC02",
+    "zone": "Azteca/AZ_Z04_SaltmeadowSwamp"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 3630,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC01",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124",
+      "completion": [
+        {
+          "speaker": "AZ-SWAMP-NPC01",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-SWAMP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_A_NPC.dds",
+      "template_id": 701128
+    },
+    "AZ-SWAMP-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_B_NPC.dds",
+      "template_id": 701129
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Art_of_Song",
+    "from": "archive",
+    "timestamp": "20231125113625"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Monkey Wrench replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

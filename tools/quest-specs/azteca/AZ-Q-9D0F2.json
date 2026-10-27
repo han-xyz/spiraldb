@@ -1,0 +1,89 @@
+{
+  "id": "AZ-Q-9D0F2",
+  "lang": "9D0F2",
+  "giver": {
+    "persona": "AZ-3POINTS-NPC03",
+    "zone": "Azteca/Interiors/AZ_Z01_JuraPalace_Room01"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 6655,
+    "gold": 110
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-CENOTE-NPC03",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    }
+  ],
+  "personas": {
+    "AZ-3POINTS-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_King_A_NPC.dds",
+      "template_id": 643262
+    },
+    "AZ-CENOTE-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parasaur_PriestF_B_NPC.dds",
+      "template_id": 724115
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:King_of_Fang_and_Claw",
+    "from": "archive",
+    "timestamp": "20231125112855"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Outsider replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

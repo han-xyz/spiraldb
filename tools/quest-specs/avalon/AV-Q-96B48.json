@@ -1,0 +1,115 @@
+{
+  "id": "AV-Q-96B48",
+  "lang": "96B48",
+  "giver": {
+    "persona": "AV-HUB-NPC03",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 14490,
+    "gold": 320
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-ShrubShort.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z00_Hub",
+      "descriptor": "WizItems_00001864",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-ShrubTall.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z00_Hub",
+      "descriptor": "WizItems_00001863",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SumnerFieldgold_NPC.dds",
+      "template_id": 602076
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:There's_the_Shrub",
+    "from": "archive",
+    "timestamp": "20250827013334"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Queen of Light Took Her Bow",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Queen of Light Took Her Bow replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

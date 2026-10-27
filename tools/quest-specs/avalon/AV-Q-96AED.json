@@ -1,0 +1,113 @@
+{
+  "id": "AV-Q-96AED",
+  "lang": "96AED",
+  "giver": {
+    "persona": "AV-ABBEY-NPC13",
+    "zone": "Avalon/AV_Z01_AbbeyRoad"
+  },
+  "requires": [
+    "AV-Q-96AEB",
+    "AV-Q-96A85"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 19975,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Deer-Knight-Brocket-Boss-R11-01.AdjRef",
+        "AV_StandIn_MordRoughshod.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001262",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Squire_Jimmy_NPC.dds",
+      "template_id": 617196
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:In_Through_The_Out_Door",
+    "from": "archive",
+    "timestamp": "20231125093546"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Broken Signs",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Broken Signs replaced by AV-Q-96A85",
+      "blocking": false
+    }
+  ]
+}

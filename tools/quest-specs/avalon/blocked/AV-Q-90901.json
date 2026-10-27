@@ -1,0 +1,89 @@
+{
+  "id": "AV-Q-90901",
+  "lang": "90901",
+  "giver": {
+    "persona": "AV-OUTER-NPC05",
+    "zone": "Avalon/AV_Z07_OuterYard"
+  },
+  "requires": [
+    "AV-Q-96AB5"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 125215,
+    "gold": 2265
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-GHOST-NPC03",
+      "zone": "Avalon/AV_Z12_GhostAvalon",
+      "loc": "ZoneLocName_592078"
+    }
+  ],
+  "personas": {
+    "AV-GHOST-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Merle_Ambrose_Young.dds",
+      "template_id": 592093
+    },
+    "AV-OUTER-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 592128
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Great_Storm_Coming",
+    "from": "archive",
+    "timestamp": "20240119020931"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Avalon/AV_Z12_GhostAvalon",
+      "blocking": true
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "AZ-Q-9D0EB",
+  "lang": "9D0EB",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC01",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [
+    "AZ-Q-72E4A"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 11580,
+    "gold": 130
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-HUB-NPC01",
+      "zone": "DragonSpire/DS_Hub_Cathedral",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC22",
+      "zone": "Arcanum/AR_Z01_Hub",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC22": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 1459029
+    },
+    "AZ-ZOCOLO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
+      "template_id": 643252
+    },
+    "DS-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 126291
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Speaker_for_the_Dead",
+    "from": "archive",
+    "timestamp": "20231029092752"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Cyrus Drake: DS-HUB-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Merle Ambrose: AR-ARC-NPC22 from ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Tall Enough to Meet the Sun replaced by AZ-Q-72E4A",
+      "blocking": false
+    }
+  ]
+}

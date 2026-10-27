@@ -1,0 +1,158 @@
+{
+  "id": "AZ-Q-9D0DD",
+  "lang": "9D0DD",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC10",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [
+    "AZ-Q-9D0CE"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 35530,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-ZOCALO-Ambient_Guard.AdjRef",
+        "AZ-ZOCALO-Ambient_Guard_02.AdjRef",
+        "AZ-ZOCALO-Ambient_Guard_03.AdjRef",
+        "AZ-ZOCALO-Ambient_Guard_04.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch02.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch03.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch04.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch05.AdjRef",
+        "AZ-ZOCALO-Ambient_Merch06.AdjRef",
+        "AZ-ZOCALO-Ambient_Pray_01.AdjRef",
+        "AZ-ZOCALO-Ambient_Pray_02.AdjRef",
+        "AZ-ZOCALO-Ambient_Pray_03.AdjRef",
+        "AZ-ZOCALO-Ambient_Preach.AdjRef",
+        "AZ-ZOCALO-Ambient_SignGuy.AdjRef",
+        "AZ-ZOCALO-Ambient_Young.AdjRef",
+        "AZ-ZOCALO-WEAVE-NPC01.AdjRef",
+        "AZ-CENOTE-NPC01.AdjRef",
+        "AZ-CENOTE-NPC02.AdjRef",
+        "AZ-CENOTE-NPC03.AdjRef",
+        "AZ-CENOTE-NPC04.AdjRef",
+        "AZ-CENOTE-NPC05.AdjRef",
+        "AZ-CENOTE-NPC06.AdjRef",
+        "AZ-CENOTE-NPC07.AdjRef",
+        "AZ-CENOTE-WEAVE-NPC01-B.AdjRef",
+        "AZ-CENOTE-WEAVE-NPC01.AdjRef",
+        "AZ-CENOTE-WEAVE-NPC02-B.AdjRef",
+        "AZ-CENOTE-WEAVE-NPC02.AdjRef",
+        "AZ_FloatingMountain_Teleport.AdjRef"
+      ],
+      "count": 11,
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 643275
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_UFOs",
+    "from": "archive",
+    "timestamp": "20231125111258"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Three Points",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Mangrove Marsh",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Saltmeadow Swamp",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Zultun Dock",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Cloudburst Forest",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Tierra de Brea",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Alto Alto",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Twin Giants",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "The Zocalo",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

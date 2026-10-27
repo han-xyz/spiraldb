@@ -18,7 +18,7 @@ QUEST_MODES = {
     "diff": "compare the generated templates with the pack's",
 }
 ARCHIVE_MODES = {
-    "enumerate": "list the world's quests from the archived categories",
+    "enumerate": "list the world's quests from the wiki's categories",
     "fetch": "download the listed quest pages into the cache",
     "parse": "write a questgen spec per cached quest page",
 }

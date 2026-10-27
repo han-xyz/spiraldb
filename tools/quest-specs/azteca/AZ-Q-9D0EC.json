@@ -1,0 +1,151 @@
+{
+  "id": "AZ-Q-9D0EC",
+  "lang": "9D0EC",
+  "giver": {
+    "persona": "AZ-3POINTS-NPC01",
+    "zone": "Azteca/AZ_Z01_ThreePoints"
+  },
+  "requires": [
+    "AZ-Q-9D0D3"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 35545,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-3POINTS-NPC12",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_643242"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-ZOCOLO-NPC05",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_643242"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Tritops-Warrior-I.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001434",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "descriptor": "WizQst9D0EC_00000013",
+      "loc": "ZoneLocName_643242"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-ZOCOLO-NPC08",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_643242"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Charcoal.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "descriptor": "WizItems_00001887",
+      "loc": "ZoneLocName_643242"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_643242"
+    }
+  ],
+  "personas": {
+    "AZ-3POINTS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_D_NPC.dds",
+      "template_id": 643260
+    },
+    "AZ-3POINTS-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parasaur_Priest_C_NPC.dds",
+      "template_id": 643271
+    },
+    "AZ-ZOCOLO-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_MerchF_A_NPC.dds",
+      "template_id": 643256
+    },
+    "AZ-ZOCOLO-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_MerchF_E_NPC.dds",
+      "template_id": 643259
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Brief_Encounters",
+    "from": "archive",
+    "timestamp": "20231125120012"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

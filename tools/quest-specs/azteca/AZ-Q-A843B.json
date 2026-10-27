@@ -1,0 +1,96 @@
+{
+  "id": "AZ-Q-A843B",
+  "lang": "A843B",
+  "giver": {
+    "persona": "AZ-TIERRA-NPC07",
+    "zone": "Azteca/AZ_Z07_TierraDeBrea"
+  },
+  "requires": [
+    "AZ-Q-A843A"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 35690,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parrot-Darkshaman-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001445",
+      "zone": "",
+      "loc": "ZoneLocName_643370"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
+      "loc": "ZoneLocName_643370"
+    }
+  ],
+  "personas": {
+    "AZ-TIERRA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Ladies_Upper01.dds",
+      "template_id": 689202
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Going_for_Broke",
+    "from": "archive",
+    "timestamp": "20231125114609"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA843B matched by the words it shares with the goals; its lines name Lustrous Tlalocan",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Zemeckis Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
