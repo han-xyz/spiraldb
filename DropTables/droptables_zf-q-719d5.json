@@ -1,0 +1,17 @@
+{
+  "Name": "ZF-Q-719D5",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 170,
+  "MaxGold": 170,
+  "ExperienceAmount": 5010,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T06:30:18.512754Z",
+  "ModifiedAt": "2026-10-27T06:30:18.512754Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
