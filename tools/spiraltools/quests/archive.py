@@ -21,8 +21,8 @@ from ..pack import PACK, QUEST_SPECS_DIR, quest_template_paths, zone_transfer_fi
 from ..wad import GAMEDATA_DIR, zone_of_wad
 from ..worlds import WORLDS, lang_cluster, world
 from .generate import diff
-from .goal_lines import (FIND_VERBS, goal_kind, is_goal_line, place_readings, repeated, strip_notes, target_text,
-                         verb_of)
+from .goal_lines import (FIND_VERBS, PERSON_VERBS, TALK_VERBS, goal_kind, is_goal_line, place_readings, repeated,
+                         strip_notes, target_text, verb_of)
 
 DESCRIPTION = "Build questgen specs for a world from the Internet Archive's copies of the Wizard101 Central wiki."
 DEFAULT_CACHE = os.path.join(PACK, ".scratch", "friends-server", "task-A1", "cache")
@@ -41,6 +41,8 @@ QUEST_TYPES = ("storyline", "side", "instance")
 MIN_SHARED_WEIGHT, CLEAR_MARGIN = 4.0, 1.5
 CHAIN_WINDOW = 16
 NAME_CUTOFF = 0.8
+# Goals without a count: a line repeated on consecutive lines is that many goals.
+UNCOUNTED_GOALS = ("persona", "waypoint")
 ZONE_PREFIX = re.compile(r"^[A-Z]{2}_(?:Z\d+[A-Za-z]?_)?(?:I\d+_)?(?:the_)?", re.I)
 
 
@@ -371,6 +373,7 @@ class ClientData:
             if folder != self.folder and os.path.isdir(os.path.join(ROOTWAD_DIR, "ObjectData", folder))])
         self.other_mobs, self.other_personas = None, None
         self.objects = item_index(templates.items(ROOTWAD_DIR, self.folder), self.folder)
+        self.known_zones = set(zone_transfer_files())
         self.zone_names = {}
         for path in glob.glob(os.path.join(GAMEDATA_DIR, f"{self.world}-*.wad")):
             zone = zone_of_wad(path)
@@ -469,7 +472,9 @@ class ClientData:
         rows = rows or self.other_world_personas(wanted)
         if not rows:
             return None
-        return next((row for row in rows if zone in row["zones"]), next((r for r in rows if r["zones"]), rows[0]))
+        reachable = (row for row in rows if self.known_zones.intersection(row["zones"]))
+        return next((row for row in rows if zone in row["zones"]),
+                    next(reachable, next((row for row in rows if row["zones"]), rows[0])))
 
     def mob_entries(self, name):
         """The mob entries for a name, from the world's folder, else from the nearest other folder that has it."""
@@ -583,7 +588,8 @@ class SpecBuilder:
             self.unresolved(f"{field} (other world)", f"{name}: {row['template']} from ObjectData/{row['folder']}",
                             False)
         self.personas[row["persona"]] = {"portrait": row["portrait"], "template_id": row["template_id"]}
-        zone = self.zone if self.zone in row["zones"] else (row["zones"] or [""])[0]
+        reachable = [zone for zone in row["zones"] if zone in self.known_zones]
+        zone = self.zone if self.zone in row["zones"] else (reachable or row["zones"] or [""])[0]
         if not zone:
             self.unresolved(f"{field}.zone (placed in no zone)", name, True)
         return row["persona"], zone
@@ -701,7 +707,10 @@ class SpecBuilder:
     def goals(self):
         built = []
         for line, subs, times in repeated(grouped_goals(self.fields["goals"])):
-            built += [goal for goal in self.goals_of(line, subs, times) if goal is not None]
+            goals = [goal for goal in self.goals_of(line, subs, times) if goal is not None]
+            if goals and goals[0]["type"] in UNCOUNTED_GOALS:
+                goals += [dict(goal) for goal in goals * (times - 1)]
+            built += goals
         return built
 
     def goals_of(self, line, subs, times=1):
@@ -713,9 +722,12 @@ class SpecBuilder:
         if subs:
             return self.header_goals(line, text, verb, subs, number)
         npcs, creatures, places = links(line, "NPC"), links(line, "Creature"), links(line, "Location")
-        kind = goal_kind(verb, text, npcs, creatures, places)
+        kind = goal_kind(verb, text, npcs, creatures)
         if kind == "persona":
-            return [self.persona_goal(npcs[0] if npcs else target_text(re.sub(r"\s+(in|at)\s+.*$", "", text)))]
+            name = npcs[0] if npcs else target_text(re.sub(r"\s+(in|at)\s+.*$", "", text))
+            if verb not in TALK_VERBS and not self.data.has_persona(name) and self.data.object_entries(name):
+                return [self.usage_goal([name], number * times)]
+            return [self.persona_goal(name)]
         if kind == "bounty":
             creatures = creatures or [re.sub(r"\s+and\s+.*$|\s+in\s+.*$", "", target_text(text))]
             collect = re.search(r"\bcollect\s+(?:(\d+)\s+)?(.+)$", text, re.I)
@@ -726,10 +738,13 @@ class SpecBuilder:
             return [self.bounty_goal(creatures, number * times, None, place, zone=zone)]
         if kind == "waypoint":
             return [self.waypoint_goal(places, text)]
+        name = target_text(re.sub(r"\s+(in|at)\s+.*$", "", text))
+        if verb in PERSON_VERBS and self.data.has_persona(name):
+            return [self.persona_goal(name)]
         item = target_text(text)
         if verb in FIND_VERBS and not self.data.object_entries(item):
-            found = self.waypoint_goal(places, text, quiet=True)
-            if found:
+            found = self.waypoint_goal(places, text, quiet=not places)
+            if found or places:
                 return [found]
         return [self.usage_goal([item], number * times)]
 
@@ -750,10 +765,12 @@ class SpecBuilder:
                 goals.append(self.bounty_goal(creatures, int(collect.group(1)) if collect else 1,
                                               collect.group(2) if collect else None, place, i > 0))
             return goals
-        if all(is_goal_line(plain(sub)) for sub in subs):
+        if all(is_goal_line(plain(sub)) or plain(sub) in links(sub, "Location") for sub in subs):
             goals = []
             for i, sub in enumerate(subs):
-                built = [goal for goal in self.goals_of(sub, []) if goal is not None]
+                places = links(sub, "Location")
+                found = [self.waypoint_goal(places, sub)] if plain(sub) in places else self.goals_of(sub, [])
+                built = [goal for goal in found if goal is not None]
                 if i > 0 and built:
                     built[0]["with_previous"] = True
                 goals += built

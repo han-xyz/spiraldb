@@ -61,8 +61,8 @@ class Data:
         return None
 
 
-def build(name, data, known_zones=(ZONE,)):
-    fields = fields_of(name)
+def build(name, data, known_zones=(ZONE,), fields=None):
+    fields = fields or fields_of(name)
     entry = {"name": name, "page": f"Quest:{name}", "zones": ["Quest Zone"], "fetched": "20250101000000"}
     builder = SpecBuilder(data, entry, fields, {"Quest Zone": ZONE}, {}, set(known_zones))
     return builder.build("ABC", "T-1")
@@ -97,6 +97,12 @@ class GoalLineTest(unittest.TestCase):
                           ("usage", ["W-moonrelic.AdjRef"], 1, False)])
         self.assertIsNone(fields_of("Pylon_Raiders")["hand_in"])
 
+    def test_a_repeated_talk_line_stays_two_goals(self):
+        fields = {**fields_of("Survivors"), "goals": ["@Talk to Edgar Ableton", "@Talk to Edgar Ableton"]}
+        spec = build("Talk_Twice", Data(personas=["Edgar Ableton", "Dalton Prescott"]), fields=fields)
+        self.assertEqual([summary(goal)[:2] for goal in spec["goals"]],
+                         [("persona", "Edgar Ableton"), ("persona", "Edgar Ableton"), ("persona", "giver")])
+
     def test_school_and_rank_tags_are_not_part_of_a_creature_name(self):
         data = Data(mobs=["Pingouin Revolutionary", "Principe Guard", "Aberrant Valencian",
                           "Governor Rottingham Weiler"])
@@ -119,6 +125,16 @@ class GoalLineTest(unittest.TestCase):
                           ("usage", ["W-drum.AdjRef"], 4, False),
                           ("persona", "giver", None, False)])
 
+    def test_a_list_of_places_is_one_step_of_waypoints_and_an_unknown_place_is_left_out(self):
+        fields = {**fields_of("Survivors"), "goals": ["@Explore:", "@@[Location:Last Wood]", "@@[Location:Stone Town]",
+                                                     "@Find the [Location:Councilor's House]"]}
+        data = Data(personas=["Dalton Prescott"], places={"Last Wood": "W/Last_Wood", "Stone Town": "W/Stone_Town"})
+        spec = build("Places", data, known_zones=(ZONE, "W/Last_Wood", "W/Stone_Town"), fields=fields)
+        self.assertEqual([summary(goal) for goal in spec["goals"]],
+                         [("waypoint", "W/Last_Wood", None, False), ("waypoint", "W/Stone_Town", None, True),
+                          ("persona", "giver", None, False)])
+        self.assertEqual(blocking(spec), [])
+
     def test_a_defeat_in_another_zone_sends_the_player_there(self):
         data = Data(personas=["Old Cob"], mobs=["Morganthe"], places={"Morganthe's Chamber": "W/Boss_Room"})
         spec = build("Final_Challenge", data, known_zones=(ZONE, "W/Boss_Room"))
@@ -139,6 +155,20 @@ class GoalLineTest(unittest.TestCase):
                          [("usage", ["W-valeofperfection.AdjRef"], 1, False),
                           ("bountycollect", ["Banana Spider.AdjRef"], 1, True),
                           ("persona", "giver", None, False)])
+
+    def test_an_npc_link_naming_only_an_item_is_a_usage_goal(self):
+        fields = {**fields_of("Survivors"), "goals": ["@Find [NPC:Raleigh Waterson]", "@Find [NPC:Edgar Ableton]"]}
+        spec = build("Like_Dockwork", Data(personas=["Edgar Ableton", "Dalton Prescott"], items=["Raleigh Waterson"]),
+                     fields=fields)
+        self.assertEqual([summary(goal)[:2] for goal in spec["goals"]],
+                         [("usage", ["W-raleighwaterson.AdjRef"]), ("persona", "Edgar Ableton"), ("persona", "giver")])
+
+    def test_a_person_verb_naming_an_npc_without_a_link_is_a_persona_goal(self):
+        fields = {**fields_of("Survivors"), "goals": ["@Follow Dog Tracy", "@Find Edgar Ableton in the Camp"]}
+        data = Data(personas=["Dog Tracy", "Edgar Ableton", "Dalton Prescott"], items=["Dog Tracy", "Edgar Ableton"])
+        spec = build("Crime_and_Punishment", data, fields=fields)
+        self.assertEqual([summary(goal)[:2] for goal in spec["goals"]],
+                         [("persona", "Dog Tracy"), ("persona", "Edgar Ableton"), ("persona", "giver")])
 
     def test_npc_verbs_and_notes_on_npc_names(self):
         data = Data(personas=["Fernanda Maregellan", "Dasein", "Dasein on High", "Dasein Anomaly"],

@@ -59,7 +59,7 @@ def place_readings(text):
     return list(dict.fromkeys([text] + parts))
 
 
-def goal_kind(verb, text, npcs, creatures, places):
+def goal_kind(verb, text, npcs, creatures):
     """persona, bounty, waypoint or usage: what the line asks the player to do."""
     if verb in KILL_VERBS or (verb == "confront" and creatures):
         return "bounty"
@@ -69,13 +69,11 @@ def goal_kind(verb, text, npcs, creatures, places):
         return "persona"
     if verb in MOVE_VERBS or (verb == "take" and " to " in text):
         return "waypoint"
-    if places and verb in FIND_VERBS:
-        return "waypoint"
     return "usage"
 
 
 def repeated(groups):
-    """Goal groups as (line, sub-items, times): a line repeated on consecutive lines is one goal done that often."""
+    """Goal groups as (line, sub-items, times): a line repeated on consecutive lines, once with how often."""
     merged = []
     for line, subs in groups:
         if merged and not subs and not merged[-1][1] and merged[-1][0] == line:

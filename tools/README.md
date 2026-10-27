@@ -339,8 +339,23 @@ newest capture, and the CDX timestamp when the newest capture is an error page.
   the zones of an unnamed template with the same persona (Queen Calypso is placed as `CL-CalypsoReset`). A name the
   world's folder lacks is taken from the one world name close to it (`NAME_CUTOFF`; the wiki's Koltan Grimfane is
   Koltan Gloomfane), else from the other ObjectData folders, placed by every zone wad; a mob the world's folder lacks
-  comes from the other folders too (the Spellwrit Wildclaws are in `PageEvent`). Each of these is listed in
-  `needs_review`.
+  comes from the other folders too (the Spellwrit Wildclaws are in `PageEvent`), from the nearest one that has it:
+  the registered worlds' folders by distance in the registry (Karamelle's Quake Charmer is Novus's, not Darkmoor's),
+  then the rest. Each of these is listed in `needs_review` with the folder used. A title the wiki tagged with its
+  world (`Monkey Business (Novus)`) is matched without the tag when nothing reads it whole.
+- goal lines by their verb (`quests/goal_lines.py`): defeat-like verbs are bounty goals, talk-like verbs and person
+  verbs with an NPC link (rescue, escort, find [NPC]...) persona goals, movement verbs (go, enter, explore, search,
+  return, exit...) waypoints, everything else (collect, gather, use, examine, light, open, place, release,
+  Photomance...) usage goals on the world's items. A hint in parentheses wins over the verb (`Locate (Collect) the
+  Moon Relic` is a usage goal), notes in parentheses are not part of a name (`Dog of War (Balance)`, `Moo Bu (in
+  Conatus)`), a use or defeat line repeated on consecutive lines is one goal with that count, and a header whose
+  sub-items are goal lines or places (`Complete the following:`, `Explore:`) is one step of those goals. A place resolves to the zone path
+  of its category,
+  else to the world's one zone wad named for it (`the Drum House`: `ZF_Z10_I03_Drum_House`) when that zone has a
+  ZoneTransfer file; a waypoint line naming one of the world's NPCs instead (`Go to Governor Nereus`) is a persona
+  goal, and one that resolves to neither is left out and listed. A find-like line that names no item but a place is a
+  waypoint. A defeat in a place with its own zone (`Defeat Morganthe (in Morganthe's Chamber)`) sends the player
+  there.
 - the zone from the zone category, else the giver's location, to the zone where most of that zone's givers stand.
 - prerequisites to the ids of the other specs, or of the pack's quests with that title.
 
@@ -375,7 +390,9 @@ A bounty goal counts a defeated mob once for each of its adjectives in `mobs`, s
 own `<template>.AdjRef`. A shared adjective (`Crustacean_Pincer`, `MONST_Fish`) catches every template that has it.
 A usage goal's `items` are adjectives of `items`: the world's object templates with an adjective that the player
 interacts with or whose display name is not a mob's (`CL-TeslaTower.AdjRef`, a Galvanic Tower), the pattern of the
-pack's `m_itemAdjectives`. A persona goal's `persona` is the persona without `_Persona`; the zones column is where to send the player.
+pack's `m_itemAdjectives`. A persona goal's `persona` is the persona without `_Persona`; the zones column is where to send the player:
+the zones whose wad names the template or places an object by its template id (Zaltanna the Mirrormask in
+`KR_Z00_Hub`).
 
 ## Authoring a world by hand
 
