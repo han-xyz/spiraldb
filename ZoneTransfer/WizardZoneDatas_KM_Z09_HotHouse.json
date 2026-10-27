@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Karamelle/Interiors/KM_Z09_HotHouse",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location To_Farm",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_KM_Z09_Hot_House",
+        "m_destinationZone": "Karamelle/KM_Z09_CandyCornFarm"
+      }
+    }
+  ]
+}

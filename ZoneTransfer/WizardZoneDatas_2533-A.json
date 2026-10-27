@@ -45,6 +45,17 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "Karamelle/Interiors/KM_Z00_TheLobby"
       }
+    },
+    {
+      "TriggerName": "Teleport to ProductionJunction",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z00_ProductionJunction"
+      }
     }
   ]
 }
