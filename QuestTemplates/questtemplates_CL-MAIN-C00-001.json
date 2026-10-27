@@ -156,6 +156,15 @@
         "m_questName": "CL-MAIN-C01-001",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "CL-Q-B4F37",
+        "m_applyNOT": true,
+        "m_operator": "ROP_AND"
       }
     ],
     "m_applyNOT": false,
