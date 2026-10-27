@@ -1,8 +1,9 @@
 {
   "id": "CL-Q-371C6",
   "lang": "371C6",
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371CE"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -88,11 +89,6 @@
       "field": "giver",
       "value": "starts automatically",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Into the Stellarium",
-      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

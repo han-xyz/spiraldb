@@ -7,7 +7,7 @@
     "zone": "Celestia/CL_Z02_Crab_Realm"
   },
   "requires": [
-    "CL-REALM-C01-005"
+    "CL-REALM-C02-001"
   ],
   "mainline": false,
   "level": 48,
@@ -87,11 +87,6 @@
       "blocking": false
     },
     {
-      "field": "requires",
-      "value": "Fishing Pieces",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Deep One's Cave",
       "blocking": false
@@ -99,11 +94,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Fishing Pieces replaced by CL-REALM-C01-005",
       "blocking": false
     }
   ]

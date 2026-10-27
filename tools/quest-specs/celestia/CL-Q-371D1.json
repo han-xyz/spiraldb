@@ -1,11 +1,13 @@
 {
-  "id": "CL-Q-asthewaterfalls",
+  "id": "CL-Q-371D1",
+  "lang": "371D1",
   "giver": {
     "persona": "CL-LAND-NPC04",
     "zone": "Celestia/CL_Z05_The_Floating_Land"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371D8"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -13,7 +15,28 @@
     "gold": 180
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -25,6 +48,7 @@
       "count": 3,
       "target": "WizardMobs_00000735",
       "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "WizQst371D1_00000000",
       "loc": "ZoneLocName_227141"
     },
     {
@@ -47,17 +71,12 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "As the Water Falls",
-      "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Crash of the Sky-Fish",
+      "value": "WizQst371D1 by the proper nouns its lines share with the page (Bark, Sacred), within 16 of a key of the zone's quests; next best WizQst371D9 with 1",
       "blocking": false
     },
     {
-      "field": "goal.descriptor",
-      "value": "Sacred Bark",
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]

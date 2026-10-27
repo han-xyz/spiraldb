@@ -1,0 +1,100 @@
+{
+  "id": "CL-REALM-C01-003",
+  "lang": "371BB",
+  "title": "QuestTitle_00000127",
+  "giver": {
+    "persona": "CL-REALM-NPC01",
+    "zone": "Celestia/CL_Z02_Crab_Realm"
+  },
+  "requires": [
+    "CL-REALM-C01-001"
+  ],
+  "mainline": true,
+  "level": 48,
+  "reward": {
+    "xp": 1190,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "CL-EelCaveObject.AdjRef",
+        "CL-GatePieceRIVEN.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "descriptor": "WizItems_00001639",
+      "loc": "ZoneLocName_227109"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-REALM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_DogWorker_08_NPC.dds",
+      "template_id": 227130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shocking_News",
+    "timestamp": "20231124090837"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst371BB by the proper nouns its lines share with the page (Eel, Piece, Portal), within 16 of a key of the zone's quests; next best WizQst371AF with 1",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Coral of the Story",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Coral of the Story replaced by CL-REALM-C01-001",
+      "blocking": false
+    }
+  ]
+}

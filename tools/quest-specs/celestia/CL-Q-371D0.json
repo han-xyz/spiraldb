@@ -6,7 +6,7 @@
     "zone": "Celestia/CL_Z05_The_Floating_Land"
   },
   "requires": [
-    "CL-Q-371D4"
+    "CL-Q-371D5"
   ],
   "mainline": true,
   "level": 48,
@@ -83,11 +83,6 @@
       "blocking": false
     },
     {
-      "field": "requires",
-      "value": "Distress Call",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Gahlwok's Lair",
       "blocking": false
@@ -95,11 +90,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Distress Call replaced by CL-Q-371D4",
       "blocking": false
     }
   ]

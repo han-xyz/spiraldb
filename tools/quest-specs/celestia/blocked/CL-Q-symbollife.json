@@ -4,8 +4,9 @@
     "persona": "CL-DIST-NPC01",
     "zone": "Celestia/CL_Z03_District_Of_The_Stars"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371C5"
+  ],
   "mainline": false,
   "level": 48,
   "reward": {
@@ -59,11 +60,6 @@
       "field": "lang",
       "value": "Symbol Life",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Worlds Beyond",
-      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

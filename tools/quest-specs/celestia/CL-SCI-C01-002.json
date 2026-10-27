@@ -1,11 +1,12 @@
 {
-  "id": "CL-Q-steamedup",
+  "id": "CL-SCI-C01-002",
+  "lang": "371F5",
+  "title": "QuestTitle_00000108",
   "giver": {
     "persona": "CL-SCI-NPC01",
     "zone": "Celestia/CL_Z09_Science_Center"
   },
   "requires": [],
-  "min_level": 48,
   "mainline": true,
   "level": 48,
   "reward": {
@@ -13,7 +14,32 @@
     "gold": 190
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -47,13 +73,24 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Steamed Up",
-      "blocking": true
+      "value": "WizQst371F5 by the proper nouns its lines share with the page (Science, Steam, Trowellers), within 16 of a key of the zone's quests; next best WizQst37200 with 1",
+      "blocking": false
     },
     {
       "field": "requires",
       "value": "Scientific Method",
       "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Scientific Method replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 48
 }

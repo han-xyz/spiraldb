@@ -1,8 +1,9 @@
 {
   "id": "CL-Q-4EE23",
   "lang": "4EE23",
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371B1"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -104,11 +105,6 @@
       "field": "giver",
       "value": "starts automatically",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Through This Door...",
-      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

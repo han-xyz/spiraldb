@@ -198,7 +198,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "CL-REALM-C01-004",
+        "m_questName": "CL-REALM-C01-003",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

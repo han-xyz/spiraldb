@@ -191,7 +191,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "CL-Q-371D0",
+        "m_questName": "CL-Q-371D2",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -200,7 +200,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "CL-Q-371DC",
+        "m_questName": "CL-Q-371D8",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       },
@@ -209,7 +209,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "CL-Q-377D7",
+        "m_questName": "CL-Q-371DC",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       },

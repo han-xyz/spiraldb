@@ -5,8 +5,9 @@
     "persona": "CL-HUB-NPC001",
     "zone": "Celestia/CL_Hub"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371B0"
+  ],
   "mainline": false,
   "level": 48,
   "reward": {
@@ -85,11 +86,6 @@
     "timestamp": "20240519192349"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "The Sun of All Fears",
-      "blocking": false
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "The Chancel",

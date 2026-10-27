@@ -1,5 +1,6 @@
 {
-  "id": "CL-Q-thesunofallfears",
+  "id": "CL-Q-371B0",
+  "lang": "371B0",
   "giver": {
     "persona": "CL-HUB-NPC001",
     "zone": "Celestia/CL_Hub"
@@ -14,7 +15,28 @@
     "gold": 315
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -48,8 +70,8 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "The Sun of All Fears",
-      "blocking": true
+      "value": "WizQst371B0 by the proper nouns its lines share with the page (Chancel, Solarium), within 16 of a key of the zone's quests; next best WizQst37203 with 1",
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",
@@ -65,6 +87,11 @@
       "field": "goal.items",
       "value": "the Sun Relic on the Grand Astrolabe in the Celestia Base Camp",
       "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

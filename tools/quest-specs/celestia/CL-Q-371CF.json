@@ -6,7 +6,7 @@
     "zone": "Celestia/CL_Z05_The_Floating_Land"
   },
   "requires": [
-    "CL-Q-371C3"
+    "CL-Q-371AB"
   ],
   "mainline": true,
   "level": 48,
@@ -92,18 +92,8 @@
       "blocking": false
     },
     {
-      "field": "requires",
-      "value": "On the Waterfront",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "On the Waterfront replaced by CL-Q-371C3",
       "blocking": false
     }
   ]

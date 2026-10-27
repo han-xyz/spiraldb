@@ -4,8 +4,9 @@
     "persona": "CL-LAND-NPC01",
     "zone": "Celestia/CL_Z05_The_Floating_Land"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371AB"
+  ],
   "mainline": false,
   "level": 48,
   "reward": {
@@ -43,11 +44,6 @@
     {
       "field": "requires",
       "value": "To the Seas",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "On the Waterfront",
       "blocking": false
     },
     {

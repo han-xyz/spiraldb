@@ -1,11 +1,13 @@
 {
-  "id": "CL-Q-throughthisdoor",
+  "id": "CL-Q-371B1",
+  "lang": "371B1",
   "giver": {
     "persona": "CL-HUB-NPC001",
     "zone": "Celestia/CL_Hub"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371B0"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -13,7 +15,40 @@
     "gold": 80
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -27,7 +62,17 @@
       "type": "persona",
       "persona": "ME1-YoungHalston-A",
       "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z02_Prison",
-      "loc": "ZoneLocName_1161792"
+      "loc": "ZoneLocName_1161792",
+      "completion": [
+        {
+          "speaker": "ME1-YoungHalston-A",
+          "line": "00000014"
+        },
+        {
+          "speaker": "ME1-YoungHalston-A",
+          "line": "00000030"
+        }
+      ]
     }
   ],
   "personas": {
@@ -47,12 +92,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Through This Door...",
-      "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "The Sun of All Fears",
+      "value": "WizQst371B1 by the proper nouns its lines share with the page (Balestrom, Halston, Sanctum), within 16 of a key of the zone's quests; next best WizQst37203 with 1",
       "blocking": false
     },
     {
@@ -63,6 +103,11 @@
     {
       "field": "goal.persona (other world)",
       "value": "Halston Balestrom: ME1-YoungHalston-A from ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]

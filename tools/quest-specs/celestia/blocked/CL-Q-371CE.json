@@ -1,5 +1,6 @@
 {
-  "id": "CL-Q-intothestellarium",
+  "id": "CL-Q-371CE",
+  "lang": "371CE",
   "giver": {
     "persona": "CL-DIST-NPC01",
     "zone": "Celestia/CL_Z03_District_Of_The_Stars"
@@ -14,7 +15,28 @@
     "gold": 175
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -42,7 +64,13 @@
       "type": "persona",
       "persona": "CL-HUB-NPC001",
       "zone": "Celestia/CL_Hub",
-      "loc": "ZoneLocName_1161792"
+      "loc": "ZoneLocName_1161792",
+      "completion": [
+        {
+          "speaker": "CL-HUB-NPC001",
+          "line": "00000003"
+        }
+      ]
     }
   ],
   "personas": {
@@ -62,13 +90,18 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Into the Stellarium",
-      "blocking": true
+      "value": "WizQst371CE by the proper nouns its lines share with the page (Astrolabe, Base, Camp, Grand, Star), within 16 of a key of the zone's quests; next best WizQst371BB with 2",
+      "blocking": false
     },
     {
       "field": "goal.items",
       "value": "Key on the Stellarium Pedestal",
       "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

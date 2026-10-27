@@ -1,5 +1,7 @@
 {
-  "id": "CL-Q-fishingpieces",
+  "id": "CL-REALM-C02-001",
+  "lang": "371B7",
+  "title": "QuestTitle_00000131",
   "giver": {
     "persona": "CL-REALM-NPC01",
     "zone": "Celestia/CL_Z02_Crab_Realm"
@@ -14,7 +16,44 @@
     "gold": 220
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -42,7 +81,13 @@
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Z02_Crab_Realm",
-      "loc": "ZoneLocName_227109"
+      "loc": "ZoneLocName_227109",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
     }
   ],
   "personas": {
@@ -58,12 +103,17 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Fishing Pieces",
-      "blocking": true
+      "value": "WizQst371B7 by the proper nouns its lines share with the page (Ancient, Eels, Tablet, Voltic), within 16 of a key of the zone's quests; next best WizQst371BB with 2",
+      "blocking": false
     },
     {
       "field": "goal.descriptor",
       "value": "Ancient Tablet pieces",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]
