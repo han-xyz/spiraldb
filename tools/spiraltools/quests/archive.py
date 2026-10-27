@@ -869,8 +869,9 @@ def heuristic_dialogs(lines, internal):
 class SpecBuilder:
     """Turns the fields of one quest page into a questgen spec, listing what it could not resolve."""
 
-    def __init__(self, data, entry, fields, zone_paths, quest_ids, known_zones):
+    def __init__(self, data, entry, fields, zone_paths, quest_ids, known_zones, predecessor_hand_in=None):
         self.data, self.entry, self.fields = data, entry, fields
+        self.predecessor_hand_in = predecessor_hand_in
         self.known_zones = known_zones
         self.zone_paths, self.quest_ids = zone_paths, quest_ids
         self.zone_name = zone_name_of(entry, fields)
@@ -1105,12 +1106,19 @@ class SpecBuilder:
         else:
             self.unresolved("lang", self.entry["name"], True)
         giver = None
-        if fields["giver"]:
-            giver, giver_zone = self.persona_ref(fields["giver"], "giver")
+        giver_name = fields["giver"]
+        if not giver_name and fields["auto_start"]:
+            spec["auto_start"] = True
+            if self.predecessor_hand_in and self.data.persona(strip_notes(self.predecessor_hand_in), self.zone):
+                giver_name = self.predecessor_hand_in
+            else:
+                self.unresolved("giver (auto-start, no predecessor hand-in)", self.predecessor_hand_in or "none", True)
+        if giver_name:
+            giver, giver_zone = self.persona_ref(giver_name, "giver")
             if giver:
                 spec["giver"] = {"persona": giver, "zone": giver_zone or self.zone}
-        else:
-            self.unresolved("giver", "starts automatically" if fields["auto_start"] else "none", True)
+        elif not fields["auto_start"]:
+            self.unresolved("giver", "none", True)
         requires = []
         for title in fields["prequests"]:
             found = self.quest_ids.get(title_norm(title))
@@ -1369,6 +1377,12 @@ def hand_authored(world_dir):
     return found
 
 
+def predecessor_hand_in(pages, by_title, fields):
+    """The hand-in NPC of the first prerequisite page that names one: who gives a quest that starts automatically."""
+    hand_ins = (pages.get(by_title.get(title_norm(title)), {}).get("hand_in") for title in fields["prequests"])
+    return next((name for name in hand_ins if name), None)
+
+
 def zone_name_of(entry, fields):
     """The quest's zone: its zone category, else the giver's location (some zone categories are not archived)."""
     return (entry["zones"] or [fields["giver_location"]])[0]
@@ -1461,7 +1475,8 @@ def parse_world(cache, registered):
             continue
         lang = langs[entry["page"]]
         quest_id = ids.get(title_norm(entry["name"])) or f"{data.folder}-Q-{norm(entry['name'])}"
-        builder = SpecBuilder(data, entry, pages[entry["page"]], zone_paths, ids, known_zones)
+        builder = SpecBuilder(data, entry, pages[entry["page"]], zone_paths, ids, known_zones,
+                              predecessor_hand_in(pages, by_title, pages[entry["page"]]))
         if entry["page"] in evidence:
             builder.unresolved("lang", evidence[entry["page"]], False)
         built.append((entry, lang, builder.build(lang, quest_id)))

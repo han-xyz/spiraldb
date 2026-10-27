@@ -364,6 +364,9 @@ without a snapshot is fetched only live.
   the registered worlds' folders by distance in the registry (Karamelle's Vexxor is Novus's, not Darkmoor's),
   then the rest. Each of these is listed in `needs_review` with the folder used. A title the wiki tagged with its
   world (`Monkey Business (Novus)`) is matched without the tag when nothing reads it whole.
+- the giver of a quest that starts automatically to the hand-in NPC of its first prerequisite that names one, with
+  `auto_start: true` on the spec (the generator ignores it); without one it stays blocked on `giver (auto-start, no
+  predecessor hand-in)`.
 - goal lines by their verb (`quests/goal_lines.py`): defeat-like verbs are bounty goals, talk-like verbs and person
   verbs with an NPC link (rescue, escort, find [NPC]...) persona goals, movement verbs (go, enter, explore, search,
   return, exit...) waypoints, everything else (collect, gather, use, examine, light, open, place, release,

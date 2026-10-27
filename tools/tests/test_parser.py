@@ -64,11 +64,11 @@ class Data:
         return None
 
 
-def build(name, data, known_zones=(ZONE,), fields=None):
+def build(name, data, known_zones=(ZONE,), fields=None, predecessor_hand_in=None):
     fields = fields or fields_of(name)
     entry = {"name": name, "page": f"Quest:{name}", "zones": ["Quest Zone"], "fetched": "20250101000000",
              "fetched_from": "archive"}
-    builder = SpecBuilder(data, entry, fields, {"Quest Zone": ZONE}, {}, set(known_zones))
+    builder = SpecBuilder(data, entry, fields, {"Quest Zone": ZONE}, {}, set(known_zones), predecessor_hand_in)
     return builder.build("ABC", "T-1")
 
 
@@ -178,6 +178,20 @@ class GoalLineTest(unittest.TestCase):
         fields = {**fields_of("Survivors"), "goals": ["@Talk to [NPC:Dasein on High]"]}
         spec = build("Like_Dockwork", Data(personas=["Dalton Prescott"], items=["Dasein"]), fields=fields)
         self.assertIn(("goal.persona", "Dasein on High"), blocking(spec))
+
+    def test_a_quest_that_starts_automatically_is_given_by_its_prerequisite_hand_in_npc(self):
+        fields = {**fields_of("Survivors"), "giver": None, "auto_start": True}
+        spec = build("Like_Dockwork", Data(personas=["Dalton Prescott", "Edgar Ableton"]), fields=fields,
+                     predecessor_hand_in="Edgar Ableton")
+        self.assertEqual(spec["giver"], {"persona": "Edgar Ableton", "zone": ZONE})
+        self.assertTrue(spec["auto_start"])
+        self.assertNotIn("giver", [field for field, _ in blocking(spec)])
+
+    def test_a_quest_that_starts_automatically_without_a_predecessor_hand_in_stays_blocked(self):
+        fields = {**fields_of("Survivors"), "giver": None, "auto_start": True}
+        spec = build("Like_Dockwork", Data(personas=["Dalton Prescott"]), fields=fields, predecessor_hand_in="Nobody")
+        self.assertIn("giver (auto-start, no predecessor hand-in)", [field for field, _ in blocking(spec)])
+        self.assertNotIn("giver", spec)
 
     def test_a_person_followed_to_a_place_is_a_persona_goal(self):
         fields = {**fields_of("Survivors"), "goals": ["@Follow Josiah into [Location:Town]"]}
