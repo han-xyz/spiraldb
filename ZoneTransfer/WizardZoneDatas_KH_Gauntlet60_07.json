@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Housing_Gauntlet/KH_Gauntlet60/KH_Gauntlet60_07",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_60_06",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From01_07",
+        "m_destinationZone": "Housing_Gauntlet/KH_Gauntlet60/KH_Gauntlet60_06"
+      }
+    }
+  ]
+}
