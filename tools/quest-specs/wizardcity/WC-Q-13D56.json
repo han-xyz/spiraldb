@@ -1,0 +1,136 @@
+{
+  "id": "WC-Q-13D56",
+  "lang": "13D56",
+  "giver": {
+    "persona": "WC-RAV-NPC09",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Balance"
+    }
+  ],
+  "mainline": false,
+  "level": 18,
+  "reward": {
+    "xp": 65,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_RVW_StormTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FrostTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FireTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 81103
+    },
+    "WC_RVW_FireTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Bernie.dds",
+      "template_id": 44207
+    },
+    "WC_RVW_FrostTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kelvin.dds",
+      "template_id": 82294
+    },
+    "WC_RVW_StormTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Torrence.dds",
+      "template_id": 39178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Talking_to_Trees",
+    "from": "archive",
+    "timestamp": "20231222112800"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Everything Being Equal replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 18
+}

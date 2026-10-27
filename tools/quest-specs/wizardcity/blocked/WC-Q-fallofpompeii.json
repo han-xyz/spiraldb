@@ -1,0 +1,243 @@
+{
+  "id": "WC-Q-fallofpompeii",
+  "auto_start": true,
+  "giver": {
+    "persona": "AQ-HUB-NPC01",
+    "zone": "Aquila/AQ_Z00_Hub"
+  },
+  "requires": [
+    "WC-Q-B4F74"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 189630,
+    "gold": 2300
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AQ-TAR-NPC01",
+      "zone": "Aquila/AQ_Z03_Tartarus"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z03_Tartarus"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Satyr-Death.AdjRef",
+        "Adv_AQ-Satyr-Death.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001532",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-TAR-NPC02",
+      "zone": "Aquila/Interiors/AQ_Z03_HouseOfFaun"
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-TAR-NPC03",
+      "zone": "Aquila/AQ_Z03_Tartarus"
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-TAR-NPC03",
+      "zone": "Aquila/AQ_Z03_Tartarus"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z03_Tartarus"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z03_Tartarus"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Minotaur-Death.AdjRef",
+        "Adv_AQ-Minotaur-Death.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001533",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-TAR-NPC05",
+      "zone": "Aquila/Interiors/AQ_Z03_TempleOfLonging"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Cerberus-A.AdjRef",
+        "AQ-Cerberus-B.AdjRef",
+        "AQ-Cerberus-C.AdjRef",
+        "Adv_AQ-Cerberus-A.AdjRef",
+        "Adv_AQ-Cerberus-B.AdjRef",
+        "Adv_AQ-Cerberus-C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001535",
+      "zone": ""
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/Interiors/AQ_Z03_TempleOfLonging"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Immortal-Hades.AdjRef",
+        "Adv_AQ-Immortal-Hades.AdjRef",
+        "Heroic_AQ_Hades.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001536",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "AQ-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Satyr_Druid_A_NPC.dds",
+      "template_id": 741209
+    },
+    "AQ-TAR-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_Poet_A_NPC.dds",
+      "template_id": 827080
+    },
+    "AQ-TAR-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Satyr_Death_A_NPC.dds",
+      "template_id": 827081
+    },
+    "AQ-TAR-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gryphon_Wraith_A_NPC.dds",
+      "template_id": 827082
+    },
+    "AQ-TAR-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gorgon_WarriorF_A_NPC.dds",
+      "template_id": 827084
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fall_of_Pompeii",
+    "from": "archive",
+    "timestamp": "20240811151955"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Fall of Pompeii",
+      "blocking": true
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Silenus: AQ-HUB-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Orpheus: AQ-TAR-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "House of Faun",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Death Satyr: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Death Satyr: AQ-TAR-NPC02 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Charon: AQ-TAR-NPC03 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "Find 6 pieces of Petrified Wood",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Charon: AQ-TAR-NPC03 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Charon's Boat",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Garden of Statues",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Death Minotaur: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Stheno: AQ-TAR-NPC05 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Repair the Urn",
+      "blocking": true
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "Find Lion's Tail Leaves",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Cerberus",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Cerberus",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Cerberus",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Cerberus: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Hall of Hades",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Hades the Unseen: ObjectData/AQ",
+      "blocking": false
+    }
+  ]
+}

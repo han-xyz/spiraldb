@@ -1,0 +1,77 @@
+{
+  "id": "WC-Q-13D57",
+  "lang": "13D57",
+  "giver": {
+    "persona": "WC-RAV-NPC09",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Balance"
+    },
+    "WC-Q-13D56"
+  ],
+  "min_level": 18,
+  "mainline": false,
+  "level": 18,
+  "reward": {
+    "xp": 145,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 81103
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Playing_with_Fire",
+    "from": "archive",
+    "timestamp": "20260514051024"
+  },
+  "needs_review": [
+    {
+      "field": "goal.unknown-verb",
+      "value": "Purify the Leaves at Fire Pit in the Altar of Kings",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

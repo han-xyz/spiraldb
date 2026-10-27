@@ -1,0 +1,60 @@
+{
+  "id": "WC-Q-cryforashadow",
+  "giver": {
+    "persona": "WC-NIS-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolDeath"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    },
+    "WC-Q-213EB"
+  ],
+  "min_level": 58,
+  "mainline": false,
+  "level": 58,
+  "reward": {
+    "xp": 1260,
+    "gold": 65
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-RVW-DeathTree",
+      "zone": "WizardCity/WC_NightSide",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath",
+      "loc": "ZoneLocName_10825"
+    }
+  ],
+  "personas": {
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    },
+    "WC-RVW-DeathTree": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tree_Mortis_A_NPC.dds",
+      "template_id": 39390
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cry_for_a_Shadow",
+    "from": "archive",
+    "timestamp": "20240121105632"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Cry for a Shadow",
+      "blocking": true
+    }
+  ]
+}

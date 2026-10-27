@@ -1,0 +1,53 @@
+{
+  "id": "WC-Q-knowthineenemy",
+  "giver": {
+    "persona": "WC-RAV-NPC13",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [],
+  "min_level": 12,
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 225,
+    "gold": 125,
+    "spells": [
+      "Extract Undead"
+    ]
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC13": {
+      "portrait": "GUI/NpcPortraits/Fox_MonsterTeacher_A_NPC.dds",
+      "template_id": 1401108
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Know_Thine_Enemy",
+    "from": "archive",
+    "timestamp": "20250522092013"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Know Thine Enemy",
+      "blocking": true
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Extract a Lost Soul Essence in Unicorn Way",
+      "blocking": true
+    }
+  ]
+}

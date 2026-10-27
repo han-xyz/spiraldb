@@ -1,0 +1,219 @@
+{
+  "id": "WC-Q-126346",
+  "lang": "126346",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "AZ-Q-9D0EB"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 23160,
+    "gold": 280,
+    "spells": [
+      {
+        "spell": "King Artorius (Balance)",
+        "school": "Balance"
+      },
+      {
+        "spell": "King Artorius (Death)",
+        "school": "Death"
+      },
+      {
+        "spell": "King Artorius (Fire)",
+        "school": "Fire"
+      },
+      {
+        "spell": "King Artorius (Ice)",
+        "school": "Ice"
+      },
+      {
+        "spell": "King Artorius (Life)",
+        "school": "Life"
+      },
+      {
+        "spell": "King Artorius (Myth)",
+        "school": "Myth"
+      },
+      {
+        "spell": "King Artorius (Storm)",
+        "school": "Storm"
+      }
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-HUB-NPC01",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC26",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-CATA-NPC01",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC26": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Artorius_NPC.dds",
+      "template_id": 1205069
+    },
+    "AV-CATA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 592086
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Letters_of_Light",
+    "from": "archive",
+    "timestamp": "20240327013753"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Inyanga Whitestripes: ZF-HUB-NPC01 from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "King Artorius: AV-ABBEY-NPC26 from ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Lady of the Lake: AV-CATA-NPC01 from ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "WC-Q-162727",
+  "lang": "162727",
+  "giver": {
+    "persona": "WC-CATA-NPC10-A",
+    "zone": "WizardCity/WC_Streets/WC_Catacombs_B"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 690
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-RunesOnWall.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "descriptor": "WizardQuestGoals_00000638",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC011-B",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs_B",
+      "loc": "ZoneLocName_1451811"
+    }
+  ],
+  "personas": {
+    "WC-CATA-NPC011-B": {
+      "portrait": "GUI/NpcPortraits/Druid_GhostF_A_NPC.dds",
+      "template_id": 1451882
+    },
+    "WC-CATA-NPC10-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",
+      "template_id": 1451830
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Prison_Out_of_Time",
+    "from": "archive",
+    "timestamp": "20250911074714"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Druid Legacies replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

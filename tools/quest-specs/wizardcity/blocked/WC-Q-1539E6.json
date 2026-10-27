@@ -1,0 +1,100 @@
+{
+  "id": "WC-Q-1539E6",
+  "lang": "1539E6",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-RAV-NPC11",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "WC-Q-15070A"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 10000,
+    "gold": 15000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Wizard_A_NPC.dds",
+      "template_id": 1378050
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Margins_of_Error",
+    "from": "archive",
+    "timestamp": "20260331221054"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "in Regent's Square",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "in Baobab Crossroads",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "in Walruskberg",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

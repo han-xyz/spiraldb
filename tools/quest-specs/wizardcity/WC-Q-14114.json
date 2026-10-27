@@ -1,0 +1,118 @@
+{
+  "id": "WC-Q-14114",
+  "lang": "14114",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    },
+    "WC-Q-998B"
+  ],
+  "mainline": false,
+  "level": 18,
+  "reward": {
+    "xp": 135,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-HUB-NPC12",
+      "zone": "Krokotopia/Interiors/KT_Library",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Krokotopia/Interiors/KT_Library"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "KT-HUB-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Librarian_A_NPC.dds",
+      "template_id": 81096
+    },
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Inquisition_Mission",
+    "from": "archive",
+    "timestamp": "20231222134124"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Zan'ne: KT-HUB-NPC12 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Krokotopia Library",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 18
+}

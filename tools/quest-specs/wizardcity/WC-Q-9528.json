@@ -1,0 +1,94 @@
+{
+  "id": "WC-Q-9528",
+  "lang": "9528",
+  "giver": {
+    "persona": "WC-ST06-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Colossus"
+  },
+  "requires": [
+    "WC-Q-9527"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 275,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST06-NPC02",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Colossus_Balcony",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    }
+  ],
+  "personas": {
+    "WC-ST06-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Ice02.dds",
+      "template_id": 38170
+    },
+    "WC-ST06-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gobbler_King.dds",
+      "template_id": 38174
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Let's_Make_a_Deal",
+    "from": "archive",
+    "timestamp": "20231121193651"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

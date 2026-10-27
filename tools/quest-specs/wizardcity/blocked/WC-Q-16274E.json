@@ -1,0 +1,153 @@
+{
+  "id": "WC-Q-16274E",
+  "lang": "16274E",
+  "giver": {
+    "persona": "WC-ST01-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [
+    "WC-CATA-SIDE-003"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 1380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC13-B",
+      "zone": "WizardCity/WC_Shop_Area",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-DRAINS-NPC03-B",
+      "zone": "WizardCity/WC_Streets/WC_Drains/Z00_Drains_HUB",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC13-B",
+      "zone": "WizardCity/WC_Shop_Area",
+      "loc": "ZoneLocName_114426"
+    }
+  ],
+  "personas": {
+    "WC-CATA-NPC13-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Prepper_A_NPC.dds",
+      "template_id": 1451855
+    },
+    "WC-DRAINS-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Fly_Forman_A_NPC.dds",
+      "template_id": 1488011
+    },
+    "WC-ST01-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Diego_Duelmaster.dds",
+      "template_id": 38226
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Defeating_a_Dead_Horse",
+    "from": "archive",
+    "timestamp": "20250829004243"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Mr. Dead",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "WC-Q-1625BF",
+  "lang": "1625BF",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 5,
+    "gold": 2
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST01-NPC04",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426",
+      "completion": [
+        {
+          "speaker": "WC-ST01-NPC04",
+          "line": "00000002"
+        },
+        {
+          "speaker": "WC-ST01-NPC04",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "WC-ST01-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_A.dds",
+      "template_id": 38119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Unicorn_Way",
+    "from": "archive",
+    "timestamp": "20240805194223"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Tutorial replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

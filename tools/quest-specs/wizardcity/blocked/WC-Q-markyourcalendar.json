@@ -1,0 +1,105 @@
+{
+  "id": "WC-Q-markyourcalendar",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    {
+      "school": "Myth"
+    },
+    "WC-Q-80B24"
+  ],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 56690,
+    "gold": 755
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-HUB-NPC02",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z00_Hub"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Fox-Knight-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001346",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-HUB-NPC02",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Nolan.dds",
+      "template_id": 602075
+    },
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mark_Your_Calendar",
+    "from": "archive",
+    "timestamp": "20240121102350"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Mark Your Calendar",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Friar Nolan: AV-HUB-NPC02 from ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Vortigern's Tower, High Road",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Merewen 'o the Vale: ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Wheel of the Sun",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Friar Nolan: AV-HUB-NPC02 from ObjectData/AV",
+      "blocking": false
+    }
+  ]
+}

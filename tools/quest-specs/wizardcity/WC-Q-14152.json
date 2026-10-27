@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-14152",
+  "lang": "14152",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "WC-Q-14151"
+  ],
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 350,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Sunken_City",
+      "loc": "ZoneLocName_454915"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Book_Return",
+    "from": "archive",
+    "timestamp": "20240121101212"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 38
+}

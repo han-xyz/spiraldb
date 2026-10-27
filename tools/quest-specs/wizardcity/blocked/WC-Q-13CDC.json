@@ -1,0 +1,173 @@
+{
+  "id": "WC-Q-13CDC",
+  "lang": "13CDC",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    {
+      "school": "Myth"
+    },
+    "WC-Q-9959"
+  ],
+  "min_level": 18,
+  "mainline": false,
+  "level": 18,
+  "reward": {
+    "xp": 335,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-RVW_MythTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-HUB-NPC12",
+      "zone": "Krokotopia/Interiors/KT_Library",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-HUB-NPC12",
+      "zone": "Krokotopia/Interiors/KT_Library",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Krokotopia/Interiors/KT_Library"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "GH-Gauntlet-Sprite-Dark.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003609",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "KT-HUB-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Librarian_A_NPC.dds",
+      "template_id": 81096
+    },
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    },
+    "WC-RVW_MythTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ivan.dds",
+      "template_id": 38275
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mything_Reagents",
+    "from": "archive",
+    "timestamp": "20260611095204"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Zan'ne: KT-HUB-NPC12 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Make a Rubbing of the Skull Obelisk at the Excavation Site in the Chamber of Fire",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Zan'ne: KT-HUB-NPC12 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Royal Hall",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Death Pixies: ObjectData/GH",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

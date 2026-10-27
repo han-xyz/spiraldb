@@ -1,0 +1,113 @@
+{
+  "id": "WC-Q-9507",
+  "lang": "9507",
+  "giver": {
+    "persona": "WC-ST04-NPC02",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-94F9"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 150,
+    "gold": 18
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Ghost-Blue-L02-B.AdjRef",
+        "Ghost-Blue-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000001",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Ghoul-Purple-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000002",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST04-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Storm02.dds",
+      "template_id": 38136
+    },
+    "WC-ST04-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Death02.dds",
+      "template_id": 38139
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Something_Rotten",
+    "from": "archive",
+    "timestamp": "20231121225304"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

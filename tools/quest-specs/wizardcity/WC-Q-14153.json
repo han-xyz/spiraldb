@@ -1,0 +1,93 @@
+{
+  "id": "WC-Q-14153",
+  "lang": "14153",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "WC-Q-14152"
+  ],
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 1180,
+    "gold": 200,
+    "spells": [
+      "Dryad"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Heroic_MS_PlagueOni.AdjRef",
+        "Oni-Plague-MSBoss-L54.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000247",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Beat_the_Plague",
+    "from": "archive",
+    "timestamp": "20240121101510"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Plague Oni: ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 38
+}

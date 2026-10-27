@@ -1,0 +1,68 @@
+{
+  "id": "WC-Q-1415F",
+  "lang": "1415F",
+  "giver": {
+    "persona": "WC-HUB-NPC03",
+    "zone": "WizardCity/Interiors/WC_Library"
+  },
+  "requires": [
+    "MB-XTRA-C11-001"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 195,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC06",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_10879"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-HUB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Fire02.dds",
+      "template_id": 38266
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:It's_Not_Here",
+    "from": "archive",
+    "timestamp": "20231122040255"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

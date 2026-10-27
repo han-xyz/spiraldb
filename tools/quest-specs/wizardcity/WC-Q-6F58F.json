@@ -1,0 +1,86 @@
+{
+  "id": "WC-Q-6F58F",
+  "lang": "6F58F",
+  "giver": {
+    "persona": "WC-TU-NPC11",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren02"
+  },
+  "requires": [
+    "WC-Q-6F58D"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 100,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren02",
+      "loc": "ZoneLocName_358201"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_King_Rockstar_NPC.dds",
+      "template_id": 466075
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Backstage_Pass",
+    "from": "archive",
+    "timestamp": "20250831084602"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Storm Battery Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The King of Rock replaced by WC-Q-6F58D",
+      "blocking": false
+    }
+  ]
+}

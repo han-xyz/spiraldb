@@ -1,0 +1,56 @@
+{
+  "id": "WC-TUG-C02-001",
+  "giver": {
+    "persona": "WC-TU-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+  },
+  "requires": [
+    "WC-Q-16E78E"
+  ],
+  "min_level": 60,
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 5030,
+    "gold": 240
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_Hermit_01.dds",
+      "template_id": 358233
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Strange_Currents",
+    "from": "archive",
+    "timestamp": "20250903060510"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Strange Currents",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Access Tower",
+      "blocking": false
+    }
+  ]
+}

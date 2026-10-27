@@ -1,0 +1,80 @@
+{
+  "id": "WC-Q-213DB",
+  "lang": "213DB",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    },
+    "WC-Q-213DA"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 265,
+    "gold": 125,
+    "spells": [
+      "Storm Lord"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stormbringer",
+    "from": "archive",
+    "timestamp": "20240121102916"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 48
+}

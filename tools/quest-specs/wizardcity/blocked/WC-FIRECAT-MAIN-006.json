@@ -1,0 +1,75 @@
+{
+  "id": "WC-FIRECAT-MAIN-006",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC04",
+    "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2"
+  },
+  "requires": [
+    "WC-Q-17359B"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 250,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Firecat"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "FireElf-Prince-WCBoss-L04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000026",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-FIRECAT-NPC06",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_Theatre",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2",
+      "loc": "ZoneLocName_114526"
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_GrettaDK_A_NPC.dds",
+      "template_id": 1521048
+    },
+    "WC-FIRECAT-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Elf_Fire_B_NPC.dds",
+      "template_id": 1521054
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Cure",
+    "from": "archive",
+    "timestamp": "20240226002540"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Cure",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Fireglobe Theatre",
+      "blocking": false
+    }
+  ]
+}

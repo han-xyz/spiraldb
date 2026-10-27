@@ -1,0 +1,89 @@
+{
+  "id": "WC-Q-80B17",
+  "lang": "80B17",
+  "giver": {
+    "persona": "WC-NIS-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolDeath"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    },
+    "WC-Q-80B11"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 1800,
+    "gold": 75,
+    "spells": [
+      "Dr. Von's Monster"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_NightSide",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath",
+      "loc": "ZoneLocName_10825"
+    }
+  ],
+  "personas": {
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Back_From_the_Dead",
+    "from": "archive",
+    "timestamp": "20240121110025"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Book Collectors replaced by WC-Q-80B11",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

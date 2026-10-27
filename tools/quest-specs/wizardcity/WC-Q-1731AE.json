@@ -1,0 +1,109 @@
+{
+  "id": "WC-Q-1731AE",
+  "lang": "1731AE",
+  "giver": {
+    "persona": "WC-TRITON-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_HauntedCave"
+  },
+  "requires": [
+    "WC-Q-1731AD"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 150,
+    "gold": 18
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Scarecrow-L03.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000360",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "descriptor": "WizQst1731AE_00000010",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC01",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_818312"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "WC-TRITON-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_DaisyW_A_NPC.dds",
+      "template_id": 1520044
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Things_and_Stuff",
+    "from": "archive",
+    "timestamp": "20240308084103"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

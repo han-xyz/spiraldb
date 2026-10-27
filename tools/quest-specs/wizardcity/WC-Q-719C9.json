@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-719C9",
+  "lang": "719C9",
+  "giver": {
+    "persona": "WC-HUB-BigGameHunter",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [
+    "WC-Q-719C8"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 2010,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-HUB-NPC01",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_10879"
+    }
+  ],
+  "personas": {
+    "WC-HUB-BigGameHunter": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Big_Game_Hunter.dds",
+      "template_id": 44111
+    },
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Missing_Class",
+    "from": "archive",
+    "timestamp": "20231125071751"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Inyanga Whitestripes: ZF-HUB-NPC01 from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

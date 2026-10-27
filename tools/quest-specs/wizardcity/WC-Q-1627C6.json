@@ -1,0 +1,121 @@
+{
+  "id": "WC-Q-1627C6",
+  "lang": "1627C6",
+  "giver": {
+    "persona": "WC-BFF-Commons",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [
+    "WC-Q-1625D8"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 5,
+    "gold": 5
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-GTW-Registrar",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC01",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-BFF-Commons": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Death3.dds",
+      "template_id": 82526
+    },
+    "WC-GTW-Registrar": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Registrar.dds",
+      "template_id": 39088
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hey,_Penny",
+    "from": "archive",
+    "timestamp": "20250814193526"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Secret Strife of Pets replaced by WC-Q-1625D8",
+      "blocking": false
+    }
+  ]
+}

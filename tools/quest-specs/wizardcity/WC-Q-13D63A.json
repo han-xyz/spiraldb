@@ -1,0 +1,105 @@
+{
+  "id": "WC-Q-13D63A",
+  "lang": "13D63A",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    }
+  ],
+  "mainline": false,
+  "level": 98,
+  "reward": {
+    "xp": 9230,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-PreQuest-NPC01",
+      "zone": "Marleybone/MB_PreAZ_HalleysTower",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "AZ-PreQuest-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Archologist_A_NPC.dds",
+      "template_id": 683138
+    },
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Here_Comes_the_Sun_Serpent",
+    "from": "archive",
+    "timestamp": "20241127110611"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Edward Halley: AZ-PreQuest-NPC01 from ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Firestarter replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 98
+}

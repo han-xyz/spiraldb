@@ -1,0 +1,140 @@
+{
+  "id": "WC-Q-15070A",
+  "lang": "15070A",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-RAV-NPC11",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 8000,
+    "gold": 500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-ShadowPalace-NPC01",
+      "zone": "Khrysalis/KR_Z12_ShadowPalace",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-ShadowPalace-NPC01": {
+      "portrait": "GUI/NpcPortraits/GiantTree_Evil_A_NPC.dds",
+      "template_id": 1283143
+    },
+    "WC-RAV-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Wizard_A_NPC.dds",
+      "template_id": 1378050
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Piece_of_Doom",
+    "from": "archive",
+    "timestamp": "20260331205618"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Holistic Approach",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Doom Tree",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Moros: KR-ShadowPalace-NPC01 from ObjectData/KR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Holistic Approach replaced by min_level",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Doom Tree replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

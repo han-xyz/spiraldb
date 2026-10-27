@@ -1,0 +1,74 @@
+{
+  "id": "WC-Q-719FF",
+  "lang": "719FF",
+  "giver": {
+    "persona": "WC-HUB-BigGameHunter",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [
+    "WC-Q-719C9"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-OUT-NPC02",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "loc": "ZoneLocName_10879"
+    }
+  ],
+  "personas": {
+    "WC-HUB-BigGameHunter": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Big_Game_Hunter.dds",
+      "template_id": 44111
+    },
+    "ZF-OUT-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Mondli_GreenHoof_NPC.dds",
+      "template_id": 465410
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Postcards_from_Ravenwood",
+    "from": "archive",
+    "timestamp": "20231125072302"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Mondli Greenhoof: ZF-OUT-NPC02 from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

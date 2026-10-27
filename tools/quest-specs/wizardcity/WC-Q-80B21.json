@@ -1,0 +1,85 @@
+{
+  "id": "WC-Q-80B21",
+  "lang": "80B21",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "WC-Q-80B1F"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 1800,
+    "gold": 75,
+    "spells": [
+      "Gnomes!"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gnome_&_Garden",
+    "from": "archive",
+    "timestamp": "20240121101507"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Jade Palace",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Gnome, Sweet Gnome replaced by WC-Q-80B1F",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

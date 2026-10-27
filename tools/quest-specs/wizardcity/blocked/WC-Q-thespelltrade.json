@@ -1,0 +1,59 @@
+{
+  "id": "WC-Q-thespelltrade",
+  "giver": {
+    "persona": "WC-ST02-NPCGrizzle",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [],
+  "min_level": 55,
+  "mainline": false,
+  "level": 55,
+  "reward": {
+    "xp": 1500,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH-HUB-NPC03",
+      "zone": "Grizzleheim/GH_MainHub",
+      "loc": "ZoneLocName_245504"
+    }
+  ],
+  "personas": {
+    "GH-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearScout_Peasant_Purple.dds",
+      "template_id": 164451
+    },
+    "WC-ST02-NPCGrizzle": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearScout_Fighter_Green_NPC.dds",
+      "template_id": 164534
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Spell_Trade",
+    "from": "archive",
+    "timestamp": "20250827061355"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Spell Trade",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Thief of Spells",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Erik Wyrdrune: GH-HUB-NPC03 from ObjectData/GH",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "WC-Q-16149F",
+  "lang": "16149F",
+  "giver": {
+    "persona": "WC-HUB-NPC07",
+    "zone": "WizardCity/Interiors/WC_Headmaster_Tower"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 100,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DecaversaryPresent.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst16149F_00000024",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gamma.dds",
+      "template_id": 38898
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Time_Has_Come",
+    "from": "archive",
+    "timestamp": "20250821043132"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Ombudsman's Office",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

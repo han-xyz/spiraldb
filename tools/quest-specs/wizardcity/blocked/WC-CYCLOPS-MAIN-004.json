@@ -1,0 +1,60 @@
+{
+  "id": "WC-CYCLOPS-MAIN-004",
+  "giver": {
+    "persona": "WC-ST03-KID01",
+    "zone": "WizardCity/WC_Streets/WC_Cyclops"
+  },
+  "requires": [
+    "WC-Q-173190"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 155,
+    "gold": 23
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Cyclops-Red-L02.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000357",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST03-NPC04",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    }
+  ],
+  "personas": {
+    "WC-ST03-KID01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Storm.dds",
+      "template_id": 81274
+    },
+    "WC-ST03-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Cyclops_Red_NPC.dds",
+      "template_id": 38284
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Oh_Me,_Oh_Minotaur",
+    "from": "archive",
+    "timestamp": "20240121090126"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Oh Me, Oh Minotaur",
+      "blocking": true
+    }
+  ]
+}

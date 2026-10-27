@@ -1,0 +1,98 @@
+{
+  "id": "WC-Q-awizardsbestfriendretired",
+  "giver": {
+    "persona": "WC-Ringleader-NPC08",
+    "zone": "WizardCity/WC_Streets/Interiors/WC_PET_Park"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 25,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-PARK-NPC06",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_PET_Park",
+      "loc": "ZoneLocName_175528"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARK-NPC05",
+      "zone": "WizardCity/Interiors/WC_Hatchery",
+      "loc": "ZoneLocName_175528"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARK-NPC01",
+      "zone": "WizardCity/Interiors/WC_Park_Petshop",
+      "loc": "ZoneLocName_175528",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARK-NPC03",
+      "zone": "WizardCity/Interiors/WC_Park_Snackshop",
+      "loc": "ZoneLocName_175528",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARK-NPC06",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_PET_Park",
+      "loc": "ZoneLocName_175528"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_PET_Park",
+      "loc": "ZoneLocName_175528"
+    }
+  ],
+  "personas": {
+    "WC-PARK-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Park_Player_1.dds",
+      "template_id": 175491
+    },
+    "WC-PARK-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Park_Player_3.dds",
+      "template_id": 175493
+    },
+    "WC-PARK-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Doctor_Purreau.dds",
+      "template_id": 175495
+    },
+    "WC-PARK-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Higgenbottom_A_NPC.dds",
+      "template_id": 175529
+    },
+    "WC-Ringleader-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ringleader_NPC.dds",
+      "template_id": 220072
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Wizard's_Best_Friend_(Retired)",
+    "from": "archive",
+    "timestamp": "20231121220614"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A Wizard's Best Friend (Retired)",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Pet Sounds (Retired)",
+      "blocking": false
+    }
+  ]
+}

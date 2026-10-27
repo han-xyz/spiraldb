@@ -1,0 +1,87 @@
+{
+  "id": "WC-Q-957B",
+  "lang": "957B",
+  "giver": {
+    "persona": "WC-ST02-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 100,
+    "gold": 13
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Ghost-Green-WCBoss-L02.AdjRef",
+        "Heroic_WC_Blackhope.AdjRef",
+        "Heroic_WC_Blackhope_100.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000020",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    }
+  ],
+  "personas": {
+    "WC-ST02-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_G.dds",
+      "template_id": 38218
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Olde_News",
+    "from": "archive",
+    "timestamp": "20231121224754"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

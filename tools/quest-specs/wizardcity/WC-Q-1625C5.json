@@ -1,0 +1,96 @@
+{
+  "id": "WC-Q-1625C5",
+  "lang": "1625C5",
+  "giver": {
+    "persona": "WC-ST01-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [
+    "WC-Q-1625C1"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 110,
+    "gold": 5
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST01-NPC02",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST01-NPC02",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze",
+      "loc": "ZoneLocName_114426",
+      "completion": [
+        {
+          "speaker": "WC-ST01-NPC02",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Life02.dds",
+      "template_id": 38121
+    },
+    "WC-ST01-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_B_NPC.dds",
+      "template_id": 38123
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Monsters_and_Mazes",
+    "from": "archive",
+    "timestamp": "20240121093232"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

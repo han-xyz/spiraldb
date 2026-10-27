@@ -1,0 +1,189 @@
+{
+  "id": "WC-Q-13CCD",
+  "lang": "13CCD",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    {
+      "school": "Myth"
+    }
+  ],
+  "mainline": false,
+  "level": 7,
+  "reward": {
+    "xp": 30,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST01-NPC02",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-RVW_MythTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    },
+    "WC-RVW_MythTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ivan.dds",
+      "template_id": 38275
+    },
+    "WC-ST01-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_B_NPC.dds",
+      "template_id": 38123
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Not_so_Welcome_to_Myth",
+    "from": "archive",
+    "timestamp": "20231222140150"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Wizard City Library",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 7
+}

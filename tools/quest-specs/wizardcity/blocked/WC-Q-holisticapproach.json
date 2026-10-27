@@ -1,0 +1,83 @@
+{
+  "id": "WC-Q-holisticapproach",
+  "auto_start": true,
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 10000,
+    "gold": 15000
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC11",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Warrior-Male-Crystal-Green-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000492",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC11",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Wizard_A_NPC.dds",
+      "template_id": 1378050
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Holistic_Approach",
+    "from": "archive",
+    "timestamp": "20260331182600"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Holistic Approach",
+      "blocking": true
+    },
+    {
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Read That Right?",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Kyanite Lancer: ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Pekron Reading",
+      "blocking": false
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Get Environmental Reading in Dragonspyre Academy",
+      "blocking": true
+    }
+  ]
+}

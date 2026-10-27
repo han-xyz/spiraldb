@@ -1,0 +1,110 @@
+{
+  "id": "WC-Q-13D2E",
+  "lang": "13D2E",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    },
+    "WC-Q-13D2A"
+  ],
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 310,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KT-BAL-NPC01",
+      "zone": "Krokotopia/KT_Hub_Sphinx",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Krokotopia/KT_Hub_Sphinx"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFrost",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KT-BAL-NPC01": {
+      "portrait": "",
+      "template_id": 39388
+    },
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Removing_Toxins",
+    "from": "archive",
+    "timestamp": "20260605081621"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Niles: KT-BAL-NPC01 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Well of Spirits",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 38
+}

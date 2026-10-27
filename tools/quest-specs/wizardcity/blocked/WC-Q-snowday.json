@@ -1,0 +1,66 @@
+{
+  "id": "WC-Q-snowday",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    }
+  ],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 10310,
+    "gold": 130,
+    "spells": [
+      "Lord of Winter"
+    ]
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFrost",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Snow_Day",
+    "from": "archive",
+    "timestamp": "20240121104409"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Snow Day",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Winter is Coming",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Docks, Nordrilund",
+      "blocking": false
+    }
+  ]
+}

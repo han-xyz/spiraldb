@@ -1,0 +1,88 @@
+{
+  "id": "WC-Q-213DF",
+  "lang": "213DF",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    {
+      "school": "Myth"
+    },
+    "WC-Q-213DE"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1650,
+    "gold": 125,
+    "spells": [
+      "Orthrus"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Give_a_Dog_a_Bone",
+    "from": "archive",
+    "timestamp": "20240121101932"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Ancient Burial Grounds",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 48
+}

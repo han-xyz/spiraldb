@@ -1,0 +1,79 @@
+{
+  "id": "WC-Q-stormwarning",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    },
+    "WC-Q-80B27"
+  ],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 46380,
+    "gold": 605
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Eel-Tempest-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001340",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Storm_Warning",
+    "from": "archive",
+    "timestamp": "20240121102715"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Storm Warning",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Eel Cave (Crustacean Empire)",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Tempest Eel: ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Telluric Vim",
+      "blocking": true
+    }
+  ]
+}

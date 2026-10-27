@@ -1,0 +1,132 @@
+{
+  "id": "WC-Q-213DD",
+  "lang": "213DD",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    {
+      "school": "Myth"
+    },
+    "WC-Q-1625CC"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1320,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-LIB-NPC01",
+      "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_Library_Interior",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "DS-Wizard-Blue-MAW.AdjRef",
+        "Wizard-Male-Spikey-Blue-Boss-R8-1.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000550",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "DS-LIB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_base_1_Ghost_NPC.dds",
+      "template_id": 126293
+    },
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:First_Time_Collar",
+    "from": "archive",
+    "timestamp": "20240121102352"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Milos Bookwyrm: DS-LIB-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Ranulf Moonclaw: ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Orthrus' Collar in The Labyrinth (Moonclaw's Tower)",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 48
+}

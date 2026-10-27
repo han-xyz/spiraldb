@@ -1,0 +1,64 @@
+{
+  "id": "WC-Q-14139",
+  "lang": "14139",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    "KT-HUB-C06-001"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 70,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_ShopArea_RingShop",
+      "zone": "WizardCity/Interiors/WC_Shop_Rings",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    },
+    "WC_ShopArea_RingShop": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_C_NPC.dds",
+      "template_id": 44093
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:What's_In_Store",
+    "from": "archive",
+    "timestamp": "20231121205228"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

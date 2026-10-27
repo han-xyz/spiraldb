@@ -1,0 +1,115 @@
+{
+  "id": "WC-Q-misery",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    },
+    "GH-ICE-C09-001"
+  ],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 40975,
+    "gold": 830
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MB-MUSEHub-NPC01",
+      "zone": "Marleybone/MB_BigBen/MB_Museum_Instance",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC_BookPedestal_SunkenCity.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizardGameObjects_00000097",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-MUSEHub-NPC01",
+      "zone": "Marleybone/MB_BigBen/MB_Museum_Instance",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Marleybone/MB_BigBen/MB_Museum_Instance"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Wildclaws.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001287",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFrost",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "MB-MUSEHub-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Upper06.dds",
+      "template_id": 39724
+    },
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Misery",
+    "from": "archive",
+    "timestamp": "20240121103433"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Misery",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Clancy Pembroke: MB-MUSEHub-NPC01 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Clancy Pembroke: MB-MUSEHub-NPC01 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Vigrid Roughland",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Wildclaw: ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Egg Clutch",
+      "blocking": true
+    }
+  ]
+}

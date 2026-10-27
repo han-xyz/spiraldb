@@ -1,0 +1,88 @@
+{
+  "id": "WC-Q-955D",
+  "lang": "955D",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "WC-Q-1627BA",
+    "WC-Q-17359F",
+    "WC-Q-173194"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 35,
+    "gold": 23
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-SHP-NPC01",
+      "zone": "WizardCity/WC_Shop_Area",
+      "loc": "ZoneLocName_409193",
+      "completion": [
+        {
+          "speaker": "WC-SHP-NPC01",
+          "line": "00000045"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "WC-SHP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_C.dds",
+      "template_id": 38220
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Colossal_Trouble",
+    "from": "archive",
+    "timestamp": "20251221040447"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

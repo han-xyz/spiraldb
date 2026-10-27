@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-6F58C",
+  "lang": "6F58C",
+  "giver": {
+    "persona": "WC-TU-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+  },
+  "requires": [
+    "WC-Q-6F58B"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 100,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crab_Soldier_B_NPC.dds",
+      "template_id": 459073
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Doorway_Into_Darkness",
+    "from": "archive",
+    "timestamp": "20260402210645"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Secret Entrance to Alcazar",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

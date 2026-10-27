@@ -1,0 +1,105 @@
+{
+  "id": "WC-Q-avengingassembly",
+  "giver": {
+    "persona": "WC-NIS-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolDeath"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    },
+    "WC-Q-80B17"
+  ],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 41230,
+    "gold": 540
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-3POINTS-NPC01",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z01_ThreePoints"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Tritops-Undead-C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001429",
+      "zone": "WizardCity/WC_NightSide",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-3POINTS-NPC01",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath",
+      "loc": "ZoneLocName_10825"
+    }
+  ],
+  "personas": {
+    "AZ-3POINTS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_D_NPC.dds",
+      "template_id": 643260
+    },
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Avenging_Assembly",
+    "from": "archive",
+    "timestamp": "20240121110018"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Avenging Assembly",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Xipli Tailbiter: AZ-3POINTS-NPC01 from ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Chamber, Cenote",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Tezomoc Stone Singer: ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Crypt Dust",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Xipli Tailbiter: AZ-3POINTS-NPC01 from ObjectData/AZ",
+      "blocking": false
+    }
+  ]
+}

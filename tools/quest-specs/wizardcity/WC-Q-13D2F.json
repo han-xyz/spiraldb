@@ -1,0 +1,100 @@
+{
+  "id": "WC-Q-13D2F",
+  "lang": "13D2F",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    },
+    "WC-Q-13D2E"
+  ],
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 975,
+    "gold": 136,
+    "spells": [
+      "Iceblade"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FrostTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFrost",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    },
+    "WC_RVW_FrostTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kelvin.dds",
+      "template_id": 82294
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ice_Creature_Feature",
+    "from": "archive",
+    "timestamp": "20260605193727"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Gobbler King's Castle",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 38
+}

@@ -1,0 +1,68 @@
+{
+  "id": "WC-Q-9587",
+  "lang": "9587",
+  "giver": {
+    "persona": "WC-HUB-NPC05",
+    "zone": "WizardCity/Interiors/WC_Library"
+  },
+  "requires": [
+    "WC-MISC-C03-003"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 150,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_307759"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-HUB-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Storm.dds",
+      "template_id": 38264
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:History_of_Magic",
+    "from": "archive",
+    "timestamp": "20240118171309"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "WC-Q-13CB2",
+  "lang": "13CB2",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC03",
+    "zone": "WizardCity/WC_Streets/WC_Firecat"
+  },
+  "requires": [
+    "WC-Q-1625D8"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 10,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-FIRECAT-NPC04",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2",
+      "loc": "ZoneLocName_114526"
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_F_NPC.dds",
+      "template_id": 1521046
+    },
+    "WC-FIRECAT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_GrettaDK_A_NPC.dds",
+      "template_id": 1521048
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gotta_See_Gretta",
+    "from": "archive",
+    "timestamp": "20231121223515"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "WC-Q-hoardoftherings",
+  "giver": {
+    "persona": "WC-Ringleader-NPC08",
+    "zone": "WizardCity/WC_Streets/Interiors/WC_PET_Park"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 35,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC_PetDirtMound-Cyclops1.AdjRef",
+        "WC_PetDirtMound-Cyclops2.AdjRef",
+        "WC_PetDirtMound-Cyclops3.AdjRef",
+        "WC_PetDirtMound.AdjRef",
+        "WC_PetDirtMound02.AdjRef",
+        "WC_PetDirtMound03.AdjRef",
+        "WC_PetDirtMound04.AdjRef",
+        "WC_PetDirtMound05.AdjRef",
+        "WC_PetDirtMound06.AdjRef",
+        "WC_PetDirtMound07.AdjRef",
+        "WC_PetDirtMound08.AdjRef"
+      ],
+      "count": 8,
+      "zone": "",
+      "descriptor": "WizItems_00002069",
+      "loc": "ZoneLocName_175528"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_PET_Park",
+      "loc": "ZoneLocName_175528"
+    }
+  ],
+  "personas": {
+    "WC-Ringleader-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ringleader_NPC.dds",
+      "template_id": 220072
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hoard_of_the_Rings",
+    "from": "archive",
+    "timestamp": "20231121221036"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Hoard of the Rings",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Pet Sounds",
+      "blocking": false
+    }
+  ]
+}

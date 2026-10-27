@@ -1,0 +1,156 @@
+{
+  "id": "WC-Q-998B",
+  "lang": "998B",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    },
+    "WC-Q-298E3"
+  ],
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 275,
+    "gold": 56,
+    "spells": [
+      "Stormblade"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000068"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000069"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000071"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000072"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000073"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000074"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000075"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000083"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000084"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000085"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000086"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000121"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000122"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000124"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000125"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000127"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Golem-Steel-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000118",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_291179"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_StormTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000067"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    },
+    "WC_RVW_StormTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Torrence.dds",
+      "template_id": 39178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:I've_Got_the_Power",
+    "from": "archive",
+    "timestamp": "20240121103140"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Charge It Up replaced by WC-Q-298E3",
+      "blocking": false
+    }
+  ],
+  "min_level": 12
+}

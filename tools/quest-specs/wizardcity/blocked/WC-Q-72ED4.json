@@ -1,0 +1,92 @@
+{
+  "id": "WC-Q-72ED4",
+  "lang": "72ED4",
+  "giver": {
+    "persona": "WC-RAV-NPC09",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 25,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Student-Death-PageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001471",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 81103
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wicked_Deadly",
+    "from": "archive",
+    "timestamp": "20240121093651"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Final Offerings",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use Dee's Death Mirror in Ancient Burial Grounds",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Declan Wyrmdust: ObjectData/PageEvent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

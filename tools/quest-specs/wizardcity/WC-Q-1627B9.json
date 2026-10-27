@@ -1,0 +1,128 @@
+{
+  "id": "WC-Q-1627B9",
+  "lang": "1627B9",
+  "giver": {
+    "persona": "WC-ST04-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1627B7"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 85,
+    "gold": 13
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC08",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC_TempestNexus.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "descriptor": "WizardGameObjects_00000904",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-TRITON-NPC02-B",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "completion": [
+        {
+          "speaker": "WC-TRITON-NPC02-B",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-PARTY-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 1452003
+    },
+    "WC-ST04-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Storm02.dds",
+      "template_id": 38136
+    },
+    "WC-TRITON-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Storm02.dds",
+      "template_id": 1451951
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:To_Tame_a_Tempest",
+    "from": "archive",
+    "timestamp": "20240905224653"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

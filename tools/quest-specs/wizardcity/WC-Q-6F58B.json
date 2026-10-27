@@ -1,0 +1,91 @@
+{
+  "id": "WC-Q-6F58B",
+  "lang": "6F58B",
+  "giver": {
+    "persona": "WC-TU-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+  },
+  "requires": [
+    "WC-Q-1ED91"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 245,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC-CrabSoldier-Grey-R1.AdjRef",
+        "WC-TU-CrabSoldier-3-R2.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000784",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crab_Soldier_B_NPC.dds",
+      "template_id": 459073
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hit_the_Streets",
+    "from": "archive",
+    "timestamp": "20250831011317"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "No Crab's Land",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "No Crab's Land replaced by WC-Q-1ED91",
+      "blocking": false
+    }
+  ]
+}

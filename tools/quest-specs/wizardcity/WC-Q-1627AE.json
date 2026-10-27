@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-1627AE",
+  "lang": "1627AE",
+  "giver": {
+    "persona": "WC-TRITON-NPC02-B",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1627AD"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 235,
+    "gold": 12
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Ghost-Blue-L02-B.AdjRef",
+        "Ghost-Blue-L02.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000001",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-TRITON-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Storm02.dds",
+      "template_id": 1451951
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Menacing_Minions",
+    "from": "archive",
+    "timestamp": "20240807084309"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

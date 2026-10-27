@@ -1,0 +1,65 @@
+{
+  "id": "WC-Q-turnofthewheel",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-TU-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+  },
+  "requires": [
+    "WC-TUG-C02-002"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 10,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC10",
+      "zone": "WizardCity/Gauntlets/WC_Triton_Gauntlet1/WC_Triton_Gauntlet_01",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/Gauntlets/WC_Triton_Gauntlet1/WC_Triton_Gauntlet_01"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_Hermit_01.dds",
+      "template_id": 358233
+    },
+    "WC-TU-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Angler_Thug_02_NPC.dds",
+      "template_id": 439822
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Turn_of_the_Wheel",
+    "from": "archive",
+    "timestamp": "20250902104418"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Turn of the Wheel",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Vortex",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use Drain Valve",
+      "blocking": true
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "WC-Q-thedarkpowers",
+  "auto_start": true,
+  "requires": [
+    "WC-Q-12D301"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 146725,
+    "gold": 1190
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "G14-DM-Werewolf_Boss.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002046",
+      "zone": ""
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "G14-DM-DeathKnight_Boss.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002049",
+      "zone": ""
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Dark_Powers",
+    "from": "archive",
+    "timestamp": "20240123225729"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Dark Powers",
+      "blocking": true
+    },
+    {
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "Renfield FlyGob",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Main Hall",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Howling Chaney: ObjectData/G14-DM",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Castle Darkmoor",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Sir Blackwater: ObjectData/G14-DM",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Observatory",
+      "blocking": false
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Reveal the Secret of the Observatory Solution: Interact with the wooden crate that displays the name \"Crimson Lens\" Interact with the lever that displays the name \"Neutral Density Filter\"",
+      "blocking": true
+    }
+  ]
+}

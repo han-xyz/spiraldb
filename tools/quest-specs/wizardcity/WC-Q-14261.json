@@ -1,0 +1,125 @@
+{
+  "id": "WC-Q-14261",
+  "lang": "14261",
+  "giver": {
+    "persona": "WC-BFF-Commons",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [
+    "WC-Q-14260"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 35,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Ghost-Blue-L01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000116",
+      "zone": "",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Skeleton-Pirate-L01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000330",
+      "zone": "",
+      "loc": "ZoneLocName_409193",
+      "with_previous": true
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Ghoul-Purple-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000002",
+      "zone": "",
+      "loc": "ZoneLocName_409193",
+      "with_previous": true
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Scarecrow-L03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000360",
+      "zone": "",
+      "loc": "ZoneLocName_409193",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000014"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-BFF-Commons": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Death3.dds",
+      "template_id": 82526
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Our_Daily_Dread",
+    "from": "archive",
+    "timestamp": "20251220183341"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

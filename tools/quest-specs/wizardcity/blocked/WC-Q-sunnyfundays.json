@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-sunnyfundays",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    },
+    "WC-Q-80B1A"
+  ],
+  "min_level": 80,
+  "mainline": false,
+  "level": 80,
+  "reward": {
+    "xp": 20620,
+    "gold": 270
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-CRAB-NPC02",
+      "zone": "Celestia/Interiors/CL_Z10i2_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-CRAB-NPC02",
+      "zone": "Celestia/Interiors/CL_Z10i2_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "CL-CRAB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Thurston_Plunkett.dds",
+      "template_id": 225849
+    },
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sunny_Fundays",
+    "from": "archive",
+    "timestamp": "20241130110322"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Sunny Fundays",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Thurston Plunkett: CL-CRAB-NPC02 from ObjectData/CL",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Read the Grand Spiral Chart in the Chantry in District of the Stars",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Thurston Plunkett: CL-CRAB-NPC02 from ObjectData/CL",
+      "blocking": false
+    }
+  ]
+}

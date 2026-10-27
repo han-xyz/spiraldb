@@ -1,0 +1,145 @@
+{
+  "id": "WC-Q-1731B0",
+  "lang": "1731B0",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "WC-Q-1731AE"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 115,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC10-A",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs_B",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs_B"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-HUB-NPC01",
+      "zone": "Krokotopia/Interiors/KT_Shop05",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "KT-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_SeargentMajor_A_NPC.dds",
+      "template_id": 38224
+    },
+    "WC-CATA-NPC10-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",
+      "template_id": 1451830
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Whole_New_World",
+    "from": "archive",
+    "timestamp": "20250906081402"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "The Oasis",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Sergeant Major Talbot: KT-HUB-NPC01 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Take a Walk on the Nightside replaced by WC-Q-1731AE",
+      "blocking": false
+    }
+  ]
+}

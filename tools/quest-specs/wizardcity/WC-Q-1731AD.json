@@ -1,0 +1,105 @@
+{
+  "id": "WC-Q-1731AD",
+  "lang": "1731AD",
+  "giver": {
+    "persona": "WC-TRITON-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_HauntedCave"
+  },
+  "requires": [
+    "WC-Q-1731AB"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 275,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_HauntedCave_T1",
+      "volume": "Stormdrain Tower"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Heroic_WC_Nightshade.AdjRef",
+        "Heroic_WC_Nightshade_100.AdjRef",
+        "Wraith-WCBoss-L05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000006",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    }
+  ],
+  "personas": {
+    "WC-TRITON-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_DaisyW_A_NPC.dds",
+      "template_id": 1520044
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Throwing_Nightshade",
+    "from": "archive",
+    "timestamp": "20240121090022"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

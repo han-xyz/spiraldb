@@ -1,0 +1,125 @@
+{
+  "id": "WC-Q-6F594",
+  "lang": "6F594",
+  "giver": {
+    "persona": "WC-TU-NPC11",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren02"
+  },
+  "requires": [
+    "WC-Q-6F593"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 975,
+    "gold": 100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC07",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_C1",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC-TU-SeaMonster-1-BOSS-R2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000929",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren02",
+      "loc": "ZoneLocName_358201"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sea_Monster_King_NPC.dds",
+      "template_id": 459074
+    },
+    "WC-TU-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_King_Rockstar_NPC.dds",
+      "template_id": 466075
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Castles_Made_of_Sand",
+    "from": "archive",
+    "timestamp": "20250902092851"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

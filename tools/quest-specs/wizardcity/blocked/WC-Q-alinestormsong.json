@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-alinestormsong",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-PARTY-NPC12",
+    "zone": "WizardCity/Interiors/WC_PartyRoom"
+  },
+  "requires": [
+    "WC-Q-72ECD"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 25,
+    "gold": 145
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Banshee-RedPageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001464",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PageEvent-Boss",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_PageEvent_BossRoom",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Student-Storm-PageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001465",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    }
+  ],
+  "personas": {
+    "WC-PARTY-NPC12": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 1452008
+    },
+    "WC-PageEvent-Boss": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_GrimoireKid_Storm_NPC.dds",
+      "template_id": 808256
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Line-Storm_Song",
+    "from": "archive",
+    "timestamp": "20240104055305"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A Line-Storm Song",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Spellwrit Screamers: ObjectData/PageEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Kestrel Blackstorm: ObjectData/PageEvent",
+      "blocking": false
+    }
+  ]
+}

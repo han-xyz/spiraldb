@@ -1,0 +1,68 @@
+{
+  "id": "WC-Q-1413C",
+  "lang": "1413C",
+  "giver": {
+    "persona": "WC-HUB-NPC03",
+    "zone": "WizardCity/Interiors/WC_Library"
+  },
+  "requires": [
+    "KT-HUB-C09-001"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 100,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC07",
+      "zone": "WizardCity/Interiors/WC_Headmaster_Tower",
+      "loc": "ZoneLocName_307759"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-HUB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gamma.dds",
+      "template_id": 38898
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sell_Out",
+    "from": "archive",
+    "timestamp": "20240121083531"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

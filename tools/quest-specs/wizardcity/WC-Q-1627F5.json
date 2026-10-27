@@ -1,0 +1,125 @@
+{
+  "id": "WC-Q-1627F5",
+  "lang": "1627F5",
+  "giver": {
+    "persona": "WC-HUB-NPC14",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [
+    "WC-Q-1627F7"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 35,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_PotionShopkeeper",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_10879"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-GTW-Registrar",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_10879",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST02-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_10879"
+    }
+  ],
+  "personas": {
+    "WC-GTW-Registrar": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Registrar.dds",
+      "template_id": 39088
+    },
+    "WC-HUB-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ladybug_Shutter_A_NPC.dds",
+      "template_id": 1452022
+    },
+    "WC-ST02-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_G.dds",
+      "template_id": 38218
+    },
+    "WC_PotionShopkeeper": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Granny.dds",
+      "template_id": 77892
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ready,_Aim,_Shoot!",
+    "from": "archive",
+    "timestamp": "20260401035949"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1627F5 by the proper nouns its lines share with the page (Brewer, Muldoon, Olde, Photo, Town), within 16 of a key of the zone's quests; next best WizQst162805 with 0",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "WC-Q-80B1F",
+  "lang": "80B1F",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "WC-Q-213E3"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 1800,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC20",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-PARTY-NPC20": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gardening_Mole.dds",
+      "template_id": 1452016
+    },
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gnome_Mercy",
+    "from": "archive",
+    "timestamp": "20240121100943"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

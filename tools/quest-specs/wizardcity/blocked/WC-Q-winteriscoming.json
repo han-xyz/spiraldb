@@ -1,0 +1,120 @@
+{
+  "id": "WC-Q-winteriscoming",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    },
+    "WC-Q-80B1E"
+  ],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 61845,
+    "gold": 815
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-ZOCOLO-NPC01",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-3POINTS-NPC01",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z01_ThreePoints"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Raptor-Undead-E.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001391",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-3POINTS-NPC01",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFrost",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "AZ-3POINTS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_D_NPC.dds",
+      "template_id": 643260
+    },
+    "AZ-ZOCOLO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
+      "template_id": 643252
+    },
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Winter_is_Coming",
+    "from": "archive",
+    "timestamp": "20231222132529"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Winter is Coming",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Pacal Redmask: AZ-ZOCOLO-NPC01 from ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Xipli Tailbiter: AZ-3POINTS-NPC01 from ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Falling Cavern, Mangrove Marsh",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Tlotzin Moon Thief: ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Get Silver Frore",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Xipli Tailbiter: AZ-3POINTS-NPC01 from ObjectData/AZ",
+      "blocking": false
+    }
+  ]
+}

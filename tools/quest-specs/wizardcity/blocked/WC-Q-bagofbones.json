@@ -1,0 +1,104 @@
+{
+  "id": "WC-Q-bagofbones",
+  "giver": {
+    "persona": "WC-NIS-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolDeath"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    },
+    "GH-DEATH-C09-001"
+  ],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 29460,
+    "gold": 600
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC06",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-RagsOLeary.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001285",
+      "zone": "WizardCity/WC_NightSide",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-IRON-NPC01",
+      "zone": "Marleybone/MB_Station/Interiors/MB_Ironworks_T8",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath",
+      "loc": "ZoneLocName_10825"
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_drake_mother_Ghost_NPC.dds",
+      "template_id": 126330
+    },
+    "MB-IRON-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Shopkeeper_MB_White.dds",
+      "template_id": 611077
+    },
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bag_of_Bones",
+    "from": "archive",
+    "timestamp": "20240121110027"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Bag of Bones",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Mother Warwing: DS-NEC1-NPC06 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Ironworks Warehouse, The Ironworks",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Rags O'Leary: ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Devon Atwell: MB-IRON-NPC01 from ObjectData/MB",
+      "blocking": false
+    }
+  ]
+}

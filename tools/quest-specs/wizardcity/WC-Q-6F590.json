@@ -1,0 +1,144 @@
+{
+  "id": "WC-Q-6F590",
+  "lang": "6F590",
+  "giver": {
+    "persona": "WC-TU-NPC11",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren02"
+  },
+  "requires": [
+    "WC-Q-6F58F"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 600,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC-TU-Eel-1-R2.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000931",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-TU-ElectricGate.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "descriptor": "WizQst6F590_00000015",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC-TU-SeaMonster-2-R2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000932",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC08",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_Storm",
+      "loc": "ZoneLocName_358201"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sea_Monster_Lab_Coat_NPC.dds",
+      "template_id": 456081
+    },
+    "WC-TU-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_King_Rockstar_NPC.dds",
+      "template_id": 466075
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Electric_Boogaloo",
+    "from": "archive",
+    "timestamp": "20250914214733"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Storm Chamber",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Further into the Storm Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

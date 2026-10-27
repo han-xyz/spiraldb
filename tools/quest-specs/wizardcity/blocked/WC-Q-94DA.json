@@ -1,0 +1,74 @@
+{
+  "id": "WC-Q-94DA",
+  "lang": "94DA",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Firecat"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 105,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000020"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Human_WCGuard_L_NPC.dds",
+      "template_id": 1521040
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Point_Taken",
+    "from": "archive",
+    "timestamp": "20231121224953"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "any Fire Elf",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

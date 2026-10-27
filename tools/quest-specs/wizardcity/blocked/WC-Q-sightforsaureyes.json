@@ -1,0 +1,86 @@
+{
+  "id": "WC-Q-sightforsaureyes",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "WC-COMMONS-MAIN-002-LIFE"
+  ],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 41230,
+    "gold": 540,
+    "spells": [
+      "Spinysaur"
+    ]
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Tritops-SpkChief-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001423",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sight_for_Saur_Eyes",
+    "from": "archive",
+    "timestamp": "20240121101504"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Sight for Saur Eyes",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Grotto of Wirachoca, Tierra de Brea",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Tilizoc Stone Cloud: ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Center of the Grotto",
+      "blocking": false
+    }
+  ]
+}

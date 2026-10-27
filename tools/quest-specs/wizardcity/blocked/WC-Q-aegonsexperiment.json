@@ -1,0 +1,69 @@
+{
+  "id": "WC-Q-aegonsexperiment",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-RAV-NPC11",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "WC-GRAV-INTRO-001"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 300,
+    "gold": 100
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-PekuliarCauldron.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "Items_00018216",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Wizard_A_NPC.dds",
+      "template_id": 1378050
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Aegon's_Experiment",
+    "from": "archive",
+    "timestamp": "20260331180511"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Aegon's Experiment",
+      "blocking": true
+    }
+  ]
+}

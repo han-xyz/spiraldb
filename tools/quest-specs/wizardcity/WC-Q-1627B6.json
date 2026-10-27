@@ -1,0 +1,66 @@
+{
+  "id": "WC-Q-1627B6",
+  "lang": "1627B6",
+  "giver": {
+    "persona": "WC-ST04-NPC03",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1627B5"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 55,
+    "gold": 13
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST04-NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "completion": [
+        {
+          "speaker": "WC-ST04-NPC02",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Death02.dds",
+      "template_id": 38139
+    },
+    "WC-ST04-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_E_NPC.dds",
+      "template_id": 38145
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Luminate",
+    "from": "archive",
+    "timestamp": "20240807100736"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

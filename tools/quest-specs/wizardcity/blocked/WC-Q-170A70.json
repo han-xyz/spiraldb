@@ -1,0 +1,96 @@
+{
+  "id": "WC-Q-170A70",
+  "lang": "170A70",
+  "giver": {
+    "persona": "WC-ST01-NPC14",
+    "zone": "WizardCity/WC_Duel_Arena"
+  },
+  "requires": [],
+  "min_level": 10,
+  "mainline": false,
+  "level": 10,
+  "reward": {
+    "xp": 10,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Duel_Arena",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Duel_Arena",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Duel_Arena",
+      "loc": "ZoneLocName_114426",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_Poet_A_NPC.dds",
+      "template_id": 1510003
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Beastmoon_Boss_Challenge",
+    "from": "archive",
+    "timestamp": "20250828095503"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Beastmoon Boss",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Beastmoon Boss",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Beastmoon Boss",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

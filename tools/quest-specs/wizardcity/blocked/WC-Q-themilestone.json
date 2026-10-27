@@ -1,0 +1,58 @@
+{
+  "id": "WC-Q-themilestone",
+  "giver": {
+    "persona": "WC-HUB-NPC07",
+    "zone": "WizardCity/Interiors/WC_Headmaster_Tower"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 100,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DecaversaryPresent.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gamma.dds",
+      "template_id": 38898
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Milestone",
+    "from": "archive",
+    "timestamp": "20251224011652"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Milestone",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Ombudsman's Office",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Decaversary Present",
+      "blocking": false
+    }
+  ]
+}

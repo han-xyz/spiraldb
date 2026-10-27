@@ -1,0 +1,144 @@
+{
+  "id": "WC-Q-13D2A",
+  "lang": "13D2A",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    },
+    "WC-Q-1417B"
+  ],
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 780,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MS-HUB-NPC01",
+      "zone": "MooShu/Interiors/MS_Teleport_Chamber",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MS-SHOP-NPC02",
+      "zone": "MooShu/Interiors/MS_ShopJewelry",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Pig-Death-Ninja-Boss-L40.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003607",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFrost",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MS-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MU_Geisha_Red.dds",
+      "template_id": 39948
+    },
+    "MS-SHOP-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MU_Geisha_Red.dds",
+      "template_id": 81196
+    },
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Fungus_Among_Us",
+    "from": "archive",
+    "timestamp": "20240121104245"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Su Lee: MS-HUB-NPC01 from ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Kamooya Kaoru: MS-SHOP-NPC02 from ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Udo Enoki: ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Mushrooms of Confusion",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 38
+}

@@ -1,0 +1,94 @@
+{
+  "id": "WC-Q-heartsinatlantis",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    },
+    "GH-STORM-C09-001"
+  ],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 32350,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-HUB-NPC001",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Hub"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-DeepKraken.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001291",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    },
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hearts_in_Atlantis",
+    "from": "archive",
+    "timestamp": "20240121102516"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Hearts in Atlantis",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Edith Benchley: CL-HUB-NPC001 from ObjectData/CL",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Kraken Cave, Stormriven",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Deep Kraken: ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Egg Clutch",
+      "blocking": true
+    }
+  ]
+}

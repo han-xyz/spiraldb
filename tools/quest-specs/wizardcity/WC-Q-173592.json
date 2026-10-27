@@ -1,0 +1,116 @@
+{
+  "id": "WC-Q-173592",
+  "lang": "173592",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Firecat"
+  },
+  "requires": [
+    "WC-Q-17358F"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 105,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-FIRECAT-NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "FireElf-Red-L02.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000004",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-FIRECAT-NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Human_WCGuard_L_NPC.dds",
+      "template_id": 1521040
+    },
+    "WC-FIRECAT-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_Lizzo_A_NPC.dds",
+      "template_id": 1521043
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:She_Ran_Crying_Wildfire",
+    "from": "archive",
+    "timestamp": "20240121090041"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

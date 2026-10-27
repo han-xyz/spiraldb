@@ -1,0 +1,130 @@
+{
+  "id": "WC-Q-12D318",
+  "lang": "12D318",
+  "requires": [
+    "WC-Q-12D301"
+  ],
+  "min_level": 100,
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 19560,
+    "gold": 160,
+    "spells": [
+      {
+        "spell": "Gaze of Fate",
+        "school": "Balance"
+      },
+      {
+        "spell": "Call of Khrulhu",
+        "school": "Death"
+      },
+      {
+        "spell": "Fire from Above",
+        "school": "Fire"
+      },
+      {
+        "spell": "Abominable Weaver",
+        "school": "Ice"
+      },
+      {
+        "spell": "Hungry Caterpillar",
+        "school": "Life"
+      },
+      {
+        "spell": "Mystic Colossus",
+        "school": "Myth"
+      },
+      {
+        "spell": "Glowbug Squall",
+        "school": "Storm"
+      }
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Walpurgisnacht",
+    "from": "archive",
+    "timestamp": "20231126103811"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "Renfield FlyGob",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Darkmoor Hallways",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Spirit of Darkmoor",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Tatyana",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Tatyana",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Explore the [Location:Darkmoor Hallways]",
+        "(starts instance quest)",
+        "@Discover the [NPC:Spirit of Darkmoor]",
+        "@Talk to [NPC:Tatyana]"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

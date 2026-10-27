@@ -1,0 +1,108 @@
+{
+  "id": "WC-Q-13DEB",
+  "lang": "13DEB",
+  "giver": {
+    "persona": "HO-HalloweenO1",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "FieldGuard-WCBoss-L60.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000376",
+      "zone": "",
+      "descriptor": "WizQst13DEB_00000017",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000018"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "HO-HalloweenO1": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Scarecrow_NPC.dds",
+      "template_id": 81385
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Baron_of_Nightmares",
+    "from": "archive",
+    "timestamp": "20240121094150"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Jack Hallow: HO-HalloweenO1 from ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Baron Mordecai: ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jack Hallow: HO-HalloweenO1 from ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Dunking Do-Nots replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

@@ -1,0 +1,91 @@
+{
+  "id": "WC-Q-14129",
+  "lang": "14129",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    },
+    "WC-Q-13D71"
+  ],
+  "mainline": false,
+  "level": 28,
+  "reward": {
+    "xp": 120,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST06-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-AIRHub-NPC01",
+      "zone": "Marleybone/MB_Station/MB_Station_Hub",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "MB-AIRHub-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Upper08.dds",
+      "template_id": 39688
+    },
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    },
+    "WC-ST06-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Ice02.dds",
+      "template_id": 38170
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gathering_Information",
+    "from": "archive",
+    "timestamp": "20240121104227"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Mayor Pimsbury: MB-AIRHub-NPC01 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 28
+}

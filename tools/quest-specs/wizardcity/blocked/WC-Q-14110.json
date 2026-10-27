@@ -1,0 +1,105 @@
+{
+  "id": "WC-Q-14110",
+  "lang": "14110",
+  "giver": {
+    "persona": "WC-RAV-NPC08",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    },
+    "WC-Q-14111"
+  ],
+  "min_level": 12,
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 220,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST06-NPC04",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST06-NPC04",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Malorn_Ashthorn.dds",
+      "template_id": 81102
+    },
+    "WC-ST06-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_A_NPC.dds",
+      "template_id": 38178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Make_An_Impression",
+    "from": "archive",
+    "timestamp": "20240121105931"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Gobblers",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

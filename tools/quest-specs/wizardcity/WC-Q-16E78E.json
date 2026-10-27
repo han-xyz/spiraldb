@@ -1,0 +1,84 @@
+{
+  "id": "WC-Q-16E78E",
+  "lang": "16E78E",
+  "giver": {
+    "persona": "WC-ST04-NPC03",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 8045,
+    "gold": 360
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_E_NPC.dds",
+      "template_id": 38145
+    },
+    "WC-TU-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_Hermit_01.dds",
+      "template_id": 358233
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Under_Pressure",
+    "from": "archive",
+    "timestamp": "20250907220410"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Cliffside Stream",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

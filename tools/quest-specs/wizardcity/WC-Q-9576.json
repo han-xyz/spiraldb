@@ -1,0 +1,84 @@
+{
+  "id": "WC-Q-9576",
+  "lang": "9576",
+  "giver": {
+    "persona": "WC-ST03-NPC03",
+    "zone": "WizardCity/WC_Streets/WC_Cyclops"
+  },
+  "requires": [
+    "WC-Q-1625D8"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 130,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Troll-Green-L01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000003",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST03-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Guard02.dds",
+      "template_id": 38253
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Too_Many_Trolls",
+    "from": "archive",
+    "timestamp": "20250831171757"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "WC-Q-1627A1",
+  "lang": "1627A1",
+  "giver": {
+    "persona": "WC-ST04-NPC04",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1625D8"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 75,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC-Eel-Blue-L02.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003260",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_B_NPC.dds",
+      "template_id": 38147
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:All_the_Eels",
+    "from": "archive",
+    "timestamp": "20250804173958"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Secret Strife of Pets replaced by WC-Q-1625D8",
+      "blocking": false
+    }
+  ]
+}

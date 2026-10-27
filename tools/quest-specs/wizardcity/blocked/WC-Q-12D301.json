@@ -1,0 +1,124 @@
+{
+  "id": "WC-Q-12D301",
+  "lang": "12D301",
+  "requires": [
+    "WC-Q-12D2F0"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 39125,
+    "gold": 320
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Le_Chateau_de_Darkmoor",
+    "from": "archive",
+    "timestamp": "20231126103810"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "Renfield FlyGob",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Drawbridge",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Castle Darkmoor",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "Locate the Secret of the Observatory",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Renfield FlyGob",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Renfield FlyGob",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Go to the Drawbridge",
+        "@Explore [Location:Castle Darkmoor] (starts instance quest)",
+        "@Locate the Secret of the Observatory",
+        "@Talk to Renfield FlyGob"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

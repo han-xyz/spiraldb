@@ -1,0 +1,68 @@
+{
+  "id": "WC-Q-13DD9",
+  "lang": "13DD9",
+  "giver": {
+    "persona": "WC-ST04-NPC03",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 130,
+    "gold": 20
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST04-NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Death02.dds",
+      "template_id": 38139
+    },
+    "WC-ST04-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_E_NPC.dds",
+      "template_id": 38145
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Crystal_Clear",
+    "from": "archive",
+    "timestamp": "20250831053526"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Got a Light? replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

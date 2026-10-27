@@ -1,0 +1,49 @@
+{
+  "id": "WC-Q-petsoundsretired",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [],
+  "min_level": 7,
+  "mainline": false,
+  "level": 7,
+  "reward": {
+    "xp": 25,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-Ringleader-NPC08",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_PET_Park",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "WC-Ringleader-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ringleader_NPC.dds",
+      "template_id": 220072
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pet_Sounds_(Retired)",
+    "from": "archive",
+    "timestamp": "20251225202853"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Pet Sounds (Retired)",
+      "blocking": true
+    }
+  ]
+}

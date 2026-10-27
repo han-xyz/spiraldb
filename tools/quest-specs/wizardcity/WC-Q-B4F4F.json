@@ -1,0 +1,89 @@
+{
+  "id": "WC-Q-B4F4F",
+  "lang": "B4F4F",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    "WC-Q-173194",
+    "MS-PLAGHub-C01-003"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 165,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST03-NPC04",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    },
+    "WC-ST03-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Cyclops_Red_NPC.dds",
+      "template_id": 38284
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Quest_for_Glory",
+    "from": "archive",
+    "timestamp": "20250825020545"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

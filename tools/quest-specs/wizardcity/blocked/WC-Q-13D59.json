@@ -1,0 +1,138 @@
+{
+  "id": "WC-Q-13D59",
+  "lang": "13D59",
+  "giver": {
+    "persona": "WC-RAV-NPC09",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Balance"
+    },
+    "WC-Q-13D58"
+  ],
+  "min_level": 18,
+  "mainline": false,
+  "level": 18,
+  "reward": {
+    "xp": 155,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KT-BAL-NPC01",
+      "zone": "Krokotopia/KT_Hub_Sphinx",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-HUB-NPC02",
+      "zone": "Krokotopia/KT_Hub",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Krokotopia/KT_Hub"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000023"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KT-BAL-NPC01": {
+      "portrait": "",
+      "template_id": 39388
+    },
+    "KT-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Base_C_NPC.dds",
+      "template_id": 38313
+    },
+    "WC-RAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 81103
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Take_It_by_Storm",
+    "from": "archive",
+    "timestamp": "20260514051625"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Niles: KT-BAL-NPC01 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hetch Al'Dim: KT-HUB-NPC02 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Purple Braziers Chamber, Royal Hall",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Storm Kraken",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

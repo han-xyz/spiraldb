@@ -1,0 +1,70 @@
+{
+  "id": "WC-Q-13CB4",
+  "lang": "13CB4",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC04",
+    "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 50,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Skeleton-Silver-L02.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00000022",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "descriptor": "WizQst13CB4_00000015",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2",
+      "loc": "ZoneLocName_114526"
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_GrettaDK_A_NPC.dds",
+      "template_id": 1521048
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ticklin'_da_Bones",
+    "from": "archive",
+    "timestamp": "20231121202057"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

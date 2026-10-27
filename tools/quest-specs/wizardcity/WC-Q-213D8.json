@@ -1,0 +1,97 @@
+{
+  "id": "WC-Q-213D8",
+  "lang": "213D8",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    },
+    "WC-Q-14173"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1320,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Golem-Clockwork-L28.AdjRef",
+        "Golem-Clockwork-MBBoss-L37.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000146",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Component_Opponent",
+    "from": "archive",
+    "timestamp": "20260718195215"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Gearheads: ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Component Parts in Chelsea Court",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 48
+}

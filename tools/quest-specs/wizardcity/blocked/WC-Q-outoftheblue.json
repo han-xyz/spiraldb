@@ -1,0 +1,83 @@
+{
+  "id": "WC-Q-outoftheblue",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    }
+  ],
+  "min_level": 58,
+  "mainline": false,
+  "level": 58,
+  "reward": {
+    "xp": 1265,
+    "gold": 65
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH-HERO-NPC01",
+      "zone": "Grizzleheim/GH_Hero",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Grizzleheim/GH_Hero"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFrost",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "GH-HERO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearWarrior_Boss_Gray_NPC.dds",
+      "template_id": 164454
+    },
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Out_of_the_Blue",
+    "from": "archive",
+    "timestamp": "20231222132317"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Out of the Blue",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Winter Rose",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hagen Shieldbreaker: GH-HERO-NPC01 from ObjectData/GH",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Volkir Rimeaxe's Crag",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Volkir Rimeaxe",
+      "blocking": true
+    }
+  ]
+}

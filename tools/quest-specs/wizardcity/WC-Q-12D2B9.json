@@ -1,0 +1,79 @@
+{
+  "id": "WC-Q-12D2B9",
+  "lang": "12D2B9",
+  "giver": {
+    "persona": "WC-PARTY-NPC15",
+    "zone": "WizardCity/Interiors/WC_PartyRoom"
+  },
+  "requires": [
+    "WC-Q-1731AE"
+  ],
+  "mainline": false,
+  "level": 20,
+  "reward": {
+    "xp": 25,
+    "gold": 5
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH-AMBIENT-FISHER",
+      "zone": "Grizzleheim/GH_MainHub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "GH-AMBIENT-FISHER": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearScout_Peasant_Black.dds",
+      "template_id": 164737
+    },
+    "WC-PARTY-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pelican_Fisherman_A_NPC.dds",
+      "template_id": 1452011
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ol'_Fishing_Buddy",
+    "from": "archive",
+    "timestamp": "20231121231747"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Haarek Silverscale: GH-AMBIENT-FISHER from ObjectData/GH",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Fishful Thinking replaced by WC-Q-1731AE",
+      "blocking": false
+    }
+  ],
+  "min_level": 20
+}

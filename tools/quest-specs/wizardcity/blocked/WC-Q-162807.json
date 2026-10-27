@@ -1,0 +1,156 @@
+{
+  "id": "WC-Q-162807",
+  "lang": "162807",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-RAV-NPC11",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "WC-Q-150707"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 1000,
+    "gold": 250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MB_Standin_SpecialBranchTreant_A.AdjRef",
+        "MB_Treant_Grav_01.AdjRef",
+        "MB_Treant_Grav_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003082",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Wizard_A_NPC.dds",
+      "template_id": 1378050
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pekron_the_Cheek",
+    "from": "archive",
+    "timestamp": "20260331182431"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst162807 matched by the words it shares with the goals; its lines name Special Branch",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Pekron Reading in Wizard City Dye Shop",
+      "blocking": true
+    },
+    {
+      "field": "goal.usage",
+      "value": "Inspect Pekronometer in secret Gravulum Lab in Regent's Square",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Special Branch: ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Fix Pekronometer",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

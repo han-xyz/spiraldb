@@ -1,0 +1,85 @@
+{
+  "id": "WC-Q-14A543",
+  "lang": "14A543",
+  "giver": {
+    "persona": "WC-PARTY-NPC15",
+    "zone": "WizardCity/Interiors/WC_PartyRoom"
+  },
+  "requires": [
+    "WC-Q-12D2B9"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 60,
+    "gold": 5
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-Fishing-NPC01",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "DS-Fishing-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_DS_Male_Wizard_Fisherman_NPC.dds",
+      "template_id": 1353028
+    },
+    "WC-PARTY-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pelican_Fisherman_A_NPC.dds",
+      "template_id": 1452011
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Turn_Up_The_Heat",
+    "from": "archive",
+    "timestamp": "20251227123734"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Yuri Smokesnare: DS-Fishing-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

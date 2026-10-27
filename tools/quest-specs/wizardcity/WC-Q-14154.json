@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-14154",
+  "lang": "14154",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    },
+    "WC-Q-14119"
+  ],
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 155,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MS-PLAG1-NPC03",
+      "zone": "MooShu/MS_Plague/MS_Plague_Zone1_WaterfallCave",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "MS-PLAG1-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MU_Monk_Green_Ghost.dds",
+      "template_id": 39959
+    },
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Trip_to_MooShu",
+    "from": "archive",
+    "timestamp": "20260605203848"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Din Ho: MS-PLAG1-NPC03 from ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 38
+}

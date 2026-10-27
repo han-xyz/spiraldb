@@ -1,0 +1,75 @@
+{
+  "id": "WC-Q-intothebreach",
+  "giver": {
+    "persona": "WC-TU-NPC02",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_C1"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 425,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_C1",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC06",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC02": {
+      "portrait": "GUI/NpcPortraits/Crab_Cromshell_NPC.dds",
+      "template_id": 358236
+    },
+    "WC-TU-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crab_Soldier_B_NPC.dds",
+      "template_id": 459073
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Into_the_Breach!",
+    "from": "archive",
+    "timestamp": "20250905235656"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Into the Breach!",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Tale of Two Kings",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "Find the King's Desk",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Royal Guards",
+      "blocking": true
+    }
+  ]
+}

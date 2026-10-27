@@ -1,0 +1,172 @@
+{
+  "id": "WC-Q-576B9",
+  "lang": "576B9",
+  "giver": {
+    "persona": "WC-SHOP-GARDEN",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [
+    "WC-Q-576B8"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 100,
+    "spells": [
+      "Small Soil",
+      "Medium Soil",
+      "Plow",
+      "Revive"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC_Gardening_Plant_Wilted.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Golem_Tower",
+      "descriptor": "WizItems_00001702",
+      "loc": "ZoneLocName_10879"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC_Gardening_Plant_Dead.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Golem_Tower",
+      "descriptor": "WizItems_00001703",
+      "loc": "ZoneLocName_10879"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_10879",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000023"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-SHOP-GARDEN": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gardening_Mole.dds",
+      "template_id": 346179
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Growing_Pains",
+    "from": "archive",
+    "timestamp": "20250802123154"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "WC-Q-371A8",
+  "lang": "371A8",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 505,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-HUB-NPC001",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Door_to_the_Stars",
+    "from": "archive",
+    "timestamp": "20250908022016"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "A Learn of the Wheel",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Celestia Base Camp",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Edith Benchley: CL-HUB-NPC001 from ObjectData/CL",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "A Learn of the Wheel replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

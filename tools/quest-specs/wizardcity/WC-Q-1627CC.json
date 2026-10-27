@@ -1,0 +1,116 @@
+{
+  "id": "WC-Q-1627CC",
+  "lang": "1627CC",
+  "giver": {
+    "persona": "WC-HUB-NPC05",
+    "zone": "WizardCity/Interiors/WC_Library"
+  },
+  "requires": [
+    "WC-Q-1625BF"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 150,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC_LibraryQuestPedestal.AdjRef"
+      ],
+      "count": 7,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000535",
+      "loc": "ZoneLocName_307759"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_307759",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000044"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Storm.dds",
+      "template_id": 38264
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Lore_You_Know",
+    "from": "archive",
+    "timestamp": "20251205051006"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

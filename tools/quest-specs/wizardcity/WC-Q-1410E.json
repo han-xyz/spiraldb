@@ -1,0 +1,170 @@
+{
+  "id": "WC-Q-1410E",
+  "lang": "1410E",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "WC-Q-9956"
+  ],
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 275,
+    "gold": 56,
+    "spells": [
+      "Nature's Wrath"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC05",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Golem-Wood-L01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000027",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_291179"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Golem-Clockwork-L01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000033",
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizQst1410E_00000007",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Golem-Steel-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000118",
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizQst1410E_00000012",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST06-NPC04",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    },
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    },
+    "WC-ST06-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_A_NPC.dds",
+      "template_id": 38178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Animation",
+    "from": "archive",
+    "timestamp": "20260512223639"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Wooden Axles (in Golem Tower)",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 12
+}

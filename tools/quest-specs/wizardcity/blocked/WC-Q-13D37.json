@@ -1,0 +1,126 @@
+{
+  "id": "WC-Q-13D37",
+  "lang": "13D37",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    },
+    "WC-Q-13D36"
+  ],
+  "min_level": 38,
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 350,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KT-BAL-NPC01",
+      "zone": "Krokotopia/KT_Hub_Sphinx",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-BAL-NPC01",
+      "zone": "Krokotopia/KT_Hub_Sphinx",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000017"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KT-BAL-NPC01": {
+      "portrait": "",
+      "template_id": 39388
+    },
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Temper_Temper...",
+    "from": "archive",
+    "timestamp": "20241127093451"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Niles: KT-BAL-NPC01 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use the Fire Feather in the Great Fire Pit in the Altar of Kings",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Niles: KT-BAL-NPC01 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use the Fire Feather in Cold Water in the Entrance Hall",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

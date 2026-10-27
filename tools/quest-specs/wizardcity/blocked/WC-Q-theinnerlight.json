@@ -1,0 +1,62 @@
+{
+  "id": "WC-Q-theinnerlight",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    }
+  ],
+  "min_level": 58,
+  "mainline": false,
+  "level": 58,
+  "reward": {
+    "xp": 4200,
+    "gold": 400,
+    "spells": [
+      "Efreet"
+    ]
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Inner_Light",
+    "from": "archive",
+    "timestamp": "20241126071621"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Inner Light",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "I Call Your Name",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Dmitri's",
+      "blocking": true
+    }
+  ]
+}

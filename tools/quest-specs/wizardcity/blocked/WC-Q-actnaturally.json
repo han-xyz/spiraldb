@@ -1,0 +1,60 @@
+{
+  "id": "WC-Q-actnaturally",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "WC-Q-14153"
+  ],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1265,
+    "gold": 65
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_RVW_LifeTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    },
+    "WC_RVW_LifeTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Blossom.dds",
+      "template_id": 39158
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Act_Naturally",
+    "from": "archive",
+    "timestamp": "20231222142240"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Act Naturally",
+      "blocking": true
+    }
+  ]
+}

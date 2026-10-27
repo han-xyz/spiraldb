@@ -1,0 +1,93 @@
+{
+  "id": "WC-Q-13D643",
+  "lang": "13D643",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "GH-LIFE-C09-001"
+  ],
+  "mainline": false,
+  "level": 98,
+  "reward": {
+    "xp": 9230,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC05",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "AV-ABBEY-NPC05",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike.dds",
+      "template_id": 617182
+    },
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Let_Your_Soul_Grow",
+    "from": "archive",
+    "timestamp": "20231222144201"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "The Green Mile",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Sir Pike Del Lago: AV-ABBEY-NPC05 from ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Green Mile replaced by GH-LIFE-C09-001",
+      "blocking": false
+    }
+  ],
+  "min_level": 98
+}

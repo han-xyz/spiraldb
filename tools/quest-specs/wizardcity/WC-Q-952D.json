@@ -1,0 +1,84 @@
+{
+  "id": "WC-Q-952D",
+  "lang": "952D",
+  "giver": {
+    "persona": "WC-ST06-NPC04",
+    "zone": "WizardCity/WC_Streets/WC_Colossus"
+  },
+  "requires": [
+    "WC-Q-952C"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 80,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC_CB_ShipmentBarrel.AdjRef"
+      ],
+      "count": 3,
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "descriptor": "WizardGameObjects_00000073",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000017"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST06-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_A_NPC.dds",
+      "template_id": 38178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stop,_Thief!",
+    "from": "archive",
+    "timestamp": "20231121193426"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

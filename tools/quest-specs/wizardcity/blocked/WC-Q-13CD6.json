@@ -1,0 +1,137 @@
+{
+  "id": "WC-Q-13CD6",
+  "lang": "13CD6",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    },
+    "WC-Q-12E14"
+  ],
+  "min_level": 18,
+  "mainline": false,
+  "level": 18,
+  "reward": {
+    "xp": 335,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FireTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-BAL-NPC01",
+      "zone": "Krokotopia/KT_Hub_Sphinx",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Krokotopia/KT_Hub_Sphinx"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000015"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KT-BAL-NPC01": {
+      "portrait": "",
+      "template_id": 39388
+    },
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    },
+    "WC_RVW_FireTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Bernie.dds",
+      "template_id": 44207
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Colossus_Problem",
+    "from": "archive",
+    "timestamp": "20260513041317"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Niles: KT-BAL-NPC01 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Storm Chamber, Grand Arena",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Frost Colossus",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

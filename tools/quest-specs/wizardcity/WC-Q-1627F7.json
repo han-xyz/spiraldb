@@ -1,0 +1,123 @@
+{
+  "id": "WC-Q-1627F7",
+  "lang": "1627F7",
+  "giver": {
+    "persona": "WC-HUB-NPC14",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [
+    "WC-Q-13D91"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 30,
+    "gold": 5
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "PhotomancyTome.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Golem_Tower",
+      "descriptor": "WizardGameObjects_00000830",
+      "loc": "ZoneLocName_10879"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_10879"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ladybug_Shutter_A_NPC.dds",
+      "template_id": 1452022
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Say_Cheese!",
+    "from": "archive",
+    "timestamp": "20260401035951"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1627F7 matched by the words it shares with the goals; its lines name Annie Shutterbug",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

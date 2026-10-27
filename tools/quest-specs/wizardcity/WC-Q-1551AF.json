@@ -1,0 +1,201 @@
+{
+  "id": "WC-Q-1551AF",
+  "lang": "1551AF",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "WC-Q-1551AB"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 266500,
+    "gold": 2000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-PropertyDeed.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Interactables_00000060",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Firecat"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Human_GrettaDK_A_Boss_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002554",
+      "zone": "",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "AR-StandIn-AdventureFitzhume_03",
+      "zone": "Arcanum/Interiors/AR_Z01_DeadArchive",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "AR_StandIn_Ione",
+      "zone": "Arcanum/AR_Z01_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "AR-StandIn-AdventureFitzhume_03": {
+      "portrait": "GUI/NpcPortraits/Monkey_Adventurer_A_NPC.dds",
+      "template_id": 1487574
+    },
+    "AR_StandIn_Ione": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
+      "template_id": 1401051
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Darkkettle's_Dark_Business",
+    "from": "archive",
+    "timestamp": "20240115083804"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Cabal Safehouse",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter the Safehouse Trap Door",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Gretta Darkkettle: ObjectData/MR",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Librarian Fitzhume: AR-StandIn-AdventureFitzhume_03 from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

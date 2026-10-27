@@ -1,0 +1,77 @@
+{
+  "id": "WC-Q-1627A7",
+  "lang": "1627A7",
+  "giver": {
+    "persona": "WC-ST04-NPC04",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1627A6"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 95,
+    "gold": 12
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Ghoul-Purple-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000002",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "descriptor": "WizQst1627A7_00000004",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_B_NPC.dds",
+      "template_id": 38147
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Better_Get_Kraken",
+    "from": "archive",
+    "timestamp": "20250804173756"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

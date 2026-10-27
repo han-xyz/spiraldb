@@ -1,0 +1,129 @@
+{
+  "id": "WC-Q-1627C9",
+  "lang": "1627C9",
+  "giver": {
+    "persona": "WC-BFF-Commons",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [
+    "WC-Q-1627C8"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 5,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-Explorer",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-BFF-Commons": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Death3.dds",
+      "template_id": 82526
+    },
+    "WC-HUB-Explorer": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 44124
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Penny_For_Your_Thoughts",
+    "from": "archive",
+    "timestamp": "20250918092958"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "WC-Q-282B0",
+  "lang": "282B0",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "GH-WOLF-C02-006"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 90,
+    "gold": 190
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH-HUB-NPC01",
+      "zone": "Grizzleheim/GH_MainHub",
+      "loc": "ZoneLocName_409193",
+      "completion": [
+        {
+          "speaker": "GH-HUB-NPC01",
+          "line": "00000001"
+        },
+        {
+          "speaker": "GH-HUB-NPC01",
+          "line": "00000003"
+        },
+        {
+          "speaker": "GH-HUB-NPC01",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "GH-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearWarrior_Boss_Black_NPC.dds",
+      "template_id": 164449
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Howl_of_Winter",
+    "from": "archive",
+    "timestamp": "20251219103412"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Bjorn Ironclaws: GH-HUB-NPC01 from ObjectData/GH",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

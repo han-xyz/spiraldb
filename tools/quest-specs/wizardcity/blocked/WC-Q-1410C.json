@@ -1,0 +1,139 @@
+{
+  "id": "WC-Q-1410C",
+  "lang": "1410C",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    },
+    "WC-Q-9958"
+  ],
+  "min_level": 12,
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 275,
+    "gold": 56,
+    "spells": [
+      "Link"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_FireElf_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001931",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FireTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FireTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000012"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000021"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    },
+    "WC_RVW_FireTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Bernie.dds",
+      "template_id": 44207
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fire_It_Up",
+    "from": "archive",
+    "timestamp": "20241126090056"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Fire Elf: ObjectData/KR",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "a Fire Shard in Firecat Alley",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Fire Crow",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Festival Park on Cyclops Lane",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

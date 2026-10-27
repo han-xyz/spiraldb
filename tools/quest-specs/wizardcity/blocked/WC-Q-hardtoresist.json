@@ -1,0 +1,59 @@
+{
+  "id": "WC-Q-hardtoresist",
+  "giver": {
+    "persona": "WC-ST01-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [],
+  "min_level": 20,
+  "mainline": false,
+  "level": 20,
+  "reward": {
+    "xp": 128,
+    "gold": 140
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-Tutorials_Interact_Object.AdjRef",
+        "TutorialStorm.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Diego_Duelmaster.dds",
+      "template_id": 38226
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hard_to_Resist",
+    "from": "archive",
+    "timestamp": "20250902214311"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Hard to Resist",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Advanced Combat",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Tutorial",
+      "blocking": false
+    }
+  ]
+}

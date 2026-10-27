@@ -1,0 +1,125 @@
+{
+  "id": "WC-Q-6F595",
+  "lang": "6F595",
+  "giver": {
+    "persona": "WC-TU-NPC12",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+  },
+  "requires": [
+    "WC-Q-6F594"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 230,
+    "gold": 20
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC05",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_H1",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Lobster_Cook_A_NPC.dds",
+      "template_id": 358243
+    },
+    "WC-TU-NPC12": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_King_Rockstar_NPC.dds",
+      "template_id": 741158
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Good_to_be_the_King",
+    "from": "archive",
+    "timestamp": "20250830074131"
+  },
+  "needs_review": [
+    {
+      "field": "goal.unknown-verb",
+      "value": "Write a Poem at the King's Desk",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

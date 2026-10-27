@@ -1,0 +1,206 @@
+{
+  "id": "WC-Q-17318F",
+  "lang": "17318F",
+  "giver": {
+    "persona": "WC-ST03-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Cyclops"
+  },
+  "requires": [
+    "WC-Q-17318E"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 130,
+    "gold": 20
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC06",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "WC_ShopArea_RobeShop",
+      "zone": "WizardCity/Interiors/WC_Shop_Robes",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC06",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC01",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC06",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "WC-PARTY-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 1452001
+    },
+    "WC-ST03-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Myth02.dds",
+      "template_id": 38249
+    },
+    "WC_ShopArea_RobeShop": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_D_NPC.dds",
+      "template_id": 44169
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Run_and_Done",
+    "from": "archive",
+    "timestamp": "20231121193954"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

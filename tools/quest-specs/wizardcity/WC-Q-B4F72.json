@@ -1,0 +1,133 @@
+{
+  "id": "WC-Q-B4F72",
+  "lang": "B4F72",
+  "giver": {
+    "persona": "AQ-HUB-NPC01",
+    "zone": "Aquila/AQ_Z00_Hub"
+  },
+  "requires": [
+    "WC-Q-B4F6E"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 11580,
+    "gold": 140
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AQ-HUB-NPC04",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Aquila/AQ_Z00_Hub"
+    }
+  ],
+  "personas": {
+    "AQ-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Satyr_Druid_A_NPC.dds",
+      "template_id": 741209
+    },
+    "AQ-HUB-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_DruidF_C_NPC.dds",
+      "template_id": 741235
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Midnight_in_the_Garden",
+    "from": "archive",
+    "timestamp": "20231126102026"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Silenus: AQ-HUB-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Lost Pompeii",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Erytheia: AQ-HUB-NPC04 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Silenus: AQ-HUB-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lost Pompeii replaced by WC-Q-B4F6E",
+      "blocking": false
+    }
+  ]
+}

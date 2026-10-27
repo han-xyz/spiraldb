@@ -1,0 +1,70 @@
+{
+  "id": "WC-Q-9574",
+  "lang": "9574",
+  "giver": {
+    "persona": "WC-ST03-NPC02",
+    "zone": "WizardCity/WC_Streets/WC_Cyclops"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 120,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000017"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST03-NPC02": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_J.dds",
+      "template_id": 38251
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:How_Disarming",
+    "from": "archive",
+    "timestamp": "20231121200336"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Any Cyclopes",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

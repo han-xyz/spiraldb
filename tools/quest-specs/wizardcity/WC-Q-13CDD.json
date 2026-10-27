@@ -1,0 +1,190 @@
+{
+  "id": "WC-Q-13CDD",
+  "lang": "13CDD",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    },
+    "WC-Q-13D6C"
+  ],
+  "mainline": false,
+  "level": 28,
+  "reward": {
+    "xp": 740,
+    "gold": 126,
+    "spells": [
+      "Fire Elemental"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST05-NPC05-OK",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H1",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "G14-MB-Sherlock",
+      "zone": "Marleybone/G14_Gauntlet/MB_Z01_BarkinghamCourtyard",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-AIR2-NPC01",
+      "zone": "Marleybone/MB_Station/MB_ChelseaCourt",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Marleybone/MB_Station/MB_ChelseaCourt"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Golem-Steel-MBBoss-L50-1.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003615",
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizQst13CDD_00000017",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "G14-MB-Sherlock": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sherlock_Bones.dds",
+      "template_id": 1201748
+    },
+    "MB-AIR2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Ladies_Lower07.dds",
+      "template_id": 39697
+    },
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    },
+    "WC-ST05-NPC05-OK": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Fire03.dds",
+      "template_id": 81079
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Burning_Books",
+    "from": "archive",
+    "timestamp": "20260513041430"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Sherlock Bones: G14-MB-Sherlock from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ms. Marphely: MB-AIR2-NPC01 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Criminal Hideout, Chelsea Court",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Mr. Incinerator: ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 28
+}

@@ -1,0 +1,90 @@
+{
+  "id": "WC-Q-17318E",
+  "lang": "17318E",
+  "giver": {
+    "persona": "WC-ST03-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Cyclops"
+  },
+  "requires": [
+    "WC-Q-1731A9"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 155,
+    "gold": 22
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Troll-Green-L01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000003",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    }
+  ],
+  "personas": {
+    "WC-ST03-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Myth02.dds",
+      "template_id": 38249
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Stroll_With_Trolls",
+    "from": "archive",
+    "timestamp": "20231121194004"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

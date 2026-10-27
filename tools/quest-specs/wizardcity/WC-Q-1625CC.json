@@ -1,0 +1,187 @@
+{
+  "id": "WC-Q-1625CC",
+  "lang": "1625CC",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    {
+      "school": "Myth"
+    },
+    "WC-Q-13D3E"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 265,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-HUB-NPC12",
+      "zone": "Krokotopia/Interiors/KT_Library",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-MUSEHub-NPC01",
+      "zone": "Marleybone/MB_BigBen/MB_Museum_Instance",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC_Myth_Desk.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizardGameObjects_00000159",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "KT-HUB-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Librarian_A_NPC.dds",
+      "template_id": 81096
+    },
+    "MB-MUSEHub-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Lord_Upper06.dds",
+      "template_id": 39724
+    },
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Two_Heads_Are_Better_Than_One",
+    "from": "archive",
+    "timestamp": "20240121102154"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1625CC matched by the words it shares with the goals; its lines name Harold Argleston",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Zan'ne: KT-HUB-NPC12 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Clancy Pembroke: MB-MUSEHub-NPC01 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 48
+}

@@ -1,0 +1,133 @@
+{
+  "id": "WC-Q-1608BA",
+  "lang": "1608BA",
+  "giver": {
+    "persona": "WC-HUB-NPC10-B",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC11",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC12",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC13",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_10879"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC10-B": {
+      "portrait": "GUI/NpcPortraits/Dog_FormanF_A_NPC.dds",
+      "template_id": 1488013
+    },
+    "WC-HUB-NPC11": {
+      "portrait": "GUI/NpcPortraits/Dog_Contractor_Crew_A_NPC.dds",
+      "template_id": 1444027
+    },
+    "WC-HUB-NPC12": {
+      "portrait": "GUI/NpcPortraits/Dog_Contractor_Crew_A_NPC.dds",
+      "template_id": 1444028
+    },
+    "WC-HUB-NPC13": {
+      "portrait": "GUI/NpcPortraits/Dog_Contractor_Crew_A_NPC.dds",
+      "template_id": 1444029
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pardon_Our_Dust",
+    "from": "archive",
+    "timestamp": "20251220191108"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

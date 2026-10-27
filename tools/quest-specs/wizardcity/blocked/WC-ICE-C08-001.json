@@ -1,0 +1,60 @@
+{
+  "id": "WC-ICE-C08-001",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    },
+    "WC-Q-213CF",
+    "GH-FJORD-C05-003"
+  ],
+  "min_level": 58,
+  "mainline": false,
+  "level": 58,
+  "reward": {
+    "xp": 1850,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH2-SUDRI-NPC03",
+      "zone": "Grizzleheim/GH_HFjord/GH_Sudrilund",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "GH2-SUDRI-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearWarrior_Guard_Black_NPC.dds",
+      "template_id": 409131
+    },
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wings_of_Valor",
+    "from": "archive",
+    "timestamp": "20251224001537"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Wings of Valor",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Alberich Stoutshield: GH2-SUDRI-NPC03 from ObjectData/GH",
+      "blocking": false
+    }
+  ]
+}

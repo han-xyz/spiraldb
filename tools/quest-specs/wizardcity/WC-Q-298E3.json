@@ -1,0 +1,119 @@
+{
+  "id": "WC-Q-298E3",
+  "lang": "298E3",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    }
+  ],
+  "mainline": false,
+  "level": 7,
+  "reward": {
+    "xp": 30,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST01-NPC02",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_StormTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "WC-HUB-NPC03",
+          "line": "00000004"
+        },
+        {
+          "speaker": "WC-HUB-NPC03",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    },
+    "WC-ST01-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_B_NPC.dds",
+      "template_id": 38123
+    },
+    "WC_RVW_StormTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Torrence.dds",
+      "template_id": 39178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Leyden_Lab",
+    "from": "archive",
+    "timestamp": "20240905214423"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 7
+}

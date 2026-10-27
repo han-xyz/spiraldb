@@ -1,0 +1,78 @@
+{
+  "id": "WC-Q-140C1",
+  "lang": "140C1",
+  "auto_start": true,
+  "requires": [
+    "WC-Q-140C0"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 275,
+    "gold": 28
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_ST07_NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Sunken_City",
+      "loc": "ZoneLocName_454915"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Sunken_City"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Ghoul-Red-WCBoss-L37.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000195",
+      "zone": "WizardCity/WC_Streets/WC_Sunken_City",
+      "descriptor": "WizQst140C1_00000003",
+      "loc": "ZoneLocName_454915"
+    }
+  ],
+  "personas": {
+    "WC_ST07_NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Death2.dds",
+      "template_id": 81085
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fight_Grubb!",
+    "from": "archive",
+    "timestamp": "20240308084957"
+  },
+  "needs_review": [
+    {
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Grubb's Castle",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "WC-Q-15131E",
+  "lang": "15131E",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "WC-Q-15131C"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 96500,
+    "gold": 700
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-OLDE-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "persona",
+      "persona": "AR-StandIn-AdventureFitzhume_03",
+      "zone": "Arcanum/Interiors/AR_Z01_DeadArchive",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "AR_StandIn_Ione",
+      "zone": "Arcanum/AR_Z01_Hub",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "AR-StandIn_Qismah",
+      "zone": "Arcanum/AR_Z01_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "AR-StandIn-AdventureFitzhume_03": {
+      "portrait": "GUI/NpcPortraits/Monkey_Adventurer_A_NPC.dds",
+      "template_id": 1487574
+    },
+    "AR-StandIn_Qismah": {
+      "portrait": "",
+      "template_id": 1401052
+    },
+    "AR_StandIn_Ione": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
+      "template_id": 1401051
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "WC-OLDE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_B_NPC.dds",
+      "template_id": 1397175
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Return_from_Ravenwood",
+    "from": "archive",
+    "timestamp": "20231126073056"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Librarian Fitzhume: AR-StandIn-AdventureFitzhume_03 from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Qismah Shasa: AR-StandIn_Qismah from ObjectData/MR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

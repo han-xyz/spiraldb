@@ -1,0 +1,59 @@
+{
+  "id": "WC-Q-weneedtotalk",
+  "giver": {
+    "persona": "WC-TU-NPC02",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_C1"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 85,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_C1",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC02": {
+      "portrait": "GUI/NpcPortraits/Crab_Cromshell_NPC.dds",
+      "template_id": 358236
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:We_Need_to_Talk",
+    "from": "archive",
+    "timestamp": "20250831030139"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "We Need to Talk",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Who is the Keymaster?",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Palace",
+      "blocking": false
+    }
+  ]
+}

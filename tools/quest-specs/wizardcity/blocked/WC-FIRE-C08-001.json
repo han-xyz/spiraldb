@@ -1,0 +1,60 @@
+{
+  "id": "WC-FIRE-C08-001",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    },
+    "WC-Q-213D7",
+    "GH-FJORD-C05-004"
+  ],
+  "min_level": 58,
+  "mainline": false,
+  "level": 58,
+  "reward": {
+    "xp": 1850,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH2-NOR-NPC07-B",
+      "zone": "Grizzleheim/GH_HFjord/Interiors/GH_Nord_Cave01",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "GH2-NOR-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearScout_Peasant_Black.dds",
+      "template_id": 1608018
+    },
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Like_a_Phoenix",
+    "from": "archive",
+    "timestamp": "20250910122949"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Like a Phoenix",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Conal Ironshaper: GH2-NOR-NPC07-B from ObjectData/GH",
+      "blocking": false
+    }
+  ]
+}

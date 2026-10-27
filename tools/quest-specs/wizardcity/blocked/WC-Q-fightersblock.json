@@ -1,0 +1,50 @@
+{
+  "id": "WC-Q-fightersblock",
+  "giver": {
+    "persona": "WC-ST01-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [],
+  "min_level": 50,
+  "mainline": false,
+  "level": 50,
+  "reward": {
+    "xp": 128,
+    "gold": 285
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Diego_Duelmaster.dds",
+      "template_id": 38226
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fighter's_Block",
+    "from": "archive",
+    "timestamp": "20250915141822"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Fighter's Block",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Diego Santiago Quariquez",
+      "blocking": true
+    }
+  ]
+}

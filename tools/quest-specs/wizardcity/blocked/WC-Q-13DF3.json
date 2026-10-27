@@ -1,0 +1,78 @@
+{
+  "id": "WC-Q-13DF3",
+  "lang": "13DF3",
+  "giver": {
+    "persona": "HO-HalloweenO1",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [
+    "WC-Q-13DED"
+  ],
+  "mainline": false,
+  "level": 5,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "HO-HalloweenO1": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Scarecrow_NPC.dds",
+      "template_id": 81385
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Apple_In_Yer_Eye",
+    "from": "archive",
+    "timestamp": "20251224035643"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Jack Hallow: HO-HalloweenO1 from ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {
+        "xp": 0
+      },
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use the Apple Tub in Golem Court",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jack Hallow: HO-HalloweenO1 from ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

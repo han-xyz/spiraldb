@@ -1,0 +1,87 @@
+{
+  "id": "WC-Q-1627B3",
+  "lang": "1627B3",
+  "giver": {
+    "persona": "WC-ST04-NPC02",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1627B2"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 230,
+    "gold": 12
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Ghoul-Purple-L02.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000002",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "descriptor": "WizQst1627B3_00000007",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Death02.dds",
+      "template_id": 38139
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Quest_for_Clues",
+    "from": "archive",
+    "timestamp": "20240807092443"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

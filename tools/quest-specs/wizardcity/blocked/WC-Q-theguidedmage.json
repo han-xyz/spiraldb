@@ -1,0 +1,55 @@
+{
+  "id": "WC-Q-theguidedmage",
+  "giver": {
+    "persona": "TEST-CAM-NPC-001",
+    "zone": ""
+  },
+  "requires": [],
+  "min_level": 150,
+  "mainline": false,
+  "level": 150,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {
+    "TEST-CAM-NPC-001": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_Spellement_A_NPC.dds",
+      "template_id": 1634239
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Guided_Mage",
+    "from": "archive",
+    "timestamp": "20231121203807"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Guided Mage",
+      "blocking": true
+    },
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Abner K. Doodle",
+      "blocking": true
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Learned about Guilds",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Learned about Guilds"
+      ],
+      "blocking": true
+    }
+  ]
+}

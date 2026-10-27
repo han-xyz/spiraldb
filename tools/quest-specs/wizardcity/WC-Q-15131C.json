@@ -1,0 +1,241 @@
+{
+  "id": "WC-Q-15131C",
+  "lang": "15131C",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 436500,
+    "gold": 3300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-NIS-NPC01",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_DarkCave",
+      "loc": "ZoneLocName_406747"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Spectral_Guardian_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002408",
+      "zone": "",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-JournalMalistaire.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst15131C_00000025",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC_StandIn_DuncanGrimwater_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002454",
+      "zone": "",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Eye_of_History",
+    "from": "archive",
+    "timestamp": "20240121085745"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Post-Polaris Prognosis",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Malistaire's Sanctum",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Spectral Guardian: ObjectData/MR",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Malistaire's Sanctum",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Post-Polaris Prognosis replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

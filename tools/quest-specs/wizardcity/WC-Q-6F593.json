@@ -1,0 +1,101 @@
+{
+  "id": "WC-Q-6F593",
+  "lang": "6F593",
+  "giver": {
+    "persona": "WC-TU-NPC08",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_Storm"
+  },
+  "requires": [
+    "WC-Q-6F592"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 155,
+    "gold": 20
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-TU-Stormbattery.AdjRef",
+        "WC-UNDER-StormBattery.AdjRef"
+      ],
+      "count": 3,
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "descriptor": "WizardGameObjects_00000432",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_Storm",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC11",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren02",
+      "loc": "ZoneLocName_358201"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sea_Monster_Lab_Coat_NPC.dds",
+      "template_id": 456081
+    },
+    "WC-TU-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_King_Rockstar_NPC.dds",
+      "template_id": 466075
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Error_Of_His_Ways",
+    "from": "archive",
+    "timestamp": "20231121201747"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "id": "WC-Q-13CDE",
+  "lang": "13CDE",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    {
+      "school": "Myth"
+    },
+    "WC-Q-13D74"
+  ],
+  "mainline": false,
+  "level": 28,
+  "reward": {
+    "xp": 840,
+    "gold": 136,
+    "spells": [
+      "Stun"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST01-NPC02",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-NIS-NPC01",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-AIR1-SYLVAN",
+      "zone": "Marleybone/MB_Station/Interiors/MB_HydePark_T8",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-RVW-DeathTree",
+      "zone": "WizardCity/WC_NightSide",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-HUB-NPC01",
+      "zone": "Marleybone/Interiors/MB_WolfminsterAbbey",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-Ringleader-NPC08",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_PET_Park",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Cat-Thug-Black-MB-L32.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003610",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-AIR1-SYLVAN",
+      "zone": "Marleybone/MB_Station/Interiors/MB_HydePark_T8",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MB-AIR1-SYLVAN": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Seraph.dds",
+      "template_id": 81128
+    },
+    "MB-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_SeargentMajor_E_NPC.dds",
+      "template_id": 39681
+    },
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    },
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    },
+    "WC-RVW-DeathTree": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tree_Mortis_A_NPC.dds",
+      "template_id": 39390
+    },
+    "WC-Ringleader-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ringleader_NPC.dds",
+      "template_id": 220072
+    },
+    "WC-ST01-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_B_NPC.dds",
+      "template_id": 38123
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mything_Persons",
+    "from": "archive",
+    "timestamp": "20250907031758"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Lady Sylvan: MB-AIR1-SYLVAN from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Private Kinchley: MB-HUB-NPC01 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (closest name)",
+      "value": "Lord Barker read as Milo Barker",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Kenedy the Klaw: ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Lady Sylvan: MB-AIR1-SYLVAN from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 28
+}

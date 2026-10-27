@@ -1,0 +1,91 @@
+{
+  "id": "WC-Q-9575",
+  "lang": "9575",
+  "giver": {
+    "persona": "WC-ST03-NPC02",
+    "zone": "WizardCity/WC_Streets/WC_Cyclops"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 230,
+    "gold": 46
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Cyclops-BlueHelmet-WCBoss-L03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000024",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "descriptor": "WizQst9575_00000007",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    }
+  ],
+  "personas": {
+    "WC-ST03-NPC02": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_J.dds",
+      "template_id": 38251
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Eyus,_Conqueror",
+    "from": "archive",
+    "timestamp": "20250903042256"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "How Disarming replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

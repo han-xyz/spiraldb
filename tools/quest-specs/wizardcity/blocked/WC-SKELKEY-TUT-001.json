@@ -1,0 +1,82 @@
+{
+  "id": "WC-SKELKEY-TUT-001",
+  "giver": {
+    "persona": "WC-ST01-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [
+    "WC-Q-1627BA"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 100,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC010",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC_Horse_Mercenary_Roberto.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002953",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC010": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Assistant_A_NPC.dds",
+      "template_id": 1448005
+    },
+    "WC-ST01-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Diego_Duelmaster.dds",
+      "template_id": 38226
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Unlocking_the_Truth",
+    "from": "archive",
+    "timestamp": "20250827162841"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Unlocking the Truth",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Diego's Heirloom in Roberto's Sanctum",
+      "blocking": true
+    }
+  ]
+}

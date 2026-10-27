@@ -1,0 +1,170 @@
+{
+  "id": "WC-Q-1489F0",
+  "lang": "1489F0",
+  "giver": {
+    "persona": "WC-CROWN-FURNITURE",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [
+    "WC-Q-1731AB"
+  ],
+  "mainline": false,
+  "level": 15,
+  "reward": {
+    "xp": 60,
+    "gold": 5
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000055"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000059"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000060"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000061"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000062"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000063"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000064"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000065"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000066"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000067"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000068"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000069"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000070"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000073"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000074"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000075"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000076"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000077"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000078"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000079"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC18",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-CROWN-FURNITURE": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZekeWife.dds",
+      "template_id": 164322
+    },
+    "WC-PARTY-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Badger_ArcaneF_A_NPC.dds",
+      "template_id": 1452014
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Digging_Into_A_New_Challenge",
+    "from": "archive",
+    "timestamp": "20250910004627"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Razor's Edge replaced by WC-Q-1731AB",
+      "blocking": false
+    }
+  ],
+  "min_level": 15
+}

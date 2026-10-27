@@ -1,0 +1,77 @@
+{
+  "id": "WC-Q-72CE9",
+  "lang": "72CE9",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "ZF-Q-71A39"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 1805,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MS-HUB-NPC07-B",
+      "zone": "MooShu/MS_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "MS-HUB-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Emperor_C_NPC.dds",
+      "template_id": 1546313
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:This_Little_Light_of_Mine",
+    "from": "archive",
+    "timestamp": "20231125084702"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Emperor Yoshihito: MS-HUB-NPC07-B from ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

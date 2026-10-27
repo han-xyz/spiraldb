@@ -1,0 +1,179 @@
+{
+  "id": "WC-Q-13CCC",
+  "lang": "13CCC",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    },
+    "WC-Q-13CCB"
+  ],
+  "min_level": 12,
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 275,
+    "gold": 56,
+    "spells": [
+      "Ice Prism"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST06-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Event_Maestro/WC_Z02_Ice_Tower",
+      "loc": "ZoneLocName_9458"
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FrostTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC_StatueCommemorative.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFrost",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000014"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    },
+    "WC-ST06-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Ice02.dds",
+      "template_id": 38170
+    },
+    "WC_RVW_FrostTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kelvin.dds",
+      "template_id": 82294
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:No_More_Mr._Ice_Guy",
+    "from": "archive",
+    "timestamp": "20251204000435"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Four Falls Mill",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Ice Colossus",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Statue near Mindy Pixiecrown",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

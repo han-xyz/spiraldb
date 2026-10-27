@@ -1,0 +1,50 @@
+{
+  "id": "WC-PVPREMINDER-C01-001",
+  "giver": {
+    "persona": "WC-ST01-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [],
+  "min_level": 10,
+  "mainline": false,
+  "level": 10,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Diego_Duelmaster.dds",
+      "template_id": 38226
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tournaments!",
+    "from": "archive",
+    "timestamp": "20260609050020"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Tournaments!",
+      "blocking": true
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use (View) the Tournament Pedestal in the Arena",
+      "blocking": true
+    }
+  ]
+}

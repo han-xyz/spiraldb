@@ -1,0 +1,127 @@
+{
+  "id": "WC-Q-12D2B8",
+  "lang": "12D2B8",
+  "giver": {
+    "persona": "WC-PARTY-NPC15",
+    "zone": "WizardCity/Interiors/WC_PartyRoom"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 375,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-PARTY-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pelican_Fisherman_A_NPC.dds",
+      "template_id": 1452011
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fishful_Thinking",
+    "from": "archive",
+    "timestamp": "20231121231750"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "A River Runs Through It",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Sharkspeare in Olde Town",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Mechanical Armorhead in Cyclops Lane",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Catfish in The Commons",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Garrrfish in Cyclops Lane",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Fish Sandwich in Cyclops Lane",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Mainstream Dekoi in The Commons",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Bone Fish in Unicorn Way",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

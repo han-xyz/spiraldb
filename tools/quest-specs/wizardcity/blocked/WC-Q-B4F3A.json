@@ -1,0 +1,98 @@
+{
+  "id": "WC-Q-B4F3A",
+  "lang": "B4F3A",
+  "giver": {
+    "persona": "WC-RAV-NPC09",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "CL-Q-B4F39"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 25,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Student-Life-PageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001469",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 81103
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Semi-Charmed_Life",
+    "from": "archive",
+    "timestamp": "20240121094152"
+  },
+  "needs_review": [
+    {
+      "field": "goal.usage",
+      "value": "Use Dee's Life Mirror in The Floating Land",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Carson Spritethief: ObjectData/PageEvent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

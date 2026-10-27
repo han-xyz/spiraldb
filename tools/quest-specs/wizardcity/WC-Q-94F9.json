@@ -1,0 +1,104 @@
+{
+  "id": "WC-Q-94F9",
+  "lang": "94F9",
+  "giver": {
+    "persona": "WC-ST04-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-957D"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 60,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST04-NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Storm02.dds",
+      "template_id": 38136
+    },
+    "WC-ST04-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Death02.dds",
+      "template_id": 38139
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:In_Search_of_Artur",
+    "from": "archive",
+    "timestamp": "20260629014625"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

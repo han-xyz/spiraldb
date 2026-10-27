@@ -1,0 +1,113 @@
+{
+  "id": "WC-Q-16271E",
+  "lang": "16271E",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-CATA-NPC01-B",
+    "zone": "WizardCity/WC_Streets/WC_Catacombs"
+  },
+  "requires": [
+    "WC-Q-16272F"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 1380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {
+    "WC-CATA-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Hargrove_A_NPC.dds",
+      "template_id": 1487009
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Mind_Thief",
+    "from": "archive",
+    "timestamp": "20240409061211"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16271E matched by the words it shares with the goals; its lines name Valencian Swashbuckler, Valencian Royal Guard",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Palace",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Valencian Swashbuckler",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Palace",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Valencian Royal Guard",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Palace",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Satharilith",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Explore Palace",
+        "@Defeat [Creature:Valencian Swashbuckler]",
+        "@Explore Palace",
+        "@Defeat [Creature:Valencian Royal Guard (Ice)]",
+        "@Explore Palace",
+        "@Defeat [Creature:Satharilith]"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

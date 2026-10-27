@@ -1,0 +1,149 @@
+{
+  "id": "WC-Q-213CC",
+  "lang": "213CC",
+  "giver": {
+    "persona": "WC-RAV-NPC03",
+    "zone": "WizardCity/Interiors/WC_SchoolFrost"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    },
+    "WC-Q-13D2F"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1320,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FrostTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Troll-Green-KTBoss-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000058",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Troll-Yellow-L29.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000161",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Troll-Yellow-MSBoss-L42.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000217",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFrost",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 38172
+    },
+    "WC_RVW_FrostTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kelvin.dds",
+      "template_id": 82294
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Troll_Bridge",
+    "from": "archive",
+    "timestamp": "20240121104039"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Krag Stonechin: ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Burly Troll: ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Grum Foultooth: ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 48
+}

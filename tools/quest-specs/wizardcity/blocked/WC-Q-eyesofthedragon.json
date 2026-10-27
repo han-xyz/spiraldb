@@ -1,0 +1,94 @@
+{
+  "id": "WC-Q-eyesofthedragon",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    {
+      "school": "Myth"
+    },
+    "GH-MYTH-C09-001"
+  ],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 32350,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-CROWN-NPC06",
+      "zone": "Zafaria/Interiors/ZF_Z01_I02_Library_Classroom",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Z01_I02_Library_Classroom"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Idris.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001290",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    },
+    "ZF-CROWN-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kiliman_Copperleaf_NPC.dds",
+      "template_id": 465437
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Eyes_of_the_Dragon",
+    "from": "archive",
+    "timestamp": "20231222141026"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Eyes of the Dragon",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Kiliman Copperleaf: ZF-CROWN-NPC06 from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Poacher's Home, Stone Town",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Idris Beast-Taker: ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Egg Clutch",
+      "blocking": true
+    }
+  ]
+}

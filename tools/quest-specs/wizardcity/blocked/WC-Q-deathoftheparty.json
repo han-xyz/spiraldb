@@ -1,0 +1,62 @@
+{
+  "id": "WC-Q-deathoftheparty",
+  "giver": {
+    "persona": "WC-NIS-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolDeath"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    }
+  ],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 10310,
+    "gold": 130,
+    "spells": [
+      "Avenging Fossil"
+    ]
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath",
+      "loc": "ZoneLocName_10825"
+    }
+  ],
+  "personas": {
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Death_of_the_Party",
+    "from": "archive",
+    "timestamp": "20231222121601"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Death of the Party",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Avenging Assembly",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Faerie Circle",
+      "blocking": true
+    }
+  ]
+}

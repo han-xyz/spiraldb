@@ -1,0 +1,143 @@
+{
+  "id": "WC-Q-1627B5",
+  "lang": "1627B5",
+  "giver": {
+    "persona": "WC-ST04-NPC03",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1627B4"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 190,
+    "gold": 14
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC_TA_Cog.AdjRef"
+      ],
+      "count": 3,
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "descriptor": "WizardGameObjects_00000903",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Banshee-Red-L12.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000331",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "descriptor": "WizQst1627B5_00000005",
+      "loc": "ZoneLocName_91180",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "Tri_Gauntlet_Lever_1.AdjRef",
+        "Tri_Gauntlet_Lever_2.AdjRef",
+        "Tri_Gauntlet_Lever_3.AdjRef",
+        "Tri_Gauntlet_Lever_4.AdjRef",
+        "WC_Leverl_Mill.AdjRef",
+        "WC_Tri_Gauntlet_Lever.AdjRef",
+        "WC_Tri_Gauntlet_Lever01.AdjRef",
+        "WC_Tri_Gauntlet_Lever02.AdjRef",
+        "WC_Tri_Gauntlet_Lever03.AdjRef",
+        "WC_Tri_Gauntlet_Lever04.AdjRef",
+        "WC_Tri_Gauntlet_Lever05.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "descriptor": "WizardGameObjects_00000087",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_E_NPC.dds",
+      "template_id": 38145
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Clear_as_Crystal",
+    "from": "archive",
+    "timestamp": "20231121192920"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Mill Wheel",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "WC-Q-blatherprincerepeat",
+  "auto_start": true,
+  "requires": [],
+  "min_level": 5,
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 1150
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC01-B",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC01-B",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC01-B",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    }
+  ],
+  "personas": {
+    "WC-CATA-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Hargrove_A_NPC.dds",
+      "template_id": 1487009
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Blather,_Prince,_Repeat",
+    "from": "archive",
+    "timestamp": "20240118175915"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Blather, Prince, Repeat",
+      "blocking": true
+    },
+    {
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Bear With Me",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Treeminder",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Treeminder",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Viggor's Drake",
+      "blocking": true
+    }
+  ]
+}

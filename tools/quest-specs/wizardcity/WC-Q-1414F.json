@@ -1,0 +1,157 @@
+{
+  "id": "WC-Q-1414F",
+  "lang": "1414F",
+  "giver": {
+    "persona": "WC-NIS-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolDeath"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    }
+  ],
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 875,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KT-CRYHub-NPC01",
+      "zone": "Krokotopia/KT_Tomb/KT_WellOfSpirits",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_StormTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Heroic_MS_WarOni.AdjRef",
+        "Oni-War-MSBoss-L50.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000223",
+      "zone": "WizardCity/WC_NightSide",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_NightSide"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath",
+      "loc": "ZoneLocName_10825",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000020"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KT-CRYHub-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Krok_Tut_A_NPC.dds",
+      "template_id": 39345
+    },
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    },
+    "WC_RVW_StormTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Torrence.dds",
+      "template_id": 39178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bottled_Up",
+    "from": "archive",
+    "timestamp": "20240121105744"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Learning a Lesson",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ghost of Krokhotep: KT-CRYHub-NPC01 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "War Oni: ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Well of Spirits",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Learning a Lesson replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 38
+}

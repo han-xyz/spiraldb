@@ -1,0 +1,62 @@
+{
+  "id": "WC-Q-atasteofhoney",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "WC-Q-377D2"
+  ],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 4200,
+    "gold": 400,
+    "spells": [
+      "Forest Lord"
+    ]
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Taste_of_Honey",
+    "from": "archive",
+    "timestamp": "20240907045436"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A Taste of Honey",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Shoshun Village",
+      "blocking": false
+    }
+  ]
+}

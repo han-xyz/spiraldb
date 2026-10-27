@@ -1,0 +1,84 @@
+{
+  "id": "WC-Q-956F",
+  "lang": "956F",
+  "giver": {
+    "persona": "WC-ST03-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Cyclops"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 105,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Troll-Green-L01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000003",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "descriptor": "WizQst956F_00000005",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000015"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST03-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Myth02.dds",
+      "template_id": 38249
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Taken",
+    "from": "archive",
+    "timestamp": "20231121225522"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

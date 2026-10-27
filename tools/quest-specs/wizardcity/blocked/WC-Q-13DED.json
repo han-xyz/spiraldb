@@ -1,0 +1,79 @@
+{
+  "id": "WC-Q-13DED",
+  "lang": "13DED",
+  "giver": {
+    "persona": "HO-HalloweenO1",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [
+    "WC-Q-13DE7"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "HO-HalloweenO1": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Scarecrow_NPC.dds",
+      "template_id": 81385
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Inky_Blues",
+    "from": "archive",
+    "timestamp": "20251224030938"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Jack Hallow: HO-HalloweenO1 from ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Catch 10 Blue Ghosts in Shopping District",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jack Hallow: HO-HalloweenO1 from ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

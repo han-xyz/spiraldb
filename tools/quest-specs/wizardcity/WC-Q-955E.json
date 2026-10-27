@@ -1,0 +1,86 @@
+{
+  "id": "WC-Q-955E",
+  "lang": "955E",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "WC-Q-1627C4"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 250,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000054"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000056"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Ghost-Red-WCBoss-L03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000030",
+      "zone": "",
+      "descriptor": "WizQst955E_00000009",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_409193",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000058"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Look_of_Horror",
+    "from": "archive",
+    "timestamp": "20231121220427"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

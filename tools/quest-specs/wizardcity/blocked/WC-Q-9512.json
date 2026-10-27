@@ -1,0 +1,89 @@
+{
+  "id": "WC-Q-9512",
+  "lang": "9512",
+  "giver": {
+    "persona": "WC-ST04-NPC04",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 250,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_B_NPC.dds",
+      "template_id": 38147
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Defeat_the_Kraken",
+    "from": "archive",
+    "timestamp": "20250521044108"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Kraken Teleporter",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Storm Kraken",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

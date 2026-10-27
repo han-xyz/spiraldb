@@ -1,0 +1,128 @@
+{
+  "id": "WC-Q-952A",
+  "lang": "952A",
+  "giver": {
+    "persona": "WC-ST06-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Colossus"
+  },
+  "requires": [
+    "WC-Q-9529"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 355,
+    "gold": 76
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Gobbler-Hick-Baron-L04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000016",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Gobbler-Pink-Baron-L04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000017",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST06-NPC02",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Colossus_Balcony",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    }
+  ],
+  "personas": {
+    "WC-ST06-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Ice02.dds",
+      "template_id": 38170
+    },
+    "WC-ST06-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gobbler_King.dds",
+      "template_id": 38174
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Seal_the_Deal",
+    "from": "archive",
+    "timestamp": "20231121193636"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

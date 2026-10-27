@@ -1,0 +1,94 @@
+{
+  "id": "WC-Q-72ECD",
+  "lang": "72ECD",
+  "giver": {
+    "persona": "WC-RAV-NPC09",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "WC-Q-72ECC"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 25,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Student-Storm-PageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001465",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 81103
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Right_As_Rain",
+    "from": "archive",
+    "timestamp": "20240121094146"
+  },
+  "needs_review": [
+    {
+      "field": "goal.usage",
+      "value": "Use Dee's Storm Mirror on Triton Avenue",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Kestrel Blackstorm: ObjectData/PageEvent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

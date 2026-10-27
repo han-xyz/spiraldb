@@ -1,0 +1,109 @@
+{
+  "id": "WC-Q-ghostsofthepast",
+  "auto_start": true,
+  "requires": [
+    "WC-Q-12D318"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 23965,
+    "gold": 1945
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "G14-DM-Draconian_Boss.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002053",
+      "zone": ""
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "G14-DM-Tatyana_Boss.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002055",
+      "zone": ""
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/Interiors/WC_Library"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "G14-DM-ArmoredVonShane_Boss.AdjRef",
+        "G14-DM-ShaneVonShane_Boss.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002056",
+      "zone": ""
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ghosts_of_the_Past",
+    "from": "archive",
+    "timestamp": "20231126103823"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Ghosts of the Past",
+      "blocking": true
+    },
+    {
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "Tatyana",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue Exploring Upper Hallway",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Akhtang WormCrawl: ObjectData/G14-DM",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue Exploring Upper Hallway",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Spirit of Darkmoor: ObjectData/G14-DM",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Spirit of Darkmoor",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Shane von Shane: ObjectData/G14-DM",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "Find Phylactery",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Spirit of Darkmoor",
+      "blocking": true
+    }
+  ]
+}

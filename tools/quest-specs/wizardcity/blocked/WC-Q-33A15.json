@@ -1,0 +1,194 @@
+{
+  "id": "WC-Q-33A15",
+  "lang": "33A15",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    "WC-Q-33A10"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 1425,
+    "gold": 128
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Celestia-Pig-War-Warrior.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003605",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KT_SE_Player_DramaGhost_C_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004642",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "CL-DS-NPC-001",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-DS-NPC-001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_ponytail_1.dds",
+      "template_id": 211485
+    },
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Picking_Up_the_Pieces",
+    "from": "archive",
+    "timestamp": "20250828015323"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Zarichi's Hideout, Village of Sorrow",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Zarichi Tarakata: ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Vesna's Lair, The Crucible",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Shadow Weavers: ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Vesna Shadowscar: CL-DS-NPC-001 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Vesna Shadowscar",
+      "blocking": true
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use the Stone of Mazzaroth",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

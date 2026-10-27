@@ -1,0 +1,87 @@
+{
+  "id": "WC-Q-298E2",
+  "lang": "298E2",
+  "giver": {
+    "persona": "WC-ST01-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [
+    "WC-Q-1625CF"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 100,
+    "gold": 13
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Heroic_WC_Rattlebones.AdjRef",
+        "Heroic_WC_Rattlebones_100.AdjRef",
+        "Skeleton-Silver-WCBoss-L01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000032",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Life02.dds",
+      "template_id": 38121
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stop_the_Maker_(Retired)",
+    "from": "archive",
+    "timestamp": "20240308084446"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

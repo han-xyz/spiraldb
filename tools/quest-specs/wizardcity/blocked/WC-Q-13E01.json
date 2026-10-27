@@ -1,0 +1,75 @@
+{
+  "id": "WC-Q-13E01",
+  "lang": "13E01",
+  "requires": [
+    "WC-Q-1423A"
+  ],
+  "mainline": false,
+  "level": 5,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Unicorn_Delight",
+    "from": "archive",
+    "timestamp": "20250906083036"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "Jack Straw",
+      "blocking": true
+    },
+    {
+      "field": "reward",
+      "value": {
+        "xp": 0
+      },
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use 10 Jack O'Lanterns on Unicorn Way",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Jack Straw",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Jack Straw",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Use 10 Jack O'Lanterns on [Location:Unicorn Way]",
+        "@Talk to [NPC:Jack Straw]"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "WC-Q-thegreenmile",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "GH-LIFE-C09-001"
+  ],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 32350,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST02-NPC04",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Razorjack.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001288",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    },
+    "WC-ST02-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeepF_D_NPC.dds",
+      "template_id": 38228
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Green_Mile",
+    "from": "archive",
+    "timestamp": "20240121101515"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Green Mile",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Jungle Clearing, Zamunda Outskirts",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Razorjack: ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use (Harvest) Gnome Plant",
+      "blocking": true
+    }
+  ]
+}

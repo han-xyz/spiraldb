@@ -1,0 +1,98 @@
+{
+  "id": "WC-Q-B4F2A",
+  "lang": "B4F2A",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Ice"
+    },
+    "WC-Q-6F596"
+  ],
+  "mainline": false,
+  "level": 75,
+  "reward": {
+    "xp": 2415,
+    "gold": 55
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_Professor_Who",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    },
+    "WC_Professor_Who": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_The_Professor.dds",
+      "template_id": 1300197
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sleep_With_the_Fishes",
+    "from": "archive",
+    "timestamp": "20250904054135"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "The Runedown",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Runedown replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 75
+}

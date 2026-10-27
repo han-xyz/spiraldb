@@ -1,0 +1,78 @@
+{
+  "id": "WC-Q-9526",
+  "lang": "9526",
+  "giver": {
+    "persona": "WC-ST06-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Colossus"
+  },
+  "requires": [
+    "WC-Q-9525"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 80,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC_CB_StinkWeed.AdjRef"
+      ],
+      "count": 3,
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "descriptor": "WizardGameObjects_00000068",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    }
+  ],
+  "personas": {
+    "WC-ST06-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Ice02.dds",
+      "template_id": 38170
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Strange_Brew",
+    "from": "archive",
+    "timestamp": "20231121193344"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

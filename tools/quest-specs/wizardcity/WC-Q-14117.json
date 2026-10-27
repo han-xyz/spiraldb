@@ -1,0 +1,115 @@
+{
+  "id": "WC-Q-14117",
+  "lang": "14117",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    },
+    "WC-Q-14115"
+  ],
+  "mainline": false,
+  "level": 28,
+  "reward": {
+    "xp": 590,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC_ShopArea_CastleBlocks.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "NPCs_01748406",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Heroic_KT_Krokenkahman.AdjRef",
+        "Heroic_KT_Krokenkahman_100.AdjRef",
+        "KrokTut-Fire-L04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000035",
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizQst14117_00000006",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Make_a_Kroktail",
+    "from": "archive",
+    "timestamp": "20240121103105"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Krokenkahmen: ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Test Your Might replaced by WC-Q-14115",
+      "blocking": false
+    }
+  ],
+  "min_level": 28
+}

@@ -1,0 +1,85 @@
+{
+  "id": "WC-Q-162711",
+  "lang": "162711",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "WC-Q-1625D8"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 15,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ArenaMaster",
+      "zone": "WizardCity/WC_Duel_Arena",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-ArenaMaster": {
+      "portrait": "",
+      "template_id": 1451073
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Diego_the_Duelmaster",
+    "from": "archive",
+    "timestamp": "20250801101652"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Secret Strife of Pets replaced by WC-Q-1625D8",
+      "blocking": false
+    }
+  ]
+}

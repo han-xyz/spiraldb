@@ -1,0 +1,88 @@
+{
+  "id": "WC-Q-firststariseetonight",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 22620,
+    "gold": 410
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Goliath-Crusher-D.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001351",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-PreQuest-NPC01",
+      "zone": "Marleybone/MB_PreAZ_HalleysTower",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "AZ-PreQuest-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Archologist_A_NPC.dds",
+      "template_id": 683138
+    },
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:First_Star_I_See_Tonight",
+    "from": "archive",
+    "timestamp": "20250918135236"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "First Star I See Tonight",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "A Great Storm Coming",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use (Activate) the Stela Itzamna in the Royal Museum",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Halley's Observatory",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Goliath Rampagers: ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Edward Halley: AZ-PreQuest-NPC01 from ObjectData/AZ",
+      "blocking": false
+    }
+  ]
+}

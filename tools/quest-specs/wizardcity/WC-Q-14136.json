@@ -1,0 +1,115 @@
+{
+  "id": "WC-Q-14136",
+  "lang": "14136",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    },
+    "WC-Q-213DB"
+  ],
+  "mainline": false,
+  "level": 58,
+  "reward": {
+    "xp": 1265,
+    "gold": 65
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-Samoorai-Rank8StormBoss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000810",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dig_It_(Storm)",
+    "from": "archive",
+    "timestamp": "20240913202426"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Winedark Open Sea",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Khai Tengri's Dojo",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Khai Tengri: ObjectData/CL",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Worms of the Earth",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Winedark Open Sea replaced by WC-Q-213DB",
+      "blocking": false
+    }
+  ],
+  "min_level": 58
+}

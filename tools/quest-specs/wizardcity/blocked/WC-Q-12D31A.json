@@ -1,0 +1,111 @@
+{
+  "id": "WC-Q-12D31A",
+  "lang": "12D31A",
+  "requires": [
+    "WC-Q-12D318"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 80700,
+    "gold": 655
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Human-LichMalistaire-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001441",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "WC-NIS-NPC01",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath"
+    }
+  ],
+  "personas": {
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:House_of_Mystery_and_Suspense",
+    "from": "archive",
+    "timestamp": "20250819040419"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "Tatyana",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Malistaire the Undying: ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Tatyana",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

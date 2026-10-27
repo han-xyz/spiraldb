@@ -1,0 +1,113 @@
+{
+  "id": "WC-Q-venividiviggor",
+  "giver": {
+    "persona": "WC-CATA-NPC01-B",
+    "zone": "WizardCity/WC_Streets/WC_Catacombs"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 1610
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC07",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Catacombs_ViggorsTomb",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC_KnowledgeCrystal_Viggor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC_KnowledgeCrystal_Viggor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-ACAD-NPC01",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Hub_Academy",
+      "loc": "ZoneLocName_1451811"
+    }
+  ],
+  "personas": {
+    "DS-ACAD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ashley.dds",
+      "template_id": 126321
+    },
+    "WC-CATA-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Hargrove_A_NPC.dds",
+      "template_id": 1487009
+    },
+    "WC-CATA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_DSWarPrince_A_NPC.dds",
+      "template_id": 1487044
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Veni_Vidi_Viggor",
+    "from": "archive",
+    "timestamp": "20251205112412"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Veni Vidi Viggor",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Bear With Me",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Viggor's Tomb",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Prince Viggor",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Viggor's Knowledge Crystal",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Viggor's Knowledge Crystal",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ashley: DS-ACAD-NPC01 from ObjectData/DS",
+      "blocking": false
+    }
+  ]
+}

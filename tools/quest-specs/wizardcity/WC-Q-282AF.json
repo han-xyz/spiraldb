@@ -1,0 +1,83 @@
+{
+  "id": "WC-Q-282AF",
+  "lang": "282AF",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "GH-CLAW-C04-001"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 70,
+    "gold": 135
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH-HUB-NPC01",
+      "zone": "Grizzleheim/GH_MainHub",
+      "loc": "ZoneLocName_409193",
+      "completion": [
+        {
+          "speaker": "GH-HUB-NPC01",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "GH-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearWarrior_Boss_Black_NPC.dds",
+      "template_id": 164449
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Grizzle_Me_This",
+    "from": "archive",
+    "timestamp": "20240327004430"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Bjorn Ironclaws: GH-HUB-NPC01 from ObjectData/GH",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

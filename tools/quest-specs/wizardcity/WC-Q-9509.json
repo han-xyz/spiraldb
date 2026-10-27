@@ -1,0 +1,88 @@
+{
+  "id": "WC-Q-9509",
+  "lang": "9509",
+  "giver": {
+    "persona": "WC-ST04-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 245,
+    "gold": 46
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Scarecrow-WCBoss-L03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000019",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000016"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Storm02.dds",
+      "template_id": 38136
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bitter_Harvest",
+    "from": "archive",
+    "timestamp": "20250905092812"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Who's in Charge? replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

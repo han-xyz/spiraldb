@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-179738",
+  "lang": "179738",
+  "giver": {
+    "persona": "TEST-CAM-NPC-001",
+    "zone": ""
+  },
+  "requires": [],
+  "min_level": 40,
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ArenaMaster",
+      "zone": "WizardCity/WC_Duel_Arena",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "TEST-CAM-NPC-001": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_Spellement_A_NPC.dds",
+      "template_id": 1634239
+    },
+    "WC-ArenaMaster": {
+      "portrait": "",
+      "template_id": 1451073
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Note_About_PvP",
+    "from": "archive",
+    "timestamp": "20251209124714"
+  },
+  "needs_review": [
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Abner K. Doodle",
+      "blocking": true
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Learn about PvP",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

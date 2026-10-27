@@ -1,0 +1,89 @@
+{
+  "id": "WC-Q-13CD1",
+  "lang": "13CD1",
+  "giver": {
+    "persona": "WC-RAV-NPC09",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Balance"
+    },
+    "WC-Q-13CD0"
+  ],
+  "min_level": 12,
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 220,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000016"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 81103
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sorcerer's_Apprentice",
+    "from": "archive",
+    "timestamp": "20231222112401"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Fire Crow",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Ice Colossus",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Storm Kraken",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

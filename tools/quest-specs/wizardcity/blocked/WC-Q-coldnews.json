@@ -1,0 +1,55 @@
+{
+  "id": "WC-Q-coldnews",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "GH-FORT-C03-003"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 630,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH-HUB-NPC01",
+      "zone": "Grizzleheim/GH_MainHub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "GH-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearWarrior_Boss_Black_NPC.dds",
+      "template_id": 164449
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cold_News",
+    "from": "archive",
+    "timestamp": "20251219071826"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Cold News",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Bjorn Ironclaws: GH-HUB-NPC01 from ObjectData/GH",
+      "blocking": false
+    }
+  ]
+}

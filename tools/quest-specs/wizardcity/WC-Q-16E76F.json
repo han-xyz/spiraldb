@@ -1,0 +1,102 @@
+{
+  "id": "WC-Q-16E76F",
+  "lang": "16E76F",
+  "giver": {
+    "persona": "WC-ST04-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1627B9"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 60,
+    "gold": 8
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-BuriedAthame.AdjRef",
+        "WC-BuriedBook.AdjRef",
+        "WC-BuriedDeck.AdjRef"
+      ],
+      "count": 3,
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "descriptor": "WizItems_00002066",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Storm02.dds",
+      "template_id": 38136
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sniff_'em_Out",
+    "from": "archive",
+    "timestamp": "20231121192931"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

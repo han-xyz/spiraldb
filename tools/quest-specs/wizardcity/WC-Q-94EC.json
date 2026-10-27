@@ -1,0 +1,80 @@
+{
+  "id": "WC-Q-94EC",
+  "lang": "94EC",
+  "giver": {
+    "persona": "WC-ST01-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [
+    "WC-Q-1625C0"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 35,
+    "gold": 5
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Sprite-Dark-L01.AdjRef",
+        "WC-UW-Sprite-Dark-L01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000021",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Life02.dds",
+      "template_id": 38121
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fairies_Wear_Boots_(Retired)",
+    "from": "archive",
+    "timestamp": "20231121221941"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

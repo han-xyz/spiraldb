@@ -1,0 +1,54 @@
+{
+  "id": "WC-Q-ratemystitch",
+  "giver": {
+    "persona": "TEST-CAM-NPC-001",
+    "zone": ""
+  },
+  "requires": [],
+  "min_level": 12,
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-Peacock-NPC01",
+      "zone": "WizardCity/WC_Shop_Area",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "TEST-CAM-NPC-001": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_Spellement_A_NPC.dds",
+      "template_id": 1634239
+    },
+    "WC-Peacock-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Peacock_Fashion_A_NPC.dds",
+      "template_id": 1560179
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Rate_My_Stitch!",
+    "from": "archive",
+    "timestamp": "20240507041502"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Rate My Stitch!",
+      "blocking": true
+    },
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Abner K. Doodle",
+      "blocking": true
+    }
+  ]
+}

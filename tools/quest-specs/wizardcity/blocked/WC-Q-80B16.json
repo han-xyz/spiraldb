@@ -1,0 +1,152 @@
+{
+  "id": "WC-Q-80B16",
+  "lang": "80B16",
+  "giver": {
+    "persona": "WC-NIS-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolDeath"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    },
+    "WC-Q-80B11"
+  ],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 11000,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-LIB-NPC01",
+      "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_Library_Interior",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_Library_Interior"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Hoarder-R11.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001137",
+      "zone": "WizardCity/WC_NightSide",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath",
+      "loc": "ZoneLocName_10825"
+    }
+  ],
+  "personas": {
+    "DS-LIB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_base_1_Ghost_NPC.dds",
+      "template_id": 126293
+    },
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Book_Collectors",
+    "from": "archive",
+    "timestamp": "20240121110021"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Milos Bookwyrm: DS-LIB-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "The Hoarder's Tower, Plaza of Conquests",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "The Hoarder: ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use Katzenstein's Journal",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

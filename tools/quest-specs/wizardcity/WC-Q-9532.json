@@ -1,0 +1,86 @@
+{
+  "id": "WC-Q-9532",
+  "lang": "9532",
+  "giver": {
+    "persona": "WC-ST02-NPC04",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [
+    "WC-Q-9531"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 185,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "FireElf-Red-L02.AdjRef",
+        "FireElf-Yellow-L02.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000004",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000021"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST02-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeepF_D_NPC.dds",
+      "template_id": 38228
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hats_Off...",
+    "from": "archive",
+    "timestamp": "20250827121011"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Fire Elf Hats on Firecat Alley",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

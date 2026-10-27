@@ -1,0 +1,72 @@
+{
+  "id": "WC-Q-94ED",
+  "lang": "94ED",
+  "giver": {
+    "persona": "WC-ST01-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [
+    "WC-Q-94EC"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 45,
+    "gold": 5
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST01-NPC02",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze",
+      "loc": "ZoneLocName_114426"
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Life02.dds",
+      "template_id": 38121
+    },
+    "WC-ST01-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_B_NPC.dds",
+      "template_id": 38123
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:They're_Not_Bad..._(Retired)",
+    "from": "archive",
+    "timestamp": "20250902083748"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

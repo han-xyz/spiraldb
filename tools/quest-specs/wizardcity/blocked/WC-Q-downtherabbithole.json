@@ -1,0 +1,133 @@
+{
+  "id": "WC-Q-downtherabbithole",
+  "auto_start": true,
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 1875,
+    "gold": 210
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-NightWarrens-NPC01",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_HauntedCave_T2",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-Dynamite.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "descriptor": "WizardGameObjects_00000642",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-NightWarrens-NPC01",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_HauntedCave_T2",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-Rubble.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-NightWarrens-NPC02",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_HauntedCave_T3",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-NightWarrens-NPC02",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_HauntedCave_T3",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-NightWarrens-NPC03",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_HauntedCave_T3",
+      "loc": "ZoneLocName_818312"
+    }
+  ],
+  "personas": {
+    "WC-NightWarrens-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gardening_Mole4.dds",
+      "template_id": 1202045
+    },
+    "WC-NightWarrens-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gardening_Mole3.dds",
+      "template_id": 1202046
+    },
+    "WC-NightWarrens-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rabbit_Vampire_A_MOB.dds",
+      "template_id": 1202053
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Down_the_Rabbit_Hole",
+    "from": "archive",
+    "timestamp": "20240121094140"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Down the Rabbit Hole",
+      "blocking": true
+    },
+    {
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Something Rotten in Nightside",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Blood Bats",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Blood Bats",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Rubble",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Veggie Revanants",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Veggie Revanants",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Nosferabbit",
+      "blocking": true
+    }
+  ]
+}

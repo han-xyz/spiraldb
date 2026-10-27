@@ -1,0 +1,60 @@
+{
+  "id": "WC-DEATH-C08-001",
+  "giver": {
+    "persona": "WC-NIS-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolDeath"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    },
+    "WC-Q-213EB",
+    "GH-FJORD-C05-001"
+  ],
+  "min_level": 58,
+  "mainline": false,
+  "level": 58,
+  "reward": {
+    "xp": 1850,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH2-AUSTRI-NPC07",
+      "zone": "Grizzleheim/GH_HFjord/GH_Austrilund",
+      "loc": "ZoneLocName_10825"
+    }
+  ],
+  "personas": {
+    "GH2-AUSTRI-NPC07": {
+      "portrait": "GUI/NpcPortraits/Quest_Garm.dds",
+      "template_id": 409110
+    },
+    "WC-NIS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_Dworgyn_NPC.dds",
+      "template_id": 82209
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Century_Egg",
+    "from": "archive",
+    "timestamp": "20260707051733"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Century Egg",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Garm Moonstalker: GH2-AUSTRI-NPC07 from ObjectData/GH",
+      "blocking": false
+    }
+  ]
+}

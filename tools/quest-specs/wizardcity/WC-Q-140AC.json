@@ -1,0 +1,83 @@
+{
+  "id": "WC-Q-140AC",
+  "lang": "140AC",
+  "giver": {
+    "persona": "WC-ST04-NPC03",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 150,
+    "gold": 18
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Banshee-Red-L12.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000331",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "descriptor": "WizQst140AC_00000008",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_E_NPC.dds",
+      "template_id": 38145
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wrap_it_Up",
+    "from": "archive",
+    "timestamp": "20250907153609"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

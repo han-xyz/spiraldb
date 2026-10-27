@@ -1,0 +1,74 @@
+{
+  "id": "WC-Q-9527",
+  "lang": "9527",
+  "giver": {
+    "persona": "WC-ST06-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Colossus"
+  },
+  "requires": [
+    "WC-Q-9526"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 220,
+    "gold": 28
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Gobbler-Green-Skinny-L02.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000011",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    }
+  ],
+  "personas": {
+    "WC-ST06-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Ice02.dds",
+      "template_id": 38170
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Doctor's_Orders",
+    "from": "archive",
+    "timestamp": "20250829053738"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

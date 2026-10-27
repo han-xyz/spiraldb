@@ -1,0 +1,133 @@
+{
+  "id": "WC-Q-AC5A",
+  "lang": "AC5A",
+  "giver": {
+    "persona": "WC-HUB-Explorer",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [
+    "WC-Q-1625D7"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 355,
+    "gold": 76
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000062"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000064"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000065"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000066"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000067"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000068"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000069"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_10879"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-HUB-Explorer": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 44124
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Find_the_Smiths",
+    "from": "archive",
+    "timestamp": "20241225020040"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint",
+      "value": "The Commons Smith",
+      "blocking": true
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "The Shopping District Smith",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "WC-Q-6F592",
+  "lang": "6F592",
+  "giver": {
+    "persona": "WC-TU-NPC08",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_Storm"
+  },
+  "requires": [
+    "WC-Q-6F590"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 415,
+    "gold": 35
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-TU-BatteryPieces.AdjRef"
+      ],
+      "count": 5,
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "descriptor": "WizardGameObjects_00000433",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_Storm",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "WC-TU-Eel-1-R2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000931",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_Storm",
+      "loc": "ZoneLocName_358201",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sea_Monster_Lab_Coat_NPC.dds",
+      "template_id": 456081
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:For_Science!",
+    "from": "archive",
+    "timestamp": "20250830125014"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Lightning Seeds",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

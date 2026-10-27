@@ -1,0 +1,171 @@
+{
+  "id": "WC-Q-173599",
+  "lang": "173599",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC04",
+    "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 230,
+    "gold": 23
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Ghoul-Purple-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000002",
+      "zone": "WizardCity/WC_Streets/WC_DarkCave",
+      "descriptor": "WizQst173599_00000008",
+      "loc": "ZoneLocName_406747"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Banshee-WCBoss-L04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000007",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2",
+      "loc": "ZoneLocName_114526",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_GrettaDK_A_NPC.dds",
+      "template_id": 1521048
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:100%_Not_That_Witch",
+    "from": "archive",
+    "timestamp": "20250913071702"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Prima Donna's Tower",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Which Hunt? replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

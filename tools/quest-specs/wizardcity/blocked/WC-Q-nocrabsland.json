@@ -1,0 +1,86 @@
+{
+  "id": "WC-Q-nocrabsland",
+  "giver": {
+    "persona": "WC-TU-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+  },
+  "requires": [
+    "WC-Q-1ED91"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 250,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-UNDER-LooseShells.AdjRef"
+      ],
+      "count": 6,
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "descriptor": "WizardGameObjects_00000430",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-TU-Scarefish.AdjRef"
+      ],
+      "count": 2,
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crab_Soldier_B_NPC.dds",
+      "template_id": 459073
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:No_Crab's_Land",
+    "from": "archive",
+    "timestamp": "20250904014752"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "No Crab's Land",
+      "blocking": true
+    },
+    {
+      "field": "goal.usage",
+      "value": "Place the Fortification Wall",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Second Wall",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "The Second Wall",
+      "blocking": false
+    }
+  ]
+}

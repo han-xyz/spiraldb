@@ -1,0 +1,94 @@
+{
+  "id": "WC-Q-1731A9",
+  "lang": "1731A9",
+  "giver": {
+    "persona": "WC-ST02-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [
+    "WC-Q-1625D8"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 15,
+    "gold": 13
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST03-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    }
+  ],
+  "personas": {
+    "WC-ST02-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_G.dds",
+      "template_id": 38218
+    },
+    "WC-ST03-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Myth02.dds",
+      "template_id": 38249
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Good_Day_to_Cyclops",
+    "from": "archive",
+    "timestamp": "20250918150137"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Secret Strife of Pets replaced by WC-Q-1625D8",
+      "blocking": false
+    }
+  ]
+}

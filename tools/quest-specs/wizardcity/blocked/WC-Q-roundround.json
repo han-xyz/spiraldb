@@ -1,0 +1,126 @@
+{
+  "id": "WC-Q-roundround",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [],
+  "min_level": 6,
+  "mainline": false,
+  "level": 6,
+  "reward": {
+    "xp": 330,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-ResonatingHarmonogram.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizardGameObjects_00000300",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC_ScryingPool.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizardGameObjects_00000299",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ShopArea-DyeShop",
+      "zone": "WizardCity/Interiors/WC_ShopDye",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Banshee-Red-L12.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000331",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ShopArea-DyeShop",
+      "zone": "WizardCity/Interiors/WC_ShopDye",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    },
+    "WC-ShopArea-DyeShop": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Peasant.dds",
+      "template_id": 87906
+    },
+    "WC-TU-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_Hermit_01.dds",
+      "template_id": 358233
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Round_&_Round",
+    "from": "archive",
+    "timestamp": "20231121214933"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Round & Round",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Moon River Pearl in Triton Avenue",
+      "blocking": false
+    }
+  ]
+}

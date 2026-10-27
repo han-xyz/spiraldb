@@ -1,0 +1,59 @@
+{
+  "id": "WC-Q-ariverrunsthroughit",
+  "giver": {
+    "persona": "WC-PARTY-NPC15",
+    "zone": "WizardCity/Interiors/WC_PartyRoom"
+  },
+  "requires": [
+    "WC-Q-1731AF"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 125,
+    "gold": 15,
+    "spells": [
+      "Lesser Frost Lure"
+    ]
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-PARTY-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pelican_Fisherman_A_NPC.dds",
+      "template_id": 1452011
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_River_Runs_Through_It",
+    "from": "archive",
+    "timestamp": "20251219104009"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A River Runs Through It",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Frost Dekoi",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Icecuda",
+      "blocking": true
+    }
+  ]
+}

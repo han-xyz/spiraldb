@@ -1,0 +1,130 @@
+{
+  "id": "WC-Q-16B49F",
+  "lang": "16B49F",
+  "giver": {
+    "persona": "WC-HUB-NPC10",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 15,
+  "reward": {
+    "xp": 250,
+    "gold": 460
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC-StandIn-DruidGhost-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003475",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC10": {
+      "portrait": "GUI/NpcPortraits/Dog_FormanF_A_NPC.dds",
+      "template_id": 1444025
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dog_Gone_Doug",
+    "from": "archive",
+    "timestamp": "20260627045817"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Olde Town Drains",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 15
+}

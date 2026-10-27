@@ -1,0 +1,101 @@
+{
+  "id": "WC-Q-7191C",
+  "lang": "7191C",
+  "giver": {
+    "persona": "WC-GTW-Registrar",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "WC-Q-7191B"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 115,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC01",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Mrs_Dowager.dds",
+      "template_id": 465133
+    },
+    "WC-GTW-Registrar": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Registrar.dds",
+      "template_id": 39088
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Exchange_Student",
+    "from": "archive",
+    "timestamp": "20250813073933"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Mrs. Dowager: PA-HUB-NPC01 from ObjectData/Wysteria",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

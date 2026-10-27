@@ -1,0 +1,137 @@
+{
+  "id": "WC-Q-173656",
+  "lang": "173656",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC02",
+    "zone": "WizardCity/WC_Streets/WC_Firecat"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 195,
+    "gold": 32
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Banshee-Blue-WCBoss-L18.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000192",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Banshee-Blue-WCBoss-L18.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000192",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_Lizzo_A_NPC.dds",
+      "template_id": 1521043
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Problematic_Casting",
+    "from": "archive",
+    "timestamp": "20231121194706"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Cure replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

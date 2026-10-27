@@ -1,0 +1,104 @@
+{
+  "id": "WC-Q-2163B",
+  "lang": "2163B",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    },
+    "WC-Q-13D38"
+  ],
+  "min_level": 48,
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 1320,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-FIRECAT-NPC06.AdjRef",
+        "WC-ST05-NPC04.AdjRef"
+      ],
+      "count": 4,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WC-NPCs_00000017",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shard_Trek",
+    "from": "archive",
+    "timestamp": "20260717201039"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Biti Nirini (in Biti's Chamber)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Stray Sunbird (in Chelsea Court)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Ember Everburn (in the Temple of Fire)",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-2163E",
+  "lang": "2163E",
+  "giver": {
+    "persona": "WC-Shop-Recipe-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [
+    "WC-Q-2163D"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 164
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    }
+  ],
+  "personas": {
+    "WC-Shop-Recipe-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Wraith.dds",
+      "template_id": 136764
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Razor's_Edge",
+    "from": "archive",
+    "timestamp": "20260728191348"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Daggers of Absolution",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

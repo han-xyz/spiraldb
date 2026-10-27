@@ -1,0 +1,87 @@
+{
+  "id": "WC-Q-1735C1",
+  "lang": "1735C1",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC03",
+    "zone": "WizardCity/WC_Streets/WC_Firecat"
+  },
+  "requires": [
+    "WC-Q-1735C0"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 195,
+    "gold": 32
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Skeleton-Silver-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000022",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "descriptor": "WizQst1735C1_00000006",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_F_NPC.dds",
+      "template_id": 1521046
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cold_Hard_Steel",
+    "from": "archive",
+    "timestamp": "20231121194439"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

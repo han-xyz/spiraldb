@@ -1,0 +1,380 @@
+{
+  "id": "WC-Q-C9311",
+  "lang": "C9311",
+  "auto_start": true,
+  "giver": {
+    "persona": "AQ-HUB-NPC01",
+    "zone": "Aquila/AQ_Z00_Hub"
+  },
+  "requires": [
+    "WC-Q-B4F5C"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 8670,
+    "gold": 695
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AQ-OLYM-NPC01-B",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_AQ-Immortal-Apollo_Minion_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001510",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-OLYM-NPC01-B",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Centaur-Artemis.AdjRef",
+        "Adv_AQ-Centaur-Artemis.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001512",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-OLYM-NPC01-B",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Eagle-Praetorian.AdjRef",
+        "Adv_AQ-Eagle-Praetorian.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001513",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-OLYM-NPC01-B",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-OLYM-NPC02",
+      "zone": "Aquila/AQ_Z01_MountOlympus"
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-OLYM-NPC01-B",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Cyclops-Guard.AdjRef",
+        "Adv_AQ-Cyclops-Guard.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001514",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-OLYM-NPC03",
+      "zone": "Aquila/Interiors/AQ_Z01_HephaestusForge"
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-OLYM-NPC03",
+      "zone": "Aquila/Interiors/AQ_Z01_HephaestusForge"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/Interiors/AQ_Z01_HephaestusForge"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Immortal-Ares.AdjRef",
+        "Adv_AQ-Immortal-Ares.AdjRef",
+        "Heroic_AQ_Ares.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001515",
+      "zone": ""
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/Interiors/AQ_Z01_HephaestusForge"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Immortal-Zeus-A.AdjRef",
+        "AQ-Immortal-Zeus-B.AdjRef",
+        "Adv_AQ-Immortal-Zeus-A.AdjRef",
+        "Adv_AQ-Immortal-Zeus-B.AdjRef",
+        "Heroic_AQ_Zeus.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001516",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "AQ-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Satyr_Druid_A_NPC.dds",
+      "template_id": 741209
+    },
+    "AQ-OLYM-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gryphon_Owl_A_NPC.dds",
+      "template_id": 1687095
+    },
+    "AQ-OLYM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_DruidF_D_NPC.dds",
+      "template_id": 824083
+    },
+    "AQ-OLYM-NPC03": {
+      "portrait": "GUI/NpcPortraits/Gryphon_Eagle_D.dds",
+      "template_id": 824084
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wisdom_and_Grace",
+    "from": "archive",
+    "timestamp": "20250828154056"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Silenus: AQ-HUB-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Athena Battle Sight: AQ-OLYM-NPC01-B from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Sun Chamber",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Apollo Bright One: ObjectData/NV",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Legion Token",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Athena Battle Sight: AQ-OLYM-NPC01-B from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Moon Chamber",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Crescent Moon Centaur: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Legion Token",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Athena Battle Sight: AQ-OLYM-NPC01-B from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Sky Balcony",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Praetorian Guard: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Legion Token",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Athena Battle Sight: AQ-OLYM-NPC01-B from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Eris Golden Apple: AQ-OLYM-NPC02 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "Solve Puzzle Solution: Choose the Carthaginian Elephant to defeat the Minotaur Warrior Choose the Minotaur Warrior to defeat the Ophidian Archer Choose the Ophidian Archer to defeat the Carthaginian Elephant Warrior",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Athena Battle Sight: AQ-OLYM-NPC01-B from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Hall of the Watchful Eye",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Elite Cyclops Guard: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hephaestus Coppersmith: AQ-OLYM-NPC03 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Bronze Eagles See Quest Guide Tab for Solution",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hephaestus Coppersmith: AQ-OLYM-NPC03 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Hall of Battle",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Ares Savage Spear: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Throne Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Zeus Sky Father: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

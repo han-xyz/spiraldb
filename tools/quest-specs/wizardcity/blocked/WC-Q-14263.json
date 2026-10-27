@@ -1,0 +1,134 @@
+{
+  "id": "WC-Q-14263",
+  "lang": "14263",
+  "giver": {
+    "persona": "WC-HUB-Explorer",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [
+    "WC-Q-14262"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 75,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-BFF-Commons",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_DarkCave",
+      "loc": "ZoneLocName_406747"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-BFF-Commons",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193",
+      "completion": [
+        {
+          "speaker": "WC-BFF-Commons",
+          "line": "00000015"
+        },
+        {
+          "speaker": "WC-BFF-Commons",
+          "line": "00000020"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-BFF-Commons": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Death3.dds",
+      "template_id": 82526
+    },
+    "WC-HUB-Explorer": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 44124
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Penny_Saved",
+    "from": "archive",
+    "timestamp": "20231121220417"
+  },
+  "needs_review": [
+    {
+      "field": "goal.usage",
+      "value": "Read Penny's Spellbook",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

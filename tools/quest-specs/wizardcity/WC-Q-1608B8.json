@@ -1,0 +1,101 @@
+{
+  "id": "WC-Q-1608B8",
+  "lang": "1608B8",
+  "giver": {
+    "persona": "WC-HUB-NPC10-B",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_10879",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC10-B": {
+      "portrait": "GUI/NpcPortraits/Dog_FormanF_A_NPC.dds",
+      "template_id": 1488013
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Just_Looking",
+    "from": "archive",
+    "timestamp": "20231121220045"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Range Pole in Location 1",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Range Pole in Location 2",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Range Pole in Location 3",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Range Pole in Location 4",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

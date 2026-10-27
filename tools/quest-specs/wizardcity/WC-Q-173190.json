@@ -1,0 +1,168 @@
+{
+  "id": "WC-Q-173190",
+  "lang": "173190",
+  "giver": {
+    "persona": "WC-ST03-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Cyclops"
+  },
+  "requires": [
+    "WC-Q-17318F"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 210,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Cyclops-Blue-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000008",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_DarkCave",
+      "loc": "ZoneLocName_406747"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Ghoul-Purple-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000002",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "descriptor": "WizQst173190_00000019",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST03-KID3",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST03-KID2",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC_DarkCave_Bubble1.AdjRef",
+        "WC_DarkCave_Bubble2.AdjRef",
+        "WC_DarkCave_Bubble3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "descriptor": "WizardGameObjects_00000935",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST03-KID01",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041",
+      "completion": [
+        {
+          "speaker": "WC-ST03-KID01",
+          "line": "00000006"
+        },
+        {
+          "speaker": "WC-ST03-KID01",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST03-KID01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Storm.dds",
+      "template_id": 81274
+    },
+    "WC-ST03-KID2": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Ice.dds",
+      "template_id": 81275
+    },
+    "WC-ST03-KID3": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Balance.dds",
+      "template_id": 81276
+    },
+    "WC-ST03-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Myth02.dds",
+      "template_id": 38249
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Cave_Escape",
+    "from": "archive",
+    "timestamp": "20240121090200"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

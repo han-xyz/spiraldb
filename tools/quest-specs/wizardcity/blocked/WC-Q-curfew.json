@@ -1,0 +1,66 @@
+{
+  "id": "WC-Q-curfew",
+  "giver": {
+    "persona": "WC-TU-NPC02",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_C1"
+  },
+  "requires": [
+    "WC-Q-5775A"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 315,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC03",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_T2",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC-CrabSoldier-Castle-R2-1.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000783",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_C1",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC02": {
+      "portrait": "GUI/NpcPortraits/Crab_Cromshell_NPC.dds",
+      "template_id": 358236
+    },
+    "WC-TU-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crab_Soldier_D_NPC.dds",
+      "template_id": 358238
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Curfew!",
+    "from": "archive",
+    "timestamp": "20250828193310"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Curfew!",
+      "blocking": true
+    }
+  ]
+}

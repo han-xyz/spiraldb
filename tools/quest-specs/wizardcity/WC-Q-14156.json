@@ -1,0 +1,96 @@
+{
+  "id": "WC-Q-14156",
+  "lang": "14156",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    }
+  ],
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 780,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Heroic_MS_PlagueOni.AdjRef",
+        "Oni-Plague-MSBoss-L54.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000247",
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizQst14156_00000015",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cleaning_Up_a_Mess",
+    "from": "archive",
+    "timestamp": "20240121102957"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Taking from the Pool",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Plague Oni: ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Taking from the Pool replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 38
+}

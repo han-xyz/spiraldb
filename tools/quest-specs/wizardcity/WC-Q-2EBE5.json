@@ -1,0 +1,149 @@
+{
+  "id": "WC-Q-2EBE5",
+  "lang": "2EBE5",
+  "giver": {
+    "persona": "WC-ST02-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 50,
+  "reward": {
+    "xp": 285,
+    "gold": 128
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-SHP-NPC01",
+      "zone": "WizardCity/WC_Shop_Area",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST06-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST06-NPC04",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST06-NPC06_Culpepper",
+      "zone": "WizardCity/Gauntlets/WC_Gauntlet_01/Room11",
+      "loc": "ZoneLocName_245504"
+    }
+  ],
+  "personas": {
+    "WC-SHP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_C.dds",
+      "template_id": 38220
+    },
+    "WC-ST02-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_G.dds",
+      "template_id": 38218
+    },
+    "WC-ST06-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Ice02.dds",
+      "template_id": 38170
+    },
+    "WC-ST06-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_A_NPC.dds",
+      "template_id": 38178
+    },
+    "WC-ST06-NPC06_Culpepper": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Guard05.dds",
+      "template_id": 191462
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lost_Lieutenant",
+    "from": "archive",
+    "timestamp": "20250829024451"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 50
+}

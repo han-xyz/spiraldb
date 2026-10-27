@@ -1,0 +1,108 @@
+{
+  "id": "WC-Q-5776A",
+  "lang": "5776A",
+  "giver": {
+    "persona": "WC-TU-NPC05",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_H1"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 220,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "WC-CrabSoldier-Grey-R1.AdjRef",
+        "WC-TU-CrabSoldier-3-R2.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000784",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "descriptor": "WizQst5776A_00000000",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_H1",
+      "loc": "ZoneLocName_358198",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Lobster_Cook_A_NPC.dds",
+      "template_id": 358243
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tea_For_One",
+    "from": "archive",
+    "timestamp": "20250829140043"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Way To His Heart",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Way To His Heart replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

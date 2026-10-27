@@ -1,0 +1,94 @@
+{
+  "id": "WC-Q-1625CA",
+  "lang": "1625CA",
+  "giver": {
+    "persona": "WC-ST01-NPC02",
+    "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze"
+  },
+  "requires": [
+    "WC-Q-94ED"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 35,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Sprite-Dark-L01.AdjRef",
+        "WC-UW-Sprite-Dark-L01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000021",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "descriptor": "WizQst1625CA_00000006",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze",
+      "loc": "ZoneLocName_114426",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_B_NPC.dds",
+      "template_id": 38123
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Finding_Out_Why_(Retired)",
+    "from": "archive",
+    "timestamp": "20231121222108"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

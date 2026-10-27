@@ -1,0 +1,83 @@
+{
+  "id": "WC-Q-trustinme",
+  "giver": {
+    "persona": "WC-TU-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 200,
+    "gold": 35
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC-CrabSoldier-Castle-R2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000782",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST04-NPC_SelenaGomez",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC_SelenaGomez": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Selena_Gomez.dds",
+      "template_id": 267159
+    },
+    "WC-TU-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_Hermit_01.dds",
+      "template_id": 358233
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Trust_in_Me",
+    "from": "archive",
+    "timestamp": "20250905042651"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Trust in Me",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Round & Round",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "White Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Selena Gomez",
+      "blocking": true
+    }
+  ]
+}

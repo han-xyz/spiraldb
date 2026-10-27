@@ -1,0 +1,73 @@
+{
+  "id": "WC-Q-140C0",
+  "lang": "140C0",
+  "auto_start": true,
+  "requires": [
+    "WC-Q-140BE"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 250,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_ST07_NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Sunken_City",
+      "loc": "ZoneLocName_454915"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Skeleton-Gold-WCBoss-L31.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000196",
+      "zone": "WizardCity/WC_Streets/WC_Sunken_City",
+      "descriptor": "WizQst140C0_00000007",
+      "loc": "ZoneLocName_454915"
+    }
+  ],
+  "personas": {
+    "WC_ST07_NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Death2.dds",
+      "template_id": 81085
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Under_Lock_And_Key",
+    "from": "archive",
+    "timestamp": "20240308084038"
+  },
+  "needs_review": [
+    {
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

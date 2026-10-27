@@ -1,0 +1,125 @@
+{
+  "id": "WC-Q-6F58D",
+  "lang": "6F58D",
+  "giver": {
+    "persona": "WC-TU-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+  },
+  "requires": [
+    "WC-Q-6F58C"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 750,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-UNDER-Glowfish.AdjRef"
+      ],
+      "count": 6,
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "descriptor": "Items_00005169",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC11",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren02",
+      "loc": "ZoneLocName_358201"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crab_Soldier_B_NPC.dds",
+      "template_id": 459073
+    },
+    "WC-TU-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_King_Rockstar_NPC.dds",
+      "template_id": 466075
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Light_Up_The_Dark",
+    "from": "archive",
+    "timestamp": "20250907232615"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Dark Passage",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Doorway to the Dark Passage",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Wailing Cavern",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

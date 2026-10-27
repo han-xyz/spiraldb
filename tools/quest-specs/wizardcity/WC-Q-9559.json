@@ -1,0 +1,315 @@
+{
+  "id": "WC-Q-9559",
+  "lang": "9559",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 25,
+    "gold": 0,
+    "spells": [
+      {
+        "spell": "Elemental Shield",
+        "school": "Balance"
+      },
+      {
+        "spell": "Death Trap",
+        "school": "Death"
+      },
+      {
+        "spell": "Fireblade",
+        "school": "Fire"
+      },
+      {
+        "spell": "Freeze",
+        "school": "Ice"
+      },
+      {
+        "spell": "Minor Blessing",
+        "school": "Life"
+      },
+      {
+        "spell": "Golem Minion",
+        "school": "Myth"
+      },
+      {
+        "spell": "Lightning Strike",
+        "school": "Storm"
+      }
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000129"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000130"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000131"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000132"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000133"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000134"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000135"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000136"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000137"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000138"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000139"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000140"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000141"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000142"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000143"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000144"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000145"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000146"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000147"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000148"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000149"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000150"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000151"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000152"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000153"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000154"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000155"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000156"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000157"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000158"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000159"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000160"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000162"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000163"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000164"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000176"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000177"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000178"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC12",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC11",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC06",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_409193",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC08",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC07",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC09",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC08-B",
+      "zone": "WizardCity/WC_Ravenwood_Lite",
+      "loc": "ZoneLocName_409193",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "WC-PARTY-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 1452001
+    },
+    "WC-PARTY-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 1452002
+    },
+    "WC-PARTY-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 1452003
+    },
+    "WC-PARTY-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 1452004
+    },
+    "WC-PARTY-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1452006
+    },
+    "WC-PARTY-NPC12": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 1452008
+    },
+    "WC-RAV-NPC08-B": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Malorn_Ashthorn.dds",
+      "template_id": 1452234
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Enrollment",
+    "from": "archive",
+    "timestamp": "20250825023719"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Rattlebones Report (Retired) replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

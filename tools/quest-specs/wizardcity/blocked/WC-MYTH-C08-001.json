@@ -1,0 +1,60 @@
+{
+  "id": "WC-MYTH-C08-001",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    {
+      "school": "Myth"
+    },
+    "WC-Q-213DF",
+    "GH-FJORD-C05-004"
+  ],
+  "min_level": 58,
+  "mainline": false,
+  "level": 58,
+  "reward": {
+    "xp": 75,
+    "gold": 1850
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH2-HFJORD-NPC04",
+      "zone": "Grizzleheim/GH_HFjord/GH_HFjord",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "GH2-HFJORD-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_GH_Urd_NPC.dds",
+      "template_id": 358102
+    },
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Frog_in_Your_Throat",
+    "from": "archive",
+    "timestamp": "20231222141416"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Frog in Your Throat",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Urd: GH2-HFjord-NPC04 from ObjectData/GH",
+      "blocking": false
+    }
+  ]
+}

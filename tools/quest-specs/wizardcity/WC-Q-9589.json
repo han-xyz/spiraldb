@@ -1,0 +1,85 @@
+{
+  "id": "WC-Q-9589",
+  "lang": "9589",
+  "giver": {
+    "persona": "WC-HUB-NPC06",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [
+    "WC-Q-13D91"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 20,
+    "gold": 5
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Golem-Wood-L01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000027",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "descriptor": "WizQst9589_00000006",
+      "loc": "ZoneLocName_291179"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_10879",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000020"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Fire02.dds",
+      "template_id": 38266
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Science_Fair",
+    "from": "archive",
+    "timestamp": "20231028105442"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

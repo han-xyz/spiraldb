@@ -1,0 +1,87 @@
+{
+  "id": "WC-Q-13CB6",
+  "lang": "13CB6",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC04",
+    "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 105,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST05-NPC05-OK",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H1",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC_Barrel.AdjRef"
+      ],
+      "count": 3,
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "descriptor": "WizardGameObjects_00000067",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST05-NPC05-OK",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H1",
+      "loc": "ZoneLocName_114526"
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_GrettaDK_A_NPC.dds",
+      "template_id": 1521048
+    },
+    "WC-ST05-NPC05-OK": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Fire03.dds",
+      "template_id": 81079
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Oil_Rush",
+    "from": "archive",
+    "timestamp": "20231121202100"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

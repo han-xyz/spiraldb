@@ -1,0 +1,87 @@
+{
+  "id": "WC-Q-72ECB",
+  "lang": "72ECB",
+  "giver": {
+    "persona": "WC-RAV-NPC06",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "WC-Q-72EC9"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 15,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Banshee-RedPageEvent.AdjRef"
+      ],
+      "count": 10,
+      "target": "WizardMobs_00001464",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Fire.dds",
+      "template_id": 38232
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stormy_Verse",
+    "from": "archive",
+    "timestamp": "20240104055006"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Spellwrit Screamers: ObjectData/PageEvent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

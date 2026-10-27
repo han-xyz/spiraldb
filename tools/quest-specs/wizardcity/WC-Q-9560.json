@@ -1,0 +1,95 @@
+{
+  "id": "WC-Q-9560",
+  "lang": "9560",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "WC-Q-955E"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 275,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Heroic_WC_Nightshade.AdjRef",
+        "Heroic_WC_Nightshade_100.AdjRef",
+        "Wraith-WCBoss-L05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000006",
+      "zone": "",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_409193",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000046"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Dark_of_Nightshade",
+    "from": "archive",
+    "timestamp": "20231121225553"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

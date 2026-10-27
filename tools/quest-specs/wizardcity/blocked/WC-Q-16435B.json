@@ -1,0 +1,316 @@
+{
+  "id": "WC-Q-16435B",
+  "lang": "16435B",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "WC-Q-16435A"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 591590,
+    "gold": 4050,
+    "spells": [
+      {
+        "spell": "Scion of Balance",
+        "school": "Balance"
+      },
+      {
+        "spell": "Scion of Death",
+        "school": "Death"
+      },
+      {
+        "spell": "Scion of Fire",
+        "school": "Fire"
+      },
+      {
+        "spell": "Scion of Ice",
+        "school": "Ice"
+      },
+      {
+        "spell": "Scion of Life",
+        "school": "Life"
+      },
+      {
+        "spell": "Scion of Myth",
+        "school": "Myth"
+      },
+      {
+        "spell": "Scion of Storm",
+        "school": "Storm"
+      }
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000054"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000055"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000056"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000058"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000059"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000069"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000071"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000072"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000075"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000077"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000080"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000081"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000082"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000084"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000063"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC07",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_GiantTree_EvilRoots_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003071",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC16",
+      "zone": "WizardCity/Interiors/WC_AltarChamber",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/Interiors/WC_RootSystem",
+      "loc": "ZoneLocName_1459052"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Spore_Evil_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003067",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-DiseasedRoots-01-Collision.AdjRef",
+        "WC-DiseasedRoots-01.AdjRef",
+        "WC-DiseasedRoots-02-Collision.AdjRef",
+        "WC-DiseasedRoots-02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizQst16435B_00000066",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Spore_Evil_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003067",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-DiseasedRoots-01-Collision.AdjRef",
+        "WC-DiseasedRoots-01.AdjRef",
+        "WC-DiseasedRoots-02-Collision.AdjRef",
+        "WC-DiseasedRoots-02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizQst16435B_00000066",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC_StandIn_Pestilence.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003073",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC07",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000062"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000079"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Bartleby.dds",
+      "template_id": 38230
+    },
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    },
+    "WC-RAV-NPC16": {
+      "portrait": "GUI/NpcPortraits/GiantTree_EvilRoots_B_NPC.dds",
+      "template_id": 1459036
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Finally_Growing_Into_It",
+    "from": "archive",
+    "timestamp": "20240118180020"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Root Guardian: ObjectData/EM",
+      "blocking": false
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Complete the Arboreal Ritual",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Rot Spore: ObjectData/EM",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Rot Spore: ObjectData/EM",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search for the Pestilence",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Springs Water",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

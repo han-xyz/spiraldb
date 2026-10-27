@@ -1,0 +1,262 @@
+{
+  "id": "WC-Q-16435A",
+  "lang": "16435A",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 444689,
+    "gold": 3375
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000054"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000055"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000056"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000058"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000059"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000060"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_RVW_StormTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FrostTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FireTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-RVW_MythTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_LifeTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-RVW-DeathTree",
+      "zone": "WizardCity/WC_NightSide",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "KT-BAL-NPC01",
+      "zone": "Krokotopia/KT_Hub_Sphinx",
+      "loc": "ZoneLocName_9005",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "KT-BAL-NPC01": {
+      "portrait": "",
+      "template_id": 39388
+    },
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    },
+    "WC-RVW-DeathTree": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tree_Mortis_A_NPC.dds",
+      "template_id": 39390
+    },
+    "WC-RVW_MythTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ivan.dds",
+      "template_id": 38275
+    },
+    "WC_RVW_FireTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Bernie.dds",
+      "template_id": 44207
+    },
+    "WC_RVW_FrostTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kelvin.dds",
+      "template_id": 82294
+    },
+    "WC_RVW_LifeTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Blossom.dds",
+      "template_id": 39158
+    },
+    "WC_RVW_StormTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Torrence.dds",
+      "template_id": 39178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:With_All_the_Dying_Trees_I_Scream",
+    "from": "archive",
+    "timestamp": "20231126090438"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Of Note",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Niles: KT-BAL-NPC01 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Of Note replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

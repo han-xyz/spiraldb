@@ -1,0 +1,55 @@
+{
+  "id": "WC-Q-advancedcombat",
+  "giver": {
+    "persona": "WC-ST01-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [
+    "WC-Q-1625CA"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 150,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-Tutorials_Interact_Object.AdjRef",
+        "TutorialStorm.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Diego_Duelmaster.dds",
+      "template_id": 38226
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Advanced_Combat",
+    "from": "archive",
+    "timestamp": "20260701033127"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Advanced Combat",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Tutorial",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "WC-Q-1627B2",
+  "lang": "1627B2",
+  "giver": {
+    "persona": "WC-TRITON-NPC02-B",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1627AE"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 240,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST04-NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "WC-Eel-Blue-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003260",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "descriptor": "WizQst1627B2_00000011",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST04-NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "completion": [
+        {
+          "speaker": "WC-ST04-NPC02",
+          "line": "00000012"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Death02.dds",
+      "template_id": 38139
+    },
+    "WC-TRITON-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Storm02.dds",
+      "template_id": 1451951
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Shadow_of_Death_Magic",
+    "from": "archive",
+    "timestamp": "20231121193637"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

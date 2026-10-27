@@ -1,0 +1,77 @@
+{
+  "id": "WC-Q-1411C",
+  "lang": "1411C",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "WC-Q-1411B"
+  ],
+  "mainline": false,
+  "level": 18,
+  "reward": {
+    "xp": 75,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KT-PYM1-NPC01",
+      "zone": "Krokotopia/KT_Pyramid/KT_Hall",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "KT-PYM1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_Excavator_C_NPC.dds",
+      "template_id": 39234
+    },
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Gem_in_the_Rough",
+    "from": "archive",
+    "timestamp": "20240121101315"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Dr. Gordon Flemming: KT-PYM1-NPC01 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 18
+}

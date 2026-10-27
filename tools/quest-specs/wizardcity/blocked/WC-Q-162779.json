@@ -1,0 +1,194 @@
+{
+  "id": "WC-Q-162779",
+  "lang": "162779",
+  "giver": {
+    "persona": "WC-CATA-NPC17",
+    "zone": "WizardCity/WC_Streets/WC_Catacombs"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 1840
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-KnowledgeCrystal_Blocker.AdjRef",
+        "WC-KnowledgeCrystal_Blocker_05.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "descriptor": "WizItems_00002065",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-CATA-NPC17": {
+      "portrait": "GUI/NpcPortraits/Druid_Wizard_A_NPC.dds",
+      "template_id": 1451899
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Buried_Things",
+    "from": "archive",
+    "timestamp": "20240215064513"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Veni Vidi Viggor",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Fractal Treeminder",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Tomb of the Living",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Galen the Traitor",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

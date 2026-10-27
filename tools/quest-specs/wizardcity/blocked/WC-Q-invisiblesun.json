@@ -1,0 +1,107 @@
+{
+  "id": "WC-Q-invisiblesun",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    }
+  ],
+  "min_level": 80,
+  "mainline": false,
+  "level": 80,
+  "reward": {
+    "xp": 46385,
+    "gold": 610,
+    "spells": [
+      "Sun Serpent"
+    ]
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-ZOCOLO-NPC01",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z00_Zocalo"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Raptor-Undead-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001392",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-ZOCOLO-NPC01",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
+      "template_id": 643252
+    },
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Invisible_Sun",
+    "from": "archive",
+    "timestamp": "20241126072700"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Invisible Sun",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Sunny Fundays",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Pacal Redmask: AZ-ZOCOLO-NPC01 from ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Azure Chamber, Cenote",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Tolkemec: ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Pacal Redmask: AZ-ZOCOLO-NPC01 from ObjectData/AZ",
+      "blocking": false
+    }
+  ]
+}

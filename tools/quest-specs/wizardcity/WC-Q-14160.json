@@ -1,0 +1,84 @@
+{
+  "id": "WC-Q-14160",
+  "lang": "14160",
+  "giver": {
+    "persona": "WC-HUB-NPC06",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [
+    "WC-Q-1415F"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 960,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "FireElf-Red-L02.AdjRef",
+        "FireElf-Yellow-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000004",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC03",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_10879"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-HUB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Fire02.dds",
+      "template_id": 38266
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Book_Crooks",
+    "from": "archive",
+    "timestamp": "20231028104708"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Library Book in Firecat Alley",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "WC-Q-allhailazoth",
+  "giver": {
+    "persona": "TEST-CAM-NPC-001",
+    "zone": ""
+  },
+  "requires": [],
+  "min_level": 30,
+  "mainline": false,
+  "level": 30,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {
+    "TEST-CAM-NPC-001": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_Spellement_A_NPC.dds",
+      "template_id": 1634239
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:All_Hail_Azoth",
+    "from": "archive",
+    "timestamp": "20251210020146"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "All Hail Azoth",
+      "blocking": true
+    },
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Abner K. Doodle",
+      "blocking": true
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Learn about Azoth",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Learn about Azoth",
+        "(completes automatically upon accepting)"
+      ],
+      "blocking": true
+    }
+  ]
+}

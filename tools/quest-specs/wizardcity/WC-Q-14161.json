@@ -1,0 +1,69 @@
+{
+  "id": "WC-Q-14161",
+  "lang": "14161",
+  "giver": {
+    "persona": "WC-HUB-NPC03",
+    "zone": "WizardCity/Interiors/WC_Library"
+  },
+  "requires": [
+    "WC-Q-14160"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 1200,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MB-HUB-NPC06",
+      "zone": "Marleybone/MB_Hub",
+      "loc": "ZoneLocName_307759"
+    }
+  ],
+  "personas": {
+    "MB-HUB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Beefeater_NPC.dds",
+      "template_id": 39686
+    },
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Another_Delivery",
+    "from": "archive",
+    "timestamp": "20231122040140"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Henry Wellingbrook: MB-HUB-NPC06 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

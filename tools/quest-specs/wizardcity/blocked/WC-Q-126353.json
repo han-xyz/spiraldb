@@ -1,0 +1,122 @@
+{
+  "id": "WC-Q-126353",
+  "lang": "126353",
+  "giver": {
+    "persona": "ZF-HUB-NPC01",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [
+    "WC-Q-126352"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 17370,
+    "gold": 210
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR_DiamondMythForge.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00001874",
+      "loc": "ZoneLocName_1205055"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC01",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_1205055",
+      "completion": [
+        {
+          "speaker": "WC-HUB-NPC01",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Diamond_Forge",
+    "from": "archive",
+    "timestamp": "20240118174705"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Inyanga Whitestripes: ZF-HUB-NPC01 from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Inyanga Whitestripes is placed in Zafaria/ZF_Z00_Hub",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "WC-Q-6F596",
+  "lang": "6F596",
+  "giver": {
+    "persona": "WC-TU-NPC12",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+  },
+  "requires": [
+    "WC-Q-6F594"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 210,
+    "gold": 20
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-ST04-NPC04",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180",
+      "completion": [
+        {
+          "speaker": "WC-ST04-NPC04",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST04-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_B_NPC.dds",
+      "template_id": 38147
+    },
+    "WC-TU-NPC12": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_King_Rockstar_NPC.dds",
+      "template_id": 741158
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Coming_Up_For_Air",
+    "from": "archive",
+    "timestamp": "20250917012105"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Good to be the King replaced by WC-Q-6F594",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "WC-Q-140BC",
+  "lang": "140BC",
+  "auto_start": true,
+  "requires": [
+    "WC-Q-140BB"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 230,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_ST07_NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Sunken_City",
+      "loc": "ZoneLocName_454915"
+    }
+  ],
+  "personas": {
+    "WC_ST07_NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Death2.dds",
+      "template_id": 81085
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Open_Sez_Me",
+    "from": "archive",
+    "timestamp": "20240308084104"
+  },
+  "needs_review": [
+    {
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use the Tome on the Gate of Durden",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

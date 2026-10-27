@@ -1,0 +1,315 @@
+{
+  "id": "WC-Q-14E7A2",
+  "lang": "14E7A2",
+  "auto_start": true,
+  "giver": {
+    "persona": "AQ-HUB-NPC01",
+    "zone": "Aquila/AQ_Z00_Hub"
+  },
+  "requires": [
+    "WC-Q-B4F6C"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 97375,
+    "gold": 2700
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AQ-ATL-NPC01",
+      "zone": "Aquila/AQ_Z02_Atlantea"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Piranha-Guard.AdjRef",
+        "Adv_AQ-Piranha-Guard.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001521",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-ATL-NPC01",
+      "zone": "Aquila/AQ_Z02_Atlantea"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z02_Atlantea"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Shark-Lamia.AdjRef",
+        "Adv_AQ-Shark-Lamia.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001522",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-ATL-NPC01",
+      "zone": "Aquila/AQ_Z02_Atlantea"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z02_Atlantea"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Centaur-Arion.AdjRef",
+        "Adv_AQ-Centaur-Arion.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001523",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-ATL-NPC01",
+      "zone": "Aquila/AQ_Z02_Atlantea"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z02_Atlantea"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Shark-Akheilos.AdjRef",
+        "Adv_AQ-Shark-Akheilos.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001525",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-ATL-NPC01",
+      "zone": "Aquila/AQ_Z02_Atlantea"
+    },
+    {
+      "type": "persona",
+      "persona": "AQ-ATL-NPC05",
+      "zone": "Aquila/Interiors/AQ_Z02_SirenPuzzleRoom"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/Interiors/AQ_Z02_SirenPuzzleRoom"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Undead-LostMaiden.AdjRef",
+        "Adv_AQ-Undead-LostMaiden.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001528",
+      "zone": ""
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Kraken-Guard.AdjRef",
+        "Adv_AQ-Kraken-Guard.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001529",
+      "zone": ""
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/Interiors/AQ_Z02_SirenPuzzleRoom"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Immortal-Poseidon-A.AdjRef",
+        "AQ-Immortal-Poseidon-B.AdjRef",
+        "Adv_AQ-Immortal-Poseidon-A.AdjRef",
+        "Adv_AQ-Immortal-Poseidon-B.AdjRef",
+        "Heroic_AQ_Poseidon.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001530",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "AQ-ATL-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gryphon_Eagle_E_NPC.dds",
+      "template_id": 827076
+    },
+    "AQ-ATL-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Siren_Witch_A_NPC.dds",
+      "template_id": 741265
+    },
+    "AQ-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Satyr_Druid_A_NPC.dds",
+      "template_id": 741209
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Under_the_Sea",
+    "from": "archive",
+    "timestamp": "20250605055029"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Silenus: AQ-HUB-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hermes Winged Wayfarer: AQ-ATL-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "Locate Voracious Legionnaire",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Voracious Legionnaires: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hermes Winged Wayfarer: AQ-ATL-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "House of Lost Sailors",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Lamia: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Alabaster Sea Cow",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hermes Winged Wayfarer: AQ-ATL-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "House of Fury",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Arion Spiny Stallion: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Onyx Sea Cow",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hermes Winged Wayfarer: AQ-ATL-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Hall of the Contriver",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Akheilos the Contriver: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hermes Winged Wayfarer: AQ-ATL-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Teles: AQ-ATL-NPC05 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Fix the Choral Chord",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Watery Graves",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Lost Maiden: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "Locate Atlantean Trierarch",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Atlantean Trierarchs: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Place the Sea Cows on the 2 Pedestals",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Palace of Atlantea",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Poseidon Earth Shaker: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

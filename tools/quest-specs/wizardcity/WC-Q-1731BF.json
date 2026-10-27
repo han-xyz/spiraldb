@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-1731BF",
+  "lang": "1731BF",
+  "giver": {
+    "persona": "WC-ST03-KID3",
+    "zone": "WizardCity/WC_Streets/WC_Cyclops"
+  },
+  "requires": [
+    "WC-Q-173190"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 110,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Cyclops-Red-L02.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000357",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "descriptor": "WizQst1731BF_00000004",
+      "loc": "ZoneLocName_350041"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Cyclops",
+      "loc": "ZoneLocName_350041",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST03-KID3": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Balance.dds",
+      "template_id": 81276
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mazes_and_Minotaurs",
+    "from": "archive",
+    "timestamp": "20240121090148"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

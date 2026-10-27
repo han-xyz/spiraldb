@@ -1,0 +1,61 @@
+{
+  "id": "WC-Q-thekingsservice",
+  "giver": {
+    "persona": "WC-TU-NPC05",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_H1"
+  },
+  "requires": [
+    "WC-Q-5776A"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 130,
+    "gold": 15
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC07",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_C1",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_H1",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Lobster_Cook_A_NPC.dds",
+      "template_id": 358243
+    },
+    "WC-TU-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sea_Monster_King_NPC.dds",
+      "template_id": 459074
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_King's_Service",
+    "from": "archive",
+    "timestamp": "20250910121200"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The King's Service",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Royal Palace",
+      "blocking": false
+    }
+  ]
+}

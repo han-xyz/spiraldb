@@ -1,0 +1,90 @@
+{
+  "id": "WC-Q-1ED91",
+  "lang": "1ED91",
+  "giver": {
+    "persona": "WC-TU-NPC06",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
+  },
+  "requires": [
+    "WC-Q-5776A"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 245,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WC-TU-Angler-1-R2.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00000928",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01",
+      "loc": "ZoneLocName_358201",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crab_Soldier_B_NPC.dds",
+      "template_id": 459073
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Room_to_Breathe_(Wizard_City)",
+    "from": "archive",
+    "timestamp": "20250829203511"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Into the Breach!",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Into the Breach! replaced by WC-Q-5776A",
+      "blocking": false
+    }
+  ]
+}

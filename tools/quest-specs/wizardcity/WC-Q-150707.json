@@ -1,0 +1,158 @@
+{
+  "id": "WC-Q-150707",
+  "lang": "150707",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-RAV-NPC11",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "MB-MUSEHub-C03-002"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 500,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-GRAV-NPC01",
+      "zone": "Marleybone/MB_ScotlandYard/Interiors/MB_KC_GRAV_02",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MB-GRAV-Mob01.AdjRef",
+        "MB-GRAV-NPC01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002312",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000012"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MB-GRAV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_WizardF_A_NPC.dds",
+      "template_id": 1378057
+    },
+    "WC-RAV-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Wizard_A_NPC.dds",
+      "template_id": 1378050
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pekuliar_Matters",
+    "from": "archive",
+    "timestamp": "20260331182304"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Aegon's Experiment",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jordyn Malniz: MB-GRAV-NPC01 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Jordyn Malniz: ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Aegon's Experiment replaced by min_level",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "WC-Q-B4F6D",
+  "lang": "B4F6D",
+  "giver": {
+    "persona": "AQ-HUB-NPC03",
+    "zone": "Aquila/AQ_Z00_Hub"
+  },
+  "requires": [
+    "WC-Q-B4F6C"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 53560,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Squid-Tentacle-Lg-A.AdjRef",
+        "AQ-Squid-Tentacle-Lg-B.AdjRef",
+        "AQ-Squid-Tentacle-Sml-A.AdjRef",
+        "AQ-Squid-Tentacle-Sml-B.AdjRef",
+        "Adv_AQ-Squid-Tentacle-Lg-A.AdjRef",
+        "Adv_AQ-Squid-Tentacle-Lg-B.AdjRef",
+        "Adv_AQ-Squid-Tentacle-Sml-A.AdjRef",
+        "Adv_AQ-Squid-Tentacle-Sml-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001531",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Aquila/AQ_Z00_Hub"
+    }
+  ],
+  "personas": {
+    "AQ-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_DruidF_B_NPC.dds",
+      "template_id": 741227
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Poseidon_Adventure!",
+    "from": "archive",
+    "timestamp": "20250825214911"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Vesper: AQ-HUB-NPC03 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Sand Squid Tentacle: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Travelers",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Vesper: AQ-HUB-NPC03 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

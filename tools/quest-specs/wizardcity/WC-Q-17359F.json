@@ -1,0 +1,100 @@
+{
+  "id": "WC-Q-17359F",
+  "lang": "17359F",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC04",
+    "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H2"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 25,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-FIRECAT-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-ST02-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504",
+      "completion": [
+        {
+          "speaker": "WC-ST02-NPC01",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Human_WCGuard_L_NPC.dds",
+      "template_id": 1521040
+    },
+    "WC-FIRECAT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_GrettaDK_A_NPC.dds",
+      "template_id": 1521048
+    },
+    "WC-ST02-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_G.dds",
+      "template_id": 38218
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Firecat's_In_The_Bag",
+    "from": "archive",
+    "timestamp": "20240121090221"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Cure replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

@@ -1,0 +1,74 @@
+{
+  "id": "WC-Q-140BA",
+  "lang": "140BA",
+  "giver": {
+    "persona": "WC-ST07-NPC01",
+    "zone": "WizardCity/WC_NightSide"
+  },
+  "requires": [
+    "WC-ST07-C01-002"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 230,
+    "gold": 46
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC02-B",
+      "zone": "WizardCity/Interiors/WC_SchoolDeath",
+      "loc": "ZoneLocName_10825"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_NightSide",
+      "loc": "ZoneLocName_10825"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 1451013
+    },
+    "WC-ST07-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Death2.dds",
+      "template_id": 82097
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Delivering_The_Proof",
+    "from": "archive",
+    "timestamp": "20250918105529"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

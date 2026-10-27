@@ -1,0 +1,60 @@
+{
+  "id": "WC-LIFE-C08-001",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Life"
+    },
+    "WC-Q-213E3",
+    "GH-FJORD-C05-004"
+  ],
+  "min_level": 58,
+  "mainline": false,
+  "level": 58,
+  "reward": {
+    "xp": 1875,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH2-VES-NPC10",
+      "zone": "Grizzleheim/GH_HFjord/GH_Vestrilund",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "GH2-VES-NPC10": {
+      "portrait": "GUI/NpcPortraits/Quest_Bear_Valkyrie.dds",
+      "template_id": 342252
+    },
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ready_to_Hatch",
+    "from": "archive",
+    "timestamp": "20231222143955"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Ready to Hatch",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Grina Cursebreaker: GH2-VES-NPC10 from ObjectData/GH",
+      "blocking": false
+    }
+  ]
+}

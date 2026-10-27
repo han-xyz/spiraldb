@@ -1,0 +1,84 @@
+{
+  "id": "WC-Q-538FB",
+  "lang": "538FB",
+  "giver": {
+    "persona": "WC-ST02-NPCGrizzle",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [
+    "GH-WOLF-C01-001",
+    "WC-Q-282B5"
+  ],
+  "mainline": false,
+  "level": 35,
+  "reward": {
+    "xp": 450,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH-HUB-NPC03",
+      "zone": "Grizzleheim/GH_MainHub",
+      "loc": "ZoneLocName_245504"
+    }
+  ],
+  "personas": {
+    "GH-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearScout_Peasant_Purple.dds",
+      "template_id": 164451
+    },
+    "WC-ST02-NPCGrizzle": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearScout_Fighter_Green_NPC.dds",
+      "template_id": 164534
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:I_Know_a_Guy...",
+    "from": "archive",
+    "timestamp": "20251217162508"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Erik Wyrdrune: GH-HUB-NPC03 from ObjectData/GH",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Trade Voyage replaced by WC-Q-282B5",
+      "blocking": false
+    }
+  ],
+  "min_level": 35
+}

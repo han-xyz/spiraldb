@@ -1,0 +1,79 @@
+{
+  "id": "WC-Q-14111",
+  "lang": "14111",
+  "giver": {
+    "persona": "WC-RAV-NPC08",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    }
+  ],
+  "mainline": false,
+  "level": 7,
+  "reward": {
+    "xp": 190,
+    "gold": 36,
+    "spells": [
+      "Deathblade"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Malorn_Ashthorn.dds",
+      "template_id": 81102
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Buried_Truth",
+    "from": "archive",
+    "timestamp": "20231222115955"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 7
+}

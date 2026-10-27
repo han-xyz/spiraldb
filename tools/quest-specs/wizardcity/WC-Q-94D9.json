@@ -1,0 +1,90 @@
+{
+  "id": "WC-Q-94D9",
+  "lang": "94D9",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Firecat"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 25,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Firecat"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000027"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Human_WCGuard_L_NPC.dds",
+      "template_id": 1521040
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Investigate_Alley",
+    "from": "archive",
+    "timestamp": "20231121224336"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Fireglobe Theatre",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

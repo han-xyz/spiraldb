@@ -1,0 +1,87 @@
+{
+  "id": "WC-Q-17366F",
+  "lang": "17366F",
+  "giver": {
+    "persona": "WC-TRITON-NPC07",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1627AD"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 130,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Skeleton-Gold-WCBoss-L03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000023",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    }
+  ],
+  "personas": {
+    "WC-TRITON-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Shopkeeper_01.dds",
+      "template_id": 1521273
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Scrap_of_Trouble",
+    "from": "archive",
+    "timestamp": "20251203192651"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Skull Fort",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

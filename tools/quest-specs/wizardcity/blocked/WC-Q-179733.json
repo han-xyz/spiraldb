@@ -1,0 +1,127 @@
+{
+  "id": "WC-Q-179733",
+  "lang": "179733",
+  "giver": {
+    "persona": "TEST-CAM-NPC-001",
+    "zone": ""
+  },
+  "requires": [],
+  "min_level": 25,
+  "mainline": false,
+  "level": 25,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC28",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC28": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Wizard_A_NPC.dds",
+      "template_id": 1546037
+    },
+    "TEST-CAM-NPC-001": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_Spellement_A_NPC.dds",
+      "template_id": 1634239
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cantrips101",
+    "from": "archive",
+    "timestamp": "20250221212326"
+  },
+  "needs_review": [
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Abner K. Doodle",
+      "blocking": true
+    },
+    {
+      "field": "reward.spells (cantrip)",
+      "value": "To Buttersfield",
+      "blocking": false
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Accept Abner's Cantrip",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hampshire Buttersfield: PA-HUB-NPC28 from ObjectData/Wysteria",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

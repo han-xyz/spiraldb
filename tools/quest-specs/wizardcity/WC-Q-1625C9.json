@@ -1,0 +1,96 @@
+{
+  "id": "WC-Q-1625C9",
+  "lang": "1625C9",
+  "giver": {
+    "persona": "WC-ST01-NPC03",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [
+    "WC-Q-1625C0"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 35,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Skeleton-Pirate-L01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000330",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000014"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeepF_A_NPC.dds",
+      "template_id": 38116
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pesky_Pirates_(Retired)",
+    "from": "archive",
+    "timestamp": "20250912090152"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

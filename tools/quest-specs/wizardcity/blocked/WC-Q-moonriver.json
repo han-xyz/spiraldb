@@ -1,0 +1,76 @@
+{
+  "id": "WC-Q-moonriver",
+  "auto_start": true,
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 49020,
+    "gold": 1590
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "Tri_Gauntlet_Lever_1.AdjRef",
+        "Tri_Gauntlet_Lever_2.AdjRef",
+        "Tri_Gauntlet_Lever_3.AdjRef",
+        "Tri_Gauntlet_Lever_4.AdjRef",
+        "WC_Leverl_Mill.AdjRef",
+        "WC_Tri_Gauntlet_Lever.AdjRef",
+        "WC_Tri_Gauntlet_Lever01.AdjRef",
+        "WC_Tri_Gauntlet_Lever02.AdjRef",
+        "WC_Tri_Gauntlet_Lever03.AdjRef",
+        "WC_Tri_Gauntlet_Lever04.AdjRef",
+        "WC_Tri_Gauntlet_Lever05.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "descriptor": "WizardGameObjects_00000087",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Tri-Gauntlet-Angler.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000916",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Moon_River",
+    "from": "archive",
+    "timestamp": "20250905111906"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Moon River",
+      "blocking": true
+    },
+    {
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Catch of the Day",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "Locate Drain Valve",
+      "blocking": true
+    }
+  ]
+}

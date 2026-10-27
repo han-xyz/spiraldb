@@ -1,0 +1,118 @@
+{
+  "id": "WC-Q-9AEA",
+  "lang": "9AEA",
+  "giver": {
+    "persona": "WC-ST01-NPC02",
+    "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze"
+  },
+  "requires": [
+    "WC-Q-1625CA"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 75,
+    "gold": 20,
+    "spells": [
+      {
+        "spell": "Pixie",
+        "school": "Balance"
+      },
+      {
+        "spell": "Pixie",
+        "school": "Death"
+      },
+      {
+        "spell": "Pixie",
+        "school": "Fire"
+      },
+      {
+        "spell": "Pixie",
+        "school": "Ice"
+      },
+      {
+        "spell": "Fairy",
+        "school": "Life"
+      },
+      {
+        "spell": "Pixie",
+        "school": "Myth"
+      },
+      {
+        "spell": "Pixie",
+        "school": "Storm"
+      }
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-FairyCage.AdjRef",
+        "WC-FairyCage02.AdjRef",
+        "WC-FairyCage03.AdjRef",
+        "WC-FairyCage04.AdjRef",
+        "WC-FairyCage05.AdjRef"
+      ],
+      "count": 4,
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "descriptor": "Interactables_00000008",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze",
+      "loc": "ZoneLocName_114426"
+    }
+  ],
+  "personas": {
+    "WC-ST01-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_B_NPC.dds",
+      "template_id": 38123
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Freedom!_(Retired)",
+    "from": "archive",
+    "timestamp": "20231121222059"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

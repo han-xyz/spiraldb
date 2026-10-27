@@ -1,0 +1,111 @@
+{
+  "id": "WC-Q-94DD",
+  "lang": "94DD",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Firecat"
+  },
+  "requires": [
+    "WC-Q-94DC"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 250,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "FireElf-Prince-WCBoss-L04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000026",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_57022"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-FIRECAT-NPC06",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_Theatre",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Human_WCGuard_L_NPC.dds",
+      "template_id": 1521040
+    },
+    "WC-FIRECAT-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Elf_Fire_B_NPC.dds",
+      "template_id": 1521054
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Administer_Cure",
+    "from": "archive",
+    "timestamp": "20250830143738"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Fire Elves",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

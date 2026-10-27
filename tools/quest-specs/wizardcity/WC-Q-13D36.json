@@ -1,0 +1,140 @@
+{
+  "id": "WC-Q-13D36",
+  "lang": "13D36",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    },
+    "WC-Q-13CDD"
+  ],
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 780,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MS-HUB-NPC01",
+      "zone": "MooShu/Interiors/MS_Teleport_Chamber",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MS-SHOP-NPC01",
+      "zone": "MooShu/Interiors/MS_ShopWeapon",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Pig-Death-Sumo-Boss-L40.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003608",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000016"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MS-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MU_Geisha_Red.dds",
+      "template_id": 39948
+    },
+    "MS-SHOP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MU_Cow_Peasant_Green.dds",
+      "template_id": 81195
+    },
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bird_of_a_Feather",
+    "from": "archive",
+    "timestamp": "20260605030740"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Su Lee: MS-HUB-NPC01 from ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Himoora Kenshin: MS-SHOP-NPC01 from ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Futou Zhu: ObjectData/MS",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Fire Feather in Tatakai Outpost",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 38
+}

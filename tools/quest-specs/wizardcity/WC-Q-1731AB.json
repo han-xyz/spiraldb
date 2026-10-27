@@ -1,0 +1,199 @@
+{
+  "id": "WC-Q-1731AB",
+  "lang": "1731AB",
+  "giver": {
+    "persona": "WC-ST02-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [
+    "WC-Q-1627BA",
+    "WC-Q-17359F",
+    "WC-Q-173194"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 250,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC01",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC10-A",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs_B",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs_B"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Ghost-Red-WCBoss-L03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000030",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-TRITON-NPC06-B",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_RottenRobHideout",
+      "loc": "ZoneLocName_245504"
+    }
+  ],
+  "personas": {
+    "WC-CATA-NPC10-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",
+      "template_id": 1451830
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "WC-ST02-NPC01": {
+      "portrait": "GUI/NpcPortraits/Human_WCGuard_G.dds",
+      "template_id": 38218
+    },
+    "WC-TRITON-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_DaisyW_A_NPC.dds",
+      "template_id": 1656261
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Brief_History_of_the_Spiral",
+    "from": "archive",
+    "timestamp": "20250910202741"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Sapphyra's Tower",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

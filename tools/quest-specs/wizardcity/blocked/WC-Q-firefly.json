@@ -1,0 +1,66 @@
+{
+  "id": "WC-Q-firefly",
+  "giver": {
+    "persona": "WC-RAV-NPC09",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "AZ-Q-B4F40"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 25,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Student-Fire-PageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001475",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
+      "template_id": 81103
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fire_Fly",
+    "from": "archive",
+    "timestamp": "20260616193629"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Fire Fly",
+      "blocking": true
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use Dee's Fire Mirror in Twin Giants",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Bentley Daysong: ObjectData/PageEvent",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "WC-Q-15E5C3",
+  "lang": "15E5C3",
+  "giver": {
+    "persona": "WC-ST02-NPC05-MAW",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 13,
+  "reward": {
+    "xp": 0,
+    "gold": 100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "TeamUpHelperKiosk.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "descriptor": "GUI2_00000013",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    }
+  ],
+  "personas": {
+    "WC-ST02-NPC05-MAW": {
+      "portrait": "GUI/NpcPortraits/Portrait_Derrick_NPC.dds",
+      "template_id": 1435077
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Play_It_Forward",
+    "from": "archive",
+    "timestamp": "20250828130759"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Join A Team Kiosk",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 13
+}

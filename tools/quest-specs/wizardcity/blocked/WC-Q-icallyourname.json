@@ -1,0 +1,83 @@
+{
+  "id": "WC-Q-icallyourname",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    }
+  ],
+  "min_level": 58,
+  "mainline": false,
+  "level": 58,
+  "reward": {
+    "xp": 1265,
+    "gold": 65
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "CL-BurlyKrok-Rank8FireBoss-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000812",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:I_Call_Your_Name",
+    "from": "archive",
+    "timestamp": "20241126062057"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "I Call Your Name",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Red Lady Too",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Sothmekhet's Sanctum, Karanahn Barracks",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Sothmekhet: ObjectData/CL",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Fire Seal",
+      "blocking": false
+    }
+  ]
+}

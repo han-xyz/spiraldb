@@ -1,0 +1,136 @@
+{
+  "id": "WC-Q-16E7C2",
+  "lang": "16E7C2",
+  "giver": {
+    "persona": "WC-HUB-NPC19",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 10,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC07",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/Interiors/WC_PartyRoom"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/Interiors/WC_PartyRoom"
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC19": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BryceCrispie.dds",
+      "template_id": 1501111
+    },
+    "WC-PARTY-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Greyrose_A_NPC.dds",
+      "template_id": 1452002
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Life_Is_Like...",
+    "from": "archive",
+    "timestamp": "20251221220108"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Nothing to Fear",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Musicology Office, The Arcanum",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Musicology Office",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Marketing is Everything replaced by min_level",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Nothing to Fear replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

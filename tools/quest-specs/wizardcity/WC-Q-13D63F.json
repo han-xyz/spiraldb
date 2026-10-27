@@ -1,0 +1,101 @@
+{
+  "id": "WC-Q-13D63F",
+  "lang": "13D63F",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    {
+      "school": "Storm"
+    },
+    "GH-STORM-C09-001"
+  ],
+  "mainline": false,
+  "level": 98,
+  "reward": {
+    "xp": 9230,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-HUB-NPC001",
+      "zone": "Celestia/CL_Hub",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "CL-HUB-NPC001",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-HUB-NPC001": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
+      "template_id": 211488
+    },
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Egg_of_the_Storm_(Deep_Leviathan)",
+    "from": "archive",
+    "timestamp": "20240910001436"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Hearts in Atlantis",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Edith Benchley: CL-HUB-NPC001 from ObjectData/CL",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Hearts in Atlantis replaced by GH-STORM-C09-001",
+      "blocking": false
+    }
+  ],
+  "min_level": 98
+}

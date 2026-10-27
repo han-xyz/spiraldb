@@ -1,0 +1,66 @@
+{
+  "id": "WC-Q-celestialreasonings",
+  "giver": {
+    "persona": "WC-RAV-NPC02",
+    "zone": "WizardCity/Interiors/WC_SchoolMyth"
+  },
+  "requires": [
+    {
+      "school": "Myth"
+    }
+  ],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 10310,
+    "gold": 130,
+    "spells": [
+      "Celestial Calendar"
+    ]
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolMyth",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 38206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Celestial_Reasonings",
+    "from": "archive",
+    "timestamp": "20240121101808"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Celestial Reasonings",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Mark Your Calendar",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Plaza del Oro, The Zocalo",
+      "blocking": false
+    }
+  ]
+}

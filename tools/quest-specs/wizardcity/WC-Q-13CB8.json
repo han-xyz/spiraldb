@@ -1,0 +1,102 @@
+{
+  "id": "WC-Q-13CB8",
+  "lang": "13CB8",
+  "giver": {
+    "persona": "WC-ST05-NPC05-OK",
+    "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H1"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 150,
+    "gold": 20
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-FIRECAT-NPC03",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Banshee-Blue-WCBoss-L18.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000192",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "descriptor": "WizQst13CB8_00000022",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/Interiors/WC_Firecat_H1",
+      "loc": "ZoneLocName_114526",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_F_NPC.dds",
+      "template_id": 1521046
+    },
+    "WC-ST05-NPC05-OK": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Fire03.dds",
+      "template_id": 81079
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Nor_a_Lender_Be...",
+    "from": "archive",
+    "timestamp": "20231121224729"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

@@ -1,0 +1,148 @@
+{
+  "id": "WC-Q-9563",
+  "lang": "9563",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "WC-Q-9562"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 115,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000054"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000055"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000056"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000058"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000059"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000060"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000061"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000062"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000066"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC10-A",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs_B",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs_B"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs_B"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-HUB-NPC03",
+      "zone": "Krokotopia/KT_WorldTeleporter",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-HUB-NPC01",
+      "zone": "Krokotopia/Interiors/KT_Shop05",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "KT-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_SeargentMajor_A_NPC.dds",
+      "template_id": 38224
+    },
+    "KT-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Shopkeep_A_NPC.dds",
+      "template_id": 38315
+    },
+    "WC-CATA-NPC10-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",
+      "template_id": 1451830
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Krokotopia",
+    "from": "archive",
+    "timestamp": "20240308085414"
+  },
+  "needs_review": [
+    {
+      "field": "goal.volume (not found)",
+      "value": "Spiral Door",
+      "blocking": false
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Krokotopia",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Tinu Bhak'mal: KT-HUB-NPC03 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Sergeant Major Talbot: KT-HUB-NPC01 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

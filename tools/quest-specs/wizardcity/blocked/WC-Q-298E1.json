@@ -1,0 +1,102 @@
+{
+  "id": "WC-Q-298E1",
+  "lang": "298E1",
+  "giver": {
+    "persona": "WC-RAV-NPC08",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    {
+      "school": "Death"
+    },
+    "WC-Q-14110"
+  ],
+  "min_level": 12,
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 275,
+    "gold": 56,
+    "spells": [
+      "Death Prism"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Malorn_Ashthorn.dds",
+      "template_id": 81102
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sweet_Revenge",
+    "from": "archive",
+    "timestamp": "20231222120203"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona",
+      "value": "Search",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Death Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Nightstalker",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

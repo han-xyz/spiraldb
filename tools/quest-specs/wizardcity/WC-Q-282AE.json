@@ -1,0 +1,85 @@
+{
+  "id": "WC-Q-282AE",
+  "lang": "282AE",
+  "giver": {
+    "persona": "WC-HUB-NPC01",
+    "zone": "WizardCity/Interiors/WC_Headmistress_House"
+  },
+  "requires": [
+    "GH-HERO-C01-010"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 630,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "GH-HUB-NPC01",
+      "zone": "Grizzleheim/GH_MainHub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "GH-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearWarrior_Boss_Black_NPC.dds",
+      "template_id": 164449
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Call_of_the_North",
+    "from": "archive",
+    "timestamp": "20251219104032"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Bjorn Ironclaws: GH-HUB-NPC01 from ObjectData/GH",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

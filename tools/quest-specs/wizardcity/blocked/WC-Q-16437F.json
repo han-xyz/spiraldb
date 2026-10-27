@@ -1,0 +1,252 @@
+{
+  "id": "WC-Q-16437F",
+  "lang": "16437F",
+  "giver": {
+    "persona": "WC-HUB-NPC14",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [
+    "WC-Q-1627F5"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 70,
+    "gold": 20
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MB-MUSEHub-NPC05",
+      "zone": "Marleybone/MB_Hub",
+      "loc": "ZoneLocName_10879"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-HUB-NPC12",
+      "zone": "Krokotopia/Interiors/KT_Library",
+      "loc": "ZoneLocName_10879"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC21",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_10879",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "KT-PYMHub-NPC02",
+      "zone": "Krokotopia/KT_Pyramid/KT_AltarOfKings",
+      "loc": "ZoneLocName_10879",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "MB-MUSEHub-NPC05",
+      "zone": "Marleybone/MB_Hub",
+      "loc": "ZoneLocName_10879"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-HUB-NPC01",
+      "zone": "Marleybone/Interiors/MB_WolfminsterAbbey",
+      "loc": "ZoneLocName_10879"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-HUB-NPC12",
+      "zone": "Marleybone/MB_Hub",
+      "loc": "ZoneLocName_10879",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "MB-AIR2-NPC01",
+      "zone": "Marleybone/MB_Station/MB_ChelseaCourt",
+      "loc": "ZoneLocName_10879",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "MB-MUSEHub-NPC05",
+      "zone": "Marleybone/MB_Hub",
+      "loc": "ZoneLocName_10879"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-MUSEHub-NPC05",
+      "zone": "Marleybone/MB_Hub",
+      "loc": "ZoneLocName_10879",
+      "completion": [
+        {
+          "speaker": "MB-MUSEHub-NPC05",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KT-HUB-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Librarian_A_NPC.dds",
+      "template_id": 81096
+    },
+    "KT-PYMHub-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_Excavator_A_NPC.dds",
+      "template_id": 39228
+    },
+    "MB-AIR2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Ladies_Lower07.dds",
+      "template_id": 39697
+    },
+    "MB-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_SeargentMajor_E_NPC.dds",
+      "template_id": 39681
+    },
+    "MB-HUB-NPC12": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Beefeater_NPC.dds",
+      "template_id": 81287
+    },
+    "MB-MUSEHub-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_DesertExplorer_NPC.dds",
+      "template_id": 1459070
+    },
+    "WC-HUB-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ladybug_Shutter_A_NPC.dds",
+      "template_id": 1452022
+    },
+    "WC-PARTY-NPC21": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Professor_Balance.dds",
+      "template_id": 1452017
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Spiral_Photographic",
+    "from": "archive",
+    "timestamp": "20260401040002"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hubbard Gardiner: MB-MUSEHub-NPC05 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Zan'ne: KT-HUB-NPC12 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Professor Winthrop: KT-PYMHUB-NPC02 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hubbard Gardiner: MB-MUSEHub-NPC05 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Private Kinchley: MB-HUB-NPC01 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Quentin Boddington: MB-HUB-NPC12 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ms. Marphely: MB-AIR2-NPC01 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hubbard Gardiner: MB-MUSEHub-NPC05 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Noboru Akitame in Jade Palace",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Book of Celestial Wisdom in Rock Dojo",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Hua Yung in Yoshihito Temple",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Hubbard Gardiner: MB-MUSEHub-NPC05 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "WC-Q-282B7",
+  "lang": "282B7",
+  "giver": {
+    "persona": "WC-ST02-NPCGrizzle",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [
+    "WC-Q-282B5"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 15,
+    "gold": 13
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-GRZ-ShopRobes",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "WC-GRZ-ShopHats-Shoes",
+      "zone": "",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "WC-GRZ-ShopRingsAmulets",
+      "zone": "",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    }
+  ],
+  "personas": {
+    "WC-GRZ-ShopHats-Shoes": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearScout_Peasant_Purple.dds",
+      "template_id": 164725
+    },
+    "WC-GRZ-ShopRingsAmulets": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearScout_Peasant_White.dds",
+      "template_id": 164654
+    },
+    "WC-GRZ-ShopRobes": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearScout_Peasant_Green.dds",
+      "template_id": 164653
+    },
+    "WC-ST02-NPCGrizzle": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_BearScout_Fighter_Green_NPC.dds",
+      "template_id": 164534
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Trade_Voyage",
+    "from": "archive",
+    "timestamp": "20250831122845"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Vidar Silverthread",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Thrain Stormfriend",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Dain Goldwright",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

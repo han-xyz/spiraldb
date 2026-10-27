@@ -1,0 +1,55 @@
+{
+  "id": "WC-GRAV-INTRO-001",
+  "giver": {
+    "persona": "WC-RAV-NPC11",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [],
+  "min_level": 12,
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 200,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Gobbler-Hick-Skinny-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000010",
+      "zone": "WizardCity/WC_Streets/WC_Colossus",
+      "loc": "ZoneLocName_245494"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Wizard_A_NPC.dds",
+      "template_id": 1378050
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Gravulum_Order",
+    "from": "archive",
+    "timestamp": "20260331175824"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Gravulum Order",
+      "blocking": true
+    }
+  ]
+}

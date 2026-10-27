@@ -1,0 +1,149 @@
+{
+  "id": "WC-Q-576B7",
+  "lang": "576B7",
+  "giver": {
+    "persona": "WC-RAV-NPC15",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 12,
+  "reward": {
+    "xp": 0,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000054"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000055"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000056"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000058"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000065"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000066"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000067"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000068"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000069"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000070"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000071"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC20",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC_RVW_LifeTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC20",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "WC-PARTY-NPC20",
+          "line": "00000072"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-PARTY-NPC20": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gardening_Mole.dds",
+      "template_id": 1452016
+    },
+    "WC-RAV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1459033
+    },
+    "WC_RVW_LifeTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Blossom.dds",
+      "template_id": 39158
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Green_Acres",
+    "from": "archive",
+    "timestamp": "20231028104255"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 12
+}

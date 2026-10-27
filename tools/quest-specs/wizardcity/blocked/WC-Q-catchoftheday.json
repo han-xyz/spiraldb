@@ -1,0 +1,61 @@
+{
+  "id": "WC-Q-catchoftheday",
+  "auto_start": true,
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 7060,
+    "gold": 360
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "Tri_Gauntlet_Lever_1.AdjRef",
+        "Tri_Gauntlet_Lever_2.AdjRef",
+        "Tri_Gauntlet_Lever_3.AdjRef",
+        "Tri_Gauntlet_Lever_4.AdjRef",
+        "WC_Leverl_Mill.AdjRef",
+        "WC_Tri_Gauntlet_Lever.AdjRef",
+        "WC_Tri_Gauntlet_Lever01.AdjRef",
+        "WC_Tri_Gauntlet_Lever02.AdjRef",
+        "WC_Tri_Gauntlet_Lever03.AdjRef",
+        "WC_Tri_Gauntlet_Lever04.AdjRef",
+        "WC_Tri_Gauntlet_Lever05.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "descriptor": "WizardGameObjects_00000087",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Catch_of_the_Day",
+    "from": "archive",
+    "timestamp": "20250910163958"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Catch of the Day",
+      "blocking": true
+    },
+    {
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Fish in a Barrel",
+      "blocking": false
+    }
+  ]
+}

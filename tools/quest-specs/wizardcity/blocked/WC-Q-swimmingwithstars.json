@@ -1,0 +1,81 @@
+{
+  "id": "WC-Q-swimmingwithstars",
+  "giver": {
+    "persona": "WC-RAV-NPC05",
+    "zone": "WizardCity/Interiors/WC_SchoolStorm"
+  },
+  "requires": [
+    "WC-Q-33A15"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 1425,
+    "gold": 128
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "CL-MB-NPC-002",
+      "zone": "Marleybone/MB_BigBen/MB_Museum",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MB-Gauntlet_ShadowWeaver.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003631",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolStorm",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "CL-MB-NPC-002": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_Excavator_A_NPC.dds",
+      "template_id": 211499
+    },
+    "WC-RAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 38141
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Swimming_with_Stars",
+    "from": "archive",
+    "timestamp": "20250910053308"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Swimming with Stars",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Walter Chaplin: CL-MB-NPC-002 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Spiral Geographic Warehouse",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Estrakir Gloomthorn: ObjectData/MB",
+      "blocking": false
+    }
+  ]
+}

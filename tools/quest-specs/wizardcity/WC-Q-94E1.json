@@ -1,0 +1,82 @@
+{
+  "id": "WC-Q-94E1",
+  "lang": "94E1",
+  "giver": {
+    "persona": "WC-FIRECAT-NPC03",
+    "zone": "WizardCity/WC_Streets/WC_Firecat"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 230,
+    "gold": 23
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Ghoul-Red-WCBoss-L02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000029",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "descriptor": "WizQst94E1_00000006",
+      "loc": "ZoneLocName_114526"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Firecat",
+      "loc": "ZoneLocName_114526"
+    }
+  ],
+  "personas": {
+    "WC-FIRECAT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_F_NPC.dds",
+      "template_id": 1521046
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:One_Watch_to_Rule...",
+    "from": "archive",
+    "timestamp": "20231121224818"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

@@ -1,0 +1,65 @@
+{
+  "id": "WC-TUG-C02-002",
+  "giver": {
+    "persona": "WC-TU-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+  },
+  "requires": [
+    "WC-TUG-C02-001"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 15090,
+    "gold": 600
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Tri-Gauntlet-Angler.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000916",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Crab_Hermit_01.dds",
+      "template_id": 358233
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:You_Go_First...",
+    "from": "archive",
+    "timestamp": "20250905120700"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "You Go First...",
+      "blocking": true
+    },
+    {
+      "field": "goal.volume (not found)",
+      "value": "Waterworks",
+      "blocking": false
+    }
+  ]
+}

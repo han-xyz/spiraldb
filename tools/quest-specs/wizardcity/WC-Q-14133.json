@@ -1,0 +1,71 @@
+{
+  "id": "WC-Q-14133",
+  "lang": "14133",
+  "giver": {
+    "persona": "WC-ST06-NPC04",
+    "zone": "WizardCity/WC_Streets/WC_Colossus"
+  },
+  "requires": [
+    "WC-Q-14132"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 915,
+    "gold": 110
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KT-HUB-NPC011",
+      "zone": "Krokotopia/Interiors/KT_Shop05",
+      "loc": "ZoneLocName_245494",
+      "completion": [
+        {
+          "speaker": "KT-HUB-NPC011",
+          "line": "00000001"
+        },
+        {
+          "speaker": "KT-HUB-NPC011",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KT-HUB-NPC011": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Shopkeep_A_NPC.dds",
+      "template_id": 39574
+    },
+    "WC-ST06-NPC04": {
+      "portrait": "GUI/NpcPortraits/Human_WCShopKeep_A_NPC.dds",
+      "template_id": 38178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shop_Shop_Never_Stop",
+    "from": "archive",
+    "timestamp": "20231121213223"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ahmir Fayed: KT-HUB-NPC011 from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

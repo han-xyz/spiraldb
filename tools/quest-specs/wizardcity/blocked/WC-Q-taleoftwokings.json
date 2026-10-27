@@ -1,0 +1,54 @@
+{
+  "id": "WC-Q-taleoftwokings",
+  "giver": {
+    "persona": "WC-TU-NPC05",
+    "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_H1"
+  },
+  "requires": [],
+  "min_level": 5,
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 40,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-TU-NPC02",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_C1",
+      "loc": "ZoneLocName_358198"
+    }
+  ],
+  "personas": {
+    "WC-TU-NPC02": {
+      "portrait": "GUI/NpcPortraits/Crab_Cromshell_NPC.dds",
+      "template_id": 358236
+    },
+    "WC-TU-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Lobster_Cook_A_NPC.dds",
+      "template_id": 358243
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tale_of_Two_Kings",
+    "from": "archive",
+    "timestamp": "20250829135425"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Tale of Two Kings",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The King's Service",
+      "blocking": false
+    }
+  ]
+}

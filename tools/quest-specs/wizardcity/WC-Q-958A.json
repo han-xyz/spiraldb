@@ -1,0 +1,77 @@
+{
+  "id": "WC-Q-958A",
+  "lang": "958A",
+  "giver": {
+    "persona": "WC-HUB-NPC06",
+    "zone": "WizardCity/WC_Golem_Tower"
+  },
+  "requires": [
+    "WC-Q-9589"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 45,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Golem-Clockwork-L01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000033",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "descriptor": "WizQst958A_00000005",
+      "loc": "ZoneLocName_291179"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Golem_Tower",
+      "loc": "ZoneLocName_10879",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000017"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Fire02.dds",
+      "template_id": 38266
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Second_Gear",
+    "from": "archive",
+    "timestamp": "20250831061201"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

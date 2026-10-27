@@ -1,0 +1,141 @@
+{
+  "id": "WC-Q-72EC9",
+  "lang": "72EC9",
+  "giver": {
+    "persona": "WC-HUB-NPC03",
+    "zone": "WizardCity/Interiors/WC_Library"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 6,
+  "reward": {
+    "xp": 10,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC05",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_307759"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_Library",
+      "loc": "ZoneLocName_307759"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC06",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_307759",
+      "completion": [
+        {
+          "speaker": "WC-RAV-NPC06",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "template_id": 38214
+    },
+    "WC-HUB-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Storm.dds",
+      "template_id": 38264
+    },
+    "WC-RAV-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Fire.dds",
+      "template_id": 38232
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Carpe_Diem_Society",
+    "from": "archive",
+    "timestamp": "20260616192445"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 6
+}
