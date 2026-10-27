@@ -1,20 +1,99 @@
 # tools
 
-## zone-transfer-from-wad.py
-
-Rebuilds `ZoneTransfer` entries for a zone from the client's zone wad (`Data/GameData/<World>-<Zone>.wad`,
-read-only). Python 3, standard library only:
+The spiraldb tools read the Wizard101 client's data (read-only) and write the pack's JSON from it. They are one
+Python 3 package, `tools/spiraltools/`, standard library only: install nothing, run them with `python3 -I`.
 
 ```sh
-python3 -I tools/zone-transfer-from-wad.py Grizzleheim/Interiors/GH_Hero_T2            # print the entries
-python3 -I tools/zone-transfer-from-wad.py Grizzleheim/Interiors/GH_Hero_T2 --street   # also the street's pad into it
-python3 -I tools/zone-transfer-from-wad.py <zone>... --apply --street                  # write them
-python3 -I tools/zone-transfer-from-wad.py <zone> --street WizardCity/WC_Streets/WC_Colossus --apply
-python3 -I tools/zone-transfer-from-wad.py --check                                     # quest zones absent from ZoneTransfer
-python3 -I tools/zone-transfer-from-wad.py --all --dry-run                             # per-world counts for every client zone
-python3 -I tools/zone-transfer-from-wad.py --all --world Celestia --apply              # write one world
-python3 -I tools/zone-transfer-from-wad.py --all --review                              # what --all held back, with candidates
-python3 -I tools/zone-transfer-from-wad.py --check --all-zones                         # client zones still without a file
+python3 -I tools/spiraltools.py check            # what the pack still lacks
+python3 -I tools/spiraltools.py <command> --help
+```
+
+| command | does |
+| --- | --- |
+| `zones` | ZoneTransfer entries from the zone wads ([zones](#zones)) |
+| `crownshop` | the crown shop's Gear tab ([crownshop](#crownshop)) |
+| `mobs`, `npcs` | the mob adjectives and NPC personas a quest spec names ([mobs and npcs](#mobs-and-npcs)) |
+| `quests check\|generate\|diff` | quest templates and drop tables from specs ([quests](#quests)) |
+| `archive enumerate\|fetch\|parse` | specs for a world from the wiki archive ([archive](#archive)) |
+| `check` | everything missing across the pack ([check](#check)) |
+
+The client is read at `/kioxia/generator-input/rootwad` (the unpacked root wad) and the client's `Data/GameData`
+under `/kioxia/lutris/wizard101`; `--rootwad` and `--gamedata` point at another one.
+
+The scripts from before the package (`zone-transfer-from-wad.py`, `crown-shop-gear-from-wad.py`,
+`mob-adjectives-from-wad.py`, `npc-personas-from-wad.py`, `questgen.py`, `wiki-archive-quests.py`) still run, with
+the same flags and the same output; each calls the package.
+
+## Adding a world
+
+```sh
+python3 -I tools/spiraltools.py archive enumerate Zafaria         # the world's quests from the archived categories
+python3 -I tools/spiraltools.py archive fetch Zafaria             # each quest page's newest capture (network)
+python3 -I tools/spiraltools.py archive parse Zafaria             # specs into tools/quest-specs/zafaria
+python3 -I tools/spiraltools.py quests check --world Zafaria      # validate them against the client
+python3 -I tools/spiraltools.py quests generate --world Zafaria --apply   # write templates and drop tables
+python3 -I tools/spiraltools.py zones --all --world Zafaria --apply       # ZoneTransfer for the world's zones
+python3 -I tools/spiraltools.py check                              # what is still missing
+```
+
+A spec the check reports with a zone without ZoneTransfer is ready once `zones` has written that zone; parse again,
+then check. `quests` takes spec files or `--world <World>` (every spec of `tools/quest-specs/<world>`).
+
+### Worlds
+
+`spiraltools/worlds.py` holds one row per world: its name (the zone wad prefix, `Zafaria-*.wad`), the prefix of its
+quest names and ObjectData folder (`ZF`), its wiki category (`Category:Zafaria_Quests`) and the quest level a spec
+gets when the wiki gives none. The world's `WizQst` lang cluster is derived: the run of quest lang files (keys at
+most `CLUSTER_GAP` apart) holding the most `QuestTitle.lang` entries that read as one of the world's internal quest
+names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`. Zafaria and Polaris have no such
+title, so their row declares `lang_range`. A world outside the table is refused with the list of the known ones.
+
+## check
+
+`check` prints, in turn: the quest zones absent from ZoneTransfer and those without an inbound teleport (as
+`zones --check`), every TriggerName a ZoneTransfer file lists more than once (`duplicate<TAB><file><TAB><name>`), the
+client zones without a ZoneTransfer file per world (`zones --check --all-zones` lists them), and the `quests check`
+of every world folder under `quest-specs`. It exits 1 when a TriggerName repeats or a spec fails its check.
+
+## Tests
+
+```sh
+python3 -I -m unittest discover tools/tests
+```
+
+No network. The tests that read the client skip when `/kioxia` is absent.
+
+## Package
+
+| module | holds |
+| --- | --- |
+| `wad.py` | KIWAD reading; a zone wad's pads, locations, triggers and volumes; zone and world lookup |
+| `lang.py` | UTF-16 lang files, the quest lang keys, the ZoneLocName index |
+| `templates.py` | the template manifest, BINd fields, mob adjectives, NPC personas and where zones place them |
+| `pack.py` | the pack's JSON: tolerant reading, appending in the file's comma style, file paths |
+| `zones.py` | the ZoneTransfer generator and its rules |
+| `crownshop.py` | the Gear tab |
+| `worlds.py` | the world registry |
+| `quests/spec.py` | spec loading and validation |
+| `quests/generate.py` | templates and drop tables from specs |
+| `quests/archive.py` | the wiki archive: enumerate, fetch, parse |
+| `cli.py` | the subcommands of `spiraltools.py` |
+
+## zones
+
+Rebuilds `ZoneTransfer` entries for a zone from the client's zone wad (`Data/GameData/<World>-<Zone>.wad`,
+read-only):
+
+```sh
+python3 -I tools/spiraltools.py zones Grizzleheim/Interiors/GH_Hero_T2            # print the entries
+python3 -I tools/spiraltools.py zones Grizzleheim/Interiors/GH_Hero_T2 --street   # also the street's pad into it
+python3 -I tools/spiraltools.py zones <zone>... --apply --street                  # write them
+python3 -I tools/spiraltools.py zones <zone> --street WizardCity/WC_Streets/WC_Colossus --apply
+python3 -I tools/spiraltools.py zones --check                                     # quest zones absent from ZoneTransfer
+python3 -I tools/spiraltools.py zones --all --dry-run                             # per-world counts for every client zone
+python3 -I tools/spiraltools.py zones --all --world Celestia --apply              # write one world
+python3 -I tools/spiraltools.py zones --all --review                              # what --all held back, with candidates
+python3 -I tools/spiraltools.py zones --check --all-zones                         # client zones still without a file
 ```
 
 `--gamedata <dir>` points at another client install. A bare `--street` must come after the zone paths.
@@ -97,14 +176,14 @@ the client looks a name up in the destination zone's location list (`gamedata.bi
 wad gives them. Write coordinates only for a spot with no named location, as the shortest float32 text
 (`484.1623,31.0982,1.989745,1.167386`), the same style as the entries captured from the live game.
 
-## crown-shop-gear-from-wad.py
+## crownshop
 
 Lists the crowns-only gear of the client's root wad (`ObjectData/CrownItems`, unpacked at `/kioxia/generator-input/rootwad`,
-read-only) in the Gear tab, `CrownShop/Tab7.json`. Python 3, standard library only:
+read-only) in the Gear tab, `CrownShop/Tab7.json`:
 
 ```sh
-python3 -I tools/crown-shop-gear-from-wad.py --dry-run   # count the entries per category
-python3 -I tools/crown-shop-gear-from-wad.py --apply     # append them to CrownShop/Tab7.json
+python3 -I tools/spiraltools.py crownshop --dry-run   # count the entries per category
+python3 -I tools/spiraltools.py crownshop --apply     # append them to CrownShop/Tab7.json
 ```
 
 `--rootwad <dir>` points at another unpacked root wad.
@@ -125,18 +204,18 @@ series (default 3), all schools, with Maycast wands at the E3 enchant only. A ca
 The retail catalogue is not available, so the prices are placeholders to retune: by the level in the name (`-L<n>`),
 L0-19 1500, L20-39 2500, L40-59 3500, L60-79 4500, L80-99 5500, L100 and up 6500 crowns; 2500 when the name has no
 level; wands 500 more. `goldCost` is 0: crowns only. The bands are `LEVEL_BANDS`, `UNLEVELLED_PRICE` and
-`WAND_SURCHARGE` at the top of the script.
+`WAND_SURCHARGE` at the top of `crownshop.py`.
 
-## questgen.py
+## quests
 
-Writes a quest template and its drop table from one JSON spec per quest. Python 3, standard library only (so the
-specs are JSON, not YAML):
+Writes a quest template and its drop table from one JSON spec per quest. The specs are JSON, not YAML, because the
+standard library has no YAML parser:
 
 ```sh
-python3 -I tools/questgen.py tools/quest-specs/celestia/*.json           # list what it would write
-python3 -I tools/questgen.py --check tools/quest-specs/celestia/*.json   # validate the specs against the client
-python3 -I tools/questgen.py --apply tools/quest-specs/celestia/*.json   # write them
-python3 -I tools/questgen.py --diff tools/quest-specs/roundtrip/*.json   # compare with the pack's own templates
+python3 -I tools/spiraltools.py quests generate tools/quest-specs/celestia/*.json           # list what it would write
+python3 -I tools/spiraltools.py quests check tools/quest-specs/celestia/*.json              # validate them against the client
+python3 -I tools/spiraltools.py quests generate --apply tools/quest-specs/celestia/*.json   # write them
+python3 -I tools/spiraltools.py quests diff tools/quest-specs/roundtrip/*.json               # compare with the pack's own templates
 ```
 
 `--rootwad` and `--gamedata` point at another client, as in the other tools.
@@ -177,7 +256,7 @@ drop-table timestamps included.
   also gets a `ReqHasEntry Completed` NOT on its successors, taken from the other specs of the same run that require
   it, or from a `successors` list.
 - `reward` is the drop table's XP and gold. Without it the tool takes the median quest reward of the pack's world for
-  `level`: `REWARD_BANDS` at the top of the script (40 and up is Dragonspyre's 3805 XP and 103 gold).
+  `level`: `REWARD_BANDS` at the top of `quests/generate.py` (40 and up is Dragonspyre's 3805 XP and 103 gold).
 - Goals run in order; a goal with `"with_previous": true` runs alongside the one before it. Each is named
   `<n>_<title>`, its `m_goalNameID` the string id of `Goal` / `Goal <n-1>`, as in the builder-made pack quests.
 
@@ -194,43 +273,42 @@ Every goal takes `zone` (its destination), `loc` (a `ZoneLocName_<key>`, any oth
 `personas` gives a persona's portrait and template id for its dialog lines and goal; the server fills the speaker's
 name, and a missing portrait, from the persona.
 
-`--check` reports, per spec: a missing `WizQst<lang>.lang`, an empty `dialogs.prep` (no NPC would offer the quest), a
+`quests check` reports, per spec: a missing `WizQst<lang>.lang`, an empty `dialogs.prep` (no NPC would offer the quest), a
 title or line key the lang files lack, a `loc` text ZoneLocName.lang lacks, a zone with no ZoneTransfer entry, and a
 persona whose zone wad places none of the templates that carry it.
 
 ### Not generated
 
-`--diff` lists the fields where a generated template differs from the pack's. On the three WC quests in
+`quests diff` lists the fields where a generated template differs from the pack's. On the three WC quests in
 `quest-specs/roundtrip` (built from the pack's own templates) the goals, goal logic, requirements, dialog keys and
 speakers match; what differs is dialog presentation the client keeps nowhere a tool can read: sound files, cinematic
 cameras, animations and music, the `m_nameSTKey`/`m_nameOverride` name format, per-line template ids, and `m_madlibs`
 (the server builds the quest madlibs). The tool also writes Completion lines on the turn-in goal rather than at quest
 level, an empty goal dialog list as `null`, and `m_bountyType`/`m_bountyTotal` where some captured quests omit them.
 
-## wiki-archive-quests.py
+## archive
 
 Builds questgen specs for a world from the Internet Archive's copies of the Wizard101 Central wiki (the wiki itself
-refuses requests). Python 3, standard library only; read-only GET requests to web.archive.org, one a second, with
+refuses requests): read-only GET requests to web.archive.org, one a second, with
 exponential backoff on 429 and 5xx for up to five minutes:
 
 ```sh
-python3 -I tools/wiki-archive-quests.py --enumerate Celestia   # list the world's quests from the archived categories
-python3 -I tools/wiki-archive-quests.py --fetch Celestia       # download each quest page's newest capture
-python3 -I tools/wiki-archive-quests.py --parse Celestia       # write the specs, print what did not resolve
-python3 -I tools/questgen.py --check tools/quest-specs/celestia/*.json
+python3 -I tools/spiraltools.py archive enumerate Celestia   # list the world's quests from the archived categories
+python3 -I tools/spiraltools.py archive fetch Celestia       # download each quest page's newest capture
+python3 -I tools/spiraltools.py archive parse Celestia       # write the specs, print what did not resolve
+python3 -I tools/spiraltools.py quests check --world Celestia   # validate the specs
 ```
 
 `--cache <dir>` holds the fetched pages, as `<capture timestamp>_<page>.html`, and the index
 `index-<world>.json` (quest, first capture in the CDX index or `missing_snapshot`, zone categories, type). The default
 is `.scratch/friends-server/task-A1/cache` in the checkout; the cache is not committed. A page already in the cache is
-not fetched again. `WORLDS` at the top of the script gives each world its ObjectData folder, its quest lang range and
-its level.
+not fetched again. The world comes from the registry ([Worlds](#worlds)): its ObjectData folder, quest lang cluster and level.
 
-`--enumerate` walks `Category:<World>_Quests` and its subcategories, and reads the CDX index of `Quest:` pages. A
-category with no capture is reported; its quests still come in through the other categories. `--fetch` takes the
+`enumerate` walks `Category:<World>_Quests` and its subcategories, and reads the CDX index of `Quest:` pages. A
+category with no capture is reported; its quests still come in through the other categories. `fetch` takes the
 newest capture, and the CDX timestamp when the newest capture is an error page.
 
-`--parse` reads each page's Prequest, Given By, Giver Location, type sentence, Goals, Hand In and Reward, and resolves:
+`parse` reads each page's Prequest, Given By, Giver Location, type sentence, Goals, Hand In and Reward, and resolves:
 
 - the title to `lang` through `QuestTitle.lang`, compared without case, punctuation or a leading "The". Most Celestia
   quests keep their real title under a placeholder key (`QuestTitle_00000103`) and the internal name, or nothing, under
@@ -244,8 +322,7 @@ newest capture, and the CDX timestamp when the newest capture is an error page.
 
   Chain order and chain window keep a key only when its lines name the page's giver, hand-in NPC, or a goal NPC,
   creature or item.
-- NPC names to personas with `npc-personas-from-wad.py`, mobs to their `.AdjRef` adjectives with
-  `mob-adjectives-from-wad.py`, objects to the adjectives of the world's object templates by display name or template
+- NPC names to personas as `npcs` lists them, mobs to their `.AdjRef` adjectives as `mobs` lists them, objects to the adjectives of the world's object templates by display name or template
   name, and item names to a line of the quest's own `WizQst` file. A named NPC template that no zone wad places takes
   the zones of an unnamed template with the same persona (Queen Calypso is placed as `CL-CalypsoReset`). A name the
   world's folder lacks is taken from the one world name close to it (`NAME_CUTOFF`; the wiki's Koltan Grimfane is
@@ -270,30 +347,30 @@ a blocking gap goes to `quest-specs/<world>/blocked/`, where the questgen glob d
 has no zone path is left out and listed. A spec for a lang that a hand-authored spec already covers is written to
 `<cache>/reference-<world>/` instead, and the differences are printed. A rerun replaces the specs it wrote before.
 
-## mob-adjectives-from-wad.py and npc-personas-from-wad.py
+## mobs and npcs
 
 The lookups a spec needs, from the root wad's object templates (`ObjectData/<folder>`, a world's mobs and NPCs) and
 the zone wads:
 
 ```sh
-python3 -I tools/mob-adjectives-from-wad.py            # CL: display name, template, template id, adjectives
-python3 -I tools/npc-personas-from-wad.py               # CL / Celestia: persona, name, template id, portrait, zones
-python3 -I tools/npc-personas-from-wad.py --folder WC --world WizardCity
+python3 -I tools/spiraltools.py mobs   # CL: display name, template, template id, adjectives
+python3 -I tools/spiraltools.py npcs   # CL / Celestia: persona, name, template id, portrait, zones
+python3 -I tools/spiraltools.py npcs --folder WC --world WizardCity
 ```
 
 A bounty goal counts a defeated mob once for each of its adjectives in `mobs`, so name one adjective per mob: its
 own `<template>.AdjRef`. A shared adjective (`Crustacean_Pincer`, `MONST_Fish`) catches every template that has it.
 A persona goal's `persona` is the persona without `_Persona`; the zones column is where to send the player.
 
-## Authoring a world
+## Authoring a world by hand
 
 1. List the world's quests: `QuestTitle.lang` keys next to `WizQst<hex>.lang` files, and the zone wads' quest names.
 2. For each quest, read its `WizQst<hex>.lang` and order the lines: the offer (Prep), the reminder (Underway), the
    turn-in (Completion), and which persona says each.
-3. Take givers, turn-in NPCs and their zones from `npc-personas-from-wad.py`, and mob adjectives and name keys from
-   `mob-adjectives-from-wad.py` and `WizardMobs.lang`.
-4. Write the spec, run `--check`, then `--apply`. A zone the check reports without ZoneTransfer is added with
-   `zone-transfer-from-wad.py`.
+3. Take givers, turn-in NPCs and their zones from `npcs`, and mob adjectives and name keys from `mobs` and
+   `WizardMobs.lang`.
+4. Write the spec, run `quests check`, then `quests generate --apply`. A zone the check reports without
+   ZoneTransfer is added with `zones`.
 
 The client does not hold quest order and prerequisites, goal sequence, counts beyond what the lines say, rewards,
 or which NPC says a line; those come from a walkthrough. `quest-specs/celestia` is the Survey Camp pilot.
