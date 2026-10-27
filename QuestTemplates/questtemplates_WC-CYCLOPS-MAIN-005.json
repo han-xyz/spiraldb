@@ -47,30 +47,7 @@
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": {
-        "m_results": [
-        {
-          "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
-          "m_dynaModClientTag": "WC-ST03-AkilliesNPC",
-          "m_dynaModRemove": false,
-          "m_useQuestAsOriginator": false,
-          "m_dynaModState": "",
-          "m_zoneName": "WizardCity/WC_Streets/Interiors/WC_Cyclops_T2",
-          "m_bShowsObject": false,
-          "m_persist": false,
-          "m_requirements": null
-        },
-        {
-          "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
-          "m_dynaModClientTag": "WC-AkillesPet-GreatOne",
-          "m_dynaModRemove": false,
-          "m_useQuestAsOriginator": false,
-          "m_dynaModState": "",
-          "m_zoneName": "WizardCity/WC_Streets/Interiors/WC_Cyclops_T2",
-          "m_bShowsObject": false,
-          "m_persist": false,
-          "m_requirements": null
-        }
-      ]
+        "m_results": []
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
@@ -89,29 +66,29 @@
       "m_completeText": null,
       "m_completeResults": {
         "m_results": [
-        {
-          "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
-          "m_dynaModClientTag": "WC-ST03-AkilliesNPC",
-          "m_dynaModRemove": true,
-          "m_useQuestAsOriginator": false,
-          "m_dynaModState": "",
-          "m_zoneName": "WizardCity/WC_Streets/Interiors/WC_Cyclops_T2",
-          "m_bShowsObject": false,
-          "m_persist": false,
-          "m_requirements": null
-        },
-        {
-          "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
-          "m_dynaModClientTag": "WC-AkillesPet-GreatOne",
-          "m_dynaModRemove": true,
-          "m_useQuestAsOriginator": false,
-          "m_dynaModState": "",
-          "m_zoneName": "WizardCity/WC_Streets/Interiors/WC_Cyclops_T2",
-          "m_bShowsObject": false,
-          "m_persist": false,
-          "m_requirements": null
-        }
-      ]
+          {
+            "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
+            "m_dynaModClientTag": "WC-ST03-AkilliesNPC",
+            "m_dynaModRemove": false,
+            "m_useQuestAsOriginator": false,
+            "m_dynaModState": "",
+            "m_zoneName": "WizardCity/WC_Streets/Interiors/WC_Cyclops_T2",
+            "m_bShowsObject": true,
+            "m_persist": true,
+            "m_requirements": null
+          },
+          {
+            "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
+            "m_dynaModClientTag": "WC-AkillesPet-GreatOne",
+            "m_dynaModRemove": false,
+            "m_useQuestAsOriginator": false,
+            "m_dynaModState": "",
+            "m_zoneName": "WizardCity/WC_Streets/Interiors/WC_Cyclops_T2",
+            "m_bShowsObject": true,
+            "m_persist": true,
+            "m_requirements": null
+          }
+        ]
       },
       "m_goalRequirements": null,
       "m_tallyCounter": {
