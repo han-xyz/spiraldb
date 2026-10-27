@@ -2,11 +2,12 @@
   "id": "LM-Q-188A0B",
   "lang": "188A0B",
   "giver": {
-    "persona": "LM-HEAP-NPC03",
-    "zone": "Lemuria/Interiors/LM_Z07_ChattyCafe"
+    "persona": "LM-TELOS-NPC10-D",
+    "zone": "Lemuria/LM_Z00_Hub"
   },
-  "requires": [],
-  "min_level": 132,
+  "requires": [
+    "NV-Q-188A06"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -122,9 +123,9 @@
     }
   ],
   "personas": {
-    "LM-HEAP-NPC03": {
+    "LM-TELOS-NPC10-D": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
-      "template_id": 1524747
+      "template_id": 1487584
     },
     "NV-CON-NPC06-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
@@ -136,11 +137,6 @@
     "timestamp": "20240815201542"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "Novus, No More",
-      "blocking": false
-    },
     {
       "field": "goal.mobs (other folder)",
       "value": "Dr. T. Rex: ObjectData/WL",

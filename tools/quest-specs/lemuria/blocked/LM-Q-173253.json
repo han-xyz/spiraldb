@@ -141,9 +141,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Jungle",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Jungle",
+      "blocking": false
     },
     {
       "field": "dialogs",

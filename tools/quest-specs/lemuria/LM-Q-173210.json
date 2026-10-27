@@ -5,7 +5,9 @@
     "persona": "LM-URSAI-NPC03",
     "zone": "Lemuria/LM_Z02_UrsaiVillage"
   },
-  "requires": [],
+  "requires": [
+    "LM-Q-17320F"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -170,12 +172,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Welcome to Bearadise replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 132
+  ]
 }

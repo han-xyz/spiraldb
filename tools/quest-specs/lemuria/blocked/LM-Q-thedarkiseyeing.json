@@ -13,7 +13,30 @@
     "prep": [],
     "underway": []
   },
-  "goals": [],
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Drone_Eye_A_01.AdjRef",
+        "LM_Drone_Eye_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003939",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Drone_Eye_A_01.AdjRef",
+        "LM_Drone_Eye_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003939",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
   "personas": {},
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Dark_is_Eyeing",
@@ -31,28 +54,9 @@
       "blocking": true
     },
     {
-      "field": "goal.mobs",
-      "value": "Private Eye (Myth)",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Next Room",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Private Eye (Balance)",
-      "blocking": true
-    },
-    {
-      "field": "goals",
-      "value": [
-        "@Defeat [Creature:Private Eye (Myth)]",
-        "@Go to Next Room",
-        "@Defeat [Creature:Private Eye (Balance)]"
-      ],
-      "blocking": true
     }
   ]
 }

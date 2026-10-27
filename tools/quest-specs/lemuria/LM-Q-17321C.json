@@ -93,31 +93,7 @@
         "LM_BrokenWall-2.AdjRef",
         "LM_BrokenWall-3.AdjRef"
       ],
-      "count": 1,
-      "zone": "Lemuria/LM_Z03_NightForest",
-      "descriptor": "WizItems_00002084",
-      "loc": "ZoneLocName_1520100"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "LM_BrokenWall-1.AdjRef",
-        "LM_BrokenWall-2.AdjRef",
-        "LM_BrokenWall-3.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Lemuria/LM_Z03_NightForest",
-      "descriptor": "WizItems_00002084",
-      "loc": "ZoneLocName_1520100"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "LM_BrokenWall-1.AdjRef",
-        "LM_BrokenWall-2.AdjRef",
-        "LM_BrokenWall-3.AdjRef"
-      ],
-      "count": 1,
+      "count": 3,
       "zone": "Lemuria/LM_Z03_NightForest",
       "descriptor": "WizItems_00002084",
       "loc": "ZoneLocName_1520100"
@@ -162,19 +138,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Up Window",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Up Window",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Up Window",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Board Up Window",
+      "blocking": false
     },
     {
       "field": "dialogs",

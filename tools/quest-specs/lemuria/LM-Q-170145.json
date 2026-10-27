@@ -2,8 +2,8 @@
   "id": "LM-Q-170145",
   "lang": "170145",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-03",
-    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+    "persona": "LM-Mandoria-NPC01-02",
+    "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
     "LM-Q-1736C2"
@@ -106,7 +106,7 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507644"
     },
     {
@@ -132,9 +132,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Deer_Hero_NPC.dds",
       "template_id": 1487617
     },
-    "LM-Mandoria-NPC01-03": {
+    "LM-Mandoria-NPC01-02": {
       "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1487469
+      "template_id": 1507626
     }
   },
   "source": {
@@ -151,11 +151,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
-      "blocking": true
     }
   ]
 }

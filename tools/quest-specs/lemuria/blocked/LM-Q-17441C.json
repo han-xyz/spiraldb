@@ -115,16 +115,9 @@
       "loc": "ZoneLocName_1520281"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM-SKY-NPC11.AdjRef",
-        "LM-SKY-NPC11b.AdjRef",
-        "LM-SKY-NPC11c.AdjRef",
-        "LM_Standin_WilmaDeering.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizardNPC_00000939",
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -185,8 +178,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "With the Resistance",
+      "field": "goal.persona",
+      "value": "Resistance",
       "blocking": true
     },
     {
@@ -195,9 +188,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "to the Resistance",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Return to the Resistance",
+      "blocking": false
     },
     {
       "field": "dialogs",

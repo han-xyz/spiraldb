@@ -2,11 +2,11 @@
   "id": "LM-Q-170119",
   "lang": "170119",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-03",
-    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+    "persona": "LM-Mandoria-NPC01-02",
+    "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
-    "LM-Q-170118"
+    "LM-Q-1736BB"
   ],
   "mainline": true,
   "level": 132,
@@ -66,9 +66,9 @@
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-03": {
+    "LM-Mandoria-NPC01-02": {
       "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1487469
+      "template_id": 1507626
     },
     "LM-Mandoria-NPC03-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_E_NPC.dds",
@@ -86,14 +86,14 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Ancient Shrine",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "for Metal Door",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search for Metal Door",
+      "blocking": false
     },
     {
       "field": "dialogs",
@@ -101,9 +101,9 @@
       "blocking": false
     },
     {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
-      "blocking": true
+      "field": "requires (not generated)",
+      "value": "The Lost Realm of Mandoria replaced by LM-Q-1736BB",
+      "blocking": false
     }
   ]
 }

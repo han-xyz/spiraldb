@@ -97,6 +97,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z01_ManaFontClearing"
+    },
+    {
       "type": "usage",
       "items": [
         "LM_AttunementStone-1.AdjRef",
@@ -125,22 +129,17 @@
   "needs_review": [
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Mana Font Clearing",
+      "value": "Sanctum of Secrets",
       "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "Sanctum of Secrets",
+      "value": "Virtual Old One",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "with Virtual Old One",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "with Virtual Old One",
+      "value": "Virtual Old One",
       "blocking": true
     },
     {

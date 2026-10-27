@@ -204,54 +204,21 @@
       "loc": "ZoneLocName_1520281"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM-AMBIENT_SkyCity_WatermoleCitizen_01.AdjRef",
-        "LM-AMBIENT_SkyCity_WatermoleCitizen_02.AdjRef",
-        "LM-SKY-NPC05.AdjRef",
-        "LM-SKY-NPC06.AdjRef",
-        "LM-SKY-NPC07.AdjRef",
-        "LM-SKY-NPC22.AdjRef",
-        "LMRaid_Random_Watermole_01.AdjRef",
-        "LM-SkyCity-Manhole.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizardNPC_00000938",
+      "type": "persona",
+      "persona": "LM-SKY-NPC08",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM-AMBIENT_SkyCity_WatermoleCitizen_01.AdjRef",
-        "LM-AMBIENT_SkyCity_WatermoleCitizen_02.AdjRef",
-        "LM-SKY-NPC05.AdjRef",
-        "LM-SKY-NPC06.AdjRef",
-        "LM-SKY-NPC07.AdjRef",
-        "LM-SKY-NPC22.AdjRef",
-        "LMRaid_Random_Watermole_01.AdjRef",
-        "LM-SkyCity-Manhole.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizardNPC_00000938",
+      "type": "persona",
+      "persona": "LM-SKY-NPC09",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM-AMBIENT_SkyCity_WatermoleCitizen_01.AdjRef",
-        "LM-AMBIENT_SkyCity_WatermoleCitizen_02.AdjRef",
-        "LM-SKY-NPC05.AdjRef",
-        "LM-SKY-NPC06.AdjRef",
-        "LM-SKY-NPC07.AdjRef",
-        "LM-SKY-NPC22.AdjRef",
-        "LMRaid_Random_Watermole_01.AdjRef",
-        "LM-SkyCity-Manhole.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizardNPC_00000938",
+      "type": "persona",
+      "persona": "LM-SKY-NPC10",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -265,6 +232,10 @@
       "target": "WizardMobs_00003870",
       "zone": "",
       "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z06_GuestQuarters"
     },
     {
       "type": "persona",
@@ -288,6 +259,18 @@
       "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_A_NPC.dds",
       "template_id": 1524724
     },
+    "LM-SKY-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_B_NPC.dds",
+      "template_id": 1524733
+    },
+    "LM-SKY-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_C_NPC.dds",
+      "template_id": 1524734
+    },
+    "LM-SKY-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_B_NPC.dds",
+      "template_id": 1524735
+    },
     "LM-SKY-NPC11": {
       "portrait": "GUI/NpcPortraits/Deer_Scientist_B_NPC.dds",
       "template_id": 1524736
@@ -304,33 +287,23 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Old One's Monitoring Station",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter the Old One's Monitoring Station",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "with the Virtual Old One",
+      "value": "Virtual Old One",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Tour",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue Tour",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "Tour",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Harmony (in the Guest Quarters)",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Guest Quarters",
+      "value": "Harmony",
       "blocking": true
     },
     {

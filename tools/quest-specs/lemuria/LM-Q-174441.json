@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z07_Heap"
   },
   "requires": [
-    "LM-Q-174428"
+    "LM-Q-174429"
   ],
   "mainline": false,
   "level": 132,
@@ -65,6 +65,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z07_CommandCenter"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Draconian_Base_A_01.AdjRef"
@@ -97,18 +101,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Command Center",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Prune Disgrace replaced by LM-Q-174428",
       "blocking": false
     }
   ]

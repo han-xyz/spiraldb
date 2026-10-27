@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z07_Heap"
   },
   "requires": [
-    "LM-Q-174428"
+    "LM-Q-174429"
   ],
   "mainline": true,
   "level": 132,
@@ -57,14 +57,8 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "LM-LockUp_Gate.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizQst17442B_00000009",
-      "loc": "ZoneLocName_1524839"
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z07_LockUp"
     },
     {
       "type": "bounty",
@@ -77,13 +71,9 @@
       "loc": "ZoneLocName_1524839"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM_Standin_MooCrewA.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "LM_Standin_MooCrewA",
       "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizardNPC_00000968",
       "loc": "ZoneLocName_1524839"
     },
     {
@@ -101,6 +91,10 @@
     "LM-HEAP-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
       "template_id": 1524747
+    },
+    "LM_Standin_MooCrewA": {
+      "portrait": "GUI/NpcPortraits/Cow_BullGangster_A_MOB.dds",
+      "template_id": 1524840
     }
   },
   "source": {
@@ -111,11 +105,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Prune Disgrace replaced by LM-Q-174428",
       "blocking": false
     }
   ]

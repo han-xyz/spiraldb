@@ -6,7 +6,7 @@
     "zone": "Lemuria/Interiors/LM_Z06_LucysHouse"
   },
   "requires": [
-    "LM-Q-17441A"
+    "LM-Q-174419"
   ],
   "mainline": false,
   "level": 132,
@@ -108,6 +108,10 @@
       "loc": "ZoneLocName_1520281"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z06_EthylsHouse"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_AMBIENT_NeighborhoodWatch_01.AdjRef",
@@ -153,18 +157,23 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Ethyl's House",
-      "blocking": true
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Basement: Lemuria/Interiors/LM_Z03_Basement",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Basement",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter Basement",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Tour You Know replaced by LM-Q-174419",
       "blocking": false
     }
   ]

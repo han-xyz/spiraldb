@@ -134,15 +134,22 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "LM-HEAP-NPC13.AdjRef",
-        "LM-HEAP-NPC13c.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizardNPC_00000953",
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z07_TamarinHouse"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z07_TamarinHouse"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC13",
+      "zone": "Lemuria/Interiors/LM_Z07_LionsOffice",
       "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z07_Wellspring"
     },
     {
       "type": "bounty",
@@ -153,16 +160,6 @@
       "count": 1,
       "target": "WizardMobs_00003939",
       "zone": "Lemuria/LM_Z07_Heap",
-      "loc": "ZoneLocName_1524839"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "LM_MonitoringStationConsole.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizQst174432_00000031",
       "loc": "ZoneLocName_1524839"
     },
     {
@@ -204,22 +201,12 @@
   "needs_review": [
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Tamarin House",
+      "value": "Enter Monitoring Station",
       "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "Tamarin House",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Wellspring",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "with Virtual Old One",
+      "value": "Virtual Old One",
       "blocking": true
     },
     {

@@ -123,15 +123,15 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "AR-ARC-NPC04-B",
-      "zone": "Arcanum/Interiors/AR_Z01_I01_DryDock",
+      "persona": "AR_StandIn_Ione",
+      "zone": "Arcanum/AR_Z01_Hub",
       "loc": "ZoneLocName_1520271"
     }
   ],
   "personas": {
-    "AR-ARC-NPC04-B": {
+    "AR_StandIn_Ione": {
       "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
-      "template_id": 1254305
+      "template_id": 1401051
     },
     "LM-StandIn-StallionQuartermane-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Horse_Explorer_A_NPC.dds",
@@ -159,13 +159,13 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "to Heroes Round Table",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Return to Heroes Round Table",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
-      "value": "Ione Virga: AR-ARC-NPC04-B from ObjectData/AR",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
       "blocking": false
     },
     {

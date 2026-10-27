@@ -97,6 +97,18 @@
   },
   "goals": [
     {
+      "type": "bounty",
+      "mobs": [
+        "LM_Fossa_Base_A_01.AdjRef",
+        "LM_Fossa_Base_A_02.AdjRef",
+        "LM_Fossa_Base_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003889",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Lemuria/LM_Z01_WildLands",
@@ -142,22 +154,17 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "out Centaurzan's Cabin",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Fossa (Myth)",
+      "value": "Centaurzan's Cabin",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "through Poisonthorn Vines",
+      "value": "Poisonthorn Vines",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "for the Bearfolk",
+      "value": "Bearfolk",
       "blocking": true
     },
     {

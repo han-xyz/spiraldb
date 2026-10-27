@@ -1,18 +1,18 @@
 {
-  "id": "LM-Q-174429",
-  "lang": "174429",
+  "id": "LM-Q-174424",
+  "lang": "174424",
   "giver": {
-    "persona": "LM-HEAP-NPC06",
-    "zone": "Lemuria/LM_Z07_Heap"
+    "persona": "LM-Mandoria-NPC01-02",
+    "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
-    "LM-Q-174428"
+    "LM-Q-174421"
   ],
   "mainline": true,
   "level": 132,
   "reward": {
-    "xp": 112840,
-    "gold": 1050
+    "xp": 96720,
+    "gold": 875
   },
   "dialogs": {
     "prep": [
@@ -74,70 +74,53 @@
       },
       {
         "speaker": "giver",
-        "line": "00000014"
-      },
-      {
-        "speaker": "giver",
         "line": "00000015"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000020"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "LM_Cow_GangsterF_B_01.AdjRef"
-      ],
-      "count": 1,
-      "target": "WizardMobs_00003932",
-      "zone": "Lemuria/LM_Z07_Heap",
-      "loc": "ZoneLocName_1524839"
+      "type": "persona",
+      "persona": "LM-SKY-NPC04",
+      "zone": "Lemuria/Interiors/LM_Z06_MonitoringStation",
+      "loc": "ZoneLocName_1520281"
     },
     {
       "type": "persona",
-      "persona": "LM-HEAP-NPC03",
-      "zone": "Lemuria/LM_Z07_Heap",
-      "loc": "ZoneLocName_1524839"
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1520281"
     }
   ],
   "personas": {
-    "LM-HEAP-NPC03": {
-      "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
-      "template_id": 1524747
+    "LM-Mandoria-NPC01-02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1507626
     },
-    "LM-HEAP-NPC06": {
-      "portrait": "GUI/NpcPortraits/Cow_BullGangster_C_NPC.dds",
-      "template_id": 1524752
+    "LM-SKY-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_A_NPC.dds",
+      "template_id": 1524724
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Prune_Disgrace",
-    "timestamp": "20231211101504"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Down_to_Earth_Again",
+    "timestamp": "20240118173819"
   },
   "needs_review": [
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Honeybee Diner",
+      "value": "Go to Landing Platform",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Honeybee Diner",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "to the Precinct",
-      "blocking": true
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To Save Sky City! replaced by LM-Q-174421",
       "blocking": false
     }
   ]

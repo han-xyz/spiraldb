@@ -1,18 +1,18 @@
 {
-  "id": "LM-Q-1736C2",
-  "lang": "1736C2",
+  "id": "LM-Q-17015C",
+  "lang": "17015C",
   "giver": {
-    "persona": "LM-Standin-DuckSavage-B-01",
-    "zone": "Lemuria/LM_Z00_Hub"
+    "persona": "LM-BAD-NPC01-B",
+    "zone": "Lemuria/LM_Z04_Badlands"
   },
   "requires": [
-    "LM-Q-1736BD"
+    "LM-Q-17015B"
   ],
-  "mainline": true,
+  "mainline": false,
   "level": 132,
   "reward": {
-    "xp": 72540,
-    "gold": 475
+    "xp": 0,
+    "gold": 10500
   },
   "dialogs": {
     "prep": [
@@ -70,49 +70,55 @@
       },
       {
         "speaker": "giver",
-        "line": "00000014"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000016"
+        "line": "00000013"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "LM-Autogyro-Fixed.AdjRef",
-        "LM-Autogyro.AdjRef"
+      "type": "bounty",
+      "mobs": [
+        "LM_Lemur_Wild_D_01.AdjRef",
+        "LM_StandIn_DeathLemur.AdjRef"
       ],
       "count": 1,
-      "zone": "Lemuria/LM_Z00_Hub",
-      "descriptor": "WizItems_00002103",
-      "loc": "ZoneLocName_1520271"
+      "target": "WizardMobs_00003986",
+      "zone": "",
+      "loc": "ZoneLocName_1507599"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/LM_Z00_Hub",
-      "loc": "ZoneLocName_1520271"
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1507599"
     }
   ],
   "personas": {
-    "LM-Standin-DuckSavage-B-01": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1487498
+    "LM-BAD-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
+      "template_id": 1487607
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Skyfallen",
-    "timestamp": "20240322090713"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:No_Evil_Like_Ancient_Evil",
+    "timestamp": "20231119064040"
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Duck's Autogyro in Badlands",
-      "blocking": true
+      "field": "lang",
+      "value": "WizQst17015C matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Skeletaur's Tomb",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Interior",
+      "blocking": false
     },
     {
       "field": "dialogs",

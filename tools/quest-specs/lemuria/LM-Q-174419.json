@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z04_Badlands"
   },
   "requires": [
-    "LM-Q-173227"
+    "LM-Q-170145"
   ],
   "mainline": true,
   "level": 132,
@@ -116,11 +116,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Emergency Repairs replaced by LM-Q-173227",
       "blocking": false
     }
   ]

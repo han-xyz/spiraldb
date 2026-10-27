@@ -3,7 +3,7 @@
   "lang": "173219",
   "giver": {
     "persona": "LM-Standin-Bantam",
-    "zone": "Lemuria/Interiors/LM_Z00_I08_HallofHeroesInner"
+    "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber"
   },
   "requires": [
     "LM-Q-173217"
@@ -102,7 +102,7 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/Interiors/LM_Z00_I08_HallofHeroesInner",
+      "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
       "loc": "ZoneLocName_1520099"
     }
   ],
@@ -119,18 +119,13 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "with the Virtual Old One",
+      "value": "Virtual Old One",
       "blocking": true
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Lemuria/Interiors/LM_Z00_I08_HallofHeroesInner",
-      "blocking": true
     }
   ]
 }

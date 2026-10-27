@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z07_Heap"
   },
   "requires": [
-    "LM-Q-174425"
+    "LM-Q-174424"
   ],
   "mainline": true,
   "level": 132,
@@ -90,13 +90,18 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "for Monitoring Station",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search for Monitoring Station",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Heap of Trouble replaced by LM-Q-174424",
       "blocking": false
     }
   ]

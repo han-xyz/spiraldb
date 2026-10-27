@@ -1,17 +1,18 @@
 {
-  "id": "LM-Q-170156",
-  "lang": "170156",
+  "id": "LM-Q-1736BB",
+  "lang": "1736BB",
   "giver": {
-    "persona": "LM_Standin_KoolakambaChief_01",
-    "zone": "Lemuria/LM_Z04_Badlands"
+    "persona": "LM-TELOS-NPC11",
+    "zone": "Lemuria/LM_Z00_Hub"
   },
-  "requires": [],
-  "min_level": 132,
-  "mainline": false,
+  "requires": [
+    "LM-Q-173228"
+  ],
+  "mainline": true,
   "level": 132,
   "reward": {
-    "xp": 0,
-    "gold": 12500
+    "xp": 112840,
+    "gold": 1100
   },
   "dialogs": {
     "prep": [
@@ -65,19 +66,7 @@
       },
       {
         "speaker": "giver",
-        "line": "00000013"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000014"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000015"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000016"
+        "line": "00000012"
       },
       {
         "speaker": "giver",
@@ -104,64 +93,61 @@
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "LM_Minotaur_Skeleton_A_01.AdjRef",
-        "LM_Standin_Skeletaur_01.AdjRef"
+      "type": "usage",
+      "items": [
+        "LM_AttunementStone-1.AdjRef",
+        "LM_AttunementStone-2-Life.AdjRef",
+        "LM_AttunementStone-3-Death.AdjRef",
+        "LM_AttunementStone-4-Myth.AdjRef",
+        "LM_AttunementStone-Heap.AdjRef",
+        "LM_AttunementStone-Sky.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00003988",
-      "zone": "",
-      "loc": "ZoneLocName_1507644"
+      "zone": "Lemuria/LM_Z00_Hub",
+      "descriptor": "WizItems_00002089",
+      "loc": "ZoneLocName_1520271"
     },
     {
       "type": "persona",
-      "persona": "giver",
-      "zone": "Lemuria/LM_Z04_Badlands",
-      "loc": "ZoneLocName_1507644"
+      "persona": "LM-StandIn-StallionQuartermane-B",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
     },
     {
       "type": "persona",
-      "persona": "LM-BAD-NPC01-B",
-      "zone": "Lemuria/LM_Z04_Badlands",
-      "loc": "ZoneLocName_1507644",
-      "completion": [
-        {
-          "speaker": "LM-BAD-NPC01-B",
-          "line": "00000018"
-        }
-      ]
+      "persona": "LM-Standin-DuckSavage-B-01",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
     }
   ],
   "personas": {
-    "LM-BAD-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
-      "template_id": 1487607
+    "LM-StandIn-StallionQuartermane-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Horse_Explorer_A_NPC.dds",
+      "template_id": 1521321
     },
-    "LM_Standin_KoolakambaChief_01": {
-      "portrait": "GUI/NpcPortraits/Lemur_Wild_C_NPC.dds",
-      "template_id": 1487606
+    "LM-Standin-DuckSavage-B-01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487498
+    },
+    "LM-TELOS-NPC11": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_LinNoHat_A_NPC.dds",
+      "template_id": 1521345
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:To_Grayschool!",
-    "timestamp": "20231119064647"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Being_in_the_World",
+    "timestamp": "20231211101203"
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "The Shadow of Skeletaur",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
-      "value": "Castle Grayschool",
+      "value": "Hall of Heroes (Standard)",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Castle Grayschool",
-      "blocking": true
     },
     {
       "field": "dialogs",

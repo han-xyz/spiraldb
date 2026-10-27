@@ -79,9 +79,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "the Third Story Tomb",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Third Story Tomb",
+      "blocking": false
     },
     {
       "field": "goal.mobs",

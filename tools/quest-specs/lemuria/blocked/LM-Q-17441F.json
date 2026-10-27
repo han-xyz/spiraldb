@@ -77,31 +77,9 @@
       "loc": "ZoneLocName_1520281"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM-BAD-NPC03.AdjRef",
-        "LM-Mandoria-NPC011.AdjRef",
-        "LM-SKY-NPC01.AdjRef",
-        "LM-SKY-NPC01b.AdjRef",
-        "LM-SKY-NPC01c.AdjRef",
-        "LM-SKY-NPC01d.AdjRef",
-        "LM-TELOS-NPC09-B.AdjRef",
-        "LM-TELOS-NPC09-C.AdjRef",
-        "LM-TELOS-NPC09-D.AdjRef",
-        "LM-TELOS-NPC09-E.AdjRef",
-        "LM-TELOS-NPC09-F.AdjRef",
-        "LM-TELOS-NPC09-G.AdjRef",
-        "LM-TELOS-NPC09.AdjRef",
-        "LM_Standin_BuckGordon.AdjRef",
-        "LM_Standin_BuckGordon_02.AdjRef",
-        "LM_Standin_BuckGordon_03.AdjRef",
-        "LM_Standin_BuckGordon_04.AdjRef",
-        "LM_Standin_BuckGordon_05.AdjRef",
-        "LM_Standin_BuckGordon_06.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizardNPC_00001008",
+      "type": "persona",
+      "persona": "LM-BAD-NPC03",
+      "zone": "Lemuria/LM_Z04_Badlands",
       "loc": "ZoneLocName_1520281"
     },
     {

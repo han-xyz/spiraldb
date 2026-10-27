@@ -2,11 +2,11 @@
   "id": "LM-Q-170120",
   "lang": "170120",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-03",
-    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+    "persona": "LM-Mandoria-NPC01-02",
+    "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
-    "LM-Q-17011F"
+    "LM-Q-17011E"
   ],
   "mainline": true,
   "level": 132,
@@ -97,65 +97,15 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "LM-Accompany-Mandar_ENC.AdjRef",
-        "LM-Mandoria-NPC05-01.AdjRef",
-        "LM-Mandoria-NPC05-02.AdjRef",
-        "LM-Mandoria-NPC05-03.AdjRef",
-        "LM-Standin-Mandar-02.AdjRef",
-        "LM-Standin-Mandar-03.AdjRef",
-        "LM-Standin-Mandar-04.AdjRef",
-        "LM-Standin-Mandar-05.AdjRef",
-        "LM-Standin-Mandar-06.AdjRef",
-        "LM-Standin-Mandar-07.AdjRef",
-        "LM-Standin-Mandar-08.AdjRef",
-        "LM-Standin-Mandar-09.AdjRef",
-        "LM-Standin-Mandar-B-01.AdjRef",
-        "LM-Standin-Mandar-B-02.AdjRef",
-        "LM-Standin-Mandar.AdjRef",
-        "LM-TELOS-MandarFighter.AdjRef",
-        "LM-TELOS-NPC13-B.AdjRef",
-        "LM-TELOS-NPC13-C.AdjRef",
-        "LM-TELOS-NPC13-D.AdjRef",
-        "LM-TELOS-NPC13-E.AdjRef",
-        "LM-TELOS-NPC13.AdjRef",
-        "LM-WILD-NPC12.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizardNPC_00000933",
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC05-01",
+      "zone": "Lemuria/Interiors/LM_Z05_I10_CellRoom",
       "loc": "ZoneLocName_1507599"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM-Accompany-Mandar_ENC.AdjRef",
-        "LM-Mandoria-NPC05-01.AdjRef",
-        "LM-Mandoria-NPC05-02.AdjRef",
-        "LM-Mandoria-NPC05-03.AdjRef",
-        "LM-Standin-Mandar-02.AdjRef",
-        "LM-Standin-Mandar-03.AdjRef",
-        "LM-Standin-Mandar-04.AdjRef",
-        "LM-Standin-Mandar-05.AdjRef",
-        "LM-Standin-Mandar-06.AdjRef",
-        "LM-Standin-Mandar-07.AdjRef",
-        "LM-Standin-Mandar-08.AdjRef",
-        "LM-Standin-Mandar-09.AdjRef",
-        "LM-Standin-Mandar-B-01.AdjRef",
-        "LM-Standin-Mandar-B-02.AdjRef",
-        "LM-Standin-Mandar.AdjRef",
-        "LM-TELOS-MandarFighter.AdjRef",
-        "LM-TELOS-NPC13-B.AdjRef",
-        "LM-TELOS-NPC13-C.AdjRef",
-        "LM-TELOS-NPC13-D.AdjRef",
-        "LM-TELOS-NPC13-E.AdjRef",
-        "LM-TELOS-NPC13.AdjRef",
-        "LM-WILD-NPC12.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizardNPC_00000933",
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC05-01",
+      "zone": "Lemuria/Interiors/LM_Z05_I10_CellRoom",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -170,14 +120,14 @@
     },
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC05-02",
-      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "persona": "LM-Mandoria-NPC05-01",
+      "zone": "Lemuria/Interiors/LM_Z05_I10_CellRoom",
       "loc": "ZoneLocName_1507599"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599",
       "completion": [
         {
@@ -192,13 +142,13 @@
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-03": {
+    "LM-Mandoria-NPC01-02": {
       "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1487469
+      "template_id": 1507626
     },
-    "LM-Mandoria-NPC05-02": {
+    "LM-Mandoria-NPC05-01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mander_Hero_A_NPC.dds",
-      "template_id": 1487470
+      "template_id": 1507629
     }
   },
   "source": {
@@ -212,14 +162,14 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Cliff",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Climb Cliff",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "for the Sword of He-Mander in his tomb",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "his tomb",
+      "blocking": false
     },
     {
       "field": "dialogs",
@@ -227,9 +177,9 @@
       "blocking": false
     },
     {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
-      "blocking": true
+      "field": "requires (not generated)",
+      "value": "Savage Science replaced by LM-Q-17011E",
+      "blocking": false
     }
   ]
 }

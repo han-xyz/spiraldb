@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z07_Heap"
   },
   "requires": [
-    "LM-Q-174419"
+    "LM-Q-174426"
   ],
   "mainline": true,
   "level": 132,
@@ -53,14 +53,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "LM-HEAP-NPC02.AdjRef",
-        "LM-HEAP-NPC02b.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "giver",
       "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizardNPC_00000942",
       "loc": "ZoneLocName_1524839"
     },
     {
@@ -115,11 +110,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Irregular Occurrence replaced by LM-Q-174419",
       "blocking": false
     }
   ]

@@ -117,9 +117,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "to the Village",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Return to the Village",
+      "blocking": false
     },
     {
       "field": "goal.items",

@@ -67,9 +67,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "to the Harmonic Gate",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Return to the Harmonic Gate",
+      "blocking": false
     },
     {
       "field": "dialogs",

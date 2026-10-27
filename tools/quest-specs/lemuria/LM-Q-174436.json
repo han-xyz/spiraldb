@@ -81,19 +81,6 @@
       "loc": "ZoneLocName_1524839"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM_StationHeapConsole.AdjRef",
-        "LM_StationOneConsole.AdjRef",
-        "LM_StationThreeConsole.AdjRef",
-        "LM_StationTwoConsole.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizQst174436_00000014",
-      "loc": "ZoneLocName_1524839"
-    },
-    {
       "type": "persona",
       "persona": "LM-StandIn-StallionQuartermane-B",
       "zone": "Lemuria/Interiors/LM_Z00_I01_HierarchsSanctum",
@@ -119,6 +106,11 @@
     "timestamp": "20240119020201"
   },
   "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Leave the Station",
+      "blocking": false
+    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

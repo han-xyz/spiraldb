@@ -5,7 +5,9 @@
     "persona": "LM-TELOS-NPC04",
     "zone": "Lemuria/LM_Z00_Hub"
   },
-  "requires": [],
+  "requires": [
+    "LM-Q-1736B0"
+  ],
   "mainline": false,
   "level": 132,
   "reward": {
@@ -96,6 +98,10 @@
       "loc": "ZoneLocName_1520271"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z01_HeartOfTheWilds"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_PA_GreenMan_A_01.AdjRef",
@@ -125,20 +131,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Heart of the Wilds",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Sancless Job replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 132
+  ]
 }

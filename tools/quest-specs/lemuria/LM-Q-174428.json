@@ -153,28 +153,9 @@
       "loc": "ZoneLocName_1524839"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM-HEAP-NPC03.AdjRef",
-        "LM-HEAP-NPC03b.AdjRef",
-        "LM-HEAP-NPC03c.AdjRef",
-        "LM-HEAP-NPC03d.AdjRef",
-        "LM-HEAP-NPC03e.AdjRef",
-        "LM-HEAP-NPC03f.AdjRef",
-        "LM-HEAP-NPC03g.AdjRef",
-        "LM-SKY-NPC23.AdjRef",
-        "LM-TELOS-NPC10-B.AdjRef",
-        "LM-TELOS-NPC10-C.AdjRef",
-        "LM-TELOS-NPC10-D.AdjRef",
-        "LM-TELOS-NPC10.AdjRef",
-        "LM_Standin_DogTracy.AdjRef",
-        "LM_Standin_DogTracy_02.AdjRef",
-        "LM_Standin_DogTracy_03.AdjRef",
-        "LM_Standin_DogTracy_04.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "giver",
       "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizardNPC_00000943",
       "loc": "ZoneLocName_1524839"
     },
     {

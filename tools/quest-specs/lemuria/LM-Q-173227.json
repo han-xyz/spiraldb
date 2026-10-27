@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z03_NightForest"
   },
   "requires": [
-    "LM-Q-173224"
+    "LM-Q-173225"
   ],
   "mainline": true,
   "level": 132,
@@ -164,7 +164,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Worth 1000 Woes replaced by LM-Q-173224",
+      "value": "Worth 1000 Woes replaced by LM-Q-173225",
       "blocking": false
     }
   ]

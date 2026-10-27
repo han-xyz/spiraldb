@@ -1,32 +1,24 @@
 {
-  "id": "LM-Q-17442F",
-  "lang": "17442F",
+  "id": "LM-Q-174431",
+  "lang": "174431",
   "giver": {
-    "persona": "LM-HEAP-NPC08",
-    "zone": "Lemuria/LM_Z07_Heap"
+    "persona": "LM-HEAP-NPC04",
+    "zone": "Lemuria/Interiors/LM_Z07_Precinct"
   },
   "requires": [
-    "LM-Q-17442E"
+    "LM-Q-174430"
   ],
   "mainline": true,
   "level": 132,
   "reward": {
-    "xp": 177320,
-    "gold": 1700
+    "xp": 96720,
+    "gold": 1050
   },
   "dialogs": {
     "prep": [
       {
         "speaker": "giver",
         "line": "00000000"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000001"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000002"
       },
       {
         "speaker": "giver",
@@ -82,78 +74,67 @@
       },
       {
         "speaker": "giver",
-        "line": "00000016"
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "LM_WildlandCherries.AdjRef"
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z07_ChattyCafe"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z07_ChattyCafe"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Cow_BullGangster_E_01.AdjRef",
+        "LM_Standin_CrimeMime_01.AdjRef"
       ],
       "count": 1,
+      "target": "WizardMobs_00003938",
       "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizItems_00002097",
-      "loc": "ZoneLocName_1524839"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "LM_WildlandCherries.AdjRef"
-      ],
-      "count": 3,
-      "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizItems_00002097",
-      "loc": "ZoneLocName_1524839"
-    },
-    {
-      "type": "bountycollect",
-      "mobs": [
-        "LM_Fossa_Base_A_01.AdjRef",
-        "LM_Fossa_Base_A_02.AdjRef",
-        "LM_Fossa_Base_A_03.AdjRef"
-      ],
-      "count": 3,
-      "target": "WizardMobs_00003889",
-      "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizQst17442F_00000017",
       "loc": "ZoneLocName_1524839"
     },
     {
       "type": "persona",
-      "persona": "giver",
+      "persona": "LM-HEAP-NPC03",
       "zone": "Lemuria/LM_Z07_Heap",
-      "loc": "ZoneLocName_1524839"
+      "loc": "ZoneLocName_1524839",
+      "completion": [
+        {
+          "speaker": "LM-HEAP-NPC03",
+          "line": "00000002"
+        }
+      ]
     }
   ],
   "personas": {
-    "LM-HEAP-NPC08": {
-      "portrait": "GUI/NpcPortraits/Deer_Hero_A_NPC.dds",
-      "template_id": 1524754
+    "LM-HEAP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
+      "template_id": 1524747
+    },
+    "LM-HEAP-NPC04": {
+      "portrait": "GUI/NpcPortraits/Deer_Scientist_A_NPC.dds",
+      "template_id": 1524749
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Charity_for_Clarity",
-    "timestamp": "20240322090706"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Worst_Criminal_Ever",
+    "timestamp": "20240322090718"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Supplies to Renee Moosso",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Supplies to Paul Cudd",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Supplies to Tom Holstein",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

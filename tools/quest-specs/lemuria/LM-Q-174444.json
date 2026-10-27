@@ -146,6 +146,10 @@
       "loc": "ZoneLocName_1524839"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z07_AngusPlace"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Cow_GangsterF_C_02.AdjRef"
@@ -195,11 +199,6 @@
     "timestamp": "20240119021601"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Angus' Place",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

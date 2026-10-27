@@ -6,7 +6,7 @@
     "zone": "Lemuria/Interiors/LM_Z03_Crypt"
   },
   "requires": [
-    "LM-Q-173283"
+    "LM-Q-173228"
   ],
   "mainline": false,
   "level": 132,
@@ -70,13 +70,18 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "the Second Story Tomb",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Second Story Tomb",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Tales from the Script replaced by LM-Q-173228",
       "blocking": false
     }
   ]

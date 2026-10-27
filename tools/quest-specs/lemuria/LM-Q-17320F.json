@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z01_WildLands"
   },
   "requires": [
-    "LM-Q-17320E"
+    "LM-Q-1736B6"
   ],
   "mainline": true,
   "level": 132,
@@ -114,6 +114,18 @@
   "goals": [
     {
       "type": "persona",
+      "persona": "LM-URSAI-NPC02",
+      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC02",
+      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
       "persona": "LM-URSAI-NPC03",
       "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099"
@@ -142,6 +154,10 @@
       "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
       "template_id": 1520317
     },
+    "LM-URSAI-NPC02": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_E_NPC.dds",
+      "template_id": 1520123
+    },
     "LM-URSAI-NPC03": {
       "portrait": "GUI/NpcPortraits/Bear_Islander_A_NPC.dds",
       "template_id": 1520124
@@ -153,16 +169,6 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "for Hierarch Juju",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "for Hierarch Juju",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Mango Thicket",
       "blocking": false
@@ -170,6 +176,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Grease a Few Hooves replaced by LM-Q-1736B6",
       "blocking": false
     }
   ]

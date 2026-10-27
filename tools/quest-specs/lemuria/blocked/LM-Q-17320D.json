@@ -69,6 +69,22 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "LM-Map.AdjRef",
+        "LM_LabMap.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "descriptor": "WizItems_00002090",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
       "type": "persona",
       "persona": "LM-TELOS-NPC03-B",
       "zone": "Lemuria/Interiors/LM_Z00_I01_HierarchsSanctum",
@@ -89,16 +105,6 @@
     {
       "field": "giver",
       "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Z to Photomance Map",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "to Quartermane & the Supreme Hierarch in Telos",
       "blocking": true
     },
     {

@@ -6,7 +6,7 @@
     "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
   },
   "requires": [
-    "LM-Q-17441F"
+    "LM-Q-174419"
   ],
   "mainline": true,
   "level": 132,
@@ -61,6 +61,17 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "LM-ManaFountain.AdjRef",
+        "LM_Mana.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00023249",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
@@ -85,13 +96,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Z to Photomance Mana Fountain",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To the Rescue! replaced by LM-Q-174419",
       "blocking": false
     }
   ]

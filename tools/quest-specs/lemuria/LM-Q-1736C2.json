@@ -1,18 +1,18 @@
 {
-  "id": "LM-Q-1736E0",
-  "lang": "1736E0",
+  "id": "LM-Q-1736C2",
+  "lang": "1736C2",
   "giver": {
-    "persona": "LM-StandIn-StallionQuartermane-B",
+    "persona": "LM-Standin-DuckSavage-B-01",
     "zone": "Lemuria/LM_Z00_Hub"
   },
   "requires": [
-    "LM-Q-1736DC"
+    "LM-Q-170124"
   ],
   "mainline": true,
   "level": 132,
   "reward": {
-    "xp": 96720,
-    "gold": 1050
+    "xp": 72540,
+    "gold": 475
   },
   "dialogs": {
     "prep": [
@@ -70,25 +70,30 @@
       },
       {
         "speaker": "giver",
-        "line": "00000013"
+        "line": "00000014"
       },
       {
         "speaker": "giver",
-        "line": "00000018"
+        "line": "00000016"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "LM-Standin-OldOnesSion.AdjRef",
-        "LM_Khrulhu_Scion_A_01.AdjRef"
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1507644"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-Autogyro-Fixed.AdjRef",
+        "LM-Autogyro.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00003950",
       "zone": "Lemuria/LM_Z00_Hub",
+      "descriptor": "WizItems_00002103",
       "loc": "ZoneLocName_1520271"
     },
     {
@@ -99,29 +104,24 @@
     }
   ],
   "personas": {
-    "LM-StandIn-StallionQuartermane-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Horse_Explorer_A_NPC.dds",
-      "template_id": 1521321
+    "LM-Standin-DuckSavage-B-01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487498
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Do_or_Scion",
-    "timestamp": "20231211101915"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Skyfallen",
+    "timestamp": "20240322090713"
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Scion's Chamber",
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "to the table outside Hall of Heroes",
-      "blocking": true
-    },
-    {
-      "field": "dialogs",
-      "value": "speaker and role guessed from the line text",
+      "field": "requires (not generated)",
+      "value": "Another Stone Down replaced by LM-Q-170124",
       "blocking": false
     }
   ]

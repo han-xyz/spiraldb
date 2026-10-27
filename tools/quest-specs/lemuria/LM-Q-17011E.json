@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z07_Heap"
   },
   "requires": [
-    "LM-Q-17011B"
+    "LM-Q-170119"
   ],
   "mainline": true,
   "level": 132,
@@ -117,6 +117,12 @@
   },
   "goals": [
     {
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC05-01",
+      "zone": "Lemuria/Interiors/LM_Z05_I10_CellRoom",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Mander_Hero_A_01.AdjRef",
@@ -130,14 +136,14 @@
     },
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC05-02",
-      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "persona": "LM-Mandoria-NPC05-01",
+      "zone": "Lemuria/Interiors/LM_Z05_I10_CellRoom",
       "loc": "ZoneLocName_1507599"
     },
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC01-03",
-      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "persona": "LM-Mandoria-NPC01-02",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     }
   ],
@@ -146,13 +152,13 @@
       "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
       "template_id": 1524741
     },
-    "LM-Mandoria-NPC01-03": {
+    "LM-Mandoria-NPC01-02": {
       "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1487469
+      "template_id": 1507626
     },
-    "LM-Mandoria-NPC05-02": {
+    "LM-Mandoria-NPC05-01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mander_Hero_A_NPC.dds",
-      "template_id": 1487470
+      "template_id": 1507629
     }
   },
   "source": {
@@ -166,19 +172,14 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "up with Mandar in his refuge",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
     },
     {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
-      "blocking": true
+      "field": "requires (not generated)",
+      "value": "Mothly Hospitality replaced by LM-Q-170119",
+      "blocking": false
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "id": "LM-Q-17442E",
-  "lang": "17442E",
+  "id": "LM-Q-17442F",
+  "lang": "17442F",
   "giver": {
     "persona": "LM-HEAP-NPC08",
     "zone": "Lemuria/LM_Z07_Heap"
   },
   "requires": [
-    "LM-Q-17442D"
+    "LM-Q-17442E"
   ],
   "mainline": true,
   "level": 132,
   "reward": {
-    "xp": 72540,
-    "gold": 875
+    "xp": 177320,
+    "gold": 1700
   },
   "dialogs": {
     "prep": [
@@ -83,34 +83,6 @@
       {
         "speaker": "giver",
         "line": "00000016"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000017"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000018"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000019"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000020"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000021"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000022"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000023"
       }
     ],
     "underway": []
@@ -119,15 +91,52 @@
     {
       "type": "usage",
       "items": [
-        "LM-HEAP-NPC09.AdjRef",
-        "LM-HEAP-NPC09b.AdjRef",
-        "LM-HEAP-NPC09c.AdjRef",
-        "LM-HEAP-NPC09d.AdjRef",
-        "LM_Standin_Bumbles.AdjRef"
+        "LM_WildlandCherries.AdjRef"
       ],
       "count": 1,
       "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizardNPC_00000949",
+      "descriptor": "WizItems_00002097",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_WildlandCherries.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizItems_00002097",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Fossa_Base_A_01.AdjRef",
+        "LM_Fossa_Base_A_02.AdjRef",
+        "LM_Fossa_Base_A_03.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003889",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizQst17442F_00000017",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC10",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC11",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC12",
+      "zone": "Lemuria/LM_Z07_Heap",
       "loc": "ZoneLocName_1524839"
     },
     {
@@ -141,23 +150,25 @@
     "LM-HEAP-NPC08": {
       "portrait": "GUI/NpcPortraits/Deer_Hero_A_NPC.dds",
       "template_id": 1524754
+    },
+    "LM-HEAP-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_GangsterF_A_NPC.dds",
+      "template_id": 1524757
+    },
+    "LM-HEAP-NPC11": {
+      "portrait": "GUI/NpcPortraits/Cow_BullGangster_C_NPC.dds",
+      "template_id": 1524758
+    },
+    "LM-HEAP-NPC12": {
+      "portrait": "GUI/NpcPortraits/Cow_BullGangster_A_NPC.dds",
+      "template_id": 1524759
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Don't_Fear_Prim_Reaper",
-    "timestamp": "20240322090701"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Charity_for_Clarity",
+    "timestamp": "20240322090706"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Moo Cafe",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "for Bumbles",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

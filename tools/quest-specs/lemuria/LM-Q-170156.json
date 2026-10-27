@@ -1,18 +1,18 @@
 {
-  "id": "LM-Q-174430",
-  "lang": "174430",
+  "id": "LM-Q-170156",
+  "lang": "170156",
   "giver": {
-    "persona": "LM-HEAP-NPC04",
-    "zone": "Lemuria/Interiors/LM_Z07_Precinct"
+    "persona": "LM-BAD-NPC02",
+    "zone": "Lemuria/LM_Z04_Badlands"
   },
   "requires": [
-    "LM-Q-17442F"
+    "LM-Q-17015C"
   ],
-  "mainline": true,
+  "mainline": false,
   "level": 132,
   "reward": {
-    "xp": 217620,
-    "gold": 2000
+    "xp": 0,
+    "gold": 12500
   },
   "dialogs": {
     "prep": [
@@ -70,6 +70,10 @@
       },
       {
         "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
         "line": "00000015"
       },
       {
@@ -82,10 +86,6 @@
       },
       {
         "speaker": "giver",
-        "line": "00000018"
-      },
-      {
-        "speaker": "giver",
         "line": "00000019"
       },
       {
@@ -95,89 +95,93 @@
       {
         "speaker": "giver",
         "line": "00000021"
-      }
-    ],
-    "underway": [
+      },
       {
         "speaker": "giver",
-        "line": "00000012"
+        "line": "00000022"
       }
-    ]
+    ],
+    "underway": []
   },
   "goals": [
     {
       "type": "bounty",
       "mobs": [
-        "LM_Swarm_Bees_A_01.AdjRef",
-        "LM_Swarm_Bees_A_02.AdjRef"
+        "LM_Minotaur_Skeleton_A_01.AdjRef",
+        "LM_Standin_Skeletaur_01.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00003937",
-      "zone": "Lemuria/LM_Z07_Heap",
-      "loc": "ZoneLocName_1524839"
+      "target": "WizardMobs_00003988",
+      "zone": "",
+      "loc": "ZoneLocName_1507644"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/Interiors/LM_Z07_Precinct",
-      "loc": "ZoneLocName_1524839",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1507644"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-BAD-NPC01-B",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1507644",
       "completion": [
         {
-          "speaker": "giver",
-          "line": "00000014"
+          "speaker": "LM-BAD-NPC01-B",
+          "line": "00000018"
         }
       ]
     }
   ],
   "personas": {
-    "LM-HEAP-NPC04": {
-      "portrait": "GUI/NpcPortraits/Deer_Scientist_A_NPC.dds",
-      "template_id": 1524749
+    "LM-BAD-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
+      "template_id": 1487607
+    },
+    "LM-BAD-NPC02": {
+      "portrait": "GUI/NpcPortraits/Lemur_Wild_C_NPC.dds",
+      "template_id": 1507682
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Buzzing_Brain",
-    "timestamp": "20240322090714"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:To_Grayschool!",
+    "timestamp": "20231119064647"
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Crime Lab",
+      "field": "requires",
+      "value": "The Shadow of Skeletaur",
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the mind of Bumbles",
-      "blocking": true
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Castle Grayschool: Lemuria/Interiors/LM_Z04_I03_CastleGraySchool",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Bumbles Mind",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Castle Grayschool",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Z to Photomance First Memory",
-      "blocking": true
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Castle Grayschool: Lemuria/Interiors/LM_Z04_I03_CastleGraySchool",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Z to Photomance Second Memory",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Z to Photomance Third Memory",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Bumbles Mind",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter Castle Grayschool",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Shadow of Skeletaur replaced by LM-Q-17015C",
       "blocking": false
     }
   ]

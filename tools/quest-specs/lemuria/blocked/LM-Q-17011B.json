@@ -2,8 +2,8 @@
   "id": "LM-Q-17011B",
   "lang": "17011B",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-03",
-    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+    "persona": "LM-Mandoria-NPC01-02",
+    "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
     "LM-Q-170119"
@@ -190,8 +190,15 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC04-02",
-      "zone": ""
+      "persona": "LM-Mandoria-NPC04",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC04",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
     },
     {
       "type": "bounty",
@@ -215,8 +222,8 @@
     },
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC05-02",
-      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "persona": "LM-Mandoria-NPC05-01",
+      "zone": "Lemuria/Interiors/LM_Z05_I10_CellRoom",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -227,16 +234,6 @@
       "count": 1,
       "target": "WizardMobs_00003910",
       "zone": "",
-      "loc": "ZoneLocName_1507599"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "LM-DungeonTeleportToJailCell.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizQst17011B_00000071",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -251,17 +248,17 @@
       "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
       "template_id": 1524741
     },
-    "LM-Mandoria-NPC01-03": {
+    "LM-Mandoria-NPC01-02": {
       "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1487469
+      "template_id": 1507626
     },
-    "LM-Mandoria-NPC04-02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Moth_Sorcerer_A_MOB.dds",
-      "template_id": 1507630
+    "LM-Mandoria-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Moth_Sorcerer_A_NPC.dds",
+      "template_id": 1507628
     },
-    "LM-Mandoria-NPC05-02": {
+    "LM-Mandoria-NPC05-01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mander_Hero_A_NPC.dds",
-      "template_id": 1487470
+      "template_id": 1507629
     }
   },
   "source": {
@@ -280,39 +277,34 @@
       "blocking": false
     },
     {
-      "field": "goal.persona.zone (placed in no zone)",
-      "value": "Moth Amon",
+      "field": "goal.items",
+      "value": "Escape Route",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "with Moth Amon in Atrium",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter Door in Prison Chambers",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "for Escape Route",
+      "value": "Barbarian's Cell",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Door in Prison Chambers",
-      "blocking": true
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Dungeon: Lemuria/Interiors/LM_Z05_I01_Dungeon",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Barbarian's Cell",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Escape Dungeon",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
-      "blocking": true
     }
   ]
 }

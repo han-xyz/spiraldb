@@ -77,31 +77,7 @@
         "LM_Watchman2.AdjRef",
         "LM_Watchman3.AdjRef"
       ],
-      "count": 1,
-      "zone": "Lemuria/LM_Z03_NightForest",
-      "descriptor": "WizItems_00002092",
-      "loc": "ZoneLocName_1520100"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "LM_Watchman1.AdjRef",
-        "LM_Watchman2.AdjRef",
-        "LM_Watchman3.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Lemuria/LM_Z03_NightForest",
-      "descriptor": "WizItems_00002092",
-      "loc": "ZoneLocName_1520100"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "LM_Watchman1.AdjRef",
-        "LM_Watchman2.AdjRef",
-        "LM_Watchman3.AdjRef"
-      ],
-      "count": 1,
+      "count": 3,
       "zone": "Lemuria/LM_Z03_NightForest",
       "descriptor": "WizItems_00002092",
       "loc": "ZoneLocName_1520100"

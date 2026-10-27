@@ -120,6 +120,16 @@
       "loc": "ZoneLocName_1520100"
     },
     {
+      "type": "usage",
+      "items": [
+        "LM_Standin_Malughast.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizardNPC_00000995",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
       "type": "persona",
       "persona": "LM-NIGHT-NPC05-B",
       "zone": "Lemuria/LM_Z03_NightForest",
@@ -142,28 +152,23 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Lucien's Cellar",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "Z to Photomance the Entire Room",
+      "value": "Entire Room",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "To Next Room",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Proceed To Next Room",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "Z to Photomance the Next Room",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Z to Photomance the Malughast",
+      "value": "Next Room",
       "blocking": true
     },
     {

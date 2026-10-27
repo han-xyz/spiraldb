@@ -38,7 +38,7 @@
     },
     {
       "type": "persona",
-      "persona": "LM_Standin_KoolakambaChief_01",
+      "persona": "LM-BAD-NPC02",
       "zone": "Lemuria/LM_Z04_Badlands",
       "loc": "ZoneLocName_1507599"
     }
@@ -48,9 +48,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
       "template_id": 1487607
     },
-    "LM_Standin_KoolakambaChief_01": {
+    "LM-BAD-NPC02": {
       "portrait": "GUI/NpcPortraits/Lemur_Wild_C_NPC.dds",
-      "template_id": 1487606
+      "template_id": 1507682
     }
   },
   "source": {

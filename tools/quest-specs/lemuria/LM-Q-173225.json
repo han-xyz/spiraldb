@@ -33,6 +33,29 @@
   },
   "goals": [
     {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Rhino_Zombie_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003897",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizQst173225_00000004",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_WispDandruff_Blue.AdjRef",
+        "LM_WispDandruff_Red.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizItems_00002093",
+      "loc": "ZoneLocName_1520100",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Lemuria/LM_Z03_NightForest",
@@ -56,16 +79,6 @@
     "timestamp": "20250902233209"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Defeat Wight Rhino and",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Collect 4 Wisp Specks",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

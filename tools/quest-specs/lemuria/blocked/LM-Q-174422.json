@@ -117,25 +117,25 @@
     },
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC01-03",
-      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "persona": "LM-Mandoria-NPC01-02",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1520281",
       "completion": [
         {
-          "speaker": "LM-Mandoria-NPC01-03",
+          "speaker": "LM-Mandoria-NPC01-02",
           "line": "00000012"
         },
         {
-          "speaker": "LM-Mandoria-NPC01-03",
+          "speaker": "LM-Mandoria-NPC01-02",
           "line": "00000015"
         }
       ]
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-03": {
+    "LM-Mandoria-NPC01-02": {
       "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1487469
+      "template_id": 1507626
     },
     "LM-SKY-NPC13": {
       "portrait": "GUI/NpcPortraits/Lemur_Resistance_C_NPC.dds",
@@ -156,11 +156,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
-      "blocking": true
     }
   ]
 }

@@ -5,7 +5,9 @@
     "persona": "LM-NIGHT-NPC05-B",
     "zone": "Lemuria/LM_Z03_NightForest"
   },
-  "requires": [],
+  "requires": [
+    "LM-Q-17321C"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -111,9 +113,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "A Fool's Rules replaced by min_level",
+      "value": "A Fool's Rules replaced by LM-Q-17321C",
       "blocking": false
     }
-  ],
-  "min_level": 132
+  ]
 }

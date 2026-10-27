@@ -5,9 +5,7 @@
     "persona": "LM-BAD-NPC01-B",
     "zone": "Lemuria/LM_Z04_Badlands"
   },
-  "requires": [
-    "LM-Q-170159"
-  ],
+  "requires": [],
   "mainline": false,
   "level": 132,
   "reward": {
@@ -41,6 +39,29 @@
   },
   "goals": [
     {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Millipede_Centi_A_02.AdjRef",
+        "LM_Standin_FieryKillipede_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00003891",
+      "zone": "",
+      "descriptor": "WizQst17015B_00000006",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_Sabergrass.AdjRef"
+      ],
+      "count": 5,
+      "zone": "",
+      "descriptor": "WizardInteractionTitle_00000429",
+      "loc": "ZoneLocName_1507599",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Lemuria/LM_Z04_Badlands",
@@ -70,19 +91,15 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Defeat Fiery Killipede and Collect 5 Chitin Flakes",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Collect 5 Sabergrass",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Riddle of Metal replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 132
 }

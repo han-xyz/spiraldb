@@ -126,9 +126,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the First Story Tomb",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "First Story Tomb",
+      "blocking": false
     },
     {
       "field": "dialogs",

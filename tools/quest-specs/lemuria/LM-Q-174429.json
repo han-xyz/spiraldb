@@ -1,18 +1,18 @@
 {
-  "id": "LM-Q-174424",
-  "lang": "174424",
+  "id": "LM-Q-174429",
+  "lang": "174429",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-03",
-    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+    "persona": "LM-HEAP-NPC06",
+    "zone": "Lemuria/LM_Z07_Heap"
   },
   "requires": [
-    "LM-Q-174422"
+    "LM-Q-174428"
   ],
   "mainline": true,
   "level": 132,
   "reward": {
-    "xp": 96720,
-    "gold": 875
+    "xp": 112840,
+    "gold": 1050
   },
   "dialogs": {
     "prep": [
@@ -74,54 +74,70 @@
       },
       {
         "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
         "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "persona",
-      "persona": "LM-SKY-NPC04",
-      "zone": "Lemuria/Interiors/LM_Z06_MonitoringStation",
-      "loc": "ZoneLocName_1520281"
+      "type": "bounty",
+      "mobs": [
+        "LM_Cow_GangsterF_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003932",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z07_Precinct"
     },
     {
       "type": "persona",
-      "persona": "giver",
-      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
-      "loc": "ZoneLocName_1520281"
+      "persona": "LM-HEAP-NPC03",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-03": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1487469
+    "LM-HEAP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
+      "template_id": 1524747
     },
-    "LM-SKY-NPC04": {
-      "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_A_NPC.dds",
-      "template_id": 1524724
+    "LM-HEAP-NPC06": {
+      "portrait": "GUI/NpcPortraits/Cow_BullGangster_C_NPC.dds",
+      "template_id": 1524752
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Down_to_Earth_Again",
-    "timestamp": "20240118173819"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Prune_Disgrace",
+    "timestamp": "20231211101504"
   },
   "needs_review": [
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Go to Landing Platform",
+      "value": "Honeybee Diner",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Honeybee Diner",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
-      "blocking": true
     }
   ]
 }

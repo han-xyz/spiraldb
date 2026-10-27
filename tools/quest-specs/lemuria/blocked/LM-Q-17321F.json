@@ -145,35 +145,9 @@
       "loc": "ZoneLocName_1520100"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM-Accompany-Solomon_ENC.AdjRef",
-        "LM-NIGHT-NPC05-B.AdjRef",
-        "LM-NIGHT-NPC05-C.AdjRef",
-        "LM-NIGHT-NPC05-D.AdjRef",
-        "LM-NIGHT-NPC05-E.AdjRef",
-        "LM-NIGHT-NPC05-F.AdjRef",
-        "LM-NIGHT-NPC05-G.AdjRef",
-        "LM-NIGHT-NPC05-H.AdjRef",
-        "LM-NIGHT-NPC05-I.AdjRef",
-        "LM-NIGHT-NPC05-J.AdjRef",
-        "LM-NIGHT-NPC05-K.AdjRef",
-        "LM-NIGHT-NPC05-L.AdjRef",
-        "LM-NIGHT-NPC05.AdjRef",
-        "LM-TELOS-NPC07-B.AdjRef",
-        "LM-TELOS-NPC07-C.AdjRef",
-        "LM-TELOS-NPC07-D.AdjRef",
-        "LM-TELOS-NPC07-E.AdjRef",
-        "LM-TELOS-NPC07-F.AdjRef",
-        "LM-TELOS-NPC07.AdjRef",
-        "LM_StandIn_Solomon.AdjRef",
-        "LM_StandIn_SolomonCrane_02.AdjRef",
-        "LM_StandIn_SolomonCrane_03.AdjRef",
-        "LM_StandIn_SolomonCrane_04.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "giver",
       "zone": "Lemuria/LM_Z03_NightForest",
-      "descriptor": "NPCs_01749153",
       "loc": "ZoneLocName_1520100"
     },
     {
@@ -225,7 +199,7 @@
   "needs_review": [
     {
       "field": "goal.descriptor",
-      "value": "the Courtyard Gate",
+      "value": "Courtyard Gate",
       "blocking": false
     },
     {
@@ -240,7 +214,7 @@
     },
     {
       "field": "goal.items",
-      "value": "with Virtual Old One",
+      "value": "Virtual Old One",
       "blocking": true
     },
     {

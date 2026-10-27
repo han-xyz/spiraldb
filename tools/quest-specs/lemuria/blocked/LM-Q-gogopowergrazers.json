@@ -36,14 +36,9 @@
       "loc": "ZoneLocName_1524839"
     },
     {
-      "type": "usage",
-      "items": [
-        "LM-HEAP-NPC25.AdjRef",
-        "LM_Standin_Goldaur.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "LM-HEAP-NPC25",
       "zone": "Lemuria/LM_Z07_Heap",
-      "descriptor": "WizardNPC_00000981",
       "loc": "ZoneLocName_1524839"
     },
     {
@@ -57,7 +52,12 @@
       "loc": "ZoneLocName_1524839"
     }
   ],
-  "personas": {},
+  "personas": {
+    "LM-HEAP-NPC25": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Assistant_B_NPC.dds",
+      "template_id": 1524860
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Go,_Go_Power_Grazers",
     "timestamp": "20240322110532"

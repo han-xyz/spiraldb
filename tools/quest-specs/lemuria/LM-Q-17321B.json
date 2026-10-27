@@ -5,9 +5,7 @@
     "persona": "LM-Standin-Dasein",
     "zone": "Lemuria/LM_Z01_WildLands"
   },
-  "requires": [
-    "LM-Q-1736B7"
-  ],
+  "requires": [],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -94,6 +92,11 @@
       "loc": "ZoneLocName_1520110"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
       "type": "persona",
       "persona": "LM-NIGHT-NPC01-B",
       "zone": "Lemuria/Interiors/LM_Z03_LucienHouseCombat",
@@ -120,14 +123,15 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "for Hierarch Lucien in Night Forest",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "From One Darkness to the Next replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 132
 }

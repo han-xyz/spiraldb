@@ -6,7 +6,8 @@
     "zone": "Lemuria/LM_Z07_Heap"
   },
   "requires": [
-    "LM-Q-174427"
+    "LM-Q-174427",
+    "LM-Q-170156"
   ],
   "mainline": false,
   "level": 132,
@@ -92,11 +93,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "To Grayschool! replaced by min_level",
       "blocking": false
     }
   ]

@@ -87,6 +87,12 @@
       "loc": "ZoneLocName_1520268"
     },
     {
+      "type": "persona",
+      "persona": "LM-StandIn-SnowQueen_01",
+      "zone": "Lemuria/Interiors/LM_Z03_StoryTombOne",
+      "loc": "ZoneLocName_1520268"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Yeti_Base_A_01.AdjRef"
@@ -109,7 +115,12 @@
       "loc": "ZoneLocName_1520268"
     }
   ],
-  "personas": {},
+  "personas": {
+    "LM-StandIn-SnowQueen_01": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_F_NPC.dds",
+      "template_id": 1487471
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Let_it_Snow",
     "timestamp": "20240322085159"
@@ -123,11 +134,6 @@
     {
       "field": "giver",
       "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Snow Queen",
       "blocking": true
     },
     {
