@@ -5,7 +5,7 @@ from client import needs_gamedata, needs_rootwad
 from spiraltools import templates
 from spiraltools.quests.archive import (ClientData, SpecBuilder, claimed_twice, item_entries, item_index, norm,
                                        predecessor_hand_in, preferred_lang, read_page, repository_entry,
-                                       repository_fields, repository_matches, singular_forms)
+                                       repository_fields, repository_matches, rewire_requires, singular_forms)
 from spiraltools.wad import GAMEDATA_DIR
 from spiraltools.worlds import world
 
@@ -25,18 +25,29 @@ class Data:
     level = 1
     titles = {"ABC": "Quest", "834ED": ""}
 
-    def __init__(self, personas=(), mobs=(), items=(), places=None):
+    def __init__(self, personas=(), mobs=(), items=(), places=None, volumes=None, cantrips=()):
         self.personas = {norm(name): name for name in personas}
         self.mobs = {norm(name): name for name in mobs}
         self.objects = item_index([{"template": f"W-{norm(name)}", "name": name, "name_key": f"Items_{i}",
                                     "icon": "", "adjectives": [f"W-{norm(name)}.AdjRef"]}
                                    for i, name in enumerate(items)], "W")
         self.places = places or {}
+        self.volumes = volumes or {}
+        self.cantrips = set(cantrips)
 
     def persona(self, name, zone):
         found = self.personas.get(norm(name))
         return found and {"name": found, "persona": found, "folder": "W", "portrait": "", "template_id": 1,
                           "zones": [ZONE]}
+
+    def zones_at(self, zone):
+        return [zone]
+
+    def volumes_named(self, name):
+        return [(zone, name) for zone in self.volumes.get(name, [])]
+
+    def is_cantrip(self, name):
+        return name in self.cantrips
 
     def mob_entries(self, name):
         found = next((self.mobs[form] for form in singular_forms(name) if form in self.mobs), None)
@@ -78,6 +89,18 @@ class GiverPlacedIn(Data):
     def persona(self, name, zone):
         found = super().persona(name, zone)
         return found and dict(found, zones=[self.zone])
+
+
+class PlacedIn(Data):
+    """Every persona placed in the same zones."""
+
+    def __init__(self, zones, **kwargs):
+        super().__init__(**kwargs)
+        self.zones = zones
+
+    def persona(self, name, zone):
+        found = super().persona(name, zone)
+        return found and dict(found, zones=self.zones)
 
 
 def build(name, data, known_zones=(ZONE,), fields=None, predecessor_hand_in=None):
@@ -299,6 +322,56 @@ class GoalLineTest(unittest.TestCase):
         self.assertEqual((goals, blocked), ([("waypoint", "W/Vision")], [("goal.waypoint", "Test of Constellation")]))
 
 
+class SchoolQuestTest(unittest.TestCase):
+    def test_the_level_and_school_notes_are_read_in_both_wordings(self):
+        fields = fields_of("Introduction_to_Fire")
+        self.assertEqual((fields["level"], fields["school"]), (7, "Fire"))
+        with open(os.path.join(PAGES, "Quest_Introduction_to_Fire.html"), encoding="utf-8") as f:
+            page = f.read().replace("Level 7 is", "Level 12+ is").replace(
+                "Wizards must be in the School of Fire", "your wizard must be in the school of storm")
+        self.assertEqual((read_page(page)["level"], read_page(page)["school"]), (12, "Storm"))
+
+    def test_the_level_note_sets_level_and_min_level_and_the_school_note_a_school_requirement(self):
+        spec = build("Introduction_to_Fire", Data(personas=["Dalia Falmea"]))
+        self.assertEqual((spec["level"], spec["min_level"], spec["requires"]), (7, 7, [{"school": "Fire"}]))
+
+    def test_rewired_prerequisites_keep_the_school_and_the_page_level(self):
+        fields = {**fields_of("Introduction_to_Fire"), "prequests": ["Gone Quest"]}
+        spec = build("Introduction_to_Fire", Data(personas=["Dalia Falmea"]), fields=fields)
+        rewire_requires([(fields, spec)], {}, {}, {}, set(), 1)
+        self.assertEqual((spec["requires"], spec["min_level"]), ([{"school": "Fire"}], 7))
+
+    def test_locate_and_go_to_a_named_volume_are_waypoints_into_its_zone(self):
+        data = Data(personas=["Dalia Falmea"], volumes={"Dragon's Mouth Cave": ["W/Golem"], "Living Flame": ["W/Cave"]})
+        spec = build("Introduction_to_Fire", data, known_zones=(ZONE, "W/Golem", "W/Cave"))
+        self.assertEqual([(goal["type"], goal["zone"], goal.get("volume")) for goal in spec["goals"]],
+                         [("waypoint", "W/Golem", "Dragon's Mouth Cave"), ("waypoint", "W/Cave", "Living Flame"),
+                          ("persona", ZONE, None)])
+        self.assertEqual(spec["goals"][2]["persona"], "giver")
+
+    def test_go_to_a_thing_no_zone_places_is_a_waypoint_into_the_current_zone_to_review(self):
+        spec = build("Introduction_to_Fire", Data(personas=["Dalia Falmea"]))
+        self.assertEqual([(goal["type"], goal["zone"]) for goal in spec["goals"]],
+                         [("waypoint", ZONE), ("waypoint", ZONE), ("persona", ZONE)])
+        self.assertEqual(blocking(spec), [])
+        self.assertIn(("goal.volume (not found)", "Living Flame", False),
+                      [(item["field"], item["value"], item["blocking"]) for item in spec["needs_review"]])
+
+    def test_the_giver_stands_in_the_zone_its_giver_location_names(self):
+        fields = {**fields_of("Introduction_to_Fire"), "giver_location": "Ravenwood"}
+        data = PlacedIn(["W/PartyRoom", "W/Ravenwood"], personas=["Dalia Falmea"], places={"Ravenwood": "W/Ravenwood"})
+        spec = build("Introduction_to_Fire", data, known_zones=(ZONE, "W/PartyRoom", "W/Ravenwood"), fields=fields)
+        self.assertEqual(spec["giver"]["zone"], "W/Ravenwood")
+
+    def test_a_cantrip_reward_is_left_out_for_review(self):
+        fields = {**fields_of("Introduction_to_Fire"), "reward_spells": ["Fire Prism", "To Buttersfield"]}
+        spec = build("Introduction_to_Fire", Data(personas=["Dalia Falmea"], cantrips=["To Buttersfield"]),
+                     fields=fields)
+        self.assertEqual(spec["reward"]["spells"], ["Fire Prism"])
+        self.assertIn(("reward.spells (cantrip)", "To Buttersfield", False),
+                      [(item["field"], item["value"], item["blocking"]) for item in spec["needs_review"]])
+
+
 class Langs:
     """Quest lang files by key."""
 
@@ -453,6 +526,19 @@ class ClientLookupTest(unittest.TestCase):
     def test_a_misspelt_mob_name_reads_the_one_close_name(self):
         self.assertEqual(self.adjectives("Novus", "Abberant Marleybonian Dog"),
                          {"NV_Dog_AberrantNavy_A_01.AdjRef", "NV_Dog_AberrantNavy_A_02.AdjRef"})
+
+    def test_a_professor_given_in_ravenwood_is_the_one_in_the_school_off_it(self):
+        data = ClientData(world("WizardCity"))
+        row = data.persona("Dalia Falmea", "WizardCity/WC_Ravenwood")
+        self.assertEqual(row["template"], "WC-RAV-NPC04")
+        self.assertIn("WizardCity/Interiors/WC_SchoolFire", data.zones_at("WizardCity/WC_Ravenwood"))
+
+    def test_a_volume_name_reads_the_zones_that_hold_it(self):
+        data = ClientData(world("WizardCity"))
+        self.assertEqual(data.volumes_named("the Living Flame"),
+                         [("WizardCity/Interiors/WC_Fire_Cave", "Living Flame")])
+        self.assertEqual(data.volumes_named("Dragon's Mouth Cave"),
+                         [("WizardCity/WC_Golem_Tower", "Dragon's Mouth Cave")])
 
     def test_a_mob_family_name_reads_no_mob(self):
         self.assertEqual(self.adjectives("Novus", "Cabal Bosses"), set())

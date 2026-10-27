@@ -30,14 +30,15 @@ def reward_spells(spec):
     return spec.get("reward", {}).get("spells", [])
 
 
-def spell_id(spec, name):
+def spell_template(spec, name):
+    """The (manifest path, template id) of the one spell template a reward name means."""
     candidates = spec["_spell_ids"][name]
     if not candidates:
         raise SpecError(f"{spec['id']}: spell {name!r} has no spell template")
     if len(candidates) > 1:
         raise SpecError(f"{spec['id']}: spell {name!r} matches several templates: "
                         + ", ".join(path for path, _ in candidates))
-    return candidates[0][1]
+    return candidates[0]
 
 
 def load_specs(paths, rootwad):
@@ -48,7 +49,8 @@ def load_specs(paths, rootwad):
     successors = {}
     for spec in specs:
         for quest in spec.get("requires", []):
-            successors.setdefault(quest, []).append(spec["id"])
+            if isinstance(quest, str):
+                successors.setdefault(quest, []).append(spec["id"])
     for spec in specs:
         spec["_zone_locations"] = zone_locations
         spec["_spell_ids"] = spell_ids
@@ -95,7 +97,7 @@ def check_spec(spec, rootwad, gamedata, zone_cache, known_zones):
             problems.append(str(e))
     for item in reward_spells(spec):
         try:
-            spell_id(spec, spell_name(item))
+            spell_template(spec, spell_name(item))
         except SpecError as e:
             problems.append(str(e))
     return problems

@@ -1,4 +1,6 @@
+import contextlib
 import glob
+import io
 import json
 import os
 import re
@@ -7,9 +9,10 @@ import unittest
 
 from client import needs_gamedata, needs_rootwad
 from spiraltools.lang import ROOTWAD_DIR
-from spiraltools.pack import QUEST_SPECS_DIR, quest_output_paths, tolerant_load, zone_transfer_files
-from spiraltools.quests.generate import diff, quest_template, requirements, reward, steps
-from spiraltools.quests.spec import SpecError, check_spec, load_specs, location_key, spell_id
+from spiraltools.pack import (QUEST_SPECS_DIR, QUEST_TEMPLATES_DIR, quest_output_paths, tolerant_load,
+                              zone_transfer_files)
+from spiraltools.quests.generate import diff, generate, quest_template, requirements, reward, steps
+from spiraltools.quests.spec import SpecError, check_spec, load_specs, location_key, spell_template
 from spiraltools.wad import GAMEDATA_DIR
 
 FIXTURES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures")
@@ -52,7 +55,7 @@ class SpecTest(unittest.TestCase):
     def test_load_specs_gives_each_spec_the_successors_that_require_it(self):
         directory = tempfile.mkdtemp()
         paths = []
-        for quest, requires in (("A", []), ("B", ["A"]), ("C", ["A"])):
+        for quest, requires in (("A", []), ("B", ["A"]), ("C", [{"school": "Fire"}, "A"])):
             paths.append(os.path.join(directory, f"{quest}.json"))
             with open(paths[-1], "w", encoding="utf-8") as f:
                 json.dump(spec(id=quest, requires=requires), f)
@@ -87,26 +90,30 @@ class SpecTest(unittest.TestCase):
 
     @needs_rootwad
     def test_spell_names_resolve_by_file_or_display_name_and_an_ambiguous_one_names_its_candidates(self):
-        spells = ["fire cat", "Blood Bat", "Pixie", {"spell": "No Such Spell", "school": "Fire"}]
+        spells = ["fire cat", "Blood Bat", "Pixie", "Basilisk", "Scarecrow", "Fairy",
+                  {"spell": "No Such Spell", "school": "Fire"}]
         written = write_spec(tempfile.mkdtemp(), spec(reward={"spells": spells}))
         loaded = load_specs([written], ROOTWAD_DIR)[0]
-        self.assertEqual(spell_id(loaded, "fire cat"), 103007158)
-        self.assertEqual(spell_id(loaded, "Blood Bat"), 1067010286)
-        with self.assertRaisesRegex(SpecError, "Spells/Pixie.xml, Spells/CastleMagic/Pixie.xml"):
-            spell_id(loaded, "Pixie")
+        self.assertEqual(spell_template(loaded, "fire cat")[1], 103007158)
+        self.assertEqual(spell_template(loaded, "Blood Bat")[1], 1067010286)
+        self.assertEqual(spell_template(loaded, "Pixie")[0], "Spells/Pixie.xml")
+        self.assertEqual(spell_template(loaded, "Basilisk")[0], "Spells/Tiered Spells/Basilisk.xml")
+        self.assertEqual(spell_template(loaded, "Scarecrow")[0], "Spells/Tiered Spells/Scarecrow.xml")
+        with self.assertRaisesRegex(SpecError, "Fairy.*matches several templates: .*Spells/Pixie Life.xml"):
+            spell_template(loaded, "Fairy")
         with self.assertRaisesRegex(SpecError, "no spell template"):
-            spell_id(loaded, "No Such Spell")
+            spell_template(loaded, "No Such Spell")
 
     @needs_rootwad
     @needs_gamedata
     def test_check_reports_an_unresolved_spell_reward(self):
         base = load_specs(ROUNDTRIP[:1], ROOTWAD_DIR)[0]
-        base["reward"] = {**base.get("reward", {}), "spells": ["Fire Cat", "Pixie"]}
+        base["reward"] = {**base.get("reward", {}), "spells": ["Fire Cat", "Mander Minion"]}
         loaded = load_specs([write_spec(tempfile.mkdtemp(), base)], ROOTWAD_DIR)[0]
         problems = check_spec(loaded, ROOTWAD_DIR, GAMEDATA_DIR, {}, set())
         self.assertEqual([p for p in problems if "spell" in p],
-                         [f"{loaded['id']}: spell 'Pixie' matches several templates: "
-                          "Spells/Pixie.xml, Spells/CastleMagic/Pixie.xml"])
+                         [f"{loaded['id']}: spell 'Mander Minion' matches several templates: "
+                          "Spells/Minion Balance - Amulet.xml, Spells/Minion Balance.xml"])
 
 
 class GenerateTest(unittest.TestCase):
@@ -120,6 +127,36 @@ class GenerateTest(unittest.TestCase):
                           for r in reqs],
                          [("ReqHasEntry", "P", False), ("ReqMagicLevel", None, False), ("ReqHasEntry", "S", True)])
         self.assertIsNone(requirements(spec()))
+
+    def test_a_school_requirement_is_the_packs_school_of_focus(self):
+        reqs = requirements(spec(requires=[{"school": "Fire"}, "P"], min_level=7))["m_requirements"]
+        pack = tolerant_load(os.path.join(QUEST_TEMPLATES_DIR, "questtemplates_WC-FIRE-C08-001.json"))
+        self.assertEqual(reqs[0], pack["m_requirements"]["m_requirements"][0])
+        self.assertEqual([(r["$type"].split(",")[0].split(".")[-1], r.get("m_questName")) for r in reqs[1:]],
+                         [("ReqHasEntry", "P"), ("ReqMagicLevel", None)])
+
+    def test_a_waypoint_to_a_volume_waits_for_its_enter_event(self):
+        built = quest_template(spec(goals=[{"type": "waypoint", "zone": "WizardCity/Interiors/WC_Fire_Cave",
+                                            "volume": "Living Flame"}]))
+        goal = built["m_goals"][0]
+        self.assertEqual((goal["m_zoneTag"], goal["m_zoneEntry"], goal["m_proximityTag"]),
+                         ("WizardCity/Interiors/WC_Fire_Cave", False, "Enter_Living Flame"))
+
+    def test_a_gardening_spell_is_added_by_name_as_the_pack_does(self):
+        spells = {"Small Soil": [("Spells/Gardening Spells/Small Soil.xml", 1)]}
+        built = quest_template(spec(goals=[{"type": "persona", "persona": "giver"}], _spell_ids=spells,
+                                    reward={"spells": ["Small Soil"]}))
+        pack = tolerant_load(os.path.join(QUEST_TEMPLATES_DIR, "questtemplates_WC-GRDN-C01-001.json"))
+        self.assertEqual(built["m_endResults"]["m_results"][1],
+                         pack["m_goals"][1]["m_completeResults"]["m_results"][0])
+
+    def test_a_spec_for_a_quest_the_pack_made_elsewhere_is_left_alone(self):
+        printed = io.StringIO()
+        with contextlib.redirect_stdout(printed):
+            generate([spec(id="WC-COMMONS-MAIN-004", goals=[{"type": "persona", "persona": "giver"}])], False)
+        self.assertEqual(printed.getvalue(),
+                         "WC-COMMONS-MAIN-004: QuestTemplates/questtemplates_WC-COMMONS-MAIN-004.json is not "
+                         "questgen's, left alone\n")
 
     def test_reward_falls_back_to_the_level_band(self):
         self.assertEqual(reward(spec(level=48)), (3805, 103))

@@ -8,11 +8,13 @@ import sys
 from ..lang import ROOTWAD_DIR
 from ..pack import PACK, quest_output_paths, tolerant_load, write_unless_same
 from ..wad import GAMEDATA_DIR
-from .spec import GIVER, SpecError, check, load_specs, location_key, reward_spells, spell_id, spell_name
+from .spec import GIVER, SpecError, check, load_specs, location_key, reward_spells, spell_name, spell_template
 
 DESCRIPTION = "Generate quest templates and their drop tables from one JSON spec per quest."
 TYPE = "Imcodec.ObjectProperty.TypeCache.{}, Imcodec.ObjectProperty"
 PERSONA_SUFFIX = "_Persona"
+VOLUME_EVENT = "Enter_"
+GARDENING_SPELL_FOLDER = "Spells/Gardening Spells"
 AUTHOR = "questgen"
 # Median quest reward of the pack's worlds by level floor: WC, KT, MB, MS, DS drop tables.
 REWARD_BANDS = ((40, 3805, 103), (30, 2445, 88), (20, 1722, 68), (10, 630, 43), (0, 112, 15))
@@ -200,9 +202,9 @@ def waypoint_goal(spec, goal, number):
     built = goal_base(spec, goal, number, "WaypointGoalTemplate")
     built["m_tallyCounter"] = tally(1.0, goal.get("descriptor", ""), "", 0)
     built["m_goalType"] = "GOAL_TYPE_WAYPOINT"
-    built["m_zoneEntry"] = True
+    built["m_zoneEntry"] = "volume" not in goal
     built["m_zoneTag"] = goal["zone"]
-    built["m_proximityTag"] = ""
+    built["m_proximityTag"] = VOLUME_EVENT + goal["volume"] if "volume" in goal else ""
     built["m_zoneExit"] = False
     return built
 
@@ -253,8 +255,15 @@ def has_entry(quest, entry, registry, negate):
             "m_isQuestRegistry": registry, "m_questName": quest, "m_applyNOT": negate, "m_operator": "ROP_AND"}
 
 
+def school_of_focus(school):
+    return {"$type": TYPE.format("ReqSchoolOfFocus"), "m_magicSchool": school, "m_applyNOT": False,
+            "m_operator": "ROP_AND"}
+
+
 def requirements(spec):
-    reqs = [has_entry(quest, "Complete", True, False) for quest in spec.get("requires", [])]
+    """A `requires` entry is a quest id, or {"school": School} for a quest only that school's wizards take."""
+    reqs = [school_of_focus(entry["school"]) if isinstance(entry, dict) else has_entry(entry, "Complete", True, False)
+            for entry in spec.get("requires", [])]
     if "min_level" in spec:
         reqs.append({"$type": TYPE.format("ReqMagicLevel"), "m_magicSchool": "", "m_numericValue": spec["min_level"],
                      "m_operatorType": "OPERATOR_GREATER_THAN_EQ", "m_applyNOT": False, "m_operator": "ROP_AND"})
@@ -265,13 +274,16 @@ def requirements(spec):
 
 
 def learn_spell(spec, item):
+    """A ResLearnSpell by template id; a gardening spell is a ResAddSpell by name, as the pack grants them."""
     requirements = None
     if not isinstance(item, str):
-        school = {"$type": TYPE.format("ReqSchoolOfFocus"), "m_magicSchool": item["school"], "m_applyNOT": False,
-                  "m_operator": "ROP_AND"}
-        requirements = {"m_requirements": [school], "m_applyNOT": False, "m_operator": "ROP_AND"}
-    return {"$type": TYPE.format("ResLearnSpell"), "m_templateID": spell_id(spec, spell_name(item)),
-            "m_requirements": requirements}
+        requirements = {"m_requirements": [school_of_focus(item["school"])], "m_applyNOT": False,
+                        "m_operator": "ROP_AND"}
+    path, template_id = spell_template(spec, spell_name(item))
+    if os.path.dirname(path) == GARDENING_SPELL_FOLDER:
+        return {"$type": TYPE.format("ResAddSpell"), "m_templateID": 0, "m_spellName": spell_name(item),
+                "m_requirements": requirements}
+    return {"$type": TYPE.format("ResLearnSpell"), "m_templateID": template_id, "m_requirements": requirements}
 
 
 def quest_template(spec):
@@ -350,10 +362,20 @@ def drop_table(spec, stamp):
     }
 
 
+def is_others_quest(template_path, table_path):
+    """Whether the pack's quest under this path came from elsewhere: captured or built by hand, its drop table not
+    questgen's."""
+    return os.path.exists(template_path) and (not os.path.exists(table_path)
+                                              or tolerant_load(table_path).get("CreatedBy") != AUTHOR)
+
+
 def generate(specs, apply):
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
     for spec in specs:
         template_path, table_paths = quest_output_paths(spec["id"])
+        if is_others_quest(template_path, table_paths[0]):
+            print(f"{spec['id']}: {os.path.relpath(template_path, PACK)} is not questgen's, left alone")
+            continue
         template, table = quest_template(spec), drop_table(spec, stamp)
         if not apply:
             xp, gold = reward(spec)

@@ -19,13 +19,14 @@ import urllib.request
 
 from .. import templates
 from ..lang import LANG_SUBDIR, ROOTWAD_DIR, read_lang
-from ..pack import PACK, QUEST_SPECS_DIR, quest_template_paths, zone_transfer_files
-from ..wad import GAMEDATA_DIR, zone_of_wad
+from ..pack import PACK, QUEST_SPECS_DIR, quest_template_paths, tolerant_load, zone_transfer_files, zone_transfer_paths
+from ..wad import GAMEDATA_DIR, VOLUME_NAME, compact_strings, read_wad, zone_of_wad
 from ..worlds import WORLDS, lang_cluster, world
 from .generate import diff
 from .goal_lines import (COLLECT_VERBS, FIND_VERBS, ITEM_VERBS, MOVE_VERBS, PERSON_VERBS, TALK_VERBS, destinations,
                          goal_kind, is_goal_line, place_readings, repeated, strip_notes, target_text, unread_field,
                          verb_of)
+from .spec import spell_name
 
 DESCRIPTION = ("Build questgen specs for a world from the Wizard101 Central wiki, live first, else the Internet "
                "Archive's copies.")
@@ -52,6 +53,11 @@ QUEST_TYPES = ("storyline", "side", "instance")
 MIN_SHARED_WEIGHT, CLEAR_MARGIN = 4.0, 1.5
 CHAIN_WINDOW = 16
 SCHOOL_ICON = re.compile(r"\[File:\(Icon\)_(Balance|Death|Fire|Ice|Life|Myth|Storm)\.png\]")
+LEVEL_NOTE = re.compile(r"Level (?:Level )?(\d+)\+? is needed to start", re.I)
+SCHOOL_NOTE = re.compile(r"must be in the School of (\w+)", re.I)
+CANTRIP_PREFIX = "Spells/Cantrip"
+# Verbs whose line is a waypoint even when nothing it names is found: kept into the current zone, to review.
+REVIEWED_WAYPOINT_VERBS = {"go", "locate"}
 NAME_CUTOFF = 0.8
 MOB_NAME_CUTOFF = 0.9
 TITLE_CUTOFF = 0.95
@@ -499,6 +505,8 @@ def read_page(page):
     leads_to = section(lines, "Leads to:", "<")[1:]
     sentence = next((line for line in head if line.startswith("This is a")), "")
     place = next((line for line in head if re.match(r"(Giver|Start) Location:", line)), "")
+    level = LEVEL_NOTE.search(" ".join(head))
+    school = SCHOOL_NOTE.search(" ".join(head))
     return {
         "prequests": [q for line in (head[:head.index(given)] if given else head) for q in links(line, "Quest")],
         "giver": (links(given, "NPC") or [None])[0],
@@ -511,7 +519,14 @@ def read_page(page):
         "reward": amounts,
         "reward_spells": spells,
         "leads_to": [q for line in leads_to for q in links(line, "Quest")],
+        "level": int(level.group(1)) if level else None,
+        "school": school.group(1).capitalize() if school else None,
     }
+
+
+def school_requirement(fields):
+    """The `requires` entry of a quest only one school's wizards take, as a list to prepend."""
+    return [{"school": fields["school"]}] if fields["school"] else []
 
 
 def grouped_goals(goal_lines):
@@ -609,6 +624,13 @@ class ClientData:
         self.item_ids = {row["template"]: row["template_id"] for row in item_rows}
         self.item_zones = {}
         self.known_zones = set(zone_transfer_files())
+        self.interiors = {}
+        for path in zone_transfer_paths():
+            transfer = tolerant_load(path)
+            exits = {teleport["Teleport"]["m_destinationZone"] for teleport in transfer.get("Teleports", [])}
+            if len(exits) == 1:
+                self.interiors.setdefault(exits.pop(), []).append(transfer["ZoneName"])
+        self.volumes = None
         self.zone_names = {}
         for path in glob.glob(os.path.join(GAMEDATA_DIR, f"{self.world}-*.wad")):
             zone = zone_of_wad(path)
@@ -728,8 +750,26 @@ class ClientData:
         if not rows:
             return None
         reachable = (row for row in rows if self.known_zones.intersection(row["zones"]))
-        return next((row for row in rows if zone in row["zones"]),
+        return next((row for place in self.zones_at(zone) for row in rows if place in row["zones"]),
                     next(reachable, next((row for row in rows if row["zones"]), rows[0])))
+
+    def zones_at(self, zone):
+        """The zone, then the zones whose only way out leads into it: Ravenwood's schools are at Ravenwood."""
+        return [zone, *sorted(self.interiors.get(zone, []))] if zone else []
+
+    def volumes_named(self, name):
+        """(zone, volume) of the world's zone volumes that bear the name, read without case, punctuation or article."""
+        if self.volumes is None:
+            self.volumes = {}
+            for path in sorted(glob.glob(os.path.join(GAMEDATA_DIR, f"{self.world}-*.wad"))):
+                data = read_wad(path, {"volumes.xml"}).get("volumes.xml", b"")
+                for _, volume in compact_strings(data, VOLUME_NAME):
+                    self.volumes.setdefault(title_norm(volume), []).append((zone_of_wad(path), volume))
+        return list(dict.fromkeys(self.volumes.get(title_norm(name), [])))
+
+    def is_cantrip(self, name):
+        found = templates.spell_candidates(ROOTWAD_DIR, name)
+        return bool(found) and all(path.startswith(CANTRIP_PREFIX) for path, _ in found)
 
     def mob_entries(self, name):
         """The mob entries for a name, from the world's folder, else from the nearest other folder that has it."""
@@ -916,19 +956,31 @@ class SpecBuilder:
         self.known_zones = known_zones
         self.zone_paths, self.quest_ids = zone_paths, quest_ids
         self.zone_name = zone_name_of(entry, fields)
-        self.zone = zone_paths.get(self.zone_name, "")
+        self.giver_zone = self.zone_of_place(fields["giver_location"])
+        self.zone = zone_paths.get(self.zone_name) or self.giver_zone
+        self.current_zone = self.zone
         self.review = []
         self.personas = {}
 
     def unresolved(self, field, value, blocking):
         self.review.append({"field": field, "value": value, "blocking": blocking})
 
+    def zone_of_place(self, place):
+        """The zone path of a giver location: its category's, else the world's zone named for it that has a
+        ZoneTransfer file, else ''."""
+        if not place:
+            return ""
+        zone = self.zone_paths.get(place) or self.data.zone_by_place(place)
+        return zone if zone in self.known_zones else ""
+
     def zone_loc(self):
         return self.data.location(self.zone_name) if self.zone_name else None
 
-    def persona_ref(self, name, field):
+    def persona_ref(self, name, field, place=None):
+        """(persona, zone) of an NPC name, placed in or at the place's zone (the quest's by default) when it can be."""
         name = strip_notes(name)
-        row = self.data.persona(name, self.zone)
+        place = place or self.zone
+        row = self.data.persona(name, place)
         if row is None:
             self.unresolved(field, name, True)
             return None, ""
@@ -939,7 +991,8 @@ class SpecBuilder:
                             False)
         self.personas[row["persona"]] = {"portrait": row["portrait"], "template_id": row["template_id"]}
         reachable = [zone for zone in row["zones"] if zone in self.known_zones]
-        zone = self.zone if self.zone in row["zones"] else (reachable or row["zones"] or [""])[0]
+        here = [zone for zone in self.data.zones_at(place) if zone in row["zones"]]
+        zone = (here or reachable or row["zones"] or [""])[0]
         if not zone:
             self.unresolved(f"{field}.zone (placed in no zone)", name, True)
         return row["persona"], zone
@@ -1039,9 +1092,31 @@ class SpecBuilder:
         name = target_text(text)
         if not places and name and self.data.has_persona(name):
             return self.persona_goal(name)
-        if not quiet:
-            self.unresolved("goal.zone (waypoint left out)", ", ".join(places) or text, False)
+        for place in readings:
+            goal = self.volume_goal(place)
+            if goal:
+                return goal
+        if quiet:
+            return None
+        if verb_of(plain(text)) in REVIEWED_WAYPOINT_VERBS and self.current_zone:
+            self.unresolved("goal.volume (not found)", ", ".join(places) or name, False)
+            return {"type": "waypoint", "zone": self.current_zone}
+        self.unresolved("goal.zone (waypoint left out)", ", ".join(places) or text, False)
         return None
+
+    def volume_goal(self, place):
+        """A waypoint to the volume that bears the place's name in the current zone, else in the world's one zone that
+        has one; None when neither does."""
+        found = self.data.volumes_named(place)
+        here = [hit for hit in found if hit[0] == self.current_zone]
+        zone, volume = (here or (found if len(found) == 1 else [(None, None)]))[0]
+        if zone not in self.known_zones:
+            return None
+        goal = {"type": "waypoint", "zone": zone, "volume": volume}
+        loc = self.data.location(place)
+        if loc:
+            goal["loc"] = loc
+        return goal
 
     def fallback_prep(self, giver):
         """The line that offers the quest when no line reads as an offer: the first naming the giver, else the first."""
@@ -1062,12 +1137,14 @@ class SpecBuilder:
         return ""
 
     def goals(self):
+        """The page's goals in order; each line is read in the zone the goals before it end in."""
         built = []
         for line, subs, times in repeated(grouped_goals(self.fields["goals"])):
             goals = [goal for goal in self.goals_of(line, subs, times) if goal is not None]
             if goals and goals[0]["type"] in UNCOUNTED_GOALS:
                 goals += [dict(goal) for goal in goals * (times - 1)]
             built += goals
+            self.current_zone = next((goal["zone"] for goal in reversed(goals) if goal.get("zone")), self.current_zone)
         return built
 
     def goals_of(self, line, subs, times=1):
@@ -1183,7 +1260,7 @@ class SpecBuilder:
             else:
                 self.unresolved("giver (auto-start, no predecessor hand-in)", self.predecessor_hand_in or "none", True)
         if giver_name:
-            giver, giver_zone = self.persona_ref(giver_name, "giver")
+            giver, giver_zone = self.persona_ref(giver_name, "giver", self.giver_zone)
             if giver:
                 spec["giver"] = {"persona": giver, "zone": giver_zone or self.zone}
                 if not self.zone and self.entry["fetched_from"] == "repository":
@@ -1200,17 +1277,23 @@ class SpecBuilder:
                 requires.append(found)
             else:
                 self.unresolved("requires", title, False)
-        spec["requires"] = requires
-        if not requires:
-            spec["min_level"] = self.data.level
+        spec["requires"] = school_requirement(fields) + requires
+        if fields["level"] or not requires:
+            spec["min_level"] = fields["level"] or self.data.level
         spec["mainline"] = fields["mainline"]
-        spec["level"] = self.data.level
+        spec["level"] = fields["level"] or self.data.level
         if {"xp", "gold"} <= set(fields["reward"]):
             spec["reward"] = {"xp": fields["reward"]["xp"], "gold": fields["reward"]["gold"]}
         else:
             self.unresolved("reward", fields["reward"], False)
-        if fields["reward_spells"]:
-            spec.setdefault("reward", {})["spells"] = fields["reward_spells"]
+        spells = []
+        for item in fields["reward_spells"]:
+            if self.data.is_cantrip(spell_name(item)):
+                self.unresolved("reward.spells (cantrip)", spell_name(item), False)
+            else:
+                spells.append(item)
+        if spells:
+            spec.setdefault("reward", {})["spells"] = spells
         goals = self.goals()
         hand_in_row = self.data.persona(fields["hand_in"], self.zone) if fields["hand_in"] else None
         ends_at_hand_in = bool(goals) and hand_in_row is not None and goals[-1].get("persona") == hand_in_row["persona"]
@@ -1437,10 +1520,10 @@ def rewire_requires(ready, pages, by_title, ids, generated, level):
                                              "value": f"{title} replaced by {', '.join(found) or 'min_level'}",
                                              "blocking": False})
             requires += found
-        spec["requires"] = list(dict.fromkeys(requires))
+        spec["requires"] = school_requirement(fields) + list(dict.fromkeys(requires))
         spec.pop("min_level", None)
-        if not spec["requires"]:
-            spec["min_level"] = level
+        if fields["level"] or not requires:
+            spec["min_level"] = fields["level"] or level
 
 
 def hand_authored(world_dir):
@@ -1493,6 +1576,8 @@ def repository_fields(data, quest, tracked):
         "reward": {key: tracked[key] for key in ("xp", "gold") if tracked.get(key) is not None},
         "reward_spells": [],
         "leads_to": quest["next"],
+        "level": None,
+        "school": None,
     }
 
 

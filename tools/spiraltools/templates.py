@@ -14,6 +14,9 @@ from .worlds import world
 ZLIB_HEADER = b"\x78\x9c"
 MANIFEST_ENTRY = re.compile(rb"(?s)\xbc\x90\xce\xb9(.)(ObjectData/[ -~]+?\.xml)\x60\x00\x00\x00\x3a\x8f\x35\x89(.{4})")
 SPELL_MANIFEST_ENTRY = re.compile(MANIFEST_ENTRY.pattern.replace(b"ObjectData/", b"Spells/"), re.S)
+# Spells a player learns; other folders hold treasure-card, pet, mob and fight copies of the same names.
+PLAYER_SPELL_FOLDERS = ("Spells", "Spells/Tiered Spells")
+CASTLE_MAGIC_FOLDER = "Spells/CastleMagic"
 ADJECTIVE_LIST = b"\x06\x16\x73\xbe"
 DISPLAY_NAME = b"\x92\xbc\xd8\x91"
 MOB_LANG = "WizardMobs"
@@ -51,6 +54,13 @@ def _compact_string(data, i):
 def string_field(data, field_hash):
     """The first string stored under a field of a BINd template, or None."""
     i = data.find(field_hash)
+    return None if i < 0 else _compact_string(data, i + len(field_hash))[0]
+
+
+def last_string_field(data, field_hash):
+    """The last string stored under a field of a BINd template, or None: an object's own field follows those of the
+    behaviours nested in it."""
+    i = data.rfind(field_hash)
     return None if i < 0 else _compact_string(data, i + len(field_hash))[0]
 
 
@@ -96,11 +106,13 @@ def _spell_key(name):
 
 def spell_candidates(rootwad, name):
     """The (manifest path, template id) of the spell templates a spell name can mean: those whose file name reads
-    it, else those whose display name does, both compared without case, spaces or punctuation."""
+    it, else those whose display name does, both compared without case, spaces or punctuation; never a Castle Magic
+    copy, and only the player's spells when some candidate is one."""
     key = _spell_key(name)
-    rows = spell_templates(rootwad)
-    by_file = [(path, template_id) for path, template_id, _ in rows if _spell_key(os.path.basename(path)[:-4]) == key]
-    return by_file or [(path, template_id) for path, template_id, display in rows if _spell_key(display) == key]
+    rows = [row for row in spell_templates(rootwad) if os.path.dirname(row[0]) != CASTLE_MAGIC_FOLDER]
+    found = ([(path, template_id) for path, template_id, _ in rows if _spell_key(os.path.basename(path)[:-4]) == key]
+             or [(path, template_id) for path, template_id, display in rows if _spell_key(display) == key])
+    return [hit for hit in found if os.path.dirname(hit[0]) in PLAYER_SPELL_FOLDERS] or found
 
 
 def mobs(rootwad, folder):
@@ -201,7 +213,7 @@ def npcs(rootwad, folder):
         persona = persona_of(data)
         if persona is None:
             continue
-        key = string_field(data, DISPLAY_NAME) or ""
+        key = last_string_field(data, DISPLAY_NAME) or ""
         portrait = PORTRAIT.search(data)
         yield {
             "template": filename[:-4],

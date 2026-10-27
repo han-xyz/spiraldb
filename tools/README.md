@@ -265,16 +265,19 @@ drop-table timestamps included.
   (`WizQst1625C1_00000011`) is used as written. `speaker` is `giver`, a persona, or `""` for narration.
 - `title` defaults to `QuestTitle_<lang>`. Many Celestia quests carry their internal name there; use the key of the
   real title instead (`Gone Fishing` is `QuestTitle_00000103`).
-- `requires` becomes `ReqHasEntry Complete` on each quest; `min_level` a `ReqMagicLevel` at or above it. Every quest
-  also gets a `ReqHasEntry Completed` NOT on its successors, taken from the other specs of the same run that require
-  it, or from a `successors` list.
+- `requires` becomes `ReqHasEntry Complete` on each quest, and a `{"school": School}` entry a `ReqSchoolOfFocus` (a
+  quest only that school's wizards take, as the professors' quests in the pack); `min_level` a `ReqMagicLevel` at or
+  above it. Every quest also gets a `ReqHasEntry Completed` NOT on its successors, taken from the other specs of the
+  same run that require it, or from a `successors` list.
 - `reward` is the drop table's XP and gold. Without it the tool takes the median quest reward of the pack's world for
   `level`: `REWARD_BANDS` at the top of `quests/generate.py` (40 and up is Dragonspyre's 3805 XP and 103 gold).
   `reward.spells` adds a `ResLearnSpell` to the quest's end results for each item: a spell name, or
   `{"spell": name, "school": School}` for a spell only that school learns (a `ReqSchoolOfFocus` on the result, as in
   the pack's quests). The name is matched to a template under `Spells/` in the root wad's `TemplateManifest.xml` by
-  file name, else by display name, both without case or punctuation; a name with no match or several is a
-  `quests check` problem and stops `generate`.
+  file name, else by display name, both without case or punctuation; the `Spells/CastleMagic/` copies never count, and
+  of several matches only those in `Spells/` itself and `Spells/Tiered Spells/` (the spells a player learns) are kept
+  when there are any. A name with no match or several is a `quests check` problem and stops `generate`. A gardening
+  spell (`Spells/Gardening Spells/`) is a `ResAddSpell` by name instead, as the pack grants Small Soil.
 - Goals run in order; a goal with `"with_previous": true` runs alongside the one before it. Each is named
   `<n>_<title>`, its `m_goalNameID` the string id of `Goal` / `Goal <n-1>`, as in the builder-made pack quests.
 
@@ -283,13 +286,16 @@ drop-table timestamps included.
 | `persona` | PersonaGoalTemplate, `WizardQuestGoals_TalkNPC` | `persona`; `completion` lines become its Completion dialog |
 | `bounty` | BountyGoalTemplate `GOAL_TYPE_BOUNTY`, `WizardQuestGoals_Kill` | `mobs` (adjectives), `count`, `target` (mob name key) |
 | `bountycollect` | BountyGoalTemplate `GOAL_TYPE_BOUNTYCOLLECT`, `WizardQuestGoals_KillCollect` | as bounty, plus `descriptor` (item name key), `chance` (default 1.0) |
-| `waypoint` | WaypointGoalTemplate, zone entry, `WizardQuestGoals_ExploreZone` | `zone` |
+| `waypoint` | WaypointGoalTemplate, zone entry, `WizardQuestGoals_ExploreZone` | `zone`; with `volume`, entering that zone volume (`m_proximityTag` `Enter_<volume>`) instead |
 | `usage` | ScavengeGoalTemplate `GOAL_TYPE_USAGE`, `WizardQuestGoals_UseItem` | `items` (object adjectives), `count`, `descriptor` |
 
 Every goal takes `zone` (its destination), `loc` (a `ZoneLocName_<key>`, any other lang key, or a
 `World|Place` text that the tool looks up in ZoneLocName.lang, first match), `portrait`, `client_tags` and `title`.
 `personas` gives a persona's portrait and template id for its dialog lines and goal; the server fills the speaker's
 name, and a missing portrait, from the persona.
+
+`generate` leaves alone a quest template the pack already has whose drop table is not questgen's (`CreatedBy`): a
+captured or hand-built quest is never overwritten.
 
 `quests check` reports, per spec: a missing `WizQst<lang>.lang`, an empty `dialogs.prep` (no NPC would offer the quest), a
 title or line key the lang files lack, a `loc` text ZoneLocName.lang lacks, a zone with no ZoneTransfer entry, and a
@@ -339,7 +345,8 @@ quests `Quest:<World>_Quest_Tree` links to; those entries have no zone (Polaris,
 takes the live page, else the newest capture, and the CDX timestamp when the newest capture is an error page; a quest
 without a snapshot is fetched only live.
 
-`parse` reads each page's Prequest, Given By, Giver Location, type sentence, Goals, Hand In and Reward, and resolves:
+`parse` reads each page's Prequest, level and school notes, Given By, Giver Location, type sentence, Goals, Hand In
+and Reward, and resolves:
 
 - the title to `lang` through `QuestTitle.lang`, compared without case, punctuation or a leading "The"; a title no
   key reads takes the one in-range key whose title reads within `TITLE_CUTOFF` of it (the wiki's `'Til Wizard Voices
@@ -399,9 +406,12 @@ without a snapshot is fetched only live.
   else to the world's one zone wad named for it, read without its article and else without its possessive (`the Drum
   House`: `ZF_Z10_I03_Drum_House`, `Centaurzan's Cabin`: `LM_Z01_CentaurzanCabin`) when that zone has a
   ZoneTransfer file; a waypoint line naming one of the world's NPCs instead (`Go to Governor Nereus`) is a persona
-  goal, and one that resolves to neither is left out and listed. A find-like line that names no item but a place is a
-  waypoint. A defeat in a place with its own zone (`Defeat Morganthe (in Morganthe's Chamber)`) sends the player
-  there. A movement header over names no item reads (`Go to:` Test of Vision...) is one step of waypoints.
+  goal. A place no zone is named for is a zone volume of that name (`Locate Dragon's Mouth Cave`, `Go to Living
+  Flame`): the one in the zone the goals before it end in, else the world's one zone that has it, as a waypoint with
+  `volume`. A `Go to` or `Locate` line that resolves to none of these is a waypoint into the zone the goals before it
+  end in, listed as `goal.volume (not found)`; any other is left out and listed. A find-like line that names no item but
+  a place is a waypoint. A defeat in a place with its own zone (`Defeat Morganthe (in Morganthe's Chamber)`) sends
+  the player there. A movement header over names no item reads (`Go to:` Test of Vision...) is one step of waypoints.
 - a goal line no item reads, unless its verb collects (collect, gather, recover...): a waypoint to the place a
   parenthesised note enters (`Rest by the fire (Enter Rage Dream)`), else to what follows its "to" or "into" (`Follow
   Freddie to the Next Room`), else to the place its whole target names (`Clear out Centaurzan's Cabin`), or a persona
@@ -410,15 +420,21 @@ without a snapshot is fetched only live.
   verb asks for: `goal.waypoint` (movement and find-like verbs, reach, ascend, infiltrate, "make your way"..., or a
   line with a destination), `goal.usage` (item verbs), `goal.persona` (person verbs), `goal.unknown-verb` (any
   other verb); a collect line no item reads stays `goal.items`. `update` is a talk verb.
-- the zone from the zone category, else the giver's location, to the zone where most of that zone's givers stand.
+- the zone from the zone category, else the giver's location, to the zone where most of that zone's givers stand,
+  else to the world's zone named for it. The giver is the persona placed in the zone its Giver Location names, else in
+  a zone whose only way out leads there (Dalia Falmea `Giver Location: Ravenwood` is `WC-RAV-NPC04` in
+  `WC_SchoolFire`, not her Party Room copy); other NPCs are looked up in the quest's zone the same way.
+- `Note: Level N is needed to start this quest.` to `level` and `min_level` N, kept when prerequisites are rewired;
+  `must be in the School of Fire` to a `{"school": "Fire"}` entry first in `requires`.
 - a giver placed in another registered world's zone blocks the spec (`giver (other world)`): the quest belongs to that
   world. Zones of unregistered hubs such as Arcanum are allowed.
 - prerequisites to the ids of the other specs, or of the pack's quests with that title.
 - the Reward section's `[Spell:...]` links to `reward.spells`: the school form when a school icon comes just before
-  the link (a page with one spell per school), a plain name otherwise.
+  the link (a page with one spell per school), a plain name otherwise. A cantrip (`Spells/Cantrips/`, `To
+  Buttersfield`) is left out and listed as `reward.spells (cantrip)`.
 
 The id is the hand-authored spec's for the same lang, else the internal name in `QuestTitle.lang`, else
-`<folder>-Q-<lang>`. The wiki has no level, so every quest gets the world's. A ready spec's prerequisite that will
+`<folder>-Q-<lang>`. A page without a level note gets the world's level. A ready spec's prerequisite that will
 not be generated (blocked, or no archived page) is replaced by its nearest generated ancestors on the wiki's Prequest
 chain, listed as `requires (not generated)`; a quest left with no prerequisite gets `min_level`.
 
@@ -483,7 +499,9 @@ A bounty goal counts a defeated mob once for each of its adjectives in `mobs`, s
 own `<template>.AdjRef`. A shared adjective (`Crustacean_Pincer`, `MONST_Fish`) catches every template that has it.
 A usage goal's `items` are adjectives of `items`: the world's object templates with an adjective that the player
 interacts with or whose display name is not a mob's (`CL-TeslaTower.AdjRef`, a Galvanic Tower), the pattern of the
-pack's `m_itemAdjectives`. A persona goal's `persona` is the persona without `_Persona`; the zones column is where to send the player:
+pack's `m_itemAdjectives`. An NPC's name is the template's own display name, the last one in the file (a professor's
+template carries a display name per quest it offers before it). A persona goal's `persona` is the persona without
+`_Persona`; the zones column is where to send the player:
 the zones whose wad names the template or places an object by its template id (Zaltanna the Mirrormask in
 `KR_Z00_Hub`).
 
