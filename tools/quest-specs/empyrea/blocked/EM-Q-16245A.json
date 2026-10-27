@@ -1,6 +1,11 @@
 {
   "id": "EM-Q-16245A",
   "lang": "16245A",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-AERI-NPC01-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
   "requires": [
     "EM-Q-162454"
   ],
@@ -106,6 +111,10 @@
     }
   ],
   "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    },
     "EM-CHAOS-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Kalamar_CitizenF_M_NPC.dds",
       "template_id": 1451100
@@ -117,11 +126,6 @@
     "timestamp": "20250819003036"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.items",
       "value": "Second Reading",

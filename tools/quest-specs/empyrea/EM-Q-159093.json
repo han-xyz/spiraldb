@@ -1,6 +1,11 @@
 {
   "id": "EM-Q-159093",
   "lang": "159093",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-AERO-NPC01",
+    "zone": "Empyrea/EM_Z10_PortAero"
+  },
   "requires": [
     "EM-Q-15908D"
   ],
@@ -51,18 +56,18 @@
       "loc": "ZoneLocName_1413239"
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM-AERO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_C_NPC.dds",
+      "template_id": 1447325
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Welcome_to_the_Grand_Contusion",
     "from": "archive",
     "timestamp": "20231126092127"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

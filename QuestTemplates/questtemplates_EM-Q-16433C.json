@@ -160,6 +160,15 @@
         "m_questName": "EM-Q-16433E",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "EM-Q-164340",
+        "m_applyNOT": true,
+        "m_operator": "ROP_AND"
       }
     ],
     "m_applyNOT": false,

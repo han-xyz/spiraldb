@@ -1,6 +1,11 @@
 {
   "id": "EM-Q-1590AA",
   "lang": "1590AA",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-AERI-NPC01-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
   "requires": [
     "EM-Q-159078"
   ],
@@ -85,18 +90,18 @@
       "loc": "ZoneLocName_1413254"
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:A_Light_Fight",
     "from": "archive",
     "timestamp": "20250906050459"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Explore the Military Training Grounds",

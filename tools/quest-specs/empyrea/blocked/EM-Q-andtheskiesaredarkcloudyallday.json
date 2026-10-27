@@ -1,5 +1,10 @@
 {
   "id": "EM-Q-andtheskiesaredarkcloudyallday",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-AERI-NPC01-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
   "requires": [
     "EM-Q-16158A"
   ],
@@ -26,7 +31,7 @@
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC01-B",
+      "persona": "giver",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
@@ -67,11 +72,6 @@
     {
       "field": "lang",
       "value": "...And the Skies Are Dark Cloudy All Day",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {

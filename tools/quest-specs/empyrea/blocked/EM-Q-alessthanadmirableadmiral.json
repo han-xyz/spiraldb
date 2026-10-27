@@ -1,5 +1,10 @@
 {
   "id": "EM-Q-alessthanadmirableadmiral",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-AERI-NPC01-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
   "requires": [
     "EM-Q-1590A0"
   ],
@@ -25,7 +30,12 @@
       "loc": "ZoneLocName_1413254"
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:A_Less_Than_Admirable_Admiral",
     "from": "archive",
@@ -35,11 +45,6 @@
     {
       "field": "lang",
       "value": "A Less Than Admirable Admiral",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     }
   ]

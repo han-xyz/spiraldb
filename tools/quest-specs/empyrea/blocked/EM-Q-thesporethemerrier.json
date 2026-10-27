@@ -1,5 +1,10 @@
 {
   "id": "EM-Q-thesporethemerrier",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-SAMS-NPC08-B",
+    "zone": "Empyrea/Interiors/EM_Z12_DyingJungle"
+  },
   "requires": [
     "EM-Q-1624B4"
   ],
@@ -38,7 +43,12 @@
       "loc": "ZoneLocName_1451161"
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM-SAMS-NPC08-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_WolfGryphon_Warrior_E_NPC.dds",
+      "template_id": 1451190
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Spore_the_Merrier",
     "from": "archive",
@@ -48,11 +58,6 @@
     {
       "field": "lang",
       "value": "The Spore the Merrier",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {

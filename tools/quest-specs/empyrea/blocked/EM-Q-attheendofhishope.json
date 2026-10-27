@@ -1,5 +1,10 @@
 {
   "id": "EM-Q-attheendofhishope",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-ZANA-NPC01-C",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
   "requires": [
     "EM-Q-161580"
   ],
@@ -55,6 +60,10 @@
     "EM-AERI-NPC17": {
       "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
       "template_id": 1397735
+    },
+    "EM-ZANA-NPC01-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_C_NPC.dds",
+      "template_id": 1254433
     }
   },
   "source": {
@@ -66,11 +75,6 @@
     {
       "field": "lang",
       "value": "At the End of His Hope",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {

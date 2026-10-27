@@ -1,6 +1,11 @@
 {
   "id": "EM-Q-1618DA",
   "lang": "1618DA",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-HUSK-NPC01-A",
+    "zone": "Empyrea/EM_Z16_Husk"
+  },
   "requires": [
     "EM-Q-161890"
   ],
@@ -125,16 +130,16 @@
     },
     {
       "type": "persona",
-      "persona": "EM-HUSK-NPC01-A",
+      "persona": "giver",
       "zone": "Empyrea/EM_Z16_Husk",
       "loc": "ZoneLocName_1448066",
       "completion": [
         {
-          "speaker": "EM-HUSK-NPC01-A",
+          "speaker": "giver",
           "line": "00000016"
         },
         {
-          "speaker": "EM-HUSK-NPC01-A",
+          "speaker": "giver",
           "line": "00000022"
         }
       ]
@@ -160,11 +165,6 @@
       "field": "lang",
       "value": "WizQst1618DA matched by the words it shares with the goals; its lines name Mellori",
       "blocking": false
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
     },
     {
       "field": "goal.items",

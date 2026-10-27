@@ -1,6 +1,11 @@
 {
   "id": "EM-Q-164346",
   "lang": "164346",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-CHAOS-NPC05-B",
+    "zone": "Empyrea/EM_Z14_ChaosJungle"
+  },
   "requires": [
     "EM-Q-16433E"
   ],
@@ -234,7 +239,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "EM-CHAOS-NPC05-B",
+      "persona": "giver",
       "zone": "Empyrea/EM_Z14_ChaosJungle"
     },
     {
@@ -309,11 +314,6 @@
     "timestamp": "20250827164610"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.items",
       "value": "Spider's Lair",

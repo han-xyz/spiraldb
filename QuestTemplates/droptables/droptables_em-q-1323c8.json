@@ -1,0 +1,17 @@
+{
+  "Name": "EM-Q-1323C8",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 2340,
+  "MaxGold": 2340,
+  "ExperienceAmount": 96540,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:21:19.241445Z",
+  "ModifiedAt": "2026-10-27T09:21:19.241445Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

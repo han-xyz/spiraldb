@@ -1,6 +1,11 @@
 {
   "id": "EM-Q-1590AE",
   "lang": "1590AE",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-AERO-NPC07",
+    "zone": "Empyrea/EM_Z09_NWAeroplains"
+  },
   "requires": [
     "EM-Q-15909A"
   ],
@@ -123,18 +128,18 @@
       "loc": "ZoneLocName_1413254"
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM-AERO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_HelenaF_A_NPC.dds",
+      "template_id": 1447331
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Fair-Weather_Friends",
     "from": "archive",
     "timestamp": "20231126092442"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (no ZoneTransfer)",
       "value": "Rear Courtyard: Empyrea/Interiors/EM_Z07_RearCourtyard",

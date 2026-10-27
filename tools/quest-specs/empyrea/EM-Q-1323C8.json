@@ -1,6 +1,11 @@
 {
   "id": "EM-Q-1323C8",
   "lang": "1323C8",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-ZANA-NPC01-D",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
   "requires": [
     "EM-Q-1323C7"
   ],
@@ -74,18 +79,18 @@
       "loc": "ZoneLocName_1254355"
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM-ZANA-NPC01-D": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
+      "template_id": 1404201
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Sparck_in_Charge",
     "from": "archive",
     "timestamp": "20231126100011"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Search for the Negativity Transmutator",

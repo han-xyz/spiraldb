@@ -1,6 +1,11 @@
 {
   "id": "EM-Q-1615CA",
   "lang": "1615CA",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-AERO-NPC12",
+    "zone": "Empyrea/EM_Z11_VeloCity"
+  },
   "requires": [
     "EM-Q-16158E"
   ],
@@ -127,18 +132,18 @@
       "loc": "ZoneLocName_1447290"
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM-AERO-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Troll_Base_A_NPC.dds",
+      "template_id": 1447369
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Three_Goats_Gruff",
     "from": "archive",
     "timestamp": "20231126100427"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Troll Den",

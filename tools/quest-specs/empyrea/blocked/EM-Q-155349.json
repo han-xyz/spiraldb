@@ -1,6 +1,11 @@
 {
   "id": "EM-Q-155349",
   "lang": "155349",
+  "auto_start": true,
+  "giver": {
+    "persona": "EM-AERI-NPC03-B",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
   "requires": [
     "EM-Q-15532B"
   ],
@@ -75,18 +80,18 @@
       "loc": "ZoneLocName_1397535"
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Life's_a_Beast",
     "from": "archive",
     "timestamp": "20231126085802"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Beast Mountain",
