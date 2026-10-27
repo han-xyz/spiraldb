@@ -122,6 +122,17 @@
         "m_destinationLoc": "From_Yakhal",
         "m_destinationZone": "Mirage/Interiors/MR_Z06_RotwangLab"
       }
+    },
+    {
+      "TriggerName": "To_DeepFreeze",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Yakhal",
+        "m_destinationZone": "Mirage/Interiors/MR_Z06_DeepFreeze"
+      }
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Mirage/Interiors/MR_Z06_DeepFreeze",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_DeepFreeze02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_DeepFreeze",
+        "m_destinationZone": "Mirage/Interiors/MR_Z06_DeepFreeze_02"
+      }
+    }
+  ]
+}
