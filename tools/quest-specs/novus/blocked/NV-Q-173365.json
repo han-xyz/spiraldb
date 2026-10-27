@@ -136,6 +136,15 @@
       "loc": "ZoneLocName_1520449"
     },
     {
+      "type": "usage",
+      "items": [
+        "NV-ROSE-FloorCrack.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Player_Cabal_A_01.AdjRef",
@@ -170,6 +179,7 @@
   "personas": {},
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Revenge!",
+    "from": "archive",
     "timestamp": "20240323095324"
   },
   "needs_review": [
@@ -179,9 +189,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.descriptor",
       "value": "Crack in the Floor",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

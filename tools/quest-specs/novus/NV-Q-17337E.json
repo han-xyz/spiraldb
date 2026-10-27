@@ -90,6 +90,16 @@
   },
   "goals": [
     {
+      "type": "bounty",
+      "mobs": [
+        "NV_Void_Elemental_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004232",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Novus/NV_Z05_LaVilleRose",
@@ -110,6 +120,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Waiting_for_Who_Knows",
+    "from": "archive",
     "timestamp": "20240119020655"
   },
   "needs_review": [
@@ -117,11 +128,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Hall of Purposeful Abstraction",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "The Abyss",
-      "blocking": true
     },
     {
       "field": "dialogs",

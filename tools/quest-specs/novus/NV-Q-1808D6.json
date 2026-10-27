@@ -6,7 +6,6 @@
     "zone": "Novus/NV_Z01_Conatus"
   },
   "requires": [],
-  "min_level": 142,
   "mainline": false,
   "level": 142,
   "reward": {
@@ -92,9 +91,26 @@
   },
   "goals": [
     {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
       "type": "waypoint",
       "zone": "Novus/NV_Z03_PuertoNuovo_VA",
       "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_StandIn_Chronomonger_01.AdjRef",
+        "NV_Unicorn_Guard_C_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004236",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
     },
     {
       "type": "persona",
@@ -111,6 +127,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Cuckoo_Clocks",
+    "from": "archive",
     "timestamp": "20240323101258"
   },
   "needs_review": [
@@ -125,19 +142,15 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Salvador into the Tent of Time",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "The Mad Chronomonger",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Scaredy Cats replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 142
 }
