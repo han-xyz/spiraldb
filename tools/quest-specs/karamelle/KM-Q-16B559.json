@@ -63,10 +63,10 @@
     {
       "type": "bounty",
       "mobs": [
-        "NV_Chicken_Miner_A_01.AdjRef"
+        "KM_Chicken_Miner_A_01.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00004154",
+      "target": "WizardMobs_00003672",
       "zone": "",
       "loc": "ZoneLocName_1488252"
     },
@@ -85,6 +85,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Quaky-Quaky",
+    "from": "archive",
     "timestamp": "20250605094336"
   },
   "needs_review": [
@@ -96,11 +97,6 @@
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Les Bon-Bon Mots",
-      "blocking": false
-    },
-    {
-      "field": "goal.mobs (other folder)",
-      "value": "The Quake Charmer: ObjectData/NV",
       "blocking": false
     },
     {

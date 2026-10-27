@@ -1,12 +1,12 @@
 {
-  "id": "KM-Q-170A8A",
-  "lang": "170A8A",
+  "id": "KM-Q-170A83",
+  "lang": "170A83",
   "giver": {
-    "persona": "KM-KCITY-NPC08",
+    "persona": "KM-KCITY-NPC06",
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
-    "KM-Q-170A86"
+    "KM-Q-16FCE9"
   ],
   "mainline": true,
   "level": 122,
@@ -55,54 +55,61 @@
       {
         "speaker": "giver",
         "line": "00000009"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000010"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000011"
       }
     ],
     "underway": []
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z00_ProductionJunction"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_WizardF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003713",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
       "type": "persona",
-      "persona": "KM-KCITY-NPC01-B",
+      "persona": "KM-KCITY-NPC07",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
     }
   ],
   "personas": {
-    "KM-KCITY-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
-      "template_id": 1510011
+    "KM-KCITY-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_A_NPC.dds",
+      "template_id": 1510018
     },
-    "KM-KCITY-NPC08": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1510023
+    "KM-KCITY-NPC07": {
+      "portrait": "GUI/NpcPortraits/Fairy_SisterF_A_NPC.dds",
+      "template_id": 1510020
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Worm_Notice",
-    "timestamp": "20240322074805"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:What_is_your_Function?",
+    "from": "archive",
+    "timestamp": "20240322071542"
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Financial Department",
+      "field": "lang",
+      "value": "WizQst170A83 matched by the words it shares with the goals; its lines name Hans, Samantha, The Jellymancer",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "The Spirit Gobbler",
-      "blocking": true
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "World of Spycraft replaced by KM-Q-16FCE9",
       "blocking": false
     }
   ]

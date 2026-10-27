@@ -1,12 +1,12 @@
 {
-  "id": "KM-Q-170A83",
-  "lang": "170A83",
+  "id": "KM-Q-170A8A",
+  "lang": "170A8A",
   "giver": {
-    "persona": "KM-KCITY-NPC06",
+    "persona": "KM-KCITY-NPC08",
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
-    "KM-Q-170A81"
+    "KM-Q-170A86"
   ],
   "mainline": true,
   "level": 122,
@@ -55,46 +55,56 @@
       {
         "speaker": "giver",
         "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "waypoint",
-      "zone": "Karamelle/Interiors/KM_Z00_ProductionJunction"
+      "type": "bounty",
+      "mobs": [
+        "KM_Alphoi_DarkF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003716",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
     },
     {
       "type": "persona",
-      "persona": "KM-KCITY-NPC07",
+      "persona": "KM-KCITY-NPC01-B",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
     }
   ],
   "personas": {
-    "KM-KCITY-NPC06": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_A_NPC.dds",
-      "template_id": 1510018
+    "KM-KCITY-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1510011
     },
-    "KM-KCITY-NPC07": {
-      "portrait": "GUI/NpcPortraits/Fairy_SisterF_A_NPC.dds",
-      "template_id": 1510020
+    "KM-KCITY-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1510023
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:What_is_your_Function?",
-    "timestamp": "20240322071542"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Worm_Notice",
+    "from": "archive",
+    "timestamp": "20240322074805"
   },
   "needs_review": [
     {
-      "field": "lang",
-      "value": "WizQst170A83 matched by the words it shares with the goals; its lines name Hans, Samantha, The Jellymancer",
+      "field": "goal.zone (waypoint left out)",
+      "value": "Financial Department",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "The Jellymancer",
-      "blocking": true
     },
     {
       "field": "dialogs",

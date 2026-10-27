@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
-    "KM-Q-170A86"
+    "KM-Q-170A8A"
   ],
   "mainline": true,
   "level": 122,
@@ -133,6 +133,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Supervillain_Team-Up",
+    "from": "archive",
     "timestamp": "20240322074939"
   },
   "needs_review": [
@@ -154,11 +155,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Worm Notice replaced by KM-Q-170A86",
       "blocking": false
     }
   ]

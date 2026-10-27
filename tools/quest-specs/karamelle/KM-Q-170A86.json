@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
-    "KM-Q-16FCE9"
+    "KM-Q-170A83"
   ],
   "mainline": true,
   "level": 122,
@@ -127,6 +127,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Familiar_Ground",
+    "from": "archive",
     "timestamp": "20251224022544"
   },
   "needs_review": [
@@ -138,11 +139,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "What is your Function? replaced by KM-Q-16FCE9",
       "blocking": false
     }
   ]

@@ -119,11 +119,22 @@
       "target": "WizardMobs_00003702",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_WizardF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003713",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
     }
   ],
   "personas": {},
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Sweetened_with_Splendorphins",
+    "from": "archive",
     "timestamp": "20240322071534"
   },
   "needs_review": [
@@ -156,11 +167,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Next Room",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "The Jellymancer",
-      "blocking": true
     },
     {
       "field": "dialogs",

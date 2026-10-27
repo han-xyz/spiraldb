@@ -52,6 +52,41 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "KM-Accompany-Maulwurf-ENC.AdjRef",
+        "KM-Accompany-Maulwurf.AdjRef",
+        "KM-BLACK-NPC10.AdjRef",
+        "KM-ESTATE-NPC06-B.AdjRef",
+        "KM-ESTATE-NPC06.AdjRef",
+        "KM-GUTEN-NPC05-C.AdjRef",
+        "KM-GUTEN-NPC05.AdjRef",
+        "KM-KCITY-NPC01-B.AdjRef",
+        "KM-KCITY-NPC01-C.AdjRef",
+        "KM-KCITY-NPC01-D.AdjRef",
+        "KM-KCITY-NPC01-E.AdjRef",
+        "KM-KCITY-NPC01-F.AdjRef",
+        "KM-KCITY-NPC01-G.AdjRef",
+        "KM-KCITY-NPC01-H.AdjRef",
+        "KM-KCITY-NPC01-J.AdjRef",
+        "KM-KCITY-NPC01-K.AdjRef",
+        "KM-KCITY-NPC01.AdjRef",
+        "KM-NIBB-NPC06-B.AdjRef",
+        "KM-NIBB-NPC06.AdjRef",
+        "KM-RCM-NPC01-B.AdjRef",
+        "KM-RCM-NPC01.AdjRef",
+        "KM_StandIn_Maulwurf-B.AdjRef",
+        "KM_StandIn_Maulwurf-C.AdjRef",
+        "KM_StandIn_Maulwurf-D.AdjRef",
+        "KM_StandIn_Maulwurf.AdjRef",
+        "KM_StandIn_Maulwurf_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z00_HUB",
+      "descriptor": "NPCs_01748992",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gummy_Bear_Uber_A_01.AdjRef"
@@ -86,6 +121,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Willkommen!",
+    "from": "archive",
     "timestamp": "20240322061900"
   },
   "needs_review": [
@@ -93,11 +129,6 @@
       "field": "requires",
       "value": "Mole Problems",
       "blocking": false
-    },
-    {
-      "field": "goal.persona",
-      "value": "Maulwurf",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",

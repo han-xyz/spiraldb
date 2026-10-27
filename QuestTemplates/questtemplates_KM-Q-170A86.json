@@ -155,7 +155,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "KM-Q-16FCE9",
+        "m_questName": "KM-Q-170A83",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -164,7 +164,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "KM-Q-170A8C",
+        "m_questName": "KM-Q-170A8A",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

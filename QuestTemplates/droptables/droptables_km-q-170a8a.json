@@ -1,0 +1,17 @@
+{
+  "Name": "KM-Q-170A8A",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 795,
+  "MaxGold": 795,
+  "ExperienceAmount": 88276,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:11:33.807872Z",
+  "ModifiedAt": "2026-10-27T09:11:33.807872Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

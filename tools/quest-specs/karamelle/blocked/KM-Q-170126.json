@@ -1,6 +1,6 @@
 {
-  "id": "KM-Q-17973C",
-  "lang": "17973C",
+  "id": "KM-Q-170126",
+  "lang": "170126",
   "giver": {
     "persona": "TEST-CAM-NPC-001",
     "zone": ""
@@ -42,11 +42,15 @@
       },
       {
         "speaker": "giver",
-        "line": "00000006"
+        "line": "00000007"
       },
       {
         "speaker": "giver",
-        "line": "00000007"
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
       },
       {
         "speaker": "giver",
@@ -71,6 +75,66 @@
       {
         "speaker": "giver",
         "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
       }
     ],
     "underway": []
@@ -84,9 +148,15 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Spellements101",
+    "from": "archive",
     "timestamp": "20251210214336"
   },
   "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170126 matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
     {
       "field": "giver (other world)",
       "value": "Abner K. Doodle: TEST-CAM-NPC-001 from ObjectData/WC",
