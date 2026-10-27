@@ -5,9 +5,7 @@
     "persona": "KR-Bastion-NPC04",
     "zone": "Khrysalis/KR_Z01_SilentMarket"
   },
-  "requires": [
-    "KR-Q-130F05"
-  ],
+  "requires": [],
   "mainline": false,
   "level": 88,
   "reward": {
@@ -62,6 +60,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "KR-MusicBox.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "descriptor": "WizItems_00001963",
+      "loc": "ZoneLocName_1205051"
+    },
+    {
       "type": "persona",
       "persona": "KR-LastWood-NPC01",
       "zone": "Khrysalis/KR_Z03_LastWood",
@@ -85,14 +93,15 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Music Box under the Harmony Tree in the Last Wood",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "A Song of Brothers replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 88
 }

@@ -19,6 +19,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "GR-KermesFire.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizardGameObjects_00000655",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Khrysalis/KR_Z04_TyrianGorge",
@@ -40,11 +50,6 @@
     {
       "field": "lang",
       "value": "Barrels of Fun",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Barrels of Kermes Fire",
       "blocking": true
     }
   ]

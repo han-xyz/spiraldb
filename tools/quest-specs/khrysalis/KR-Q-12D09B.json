@@ -6,7 +6,6 @@
     "zone": "Khrysalis/KR_Z04_TyrianGorge"
   },
   "requires": [],
-  "min_level": 88,
   "mainline": true,
   "level": 88,
   "reward": {
@@ -31,6 +30,16 @@
     "underway": []
   },
   "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-LightningBugs.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizQst12D09B_00000003",
+      "loc": "ZoneLocName_1233046"
+    },
     {
       "type": "persona",
       "persona": "giver",
@@ -67,14 +76,15 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Lightning Bug Swarm",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Break Out replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 88
 }

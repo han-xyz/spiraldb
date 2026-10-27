@@ -6,7 +6,6 @@
     "zone": "Khrysalis/KR_Z06_CrescentBeach"
   },
   "requires": [],
-  "min_level": 88,
   "mainline": true,
   "level": 88,
   "reward": {
@@ -70,6 +69,16 @@
       "loc": "ZoneLocName_1249097"
     },
     {
+      "type": "usage",
+      "items": [
+        "KR-GoatWeaverSilk .AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "descriptor": "WizItems_00001003",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Khrysalis/KR_Z06_CrescentBeach",
@@ -99,14 +108,15 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Silk",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "O Happy Spirit Things! replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 88
 }

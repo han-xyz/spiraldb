@@ -113,6 +113,16 @@
       "zone": "Khrysalis/Interiors/KR_Z04_I07_AbyssalCave"
     },
     {
+      "type": "usage",
+      "items": [
+        "KR-MantisRemains.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizardGameObjects_00000658",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "KR_Spider_Giant_B.AdjRef"
@@ -149,11 +159,6 @@
     {
       "field": "goal.mobs",
       "value": "Mantis Phantoms",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Mantis' Remains Due to a bug, this may not appear as a Goal in the Quest Log.",
       "blocking": true
     },
     {

@@ -1,0 +1,17 @@
+{
+  "Name": "KR-Q-130F0F",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 210,
+  "MaxGold": 210,
+  "ExperienceAmount": 17370,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:11:33.600815Z",
+  "ModifiedAt": "2026-10-27T09:11:33.600815Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
