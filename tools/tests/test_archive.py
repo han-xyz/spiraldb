@@ -193,15 +193,56 @@ class CategoryCaptureTest(unittest.TestCase):
             self.assertIsNone(fetch_category(archive, cache, "Category:Polaris_Quests"))
 
 
-class NoSourceTest(unittest.TestCase):
-    def test_a_world_without_a_source_is_not_enumerated(self):
-        archive = CaptureArchive("", {})
-        for name in ("Polaris", "Wallaru"):
-            with self.subTest(name), tempfile.TemporaryDirectory() as cache:
-                with self.assertRaises(SystemExit) as raised:
-                    enumerate_world(LiveWiki(urlopen=FakeWeb({}), interval=0), archive, cache, world(name))
-                self.assertIn("no 200 captures", str(raised.exception))
-        self.assertEqual(archive.urls, [])
+def members_page(*quests):
+    return '<div id="mw-subcategories"></div><div id="mw-pages">' + "".join(
+        f'<a href="/wiki/{q}">{q}</a>' for q in quests) + '</div><div class="printfooter"></div>'
+
+
+TREE_PAGE = ('<a href="/wiki/Quest:Sidebar_Link">nav</a><div id="mw-content-text">'
+             '<a href="/wiki/Quest:A_New_Vision">A New Vision</a><a href="/wiki/Quest:Tree_Only">Tree Only</a>'
+             '<a href="/wiki/Quest:Polaris_Quest_Tree">self</a></div><div class="printfooter"></div>')
+
+
+class TableArchive:
+    """Captures by a part of their URL: the CDX lists and the pages."""
+
+    def __init__(self, answers):
+        self.answers = answers
+        self.urls = []
+
+    def get(self, url):
+        self.urls.append(url)
+        body = next(answer for part, answer in self.answers.items() if part in url)
+        return url.replace("/web/2026/", "/web/20260101000000/"), body.encode()
+
+
+class TypedSubcategoryTest(unittest.TestCase):
+    def test_a_root_category_without_a_usable_capture_falls_back_to_the_typed_subcategories_and_the_tree(self):
+        archive = TableArchive({
+            "cdx?url=wiki.wizard101central.com/wiki/Quest:*": (
+                "http://wiki.wizard101central.com/wiki/Quest:A_New_Vision 20250914154517 200\n"
+                "http://wiki.wizard101central.com/wiki/Quest:Bank_Run 20231212083813 200\n"),
+            "cdx?url=wiki.wizard101central.com/wiki/Category:Polaris_Quests": "",
+            "cdx?url=wiki.wizard101central.com/wiki/Category:Polaris_Storyline_Quests": "20231003000000 200\n",
+            "cdx?url=wiki.wizard101central.com/wiki/Category:Polaris_Side_Quests": "20240118000000 200\n",
+            "cdx?url=wiki.wizard101central.com/wiki/Category:Polaris_Instance_Quests": "",
+            "cdx?url=wiki.wizard101central.com/wiki/Quest:Polaris_Quest_Tree": "20231126000000 200\n",
+            "/web/20231003000000/": members_page("Quest:A_New_Vision"),
+            "/web/20240118000000/": members_page("Quest:Bank_Run"),
+            "/web/20231126000000/": TREE_PAGE,
+        })
+        live = LiveWiki(urlopen=FakeWeb({"https://": (403, b"Forbidden", {})}), interval=0)
+        with tempfile.TemporaryDirectory() as cache:
+            enumerate_world(live, archive, cache, world("Polaris"))
+            with open(os.path.join(cache, "index-polaris.json"), encoding="utf-8") as f:
+                index = {entry["page"]: entry for entry in json.load(f)}
+        self.assertEqual(sorted(index), ["Quest:A_New_Vision", "Quest:Bank_Run", "Quest:Tree_Only"])
+        self.assertEqual(index["Quest:A_New_Vision"]["type"], "storyline")
+        self.assertEqual(index["Quest:Bank_Run"]["type"], "side")
+        self.assertIsNone(index["Quest:Tree_Only"]["type"])
+        self.assertTrue(index["Quest:Tree_Only"]["missing_snapshot"])
+        self.assertEqual(index["Quest:Bank_Run"]["timestamp"], "20231212083813")
+        self.assertTrue(all(entry["zones"] == [] for entry in index.values()))
 
 
 if __name__ == "__main__":

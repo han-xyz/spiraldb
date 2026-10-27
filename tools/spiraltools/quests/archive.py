@@ -287,29 +287,60 @@ def is_category_page(page):
 
 
 def fetch_category(archive, cache, category):
-    """A category page from the newest cached or archived capture with status 200 that lists members, or None. The
-    newest captures can be recorded refusals, which the archive serves as a page of its own."""
+    """A category page from the newest cached or archived capture with status 200 that lists members, or None."""
+    return fetch_capture(archive, cache, category, is_category_page)
+
+
+def fetch_capture(archive, cache, key, is_usable):
+    """A page from the newest cached or archived capture with status 200 that is_usable accepts, or None. The newest
+    captures can be recorded refusals, which the archive serves as a page of its own."""
     stamps = set()
-    for hit in cached_copies(cache, category):
+    for hit in cached_copies(cache, key):
         stamps.add(hit.stamp)
         with open(hit.path, encoding="utf-8") as f:
             page = f.read()
-        if is_category_page(page):
+        if is_usable(page):
             return page
-    _, data = archive.get(CATEGORY_CDX.format(urllib.parse.quote(category, safe=":_()/,!")))
+    _, data = archive.get(CATEGORY_CDX.format(urllib.parse.quote(key, safe=":_()/,!")))
     captures = [line.split() for line in data.decode().splitlines()]
     for stamp in reversed([fields[0] for fields in captures if fields[1:2] == ["200"]]):
         if stamp in stamps:
             continue
         try:
-            page = download_page(archive, cache, category, raw=False, at=stamp)[1]
+            page = download_page(archive, cache, key, raw=False, at=stamp)[1]
         except urllib.error.HTTPError as e:
             if e.code not in (403, 404):
                 raise
             continue
-        if is_category_page(page):
+        if is_usable(page):
             return page
     return None
+
+
+def category_listing(live, archive, cache, category):
+    """(subcategories, quest pages) of a category, from the live wiki else the archive; None when neither lists
+    any."""
+    found = live.category(category)
+    if found is None:
+        page = fetch_category(archive, cache, category)
+        found = category_members(page) if page is not None else None
+    return found if found and any(found) else None
+
+
+def content_quests(page, key):
+    """The Quest: pages the content of a page links to, without the page itself and other quest trees."""
+    start = page.find('id="mw-content-text"')
+    end = page.find('class="printfooter"', max(start, 0))
+    block = page[max(start, 0):end if end >= 0 else None]
+    found = [page_key(m) for m in re.findall(r'href="[^"]*/wiki/(Quest:[^"#?]+)"', block)]
+    return list(dict.fromkeys(q for q in found if q != key and not q.endswith("_Quest_Tree")))
+
+
+def tree_quests(live, archive, cache, registered):
+    """The quest pages the world's Quest Tree page links to; none when it is neither live nor archived."""
+    key = f"Quest:{registered.wiki}_Quest_Tree"
+    page = live.page(key) or fetch_capture(archive, cache, key, lambda text: bool(content_quests(text, key)))
+    return content_quests(page, key) if page else []
 
 
 def walk_categories(live, archive, cache, registered):
@@ -323,13 +354,14 @@ def walk_categories(live, archive, cache, registered):
         if category in seen:
             continue
         seen.add(category)
-        found = live.category(category)
+        found = category_listing(live, archive, cache, category)
         if found is None:
-            page = fetch_category(archive, cache, category)
-            if page is None:
-                print(f"{category}: no capture found; its pages are listed only through other categories")
-                continue
-            found = category_members(page)
+            print(f"{category}: no capture found; its pages are listed only through other categories")
+            if category == root:
+                queue += [(f"Category:{registered.wiki}_{kind.title()}_Quests", None) for kind in QUEST_TYPES]
+                for quest in tree_quests(live, archive, cache, registered):
+                    quests.setdefault(quest, {"zones": set(), "types": set()})
+            continue
         subcategories, members = found
         kind = quest_type_of(category)
         for quest in members:
@@ -364,9 +396,6 @@ def index_path(cache, world):
 
 def enumerate_world(live, archive, cache, registered):
     world = registered.name
-    if registered.source == "none":
-        raise SystemExit(f"{world}: source none: no 200 captures of {registered.category} in the Internet Archive, "
-                         "and the live wiki refuses")
     quests = walk_categories(live, archive, cache, registered)
     archived = archived_quests(archive)
     index = []

@@ -51,9 +51,7 @@ in a run of encounter quests, Karamelle's anchored run holds 11 of its files, Em
 Khrysalis's quests lie in runs from 0x126322 to 0x13D76F that its few titles do not anchor, and Avalon's and
 Azteca's quests are spread over runs their few titles do not anchor, interleaved with each other's. A declared range
 is exclusive: `archive parse` takes no title key outside it, so a title read only outside it stays blocked on `lang`
-(a title of the same name in another world). Zafaria's range was widened to cover the keys its titles read. Polaris
-and Wallaru have `source="none"`: the archive holds no 200 capture of their quest category and the live wiki refuses,
-so `archive enumerate` stops on them. A world outside the table is refused with the list of the known ones.
+(a title of the same name in another world). Zafaria's range was widened to cover the keys its titles read. A world outside the table is refused with the list of the known ones.
 
 ## check
 
@@ -322,7 +320,9 @@ and level.
 `enumerate` walks `Category:<World>_Quests` and its subcategories, live or archived, and reads the CDX index of
 `Quest:` pages. An archived category is the newest capture with status 200 in its CDX list that lists members (the
 newest captures can be recorded refusals, served by the archive as a page of its own). A category with no answer is
-reported; its quests still come in through the other categories. `fetch`
+reported; its quests still come in through the other categories. When the world's own category lists nothing (no
+capture, or only refusals), `enumerate` walks `Category:<World>_<Storyline|Side|Instance>_Quests` instead and adds the
+quests `Quest:<World>_Quest_Tree` links to; those entries have no zone (Polaris, Wallaru). `fetch`
 takes the live page, else the newest capture, and the CDX timestamp when the newest capture is an error page; a quest
 without a snapshot is fetched only live.
 
