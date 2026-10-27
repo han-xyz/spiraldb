@@ -1,0 +1,81 @@
+{
+  "id": "AV-Q-908FB",
+  "lang": "908FB",
+  "giver": {
+    "persona": "AV-CATA-NPC02",
+    "zone": "Avalon/AV_Z10_Catacombs"
+  },
+  "requires": [
+    "AV-Q-908FA"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 25855,
+    "gold": 475
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-CorpseLantern-R12-01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001227",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "descriptor": "WizQst908FB_00000003",
+      "loc": "ZoneLocName_592130"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_592130"
+    }
+  ],
+  "personas": {
+    "AV-CATA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Patrick_NPC.dds",
+      "template_id": 592087
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Ghost_of_the_Navigator",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Unlit Lanterns",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

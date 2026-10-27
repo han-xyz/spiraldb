@@ -1,0 +1,73 @@
+{
+  "id": "AV-Q-908EB",
+  "lang": "908EB",
+  "giver": {
+    "persona": "AV-OUTER-NPC03",
+    "zone": "Avalon/AV_Z07_OuterYard"
+  },
+  "requires": [
+    "AV-Q-908EA"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 2715,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-OUTER-NPC04",
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "loc": "ZoneLocName_592078"
+    }
+  ],
+  "personas": {
+    "AV-OUTER-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Constance.dds",
+      "template_id": 592084
+    },
+    "AV-OUTER-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Squire_Billy_NPC.dds",
+      "template_id": 592085
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Don%27t_Say_No",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

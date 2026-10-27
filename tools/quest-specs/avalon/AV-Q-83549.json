@@ -1,0 +1,104 @@
+{
+  "id": "AV-Q-83549",
+  "lang": "83549",
+  "giver": {
+    "persona": "AV-CAER-NPC18",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-83542"
+  ],
+  "mainline": false,
+  "level": 68,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-CAER-NPC04",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Mill-Wheel-Broken.AdjRef",
+        "AV-Mill-Wheel-Fixed.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "Items_00006584",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Carpentar_Jeremiah Luchtaine_NPC.dds",
+      "template_id": 537803
+    },
+    "AV-CAER-NPC18": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Miriel_NPC.dds",
+      "template_id": 537911
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Reinventing_the_Wheel",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst83549 is The Repository's id; the title reads 8354A",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

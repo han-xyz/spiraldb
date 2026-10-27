@@ -1,0 +1,76 @@
+{
+  "id": "AV-Q-72CFD",
+  "lang": "72CFD",
+  "giver": {
+    "persona": "AV-WILD-NPC01",
+    "zone": "Avalon/AV_Z04_TheWild"
+  },
+  "requires": [
+    "AV-Q-72CFB"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 2275,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC12",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302",
+      "completion": [
+        {
+          "speaker": "AV-WILD-NPC12",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-WILD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dryad_Sophia_NPC.dds",
+      "template_id": 611119
+    },
+    "AV-WILD-NPC12": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_DogKnight_Silverharp.dds",
+      "template_id": 470334
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Friend_of_the_Family",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst72CFD is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

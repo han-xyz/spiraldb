@@ -5,7 +5,9 @@
     "persona": "AV-WYRD-NPC08",
     "zone": "Avalon/AV_Z05_TheWyrd"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-9532E"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -75,12 +77,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst95333 matched by the words it shares with the goals; its lines name Heidi Iron Nails",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Guest Right",
+      "value": "WizQst95333 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
@@ -95,9 +92,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Guest Right replaced by min_level",
+      "value": "Guest Right replaced by AV-Q-9532E",
       "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

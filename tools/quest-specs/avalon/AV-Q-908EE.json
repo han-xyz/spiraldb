@@ -1,0 +1,86 @@
+{
+  "id": "AV-Q-908EE",
+  "lang": "908EE",
+  "giver": {
+    "persona": "AV-OUTER-NPC03",
+    "zone": "Avalon/AV_Z07_OuterYard"
+  },
+  "requires": [
+    "AV-Q-908FF"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 5430,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "loc": "ZoneLocName_592078"
+    }
+  ],
+  "personas": {
+    "AV-OUTER-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Constance.dds",
+      "template_id": 592084
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Being_the_Third_Number",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To A Good Throwing Spot",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

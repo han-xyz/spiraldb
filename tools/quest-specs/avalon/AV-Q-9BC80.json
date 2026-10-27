@@ -1,0 +1,104 @@
+{
+  "id": "AV-Q-9BC80",
+  "lang": "9BC80",
+  "giver": {
+    "persona": "AV-HIGH-NPC01",
+    "zone": "Avalon/AV_Z02_HighRoad"
+  },
+  "requires": [
+    "AV-Q-9BC7F"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 19920,
+    "gold": 415
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Raven-Witch-Nightfeather-R12-01.AdjRef",
+        "AV_StandIn_HrefnaNightfeather.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001279",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    }
+  ],
+  "personas": {
+    "AV-HIGH-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+      "template_id": 617083
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Always_After_Me_Charms",
+    "from": "archive",
+    "timestamp": "20231222133537"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst9BC80 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "AV-Q-96ADA",
+  "lang": "96ADA",
+  "giver": {
+    "persona": "AV-ABBEY-NPC04",
+    "zone": "Avalon/AV_Z01_AbbeyRoad"
+  },
+  "requires": [
+    "AV-Q-96AD6"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 5730,
+    "gold": 145
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC01",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Warrior.dds",
+      "template_id": 611162
+    },
+    "AV-ABBEY-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_Blacksmith_WaylandNoye_NPC.dds",
+      "template_id": 617163
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Shape_Of_The_Rose",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst96ADA is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

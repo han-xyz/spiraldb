@@ -1,0 +1,70 @@
+{
+  "id": "AV-Q-95341",
+  "lang": "95341",
+  "giver": {
+    "persona": "AV-DARA-NPC01",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [
+    "AV-Q-95340"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 2560,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-DARA-NPC02",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Aodh.dds",
+      "template_id": 611129
+    },
+    "AV-DARA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Druid.dds",
+      "template_id": 611138
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Queen_of_Light_Took_Her_Bow",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst95341 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

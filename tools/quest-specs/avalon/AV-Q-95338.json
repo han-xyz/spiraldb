@@ -1,0 +1,123 @@
+{
+  "id": "AV-Q-95338",
+  "lang": "95338",
+  "giver": {
+    "persona": "AV-WYRD-NPC08",
+    "zone": "Avalon/AV_Z05_TheWyrd"
+  },
+  "requires": [
+    "AV-Q-95337"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 21730,
+    "gold": 490
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-GiantIndigo-R12-01.AdjRef",
+        "AV_StandIn_IndigoGiant.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001246",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WYRD-NPC11",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WYRD-NPC11",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WYRD-NPC10",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WYRD-NPC10",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    }
+  ],
+  "personas": {
+    "AV-WYRD-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Human_Knight_Malory.dds",
+      "template_id": 611117
+    },
+    "AV-WYRD-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Doran.dds",
+      "template_id": 611130
+    },
+    "AV-WYRD-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Captive1.dds",
+      "template_id": 611131
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Where_The_Demons_Dwell",
+    "from": "archive",
+    "timestamp": "20231125090842"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst95338 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Dun Scaith",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

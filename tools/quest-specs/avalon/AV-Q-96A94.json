@@ -5,7 +5,9 @@
     "persona": "AV-HIGH-NPC02",
     "zone": "Avalon/AV_Z02_HighRoad"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-96A93"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -147,12 +149,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Vexing Thoughts replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

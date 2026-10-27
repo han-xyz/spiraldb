@@ -1,0 +1,95 @@
+{
+  "id": "AV-Q-834DB",
+  "lang": "834DB",
+  "giver": {
+    "persona": "AV-CAER-NPC06",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-834DA"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 4300,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-CAER-NPC08",
+      "zone": "Avalon/Interiors/AV_Z03_EstateLogres",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Treant_Ancient.dds",
+      "template_id": 537805
+    },
+    "AV-CAER-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Malick_NPC.dds",
+      "template_id": 537807
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Joyous_Occasion",
+    "from": "archive",
+    "timestamp": "20250917210626"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834DB is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

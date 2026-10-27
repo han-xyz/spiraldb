@@ -1,0 +1,168 @@
+{
+  "id": "AV-Q-95348",
+  "lang": "95348",
+  "title": "QuestTitle_00000877",
+  "giver": {
+    "persona": "AV-DARA-NPC02",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [
+    "AV-Q-95347"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 21115,
+    "gold": 600
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-WYRD-NPC06",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV_ShrineShield_Sacred_Unpainted.AdjRef",
+        "AV_ShrineShield_Unpainted.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z06_DunDara",
+      "descriptor": "WizItems_00001859",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC23",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV_Shrine_Nobility.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z06_DunDara",
+      "descriptor": "WizItems_00001860",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC23": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Artisan_Ashlynn_NPC.dds",
+      "template_id": 617246
+    },
+    "AV-DARA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Druid.dds",
+      "template_id": 611138
+    },
+    "AV-WYRD-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Brigid.dds",
+      "template_id": 611107
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Pain_of_War",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst95348 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Eurgh's Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Eurgh",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

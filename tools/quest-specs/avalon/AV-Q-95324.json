@@ -1,0 +1,120 @@
+{
+  "id": "AV-Q-95324",
+  "lang": "95324",
+  "giver": {
+    "persona": "AV-WYRD-NPC06",
+    "zone": "Avalon/AV_Z05_TheWyrd"
+  },
+  "requires": [
+    "AV-Q-95322"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 34405,
+    "gold": 775
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV_Carved_Markers.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "descriptor": "WizItems_00001820",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Froudling-Spriggan-R12-01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001249",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Froudling-Spriggan-Boss-R12-01.AdjRef",
+        "AV_StandIn_Ginther.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001248",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV_Brigids_Arms.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "descriptor": "WizItems_00001821",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-WYRD-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Brigid.dds",
+      "template_id": 611107
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Knight_Blind",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

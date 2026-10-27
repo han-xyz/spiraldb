@@ -5,7 +5,9 @@
     "persona": "AV-CATA-NPC02",
     "zone": "Avalon/AV_Z10_Catacombs"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-908FC"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -75,12 +77,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Where Owls Dare replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

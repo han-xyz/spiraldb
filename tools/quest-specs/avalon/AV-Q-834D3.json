@@ -1,0 +1,106 @@
+{
+  "id": "AV-Q-834D3",
+  "lang": "834D3",
+  "giver": {
+    "persona": "AV-CAER-NPC02",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-834D2"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 6450,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-CAER-NPC03",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-CAER-NPC04",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Artisan_Ashlynn_NPC.dds",
+      "template_id": 537801
+    },
+    "AV-CAER-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Weasel_Minstrel.dds",
+      "template_id": 537802
+    },
+    "AV-CAER-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Carpentar_Jeremiah Luchtaine_NPC.dds",
+      "template_id": 537803
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Songs_of_Bravery",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834D3 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "AV-Q-834DA",
+  "lang": "834DA",
+  "giver": {
+    "persona": "AV-CAER-NPC06",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-834D9"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 17190,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Fox-Knight-Male-Logres-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001172",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "WizQst834DA_00000000",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-CAER-NPC07",
+      "zone": "Avalon/Interiors/AV_Z03_EstateLogres",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Treant_Ancient.dds",
+      "template_id": 537805
+    },
+    "AV-CAER-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dryad_Falynn_NPC.dds",
+      "template_id": 537806
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Little_Willow",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834DA is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Logres Estate",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

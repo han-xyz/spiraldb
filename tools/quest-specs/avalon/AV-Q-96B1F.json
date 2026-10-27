@@ -1,0 +1,90 @@
+{
+  "id": "AV-Q-96B1F",
+  "lang": "96B1F",
+  "giver": {
+    "persona": "AV-ABBEY-NPC25",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [
+    "AV-Q-96A94"
+  ],
+  "mainline": false,
+  "level": 68,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-BookOfHeraldry.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z00_Hub",
+      "descriptor": "WizItems_00001853",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC25": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_Gascoigne_NPC.dds",
+      "template_id": 643086
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Variations_of_the_Field",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst96B1F is The Repository's id; the title reads 96A9D",
+      "blocking": false
+    },
+    {
+      "field": "giver (closest name)",
+      "value": "Sir Guy Gascoigne \"Knight\" read as Sir Guy Gascoigne",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

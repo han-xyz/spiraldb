@@ -1,0 +1,149 @@
+{
+  "id": "AV-Q-96B14",
+  "lang": "96B14",
+  "giver": {
+    "persona": "AV-ABBEY-NPC16",
+    "zone": "Avalon/AV_Z01_AbbeyRoad"
+  },
+  "requires": [
+    "AV-Q-96B12"
+  ],
+  "mainline": false,
+  "level": 68,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Redcap-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001200",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "descriptor": "WizQst96B14_00000003",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-HayStack01.AdjRef",
+        "AV-HayStack02.AdjRef",
+        "AV-HayStack03.AdjRef",
+        "AV-HayStack04.AdjRef",
+        "AV-HayStack05.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "descriptor": "WizItems_00001852",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC15",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC14",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094",
+      "completion": [
+        {
+          "speaker": "AV-ABBEY-NPC14",
+          "line": "00000008"
+        },
+        {
+          "speaker": "AV-ABBEY-NPC14",
+          "line": "00000010"
+        },
+        {
+          "speaker": "AV-ABBEY-NPC14",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC14": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Courtney_NPC.dds",
+      "template_id": 617204
+    },
+    "AV-ABBEY-NPC15": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Siban_NPC.dds",
+      "template_id": 617205
+    },
+    "AV-ABBEY-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Clover_NPC.dds",
+      "template_id": 617235
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Needful_Things",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

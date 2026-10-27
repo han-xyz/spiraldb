@@ -1,0 +1,154 @@
+{
+  "id": "AV-Q-96AAB",
+  "lang": "96AAB",
+  "giver": {
+    "persona": "AV-LAKE-NPC02",
+    "zone": "Avalon/AV_Z08_LakeShore"
+  },
+  "requires": [
+    "AV-Q-96AA9"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 34505,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-KudzuVine.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "descriptor": "WizItems_00001831",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-HornSignal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "descriptor": "WizItems_00001832",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-BogWitch-Boss-R12-01.AdjRef",
+        "AV_StandIn_BlackAnnie.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001217",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-LAKE-NPC04",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    }
+  ],
+  "personas": {
+    "AV-LAKE-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Abbot.dds",
+      "template_id": 589661
+    },
+    "AV-LAKE-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 617137
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Black_Magic_Woman",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Witch House",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Dolorous Tower",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -5,7 +5,9 @@
     "persona": "AV-CAER-NPC03",
     "zone": "Avalon/AV_Z03_CaerLyon"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-834EE"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -83,24 +85,13 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst834EF by the proper nouns its lines share with the page (Archives, Map, Nodor), within 16 of a key of the zone's quests; next best WizQst834D3 with 2",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Lute Drop",
+      "value": "WizQst834EF is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Lute Drop replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

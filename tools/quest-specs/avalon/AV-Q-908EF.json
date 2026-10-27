@@ -1,0 +1,109 @@
+{
+  "id": "AV-Q-908EF",
+  "lang": "908EF",
+  "giver": {
+    "persona": "AV-OUTER-NPC03",
+    "zone": "Avalon/AV_Z07_OuterYard"
+  },
+  "requires": [
+    "AV-Q-908EE"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 25095,
+    "gold": 415
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Froudling-Spriggan-Spiny-Boss-R12-02.AdjRef",
+        "AV_StandIn_BattlingJackie.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001240",
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "loc": "ZoneLocName_592078"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-OUTER-Lever.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "descriptor": "WizardGameObjects_00000259",
+      "loc": "ZoneLocName_592078"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "loc": "ZoneLocName_592078",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-OUTER-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Constance.dds",
+      "template_id": 592084
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Long_Way_Down",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Overlook Tower",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

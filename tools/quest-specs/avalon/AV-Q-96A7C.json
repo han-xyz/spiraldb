@@ -1,0 +1,69 @@
+{
+  "id": "AV-Q-96A7C",
+  "lang": "96A7C",
+  "giver": {
+    "persona": "AV-HUB-NPC01",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [
+    "AV-Q-96A91"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 1805,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-HUB-NPC03",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
+      "template_id": 602074
+    },
+    "AV-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SumnerFieldgold_NPC.dds",
+      "template_id": 602076
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Fields_of_Gold",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -5,7 +5,9 @@
     "persona": "AV-HUB-NPC06",
     "zone": "Avalon/AV_Z00_Hub"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-96A98"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -69,12 +71,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "On One Hand replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

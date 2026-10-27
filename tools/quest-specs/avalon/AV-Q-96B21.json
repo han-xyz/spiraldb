@@ -5,7 +5,10 @@
     "persona": "AV-ABBEY-NPC25",
     "zone": "Avalon/AV_Z00_Hub"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-96B1F",
+    "AV-Q-96ADD"
+  ],
   "mainline": false,
   "level": 68,
   "reward": {
@@ -104,24 +107,13 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst96B21 matched by the words it shares with the goals; its lines name Wayland Noye, Night Goblin",
+      "value": "WizQst96B21 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Variations of the Field replaced by min_level",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Call The Banners replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

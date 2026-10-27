@@ -1,0 +1,107 @@
+{
+  "id": "AV-Q-834E7",
+  "lang": "834E7",
+  "giver": {
+    "persona": "AV-CATA-NPC01",
+    "zone": "Avalon/AV_Z10_Catacombs"
+  },
+  "requires": [
+    "AV-Q-834E6"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 24345,
+    "gold": 405
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-BogWitch-Boss-R12-02.AdjRef",
+        "AV_StandIn_BogWitch.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001221",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_537857"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Deep-Teleporter-Piece01.AdjRef",
+        "AV-Deep-Teleporter-Piece02.AdjRef",
+        "AV-Deep-Teleporter-Piece03.AdjRef",
+        "AV-Deep-Teleporter-Piece04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "descriptor": "Items_00006570",
+      "loc": "ZoneLocName_537857"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_537857"
+    }
+  ],
+  "personas": {
+    "AV-CATA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 592086
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/I%27se_the_B%27y",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834E7 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Boggy Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

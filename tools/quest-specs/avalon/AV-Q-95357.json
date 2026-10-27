@@ -1,0 +1,111 @@
+{
+  "id": "AV-Q-95357",
+  "lang": "95357",
+  "title": "QuestTitle_00000790",
+  "giver": {
+    "persona": "AV-DARA-NPC02",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [
+    "AV-Q-95356"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 7680,
+    "gold": 145
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-DARA-NPC01",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV_Dragon_Stones.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z06_DunDara",
+      "descriptor": "WizQst95357_00000009",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Aodh.dds",
+      "template_id": 611129
+    },
+    "AV-DARA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Druid.dds",
+      "template_id": 611138
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Charmed_Life",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst95357 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

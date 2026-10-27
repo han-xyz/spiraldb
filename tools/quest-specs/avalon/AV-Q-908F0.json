@@ -1,0 +1,82 @@
+{
+  "id": "AV-Q-908F0",
+  "lang": "908F0",
+  "giver": {
+    "persona": "AV-OUTER-NPC03",
+    "zone": "Avalon/AV_Z07_OuterYard"
+  },
+  "requires": [
+    "AV-Q-908EF"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 5430,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-LAKE-NPC01",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    }
+  ],
+  "personas": {
+    "AV-LAKE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Ockam.dds",
+      "template_id": 617116
+    },
+    "AV-OUTER-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Constance.dds",
+      "template_id": 592084
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Step_Down",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

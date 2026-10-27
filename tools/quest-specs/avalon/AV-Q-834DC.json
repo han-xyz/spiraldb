@@ -1,0 +1,120 @@
+{
+  "id": "AV-Q-834DC",
+  "lang": "834DC",
+  "giver": {
+    "persona": "AV-CAER-NPC06",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-834DB"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 24165,
+    "gold": 575
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Redcap-Boss-R11-01.AdjRef",
+        "AV_StandIn_ChaganNosebiter.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001173",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Shrine-Relic-01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "Items_00006568",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Shrine-Hospitality-02.AdjRef",
+        "AV-Shrine-Hospitality.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "Items_00006560",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Treant_Ancient.dds",
+      "template_id": 537805
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Great_Wild_Wood",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834DC is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "AV-Q-83532",
+  "lang": "83532",
+  "giver": {
+    "persona": "AV-CAER-NPC15",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-834D1"
+  ],
+  "mainline": false,
+  "level": 68,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Froudling-Goon-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001166",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "WizQst83532_00000010",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/Interiors/AV_Z03_HarvestHouse"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Froudling-Goon-Boss-R12-01.AdjRef",
+        "AV_StandIn_OrocBlightmore.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001264",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-CAER-NPC16",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC15": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_FerrandNeuville_NPC.dds",
+      "template_id": 537907
+    },
+    "AV-CAER-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_GerbertNeuville_NPC.dds",
+      "template_id": 537908
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Blighted_Plunderers",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -5,8 +5,9 @@
     "persona": "AV-ABBEY-NPC20",
     "zone": "Avalon/Interiors/AV_Z01_Library"
   },
-  "requires": [],
-  "min_level": 68,
+  "requires": [
+    "AV-Q-96A79"
+  ],
   "mainline": false,
   "level": 68,
   "reward": {
@@ -72,11 +73,6 @@
     "timestamp": "20241203203722"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "Steamed Crab",
-      "blocking": false
-    },
     {
       "field": "goal.items",
       "value": "Toadstool Forest Scroll",

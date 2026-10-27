@@ -5,7 +5,9 @@
     "persona": "AV-OUTER-NPC01",
     "zone": "Avalon/AV_Z07_OuterYard"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-908E5"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -69,9 +71,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Follow the Music replaced by min_level",
+      "value": "Follow the Music replaced by AV-Q-908E5",
       "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

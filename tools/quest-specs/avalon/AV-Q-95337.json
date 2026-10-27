@@ -5,12 +5,14 @@
     "persona": "AV-WYRD-NPC08",
     "zone": "Avalon/AV_Z05_TheWyrd"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-95335"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
-    "xp": 21730,
-    "gold": 490
+    "xp": 7245,
+    "gold": 150
   },
   "dialogs": {
     "prep": [
@@ -47,37 +49,13 @@
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "AV-GiantIndigo-R12-01.AdjRef",
-        "AV_StandIn_IndigoGiant.AdjRef"
-      ],
-      "count": 1,
-      "target": "WizardMobs_00001246",
-      "zone": "Avalon/AV_Z05_TheWyrd",
-      "loc": "ZoneLocName_602089"
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
     },
     {
       "type": "persona",
-      "persona": "AV-WYRD-NPC11",
-      "zone": "Avalon/AV_Z05_TheWyrd",
-      "loc": "ZoneLocName_602089"
-    },
-    {
-      "type": "persona",
-      "persona": "AV-WYRD-NPC11",
-      "zone": "Avalon/AV_Z05_TheWyrd",
-      "loc": "ZoneLocName_602089"
-    },
-    {
-      "type": "persona",
-      "persona": "AV-WYRD-NPC10",
-      "zone": "Avalon/AV_Z05_TheWyrd",
-      "loc": "ZoneLocName_602089"
-    },
-    {
-      "type": "persona",
-      "persona": "AV-WYRD-NPC10",
+      "persona": "giver",
       "zone": "Avalon/AV_Z05_TheWyrd",
       "loc": "ZoneLocName_602089"
     }
@@ -86,47 +64,23 @@
     "AV-WYRD-NPC08": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Human_Knight_Malory.dds",
       "template_id": 611117
-    },
-    "AV-WYRD-NPC10": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Doran.dds",
-      "template_id": 611130
-    },
-    "AV-WYRD-NPC11": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Captive1.dds",
-      "template_id": 611131
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Where_The_Demons_Dwell",
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Strange_Race_of_People",
     "from": "archive",
-    "timestamp": "20231125090842"
+    "timestamp": "20231125090930"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst95337 by the proper nouns its lines share with the page (Dun, Giant, Indigo, Malory, Scaith), within 16 of a key of the zone's quests; next best WizQst95338 with 4",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "A Strange Race of People",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Dun Scaith",
+      "value": "WizQst95337 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "A Strange Race of People replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

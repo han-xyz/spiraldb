@@ -23,14 +23,14 @@
       },
       "m_goalRequirements": null,
       "m_tallyCounter": null,
-      "m_locationName": "ZoneLocName_602072",
-      "m_displayImage1": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
+      "m_locationName": "ZoneLocName_470339",
+      "m_displayImage1": "GUI/NpcPortraits/Art_Portrait_AV_Treant_Ancient.dds",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "WizardCity/Interiors/WC_Library",
+      "m_destinationZone": "Avalon/AV_Z03_CaerLyon",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -43,43 +43,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "WC-HUB-NPC03",
-      "m_usePatron": false
-    },
-    {
-      "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "2_WizardQuestGoals_TalkNPC",
-      "m_goalNameID": 572984775,
-      "m_goalTitle": "WizardQuestGoals_TalkNPC",
-      "m_goalUnderway": null,
-      "m_hyperlink": null,
-      "m_completeText": null,
-      "m_completeResults": {
-        "m_results": []
-      },
-      "m_goalRequirements": null,
-      "m_tallyCounter": null,
-      "m_locationName": "ZoneLocName_602072",
-      "m_displayImage1": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
-      "m_displayImage2": "",
-      "m_clientTags": [],
-      "m_genericEvents": [],
-      "m_autoQualify": false,
-      "m_autoComplete": false,
-      "m_destinationZone": "WizardCity/Interiors/WC_PartyRoom",
-      "m_dialogList": {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
-        "m_dialogs": []
-      },
-      "m_goalType": "GOAL_TYPE_PERSONA",
-      "m_noQuestHelper": false,
-      "m_petOnlyQuest": false,
-      "m_activateResults": {
-        "m_results": []
-      },
-      "m_hideGoalFloatyText": false,
-      "m_behaviors": null,
-      "m_personaName": "WC-PARTY-NPC12",
+      "m_personaName": "AV-CAER-NPC06",
       "m_usePatron": false
     }
   ],
@@ -103,8 +67,17 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "AV-Q-96A91",
+        "m_questName": "AV-Q-834D8",
         "m_applyNOT": false,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "AV-Q-834DA",
+        "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }
     ],
@@ -119,17 +92,6 @@
     {
       "m_goalsAND": [
         "1_WizardQuestGoals_TalkNPC"
-      ],
-      "m_goalsOR": [],
-      "m_goalsToAdd": [
-        "2_WizardQuestGoals_TalkNPC"
-      ],
-      "m_completeQuest": false,
-      "m_requiredORCount": 1
-    },
-    {
-      "m_goalsAND": [
-        "2_WizardQuestGoals_TalkNPC"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [],
@@ -149,7 +111,7 @@
         "m_dialogEntries": [
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HUB-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -157,11 +119,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst834D9_00000001",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Kay_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 602074,
+            "m_actorTemplateID": 537800,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -217,7 +179,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HUB-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -225,11 +187,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst834D9_00000002",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Kay_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 602074,
+            "m_actorTemplateID": 537800,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -285,7 +247,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HUB-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -293,11 +255,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst834D9_00000003",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Kay_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 602074,
+            "m_actorTemplateID": 537800,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -364,7 +326,7 @@
   "m_isHidden": false,
   "m_outdated": false,
   "m_noQuestHelper": false,
-  "m_mainline": false,
+  "m_mainline": true,
   "m_defaultDialogAnimation": null,
   "m_skipQHAutoSelect": false,
   "m_questEffectInfoList": null,

@@ -2,18 +2,14 @@
   "id": "AV-Q-8353C",
   "lang": "8353C",
   "giver": {
-    "persona": "AV-HIGH-NPC01",
-    "zone": "Avalon/AV_Z02_HighRoad"
+    "persona": "AV-CAER-NPC17",
+    "zone": "Avalon/AV_Z03_CaerLyon"
   },
   "requires": [
-    "AV-Q-96A81"
+    "AV-Q-8353A"
   ],
   "mainline": false,
   "level": 68,
-  "reward": {
-    "xp": 19920,
-    "gold": 415
-  },
   "dialogs": {
     "prep": [
       {
@@ -73,53 +69,63 @@
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "AV-Raven-Witch-Nightfeather-R12-01.AdjRef",
-        "AV_StandIn_HrefnaNightfeather.AdjRef"
-      ],
-      "count": 1,
-      "target": "WizardMobs_00001279",
+      "type": "persona",
+      "persona": "AV-HIGH-NPC01",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC01",
       "zone": "Avalon/AV_Z04_TheWild",
       "loc": "ZoneLocName_470302"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/AV_Z02_HighRoad",
-      "loc": "ZoneLocName_537904"
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
     }
   ],
   "personas": {
+    "AV-CAER-NPC17": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
+      "template_id": 537909
+    },
     "AV-HIGH-NPC01": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
       "template_id": 617083
+    },
+    "AV-WILD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dryad_Sophia_NPC.dds",
+      "template_id": 611119
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Always_After_Me_Charms",
-    "from": "archive",
-    "timestamp": "20231222133537"
+    "page": "https://therepository.fandom.com/wiki/Salad_Days",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst8353C matched by the words it shares with the goals; its lines name Fianna Yellowknife",
+      "value": "WizQst8353C is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
-      "field": "requires",
-      "value": "No Pain, No Agravaine",
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Sophia's House",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "No Pain, No Agravaine replaced by AV-Q-96A81",
       "blocking": false
     }
   ]

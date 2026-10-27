@@ -2,6 +2,10 @@
   "id": "AV-Q-90936",
   "lang": "90936",
   "auto_start": true,
+  "giver": {
+    "persona": "AV-CATA-NPC01",
+    "zone": "Avalon/AV_Z10_Catacombs"
+  },
   "requires": [
     "AV-Q-96AB5"
   ],
@@ -148,7 +152,7 @@
     },
     {
       "type": "persona",
-      "persona": "AV-CATA-NPC01",
+      "persona": "giver",
       "zone": "Avalon/AV_Z10_Catacombs",
       "loc": "ZoneLocName_592126"
     },
@@ -181,7 +185,7 @@
     },
     {
       "type": "persona",
-      "persona": "AV-CATA-NPC01",
+      "persona": "giver",
       "zone": "Avalon/AV_Z10_Catacombs",
       "loc": "ZoneLocName_592126"
     },
@@ -234,11 +238,6 @@
     "timestamp": "20231125092822"
   },
   "needs_review": [
-    {
-      "field": "giver (auto-start, no predecessor hand-in)",
-      "value": "none",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Entry Hall",

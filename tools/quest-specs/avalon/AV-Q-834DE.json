@@ -1,0 +1,74 @@
+{
+  "id": "AV-Q-834DE",
+  "lang": "834DE",
+  "giver": {
+    "persona": "AV-CAER-NPC06",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-834DD"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 2150,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC01",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Treant_Ancient.dds",
+      "template_id": 537805
+    },
+    "AV-WILD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dryad_Sophia_NPC.dds",
+      "template_id": 611119
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Into_the_Wild",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834DE is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

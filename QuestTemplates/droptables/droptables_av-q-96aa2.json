@@ -1,0 +1,17 @@
+{
+  "Name": "AV-Q-96AA2",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 465,
+  "MaxGold": 465,
+  "ExperienceAmount": 23005,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T10:00:05.513350Z",
+  "ModifiedAt": "2026-10-27T10:00:05.513350Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

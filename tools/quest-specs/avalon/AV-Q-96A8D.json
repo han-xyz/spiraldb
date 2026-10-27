@@ -1,0 +1,98 @@
+{
+  "id": "AV-Q-96A8D",
+  "lang": "96A8D",
+  "giver": {
+    "persona": "AV-HIGH-NPC01",
+    "zone": "Avalon/AV_Z02_HighRoad"
+  },
+  "requires": [
+    "AV-Q-96A8C"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 12155,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Wyrm-Firespitter-R11-01.AdjRef",
+        "AV_StandIn_Firespitter.AdjRef",
+        "AV_StandIn_SirTerranceThornwhip.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001194",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    }
+  ],
+  "personas": {
+    "AV-HIGH-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+      "template_id": 617083
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Well_Poisoned",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Fire-Spitter's Lair",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

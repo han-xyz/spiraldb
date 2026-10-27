@@ -1,0 +1,73 @@
+{
+  "id": "AV-Q-72D21",
+  "lang": "72D21",
+  "giver": {
+    "persona": "AV-WILD-NPC09",
+    "zone": "Avalon/AV_Z04_TheWild"
+  },
+  "requires": [
+    "AV-Q-834F0"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 25045,
+    "gold": 520
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Redcap-R11-01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001200",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-WILD-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Sprite_Commander.dds",
+      "template_id": 470309
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Worst_Day_Since_Yesterday",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

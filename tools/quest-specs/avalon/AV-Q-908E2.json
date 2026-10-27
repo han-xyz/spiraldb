@@ -5,7 +5,9 @@
     "persona": "AV-OUTER-NPC01",
     "zone": "Avalon/AV_Z07_OuterYard"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-96AE6"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -103,12 +105,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Throw Down the Gauntlet replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

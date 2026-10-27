@@ -1,0 +1,129 @@
+{
+  "id": "AV-Q-96A9E",
+  "lang": "96A9E",
+  "giver": {
+    "persona": "AV-LAKE-NPC01",
+    "zone": "Avalon/AV_Z08_LakeShore"
+  },
+  "requires": [
+    "AV-Q-96A9D"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 28755,
+    "gold": 500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Deer-Knight-StagCharger-R12-01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001213",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "descriptor": "WizQst96A9E_00000024",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-StatuesAlphyn01-StateObject-Test.AdjRef",
+        "AV-StatuesAlphyn01.AdjRef",
+        "AV-StatuesAlphyn02.AdjRef"
+      ],
+      "count": 2,
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "descriptor": "WizItems_00001826",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    }
+  ],
+  "personas": {
+    "AV-LAKE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Ockam.dds",
+      "template_id": 617116
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Simplest_Answer",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Water from Pool of Radiance",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

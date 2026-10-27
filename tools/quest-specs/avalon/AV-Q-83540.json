@@ -1,0 +1,89 @@
+{
+  "id": "AV-Q-83540",
+  "lang": "83540",
+  "giver": {
+    "persona": "AV-CAER-NPC17",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-8353C"
+  ],
+  "mainline": false,
+  "level": 68,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC24",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC24": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Occia_NPC.dds",
+      "template_id": 537910
+    },
+    "AV-CAER-NPC17": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
+      "template_id": 537909
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/A_Pinch_of_Salt",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst83540 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

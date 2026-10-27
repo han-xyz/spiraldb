@@ -5,13 +5,13 @@
   "Weight": 100,
   "NoneChance": 0.0,
   "PityCounter": 0.0,
-  "MinGold": 415,
-  "MaxGold": 415,
-  "ExperienceAmount": 19920,
+  "MinGold": 103,
+  "MaxGold": 103,
+  "ExperienceAmount": 3805,
   "TrainingPoints": 0,
   "Items": [],
-  "CreatedAt": "2026-10-27T07:23:57.020209Z",
-  "ModifiedAt": "2026-10-27T07:23:57.020209Z",
+  "CreatedAt": "2026-10-27T10:00:05.513350Z",
+  "ModifiedAt": "2026-10-27T10:00:05.513350Z",
   "CreatedBy": "questgen",
   "ModifiedBy": "questgen"
 }

@@ -5,7 +5,9 @@
     "persona": "AV-WILD-NPC09",
     "zone": "Avalon/AV_Z04_TheWild"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-72D38"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -97,12 +99,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Beneath the Haunted Moon replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

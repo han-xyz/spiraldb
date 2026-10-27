@@ -1,0 +1,97 @@
+{
+  "id": "AV-Q-95352",
+  "lang": "95352",
+  "title": "QuestTitle_00000840",
+  "giver": {
+    "persona": "AV-DARA-NPC07",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [
+    "AV-Q-95351"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 5120,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-DARA-NPC04",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Female_BlackKnight_NPC.dds",
+      "template_id": 611147
+    },
+    "AV-DARA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Mermaid_Melusine_NPC.dds",
+      "template_id": 611150
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Silver_Linings",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst95352 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "AV-Q-72D01",
+  "lang": "72D01",
+  "giver": {
+    "persona": "AV-WILD-NPC03",
+    "zone": "Avalon/AV_Z04_TheWild"
+  },
+  "requires": [
+    "AV-Q-72CFE"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 4550,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC04",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    }
+  ],
+  "personas": {
+    "AV-WILD-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fire_Elf_Roidh.dds",
+      "template_id": 470272
+    },
+    "AV-WILD-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Ceara_NPC.dds",
+      "template_id": 470275
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/White_Out",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst72D01 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Fountain of Flame",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

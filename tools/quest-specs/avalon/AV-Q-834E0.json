@@ -1,0 +1,100 @@
+{
+  "id": "AV-Q-834E0",
+  "lang": "834E0",
+  "giver": {
+    "persona": "AV-CAER-NPC10",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-834DF"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 10740,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-Shield-Jouster.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "Items_00006561",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Armor-Jouster.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "Items_00006564",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirJeanPaul_NPC.dds",
+      "template_id": 537852
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Head_Held_Low",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834E0 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

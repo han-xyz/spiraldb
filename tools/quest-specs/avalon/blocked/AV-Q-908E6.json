@@ -1,0 +1,93 @@
+{
+  "id": "AV-Q-908E6",
+  "lang": "908E6",
+  "giver": {
+    "persona": "AV-OUTER-NPC01",
+    "zone": "Avalon/AV_Z07_OuterYard"
+  },
+  "requires": [
+    "AV-Q-908E5"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 22385,
+    "gold": 445
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Redcap-Black-Boss-R12-02.AdjRef",
+        "AV_StandIn_FlaccitheusHauker.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001244",
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "loc": "ZoneLocName_592078"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "loc": "ZoneLocName_592078"
+    }
+  ],
+  "personas": {
+    "AV-OUTER-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Warwick.dds",
+      "template_id": 592082
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Follow_the_Music",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Broken Tower",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -2,17 +2,17 @@
   "id": "AV-Q-834D9",
   "lang": "834D9",
   "giver": {
-    "persona": "AV-HUB-NPC01",
-    "zone": "Avalon/AV_Z00_Hub"
+    "persona": "AV-CAER-NPC01",
+    "zone": "Avalon/AV_Z03_CaerLyon"
   },
   "requires": [
-    "AV-Q-96A91"
+    "AV-Q-834D8"
   ],
-  "mainline": false,
+  "mainline": true,
   "level": 68,
   "reward": {
-    "xp": 10,
-    "gold": 30
+    "xp": 2150,
+    "gold": 45
   },
   "dialogs": {
     "prep": [
@@ -34,65 +34,36 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "WC-HUB-NPC03",
-      "zone": "WizardCity/Interiors/WC_Library",
-      "loc": "ZoneLocName_602072"
-    },
-    {
-      "type": "persona",
-      "persona": "WC-PARTY-NPC12",
-      "zone": "WizardCity/Interiors/WC_PartyRoom",
-      "loc": "ZoneLocName_602072"
+      "persona": "AV-CAER-NPC06",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
     }
   ],
   "personas": {
-    "AV-HUB-NPC01": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
-      "template_id": 602074
+    "AV-CAER-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Kay_NPC.dds",
+      "template_id": 537800
     },
-    "WC-HUB-NPC03": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_Librarian.dds",
-      "template_id": 38214
-    },
-    "WC-PARTY-NPC12": {
-      "portrait": "GUI/NpcPortraits/Dog_Wethersfield_A_NPC.dds",
-      "template_id": 1452008
+    "AV-CAER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Treant_Ancient.dds",
+      "template_id": 537805
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Untold_True_Story",
-    "from": "archive",
-    "timestamp": "20250930073635"
+    "page": "https://therepository.fandom.com/wiki/Hurry_Up_and_Leaf",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst834D9 matched by the words it shares with the goals; its lines name none of the page's names",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Mythopoetic",
-      "blocking": false
-    },
-    {
-      "field": "goal.persona (other world)",
-      "value": "Harold Argleston: WC-HUB-NPC03 from ObjectData/WC",
-      "blocking": false
-    },
-    {
-      "field": "goal.persona (other world)",
-      "value": "Arthur Wethersfield: WC-PARTY-NPC12 from ObjectData/WC",
+      "value": "WizQst834D9 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Mythopoetic replaced by AV-Q-96A91",
       "blocking": false
     }
   ]

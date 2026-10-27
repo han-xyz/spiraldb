@@ -1,0 +1,83 @@
+{
+  "id": "AV-Q-908EA",
+  "lang": "908EA",
+  "giver": {
+    "persona": "AV-OUTER-NPC03",
+    "zone": "Avalon/AV_Z07_OuterYard"
+  },
+  "requires": [
+    "AV-Q-908E8"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 8140,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-YARD-BookofArm.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "descriptor": "WizardGameObjects_00000509",
+      "loc": "ZoneLocName_592078"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "loc": "ZoneLocName_592078"
+    }
+  ],
+  "personas": {
+    "AV-OUTER-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Constance.dds",
+      "template_id": 592084
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Sacred_Text",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

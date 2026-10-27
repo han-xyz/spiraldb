@@ -1,0 +1,116 @@
+{
+  "id": "AV-Q-96A87",
+  "lang": "96A87",
+  "giver": {
+    "persona": "AV-HUB-NPC04",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [
+    "AV-Q-72D19"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 7220,
+    "gold": 190
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-HUB-NPC01",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-HUB-NPC06",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-HUB-NPC07",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-CAER-NPC04",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Carpentar_Jeremiah Luchtaine_NPC.dds",
+      "template_id": 537803
+    },
+    "AV-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
+      "template_id": 602074
+    },
+    "AV-HUB-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirRobinBravely_NPC.dds",
+      "template_id": 602077
+    },
+    "AV-HUB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirBrennanOnehand_NPC.dds",
+      "template_id": 602079
+    },
+    "AV-HUB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Kay_NPC.dds",
+      "template_id": 602080
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Bravely_Bold_Sir_Robin",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "AV-Q-95355",
+  "lang": "95355",
+  "title": "QuestTitle_00000787",
+  "giver": {
+    "persona": "AV-DARA-NPC02",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [
+    "AV-Q-95354"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 7680,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV_DragonSkull.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z06_DunDara",
+      "descriptor": "WizItems_00001839",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Druid.dds",
+      "template_id": 611138
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Alas_Poor_Wyrm",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst95355 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

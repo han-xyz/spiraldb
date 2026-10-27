@@ -5,7 +5,9 @@
     "persona": "AV-HUB-NPC03",
     "zone": "Avalon/AV_Z00_Hub"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-95341"
+  ],
   "mainline": false,
   "level": 68,
   "reward": {
@@ -96,20 +98,9 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Queen of Light Took Her Bow",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Queen of Light Took Her Bow replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

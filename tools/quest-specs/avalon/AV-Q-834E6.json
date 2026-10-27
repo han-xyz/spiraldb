@@ -5,7 +5,9 @@
     "persona": "AV-CATA-NPC01",
     "zone": "Avalon/AV_Z10_Catacombs"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-834E5"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -87,12 +89,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst834E6 matched by the words it shares with the goals; its lines name Kerr Knucklebones",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Get a Piece of the Rock",
+      "value": "WizQst834E6 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
@@ -104,12 +101,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Get a Piece of the Rock replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

@@ -5,7 +5,9 @@
     "persona": "AV-HUB-NPC01",
     "zone": "Avalon/AV_Z00_Hub"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-95347"
+  ],
   "mainline": false,
   "level": 68,
   "reward": {
@@ -134,20 +136,9 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Taste of Victory",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Taste of Victory replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

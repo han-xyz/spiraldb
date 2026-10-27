@@ -1,0 +1,86 @@
+{
+  "id": "AV-Q-8353A",
+  "lang": "8353A",
+  "giver": {
+    "persona": "AV-CAER-NPC17",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-834DE"
+  ],
+  "mainline": false,
+  "level": 68,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Goblin-Night-R11-01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001163",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "WizQst8353A_00000004",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC17": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
+      "template_id": 537909
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Simple_Symond",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst8353A is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "AV-Q-95345",
+  "lang": "95345",
+  "title": "QuestTitle_00000817",
+  "giver": {
+    "persona": "AV-DARA-NPC03",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [
+    "AV-Q-95343"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 15355,
+    "gold": 320
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Wyrm-Lightning-R12-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001257",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_SirGeorgeMartin_NPC.dds",
+      "template_id": 611140
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Song_of_George",
+    "from": "archive",
+    "timestamp": "20250908083916"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst95345 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Lightning Lizard Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

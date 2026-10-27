@@ -5,7 +5,9 @@
     "persona": "AV-WILD-NPC04",
     "zone": "Avalon/AV_Z04_TheWild"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-72D04"
+  ],
   "mainline": false,
   "level": 68,
   "reward": {
@@ -94,9 +96,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Dread of Knight replaced by min_level",
+      "value": "Dread of Knight replaced by AV-Q-72D04",
       "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

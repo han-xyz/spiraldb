@@ -1,0 +1,164 @@
+{
+  "id": "AV-Q-95332",
+  "lang": "95332",
+  "giver": {
+    "persona": "AV-WYRD-NPC08",
+    "zone": "Avalon/AV_Z05_TheWyrd"
+  },
+  "requires": [
+    "AV-Q-9532E"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 35010,
+    "gold": 785
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Fox-Knight-Male-Gerard-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001235",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC13",
+      "zone": "Avalon/Interiors/AV_Z04_TowerBlueDahlia",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Owlwitch-Dahlia-R12-01.AdjRef",
+        "AV_StandIn_LadyBlueDahlia.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001208",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    }
+  ],
+  "personas": {
+    "AV-WILD-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Gerard_NPC.dds",
+      "template_id": 611182
+    },
+    "AV-WYRD-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Human_Knight_Malory.dds",
+      "template_id": 611117
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Guest_Right",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst95332 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Tower of the Blue Dahlia",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Lady of the Blue Dahlia",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Avalon/Interiors/AV_Z04_TowerBlueDahlia",
+      "blocking": true
+    }
+  ]
+}

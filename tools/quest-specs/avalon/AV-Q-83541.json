@@ -5,7 +5,9 @@
     "persona": "AV-CAER-NPC18",
     "zone": "Avalon/AV_Z03_CaerLyon"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-834DF"
+  ],
   "mainline": false,
   "level": 68,
   "reward": {
@@ -66,24 +68,13 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst83541 matched by the words it shares with the goals; its lines name Logres Knights",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Lost the Music",
+      "value": "WizQst83541 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Lost the Music replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

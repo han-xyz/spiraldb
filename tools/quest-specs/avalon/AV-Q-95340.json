@@ -6,7 +6,7 @@
     "zone": "Avalon/AV_Z05_TheWyrd"
   },
   "requires": [
-    "AV-Q-95337"
+    "AV-Q-95338"
   ],
   "mainline": true,
   "level": 68,
@@ -62,7 +62,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst95340 matched by the words it shares with the goals; its lines name Doran, Aodh",
+      "value": "WizQst95340 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {

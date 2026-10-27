@@ -2,15 +2,17 @@
   "id": "AV-Q-834DF",
   "lang": "834DF",
   "giver": {
-    "persona": "AV-CAER-NPC10",
+    "persona": "AV-CAER-NPC04",
     "zone": "Avalon/AV_Z03_CaerLyon"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-96A87"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
-    "xp": 2150,
-    "gold": 45
+    "xp": 12890,
+    "gold": 300
   },
   "dialogs": {
     "prep": [
@@ -43,16 +45,27 @@
   },
   "goals": [
     {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-DogKnight-AmberKnight-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001171",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "WizQst834DF_00000000",
+      "loc": "ZoneLocName_470339"
+    },
+    {
       "type": "persona",
-      "persona": "AV-CAER-NPC03",
+      "persona": "AV-CAER-NPC10",
       "zone": "Avalon/AV_Z03_CaerLyon",
       "loc": "ZoneLocName_470339"
     }
   ],
   "personas": {
-    "AV-CAER-NPC03": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Weasel_Minstrel.dds",
-      "template_id": 537802
+    "AV-CAER-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Carpentar_Jeremiah Luchtaine_NPC.dds",
+      "template_id": 537803
     },
     "AV-CAER-NPC10": {
       "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirJeanPaul_NPC.dds",
@@ -60,31 +73,21 @@
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:On_A_Steel_Mount_I_Ride",
-    "from": "archive",
-    "timestamp": "20231125085944"
+    "page": "https://therepository.fandom.com/wiki/Lost_The_Music",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst834DF matched by the words it shares with the goals; its lines name Sir Jean-Paul Jouster, Innes Idle",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Warbird",
+      "value": "WizQst834DF is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Warbird replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

@@ -1,0 +1,184 @@
+{
+  "id": "AV-Q-8351A",
+  "lang": "8351A",
+  "title": "QuestTitle_72D3D",
+  "giver": {
+    "persona": "AV-WILD-NPC01",
+    "zone": "Avalon/AV_Z04_TheWild"
+  },
+  "requires": [
+    "AV-Q-72CFB"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 60900,
+    "gold": 1730
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Owlwitch-Keela-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001209",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV_WhiteOwl_Unicorn_Cage-StateObject-Test.AdjRef",
+        "AV_WhiteOwl_Unicorn_Cage.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z04_TheWild",
+      "descriptor": "Items_00006576",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Owlwitch-Kiva-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001211",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC12",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Book-Tele-Repair.AdjRef",
+        "AV-Caer-Teleporter.AdjRef",
+        "AV-TeleporterArch.AdjRef",
+        "AV-TeleporterArchEffects-StateObject-Test.AdjRef",
+        "AV-TeleporterArchEffects.AdjRef",
+        "AV-Deep-Teleporter-Piece01.AdjRef",
+        "AV-Deep-Teleporter-Piece02.AdjRef",
+        "AV-Deep-Teleporter-Piece03.AdjRef",
+        "AV-Deep-Teleporter-Piece04.AdjRef",
+        "AV-TeleporterToCaerLyon.AdjRef",
+        "AV-TeleporterToCaliburn.AdjRef",
+        "AV-TeleporterToCaliburnFromWild.AdjRef",
+        "AV-TeleporterToDunDara.AdjRef",
+        "AV-TeleporterToTheCatacombs.AdjRef",
+        "AV-TeleporterToTheWild.AdjRef",
+        "AV_Teleporter_Portal_Generic.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z04_TheWild",
+      "descriptor": "Items_00006557",
+      "loc": "ZoneLocName_470302"
+    }
+  ],
+  "personas": {
+    "AV-WILD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dryad_Sophia_NPC.dds",
+      "template_id": 611119
+    },
+    "AV-WILD-NPC12": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_DogKnight_Silverharp.dds",
+      "template_id": 470334
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Into_the_Nest",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst8351A is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Walled Garden",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Garden",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Climb Magic Vine",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Potion Pot",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Cell Door",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

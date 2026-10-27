@@ -1,0 +1,98 @@
+{
+  "id": "AV-Q-95335",
+  "lang": "95335",
+  "giver": {
+    "persona": "AV-WYRD-NPC08",
+    "zone": "Avalon/AV_Z05_TheWyrd"
+  },
+  "requires": [
+    "AV-Q-95333"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 9660,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-WYRD-NPC09",
+      "zone": "Avalon/Interiors/AV_Z05_TowerChromatic",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-WYRD-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Human_Knight_Malory.dds",
+      "template_id": 611117
+    },
+    "AV-WYRD-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Wyrm_Three_Color_NPC.dds",
+      "template_id": 611126
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Rainbow%27s_End",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst95335 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

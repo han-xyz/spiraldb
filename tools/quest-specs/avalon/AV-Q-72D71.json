@@ -5,7 +5,9 @@
     "persona": "AV-ABBEY-NPC20",
     "zone": "Avalon/Interiors/AV_Z01_Library"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-96A79"
+  ],
   "mainline": false,
   "level": 68,
   "reward": {
@@ -128,9 +130,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "The Way of Wyrd replaced by min_level",
+      "value": "The Way of Wyrd replaced by AV-Q-96A79",
       "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

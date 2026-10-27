@@ -5,7 +5,9 @@
     "persona": "AV-LAKE-NPC04",
     "zone": "Avalon/AV_Z08_LakeShore"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-96AAB"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -96,12 +98,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Black Magic Woman replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

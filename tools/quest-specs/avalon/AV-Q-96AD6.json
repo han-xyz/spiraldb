@@ -1,0 +1,129 @@
+{
+  "id": "AV-Q-96AD6",
+  "lang": "96AD6",
+  "giver": {
+    "persona": "AV-ABBEY-NPC04",
+    "zone": "Avalon/AV_Z01_AbbeyRoad"
+  },
+  "requires": [
+    "AV-Q-96AD5"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 13375,
+    "gold": 345
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Giant-Formori-Handsome-R11-01.AdjRef",
+        "AV_StandIn_HandsomeFomori.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001252",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "descriptor": "WizQst96AD6_00000004",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-DARA-NPC10",
+      "zone": "Avalon/Interiors/AV_Z06_Cave02",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000014"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_Blacksmith_WaylandNoye_NPC.dds",
+      "template_id": 617163
+    },
+    "AV-DARA-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Giant_Ettin_NPC.dds",
+      "template_id": 617177
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Stonecutters",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

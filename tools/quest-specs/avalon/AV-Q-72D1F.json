@@ -1,0 +1,70 @@
+{
+  "id": "AV-Q-72D1F",
+  "lang": "72D1F",
+  "giver": {
+    "persona": "AV-WILD-NPC07",
+    "zone": "Avalon/AV_Z04_TheWild"
+  },
+  "requires": [
+    "AV-Q-72D1D"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 2275,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC04",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_Blacksmith_WaylandNoye_NPC.dds",
+      "template_id": 617163
+    },
+    "AV-WILD-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Shane_MacGobbhann_NPC.dds",
+      "template_id": 470287
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Parting_Glass",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst72D1F is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

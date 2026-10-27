@@ -7,58 +7,13 @@
   "m_questUnderway": null,
   "m_questComplete": null,
   "m_startGoals": [
-    "1_WizardQuestGoals_Kill"
+    "1_WizardQuestGoals_TalkNPC"
   ],
   "m_goals": [
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.BountyGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "1_WizardQuestGoals_Kill",
-      "m_goalNameID": 2559431,
-      "m_goalTitle": "WizardQuestGoals_Kill",
-      "m_goalUnderway": null,
-      "m_hyperlink": null,
-      "m_completeText": null,
-      "m_completeResults": {
-        "m_results": []
-      },
-      "m_goalRequirements": null,
-      "m_tallyCounter": {
-        "m_percentChance": 1.0,
-        "m_descriptor": "",
-        "m_descriptor2": "WizardMobs_00001279",
-        "m_count": 1,
-        "m_tallyResults": {
-          "m_results": []
-        }
-      },
-      "m_locationName": "ZoneLocName_470302",
-      "m_displayImage1": "",
-      "m_displayImage2": "",
-      "m_clientTags": [],
-      "m_genericEvents": [],
-      "m_autoQualify": false,
-      "m_autoComplete": false,
-      "m_destinationZone": "Avalon/AV_Z04_TheWild",
-      "m_dialogList": null,
-      "m_goalType": "GOAL_TYPE_BOUNTY",
-      "m_noQuestHelper": false,
-      "m_petOnlyQuest": false,
-      "m_activateResults": {
-        "m_results": []
-      },
-      "m_hideGoalFloatyText": false,
-      "m_behaviors": null,
-      "m_bountyTotal": 1,
-      "m_bountyType": "BT_MOB_KILL",
-      "m_npcAdjectives": [
-        "AV-Raven-Witch-Nightfeather-R12-01.AdjRef",
-        "AV_StandIn_HrefnaNightfeather.AdjRef"
-      ]
-    },
-    {
       "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "2_WizardQuestGoals_TalkNPC",
-      "m_goalNameID": 572984775,
+      "m_goalName": "1_WizardQuestGoals_TalkNPC",
+      "m_goalNameID": 2559431,
       "m_goalTitle": "WizardQuestGoals_TalkNPC",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -90,6 +45,78 @@
       "m_behaviors": null,
       "m_personaName": "AV-HIGH-NPC01",
       "m_usePatron": false
+    },
+    {
+      "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "2_WizardQuestGoals_TalkNPC",
+      "m_goalNameID": 572984775,
+      "m_goalTitle": "WizardQuestGoals_TalkNPC",
+      "m_goalUnderway": null,
+      "m_hyperlink": null,
+      "m_completeText": null,
+      "m_completeResults": {
+        "m_results": []
+      },
+      "m_goalRequirements": null,
+      "m_tallyCounter": null,
+      "m_locationName": "ZoneLocName_470302",
+      "m_displayImage1": "GUI/NpcPortraits/Art_Portrait_Dryad_Sophia_NPC.dds",
+      "m_displayImage2": "",
+      "m_clientTags": [],
+      "m_genericEvents": [],
+      "m_autoQualify": false,
+      "m_autoComplete": false,
+      "m_destinationZone": "Avalon/AV_Z04_TheWild",
+      "m_dialogList": {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
+        "m_dialogs": []
+      },
+      "m_goalType": "GOAL_TYPE_PERSONA",
+      "m_noQuestHelper": false,
+      "m_petOnlyQuest": false,
+      "m_activateResults": {
+        "m_results": []
+      },
+      "m_hideGoalFloatyText": false,
+      "m_behaviors": null,
+      "m_personaName": "AV-WILD-NPC01",
+      "m_usePatron": false
+    },
+    {
+      "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "3_WizardQuestGoals_TalkNPC",
+      "m_goalNameID": 606539207,
+      "m_goalTitle": "WizardQuestGoals_TalkNPC",
+      "m_goalUnderway": null,
+      "m_hyperlink": null,
+      "m_completeText": null,
+      "m_completeResults": {
+        "m_results": []
+      },
+      "m_goalRequirements": null,
+      "m_tallyCounter": null,
+      "m_locationName": "ZoneLocName_470339",
+      "m_displayImage1": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
+      "m_displayImage2": "",
+      "m_clientTags": [],
+      "m_genericEvents": [],
+      "m_autoQualify": false,
+      "m_autoComplete": false,
+      "m_destinationZone": "Avalon/AV_Z03_CaerLyon",
+      "m_dialogList": {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
+        "m_dialogs": []
+      },
+      "m_goalType": "GOAL_TYPE_PERSONA",
+      "m_noQuestHelper": false,
+      "m_petOnlyQuest": false,
+      "m_activateResults": {
+        "m_results": []
+      },
+      "m_hideGoalFloatyText": false,
+      "m_behaviors": null,
+      "m_personaName": "AV-CAER-NPC17",
+      "m_usePatron": false
     }
   ],
   "m_startResults": {
@@ -112,8 +139,17 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "AV-Q-96A81",
+        "m_questName": "AV-Q-8353A",
         "m_applyNOT": false,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "AV-Q-83540",
+        "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }
     ],
@@ -127,7 +163,7 @@
   "m_goalLogic": [
     {
       "m_goalsAND": [
-        "1_WizardQuestGoals_Kill"
+        "1_WizardQuestGoals_TalkNPC"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
@@ -139,6 +175,17 @@
     {
       "m_goalsAND": [
         "2_WizardQuestGoals_TalkNPC"
+      ],
+      "m_goalsOR": [],
+      "m_goalsToAdd": [
+        "3_WizardQuestGoals_TalkNPC"
+      ],
+      "m_completeQuest": false,
+      "m_requiredORCount": 1
+    },
+    {
+      "m_goalsAND": [
+        "3_WizardQuestGoals_TalkNPC"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [],
@@ -158,7 +205,7 @@
         "m_dialogEntries": [
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -166,11 +213,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000000",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -226,7 +273,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -234,11 +281,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000001",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -294,7 +341,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -302,11 +349,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000002",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -362,7 +409,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -370,11 +417,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000003",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -430,7 +477,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -438,11 +485,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000004",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -498,7 +545,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -506,11 +553,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000005",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -566,7 +613,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -574,11 +621,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000006",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -634,7 +681,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -642,11 +689,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000007",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -702,7 +749,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -710,11 +757,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000008",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -770,7 +817,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -778,11 +825,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000009",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -838,7 +885,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -846,11 +893,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000011",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -906,7 +953,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -914,11 +961,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000012",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -974,7 +1021,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "AV-HIGH-NPC01_Persona",
+            "m_personaName": "AV-CAER-NPC17_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -982,11 +1029,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst8353C_00000013",
-            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+            "m_picture": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SymondSalt_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 617083,
+            "m_actorTemplateID": 537909,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,

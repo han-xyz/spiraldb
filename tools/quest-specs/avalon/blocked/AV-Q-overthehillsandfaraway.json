@@ -4,8 +4,9 @@
     "persona": "AV-DARA-NPC07",
     "zone": "Avalon/AV_Z06_DunDara"
   },
-  "requires": [],
-  "min_level": 68,
+  "requires": [
+    "AV-Q-9534A"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -54,11 +55,6 @@
       "field": "lang",
       "value": "Over the Hills and Far Away",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Stairway to Belle Regard",
-      "blocking": false
     },
     {
       "field": "goal.descriptor",

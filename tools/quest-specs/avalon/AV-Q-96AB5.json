@@ -1,0 +1,94 @@
+{
+  "id": "AV-Q-96AB5",
+  "lang": "96AB5",
+  "giver": {
+    "persona": "AV-LAKE-NPC04",
+    "zone": "Avalon/AV_Z08_LakeShore"
+  },
+  "requires": [
+    "AV-Q-908FD"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 27445,
+    "gold": 520
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Pendragon-R12-01.AdjRef",
+        "AV_StandIn_Pendragon.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001233",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Wyrm-WhiteDragon-R12-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001226",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    }
+  ],
+  "personas": {
+    "AV-LAKE-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 617137
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Guns_of_Avalon",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

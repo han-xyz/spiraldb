@@ -1,0 +1,564 @@
+{
+  "id": "AV-Q-13D70B",
+  "lang": "13D70B",
+  "title": "QuestTitle_13D705",
+  "auto_start": true,
+  "giver": {
+    "persona": "ZF_Professor_Who",
+    "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox"
+  },
+  "requires": [
+    "AV-Q-13D702"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 122780,
+    "gold": 2280
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000058"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000059"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000060"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000061"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000062"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000063"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000064"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000066"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000067"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000068"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000069"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000070"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000071"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000074"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000075"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000076"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000077"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000078"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000079"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000081"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "ME1_VasekAshweaver",
+      "zone": "Avalon/Interiors/AV_MaestroEvent/AV_Z01_School",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-HUB-NPC01",
+      "zone": "DragonSpire/DS_Hub_Cathedral",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-StandIn-Malistaire",
+      "zone": "Marleybone/MB_ScotlandYard/Interiors/MB_Prison_T5",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-LIB2-NPC02",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-StandIn-Malistaire",
+      "zone": "Marleybone/MB_ScotlandYard/Interiors/MB_Prison_T5",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-HUB-NPC01",
+      "zone": "DragonSpire/DS_Hub_Cathedral",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Loremaster.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001575",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-HUB-NPC01",
+      "zone": "DragonSpire/DS_Hub_Cathedral",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-LIB2-NPC02",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ME1_BattleMage_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002007",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ME1_DragonClaw_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002009",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ME1_Sylvia_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001983",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "DS-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 126291
+    },
+    "DS-LIB2-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_1_Ghost_NPC.dds",
+      "template_id": 126298
+    },
+    "MB-StandIn-Malistaire": {
+      "portrait": "GUI/NpcPortraits/Portraits_Human_Malistaire_A_NPC.dds",
+      "template_id": 1521258
+    },
+    "ME1_VasekAshweaver": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_3BLUE.dds",
+      "template_id": 1300231
+    },
+    "ZF_Professor_Who": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_The_Professor.dds",
+      "template_id": 1217465
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Arc_of_Infinity",
+    "from": "archive",
+    "timestamp": "20250911130007"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst13D70B is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "giver (other world)",
+      "value": "The Professor: ZF_Professor_Who from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "giver (other world)",
+      "value": "The Professor is placed in Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: ZF_Professor_Who from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Vasek Ashweaver: ME1_VasekAshweaver from ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Cyrus Drake: DS-HUB-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Malistaire Drake: MB-StandIn-Malistaire from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: ZF_Professor_Who from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Laszlo Starblade: DS-LIB2-NPC02 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: ZF_Professor_Who from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Malistaire Drake: MB-StandIn-Malistaire from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Cyrus Drake: DS-HUB-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Loremaster's Chamber",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Loremaster: ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Cyrus Drake: DS-HUB-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Laszlo Starblade: DS-LIB2-NPC02 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Grand General's Quarters",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Elite Battle Mage: ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: ZF_Professor_Who from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the War Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Dragonclaw Guards: ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the War Room upper level",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Sylvia Spitfire: ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

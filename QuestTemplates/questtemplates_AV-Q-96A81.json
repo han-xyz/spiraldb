@@ -63,10 +63,11 @@
     "$type": "Imcodec.ObjectProperty.TypeCache.RequirementList, Imcodec.ObjectProperty",
     "m_requirements": [
       {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqMagicLevel, Imcodec.ObjectProperty",
-        "m_magicSchool": "",
-        "m_numericValue": 68,
-        "m_operatorType": "OPERATOR_GREATER_THAN_EQ",
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Complete",
+        "m_displayName": null,
+        "m_isQuestRegistry": true,
+        "m_questName": "AV-Q-96A98",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -75,7 +76,16 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "AV-Q-8353C",
+        "m_questName": "AV-Q-96A84",
+        "m_applyNOT": true,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "AV-Q-9BC7F",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

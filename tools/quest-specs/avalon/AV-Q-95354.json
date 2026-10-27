@@ -1,0 +1,121 @@
+{
+  "id": "AV-Q-95354",
+  "lang": "95354",
+  "title": "QuestTitle_00000786",
+  "giver": {
+    "persona": "AV-DARA-NPC02",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [
+    "AV-Q-95353"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 10240,
+    "gold": 175
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC09",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC03",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC07",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Druid.dds",
+      "template_id": 611138
+    },
+    "AV-WILD-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fire_Elf_Roidh.dds",
+      "template_id": 470272
+    },
+    "AV-WILD-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Shane_MacGobbhann_NPC.dds",
+      "template_id": 470287
+    },
+    "AV-WILD-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Sprite_Commander.dds",
+      "template_id": 470309
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Just_the_Pacts",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst95354 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

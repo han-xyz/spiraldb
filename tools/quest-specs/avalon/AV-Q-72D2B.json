@@ -6,13 +6,13 @@
     "zone": "Avalon/AV_Z04_TheWild"
   },
   "requires": [
-    "AV-Q-72D31"
+    "AV-Q-72D26"
   ],
   "mainline": true,
   "level": 68,
   "reward": {
-    "xp": 4550,
-    "gold": 100
+    "xp": 23335,
+    "gold": 550
   },
   "dialogs": {
     "prep": [
@@ -45,6 +45,23 @@
   },
   "goals": [
     {
+      "type": "bounty",
+      "mobs": [
+        "AV-Froudling-Spriggan-Spiny-R11-01.AdjRef",
+        "AV_StandIn_Calista.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001212",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC11",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z04_TheWild",
@@ -65,22 +82,27 @@
     "AV-WILD-NPC09": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Sprite_Commander.dds",
       "template_id": 470309
+    },
+    "AV-WILD-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Pixie_Scout.dds",
+      "template_id": 470319
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:'Tis_a_Magic_Place",
-    "from": "archive",
-    "timestamp": "20250913120624"
+    "page": "https://therepository.fandom.com/wiki/Of_Lost_Liberty",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst72D2B, the only free key within 16 of its chain neighbour WizQst72D31 and WizQst72D37 whose lines name the page's names: Deirdre Madden",
+      "value": "WizQst72D2B is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Go to Hanging Stones Bridge",
+      "value": "Go To Cave of Anguish",
       "blocking": false
     },
     {

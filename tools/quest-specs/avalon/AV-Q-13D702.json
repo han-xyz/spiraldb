@@ -1,0 +1,108 @@
+{
+  "id": "AV-Q-13D702",
+  "lang": "13D702",
+  "giver": {
+    "persona": "AV_Professor_Who",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 25850,
+    "gold": 480
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV_Professor_Who": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_The_Professor.dds",
+      "template_id": 1300225
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Time-Flight",
+    "from": "archive",
+    "timestamp": "20250911082636"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst13D702 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "giver (other world)",
+      "value": "The Professor: AV_Professor_Who from ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: AV_Professor_Who from ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: AV_Professor_Who from ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "The Professor: AV_Professor_Who from ObjectData/MaestroEvent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

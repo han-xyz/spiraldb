@@ -1,0 +1,217 @@
+{
+  "id": "AV-Q-96ADD",
+  "lang": "96ADD",
+  "giver": {
+    "persona": "AV-ABBEY-NPC01",
+    "zone": "Avalon/Interiors/AV_Z01_KnightsHall"
+  },
+  "requires": [
+    "AV-Q-96ADA"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 19100,
+    "gold": 460
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC05",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC06",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC07",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC08",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC09",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC10",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC11",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC12",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Warrior.dds",
+      "template_id": 611162
+    },
+    "AV-ABBEY-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike.dds",
+      "template_id": 617182
+    },
+    "AV-ABBEY-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirBrennanOnehand_NPC.dds",
+      "template_id": 617183
+    },
+    "AV-ABBEY-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirRobinBravely_NPC.dds",
+      "template_id": 617184
+    },
+    "AV-ABBEY-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_DogKnight_Silverharp.dds",
+      "template_id": 617185
+    },
+    "AV-ABBEY-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirJeanPaul_NPC.dds",
+      "template_id": 617186
+    },
+    "AV-ABBEY-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Female_BlackKnight_NPC.dds",
+      "template_id": 617187
+    },
+    "AV-ABBEY-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_Gascoigne_NPC.dds",
+      "template_id": 617188
+    },
+    "AV-ABBEY-NPC12": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_DogKnight_Gilliam.dds",
+      "template_id": 617189
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Call_The_Banners",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

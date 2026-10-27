@@ -5,7 +5,9 @@
     "persona": "AV-LAKE-NPC02",
     "zone": "Avalon/AV_Z08_LakeShore"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-96AA2"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -102,19 +104,13 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst96AA5 by chain order between WizQst96AA2 and WizQst96AA9; its lines name Foul Skirkers",
+      "value": "WizQst96AA5 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Straight Edge replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

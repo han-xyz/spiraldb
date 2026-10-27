@@ -1,0 +1,103 @@
+{
+  "id": "AV-Q-908F2",
+  "lang": "908F2",
+  "giver": {
+    "persona": "AV-CATA-NPC01",
+    "zone": "Avalon/AV_Z10_Catacombs"
+  },
+  "requires": [
+    "AV-Q-908F1"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 6100,
+    "gold": 115
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_592076"
+    }
+  ],
+  "personas": {
+    "AV-CATA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 592086
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Revelations",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To The Shrine of Justice",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To King's Tomb",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
