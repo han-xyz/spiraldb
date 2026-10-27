@@ -1,0 +1,94 @@
+{
+  "id": "AZ-Q-9D138",
+  "lang": "9D138",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC09",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 705,
+    "gold": 38925
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-GreenBellflower .AdjRef",
+        "AZ-WhiteChalice .AdjRef",
+        "AZ-RedCantuta .AdjRef",
+        "AZ-BlueHibiscus .AdjRef",
+        "AZ-GoldCypella.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "WizItems_00001909",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZekeWife.dds",
+      "template_id": 643276
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Flower_to_the_People",
+    "from": "archive",
+    "timestamp": "20231125105729"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Savage Land replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

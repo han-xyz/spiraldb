@@ -1,0 +1,101 @@
+{
+  "id": "AZ-Q-nightofthehungrydead",
+  "giver": {
+    "persona": "AZ-SWAMP-NPC02",
+    "zone": "Azteca/AZ_Z04_SaltmeadowSwamp"
+  },
+  "requires": [
+    "AZ-Q-AB2D4"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 65970,
+    "gold": 980
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-MANG-NPC02",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Monkey-Soldier-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001356",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-SWAMP-NPC10.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "NPCs_01747910",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Raptor-Undead-F.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001446",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC10",
+      "zone": "Azteca/Interiors/AZ_Z04_Clearing02",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_D_NPC.dds",
+      "template_id": 726110
+    },
+    "AZ-SWAMP-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_B_NPC.dds",
+      "template_id": 701129
+    },
+    "AZ-SWAMP-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parasaur_Priest_B_NPC.dds",
+      "template_id": 684547
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Night_of_the_Hungry_Dead",
+    "from": "archive",
+    "timestamp": "20231125113548"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Night of the Hungry Dead",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Whereabouts of Zope Broad Seer",
+      "blocking": false
+    }
+  ]
+}

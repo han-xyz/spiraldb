@@ -1,0 +1,122 @@
+{
+  "id": "AZ-Q-1323B2",
+  "lang": "1323B2",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC15-B",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 25446,
+    "gold": 440
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC04-B",
+      "zone": "Arcanum/Interiors/AR_Z01_I01_DryDock",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
+      "template_id": 1254305
+    },
+    "AZ-ZOCOLO-NPC15-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1404178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Unstuck_Pig",
+    "from": "archive",
+    "timestamp": "20240409061117"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Swine of the Ancient Mariner",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "to the Scholars in the Dry Dock",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ione Virga: AR-ARC-NPC04-B from ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

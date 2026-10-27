@@ -1,0 +1,94 @@
+{
+  "id": "AZ-Q-mutinyonthebounty",
+  "giver": {
+    "persona": "AZ-SWAMP-NPC03",
+    "zone": "Azteca/AZ_Z04_SaltmeadowSwamp"
+  },
+  "requires": [
+    "AZ-Q-AB2DA"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 43255,
+    "gold": 640
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC08",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC09",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Parasaur-drkPriestF-A.AdjRef",
+        "AZ_StandIn_MSkullPriestess_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001361",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC09",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-SWAMP-NPC08",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    }
+  ],
+  "personas": {
+    "AZ-SWAMP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_SoldierBoss_A_NPC.dds",
+      "template_id": 701130
+    },
+    "AZ-SWAMP-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Soldier_B_NPC.dds",
+      "template_id": 684546
+    },
+    "AZ-SWAMP-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Soldier_A_NPC.dds",
+      "template_id": 684545
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mutiny_on_the_Bounty",
+    "from": "archive",
+    "timestamp": "20240409061134"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Mutiny on the Bounty",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Golden Quadrant",
+      "blocking": false
+    }
+  ]
+}

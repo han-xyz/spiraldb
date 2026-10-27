@@ -1,0 +1,89 @@
+{
+  "id": "AZ-Q-elementofboldness",
+  "giver": {
+    "persona": "AZ-ALTO-NPC09",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [
+    "AZ-Q-B0CA6"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 43255,
+    "gold": 640
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Elemental-Spirit-D.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001344",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ_Cacao_Beans.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "descriptor": "GUI_00006701",
+      "loc": "ZoneLocName_726071"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ_ObsidianKnife.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-ALTO-NPC07",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_NPC.dds",
+      "template_id": 726119
+    },
+    "AZ-ALTO-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_B_2NPC - Copy.dds",
+      "template_id": 726142
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Element_of_Boldness",
+    "from": "archive",
+    "timestamp": "20240917121946"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Element of Boldness",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "the Element of Boldness",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "the Obsidian Knife (on Zenzen)",
+      "blocking": false
+    }
+  ]
+}

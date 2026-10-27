@@ -1,0 +1,40 @@
+{
+  "id": "AZ-Q-aztecaquesttree",
+  "requires": [],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Azteca_Quest_Tree",
+    "from": "archive",
+    "timestamp": "20250415034820"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Azteca Quest Tree",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goals",
+      "value": [],
+      "blocking": true
+    }
+  ]
+}

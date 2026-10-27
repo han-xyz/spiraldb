@@ -1,0 +1,93 @@
+{
+  "id": "AZ-Q-72E64",
+  "lang": "72E64",
+  "giver": {
+    "persona": "AZ-LAKE-NPC01-1",
+    "zone": "Azteca/AZ_Z08_PitchBlackLake"
+  },
+  "requires": [
+    "AZ-Q-72E5E"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 38885,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Piranha-Hunter-B.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001382",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "descriptor": "WizQst72E64_00000005",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-SeaPen.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "descriptor": "Items_00007498",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    }
+  ],
+  "personas": {
+    "AZ-LAKE-NPC01-1": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seamonster_Ancient_A_NPC2.dds",
+      "template_id": 470621
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Walk_Through_the_Garden",
+    "from": "archive",
+    "timestamp": "20240205173309"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "AZ-Q-lookintotheair",
+  "giver": {
+    "persona": "AZ-ALTO-NPC01-2",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 7750,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-ALTO-NPC02",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC01-2": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_B_NPC.dds",
+      "template_id": 726145
+    },
+    "AZ-ALTO-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_E_NPC.dds",
+      "template_id": 726114
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Look_Into_the_Air",
+    "from": "archive",
+    "timestamp": "20231125102502"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Look Into the Air",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Last Known Surroundings",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Avian House",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Avian House",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Avian House",
+      "blocking": true
+    }
+  ]
+}

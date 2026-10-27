@@ -1,0 +1,96 @@
+{
+  "id": "AZ-Q-B0CA8",
+  "lang": "B0CA8",
+  "giver": {
+    "persona": "AZ-CLOUD-NPC04",
+    "zone": "Azteca/AZ_Z06_CloudburstIsland"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 36685,
+    "gold": 515
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Elemental-Spirit-D.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001344",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "WizQstB0CA8_00000005",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Magic-Mirror-02.AdjRef",
+        "AZ-Magic-Mirror-03.AdjRef",
+        "AZ-Magic-Mirror-04.AdjRef",
+        "AZ-Magic-Mirror.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "Items_00007464",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    }
+  ],
+  "personas": {
+    "AZ-CLOUD-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_2NPC -.dds",
+      "template_id": 724133
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Attractive_Force",
+    "from": "archive",
+    "timestamp": "20250919234558"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Universal Language replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

@@ -1,0 +1,115 @@
+{
+  "id": "AZ-Q-15E638",
+  "lang": "15E638",
+  "giver": {
+    "persona": "AZ-FISHING-NPC01",
+    "zone": "Azteca/AZ_Z04_SaltmeadowSwamp"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 325,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "loc": "ZoneLocName_701124"
+    }
+  ],
+  "personas": {
+    "AZ-FISHING-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Soldier_B_NPC.dds",
+      "template_id": 1435191
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Rivers_of_Gold",
+    "from": "archive",
+    "timestamp": "20231121232503"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "The New (Fishing) World",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "an Ax-Xolotl in The Zocalo",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "a Pirahptor in Mangrove Marsh",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "a Chupacarpe in Saltmeadow Swamp",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

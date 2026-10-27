@@ -1,0 +1,115 @@
+{
+  "id": "AZ-Q-A843A",
+  "lang": "A843A",
+  "giver": {
+    "persona": "AZ-TIERRA-NPC07",
+    "zone": "Azteca/AZ_Z07_TierraDeBrea"
+  },
+  "requires": [
+    "AZ-Q-A841D"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 30280,
+    "gold": 445
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-TIERRA-NPC04",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
+      "loc": "ZoneLocName_643370"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Parasaur-PriestF-D.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001365",
+      "zone": "",
+      "descriptor": "WizQstA843A_00000007",
+      "loc": "ZoneLocName_643370"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
+      "loc": "ZoneLocName_643370"
+    }
+  ],
+  "personas": {
+    "AZ-TIERRA-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_SpkChiefF_A_NPC.dds",
+      "template_id": 689134
+    },
+    "AZ-TIERRA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Ladies_Upper01.dds",
+      "template_id": 689202
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Jewel_of_Denial",
+    "from": "archive",
+    "timestamp": "20231125114412"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA843A matched by the words it shares with the goals; its lines name Chalchiu Green Skirt, New Moon Priests",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Romancing El Yollotl replaced by min_level",
+      "blocking": false
+    }
+  ]
+}

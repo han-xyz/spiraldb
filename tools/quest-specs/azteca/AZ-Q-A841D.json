@@ -1,0 +1,83 @@
+{
+  "id": "AZ-Q-A841D",
+  "lang": "A841D",
+  "giver": {
+    "persona": "AZ-ALTO-NPC07",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 9170,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-TIERRA-OBJ-FROGBAIT.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00001901",
+      "loc": "ZoneLocName_643370"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_NPC.dds",
+      "template_id": 726119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sign_of_Hunger",
+    "from": "archive",
+    "timestamp": "20231125114416"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Lying in Bait",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lying in Bait replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

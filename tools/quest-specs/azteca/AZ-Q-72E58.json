@@ -1,0 +1,109 @@
+{
+  "id": "AZ-Q-72E58",
+  "lang": "72E58",
+  "giver": {
+    "persona": "AZ-LAKE-NPC01-1",
+    "zone": "Azteca/AZ_Z08_PitchBlackLake"
+  },
+  "requires": [
+    "AZ-Q-72E57"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 49820,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Tritops-Mummy-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001347",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-LargeShell.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "descriptor": "Items_00007492",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    }
+  ],
+  "personas": {
+    "AZ-LAKE-NPC01-1": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seamonster_Ancient_A_NPC2.dds",
+      "template_id": 470621
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Six_Days_at_the_Bottom",
+    "from": "archive",
+    "timestamp": "20240205173320"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nauyotol Down in the Hole",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

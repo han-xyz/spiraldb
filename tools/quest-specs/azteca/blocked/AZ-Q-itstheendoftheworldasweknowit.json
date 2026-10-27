@@ -1,0 +1,55 @@
+{
+  "id": "AZ-Q-itstheendoftheworldasweknowit",
+  "giver": {
+    "persona": "AZ-TWIN-NPC02",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 17370,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Queen_A_NPC.dds",
+      "template_id": 470606
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:It's_the_End_of_the_World_As_We_Know_It",
+    "from": "archive",
+    "timestamp": "20231125104038"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "It's the End of the World As We Know It",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Jaguar Pounces on a Wizard",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Celestial Bow",
+      "blocking": false
+    }
+  ]
+}

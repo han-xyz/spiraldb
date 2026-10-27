@@ -1,0 +1,76 @@
+{
+  "id": "AZ-Q-B0CB2",
+  "lang": "B0CB2",
+  "giver": {
+    "persona": "AZ-CLOUD-NPC07",
+    "zone": "Azteca/AZ_Z06_CloudburstIsland"
+  },
+  "requires": [
+    "AZ-Q-B0CB1"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 5155,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-CLOUD-NPC04",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    }
+  ],
+  "personas": {
+    "AZ-CLOUD-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_2NPC -.dds",
+      "template_id": 724133
+    },
+    "AZ-CLOUD-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Treant_Flower_A_NPC.dds",
+      "template_id": 724151
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Land_That_Time_Forgot",
+    "from": "archive",
+    "timestamp": "20240123205629"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

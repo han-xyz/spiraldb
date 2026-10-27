@@ -1,0 +1,85 @@
+{
+  "id": "AZ-Q-thecrimsoneagle",
+  "giver": {
+    "persona": "AZ-TWIN-NPC13",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 57320,
+    "gold": 850
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Shdweave-Lord-C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001406",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Eagle-Hunter-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001440",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Ladies_Upper01.dds",
+      "template_id": 683204
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Crimson_Eagle",
+    "from": "archive",
+    "timestamp": "20231125120242"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Crimson Eagle",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Die Two Ways",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Have You Seen Her Face",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Map to El Yollotl",
+      "blocking": false
+    }
+  ]
+}

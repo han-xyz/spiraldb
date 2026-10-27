@@ -1,0 +1,92 @@
+{
+  "id": "AZ-Q-9D143",
+  "lang": "9D143",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC06",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [
+    "AZ-Q-9D141",
+    "AZ-Q-B0CB3"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 8650,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_B_NPC.dds",
+      "template_id": 643258
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Sea_of_Fire",
+    "from": "archive",
+    "timestamp": "20231125115000"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Lost Land of the Jaguars",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Isla del Fuego Volcano",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lost Land of the Jaguars replaced by AZ-Q-B0CB3",
+      "blocking": false
+    }
+  ]
+}

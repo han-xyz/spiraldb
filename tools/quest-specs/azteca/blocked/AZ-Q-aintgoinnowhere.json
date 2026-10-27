@@ -1,0 +1,80 @@
+{
+  "id": "AZ-Q-aintgoinnowhere",
+  "giver": {
+    "persona": "AZ-CLOUD-NPC01",
+    "zone": "Azteca/AZ_Z06_CloudburstIsland"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 45905,
+    "gold": 715
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Shdweave-Warrior-D.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001409",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Jeweled-Scepter.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "Items_00007460",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    }
+  ],
+  "personas": {
+    "AZ-CLOUD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_I_NPC.dds",
+      "template_id": 724123
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ain't_Goin'_Nowhere",
+    "from": "archive",
+    "timestamp": "20250906114927"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Ain't Goin' Nowhere",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Blue Bird Rockies",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "for Lady Zenzen's Trail",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Clearing",
+      "blocking": false
+    }
+  ]
+}

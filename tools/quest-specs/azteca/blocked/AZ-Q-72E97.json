@@ -1,0 +1,104 @@
+{
+  "id": "AZ-Q-72E97",
+  "lang": "72E97",
+  "giver": {
+    "persona": "AZ-3POINTS-NPC09",
+    "zone": "Azteca/AZ_Z01_ThreePoints"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 17300,
+    "gold": 250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_643242"
+    }
+  ],
+  "personas": {
+    "AZ-3POINTS-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Knight_D_MOB.dds",
+      "template_id": 643268
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Making_the_Grade",
+    "from": "archive",
+    "timestamp": "20231125112608"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Drum a Little Drum",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "From Zafaria to Azteca",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Million Years in the Making",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Eagle War Shield",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

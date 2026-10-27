@@ -1,0 +1,66 @@
+{
+  "id": "AZ-Q-leapoffaith",
+  "giver": {
+    "persona": "AZ-TWIN-NPC13",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [
+    "AZ-Q-A843B"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 25955,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Pteranodon-Knight-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001384",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Ladies_Upper01.dds",
+      "template_id": 683204
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Leap_of_Faith",
+    "from": "archive",
+    "timestamp": "20231125115202"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Leap of Faith",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Explosions in the Sky",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Map to El Yollotl",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "AZ-Q-72E75",
+  "lang": "72E75",
+  "giver": {
+    "persona": "AZ-LAKE-NPC06",
+    "zone": "Azteca/AZ_Z08_PitchBlackLake"
+  },
+  "requires": [
+    "AZ-Q-72E72"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 52820,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-BlackSmokerVents.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "descriptor": "WizQst72E75_00000004",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Jaguar-Shaman-C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001354",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-LAKE-NPC07",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake",
+      "loc": "ZoneLocName_470546"
+    }
+  ],
+  "personas": {
+    "AZ-LAKE-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crab_Warrior_B_NPC.dds",
+      "template_id": 470561
+    },
+    "AZ-LAKE-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_C_NPC.dds",
+      "template_id": 470570
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Go_With_the_Flow",
+    "from": "archive",
+    "timestamp": "20240205173237"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Ozel Underwater Cat's Tomb",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

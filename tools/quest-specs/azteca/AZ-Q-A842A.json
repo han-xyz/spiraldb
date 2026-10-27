@@ -1,0 +1,120 @@
+{
+  "id": "AZ-Q-A842A",
+  "lang": "A842A",
+  "giver": {
+    "persona": "AZ-ALTO-NPC07",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 38885,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parasaur-PriestF-D.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001365",
+      "zone": "",
+      "loc": "ZoneLocName_643370"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-TIERRA-OBJ-AZUREMOONSTONE.AdjRef",
+        "AZ-TIERRA-STATEOBJ-AZUREMOONSTONE.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00001908",
+      "loc": "ZoneLocName_643370"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_NPC.dds",
+      "template_id": 726119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Black_Hole_Moon",
+    "from": "archive",
+    "timestamp": "20240409061131"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA842A matched by the words it shares with the goals; its lines name New Moon Priests",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "The Jaws of Defeat",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Tears of the Moon Shrine",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Jaws of Defeat replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

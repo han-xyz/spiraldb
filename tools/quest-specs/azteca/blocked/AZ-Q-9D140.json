@@ -1,0 +1,95 @@
+{
+  "id": "AZ-Q-9D140",
+  "lang": "9D140",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC01",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [
+    "AZ-Q-72E64"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 73535,
+    "gold": 1100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-VondaFish.AdjRef",
+        "AZ-Anemones.AdjRef",
+        "AZ-SeaCuecumbers.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "QuestTitle_00001016",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
+      "template_id": 643252
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stew_on_This",
+    "from": "archive",
+    "timestamp": "20231125114849"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "In My Eyes",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Scissor Teeth from Pira'Nya Scissor Teeth",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "A Claw from Axantho Crabs",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

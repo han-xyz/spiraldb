@@ -1,0 +1,81 @@
+{
+  "id": "AZ-Q-thirdstarontheleft",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC03",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 44885,
+    "gold": 635
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Dino-Undead-C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001416",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ_3POINTS_STAR_Obelisk_Inactive.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "WizItems_00001924",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_C_NPC.dds",
+      "template_id": 643254
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Third_Star_on_the_Left",
+    "from": "archive",
+    "timestamp": "20251204011056"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Third Star on the Left",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Across the Universe",
+      "blocking": false
+    }
+  ]
+}

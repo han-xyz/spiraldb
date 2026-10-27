@@ -1,0 +1,133 @@
+{
+  "id": "AZ-Q-A83FA",
+  "lang": "A83FA",
+  "giver": {
+    "persona": "AZ-MANG-NPC03",
+    "zone": "Azteca/AZ_Z03_MangroveMarsh"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 70295,
+    "gold": 1045
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Tritops-Undead-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001427",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Raptor-Undead-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001393",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ_Avian_Egg.AdjRef",
+        "AZ_Humungo_Egg.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "descriptor": "GUI_00006704",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    }
+  ],
+  "personas": {
+    "AZ-MANG-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_C_NPC.dds",
+      "template_id": 726111
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Aggravated_Avians",
+    "from": "archive",
+    "timestamp": "20231125113419"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQstA83FA by the proper nouns its lines share with the page (Nest, Wing), within 16 of a key of the zone's quests; next best WizQstA840C with 1",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Thorn in My Pride",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Avian Hatchery",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Huascar Bent Wing's Mine",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "(Egg) to the Hatchery Nest in Avian Hatchery",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

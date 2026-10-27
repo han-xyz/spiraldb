@@ -1,0 +1,65 @@
+{
+  "id": "AZ-Q-brushwiththeblues",
+  "giver": {
+    "persona": "AZ-ALTO-NPC04",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 25955,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Shdweave-Warrior-A.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001407",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_A_NPC.dds",
+      "template_id": 726116
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Brush_with_the_Blues",
+    "from": "archive",
+    "timestamp": "20231125102612"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Brush with the Blues",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Red Paint",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Stolen Brushes",
+      "blocking": false
+    }
+  ]
+}

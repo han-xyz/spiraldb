@@ -1,0 +1,60 @@
+{
+  "id": "AZ-Q-thelongmarch",
+  "giver": {
+    "persona": "AZ-TWIN-NPC02",
+    "zone": "Azteca/AZ_Z11_TwinGiants"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 34740,
+    "gold": 410
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Shdweave-Lord-C.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001406",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "loc": "ZoneLocName_683131"
+    }
+  ],
+  "personas": {
+    "AZ-TWIN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Queen_A_NPC.dds",
+      "template_id": 470606
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Long_March",
+    "from": "archive",
+    "timestamp": "20240123213634"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Long March",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "One Voice Above the Din",
+      "blocking": false
+    }
+  ]
+}

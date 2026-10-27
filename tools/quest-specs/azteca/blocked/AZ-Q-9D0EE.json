@@ -1,0 +1,97 @@
+{
+  "id": "AZ-Q-9D0EE",
+  "lang": "9D0EE",
+  "giver": {
+    "persona": "AZ-3POINTS-NPC01",
+    "zone": "Azteca/AZ_Z01_ThreePoints"
+  },
+  "requires": [
+    "AZ-Q-9D0EC"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 9695,
+    "gold": 170
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-CENOTE-NPC01",
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "loc": "ZoneLocName_643349"
+    }
+  ],
+  "personas": {
+    "AZ-3POINTS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_D_NPC.dds",
+      "template_id": 643260
+    },
+    "AZ-CENOTE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tritops_Warrior_C_NPC.dds",
+      "template_id": 724110
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Break_Stuff",
+    "from": "archive",
+    "timestamp": "20231125115906"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Explosives on Rubble",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

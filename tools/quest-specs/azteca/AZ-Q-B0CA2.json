@@ -1,0 +1,83 @@
+{
+  "id": "AZ-Q-B0CA2",
+  "lang": "B0CA2",
+  "giver": {
+    "persona": "AZ-CLOUD-NPC03",
+    "zone": "Azteca/AZ_Z06_CloudburstIsland"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 21630,
+    "gold": 315
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AZ-Shdweave-Warrior-F.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001411",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "WizQstB0CA2_00000005",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    }
+  ],
+  "personas": {
+    "AZ-CLOUD-NPC03": {
+      "portrait": "",
+      "template_id": 724131
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Broken_Sun",
+    "from": "archive",
+    "timestamp": "20230904010522"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Chasing the Sun replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

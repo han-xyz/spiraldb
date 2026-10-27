@@ -1,0 +1,85 @@
+{
+  "id": "AZ-Q-72E80",
+  "lang": "72E80",
+  "giver": {
+    "persona": "AZ-LAKE-NPC08",
+    "zone": "Azteca/AZ_Z08_PitchBlackLake"
+  },
+  "requires": [
+    "AZ-Q-72E75"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 5155,
+    "gold": 55
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-ALTO-NPC07",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_NPC.dds",
+      "template_id": 726119
+    },
+    "AZ-LAKE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_King_B_NPC.dds",
+      "template_id": 470648
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Let_the_Only_Sound_Be_the_Overflow",
+    "from": "archive",
+    "timestamp": "20231125103404"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Hum a Few Bars replaced by AZ-Q-72E75",
+      "blocking": false
+    }
+  ]
+}

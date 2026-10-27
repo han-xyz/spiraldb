@@ -1,0 +1,119 @@
+{
+  "id": "AZ-Q-9D0E9",
+  "lang": "9D0E9",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC01",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 70930,
+    "gold": 850
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "loc": "ZoneLocName_643245"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Pteranodon-Knight-F.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001386",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
+      "template_id": 643252
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Song_of_the_Swamp",
+    "from": "archive",
+    "timestamp": "20240123214800"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "The Lost World",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Quilla Blood Sky's Hideout",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Gemstone",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

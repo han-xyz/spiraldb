@@ -1,0 +1,54 @@
+{
+  "id": "AZ-Q-hickorywind",
+  "giver": {
+    "persona": "AZ-ALTO-NPC07",
+    "zone": "Azteca/AZ_Z09_AltoAlto"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-ALTO-NPC01-2",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "loc": "ZoneLocName_726071"
+    }
+  ],
+  "personas": {
+    "AZ-ALTO-NPC01-2": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_B_NPC.dds",
+      "template_id": 726145
+    },
+    "AZ-ALTO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_NPC.dds",
+      "template_id": 726119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hickory_Wind",
+    "from": "archive",
+    "timestamp": "20240205173129"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Hickory Wind",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Chimes of Freedom",
+      "blocking": false
+    }
+  ]
+}

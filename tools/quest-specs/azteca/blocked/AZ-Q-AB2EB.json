@@ -1,0 +1,316 @@
+{
+  "id": "AZ-Q-AB2EB",
+  "lang": "AB2EB",
+  "requires": [
+    "AZ-Q-9D0EA"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 272140,
+    "gold": 3570
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000054"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000055"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000056"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000059"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000060"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000061"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-ALTO-WEAVE-NPC02-B.AdjRef",
+        "AZ-ALTO-WEAVE-NPC02-C.AdjRef",
+        "AZ-ALTO-WEAVE-NPC02.AdjRef",
+        "AZ-TWIN-NPC17.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01749746",
+      "loc": "ZoneLocName_701121"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Raptor-Warrior-F.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001397",
+      "zone": "",
+      "loc": "ZoneLocName_701121"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-COMET-ObsidianStoneFire.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000562",
+      "loc": "ZoneLocName_701121"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-COMET-IceWeb.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000560",
+      "loc": "ZoneLocName_701121"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Parasaur-drkPriestF-B-Script.AdjRef",
+        "AZ-Parasaur-drkPriestF-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001362",
+      "zone": "",
+      "loc": "ZoneLocName_701121"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-COMET-ObsidianStoneStorm.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000563",
+      "loc": "ZoneLocName_701121"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-COMET-FireWeb.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000564",
+      "loc": "ZoneLocName_701121"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Pteranodon-Knight-D.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001385",
+      "zone": "",
+      "loc": "ZoneLocName_701121"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-COMET-StormWeb.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000566",
+      "loc": "ZoneLocName_701121"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:This_Is_the_Way_the_World_Ends",
+    "from": "archive",
+    "timestamp": "20231125104117"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Broken Obsidian Fragments",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Exploring Xibalba",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Broken Obsidian Fragments",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Exploring Xibalba",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Obsidian Ice Mirror",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Broken Obsidian Fragments",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Xibalba",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Morganthe's Dark Servant",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

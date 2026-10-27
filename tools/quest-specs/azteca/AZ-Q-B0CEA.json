@@ -1,0 +1,193 @@
+{
+  "id": "AZ-Q-B0CEA",
+  "lang": "B0CEA",
+  "giver": {
+    "persona": "AZ-CLOUD-NPC01",
+    "zone": "Azteca/AZ_Z06_CloudburstIsland"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 48665,
+    "gold": 720
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Cloud-Youngling-02.AdjRef",
+        "AZ-Cloud-Youngling-03.AdjRef",
+        "AZ-Cloud-Youngling-04.AdjRef",
+        "AZ-Cloud-Youngling.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "WizardGameObjects_00000550",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Cloud-Youngling-02.AdjRef",
+        "AZ-Cloud-Youngling-03.AdjRef",
+        "AZ-Cloud-Youngling-04.AdjRef",
+        "AZ-Cloud-Youngling.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "WizardGameObjects_00000550",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Cloud-Youngling-02.AdjRef",
+        "AZ-Cloud-Youngling-03.AdjRef",
+        "AZ-Cloud-Youngling-04.AdjRef",
+        "AZ-Cloud-Youngling.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "WizardGameObjects_00000550",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Cloud-Youngling-02.AdjRef",
+        "AZ-Cloud-Youngling-03.AdjRef",
+        "AZ-Cloud-Youngling-04.AdjRef",
+        "AZ-Cloud-Youngling.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "WizardGameObjects_00000550",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-Cloud-Youngling-02.AdjRef",
+        "AZ-Cloud-Youngling-03.AdjRef",
+        "AZ-Cloud-Youngling-04.AdjRef",
+        "AZ-Cloud-Youngling.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "WizardGameObjects_00000550",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Toucan-Warrior-E.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001421",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-CLOUD-NPC09",
+      "zone": "Azteca/Interiors/AZ_Z06_Clearing02",
+      "loc": "ZoneLocName_724108"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "loc": "ZoneLocName_724108",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-CLOUD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_I_NPC.dds",
+      "template_id": 724123
+    },
+    "AZ-CLOUD-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_B_NPC.dds",
+      "template_id": 724208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Scout_It_Out",
+    "from": "archive",
+    "timestamp": "20231125114123"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Out There",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Bacab's Clearing",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Out There replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

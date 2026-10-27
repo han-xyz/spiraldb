@@ -1,0 +1,73 @@
+{
+  "id": "AZ-Q-72E47",
+  "lang": "72E47",
+  "giver": {
+    "persona": "AZ-FLOAT-NPC05-Sick",
+    "zone": "Azteca/AZ_Z10_FloatingMountains"
+  },
+  "requires": [
+    "AZ-Q-72E46"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 5460,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    }
+  ],
+  "personas": {
+    "AZ-FLOAT-NPC05-Sick": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_C_NPC.dds",
+      "template_id": 470600
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wait_Wait_Don't_Tell_Me",
+    "from": "archive",
+    "timestamp": "20240205173048"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Zip Line",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
