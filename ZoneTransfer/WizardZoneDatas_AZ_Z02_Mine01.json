@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Azteca/Interiors/AZ_Z02_Mine01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To Mine01-02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From Mine01-03",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z02_Mine01_02"
+      }
+    }
+  ]
+}
