@@ -107,6 +107,11 @@
   },
   "needs_review": [
     {
+      "field": "lang",
+      "value": "WizQst14DBF1 matched by title only, far outside Zafaria's quest langs; likely another world's quest of the same title",
+      "blocking": true
+    },
+    {
       "field": "requires",
       "value": "Ancient Insights",
       "blocking": false

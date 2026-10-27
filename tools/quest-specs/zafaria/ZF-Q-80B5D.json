@@ -6,7 +6,7 @@
     "zone": "Zafaria/Interiors/ZF_Z07_I01_Darajani_Palace"
   },
   "requires": [
-    "ZF-Q-155141"
+    "ZF-Q-82A5E"
   ],
   "mainline": true,
   "level": 60,
@@ -77,7 +77,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Do I Look Fat In This? replaced by ZF-Q-155141",
+      "value": "Do I Look Fat In This? replaced by ZF-Q-82A5E",
       "blocking": false
     }
   ]

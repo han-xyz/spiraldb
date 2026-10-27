@@ -169,6 +169,11 @@
   },
   "needs_review": [
     {
+      "field": "lang",
+      "value": "WizQst155141 matched by title only, far outside Zafaria's quest langs; likely another world's quest of the same title",
+      "blocking": true
+    },
+    {
       "field": "goal.descriptor",
       "value": "Password",
       "blocking": false

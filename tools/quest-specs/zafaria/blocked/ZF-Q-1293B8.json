@@ -78,6 +78,11 @@
   },
   "needs_review": [
     {
+      "field": "lang",
+      "value": "WizQst1293B8 matched by title only, far outside Zafaria's quest langs; likely another world's quest of the same title",
+      "blocking": true
+    },
+    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
