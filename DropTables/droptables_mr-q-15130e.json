@@ -1,0 +1,17 @@
+{
+  "Name": "MR-Q-15130E",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 500,
+  "MaxGold": 500,
+  "ExperienceAmount": 72500,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T06:30:18.716170Z",
+  "ModifiedAt": "2026-10-27T06:30:18.716170Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
