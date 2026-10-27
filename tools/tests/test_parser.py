@@ -45,7 +45,7 @@ class Data:
     def object_entries(self, name):
         return item_entries(self.objects, name)
 
-    def usage_entries(self, name):
+    def usage_entries(self, name, zone=""):
         return self.object_entries(name)
 
     def zone_by_place(self, place):
@@ -377,6 +377,20 @@ class ClientLookupTest(unittest.TestCase):
         self.assertTrue(ClientData(world("Azteca")).mob_entries("Left Talons of the Sky"))
         karamelle = ClientData(world("Karamelle"))
         self.assertEqual({entry["folder"] for entry in karamelle.mob_entries("The Quake Charmer")}, {"KM"})
+
+    def test_a_mob_named_without_its_article_or_epithet_reads_the_one_mob_named_so(self):
+        self.assertIn("LM_Chicken_Hero_A_01.AdjRef", self.adjectives("Lemuria", "Bantam"))
+        self.assertIn("AV-Ogre-Boss-R12-02.AdjRef", self.adjectives("Avalon", "Eurgh"))
+
+    def test_a_misspelt_mob_name_reads_the_one_close_name(self):
+        self.assertEqual(self.adjectives("Novus", "Abberant Marleybonian Dog"),
+                         {"NV_Dog_AberrantNavy_A_01.AdjRef", "NV_Dog_AberrantNavy_A_02.AdjRef"})
+
+    def test_a_mob_family_name_reads_no_mob(self):
+        self.assertEqual(self.adjectives("Novus", "Cabal Bosses"), set())
+
+    def adjectives(self, name, mob):
+        return {entry["adjective"] for entry in ClientData(world(name)).mob_entries(mob)}
 
 
 if __name__ == "__main__":

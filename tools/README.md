@@ -358,9 +358,12 @@ without a snapshot is fetched only live.
   the same words, else all the goal's words, else, for a goal without a preposition, two or more of its words all in the
   goal (`Horn on Pedestal` is `ZF-Grave-HornPedestal`, `Moon Gardens Gate` is `ZF_Gate_Moon`); without one, the one item
   the words before the goal's preposition read, or whose words are those after it (`seeds in Soil` is `ZF_Soil`).
-  Several items reading it leave it unresolved. A persona goal on a name no NPC has but an item has (`Statue of
+  An item with a word that is the whole goal phrase (`Cell Door`: `celldoor`) comes before these readings. Of several
+  items reading it, the one a wad of the quest's zone places is taken, else the one any zone places (the
+  `-StateObject-Test` copies are placed nowhere); several left leave it unresolved. A persona goal on a name no NPC has but an item has (`Statue of
   Artorius`) is a usage goal on that item. Mob names are read with their article and each word singular too (`The
-  Scorpion`, `Left Talons of the Sky`). A named NPC template that no zone wad places takes
+  Scorpion`, `Left Talons of the Sky`); a name no folder has is the one world mob named so with an article or epithet
+  (`Bantam`: The Bantam, `Eurgh`: Eurgh the Grinder), else the one spelled closely (`MOB_NAME_CUTOFF`; `Abberant`). A named NPC template that no zone wad places takes
   the zones of an unnamed template with the same persona (Queen Calypso is placed as `CL-CalypsoReset`). A name the
   world's folder lacks is taken from the one world name close to it (`NAME_CUTOFF`; the wiki's Koltan Grimfane is
   Koltan Gloomfane), else from the other ObjectData folders, placed by every zone wad; a mob the world's folder lacks

@@ -72,9 +72,20 @@ class ItemWordsTest(unittest.TestCase):
                          {"LM-WILD-NPC03.AdjRef"})
 
     def test_a_phrase_several_templates_read_resolves_to_none(self):
-        self.assertEqual(self.adjectives("Book"), set())
         self.assertEqual(self.adjectives("Cage"), set())
         self.assertEqual(self.adjectives("Drum Near King's Cage"), set())
+
+    def test_of_several_templates_the_one_placed_in_the_goal_zone_is_the_item(self):
+        self.assertEqual({entry["adjective"] for entry in self.data.usage_entries("Cage", "Zafaria/ZF_Z03_Savannah")},
+                         {"ZF_Cage_Wooden.AdjRef"})
+
+    def test_a_template_no_zone_places_is_no_candidate(self):
+        self.assertEqual(self.adjectives("Book"), {"ZF-Library_Book.AdjRef"})
+
+    def test_a_phrase_written_as_one_word_reads_every_item_with_that_word(self):
+        avalon = ClientData(world("Avalon"))
+        self.assertEqual({entry["adjective"] for entry in avalon.usage_entries("Cell Door", "Avalon/AV_Z04_TheWild")},
+                         set())
 
     def test_a_teleporter_the_quest_helper_skips_is_no_item(self):
         mirage = ClientData(world("Mirage"))

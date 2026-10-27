@@ -51,6 +51,7 @@ QUEST_TYPES = ("storyline", "side", "instance")
 MIN_SHARED_WEIGHT, CLEAR_MARGIN = 4.0, 1.5
 CHAIN_WINDOW = 16
 NAME_CUTOFF = 0.8
+MOB_NAME_CUTOFF = 0.9
 TITLE_CUTOFF = 0.95
 DIALOGUE_CUTOFF = 0.85
 # Goals without a count: a line repeated on consecutive lines is that many goals.
@@ -597,6 +598,8 @@ class ClientData:
         item_rows = list(templates.items(ROOTWAD_DIR, self.folder))
         self.objects = item_index(item_rows, self.folder)
         self.item_words = item_words(item_rows, self.folder)
+        self.item_ids = {row["template"]: row["template_id"] for row in item_rows}
+        self.item_zones = {}
         self.known_zones = set(zone_transfer_files())
         self.zone_names = {}
         for path in glob.glob(os.path.join(GAMEDATA_DIR, f"{self.world}-*.wad")):
@@ -728,14 +731,39 @@ class ClientData:
             self.other_mobs = self.mob_index(self.other_folders)
         found = next((self.other_mobs[form] for form in forms if form in self.other_mobs), [])
         nearest = min((entry["folder"] for entry in found), key=self.other_folders.index, default=None)
-        return [entry for entry in found if entry["folder"] == nearest]
+        return [entry for entry in found if entry["folder"] == nearest] or self.mob_entries_named_loosely(name)
+
+    def mob_entries_named_loosely(self, name):
+        """The entries of the one world mob the name reads without the mob's article or epithet (`Bantam`: The Bantam,
+        `Eurgh`: Eurgh the Grinder), else of the one mob spelled closely (`Abberant`: Aberrant)."""
+        wanted = norm(name)
+        keys = [key for key in self.mobs if key == "the" + wanted or key.startswith(wanted + "the")]
+        if not keys:
+            keys = difflib.get_close_matches(wanted, self.mobs, n=2, cutoff=MOB_NAME_CUTOFF)
+        return self.mobs[keys[0]] if len(keys) == 1 else []
 
     def object_entries(self, name):
         return item_entries(self.objects, name)
 
-    def usage_entries(self, name):
-        """The entries of the item a usage goal names: by its name, else by its words when one item reads them."""
-        return self.object_entries(name) or word_entries(self.item_words, name)
+    def usage_entries(self, name, zone=""):
+        """The entries of the item a usage goal names: by its name, else by its words when one item reads them, or
+        one of the items they read that a zone places: the one in the goal's zone, else the one placed at all."""
+        found = self.object_entries(name)
+        if found:
+            return found
+        candidates = word_entries(self.item_words, name)
+        if len(candidates) > 1:
+            zones = self.zones_of_items(candidates)
+            placed = {template: entry for template, entry in candidates.items() if zones[template]}
+            candidates = {template: entry for template, entry in placed.items() if zone in zones[template]} or placed
+        return list(candidates.values()) if len(candidates) == 1 else []
+
+    def zones_of_items(self, names):
+        """template name -> the zones of the world that place the item."""
+        wanted = {name: self.item_ids[name] for name in names if name not in self.item_zones}
+        if wanted:
+            self.item_zones.update(templates.zone_placements(GAMEDATA_DIR, self.world, wanted))
+        return {name: self.item_zones[name] for name in names}
 
 
 def mob_forms(name):
@@ -809,15 +837,17 @@ def word_matches(items, wanted, readings=3):
 
 
 def word_entries(items, phrase):
-    """The entry of the one item whose words read the goal phrase, else of the one item that its head or, by the same
-    words, the object after its preposition reads (`seeds in Soil`); none when several items read it."""
+    """template -> entry of the items with a word that is the whole phrase (`Cell Door`: wot celldoor), else whose words
+    read the goal phrase, else that its head or, by the same words, the object after its preposition reads (`seeds in
+    Soil`)."""
     phrase = re.sub(r"\s*\([^)]*\)?|#", " ", phrase).strip()
     parts = ITEM_PREPOSITION.split(phrase)
-    found = word_matches(items, name_words(phrase), 3 if len(parts) == 1 else 2)
+    one_word = norm(phrase)
+    found = ([item for item in items if any(one_word in words for words in item[1])]
+             or word_matches(items, name_words(phrase), 3 if len(parts) == 1 else 2))
     if not found and len(parts) > 1:
         found = word_matches(items, name_words(parts[0])) + word_matches(items, name_words(parts[-1]), 1)
-    templates_found = {template: entry for template, _, entry in found}
-    return list(templates_found.values()) if len(templates_found) == 1 else []
+    return {template: entry for template, _, entry in found}
 
 
 ITEM_PLACE = re.compile(r"\s*\(.*?\)|\s+(in|at|on|near|with|for|from)\s+.*$|#")
@@ -956,7 +986,7 @@ class SpecBuilder:
     def usage_goal(self, names, count):
         items, descriptor = [], ""
         for name in names:
-            entries = self.data.usage_entries(name)
+            entries = self.data.usage_entries(name, self.zone)
             if not entries:
                 self.unresolved("goal.items", name, True)
             items += [e["adjective"] for e in entries]
