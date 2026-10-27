@@ -15,6 +15,7 @@ python3 -I tools/spiraltools.py <command> --help
 | `mobs`, `items`, `npcs` | the mob and item adjectives and NPC personas a quest spec names ([mobs and npcs](#mobs-and-npcs)) |
 | `quests check\|generate\|diff` | quest templates and drop tables from specs ([quests](#quests)) |
 | `archive enumerate\|fetch\|parse` | specs for a world from the wiki archive ([archive](#archive)) |
+| `repository fetch\|parse`, `tracker fetch` | supplementary quest data into the cache ([repository and tracker](#repository-and-tracker)) |
 | `check` | everything missing across the pack ([check](#check)) |
 
 The client is read at `/kioxia/generator-input/rootwad` (the unpacked root wad) and the client's `Data/GameData`
@@ -83,6 +84,7 @@ No network. The tests that read the client skip when `/kioxia` is absent.
 | `quests/spec.py` | spec loading and validation |
 | `quests/generate.py` | templates and drop tables from specs |
 | `quests/archive.py` | the wiki archive: enumerate, fetch, parse |
+| `quests/repository.py`, `quests/tracker.py` | The Repository's quest pages and spiraltracker's quest lists |
 | `cli.py` | the subcommands of `spiraltools.py` |
 
 ## zones
@@ -384,6 +386,30 @@ Each spec carries `source` (page, `live` or `archive`, and the timestamp) and `n
 `blocking` or not. A spec with a blocking gap goes to `quest-specs/<world>/blocked/`, where the questgen glob does not
 reach; a waypoint whose place has no zone path is left out and listed. A spec for a lang that a hand-authored spec
 already covers is written to `<cache>/reference-<world>/` instead, and the differences are printed. A rerun replaces the specs it wrote before.
+
+## repository and tracker
+
+Two more sources of quest data, fetched into the archive's cache (`--cache`, the same default) and not yet read by
+`archive parse`:
+
+```sh
+python3 -I tools/spiraltools.py repository fetch Wallaru Novus   # The Repository's quest pages (network)
+python3 -I tools/spiraltools.py repository parse Wallaru Novus   # repository/index-repository-<world>.json
+python3 -I tools/spiraltools.py tracker fetch Wallaru Novus      # spiraltracker's quest list (network)
+```
+
+Both ask one request every 3 seconds, identified as `spiraltools (quest data for a private Wizard101 data pack; one
+request per 3 s)`, and never ask again for what the cache holds.
+
+`repository fetch` asks the API of The Repository (therepository.fandom.com, text under CC-BY-SA) for
+`Category:Wizard101 <World> Mainline|Instance|Side Quests` and each listed page's wikitext, kept as
+`repository/<world>/<page>.wikitext` beside the category listings. A world whose Mainline category is empty is left
+there. `repository parse` writes the index: the licence, and per quest its name, page URL, `lang_hex` (the first
+`WizQst` id of the infobox, as a spec's `lang`), type, previous and next quests, the goal lines and the dialogue lines
+(speaker, text, audio file).
+
+`tracker fetch` takes `https://spiraltracker.com/<world>` once, keeps it as `tracker/<world>.html`, and writes
+`tracker/tracker-<world>.json`: the quest list the page embeds, as it is, with the URL and the fetch time.
 
 ## mobs and npcs
 
