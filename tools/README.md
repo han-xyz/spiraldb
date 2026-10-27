@@ -48,8 +48,9 @@ most `CLUSTER_GAP` apart) holding the most `QuestTitle.lang` entries that read a
 names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`. A row's declared `lang_range`
 wins over the derived cluster: Zafaria and Polaris have no such title, Lemuria's one title (`LM-URSAI-ENC-002a`) sits
 in a run of encounter quests, Karamelle's anchored run holds 11 of its files, Empyrea's holds few of its quests, and
-Khrysalis's quests lie in runs from 0x126322 to 0x13D76F that its few titles do not anchor. Polaris and Wallaru have
-`source="none"`: the archive holds no 200 capture of their quest category and the live wiki refuses, so
+Khrysalis's quests lie in runs from 0x126322 to 0x13D76F that its few titles do not anchor, and Avalon's and
+Azteca's quests are spread over runs their few titles do not anchor, interleaved with each other's. Polaris and
+Wallaru have `source="none"`: the archive holds no 200 capture of their quest category and the live wiki refuses, so
 `archive enumerate` stops on them. A world outside the table is refused with the list of the known ones.
 
 ## check
