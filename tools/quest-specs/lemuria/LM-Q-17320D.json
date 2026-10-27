@@ -2,6 +2,10 @@
   "id": "LM-Q-17320D",
   "lang": "17320D",
   "auto_start": true,
+  "giver": {
+    "persona": "LM-WILD-NPC01",
+    "zone": "Lemuria/LM_Z01_WildLands"
+  },
   "requires": [
     "LM-Q-17320B"
   ],
@@ -96,6 +100,10 @@
     "LM-TELOS-NPC03-B": {
       "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_C_NPC.dds",
       "template_id": 1521388
+    },
+    "LM-WILD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_A_NPC.dds",
+      "template_id": 1520116
     }
   },
   "source": {
@@ -104,11 +112,6 @@
     "timestamp": "20250905055918"
   },
   "needs_review": [
-    {
-      "field": "giver (auto-start, no predecessor hand-in)",
-      "value": "none",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

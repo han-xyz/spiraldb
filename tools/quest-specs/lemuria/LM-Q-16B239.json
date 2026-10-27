@@ -7,7 +7,7 @@
     "zone": "Lemuria/Interiors/LM_Z01_TempleofAnswers"
   },
   "requires": [
-    "LM-Q-173213"
+    "LM-Q-173212"
   ],
   "mainline": true,
   "level": 132,
@@ -96,6 +96,17 @@
       "target": "WizardMobs_00003879",
       "zone": "Lemuria/Interiors/LM_Z01_TempleofAnswers",
       "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Chicken_Hero_A_01.AdjRef",
+        "LM_Chicken_Hero_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003871",
+      "zone": "Lemuria/Interiors/LM_Z01_TempleofAnswers",
+      "loc": "ZoneLocName_1520099"
     }
   ],
   "personas": {
@@ -132,13 +143,13 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Bantam",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Writ At Large replaced by LM-Q-173212",
       "blocking": false
     }
   ]

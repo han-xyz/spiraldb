@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z01_WildLands"
   },
   "requires": [
-    "LM-Q-17320B"
+    "LM-Q-17320D"
   ],
   "mainline": true,
   "level": 132,
@@ -181,7 +181,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Grease a Few Hooves replaced by LM-Q-17320B",
+      "value": "Grease a Few Hooves replaced by LM-Q-17320D",
       "blocking": false
     }
   ]

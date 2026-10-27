@@ -105,6 +105,17 @@
       "target": "WizardMobs_00003901",
       "zone": "Lemuria/LM_Z03_NightForest",
       "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Malughast_Base_01.AdjRef",
+        "LM_Malughast_Base_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003898",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
     }
   ],
   "personas": {
@@ -128,11 +139,6 @@
     {
       "field": "goal.items",
       "value": "Worthier Prey in Next Room",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Malughast",
       "blocking": true
     },
     {
