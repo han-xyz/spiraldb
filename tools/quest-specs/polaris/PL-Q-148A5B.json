@@ -1,0 +1,77 @@
+{
+  "id": "PL-Q-148A5B",
+  "lang": "148A5B",
+  "giver": {
+    "persona": "PL-MINE-NPC02-B",
+    "zone": "Polaris/PL_Z05_FrigidMine"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 22400,
+    "gold": 160
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z05_FrigidMine",
+      "loc": "ZoneLocName_1217946"
+    }
+  ],
+  "personas": {
+    "PL-MINE-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_A_NPC.dds",
+      "template_id": 1346307
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Revolution_Without_a_Leader",
+    "from": "archive",
+    "timestamp": "20231126064931"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Poisson Party",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Poisson Party replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

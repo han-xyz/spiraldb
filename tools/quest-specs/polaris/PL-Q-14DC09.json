@@ -1,0 +1,92 @@
+{
+  "id": "PL-Q-14DC09",
+  "lang": "14DC09",
+  "giver": {
+    "persona": "AR-ARC-NPC01-B",
+    "zone": "Arcanum/Interiors/AR_Z01_I01_DryDock"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 38490,
+    "gold": 180
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC10",
+      "zone": "Polaris/Interiors/PL_Z02_BabaYagaHut_Int"
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Moose_Professor_A_NPC.dds",
+      "template_id": 1254313
+    },
+    "PL-BLEAK-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_WitchF_A_NPC.dds",
+      "template_id": 1346220
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Story_of_the_Sky_Anchor",
+    "from": "archive",
+    "timestamp": "20240121104635"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Tarrak Hadfield: AR-ARC-NPC01-B from ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Sundering of Land and Sky replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

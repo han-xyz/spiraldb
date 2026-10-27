@@ -1,0 +1,100 @@
+{
+  "id": "PL-Q-14E791",
+  "lang": "14E791",
+  "requires": [
+    "PL-Q-14DC0B"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 76980,
+    "gold": 360
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-WAL-NPC03-B",
+      "zone": "Polaris/Interiors/PL_Z00_Palace_04B",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-KATA-NPC03-B",
+      "zone": "Polaris/Interiors/PL_Z06_TitanPod",
+      "loc": "ZoneLocName_1254306"
+    }
+  ],
+  "personas": {
+    "PL-KATA-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seal_Captain_A_NPC.dds",
+      "template_id": 1370071
+    },
+    "PL-WAL-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Walrus_AristocratF_A_NPC.dds",
+      "template_id": 1370002
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Empress_and_the_Rat",
+    "from": "archive",
+    "timestamp": "20240118175621"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "Ivan the Great",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "PL-Q-148AF3",
+  "lang": "148AF3",
+  "giver": {
+    "persona": "PL-MINE-NPC03",
+    "zone": "Polaris/PL_Z05_FrigidMine"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 27440,
+    "gold": 164
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-URVI-NPC04-B",
+      "zone": "Polaris/PL_Z04_UrvilleStation",
+      "loc": "ZoneLocName_1346322"
+    }
+  ],
+  "personas": {
+    "PL-MINE-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Oldman_A_NPC.dds",
+      "template_id": 1346309
+    },
+    "PL-URVI-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_A_NPC.dds",
+      "template_id": 1346342
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_New_Vision",
+    "from": "archive",
+    "timestamp": "20250914154517"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst148AF3 by chain order between WizQst148AF2 and WizQst148AF5; its lines name César",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Nostradonimus replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

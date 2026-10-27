@@ -1,0 +1,129 @@
+{
+  "id": "PL-Q-14DBE2",
+  "lang": "14DBE2",
+  "giver": {
+    "persona": "AV-HUB-NPC14-B",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "PL-Q-14DBDF"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 251800,
+    "gold": 1260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-CAER-POLARIS-NPC01.AdjRef",
+        "PL_Arachna_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002256",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC14-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_VampireHunterF_A_NPC.dds",
+      "template_id": 1367013
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Morganthe's_Legacy",
+    "from": "archive",
+    "timestamp": "20240406005135"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Velma von Venkman: AV-HUB-NPC14-B from ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Arachna Hideout, Caer Lyon",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Ofiera Chillvenom: ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Velma von Venkman: AV-HUB-NPC14-B from ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

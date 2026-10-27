@@ -1,0 +1,103 @@
+{
+  "id": "PL-Q-148A65",
+  "lang": "148A65",
+  "giver": {
+    "persona": "PL-WAL-NPC09",
+    "zone": "Polaris/PL_Z00_Walruskberg"
+  },
+  "requires": [
+    "PL-Q-12953A"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 62700,
+    "gold": 480
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-WAL-NPC01-C",
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306"
+    }
+  ],
+  "personas": {
+    "PL-WAL-NPC01-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Strongman_A_NPC.dds",
+      "template_id": 1346151
+    },
+    "PL-WAL-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_A_NPC.dds",
+      "template_id": 1340496
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Vive_La_Penguinonia",
+    "from": "archive",
+    "timestamp": "20231126065048"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Imperial Palace",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Imperial Palace",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Ivan the Great",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

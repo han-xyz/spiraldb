@@ -1,0 +1,91 @@
+{
+  "id": "PL-Q-129553",
+  "lang": "129553",
+  "giver": {
+    "persona": "PL-FROZ-NPC02-B",
+    "zone": "Polaris/PL_Z03_IcefallPassage"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 153880,
+    "gold": 1010
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PL_Fire_Elf_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002181",
+      "zone": "",
+      "descriptor": "WizQst129553_00000008",
+      "loc": "ZoneLocName_1217907"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z03_IcefallPassage",
+      "loc": "ZoneLocName_1217907"
+    }
+  ],
+  "personas": {
+    "PL-FROZ-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Yeti_Explorer_A_NPC.dds",
+      "template_id": 1217913
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Don't_Tease_the_Yeti",
+    "from": "archive",
+    "timestamp": "20231126065317"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "River of Frozen Tears replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

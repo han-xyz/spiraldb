@@ -1,0 +1,91 @@
+{
+  "id": "PL-Q-trialbydragonsfire",
+  "giver": {
+    "persona": "PL-BLEAK-NPC18",
+    "zone": "Polaris/PL_Z02_ForlornTaig"
+  },
+  "requires": [
+    "PL-Q-148A92"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 10000,
+    "gold": 1000
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-ROOST-NPC01",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z3_Volcano/DS_LandingZone",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "DS-Boss-MAW.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002323",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    }
+  ],
+  "personas": {
+    "DS-ROOST-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_spikycloak_1BLUE.dds",
+      "template_id": 1380014
+    },
+    "PL-BLEAK-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Brandon_Storm_NPC.dds",
+      "template_id": 1380015
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Trial_by_Dragon's_Fire",
+    "from": "archive",
+    "timestamp": "20250821004809"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Trial by Dragon's Fire",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Magister Zilant: DS-ROOST-NPC01 from ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Firebrand Orb in Dragonsage Hall",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Neberyx: ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "the Firebrand Orb",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Dragon's Maw",
+      "blocking": true
+    }
+  ]
+}

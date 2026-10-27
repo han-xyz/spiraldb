@@ -1,0 +1,91 @@
+{
+  "id": "PL-Q-148A7A",
+  "lang": "148A7A",
+  "giver": {
+    "persona": "PL-WAL-NPC12",
+    "zone": "Polaris/PL_Z00_Walruskberg"
+  },
+  "requires": [
+    "PL-Q-148A79"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 125600,
+    "gold": 960
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PL_Sea_Lion_A.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00002165",
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306"
+    }
+  ],
+  "personas": {
+    "PL-WAL-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Townie_B_NPC.dds",
+      "template_id": 1340499
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Real_Slobberknocker",
+    "from": "archive",
+    "timestamp": "20231126070937"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Slobber in Walruskberg Harbor",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

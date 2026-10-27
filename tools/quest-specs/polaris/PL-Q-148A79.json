@@ -1,0 +1,114 @@
+{
+  "id": "PL-Q-148A79",
+  "lang": "148A79",
+  "giver": {
+    "persona": "PL-WAL-NPC12",
+    "zone": "Polaris/PL_Z00_Walruskberg"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 125600,
+    "gold": 960
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PL_Penguin_Officer_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002196",
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PL-WAL-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Townie_B_NPC.dds",
+      "template_id": 1340499
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sacred_Blue!",
+    "from": "archive",
+    "timestamp": "20231126070805"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Red Rosa",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "the Sacred Blue Paint in Walruskberg Harbor",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Red Rosa replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

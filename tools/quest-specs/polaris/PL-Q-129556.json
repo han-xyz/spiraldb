@@ -1,0 +1,150 @@
+{
+  "id": "PL-Q-129556",
+  "lang": "129556",
+  "giver": {
+    "persona": "PL-BLEAK-NPC07-B",
+    "zone": "Polaris/Interiors/PL_Z02_BabaYagaHut_Int"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 256470,
+    "gold": 1681
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PL_Ettin_A.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00002220",
+      "zone": "",
+      "descriptor": "WizQst129556_00000008",
+      "loc": "ZoneLocName_1217907"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-FROZ-Brazier01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00016771",
+      "loc": "ZoneLocName_1217907"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-FROZ-Brazier02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00016772",
+      "loc": "ZoneLocName_1217907"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-FROZ-NPC03",
+      "zone": "Polaris/Interiors/PL_Z03I04_SunlessShrineEnt",
+      "loc": "ZoneLocName_1217907"
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_A_NPC.dds",
+      "template_id": 1346213
+    },
+    "PL-FROZ-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_WolfGryphon_Warrior_B_NPC.dds",
+      "template_id": 1217880
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sunless_Shrine",
+    "from": "archive",
+    "timestamp": "20240118172519"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Icefall",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Sunless Shrine",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Sunless Shrine",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Icefall replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

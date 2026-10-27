@@ -1,0 +1,69 @@
+{
+  "id": "PL-Q-forgingalegend",
+  "giver": {
+    "persona": "AR-ARC-NPC03-E",
+    "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+  },
+  "requires": [],
+  "min_level": 100,
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 0,
+    "gold": 43500
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC03-E": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dwarf_Porfessor_A_NPC.dds",
+      "template_id": 1521474
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Forging_A_Legend",
+    "from": "archive",
+    "timestamp": "20250824032102"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Forging A Legend",
+      "blocking": true
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Ignus Ferric: AR-ARC-NPC03-E from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "A Crafty Note",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Forge of Legends in The Repository",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ignus Ferric: AR-ARC-NPC03-E from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Arcanum Crafting Room",
+      "blocking": false
+    }
+  ]
+}

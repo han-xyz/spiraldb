@@ -1,0 +1,109 @@
+{
+  "id": "PL-Q-129578",
+  "lang": "129578",
+  "giver": {
+    "persona": "PL-WAL-NPC22",
+    "zone": "Polaris/PL_Z00_Walruskberg"
+  },
+  "requires": [
+    "PL-Q-129575"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 179530,
+    "gold": 1180
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Monkey_Soldier_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002201",
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000014"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PL-WAL-NPC22": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_E_NPC.dds",
+      "template_id": 1217911
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Strong_Negosh",
+    "from": "archive",
+    "timestamp": "20231126071445"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Torcido in his office in Walruskberg Harbor",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

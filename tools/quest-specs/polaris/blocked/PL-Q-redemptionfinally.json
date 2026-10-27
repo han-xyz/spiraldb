@@ -1,0 +1,95 @@
+{
+  "id": "PL-Q-redemptionfinally",
+  "requires": [
+    "PL-Q-12EF09"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 437040,
+    "gold": 2320
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC12",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Troll_D.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002253",
+      "zone": "",
+      "loc": "ZoneLocName_1240829"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-DufresnesVolcanicGlass.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_1240829"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Wyrm_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002254",
+      "zone": "",
+      "loc": "ZoneLocName_1240829"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-DufresnesVolcanicGlass.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_1240829"
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_A_NPC.dds",
+      "template_id": 1346234
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Redemption..._Finally",
+    "from": "archive",
+    "timestamp": "20240119020610"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Redemption... Finally",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Dufresne",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Dufresne",
+      "blocking": false
+    }
+  ]
+}

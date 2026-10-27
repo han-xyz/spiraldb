@@ -1,0 +1,122 @@
+{
+  "id": "PL-Q-thebasstille",
+  "requires": [
+    "PL-Q-148A63"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 476000,
+    "gold": 3430
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC05-B",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Polar_Bear_Soldier_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002162",
+      "zone": "",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC05-B",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-WAL-NPC11-B",
+      "zone": "Polaris/Interiors/Z01_I02_LaNettoyage",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-WAL-NPC11-B",
+      "zone": "Polaris/Interiors/Z01_I02_LaNettoyage",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Polar_Bear_Soldier_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002162",
+      "zone": "",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-WAL-NPC11-B",
+      "zone": "Polaris/Interiors/Z01_I02_LaNettoyage",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Polar_Bear_Solider_I.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002191",
+      "zone": "",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-WAL-NPC11-B",
+      "zone": "Polaris/Interiors/Z01_I02_LaNettoyage",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Polar_Bear_Solider_C.AdjRef",
+        "PL_Polar_Bear_Solider_C_MonstFix.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002163",
+      "zone": "",
+      "loc": "ZoneLocName_1217803"
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Strongman_A_NPC.dds",
+      "template_id": 1346203
+    },
+    "PL-WAL-NPC11-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Rebel_A_NPC.dds",
+      "template_id": 1346192
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Basstille",
+    "from": "archive",
+    "timestamp": "20240308214203"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Basstille",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    }
+  ]
+}

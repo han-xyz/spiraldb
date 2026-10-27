@@ -1,0 +1,92 @@
+{
+  "id": "PL-Q-148AB8",
+  "lang": "148AB8",
+  "giver": {
+    "persona": "PL-BLEAK-NPC11",
+    "zone": "Polaris/PL_Z02_ForlornTaig"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 340,
+    "gold": 47940
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "PL-TuftedSaxifrage.AdjRef"
+      ],
+      "count": 8,
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "descriptor": "QuestTitle_00001514",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_C_NPC.dds",
+      "template_id": 1346231
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Suffering_Saxifrage",
+    "from": "archive",
+    "timestamp": "20231126071432"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Hazards of the Road replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

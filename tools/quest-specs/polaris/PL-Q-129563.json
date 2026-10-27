@@ -1,0 +1,125 @@
+{
+  "id": "PL-Q-129563",
+  "lang": "129563",
+  "giver": {
+    "persona": "PL-HAR-NPC02",
+    "zone": "Polaris/PL_Z01_Harbor"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 134400,
+    "gold": 970
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PL_Sea_Lion_A.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00002165",
+      "zone": "Polaris/PL_Z01_Harbor",
+      "descriptor": "WizQst129563_00000011",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1217799",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PL-HAR-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Explorer_A_NPC.dds",
+      "template_id": 1340510
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Wailers'_Mane_Issue",
+    "from": "archive",
+    "timestamp": "20260329221654"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Haunting Wails replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

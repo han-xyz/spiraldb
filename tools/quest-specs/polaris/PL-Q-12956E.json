@@ -1,0 +1,162 @@
+{
+  "id": "PL-Q-12956E",
+  "lang": "12956E",
+  "giver": {
+    "persona": "PL-BLEAK-NPC12",
+    "zone": "Polaris/PL_Z02_ForlornTaig"
+  },
+  "requires": [
+    "PL-Q-148A5E"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 336000,
+    "gold": 2420
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PL_Polar_Bear_Soldier_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002162",
+      "zone": "",
+      "descriptor": "WizQst12956E_00000006",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-DufresnesVolcanicGlass.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst12956E_00000020",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_PolarBear_Soldier_N.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002263",
+      "zone": "",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-DufresnesVolcanicGlass.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst12956E_00000020",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000016"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_A_NPC.dds",
+      "template_id": 1346234
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Basstille_Redemption",
+    "from": "archive",
+    "timestamp": "20231126071127"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search for a Clue",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Storming the Basstille replaced by PL-Q-148A5E",
+      "blocking": false
+    }
+  ]
+}

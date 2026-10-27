@@ -1,0 +1,176 @@
+{
+  "id": "PL-Q-14E7B2",
+  "lang": "14E7B2",
+  "giver": {
+    "persona": "AR-ARC-NPC03-E",
+    "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+  },
+  "requires": [
+    "AR-POL-SPEL-001-Fire"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 0,
+    "gold": 30000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC03-E": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dwarf_Porfessor_A_NPC.dds",
+      "template_id": 1521474
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hi-Yo_Silver_Chest!",
+    "from": "archive",
+    "timestamp": "20250824121155"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst14E7B2, the only free key within 16 of its chain neighbour WizQst14E7AD whose lines name the page's names: Storm",
+      "blocking": false
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Ignus Ferric: AR-ARC-NPC03-E from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Arcanum Crafting Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Baba Yaga's Focused Mace (for Myth)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Ignus' Focused Torchstaff (for Fire)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Ione's Focused Sword (for Storm)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Jaki's Focused Bow (for Balance)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Qismah's Focused Dagger (for Death)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Tarrak's Focused Frostome (for Ice)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Zander's Focused Staff (for Life)",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ignus Ferric: AR-ARC-NPC03-E from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

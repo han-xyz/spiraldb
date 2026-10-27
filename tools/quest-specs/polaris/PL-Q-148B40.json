@@ -1,0 +1,82 @@
+{
+  "id": "PL-Q-148B40",
+  "lang": "148B40",
+  "giver": {
+    "persona": "PL-URVI-NPC04-B",
+    "zone": "Polaris/PL_Z04_UrvilleStation"
+  },
+  "requires": [
+    "PL-Q-148AEE"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 31420,
+    "gold": 170
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC10",
+      "zone": "Polaris/Interiors/PL_Z02_BabaYagaHut_Int",
+      "loc": "ZoneLocName_1346322",
+      "completion": [
+        {
+          "speaker": "PL-BLEAK-NPC10",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_WitchF_A_NPC.dds",
+      "template_id": 1346220
+    },
+    "PL-URVI-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_A_NPC.dds",
+      "template_id": 1346342
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Back_to_the_Witch's_House",
+    "from": "archive",
+    "timestamp": "20250908002059"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

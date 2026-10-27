@@ -1,0 +1,234 @@
+{
+  "id": "PL-Q-148A5E",
+  "lang": "148A5E",
+  "giver": {
+    "persona": "PL-WAL-NPC07",
+    "zone": "Polaris/Interiors/PL_Z00_Operahouse_Dressingroom"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 268800,
+    "gold": 1600
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "PL-WAL-DancingBear.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "descriptor": "GUI2_00000076",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-WAL-EmpressPillow.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "descriptor": "WizItems_00002006",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/Interiors/PL_Z00_Operahouse_Dressingroom",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-WAL-CenterStage.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "descriptor": "WizItems_00002022",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/Interiors/PL_Z00_Operahouse_Dressingroom",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-WAL-NPC09",
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306",
+      "completion": [
+        {
+          "speaker": "PL-WAL-NPC09",
+          "line": "00000012"
+        },
+        {
+          "speaker": "PL-WAL-NPC09",
+          "line": "00000032"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PL-WAL-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Ballerina_B_NPC.dds",
+      "template_id": 1340494
+    },
+    "PL-WAL-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_A_NPC.dds",
+      "template_id": 1340496
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dance_Revolution",
+    "from": "archive",
+    "timestamp": "20240119020455"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Bolshoi Theater",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Bolshoi Theater",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Papers, Please replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

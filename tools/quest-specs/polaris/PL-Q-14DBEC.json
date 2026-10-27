@@ -1,0 +1,93 @@
+{
+  "id": "PL-Q-14DBEC",
+  "lang": "14DBEC",
+  "giver": {
+    "persona": "PL-WAL-NPC31",
+    "zone": "Polaris/PL_Z00_Walruskberg"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 35970,
+    "gold": 180
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC07-B",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jackalope_Professor_A_NPC.dds",
+      "template_id": 1521310
+    },
+    "PL-WAL-NPC31": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Raspoutine_A_MOB.dds",
+      "template_id": 1371070
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Knowledge_and_Information",
+    "from": "archive",
+    "timestamp": "20231126070023"
+  },
+  "needs_review": [
+    {
+      "field": "giver (closest name)",
+      "value": "Zander read as André",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jaki Whisperwind: AR-ARC-NPC07-B from ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Spider's Spawn replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

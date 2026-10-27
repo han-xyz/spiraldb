@@ -1,0 +1,72 @@
+{
+  "id": "PL-Q-14DBF3",
+  "lang": "14DBF3",
+  "giver": {
+    "persona": "AR-ARC-NPC07-B",
+    "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+  },
+  "requires": [
+    "PL-Q-14DBF1"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 35970,
+    "gold": 180
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC10",
+      "zone": "Polaris/Interiors/PL_Z02_BabaYagaHut_Int"
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jackalope_Professor_A_NPC.dds",
+      "template_id": 1521310
+    },
+    "PL-BLEAK-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_WitchF_A_NPC.dds",
+      "template_id": 1346220
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Rasputin_the_Rat",
+    "from": "archive",
+    "timestamp": "20240409061105"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Jaki Whisperwind: AR-ARC-NPC07-B from ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

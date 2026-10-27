@@ -1,0 +1,113 @@
+{
+  "id": "PL-Q-14E7DF",
+  "lang": "14E7DF",
+  "requires": [
+    "PL-Q-14E7DD"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 741320,
+    "gold": 3320
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "PL-Kalyso_TransferFlue.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00016751",
+      "loc": "ZoneLocName_1370005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-Kalyso_SteamDrum.AdjRef",
+        "PL-Kalyso_TransferFlue.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00016753",
+      "loc": "ZoneLocName_1370005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-Kalyso_SafetyValve.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00016754",
+      "loc": "ZoneLocName_1370005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Bacuda_D.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002255",
+      "zone": "",
+      "loc": "ZoneLocName_1370005"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-KATA-NPC07-B",
+      "zone": "Polaris/Interiors/PL_Z06_Kalypso_AboveDeck",
+      "loc": "ZoneLocName_1370005"
+    }
+  ],
+  "personas": {
+    "PL-KATA-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Dockworker_A_NPC.dds",
+      "template_id": 1370078
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Voyage_of_the_Kalypso",
+    "from": "archive",
+    "timestamp": "20240425052339"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Alternate Energy Units",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Main Deck",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Brakes to the Wheel Box",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

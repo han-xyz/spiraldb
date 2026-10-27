@@ -1,0 +1,76 @@
+{
+  "id": "PL-Q-toocoldtoocold",
+  "giver": {
+    "persona": "PL-WAL-NPC02",
+    "zone": "Polaris/PL_Z00_Walruskberg"
+  },
+  "requires": [
+    "PL-Q-148A33"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 234880,
+    "gold": 1360
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306"
+    }
+  ],
+  "personas": {
+    "PL-WAL-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 1340489
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Too_Cold..._Too_Cold",
+    "from": "archive",
+    "timestamp": "20241225035817"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Too Cold... Too Cold",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "in Walruskberg",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "in Walruskberg Harbor",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "in Forlorn Tayg",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "in River of Frozen Tears",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "in Urville Station",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "in Frigid Maw",
+      "blocking": true
+    }
+  ]
+}

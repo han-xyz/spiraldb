@@ -1,0 +1,92 @@
+{
+  "id": "PL-Q-129575",
+  "lang": "129575",
+  "giver": {
+    "persona": "PL-BLEAK-NPC13",
+    "zone": "Polaris/PL_Z02_ForlornTaig"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 23970,
+    "gold": 170
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-WAL-NPC22",
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306"
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Dockworker_B_NPC.dds",
+      "template_id": 1217910
+    },
+    "PL-WAL-NPC22": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_E_NPC.dds",
+      "template_id": 1217911
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fishing_For_Forgiveness",
+    "from": "archive",
+    "timestamp": "20231126071521"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Hazards of the Road replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}
