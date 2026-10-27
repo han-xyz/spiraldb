@@ -104,6 +104,17 @@ class PlacedIn(Data):
         return found and dict(found, zones=self.zones)
 
 
+class ItemWords(Data):
+    """Items a usage goal reads by their words though no item goes by the name."""
+
+    def __init__(self, words, **kwargs):
+        super().__init__(**kwargs)
+        self.words = words
+
+    def usage_entries(self, name, zone="", count=1):
+        return self.object_entries(name) or self.object_entries(self.words.get(name, ""))
+
+
 def build(name, data, known_zones=(ZONE,), fields=None, predecessor_hand_in=None):
     fields = fields or fields_of(name)
     entry = {"name": name, "page": f"Quest:{name}", "zones": ["Quest Zone"], "fetched": "20250101000000",
@@ -305,6 +316,23 @@ class GoalLineTest(unittest.TestCase):
         goals, blocked = self.goals_of(["@Use Pet Mode to find Wally in [Location:Outback]",
                                         "@Use Pet Mode to find Key"], data, (ZONE, "W/Outback"))
         self.assertEqual((goals, blocked), ([("persona", "Wally"), ("usage", ["W-key.AdjRef"])], []))
+
+    def test_a_take_line_nothing_reads_is_a_waypoint_into_the_current_zone_to_review(self):
+        goals, blocked = self.goals_of(["@Take a Few Steps Back", "@Take Tour"], Data(personas=["Dalton Prescott"]))
+        self.assertEqual((goals, blocked), ([("waypoint", ZONE)] * 2, []))
+
+    def test_a_person_line_nothing_reads_is_a_waypoint_to_the_place_it_links(self):
+        data = Data(personas=["Dalton Prescott"], places={"Glockenspiel": "W/Glock"})
+        goals, blocked = self.goals_of(["@Rescue Trapped Singers in the [Location:Glockenspiel]"], data,
+                                       (ZONE, "W/Glock"))
+        self.assertEqual((goals, blocked), ([("waypoint", "W/Glock")], []))
+
+    def test_a_name_no_npc_has_that_an_item_reads_by_its_words_is_a_usage_goal(self):
+        data = ItemWords({"Star Obelisk": "Obelisk Star", "Sweet Baby Sister": "Baby Sister"},
+                         personas=["Dalton Prescott"], items=["Obelisk Star", "Baby Sister"])
+        goals, blocked = self.goals_of(["@Talk to [NPC:Star Obelisk]", "@Free [NPC:Sweet Baby Sister]"], data)
+        self.assertEqual((goals, blocked), ([("usage", ["W-obeliskstar.AdjRef"]), ("usage", ["W-babysister.AdjRef"])],
+                                            []))
 
     def test_update_is_a_talk_verb(self):
         goals, _ = self.goals_of(["@Update the Villagers"], Data(personas=["Dalton Prescott", "Villagers"]))

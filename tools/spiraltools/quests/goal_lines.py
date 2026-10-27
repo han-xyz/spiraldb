@@ -24,8 +24,9 @@ PERSON_VERBS = {"rescue", "free", "save", "escort", "follow", "approach", "help"
 GOAL_VERBS = KILL_VERBS | TALK_VERBS | MOVE_VERBS | ITEM_VERBS | PERSON_VERBS
 # Verbs of lines that move the player somewhere without being read as waypoints: one they do not reach stays blocked.
 WAY_VERBS = {"reach", "ascend", "cross", "pass", "infiltrate", "assault", "sneak", "jump", "lead", "launch"}
-# Person verbs that move the player when what they name is no NPC (`Follow the Trail of Papers`).
-FOLLOW_VERBS = {"follow", "approach", "pursue", "chase"}
+# Person verbs that move the player when what they name is no NPC (`Follow the Trail of Papers`, `Take a Few Steps
+# Back`).
+FOLLOW_VERBS = {"follow", "approach", "pursue", "chase", "take"}
 
 PHOTOMANCE = re.compile(r"^Press Z to Photomance\b", re.I)
 # What the pet does is the goal: `Use Pet Mode to find Wally`, `(Use it to) Search for Bartleby`.

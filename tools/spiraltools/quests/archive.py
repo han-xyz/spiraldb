@@ -1061,7 +1061,7 @@ class SpecBuilder:
     def persona_goal(self, name, with_previous=False):
         bare = strip_notes(name)
         if (self.data.persona(bare, self.zone) is None and ITEM_PLACE.sub("", bare).strip() == bare
-                and self.data.object_entries(bare)):
+                and self.data.usage_entries(bare, self.zone)):
             goal = self.usage_goal([bare], 1)
             if with_previous:
                 goal["with_previous"] = True
@@ -1233,7 +1233,7 @@ class SpecBuilder:
         kind = goal_kind(verb, text, npcs, creatures)
         if kind == "persona":
             name = npcs[0] if npcs else target_text(re.sub(r"\s+(in|at)\s+.*$", "", text))
-            if verb not in TALK_VERBS and not self.data.has_persona(name) and self.data.object_entries(name):
+            if verb not in TALK_VERBS and not self.data.has_persona(name) and self.data.usage_entries(name, self.zone):
                 return [self.usage_goal([name], number * times)]
             return [self.persona_goal(name)]
         if kind == "bounty":
@@ -1265,7 +1265,8 @@ class SpecBuilder:
 
     def goal_elsewhere(self, verb, text, places):
         """A line no item reads: a waypoint to where it sends the player or to the place it names whole, else a talk
-        with the NPC it ends at; blocked under the field its verb asks for when none resolves."""
+        with the NPC it ends at, else, for a verb that is not an item verb, a waypoint to a place it links, listed to
+        review; blocked under the field its verb asks for when none resolves."""
         ends = destinations(verb, text)
         whole = target_text(text)
         for place in ends + ([whole] if verb not in ITEM_VERBS or whole in places else []):
@@ -1274,6 +1275,10 @@ class SpecBuilder:
                 return goal
             if self.data.has_persona(place):
                 return self.persona_goal(place)
+        linked = self.waypoint_goal(places, text, quiet=True) if places and verb not in ITEM_VERBS else None
+        if linked:
+            self.unresolved("goal.waypoint (place the line links)", text, False)
+            return linked
         field = "goal.waypoint" if ends else unread_field(verb, text)
         if field == "goal.waypoint":
             return self.waypoint_here(text)
