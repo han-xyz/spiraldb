@@ -1,6 +1,11 @@
 {
   "id": "LM-Q-17017A",
   "lang": "17017A",
+  "auto_start": true,
+  "giver": {
+    "persona": "LM-BAD-NPC01-B",
+    "zone": "Lemuria/LM_Z04_Badlands"
+  },
   "requires": [
     "LM-Q-170156"
   ],
@@ -62,7 +67,12 @@
       "loc": "ZoneLocName_1507644"
     }
   ],
-  "personas": {},
+  "personas": {
+    "LM-BAD-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
+      "template_id": 1487607
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Face_the_Music",
     "from": "archive",
@@ -73,11 +83,6 @@
       "field": "lang",
       "value": "WizQst17017A matched by the words it shares with the goals; its lines name Miniontaurs, Skeletaur",
       "blocking": false
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
     },
     {
       "field": "goal.items",

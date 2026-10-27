@@ -1,6 +1,7 @@
 {
   "id": "LM-Q-17320D",
   "lang": "17320D",
+  "auto_start": true,
   "requires": [
     "LM-Q-17320B"
   ],
@@ -104,8 +105,8 @@
   },
   "needs_review": [
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {

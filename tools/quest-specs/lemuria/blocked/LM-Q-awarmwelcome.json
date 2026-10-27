@@ -1,5 +1,10 @@
 {
   "id": "LM-Q-awarmwelcome",
+  "auto_start": true,
+  "giver": {
+    "persona": "LM-SKY-NPC11",
+    "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
+  },
   "requires": [
     "LM-Q-17441A"
   ],
@@ -27,7 +32,12 @@
       "loc": "ZoneLocName_1520281"
     }
   ],
-  "personas": {},
+  "personas": {
+    "LM-SKY-NPC11": {
+      "portrait": "GUI/NpcPortraits/Deer_Scientist_B_NPC.dds",
+      "template_id": 1524736
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:A_Warm_Welcome?",
     "from": "archive",
@@ -37,11 +47,6 @@
     {
       "field": "lang",
       "value": "A Warm Welcome?",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     }
   ]

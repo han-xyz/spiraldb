@@ -1,6 +1,11 @@
 {
   "id": "LM-Q-173281",
   "lang": "173281",
+  "auto_start": true,
+  "giver": {
+    "persona": "LM-NIGHT-NPC11",
+    "zone": "Lemuria/Interiors/LM_Z03_Crypt"
+  },
   "requires": [
     "LM-Q-173283"
   ],
@@ -116,6 +121,10 @@
     }
   ],
   "personas": {
+    "LM-NIGHT-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ghoul_Sitting_A_NPC.dds",
+      "template_id": 1520258
+    },
     "LM-StandIn-SnowQueen_01": {
       "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_F_NPC.dds",
       "template_id": 1487471
@@ -131,11 +140,6 @@
       "field": "lang",
       "value": "WizQst173281 by the proper nouns its lines share with the page (Crypt, Snow, Tales), within 16 of a key of the zone's quests; next best WizQst173276 with 0",
       "blocking": false
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
     },
     {
       "field": "goal.items",

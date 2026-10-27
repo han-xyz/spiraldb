@@ -1,5 +1,10 @@
 {
   "id": "LM-Q-gogopowergrazers",
+  "auto_start": true,
+  "giver": {
+    "persona": "LM-HEAP-NPC25",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
   "requires": [
     "LM-Q-174441"
   ],
@@ -37,7 +42,7 @@
     },
     {
       "type": "persona",
-      "persona": "LM-HEAP-NPC25",
+      "persona": "giver",
       "zone": "Lemuria/LM_Z07_Heap",
       "loc": "ZoneLocName_1524839"
     },
@@ -67,11 +72,6 @@
     {
       "field": "lang",
       "value": "Go, Go Power Grazers",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     }
   ]

@@ -1,0 +1,17 @@
+{
+  "Name": "LM-Q-173289",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 16500,
+  "MaxGold": 16500,
+  "ExperienceAmount": 0,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:21:19.387176Z",
+  "ModifiedAt": "2026-10-27T09:21:19.387176Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

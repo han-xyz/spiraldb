@@ -1,5 +1,10 @@
 {
   "id": "LM-Q-thedarkiseyeing",
+  "auto_start": true,
+  "giver": {
+    "persona": "LM-HEAP-NPC13",
+    "zone": "Lemuria/Interiors/LM_Z07_LionsOffice"
+  },
   "requires": [
     "LM-Q-174432"
   ],
@@ -37,7 +42,12 @@
       "loc": "ZoneLocName_1524839"
     }
   ],
-  "personas": {},
+  "personas": {
+    "LM-HEAP-NPC13": {
+      "portrait": "GUI/NpcPortraits/Lemur_Golden_A_NPC.dds",
+      "template_id": 1524760
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Dark_is_Eyeing",
     "from": "archive",
@@ -47,11 +57,6 @@
     {
       "field": "lang",
       "value": "The Dark is Eyeing",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {

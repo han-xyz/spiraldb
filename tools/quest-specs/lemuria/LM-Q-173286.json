@@ -1,6 +1,11 @@
 {
   "id": "LM-Q-173286",
   "lang": "173286",
+  "auto_start": true,
+  "giver": {
+    "persona": "LM-NIGHT-NPC11",
+    "zone": "Lemuria/Interiors/LM_Z03_Crypt"
+  },
   "requires": [
     "LM-Q-173285"
   ],
@@ -81,18 +86,18 @@
       "loc": "ZoneLocName_1520268"
     }
   ],
-  "personas": {},
+  "personas": {
+    "LM-NIGHT-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ghoul_Sitting_A_NPC.dds",
+      "template_id": 1520258
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Jaws_Well_that_Ends_Well",
     "from": "archive",
     "timestamp": "20240322085208"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Next Room",

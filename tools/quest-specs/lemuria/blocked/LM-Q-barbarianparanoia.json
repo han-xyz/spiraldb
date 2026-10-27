@@ -1,5 +1,10 @@
 {
   "id": "LM-Q-barbarianparanoia",
+  "auto_start": true,
+  "giver": {
+    "persona": "LM-Mandoria-NPC01-02",
+    "zone": "Lemuria/LM_Z05_Mandoria"
+  },
   "requires": [
     "LM-Q-17011E"
   ],
@@ -14,7 +19,12 @@
     "underway": []
   },
   "goals": [],
-  "personas": {},
+  "personas": {
+    "LM-Mandoria-NPC01-02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1507626
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Barbarian_Paranoia",
     "from": "archive",
@@ -24,11 +34,6 @@
     {
       "field": "lang",
       "value": "Barbarian Paranoia",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {
