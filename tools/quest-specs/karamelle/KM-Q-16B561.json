@@ -1,0 +1,151 @@
+{
+  "id": "KM-Q-16B561",
+  "lang": "16B561",
+  "title": "QuestTitle_16B55A",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-KCITY-NPC21",
+    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+  },
+  "requires": [
+    "KM-Q-16B559"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185379,
+    "gold": 1755
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gnome_Worker_A_01.AdjRef",
+        "KM_Gnome_Worker_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003670",
+      "zone": "",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Player_Cabal_A_01.AdjRef",
+        "KM_Player_Cabal_A_02.AdjRef",
+        "KM_Player_Cabal_A_03.AdjRef",
+        "KM_Player_Cabal_A_04.AdjRef",
+        "KM_Player_Cabal_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003671",
+      "zone": "",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Chicken_Miner_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003672",
+      "zone": "",
+      "loc": "ZoneLocName_1488252"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
+      "template_id": 1513270
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sweet_Words",
+    "from": "archive",
+    "timestamp": "20240322063550"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B561 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Les Bon-Bon Mots",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Les Bon-Bon Mots",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Les Bon-Bon Mots",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

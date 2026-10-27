@@ -1,0 +1,158 @@
+{
+  "id": "KM-Q-16B12F",
+  "lang": "16B12F",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [
+    "KM-Q-17169B"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 132415,
+    "gold": 925
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC02",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC03",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC04",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC07",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    },
+    "KM-GOBB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gobbler_Hick_Skinny_NPC.dds",
+      "template_id": 1487152
+    },
+    "KM-GOBB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Gobbler_SkinnyF_A_NPC.dds",
+      "template_id": 1487153
+    },
+    "KM-GOBB-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Gobbler_Pink_Skinny_NPC.dds",
+      "template_id": 1487154
+    },
+    "KM-GOBB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_Skinny_A_NPC.dds",
+      "template_id": 1487158
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:You_Are_What_You_Gobble",
+    "from": "archive",
+    "timestamp": "20250822005607"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B12F is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Get to Gobblering replaced by KM-Q-17169B",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "id": "KM-Q-16B137",
+  "lang": "16B137",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [
+    "KM-Q-16B12F"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 123586,
+    "gold": 1200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gobbler_Guard_B_01.AdjRef",
+        "KM_Gobbler_Guard_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003708",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC09",
+      "zone": "Karamelle/Interiors/KM_Z10_ThroneRoom_A",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    },
+    "KM-GOBB-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_King_D_NPC.dds",
+      "template_id": 1506523
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:King_Sized_Conundrum",
+    "from": "archive",
+    "timestamp": "20240322074914"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B137 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Castle Guards",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -6,7 +6,7 @@
     "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
   },
   "requires": [
-    "KM-GUM-MAIN-003"
+    "KM-Q-16FCAD"
   ],
   "mainline": true,
   "level": 122,
@@ -163,12 +163,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst16FCAE matched by the words it shares with the goals; its lines name Nibbelung Thief, Olga",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Nibbleheim Stinks!",
+      "value": "WizQst16FCAE is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
@@ -179,11 +174,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Nibbleheim Stinks! replaced by KM-GUM-MAIN-003",
       "blocking": false
     }
   ]

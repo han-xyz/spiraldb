@@ -1,0 +1,180 @@
+{
+  "id": "KM-Q-170A88",
+  "lang": "170A88",
+  "giver": {
+    "persona": "KM-KCITY-NPC15",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [
+    "KM-Q-170A86"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185379,
+    "gold": 1815
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_GrandF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_02.AdjRef",
+        "KM_Hamster_ImperfectF_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003656",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_GrandF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_02.AdjRef",
+        "KM_Hamster_ImperfectF_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003656",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM-KCITY-NPC15.AdjRef",
+        "KM_Hamster_TaskMasterF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003714",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Hamster_TaskmasterF_A_NPC.dds",
+      "template_id": 1513171
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Ninja-Bread_House",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170A88 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

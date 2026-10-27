@@ -1,0 +1,161 @@
+{
+  "id": "KM-Q-16B143",
+  "lang": "16B143",
+  "title": "QuestTitle_00001794",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [
+    "KM-Q-16B13F"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185379,
+    "gold": 1790
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_KM_Trash_Booger_A_01.AdjRef",
+        "Adv_KM_Trash_Booger_A_02.AdjRef",
+        "Adv_KM_Trash_Booger_A_03.AdjRef",
+        "Adv_KM_Trash_Booger_A_04.AdjRef",
+        "Adv_KM_Trash_Booger_A_05.AdjRef",
+        "Adv_KM_Trash_Booger_A_06.AdjRef",
+        "Adv_KM_Trash_Booger_A_07.AdjRef",
+        "Adv_KM_Trash_Booger_A_08.AdjRef",
+        "KM_Trash_Booger_A_01.AdjRef",
+        "KM_Trash_Booger_A_02.AdjRef",
+        "KM_Trash_Booger_A_03.AdjRef",
+        "KM_Trash_Booger_A_04.AdjRef",
+        "KM_Trash_Booger_A_05.AdjRef",
+        "KM_Trash_Booger_A_06.AdjRef",
+        "KM_Trash_Booger_A_07.AdjRef",
+        "KM_Trash_Booger_A_08.AdjRef",
+        "KM_Trash_Booger_A_09.AdjRef",
+        "KM_Trash_Booger_A_10.AdjRef",
+        "KM_Trash_Booger_A_11.AdjRef",
+        "KM_Trash_Booger_A_12.AdjRef",
+        "KM_Trash_Booger_A_13.AdjRef",
+        "KM_Trash_Booger_A_14.AdjRef",
+        "KM_Trash_Booger_A_15.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003756",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_KM_Trash_Booger_A_01.AdjRef",
+        "Adv_KM_Trash_Booger_A_02.AdjRef",
+        "Adv_KM_Trash_Booger_A_03.AdjRef",
+        "Adv_KM_Trash_Booger_A_04.AdjRef",
+        "Adv_KM_Trash_Booger_A_05.AdjRef",
+        "Adv_KM_Trash_Booger_A_06.AdjRef",
+        "Adv_KM_Trash_Booger_A_07.AdjRef",
+        "Adv_KM_Trash_Booger_A_08.AdjRef",
+        "KM_Trash_Booger_A_01.AdjRef",
+        "KM_Trash_Booger_A_02.AdjRef",
+        "KM_Trash_Booger_A_03.AdjRef",
+        "KM_Trash_Booger_A_04.AdjRef",
+        "KM_Trash_Booger_A_05.AdjRef",
+        "KM_Trash_Booger_A_06.AdjRef",
+        "KM_Trash_Booger_A_07.AdjRef",
+        "KM_Trash_Booger_A_08.AdjRef",
+        "KM_Trash_Booger_A_09.AdjRef",
+        "KM_Trash_Booger_A_10.AdjRef",
+        "KM_Trash_Booger_A_11.AdjRef",
+        "KM_Trash_Booger_A_12.AdjRef",
+        "KM_Trash_Booger_A_13.AdjRef",
+        "KM_Trash_Booger_A_14.AdjRef",
+        "KM_Trash_Booger_A_15.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003756",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/One_Snotty_Gym",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B143 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Your Way Through",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue Through",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue Moving Through",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Bogeyman",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

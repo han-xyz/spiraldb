@@ -1,0 +1,151 @@
+{
+  "id": "KM-Q-16B148",
+  "lang": "16B148",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [
+    "KM-Q-16B147"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 123587,
+    "gold": 1015
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gobbler_Skinny_A_10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003711",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM_AlphoiBook_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "descriptor": "WizardGameObjects_00000926",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Mmmmm%2C_Knowledge",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B148 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Cookbook",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

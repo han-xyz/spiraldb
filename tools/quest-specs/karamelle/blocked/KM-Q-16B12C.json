@@ -1,0 +1,86 @@
+{
+  "id": "KM-Q-16B12C",
+  "lang": "16B12C",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [
+    "KM-Q-1716AA"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 70621,
+    "gold": 570
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Get_to_Gobblering",
+    "from": "archive",
+    "timestamp": "20240322074935"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B12C is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Gobblers",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

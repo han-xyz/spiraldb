@@ -1,0 +1,214 @@
+{
+  "id": "KM-Q-170A8F",
+  "lang": "170A8F",
+  "giver": {
+    "persona": "KM-ESTATE-NPC02",
+    "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge"
+  },
+  "requires": [
+    "KM-Q-170A8D"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185379,
+    "gold": 1815
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_KM_Nothing_Player_B_01_Balance.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Death.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Fire.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Ice.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Life.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Myth.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Shadow.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Storm.AdjRef",
+        "KM_Nothing_Player_A_01.AdjRef",
+        "KM_Nothing_Player_A_02.AdjRef",
+        "KM_Nothing_Player_A_03.AdjRef",
+        "KM_Nothing_Player_A_04.AdjRef",
+        "KM_Nothing_Player_A_05.AdjRef",
+        "KM_Nothing_Player_A_06.AdjRef",
+        "KM_Nothing_Player_A_07.AdjRef",
+        "KM_Nothing_Player_A_08.AdjRef",
+        "KM_Nothing_Player_B_01_Balance.AdjRef",
+        "KM_Nothing_Player_B_01_Death.AdjRef",
+        "KM_Nothing_Player_B_01_Fire.AdjRef",
+        "KM_Nothing_Player_B_01_Ice.AdjRef",
+        "KM_Nothing_Player_B_01_Life.AdjRef",
+        "KM_Nothing_Player_B_01_Myth.AdjRef",
+        "KM_Nothing_Player_B_01_Shadow.AdjRef",
+        "KM_Nothing_Player_B_01_Storm.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003717",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_KM_Nothing_Player_B_01_Balance.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Death.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Fire.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Ice.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Life.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Myth.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Shadow.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Storm.AdjRef",
+        "KM_Nothing_Player_A_01.AdjRef",
+        "KM_Nothing_Player_A_02.AdjRef",
+        "KM_Nothing_Player_A_03.AdjRef",
+        "KM_Nothing_Player_A_04.AdjRef",
+        "KM_Nothing_Player_A_05.AdjRef",
+        "KM_Nothing_Player_A_06.AdjRef",
+        "KM_Nothing_Player_A_07.AdjRef",
+        "KM_Nothing_Player_A_08.AdjRef",
+        "KM_Nothing_Player_B_01_Balance.AdjRef",
+        "KM_Nothing_Player_B_01_Death.AdjRef",
+        "KM_Nothing_Player_B_01_Fire.AdjRef",
+        "KM_Nothing_Player_B_01_Ice.AdjRef",
+        "KM_Nothing_Player_B_01_Life.AdjRef",
+        "KM_Nothing_Player_B_01_Myth.AdjRef",
+        "KM_Nothing_Player_B_01_Shadow.AdjRef",
+        "KM_Nothing_Player_B_01_Storm.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003717",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC18",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_KM_Nothing_Player_B_01_Balance.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Death.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Fire.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Ice.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Life.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Myth.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Shadow.AdjRef",
+        "Adv_KM_Nothing_Player_B_01_Storm.AdjRef",
+        "KM_Nothing_Player_A_01.AdjRef",
+        "KM_Nothing_Player_A_02.AdjRef",
+        "KM_Nothing_Player_A_03.AdjRef",
+        "KM_Nothing_Player_A_04.AdjRef",
+        "KM_Nothing_Player_A_05.AdjRef",
+        "KM_Nothing_Player_A_06.AdjRef",
+        "KM_Nothing_Player_A_07.AdjRef",
+        "KM_Nothing_Player_A_08.AdjRef",
+        "KM_Nothing_Player_B_01_Balance.AdjRef",
+        "KM_Nothing_Player_B_01_Death.AdjRef",
+        "KM_Nothing_Player_B_01_Fire.AdjRef",
+        "KM_Nothing_Player_B_01_Ice.AdjRef",
+        "KM_Nothing_Player_B_01_Life.AdjRef",
+        "KM_Nothing_Player_B_01_Myth.AdjRef",
+        "KM_Nothing_Player_B_01_Shadow.AdjRef",
+        "KM_Nothing_Player_B_01_Storm.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003717",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_A_NPC.dds",
+      "template_id": 1487326
+    },
+    "KM-ESTATE-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Miner_A_NPC.dds",
+      "template_id": 1487135
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/We_Have_Met_the_Enemy...",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Nana & the Cabalists",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue Searching For Cabalists",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

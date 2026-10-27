@@ -6,7 +6,7 @@
     "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
   },
   "requires": [
-    "KM-Q-16FCCA"
+    "KM-Q-16FCCC"
   ],
   "mainline": true,
   "level": 122,
@@ -101,12 +101,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst16FCCF by the proper nouns its lines share with the page (Chocolate, Enriched, Orson), within 16 of a key of the zone's quests; next best WizQst16FCD0 with 2",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "The Proofing is in the Pudding",
+      "value": "WizQst16FCCF is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
@@ -117,11 +112,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Proofing is in the Pudding replaced by KM-Q-16FCCA",
       "blocking": false
     }
   ]

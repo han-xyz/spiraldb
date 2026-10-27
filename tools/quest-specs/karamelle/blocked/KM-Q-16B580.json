@@ -1,0 +1,93 @@
+{
+  "id": "KM-Q-16B580",
+  "lang": "16B580",
+  "title": "QuestTitle_00001752",
+  "giver": {
+    "persona": "KM-KCITY-NPC21",
+    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+  },
+  "requires": [
+    "KM-Q-16B550"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185379,
+    "gold": 1755
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z04_PowerRoom"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z04_PowerRoom"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z04_PowerRoom"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gummy_Bear_Uber_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003661",
+      "zone": "Karamelle/Interiors/KM_Z00_NanasHQ",
+      "loc": "ZoneLocName_1488252"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
+      "template_id": 1513270
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Pow-Pow-Power_Room",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B580 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Gummy Bear",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Gummy Bear",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "KM-Q-16B565",
+  "lang": "16B565",
+  "title": "QuestTitle_16B563",
+  "giver": {
+    "persona": "KM-GUTEN-NPC10-C",
+    "zone": "Karamelle/KM_Z07_Gutenstadt"
+  },
+  "requires": [
+    "KM-Q-16B562"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 203034,
+    "gold": 1995
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_CupcakeFactory"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_CupcakeFactory"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Cat_WarriorF_G_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003689",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_CupcakeFactory"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Cat_WarriorF_H_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003690",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_CupcakeFactory"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Cat_WarriorF_F_01.AdjRef",
+        "KM_Cat_WarriorF_F_02.AdjRef",
+        "KM_Cat_WarriorF_F_Minion_Moon.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003691",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    }
+  ],
+  "personas": {
+    "KM-GUTEN-NPC10-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Constable_A_NPC.dds",
+      "template_id": 1488267
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Can_Haz_Qhats",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B565 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

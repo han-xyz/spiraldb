@@ -1,0 +1,141 @@
+{
+  "id": "KM-Q-16FFB4",
+  "lang": "16FFB4",
+  "title": "QuestTitle_00001806",
+  "giver": {
+    "persona": "KM-NIBB-NPC08",
+    "zone": "Karamelle/KM_Z05_Nibbleheim"
+  },
+  "requires": [
+    "KM-Q-16FFAD"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185379,
+    "gold": 1785
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_StandIn_RedVelvetTroll_01.AdjRef",
+        "KM_Troll_Sweets_B_01.AdjRef",
+        "KM_Troll_Sweets_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003682",
+      "zone": "Karamelle/KM_Z05_Nibbleheim"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Troll_Sweets_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003683",
+      "zone": "Karamelle/KM_Z05_Nibbleheim"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Player_Cabal_A_01.AdjRef",
+        "KM_Player_Cabal_A_02.AdjRef",
+        "KM_Player_Cabal_A_03.AdjRef",
+        "KM_Player_Cabal_A_04.AdjRef",
+        "KM_Player_Cabal_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003671",
+      "zone": "Karamelle/KM_Z05_Nibbleheim"
+    }
+  ],
+  "personas": {
+    "KM-NIBB-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",
+      "template_id": 1506493
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Rigamatroll",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FFB4 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Your Way Through",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Head Deeper",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Head Deeper",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

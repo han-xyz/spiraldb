@@ -1,0 +1,197 @@
+{
+  "id": "KM-Q-1716B8",
+  "lang": "1716B8",
+  "title": "QuestTitle_1716B6",
+  "giver": {
+    "persona": "KM-FARM-NPC01-B",
+    "zone": "Karamelle/KM_Z09_CandyCornFarm"
+  },
+  "requires": [
+    "KM-Q-171686"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 220690,
+    "gold": 2020
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gummy_Bear_B_01.AdjRef",
+        "KM_Gummy_Bear_B_02.AdjRef",
+        "KM_Gummy_Bear_B_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003697",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-GummyMolds.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "descriptor": "WizQst1716B8_00000008",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gummy_Bear_B_01.AdjRef",
+        "KM_Gummy_Bear_B_02.AdjRef",
+        "KM_Gummy_Bear_B_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003697",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gummy_BearHat_A_01.AdjRef",
+        "KM_Gummy_BearHat_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003702",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    }
+  ],
+  "personas": {
+    "KM-FARM-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513095
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/You_Don%27t_Know_Gumberjack",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1716B8 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Words of Power replaced by KM-Q-171686",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "KM-Q-170A9A",
+  "lang": "170A9A",
+  "giver": {
+    "persona": "KM-KCITY-NPC02-B",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [
+    "KM-Q-16B549"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 4050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
+      "template_id": 1510012
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:My_Stars_and_Gobblers!",
+    "from": "archive",
+    "timestamp": "20240322072426"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170A9A is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Lobby",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

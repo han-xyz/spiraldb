@@ -1,0 +1,228 @@
+{
+  "id": "KM-Q-17168B",
+  "lang": "17168B",
+  "giver": {
+    "persona": "KM-FARM-NPC01-B",
+    "zone": "Karamelle/KM_Z09_CandyCornFarm"
+  },
+  "requires": [
+    "KM-Q-171686"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 291311,
+    "gold": 2675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Robot_Candy_A_01.AdjRef",
+        "KM_Robot_Candy_A_02.AdjRef",
+        "KM_Robot_Candy_A_03.AdjRef",
+        "KM_Robot_Candy_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003675",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_Hazmatt_A_01.AdjRef",
+        "KM_Hamster_Hazmatt_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003687",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM_GobblerSkinnyF_StandIn.AdjRef",
+        "KM_Gobblers_Treadmills_01.AdjRef",
+        "KM_Gobblers_Treadmills_02.AdjRef",
+        "KM_Gobblers_Treadmills_03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "descriptor": "WizQst17168B_00000017",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_GobblerSkinny_StandIn.AdjRef",
+        "KM_GobblerSkinny_StandIn_02.AdjRef",
+        "KM_Gobbler_SkinnyF_A_01.AdjRef",
+        "KM_Gobbler_Skinny_A_01.AdjRef",
+        "KM_Gobbler_Skinny_A_02.AdjRef",
+        "KM_Gobbler_Skinny_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003665",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    }
+  ],
+  "personas": {
+    "KM-FARM-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513095
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Secret_Dross",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Lever",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

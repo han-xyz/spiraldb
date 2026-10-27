@@ -5,7 +5,9 @@
     "persona": "KM-GOBB-NPC01",
     "zone": "Karamelle/KM_Z10_Gobblerton"
   },
-  "requires": [],
+  "requires": [
+    "KM-Q-16B12F"
+  ],
   "mainline": true,
   "level": 122,
   "reward": {
@@ -193,12 +195,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst16FCE5 matched by the words it shares with the goals; its lines name King Gobbsmack, Alphoi Relics",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Mmmmm, Knowledge",
+      "value": "WizQst16FCE5 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
@@ -218,9 +215,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Mmmmm, Knowledge replaced by min_level",
+      "value": "Mmmmm, Knowledge replaced by KM-Q-16B12F",
       "blocking": false
     }
-  ],
-  "min_level": 122
+  ]
 }

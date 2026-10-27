@@ -207,6 +207,15 @@
         "m_questName": "KM-Q-1716B5",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "KM-Q-1716B8",
+        "m_applyNOT": true,
+        "m_operator": "ROP_AND"
       }
     ],
     "m_applyNOT": false,

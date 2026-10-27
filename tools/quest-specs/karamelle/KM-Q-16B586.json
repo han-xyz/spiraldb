@@ -1,0 +1,187 @@
+{
+  "id": "KM-Q-16B586",
+  "lang": "16B586",
+  "title": "QuestTitle_00001768",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-GUTEN-NPC02-B",
+    "zone": "Karamelle/KM_Z07_Gutenstadt"
+  },
+  "requires": [
+    "KM-Q-16B56E"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185379,
+    "gold": 1785
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_RegionalOffice"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gobbler_Fruit_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003695",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_RegionalOffice"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gobbler_Fruit_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003696",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_RegionalOffice"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_GrandF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_02.AdjRef",
+        "KM_Hamster_ImperfectF_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003656",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    }
+  ],
+  "personas": {
+    "KM-GUTEN-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1488266
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Nana_Goes_Nanners",
+    "from": "archive",
+    "timestamp": "20250904230430"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B586 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Mage Against the Machine replaced by KM-Q-16B56E",
+      "blocking": false
+    }
+  ]
+}

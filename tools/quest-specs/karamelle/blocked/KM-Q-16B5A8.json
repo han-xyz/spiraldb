@@ -1,0 +1,122 @@
+{
+  "id": "KM-Q-16B5A8",
+  "lang": "16B5A8",
+  "giver": {
+    "persona": "KM-SWEET-NPC08",
+    "zone": "Karamelle/KM_Z04_Sweetzburg"
+  },
+  "requires": [
+    "KM-Q-16B550"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 6050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_Mayor_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003721",
+      "zone": "",
+      "loc": "ZoneLocName_1488252"
+    }
+  ],
+  "personas": {
+    "KM-SWEET-NPC08": {
+      "portrait": "GUI/NpcPortraits/Hamster_Playwright_A_NPC.dds",
+      "template_id": 1488291
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Wizardful_101",
+    "from": "archive",
+    "timestamp": "20250822092218"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16B5A8 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Uwe's Workshop",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

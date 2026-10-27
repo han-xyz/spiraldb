@@ -1,0 +1,93 @@
+{
+  "id": "KM-Q-16FDEB",
+  "lang": "16FDEB",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [
+    "KM-Q-16FCE5"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 44138,
+    "gold": 385
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_King_is_in_the_Building",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FDEB is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Audience With King Gobbsmack",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "King Gobbsmack's Oogie Boogies",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Gain Audience With King Gobbsmack",
+        "@Defeat King Gobbsmack's Oogie Boogies"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
