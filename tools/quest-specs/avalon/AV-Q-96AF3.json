@@ -118,11 +118,6 @@
       "blocking": false
     },
     {
-      "field": "requires",
-      "value": "Around Here Someplace",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false

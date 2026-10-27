@@ -1,0 +1,80 @@
+{
+  "id": "AV-Q-anglingupward",
+  "giver": {
+    "persona": "AV-FishingNPC-02",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 325,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-FishingNPC-01",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-FishingNPC-01",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-FishingNPC-01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Courtney_NPC.dds",
+      "template_id": 1391392
+    },
+    "AV-FishingNPC-02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Artisan_Emayn_NPC.dds",
+      "template_id": 1391393
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Angling_Upward",
+    "from": "archive",
+    "timestamp": "20231121232357"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Angling Upward",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "A Fishy Competitor",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Hamlet in Dun Dara",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "King Mackerel anywhere in Avalon",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Sea Fairy on the High Road or in The Wyrd",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Hag Fish in The Wyrd",
+      "blocking": true
+    }
+  ]
+}

@@ -6,7 +6,7 @@
     "zone": "Avalon/AV_Z04_TheWild"
   },
   "requires": [
-    "AV-Q-72D31"
+    "AV-Q-72D2B"
   ],
   "mainline": true,
   "level": 68,
@@ -65,18 +65,8 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "'Tis a Magic Place",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "'Tis a Magic Place replaced by AV-Q-72D31",
       "blocking": false
     }
   ]

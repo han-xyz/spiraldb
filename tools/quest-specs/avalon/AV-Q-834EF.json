@@ -1,0 +1,106 @@
+{
+  "id": "AV-Q-834EF",
+  "lang": "834EF",
+  "giver": {
+    "persona": "AV-CAER-NPC03",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 6445,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-Map-Nodor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "Items_00006565",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Weasel_Minstrel.dds",
+      "template_id": 537802
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:I_Wanna_Be_Adored",
+    "from": "archive",
+    "timestamp": "20250313160655"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834EF by the proper nouns its lines share with the page (Archives, Map, Nodor), within 16 of a key of the zone's quests; next best WizQst834D3 with 2",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Lute Drop",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lute Drop replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

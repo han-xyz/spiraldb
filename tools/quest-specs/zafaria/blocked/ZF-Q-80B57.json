@@ -6,7 +6,7 @@
     "zone": "Zafaria/ZF_Z08_Waterfront"
   },
   "requires": [
-    "ZF-Q-155141"
+    "ZF-Q-80B56"
   ],
   "mainline": true,
   "level": 60,
@@ -124,6 +124,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Do_I_Look_Fat_In_This?",
+    "from": "archive",
     "timestamp": "20250909175034"
   },
   "needs_review": [

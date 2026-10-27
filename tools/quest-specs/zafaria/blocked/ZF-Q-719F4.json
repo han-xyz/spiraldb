@@ -5,8 +5,9 @@
     "persona": "ZF-ZAM-NPC10",
     "zone": "Zafaria/ZF_Z06_Zamunda"
   },
-  "requires": [],
-  "min_level": 60,
+  "requires": [
+    "ZF-Q-719F5"
+  ],
   "mainline": false,
   "level": 60,
   "reward": {
@@ -74,14 +75,10 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Bite_to_Eat",
+    "from": "archive",
     "timestamp": "20250904234638"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "Rival Gangs",
-      "blocking": false
-    },
     {
       "field": "goal.items",
       "value": "Fresh Fruit",

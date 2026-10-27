@@ -1,0 +1,66 @@
+{
+  "id": "AV-Q-cryingskyraid",
+  "giver": {
+    "persona": "AV-DARA-NPC12",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Druid_RaidmasterF_A_NPC.dds",
+      "template_id": 1562695
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Crying_Sky_Raid",
+    "from": "archive",
+    "timestamp": "20240620022213"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Crying Sky Raid",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Zocalo",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Pet Mode to Sniff Aztecan Undead in Cenote",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Crying Sky Revenant in Three Points",
+      "blocking": true
+    }
+  ]
+}

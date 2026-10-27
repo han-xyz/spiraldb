@@ -6,7 +6,7 @@
     "zone": "Zafaria/ZF_Z06_Zamunda"
   },
   "requires": [
-    "ZF-Q-719D7"
+    "ZF-Q-719F5"
   ],
   "mainline": false,
   "level": 60,
@@ -105,6 +105,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Front_Page_News",
+    "from": "archive",
     "timestamp": "20250909125254"
   },
   "needs_review": [
@@ -115,7 +116,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Bite to Eat replaced by ZF-Q-719D7",
+      "value": "Bite to Eat replaced by ZF-Q-719F5",
       "blocking": false
     }
   ]

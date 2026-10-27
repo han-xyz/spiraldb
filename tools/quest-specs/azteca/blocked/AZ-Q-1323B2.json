@@ -1,0 +1,64 @@
+{
+  "id": "AZ-Q-1323B2",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC15-B",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [],
+  "min_level": 78,
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 25446,
+    "gold": 440
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AR_StandIn_Ione",
+      "zone": "Arcanum/AR_Z01_Hub",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AR_StandIn_Ione": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
+      "template_id": 1401051
+    },
+    "AZ-ZOCOLO-NPC15-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1404178
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Unstuck_Pig",
+    "from": "archive",
+    "timestamp": "20240409061117"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Unstuck Pig",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Swine of the Ancient Mariner",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Dry Dock",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
+      "blocking": false
+    }
+  ]
+}

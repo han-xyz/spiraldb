@@ -1,0 +1,60 @@
+{
+  "id": "AZ-Q-wayofthecrafter",
+  "giver": {
+    "persona": "AZ-3POINTS-NPC09",
+    "zone": "Azteca/AZ_Z01_ThreePoints"
+  },
+  "requires": [
+    "AZ-Q-72E97"
+  ],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 5790,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-SilentMarket-NPC11",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_643242"
+    }
+  ],
+  "personas": {
+    "AZ-3POINTS-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Knight_D_MOB.dds",
+      "template_id": 643268
+    },
+    "KR-SilentMarket-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Morganth_E_MOB.dds",
+      "template_id": 1206374
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Way_of_the_Crafter",
+    "from": "archive",
+    "timestamp": "20231125120306"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Way of the Crafter",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Way of the Wisp",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Stendill HammerTail: KR-SilentMarket-NPC11 from ObjectData/KR",
+      "blocking": false
+    }
+  ]
+}

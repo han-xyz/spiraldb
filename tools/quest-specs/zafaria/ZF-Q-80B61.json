@@ -6,7 +6,7 @@
     "zone": "Zafaria/ZF_Z08_Waterfront"
   },
   "requires": [
-    "ZF-Q-155141"
+    "ZF-Q-80B56"
   ],
   "mainline": false,
   "level": 60,
@@ -181,6 +181,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Four_Feathers",
+    "from": "archive",
     "timestamp": "20250917072507"
   },
   "needs_review": [
@@ -191,7 +192,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Do I Look Fat In This? replaced by ZF-Q-155141",
+      "value": "Do I Look Fat In This? replaced by ZF-Q-80B56",
       "blocking": false
     }
   ]

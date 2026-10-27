@@ -1,0 +1,84 @@
+{
+  "id": "AV-Q-834E9",
+  "lang": "834E9",
+  "giver": {
+    "persona": "AV-CATA-NPC01",
+    "zone": "Avalon/AV_Z10_Catacombs"
+  },
+  "requires": [
+    "AV-Q-834E8"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 21345,
+    "gold": 405
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-DeepWater-Teleporter.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00006581",
+      "loc": "ZoneLocName_537857"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_592140"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z10_Catacombs",
+      "loc": "ZoneLocName_537857"
+    }
+  ],
+  "personas": {
+    "AV-CATA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 592086
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Come_A'Knocking_At_My_Door",
+    "from": "archive",
+    "timestamp": "20231125092318"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834E9 matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

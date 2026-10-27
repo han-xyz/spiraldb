@@ -1,0 +1,80 @@
+{
+  "id": "KR-Q-16B540",
+  "giver": {
+    "persona": "KR-Bastion-NPC25",
+    "zone": "Khrysalis/KR_Z00_Hub"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 114759,
+    "gold": 945
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_StandIn_ScarletShrimpernel.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003658",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "persona",
+      "persona": "AR_StandIn_Ione",
+      "zone": "Arcanum/AR_Z01_Hub",
+      "loc": "ZoneLocName_1205023"
+    }
+  ],
+  "personas": {
+    "AR_StandIn_Ione": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
+      "template_id": 1401051
+    },
+    "KR-Bastion-NPC25": {
+      "portrait": "GUI/NpcPortraits/Portrait_KR_Mice_Prisoner_A.dds",
+      "template_id": 1223158
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Prawn_to_King's_Fourth",
+    "from": "archive",
+    "timestamp": "20250531201958"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Prawn to King's Fourth",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Cabal Strikes Back",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Shrimpernel's Hideout",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
+      "blocking": false
+    }
+  ]
+}

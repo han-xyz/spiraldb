@@ -1,0 +1,75 @@
+{
+  "id": "ZF-Q-14DBF1",
+  "giver": {
+    "persona": "ZF-SAVA-NPC20",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [],
+  "min_level": 60,
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 296770,
+    "gold": 1490
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Painted_Monster_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002224",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC07-B",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jackalope_Professor_A_NPC.dds",
+      "template_id": 1521310
+    },
+    "ZF-SAVA-NPC20": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_Excavator_A_NPC.dds",
+      "template_id": 1367023
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cave_of_Bad_Seeds",
+    "from": "archive",
+    "timestamp": "20250819005148"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Cave of Bad Seeds",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Ancient Insights",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jaki Whisperwind: AR-ARC-NPC07-B from ObjectData/AR",
+      "blocking": false
+    }
+  ]
+}

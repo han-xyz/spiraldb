@@ -1,0 +1,70 @@
+{
+  "id": "AV-Q-kissfromarose",
+  "giver": {
+    "persona": "AV-DARA-NPC07",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 7680,
+    "gold": 145
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV_Silver_Rose.AdjRef",
+        "AV_Silver_Rose_Collect.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z06_DunDara",
+      "descriptor": "WizItems_00001843",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-DARA-NPC02",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Druid.dds",
+      "template_id": 611138
+    },
+    "AV-DARA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Mermaid_Melusine_NPC.dds",
+      "template_id": 611150
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Kiss_From_a_Rose",
+    "from": "archive",
+    "timestamp": "20240118180108"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Kiss From a Rose",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Silver Linings",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Silver Rose Garden",
+      "blocking": false
+    }
+  ]
+}

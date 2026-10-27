@@ -1,0 +1,146 @@
+{
+  "id": "AZ-Q-72E2F",
+  "lang": "72E2F",
+  "giver": {
+    "persona": "AZ-FLOAT-NPC03",
+    "zone": "Azteca/AZ_Z10_FloatingMountains"
+  },
+  "requires": [
+    "AZ-Q-72E2E"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 29160,
+    "gold": 390
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Azteca/Interiors/AZ_Z10_FireCave"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Toucan-Warrior-B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001418",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-FLOAT-NPC01",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-FLOAT-NPC01",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000012"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AZ-FLOAT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_B_NPC.dds",
+      "template_id": 470551
+    },
+    "AZ-FLOAT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_A_NPC.dds",
+      "template_id": 470553
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Fire_and_the_Fury",
+    "from": "archive",
+    "timestamp": "20240205173104"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst72E2F by chain order between WizQst72E2E and WizQst72E46; its lines name Hozanek Hundred Arrows, Maguey Century Cat",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Isla del Fuego",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

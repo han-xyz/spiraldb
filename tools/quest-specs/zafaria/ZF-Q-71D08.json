@@ -1,0 +1,91 @@
+{
+  "id": "ZF-Q-71D08",
+  "lang": "71D08",
+  "giver": {
+    "persona": "ZF-DRUM-NPC01",
+    "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 8080,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-GorillaSoldier-01-R11.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001013",
+      "zone": "",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256"
+    }
+  ],
+  "personas": {
+    "ZF-DRUM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Mango_Onetusk_NPC.dds",
+      "template_id": 466183
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Smoke_Signals",
+    "from": "archive",
+    "timestamp": "20250912091257"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst71D08 by chain order between WizQst71D06 and WizQst71D09; its lines name Blackback Soldiers",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lost in the Jungle replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

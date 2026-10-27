@@ -1,0 +1,135 @@
+{
+  "id": "ZF-Q-72C86",
+  "lang": "72C86",
+  "giver": {
+    "persona": "ZF-DRUM-NPC02",
+    "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+  },
+  "requires": [
+    "ZF-Q-71D0E"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 5080,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Elephant-Blacktusk-R10.AdjRef",
+        "ZF_StandIn_BlacktuskCultist.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001006",
+      "zone": "",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Obelisk_Moon.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "SigilText_00000053",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256"
+    }
+  ],
+  "personas": {
+    "ZF-DRUM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hanabiko_Smokesign_NPC.dds",
+      "template_id": 466186
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Midnight_Sun",
+    "from": "archive",
+    "timestamp": "20250913061440"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst72C86 matched by the words it shares with the goals; its lines name Koko Smokesign, Black Tusk Cultists, Sun Obelisk",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Bungle in the Jungle",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Obelisk Pieces",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Bungle in the Jungle replaced by ZF-Q-71D0E",
+      "blocking": false
+    }
+  ]
+}

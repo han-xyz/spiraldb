@@ -4,9 +4,8 @@
     "persona": "AV-WILD-NPC04",
     "zone": "Avalon/AV_Z04_TheWild"
   },
-  "requires": [
-    "AV-Q-72D04"
-  ],
+  "requires": [],
+  "min_level": 68,
   "mainline": true,
   "level": 68,
   "reward": {
@@ -68,6 +67,11 @@
       "field": "lang",
       "value": "Dread of Knight",
       "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Broken Vows",
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

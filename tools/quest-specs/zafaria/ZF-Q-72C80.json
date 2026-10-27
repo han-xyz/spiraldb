@@ -1,0 +1,86 @@
+{
+  "id": "ZF-Q-72C80",
+  "lang": "72C80",
+  "giver": {
+    "persona": "ZF-HUB-NPC01",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 1270,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-ZAM-NPC04",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    },
+    "ZF-ZAM-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Mandisa_Autumnrain_NPC.dds",
+      "template_id": 465287
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Astral_Weeks",
+    "from": "archive",
+    "timestamp": "20241120025240"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst72C80 matched by the words it shares with the goals; its lines name Mandisa Autumnrain",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "The Sun of All Fears",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Sun of All Fears replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

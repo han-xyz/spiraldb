@@ -1,0 +1,156 @@
+{
+  "id": "AV-Q-834F3",
+  "lang": "834F3",
+  "giver": {
+    "persona": "AV-CAER-NPC09",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 19335,
+    "gold": 475
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Wyrm-Jabberwock-R11-01.AdjRef",
+        "AV_StandIn_Jabberwock.AdjRef",
+        "Heroic_AV_Jabberwock.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001167",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "WizQst834F3_00000000",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV_Shrine_Loyality.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "Items_00006580",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-HUB-NPC02",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072",
+      "completion": [
+        {
+          "speaker": "AV-HUB-NPC02",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_DogKnight_DarkKnight.dds",
+      "template_id": 537842
+    },
+    "AV-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Nolan.dds",
+      "template_id": 602075
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:'Twas_Brillig",
+    "from": "archive",
+    "timestamp": "20250905012837"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834F3 matched by the words it shares with the goals; its lines name Dark Knight, Friar Nolan, Jabberwock",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to (Enter) Jabberwock's Lair",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Dark Night Rises replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

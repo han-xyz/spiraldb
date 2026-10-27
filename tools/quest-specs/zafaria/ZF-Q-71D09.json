@@ -5,7 +5,9 @@
     "persona": "ZF-DRUM-NPC01",
     "zone": "Zafaria/ZF_Z09_Drum_Jungle"
   },
-  "requires": [],
+  "requires": [
+    "ZF-Q-71D08"
+  ],
   "mainline": true,
   "level": 60,
   "reward": {
@@ -73,14 +75,10 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Escape_from_the_Apes",
+    "from": "archive",
     "timestamp": "20250902094830"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "Smoke Signals",
-      "blocking": false
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Ogun's Hut",
@@ -90,12 +88,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Smoke Signals replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 60
+  ]
 }

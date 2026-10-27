@@ -4,9 +4,8 @@
     "persona": "AZ-CENOTE-NPC01",
     "zone": "Azteca/AZ_Z02_Cenote"
   },
-  "requires": [
-    "AZ-Q-148B04"
-  ],
+  "requires": [],
+  "min_level": 78,
   "mainline": true,
   "level": 78,
   "reward": {
@@ -51,6 +50,11 @@
       "field": "lang",
       "value": "The Everbroken Axe",
       "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Into the Maw!",
+      "blocking": false
     },
     {
       "field": "goal.descriptor",

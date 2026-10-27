@@ -1,0 +1,116 @@
+{
+  "id": "AZ-Q-72E31",
+  "lang": "72E31",
+  "giver": {
+    "persona": "AZ-FLOAT-NPC03",
+    "zone": "Azteca/AZ_Z10_FloatingMountains"
+  },
+  "requires": [
+    "AZ-Q-72E2F"
+  ],
+  "mainline": true,
+  "level": 78,
+  "reward": {
+    "xp": 49820,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AZ-Jaguar-Shaman-A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001353",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "loc": "ZoneLocName_470547"
+    }
+  ],
+  "personas": {
+    "AZ-FLOAT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_A_NPC.dds",
+      "template_id": 470553
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Wrong_Hands",
+    "from": "archive",
+    "timestamp": "20240123211016"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst72E31 by chain order between WizQst72E2E and WizQst72E46; its lines name Ocuhaje Mirror Knife",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Ocuhaje's Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

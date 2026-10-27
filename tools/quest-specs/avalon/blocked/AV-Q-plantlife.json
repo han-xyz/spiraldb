@@ -1,0 +1,67 @@
+{
+  "id": "AV-Q-plantlife",
+  "giver": {
+    "persona": "AV-HUB-NPC01",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 55370,
+    "gold": 470
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-DeathSeraph-R12-01.AdjRef",
+        "AV-DeathSeraph-R12-02.AdjRef",
+        "AV_StandIn_DeathSeraph.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001175",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
+      "template_id": 602074
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Plant_Life",
+    "from": "archive",
+    "timestamp": "20240121101508"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Plant Life",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Let Your Soul Grow",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Dryad Eggs in the Death Seraph Cave in The Wyrd",
+      "blocking": false
+    }
+  ]
+}

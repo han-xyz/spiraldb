@@ -1,0 +1,107 @@
+{
+  "id": "ZF-Q-72C82",
+  "lang": "72C82",
+  "giver": {
+    "persona": "ZF-ZAM-NPC04",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [
+    "ZF-Q-72C80"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 5080,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Elephant-Shaman-R10.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001049",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Mandisa_Autumnrain_NPC.dds",
+      "template_id": 465287
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stars_and_Stripes",
+    "from": "archive",
+    "timestamp": "20240409061141"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst72C82 matched by the words it shares with the goals; its lines name Longdreamer Shamans, Star Obelisk",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Star Ritual Pages in the Zamunda Outskirts",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Star Obelisk",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

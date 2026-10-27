@@ -6,7 +6,7 @@
     "zone": "Zafaria/Interiors/ZF_Z07_I01_Darajani_Palace"
   },
   "requires": [
-    "ZF-Q-155141"
+    "ZF-Q-80B56"
   ],
   "mainline": true,
   "level": 60,
@@ -65,6 +65,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Let_Him_Free",
+    "from": "archive",
     "timestamp": "20250908114114"
   },
   "needs_review": [
@@ -75,7 +76,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Do I Look Fat In This? replaced by ZF-Q-155141",
+      "value": "Do I Look Fat In This? replaced by ZF-Q-80B56",
       "blocking": false
     }
   ]

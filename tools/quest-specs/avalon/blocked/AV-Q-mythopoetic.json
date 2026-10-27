@@ -1,0 +1,66 @@
+{
+  "id": "AV-Q-mythopoetic",
+  "giver": {
+    "persona": "AV-HUB-NPC01",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [
+    "AV-Q-96A91"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 15,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Giant-Fomori-PageEvent.AdjRef"
+      ],
+      "count": 10,
+      "target": "WizardMobs_00001472",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
+      "template_id": 602074
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mythopoetic",
+    "from": "archive",
+    "timestamp": "20240104054758"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Mythopoetic",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Carpe Diem Society",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Spellwrit Fomori: ObjectData/PageEvent",
+      "blocking": false
+    }
+  ]
+}

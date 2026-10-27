@@ -58,6 +58,11 @@
   },
   "needs_review": [
     {
+      "field": "requires",
+      "value": "Weirwood Rover",
+      "blocking": false
+    },
+    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false

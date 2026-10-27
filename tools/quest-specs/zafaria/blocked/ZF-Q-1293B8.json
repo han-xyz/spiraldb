@@ -1,0 +1,65 @@
+{
+  "id": "ZF-Q-1293B8",
+  "giver": {
+    "persona": "ZF_Professor_Who",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [],
+  "min_level": 60,
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 4020,
+    "gold": 160
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
+      "loc": "ZoneLocName_1217463"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Professor_Who.AdjRef",
+        "ZF_Professor_Who02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257"
+    }
+  ],
+  "personas": {
+    "ZF_Professor_Who": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_The_Professor.dds",
+      "template_id": 1217465
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Pirate_Planet",
+    "from": "archive",
+    "timestamp": "20240104054602"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Pirate Planet",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Professor",
+      "blocking": false
+    }
+  ]
+}

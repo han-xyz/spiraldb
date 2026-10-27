@@ -1,0 +1,78 @@
+{
+  "id": "AV-Q-834D1",
+  "lang": "834D1",
+  "giver": {
+    "persona": "AV-CAER-NPC01",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [
+    "AV-Q-96A85"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 2025,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-CAER-NPC02",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Kay_NPC.dds",
+      "template_id": 537800
+    },
+    "AV-CAER-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Artisan_Ashlynn_NPC.dds",
+      "template_id": 537801
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Broken_Signs",
+    "from": "archive",
+    "timestamp": "20250917181101"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst834D1 by the proper nouns its lines share with the page (Ashlynn, Brushtail), within 16 of a key of the zone's quests; next best WizQst834D8 with 1",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Around Here Someplace replaced by AV-Q-96A85",
+      "blocking": false
+    }
+  ]
+}

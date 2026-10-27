@@ -1,0 +1,66 @@
+{
+  "id": "AV-Q-morgantheslegacy",
+  "giver": {
+    "persona": "AV-HUB-NPC14",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 251800,
+    "gold": 1260
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-CAER-POLARIS-NPC01.AdjRef",
+        "PL_Arachna_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002256",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_VampireHunterF_A_NPC.dds",
+      "template_id": 1367008
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Morganthe's_Legacy",
+    "from": "archive",
+    "timestamp": "20240406005135"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Morganthe's Legacy",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Chasing a Shadow",
+      "blocking": false
+    }
+  ]
+}

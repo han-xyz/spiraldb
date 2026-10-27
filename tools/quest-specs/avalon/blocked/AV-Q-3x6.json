@@ -1,0 +1,80 @@
+{
+  "id": "AV-Q-3x6",
+  "requires": [],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 0,
+    "gold": 35
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Standin-HexxanLord.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004800",
+      "zone": "",
+      "loc": "ZoneLocName_592140"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Standin-HexxanChief.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004801",
+      "zone": "",
+      "loc": "ZoneLocName_592140"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Standin-LutherHex.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004802",
+      "zone": "",
+      "loc": "ZoneLocName_592140"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:3x6",
+    "from": "archive",
+    "timestamp": "20251113033329"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "3x6",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "I Meet Dead People",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to next room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to last room",
+      "blocking": false
+    }
+  ]
+}
