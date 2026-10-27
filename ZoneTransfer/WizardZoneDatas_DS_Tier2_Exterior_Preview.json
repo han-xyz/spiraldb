@@ -1,0 +1,28 @@
+{
+  "ZoneName": "Housing/Dragonspyre/DS_Tier2_Exterior_Preview",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToDS_Tier2InteriorPreview1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "House_Teleport_02",
+        "m_destinationZone": "Housing/Dragonspyre/DS_Tier2_Interior_Preview"
+      }
+    },
+    {
+      "TriggerName": "ToDS_Tier2InteriorPreview2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "House_Teleport_02",
+        "m_destinationZone": "Housing/Dragonspyre/DS_Tier2_Interior_Preview"
+      }
+    }
+  ]
+}
