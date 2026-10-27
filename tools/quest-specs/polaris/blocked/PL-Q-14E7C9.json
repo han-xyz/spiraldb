@@ -214,13 +214,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Deep Vault",
+      "field": "goal.waypoint",
+      "value": "Investigate the Deep Vault",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Deep Vault",
+      "field": "goal.waypoint",
+      "value": "Investigate the Deep Vault",
       "blocking": true
     },
     {

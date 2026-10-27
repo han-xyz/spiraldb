@@ -46,8 +46,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "about Spellements",
+      "field": "goal.unknown-verb",
+      "value": "Learn about Spellements",
       "blocking": true
     },
     {

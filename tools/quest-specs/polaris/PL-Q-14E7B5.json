@@ -6,7 +6,7 @@
     "zone": "Polaris/Interiors/PL_Z00_MidnightInn"
   },
   "requires": [
-    "PL-Q-148A65"
+    "PL-Q-12953A"
   ],
   "mainline": false,
   "level": 100,
@@ -164,6 +164,10 @@
       "loc": "ZoneLocName_1254306"
     },
     {
+      "type": "waypoint",
+      "zone": "Polaris/Interiors/PL_Z00__ImperialRecords"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "PL_Polar_Bear_Soldier_D.AdjRef"
@@ -178,6 +182,10 @@
       "persona": "PL-URVI-NPC06",
       "zone": "Polaris/Interiors/PL_Z00_LeonsHouse",
       "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Polaris/Interiors/PL_Z00_FirstPrecinct"
     },
     {
       "type": "bounty",
@@ -219,18 +227,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Imperial Records",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Commissionaire Maladay",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Vive La Penguinonia replaced by PL-Q-12953A",
       "blocking": false
     }
   ]

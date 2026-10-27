@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Polaris/Interiors/PL_Z07_JeweledSlopes"
+    },
+    {
       "type": "persona",
       "persona": "PL-BLEAK-NPC07-B",
       "zone": "Polaris/Interiors/PL_Z02_BabaYagaHut_Int",
@@ -75,11 +79,6 @@
     "timestamp": "20240118175621"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Jeweled Slopes",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

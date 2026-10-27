@@ -69,8 +69,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Ice Floe Spirits",
+      "field": "goal.unknown-verb",
+      "value": "Appease the Ice Floe Spirits",
       "blocking": true
     },
     {

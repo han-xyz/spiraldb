@@ -130,8 +130,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Secret Base",
+      "field": "goal.waypoint",
+      "value": "Infiltrate the Secret Base",
       "blocking": true
     },
     {

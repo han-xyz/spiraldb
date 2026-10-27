@@ -89,8 +89,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Imperial Palace",
+      "field": "goal.waypoint",
+      "value": "Assault the Imperial Palace",
       "blocking": true
     },
     {

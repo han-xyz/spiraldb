@@ -110,23 +110,23 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Tome of Creation",
+      "field": "goal.unknown-verb",
+      "value": "Study Tome of Creation",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Tome of Knowledge",
+      "field": "goal.unknown-verb",
+      "value": "Study Tome of Knowledge",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Tome of Insight",
+      "field": "goal.unknown-verb",
+      "value": "Study Tome of Insight",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Tome of Inspiration",
+      "field": "goal.unknown-verb",
+      "value": "Study Tome of Inspiration",
       "blocking": true
     },
     {

@@ -68,8 +68,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Firebrand Orb in Dragonsage Hall",
+      "field": "goal.persona",
+      "value": "Rescue the Firebrand Orb in Dragonsage Hall",
       "blocking": true
     },
     {
@@ -83,8 +83,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Dragon's Maw",
+      "field": "goal.usage",
+      "value": "Use the Dragon's Maw",
       "blocking": true
     }
   ]

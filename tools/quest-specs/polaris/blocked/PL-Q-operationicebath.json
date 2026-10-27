@@ -47,8 +47,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Rasputin's Secret Base",
+      "field": "goal.waypoint",
+      "value": "Infiltrate Rasputin's Secret Base",
       "blocking": true
     }
   ]

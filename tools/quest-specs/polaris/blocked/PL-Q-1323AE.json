@@ -217,8 +217,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Beans",
+      "field": "goal.persona",
+      "value": "Follow Beans",
       "blocking": true
     },
     {
@@ -227,8 +227,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Pork",
+      "field": "goal.persona",
+      "value": "Free Pork",
       "blocking": true
     },
     {

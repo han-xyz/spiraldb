@@ -117,13 +117,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Clue",
+      "field": "goal.waypoint",
+      "value": "Look for a Clue",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Reddín the Clue",
+      "field": "goal.persona",
+      "value": "Show Reddín the Clue",
       "blocking": true
     },
     {

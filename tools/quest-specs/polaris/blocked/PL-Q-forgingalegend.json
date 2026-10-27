@@ -51,8 +51,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Forge of Legends in The Repository",
+      "field": "goal.usage",
+      "value": "Read The Forge of Legends in The Repository",
       "blocking": true
     },
     {

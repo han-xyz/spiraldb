@@ -1,0 +1,17 @@
+{
+  "Name": "PL-Q-12EEF3",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 1100,
+  "MaxGold": 1100,
+  "ExperienceAmount": 247100,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T11:02:10.358546Z",
+  "ModifiedAt": "2026-10-27T11:02:10.358546Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
