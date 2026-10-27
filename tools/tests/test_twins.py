@@ -4,7 +4,7 @@ import unittest
 
 import client  # noqa: F401
 from spiraltools.pack import render, tolerant_load
-from spiraltools.twins import Fix, PlacedObject, Template, apply_fixes, bounty_cases, find_twins
+from spiraltools.twins import Fix, LayoutError, PlacedObject, Template, apply_fixes, bounty_cases, find_twins
 
 ZONE = "WizardCity/WC_Streets/Interiors/WC_Cyclops_T2"
 MOB_KEY = "WizardMobs_00000025"
@@ -79,7 +79,7 @@ class ApplyFixesTest(unittest.TestCase):
 
     def test_apply_reveals_on_the_kill_once(self):
         path = self.write(render(quest()).rstrip("\n"))
-        fix = Fix("Goal 1", ZONE, ["Akilles"])
+        fix = Fix("Goal 1", "m_completeResults", ZONE, ["Akilles"])
         self.assertEqual(apply_fixes(path, [fix]), ["Akilles"])
         first = self.read(path)
         self.assertEqual(apply_fixes(path, [fix]), [])
@@ -90,7 +90,7 @@ class ApplyFixesTest(unittest.TestCase):
     def test_the_akilles_hide_rows_become_reveals_and_stay_so(self):
         with open(AKILLES_FIXTURE, encoding="utf-8") as f:
             path = self.write(f.read())
-        fix = Fix("Goal 1", ZONE, ["WC-ST03-AkilliesNPC", "WC-AkillesPet-GreatOne"])
+        fix = Fix("Goal 1", "m_completeResults", ZONE, ["WC-ST03-AkilliesNPC", "WC-AkillesPet-GreatOne"])
         self.assertEqual(apply_fixes(path, [fix]), ["WC-ST03-AkilliesNPC", "WC-AkillesPet-GreatOne"])
         first = self.read(path)
         self.assertEqual(apply_fixes(path, [fix]), [])
@@ -100,8 +100,8 @@ class ApplyFixesTest(unittest.TestCase):
 
     def test_a_trailing_comma_file_that_would_change_is_refused(self):
         path = self.write(render(quest()).rstrip()[:-1].rstrip() + ",\n}\n")
-        with self.assertRaises(SystemExit):
-            apply_fixes(path, [Fix("Goal 1", ZONE, ["Akilles"])])
+        with self.assertRaises(LayoutError):
+            apply_fixes(path, [Fix("Goal 1", "m_completeResults", ZONE, ["Akilles"])])
 
 
 if __name__ == "__main__":

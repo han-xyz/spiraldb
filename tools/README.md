@@ -16,6 +16,7 @@ python3 -I tools/spiraltools.py <command> --help
 | `quests check\|generate\|diff` | quest templates and drop tables from specs ([quests](#quests)) |
 | `archive enumerate\|fetch\|parse` | specs for a world from the wiki archive ([archive](#archive)) |
 | `twins` | a boss's hidden NPC twin, shown when the boss falls ([twins](#twins)) |
+| `reveals` | a persona goal's NPC placed only hidden, shown when the goal activates ([reveals](#reveals)) |
 | `check` | everything missing across the pack ([check](#check)) |
 
 The client is read at `/kioxia/generator-input/rootwad` (the unpacked root wad) and the client's `Data/GameData`
@@ -75,6 +76,7 @@ No network. The tests that read the client skip when `/kioxia` is absent.
 | `zones.py` | the ZoneTransfer generator and its rules |
 | `crownshop.py` | the Gear tab |
 | `twins.py` | placed objects of a zone, boss twins and their dynamods |
+| `reveals.py` | persona goals whose NPC the zone places only hidden |
 | `worlds.py` | the world registry |
 | `quests/spec.py` | spec loading and validation |
 | `quests/generate.py` | templates and drop tables from specs |
@@ -394,8 +396,25 @@ requirement gates. It adds to the bounty's `m_completeResults` a `ResAddDynaMod`
 hide-on-entry pattern for those tags (`m_bShowsObject` false, no state, same zone). The other verdicts are for
 review: `visible match, not hidden` (a stand-in the quest needs before the fight), `several candidates`, `gated by
 start state or requirements`, `no twin, hidden NPCs in the zone` (listed in the last column), `no zone`, `no zone
-wad`. A quest file that differs from `pack.py`'s layout by more than whitespace (trailing commas) is refused when it
-would change.
+wad`. A quest file that differs from `pack.py`'s layout by more than whitespace (trailing commas, `E` in a float) is not
+written; `--apply` prints it as `refused` and goes on.
+
+## reveals
+
+Once `m_bUndetectable` placements are hidden, a persona goal whose NPC the zone places only that way cannot be
+completed. `reveals` lists those goals and `--apply` shows the placements from the goal's `m_activateResults`
+(`ResAddDynaMod` with `m_bShowsObject` and `m_persist` true):
+
+```sh
+python3 -I tools/spiraltools.py reveals            # one line per persona goal that is not plainly visible
+python3 -I tools/spiraltools.py reveals --apply    # write the `reveal` lines
+```
+
+The goal's zone is found as for `twins`; its NPC is `m_personaName` (with or without `_Persona`), placed in the zone
+by every template carrying that persona. A goal is left alone when one placement is visible, or when a quest of the
+pack already shows one of them in that zone (`shown by a quest`). Persona goals carry no location, so every hidden
+placement is shown (`reveal, several placements`). The other verdicts: `not placed in the zone`, `persona unknown`
+(no template carries it), `no zone`, `no zone wad`. Refused files are printed as for `twins`.
 
 ## Authoring a world by hand
 

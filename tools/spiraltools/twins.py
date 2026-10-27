@@ -25,21 +25,30 @@ COMPANION_RANGE = 600.0
 TWIN = "twin"
 DYNAMOD_TYPE = "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty"
 
+class LayoutError(Exception):
+    """A quest file that differs from pack.py's render by more than whitespace; the tool would reformat it."""
+
+
 PlacedObject = namedtuple("PlacedObject", "tag template_id location undetectable start_state has_requirements")
 Template = namedtuple("Template", "name display_key display_name persona is_npc")
 BountyCase = namedtuple("BountyCase", "goal zone mob_key adjectives")
-Fix = namedtuple("Fix", "reveal_goal zone tags")
+Fix = namedtuple("Fix", "goal results zone tags")
+REVEAL_ON_KILL = "m_completeResults"
+
+
+def goal_zone(goals, index):
+    """The goal's m_destinationZone, else the nearest earlier goal's, else None."""
+    return next((g["m_destinationZone"] for g in reversed(goals[:index + 1]) if g.get("m_destinationZone")), None)
 
 
 def bounty_cases(quest):
-    """Each bounty goal with its zone: its own, else the nearest earlier goal's."""
+    """Each bounty goal with its zone."""
     goals = quest.get("m_goals") or []
     cases = []
     for index, bounty in enumerate(goals):
         if bounty.get("m_goalType") not in BOUNTY_TYPES:
             continue
-        zone = next((g["m_destinationZone"] for g in reversed(goals[:index + 1]) if g.get("m_destinationZone")), None)
-        cases.append(BountyCase(bounty["m_goalName"], zone,
+        cases.append(BountyCase(bounty["m_goalName"], goal_zone(goals, index),
                                 (bounty.get("m_tallyCounter") or {}).get("m_descriptor2", ""),
                                 bounty.get("m_npcAdjectives") or []))
     return cases
@@ -141,9 +150,9 @@ def shown_tags(quest):
 
 
 def apply_fixes(path, fixes):
-    """Show each fix's objects when its bounty completes, skipping tags the quest already shows, and drop the
-    hide-on-entry dynamods of the tags it shows. A file whose layout differs from pack.py's render by more than
-    whitespace (trailing commas) is refused."""
+    """Show each fix's objects from the fix's results list of its goal, skipping tags the quest already shows, and
+    drop the hide-on-entry dynamods of the tags it shows. A file whose layout differs from pack.py's render by more than
+    whitespace (trailing commas, exponent case) raises LayoutError."""
     with open(path, encoding="utf-8") as f:
         text = f.read()
     quest = parse_tolerant(text)
@@ -157,13 +166,13 @@ def apply_fixes(path, fixes):
             continue
         for holder in result_lists(quest):
             holder["m_results"] = [r for r in holder["m_results"] if not is_hide(r, tags, fix.zone)]
-        results = goals[fix.reveal_goal].get("m_completeResults") or {"m_results": []}
+        results = goals[fix.goal].get(fix.results) or {"m_results": []}
         results["m_results"] = (results.get("m_results") or []) + [reveal(tag, fix.zone) for tag in tags]
-        goals[fix.reveal_goal]["m_completeResults"] = results
+        goals[fix.goal][fix.results] = results
         shown.update(tags)
         added += tags
     if added and not in_layout:
-        raise SystemExit(f"{path}: not in the pack's JSON layout; edit by hand")
+        raise LayoutError("not in the pack's JSON layout; edit by hand")
     if added:
         with open(path, "w", encoding="utf-8") as f:
             f.write(render(quest) if text.endswith("\n") else render(quest).rstrip("\n"))
@@ -203,11 +212,19 @@ def run(args):
                              describe(companions, templates), case.goal, verdict,
                              describe(hidden, templates) if not twins else "-"]))
             if verdict == TWIN:
-                fixes.append(Fix(case.goal, case.zone, [o.tag for o in twins + companions]))
+                fixes.append(Fix(case.goal, REVEAL_ON_KILL, case.zone, [o.tag for o in twins + companions]))
         if args.apply and fixes:
-            added = apply_fixes(path, fixes)
-            if added:
-                print(f"applied\t{os.path.relpath(path, PACK)}\t{','.join(added)}")
+            apply_and_print(path, fixes)
+
+
+def apply_and_print(path, fixes):
+    try:
+        added = apply_fixes(path, fixes)
+    except LayoutError as error:
+        print(f"refused\t{os.path.relpath(path, PACK)}\t{error}")
+        return
+    if added:
+        print(f"applied\t{os.path.relpath(path, PACK)}\t{','.join(added)}")
 
 
 def verdict_of(case, objects, twins):
