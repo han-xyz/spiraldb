@@ -55,8 +55,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Tetrus Solitary Block in Istanboa",
+      "field": "goal.waypoint",
+      "value": "Sneak into the Tetrus Solitary Block in Istanboa",
       "blocking": true
     },
     {

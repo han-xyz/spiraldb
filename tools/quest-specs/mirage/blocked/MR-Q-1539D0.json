@@ -176,8 +176,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Disciple J'Onni",
+      "field": "goal.unknown-verb",
+      "value": "Challenge Disciple J'Onni",
       "blocking": true
     },
     {
