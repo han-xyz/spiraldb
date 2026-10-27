@@ -4,8 +4,8 @@ import unittest
 from client import needs_gamedata, needs_rootwad
 from spiraltools import templates
 from spiraltools.quests.archive import (ClientData, SpecBuilder, claimed_twice, item_entries, item_index, norm,
-                                       preferred_lang, read_page, repository_entry, repository_fields,
-                                       singular_forms)
+                                       predecessor_hand_in, preferred_lang, read_page, repository_entry,
+                                       repository_fields, repository_matches, singular_forms)
 from spiraltools.wad import GAMEDATA_DIR
 from spiraltools.worlds import world
 
@@ -214,6 +214,13 @@ class GoalLineTest(unittest.TestCase):
         self.assertTrue(spec["auto_start"])
         self.assertNotIn("giver", [field for field, _ in blocking(spec)])
 
+    def test_a_predecessor_without_a_hand_in_gives_its_giver(self):
+        pages = {"P1": {"hand_in": None, "giver": "Hierarch of Purpose"}, "P2": {"hand_in": "Mellori", "giver": "X"}}
+        by_title = {"looneyattunes": "P1", "savingtheskyanchor": "P2"}
+        self.assertEqual(predecessor_hand_in(pages, by_title, {"prequests": ["Looney Attunes"]}), "Hierarch of Purpose")
+        self.assertEqual(predecessor_hand_in(pages, by_title, {"prequests": ["Looney Attunes", "Saving the Sky Anchor"]}),
+                         "Mellori")
+
     def test_a_quest_that_starts_automatically_without_a_predecessor_hand_in_stays_blocked(self):
         fields = {**fields_of("Survivors"), "giver": None, "auto_start": True}
         spec = build("Like_Dockwork", Data(personas=["Dalton Prescott"]), fields=fields, predecessor_hand_in="Nobody")
@@ -278,6 +285,12 @@ class RepositoryLangTest(unittest.TestCase):
                   "Quest:Other": repository_quest("B2", "Something else entirely.")}
         langs = {"Quest:Mine": "B2", "Quest:Other": "B2"}
         self.assertEqual(claimed_twice(data, langs, quests, {"Quest:Other": "evidence"}), ["Quest:Other"])
+
+    def test_a_title_the_repository_spells_closely_finds_its_page_unless_another_title_reads_it(self):
+        repository = {"allswellthatcleanseswells": "wells", "lostcity": "city"}
+        index = [{"name": "All's Well that Cleanses Well", "page": "P1"}, {"name": "Lost City", "page": "P2"},
+                 {"name": "Lost Citys", "page": "P3"}]
+        self.assertEqual(repository_matches(repository, index), {"P1": "wells", "P2": "city", "P3": None})
 
 
 REPOSITORY_QUEST = {

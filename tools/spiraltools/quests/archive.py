@@ -1498,9 +1498,24 @@ def claimed_twice(data, langs, quests, from_repository):
 
 
 def predecessor_hand_in(pages, by_title, fields):
-    """The hand-in NPC of the first prerequisite page that names one: who gives a quest that starts automatically."""
-    hand_ins = (pages.get(by_title.get(title_norm(title)), {}).get("hand_in") for title in fields["prequests"])
-    return next((name for name in hand_ins if name), None)
+    """Who gives a quest that starts automatically: the hand-in NPC of the first prerequisite page that names one,
+    else the giver of the first prerequisite page that names one."""
+    found = [pages[by_title[title_norm(title)]] for title in fields["prequests"]
+             if by_title.get(title_norm(title)) in pages]
+    return next((page[role] for role in ("hand_in", "giver") for page in found if page[role]), None)
+
+
+def repository_matches(repository, index):
+    """page -> The Repository's quest for each index entry: by its title, read whole or without the wiki's notes, else
+    the one Repository title no entry reads that is spelled closely (`All's Well that Cleanses Wells`)."""
+    keys = {entry["page"]: next((key for key in (title_norm(entry["name"]), title_norm(strip_notes(entry["name"])))
+                                 if key in repository), None) for entry in index}
+    free = [key for key in repository if key not in set(keys.values())]
+    for entry in index:
+        if keys[entry["page"]] is None:
+            close = difflib.get_close_matches(title_norm(entry["name"]), free, n=2, cutoff=TITLE_CUTOFF)
+            keys[entry["page"]] = close[0] if len(close) == 1 else None
+    return {page: repository.get(key) for page, key in keys.items()}
 
 
 def zone_name_of(entry, fields):
@@ -1538,8 +1553,7 @@ def parse_world(cache, registered):
     zone_paths = zone_paths_by_vote(data, pages, index)
     repository, licence = repository_quests(cache, world)
     tracked = tracked_quests(cache, world)
-    quests = {entry["page"]: repository.get(title_norm(entry["name"])) or repository.get(title_norm(strip_notes(
-        entry["name"]))) for entry in index}
+    quests = repository_matches(repository, index)
     from_repository = {page: quest for page, quest in quests.items() if quest and page not in pages}
     for entry in index:
         if entry["page"] in from_repository:

@@ -376,8 +376,8 @@ without a snapshot is fetched only live.
   neighbouring quest's id); listed under `lang`, not blocking. A page whose title key a Repository key took is matched
   as a placeholder. A key `QuestTitle.lang` lacks gets `title` from the key that reads the title (often a padded
   one), else blocks on `title`.
-- the giver of a quest that starts automatically to the hand-in NPC of its first prerequisite that names one, with
-  `auto_start: true` on the spec (the generator ignores it); without one it stays blocked on `giver (auto-start, no
+- the giver of a quest that starts automatically to the hand-in NPC of its first prerequisite that names one, else to
+  the giver of its first prerequisite that names one, with `auto_start: true` on the spec (the generator ignores it); without one it stays blocked on `giver (auto-start, no
   predecessor hand-in)`.
 - goal lines by their verb (`quests/goal_lines.py`): defeat-like verbs are bounty goals, talk-like verbs and person
   verbs with an NPC link (rescue, escort, find [NPC]...) persona goals, movement verbs (go, enter, explore, search,
@@ -440,9 +440,10 @@ order of appearance and the dialogue lines (speaker, text, audio file).
 ### Repository specs
 
 `archive parse` builds the spec of an index quest that has no cached page from its Repository page, when the world's
-Repository index has one by that title: the lang key as for any page (above), the Quest Goals lines through the same
+Repository index has one by that title (else the one Repository title no index title reads that is spelled closely,
+`TITLE_CUTOFF`: `All's Well that Cleanses Wells`; a cached page takes its `lang_hex` the same way): the lang key as for any page (above), the Quest Goals lines through the same
 goal readers (counts from the line's number), the first character as giver when a zone places that persona, else the
-hand-in of its first prerequisite, the infobox's previous quests as `requires`, a last talk goal's NPC as the hand-in,
+hand-in (else giver) of its first prerequisite, the infobox's previous quests as `requires`, a last talk goal's NPC as the hand-in,
 spiraltracker's xp and gold as the reward and its area as the zone name, else the giver's zone. Its `source` is
 `{page: <Repository URL>, from: "repository", licence, licence_url}`; gaps block it as for a wiki page.
 
