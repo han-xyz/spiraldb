@@ -5,9 +5,7 @@
     "persona": "AV-OUTER-NPC01",
     "zone": "Avalon/AV_Z07_OuterYard"
   },
-  "requires": [
-    "AV-Q-96AE6"
-  ],
+  "requires": [],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -59,6 +57,12 @@
     },
     {
       "type": "persona",
+      "persona": "AV-OUTER-NPC03",
+      "zone": "Avalon/AV_Z07_OuterYard",
+      "loc": "ZoneLocName_592078"
+    },
+    {
+      "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z07_OuterYard",
       "loc": "ZoneLocName_592078",
@@ -91,19 +95,20 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "(Enter) Prison Tower",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
-      "value": "Go to Sister Constance (upstairs)",
+      "value": "Prison Tower",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Throw Down the Gauntlet replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 68
 }

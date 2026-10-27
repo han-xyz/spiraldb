@@ -24,7 +24,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001200",
-      "zone": "Avalon/AV_Z06_DunDara",
+      "zone": "Avalon/AV_Z04_TheWild",
       "loc": "ZoneLocName_470302"
     },
     {
@@ -34,7 +34,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001256",
-      "zone": "Avalon/AV_Z06_DunDara",
+      "zone": "Avalon/AV_Z05_TheWyrd",
       "loc": "ZoneLocName_602089"
     },
     {
@@ -44,7 +44,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001171",
-      "zone": "Avalon/AV_Z06_DunDara",
+      "zone": "Avalon/AV_Z03_CaerLyon",
       "loc": "ZoneLocName_470339"
     },
     {
@@ -54,7 +54,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001164",
-      "zone": "Avalon/AV_Z06_DunDara",
+      "zone": "Avalon/AV_Z02_HighRoad",
       "loc": "ZoneLocName_537904"
     },
     {
@@ -108,7 +108,7 @@
     },
     {
       "field": "goal.items",
-      "value": "Ravens (to the Cage) in Dun Dara",
+      "value": "Ravens in Dun Dara",
       "blocking": true
     }
   ]

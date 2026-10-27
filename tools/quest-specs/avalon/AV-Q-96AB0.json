@@ -5,9 +5,7 @@
     "persona": "AV-LAKE-NPC04",
     "zone": "Avalon/AV_Z08_LakeShore"
   },
-  "requires": [
-    "AV-Q-96AAB"
-  ],
+  "requires": [],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -69,6 +67,12 @@
       "persona": "giver",
       "zone": "Avalon/AV_Z08_LakeShore",
       "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
     }
   ],
   "personas": {
@@ -89,19 +93,15 @@
       "blocking": false
     },
     {
-      "field": "goal.persona (closest name)",
-      "value": "the Lady of the Lake read as Lady of the Lake",
-      "blocking": false
-    },
-    {
-      "field": "goal.persona",
-      "value": "the Lady of the Lake (outside)",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Black Magic Woman replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 68
 }

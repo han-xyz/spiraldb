@@ -1,5 +1,6 @@
 {
-  "id": "AV-Q-happytrails",
+  "id": "AV-Q-908E8",
+  "lang": "908E8",
   "giver": {
     "persona": "AV-OUTER-NPC01",
     "zone": "Avalon/AV_Z07_OuterYard"
@@ -14,7 +15,20 @@
     "gold": 45
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -43,8 +57,13 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Happy Trails",
-      "blocking": true
+      "value": "WizQst908E8 by chain order between WizQst908E7 and WizQst908EA; its lines name Sister Constance",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

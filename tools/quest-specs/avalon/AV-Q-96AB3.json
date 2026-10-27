@@ -64,6 +64,11 @@
       "loc": "ZoneLocName_570074"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z09_DeepWater",
+      "loc": "ZoneLocName_537857"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z08_LakeShore",
@@ -82,16 +87,6 @@
     "timestamp": "20231125092114"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Deepwater",
-      "blocking": false
-    },
-    {
-      "field": "goal.persona (closest name)",
-      "value": "the Lady of the Lake read as Lady of the Lake",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

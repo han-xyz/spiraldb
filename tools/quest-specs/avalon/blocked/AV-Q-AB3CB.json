@@ -38,13 +38,9 @@
       "loc": "ZoneLocName_537904"
     },
     {
-      "type": "usage",
-      "items": [
-        "AV-PageEvent-Boss.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Avalon/AV_Z02_HighRoad",
-      "descriptor": "NPCs_01748048",
+      "type": "persona",
+      "persona": "AV-PageEvent-Boss",
+      "zone": "Avalon/Interiors/PageEvent/AV_BossRoom",
       "loc": "ZoneLocName_537904"
     },
     {
@@ -58,7 +54,12 @@
       "loc": "ZoneLocName_537904"
     }
   ],
-  "personas": {},
+  "personas": {
+    "AV-PageEvent-Boss": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_GrimoireKid_Myth_NPC.dds",
+      "template_id": 808260
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Idylls_of_the_King",
     "from": "archive",

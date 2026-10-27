@@ -142,6 +142,7 @@
       ],
       "count": 1,
       "zone": "",
+      "descriptor": "WizQst90936_00000037",
       "loc": "ZoneLocName_592126"
     },
     {
@@ -197,6 +198,12 @@
       "type": "persona",
       "persona": "AV-ABBEY-NPC26",
       "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC26",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
       "loc": "ZoneLocName_592126",
       "completion": [
         {
@@ -237,34 +244,19 @@
       "blocking": false
     },
     {
-      "field": "goal.descriptor",
-      "value": "(Collect) the Sword of Kings",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to the Throne Room",
       "blocking": false
     },
     {
-      "field": "goal.persona (closest name)",
-      "value": "the Lady of the Lake read as Lady of the Lake",
-      "blocking": false
-    },
-    {
       "field": "goal.items",
-      "value": "the King's Cure (in the Keep of Ganelon}",
+      "value": "King's Cure (in the Keep of Ganelon}",
       "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to the Castle Hallway",
       "blocking": false
-    },
-    {
-      "field": "goal.persona",
-      "value": "King Artorius (after much rejoicing)",
-      "blocking": true
     },
     {
       "field": "dialogs",

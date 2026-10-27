@@ -191,6 +191,17 @@
       "loc": "ZoneLocName_592145"
     },
     {
+      "type": "bounty",
+      "mobs": [
+        "AV-DogKnight-R12-01.AdjRef",
+        "AV-DogKnight-R12-02.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001228",
+      "zone": "",
+      "loc": "ZoneLocName_592145"
+    },
+    {
       "type": "persona",
       "persona": "AV-ABBEY-NPC26",
       "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
@@ -226,6 +237,12 @@
       "count": 1,
       "target": "WizardMobs_00001230",
       "zone": "",
+      "loc": "ZoneLocName_592145"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-GHOST-NPC03",
+      "zone": "Avalon/AV_Z12_GhostAvalon",
       "loc": "ZoneLocName_592145"
     },
     {
@@ -293,11 +310,6 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Disloyal Knights (Ghost Avalon)",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to The Unsung Knight",
       "blocking": false
@@ -309,23 +321,13 @@
     },
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Go to Merle Ambrose",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
       "value": "The Shrine to Justice",
       "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "at The Shrine to Justice",
+      "value": "Shrine to Justice",
       "blocking": true
-    },
-    {
-      "field": "goal.persona (closest name)",
-      "value": "the Lady of the Lake read as Lady of the Lake",
-      "blocking": false
     },
     {
       "field": "dialogs",

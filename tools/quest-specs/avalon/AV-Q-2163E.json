@@ -1,0 +1,85 @@
+{
+  "id": "AV-Q-2163E",
+  "lang": "2163E",
+  "giver": {
+    "persona": "AV-LAKE-NPC01",
+    "zone": "Avalon/AV_Z08_LakeShore"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 5750,
+    "gold": 110
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z08_LakeShore",
+      "loc": "ZoneLocName_570074"
+    }
+  ],
+  "personas": {
+    "AV-LAKE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Ockam.dds",
+      "template_id": 617116
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Razor's_Edge_(Avalon)",
+    "from": "archive",
+    "timestamp": "20250831120840"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Pool of Healing Waters",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Step Down replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

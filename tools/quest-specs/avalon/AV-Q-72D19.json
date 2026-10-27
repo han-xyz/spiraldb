@@ -77,11 +77,6 @@
   },
   "needs_review": [
     {
-      "field": "goal.persona",
-      "value": "Sir Robin Bravely (in Caliburn)",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false

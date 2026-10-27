@@ -51,7 +51,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001175",
-      "zone": "Avalon/AV_Z00_Hub",
+      "zone": "Avalon/AV_Z05_TheWyrd",
       "loc": "ZoneLocName_602072"
     },
     {
@@ -98,6 +98,11 @@
       "field": "requires (not generated)",
       "value": "Let Your Soul Grow replaced by min_level",
       "blocking": false
+    },
+    {
+      "field": "lang",
+      "value": "WizQst13D644 matched by title only, far outside Avalon's quest langs; likely another world's quest of the same title",
+      "blocking": true
     }
   ],
   "min_level": 68

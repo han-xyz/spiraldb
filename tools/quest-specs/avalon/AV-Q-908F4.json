@@ -100,18 +100,8 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Running Free (Avalon)",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Blood Captain's Chamber",
-      "blocking": false
-    },
-    {
-      "field": "goal.persona (closest name)",
-      "value": "the Lady of the Lake read as Lady of the Lake",
       "blocking": false
     },
     {

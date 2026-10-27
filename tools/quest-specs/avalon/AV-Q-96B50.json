@@ -119,11 +119,6 @@
   },
   "needs_review": [
     {
-      "field": "goal.persona (closest name)",
-      "value": "the Knight of the Sacred Words read as Knight of the Sacred Words",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false

@@ -24,6 +24,16 @@
       "loc": "ZoneLocName_611142"
     },
     {
+      "type": "bounty",
+      "mobs": [
+        "PL_StandIn_DogOfWar_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004193",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z06_DunDara",
@@ -53,14 +63,14 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Secret Cabal Hideout",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Dog of War (Ice)",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Dog of War: ObjectData/PL",
+      "blocking": false
     }
   ]
 }

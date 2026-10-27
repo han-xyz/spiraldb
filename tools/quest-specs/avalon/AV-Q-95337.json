@@ -1,11 +1,11 @@
 {
-  "id": "AV-Q-wherethedemonsdwell",
+  "id": "AV-Q-95337",
+  "lang": "95337",
   "giver": {
     "persona": "AV-WYRD-NPC08",
     "zone": "Avalon/AV_Z05_TheWyrd"
   },
   "requires": [],
-  "min_level": 68,
   "mainline": true,
   "level": 68,
   "reward": {
@@ -13,7 +13,36 @@
     "gold": 490
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -29,42 +58,21 @@
       "loc": "ZoneLocName_602089"
     },
     {
-      "type": "usage",
-      "items": [
-        "AV-WYRD-NPC11.AdjRef",
-        "AV_Captive_Traveler_Cage1.AdjRef",
-        "AV_Captive_Traveler_Cage2.AdjRef",
-        "AV_Captive_Traveler_Cage3.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "AV-WYRD-NPC11",
       "zone": "Avalon/AV_Z05_TheWyrd",
-      "descriptor": "NPCs_01747833",
       "loc": "ZoneLocName_602089"
     },
     {
-      "type": "usage",
-      "items": [
-        "AV-WYRD-NPC11.AdjRef",
-        "AV_Captive_Traveler_Cage1.AdjRef",
-        "AV_Captive_Traveler_Cage2.AdjRef",
-        "AV_Captive_Traveler_Cage3.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "AV-WYRD-NPC11",
       "zone": "Avalon/AV_Z05_TheWyrd",
-      "descriptor": "NPCs_01747833",
       "loc": "ZoneLocName_602089"
     },
     {
-      "type": "usage",
-      "items": [
-        "AV-WYRD-NPC11.AdjRef",
-        "AV_Captive_Traveler_Cage1.AdjRef",
-        "AV_Captive_Traveler_Cage2.AdjRef",
-        "AV_Captive_Traveler_Cage3.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "AV-WYRD-NPC10",
       "zone": "Avalon/AV_Z05_TheWyrd",
-      "descriptor": "NPCs_01747833",
       "loc": "ZoneLocName_602089"
     },
     {
@@ -82,6 +90,10 @@
     "AV-WYRD-NPC10": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Doran.dds",
       "template_id": 611130
+    },
+    "AV-WYRD-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Captive1.dds",
+      "template_id": 611131
     }
   },
   "source": {
@@ -92,8 +104,8 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Where The Demons Dwell",
-      "blocking": true
+      "value": "WizQst95337 by the proper nouns its lines share with the page (Giant, Indigo, Malory, Scaith), within 16 of a key of the zone's quests; next best WizQst95338 with 3",
+      "blocking": false
     },
     {
       "field": "requires",
@@ -104,6 +116,17 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Dun Scaith",
       "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "A Strange Race of People replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 68
 }

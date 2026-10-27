@@ -5,9 +5,7 @@
     "persona": "AV-CATA-NPC02",
     "zone": "Avalon/AV_Z10_Catacombs"
   },
-  "requires": [
-    "AV-Q-908FC"
-  ],
+  "requires": [],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -64,14 +62,25 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Ghost Avalon Note: sigil is labeled \"Mysterious Stairway\")",
-      "blocking": true
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Ghost Avalon: Avalon/AV_Z12_GhostAvalon",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Ghost Avalon",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Where Owls Dare replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 68
 }

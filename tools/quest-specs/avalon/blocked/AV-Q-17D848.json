@@ -131,9 +131,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Gwyn in The Zocalo",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Zocalo",
+      "blocking": false
     },
     {
       "field": "goal.items",

@@ -74,11 +74,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Briny Cave",
       "blocking": false
-    },
-    {
-      "field": "goal.persona (closest name)",
-      "value": "the Lady of the Lake read as Lady of the Lake",
-      "blocking": false
     }
   ]
 }

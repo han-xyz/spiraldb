@@ -26,6 +26,17 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001280",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-SirAgravaine-R11-01.AdjRef",
+        "AV_StandIn_SirAgravaine.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001280",
       "zone": "Avalon/AV_Z00_Hub",
       "loc": "ZoneLocName_602072"
     },
@@ -57,11 +68,6 @@
       "field": "requires",
       "value": "The Runedown",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Sir Agravaine on the High Road",
-      "blocking": true
     }
   ]
 }

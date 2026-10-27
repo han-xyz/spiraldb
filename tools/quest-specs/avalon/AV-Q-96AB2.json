@@ -5,7 +5,9 @@
     "persona": "AV-LAKE-NPC04",
     "zone": "Avalon/AV_Z08_LakeShore"
   },
-  "requires": [],
+  "requires": [
+    "AV-Q-96AB0"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -75,20 +77,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.persona (closest name)",
-      "value": "the Lady of the Lake read as Lady of the Lake",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "A Hero By Any Other Name replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 68
+  ]
 }

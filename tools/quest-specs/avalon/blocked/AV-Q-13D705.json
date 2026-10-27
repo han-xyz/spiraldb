@@ -54,8 +54,8 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "MB_Professor_Who",
-      "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z00_TelepgraphBox",
+      "persona": "ZF_Professor_Who",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_602094"
     },
     {
@@ -78,8 +78,8 @@
     },
     {
       "type": "persona",
-      "persona": "MB_Professor_Who",
-      "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z00_TelepgraphBox",
+      "persona": "ZF_Professor_Who",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_602094"
     },
     {
@@ -90,8 +90,8 @@
     },
     {
       "type": "persona",
-      "persona": "MB_Professor_Who",
-      "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z00_TelepgraphBox",
+      "persona": "ZF_Professor_Who",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_602094"
     },
     {
@@ -109,8 +109,7 @@
     {
       "type": "bounty",
       "mobs": [
-        "Loremaster.AdjRef",
-        "ME1_Loremaster_A.AdjRef"
+        "Loremaster.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00001575",
@@ -141,8 +140,8 @@
     },
     {
       "type": "persona",
-      "persona": "MB_Professor_Who",
-      "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z00_TelepgraphBox",
+      "persona": "ZF_Professor_Who",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_602094"
     },
     {
@@ -179,13 +178,13 @@
       "portrait": "GUI/NpcPortraits/Portraits_Human_Malistaire_A_NPC.dds",
       "template_id": 1521258
     },
-    "MB_Professor_Who": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_The_Professor.dds",
-      "template_id": 465499
-    },
     "ME1_VasekAshweaver": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_3BLUE.dds",
       "template_id": 1300231
+    },
+    "ZF_Professor_Who": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_The_Professor.dds",
+      "template_id": 1217465
     }
   },
   "source": {
@@ -201,7 +200,7 @@
     },
     {
       "field": "goal.persona (other world)",
-      "value": "The Professor: MB_Professor_Who from ObjectData/MB",
+      "value": "The Professor: ZF_Professor_Who from ObjectData/ZF",
       "blocking": false
     },
     {
@@ -221,7 +220,7 @@
     },
     {
       "field": "goal.persona (other world)",
-      "value": "The Professor: MB_Professor_Who from ObjectData/MB",
+      "value": "The Professor: ZF_Professor_Who from ObjectData/ZF",
       "blocking": false
     },
     {
@@ -231,7 +230,7 @@
     },
     {
       "field": "goal.persona (other world)",
-      "value": "The Professor: MB_Professor_Who from ObjectData/MB",
+      "value": "The Professor: ZF_Professor_Who from ObjectData/ZF",
       "blocking": false
     },
     {
@@ -252,11 +251,6 @@
     {
       "field": "goal.mobs (other folder)",
       "value": "Loremaster: ObjectData/DS",
-      "blocking": false
-    },
-    {
-      "field": "goal.mobs (other folder)",
-      "value": "Loremaster: ObjectData/MaestroEvent",
       "blocking": false
     },
     {
@@ -281,7 +275,7 @@
     },
     {
       "field": "goal.persona (other world)",
-      "value": "The Professor: MB_Professor_Who from ObjectData/MB",
+      "value": "The Professor: ZF_Professor_Who from ObjectData/ZF",
       "blocking": false
     },
     {

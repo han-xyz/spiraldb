@@ -119,6 +119,11 @@
       "field": "requires (not generated)",
       "value": "Chasing a Shadow replaced by min_level",
       "blocking": false
+    },
+    {
+      "field": "lang",
+      "value": "WizQst14DBE2 matched by title only, far outside Avalon's quest langs; likely another world's quest of the same title",
+      "blocking": true
     }
   ],
   "min_level": 68

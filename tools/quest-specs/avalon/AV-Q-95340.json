@@ -1,11 +1,13 @@
 {
-  "id": "AV-Q-andtheydolivewell",
+  "id": "AV-Q-95340",
+  "lang": "95340",
   "giver": {
     "persona": "AV-WYRD-NPC10",
     "zone": "Avalon/AV_Z05_TheWyrd"
   },
-  "requires": [],
-  "min_level": 68,
+  "requires": [
+    "AV-Q-95337"
+  ],
   "mainline": true,
   "level": 68,
   "reward": {
@@ -13,7 +15,20 @@
     "gold": 45
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -47,12 +62,12 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "And They Do Live Well",
-      "blocking": true
+      "value": "WizQst95340 matched by the words it shares with the goals; its lines name Doran, Aodh",
+      "blocking": false
     },
     {
-      "field": "requires",
-      "value": "Where The Demons Dwell",
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]

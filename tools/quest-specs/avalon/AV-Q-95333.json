@@ -1,11 +1,11 @@
 {
-  "id": "AV-Q-maninthemirror",
+  "id": "AV-Q-95333",
+  "lang": "95333",
   "giver": {
     "persona": "AV-WYRD-NPC08",
     "zone": "Avalon/AV_Z05_TheWyrd"
   },
   "requires": [],
-  "min_level": 68,
   "mainline": true,
   "level": 68,
   "reward": {
@@ -13,7 +13,32 @@
     "gold": 330
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -26,6 +51,7 @@
       "count": 1,
       "target": "WizardMobs_00001250",
       "zone": "Avalon/AV_Z05_TheWyrd",
+      "descriptor": "WizQst95333_00000007",
       "loc": "ZoneLocName_602089"
     },
     {
@@ -49,8 +75,8 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Man In The Mirror",
-      "blocking": true
+      "value": "WizQst95333 matched by the words it shares with the goals; its lines name Heidi Iron Nails",
+      "blocking": false
     },
     {
       "field": "requires",
@@ -63,9 +89,15 @@
       "blocking": false
     },
     {
-      "field": "goal.descriptor",
-      "value": "Divining Treasure",
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Guest Right replaced by min_level",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 68
 }

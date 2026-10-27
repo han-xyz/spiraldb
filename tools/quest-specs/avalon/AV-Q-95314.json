@@ -45,6 +45,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/Interiors/AV_Z05_LostAbbey"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-LordOfTheBrocken-R11-01.AdjRef",
@@ -78,11 +82,6 @@
     "timestamp": "20240827185842"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "The Lost Abbey",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

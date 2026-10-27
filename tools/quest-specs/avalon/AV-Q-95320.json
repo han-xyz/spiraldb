@@ -1,21 +1,23 @@
 {
-  "id": "AV-Q-72D71",
-  "lang": "72D71",
+  "id": "AV-Q-95320",
+  "lang": "95320",
   "giver": {
-    "persona": "AV-ABBEY-NPC20",
-    "zone": "Avalon/Interiors/AV_Z01_Library"
+    "persona": "AV-WILD-NPC01",
+    "zone": "Avalon/AV_Z04_TheWild"
   },
-  "requires": [
-    "AV-Q-72D6B"
-  ],
+  "requires": [],
   "mainline": false,
   "level": 68,
   "reward": {
-    "xp": 18210,
-    "gold": 415
+    "xp": 22770,
+    "gold": 500
   },
   "dialogs": {
     "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
       {
         "speaker": "giver",
         "line": "00000001"
@@ -58,75 +60,80 @@
       },
       {
         "speaker": "giver",
-        "line": "00000011"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000012"
-      },
-      {
-        "speaker": "giver",
         "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "persona",
-      "persona": "giver",
-      "zone": "Avalon/Interiors/AV_Z01_Library",
-      "loc": "ZoneLocName_602094"
-    },
-    {
-      "type": "bountycollect",
+      "type": "bounty",
       "mobs": [
         "AV-Redcap-R11-01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00001200",
-      "zone": "Avalon/AV_Z01_AbbeyRoad",
-      "loc": "ZoneLocName_470339"
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Treant-Ancient-Wildfire-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001203",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302",
+      "with_previous": true
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/Interiors/AV_Z01_Library",
-      "loc": "ZoneLocName_602094",
-      "completion": [
-        {
-          "speaker": "giver",
-          "line": "00000000"
-        }
-      ]
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
     }
   ],
   "personas": {
-    "AV-ABBEY-NPC20": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Scribe_Francis.dds",
-      "template_id": 617241
+    "AV-WILD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dryad_Sophia_NPC.dds",
+      "template_id": 611119
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Art_of_Magic",
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Red_Heads",
     "from": "archive",
-    "timestamp": "20241203203722"
+    "timestamp": "20231125094245"
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "the shelves of the Standing Tower",
-      "blocking": true
+      "field": "lang",
+      "value": "WizQst95320 matched by the words it shares with the goals; its lines name Wildfire Treants",
+      "blocking": false
     },
     {
-      "field": "goal.descriptor",
-      "value": "The Art of Magic. Volume II",
+      "field": "requires",
+      "value": "White Out",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "White Out replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 68
 }

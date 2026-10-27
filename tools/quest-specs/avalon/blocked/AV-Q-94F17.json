@@ -1,5 +1,6 @@
 {
-  "id": "AV-Q-voraciousvoidraid",
+  "id": "AV-Q-94F17",
+  "lang": "94F17",
   "giver": {
     "persona": "AV-DARA-NPC12",
     "zone": "Avalon/AV_Z06_DunDara"
@@ -13,7 +14,84 @@
     "gold": 0
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -26,8 +104,7 @@
     {
       "type": "bounty",
       "mobs": [
-        "DS-StandIn-DraconianScavengers_01.AdjRef",
-        "DS_Draconian_Model_Zombie_01.AdjRef"
+        "DS-StandIn-DraconianScavengers_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004828",
@@ -59,8 +136,8 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "Voracious Void Raid",
-      "blocking": true
+      "value": "WizQst94F17 matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
     },
     {
       "field": "requires",
@@ -83,29 +160,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Void Mote",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Void Mote",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Void Mote",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Void Mote",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Prison of the Void",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.mobs (other folder)",
@@ -113,14 +170,14 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs (other folder)",
-      "value": "Draconian Scavenger: ObjectData/Raids",
-      "blocking": false
-    },
-    {
       "field": "goal.items",
       "value": "Zarathax Essence in Zarathax's Tower",
       "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

@@ -38,15 +38,15 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "AR-ARC-NPC04-B",
-      "zone": "Arcanum/Interiors/AR_Z01_I01_DryDock",
+      "persona": "AR_StandIn_Ione",
+      "zone": "Arcanum/AR_Z01_Hub",
       "loc": "ZoneLocName_470339"
     }
   ],
   "personas": {
-    "AR-ARC-NPC04-B": {
+    "AR_StandIn_Ione": {
       "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
-      "template_id": 1254305
+      "template_id": 1401051
     },
     "AV-HUB-NPC14-B": {
       "portrait": "GUI/NpcPortraits/Portrait_VampireHunterF_A_NPC.dds",
@@ -61,13 +61,18 @@
   "needs_review": [
     {
       "field": "goal.persona (other world)",
-      "value": "Ione Virga: AR-ARC-NPC04-B from ObjectData/AR",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "lang",
+      "value": "WizQst14DBE6 matched by title only, far outside Avalon's quest langs; likely another world's quest of the same title",
+      "blocking": true
     }
   ]
 }

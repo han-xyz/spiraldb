@@ -6,7 +6,6 @@
     "zone": "Avalon/AV_Z00_Hub"
   },
   "requires": [],
-  "min_level": 68,
   "mainline": false,
   "level": 68,
   "reward": {
@@ -48,6 +47,18 @@
       "persona": "giver",
       "zone": "Avalon/AV_Z00_Hub",
       "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
     }
   ],
   "personas": {
@@ -68,14 +79,14 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "The Professor in Abbey Road",
-      "blocking": true
+      "field": "goal.persona (other world)",
+      "value": "The Professor: AV_Professor_Who from ObjectData/MaestroEvent",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "The Professor",
-      "blocking": true
+      "field": "goal.persona (other world)",
+      "value": "The Professor: AV_Professor_Who from ObjectData/MaestroEvent",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
@@ -87,5 +98,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 68
 }
