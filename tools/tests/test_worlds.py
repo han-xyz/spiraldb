@@ -25,6 +25,10 @@ class WorldsTest(unittest.TestCase):
     def test_celestia_cluster_is_the_one_its_quests_were_matched_in(self):
         self.assertEqual(lang_cluster(world("Celestia"), ROOTWAD_DIR), (0x371A8, 0x3780E))
 
+    @needs_rootwad
+    def test_a_declared_range_wins_over_an_anchor_outside_the_worlds_quests(self):
+        self.assertEqual(lang_cluster(world("Lemuria"), ROOTWAD_DIR), (0x170115, 0x1744C6))
+
 
 if __name__ == "__main__":
     unittest.main()
