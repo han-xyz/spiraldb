@@ -75,7 +75,7 @@
             "m_dialogEntries": [
               {
                 "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-                "m_personaName": "WL-HOPE-NPC26-B_Persona",
+                "m_personaName": "WL-HOPE-NPC26_Persona",
                 "m_nameOverride": "",
                 "m_nameSTKey": null,
                 "m_guiDisplay": "",
@@ -87,7 +87,7 @@
                 "m_soundFile": "",
                 "m_action": "",
                 "m_dialogEvent": "",
-                "m_actorTemplateID": 1608478,
+                "m_actorTemplateID": 1608147,
                 "m_cameraName": "",
                 "m_interpolationDuration": 1.0,
                 "m_cameraOffsetX": 0.0,
@@ -157,7 +157,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "WL-HOPE-NPC26-B",
+      "m_personaName": "WL-HOPE-NPC26",
       "m_usePatron": false
     }
   ],

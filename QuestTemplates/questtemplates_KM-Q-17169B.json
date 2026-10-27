@@ -179,7 +179,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "KM-BLACK-NPC11-B",
+      "m_personaName": "KM-BLACK-NPC11",
       "m_usePatron": false
     }
   ],
@@ -212,7 +212,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "KM-Q-16B12F",
+        "m_questName": "KM-Q-1716A9",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       },
@@ -221,7 +221,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "KM-Q-1716A9",
+        "m_questName": "KM-Q-1716AA",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

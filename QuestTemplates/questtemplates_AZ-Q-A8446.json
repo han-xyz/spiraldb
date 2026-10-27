@@ -363,6 +363,14 @@
         "m_operator": "ROP_AND"
       },
       {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqMagicLevel, Imcodec.ObjectProperty",
+        "m_magicSchool": "",
+        "m_numericValue": 86,
+        "m_operatorType": "OPERATOR_GREATER_THAN_EQ",
+        "m_applyNOT": false,
+        "m_operator": "ROP_AND"
+      },
+      {
         "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
         "m_entryName": "Completed",
         "m_displayName": null,
@@ -445,7 +453,7 @@
       "m_requiredORCount": 1
     }
   ],
-  "m_questLevel": 78,
+  "m_questLevel": 86,
   "m_questRepeat": 0,
   "m_onStartQuestScript": "",
   "m_onEndQuestScript": "",

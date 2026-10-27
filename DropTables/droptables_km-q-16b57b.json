@@ -1,0 +1,17 @@
+{
+  "Name": "KM-Q-16B57B",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 1400,
+  "MaxGold": 1400,
+  "ExperienceAmount": 150070,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:15:29.224634Z",
+  "ModifiedAt": "2026-10-27T16:15:29.224634Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

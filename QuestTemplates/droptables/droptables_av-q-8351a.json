@@ -1,0 +1,17 @@
+{
+  "Name": "AV-Q-8351A",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 1730,
+  "MaxGold": 1730,
+  "ExperienceAmount": 60900,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:15:28.769748Z",
+  "ModifiedAt": "2026-10-27T16:15:28.769748Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

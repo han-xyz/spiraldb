@@ -43,7 +43,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "WL-HOPE-NPC24-B",
+      "m_personaName": "WL-HOPE-NPC24",
       "m_usePatron": false
     },
     {
@@ -166,7 +166,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "WL-HOPE-NPC24-B",
+      "m_personaName": "WL-HOPE-NPC24",
       "m_usePatron": false
     }
   ],

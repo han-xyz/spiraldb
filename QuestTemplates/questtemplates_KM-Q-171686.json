@@ -43,7 +43,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "KM-FARM-NPC01-B",
+      "m_personaName": "KM-FARM-NPC01",
       "m_usePatron": false
     },
     {
@@ -171,7 +171,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "KM-FARM-NPC01-B",
+      "m_personaName": "KM-FARM-NPC01",
       "m_usePatron": false
     }
   ],
@@ -197,6 +197,15 @@
         "m_isQuestRegistry": true,
         "m_questName": "KM-Q-171684",
         "m_applyNOT": false,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "KM-Q-17168B",
+        "m_applyNOT": true,
         "m_operator": "ROP_AND"
       },
       {

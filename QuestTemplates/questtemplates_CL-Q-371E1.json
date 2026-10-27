@@ -257,7 +257,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "CL-Q-371EE",
+        "m_questName": "CL-Q-371E5",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       },
@@ -266,7 +266,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "CL-Q-371EF",
+        "m_questName": "CL-Q-371EE",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

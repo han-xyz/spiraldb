@@ -201,6 +201,14 @@
         "m_questName": "CL-MAIN-C00-001",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqMagicLevel, Imcodec.ObjectProperty",
+        "m_magicSchool": "",
+        "m_numericValue": 50,
+        "m_operatorType": "OPERATOR_GREATER_THAN_EQ",
+        "m_applyNOT": false,
+        "m_operator": "ROP_AND"
       }
     ],
     "m_applyNOT": false,
@@ -234,7 +242,7 @@
       "m_requiredORCount": 1
     }
   ],
-  "m_questLevel": 48,
+  "m_questLevel": 50,
   "m_questRepeat": 0,
   "m_onStartQuestScript": "",
   "m_onEndQuestScript": "",

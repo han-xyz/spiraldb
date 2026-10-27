@@ -295,7 +295,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "NV-Q-17D60C",
+        "m_questName": "NV-Q-17D60E",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -304,7 +304,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "NV-Q-17D611",
+        "m_questName": "NV-Q-17D610",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

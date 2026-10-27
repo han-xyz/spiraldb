@@ -352,7 +352,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "LM-TELOS-NPC01-B",
+      "m_personaName": "LM-TELOS-NPC01",
       "m_usePatron": false
     }
   ],
@@ -372,10 +372,11 @@
     "$type": "Imcodec.ObjectProperty.TypeCache.RequirementList, Imcodec.ObjectProperty",
     "m_requirements": [
       {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqMagicLevel, Imcodec.ObjectProperty",
-        "m_magicSchool": "",
-        "m_numericValue": 132,
-        "m_operatorType": "OPERATOR_GREATER_THAN_EQ",
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Complete",
+        "m_displayName": null,
+        "m_isQuestRegistry": true,
+        "m_questName": "LM-Q-1736A6",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },

@@ -1,0 +1,17 @@
+{
+  "Name": "KM-Q-17168B",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 2675,
+  "MaxGold": 2675,
+  "ExperienceAmount": 291311,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:15:29.224634Z",
+  "ModifiedAt": "2026-10-27T16:15:29.224634Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

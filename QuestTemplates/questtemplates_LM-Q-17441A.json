@@ -7,13 +7,56 @@
   "m_questUnderway": null,
   "m_questComplete": null,
   "m_startGoals": [
-    "1_WizardQuestGoals_UseItem"
+    "1_WizardQuestGoals_ExploreZone"
   ],
   "m_goals": [
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "1_WizardQuestGoals_UseItem",
+      "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "1_WizardQuestGoals_ExploreZone",
       "m_goalNameID": 2559431,
+      "m_goalTitle": "WizardQuestGoals_ExploreZone",
+      "m_goalUnderway": null,
+      "m_hyperlink": null,
+      "m_completeText": null,
+      "m_completeResults": {
+        "m_results": []
+      },
+      "m_goalRequirements": null,
+      "m_tallyCounter": {
+        "m_percentChance": 1.0,
+        "m_descriptor": "",
+        "m_descriptor2": "",
+        "m_count": 0,
+        "m_tallyResults": {
+          "m_results": []
+        }
+      },
+      "m_locationName": "",
+      "m_displayImage1": "",
+      "m_displayImage2": "",
+      "m_clientTags": [],
+      "m_genericEvents": [],
+      "m_autoQualify": false,
+      "m_autoComplete": false,
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
+      "m_dialogList": null,
+      "m_goalType": "GOAL_TYPE_WAYPOINT",
+      "m_noQuestHelper": false,
+      "m_petOnlyQuest": false,
+      "m_activateResults": {
+        "m_results": []
+      },
+      "m_hideGoalFloatyText": false,
+      "m_behaviors": null,
+      "m_zoneEntry": true,
+      "m_zoneTag": "Lemuria/LM_Z06_SkyCity",
+      "m_proximityTag": "",
+      "m_zoneExit": false
+    },
+    {
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "2_WizardQuestGoals_UseItem",
+      "m_goalNameID": 572984775,
       "m_goalTitle": "WizardQuestGoals_UseItem",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -38,7 +81,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
@@ -57,8 +100,8 @@
     },
     {
       "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "2_WizardQuestGoals_UseItem",
-      "m_goalNameID": 572984775,
+      "m_goalName": "3_WizardQuestGoals_UseItem",
+      "m_goalNameID": 606539207,
       "m_goalTitle": "WizardQuestGoals_UseItem",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -83,7 +126,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
@@ -107,8 +150,8 @@
     },
     {
       "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "3_WizardQuestGoals_TalkNPC",
-      "m_goalNameID": 606539207,
+      "m_goalName": "4_WizardQuestGoals_TalkNPC",
+      "m_goalNameID": 640093639,
       "m_goalTitle": "WizardQuestGoals_TalkNPC",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -143,8 +186,8 @@
     },
     {
       "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "4_WizardQuestGoals_TalkNPC",
-      "m_goalNameID": 640093639,
+      "m_goalName": "5_WizardQuestGoals_TalkNPC",
+      "m_goalNameID": 673648071,
       "m_goalTitle": "WizardQuestGoals_TalkNPC",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -179,8 +222,8 @@
     },
     {
       "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "5_WizardQuestGoals_TalkNPC",
-      "m_goalNameID": 673648071,
+      "m_goalName": "6_WizardQuestGoals_TalkNPC",
+      "m_goalNameID": 707202503,
       "m_goalTitle": "WizardQuestGoals_TalkNPC",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -214,10 +257,10 @@
       "m_usePatron": false
     },
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "6_WizardQuestGoals_ExploreZone",
-      "m_goalNameID": 707202503,
-      "m_goalTitle": "WizardQuestGoals_ExploreZone",
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "7_WizardQuestGoals_UseItem",
+      "m_goalNameID": 740756935,
+      "m_goalTitle": "WizardQuestGoals_UseItem",
       "m_goalUnderway": null,
       "m_hyperlink": null,
       "m_completeText": null,
@@ -227,23 +270,23 @@
       "m_goalRequirements": null,
       "m_tallyCounter": {
         "m_percentChance": 1.0,
-        "m_descriptor": "",
+        "m_descriptor": "WizardNPC_00001160",
         "m_descriptor2": "",
-        "m_count": 0,
+        "m_count": 1,
         "m_tallyResults": {
           "m_results": []
         }
       },
-      "m_locationName": "",
+      "m_locationName": "ZoneLocName_1520281",
       "m_displayImage1": "",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Lemuria/Interiors/LM_Z06_GuestQuarters",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": null,
-      "m_goalType": "GOAL_TYPE_WAYPOINT",
+      "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": {
@@ -251,15 +294,17 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_zoneEntry": true,
-      "m_zoneTag": "Lemuria/Interiors/LM_Z06_GuestQuarters",
-      "m_proximityTag": "",
-      "m_zoneExit": false
+      "m_itemAdjectives": [
+        "KT-SE-GROVE-NPC-02.AdjRef"
+      ],
+      "m_itemTotal": 1,
+      "m_hideGoal": false,
+      "m_requiresMagicWeavingSchool": ""
     },
     {
       "$type": "Imcodec.ObjectProperty.TypeCache.BountyGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "7_WizardQuestGoals_Kill",
-      "m_goalNameID": 740756935,
+      "m_goalName": "8_WizardQuestGoals_Kill",
+      "m_goalNameID": 774311367,
       "m_goalTitle": "WizardQuestGoals_Kill",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -284,7 +329,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_BOUNTY",
       "m_noQuestHelper": false,
@@ -304,8 +349,8 @@
     },
     {
       "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "8_WizardQuestGoals_ExploreZone",
-      "m_goalNameID": 774311367,
+      "m_goalName": "9_WizardQuestGoals_ExploreZone",
+      "m_goalNameID": 807865799,
       "m_goalTitle": "WizardQuestGoals_ExploreZone",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -347,8 +392,8 @@
     },
     {
       "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "9_WizardQuestGoals_TalkNPC",
-      "m_goalNameID": 807865799,
+      "m_goalName": "10_WizardQuestGoals_TalkNPC",
+      "m_goalNameID": 841420231,
       "m_goalTitle": "WizardQuestGoals_TalkNPC",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -365,7 +410,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Lemuria/Interiors/LM_Z06_Headquarters",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": [
@@ -599,7 +644,7 @@
   "m_goalLogic": [
     {
       "m_goalsAND": [
-        "1_WizardQuestGoals_UseItem"
+        "1_WizardQuestGoals_ExploreZone"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
@@ -614,14 +659,14 @@
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
-        "3_WizardQuestGoals_TalkNPC"
+        "3_WizardQuestGoals_UseItem"
       ],
       "m_completeQuest": false,
       "m_requiredORCount": 1
     },
     {
       "m_goalsAND": [
-        "3_WizardQuestGoals_TalkNPC"
+        "3_WizardQuestGoals_UseItem"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
@@ -647,47 +692,58 @@
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
-        "6_WizardQuestGoals_ExploreZone"
+        "6_WizardQuestGoals_TalkNPC"
       ],
       "m_completeQuest": false,
       "m_requiredORCount": 1
     },
     {
       "m_goalsAND": [
-        "6_WizardQuestGoals_ExploreZone"
+        "6_WizardQuestGoals_TalkNPC"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
-        "7_WizardQuestGoals_Kill"
+        "7_WizardQuestGoals_UseItem"
       ],
       "m_completeQuest": false,
       "m_requiredORCount": 1
     },
     {
       "m_goalsAND": [
-        "7_WizardQuestGoals_Kill"
+        "7_WizardQuestGoals_UseItem"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
-        "8_WizardQuestGoals_ExploreZone"
+        "8_WizardQuestGoals_Kill"
       ],
       "m_completeQuest": false,
       "m_requiredORCount": 1
     },
     {
       "m_goalsAND": [
-        "8_WizardQuestGoals_ExploreZone"
+        "8_WizardQuestGoals_Kill"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
-        "9_WizardQuestGoals_TalkNPC"
+        "9_WizardQuestGoals_ExploreZone"
       ],
       "m_completeQuest": false,
       "m_requiredORCount": 1
     },
     {
       "m_goalsAND": [
-        "9_WizardQuestGoals_TalkNPC"
+        "9_WizardQuestGoals_ExploreZone"
+      ],
+      "m_goalsOR": [],
+      "m_goalsToAdd": [
+        "10_WizardQuestGoals_TalkNPC"
+      ],
+      "m_completeQuest": false,
+      "m_requiredORCount": 1
+    },
+    {
+      "m_goalsAND": [
+        "10_WizardQuestGoals_TalkNPC"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [],

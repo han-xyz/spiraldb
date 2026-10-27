@@ -137,7 +137,7 @@
       {
         "$type": "Imcodec.ObjectProperty.TypeCache.ReqMagicLevel, Imcodec.ObjectProperty",
         "m_magicSchool": "",
-        "m_numericValue": 68,
+        "m_numericValue": 80,
         "m_operatorType": "OPERATOR_GREATER_THAN_EQ",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
@@ -183,7 +183,7 @@
       "m_requiredORCount": 1
     }
   ],
-  "m_questLevel": 68,
+  "m_questLevel": 80,
   "m_questRepeat": 0,
   "m_onStartQuestScript": "",
   "m_onEndQuestScript": "",

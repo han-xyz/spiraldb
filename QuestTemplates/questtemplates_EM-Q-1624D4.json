@@ -130,7 +130,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "EM-DEST-NPC03-B",
+      "m_personaName": "EM-DEST-NPC03",
       "m_usePatron": false
     },
     {
@@ -199,7 +199,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "EM-Q-1624D9",
+        "m_questName": "EM-Q-1624D6",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

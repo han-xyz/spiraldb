@@ -159,15 +159,6 @@
         "m_questName": "LM-Q-1736B0",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "Completed",
-        "m_displayName": null,
-        "m_isQuestRegistry": false,
-        "m_questName": "LM-Q-17320B",
-        "m_applyNOT": true,
-        "m_operator": "ROP_AND"
       }
     ],
     "m_applyNOT": false,
@@ -222,7 +213,7 @@
         "m_dialogEntries": [
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "LM-TELOS-NPC01-B_Persona",
+            "m_personaName": "LM-TELOS-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -234,7 +225,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1521332,
+            "m_actorTemplateID": 1521317,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -290,7 +281,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "LM-TELOS-NPC01-B_Persona",
+            "m_personaName": "LM-TELOS-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -302,7 +293,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1521332,
+            "m_actorTemplateID": 1521317,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -358,7 +349,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "LM-TELOS-NPC01-B_Persona",
+            "m_personaName": "LM-TELOS-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -370,7 +361,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1521332,
+            "m_actorTemplateID": 1521317,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -426,7 +417,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "LM-TELOS-NPC01-B_Persona",
+            "m_personaName": "LM-TELOS-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -438,7 +429,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1521332,
+            "m_actorTemplateID": 1521317,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -494,7 +485,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "LM-TELOS-NPC01-B_Persona",
+            "m_personaName": "LM-TELOS-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -506,7 +497,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1521332,
+            "m_actorTemplateID": 1521317,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -562,7 +553,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "LM-TELOS-NPC01-B_Persona",
+            "m_personaName": "LM-TELOS-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -574,7 +565,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1521332,
+            "m_actorTemplateID": 1521317,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -639,7 +630,7 @@
         "m_dialogEntries": [
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "LM-TELOS-NPC01-B_Persona",
+            "m_personaName": "LM-TELOS-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -651,7 +642,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1521332,
+            "m_actorTemplateID": 1521317,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,

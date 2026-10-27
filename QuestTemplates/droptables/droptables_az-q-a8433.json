@@ -1,0 +1,17 @@
+{
+  "Name": "AZ-Q-A8433",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 655,
+  "MaxGold": 655,
+  "ExperienceAmount": 44340,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:15:28.880237Z",
+  "ModifiedAt": "2026-10-27T16:15:28.880237Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

@@ -38,7 +38,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Lemuria/LM_Z02_UrsaiVillage",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
@@ -83,7 +83,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Lemuria/LM_Z02_UrsaiVillage",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
@@ -125,7 +125,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
+      "m_destinationZone": "Lemuria/LM_Z02_UrsaiVillage",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -162,7 +162,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "LM-Q-173212",
+        "m_questName": "LM-Q-173215",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -171,7 +171,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "LM-Q-17321B",
+        "m_questName": "LM-Q-1732AB",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       },
@@ -180,7 +180,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "LM-Q-1732AB",
+        "m_questName": "LM-Q-1736B7",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }
