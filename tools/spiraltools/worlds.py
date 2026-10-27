@@ -46,7 +46,7 @@ WORLDS = (
     World("Polaris", "PL", "Polaris", 100, (0x14DBD8, 0x14DC0D)),
     World("Mirage", "MR", "Mirage", 105),
     World("Empyrea", "EM", "Empyrea", 112),
-    World("Karamelle", "KM", "Karamelle", 122),
+    World("Karamelle", "KM", "Karamelle", 122, (0x16B48E, 0x1716FA)),
     World("Lemuria", "LM", "Lemuria", 132),
     World("Novus", "NV", "Novus", 142),
     World("Wallaru", "WL", "Wallaru", 152),
@@ -80,7 +80,9 @@ def key_groups(keys):
 def lang_cluster(registered, rootwad):
     """(first, last) WizQst key of the world's quests: the run of quest lang files that holds the most QuestTitle
     entries carrying one of the world's internal quest names (CL-CAMP-C01-001), widened to the other anchored runs
-    within CLUSTER_REACH; the declared lang_range when no title anchors the world."""
+    within CLUSTER_REACH; the declared lang_range when there is one."""
+    if registered.lang_range:
+        return registered.lang_range
     titles = read_lang(rootwad, "QuestTitle")
     anchors = [int(key, 16) for key, text in titles.items()
                if HEX_KEY.fullmatch(key) and INTERNAL_NAME.fullmatch(text.strip())
