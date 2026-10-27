@@ -44,13 +44,13 @@ WORLDS = (
     World("Avalon", "AV", "Avalon", 68, (0x72D11, 0x96B64)),
     World("Azteca", "AZ", "Azteca", 78, (0x72E2E, 0xB4FAF)),
     World("Khrysalis", "KR", "Khrysalis", 88, (0x126322, 0x13D76F)),
-    World("Polaris", "PL", "Polaris", 100, (0x14DBD8, 0x14DC0D)),
+    World("Polaris", "PL", "Polaris", 100, (0x1294F8, 0x14E7DF)),
     World("Mirage", "MR", "Mirage", 105),
     World("Empyrea", "EM", "Empyrea", 112, (0x132297, 0x16437F)),
     World("Karamelle", "KM", "Karamelle", 122, (0x16B48E, 0x1716FA)),
     World("Lemuria", "LM", "Lemuria", 132, (0x170115, 0x1744C6)),
     World("Novus", "NV", "Novus", 142),
-    World("Wallaru", "WL", "Wallaru", 152),
+    World("Wallaru", "WL", "Wallaru", 152, (0x17D895, 0x188A01)),
 )
 
 
