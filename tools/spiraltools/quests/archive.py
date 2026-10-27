@@ -875,6 +875,57 @@ def match_by_window(data, pages, by_title, langs, free):
     return {page: hit for page, hit in found.items() if keys.count(hit[0]) == 1}
 
 
+PROPER_NOUN = re.compile(r"\b[A-Z][A-Za-z-]{2,}")
+MIN_PROPER_NOUNS = 2
+COMMON_NOUN_SHARE = 0.1
+
+
+def proper_nouns(text):
+    return {word.lower(): word for word in PROPER_NOUN.findall(text)}
+
+
+def common_nouns(data, keys):
+    """The capitalised words of more than COMMON_NOUN_SHARE of the world's quest files: the world's own name and
+    sentence openers, which tell no quest apart."""
+    counts = {}
+    for key in keys:
+        for word in proper_nouns(" ".join(data.quest_lines(key).values())):
+            counts[word] = counts.get(word, 0) + 1
+    return {word for word, count in counts.items() if count > COMMON_NOUN_SHARE * len(keys)}
+
+
+def match_by_proper_nouns(data, pages, zone_names, langs, free, common):
+    """page -> (lang, evidence) for unmatched pages whose best free lang key, within CHAIN_WINDOW of a key of a quest
+    of the same zone (a zone's quests hold a run of keys), shares at least MIN_PROPER_NOUNS of the page's proper nouns
+    and more than any other; a key two pages want goes to the higher score, to neither on a tie."""
+    nouns = {key: set(proper_nouns(" ".join(data.quest_lines(key).values()))) - common for key in free}
+    best = {}
+    for page, fields in pages.items():
+        if langs.get(page):
+            continue
+        text = " ".join(plain(line).split(" ", 1)[-1] for line in fields["goals"])
+        wanted = {lower: word for lower, word in proper_nouns(
+            " ".join([text] + [fields[k] or "" for k in ("giver", "hand_in", "giver_location")])).items()
+            if lower not in common}
+        zone_keys = [int(lang, 16) for other, lang in langs.items()
+                     if lang and zone_names.get(other) == zone_names.get(page)]
+        ranked = sorted(((len(wanted.keys() & nouns[key]), key) for key in free
+                         if any(abs(int(key, 16) - known) <= CHAIN_WINDOW for known in zone_keys)), reverse=True)
+        if not ranked or ranked[0][0] < MIN_PROPER_NOUNS or (len(ranked) > 1 and ranked[1][0] == ranked[0][0]):
+            continue
+        score, key = ranked[0]
+        shared = ", ".join(sorted(wanted[word] for word in wanted.keys() & nouns[key]))
+        runner_up = f"; next best WizQst{ranked[1][1]} with {ranked[1][0]}" if len(ranked) > 1 else ""
+        best[page] = (score, key, f"WizQst{key} by the proper nouns its lines share with the page ({shared}), within "
+                                  f"{CHAIN_WINDOW} of a key of the zone's quests{runner_up}")
+    found = {}
+    for page, (score, key, evidence) in best.items():
+        rivals = [other for other, hit in best.items() if other != page and hit[1] == key and hit[0] >= score]
+        if not rivals:
+            found[page] = (key, evidence)
+    return found
+
+
 def is_blocked_spec(spec):
     return any(item["blocking"] for item in spec["needs_review"])
 
@@ -987,7 +1038,13 @@ def parse_world(cache, registered):
         names = named_in(data, pages[page], key)
         evidence[page] = (f"WizQst{key} matched by the words it shares with the goals; its lines name "
                           + (", ".join(names) if names else "none of the page's names"))
-    chain_pass([match_by_chain, match_by_window])
+    zone_names = {entry["page"]: zone_name_of(entry, pages[entry["page"]]) for entry in index if entry["page"] in pages}
+    common = common_nouns(data, placeholders)
+
+    def match_in_zone(data, pages, _by_title, langs, free):
+        return match_by_proper_nouns(data, pages, zone_names, langs, free, common)
+
+    chain_pass([match_by_chain, match_by_window, match_in_zone])
     for entry in index:
         lang = langs[entry["page"]]
         if lang in authored:

@@ -21,8 +21,8 @@ PORTRAIT = re.compile(rb"GUI/NpcPortraits/[ -~]+?\.dds")
 QUEST_ICON = re.compile(rb"GUI/QuestButtons/Quest_([ -~]+?)(?:_off)?\.dds")
 INTERACTABLE = b"InteractableBehavior"
 MOBS_DESCRIPTION = "List the mobs of a world's object templates: display name, template, template id and adjectives."
-ITEMS_DESCRIPTION = ("List the items of a world's object templates, the objects a usage goal names: display name, quest "
-                     "icon name, template, template id and adjectives.")
+ITEMS_DESCRIPTION = ("List the items of a world's object templates, the objects a usage goal names: display name, "
+                     "quest icon name, template, template id and adjectives.")
 NPCS_DESCRIPTION = ("List the quest NPCs of a world: persona, display name, template id, portrait and the zones that "
                     "place them.")
 

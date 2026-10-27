@@ -318,7 +318,11 @@ newest capture, and the CDX timestamp when the newest capture is an error page.
     Prequest / Leads to chain take the free keys between those two, when there are exactly as many;
   - shared words: the rare words a key's lines share with the goal lines, one to one, and only when the best match
     clearly beats the second;
-  - chain window: the only free key within `CHAIN_WINDOW` of a chain neighbour's key.
+  - chain window: the only free key within `CHAIN_WINDOW` of a chain neighbour's key;
+  - proper nouns: the free key, within `CHAIN_WINDOW` of a key of a quest of the same zone (a zone's quests hold a
+    run of keys), whose lines share the most capitalised words with the page's goals, giver, hand-in and giver
+    location, at least `MIN_PROPER_NOUNS` and more than any other key; words in more than a tenth of the world's
+    quest files do not count, and a key two pages want goes to the higher score.
 
   Chain order and chain window keep a key only when its lines name the page's giver, hand-in NPC, or a goal NPC,
   creature or item.
