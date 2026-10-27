@@ -1,0 +1,17 @@
+{
+  "Name": "WL-Q-1852EA",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 440,
+  "MaxGold": 440,
+  "ExperienceAmount": 149400,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:01:59.011141Z",
+  "ModifiedAt": "2026-10-27T09:01:59.011141Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
