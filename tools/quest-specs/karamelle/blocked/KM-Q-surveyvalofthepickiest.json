@@ -1,5 +1,10 @@
 {
   "id": "KM-Q-surveyvalofthepickiest",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-KCITY-NPC12",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
   "requires": [
     "KM-Q-170A9B"
   ],
@@ -48,7 +53,12 @@
       "loc": "ZoneLocName_1510006"
     }
   ],
-  "personas": {},
+  "personas": {
+    "KM-KCITY-NPC12": {
+      "portrait": "GUI/NpcPortraits/Hamster_Beggar_A_NPC.dds",
+      "template_id": 1510044
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Surveyval_of_the_Pickiest",
     "from": "archive",
@@ -58,11 +68,6 @@
     {
       "field": "lang",
       "value": "Surveyval of the Pickiest",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {

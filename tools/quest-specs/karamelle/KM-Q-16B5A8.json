@@ -1,8 +1,13 @@
 {
   "id": "KM-Q-16B5A8",
   "lang": "16B5A8",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-GUTEN-NPC02-B",
+    "zone": "Karamelle/KM_Z07_Gutenstadt"
+  },
   "requires": [
-    "KM-Q-16B56F"
+    "KM-Q-16B56E"
   ],
   "mainline": true,
   "level": 122,
@@ -122,7 +127,12 @@
       "loc": "ZoneLocName_1488224"
     }
   ],
-  "personas": {},
+  "personas": {
+    "KM-GUTEN-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1488266
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Nana_Goes_Nanners",
     "from": "archive",
@@ -135,13 +145,13 @@
       "blocking": false
     },
     {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Mage Against the Machine replaced by KM-Q-16B56E",
       "blocking": false
     }
   ]

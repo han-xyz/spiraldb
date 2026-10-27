@@ -1,6 +1,11 @@
 {
   "id": "KM-Q-170A92",
   "lang": "170A92",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-KCITY-NPC02-B",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
   "requires": [
     "KM-Q-170A77"
   ],
@@ -79,18 +84,18 @@
       "loc": "ZoneLocName_1510006"
     }
   ],
-  "personas": {},
+  "personas": {
+    "KM-KCITY-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
+      "template_id": 1510012
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Glockenspoiled",
     "from": "archive",
     "timestamp": "20240322061944"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "The Glockenspiel",

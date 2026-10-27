@@ -1,8 +1,14 @@
 {
   "id": "KM-Q-16FCCC",
   "lang": "16FCCC",
-  "requires": [],
-  "min_level": 122,
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-BLACK-NPC01-B",
+    "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
+  },
+  "requires": [
+    "KM-Q-16FCCA"
+  ],
   "mainline": true,
   "level": 122,
   "reward": {
@@ -84,7 +90,12 @@
       "loc": "ZoneLocName_1506578"
     }
   ],
-  "personas": {},
+  "personas": {
+    "KM-BLACK-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513114
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Truth_is_in_the_Treacle",
     "from": "archive",
@@ -97,11 +108,6 @@
       "blocking": false
     },
     {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
-    {
       "field": "requires",
       "value": "The Proofing is in the Pudding",
       "blocking": false
@@ -109,6 +115,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Proofing is in the Pudding replaced by KM-Q-16FCCA",
       "blocking": false
     }
   ]

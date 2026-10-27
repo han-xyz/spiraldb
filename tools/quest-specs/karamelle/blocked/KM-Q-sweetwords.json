@@ -1,5 +1,10 @@
 {
   "id": "KM-Q-sweetwords",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-KCITY-NPC21",
+    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+  },
   "requires": [
     "KM-Q-16B559"
   ],
@@ -50,7 +55,12 @@
       "loc": "ZoneLocName_1488252"
     }
   ],
-  "personas": {},
+  "personas": {
+    "KM-KCITY-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
+      "template_id": 1513270
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Sweet_Words",
     "from": "archive",
@@ -60,11 +70,6 @@
     {
       "field": "lang",
       "value": "Sweet Words",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {

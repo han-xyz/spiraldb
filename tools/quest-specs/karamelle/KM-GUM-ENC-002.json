@@ -2,6 +2,11 @@
   "id": "KM-GUM-ENC-002",
   "lang": "16FF76",
   "title": "QuestTitle_00001762",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-GUM-NPC03",
+    "zone": "Karamelle/KM_Z03_GumdropForest"
+  },
   "requires": [
     "KM-GUM-MAIN-003"
   ],
@@ -86,7 +91,12 @@
       "loc": "ZoneLocName_1507183"
     }
   ],
-  "personas": {},
+  "personas": {
+    "KM-GUM-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1507241
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Candy_Critter_Party_Bag",
     "from": "archive",
@@ -97,11 +107,6 @@
       "field": "lang",
       "value": "WizQst16FF76 matched by the words it shares with the goals; its lines name Whatchamagolem, Cinnamon Troll",
       "blocking": false
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",

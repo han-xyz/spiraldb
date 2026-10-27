@@ -1,6 +1,11 @@
 {
   "id": "KM-Q-170A85",
   "lang": "170A85",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-KCITY-NPC07",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
   "requires": [
     "KM-Q-170A83"
   ],
@@ -131,7 +136,12 @@
       "loc": "ZoneLocName_1510006"
     }
   ],
-  "personas": {},
+  "personas": {
+    "KM-KCITY-NPC07": {
+      "portrait": "GUI/NpcPortraits/Fairy_SisterF_A_NPC.dds",
+      "template_id": 1510020
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Sweetened_with_Splendorphins",
     "from": "archive",
@@ -142,11 +152,6 @@
       "field": "lang",
       "value": "WizQst170A85, the only free key within 16 of its chain neighbour WizQst170A83 and WizQst170A83 whose lines name the page's names: The Jellymancer",
       "blocking": false
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
     },
     {
       "field": "goal.items",

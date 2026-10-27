@@ -1,6 +1,11 @@
 {
   "id": "KM-Q-1716A3",
   "lang": "1716A3",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-BLACK-NPC11-B",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
+  },
   "requires": [
     "KM-Q-17169B"
   ],
@@ -137,6 +142,10 @@
     }
   ],
   "personas": {
+    "KM-BLACK-NPC11-B": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1513122
+    },
     "KM-BLACK-NPC18": {
       "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_A_NPC.dds",
       "template_id": 1487326
@@ -148,11 +157,6 @@
     "timestamp": "20250624210341"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to First Trial Room",

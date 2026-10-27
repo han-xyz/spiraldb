@@ -1,6 +1,11 @@
 {
   "id": "KM-Q-171697",
   "lang": "171697",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-BLACK-NPC06",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
+  },
   "requires": [
     "KM-Q-171694"
   ],
@@ -74,18 +79,18 @@
       "loc": "ZoneLocName_1513103"
     }
   ],
-  "personas": {},
+  "personas": {
+    "KM-BLACK-NPC06": {
+      "portrait": "GUI/NpcPortraits/Fairy_BakerF_A_NPC.dds",
+      "template_id": 1513076
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Gum_Runner",
     "from": "archive",
     "timestamp": "20250916233626"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

@@ -1,6 +1,11 @@
 {
   "id": "KM-Q-170A90",
   "lang": "170A90",
+  "auto_start": true,
+  "giver": {
+    "persona": "KM-KCITY-NPC08",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
   "requires": [
     "KM-Q-170A8E"
   ],
@@ -35,6 +40,10 @@
     "KM-KCITY-NPC04-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Hamster_GrandF_A_NPC.dds",
       "template_id": 1487274
+    },
+    "KM-KCITY-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1510023
     }
   },
   "source": {
@@ -43,11 +52,6 @@
     "timestamp": "20250916123031"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.mobs",
       "value": "The Divine Paradox",
