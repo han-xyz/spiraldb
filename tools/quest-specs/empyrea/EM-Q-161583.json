@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z10_PortAero"
   },
   "requires": [
-    "EM-Q-159089"
+    "EM-Q-15908D"
   ],
   "mainline": true,
   "level": 112,
@@ -179,6 +179,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Stream_On",
+    "from": "archive",
     "timestamp": "20240328000804"
   },
   "needs_review": [
@@ -195,11 +196,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "More Like Scare-O Plains replaced by EM-Q-159089",
       "blocking": false
     }
   ]

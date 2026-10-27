@@ -70,6 +70,17 @@
       "loc": "ZoneLocName_1397535"
     },
     {
+      "type": "usage",
+      "items": [
+        "EM-Incantation.AdjRef",
+        "EM-IncantationRecited.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "descriptor": "WizardQuestGoals_00000557",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Empyrea/EM_Z01_Jungle",
@@ -90,6 +101,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Incantation_Investigation",
+    "from": "archive",
     "timestamp": "20231126090002"
   },
   "needs_review": [
@@ -97,11 +109,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Cave of Sycorax",
       "blocking": false
-    },
-    {
-      "field": "goal.persona",
-      "value": "Incantation",
-      "blocking": true
     },
     {
       "field": "dialogs",

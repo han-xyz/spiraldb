@@ -1,0 +1,152 @@
+{
+  "id": "EM-Q-1615EC",
+  "lang": "1615EC",
+  "giver": {
+    "persona": "EM-AERO-NPC27",
+    "zone": "Empyrea/EM_Z11_VeloCity"
+  },
+  "requires": [
+    "EM-Q-1590EA"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 9200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM_StandIn_Voltergeist",
+      "zone": "Empyrea/EM_Z09_NWAeroplains",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Ghost_Volt_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003072",
+      "zone": "Empyrea/EM_Z11_VeloCity",
+      "loc": "ZoneLocName_1447344"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-NIMB-NPC14",
+      "zone": "Empyrea/Interiors/EM_Z07_TechnologistAcademy",
+      "loc": "ZoneLocName_1447344",
+      "completion": [
+        {
+          "speaker": "EM-NIMB-NPC14",
+          "line": "00000014"
+        },
+        {
+          "speaker": "EM-NIMB-NPC14",
+          "line": "00000017"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC27": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizenF_D_NPC.dds",
+      "template_id": 1447406
+    },
+    "EM-NIMB-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Support_B_NPC.dds",
+      "template_id": 1413348
+    },
+    "EM_StandIn_Voltergeist": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ghost_LostSoul_MOB_A.dds",
+      "template_id": 1447446
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Be_Our_Geist",
+    "from": "archive",
+    "timestamp": "20231126100119"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Northeast Aero Plains",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Music on the Aero Plains replaced by EM-Q-1590EA",
+      "blocking": false
+    }
+  ]
+}

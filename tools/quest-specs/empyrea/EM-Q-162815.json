@@ -67,6 +67,15 @@
     {
       "type": "usage",
       "items": [
+        "EM-TeleporterMandalla.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "Items_00020336"
+    },
+    {
+      "type": "usage",
+      "items": [
         "EM-Pod.AdjRef",
         "EM-PodArk.AdjRef",
         "EM-TeleporterHusk.AdjRef",
@@ -104,6 +113,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Go_Full_Circle",
+    "from": "archive",
     "timestamp": "20231126090548"
   },
   "needs_review": [
@@ -111,11 +121,6 @@
       "field": "lang",
       "value": "WizQst162815, the only free key within 16 of its chain neighbour WizQst162814 and WizQst162493 whose lines name the page's names: Beans, Samsara Village",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Pod to Mandalla",
-      "blocking": true
     },
     {
       "field": "dialogs",

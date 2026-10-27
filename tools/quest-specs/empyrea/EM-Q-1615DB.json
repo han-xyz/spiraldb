@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z10_PortAero"
   },
   "requires": [
-    "EM-Q-1615CD"
+    "EM-Q-1615D5"
   ],
   "mainline": false,
   "level": 112,
@@ -209,17 +209,13 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:I_Sought_the_Sheriff",
+    "from": "archive",
     "timestamp": "20231126100000"
   },
   "needs_review": [
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Did the Butler Really Do It? replaced by EM-Q-1615CD",
       "blocking": false
     }
   ]

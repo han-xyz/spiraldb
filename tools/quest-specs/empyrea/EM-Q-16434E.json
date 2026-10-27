@@ -1,0 +1,114 @@
+{
+  "id": "EM-Q-16434E",
+  "lang": "16434E",
+  "giver": {
+    "persona": "EM-REV-NPC01",
+    "zone": "Empyrea/EM_Z15_Nexus"
+  },
+  "requires": [
+    "EM-Q-16433E"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 28450,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC03-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "completion": [
+        {
+          "speaker": "EM-AERI-NPC03-B",
+          "line": "00000021"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    },
+    "EM-REV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_WispCustodian_A_NPC.dds",
+      "template_id": 1459003
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:'Til_Wizard_Voices_Wake_Us",
+    "from": "archive",
+    "timestamp": "20250904002907"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Waking World",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -149,6 +149,15 @@
       "type": "persona",
       "persona": "EM-CHAOS-NPC05-B",
       "zone": "Empyrea/EM_Z14_ChaosJungle"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Human_Merle_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003023",
+      "zone": ""
     }
   ],
   "personas": {
@@ -163,17 +172,13 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Dreaming_Begins",
+    "from": "archive",
     "timestamp": "20250827080858"
   },
   "needs_review": [
     {
       "field": "giver",
       "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "The Headmaster",
       "blocking": true
     },
     {

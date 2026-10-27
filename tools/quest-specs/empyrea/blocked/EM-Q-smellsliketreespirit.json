@@ -18,6 +18,16 @@
       "type": "persona",
       "persona": "EM-AERI-NPC17",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Shadow_Ratspoutine_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002287",
+      "zone": "",
+      "loc": "ZoneLocName_1448066"
     }
   ],
   "personas": {
@@ -28,6 +38,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Smells_Like_Tree_Spirit",
+    "from": "archive",
     "timestamp": "20231126093402"
   },
   "needs_review": [
@@ -45,11 +56,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Search for the Primordial Trees",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "The Rat",
-      "blocking": true
     }
   ]
 }

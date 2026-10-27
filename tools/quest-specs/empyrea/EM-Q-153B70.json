@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z03_OuterAthanor"
   },
   "requires": [
-    "EM-Q-1323CA"
+    "EM-Q-1323CF"
   ],
   "mainline": true,
   "level": 112,
@@ -74,17 +74,13 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Avalanche!",
+    "from": "archive",
     "timestamp": "20250905001718"
   },
   "needs_review": [
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "A Chain of Ice and Fire replaced by EM-Q-1323CA",
       "blocking": false
     }
   ]

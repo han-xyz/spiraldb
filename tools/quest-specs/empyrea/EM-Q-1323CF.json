@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z02_Zanadu"
   },
   "requires": [
-    "EM-Q-1323CC"
+    "EM-Q-1323CA"
   ],
   "mainline": true,
   "level": 112,
@@ -81,6 +81,16 @@
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
+      "type": "usage",
+      "items": [
+        "EM-TeleporterOuterAthanor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "Items_00019796",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
       "type": "persona",
       "persona": "EM-OUTER-NPC01",
       "zone": "Empyrea/EM_Z03_OuterAthanor",
@@ -105,14 +115,10 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:A_Chain_of_Ice_and_Fire",
+    "from": "archive",
     "timestamp": "20250905070658"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Pod to Outer Athanor",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Take the Pod to Athanor",
@@ -121,6 +127,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To the Bat's Cave replaced by EM-Q-1323CA",
       "blocking": false
     }
   ]

@@ -67,7 +67,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "EM-Q-1624B4",
+        "m_questName": "EM-Q-16433C",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -76,7 +76,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "EM-Q-1624DE",
+        "m_questName": "EM-Q-16434E",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

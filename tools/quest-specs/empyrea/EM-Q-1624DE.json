@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
   "requires": [
-    "EM-Q-16433E"
+    "EM-Q-16434E"
   ],
   "mainline": true,
   "level": 112,
@@ -71,22 +71,13 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Zana-Redo",
+    "from": "archive",
     "timestamp": "20240409061123"
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "'Til Wizard Voices Wake Us",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "'Til Wizard Voices Wake Us replaced by EM-Q-16433E",
       "blocking": false
     }
   ]

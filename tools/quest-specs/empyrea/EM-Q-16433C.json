@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z15_Nexus"
   },
   "requires": [
-    "EM-Q-1624BC"
+    "EM-Q-1624B4"
   ],
   "mainline": true,
   "level": 112,
@@ -54,6 +54,15 @@
       "zone": "Empyrea/EM_Z14_ChaosJungle"
     },
     {
+      "type": "usage",
+      "items": [
+        "EM_Standin_DreamMellori.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01748461"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Empyrea/EM_Z15_Nexus"
@@ -71,17 +80,18 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Into_the_Great_Beyond",
+    "from": "archive",
     "timestamp": "20240328000048"
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Mellori's Dream",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Pretty Darn Quickening replaced by EM-Q-1624B4",
       "blocking": false
     }
   ]

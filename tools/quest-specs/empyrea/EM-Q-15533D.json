@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z01_Jungle"
   },
   "requires": [
-    "EM-Q-155335"
+    "EM-Q-155338"
   ],
   "mainline": true,
   "level": 112,
@@ -150,6 +150,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Khan_Games",
+    "from": "archive",
     "timestamp": "20240327235105"
   },
   "needs_review": [
@@ -176,11 +177,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Incantation Investigation replaced by EM-Q-155335",
       "blocking": false
     }
   ]

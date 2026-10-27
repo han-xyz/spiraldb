@@ -165,25 +165,16 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
+        "m_questName": "EM-Q-15908D",
+        "m_applyNOT": true,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
         "m_questName": "EM-Q-1590EA",
-        "m_applyNOT": true,
-        "m_operator": "ROP_AND"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "Completed",
-        "m_displayName": null,
-        "m_isQuestRegistry": false,
-        "m_questName": "EM-Q-161583",
-        "m_applyNOT": true,
-        "m_operator": "ROP_AND"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "Completed",
-        "m_displayName": null,
-        "m_isQuestRegistry": false,
-        "m_questName": "EM-Q-1615CD",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

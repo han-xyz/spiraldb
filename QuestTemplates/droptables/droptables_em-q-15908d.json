@@ -1,0 +1,17 @@
+{
+  "Name": "EM-Q-15908D",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 1135,
+  "MaxGold": 1135,
+  "ExperienceAmount": 107283,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:11:33.727312Z",
+  "ModifiedAt": "2026-10-27T09:11:33.727312Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

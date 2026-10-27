@@ -45,6 +45,26 @@
   },
   "goals": [
     {
+      "type": "bounty",
+      "mobs": [
+        "EM_StandIn_Quizzler.AdjRef",
+        "EM_Weasel_Cabalist_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002819",
+      "zone": ""
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_StandIn_Quizzler.AdjRef",
+        "EM_Weasel_Cabalist_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002819",
+      "zone": ""
+    },
+    {
       "type": "persona",
       "persona": "EM_StandIn_Medulla_01",
       "zone": "Empyrea/Interiors/EM_Z02_BatCave"
@@ -69,22 +89,13 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Massive_Headache",
+    "from": "archive",
     "timestamp": "20240409061220"
   },
   "needs_review": [
     {
       "field": "giver",
       "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "The Quizzler",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "The Quizzler",
       "blocking": true
     },
     {

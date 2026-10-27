@@ -1,18 +1,18 @@
 {
-  "id": "EM-Q-1615EC",
-  "lang": "1615EC",
+  "id": "EM-Q-1615D5",
+  "lang": "1615D5",
   "giver": {
-    "persona": "EM-AERO-NPC27",
-    "zone": "Empyrea/EM_Z11_VeloCity"
+    "persona": "EM-AERO-NPC14",
+    "zone": "Empyrea/EM_Z10_PortAero"
   },
   "requires": [
-    "EM-Q-1590F0"
+    "EM-Q-1615CD"
   ],
   "mainline": false,
   "level": 112,
   "reward": {
     "xp": 0,
-    "gold": 9200
+    "gold": 9100
   },
   "dialogs": {
     "prep": [
@@ -63,78 +63,57 @@
       {
         "speaker": "giver",
         "line": "00000011"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000012"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000013"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000018"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "EM_Ghost_Volt_A_01.AdjRef"
+      "type": "usage",
+      "items": [
+        "EM-EbenezerMemoryCore.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00003072",
-      "zone": "Empyrea/EM_Z11_VeloCity",
-      "loc": "ZoneLocName_1447344"
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "descriptor": "WizQst1615D5_00000013",
+      "loc": "ZoneLocName_1447324"
     },
     {
       "type": "persona",
-      "persona": "EM-NIMB-NPC14",
-      "zone": "Empyrea/Interiors/EM_Z07_TechnologistAcademy",
-      "loc": "ZoneLocName_1447344",
-      "completion": [
-        {
-          "speaker": "EM-NIMB-NPC14",
-          "line": "00000014"
-        },
-        {
-          "speaker": "EM-NIMB-NPC14",
-          "line": "00000017"
-        }
-      ]
+      "persona": "EM-AERO-NPC17",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447324"
     }
   ],
   "personas": {
-    "EM-AERO-NPC27": {
-      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizenF_D_NPC.dds",
-      "template_id": 1447406
+    "EM-AERO-NPC14": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroHunter_C_NPC.dds",
+      "template_id": 1447374
     },
-    "EM-NIMB-NPC14": {
-      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Support_B_NPC.dds",
-      "template_id": 1413348
+    "EM-AERO-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Robot_Drone_E_NPC.dds",
+      "template_id": 1447377
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Be_Our_Geist",
-    "timestamp": "20231126100119"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Did_the_Butler_Really_Do_It?",
+    "from": "archive",
+    "timestamp": "20231126095941"
   },
   "needs_review": [
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Northeast Aero Plains",
+      "value": "Evidence Locker",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Voltergeist to its cave",
-      "blocking": true
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Thrill is in the Chase replaced by EM-Q-1615CD",
       "blocking": false
     }
   ]

@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z15_Nexus"
   },
   "requires": [
-    "EM-Q-1624B4"
+    "EM-Q-16433C"
   ],
   "mainline": true,
   "level": 112,
@@ -62,6 +62,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Dream_Deeper",
+    "from": "archive",
     "timestamp": "20240328000320"
   },
   "needs_review": [
@@ -73,11 +74,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Into the Great Beyond replaced by EM-Q-1624B4",
       "blocking": false
     }
   ]

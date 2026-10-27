@@ -103,6 +103,15 @@
       "loc": "ZoneLocName_1447344"
     },
     {
+      "type": "usage",
+      "items": [
+        "EM-LightningBottle.AdjRef"
+      ],
+      "count": 5,
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Sandworm_Larvae_B_02.AdjRef"
@@ -131,6 +140,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Music_on_the_Aero_Plains",
+    "from": "archive",
     "timestamp": "20231126095811"
   },
   "needs_review": [
@@ -151,11 +161,6 @@
     },
     {
       "field": "goal.items",
-      "value": "Collect 3 Lightning Bottles",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
       "value": "in the Southwest Aero Plains",
       "blocking": true
     },
@@ -163,6 +168,11 @@
       "field": "goal.items",
       "value": "Defeat 3 Ear Worms",
       "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Defeat Fangles and collect 3 Saliva",
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

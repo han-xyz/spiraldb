@@ -97,6 +97,12 @@
       "persona": "EM-AERO-NPC01",
       "zone": "Empyrea/EM_Z10_PortAero",
       "loc": "ZoneLocName_1447324"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERO-NPC01",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447324"
     }
   ],
   "personas": {
@@ -111,14 +117,10 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:More_Like_Scare-O_Plains",
+    "from": "archive",
     "timestamp": "20240328000552"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Josiah into Town",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

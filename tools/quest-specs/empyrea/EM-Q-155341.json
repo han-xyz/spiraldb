@@ -118,6 +118,15 @@
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
+      "type": "usage",
+      "items": [
+        "EM-TeleporterZanadu.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "Items_00019794"
+    },
+    {
       "type": "persona",
       "persona": "EM-AERI-NPC06-B",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB",
@@ -145,14 +154,10 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:From_A_to_Z",
+    "from": "archive",
     "timestamp": "20240327235342"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Pod to Zanadu",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

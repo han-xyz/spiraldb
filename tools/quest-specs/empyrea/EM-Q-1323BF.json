@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z02_Zanadu"
   },
   "requires": [
-    "EM-Q-15533D"
+    "EM-Q-155341"
   ],
   "mainline": true,
   "level": 112,
@@ -240,6 +240,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Out_of_His_Comfort_Zone",
+    "from": "archive",
     "timestamp": "20231105181624"
   },
   "needs_review": [
@@ -255,7 +256,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Zanadus and Don'ts replaced by EM-Q-15533D",
+      "value": "Zanadus and Don'ts replaced by EM-Q-155341",
       "blocking": false
     }
   ]
