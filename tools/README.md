@@ -15,6 +15,7 @@ python3 -I tools/spiraltools.py <command> --help
 | `mobs`, `items`, `npcs` | the mob and item adjectives and NPC personas a quest spec names ([mobs and npcs](#mobs-and-npcs)) |
 | `quests check\|generate\|diff` | quest templates and drop tables from specs ([quests](#quests)) |
 | `archive enumerate\|fetch\|parse` | specs for a world from the wiki archive ([archive](#archive)) |
+| `twins` | a boss's hidden NPC twin, shown when the boss falls ([twins](#twins)) |
 | `check` | everything missing across the pack ([check](#check)) |
 
 The client is read at `/kioxia/generator-input/rootwad` (the unpacked root wad) and the client's `Data/GameData`
@@ -73,6 +74,7 @@ No network. The tests that read the client skip when `/kioxia` is absent.
 | `pack.py` | the pack's JSON: tolerant reading, appending in the file's comma style, file paths |
 | `zones.py` | the ZoneTransfer generator and its rules |
 | `crownshop.py` | the Gear tab |
+| `twins.py` | placed objects of a zone, boss twins and their dynamods |
 | `worlds.py` | the world registry |
 | `quests/spec.py` | spec loading and validation |
 | `quests/generate.py` | templates and drop tables from specs |
@@ -368,6 +370,32 @@ own `<template>.AdjRef`. A shared adjective (`Crustacean_Pincer`, `MONST_Fish`) 
 A usage goal's `items` are adjectives of `items`: the world's object templates with an adjective that the player
 interacts with or whose display name is not a mob's (`CL-TeslaTower.AdjRef`, a Galvanic Tower), the pattern of the
 pack's `m_itemAdjectives`. A persona goal's `persona` is the persona without `_Persona`; the zones column is where to send the player.
+
+## twins
+
+A boss tower may place the boss's friendly NPC version beside the spawned boss, flagged `m_bUndetectable`: hidden
+until a quest dynamod with `m_bShowsObject` shows it, the way retail quests reveal it when the boss falls. The quests
+built from captures lack that result. `twins` finds those NPCs for every bounty goal (`GOAL_TYPE_BOUNTY`,
+`GOAL_TYPE_BOUNTYCOLLECT`) of `QuestTemplates`:
+
+```sh
+python3 -I tools/spiraltools.py twins            # one line per bounty with a twin or hidden NPCs in its zone
+python3 -I tools/spiraltools.py twins --apply    # write the reveals of the `twin` lines
+```
+
+The bounty's zone is its `m_destinationZone`, else that of the nearest goal before it. A twin is a placed object of
+that zone's `gamedata.bin` whose template is an NPC (a persona or `NPCBehavior`) and whose display name is the
+bounty's mob (`m_descriptor2`, by key or by text), or whose template or persona is a mob adjective. Companions are
+the zone's other `m_bUndetectable` NPCs without spawn requirements within 600 units of a twin.
+
+The verdict column says what `--apply` does: only `twin` is written, one hidden twin that no start state or spawn
+requirement gates. It adds to the bounty's `m_completeResults` a `ResAddDynaMod` per twin and companion with
+`m_bShowsObject` and `m_persist` true, skipping a tag the quest already shows, and drops the quest's dynamods of the
+hide-on-entry pattern for those tags (`m_bShowsObject` false, no state, same zone). The other verdicts are for
+review: `visible match, not hidden` (a stand-in the quest needs before the fight), `several candidates`, `gated by
+start state or requirements`, `no twin, hidden NPCs in the zone` (listed in the last column), `no zone`, `no zone
+wad`. A quest file that differs from `pack.py`'s layout by more than whitespace (trailing commas) is refused when it
+would change.
 
 ## Authoring a world by hand
 
