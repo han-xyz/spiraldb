@@ -38,13 +38,9 @@
       "loc": "ZoneLocName_227141"
     },
     {
-      "type": "usage",
-      "items": [
-        "CL-PageEvent-Boss.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Celestia/CL_Z05_The_Floating_Land",
-      "descriptor": "NPCs_01748040",
+      "type": "persona",
+      "persona": "CL-PageEvent-Boss",
+      "zone": "Celestia/Interiors/PageEvent/CL_BossRoom",
       "loc": "ZoneLocName_227141"
     },
     {
@@ -58,7 +54,12 @@
       "loc": "ZoneLocName_227141"
     }
   ],
-  "personas": {},
+  "personas": {
+    "CL-PageEvent-Boss": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_GrimoireKid_Life_NPC.dds",
+      "template_id": 808259
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Vanitas_Vanitatum",
     "timestamp": "20240104060054"

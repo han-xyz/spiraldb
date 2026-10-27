@@ -87,9 +87,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "The Chancel",
-      "blocking": false
+      "field": "goal.persona",
+      "value": "Phaeton's Statue",
+      "blocking": true
     },
     {
       "field": "goal.persona",

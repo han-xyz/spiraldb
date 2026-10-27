@@ -65,7 +65,7 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.persona",
       "value": "Celestial Trainers",
       "blocking": true
     },

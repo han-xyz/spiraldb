@@ -149,14 +149,15 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "CL-DIST-C02-002Pedestal.AdjRef"
-      ],
-      "count": 12,
-      "zone": "Celestia/CL_Hub",
-      "descriptor": "WizItems_00001671",
-      "loc": "ZoneLocName_1161792"
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z01_Survey_Camp",
+      "loc": "ZoneLocName_227197"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "loc": "ZoneLocName_227109",
+      "with_previous": true
     },
     {
       "type": "persona",
@@ -177,59 +178,54 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Survey Camp",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "The Grotto",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Starkwave's Lair",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Stellarium",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
       "value": "Bristleclaw's Cave",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Sorcerer's Sanctum",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Storm Lord's Temple",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "The Lunarium",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Crystal Reactor",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Calypso's Cavern",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "The Chancel",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Trial of the Spheres",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

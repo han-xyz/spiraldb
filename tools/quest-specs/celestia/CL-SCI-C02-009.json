@@ -6,8 +6,9 @@
     "persona": "CL-HUB-NPC001",
     "zone": "Celestia/CL_Hub"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    "CL-Q-371FE"
+  ],
   "mainline": true,
   "level": 48,
   "reward": {
@@ -45,6 +46,11 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "loc": "ZoneLocName_227135"
+    },
+    {
       "type": "persona",
       "persona": "CL-CRAB-NPC01",
       "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
@@ -77,13 +83,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Crustacean Empire",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Pieces of the Sun replaced by CL-Q-371FE",
       "blocking": false
     }
   ]

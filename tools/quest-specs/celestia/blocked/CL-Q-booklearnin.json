@@ -19,17 +19,6 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "CL-BookPedestalCrabFortress01.AdjRef",
-        "CL-BookPedestalCrabFortress02.AdjRef"
-      ],
-      "count": 2,
-      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
-      "descriptor": "WizardGameObjects_00000295",
-      "loc": "ZoneLocName_227135"
-    },
-    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/Interiors/CL_Z10i2_Kingdom_Of_The_Crabs",
@@ -51,6 +40,16 @@
       "field": "lang",
       "value": "Book Learnin'",
       "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Tome of the Sun",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Light of the Spiral",
+      "blocking": false
     }
   ]
 }

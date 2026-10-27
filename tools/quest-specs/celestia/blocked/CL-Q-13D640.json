@@ -88,6 +88,12 @@
   },
   "goals": [
     {
+      "type": "persona",
+      "persona": "CL-SCI-NPC05",
+      "zone": "Celestia/Interiors/CL_Z09i7_Science_Center",
+      "loc": "ZoneLocName_1161792"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "CL-GolemWorker-R9-2.AdjRef"
@@ -114,6 +120,10 @@
     "CL-HUB-NPC001": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
       "template_id": 211488
+    },
+    "CL-SCI-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Doctor_Purreau.dds",
+      "template_id": 1300037
     }
   },
   "source": {
@@ -127,19 +137,24 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "for Dr. Vittek in his laboratory in the Science Center",
-      "blocking": true
+      "field": "goal.persona (closest name)",
+      "value": "Dr. Vittek read as Doctor Vittek",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Deep Leviathan Egg",
+      "value": "Deep Leviathan Egg",
       "blocking": true
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Celestia/Interiors/CL_Z09i7_Science_Center",
+      "blocking": true
     }
   ]
 }

@@ -84,14 +84,14 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "The Chantry (the Celestian mosaic)",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Chantry",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "The Chantry (a closer examination)",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore The Chantry (a closer examination)",
+      "blocking": false
     },
     {
       "field": "dialogs",

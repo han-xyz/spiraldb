@@ -55,6 +55,7 @@
       ],
       "count": 1,
       "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs",
+      "descriptor": "WizQst37209_00000014",
       "loc": "ZoneLocName_227135"
     },
     {
@@ -88,11 +89,6 @@
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Treasury",
-      "blocking": false
-    },
-    {
-      "field": "goal.descriptor",
-      "value": "(Collect) Treasure",
       "blocking": false
     },
     {

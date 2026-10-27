@@ -57,6 +57,11 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "loc": "ZoneLocName_227141"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Z05_The_Floating_Land",
@@ -83,11 +88,6 @@
     {
       "field": "lang",
       "value": "WizQst377D7 matched by the words it shares with the goals; its lines name Coruscade",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Lake in The Floating Land",
       "blocking": false
     },
     {

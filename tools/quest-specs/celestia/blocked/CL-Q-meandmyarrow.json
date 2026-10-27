@@ -20,7 +20,8 @@
     {
       "type": "persona",
       "persona": "WC-PARK-NPC01",
-      "zone": ""
+      "zone": "WizardCity/Interiors/WC_Park_Petshop",
+      "loc": "ZoneLocName_1161792"
     },
     {
       "type": "persona",
@@ -60,13 +61,8 @@
       "blocking": false
     },
     {
-      "field": "goal.persona.zone (placed in no zone)",
-      "value": "Tennant Wastelander",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
-      "value": "Regent's Square",
+      "value": "Ogden's Apartment, Regent's Square",
       "blocking": false
     }
   ]

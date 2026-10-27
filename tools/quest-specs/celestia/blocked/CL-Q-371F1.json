@@ -56,31 +56,7 @@
         "CL-MoonCrystalPylon2.AdjRef",
         "CL_MoonCrystalPylon3.AdjRef"
       ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizQst371F1_00000024",
-      "loc": "ZoneLocName_227140"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "CL_MoonCrystalPylon1.AdjRef",
-        "CL-MoonCrystalPylon2.AdjRef",
-        "CL_MoonCrystalPylon3.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizQst371F1_00000024",
-      "loc": "ZoneLocName_227140"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "CL_MoonCrystalPylon1.AdjRef",
-        "CL-MoonCrystalPylon2.AdjRef",
-        "CL_MoonCrystalPylon3.AdjRef"
-      ],
-      "count": 1,
+      "count": 3,
       "zone": "",
       "descriptor": "WizQst371F1_00000024",
       "loc": "ZoneLocName_227140"

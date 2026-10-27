@@ -6,7 +6,7 @@
     "zone": "Celestia/CL_Z03_District_Of_The_Stars"
   },
   "requires": [
-    "CL-Q-371C9"
+    "CL-Q-371CA"
   ],
   "mainline": false,
   "level": 48,
@@ -90,11 +90,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Putting Pieces Together replaced by CL-Q-371C9",
       "blocking": false
     }
   ]

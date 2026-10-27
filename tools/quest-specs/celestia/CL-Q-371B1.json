@@ -6,7 +6,7 @@
     "zone": "Celestia/CL_Hub"
   },
   "requires": [
-    "CL-Q-371B0"
+    "CL-Q-37214"
   ],
   "mainline": true,
   "level": 48,
@@ -60,16 +60,16 @@
     },
     {
       "type": "persona",
-      "persona": "ME1-YoungHalston-A",
-      "zone": "Marleybone/Interiors/MB_Event_Maestro/MB_Z02_Prison",
+      "persona": "WC-PARTY-NPC08",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
       "loc": "ZoneLocName_1161792",
       "completion": [
         {
-          "speaker": "ME1-YoungHalston-A",
+          "speaker": "WC-PARTY-NPC08",
           "line": "00000014"
         },
         {
-          "speaker": "ME1-YoungHalston-A",
+          "speaker": "WC-PARTY-NPC08",
           "line": "00000030"
         }
       ]
@@ -80,9 +80,9 @@
       "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Engineer_01.dds",
       "template_id": 211488
     },
-    "ME1-YoungHalston-A": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_Halston_Balestrum.dds",
-      "template_id": 1206764
+    "WC-PARTY-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Balestrom_A_NPC.dds",
+      "template_id": 1452003
     }
   },
   "source": {
@@ -96,18 +96,23 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Sanctum in the Sanctum of the Sun",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Sanctum of the Sun",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
-      "value": "Halston Balestrom: ME1-YoungHalston-A from ObjectData/MaestroEvent",
+      "value": "Halston Balestrom: WC-PARTY-NPC08 from ObjectData/WC",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Sun of All Fears replaced by CL-Q-37214",
       "blocking": false
     }
   ]

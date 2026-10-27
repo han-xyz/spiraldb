@@ -101,6 +101,18 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "CL-DownedProtector.AdjRef",
+        "CL-DownedProtectors.AdjRef",
+        "CL-DownedProtectors2.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst371C7_00000008",
+      "loc": "ZoneLocName_227140"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "CL-Protector-Purple-R9-Boss.AdjRef",
@@ -202,11 +214,6 @@
       "field": "giver",
       "value": "starts automatically",
       "blocking": true
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Inactive Protector",
-      "blocking": false
     },
     {
       "field": "goal.persona (closest name)",

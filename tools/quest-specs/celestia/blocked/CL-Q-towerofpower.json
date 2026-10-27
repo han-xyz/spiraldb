@@ -33,67 +33,7 @@
         "CL-TeslaTower5b.AdjRef",
         "CL-TeslaTower6b.AdjRef"
       ],
-      "count": 1,
-      "zone": "Celestia/CL_Z09_Science_Center",
-      "descriptor": "WizItems_00001664",
-      "loc": "ZoneLocName_227139"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "CL-TeslaTower.AdjRef",
-        "CL-TeslaTower1b.AdjRef",
-        "CL-TeslaTower2.AdjRef",
-        "CL-TeslaTower2b.AdjRef",
-        "CL-TeslaTower3.AdjRef",
-        "CL-TeslaTower3b.AdjRef",
-        "CL-TeslaTower4.AdjRef",
-        "CL-TeslaTower4b.AdjRef",
-        "CL-TeslaTower5.AdjRef",
-        "CL-TeslaTower5b.AdjRef",
-        "CL-TeslaTower6b.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Celestia/CL_Z09_Science_Center",
-      "descriptor": "WizItems_00001664",
-      "loc": "ZoneLocName_227139"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "CL-TeslaTower.AdjRef",
-        "CL-TeslaTower1b.AdjRef",
-        "CL-TeslaTower2.AdjRef",
-        "CL-TeslaTower2b.AdjRef",
-        "CL-TeslaTower3.AdjRef",
-        "CL-TeslaTower3b.AdjRef",
-        "CL-TeslaTower4.AdjRef",
-        "CL-TeslaTower4b.AdjRef",
-        "CL-TeslaTower5.AdjRef",
-        "CL-TeslaTower5b.AdjRef",
-        "CL-TeslaTower6b.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Celestia/CL_Z09_Science_Center",
-      "descriptor": "WizItems_00001664",
-      "loc": "ZoneLocName_227139"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "CL-TeslaTower.AdjRef",
-        "CL-TeslaTower1b.AdjRef",
-        "CL-TeslaTower2.AdjRef",
-        "CL-TeslaTower2b.AdjRef",
-        "CL-TeslaTower3.AdjRef",
-        "CL-TeslaTower3b.AdjRef",
-        "CL-TeslaTower4.AdjRef",
-        "CL-TeslaTower4b.AdjRef",
-        "CL-TeslaTower5.AdjRef",
-        "CL-TeslaTower5b.AdjRef",
-        "CL-TeslaTower6b.AdjRef"
-      ],
-      "count": 1,
+      "count": 4,
       "zone": "Celestia/CL_Z09_Science_Center",
       "descriptor": "WizItems_00001664",
       "loc": "ZoneLocName_227139"
