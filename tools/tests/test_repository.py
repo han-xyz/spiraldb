@@ -29,6 +29,9 @@ class ReadQuestTest(unittest.TestCase):
         self.assertEqual(self.quest["goals"][0], "Go To Rocket")
         self.assertEqual(self.quest["goals"][3], "Talk To Stallion Quartermane")
 
+    def test_characters_are_the_names_in_order_of_appearance(self):
+        self.assertEqual(self.quest["characters"], ["Maxine Rockhoppierre", "Stallion Quartermane"])
+
     def test_dialogue_lines_carry_speaker_text_and_audio(self):
         self.assertEqual(len(self.quest["dialogue"]), 3)
         self.assertEqual(self.quest["dialogue"][1], {"speaker": "Stallion Quartermane", "text": "Stop right there, fiends!",

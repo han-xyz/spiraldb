@@ -1118,6 +1118,8 @@ class SpecBuilder:
             giver, giver_zone = self.persona_ref(giver_name, "giver")
             if giver:
                 spec["giver"] = {"persona": giver, "zone": giver_zone or self.zone}
+                if not self.zone and self.entry["fetched_from"] == "repository":
+                    self.zone = giver_zone
                 giver_world = spec["giver"]["zone"].split("/")[0]
                 if giver_world != self.data.world and giver_world in {w.name for w in WORLDS}:
                     self.unresolved("giver (other world)", f"{giver_name} is placed in {spec['giver']['zone']}", True)
@@ -1167,8 +1169,9 @@ class SpecBuilder:
         for zone in sorted(zone for zone in zones if zone and zone not in self.known_zones):
             self.unresolved("zone (no ZoneTransfer)", zone, True)
         spec["personas"] = dict(sorted(self.personas.items()))
-        spec["source"] = {"page": WIKI + self.entry["page"], "from": self.entry["fetched_from"],
-                          "timestamp": self.entry["fetched"]}
+        spec["source"] = self.entry.get("source") or {"page": WIKI + self.entry["page"],
+                                                      "from": self.entry["fetched_from"],
+                                                      "timestamp": self.entry["fetched"]}
         spec["needs_review"] = self.review
         return spec
 
@@ -1382,12 +1385,50 @@ def hand_authored(world_dir):
 
 
 def repository_quests(cache, world):
-    """title_norm of the name -> quest entry of The Repository's index for the world; empty without an index."""
+    """title_norm of the name -> quest entry of The Repository's index for the world, and the licence of its text;
+    nothing without an index."""
     path = os.path.join(cache, "repository", f"index-repository-{world.lower()}.json")
+    if not os.path.exists(path):
+        return {}, {}
+    with open(path, encoding="utf-8") as f:
+        index = json.load(f)
+    return ({title_norm(quest["name"]): quest for quest in index["quests"]},
+            {"licence": index["licence"], "licence_url": index["licence_url"]})
+
+
+def tracked_quests(cache, world):
+    """title_norm of the name -> spiraltracker's quest entry for the world; empty without its list."""
+    path = os.path.join(cache, "tracker", f"tracker-{world.lower()}.json")
     if not os.path.exists(path):
         return {}
     with open(path, encoding="utf-8") as f:
-        return {title_norm(quest["name"]): quest for quest in json.load(f)["quests"]}
+        return {title_norm(quest.get("wikiName") or quest["name"]): quest for quest in json.load(f)["quests"]}
+
+
+def repository_fields(data, quest, tracked):
+    """A Repository quest as the fields of a quest page: the giver is its first character when a zone places that
+    persona, the hand-in the NPC of a last talk goal, the reward and zone name spiraltracker's."""
+    first = data.persona(strip_notes(quest["characters"][0]), "") if quest["characters"] else None
+    last = quest["goals"][-1] if quest["goals"] else ""
+    tracked = tracked or {}
+    return {
+        "prequests": quest["prev"],
+        "giver": quest["characters"][0] if first and first["zones"] else None,
+        "auto_start": False,
+        "giver_location": tracked["area"].split(" / ")[0] if tracked.get("area") else None,
+        "mainline": "storyline" in (quest["type"] or ""),
+        "instance": "instance" in (quest["type"] or ""),
+        "goals": ["@" + line for line in quest["goals"]],
+        "hand_in": target_text(re.sub(r"\s+(in|at)\s+.*$", "", last)) if verb_of(last) in TALK_VERBS else None,
+        "reward": {key: tracked[key] for key in ("xp", "gold") if tracked.get(key) is not None},
+        "leads_to": quest["next"],
+    }
+
+
+def repository_entry(entry, quest, licence):
+    """An index entry whose spec comes from its Repository page: the page and the licence are the spec's source."""
+    return {**entry, "fetched": None, "fetched_from": "repository",
+            "source": {"page": quest["wiki_page"], "from": "repository", **licence}}
 
 
 def dialogue_hits(data, key, quest):
@@ -1406,6 +1447,22 @@ def preferred_lang(data, title_key, quest):
     if title_key and dialogue_hits(data, title_key, quest) > dialogue_hits(data, key, quest):
         return title_key
     return key
+
+
+def claimed_twice(data, langs, quests, from_repository):
+    """The pages that lose a lang key another page also holds, when one of them took it from The Repository: all but
+    the one whose Repository dialogue the key's file holds best, a title match winning a tie."""
+    holders = {}
+    for page, key in langs.items():
+        if key:
+            holders.setdefault(key, []).append(page)
+    losers = []
+    for key, pages in holders.items():
+        if len(pages) > 1 and from_repository.keys() & set(pages):
+            best = max(pages, key=lambda page: (dialogue_hits(data, key, quests[page]) if quests[page] else 0,
+                                                page not in from_repository))
+            losers += [page for page in pages if page != best]
+    return losers
 
 
 def predecessor_hand_in(pages, by_title, fields):
@@ -1447,6 +1504,15 @@ def parse_world(cache, registered):
             with open(hit.path, encoding="utf-8") as f:
                 pages[entry["page"]] = read_page(f.read())
     zone_paths = zone_paths_by_vote(data, pages, index)
+    repository, licence = repository_quests(cache, world)
+    tracked = tracked_quests(cache, world)
+    quests = {entry["page"]: repository.get(title_norm(entry["name"])) or repository.get(title_norm(strip_notes(
+        entry["name"]))) for entry in index}
+    from_repository = {page: quest for page, quest in quests.items() if quest and page not in pages}
+    for entry in index:
+        if entry["page"] in from_repository:
+            pages[entry["page"]] = repository_fields(data, from_repository[entry["page"]],
+                                                     tracked.get(title_norm(entry["name"])))
     world_dir = os.path.join(QUEST_SPECS_DIR, world.lower())
     blocked_dir = os.path.join(world_dir, "blocked")
     reference_dir = os.path.join(cache, f"reference-{world.lower()}")
@@ -1458,19 +1524,19 @@ def parse_world(cache, registered):
             if "source" in json.load(f):
                 os.remove(path)
     placeholders = data.placeholder_langs()
-    repository = repository_quests(cache, world)
     langs, ids, evidence = {}, {}, {}
     for entry in index:
         title_key = data.title_lang(entry["name"])
-        key = preferred_lang(data, title_key, repository.get(title_norm(entry["name"])))
+        key = preferred_lang(data, title_key, quests[entry["page"]])
         langs[entry["page"]] = key
         if key != title_key:
             evidence[entry["page"]] = f"WizQst{key} is The Repository's id; the title reads {title_key or 'no key'}"
-    taken = {langs[page] for page in evidence}
-    for page, key in langs.items():
-        if page not in evidence and key in taken:
-            langs[page] = None
+    for page in claimed_twice(data, langs, quests, evidence):
+        langs[page] = None
+        evidence.pop(page, None)
     by_title = {title_norm(entry["name"]): entry["page"] for entry in index}
+    for page in from_repository:
+        pages[page]["giver"] = pages[page]["giver"] or predecessor_hand_in(pages, by_title, pages[page])
 
     def chain_pass(rules):
         while True:
@@ -1514,7 +1580,9 @@ def parse_world(cache, registered):
             continue
         lang = langs[entry["page"]]
         quest_id = ids.get(title_norm(entry["name"])) or f"{data.folder}-Q-{norm(entry['name'])}"
-        builder = SpecBuilder(data, entry, pages[entry["page"]], zone_paths, ids, known_zones,
+        source = repository_entry(entry, from_repository[entry["page"]], licence) if entry["page"] in from_repository \
+            else entry
+        builder = SpecBuilder(data, source, pages[entry["page"]], zone_paths, ids, known_zones,
                               predecessor_hand_in(pages, by_title, pages[entry["page"]]))
         if entry["page"] in evidence:
             builder.unresolved("lang", evidence[entry["page"]], False)
@@ -1541,7 +1609,8 @@ def parse_world(cache, registered):
             blocked.append(quest_id)
         elif lang not in authored:
             written += 1
-    print(f"{world}: {len(pages)} pages parsed, {written} specs ready, {len(blocked)} blocked, "
+    print(f"{world}: {len(pages)} pages parsed ({len(from_repository)} from The Repository), {written} specs ready, "
+          f"{len(blocked)} blocked, "
           f"{len(compared)} compared with hand-authored specs; zones: "
           + ", ".join(f"{name} = {path}" for name, path in sorted(zone_paths.items())))
     print(f"{'field':<20} {'blocking':>8} {'review':>8}")

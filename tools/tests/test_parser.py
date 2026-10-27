@@ -3,8 +3,9 @@ import unittest
 
 from client import needs_gamedata, needs_rootwad
 from spiraltools import templates
-from spiraltools.quests.archive import (ClientData, SpecBuilder, item_entries, item_index, norm, preferred_lang,
-                                       read_page, singular_forms)
+from spiraltools.quests.archive import (ClientData, SpecBuilder, claimed_twice, item_entries, item_index, norm,
+                                       preferred_lang, read_page, repository_entry, repository_fields,
+                                       singular_forms)
 from spiraltools.wad import GAMEDATA_DIR
 from spiraltools.worlds import world
 
@@ -269,6 +270,66 @@ class RepositoryLangTest(unittest.TestCase):
     def test_a_repository_key_without_a_lang_file_is_not_taken(self):
         self.assertEqual(preferred_lang(Langs({}), None, repository_quest("B2", "Hello")), None)
         self.assertEqual(preferred_lang(Langs({"B2": ["Hello"]}), None, repository_quest("B2", "Hello")), "B2")
+
+    def test_a_key_two_pages_hold_stays_with_the_page_whose_dialogue_it_holds(self):
+        data = Langs({"B2": ["Hello there, young Wizard!"]})
+        quests = {"Quest:Mine": repository_quest("B2", "Hello there, young Wizard!"),
+                  "Quest:Other": repository_quest("B2", "Something else entirely.")}
+        langs = {"Quest:Mine": "B2", "Quest:Other": "B2"}
+        self.assertEqual(claimed_twice(data, langs, quests, {"Quest:Other": "evidence"}), ["Quest:Other"])
+
+
+REPOSITORY_QUEST = {
+    "name": "Around Here Someplace", "wiki_page": "https://therepository.fandom.com/wiki/Around_Here_Someplace",
+    "lang_hex": "834ED", "type": "storyline", "prev": ["Fool's Knight"], "next": ["Broken Signs"],
+    "goals": ["Defeat Hobgoblin Plunderer and Collect Sir Brennan's Armor", "Defeat 2 Hart Lancer",
+              "Talk To Steward Kay in Caer Lyon"],
+    "characters": ["Steward Kay"], "dialogue": []}
+LICENCE = {"licence": "CC-BY-SA", "licence_url": "https://www.fandom.com/licensing"}
+
+
+def build_from_repository(data, quest=REPOSITORY_QUEST, tracked=None):
+    entry = repository_entry({"name": quest["name"], "page": f"Quest:{quest['name']}", "zones": []}, quest, LICENCE)
+    fields = repository_fields(data, quest, tracked)
+    builder = SpecBuilder(data, entry, fields, {"Quest Zone": ZONE}, {"foolsknight": "T-0"}, {ZONE})
+    return fields, builder.build("834ED", "T-1")
+
+
+class RepositorySpecTest(unittest.TestCase):
+    def setUp(self):
+        self.data = Data(personas=["Steward Kay"], mobs=["Hobgoblin Plunderer", "Hart Lancer"])
+        self.fields, self.spec = build_from_repository(self.data, tracked={"area": "Quest Zone", "xp": 4380,
+                                                                           "gold": 285})
+
+    def test_goals_are_read_from_the_quest_goals_list(self):
+        self.assertEqual([summary(goal) for goal in self.spec["goals"]],
+                         [("bountycollect", ["Hobgoblin Plunderer.AdjRef"], 1, False),
+                          ("bounty", ["Hart Lancer.AdjRef"], 2, False), ("persona", "giver", None, False)])
+
+    def test_the_first_character_gives_the_quest_and_the_last_talk_is_the_hand_in(self):
+        self.assertEqual(self.spec["giver"], {"persona": "Steward Kay", "zone": ZONE})
+        self.assertEqual(self.fields["hand_in"], "Steward Kay")
+
+    def test_chain_reward_and_zone_come_from_the_infobox_and_spiraltracker(self):
+        self.assertEqual(self.spec["requires"], ["T-0"])
+        self.assertEqual(self.fields["leads_to"], ["Broken Signs"])
+        self.assertEqual(self.spec["reward"], {"xp": 4380, "gold": 285})
+        self.assertTrue(self.spec["mainline"])
+        self.assertEqual(self.spec["goals"][0]["zone"], ZONE)
+
+    def test_the_spec_names_the_repository_page_and_its_licence(self):
+        self.assertEqual(self.spec["source"], {"page": REPOSITORY_QUEST["wiki_page"], "from": "repository",
+                                               **LICENCE})
+
+    def test_without_a_zone_name_the_goals_take_the_giver_zone(self):
+        _, spec = build_from_repository(self.data, tracked={"area": "Elsewhere"})
+        self.assertEqual([goal["zone"] for goal in spec["goals"][:2]], [ZONE, ZONE])
+
+    def test_a_first_character_no_zone_places_gives_no_giver(self):
+        quest = dict(REPOSITORY_QUEST, characters=["Narrator", "Steward Kay"])
+        fields, spec = build_from_repository(self.data, quest)
+        self.assertIsNone(fields["giver"])
+        self.assertNotIn("reward", spec)
 
 
 @needs_rootwad

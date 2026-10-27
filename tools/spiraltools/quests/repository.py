@@ -148,7 +148,7 @@ def dialogue_line(line):
 
 
 def read_quest(title, wikitext):
-    """A quest page's wikitext as an index entry: lang key, type, chain, goals and dialogue."""
+    """A quest page's wikitext as an index entry: lang key, type, chain, goals, characters and dialogue."""
     fields = infobox(wikitext)
     lang = LANG_ID.search(fields.get("id", ""))
     return {
@@ -159,6 +159,8 @@ def read_quest(title, wikitext):
         "prev": linked_titles(fields.get("prev", "")),
         "next": linked_titles(fields.get("next", "")),
         "goals": [plain(line[1:]) for line in section(wikitext, "Quest Goals") if line.startswith("#")],
+        "characters": [plain(re.split(r"<small>|&mdash;", line[1:])[0]) for line in section(wikitext, "Characters")
+                       if line.startswith("*")],
         "dialogue": [dialogue_line(line) for line in section(wikitext, "Dialogue") if line.startswith(":")],
     }
 

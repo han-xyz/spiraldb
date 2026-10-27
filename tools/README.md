@@ -411,8 +411,8 @@ specs it wrote before.
 
 ## repository and tracker
 
-Two more sources of quest data, fetched into the archive's cache (`--cache`, the same default) and not yet read by
-`archive parse`:
+Two more sources of quest data, fetched into the archive's cache (`--cache`, the same default) and read by `archive
+parse` ([Repository specs](#repository-specs)):
 
 ```sh
 python3 -I tools/spiraltools.py repository fetch Wallaru Novus   # The Repository's quest pages (network)
@@ -427,11 +427,20 @@ request per 3 s)`, and never ask again for what the cache holds.
 `Category:Wizard101 <World> Mainline|Instance|Side Quests` and each listed page's wikitext, kept as
 `repository/<world>/<page>.wikitext` beside the category listings. A world whose Mainline category is empty is left
 there. `repository parse` writes the index: the licence, and per quest its name, page URL, `lang_hex` (the first
-`WizQst` id of the infobox, as a spec's `lang`), type, previous and next quests, the goal lines and the dialogue lines
-(speaker, text, audio file).
+`WizQst` id of the infobox, as a spec's `lang`), type, previous and next quests, the goal lines, the characters in
+order of appearance and the dialogue lines (speaker, text, audio file).
 
 `tracker fetch` takes `https://spiraltracker.com/<world>` once, keeps it as `tracker/<world>.html`, and writes
 `tracker/tracker-<world>.json`: the quest list the page embeds, as it is, with the URL and the fetch time.
+
+### Repository specs
+
+`archive parse` builds the spec of an index quest that has no cached page from its Repository page, when the world's
+Repository index has one by that title: the lang key as for any page (above), the Quest Goals lines through the same
+goal readers (counts from the line's number), the first character as giver when a zone places that persona, else the
+hand-in of its first prerequisite, the infobox's previous quests as `requires`, a last talk goal's NPC as the hand-in,
+spiraltracker's xp and gold as the reward and its area as the zone name, else the giver's zone. Its `source` is
+`{page: <Repository URL>, from: "repository", licence, licence_url}`; gaps block it as for a wiki page.
 
 ## mobs and npcs
 
