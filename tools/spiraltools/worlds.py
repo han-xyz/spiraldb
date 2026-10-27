@@ -42,7 +42,8 @@ WORLDS = (
     World("DragonSpire", "DS", "Dragonspyre", 40),
     World("Grizzleheim", "GH", "Grizzleheim", 45),
     World("Celestia", "CL", "Celestia", 48),
-    World("Zafaria", "ZF", "Zafaria", 60, (0x718AF, 0x71A69)),
+    # Widened from 0x71A69 to cover the keys its quest titles read.
+    World("Zafaria", "ZF", "Zafaria", 60, (0x718AF, 0x82A92)),
     World("Avalon", "AV", "Avalon", 68, (0x908E2, 0x96B64)),
     World("Azteca", "AZ", "Azteca", 78, (0x9D00C, 0xB4FAF)),
     World("Khrysalis", "KR", "Khrysalis", 88, (0x126322, 0x13D76F)),

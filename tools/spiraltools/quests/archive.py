@@ -529,6 +529,7 @@ class ClientData:
         self.read_lang = lambda name: read_lang(ROOTWAD_DIR, name)
         self.titles = self.read_lang("QuestTitle")
         self.lang_range = lang_cluster(registered, ROOTWAD_DIR)
+        self.range_is_declared = registered.lang_range is not None
         self.lang_dir = os.path.join(ROOTWAD_DIR, LANG_SUBDIR)
         rows = list(templates.npcs(ROOTWAD_DIR, self.folder))
         placed = templates.zone_placements(GAMEDATA_DIR, self.world, {row["template"]: row["template_id"]
@@ -616,6 +617,14 @@ class ClientData:
             if found:
                 return found
         return []
+
+    def title_lang(self, title):
+        """The quest lang key that reads the title: in the world's range first; only in it when the range is
+        declared."""
+        keys = [k for k in self.title_keys(title) if self.has_quest_lang(k)]
+        if self.range_is_declared:
+            keys = [k for k in keys if self.in_range(k)]
+        return min(keys, key=lambda k: not self.in_range(k), default=None)
 
     def internal_name(self, key):
         text = self.titles.get(key, "")
@@ -1280,9 +1289,7 @@ def parse_world(cache, registered):
     placeholders = data.placeholder_langs()
     langs, ids = {}, {}
     for entry in index:
-        keys = sorted((k for k in data.title_keys(entry["name"]) if data.has_quest_lang(k)),
-                      key=lambda k: not data.in_range(k))
-        langs[entry["page"]] = keys[0] if keys else None
+        langs[entry["page"]] = data.title_lang(entry["name"])
     by_title = {title_norm(entry["name"]): entry["page"] for entry in index}
     evidence = {}
 

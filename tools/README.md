@@ -49,9 +49,11 @@ names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`
 wins over the derived cluster: Zafaria and Polaris have no such title, Lemuria's one title (`LM-URSAI-ENC-002a`) sits
 in a run of encounter quests, Karamelle's anchored run holds 11 of its files, Empyrea's holds few of its quests, and
 Khrysalis's quests lie in runs from 0x126322 to 0x13D76F that its few titles do not anchor, and Avalon's and
-Azteca's quests are spread over runs their few titles do not anchor, interleaved with each other's. Polaris and
-Wallaru have `source="none"`: the archive holds no 200 capture of their quest category and the live wiki refuses, so
-`archive enumerate` stops on them. A world outside the table is refused with the list of the known ones.
+Azteca's quests are spread over runs their few titles do not anchor, interleaved with each other's. A declared range
+is exclusive: `archive parse` takes no title key outside it, so a title read only outside it stays blocked on `lang`
+(a title of the same name in another world). Zafaria's range was widened to cover the keys its titles read. Polaris
+and Wallaru have `source="none"`: the archive holds no 200 capture of their quest category and the live wiki refuses,
+so `archive enumerate` stops on them. A world outside the table is refused with the list of the known ones.
 
 ## check
 

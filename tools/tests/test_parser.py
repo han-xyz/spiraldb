@@ -202,6 +202,12 @@ class ClientLookupTest(unittest.TestCase):
         data = ClientData(world("Novus"))
         self.assertIn("17D615", data.title_keys("Monkey Business (Novus)"))
 
+    def test_a_title_read_only_outside_the_declared_range_has_no_lang(self):
+        self.assertIsNone(ClientData(world("Avalon")).title_lang("Plant Life"))
+
+    def test_a_title_read_inside_and_outside_the_declared_range_takes_the_key_inside(self):
+        self.assertEqual(ClientData(world("Avalon")).title_lang("Running Free"), "908F3")
+
 
 if __name__ == "__main__":
     unittest.main()

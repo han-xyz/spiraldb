@@ -34,7 +34,7 @@ class WorldsTest(unittest.TestCase):
         self.assertEqual(lang_cluster(world("Empyrea"), ROOTWAD_DIR), (0x132297, 0x16437F))
     def test_a_declared_range_wins_over_the_anchored_runs(self):
         self.assertEqual(lang_cluster(world("Khrysalis"), ROOTWAD_DIR), (0x126322, 0x13D76F))
-        self.assertEqual(lang_cluster(world("Zafaria"), ROOTWAD_DIR), (0x718AF, 0x71A69))
+        self.assertEqual(lang_cluster(world("Zafaria"), ROOTWAD_DIR), (0x718AF, 0x82A92))
         self.assertEqual(lang_cluster(world("Polaris"), ROOTWAD_DIR), (0x14DBD8, 0x14DC0D))
 
 
