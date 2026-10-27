@@ -1,5 +1,5 @@
 {
-  "Name": "AV-Q-96B22",
+  "Name": "AV-Q-834D1",
   "Description": "",
   "RollChance": 1.0,
   "Weight": 100,
@@ -10,8 +10,8 @@
   "ExperienceAmount": 2025,
   "TrainingPoints": 0,
   "Items": [],
-  "CreatedAt": "2026-10-27T07:14:14.108339Z",
-  "ModifiedAt": "2026-10-27T07:14:14.108339Z",
+  "CreatedAt": "2026-10-27T07:23:57.020209Z",
+  "ModifiedAt": "2026-10-27T07:23:57.020209Z",
   "CreatedBy": "questgen",
   "ModifiedBy": "questgen"
 }

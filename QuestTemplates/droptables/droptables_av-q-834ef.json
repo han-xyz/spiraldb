@@ -1,17 +1,17 @@
 {
-  "Name": "AV-Q-13D702",
+  "Name": "AV-Q-834EF",
   "Description": "",
   "RollChance": 1.0,
   "Weight": 100,
   "NoneChance": 0.0,
   "PityCounter": 0.0,
-  "MinGold": 480,
-  "MaxGold": 480,
-  "ExperienceAmount": 25850,
+  "MinGold": 150,
+  "MaxGold": 150,
+  "ExperienceAmount": 6445,
   "TrainingPoints": 0,
   "Items": [],
-  "CreatedAt": "2026-10-27T07:14:14.108339Z",
-  "ModifiedAt": "2026-10-27T07:14:14.108339Z",
+  "CreatedAt": "2026-10-27T07:23:57.020209Z",
+  "ModifiedAt": "2026-10-27T07:23:57.020209Z",
   "CreatedBy": "questgen",
   "ModifiedBy": "questgen"
 }

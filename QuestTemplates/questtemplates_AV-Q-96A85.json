@@ -199,7 +199,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "AV-Q-96AF3",
+        "m_questName": "AV-Q-834D1",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       },
@@ -208,7 +208,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "AV-Q-96B22",
+        "m_questName": "AV-Q-96AF3",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }
