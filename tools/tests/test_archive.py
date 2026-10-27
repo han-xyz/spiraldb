@@ -6,7 +6,9 @@ import unittest
 import urllib.error
 
 import client  # noqa: F401
-from spiraltools.quests.archive import USER_AGENT, LiveWiki, cached, fetch_quest, match_by_proper_nouns
+from spiraltools.quests.archive import (USER_AGENT, LiveWiki, cached, enumerate_world, fetch_category, fetch_quest,
+                                        match_by_proper_nouns)
+from spiraltools.worlds import world
 
 
 class Lines:
@@ -147,6 +149,59 @@ class FetchOrderTest(unittest.TestCase):
         found, _, _, web, _ = self.fetch({ROBOTS: robots, API: API_PAGE, PAGE: (200, QUEST_HTML.encode(), {})})
         self.assertEqual(found, "live")
         self.assertEqual(web.urls(), [ROBOTS, PAGE])
+
+
+CATEGORY_PAGE = '<div id="mw-subcategories"></div><div id="mw-pages"><a href="/wiki/Quest:Bark">Bark</a></div>'
+PLAYBACK_PAGE = "<title>Wayback Machine</title><iframe id=playback>"
+
+
+class CaptureArchive:
+    """The archive's CDX list of a category's captures, and the captures by timestamp."""
+
+    def __init__(self, cdx, captures):
+        self.cdx, self.captures = cdx, captures
+        self.urls = []
+
+    def get(self, url):
+        self.urls.append(url)
+        if "/cdx/" in url:
+            return url, self.cdx.encode()
+        stamp = url.split("/web/")[1][:14]
+        return f"https://web.archive.org/web/{stamp}/x", self.captures[stamp].encode()
+
+
+class CategoryCaptureTest(unittest.TestCase):
+    def test_the_newest_200_capture_with_category_content_is_used(self):
+        archive = CaptureArchive("20230926091304 200\n20250906070419 200\n20260616193653 403\n",
+                                 {"20250906070419": PLAYBACK_PAGE, "20230926091304": CATEGORY_PAGE})
+        with tempfile.TemporaryDirectory() as cache:
+            self.assertEqual(fetch_category(archive, cache, "Category:Azteca_Quests"), CATEGORY_PAGE)
+        self.assertFalse(any("20260616193653" in url for url in archive.urls))
+
+    def test_a_cached_capture_without_category_content_is_not_used(self):
+        archive = CaptureArchive("20250906070419 200\n", {"20250906070419": CATEGORY_PAGE})
+        with tempfile.TemporaryDirectory() as cache:
+            with open(os.path.join(cache, "20260616193653_Category_Azteca_Quests.html"), "w") as f:
+                f.write(PLAYBACK_PAGE)
+            self.assertEqual(fetch_category(archive, cache, "Category:Azteca_Quests"), CATEGORY_PAGE)
+            self.assertEqual(fetch_category(archive, cache, "Category:Azteca_Quests"), CATEGORY_PAGE)
+        self.assertEqual(len(archive.urls), 2)
+
+    def test_no_200_capture_is_no_answer(self):
+        archive = CaptureArchive("20260329221808 403\n", {})
+        with tempfile.TemporaryDirectory() as cache:
+            self.assertIsNone(fetch_category(archive, cache, "Category:Polaris_Quests"))
+
+
+class NoSourceTest(unittest.TestCase):
+    def test_a_world_without_a_source_is_not_enumerated(self):
+        archive = CaptureArchive("", {})
+        for name in ("Polaris", "Wallaru"):
+            with self.subTest(name), tempfile.TemporaryDirectory() as cache:
+                with self.assertRaises(SystemExit) as raised:
+                    enumerate_world(LiveWiki(urlopen=FakeWeb({}), interval=0), archive, cache, world(name))
+                self.assertIn("no 200 captures", str(raised.exception))
+        self.assertEqual(archive.urls, [])
 
 
 if __name__ == "__main__":

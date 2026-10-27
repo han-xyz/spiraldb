@@ -33,9 +33,10 @@ API = SITE + "api.php?"
 ARCHIVE = "https://web.archive.org/web/"
 CDX = ("https://web.archive.org/cdx/search/cdx?url=wiki.wizard101central.com/wiki/Quest:*"
        "&fl=original,timestamp,statuscode&filter=statuscode:200&collapse=urlkey")
+CATEGORY_CDX = ("https://web.archive.org/cdx/search/cdx?url=wiki.wizard101central.com/wiki/{}"
+                "&fl=timestamp,statuscode&filter=statuscode:200")
 # A partial timestamp redirects to the capture nearest to it, so this year asks for the newest capture.
 NEWEST = "2026"
-CATEGORY_YEARS = (NEWEST, "2024", "2023")
 USER_AGENT = "spiraltools/1.0 (+https://github.com/han-xyz/spiraldb)"
 REQUEST_INTERVAL = 1.0
 LIVE_INTERVAL = 2.0
@@ -203,15 +204,20 @@ class Cached(NamedTuple):
 CACHED_NAME = re.compile(r"(\d{14})_(?:(live|archive)_)?(.+)\.html")
 
 
-def cached(cache, key):
-    """The cached copy of a page, live before archived and newest first, or None."""
+def cached_copies(cache, key):
+    """The cached copies of a page, live before archived and newest first."""
     name = file_name(key)
     hits = []
     for path in glob.glob(os.path.join(cache, f"[0-9]*_{glob.escape(name)}.html")):
         match = CACHED_NAME.fullmatch(os.path.basename(path))
         if match and match.group(3) == name:
             hits.append(Cached(match.group(1), match.group(2) or ARCHIVED, path))
-    return max(hits, key=lambda hit: (hit.source == LIVE, hit.stamp)) if hits else None
+    return sorted(hits, key=lambda hit: (hit.source == LIVE, hit.stamp), reverse=True)
+
+
+def cached(cache, key):
+    """The preferred cached copy of a page, or None."""
+    return next(iter(cached_copies(cache, key)), None)
 
 
 def save_page(cache, key, stamp, source, text):
@@ -225,6 +231,10 @@ def fetch_page(archive, cache, key, raw=True, at=NEWEST):
     if hit:
         with open(hit.path, encoding="utf-8") as f:
             return hit.stamp, f.read()
+    return download_page(archive, cache, key, raw, at)
+
+
+def download_page(archive, cache, key, raw, at):
     url, data = archive.get(f"{ARCHIVE}{at}{'id_' if raw else ''}/{WIKI}{urllib.parse.quote(key, safe=':_()/,!')}")
     stamp = re.search(r"/web/(\d{14})", url).group(1)
     text = data.decode("utf-8", errors="replace")
@@ -267,14 +277,33 @@ def quest_type_of(category):
     return match.group(1).lower() if match else None
 
 
+def is_category_page(page):
+    return 'id="mw-pages"' in page or 'id="mw-subcategories"' in page
+
+
 def fetch_category(archive, cache, category):
-    """A category page from the newest capture that answers, or None; newer captures can be error pages."""
-    for year in CATEGORY_YEARS:
+    """A category page from the newest cached or archived capture with status 200 that lists members, or None. The
+    newest captures can be recorded refusals, which the archive serves as a page of its own."""
+    stamps = set()
+    for hit in cached_copies(cache, category):
+        stamps.add(hit.stamp)
+        with open(hit.path, encoding="utf-8") as f:
+            page = f.read()
+        if is_category_page(page):
+            return page
+    _, data = archive.get(CATEGORY_CDX.format(urllib.parse.quote(category, safe=":_()/,!")))
+    captures = [line.split() for line in data.decode().splitlines()]
+    for stamp in reversed([fields[0] for fields in captures if fields[1:2] == ["200"]]):
+        if stamp in stamps:
+            continue
         try:
-            return fetch_page(archive, cache, category, raw=False, at=year)[1]
+            page = download_page(archive, cache, category, raw=False, at=stamp)[1]
         except urllib.error.HTTPError as e:
             if e.code not in (403, 404):
                 raise
+            continue
+        if is_category_page(page):
+            return page
     return None
 
 
@@ -330,6 +359,9 @@ def index_path(cache, world):
 
 def enumerate_world(live, archive, cache, registered):
     world = registered.name
+    if registered.source == "none":
+        raise SystemExit(f"{world}: source none: no 200 captures of {registered.category} in the Internet Archive, "
+                         "and the live wiki refuses")
     quests = walk_categories(live, archive, cache, registered)
     archived = archived_quests(archive)
     index = []

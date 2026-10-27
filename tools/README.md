@@ -46,7 +46,9 @@ quest names and ObjectData folder (`ZF`), its wiki category (`Category:Zafaria_Q
 gets when the wiki gives none. The world's `WizQst` lang cluster is derived: the run of quest lang files (keys at
 most `CLUSTER_GAP` apart) holding the most `QuestTitle.lang` entries that read as one of the world's internal quest
 names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`. Zafaria and Polaris have no such
-title, so their row declares `lang_range`. A world outside the table is refused with the list of the known ones.
+title, so their row declares `lang_range`. Polaris and Wallaru have `source="none"`: the archive holds no 200 capture
+of their quest category and the live wiki refuses, so `archive enumerate` stops on them. A world outside the table is
+refused with the list of the known ones.
 
 ## check
 
@@ -313,7 +315,9 @@ wiki does not answer. The world comes from the registry ([Worlds](#worlds)): its
 and level.
 
 `enumerate` walks `Category:<World>_Quests` and its subcategories, live or archived, and reads the CDX index of
-`Quest:` pages. A category with no answer is reported; its quests still come in through the other categories. `fetch`
+`Quest:` pages. An archived category is the newest capture with status 200 in its CDX list that lists members (the
+newest captures can be recorded refusals, served by the archive as a page of its own). A category with no answer is
+reported; its quests still come in through the other categories. `fetch`
 takes the live page, else the newest capture, and the CDX timestamp when the newest capture is an error page; a quest
 without a snapshot is fetched only live.
 

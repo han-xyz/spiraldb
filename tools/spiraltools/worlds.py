@@ -17,6 +17,7 @@ class World(NamedTuple):
     wiki: str
     level: int
     lang_range: tuple = None
+    source: str = "wiki"
 
     @property
     def category(self):
@@ -30,7 +31,8 @@ class World(NamedTuple):
 
 # name: the zone wad prefix (Celestia-*.wad); prefix: the quest names (CL-CAMP-C01-001) and the ObjectData folder.
 # level: the quest level a spec gets when the wiki gives none. lang_range: declared only where QuestTitle.lang has no
-# internal quest name of the world to anchor its cluster.
+# internal quest name of the world to anchor its cluster. source "none": the wiki category has no 200 capture in the
+# Internet Archive and the live wiki refuses, so the world cannot be enumerated.
 WORLDS = (
     World("WizardCity", "WC", "Wizard_City", 5),
     World("Krokotopia", "KT", "Krokotopia", 15),
@@ -43,13 +45,13 @@ WORLDS = (
     World("Avalon", "AV", "Avalon", 68),
     World("Azteca", "AZ", "Azteca", 78),
     World("Khrysalis", "KR", "Khrysalis", 88),
-    World("Polaris", "PL", "Polaris", 100, (0x14DBD8, 0x14DC0D)),
+    World("Polaris", "PL", "Polaris", 100, (0x14DBD8, 0x14DC0D), source="none"),
     World("Mirage", "MR", "Mirage", 105),
     World("Empyrea", "EM", "Empyrea", 112),
     World("Karamelle", "KM", "Karamelle", 122),
     World("Lemuria", "LM", "Lemuria", 132),
     World("Novus", "NV", "Novus", 142),
-    World("Wallaru", "WL", "Wallaru", 152),
+    World("Wallaru", "WL", "Wallaru", 152, source="none"),
 )
 
 
