@@ -1,0 +1,146 @@
+{
+  "id": "NV-Q-17D614",
+  "lang": "17D614",
+  "giver": {
+    "persona": "NV-PUERT-NPC06",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-17D613"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 73520,
+    "gold": 253
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC14",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC03-B",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_DesertExplorer_A_NPC.dds",
+      "template_id": 1575001
+    },
+    "NV-PUERT-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_B_NPC.dds",
+      "template_id": 1562153
+    },
+    "NV-PUERT-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
+      "template_id": 1562164
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gone_to_the_Dogs",
+    "timestamp": "20240118175941"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Marleyboneans in Conatus",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

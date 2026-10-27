@@ -1,0 +1,58 @@
+{
+  "id": "NV-Q-otherplayers",
+  "requires": [
+    "NV-Q-17337A"
+  ],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Other_Players",
+    "timestamp": "20240323103254"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Other Players",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Other People",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Backstage",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Aberrant Helephant (Balance-Death)",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Defeat [Creature:Other People]",
+        "@Go to Backstage",
+        "@Defeat [Creature:Aberrant Helephant (Balance-Death)]"
+      ],
+      "blocking": true
+    }
+  ]
+}

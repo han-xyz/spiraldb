@@ -1,0 +1,84 @@
+{
+  "id": "NV-Q-cannoncannoff",
+  "giver": {
+    "persona": "NV-CON-NPC01-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [],
+  "min_level": 142,
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 137850,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Mustache_Bird_B_01.AdjRef",
+        "NV_Mustache_Bird_B_02.AdjRef",
+        "NV_Mustache_Bird_B_03.AdjRef",
+        "NV_Mustache_Bird_B_04.AdjRef",
+        "NV_Mustache_Bird_B_05.AdjRef",
+        "NV_Mustache_Bird_B_06.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00004195",
+      "zone": "",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Mustache_Bird_B_01.AdjRef",
+        "NV_Mustache_Bird_B_02.AdjRef",
+        "NV_Mustache_Bird_B_03.AdjRef",
+        "NV_Mustache_Bird_B_04.AdjRef",
+        "NV_Mustache_Bird_B_05.AdjRef",
+        "NV_Mustache_Bird_B_06.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00004195",
+      "zone": "",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1575004
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cannon,_Cann-Off",
+    "timestamp": "20240323102709"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Cannon, Cann-Off",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Step By Step",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "on Moo Bu",
+      "blocking": true
+    }
+  ]
+}

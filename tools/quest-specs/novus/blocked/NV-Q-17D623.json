@@ -1,0 +1,124 @@
+{
+  "id": "NV-Q-17D623",
+  "lang": "17D623",
+  "giver": {
+    "persona": "NV-PUERT-NPC34",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-17D622"
+  ],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 600
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV-Marble.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000976",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-OrangeWater.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000975",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "NV_Monkey_Zombie_A_01.AdjRef",
+        "NV_Monkey_Zombie_A_02.AdjRef",
+        "NV_Monkey_Zombie_A_03.AdjRef",
+        "NV_Monkey_Zombie_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004191",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizQst17D623_00000010",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC34": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ServantF_A_NPC.dds",
+      "template_id": 1562189
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Princess_Request",
+    "timestamp": "20240323101642"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Grim Cave",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

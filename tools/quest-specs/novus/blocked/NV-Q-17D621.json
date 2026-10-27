@@ -1,0 +1,175 @@
+{
+  "id": "NV-Q-17D621",
+  "lang": "17D621",
+  "giver": {
+    "persona": "NV-PUERT-NPC31",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [],
+  "min_level": 142,
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 600
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC32",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Penguin_Cook_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004234",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC32",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-ROSE-NPC20",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC31": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_C_NPC.dds",
+      "template_id": 1562185
+    },
+    "NV-PUERT-NPC32": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ServantF_B_NPC.dds",
+      "template_id": 1562186
+    },
+    "NV-ROSE-NPC20": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_E_NPC.dds",
+      "template_id": 1520517
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Rough_Waiters",
+    "timestamp": "20240323102454"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Dogs of the Regiment",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Angry Tent",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Sournois Pas in La Ville Rose",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

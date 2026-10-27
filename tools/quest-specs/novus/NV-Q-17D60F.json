@@ -1,0 +1,224 @@
+{
+  "id": "NV-Q-17D60F",
+  "lang": "17D60F",
+  "giver": {
+    "persona": "NV-PUERT-NPC04",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-17D60C"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 211370,
+    "gold": 620
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC02",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC01",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC06",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC07",
+      "zone": "Novus/NV_Z03_PuertoNuovo_MQ",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_BananaSpider_Base_A_01.AdjRef",
+        "NV_BananaSpider_Base_A_02.AdjRef",
+        "NV_BananaSpider_Base_A_03.AdjRef",
+        "NV_BananaSpider_Base_A_04.AdjRef",
+        "NV_BananaSpider_Base_A_05.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00004126",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC07",
+      "zone": "Novus/NV_Z03_PuertoNuovo_MQ",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC14",
+      "zone": "Novus/Interiors/NV_Z01_TentAntechamber",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Monquistador_A_NPC.dds",
+      "template_id": 1575017
+    },
+    "NV-PUERT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Priest_A_NPC.dds",
+      "template_id": 1562148
+    },
+    "NV-PUERT-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_NobleF_B_NPC.dds",
+      "template_id": 1562149
+    },
+    "NV-PUERT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ExplorerF_A_NPC.dds",
+      "template_id": 1562151
+    },
+    "NV-PUERT-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_B_NPC.dds",
+      "template_id": 1562153
+    },
+    "NV-PUERT-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_A_NPC.dds",
+      "template_id": 1562154
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hasta_Banana",
+    "timestamp": "20240323101742"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Strange Things Indeed replaced by NV-Q-17D60C",
+      "blocking": false
+    }
+  ]
+}

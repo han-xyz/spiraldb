@@ -1,0 +1,172 @@
+{
+  "id": "NV-Q-1808BB",
+  "lang": "1808BB",
+  "giver": {
+    "persona": "NV-CON-NPC16-C",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [],
+  "min_level": 142,
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 82710,
+    "gold": 250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-DEstate-NPC32",
+      "zone": "Novus/NV_Z08_DaseinEstate",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC16-C": {
+      "portrait": "GUI/NpcPortraits/Unicorn_NobleF_A_NPC.dds",
+      "template_id": 1608268
+    },
+    "NV-DEstate-NPC32": {
+      "portrait": "GUI/NpcPortraits/Portrait_Zander_NPC.dds",
+      "template_id": 1634008
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:This_War_of_Mind",
+    "timestamp": "20240118173212"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1808BB matched by the words it shares with the goals; its lines name Zander",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Manticore Meltdown",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Leyline Door to New Vicorgia",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "to the Spiral Leaders",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "through the World Door to Arcanum",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Novus/NV_Z08_DaseinEstate",
+      "blocking": true
+    }
+  ]
+}

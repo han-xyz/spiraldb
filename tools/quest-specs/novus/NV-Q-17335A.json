@@ -1,0 +1,95 @@
+{
+  "id": "NV-Q-17335A",
+  "lang": "17335A",
+  "giver": {
+    "persona": "NV-ROSE-NPC01-B",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
+  "requires": [
+    "NV-Q-173358"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 82710,
+    "gold": 240
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "NV_Fish_CrazyLegs_A_01.AdjRef",
+        "NV_Fish_CrazyLegs_A_02.AdjRef",
+        "NV_Fish_CrazyLegs_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004197",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "descriptor": "WizQst17335A_00000008",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000002"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-ROSE-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1520457
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Secrets_of_the_Fish",
+    "timestamp": "20231216235125"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Table Flip replaced by NV-Q-173358",
+      "blocking": false
+    }
+  ]
+}

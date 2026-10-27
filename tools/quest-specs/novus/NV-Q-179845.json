@@ -1,0 +1,113 @@
+{
+  "id": "NV-Q-179845",
+  "lang": "179845",
+  "giver": {
+    "persona": "NV-NEWV-NPC03-B",
+    "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 128660,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_NavyCaptain_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004173",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-BoatToNP.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00002109",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC13",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-NEWV-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
+      "template_id": 1546206
+    },
+    "NV-PUERT-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portraits_Unicorn_Guard_A_NPC.dds",
+      "template_id": 1562160
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Raining_Attacks_and_Dogs",
+    "timestamp": "20240409061209"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Vive La Several Revolutions",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Invading Fleet",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Vive La Several Revolutions replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 142
+}

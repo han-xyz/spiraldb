@@ -1,0 +1,172 @@
+{
+  "id": "NV-Q-188A1F",
+  "lang": "188A1F",
+  "requires": [
+    "NV-Q-188A1A"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 209160,
+    "gold": 610
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Unicorn_Guard_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004446",
+      "zone": "",
+      "loc": "ZoneLocName_1560538"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Monkey_Monquistador_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004447",
+      "zone": "",
+      "loc": "ZoneLocName_1560538"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Monkey_SoldierBoss_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004448",
+      "zone": "",
+      "loc": "ZoneLocName_1560538"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wailers_on_the_Moon",
+    "timestamp": "20240121095636"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Master Duelist: ObjectData/WL",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Magus Monquistador: ObjectData/WL",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Major Marado: ObjectData/WL",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

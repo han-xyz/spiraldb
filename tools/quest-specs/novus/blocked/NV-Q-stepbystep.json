@@ -1,0 +1,59 @@
+{
+  "id": "NV-Q-stepbystep",
+  "giver": {
+    "persona": "NV-CON-NPC01-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [],
+  "min_level": 142,
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 91900,
+    "gold": 270
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1575004
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Step_By_Step",
+    "timestamp": "20240323102706"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Step By Step",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Throwing Stones (Novus)",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Lower Passage",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Aberrant Tung Ak (Myth-Life)",
+      "blocking": true
+    }
+  ]
+}

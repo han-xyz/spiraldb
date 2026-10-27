@@ -1,0 +1,134 @@
+{
+  "id": "NV-Q-17D60C",
+  "lang": "17D60C",
+  "giver": {
+    "persona": "NV-PUERT-NPC01",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 91900,
+    "gold": 270
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV-PUERT-NPC04.AdjRef",
+        "NV-PUERT-NPC04_b.AdjRef",
+        "NV-PUERT-NPC04_c.AdjRef",
+        "NV-PUERT-NPC04_d.AdjRef",
+        "NV-PUERT-NPC04_e.AdjRef",
+        "NV_Standin_Fernanda.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardNPC_00001044",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Irks_Base_C_01.AdjRef",
+        "NV_Irks_Base_C_02.AdjRef",
+        "NV_Irks_Base_C_03.AdjRef",
+        "NV_Irks_Base_C_04.AdjRef",
+        "NV_Irks_Base_C_05.AdjRef",
+        "NV_Irks_Base_C_06.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00004124",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC04",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Priest_A_NPC.dds",
+      "template_id": 1562148
+    },
+    "NV-PUERT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ExplorerF_A_NPC.dds",
+      "template_id": 1562151
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Whole_Nuovo_World",
+    "timestamp": "20251112201857"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "World Piece",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "World Piece replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 142
+}

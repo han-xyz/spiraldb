@@ -1,0 +1,196 @@
+{
+  "id": "NV-Q-179840",
+  "lang": "179840",
+  "giver": {
+    "persona": "NV-CON-NPC06-B",
+    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+  },
+  "requires": [
+    "NV-Q-17983E"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 211370,
+    "gold": 620
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC03-B",
+      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-FrameOfMind.AdjRef",
+        "NV-NEWVIC-FrameOfMind.AdjRef",
+        "NV-PUERT-FrameOfMind.AdjRef",
+        "NV-ROSE-FrameOfMind.AdjRef",
+        "NV-STONE-FrameOfMind.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00025065",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    }
+  ],
+  "personas": {
+    "MS-StandIn-StringCasterFuzhi-Dasein": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
+      "template_id": 1608246
+    },
+    "NV-CON-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1575019
+    },
+    "NV-NEWV-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
+      "template_id": 1546206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mind_Over_Political_Matters",
+    "timestamp": "20240118174421"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Lab",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Cave",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Splintered Lands",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Aberrant Marleybonian Dog (Sun-Fire)",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Frame of Mind",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

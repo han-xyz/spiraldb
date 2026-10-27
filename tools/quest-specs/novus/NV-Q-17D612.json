@@ -1,0 +1,184 @@
+{
+  "id": "NV-Q-17D612",
+  "lang": "17D612",
+  "giver": {
+    "persona": "NV-PUERT-NPC06",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-17D60F"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 192990,
+    "gold": 570
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC13",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Monkey_Zombie_A_01.AdjRef",
+        "NV_Monkey_Zombie_A_02.AdjRef",
+        "NV_Monkey_Zombie_A_03.AdjRef",
+        "NV_Monkey_Zombie_A_04.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00004191",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC13",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-SilverBerries.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000970",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC13",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447",
+      "completion": [
+        {
+          "speaker": "NV-PUERT-NPC13",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_B_NPC.dds",
+      "template_id": 1562153
+    },
+    "NV-PUERT-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portraits_Unicorn_Guard_A_NPC.dds",
+      "template_id": 1562160
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Monkeys_of_Doom",
+    "timestamp": "20240323101850"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Don't Drink the Water (Novus)",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Don't Drink the Water (Novus) replaced by NV-Q-17D60F",
+      "blocking": false
+    }
+  ]
+}

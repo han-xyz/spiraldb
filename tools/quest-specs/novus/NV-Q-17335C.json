@@ -1,0 +1,137 @@
+{
+  "id": "NV-Q-17335C",
+  "lang": "17335C",
+  "giver": {
+    "persona": "NV-ROSE-NPC08",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
+  "requires": [
+    "NV-Q-17335A"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 119470,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Player_Cabal_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004151",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-ROSE-NPC06",
+      "zone": "Novus/Interiors/NV_Z05_BasseSteele",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-ROSE-NPC01-B",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    }
+  ],
+  "personas": {
+    "NV-ROSE-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1520457
+    },
+    "NV-ROSE-NPC06": {
+      "portrait": "GUI/NpcPortraits/Dog_DogOfWarF_A_NPC.dds",
+      "template_id": 1520459
+    },
+    "NV-ROSE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_E_NPC.dds",
+      "template_id": 1520461
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Quakespiracy",
+    "timestamp": "20240323103627"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Matheus' House",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Pingouin Some, Lose Some replaced by NV-Q-17335A",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "NV-Q-daseindivided",
+  "giver": {
+    "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
+  "requires": [
+    "NV-Q-179840"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 45950,
+    "gold": 130
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC03-B",
+      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "loc": "ZoneLocName_1563028"
+    }
+  ],
+  "personas": {
+    "MS-StandIn-StringCasterFuzhi-Dasein": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
+      "template_id": 1608246
+    },
+    "NV-NEWV-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
+      "template_id": 1546206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dasein_Divided",
+    "timestamp": "20231216235125"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Dasein Divided",
+      "blocking": true
+    }
+  ]
+}

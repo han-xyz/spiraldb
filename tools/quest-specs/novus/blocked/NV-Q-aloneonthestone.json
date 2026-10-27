@@ -1,0 +1,68 @@
+{
+  "id": "NV-Q-aloneonthestone",
+  "giver": {
+    "persona": "NV-STONE-NPC-05-A",
+    "zone": "Novus/NV_Z02_StoneOfHeaven"
+  },
+  "requires": [],
+  "min_level": 142,
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Mustache_Bird_A_01.AdjRef",
+        "NV_Mustache_Bird_A_02.AdjRef",
+        "NV_Mustache_Bird_A_03.AdjRef",
+        "NV_Mustache_Bird_A_04.AdjRef",
+        "NV_Mustache_Bird_A_05.AdjRef"
+      ],
+      "count": 6,
+      "target": "WizardMobs_00004194",
+      "zone": "",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
+      "loc": "ZoneLocName_1529152"
+    }
+  ],
+  "personas": {
+    "NV-STONE-NPC-05-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_DesertExplorer_C_NPC.dds",
+      "template_id": 1529172
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Alone_on_the_Stone",
+    "timestamp": "20240323102637"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Alone on the Stone",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Heaven is a Place Disturbed",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Nigel Scruffington (NPC moves closer to exit)",
+      "blocking": true
+    }
+  ]
+}

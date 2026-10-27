@@ -1,0 +1,118 @@
+{
+  "id": "NV-Q-1808C6",
+  "lang": "1808C6",
+  "giver": {
+    "persona": "NV-CON-NPC19",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [],
+  "min_level": 142,
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC19": {
+      "portrait": "GUI/NpcPortraits/Portrait_GuineaPig_Artist_A_NPC.dds",
+      "template_id": 1575111
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dye_For_Art",
+    "timestamp": "20240323101401"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1808C6 matched by the words it shares with the goals; its lines name Don Leonardo, Banana Spiders",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Scaredy Cats",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Press Z to Photomance the Vale of Perfection in Puerto Nuovo",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Defeat Banana Spiders and Collect Yellow Dye",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

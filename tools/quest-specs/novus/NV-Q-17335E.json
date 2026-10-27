@@ -1,0 +1,104 @@
+{
+  "id": "NV-Q-17335E",
+  "lang": "17335E",
+  "giver": {
+    "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
+  "requires": [
+    "NV-Q-17335C"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 45950,
+    "gold": 130
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC07-B",
+      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "loc": "ZoneLocName_1563028"
+    }
+  ],
+  "personas": {
+    "MS-StandIn-StringCasterFuzhi-Dasein": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
+      "template_id": 1608246
+    },
+    "NV-CON-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Moose_Manticore_A_NPC.dds",
+      "template_id": 1575021
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wish_From_La_Rose",
+    "timestamp": "20240323103638"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Where is His Mind? replaced by NV-Q-17335C",
+      "blocking": false
+    }
+  ]
+}

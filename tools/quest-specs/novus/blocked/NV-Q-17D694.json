@@ -1,0 +1,91 @@
+{
+  "id": "NV-Q-17D694",
+  "lang": "17D694",
+  "requires": [
+    "NV-Q-17D620"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 257320,
+    "gold": 760
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Unicorn_Guard_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004298",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_Governor_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004179",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Battle_of_the_Three_Armies",
+    "timestamp": "20240409061203"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Pingouin Revolutionary (Balance)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Rowboat to Shore",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Shore",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "for the Exit",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Aberrant Valencian (Sun-Storm)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "on",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

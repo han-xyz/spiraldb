@@ -1,0 +1,199 @@
+{
+  "id": "NV-Q-17D60E",
+  "lang": "17D60E",
+  "giver": {
+    "persona": "NV-PUERT-NPC03",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-17D60D"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 220560,
+    "gold": 747
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV-DamagedClockwork.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000966",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Tessellate_Base_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004125",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-ClockworkRemains.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000967",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC04",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447",
+      "completion": [
+        {
+          "speaker": "NV-PUERT-NPC04",
+          "line": "00000011"
+        },
+        {
+          "speaker": "NV-PUERT-NPC04",
+          "line": "00000022"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_SoldierBoss_A_NPC.dds",
+      "template_id": 1562150
+    },
+    "NV-PUERT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ExplorerF_A_NPC.dds",
+      "template_id": 1562151
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Strange_Things_Indeed",
+    "timestamp": "20240205172724"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Next Vale",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Trail of Cogs & Gears",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Lost Surveyor",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Warped Valley",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

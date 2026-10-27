@@ -1,0 +1,82 @@
+{
+  "id": "NV-Q-aclassictale",
+  "giver": {
+    "persona": "NV-CON-NPC15-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [],
+  "min_level": 142,
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 101090,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV-Well.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC04-B",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC15-B": {
+      "portrait": "GUI/NpcPortraits/Dog_Governor_A_NPC.dds",
+      "template_id": 1575027
+    },
+    "NV-NEWV-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_CopF_A_NPC.dds",
+      "template_id": 1546243
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Classic_Tale",
+    "timestamp": "20240323102253"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A Classic Tale",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "What Works on Irks",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Fuss",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Well",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Well",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Well",
+      "blocking": false
+    }
+  ]
+}

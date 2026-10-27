@@ -1,0 +1,105 @@
+{
+  "id": "NV-Q-1808CF",
+  "lang": "1808CF",
+  "giver": {
+    "persona": "NV-CON-NPC19",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-179809",
+    "NV-Q-1808C9"
+  ],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "NV_Mustache_Bird_A_01.AdjRef",
+        "NV_Mustache_Bird_A_02.AdjRef",
+        "NV_Mustache_Bird_A_03.AdjRef",
+        "NV_Mustache_Bird_A_04.AdjRef",
+        "NV_Mustache_Bird_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004194",
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "WizQst1808CF_00000008",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC19": {
+      "portrait": "GUI/NpcPortraits/Portrait_GuineaPig_Artist_A_NPC.dds",
+      "template_id": 1575111
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Feathers_and_Stone",
+    "timestamp": "20240323101449"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1808CF matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance a Photo in Stone of Heaven",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

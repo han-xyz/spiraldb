@@ -1,0 +1,64 @@
+{
+  "id": "NV-Q-abunchofthieves",
+  "giver": {
+    "persona": "NV-PUERT-NPC18",
+    "zone": "Novus/NV_Z03_PuertoNuovo_MQ"
+  },
+  "requires": [
+    "NV-Q-17D60C"
+  ],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "NV_BananaSpider_Base_A_01.AdjRef",
+        "NV_BananaSpider_Base_A_02.AdjRef",
+        "NV_BananaSpider_Base_A_03.AdjRef",
+        "NV_BananaSpider_Base_A_04.AdjRef",
+        "NV_BananaSpider_Base_A_05.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00004126",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_MQ",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_DesertExplorerF_A_NPC.dds",
+      "template_id": 1562168
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Bunch_of_Thieves",
+    "timestamp": "20240323101706"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A Bunch of Thieves",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Supplies",
+      "blocking": false
+    }
+  ]
+}

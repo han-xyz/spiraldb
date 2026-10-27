@@ -1,0 +1,79 @@
+{
+  "id": "NV-Q-dogsoftheregiment",
+  "giver": {
+    "persona": "NV-NEWV-NPC04-B",
+    "zone": "Novus/NV_Z04_NewVicorgia"
+  },
+  "requires": [],
+  "min_level": 142,
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC15",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC16",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC31",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-NEWV-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_CopF_A_NPC.dds",
+      "template_id": 1546243
+    },
+    "NV-NEWV-NPC15": {
+      "portrait": "GUI/NpcPortraits/Dog_NavyCaptain_A_NPC.dds",
+      "template_id": 1546329
+    },
+    "NV-NEWV-NPC16": {
+      "portrait": "GUI/NpcPortraits/Dog_NavyCaptain_A_NPC.dds",
+      "template_id": 1546336
+    },
+    "NV-PUERT-NPC31": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_C_NPC.dds",
+      "template_id": 1562185
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dogs_of_the_Regiment",
+    "timestamp": "20231216235126"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Dogs of the Regiment",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "While Marleybone Sleeps",
+      "blocking": false
+    }
+  ]
+}

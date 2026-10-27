@@ -1,0 +1,96 @@
+{
+  "id": "NV-Q-heavenisaplacedisturbed",
+  "giver": {
+    "persona": "NV-CON-NPC02-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [],
+  "min_level": 142,
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 73520,
+    "gold": 220
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC15-B",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MS-CAT-NPC01-K.AdjRef",
+        "NV-CON-NPC01-B.AdjRef",
+        "NV-CON-NPC01.AdjRef",
+        "NV-NEWV-NPC09-B.AdjRef",
+        "NV-NEWV-NPC09-C.AdjRef",
+        "NV-NEWV-NPC09-D.AdjRef",
+        "NV-NEWV-NPC09.AdjRef",
+        "NV-STONE-NPC01-B.AdjRef",
+        "NV-STONE-NPC01-C.AdjRef",
+        "NV-STONE-NPC01-D.AdjRef",
+        "NV-STONE-NPC01-E.AdjRef",
+        "NV-STONE-NPC01-F.AdjRef",
+        "NV-STONE-NPC01-G.AdjRef",
+        "NV-STONE-NPC01-H.AdjRef",
+        "NV-STONE-NPC01-I.AdjRef",
+        "NV-STONE-NPC01-J.AdjRef",
+        "NV-STONE-NPC01-K.AdjRef",
+        "NV-STONE-NPC01-L.AdjRef",
+        "NV-STONE-NPC01.AdjRef",
+        "NV-StandIn-STONE_MooBu_01.AdjRef",
+        "NV-Standin-MooBu-02.AdjRef",
+        "NV-Standin-MooBu-03.AdjRef",
+        "NV-Standin-MooBu-04.AdjRef",
+        "NV-Standin-MooBu.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "WC-NPCs_00002623",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC01-B",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1575004
+    },
+    "NV-CON-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
+      "template_id": 1575007
+    },
+    "NV-CON-NPC15-B": {
+      "portrait": "GUI/NpcPortraits/Dog_Governor_A_NPC.dds",
+      "template_id": 1575027
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Heaven_is_a_Place_Disturbed",
+    "timestamp": "20240119020218"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Heaven is a Place Disturbed",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "No Bad Deed",
+      "blocking": false
+    }
+  ]
+}

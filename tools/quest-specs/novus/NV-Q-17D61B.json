@@ -1,0 +1,159 @@
+{
+  "id": "NV-Q-17D61B",
+  "lang": "17D61B",
+  "giver": {
+    "persona": "NV-PUERT-NPC14",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 137850,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV-CON-NPC09-B.AdjRef",
+        "NV-CON-NPC09-C.AdjRef",
+        "NV-CON-NPC09-D.AdjRef",
+        "NV-CON-NPC09-E.AdjRef",
+        "NV-CON-NPC09-F.AdjRef",
+        "NV-CON-NPC09-G.AdjRef",
+        "NV-CON-NPC09.AdjRef",
+        "NV-NEWV-NPC13-B.AdjRef",
+        "NV-NEWV-NPC13-C.AdjRef",
+        "NV-NEWV-NPC13-D.AdjRef",
+        "NV-NEWV-NPC13.AdjRef",
+        "NV-NUCLEUS-NPC04-B.AdjRef",
+        "NV-NUCLEUS-NPC04-C.AdjRef",
+        "NV-NUCLEUS-NPC04-D.AdjRef",
+        "NV-NUCLEUS-NPC04-E.AdjRef",
+        "NV-NUCLEUS-NPC04.AdjRef",
+        "NV-PUERT-NPC06.AdjRef",
+        "NV-PUERT-NPC06_H.AdjRef",
+        "NV-PUERT-NPC06_b.AdjRef",
+        "NV-PUERT-NPC06_c.AdjRef",
+        "NV-PUERT-NPC06_d.AdjRef",
+        "NV-PUERT-NPC06_e.AdjRef",
+        "NV-PUERT-NPC06_f.AdjRef",
+        "NV-PUERT-NPC06_g.AdjRef",
+        "NV-PUERT-NPC06_i.AdjRef",
+        "NV_Standin_DonManzana.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WC-NPCs_00002640",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-PUERT-NPC13.AdjRef",
+        "NV-PUERT-NPC13_b.AdjRef",
+        "NV-PUERT-NPC13_c.AdjRef",
+        "NV_Standin_Argento.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardNPC_00001052",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Unicorn_Guard_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004160",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
+      "template_id": 1562164
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:On_the_Brink!",
+    "timestamp": "20231216235126"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Thou Shalt Not Steel replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 142
+}

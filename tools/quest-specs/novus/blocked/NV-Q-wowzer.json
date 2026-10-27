@@ -1,0 +1,68 @@
+{
+  "id": "NV-Q-wowzer",
+  "requires": [
+    "NV-Q-18088A"
+  ],
+  "mainline": true,
+  "level": 142,
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dino_AberrantUndead_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004163",
+      "zone": "",
+      "loc": "ZoneLocName_1563028"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wowzer",
+    "timestamp": "20240409061204"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Wowzer",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "reward",
+      "value": {
+        "gold": 570
+      },
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Aberrant Monquistan (Shadow-Fire)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "exploring the Next Dueling Space",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Aberrant Valencian (Balance-Myth)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "exploring the Next Dueling Space",
+      "blocking": true
+    }
+  ]
+}

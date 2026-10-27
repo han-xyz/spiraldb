@@ -1,0 +1,89 @@
+{
+  "id": "NV-Q-17D622",
+  "lang": "17D622",
+  "giver": {
+    "persona": "NV-PUERT-NPC34",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-17D60C"
+  ],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "NV_Irks_Base_C_01.AdjRef",
+        "NV_Irks_Base_C_02.AdjRef",
+        "NV_Irks_Base_C_03.AdjRef",
+        "NV_Irks_Base_C_04.AdjRef",
+        "NV_Irks_Base_C_05.AdjRef",
+        "NV_Irks_Base_C_06.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004124",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizQst17D622_00000006",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC34": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ServantF_A_NPC.dds",
+      "template_id": 1562189
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Vex_Mentallo",
+    "timestamp": "20240323101618"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

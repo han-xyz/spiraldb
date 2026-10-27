@@ -1,0 +1,131 @@
+{
+  "id": "NV-Q-monkeybusinessnovus",
+  "giver": {
+    "persona": "NV-PUERT-NPC04",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-173361"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 238940,
+    "gold": 700
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_BananaSpider_Base_A_01.AdjRef",
+        "NV_BananaSpider_Base_A_02.AdjRef",
+        "NV_BananaSpider_Base_A_03.AdjRef",
+        "NV_BananaSpider_Base_A_04.AdjRef",
+        "NV_BananaSpider_Base_A_05.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00004126",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-Fireflies.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC16",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-FrameOfMind.AdjRef",
+        "NV-NEWVIC-FrameOfMind.AdjRef",
+        "NV-PUERT-FrameOfMind.AdjRef",
+        "NV-ROSE-FrameOfMind.AdjRef",
+        "NV-STONE-FrameOfMind.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "Items_00025065",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-FrameOfMind.AdjRef",
+        "NV-NEWVIC-FrameOfMind.AdjRef",
+        "NV-PUERT-FrameOfMind.AdjRef",
+        "NV-ROSE-FrameOfMind.AdjRef",
+        "NV-STONE-FrameOfMind.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "Items_00025065",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    }
+  ],
+  "personas": {
+    "MS-StandIn-StringCasterFuzhi-Dasein": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
+      "template_id": 1608246
+    },
+    "NV-PUERT-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ExplorerF_A_NPC.dds",
+      "template_id": 1562151
+    },
+    "NV-PUERT-NPC16": {
+      "portrait": "",
+      "template_id": 1562166
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Monkey_Business_(Novus)",
+    "timestamp": "20231216235126"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Monkey Business (Novus)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "out Dasein",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Fireflies",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "out Dasein on High",
+      "blocking": true
+    }
+  ]
+}

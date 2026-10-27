@@ -1,0 +1,188 @@
+{
+  "id": "NV-Q-17D620",
+  "lang": "17D620",
+  "giver": {
+    "persona": "NV-CON-NPC16-C",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-17D61F"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 147040,
+    "gold": 430
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV_SkyShips.AdjRef",
+        "NV_SkyShips_02.AdjRef",
+        "NV_SkyShips_03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizQst17D620_00000023",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_Governor_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004179",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-CON-NPC06-B.AdjRef",
+        "NV-CON-NPC06-C.AdjRef",
+        "NV-CON-NPC06-D.AdjRef",
+        "NV-CON-NPC06-E.AdjRef",
+        "NV-CON-NPC06.AdjRef",
+        "NV-NEWV-NPC14-B.AdjRef",
+        "NV-NEWV-NPC14-C.AdjRef",
+        "NV-NEWV-NPC14.AdjRef",
+        "NV-ROSE-NPC01-B.AdjRef",
+        "NV-ROSE-NPC01-C.AdjRef",
+        "NV-ROSE-NPC01.AdjRef",
+        "NV_Standin_Maxine.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WC-NPCs_00002636",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC06-B",
+      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1575019
+    },
+    "NV-CON-NPC16-C": {
+      "portrait": "GUI/NpcPortraits/Unicorn_NobleF_A_NPC.dds",
+      "template_id": 1608268
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Leyline_and_the_Unicorn",
+    "timestamp": "20240409061203"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Sky Ship to Contest Shard",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Rottingham to New Vicorgia",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

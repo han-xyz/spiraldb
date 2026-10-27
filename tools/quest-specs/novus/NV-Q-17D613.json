@@ -1,0 +1,119 @@
+{
+  "id": "NV-Q-17D613",
+  "lang": "17D613",
+  "giver": {
+    "persona": "NV-PUERT-NPC06",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+  },
+  "requires": [
+    "NV-Q-17D612"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 128660,
+    "gold": 380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV-DarkCrucible-InvisoCol.AdjRef",
+        "NV-DarkCrucible.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000971",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_DogofWar_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004132",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-DarkCrucible-InvisoCol.AdjRef",
+        "NV-DarkCrucible.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000971",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-PUERT-NPC13",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    }
+  ],
+  "personas": {
+    "NV-PUERT-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_B_NPC.dds",
+      "template_id": 1562153
+    },
+    "NV-PUERT-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portraits_Unicorn_Guard_A_NPC.dds",
+      "template_id": 1562160
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Who_Let_the_Monkeys_Out?",
+    "timestamp": "20240323101852"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

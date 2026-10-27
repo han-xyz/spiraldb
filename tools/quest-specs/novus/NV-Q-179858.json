@@ -1,0 +1,135 @@
+{
+  "id": "NV-Q-179858",
+  "lang": "179858",
+  "giver": {
+    "persona": "NV-NEWV-NPC04-B",
+    "zone": "Novus/NV_Z04_NewVicorgia"
+  },
+  "requires": [
+    "NV-Q-1797D8"
+  ],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_NavyOfficer_A_01.AdjRef",
+        "NV_Dog_NavyOfficer_A_02.AdjRef",
+        "NV_Dog_NavyOfficer_A_03.AdjRef",
+        "NV_Dog_NavyOfficer_A_05.AdjRef",
+        "NV_Dog_NavyOfficer_A_06.AdjRef",
+        "NV_Dog_NavyOfficer_A_07.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00004135",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-HUB-NPC21",
+      "zone": "Marleybone/MB_Hub",
+      "loc": "ZoneLocName_1546199"
+    }
+  ],
+  "personas": {
+    "MB-HUB-NPC21": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Lady_Upper_Wide_Brim_Hat_Brown.dds",
+      "template_id": 1546331
+    },
+    "NV-NEWV-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_CopF_A_NPC.dds",
+      "template_id": 1546243
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Clash_of_Dogs",
+    "timestamp": "20240323102303"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "All's Well that Cleanses Well",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Nenette: MB-HUB-NPC21 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "All's Well that Cleanses Well replaced by NV-Q-1797D8",
+      "blocking": false
+    }
+  ]
+}

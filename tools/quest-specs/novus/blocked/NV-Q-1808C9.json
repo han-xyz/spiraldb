@@ -1,0 +1,238 @@
+{
+  "id": "NV-Q-1808C9",
+  "lang": "1808C9",
+  "giver": {
+    "persona": "NV-CON-NPC19",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-17D614",
+    "NV-Q-1808C6"
+  ],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 1200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV_OreSample_01.AdjRef",
+        "NV_OreSample_02.AdjRef",
+        "NV_OreSample_03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "WizardGameObjects_00000977",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV_OreSample_01.AdjRef",
+        "NV_OreSample_02.AdjRef",
+        "NV_OreSample_03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "WizardGameObjects_00000977",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV_OreSample_01.AdjRef",
+        "NV_OreSample_02.AdjRef",
+        "NV_OreSample_03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "WizardGameObjects_00000977",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV_OreSample_01.AdjRef",
+        "NV_OreSample_02.AdjRef",
+        "NV_OreSample_03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "WizardGameObjects_00000977",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC19": {
+      "portrait": "GUI/NpcPortraits/Portrait_GuineaPig_Artist_A_NPC.dds",
+      "template_id": 1575111
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dirty_Tricks",
+    "timestamp": "20240323101436"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1808C9 matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance a Photo in New Vicorgia",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Gaol",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Corrupt Soldier (Death)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "a Few Steps Back",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "a Few More Steps Back",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Taking More Steps Back",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Juuuust a Few More Steps Back",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

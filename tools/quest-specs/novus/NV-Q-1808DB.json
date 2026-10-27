@@ -1,0 +1,150 @@
+{
+  "id": "NV-Q-1808DB",
+  "lang": "1808DB",
+  "giver": {
+    "persona": "NV-CON-NPC21",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 142,
+  "reward": {
+    "xp": 0,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "NV_Conatus_Photo_POI_01.AdjRef",
+        "NV_Conatus_Photo_POI_02.AdjRef",
+        "NV_Conatus_Photo_POI_03.AdjRef",
+        "NV_Conatus_Photo_POI_04.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "GUI_00010608",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_DesertExplorer_B_NPC.dds",
+      "template_id": 1575132
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Can_You_Picture_It?",
+    "timestamp": "20240323101325"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1808DB matched by the words it shares with the goals; its lines name Staffordshire",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Scaredy Cats",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Scaredy Cats replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 142
+}

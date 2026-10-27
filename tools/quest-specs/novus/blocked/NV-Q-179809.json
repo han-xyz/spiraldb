@@ -1,0 +1,171 @@
+{
+  "id": "NV-Q-179809",
+  "lang": "179809",
+  "giver": {
+    "persona": "NV-CON-NPC15-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [
+    "NV-Q-179807"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 174610,
+    "gold": 510
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Mustache_Bird_A_01.AdjRef",
+        "NV_Mustache_Bird_A_02.AdjRef",
+        "NV_Mustache_Bird_A_03.AdjRef",
+        "NV_Mustache_Bird_A_04.AdjRef",
+        "NV_Mustache_Bird_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004194",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-NEWV-NPC10.AdjRef",
+        "NV-Standin-GeneralBooth.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WC-NPCs_00002632",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_NavyOfficer_A_01.AdjRef",
+        "NV_Dog_NavyOfficer_A_02.AdjRef",
+        "NV_Dog_NavyOfficer_A_03.AdjRef",
+        "NV_Dog_NavyOfficer_A_05.AdjRef",
+        "NV_Dog_NavyOfficer_A_06.AdjRef",
+        "NV_Dog_NavyOfficer_A_07.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004135",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC01-B",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1575004
+    },
+    "NV-CON-NPC15-B": {
+      "portrait": "GUI/NpcPortraits/Dog_Governor_A_NPC.dds",
+      "template_id": 1575027
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Baddest_Dog",
+    "timestamp": "20240323102557"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "General's Quarters",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Moo Bu (in Conatus)",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

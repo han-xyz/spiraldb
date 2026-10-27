@@ -1,0 +1,102 @@
+{
+  "id": "NV-Q-tunglashing",
+  "giver": {
+    "persona": "NV-CON-NPC01-B",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [],
+  "min_level": 142,
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 165420,
+    "gold": 490
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Horse_TungAk_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004142",
+      "zone": "",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-STONE-NPC02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00001072",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-FrameOfMind.AdjRef",
+        "NV-NEWVIC-FrameOfMind.AdjRef",
+        "NV-PUERT-FrameOfMind.AdjRef",
+        "NV-ROSE-FrameOfMind.AdjRef",
+        "NV-STONE-FrameOfMind.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00025065",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "persona",
+      "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    }
+  ],
+  "personas": {
+    "MS-StandIn-StringCasterFuzhi-Dasein": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
+      "template_id": 1608246
+    },
+    "NV-CON-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1575004
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tung-Lashing",
+    "timestamp": "20240118180005"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Tung-Lashing",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Equine Climb",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Tung-Ak's Stronghold",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "for Moo Bu",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Dasein (in Nucleus Gallery)",
+      "blocking": true
+    }
+  ]
+}

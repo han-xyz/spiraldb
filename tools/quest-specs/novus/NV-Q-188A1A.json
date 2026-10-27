@@ -1,0 +1,111 @@
+{
+  "id": "NV-Q-188A1A",
+  "lang": "188A1A",
+  "giver": {
+    "persona": "NV-CON-NPC25-C",
+    "zone": "Novus/NV_Z07_DoomMoon"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 99600,
+    "gold": 290
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Monkey_SoldierBoss_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004448",
+      "zone": "",
+      "loc": "ZoneLocName_1560538"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z07_DoomMoon",
+      "loc": "ZoneLocName_1560538"
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC25-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Horse_Explorer_A_NPC.dds",
+      "template_id": 1608259
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Moon_Magic!",
+    "timestamp": "20240121095634"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Weapons Wing",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Major Marado: ObjectData/WL",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Bam, Zoom, to the Doom replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 142
+}
