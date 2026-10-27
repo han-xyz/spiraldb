@@ -35,6 +35,36 @@ class ReadQuestTest(unittest.TestCase):
                                                      "audio": "Stallion Quartermane NV-PostWL 006.mp3"})
 
 
+VARIANTS = """{{Quest
+|type=Mainline Quest<br>Instance Quest
+|id=WizQst17D8A0
+}}
+==Quest Goals==
+#Catch a Drop Bear Drop Bear {{Sic}}
+
+==Dialogue==
+:[[File:Portrait Dromel Wizard A NPC.png|28px|Sandiago]] {{D|Sandiago AR-PreWL 001.mp3}} '''[[Sandiago]]''': Wizard, return to the Arcanum.
+"""
+
+
+class ReadVariantsTest(unittest.TestCase):
+    def setUp(self):
+        self.quest = read_quest("The Little Prince (Wizard101)", VARIANTS)
+
+    def test_the_game_qualifier_is_dropped_from_the_name(self):
+        self.assertEqual(self.quest["name"], "The Little Prince")
+
+    def test_a_quest_of_two_kinds_has_both_types(self):
+        self.assertEqual(self.quest["type"], "instance/storyline")
+
+    def test_templates_are_dropped_from_goals(self):
+        self.assertEqual(self.quest["goals"], ["Catch a Drop Bear Drop Bear"])
+
+    def test_the_colon_after_the_bold_speaker_is_read(self):
+        self.assertEqual(self.quest["dialogue"][0]["speaker"], "Sandiago")
+        self.assertEqual(self.quest["dialogue"][0]["text"], "Wizard, return to the Arcanum.")
+
+
 class FakeApi:
     def __init__(self):
         self.urls = []

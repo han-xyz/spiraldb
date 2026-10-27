@@ -36,12 +36,14 @@ class Polite:
 SITE = "https://therepository.fandom.com/wiki/"
 # The Repository's category kinds, in the order asked; a world whose Mainline category is empty has no pages.
 CATEGORY_TYPES = {"Mainline": "storyline", "Instance": "instance", "Side": "side"}
-QUEST_TYPE = re.compile(r"^(\w+) Quest$")
+QUEST_TYPE = re.compile(r"(\w+) Quest\b")
+GAME_QUALIFIER = re.compile(r"\s*\(Wizard101\)$")
 LANG_ID = re.compile(r"WizQst([0-9A-F]+)")
 LINK = re.compile(r"\[\[([^\]|#]*)(?:#[^\]|]*)?(?:\|([^\]]*))?\]\]")
 FILE_LINK = re.compile(r"\[\[File:[^\]]*\]\]")
 AUDIO = re.compile(r"\{\{D\|([^}]*)\}\}")
-SPEAKER = re.compile(r"'''(.+?):'''")
+SPEAKER = re.compile(r"'''(.+?)(?::'''|''':)")
+TEMPLATE = re.compile(r"\{\{[^{}]*\}\}")
 TAG = re.compile(r"<[^>]+>")
 
 
@@ -106,7 +108,7 @@ def fetch_world(client, cache, registered):
 
 
 def plain(text):
-    text = FILE_LINK.sub("", text)
+    text = TEMPLATE.sub("", FILE_LINK.sub("", text))
     text = LINK.sub(lambda m: m.group(2) or m.group(1), text)
     text = TAG.sub(" ", text).replace("'''", "").replace("''", "")
     return html.unescape(" ".join(text.split()))
@@ -132,14 +134,15 @@ def linked_titles(value):
 
 
 def quest_type(value):
-    match = QUEST_TYPE.match(plain(value))
-    return CATEGORY_TYPES.get(match.group(1), match.group(1).lower()) if match else None
+    """The quest's kinds as the archive index writes them: sorted, joined by "/"; None when the page names none."""
+    kinds = {CATEGORY_TYPES.get(kind, kind.lower()) for kind in QUEST_TYPE.findall(plain(value))}
+    return "/".join(sorted(kinds)) or None
 
 
 def dialogue_line(line):
     speaker = SPEAKER.search(line)
     audio = AUDIO.search(line)
-    text = line[speaker.end():] if speaker else AUDIO.sub("", line.lstrip(":"))
+    text = line[speaker.end():] if speaker else line.lstrip(":")
     return {"speaker": plain(speaker.group(1)) if speaker else None, "text": plain(text),
             "audio": audio.group(1).strip() if audio else None}
 
@@ -149,7 +152,7 @@ def read_quest(title, wikitext):
     fields = infobox(wikitext)
     lang = LANG_ID.search(fields.get("id", ""))
     return {
-        "name": title,
+        "name": GAME_QUALIFIER.sub("", title),
         "wiki_page": SITE + urllib.parse.quote(title.replace(" ", "_")),
         "lang_hex": lang.group(1) if lang else None,
         "type": quest_type(fields.get("type", "")),
