@@ -177,6 +177,28 @@
         "m_destinationLoc": "Target_From_Zanadu",
         "m_destinationZone": "Empyrea/Interiors/EM_Z02_ZigisHouse"
       }
+    },
+    {
+      "TriggerName": "Teleport to BeaconofHope",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_BeaconHope"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Palace",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_Palace"
+      }
     }
   ]
 }

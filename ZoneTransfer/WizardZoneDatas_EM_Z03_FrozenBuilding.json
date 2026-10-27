@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z03_FrozenBuilding",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To EM_Z03_OuterAthanor",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-FromFrozenBuilding",
+        "m_destinationZone": "Empyrea/EM_Z03_OuterAthanor"
+      }
+    }
+  ]
+}

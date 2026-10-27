@@ -67,6 +67,17 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "Empyrea/Interiors/EM_Z07_ControlRoom"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-ToPrivateWing",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z07_PrivateWing"
+      }
     }
   ]
 }

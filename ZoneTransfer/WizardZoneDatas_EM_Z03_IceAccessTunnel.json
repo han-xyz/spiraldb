@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z03_IceAccessTunnel",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to EM_Z03_OuterAthanor",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Teleport from EM_Z03_IceAccessTunnel",
+        "m_destinationZone": "Empyrea/EM_Z03_OuterAthanor"
+      }
+    }
+  ]
+}

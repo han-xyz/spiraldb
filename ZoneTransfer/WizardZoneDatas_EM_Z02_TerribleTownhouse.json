@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z02_TerribleTownhouse",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportSource_Exit_to_Zanadu",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Terrible_Townhouse",
+        "m_destinationZone": "Empyrea/EM_Z02_Zanadu"
+      }
+    }
+  ]
+}

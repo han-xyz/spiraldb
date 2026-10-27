@@ -56,6 +56,50 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "Empyrea/Interiors/EM_Z03_IceSupplyCave"
       }
+    },
+    {
+      "TriggerName": "Teleport to EM_Z03_IceAccessTunnel",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z03_IceAccessTunnel"
+      }
+    },
+    {
+      "TriggerName": "Teleport to EM_Z03_MagicalArchive",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z03_MagicalArchive"
+      }
+    },
+    {
+      "TriggerName": "Teleport to EM_Z03_MeltingHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z03_MeltingHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to EM_Z03_Vault",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z03_Vault"
+      }
     }
   ]
 }
