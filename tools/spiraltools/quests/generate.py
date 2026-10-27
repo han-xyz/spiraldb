@@ -373,6 +373,9 @@ def generate(specs, apply):
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
     for spec in specs:
         template_path, table_paths = quest_output_paths(spec["id"])
+        if spec.get("captured"):
+            print(f"{spec['id']}: captured as {spec['captured']}, left alone")
+            continue
         if is_others_quest(template_path, table_paths[0]):
             print(f"{spec['id']}: {os.path.relpath(template_path, PACK)} is not questgen's, left alone")
             continue

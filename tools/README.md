@@ -295,7 +295,7 @@ Every goal takes `zone` (its destination), `loc` (a `ZoneLocName_<key>`, any oth
 name, and a missing portrait, from the persona.
 
 `generate` leaves alone a quest template the pack already has whose drop table is not questgen's (`CreatedBy`): a
-captured or hand-built quest is never overwritten.
+captured or hand-built quest is never overwritten. It also skips a spec marked `"captured": "<quest>"`.
 
 `quests check` reports, per spec: a missing `WizQst<lang>.lang`, an empty `dialogs.prep` (no NPC would offer the quest), a
 title or line key the lang files lack, a `loc` text ZoneLocName.lang lacks, a zone with no ZoneTransfer entry, and a
@@ -423,7 +423,9 @@ and Reward, and resolves:
 - the zone from the zone category, else the giver's location, to the zone where most of that zone's givers stand,
   else to the world's zone named for it. The giver is the persona placed in the zone its Giver Location names, else in
   a zone whose only way out leads there (Dalia Falmea `Giver Location: Ravenwood` is `WC-RAV-NPC04` in
-  `WC_SchoolFire`, not her Party Room copy); other NPCs are looked up in the quest's zone the same way.
+  `WC_SchoolFire`, not her Party Room copy); other NPCs are looked up in the quest's zone the same way. Of several
+  templates placed there, the one that offers quests (names `QuestTitle_` keys) wins, then the one without a suffix
+  after its NPC number (`WC-RAV-NPC08` over `WC-RAV-NPC08-B`).
 - `Note: Level N is needed to start this quest.` to `level` and `min_level` N, kept when prerequisites are rewired;
   `must be in the School of Fire` to a `{"school": "Fire"}` entry first in `requires`.
 - a giver placed in another registered world's zone blocks the spec (`giver (other world)`): the quest belongs to that
@@ -433,7 +435,9 @@ and Reward, and resolves:
   the link (a page with one spell per school), a plain name otherwise. A cantrip (`Spells/Cantrips/`, `To
   Buttersfield`) is left out and listed as `reward.spells (cantrip)`.
 
-The id is the hand-authored spec's for the same lang, else the internal name in `QuestTitle.lang`, else
+A spec whose title key a pack quest from elsewhere (captured or hand-built, its drop table not questgen's) uses is
+marked `"captured": "<quest>"`, counted apart from ready and blocked, and skipped by `generate`; prerequisites on it
+name the captured quest. The id is the hand-authored spec's for the same lang, else the internal name in `QuestTitle.lang`, else
 `<folder>-Q-<lang>`. A page without a level note gets the world's level. A ready spec's prerequisite that will
 not be generated (blocked, or no archived page) is replaced by its nearest generated ancestors on the wiki's Prequest
 chain, listed as `requires (not generated)`; a quest left with no prerequisite gets `min_level`.

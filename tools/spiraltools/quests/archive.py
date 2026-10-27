@@ -19,10 +19,11 @@ import urllib.request
 
 from .. import templates
 from ..lang import LANG_SUBDIR, ROOTWAD_DIR, read_lang
-from ..pack import PACK, QUEST_SPECS_DIR, quest_template_paths, tolerant_load, zone_transfer_files, zone_transfer_paths
+from ..pack import (PACK, QUEST_SPECS_DIR, quest_output_paths, quest_template_paths, tolerant_load, zone_transfer_files,
+                    zone_transfer_paths)
 from ..wad import GAMEDATA_DIR, VOLUME_NAME, compact_strings, read_wad, zone_of_wad
 from ..worlds import WORLDS, lang_cluster, world
-from .generate import diff
+from .generate import diff, is_others_quest
 from .goal_lines import (COLLECT_VERBS, FIND_VERBS, ITEM_VERBS, MOVE_VERBS, PERSON_VERBS, TALK_VERBS, destinations,
                          goal_kind, is_goal_line, place_readings, repeated, strip_notes, target_text, unread_field,
                          verb_of)
@@ -56,6 +57,8 @@ SCHOOL_ICON = re.compile(r"\[File:\(Icon\)_(Balance|Death|Fire|Ice|Life|Myth|Sto
 LEVEL_NOTE = re.compile(r"Level (?:Level )?(\d+)\+? is needed to start", re.I)
 SCHOOL_NOTE = re.compile(r"must be in the School of (\w+)", re.I)
 CANTRIP_PREFIX = "Spells/Cantrip"
+# An NPC template with something after its number is a copy (WC-RAV-NPC04-B, WC-ST05-NPC05-OK).
+SUFFIXED_NPC = re.compile(r"NPC\d+[-_]")
 # Verbs whose line is a waypoint even when nothing it names is found: kept into the current zone, to review.
 REVIEWED_WAYPOINT_VERBS = {"go", "locate"}
 NAME_CUTOFF = 0.8
@@ -641,6 +644,7 @@ class ClientData:
                                 key=lambda item: (item[0].startswith("0"), int(item[0]) if item[0].isdigit() else 0)):
             self.zone_locations.setdefault(norm(text), "ZoneLocName_" + key)
         self.pack_quests = {}
+        self.captured = {}
         for path in quest_template_paths():
             with open(path, encoding="utf-8") as f:
                 text = f.read()
@@ -648,6 +652,8 @@ class ClientData:
             name = re.search(r'"m_questName":\s*"([^"]*)"', text)
             if title and name:
                 self.pack_quests.setdefault(title.group(1), name.group(1))
+                if is_others_quest(path, quest_output_paths(name.group(1))[1][0]):
+                    self.captured.setdefault(title.group(1), name.group(1))
 
     def mob_index(self, folders):
         found = {}
@@ -750,8 +756,17 @@ class ClientData:
         if not rows:
             return None
         reachable = (row for row in rows if self.known_zones.intersection(row["zones"]))
-        return next((row for place in self.zones_at(zone) for row in rows if place in row["zones"]),
-                    next(reachable, next((row for row in rows if row["zones"]), rows[0])))
+        return self.placed_at(rows, zone) or next(reachable, next((row for row in rows if row["zones"]), rows[0]))
+
+    def placed_at(self, rows, zone):
+        """Of the persona rows placed in or at the zone, the template that offers quests, else the unsuffixed one, else
+        the one nearest the zone; None when none is placed there."""
+        places = self.zones_at(zone)
+        here = [(min(places.index(place) for place in row["zones"] if place in places), row) for row in rows
+                if set(places).intersection(row["zones"])]
+        ranked = sorted(here, key=lambda hit: (not hit[1]["offers_quests"],
+                                                bool(SUFFIXED_NPC.search(hit[1]["template"])), hit[0]))
+        return ranked[0][1] if ranked else None
 
     def zones_at(self, zone):
         """The zone, then the zones whose only way out leads into it: Ravenwood's schools are at Ravenwood."""
@@ -1495,6 +1510,25 @@ def match_by_proper_nouns(data, pages, zone_names, langs, free, common):
     return found
 
 
+def captured_ids(specs, captured):
+    """spec id -> the quest the pack has from elsewhere (captured or built by hand) under the spec's title key."""
+    found = {}
+    for spec in specs:
+        if "lang" in spec:
+            key = spec.get("title", f"QuestTitle_{spec['lang']}").split("_", 1)[1]
+            if key in captured:
+                found[spec["id"]] = captured[key]
+    return found
+
+
+def mark_captured(specs, ids):
+    """Marks each captured spec with its quest and points the prerequisites on it at that quest: captured quests win."""
+    for spec in specs:
+        if spec["id"] in ids:
+            spec["captured"] = ids[spec["id"]]
+        spec["requires"] = [ids.get(entry, entry) if isinstance(entry, str) else entry for entry in spec["requires"]]
+
+
 def is_blocked_spec(spec):
     return any(item["blocking"] for item in spec["needs_review"])
 
@@ -1757,11 +1791,13 @@ def parse_world(cache, registered):
         if entry["page"] in evidence:
             builder.unresolved("lang", evidence[entry["page"]], False)
         built.append((entry, lang, builder.build(lang, quest_id)))
+    captured = captured_ids([spec for _, _, spec in built], data.captured)
     blocked_ids = {spec["id"] for _, _, spec in built if is_blocked_spec(spec)}
-    generated = ({spec["id"] for _, _, spec in built} | {spec["id"] for spec in authored.values()}
-                 | set(data.pack_quests.values())) - blocked_ids
+    generated = (({spec["id"] for _, _, spec in built} | {spec["id"] for spec in authored.values()}
+                  | set(data.pack_quests.values())) - blocked_ids) | set(captured)
     rewire_requires([(pages[entry["page"]], spec) for entry, _, spec in built if spec["id"] not in blocked_ids],
                     pages, by_title, ids, generated, registered.level)
+    mark_captured([spec for _, _, spec in built], captured)
     for _, lang, spec in built:
         quest_id = spec["id"]
         for item in spec["needs_review"]:
@@ -1775,12 +1811,14 @@ def parse_world(cache, registered):
             target = os.path.join(blocked_dir if is_blocked else world_dir, f"{quest_id}.json")
         with open(target, "w", encoding="utf-8") as f:
             f.write(json.dumps(spec, indent=2, ensure_ascii=False) + "\n")
+        if quest_id in captured:
+            continue
         if is_blocked:
             blocked.append(quest_id)
         elif lang not in authored:
             written += 1
     print(f"{world}: {len(pages)} pages parsed ({len(from_repository)} from The Repository), {written} specs ready, "
-          f"{len(blocked)} blocked, "
+          f"{len(blocked)} blocked, {len(captured)} captured, "
           f"{len(compared)} compared with hand-authored specs; zones: "
           + ", ".join(f"{name} = {path}" for name, path in sorted(zone_paths.items())))
     print(f"{'field':<20} {'blocking':>8} {'review':>8}")

@@ -5,7 +5,8 @@ from client import needs_gamedata, needs_rootwad
 from spiraltools import templates
 from spiraltools.quests.archive import (ClientData, SpecBuilder, claimed_twice, item_entries, item_index, norm,
                                        predecessor_hand_in, preferred_lang, read_page, repository_entry,
-                                       repository_fields, repository_matches, rewire_requires, singular_forms)
+                                       repository_fields, repository_matches, rewire_requires, singular_forms,
+                                       captured_ids, mark_captured)
 from spiraltools.wad import GAMEDATA_DIR
 from spiraltools.worlds import world
 
@@ -372,6 +373,19 @@ class SchoolQuestTest(unittest.TestCase):
                       [(item["field"], item["value"], item["blocking"]) for item in spec["needs_review"]])
 
 
+class CapturedTest(unittest.TestCase):
+    def test_a_spec_with_a_captured_quests_title_is_marked_and_prerequisites_point_at_the_captured_quest(self):
+        specs = [{"id": "WC-Q-9958", "lang": "9958", "requires": []},
+                 {"id": "WC-Q-1410C", "lang": "1410C", "requires": [{"school": "Fire"}, "WC-Q-9958"]},
+                 {"id": "WC-Q-2", "lang": "2", "title": "QuestTitle_00000103", "requires": []},
+                 {"id": "WC-Q-unmatched", "requires": []}]
+        ids = captured_ids(specs, {"9958": "WC-FIRE-C01-001", "00000103": "WC-OTHER-001"})
+        self.assertEqual(ids, {"WC-Q-9958": "WC-FIRE-C01-001", "WC-Q-2": "WC-OTHER-001"})
+        mark_captured(specs, ids)
+        self.assertEqual([spec.get("captured") for spec in specs], ["WC-FIRE-C01-001", None, "WC-OTHER-001", None])
+        self.assertEqual(specs[1]["requires"], [{"school": "Fire"}, "WC-FIRE-C01-001"])
+
+
 class Langs:
     """Quest lang files by key."""
 
@@ -532,6 +546,11 @@ class ClientLookupTest(unittest.TestCase):
         row = data.persona("Dalia Falmea", "WizardCity/WC_Ravenwood")
         self.assertEqual(row["template"], "WC-RAV-NPC04")
         self.assertIn("WizardCity/Interiors/WC_SchoolFire", data.zones_at("WizardCity/WC_Ravenwood"))
+
+    def test_of_several_templates_at_the_zone_the_one_that_offers_quests_then_the_unsuffixed_one_gives(self):
+        data = ClientData(world("WizardCity"))
+        self.assertEqual(data.persona("Moolinda Wu", "WizardCity/WC_Ravenwood")["template"], "WC-RAV-NPC01")
+        self.assertEqual(data.persona("Malorn Ashthorn", "WizardCity/WC_Ravenwood_Lite")["template"], "WC-RAV-NPC08")
 
     def test_a_volume_name_reads_the_zones_that_hold_it(self):
         data = ClientData(world("WizardCity"))

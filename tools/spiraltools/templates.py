@@ -24,6 +24,7 @@ PERSONA_SUFFIX = b"_Persona"
 PORTRAIT = re.compile(rb"GUI/NpcPortraits/[ -~]+?\.dds")
 QUEST_ICON = re.compile(rb"GUI/QuestButtons/Quest_([ -~]+?)(?:_off)?\.dds")
 INTERACTABLE = b"InteractableBehavior"
+QUEST_OFFER = b"QuestTitle_"
 # A zone object's template id: this field hash, then the id as a 64-bit integer.
 TEMPLATE_ID_FIELD = b"\xaf\xa9\xc8\x25"
 MOBS_DESCRIPTION = "List the mobs of a world's object templates: display name, template, template id and adjectives."
@@ -222,6 +223,7 @@ def npcs(rootwad, folder):
             "name_key": key,
             "template_id": ids.get(f"ObjectData/{folder}/{filename}", 0),
             "portrait": portrait.group().decode() if portrait else "",
+            "offers_quests": QUEST_OFFER in data,
         }
 
 

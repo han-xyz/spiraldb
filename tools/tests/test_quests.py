@@ -158,6 +158,13 @@ class GenerateTest(unittest.TestCase):
                          "WC-COMMONS-MAIN-004: QuestTemplates/questtemplates_WC-COMMONS-MAIN-004.json is not "
                          "questgen's, left alone\n")
 
+    def test_a_captured_spec_is_left_alone(self):
+        printed = io.StringIO()
+        with contextlib.redirect_stdout(printed):
+            generate([spec(id="WC-Q-9958", captured="WC-FIRE-C01-001", _spell_ids={"Pixie": []},
+                           reward={"spells": ["Pixie"]})], False)
+        self.assertEqual(printed.getvalue(), "WC-Q-9958: captured as WC-FIRE-C01-001, left alone\n")
+
     def test_reward_falls_back_to_the_level_band(self):
         self.assertEqual(reward(spec(level=48)), (3805, 103))
         self.assertEqual(reward(spec(level=12, reward={"xp": 7})), (7, 43))
