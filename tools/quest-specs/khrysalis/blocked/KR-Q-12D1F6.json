@@ -1,0 +1,124 @@
+{
+  "id": "KR-Q-12D1F6",
+  "lang": "12D1F6",
+  "giver": {
+    "persona": "KR-Hive-NPC23",
+    "zone": "Khrysalis/KR_Z11_TheHive"
+  },
+  "requires": [
+    "KR-Q-12D1D0"
+  ],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 63925,
+    "gold": 620
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Moth_Priest_F.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001867",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "descriptor": "WizQst12D1F6_00000009",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-HIVE-NPC27",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    }
+  ],
+  "personas": {
+    "KR-HIVE-NPC27": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
+      "template_id": 1233519
+    },
+    "KR-Hive-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_A_NPC.dds",
+      "template_id": 1233354
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Reclusive",
+    "timestamp": "20240409061116"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Recluse Chamber",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Spinner Crystals",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

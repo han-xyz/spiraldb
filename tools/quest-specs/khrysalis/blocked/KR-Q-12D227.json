@@ -1,0 +1,108 @@
+{
+  "id": "KR-Q-12D227",
+  "lang": "12D227",
+  "giver": {
+    "persona": "KR-Hive-NPC16",
+    "zone": "Khrysalis/KR_Z11_TheHive"
+  },
+  "requires": [
+    "KR-Q-12D1C5"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 69735,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-Hive-NPC21.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "descriptor": "NPCs_01748341",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Spider_Mage_F.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001866",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    }
+  ],
+  "personas": {
+    "KR-Hive-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Barbarian_C_NPC.dds",
+      "template_id": 1283233
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Voice_for_the_Silent",
+    "timestamp": "20231126063937"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Bawb",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "KR-Q-162478",
+  "lang": "162478",
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 56175,
+    "gold": 545
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-MorganthShadow.AdjRef",
+        "KR-MorgantheShadow.AdjRef",
+        "KR-ShadowPalace-NPC03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WC-NPCs_00001548",
+      "loc": "ZoneLocName_1233442"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Morganth.AdjRef",
+        "KR_MorgantheBlue_A_Bossfight.AdjRef",
+        "KR_MorgantheBnW_A_Bossfight.AdjRef",
+        "KR_MorgantheGrey_A_Bossfight.AdjRef",
+        "KR_MorganthePurple_A_Bossfight.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001069",
+      "zone": "",
+      "loc": "ZoneLocName_1233442"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-HIVE-NPC27",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    }
+  ],
+  "personas": {
+    "KR-HIVE-NPC27": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
+      "template_id": 1233519
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:End_Game",
+    "timestamp": "20240413031034"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Final Challenge",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

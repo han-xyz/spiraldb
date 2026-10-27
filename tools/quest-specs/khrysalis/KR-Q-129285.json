@@ -1,0 +1,94 @@
+{
+  "id": "KR-Q-129285",
+  "lang": "129285",
+  "giver": {
+    "persona": "KR-MoonCliffs-NPC06",
+    "zone": "Khrysalis/KR_Z02_MoonCliffs"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 46490,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Goliath_Behemoth_C.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001619",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    }
+  ],
+  "personas": {
+    "KR-MoonCliffs-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bee_QueenF_A_NPC.dds",
+      "template_id": 1223185
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Amber_Tomb",
+    "timestamp": "20250918223451"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Venom (in Stinger Cave)",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Strange Allies replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

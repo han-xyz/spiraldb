@@ -1,0 +1,71 @@
+{
+  "id": "KR-Q-130FF5",
+  "lang": "130FF5",
+  "giver": {
+    "persona": "KR-FortRachias-NPC01",
+    "zone": "Khrysalis/KR_Z05_FortRachias"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 7750,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-CrescentBeach-NPC01",
+      "zone": "Khrysalis/Interiors/KR_Z06_I01_Hermitcave",
+      "loc": "ZoneLocName_1205054"
+    }
+  ],
+  "personas": {
+    "KR-CrescentBeach-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_A_NPC.dds",
+      "template_id": 1283092
+    },
+    "KR-FortRachias-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ghost_Pirate_A_NPC.dds",
+      "template_id": 1283113
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:And_They_All_Dead_Did_Lie",
+    "timestamp": "20250908023253"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Alone, Alone, All, All, Alone replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

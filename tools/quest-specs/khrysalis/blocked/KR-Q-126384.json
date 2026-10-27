@@ -1,0 +1,147 @@
+{
+  "id": "KR-Q-126384",
+  "lang": "126384",
+  "giver": {
+    "persona": "KR-SilentMarket-NPC01",
+    "zone": "Khrysalis/KR_Z01_SilentMarket"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 98255,
+    "gold": 1040
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-Sack_BlackSalt.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "descriptor": "QuestTitle_00001211",
+      "loc": "ZoneLocName_1205051"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-TurmericPowder.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "descriptor": "WizItems_00001959",
+      "loc": "ZoneLocName_1205051"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-TeaSet.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "descriptor": "WizItems_00000096",
+      "loc": "ZoneLocName_1205051"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Shdweave_Warrior_F.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001649",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_1205051"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Bastion-NPC23",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_B_NPC.dds",
+      "template_id": 1223156
+    },
+    "KR-SilentMarket-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Goliath_Crusher_E_NPC.dds",
+      "template_id": 1242050
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:For_All_the_Tea",
+    "timestamp": "20231125221809"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Carry On",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Zaltanna the Mirrormask",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

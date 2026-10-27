@@ -1,0 +1,100 @@
+{
+  "id": "KR-Q-12ECE2",
+  "lang": "12ECE2",
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 120095,
+    "gold": 1165
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mice_SageF_D_ElanaDarksun.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001776",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Flamingo_Warlord_A_Bossfight.AdjRef",
+        "KR_Flamingo_Warlord_A_BossfightSP.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001848",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Creatures_of_Shadows_and_Light",
+    "timestamp": "20240118172359"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ECE2 matched by the words it shares with the goals; its lines name Elana Darksun, Santa Muerte",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Sun's Shadow",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Shadow Arc",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "KR-Q-13D68D",
+  "lang": "13D68D",
+  "giver": {
+    "persona": "KR-KondhaDesert-NPC28",
+    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 15500,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-KondhaDesert-NPC29",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    }
+  ],
+  "personas": {
+    "KR-KondhaDesert-NPC28": {
+      "portrait": "GUI/NpcPortraits/Portrait_BarbQueenF_B_NPC.dds",
+      "template_id": 1283229
+    },
+    "KR-KondhaDesert-NPC29": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Barbarian_C_NPC.dds",
+      "template_id": 1283230
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dangerous_Little_Thing_Called_Love",
+    "timestamp": "20231126063731"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Creeping Water",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Creeping Water replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

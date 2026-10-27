@@ -1,0 +1,104 @@
+{
+  "id": "KR-Q-13D694",
+  "lang": "13D694",
+  "giver": {
+    "persona": "KR-KondhaDesert-NPC30",
+    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 54240,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mice_Barbarian_D.AdjRef",
+        "KR_Mice_Barbarian_D_Bossfight.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001777",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    }
+  ],
+  "personas": {
+    "KR-KondhaDesert-NPC30": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Barbarian_D_NPC.dds",
+      "template_id": 1283231
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Friendly_Fight",
+    "timestamp": "20231126063615"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Creeping Water",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Dry Gulch Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Creeping Water replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

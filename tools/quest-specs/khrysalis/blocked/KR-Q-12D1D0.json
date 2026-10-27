@@ -1,0 +1,138 @@
+{
+  "id": "KR-Q-12D1D0",
+  "lang": "12D1D0",
+  "giver": {
+    "persona": "KR-HIVE-NPC27",
+    "zone": "Khrysalis/KR_Z11_TheHive"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 69735,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Goliath_Behemoth_H.AdjRef",
+        "KR_Goliath_Crusher_H_Bossfight.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001859",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "descriptor": "WizQst12D1D0_00000017",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    }
+  ],
+  "personas": {
+    "KR-HIVE-NPC27": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
+      "template_id": 1233519
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Open_Doors",
+    "timestamp": "20240409061116"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Some Web",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Taylor Coleridge through the Hive",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Mutation Chamber B",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the True Essence",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

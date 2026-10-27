@@ -1,0 +1,112 @@
+{
+  "id": "KR-Q-130F11",
+  "lang": "130F11",
+  "giver": {
+    "persona": "KR-SilentMarket-NPC03",
+    "zone": "Khrysalis/KR_Z01_SilentMarket"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 11580,
+    "gold": 140
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1205023"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_1205051"
+    }
+  ],
+  "personas": {
+    "KR-SilentMarket-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Merchant_K_NPC.dds",
+      "template_id": 1223258
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Frozen_Love",
+    "timestamp": "20231126061721"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Shadow Self replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

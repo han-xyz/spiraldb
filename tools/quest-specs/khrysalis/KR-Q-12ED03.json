@@ -1,0 +1,120 @@
+{
+  "id": "KR-Q-12ED03",
+  "lang": "12ED03",
+  "giver": {
+    "persona": "KR-KondhaDesert-NPC25",
+    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+  },
+  "requires": [
+    "KR-Q-12ECC2"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 92980,
+    "gold": 900
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Milipede_Warrior_J.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001772",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Milipede_Warrior_K.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001779",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-KondhaDesert-NPC25": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Hunter_D_NPC.dds",
+      "template_id": 1283227
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Common_Thieves",
+    "timestamp": "20231126063702"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ED03 matched by the words it shares with the goals; its lines name Common Killers, R'Lorr M'Wah",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Mandyll's Oreaxe",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Alluvium Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

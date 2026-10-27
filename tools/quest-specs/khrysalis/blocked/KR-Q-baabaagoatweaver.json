@@ -1,0 +1,55 @@
+{
+  "id": "KR-Q-baabaagoatweaver",
+  "giver": {
+    "persona": "KR-TyrianGorge-NPC08",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [
+    "KR-Q-12D09F"
+  ],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 126085,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-Gorge-GoatweaverWeb.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizardGameObjects_00000653",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {
+    "KR-TyrianGorge-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Paladin_B_NPC.dds",
+      "template_id": 1223199
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Baa_Baa_GoatWeaver",
+    "timestamp": "20250914062043"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Baa Baa GoatWeaver",
+      "blocking": true
+    }
+  ]
+}

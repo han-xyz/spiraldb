@@ -1,0 +1,136 @@
+{
+  "id": "KR-Q-12D0AB",
+  "lang": "12D0AB",
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 164650,
+    "gold": 1595
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Scorpion_Giant_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001654",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Scorpion_Warrior_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001726",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Scorpion_Queen_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001725",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-MoonCrown.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizardGameObjects_00000656",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Love_at_First_Sting",
+    "timestamp": "20231125222949"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D0AB matched by the words it shares with the goals; its lines name Winter Scorpions, Venomous Striders, Baleful Empress",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Scorpion in Winter",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Burrower Staff",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Baleful Empress",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

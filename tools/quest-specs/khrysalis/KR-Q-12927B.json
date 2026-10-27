@@ -1,0 +1,168 @@
+{
+  "id": "KR-Q-12927B",
+  "lang": "12927B",
+  "giver": {
+    "persona": "KR-MoonCliffs-NPC05",
+    "zone": "Khrysalis/KR_Z02_MoonCliffs"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 102665,
+    "gold": 995
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-DanceShrine.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "descriptor": "WizQst12927B_00000010",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Roach_WaterBug_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001652",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Bastion-NPC29",
+      "zone": "Khrysalis/Interiors/KR_Z00_I08_ThroneRoom",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Bastion-NPC29",
+      "zone": "Khrysalis/Interiors/KR_Z00_I08_ThroneRoom",
+      "loc": "ZoneLocName_1205048"
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC29": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_King_A_NPC.dds",
+      "template_id": 1223221
+    },
+    "KR-MoonCliffs-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bee_Drone_B_NPC.dds",
+      "template_id": 1223184
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Feel_the_Rhythm_of_the_Night",
+    "timestamp": "20231125223452"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Up All Night",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Dance Shrine",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Water Cavern",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Up All Night replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

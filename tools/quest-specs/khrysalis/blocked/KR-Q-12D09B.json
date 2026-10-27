@@ -1,0 +1,79 @@
+{
+  "id": "KR-Q-12D09B",
+  "lang": "12D09B",
+  "giver": {
+    "persona": "KR-TyrianGorge-NPC09",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 21930,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-TyrianGorge-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_RougeF_B.dds",
+      "template_id": 1223200
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Can't_Take_The_Sky",
+    "timestamp": "20231125221853"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D09B by the proper nouns its lines share with the page (Bug, Lightning, Swarm), within 16 of a key of the zone's quests; next best WizQst12D0B2 with 2",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Break Out",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "a Lightning Bug Swarm",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

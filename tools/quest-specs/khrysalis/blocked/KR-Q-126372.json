@@ -1,0 +1,75 @@
+{
+  "id": "KR-Q-126372",
+  "lang": "126372",
+  "giver": {
+    "persona": "KR-Bastion-NPC24",
+    "zone": "Khrysalis/KR_Z00_Hub"
+  },
+  "requires": [
+    "KR-Q-126374"
+  ],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 7750,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-Bastion-NPC23",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_B_NPC.dds",
+      "template_id": 1223156
+    },
+    "KR-Bastion-NPC24": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Summoner_A_NPC.dds",
+      "template_id": 1223157
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Uneasy_Allies",
+    "timestamp": "20231126061753"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Zaltanna the Mirrormask",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

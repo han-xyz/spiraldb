@@ -1,0 +1,126 @@
+{
+  "id": "KR-Q-12EC78",
+  "lang": "12EC78",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC01",
+    "zone": "Khrysalis/KR_Z09_MantisCity"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 92980,
+    "gold": 900
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-Sardonyx-NPC15",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mantis_HunterF_J_Zelda.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001836",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    }
+  ],
+  "personas": {
+    "KR-Sardonyx-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_Drone_B_NPC.dds",
+      "template_id": 1283115
+    },
+    "KR-Sardonyx-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_A_NPC.dds",
+      "template_id": 1283167
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Heard_it_Through_the_Leaf_Vine",
+    "timestamp": "20231125225118"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12EC78 matched by the words it shares with the goals; its lines name Jozette the RedNail, Zelda the PhantomKnight",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Like Minds",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Courtyard Gate",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "up the Mystic Colossus piece",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

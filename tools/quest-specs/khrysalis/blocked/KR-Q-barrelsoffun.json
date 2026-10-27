@@ -1,0 +1,50 @@
+{
+  "id": "KR-Q-barrelsoffun",
+  "giver": {
+    "persona": "KR-TyrianGorge-NPC08",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [
+    "KR-Q-12D0A2"
+  ],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 21930,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {
+    "KR-TyrianGorge-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Paladin_B_NPC.dds",
+      "template_id": 1223199
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Barrels_of_Fun",
+    "timestamp": "20250905090131"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Barrels of Fun",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Barrels of Kermes Fire",
+      "blocking": true
+    }
+  ]
+}

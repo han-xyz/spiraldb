@@ -1,0 +1,103 @@
+{
+  "id": "KR-Q-129255",
+  "lang": "129255",
+  "giver": {
+    "persona": "KR-MoonCliffs-NPC13",
+    "zone": "Khrysalis/KR_Z02_MoonCliffs"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 58545,
+    "gold": 645
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Bee_Warrior_G.AdjRef",
+        "KR_Bee_Warrior_G_BossFight.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000927",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-LastWood-NPC11",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC11": {
+      "portrait": "GUI/NpcPortraits/Horse_DuelMaster_A_NPC.dds",
+      "template_id": 1223175
+    },
+    "KR-MoonCliffs-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Knight_A_NPC.dds",
+      "template_id": 1223213
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Escape_from_Apiary",
+    "timestamp": "20231125221201"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Warrior Brood",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "(Open) the Honeycomb Gate",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

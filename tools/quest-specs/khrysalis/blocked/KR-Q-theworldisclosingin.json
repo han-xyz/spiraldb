@@ -1,0 +1,57 @@
+{
+  "id": "KR-Q-theworldisclosingin",
+  "giver": {
+    "persona": "KR-LastWood-NPC16",
+    "zone": "Khrysalis/KR_Z03_LastWood"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 6895,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-LastWood-NPC14",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_RougeF_A_NPC.dds",
+      "template_id": 1223178
+    },
+    "KR-LastWood-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_WarriorM_C_NPC.dds",
+      "template_id": 1223219
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_World_is_Closing_In",
+    "timestamp": "20231125221740"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The World is Closing In",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Cry Havoc",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Sabra SoaringKnife",
+      "blocking": true
+    }
+  ]
+}

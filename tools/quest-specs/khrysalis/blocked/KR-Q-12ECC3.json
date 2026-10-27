@@ -1,0 +1,93 @@
+{
+  "id": "KR-Q-12ECC3",
+  "lang": "12ECC3",
+  "giver": {
+    "persona": "KR-KondhaDesert-NPC13",
+    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 23245,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-KondhaDesert-NPC11",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    }
+  ],
+  "personas": {
+    "KR-KondhaDesert-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Elder_B_NPC.dds",
+      "template_id": 1283169
+    },
+    "KR-KondhaDesert-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Elder_C_NPC.dds",
+      "template_id": 1283171
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Desert_Fruit",
+    "timestamp": "20240409061134"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ECC3 by the proper nouns its lines share with the page (Blazingwind, Horned, Limes, Prester, Saul), within 16 of a key of the zone's quests; next best WizQst12ECC7 with 3",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Meet the Family",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Horned Limes",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

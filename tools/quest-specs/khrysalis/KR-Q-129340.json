@@ -1,0 +1,116 @@
+{
+  "id": "KR-Q-129340",
+  "lang": "129340",
+  "giver": {
+    "persona": "KR-RuinedAlcazar-NPC21",
+    "zone": "Khrysalis/KR_Z07_RuinedAlcazar"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 46490,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Elemental_Maelstrom_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001755",
+      "zone": "Khrysalis/KR_Z07_RuinedAlcazar",
+      "loc": "ZoneLocName_1217254"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-RuinedAlcazar-NPC12",
+      "zone": "Khrysalis/KR_Z07_RuinedAlcazar",
+      "loc": "ZoneLocName_1217254"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z07_RuinedAlcazar",
+      "loc": "ZoneLocName_1217254"
+    }
+  ],
+  "personas": {
+    "KR-RuinedAlcazar-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_RougeF_C_NPC.dds",
+      "template_id": 1283206
+    },
+    "KR-RuinedAlcazar-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_SuGlider_RougeF_C_NPC.dds",
+      "template_id": 1217343
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Telescopic_Memory",
+    "timestamp": "20231126062758"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Allderan's Telescope",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Skyfall replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

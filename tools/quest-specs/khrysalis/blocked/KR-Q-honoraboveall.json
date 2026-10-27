@@ -1,0 +1,89 @@
+{
+  "id": "KR-Q-honoraboveall",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC28",
+    "zone": "Khrysalis/KR_Z09_MantisCity"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 38750,
+    "gold": 375
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-Sardonyx-NPC30",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Sardonyx-NPC31",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Sardonyx-NPC32",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Sardonyx-NPC33",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    }
+  ],
+  "personas": {
+    "KR-Sardonyx-NPC28": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_O_NPC.dds",
+      "template_id": 1283210
+    },
+    "KR-Sardonyx-NPC30": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_MerchantF_C_NPC.dds",
+      "template_id": 1283212
+    },
+    "KR-Sardonyx-NPC31": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_MerchantF_D_NPC.dds",
+      "template_id": 1283213
+    },
+    "KR-Sardonyx-NPC32": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_MerchantF_E_NPC.dds",
+      "template_id": 1283214
+    },
+    "KR-Sardonyx-NPC33": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_MerchantF_F_NPC.dds",
+      "template_id": 1283215
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Honor_Above_All",
+    "timestamp": "20231126062958"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Honor Above All",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "An Honest Umbra?",
+      "blocking": false
+    }
+  ]
+}

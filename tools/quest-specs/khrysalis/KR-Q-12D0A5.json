@@ -1,0 +1,102 @@
+{
+  "id": "KR-Q-12D0A5",
+  "lang": "12D0A5",
+  "giver": {
+    "persona": "KR-TyrianGorge-NPC10",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 34740,
+    "gold": 420
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Treant_Tormented_B.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00001594",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {
+    "KR-TyrianGorge-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Millipede_Warrior_B_NPC.dds",
+      "template_id": 1233092
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gone_GoatWeaver_Gone",
+    "timestamp": "20231126061530"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D0A5, the only free key within 16 of its chain neighbour WizQst12D0A2 whose lines name the page's names: Broken Stumps",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Feed Me replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

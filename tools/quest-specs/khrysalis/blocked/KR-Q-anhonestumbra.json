@@ -1,0 +1,64 @@
+{
+  "id": "KR-Q-anhonestumbra",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC28",
+    "zone": "Khrysalis/KR_Z09_MantisCity"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 54240,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mantis_HunterF_R.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001892",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    }
+  ],
+  "personas": {
+    "KR-Sardonyx-NPC28": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_O_NPC.dds",
+      "template_id": 1283210
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:An_Honest_Umbra?",
+    "timestamp": "20231126063018"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "An Honest Umbra?",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Lost Light",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Vazivika's House",
+      "blocking": false
+    }
+  ]
+}

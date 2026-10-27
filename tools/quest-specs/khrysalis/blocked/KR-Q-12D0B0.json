@@ -1,0 +1,176 @@
+{
+  "id": "KR-Q-12D0B0",
+  "lang": "12D0B0",
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 156905,
+    "gold": 1370
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-AbyssalCave-Exit.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizQst12D0B0_00000000",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Spider_Giant_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001699",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizQst12D0B0_00000025",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Abyssal_Cave",
+    "timestamp": "20250904071503"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D0B0 matched by the words it shares with the goals; its lines name Atlach-Leng",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Pass of the Spider",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Exploring the Abyssal Cave",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Mantis Phantoms",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the 3 Mantis' Remains Due to a bug, this may not appear as a Goal in the Quest Log.",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Atlach-Leng",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

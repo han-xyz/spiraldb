@@ -1,0 +1,145 @@
+{
+  "id": "KR-Q-12925B",
+  "lang": "12925B",
+  "giver": {
+    "persona": "KR-MoonCliffs-NPC18",
+    "zone": "Khrysalis/KR_Z02_MoonCliffs"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 79425,
+    "gold": 770
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_BeeMonsterF_A.AdjRef",
+        "KR_BeeMonsterF_A_Weak.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001586",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-MoonCliffs-NPC06",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "loc": "ZoneLocName_1205048"
+    }
+  ],
+  "personas": {
+    "KR-MoonCliffs-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bee_QueenF_A_NPC.dds",
+      "template_id": 1223185
+    },
+    "KR-MoonCliffs-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bee_MonsterF_A_NPC.dds",
+      "template_id": 1242052
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Queensrych",
+    "timestamp": "20250816095639"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Throne Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Future's In the Air replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

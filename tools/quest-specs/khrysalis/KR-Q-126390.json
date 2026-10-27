@@ -1,0 +1,81 @@
+{
+  "id": "KR-Q-126390",
+  "lang": "126390",
+  "giver": {
+    "persona": "KR-LastWood-NPC21",
+    "zone": "Khrysalis/KR_Z03_LastWood"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 46490,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Milipede_Warrior_C.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00001611",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC21": {
+      "portrait": "GUI/NpcPortraits/Mole_Gardener_B_NPC.dds",
+      "template_id": 1205146
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Better_Leaf",
+    "timestamp": "20231126061915"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Bring The Green replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

@@ -1,0 +1,114 @@
+{
+  "id": "KR-Q-12D200",
+  "lang": "12D200",
+  "giver": {
+    "persona": "KR-HIVE-NPC27",
+    "zone": "Khrysalis/KR_Z11_TheHive"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 23250,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Shdweave_Lord_J_Kozak.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001884",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    }
+  ],
+  "personas": {
+    "KR-HIVE-NPC27": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
+      "template_id": 1233519
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Metastasis",
+    "timestamp": "20240409061117"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Metastasis Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Reflection of Shadow replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

@@ -1,0 +1,89 @@
+{
+  "id": "KR-Q-126397",
+  "lang": "126397",
+  "giver": {
+    "persona": "KR-Bastion-NPC32",
+    "zone": "Khrysalis/KR_Z01_SilentMarket"
+  },
+  "requires": [
+    "KR-Q-126391"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 150,
+    "gold": 15500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "loc": "ZoneLocName_1205051",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC32": {
+      "portrait": "GUI/NpcPortraits/Mole_Gardener_B_NPC.dds",
+      "template_id": 1223222
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Putting_Down",
+    "timestamp": "20231126061932"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

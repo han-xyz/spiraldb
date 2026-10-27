@@ -1,0 +1,63 @@
+{
+  "id": "KR-Q-126391",
+  "lang": "126391",
+  "giver": {
+    "persona": "KR-LastWood-NPC21",
+    "zone": "Khrysalis/KR_Z03_LastWood"
+  },
+  "requires": [
+    "KR-Q-126390"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 7750,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC21": {
+      "portrait": "GUI/NpcPortraits/Mole_Gardener_B_NPC.dds",
+      "template_id": 1205146
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Let's_Grow",
+    "timestamp": "20231126061914"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

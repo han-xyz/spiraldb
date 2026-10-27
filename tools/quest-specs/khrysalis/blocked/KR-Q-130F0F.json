@@ -1,0 +1,97 @@
+{
+  "id": "KR-Q-130F0F",
+  "lang": "130F0F",
+  "giver": {
+    "persona": "KR-Bastion-NPC04",
+    "zone": "Khrysalis/KR_Z01_SilentMarket"
+  },
+  "requires": [
+    "KR-Q-130F05"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 17370,
+    "gold": 210
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-LastWood-NPC01",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Vendor_B_NPC.dds",
+      "template_id": 1223137
+    },
+    "KR-LastWood-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Chieftain_A_NPC.dds",
+      "template_id": 1223165
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Box_of_Sorrow",
+    "timestamp": "20231126061215"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "(Aemon's) Music Box under the Harmony Tree in the Last Wood",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

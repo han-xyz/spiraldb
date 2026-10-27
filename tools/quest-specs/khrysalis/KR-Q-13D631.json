@@ -1,0 +1,122 @@
+{
+  "id": "KR-Q-13D631",
+  "lang": "13D631",
+  "giver": {
+    "persona": "KR-FortRachias-NPC01",
+    "zone": "Khrysalis/KR_Z05_FortRachias"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 54240,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Mantis_HunterF_Q.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001751",
+      "zone": "Khrysalis/KR_Z05_FortRachias",
+      "descriptor": "WizQst13D631_00000006",
+      "loc": "ZoneLocName_1205054"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z05_FortRachias",
+      "loc": "ZoneLocName_1205054",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000012"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-FortRachias-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ghost_Pirate_A_NPC.dds",
+      "template_id": 1283113
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Log_Jam",
+    "timestamp": "20231126062318"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Alone, Alone, All, All, Alone replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

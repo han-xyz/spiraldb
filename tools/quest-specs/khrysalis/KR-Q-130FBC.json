@@ -1,0 +1,109 @@
+{
+  "id": "KR-Q-130FBC",
+  "lang": "130FBC",
+  "giver": {
+    "persona": "KR-CrescentBeach-NPC26",
+    "zone": "Khrysalis/KR_Z06_CrescentBeach"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 79420,
+    "gold": 770
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mantis_ProphetF_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001748",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-SpinstersLoom.AdjRef",
+        "KR-SpinstersLoom2.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "descriptor": "WizItems_00001973",
+      "loc": "ZoneLocName_1249097"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "loc": "ZoneLocName_1249097"
+    }
+  ],
+  "personas": {
+    "KR-CrescentBeach-NPC26": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_A_NPC.dds",
+      "template_id": 1249221
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:He_Shone_Bright!",
+    "timestamp": "20231125224321"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Spinster's Tent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "From My Neck So Free! replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

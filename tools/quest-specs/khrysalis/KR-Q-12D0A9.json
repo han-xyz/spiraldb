@@ -1,0 +1,81 @@
+{
+  "id": "KR-Q-12D0A9",
+  "lang": "12D0A9",
+  "giver": {
+    "persona": "KR-TyrianGorge-NPC08",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 7750,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-LastWood-NPC04",
+      "zone": "Khrysalis/KR_Z03_LastWood",
+      "loc": "ZoneLocName_1205052"
+    }
+  ],
+  "personas": {
+    "KR-LastWood-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Knight_C_NPC.dds",
+      "template_id": 1223168
+    },
+    "KR-TyrianGorge-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Paladin_B_NPC.dds",
+      "template_id": 1223199
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fly_Me_to_the_Woods",
+    "timestamp": "20231125222330"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D0A9 by the proper nouns its lines share with the page (Dorian, Elizar, Fireblade, Last, Wood), within 16 of a key of the zone's quests; next best WizQst12D0BC with 2",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Take Me In",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Take Me In replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

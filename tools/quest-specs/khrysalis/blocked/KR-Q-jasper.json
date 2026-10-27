@@ -1,0 +1,68 @@
+{
+  "id": "KR-Q-jasper",
+  "giver": {
+    "persona": "KR-KondhaDesert-NPC12",
+    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 46490,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Scorpion_Warrior_A_Deathstalker.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001841",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-KondhaDesert-NPC13",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    }
+  ],
+  "personas": {
+    "KR-KondhaDesert-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Elder_A_NPC.dds",
+      "template_id": 1283170
+    },
+    "KR-KondhaDesert-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Elder_C_NPC.dds",
+      "template_id": 1283171
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Jasper",
+    "timestamp": "20231125225547"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Jasper",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Joshua",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Jasper Bands",
+      "blocking": false
+    }
+  ]
+}
