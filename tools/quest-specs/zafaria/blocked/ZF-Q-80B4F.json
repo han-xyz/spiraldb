@@ -1,0 +1,104 @@
+{
+  "id": "ZF-Q-80B4F",
+  "lang": "80B4F",
+  "giver": {
+    "persona": "ZF-WATER-NPC02",
+    "zone": "Zafaria/ZF_Z08_Waterfront"
+  },
+  "requires": [
+    "ZF-Q-80B4E"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 12120,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Elephant-Blacktusk-R10.AdjRef",
+        "ZF_StandIn_BlacktuskCultist.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001006",
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "loc": "ZoneLocName_465268"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Bill_Lading.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "descriptor": "WizItems_00001774",
+      "loc": "ZoneLocName_465268"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "loc": "ZoneLocName_465268",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-WATER-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sobaka_NPC.dds",
+      "template_id": 527097
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Barge_Right_In",
+    "from": "archive",
+    "timestamp": "20250911042609"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Stone Town Barge",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

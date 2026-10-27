@@ -1,0 +1,109 @@
+{
+  "id": "ZF-Q-71A59",
+  "lang": "71A59",
+  "giver": {
+    "persona": "ZF-HUB-NPC01",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 3810,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF_Professor_Who",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    },
+    "ZF_Professor_Who": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_The_Professor.dds",
+      "template_id": 1217465
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Relative_Dimensions",
+    "from": "archive",
+    "timestamp": "20250904075529"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Professor Who? replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

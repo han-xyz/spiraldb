@@ -1,0 +1,69 @@
+{
+  "id": "ZF-Q-80B39",
+  "lang": "80B39",
+  "giver": {
+    "persona": "ZF-STONE-NPC02",
+    "zone": "Zafaria/ZF_Z07_Stone_Town"
+  },
+  "requires": [
+    "ZF-Q-71A28"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1345,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-STONE-NPC01",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Amar Sharptusk_NPC.dds",
+      "template_id": 527091
+    },
+    "ZF-STONE-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hannibal_Onetusk_NPC.dds",
+      "template_id": 527092
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:On_the_Docks",
+    "from": "archive",
+    "timestamp": "20231125075436"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Drum Run replaced by ZF-Q-71A28",
+      "blocking": false
+    }
+  ]
+}

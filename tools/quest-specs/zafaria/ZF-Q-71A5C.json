@@ -1,0 +1,91 @@
+{
+  "id": "ZF-Q-71A5C",
+  "lang": "71A5C",
+  "giver": {
+    "persona": "ZF-ZAM-NPC16",
+    "zone": "Zafaria/Interiors/ZF_Z06_I04_Kings_Tomb_Anteroom"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 7625,
+    "gold": 265
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Jackal-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001050",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WizQst71A5C_00000008",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Z06_I04_Kings_Tomb_Anteroom",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Ancient_Zebra_King_NPC.dds",
+      "template_id": 465501
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:King_of_Old_Zafaria",
+    "from": "archive",
+    "timestamp": "20250908005022"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Into the Zebra Tomb replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

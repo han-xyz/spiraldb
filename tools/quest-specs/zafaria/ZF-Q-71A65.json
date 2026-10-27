@@ -1,0 +1,113 @@
+{
+  "id": "ZF-Q-71A65",
+  "lang": "71A65",
+  "giver": {
+    "persona": "ZF-ZAM-NPC06",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 15570,
+    "gold": 540
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Jackal-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001050",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WizQst71A65_00000005",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Rami-Thriceborn-R11.AdjRef",
+        "ZF_StandIn_KarlThriceborn.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001100",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Themba_TrueStride_NPC.dds",
+      "template_id": 465303
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:TH_is_for_Themba",
+    "from": "archive",
+    "timestamp": "20231125082146"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Sleepless in Zamunda replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

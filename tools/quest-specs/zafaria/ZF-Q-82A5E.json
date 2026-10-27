@@ -1,0 +1,81 @@
+{
+  "id": "ZF-Q-82A5E",
+  "lang": "82A5E",
+  "giver": {
+    "persona": "ZF-STONE-NPC12",
+    "zone": "Zafaria/ZF_Z07_Stone_Town"
+  },
+  "requires": [
+    "ZF-Q-80B51"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1345,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Sobakas_Boat.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "descriptor": "WizItems_00001773",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC12": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Vir_Goodheart2_NPC.dds",
+      "template_id": 527157
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Catching_Shadows",
+    "from": "archive",
+    "timestamp": "20231125075931"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Arrest That Man replaced by ZF-Q-80B51",
+      "blocking": false
+    }
+  ]
+}

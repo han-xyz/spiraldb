@@ -1,0 +1,65 @@
+{
+  "id": "ZF-Q-82A74",
+  "lang": "82A74",
+  "giver": {
+    "persona": "ZF-GRAVE-NPC01",
+    "zone": "Zafaria/ZF_Z10_Elephant_Graveyard"
+  },
+  "requires": [
+    "ZF-Q-82A73"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 4040,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
+      "loc": "ZoneLocName_465261"
+    }
+  ],
+  "personas": {
+    "ZF-GRAVE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Elissa_NPC.dds",
+      "template_id": 466210
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Opening_Beat",
+    "from": "archive",
+    "timestamp": "20250907021427"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Grave Marker",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

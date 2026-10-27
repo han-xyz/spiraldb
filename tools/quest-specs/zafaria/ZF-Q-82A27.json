@@ -1,0 +1,90 @@
+{
+  "id": "ZF-Q-82A27",
+  "lang": "82A27",
+  "giver": {
+    "persona": "ZF-SAV-NPC06",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-82A22"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 3200,
+    "gold": 110
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Zebra_Scout_Tower.AdjRef",
+        "ZF_Zebra_Scout_Tower_Upright.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "descriptor": "WizItems_00001765",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Behki_Blackhoof_NPC.dds",
+      "template_id": 466167
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:In_the_Cold_Distance",
+    "from": "archive",
+    "timestamp": "20231125073106"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Picket Fences replaced by ZF-Q-82A22",
+      "blocking": false
+    }
+  ]
+}

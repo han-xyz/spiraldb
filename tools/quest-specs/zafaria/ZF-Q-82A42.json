@@ -1,0 +1,79 @@
+{
+  "id": "ZF-Q-82A42",
+  "lang": "82A42",
+  "giver": {
+    "persona": "ZF-SAV-NPC09",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 3390,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Boiler.AdjRef",
+        "ZF_Esops_Boiler.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "descriptor": "WizItems_00001767",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-MARKET-NPC04",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    }
+  ],
+  "personas": {
+    "ZF-MARKET-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hannibal_Onetusk_NPC.dds",
+      "template_id": 465447
+    },
+    "ZF-SAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Esop_Thornpaw.dds",
+      "template_id": 466170
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Give_It_Away_Now",
+    "from": "archive",
+    "timestamp": "20231125075231"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lawn Ornament replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

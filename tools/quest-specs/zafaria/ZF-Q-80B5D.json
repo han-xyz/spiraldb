@@ -1,0 +1,84 @@
+{
+  "id": "ZF-Q-80B5D",
+  "lang": "80B5D",
+  "giver": {
+    "persona": "ZF-STONE-NPC03",
+    "zone": "Zafaria/Interiors/ZF_Z07_I01_Darajani_Palace"
+  },
+  "requires": [
+    "ZF-Q-155141"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 4040,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF-HUB-NPC07.AdjRef",
+        "ZF-STONE-NPC07.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "descriptor": "WizardNPC_00000563",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Z07_I01_Darajani_Palace",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Silvertusk_NPC.dds",
+      "template_id": 527093
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Let_Him_Free",
+    "from": "archive",
+    "timestamp": "20250908114114"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Do I Look Fat In This? replaced by ZF-Q-155141",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "ZF-Q-719F3",
+  "lang": "719F3",
+  "giver": {
+    "persona": "ZF-ZAM-NPC03",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1270,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-MARKET-NPC04",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    }
+  ],
+  "personas": {
+    "ZF-MARKET-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hannibal_Onetusk_NPC.dds",
+      "template_id": 465447
+    },
+    "ZF-ZAM-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Queen_Amahle_NPC.dds",
+      "template_id": 465286
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Letter_for_the_Queen",
+    "from": "archive",
+    "timestamp": "20231125075202"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Long Winded Warrior replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

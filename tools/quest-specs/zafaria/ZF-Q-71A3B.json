@@ -1,0 +1,62 @@
+{
+  "id": "ZF-Q-71A3B",
+  "lang": "71A3B",
+  "giver": {
+    "persona": "ZF-HUB-NPC03",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [
+    "ZF-Q-71A06"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 1070,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Tau_Ghostmane_NPC.dds",
+      "template_id": 465267
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:To_Market,_To_Market",
+    "from": "archive",
+    "timestamp": "20231125072537"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

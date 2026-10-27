@@ -1,0 +1,70 @@
+{
+  "id": "ZF-Q-71A06",
+  "lang": "71A06",
+  "giver": {
+    "persona": "ZF-HUB-NPC03",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [
+    "ZF-Q-71A05"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1005,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-HUB-NPC02",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257",
+      "completion": [
+        {
+          "speaker": "ZF-HUB-NPC02",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Lethu_BluntFoot_NPC.dds",
+      "template_id": 465265
+    },
+    "ZF-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Tau_Ghostmane_NPC.dds",
+      "template_id": 465267
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:No_Bother",
+    "from": "archive",
+    "timestamp": "20231125071805"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "ZF-Q-719F4",
+  "lang": "719F4",
+  "giver": {
+    "persona": "ZF-ZAM-NPC10",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [],
+  "min_level": 60,
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 3810,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-ZAM-NPC17",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Blind_WhiteMane_NPC.dds",
+      "template_id": 465306
+    },
+    "ZF-ZAM-NPC17": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Ayanda_Redband_NPC.dds",
+      "template_id": 557072
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bite_to_Eat",
+    "from": "archive",
+    "timestamp": "20250904234638"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Rival Gangs",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Fresh Fruit",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

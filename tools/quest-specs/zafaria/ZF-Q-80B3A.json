@@ -1,0 +1,80 @@
+{
+  "id": "ZF-Q-80B3A",
+  "lang": "80B3A",
+  "giver": {
+    "persona": "ZF-STONE-NPC01",
+    "zone": "Zafaria/ZF_Z07_Stone_Town"
+  },
+  "requires": [
+    "ZF-Q-80B39"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 8080,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Elephant-Beserker-R10.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001043",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Amar Sharptusk_NPC.dds",
+      "template_id": 527091
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sharp_as_a_Tusk",
+    "from": "archive",
+    "timestamp": "20231125075406"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

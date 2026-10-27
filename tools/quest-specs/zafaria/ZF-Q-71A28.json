@@ -1,0 +1,117 @@
+{
+  "id": "ZF-Q-71A28",
+  "lang": "71A28",
+  "giver": {
+    "persona": "ZF-MARKET-NPC04",
+    "zone": "Zafaria/ZF_Z02_Baobab_Market"
+  },
+  "requires": [
+    "ZF-Q-82A42"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 4265,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-CROWN-NPC06",
+      "zone": "Zafaria/Interiors/ZF_Z01_I02_Library_Classroom",
+      "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF-Library_Book.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "descriptor": "WizQst71A28_00000011",
+      "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    }
+  ],
+  "personas": {
+    "ZF-CROWN-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kiliman_Copperleaf_NPC.dds",
+      "template_id": 465437
+    },
+    "ZF-MARKET-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hannibal_Onetusk_NPC.dds",
+      "template_id": 465447
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Still_Broke",
+    "from": "archive",
+    "timestamp": "20231125075338"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

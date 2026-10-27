@@ -1,0 +1,83 @@
+{
+  "id": "ZF-Q-80B45",
+  "lang": "80B45",
+  "giver": {
+    "persona": "ZF-STONE-NPC05",
+    "zone": "Zafaria/Interiors/ZF_Z07_I02_War_Olyphants_Tower"
+  },
+  "requires": [
+    "ZF-Q-80B44"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 8080,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Elephant-Beserker-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001043",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "descriptor": "WizQst80B45_00000008",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Z07_I02_War_Olyphants_Tower",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Hathi_Irontrunk_NPC.dds",
+      "template_id": 527150
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bulls_on_Parade",
+    "from": "archive",
+    "timestamp": "20250906070111"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

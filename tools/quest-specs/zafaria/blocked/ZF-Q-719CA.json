@@ -1,0 +1,79 @@
+{
+  "id": "ZF-Q-719CA",
+  "lang": "719CA",
+  "giver": {
+    "persona": "ZF-OUT-NPC01",
+    "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts"
+  },
+  "requires": [
+    "ZF-Q-719C3"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 8400,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Rhino-Guard-R10.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001044",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "loc": "ZoneLocName_466150"
+    }
+  ],
+  "personas": {
+    "ZF-OUT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sizana_Sunrunner_NPC.dds",
+      "template_id": 465281
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Burning_Tower",
+    "from": "archive",
+    "timestamp": "20250908114300"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Survey Tower Area",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

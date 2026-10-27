@@ -1,0 +1,86 @@
+{
+  "id": "ZF-Q-80B51",
+  "lang": "80B51",
+  "giver": {
+    "persona": "ZF-STONE-NPC05",
+    "zone": "Zafaria/Interiors/ZF_Z07_I02_War_Olyphants_Tower"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 2690,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-STONE-NPC03",
+      "zone": "Zafaria/Interiors/ZF_Z07_I01_Darajani_Palace",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Z07_I02_War_Olyphants_Tower",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Silvertusk_NPC.dds",
+      "template_id": 527093
+    },
+    "ZF-STONE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Hathi_Irontrunk_NPC.dds",
+      "template_id": 527150
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Morning_Report",
+    "from": "archive",
+    "timestamp": "20231125075855"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Down by the River replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

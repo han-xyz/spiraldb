@@ -1,0 +1,78 @@
+{
+  "id": "ZF-Q-80B50",
+  "lang": "80B50",
+  "giver": {
+    "persona": "ZF-WATER-NPC02",
+    "zone": "Zafaria/ZF_Z08_Waterfront"
+  },
+  "requires": [
+    "ZF-Q-80B4F"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1345,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-STONE-NPC05",
+      "zone": "Zafaria/Interiors/ZF_Z07_I02_War_Olyphants_Tower",
+      "loc": "ZoneLocName_465268"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Hathi_Irontrunk_NPC.dds",
+      "template_id": 527150
+    },
+    "ZF-WATER-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sobaka_NPC.dds",
+      "template_id": 527097
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Down_by_the_River",
+    "from": "archive",
+    "timestamp": "20231125075830"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Use Sobaka's Boat",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Talk to Hathi Irontrunk in Stone Town",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

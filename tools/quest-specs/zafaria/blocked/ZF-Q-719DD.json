@@ -1,0 +1,126 @@
+{
+  "id": "ZF-Q-719DD",
+  "lang": "719DD",
+  "giver": {
+    "persona": "ZF-ZAM-NPC06",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [],
+  "min_level": 60,
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 11440,
+    "gold": 390
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Elephant-Shaman-R10.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001049",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WizQst719DD_00000008",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Brazier_Iron.AdjRef"
+      ],
+      "count": 2,
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WizItems_00001810",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Brazier_Iron_WhiteSmoke.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WizItems_00001809",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-ZAM-NPC03",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260",
+      "completion": [
+        {
+          "speaker": "ZF-ZAM-NPC03",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Queen_Amahle_NPC.dds",
+      "template_id": 465286
+    },
+    "ZF-ZAM-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Themba_TrueStride_NPC.dds",
+      "template_id": 465303
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Into_the_Zebra_Tomb",
+    "from": "archive",
+    "timestamp": "20250905235031"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Tomb Soldiers",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "King's Tomb",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

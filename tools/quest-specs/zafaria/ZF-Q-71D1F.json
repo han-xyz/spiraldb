@@ -1,0 +1,118 @@
+{
+  "id": "ZF-Q-71D1F",
+  "lang": "71D1F",
+  "giver": {
+    "persona": "ZF-DRUM-NPC02",
+    "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 10780,
+    "gold": 340
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Gorilla-Boss-01-R11-Boss.AdjRef",
+        "ZF_StandIn_KallahSilverback.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001012",
+      "zone": "",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256"
+    }
+  ],
+  "personas": {
+    "ZF-DRUM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hanabiko_Smokesign_NPC.dds",
+      "template_id": 466186
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Knockin_On_Kallah's_Door",
+    "from": "archive",
+    "timestamp": "20250906093521"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Spider Bridge",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Kallah Silverback's Shack",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go (inside) Kallah Silverback's Shack",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Spider Bridge replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

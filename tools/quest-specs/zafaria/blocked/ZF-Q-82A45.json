@@ -1,0 +1,90 @@
+{
+  "id": "ZF-Q-82A45",
+  "lang": "82A45",
+  "giver": {
+    "persona": "ZF-SAV-NPC02",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-7E400"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 5650,
+    "gold": 210
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Chief_Olemeeli_NPC.dds",
+      "template_id": 466162
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Better_Mousetrap",
+    "from": "archive",
+    "timestamp": "20250917131119"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Whistling Thorn Wood",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Mousetrap",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

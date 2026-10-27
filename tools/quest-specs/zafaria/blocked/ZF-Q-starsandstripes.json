@@ -1,0 +1,76 @@
+{
+  "id": "ZF-Q-starsandstripes",
+  "giver": {
+    "persona": "ZF-ZAM-NPC04",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [],
+  "min_level": 60,
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 5080,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Elephant-Shaman-R10.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001049",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Mandisa_Autumnrain_NPC.dds",
+      "template_id": 465287
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stars_and_Stripes",
+    "from": "archive",
+    "timestamp": "20240409061141"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Stars and Stripes",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Astral Weeks",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Star Ritual Pages in the Zamunda Outskirts",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Star Obelisk (and activate it)",
+      "blocking": false
+    }
+  ]
+}

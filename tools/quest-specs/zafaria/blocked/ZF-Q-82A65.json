@@ -1,0 +1,110 @@
+{
+  "id": "ZF-Q-82A65",
+  "lang": "82A65",
+  "giver": {
+    "persona": "ZF-STONE-NPC03",
+    "zone": "Zafaria/Interiors/ZF_Z07_I01_Darajani_Palace"
+  },
+  "requires": [
+    "ZF-Q-80B50"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 6730,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-STONE-NPC04",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-STONE-NPC04",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-WATER-NPC06",
+      "zone": "Zafaria/Interiors/ZF_Z08_I08_Librarians_Hideout",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Silvertusk_NPC.dds",
+      "template_id": 527093
+    },
+    "ZF-STONE-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sobaka_NPC.dds",
+      "template_id": 527094
+    },
+    "ZF-WATER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_ Zarafa_Bayleaf_NPC.dds",
+      "template_id": 527160
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stone_Age",
+    "from": "archive",
+    "timestamp": "20251203170356"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Stone Town Library",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Zarafa Bayleaf (in Aisley's Tea Shop)",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

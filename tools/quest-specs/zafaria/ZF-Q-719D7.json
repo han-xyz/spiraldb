@@ -1,0 +1,83 @@
+{
+  "id": "ZF-Q-719D7",
+  "lang": "719D7",
+  "giver": {
+    "persona": "ZF-ZAM-NPC03",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [
+    "ZF-Q-719D5"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 7630,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Zebra-Impi-Raider-R11.AdjRef",
+        "ZF-Zebra-Warrior-Male-R10-1.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001101",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Queen_Amahle_NPC.dds",
+      "template_id": 465286
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wild_Zorses",
+    "from": "archive",
+    "timestamp": "20231125081923"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

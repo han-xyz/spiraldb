@@ -1,0 +1,79 @@
+{
+  "id": "ZF-Q-82A64",
+  "lang": "82A64",
+  "giver": {
+    "persona": "ZF-STONE-NPC16",
+    "zone": "Zafaria/Interiors/ZF_Z07_I03_Zoo"
+  },
+  "requires": [
+    "ZF-Q-82A63"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 8080,
+    "gold": 270
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Elephant-Beserker-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001043",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "descriptor": "WizQst82A64_00000005",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Z07_I03_Zoo",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Amar Sharptusk_NPC.dds",
+      "template_id": 541121
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Playscape",
+    "from": "archive",
+    "timestamp": "20231125082633"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

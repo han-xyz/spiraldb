@@ -1,0 +1,100 @@
+{
+  "id": "ZF-Q-719E9",
+  "lang": "719E9",
+  "giver": {
+    "persona": "ZF-ZAM-NPC03",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [
+    "ZF-Q-719DD"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 25740,
+    "gold": 930
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Zebra-Shaka-Zebu-R10-Boss.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001003",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-ZAM-NPC08",
+      "zone": "Zafaria/Interiors/ZF_Z06_I02_Kings_Court03",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Queen_Amahle_NPC.dds",
+      "template_id": 465286
+    },
+    "ZF-ZAM-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Shaka_Zebu_CrazyEyes_MOB.dds",
+      "template_id": 465304
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lust_for_Life",
+    "from": "archive",
+    "timestamp": "20250914081031"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Evil Spirit (in King's Court)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Down Poisonous Vine",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "ZF-Q-71A2A",
+  "lang": "71A2A",
+  "giver": {
+    "persona": "ZF-MARKET-NPC04",
+    "zone": "Zafaria/ZF_Z02_Baobab_Market"
+  },
+  "requires": [
+    "ZF-Q-71A28"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 2400,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    }
+  ],
+  "personas": {
+    "ZF-MARKET-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hannibal_Onetusk_NPC.dds",
+      "template_id": 465447
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Drum_Run",
+    "from": "archive",
+    "timestamp": "20231125075342"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Use (ride) the Zafarian Queen to Stone Town",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Talk to Hannibal Onetusk in Stone Town",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "ZF-Q-71A0A",
+  "lang": "71A0A",
+  "giver": {
+    "persona": "ZF-CROWN-NPC01",
+    "zone": "Zafaria/ZF_Z01_Baobab_Crown"
+  },
+  "requires": [
+    "ZF-Q-71A08"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1005,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-CROWN-NPC02",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    }
+  ],
+  "personas": {
+    "ZF-CROWN-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Rasik_Breakheart.dds",
+      "template_id": 465417
+    },
+    "ZF-CROWN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kakenya_Brokenfang_NPC.dds",
+      "template_id": 465419
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:I_Intend_to_Have_Other_Plans",
+    "from": "archive",
+    "timestamp": "20231125071825"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "ZF-Q-82A1F",
+  "lang": "82A1F",
+  "giver": {
+    "persona": "ZF-SAV-NPC04",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-8224F"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 6400,
+    "gold": 230
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Zebra-Warrior-Male-R10-03.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001052",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "descriptor": "WizQst82A1F_00000007",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Chief_Leboo_NPC.dds",
+      "template_id": 466164
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Living_with_Lions",
+    "from": "archive",
+    "timestamp": "20250907135554"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "id": "ZF-Q-80B77",
+  "lang": "80B77",
+  "requires": [
+    "ZF-Q-71A30"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 40070,
+    "gold": 1330
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-GRAVE-NPC05",
+      "zone": "Zafaria/Interiors/ZF_Z10_I02_Didos_Mausoleum",
+      "loc": "ZoneLocName_527101"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-TseTse-Main-R11-Boss.AdjRef",
+        "ZF_StandIn_TseTseSnaketail.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001010",
+      "zone": "",
+      "loc": "ZoneLocName_527101"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-GRAVE-NPC06",
+      "zone": "Zafaria/Interiors/ZF_Z10_I02_Didos_Mausoleum",
+      "loc": "ZoneLocName_527101"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Elephant-Spectral-Guardian-R11.AdjRef",
+        "ZF_Zebra_Spectral_Guardian-R11.AdjRef",
+        "ZF-Spectral-Lion-R11.AdjRef",
+        "ZF_Gorilla_Spectral_Guardian-R11.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001087",
+      "zone": "",
+      "loc": "ZoneLocName_527101"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF-GRAVE-NPC06.AdjRef",
+        "ZF-LAKE-NPC02.AdjRef",
+        "ZF-LAKE-NPC03.AdjRef",
+        "ZF-LAKE-NPC04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WC-NPCs_00001549",
+      "loc": "ZoneLocName_527101"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF-GRAVE-NPC06.AdjRef",
+        "ZF-LAKE-NPC02.AdjRef",
+        "ZF-LAKE-NPC03.AdjRef",
+        "ZF-LAKE-NPC04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WC-NPCs_00001549",
+      "loc": "ZoneLocName_527101"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Goliath-R11-Boss-03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001106",
+      "zone": "",
+      "loc": "ZoneLocName_527101"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Spider-Model-Starburst-R11.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001056",
+      "zone": "",
+      "loc": "ZoneLocName_527101"
+    }
+  ],
+  "personas": {
+    "ZF-GRAVE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Tse_Tse_No_Disguise.dds",
+      "template_id": 541107
+    },
+    "ZF-GRAVE-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morganthe.dds",
+      "template_id": 541108
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wizard_in_the_Mirror",
+    "from": "archive",
+    "timestamp": "20250829070211"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Bottom of the Lake",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Mountain Path",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Bottom of the Lake in Mirror Lake",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Raised Tower",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

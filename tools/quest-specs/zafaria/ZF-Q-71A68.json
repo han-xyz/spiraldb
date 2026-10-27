@@ -1,0 +1,112 @@
+{
+  "id": "ZF-Q-71A68",
+  "lang": "71A68",
+  "giver": {
+    "persona": "ZF-OUT-NPC02",
+    "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 705,
+    "gold": 20335
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Jackal-R10.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001050",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "descriptor": "WizQst71A68_00000004",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Elephant-Shaman-R10.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001049",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "descriptor": "WizQst71A68_00000005",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Rhino-Guard-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001044",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "descriptor": "WizQst71A68_00000006",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "loc": "ZoneLocName_466150",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-OUT-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Mondli_GreenHoof_NPC.dds",
+      "template_id": 465410
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gone_Basket_Gone",
+    "from": "archive",
+    "timestamp": "20250907235449"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Postcards from Ravenwood",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Postcards from Ravenwood replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

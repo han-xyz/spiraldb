@@ -1,0 +1,17 @@
+{
+  "Name": "ZF-Q-82A29",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 230,
+  "MaxGold": 230,
+  "ExperienceAmount": 6400,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T06:07:43.689600Z",
+  "ModifiedAt": "2026-10-27T06:07:43.689600Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

@@ -1,0 +1,135 @@
+{
+  "id": "ZF-Q-71A41",
+  "lang": "71A41",
+  "giver": {
+    "persona": "ZF-CROWN-NPC06",
+    "zone": "Zafaria/Interiors/ZF_Z01_I02_Library_Classroom"
+  },
+  "requires": [
+    "ZF-Q-71A03"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 0,
+    "gold": 110
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Drum_Jungle_Pedestal.AdjRef",
+        "ZF_Drum_Jungle_WaterFall.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Z01_I02_Library_Classroom",
+      "loc": "ZoneLocName_465258"
+    }
+  ],
+  "personas": {
+    "ZF-CROWN-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kiliman_Copperleaf_NPC.dds",
+      "template_id": 465437
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Art_History",
+    "from": "archive",
+    "timestamp": "20231125072446"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Baobab Crown (in Zafaria Library)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Savannah (in alcove near Thornpaw village)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Savannah (at Nemean Rock)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Waterfront (in Stone Town Library)",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Baobab Crown (in Zafaria Library)",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

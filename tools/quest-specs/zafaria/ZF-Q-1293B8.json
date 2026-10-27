@@ -1,0 +1,87 @@
+{
+  "id": "ZF-Q-1293B8",
+  "lang": "1293B8",
+  "giver": {
+    "persona": "ZF_Professor_Who",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 4020,
+    "gold": 160
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Professor_Who.AdjRef",
+        "ZF_Professor_Who02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "descriptor": "WC-NPCs_00001954",
+      "loc": "ZoneLocName_465257"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257"
+    }
+  ],
+  "personas": {
+    "ZF_Professor_Who": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_The_Professor.dds",
+      "template_id": 1217465
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Pirate_Planet",
+    "from": "archive",
+    "timestamp": "20240104054602"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

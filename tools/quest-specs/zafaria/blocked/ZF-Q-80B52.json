@@ -1,0 +1,91 @@
+{
+  "id": "ZF-Q-80B52",
+  "lang": "80B52",
+  "giver": {
+    "persona": "ZF-STONE-NPC05",
+    "zone": "Zafaria/Interiors/ZF_Z07_I02_War_Olyphants_Tower"
+  },
+  "requires": [
+    "ZF-Q-80B51"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1345,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-STONE-NPC12",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Hathi_Irontrunk_NPC.dds",
+      "template_id": 527150
+    },
+    "ZF-STONE-NPC12": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Vir_Goodheart2_NPC.dds",
+      "template_id": 527157
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Arrest_That_Man",
+    "from": "archive",
+    "timestamp": "20250918055430"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Find the Councilor's House",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Talk to Vir Goodheart",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

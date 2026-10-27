@@ -1,0 +1,99 @@
+{
+  "id": "ZF-Q-719F9",
+  "lang": "719F9",
+  "giver": {
+    "persona": "ZF-ZAM-NPC10",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [
+    "ZF-Q-719F8"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 3810,
+    "gold": 120
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Blind_WhiteMane_NPC.dds",
+      "template_id": 465306
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Drum_Solo",
+    "from": "archive",
+    "timestamp": "20250911155812"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "on Drum",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "on (second) Drum",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "on (third) Drum",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "ZF-Q-7E400",
+  "lang": "7E400",
+  "giver": {
+    "persona": "ZF-SAV-NPC02",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 5340,
+    "gold": 190
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Well_Stones.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "descriptor": "WizItems_00001761",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Well.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "descriptor": "WizItems_00001762",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Chief_Olemeeli_NPC.dds",
+      "template_id": 466162
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:All's_Well",
+    "from": "archive",
+    "timestamp": "20250918114847"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Show of Strength replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

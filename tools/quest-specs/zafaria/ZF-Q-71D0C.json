@@ -1,0 +1,69 @@
+{
+  "id": "ZF-Q-71D0C",
+  "lang": "71D0C",
+  "giver": {
+    "persona": "ZF-DRUM-NPC02",
+    "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+  },
+  "requires": [
+    "ZF-Q-71D0D"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 2690,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256"
+    }
+  ],
+  "personas": {
+    "ZF-DRUM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hanabiko_Smokesign_NPC.dds",
+      "template_id": 466186
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Down_in_the_Hole",
+    "from": "archive",
+    "timestamp": "20231125080325"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Pincer Gate",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

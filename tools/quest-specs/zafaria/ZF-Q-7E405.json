@@ -1,0 +1,87 @@
+{
+  "id": "ZF-Q-7E405",
+  "lang": "7E405",
+  "giver": {
+    "persona": "ZF-SAV-NPC02",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-7E400"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1070,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-SAV-NPC01",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259",
+      "completion": [
+        {
+          "speaker": "ZF-SAV-NPC01",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_TikTik_Snaketongue_NPC.dds",
+      "template_id": 466161
+    },
+    "ZF-SAV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Chief_Olemeeli_NPC.dds",
+      "template_id": 466162
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wild_Lion_Chase",
+    "from": "archive",
+    "timestamp": "20231125072841"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Open Cages replaced by ZF-Q-7E400",
+      "blocking": false
+    }
+  ]
+}

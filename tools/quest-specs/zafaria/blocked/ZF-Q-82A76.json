@@ -1,0 +1,74 @@
+{
+  "id": "ZF-Q-82A76",
+  "lang": "82A76",
+  "giver": {
+    "persona": "ZF-GRAVE-NPC01",
+    "zone": "Zafaria/ZF_Z10_Elephant_Graveyard"
+  },
+  "requires": [
+    "ZF-Q-82A75"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 2690,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-CROWN-NPC05",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    }
+  ],
+  "personas": {
+    "ZF-CROWN-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Vir_Goodheart2_NPC.dds",
+      "template_id": 465426
+    },
+    "ZF-GRAVE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Elissa_NPC.dds",
+      "template_id": 466210
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tomb_Sweet_Tomb",
+    "from": "archive",
+    "timestamp": "20250907004209"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Queen Elissa's Tomb",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Prince Tiziri Silvertusk Note:  Prince Tiziri's name is uniquely spelled \"Tziri\" in this quest goal image.",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

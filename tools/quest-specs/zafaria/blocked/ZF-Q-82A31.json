@@ -1,0 +1,89 @@
+{
+  "id": "ZF-Q-82A31",
+  "lang": "82A31",
+  "giver": {
+    "persona": "ZF-SAV-NPC08",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-71A24"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 5340,
+    "gold": 190
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Bridge_Slats.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "descriptor": "QuestTitle_00000554",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-SAV-NPC09",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259",
+      "completion": [
+        {
+          "speaker": "ZF-SAV-NPC09",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Elsa_Ghostmane_NPC.dds",
+      "template_id": 466169
+    },
+    "ZF-SAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Esop_Thornpaw.dds",
+      "template_id": 466170
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Beat_of_a_Different_Drum",
+    "from": "archive",
+    "timestamp": "20231125073818"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Broken Bridge",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "ZF-Q-71A31",
+  "lang": "71A31",
+  "giver": {
+    "persona": "ZF-CROWN-NPC07",
+    "zone": "Zafaria/ZF_Z01_Baobab_Crown"
+  },
+  "requires": [
+    "ZF-Q-71A03"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 0,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF_ElephantGraveyard_Brazier.AdjRef",
+        "ZF_ElephantGraveyard_Brazier2.AdjRef",
+        "ZF_Elephant_Graveyard_Bath_House_Water.AdjRef",
+        "ZF_Elephant_Graveyard_Bath_House_Water2.AdjRef"
+      ],
+      "count": 7,
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    }
+  ],
+  "personas": {
+    "ZF-CROWN-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 465462
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hey_Hey_It's_The_Monkeys",
+    "from": "archive",
+    "timestamp": "20241225012743"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Baobab Market",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Savannah",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Zamunda Outskirts",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Zamunda",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Stone Town",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Waterfront",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Baobab Market",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

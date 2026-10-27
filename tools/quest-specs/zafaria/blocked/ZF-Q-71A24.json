@@ -1,0 +1,113 @@
+{
+  "id": "ZF-Q-71A24",
+  "lang": "71A24",
+  "giver": {
+    "persona": "ZF-HUB-NPC01",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [
+    "ZF-Q-71A20"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 5335,
+    "gold": 190
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Cauldron.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "descriptor": "WizItems_00001775",
+      "loc": "ZoneLocName_465257"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-SAV-NPC08",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259",
+      "completion": [
+        {
+          "speaker": "ZF-SAV-NPC08",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    },
+    "ZF-SAV-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Elsa_Ghostmane_NPC.dds",
+      "template_id": 466169
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Off_the_Boil",
+    "from": "archive",
+    "timestamp": "20231125073707"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Watering Hole in the Savannah",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
