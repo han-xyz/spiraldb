@@ -19,6 +19,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "CL-Coral-Object.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "descriptor": "WizItems_00001638",
+      "loc": "ZoneLocName_227109"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Z02_Crab_Realm",
@@ -39,11 +49,6 @@
     {
       "field": "lang",
       "value": "Coral of the Story",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Pieces of Coral",
       "blocking": true
     }
   ]

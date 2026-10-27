@@ -6,7 +6,7 @@
     "zone": "Celestia/CL_Z07_Storm_Lord_Temple"
   },
   "requires": [
-    "CL-Q-371E9"
+    "CL-Q-371E1"
   ],
   "mainline": false,
   "level": 48,
@@ -82,7 +82,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Finders Keepers replaced by CL-Q-371E9",
+      "value": "Finders Keepers replaced by CL-Q-371E1",
       "blocking": false
     }
   ]

@@ -39,7 +39,8 @@
     {
       "type": "usage",
       "items": [
-        "CL-DIST-C02-002Pedestal.AdjRef"
+        "CL-DIST-C02-002Pedestal.AdjRef",
+        "CL_Teleport-to-Stormriven_under.AdjRef"
       ],
       "count": 10,
       "zone": "Celestia/CL_Hub",
@@ -88,11 +89,6 @@
     {
       "field": "goal.items",
       "value": "District of the Stars",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Stormriven",
       "blocking": true
     },
     {

@@ -43,6 +43,15 @@
     {
       "type": "usage",
       "items": [
+        "CL_DormantProtector01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_227140"
+    },
+    {
+      "type": "usage",
+      "items": [
         "CL_MoonCrystalPylon1.AdjRef",
         "CL-MoonCrystalPylon2.AdjRef",
         "CL_MoonCrystalPylon3.AdjRef"
@@ -127,9 +136,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.descriptor",
       "value": "Stellar Protector in The Lunarium",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

@@ -63,6 +63,15 @@
       "loc": "ZoneLocName_227127"
     },
     {
+      "type": "usage",
+      "items": [
+        "CL-ArtifactObject.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "loc": "ZoneLocName_227127"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "CL_MorgantineGhost-Blue-R9.AdjRef"
@@ -109,9 +118,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.descriptor",
       "value": "second Artifact",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.descriptor",

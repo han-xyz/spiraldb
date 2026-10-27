@@ -61,6 +61,15 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "CL-KrakenObject.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z06_StormHaven",
+      "loc": "ZoneLocName_227142"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Z06_StormHaven",
@@ -100,9 +109,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.descriptor",
       "value": "Kraken Statue in Stormriven Hall",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

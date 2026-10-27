@@ -117,7 +117,8 @@
       "type": "usage",
       "items": [
         "CL-DownedProtector.AdjRef",
-        "CL-DownedProtectors.AdjRef"
+        "CL-DownedProtectors.AdjRef",
+        "CL-DownedProtectors2.AdjRef"
       ],
       "count": 1,
       "zone": "",
@@ -172,7 +173,8 @@
       "type": "usage",
       "items": [
         "CL-DownedProtector.AdjRef",
-        "CL-DownedProtectors.AdjRef"
+        "CL-DownedProtectors.AdjRef",
+        "CL-DownedProtectors2.AdjRef"
       ],
       "count": 1,
       "zone": "",

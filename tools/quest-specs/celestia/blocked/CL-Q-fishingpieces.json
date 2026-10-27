@@ -29,6 +29,16 @@
       "loc": "ZoneLocName_227109"
     },
     {
+      "type": "usage",
+      "items": [
+        "CL-AncientTablet.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z02_Crab_Realm",
+      "descriptor": "WizItems_00001643",
+      "loc": "ZoneLocName_227109"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Z02_Crab_Realm",
@@ -55,11 +65,6 @@
       "field": "goal.descriptor",
       "value": "Ancient Tablet pieces",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "final Piece of Ancient Tablet",
-      "blocking": true
     }
   ]
 }
