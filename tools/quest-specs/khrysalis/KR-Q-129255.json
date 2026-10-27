@@ -6,7 +6,6 @@
     "zone": "Khrysalis/KR_Z02_MoonCliffs"
   },
   "requires": [],
-  "min_level": 88,
   "mainline": true,
   "level": 88,
   "reward": {
@@ -63,6 +62,16 @@
       "loc": "ZoneLocName_1205048"
     },
     {
+      "type": "usage",
+      "items": [
+        "KR-MoonCliffsHoneycombGate.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "descriptor": "WizQst129255_00000005",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
       "type": "persona",
       "persona": "KR-LastWood-NPC11",
       "zone": "Khrysalis/KR_Z03_LastWood",
@@ -91,14 +100,15 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Honeycomb Gate",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Warrior Brood replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 88
 }
