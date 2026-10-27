@@ -1,0 +1,81 @@
+{
+  "id": "MR-Q-1322C2",
+  "lang": "1322C2",
+  "giver": {
+    "persona": "MR-RUBAL-NPC15",
+    "zone": "Mirage/MR_Z04_RubalWastes"
+  },
+  "requires": [
+    "MR-Q-1322C1"
+  ],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 10000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Elemental_BallSand_A_02.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002649",
+      "zone": "Mirage/MR_Z04_RubalWastes",
+      "loc": "ZoneLocName_1378193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z04_RubalWastes",
+      "loc": "ZoneLocName_1378193"
+    }
+  ],
+  "personas": {
+    "MR-RUBAL-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_SorcererF_A_NPC.dds",
+      "template_id": 1254086
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Swirling_Dirtbags",
+    "timestamp": "20231126080029"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

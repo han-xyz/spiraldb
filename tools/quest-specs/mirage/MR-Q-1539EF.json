@@ -1,0 +1,92 @@
+{
+  "id": "MR-Q-1539EF",
+  "lang": "1539EF",
+  "giver": {
+    "persona": "MR-CARA-NPC02-B",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [
+    "MR-Q-151344"
+  ],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 9000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Ghoulture_Hunter_A_01.AdjRef",
+        "MR_Ghoulture_Hunter_A_02.AdjRef",
+        "MR_Minion_Ghoulture_Hunter_A_01.AdjRef",
+        "MR_Minion_Ghoulture_Hunter_A_02.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002377",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_MOB.dds",
+      "template_id": 1381118
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Nomadic_Needs",
+    "timestamp": "20250903085922"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

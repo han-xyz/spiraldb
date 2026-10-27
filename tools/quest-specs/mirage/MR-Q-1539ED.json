@@ -1,0 +1,86 @@
+{
+  "id": "MR-Q-1539ED",
+  "lang": "1539ED",
+  "giver": {
+    "persona": "MR-ISTA-NPC10",
+    "zone": "Mirage/MR_Z05_Istanboa"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 9000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Cat_WarriorF_E_02.AdjRef",
+        "MR_Cat_Warrior_E_03.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002598",
+      "zone": "Mirage/MR_Z04_RubalWastes",
+      "loc": "ZoneLocName_1378193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z05_Istanboa",
+      "loc": "ZoneLocName_1378142"
+    }
+  ],
+  "personas": {
+    "MR-ISTA-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ophidian_Brute_E_NPC.dds",
+      "template_id": 1391116
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Serpentine_Revolution",
+    "timestamp": "20231126080447"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Aridian Chronoshard replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

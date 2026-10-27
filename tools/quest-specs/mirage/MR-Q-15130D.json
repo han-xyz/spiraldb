@@ -1,0 +1,82 @@
+{
+  "id": "MR-Q-15130D",
+  "lang": "15130D",
+  "giver": {
+    "persona": "MR-CARA-NPC09-B",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [
+    "MR-Q-151308"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 145000,
+    "gold": 1100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "MR_Cactus_Bear_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002388",
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst15130D_00000006",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC09-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_C_NPC.dds",
+      "template_id": 1381132
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Prickly_Predicament",
+    "timestamp": "20240308084924"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

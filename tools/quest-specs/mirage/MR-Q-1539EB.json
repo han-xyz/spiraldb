@@ -1,0 +1,89 @@
+{
+  "id": "MR-Q-1539EB",
+  "lang": "1539EB",
+  "giver": {
+    "persona": "MR-RUBAL-NPC04-B",
+    "zone": "Mirage/Interiors/MR_Z04_CalixcoManor"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 9000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Ophidian_Soldier_A_02.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002562",
+      "zone": "Mirage/MR_Z05_Istanboa",
+      "loc": "ZoneLocName_1378142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/Interiors/MR_Z04_CalixcoManor",
+      "loc": "ZoneLocName_1378193"
+    }
+  ],
+  "personas": {
+    "MR-RUBAL-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_SorcererF_D_NPC.dds",
+      "template_id": 1391117
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Calixco_Rising",
+    "timestamp": "20231126080439"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Baron's Last Stand replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

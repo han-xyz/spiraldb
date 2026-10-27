@@ -1,0 +1,89 @@
+{
+  "id": "MR-Q-15073F",
+  "lang": "15073F",
+  "giver": {
+    "persona": "MR-CARA-NPC07-B",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [
+    "MR-Q-151319"
+  ],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 5500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "MR_Ghoulture_Hunter_A_01.AdjRef",
+        "MR_Ghoulture_Hunter_A_02.AdjRef",
+        "MR_Minion_Ghoulture_Hunter_A_01.AdjRef",
+        "MR_Minion_Ghoulture_Hunter_A_02.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00002377",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Stout_D_NPC.dds",
+      "template_id": 1381119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Soft_Spot",
+    "timestamp": "20250901094016"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Ghulture Feathers",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

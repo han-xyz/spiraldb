@@ -1,0 +1,187 @@
+{
+  "id": "MR-Q-15074A",
+  "lang": "15074A",
+  "giver": {
+    "persona": "MR-CARA-NPC14",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [
+    "MR-Q-150749"
+  ],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 17500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Mirage/MR_Z04_RubalWastes",
+      "loc": "ZoneLocName_1378193"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Baboon_Thug_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002513",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Baboon_Thug_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002513",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "MR_StandIn_Feringhea",
+      "zone": "Mirage/Interiors/MR_Z04_NepetaMine_Cave03",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Baboon_Thug_B_Boss_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002512",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_D_NPC.dds",
+      "template_id": 1378117
+    },
+    "MR_StandIn_Feringhea": {
+      "portrait": "GUI/NpcPortraits/Portrait_Baboon_Thug_B_MOB.dds",
+      "template_id": 1404021
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Say_No_to_Feuds",
+    "timestamp": "20231126075330"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nepeta Mine",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Mirage/Interiors/MR_Z04_NepetaMine_Cave03",
+      "blocking": true
+    }
+  ]
+}

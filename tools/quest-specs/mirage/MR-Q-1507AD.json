@@ -1,0 +1,90 @@
+{
+  "id": "MR-Q-1507AD",
+  "lang": "1507AD",
+  "giver": {
+    "persona": "MR-CARA-NPC01",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 24000,
+    "gold": 100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-Bastion-NPC40",
+      "zone": "Khrysalis/KR_Z00_Hub",
+      "loc": "ZoneLocName_1254040",
+      "completion": [
+        {
+          "speaker": "KR-Bastion-NPC40",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Bastion-NPC40": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Headmaster_A_NPC.dds",
+      "template_id": 1249169
+    },
+    "MR-CARA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1379033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dispatch_from_Wizard_City",
+    "timestamp": "20231126074912"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona (other world)",
+      "value": "Merle Ambrose: KR-Bastion-NPC40 from ObjectData/KR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Seeking Hope replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

@@ -1,0 +1,156 @@
+{
+  "id": "MR-Q-150779",
+  "lang": "150779",
+  "giver": {
+    "persona": "MR-CATE-NPC11-B",
+    "zone": "Mirage/MR_Z03_CaterwaulCanyon"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 121000,
+    "gold": 900
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MR-AGGR-NPC10-B",
+      "zone": "Mirage/Interiors/MR_Z02_FourPoints",
+      "loc": "ZoneLocName_1378165"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-AGGR-NPC10-B",
+      "zone": "Mirage/Interiors/MR_Z02_FourPoints",
+      "loc": "ZoneLocName_1378165"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-AGGR-NPC08-B",
+      "zone": "Mirage/Interiors/MR_Z02_SultOffice",
+      "loc": "ZoneLocName_1378165"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-AGGR-NPC08-B",
+      "zone": "Mirage/Interiors/MR_Z02_SultOffice",
+      "loc": "ZoneLocName_1378165",
+      "completion": [
+        {
+          "speaker": "MR-AGGR-NPC08-B",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MR-AGGR-NPC08-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Skull_King_A_NPC.dds",
+      "template_id": 1381261
+    },
+    "MR-AGGR-NPC10-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Baboon_Boss_A_NPC.dds",
+      "template_id": 1381287
+    },
+    "MR-CATE-NPC11-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_D_NPC.dds",
+      "template_id": 1397150
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Just_Dance",
+    "timestamp": "20240121100132"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Audience Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Devinn's Dance Squad replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

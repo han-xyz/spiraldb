@@ -1,0 +1,110 @@
+{
+  "id": "MR-Q-151344",
+  "lang": "151344",
+  "giver": {
+    "persona": "MR-ALKA-NPC07",
+    "zone": "Mirage/MR_Z01_AlkaliBarrows"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 48000,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MR-ALKA-NPC05-C",
+      "zone": "Mirage/MR_Z01_AlkaliBarrows",
+      "loc": "ZoneLocName_1378088"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-CARA-NPC01",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    }
+  ],
+  "personas": {
+    "MR-ALKA-NPC05-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Skull_King_A_NPC.dds",
+      "template_id": 1381226
+    },
+    "MR-ALKA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_A_NPC.dds",
+      "template_id": 1381186
+    },
+    "MR-CARA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1379033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Return_of_the_Overlord",
+    "timestamp": "20250830102926"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Xerxes' Wrath",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Xerxes' Wrath replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

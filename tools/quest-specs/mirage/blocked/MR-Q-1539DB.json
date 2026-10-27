@@ -1,0 +1,238 @@
+{
+  "id": "MR-Q-1539DB",
+  "lang": "1539DB",
+  "giver": {
+    "persona": "MR-CATE-NPC17",
+    "zone": "Mirage/MR_Z03_CaterwaulCanyon"
+  },
+  "requires": [
+    "MR-Q-1539D6"
+  ],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 11000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Mirage/MR_Z03_CaterwaulCanyon",
+      "loc": "ZoneLocName_1381306"
+    },
+    {
+      "type": "persona",
+      "persona": "MR_StandIn_Akbari",
+      "zone": "Mirage/Interiors/MR_Z03_TraitorsCave",
+      "loc": "ZoneLocName_1378165"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Rat_Pirate_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002500",
+      "zone": "",
+      "loc": "ZoneLocName_1378165"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR-Bellows.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_1378165"
+    }
+  ],
+  "personas": {
+    "MR-CATE-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Brigand_B_NPC.dds",
+      "template_id": 1404051
+    },
+    "MR_StandIn_Akbari": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Pirate_A_MOB.dds",
+      "template_id": 1404054
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:To_the_Chimera!",
+    "timestamp": "20231126080932"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search for the Chimera",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "The",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Bellows",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "MR-Q-151308",
+  "lang": "151308",
+  "giver": {
+    "persona": "MR-CARA-NPC07-B",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [
+    "MR-Q-151305"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 48000,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MR-CARA-NPC09-B",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040",
+      "completion": [
+        {
+          "speaker": "MR-CARA-NPC09-B",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Stout_D_NPC.dds",
+      "template_id": 1381119
+    },
+    "MR-CARA-NPC09-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_C_NPC.dds",
+      "template_id": 1381132
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_North_Road",
+    "timestamp": "20250831170650"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "North Road",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

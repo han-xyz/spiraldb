@@ -1,0 +1,131 @@
+{
+  "id": "MR-Q-15132F",
+  "lang": "15132F",
+  "giver": {
+    "persona": "MR-ALKA-NPC02",
+    "zone": "Mirage/MR_Z01_AlkaliBarrows"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 121000,
+    "gold": 1000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "MR-StoneInscription.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z01_AlkaliBarrows",
+      "descriptor": "Items_00018522",
+      "loc": "ZoneLocName_1378088"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Mirage/Interiors/MR_Z01_DefiledCrypt"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Mirage/Interiors/MR_Z01_DefiledCrypt"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-ALKA-NPC05-C",
+      "zone": "Mirage/MR_Z01_AlkaliBarrows",
+      "loc": "ZoneLocName_1378088"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-ALKA-NPC05-C",
+      "zone": "Mirage/MR_Z01_AlkaliBarrows",
+      "loc": "ZoneLocName_1378088"
+    }
+  ],
+  "personas": {
+    "MR-ALKA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Durvish_Warrior_B_NPC.dds",
+      "template_id": 1379043
+    },
+    "MR-ALKA-NPC05-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Skull_King_A_NPC.dds",
+      "template_id": 1381226
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Threat_to_the_Overlord",
+    "timestamp": "20231126073413"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Barracks Barrow replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

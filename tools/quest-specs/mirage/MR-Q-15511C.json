@@ -1,0 +1,87 @@
+{
+  "id": "MR-Q-15511C",
+  "lang": "15511C",
+  "giver": {
+    "persona": "MR-CATE-NPC06",
+    "zone": "Mirage/MR_Z03_CaterwaulCanyon"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 48000,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Mirage/Interiors/MR_Z04_CalixcoManor"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-CATE-NPC01",
+      "zone": "Mirage/MR_Z03_CaterwaulCanyon",
+      "loc": "ZoneLocName_1381306"
+    }
+  ],
+  "personas": {
+    "MR-CATE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Djinn_MageF_A_NPC.dds",
+      "template_id": 1381289
+    },
+    "MR-CATE-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_B_NPC.dds",
+      "template_id": 1381317
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Growing_Alliance",
+    "timestamp": "20250907014237"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Irreverence replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

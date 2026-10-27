@@ -1,0 +1,70 @@
+{
+  "id": "MR-Q-grandfatherspider",
+  "requires": [],
+  "min_level": 105,
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 169500,
+    "gold": 1300
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MR-CARA-NPC21",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-CHRO-NPC01",
+      "zone": "Mirage/Interiors/MR_Z10_NorthTimeDunes",
+      "loc": "ZoneLocName_1397008"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Spider_Grandfather_A_Boss_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002407",
+      "zone": "",
+      "loc": "ZoneLocName_1397008"
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC21": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_B_NPC.dds",
+      "template_id": 1378241
+    },
+    "MR-CHRO-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
+      "template_id": 1379041
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Grandfather_Spider",
+    "timestamp": "20240414194001"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Grandfather Spider",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Showdown with Spider",
+      "blocking": false
+    }
+  ]
+}

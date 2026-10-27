@@ -1,0 +1,150 @@
+{
+  "id": "MR-Q-150736",
+  "lang": "150736",
+  "giver": {
+    "persona": "MR-CARA-NPC12",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 7000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "MR_Oasis.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150736_00000014",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR_Oasis.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150736_00000014",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR_Oasis.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150736_00000014",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR_Oasis.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150736_00000014",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR_Oasis.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150736_00000014",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR_Oasis.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150736_00000014",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR_Oasis.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150736_00000014",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 1378103
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Midday_At_The_Oasis",
+    "timestamp": "20231126075252"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Shifting Sands",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Shifting Sands replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

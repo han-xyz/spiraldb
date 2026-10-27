@@ -1,0 +1,95 @@
+{
+  "id": "MR-Q-1322C3",
+  "lang": "1322C3",
+  "giver": {
+    "persona": "MR-YAKH-NPC08",
+    "zone": "Mirage/MR_Z06_YakhalMountain"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 10000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Cat_WarriorF_C_02.AdjRef",
+        "MR_Cat_Warrior_C_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002530",
+      "zone": "Mirage/MR_Z06_YakhalMountain",
+      "loc": "ZoneLocName_1397011"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z06_YakhalMountain",
+      "loc": "ZoneLocName_1397011"
+    }
+  ],
+  "personas": {
+    "MR-YAKH-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_SorcererF_F_NPC.dds",
+      "template_id": 1254087
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:No_Rest_For_The_Whiskered",
+    "timestamp": "20231126080543"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Tired Nomad replaced by min_level",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Journey to Yakhal Mountain replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

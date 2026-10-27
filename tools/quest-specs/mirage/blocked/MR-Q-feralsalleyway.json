@@ -1,0 +1,66 @@
+{
+  "id": "MR-Q-feralsalleyway",
+  "requires": [
+    "MR-Q-151387"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 266500,
+    "gold": 2000
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Ophidian_Thug_A_02.AdjRef",
+        "MR_StandIn_FangsAssaulter.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002567",
+      "zone": "",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Cat_Warrior_D_Boss_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002528",
+      "zone": "",
+      "loc": "ZoneLocName_1378095"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Feral's_Alleyway",
+    "timestamp": "20231126073701"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Feral's Alleyway",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Alleyway",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Alleyway",
+      "blocking": false
+    }
+  ]
+}

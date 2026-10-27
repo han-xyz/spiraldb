@@ -1,0 +1,63 @@
+{
+  "id": "MR-Q-ghulturebones",
+  "giver": {
+    "persona": "MR-CARA-NPC02-B",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [
+    "MR-Q-1512F9"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 145000,
+    "gold": 1100
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "MR_Ghoulture_Hunter_A_01.AdjRef",
+        "MR_Ghoulture_Hunter_A_02.AdjRef",
+        "MR_Minion_Ghoulture_Hunter_A_01.AdjRef",
+        "MR_Minion_Ghoulture_Hunter_A_02.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00002377",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_MOB.dds",
+      "template_id": 1381118
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ghulture_Bones",
+    "timestamp": "20250919083040"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Ghulture Bones",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Bones",
+      "blocking": false
+    }
+  ]
+}

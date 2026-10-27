@@ -1,0 +1,177 @@
+{
+  "id": "MR-Q-1531E4",
+  "lang": "1531E4",
+  "giver": {
+    "persona": "MR-YAKH-NPC06-B",
+    "zone": "Mirage/MR_Z06_YakhalMountain"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 436000,
+    "gold": 3500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "MR_Cat_WarriorF_C_02.AdjRef",
+        "MR_Cat_Warrior_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002530",
+      "zone": "Mirage/MR_Z06_YakhalMountain",
+      "descriptor": "WizQst1531E4_00000020",
+      "loc": "ZoneLocName_1389047"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Cat_WarriorF_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002539",
+      "zone": "Mirage/MR_Z06_YakhalMountain",
+      "loc": "ZoneLocName_1397011"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Cat_Warrior_C_Boss_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002531",
+      "zone": "Mirage/MR_Z06_YakhalMountain",
+      "loc": "ZoneLocName_1397011"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z06_YakhalMountain",
+      "loc": "ZoneLocName_1397011"
+    }
+  ],
+  "personas": {
+    "MR-YAKH-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_E_NPC.dds",
+      "template_id": 1401000
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Rebels_with_a_Cause",
+    "timestamp": "20231126074510"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Sayameez, if you Please",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Rebel HQ: Mirage/Interiors/MR_Z06_RebelHQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Rebel HQ: Mirage/Interiors/MR_Z06_RebelHQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Rebel HQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Rebel HQ: Mirage/Interiors/MR_Z06_RebelHQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Rebel HQ",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Sayameez, if you Please replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

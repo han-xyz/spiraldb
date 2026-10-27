@@ -1,0 +1,91 @@
+{
+  "id": "MR-Q-155131",
+  "lang": "155131",
+  "giver": {
+    "persona": "MR-RUBAL-NPC02",
+    "zone": "Mirage/MR_Z04_RubalWastes"
+  },
+  "requires": [
+    "MR-Q-15511C"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 169500,
+    "gold": 1300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "MR_Cat_WarriorF_E_02.AdjRef",
+        "MR_Cat_Warrior_E_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002598",
+      "zone": "Mirage/MR_Z04_RubalWastes",
+      "descriptor": "WizQst155131_00000004",
+      "loc": "ZoneLocName_1378193"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Mirage/Interiors/MR_Z04_CalixcoManor"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-RUBAL-NPC03",
+      "zone": "Mirage/Interiors/MR_Z04_CalixcoManor",
+      "loc": "ZoneLocName_1378193"
+    }
+  ],
+  "personas": {
+    "MR-RUBAL-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Djinn_MageF_A_NPC.dds",
+      "template_id": 1397034
+    },
+    "MR-RUBAL-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_C_NPC.dds",
+      "template_id": 1397050
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:House_Calixco",
+    "timestamp": "20231126074118"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

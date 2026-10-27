@@ -1,0 +1,91 @@
+{
+  "id": "MR-Q-1539EC",
+  "lang": "1539EC",
+  "giver": {
+    "persona": "MR-YAKH-NPC06-B",
+    "zone": "Mirage/MR_Z06_YakhalMountain"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 9000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Cat_WarriorF_C_02.AdjRef",
+        "MR_Cat_Warrior_C_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002530",
+      "zone": "Mirage/MR_Z06_YakhalMountain",
+      "loc": "ZoneLocName_1397011"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z06_YakhalMountain",
+      "loc": "ZoneLocName_1397011"
+    }
+  ],
+  "personas": {
+    "MR-YAKH-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_E_NPC.dds",
+      "template_id": 1401000
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sayameez_Security",
+    "timestamp": "20231126080638"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Breaking the Hardline",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Breaking the Hardline replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

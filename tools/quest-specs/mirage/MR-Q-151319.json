@@ -1,0 +1,75 @@
+{
+  "id": "MR-Q-151319",
+  "lang": "151319",
+  "giver": {
+    "persona": "MR-CARA-NPC11-B",
+    "zone": "Mirage/Interiors/MR_Z00_CleanRoom"
+  },
+  "requires": [
+    "MR-Q-15130F"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 24000,
+    "gold": 100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MR-CARA-NPC01",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1379033
+    },
+    "MR-CARA-NPC11-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Djinn_Scholar_A_NPC.dds",
+      "template_id": 1381137
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Darkness_in_the_Desert",
+    "timestamp": "20231126073234"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

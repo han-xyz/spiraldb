@@ -1,0 +1,245 @@
+{
+  "id": "MR-Q-1539CC",
+  "lang": "1539CC",
+  "giver": {
+    "persona": "MR-AGGR-NPC08-B",
+    "zone": "Mirage/Interiors/MR_Z02_SultOffice"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 24000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Mirage/Interiors/MR_Z00_UlnarCrypt"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Durvish_Sergeant_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002505",
+      "zone": "",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR_OzzyParts-Arms.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000769",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Mirage/Interiors/MR_Z03_FemoralTomb"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Durvish_Sergeant_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002504",
+      "zone": "",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR_OzzyParts-Legs.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000770",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Mirage/Interiors/MR_Z04_ChestCavity"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Durvish_Sergeant_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002478",
+      "zone": "",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR_OzzyParts-Ribs.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000771",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/Interiors/MR_Z02_SultOffice",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/Interiors/MR_Z02_SultOffice",
+      "loc": "ZoneLocName_1378095",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000016"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MR-AGGR-NPC08-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Skull_King_A_NPC.dds",
+      "template_id": 1381261
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Back_Together",
+    "timestamp": "20231126081015"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "The Djinn Conspiracy",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Djinn Conspiracy replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

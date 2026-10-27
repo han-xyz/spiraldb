@@ -1,0 +1,98 @@
+{
+  "id": "MR-Q-1322B9",
+  "lang": "1322B9",
+  "giver": {
+    "persona": "MR-ALKA-NPC09",
+    "zone": "Mirage/MR_Z01_AlkaliBarrows"
+  },
+  "requires": [
+    "MR-Q-151319"
+  ],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 10000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "MR_Beetle_Scarab_B_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002534",
+      "zone": "Mirage/MR_Z01_AlkaliBarrows",
+      "descriptor": "WizQst1322B9_00000005",
+      "loc": "ZoneLocName_1378088"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z01_AlkaliBarrows",
+      "loc": "ZoneLocName_1378088",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MR-ALKA-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_B_NPC.dds",
+      "template_id": 1254085
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pesky_Buggies",
+    "timestamp": "20231126075227"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Tired Nomad replaced by min_level",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Alkali Barrows replaced by MR-Q-151319",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "MR-Q-151345",
+  "lang": "151345",
+  "giver": {
+    "persona": "MR-CARA-NPC01",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [
+    "MR-Q-151344"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 48000,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-AGGR-NPC02-C",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1254040"
+    }
+  ],
+  "personas": {
+    "MR-AGGR-NPC02-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_FennecFox_Thief_A_NPC.dds",
+      "template_id": 1397214
+    },
+    "MR-CARA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1379033
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Assistance_from_Aggrobah",
+    "timestamp": "20250905020632"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

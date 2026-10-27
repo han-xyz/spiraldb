@@ -1,0 +1,70 @@
+{
+  "id": "MR-Q-sayameezifyouplease",
+  "giver": {
+    "persona": "MR-YAKH-NPC01",
+    "zone": "Mirage/MR_Z06_YakhalMountain"
+  },
+  "requires": [
+    "MR-Q-1531E2"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 96500,
+    "gold": 700
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MR-YAKH-NPC03-B",
+      "zone": "Mirage/Interiors/MR_Z06_RotwangLab",
+      "loc": "ZoneLocName_1397011"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-YAKH-NPC03-B",
+      "zone": "Mirage/Interiors/MR_Z06_RotwangLab",
+      "loc": "ZoneLocName_1397011"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-YAKH-NPC06-B",
+      "zone": "Mirage/MR_Z06_YakhalMountain",
+      "loc": "ZoneLocName_1397011"
+    }
+  ],
+  "personas": {
+    "MR-YAKH-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Djinn_MageF_A_NPC.dds",
+      "template_id": 1389038
+    },
+    "MR-YAKH-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Stout_B_NPC.dds",
+      "template_id": 1401009
+    },
+    "MR-YAKH-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_E_NPC.dds",
+      "template_id": 1401000
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sayameez,_if_you_Please",
+    "timestamp": "20231126074409"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Sayameez, if you Please",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Basking Grounds",
+      "blocking": false
+    }
+  ]
+}

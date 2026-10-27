@@ -1,0 +1,210 @@
+{
+  "id": "MR-Q-150741",
+  "lang": "150741",
+  "giver": {
+    "persona": "MR-CARA-NPC07-B",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [
+    "MR-Q-15073F"
+  ],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 9000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MR-CARA-NPC15",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-AGGR-NPC13",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Ophidian_Thug_A_04.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002569",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-AGGR-NPC13",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-CARA-NPC15",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-CARA-NPC15",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MR-AGGR-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Baboon_Thug_A_NPC.dds",
+      "template_id": 1378115
+    },
+    "MR-CARA-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Stout_D_NPC.dds",
+      "template_id": 1381119
+    },
+    "MR-CARA-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_D_NPC.dds",
+      "template_id": 1391114
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Dash_of_Color",
+    "timestamp": "20231126075613"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Irreverence replaced by min_level",
+      "blocking": false
+    }
+  ]
+}

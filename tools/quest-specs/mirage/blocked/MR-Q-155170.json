@@ -1,0 +1,126 @@
+{
+  "id": "MR-Q-155170",
+  "lang": "155170",
+  "requires": [
+    "MR-Q-15516D"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 121000,
+    "gold": 900
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Mirage/Interiors/MR_Z02_NorthGate"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Battle_of_Aggrobah",
+    "timestamp": "20250912185351"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "The Scorpion",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

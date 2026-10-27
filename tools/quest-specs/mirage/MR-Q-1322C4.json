@@ -1,0 +1,99 @@
+{
+  "id": "MR-Q-1322C4",
+  "lang": "1322C4",
+  "giver": {
+    "persona": "MR-CATE-NPC16",
+    "zone": "Mirage/MR_Z03_CaterwaulCanyon"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 10000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "MR_Trengil_Warrior_A_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002381",
+      "zone": "Mirage/MR_Z03_CaterwaulCanyon",
+      "descriptor": "WizQst1322C4_00000005",
+      "loc": "ZoneLocName_1381306"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z03_CaterwaulCanyon",
+      "loc": "ZoneLocName_1381306"
+    }
+  ],
+  "personas": {
+    "MR-CATE-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_MerchantF_A_NPC.dds",
+      "template_id": 1254088
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Numismatist_Assist",
+    "timestamp": "20231126075806"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Tired Nomad replaced by min_level",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "House Qhats replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

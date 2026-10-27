@@ -1,0 +1,89 @@
+{
+  "id": "MR-Q-1322C1",
+  "lang": "1322C1",
+  "giver": {
+    "persona": "MR-RUBAL-NPC15",
+    "zone": "Mirage/MR_Z04_RubalWastes"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 10000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "MR_BogWitch_SandWitch_A_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002517",
+      "zone": "Mirage/MR_Z04_RubalWastes",
+      "descriptor": "WizQst1322C1_00000004",
+      "loc": "ZoneLocName_1378193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z04_RubalWastes",
+      "loc": "ZoneLocName_1378193",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MR-RUBAL-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_SorcererF_A_NPC.dds",
+      "template_id": 1254086
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Waste_Not",
+    "timestamp": "20231126075901"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Tired Nomad replaced by min_level",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Chronomancer Consultation replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

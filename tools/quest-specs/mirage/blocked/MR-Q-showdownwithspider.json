@@ -1,0 +1,73 @@
+{
+  "id": "MR-Q-showdownwithspider",
+  "giver": {
+    "persona": "MR-CARA-NPC21",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [
+    "MR-Q-2A4B5"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 193500,
+    "gold": 1500
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Spider_Grandfather_A_Boss_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002407",
+      "zone": "Mirage/Interiors/MR_Z10_NorthTimeDunes",
+      "loc": "ZoneLocName_1401028"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR_EyeofHistory.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_1397008"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-ALKA-NPC07",
+      "zone": "Mirage/Interiors/MR_Z01_OverlordsOssuary",
+      "loc": "ZoneLocName_1397008"
+    }
+  ],
+  "personas": {
+    "MR-ALKA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_A_NPC.dds",
+      "template_id": 1365010
+    },
+    "MR-CARA-NPC21": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_B_NPC.dds",
+      "template_id": 1378241
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Showdown_with_Spider",
+    "timestamp": "20231126075121"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Showdown with Spider",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Eye of History",
+      "blocking": false
+    }
+  ]
+}

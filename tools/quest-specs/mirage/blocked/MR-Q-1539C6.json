@@ -1,0 +1,120 @@
+{
+  "id": "MR-Q-1539C6",
+  "lang": "1539C6",
+  "giver": {
+    "persona": "MR-AGGR-NPC18",
+    "zone": "Mirage/MR_Z02_Aggrobah"
+  },
+  "requires": [
+    "MR-Q-1539C4"
+  ],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 11000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Cat_Sorcerer_E_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002462",
+      "zone": "",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-AGGR-NPC19",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-AGGR-NPC20",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-AGGR-NPC21",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1378095"
+    }
+  ],
+  "personas": {
+    "MR-AGGR-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_O_NPC.dds",
+      "template_id": 1391045
+    },
+    "MR-AGGR-NPC19": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_SorcererF_E_NPC.dds",
+      "template_id": 1391049
+    },
+    "MR-AGGR-NPC20": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_D_NPC.dds",
+      "template_id": 1391050
+    },
+    "MR-AGGR-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_MerchantF_C_NPC.dds",
+      "template_id": 1391051
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Real_Estate?",
+    "timestamp": "20240405065729"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Sands Castle in the Rubal Wastes",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

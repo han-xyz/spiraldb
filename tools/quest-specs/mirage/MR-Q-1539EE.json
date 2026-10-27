@@ -1,0 +1,91 @@
+{
+  "id": "MR-Q-1539EE",
+  "lang": "1539EE",
+  "giver": {
+    "persona": "MR-AGGR-NPC02-C",
+    "zone": "Mirage/MR_Z02_Aggrobah"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 9000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Ambient_Feral_01.AdjRef",
+        "MR_Cat_Warrior_D_01.AdjRef",
+        "MR_StandIn_FeralFelon.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002529",
+      "zone": "",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z02_Aggrobah",
+      "loc": "ZoneLocName_1378095"
+    }
+  ],
+  "personas": {
+    "MR-AGGR-NPC02-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_FennecFox_Thief_A_NPC.dds",
+      "template_id": 1397214
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Warriors",
+    "timestamp": "20231126075632"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Truce Talks replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

@@ -1,0 +1,67 @@
+{
+  "id": "MR-Q-140E9",
+  "lang": "140E9",
+  "giver": {
+    "persona": "MR-ISTA-NPC02-B",
+    "zone": "Mirage/MR_Z05_Istanboa"
+  },
+  "requires": [
+    "MR-Q-15519A"
+  ],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 43500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Ophidian_Brute_C_02.AdjRef",
+        "MR_StandIn_TetrusSolitaryWarden.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002263",
+      "zone": "",
+      "loc": "ZoneLocName_1378165"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z05_Istanboa",
+      "loc": "ZoneLocName_1378142"
+    }
+  ],
+  "personas": {
+    "MR-ISTA-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ophidian_Thug_F_NPC.dds",
+      "template_id": 1378156
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Prison_Break...",
+    "timestamp": "20231126080734"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Tetrus Solitary Block in Istanboa",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

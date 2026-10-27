@@ -1,0 +1,156 @@
+{
+  "id": "MR-Q-1507A9",
+  "lang": "1507A9",
+  "giver": {
+    "persona": "MR-CARA-NPC01",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 96500,
+    "gold": 700
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "MR-CARA-NPC11-B",
+      "zone": "Mirage/Interiors/MR_Z00_CleanRoom",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR-MagicLamp.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "Items_00018555",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR-MagicLamp-Istar.AdjRef",
+        "MR-MagicLamp_Istar.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "Items_00018557",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "MR_StandIn_Istar_Caravan",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040",
+      "completion": [
+        {
+          "speaker": "MR_StandIn_Istar_Caravan",
+          "line": "00000009"
+        },
+        {
+          "speaker": "MR_StandIn_Istar_Caravan",
+          "line": "00000017"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1379033
+    },
+    "MR-CARA-NPC11-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Djinn_Scholar_A_NPC.dds",
+      "template_id": 1381137
+    },
+    "MR_StandIn_Istar_Caravan": {
+      "portrait": "GUI/NpcPortraits/Portrait_Djinn_MageF_A_NPC.dds",
+      "template_id": 1365080
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Home_Within_a_Home",
+    "timestamp": "20231126074846"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Eerem Tablet replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

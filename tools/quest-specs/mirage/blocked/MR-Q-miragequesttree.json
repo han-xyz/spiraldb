@@ -1,0 +1,39 @@
+{
+  "id": "MR-Q-miragequesttree",
+  "requires": [],
+  "min_level": 105,
+  "mainline": false,
+  "level": 105,
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mirage_Quest_Tree",
+    "timestamp": "20231126072338"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Mirage Quest Tree",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goals",
+      "value": [],
+      "blocking": true
+    }
+  ]
+}

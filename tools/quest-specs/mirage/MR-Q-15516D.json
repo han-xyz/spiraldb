@@ -1,0 +1,90 @@
+{
+  "id": "MR-Q-15516D",
+  "lang": "15516D",
+  "giver": {
+    "persona": "MR-AGGR-NPC04-B",
+    "zone": "Mirage/Interiors/MR_Z02_SultOffice"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 145000,
+    "gold": 1100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Human_Overlord_A_Boss_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002378",
+      "zone": "Mirage/Interiors/MR_Z02_NorthGate",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/Interiors/MR_Z02_SultOffice",
+      "loc": "ZoneLocName_1378095"
+    }
+  ],
+  "personas": {
+    "MR-AGGR-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_SultanaF_A_NPC.dds",
+      "template_id": 1381260
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Enemy_at_the_Gate_(Mirage)",
+    "timestamp": "20231126074639"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "The Aggrobah Alliance",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Aggrobah Alliance replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

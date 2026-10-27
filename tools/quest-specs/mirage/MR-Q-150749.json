@@ -1,0 +1,99 @@
+{
+  "id": "MR-Q-150749",
+  "lang": "150749",
+  "giver": {
+    "persona": "MR-CARA-NPC14",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 7500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Trengil_Warrior_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00002381",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR-SaffronCrocus.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150749_00000009",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040"
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_D_NPC.dds",
+      "template_id": 1378117
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wild_About_Saffron",
+    "timestamp": "20240409061136"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To Caravan! replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

@@ -1,0 +1,133 @@
+{
+  "id": "MR-Q-150784",
+  "lang": "150784",
+  "giver": {
+    "persona": "MR-CATE-NPC11-B",
+    "zone": "Mirage/MR_Z03_CaterwaulCanyon"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 315000,
+    "gold": 2300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Cat_Sorcerer_J_Boss_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002547",
+      "zone": "",
+      "loc": "ZoneLocName_1378165"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Baboon_Boss_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002457",
+      "zone": "",
+      "loc": "ZoneLocName_1378165"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z03_CaterwaulCanyon",
+      "loc": "ZoneLocName_1381306"
+    }
+  ],
+  "personas": {
+    "MR-CATE-NPC11-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_D_NPC.dds",
+      "template_id": 1397150
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ali_Baboon's_Last_Stand",
+    "timestamp": "20250910130427"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Ali Baboon's Private Lounge",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Ali Baboon's Private Lounge",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Fortee Thieves replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

@@ -1,0 +1,132 @@
+{
+  "id": "MR-Q-150739",
+  "lang": "150739",
+  "giver": {
+    "persona": "MR-CARA-NPC13",
+    "zone": "Mirage/MR_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 5500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "MR-CactusBlossom.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150739_00000011",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR-CactusBlossom.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150739_00000011",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR-CactusBlossom.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150739_00000011",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR-CactusBlossom.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150739_00000011",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "MR-CactusBlossom.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst150739_00000011",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z00_Hub",
+      "loc": "ZoneLocName_1254040",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "MR-CARA-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZekeWife.dds",
+      "template_id": 1378104
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cactus_Blossom_Boogie",
+    "timestamp": "20240119021406"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Shifting Sands",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Shifting Sands replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}
