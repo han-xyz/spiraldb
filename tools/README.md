@@ -371,7 +371,8 @@ without a snapshot is fetched only live.
 - the title to The Repository's `lang_hex` instead, when the world has a Repository index, that key's `WizQst` file
   exists, and it holds no fewer of the page's dialogue lines than the title's key does (a few pages give a
   neighbouring quest's id); listed under `lang`, not blocking. A page whose title key a Repository key took is matched
-  as a placeholder.
+  as a placeholder. A key `QuestTitle.lang` lacks gets `title` from the key that reads the title (often a padded
+  one), else blocks on `title`.
 - the giver of a quest that starts automatically to the hand-in NPC of its first prerequisite that names one, with
   `auto_start: true` on the spec (the generator ignores it); without one it stays blocked on `giver (auto-start, no
   predecessor hand-in)`.

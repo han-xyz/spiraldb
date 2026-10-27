@@ -1102,8 +1102,10 @@ class SpecBuilder:
         if lang:
             spec["lang"] = lang
             title_keys = [k for k in self.data.title_keys(self.entry["name"]) if k != lang]
-            if self.data.internal_name(lang) and title_keys:
+            if (self.data.internal_name(lang) or lang not in self.data.titles) and title_keys:
                 spec["title"] = f"QuestTitle_{title_keys[0]}"
+            elif lang not in self.data.titles:
+                self.unresolved("title", self.entry["name"], True)
         else:
             self.unresolved("lang", self.entry["name"], True)
         giver = None

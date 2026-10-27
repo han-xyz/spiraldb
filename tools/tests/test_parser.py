@@ -23,6 +23,7 @@ class Data:
     world = "W"
     folder = "W"
     level = 1
+    titles = {"ABC": "Quest", "834ED": ""}
 
     def __init__(self, personas=(), mobs=(), items=(), places=None):
         self.personas = {norm(name): name for name in personas}
@@ -324,6 +325,16 @@ class RepositorySpecTest(unittest.TestCase):
     def test_without_a_zone_name_the_goals_take_the_giver_zone(self):
         _, spec = build_from_repository(self.data, tracked={"area": "Elsewhere"})
         self.assertEqual([goal["zone"] for goal in spec["goals"][:2]], [ZONE, ZONE])
+
+    def test_a_key_quest_title_lacks_takes_the_title_key_that_reads_the_name(self):
+        data = Data(personas=["Steward Kay"])
+        data.titles = {"00000150": "Around Here Someplace"}
+        data.title_keys = lambda title: ["00000150"]
+        _, spec = build_from_repository(data)
+        self.assertEqual(spec["title"], "QuestTitle_00000150")
+        data.title_keys = lambda title: []
+        _, spec = build_from_repository(data)
+        self.assertIn(("title", "Around Here Someplace"), blocking(spec))
 
     def test_a_first_character_no_zone_places_gives_no_giver(self):
         quest = dict(REPOSITORY_QUEST, characters=["Narrator", "Steward Kay"])
