@@ -30,7 +30,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Arcanum/Interiors/AR_Z01_I01_DryDock",
+      "m_destinationZone": "Arcanum/AR_Z01_Hub",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -43,7 +43,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "AR-ARC-NPC04-B",
+      "m_personaName": "AR_StandIn_Ione",
       "m_usePatron": false
     },
     {
@@ -181,7 +181,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "KM-Q-170A86",
+        "m_questName": "KM-Q-170A8C",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       }

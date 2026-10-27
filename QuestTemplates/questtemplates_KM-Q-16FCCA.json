@@ -175,7 +175,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "KM-GUM-MAIN-003",
+        "m_questName": "KM-Q-16FFAD",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -184,16 +184,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "KM-Q-16B56C",
-        "m_applyNOT": true,
-        "m_operator": "ROP_AND"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "Completed",
-        "m_displayName": null,
-        "m_isQuestRegistry": false,
-        "m_questName": "KM-Q-16B5B7",
+        "m_questName": "KM-Q-16FCCF",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

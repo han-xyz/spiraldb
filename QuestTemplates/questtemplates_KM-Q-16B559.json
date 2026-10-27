@@ -51,7 +51,6 @@
       "m_bountyTotal": 1,
       "m_bountyType": "BT_MOB_KILL",
       "m_npcAdjectives": [
-        "DM-GRAVE-NPC45A.AdjRef",
         "NV_Chicken_Miner_A_01.AdjRef"
       ]
     },
