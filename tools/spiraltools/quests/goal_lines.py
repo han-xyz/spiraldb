@@ -24,6 +24,8 @@ PERSON_VERBS = {"rescue", "free", "save", "escort", "follow", "approach", "help"
 GOAL_VERBS = KILL_VERBS | TALK_VERBS | MOVE_VERBS | ITEM_VERBS | PERSON_VERBS
 # Verbs of lines that move the player somewhere without being read as waypoints: one they do not reach stays blocked.
 WAY_VERBS = {"reach", "ascend", "cross", "pass", "infiltrate", "assault", "sneak", "jump", "lead", "launch"}
+# Person verbs that move the player when what they name is no NPC (`Follow the Trail of Papers`).
+FOLLOW_VERBS = {"follow", "approach", "pursue", "chase"}
 
 PHOTOMANCE = re.compile(r"^Press Z to Photomance\b", re.I)
 VERB_HINT = re.compile(r"^\(?(\w+)\)?(?:\s+\((\w+)[^)]*\))?")
@@ -82,7 +84,7 @@ def destinations(verb, text):
 
 def unread_field(verb, text):
     """The needs_review field of a line nothing reads, by what its verb asks for."""
-    if verb in MOVE_VERBS | WAY_VERBS | FIND_VERBS or MAKE_WAY.match(text):
+    if verb in MOVE_VERBS | WAY_VERBS | FIND_VERBS | FOLLOW_VERBS or MAKE_WAY.match(text):
         return "goal.waypoint"
     if verb in ITEM_VERBS:
         return "goal.usage"

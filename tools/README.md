@@ -382,7 +382,8 @@ and Reward, and resolves:
   (`Bantam`: The Bantam, `Eurgh`: Eurgh the Grinder), else the one spelled closely (`MOB_NAME_CUTOFF`; `Abberant`). A named NPC template that no zone wad places takes
   the zones of an unnamed template with the same persona (Queen Calypso is placed as `CL-CalypsoReset`). A name the
   world's folder lacks is taken from the one world name close to it (`NAME_CUTOFF`; the wiki's Koltan Grimfane is
-  Koltan Gloomfane), else from the other ObjectData folders, placed by every zone wad; a mob the world's folder lacks
+  Koltan Gloomfane), else from the other ObjectData folders (nested ones too, `Gauntlet/Catacombs`, without the
+  `CrownItems`, `Jewels` and `Housing` gear trees), placed by every zone wad; a mob the world's folder lacks
   comes from the other folders too (the Spellwrit Wildclaws are in `PageEvent`), from the nearest one that has it:
   the registered worlds' folders by distance in the registry (Karamelle's Vexxor is Novus's, not Darkmoor's),
   then the rest. Each of these is listed in `needs_review` with the folder used. A title the wiki tagged with its
@@ -424,7 +425,10 @@ and Reward, and resolves:
   collect line no item reads stays `goal.items`. A movement or find-like line (reach, ascend, infiltrate, "make your
   way"..., or a line with a destination) becomes a waypoint into the zone the goals before it end in, listed as
   `goal.waypoint (current zone)`, and blocks as `goal.waypoint` only without one. `update`, `convince` and
-  `negotiate` are talk verbs; `smoosh`, `challenge` and `stop` kill verbs; `get`, `procure` and `pick` (up) collect.
+  `negotiate` are talk verbs; `smoosh`, `challenge` and `stop` kill verbs; `get`, `procure` and `pick` (up) collect;
+  `follow`, `approach`, `pursue` and `chase` on something no NPC is named move the player. Creature links only in a
+  note after a name qualify it (`Defeat 3 Spearfang Slashers ([Creature:Male] or [Creature:Female])` is the
+  Spearfang Slasher).
   An item the world's folder lacks is the one the nearest other ObjectData folder names exactly (Wizard City's Stone of
   Mazzaroth is `DS_Mazzaroth_Stone`), listed as `goal.items (other folder)`.
 - the zone from the zone category, else the giver's location, to the zone where most of that zone's givers stand,

@@ -320,10 +320,19 @@ class GoalLineTest(unittest.TestCase):
                                              ("bounty", ["Common House Spider.AdjRef"]),
                                              ("usage", ["W-vinebarrier.AdjRef"])], []))
 
+    def test_creature_links_in_a_note_qualify_the_creature_named_before_it(self):
+        data = Data(personas=["Dalton Prescott"], mobs=["Spearfang Slasher"])
+        goals, blocked = self.goals_of(["@Defeat 3 Spearfang Slashers ([Creature:Male] or [Creature:Female])"], data)
+        self.assertEqual((goals, blocked), ([("bounty", ["Spearfang Slasher.AdjRef"])], []))
+        data = Data(personas=["Dalton Prescott"], mobs=["Piscean Centurion", "Piscean"])
+        goals, blocked = self.goals_of(["@Defeat 4 Pisceans ([Creature:Piscean Centurions])"], data)
+        self.assertEqual((goals, blocked), ([("bounty", ["Piscean Centurion.AdjRef"])], []))
+
     def test_a_movement_line_read_as_nothing_is_a_waypoint_into_the_current_zone_to_review(self):
-        lines = ["@Make Your Way Up", "@Investigate Strange Noise", "@Follow the Ox Alarm to Dark Cloud Base"]
+        lines = ["@Make Your Way Up", "@Investigate Strange Noise", "@Follow the Ox Alarm to Dark Cloud Base",
+                 "@Follow the Trail of Papers", "@Approach Duck's Camp"]
         goals, blocked = self.goals_of(lines, Data(personas=["Dalton Prescott"]))
-        self.assertEqual((goals, blocked), ([("waypoint", ZONE)] * 3, []))
+        self.assertEqual((goals, blocked), ([("waypoint", ZONE)] * 5, []))
 
     def test_a_movement_header_over_names_no_item_reads_is_one_step_of_waypoints(self):
         data = Data(personas=["Dalton Prescott"], places={"Test of Vision": "W/Vision"})
@@ -577,6 +586,11 @@ class ClientLookupTest(unittest.TestCase):
         entries = ClientData(world("WizardCity")).usage_entries("the Stone of Mazzaroth", "")
         self.assertEqual([(entry["adjective"], entry["folder"]) for entry in entries],
                          [("DS_Mazzaroth_Stone.AdjRef", "DS")])
+
+    def test_a_mob_and_an_npc_of_a_nested_object_folder_are_found(self):
+        data = ClientData(world("WizardCity"))
+        self.assertEqual({entry["folder"] for entry in data.mob_entries("Satharilith")}, {"Gauntlet/Catacombs"})
+        self.assertEqual(data.persona("Jack Straw", "")["template"], "HO-Halloween02")
 
     def test_a_volume_name_reads_the_zones_that_hold_it(self):
         data = ClientData(world("WizardCity"))

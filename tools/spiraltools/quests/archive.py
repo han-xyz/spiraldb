@@ -589,6 +589,23 @@ def nearest_folders(registered, folders):
     return sorted(folders, key=lambda folder: (order.get(folder, (len(WORLDS), 0)), folder))
 
 
+# ObjectData trees of gear and furniture that no quest goal names.
+GEAR_FOLDERS = ("CrownItems", "Jewels", "Housing")
+
+
+def object_folders(rootwad):
+    """The ObjectData folders that hold templates, nested ones as `Gauntlet/Catacombs`, without the gear trees."""
+    top = os.path.join(rootwad, "ObjectData")
+    found = []
+    for directory, subdirectories, files in os.walk(top):
+        folder = os.path.relpath(directory, top).replace(os.sep, "/")
+        if folder.split("/")[0] in GEAR_FOLDERS:
+            subdirectories.clear()
+        elif folder != "." and any(name.endswith(".xml") for name in files):
+            found.append(folder)
+    return sorted(found)
+
+
 class ClientData:
     """The lookups a spec needs: titles, personas, mobs, objects, zone locations and the pack's quests."""
 
@@ -619,9 +636,8 @@ class ClientData:
         for key, text in self.read_lang("WizardMobs").items():
             self.mob_keys.setdefault(text, key)
         self.mobs = self.mob_index([self.folder])
-        self.other_folders = nearest_folders(registered, [
-            folder for folder in os.listdir(os.path.join(ROOTWAD_DIR, "ObjectData"))
-            if folder != self.folder and os.path.isdir(os.path.join(ROOTWAD_DIR, "ObjectData", folder))])
+        self.other_folders = nearest_folders(registered, [folder for folder in object_folders(ROOTWAD_DIR)
+                                                          if folder != self.folder])
         self.other_mobs, self.other_personas, self.other_items = None, None, None
         item_rows = list(templates.items(ROOTWAD_DIR, self.folder))
         self.objects = item_index(item_rows, self.folder)
@@ -1201,6 +1217,11 @@ class SpecBuilder:
                 return [self.usage_goal([name], number * times)]
             return [self.persona_goal(name)]
         if kind == "bounty":
+            note = re.sub(r"\[\w+:[^\]]*\]", lambda link: "_" * len(link.group()), line).find("(")
+            before_note = line[:note] if note >= 0 else line
+            if (creatures and not links(before_note, "Creature") and target_text(plain(before_note))
+                    and not any(self.data.mob_entries(strip_notes(creature)) for creature in creatures)):
+                creatures = [target_text(plain(before_note))]
             creatures = creatures or [re.sub(r"\s+and\s+.*$|\s+in\s+.*$", "", target_text(text))]
             collect = re.search(r"\bcollect\s+(?:(\d+)\s+)?(.+)$", text, re.I)
             place = (places or [None])[0]
