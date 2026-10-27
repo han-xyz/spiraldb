@@ -2,7 +2,7 @@
   "id": "NV-Q-1808BB",
   "lang": "1808BB",
   "giver": {
-    "persona": "NV-CON-NPC16-C",
+    "persona": "NV-CON-NPC16",
     "zone": "Novus/NV_Z01_Conatus"
   },
   "requires": [
@@ -130,9 +130,9 @@
     }
   ],
   "personas": {
-    "NV-CON-NPC16-C": {
+    "NV-CON-NPC16": {
       "portrait": "GUI/NpcPortraits/Unicorn_NobleF_A_NPC.dds",
-      "template_id": 1608268
+      "template_id": 1575092
     },
     "NV-DEstate-NPC32": {
       "portrait": "GUI/NpcPortraits/Portrait_Zander_NPC.dds",

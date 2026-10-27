@@ -149,6 +149,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z16_Husk"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_WolfGryphon_Warrior_D_01.AdjRef",
@@ -156,23 +160,28 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003076",
-      "zone": "",
+      "zone": "Empyrea/EM_Z16_Husk",
       "loc": "ZoneLocName_1448066"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z16_Husk"
+    },
+    {
       "type": "persona",
-      "persona": "EM-AERI-NPC17",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "persona": "EM_StandIn_Bat",
+      "zone": "Empyrea/EM_Z16_Husk",
+      "loc": "ZoneLocName_1448066"
     }
   ],
   "personas": {
-    "EM-AERI-NPC17": {
-      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
-      "template_id": 1397735
-    },
     "EM-HUSK-NPC01-A": {
       "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",
       "template_id": 1448067
+    },
+    "EM_StandIn_Bat": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1254467
     }
   },
   "source": {
@@ -192,17 +201,17 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Astral Grove",
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find Astral Trees",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Tune Astral Trees",
       "blocking": true
     },

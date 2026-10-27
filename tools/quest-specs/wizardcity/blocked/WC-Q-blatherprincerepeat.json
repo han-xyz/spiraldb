@@ -16,27 +16,63 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "WC-CATA-NPC01-B",
+      "persona": "WC-CATA-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Druid_Warrior_A_01.AdjRef",
+        "CC_Druid_Warrior_C_01.AdjRef",
+        "CC_Druid_Wizard_A_01.AdjRef",
+        "CC_Druid_Wizard_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003425",
       "zone": "WizardCity/WC_Streets/WC_Catacombs",
       "loc": "ZoneLocName_1451811"
     },
     {
       "type": "persona",
-      "persona": "WC-CATA-NPC01-B",
+      "persona": "WC-CATA-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Druid_Warrior_A_01.AdjRef",
+        "CC_Druid_Warrior_C_01.AdjRef",
+        "CC_Druid_Wizard_A_01.AdjRef",
+        "CC_Druid_Wizard_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003425",
       "zone": "WizardCity/WC_Streets/WC_Catacombs",
       "loc": "ZoneLocName_1451811"
     },
     {
       "type": "persona",
-      "persona": "WC-CATA-NPC01-B",
+      "persona": "WC-CATA-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Dragon_Magma_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003472",
       "zone": "WizardCity/WC_Streets/WC_Catacombs",
       "loc": "ZoneLocName_1451811"
     }
   ],
   "personas": {
-    "WC-CATA-NPC01-B": {
+    "WC-CATA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Bear_Hargrove_A_NPC.dds",
-      "template_id": 1487009
+      "template_id": 1487008
     }
   },
   "source": {
@@ -61,19 +97,19 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Treeminder",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Treeminder: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Treeminder",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Treeminder: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Viggor's Drake",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Viggor's Drake: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
     }
   ]
 }

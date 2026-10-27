@@ -81,6 +81,10 @@
       "loc": "ZoneLocName_1233046"
     },
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Bloodbat_Canyon_A.AdjRef"
@@ -134,7 +138,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Chiroptera Cave",
       "blocking": false
     },

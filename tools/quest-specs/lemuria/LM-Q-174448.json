@@ -3,8 +3,8 @@
   "lang": "174448",
   "title": "QuestTitle_174423",
   "giver": {
-    "persona": "LM-BAD-NPC03",
-    "zone": "Lemuria/LM_Z04_Badlands"
+    "persona": "LM-SKY-NPC01",
+    "zone": "Lemuria/LM_Z06_SkyCity"
   },
   "requires": [
     "LM-Q-174421"
@@ -64,7 +64,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003927",
-      "zone": "Lemuria/LM_Z04_Badlands",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -76,7 +76,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003928",
-      "zone": "Lemuria/LM_Z04_Badlands",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -85,15 +85,15 @@
         "LM_MonsterChest_MorgMerciless.AdjRef"
       ],
       "count": 2,
-      "zone": "Lemuria/LM_Z04_Badlands",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "descriptor": "WizardInteractionTitle_00000453",
       "loc": "ZoneLocName_1520281"
     }
   ],
   "personas": {
-    "LM-BAD-NPC03": {
+    "LM-SKY-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Deer_Hero_NPC.dds",
-      "template_id": 1487617
+      "template_id": 1524712
     }
   },
   "source": {

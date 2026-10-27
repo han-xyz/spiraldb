@@ -1,0 +1,150 @@
+{
+  "id": "WC-Q-12D2B8",
+  "lang": "12D2B8",
+  "giver": {
+    "persona": "WC-PARTY-NPC15",
+    "zone": "WizardCity/Interiors/WC_PartyRoom"
+  },
+  "requires": [
+    "WC-COMMONS-MAIN-004"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 375,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "Fish_Long_Sharkspear.AdjRef",
+        "Fish_Short_Mech.AdjRef",
+        "Catfish.AdjRef",
+        "Fish_Short_Catfish.AdjRef",
+        "Fish_Eel_Garrrfish.AdjRef",
+        "Fish_Short_Sandwich.AdjRef",
+        "Fish_Short_Dekoi.AdjRef",
+        "Fish_Short_BoneFish.AdjRef"
+      ],
+      "count": 7,
+      "zone": "",
+      "descriptor": "FishNames_00000024",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "WC-PARTY-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pelican_Fisherman_A_NPC.dds",
+      "template_id": 1452011
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fishful_Thinking",
+    "from": "archive",
+    "timestamp": "20231121231750"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "A River Runs Through It",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Sharkspeare in Olde Town: ObjectData/Fish",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Mechanical Armorhead in Cyclops Lane: ObjectData/Fish",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Catfish in The Commons: ObjectData/Fish",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Garrrfish in Cyclops Lane: ObjectData/Fish",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Fish Sandwich in Cyclops Lane: ObjectData/Fish",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Mainstream Dekoi in The Commons: ObjectData/Fish",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Bone Fish in Unicorn Way: ObjectData/Fish",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "A River Runs Through It replaced by WC-Q-1731AF",
+      "blocking": false
+    }
+  ]
+}

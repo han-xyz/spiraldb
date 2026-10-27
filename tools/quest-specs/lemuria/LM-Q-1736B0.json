@@ -5,7 +5,9 @@
     "persona": "LM-TELOS-NPC03",
     "zone": "Lemuria/LM_Z00_Hub"
   },
-  "requires": [],
+  "requires": [
+    "LM-Q-1736A6"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -211,15 +213,15 @@
     },
     {
       "type": "persona",
-      "persona": "LM-TELOS-NPC01-B",
+      "persona": "LM-TELOS-NPC01",
       "zone": "Lemuria/LM_Z00_Hub",
       "loc": "ZoneLocName_1520271"
     }
   ],
   "personas": {
-    "LM-TELOS-NPC01-B": {
+    "LM-TELOS-NPC01": {
       "portrait": "GUI/NpcPortraits/Khrulhu_LinNoHat_A_NPC.dds",
-      "template_id": 1521332
+      "template_id": 1521317
     },
     "LM-TELOS-NPC03": {
       "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_C_NPC.dds",
@@ -236,12 +238,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Lord of the Ringtails replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 132
+  ]
 }

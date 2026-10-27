@@ -2,11 +2,11 @@
   "id": "EM-Q-155331",
   "lang": "155331",
   "giver": {
-    "persona": "EM-AERI-NPC03-B",
+    "persona": "EM-AERI-NPC03",
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
   "requires": [
-    "EM-Q-155329"
+    "EM-Q-15532B"
   ],
   "mainline": true,
   "level": 112,
@@ -91,7 +91,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC05-B",
+      "persona": "EM-AERI-NPC05",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
@@ -107,13 +107,13 @@
     }
   ],
   "personas": {
-    "EM-AERI-NPC03-B": {
+    "EM-AERI-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
-      "template_id": 1397548
+      "template_id": 1397525
     },
-    "EM-AERI-NPC05-B": {
+    "EM-AERI-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Elder_A_NPC.dds",
-      "template_id": 1397722
+      "template_id": 1397530
     },
     "EM-JUNG-NPC03-B": {
       "portrait": "GUI/NpcPortraits/Beastman_Leader_A_NPC.dds",
@@ -134,11 +134,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Beasty Mountain High replaced by EM-Q-155329",
       "blocking": false
     }
   ]

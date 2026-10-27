@@ -2,8 +2,8 @@
   "id": "KM-Q-16B55D",
   "lang": "16B55D",
   "giver": {
-    "persona": "KM-KCITY-NPC21",
-    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+    "persona": "KM-SWEET-NPC01",
+    "zone": "Karamelle/KM_Z04_Sweetzburg"
   },
   "requires": [
     "KM-Q-16B559"
@@ -93,12 +93,16 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z04_Sweetzburg"
+    },
+    {
       "type": "usage",
       "items": [
         "KM-Cavity-GummyPlant.AdjRef"
       ],
       "count": 2,
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "descriptor": "Items_00021784",
       "loc": "ZoneLocName_1488252"
     },
@@ -114,35 +118,35 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003663",
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "descriptor": "WizQst16B55D_00000016",
       "loc": "ZoneLocName_1488252"
     },
     {
       "type": "persona",
-      "persona": "KM-BLACK-NPC09",
-      "zone": "Karamelle/KM_Z08_LicoriceForest",
-      "loc": "ZoneLocName_1513103"
+      "persona": "KM-SWEET-NPC05",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
+      "loc": "ZoneLocName_1488252"
     },
     {
       "type": "persona",
-      "persona": "KM-BLACK-NPC01-B",
-      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "persona": "KM-SWEET-NPC06",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     }
   ],
   "personas": {
-    "KM-BLACK-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513114
-    },
-    "KM-BLACK-NPC09": {
-      "portrait": "GUI/NpcPortraits/Portrait_Hamster_ImperfectF_A_NPC.dds",
-      "template_id": 1513110
-    },
-    "KM-KCITY-NPC21": {
+    "KM-SWEET-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
-      "template_id": 1513270
+      "template_id": 1488209
+    },
+    "KM-SWEET-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Hamster_ImperfectF_A_NPC.dds",
+      "template_id": 1488220
+    },
+    "KM-SWEET-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1488222
     }
   },
   "source": {
@@ -157,9 +161,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Investigate mysterious 'big hole'",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.items",

@@ -82,6 +82,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "ZF-Goliath-R10-Boss-01.AdjRef"
@@ -121,7 +125,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Zafaria Student Dormitory",
       "blocking": false
     },

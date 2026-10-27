@@ -3,7 +3,7 @@
   "lang": "170A92",
   "auto_start": true,
   "giver": {
-    "persona": "KM-KCITY-NPC02-B",
+    "persona": "KM-KCITY-NPC02",
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
@@ -74,6 +74,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gummy_Bear_Uber_A_01.AdjRef"
@@ -85,9 +89,9 @@
     }
   ],
   "personas": {
-    "KM-KCITY-NPC02-B": {
+    "KM-KCITY-NPC02": {
       "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
-      "template_id": 1510012
+      "template_id": 1510009
     }
   },
   "source": {
@@ -97,7 +101,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "The Glockenspiel",
       "blocking": false
     },

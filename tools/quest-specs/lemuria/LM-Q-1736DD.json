@@ -2,7 +2,7 @@
   "id": "LM-Q-1736DD",
   "lang": "1736DD",
   "giver": {
-    "persona": "LM-TELOS-NPC12-D",
+    "persona": "LM-TELOS-NPC21",
     "zone": "Lemuria/LM_Z00_Hub"
   },
   "requires": [
@@ -95,6 +95,10 @@
       "loc": "ZoneLocName_1520271"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z00_Hub"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Malughast_Base_04.AdjRef"
@@ -103,6 +107,10 @@
       "target": "WizardMobs_00003949",
       "zone": "Lemuria/LM_Z00_Hub",
       "loc": "ZoneLocName_1520271"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z00_Hub"
     },
     {
       "type": "bounty",
@@ -117,9 +125,9 @@
     }
   ],
   "personas": {
-    "LM-TELOS-NPC12-D": {
+    "LM-TELOS-NPC21": {
       "portrait": "GUI/NpcPortraits/Deer_Hero_A_NPC.dds",
-      "template_id": 1487585
+      "template_id": 1634573
     }
   },
   "source": {
@@ -130,13 +138,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

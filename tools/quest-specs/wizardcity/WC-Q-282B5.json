@@ -133,5 +133,6 @@
       "blocking": false
     }
   ],
-  "min_level": 5
+  "min_level": 5,
+  "captured": "WC-GRZ-PRE-001"
 }

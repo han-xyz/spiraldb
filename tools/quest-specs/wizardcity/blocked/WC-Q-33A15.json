@@ -122,6 +122,16 @@
       "zone": ""
     },
     {
+      "type": "usage",
+      "items": [
+        "DS_Mazzaroth_Stone.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizardGameObjects_00000238",
+      "loc": "ZoneLocName_9005"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "WizardCity/Interiors/WC_SchoolStorm",
@@ -151,7 +161,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Zarichi's Hideout, Village of Sorrow",
       "blocking": false
     },
@@ -161,7 +171,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Vesna's Lair, The Crucible",
       "blocking": false
     },
@@ -181,9 +191,9 @@
       "blocking": true
     },
     {
-      "field": "goal.usage",
-      "value": "Use the Stone of Mazzaroth",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Stone of Mazzaroth: ObjectData/DS",
+      "blocking": false
     },
     {
       "field": "dialogs",

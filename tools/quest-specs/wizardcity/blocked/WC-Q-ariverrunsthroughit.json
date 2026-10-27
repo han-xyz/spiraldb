@@ -5,7 +5,7 @@
     "zone": "WizardCity/Interiors/WC_PartyRoom"
   },
   "requires": [
-    "WC-Q-1731AF"
+    "WC-COMMONS-MAIN-004"
   ],
   "mainline": false,
   "level": 5,
@@ -21,6 +21,17 @@
     "underway": []
   },
   "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "Fish_Short_Dekoi_Ice.AdjRef",
+        "Fish_Long_Schoolacuda_Ice.AdjRef"
+      ],
+      "count": 2,
+      "zone": "",
+      "descriptor": "FishNames_00000079",
+      "loc": "ZoneLocName_409193"
+    },
     {
       "type": "persona",
       "persona": "giver",
@@ -46,14 +57,14 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Frost Dekoi",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Frost Dekoi: ObjectData/Fish",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Icecuda",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Icecuda: ObjectData/Fish",
+      "blocking": false
     }
   ]
 }

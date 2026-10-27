@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Triton"
   },
   "requires": [
-    "WC-Q-1627B4"
+    "WC-TRITON-MAIN-004"
   ],
   "mainline": true,
   "level": 5,
@@ -130,7 +130,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Mill Wheel",
       "blocking": false
     },
@@ -139,5 +139,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-TRITON-MAIN-005"
 }

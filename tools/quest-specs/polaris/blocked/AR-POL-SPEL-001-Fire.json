@@ -90,6 +90,10 @@
       "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
     },
     {
+      "type": "waypoint",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+    },
+    {
       "type": "usage",
       "items": [
         "PL-BLEAK-NPC10.AdjRef"
@@ -147,7 +151,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Arcanum Crafting Room",
       "blocking": false
     },

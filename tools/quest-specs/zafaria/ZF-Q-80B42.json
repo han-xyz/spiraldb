@@ -2,8 +2,8 @@
   "id": "ZF-Q-80B42",
   "lang": "80B42",
   "giver": {
-    "persona": "ZF-HUB-NPC07",
-    "zone": "Zafaria/ZF_Z00_Hub"
+    "persona": "ZF-STONE-NPC07",
+    "zone": "Zafaria/Interiors/ZF_Z07_I03_Zoo"
   },
   "requires": [
     "ZF-Q-80B41"
@@ -52,13 +52,13 @@
     }
   ],
   "personas": {
-    "ZF-HUB-NPC07": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Student_Lail_Brighteyes_NPC.dds",
-      "template_id": 1546124
-    },
     "ZF-STONE-NPC03": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Silvertusk_NPC.dds",
       "template_id": 527093
+    },
+    "ZF-STONE-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Student_Lail_Brighteyes_NPC.dds",
+      "template_id": 527152
     }
   },
   "source": {

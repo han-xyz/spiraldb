@@ -3,7 +3,7 @@
   "lang": "188B15",
   "title": "QuestTitle_188A01",
   "giver": {
-    "persona": "WL-HOPE-NPC05-B",
+    "persona": "WL-HOPE-NPC05",
     "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister"
   },
   "requires": [
@@ -114,6 +114,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
       "type": "persona",
       "persona": "WL-OUT-NPC05",
       "zone": "Wallaru/WL_Z02_Outback",
@@ -131,9 +135,9 @@
     }
   ],
   "personas": {
-    "WL-HOPE-NPC05-B": {
+    "WL-HOPE-NPC05": {
       "portrait": "GUI/NpcPortraits/Koala_MinisterF_A_NPC.dds",
-      "template_id": 1608106
+      "template_id": 1608062
     },
     "WL-OUT-NPC05": {
       "portrait": "GUI/NpcPortraits/Koala_DroverF_A_NPC.dds",
@@ -152,8 +156,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Outback Gate",
+      "field": "goal.waypoint (current zone)",
+      "value": "Outback Gate",
       "blocking": false
     },
     {

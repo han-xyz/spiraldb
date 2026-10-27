@@ -2,8 +2,8 @@
   "id": "NV-Q-180889",
   "lang": "180889",
   "giver": {
-    "persona": "NV-StandIn-Dasein_v3",
-    "zone": "Novus/NV_Z01_Conatus"
+    "persona": "NV_StandIn_Dasein_AberrantUnicorn_01",
+    "zone": "Novus/Interiors/NV_Z03_SoldiersHideout"
   },
   "requires": [
     "NV-Q-173361"
@@ -70,9 +70,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ExplorerF_A_NPC.dds",
       "template_id": 1562151
     },
-    "NV-StandIn-Dasein_v3": {
-      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
-      "template_id": 1624005
+    "NV_StandIn_Dasein_AberrantUnicorn_01": {
+      "portrait": "",
+      "template_id": 1575189
     }
   },
   "source": {

@@ -236,6 +236,10 @@
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
       "type": "persona",
       "persona": "EM-AERI-NPC17",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB",
@@ -273,7 +277,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Aeriel Shore",
       "blocking": false
     },

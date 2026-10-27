@@ -1,0 +1,116 @@
+{
+  "id": "Wysteria-Q-7191D",
+  "lang": "7191D",
+  "giver": {
+    "persona": "PA-HUB-NPC14",
+    "zone": "Wysteria/PA_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 25,
+  "reward": {
+    "xp": 230,
+    "gold": 20
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "loc": "ZoneLocName_465168",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Hub",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Hub",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 465147
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Wallflowers",
+    "from": "archive",
+    "timestamp": "20240119021458"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Exchange Student",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Tanglewood Way",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Library Archives",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Exchange Student replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 25
+}

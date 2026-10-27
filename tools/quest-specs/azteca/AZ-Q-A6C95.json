@@ -45,6 +45,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z11_TwinGiants"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Azteca/AZ_Z11_TwinGiants",
@@ -69,8 +73,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to The Great Doors",
+      "field": "goal.waypoint (current zone)",
+      "value": "Great Doors",
       "blocking": false
     },
     {

@@ -131,6 +131,14 @@
       "loc": "ZoneLocName_1560535"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z05_Wobbegong_JT"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z05_Wobbegong_JT"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Vapor_Monster_01.AdjRef",
@@ -171,12 +179,12 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go near the Mystery Box",
+      "field": "goal.waypoint (current zone)",
+      "value": "near the Mystery Box",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Mystery Box",
       "blocking": false
     },

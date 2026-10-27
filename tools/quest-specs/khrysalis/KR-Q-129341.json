@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z07_RuinedAlcazar"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_SuGlider_Warrior_F.AdjRef"
@@ -82,7 +86,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hall of the Planisphere",
       "blocking": false
     },

@@ -2,8 +2,8 @@
   "id": "MR-Q-150779",
   "lang": "150779",
   "giver": {
-    "persona": "MR-CATE-NPC11-B",
-    "zone": "Mirage/MR_Z03_CaterwaulCanyon"
+    "persona": "MR-THIE-NPC01",
+    "zone": "Mirage/MR_Z07_ThievesDen"
   },
   "requires": [],
   "mainline": true,
@@ -100,35 +100,35 @@
     },
     {
       "type": "persona",
-      "persona": "MR-AGGR-NPC08-B",
-      "zone": "Mirage/Interiors/MR_Z02_SultOffice",
+      "persona": "MR_StandIn_Ozzy_NPC",
+      "zone": "Mirage/MR_Z07_ThievesDen",
       "loc": "ZoneLocName_1378165"
     },
     {
       "type": "persona",
-      "persona": "MR-AGGR-NPC08-B",
-      "zone": "Mirage/Interiors/MR_Z02_SultOffice",
+      "persona": "MR_StandIn_Ozzy_NPC",
+      "zone": "Mirage/MR_Z07_ThievesDen",
       "loc": "ZoneLocName_1378165",
       "completion": [
         {
-          "speaker": "MR-AGGR-NPC08-B",
+          "speaker": "MR_StandIn_Ozzy_NPC",
           "line": "00000007"
         }
       ]
     }
   ],
   "personas": {
-    "MR-AGGR-NPC08-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Skull_King_A_NPC.dds",
-      "template_id": 1381261
-    },
     "MR-AGGR-NPC10-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Baboon_Boss_A_NPC.dds",
       "template_id": 1381287
     },
-    "MR-CATE-NPC11-B": {
+    "MR-THIE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_D_NPC.dds",
-      "template_id": 1397150
+      "template_id": 1391063
+    },
+    "MR_StandIn_Ozzy_NPC": {
+      "portrait": "GUI/NpcPortraits/Portrait_Skull_King_A_NPC.dds",
+      "template_id": 1365006
     }
   },
   "source": {

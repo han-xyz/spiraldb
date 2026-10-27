@@ -74,9 +74,13 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "giver",
+      "persona": "LM-WILD-NPC06",
       "zone": "Lemuria/LM_Z01_WildLands",
       "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z01_WildLands"
     },
     {
       "type": "bounty",
@@ -99,6 +103,10 @@
     "LM-NIGHT-NPC09": {
       "portrait": "GUI/NpcPortraits/Portrait_Krok_Tut_B_NPC.dds",
       "template_id": 1520249
+    },
+    "LM-WILD-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Centaur_TarzanF_B_NPC.dds",
+      "template_id": 1520121
     },
     "LM-WILD-NPC06-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Centaur_TarzanF_B_NPC.dds",
@@ -133,8 +141,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Horde Thief House",
+      "field": "goal.waypoint (current zone)",
+      "value": "Horde Thief House",
       "blocking": false
     },
     {

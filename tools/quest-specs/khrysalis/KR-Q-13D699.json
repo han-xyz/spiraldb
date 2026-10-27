@@ -1,0 +1,95 @@
+{
+  "id": "KR-Q-13D699",
+  "lang": "13D699",
+  "giver": {
+    "persona": "KR-KondhaDesert-NPC31",
+    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 30995,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-GallStone.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "descriptor": "WizItems_00001984",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    }
+  ],
+  "personas": {
+    "KR-KondhaDesert-NPC31": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Barbarian_E_NPC.dds",
+      "template_id": 1283232
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Gall_Of_A_General",
+    "from": "archive",
+    "timestamp": "20231126063812"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Creeping Water",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Creeping Water replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

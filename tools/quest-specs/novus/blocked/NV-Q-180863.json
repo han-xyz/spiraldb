@@ -2,7 +2,7 @@
   "id": "NV-Q-180863",
   "lang": "180863",
   "giver": {
-    "persona": "NV-CON-NPC02-B",
+    "persona": "NV-CON-NPC02",
     "zone": "Novus/NV_Z01_Conatus"
   },
   "requires": [
@@ -227,26 +227,30 @@
       "loc": "ZoneLocName_1546265"
     },
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z01_Conatus"
+    },
+    {
       "type": "persona",
-      "persona": "NV-CON-NPC06-C",
+      "persona": "NV-CON-NPC06",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC06-C",
+      "persona": "NV-CON-NPC06",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
     }
   ],
   "personas": {
-    "NV-CON-NPC02-B": {
+    "NV-CON-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
-      "template_id": 1575007
+      "template_id": 1546270
     },
-    "NV-CON-NPC06-C": {
+    "NV-CON-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1575033
+      "template_id": 1546275
     }
   },
   "source": {
@@ -271,14 +275,14 @@
       "blocking": true
     },
     {
-      "field": "goal.unknown-verb",
-      "value": "Stop the Duel",
+      "field": "goal.mobs",
+      "value": "Duel",
       "blocking": true
     },
     {
-      "field": "goal.persona",
+      "field": "goal.waypoint (current zone)",
       "value": "Follow the Delegates (outside)",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

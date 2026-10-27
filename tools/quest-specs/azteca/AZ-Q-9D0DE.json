@@ -90,6 +90,10 @@
       "loc": "ZoneLocName_643349"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z02_Cenote"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Raptor-Undead-D.AdjRef"
@@ -130,7 +134,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Fire Ant's Tomb",
       "blocking": false
     },

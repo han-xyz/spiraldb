@@ -2,8 +2,8 @@
   "id": "WC-Q-1411C",
   "lang": "1411C",
   "giver": {
-    "persona": "WC-RAV-NPC15",
-    "zone": "WizardCity/WC_Ravenwood"
+    "persona": "WC-RAV-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolLife"
   },
   "requires": [
     {
@@ -51,9 +51,9 @@
       "portrait": "GUI/NpcPortraits/Portraits_Dog_Excavator_C_NPC.dds",
       "template_id": 39234
     },
-    "WC-RAV-NPC15": {
+    "WC-RAV-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
-      "template_id": 1459033
+      "template_id": 38204
     }
   },
   "source": {

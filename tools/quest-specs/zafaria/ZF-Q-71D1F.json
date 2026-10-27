@@ -59,6 +59,18 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "ZF-Gorilla-Boss-01-R11-Boss.AdjRef",
@@ -66,7 +78,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001012",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
       "loc": "ZoneLocName_465256"
     },
     {
@@ -89,18 +101,18 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Spider Bridge",
+      "field": "goal.waypoint (current zone)",
+      "value": "Spider Bridge",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Kallah Silverback's Shack",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go (inside) Kallah Silverback's Shack",
+      "field": "goal.waypoint (current zone)",
+      "value": "Kallah Silverback's Shack",
       "blocking": false
     },
     {

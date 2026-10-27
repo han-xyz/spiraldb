@@ -1,0 +1,76 @@
+{
+  "id": "MR-Q-140E9",
+  "lang": "140E9",
+  "giver": {
+    "persona": "MR-THIE-NPC13",
+    "zone": "Mirage/MR_Z07_ThievesDen"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 105,
+  "reward": {
+    "xp": 0,
+    "gold": 43500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Mirage/MR_Z07_ThievesDen"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Ophidian_Brute_C_02.AdjRef",
+        "MR_StandIn_TetrusSolitaryWarden.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002263",
+      "zone": "Mirage/MR_Z07_ThievesDen",
+      "loc": "ZoneLocName_1378165"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Mirage/MR_Z07_ThievesDen",
+      "loc": "ZoneLocName_1378165"
+    }
+  ],
+  "personas": {
+    "MR-THIE-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ophidian_Thug_F_NPC.dds",
+      "template_id": 1391111
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Prison_Break...",
+    "from": "archive",
+    "timestamp": "20231126080734"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Sneak into the Tetrus Solitary Block in Istanboa",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Devinn's Dance Squad replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 105
+}

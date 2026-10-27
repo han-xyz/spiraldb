@@ -1,0 +1,170 @@
+{
+  "id": "DS-Q-23BC5",
+  "lang": "23BC5",
+  "giver": {
+    "persona": "DS-HUB-NPC02",
+    "zone": "DragonSpire/DS_Hub_Cathedral"
+  },
+  "requires": [
+    "WC-MAIN-C01-012"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 2460,
+    "gold": 256
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DS_Teleporter_ToNecropolis.AdjRef",
+        "DS_GCPast_To_GCPresent.AdjRef"
+      ],
+      "count": 10,
+      "zone": "DragonSpire/DS_Hub_Cathedral",
+      "descriptor": "WizardGameObjects_00000142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_Hub_Cathedral"
+    }
+  ],
+  "personas": {
+    "DS-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 126292
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Stone_Roses",
+    "from": "archive",
+    "timestamp": "20260402220338"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "The Basilica",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Atheneum",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Dragonspyre Academy",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Tower Archives",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Labyrinth",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Crystal Grove",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Dragon's Roost",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Crown of Fire",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "Explorer-001-4"
+}

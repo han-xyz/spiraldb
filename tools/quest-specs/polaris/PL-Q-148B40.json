@@ -2,7 +2,7 @@
   "id": "PL-Q-148B40",
   "lang": "148B40",
   "giver": {
-    "persona": "PL-URVI-NPC04-B",
+    "persona": "PL-URVI-NPC04",
     "zone": "Polaris/PL_Z04_UrvilleStation"
   },
   "requires": [
@@ -62,9 +62,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Human_WitchF_A_NPC.dds",
       "template_id": 1346220
     },
-    "PL-URVI-NPC04-B": {
+    "PL-URVI-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_A_NPC.dds",
-      "template_id": 1346342
+      "template_id": 1346292
     }
   },
   "source": {

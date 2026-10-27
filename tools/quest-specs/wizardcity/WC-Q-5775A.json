@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
   },
   "requires": [
-    "WC-UNDER-C01-001A"
+    "WC-UNDER-C01-001"
   ],
   "mainline": false,
   "level": 5,
@@ -114,7 +114,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "White Tower",
       "blocking": false
     },

@@ -86,7 +86,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "WC-ST01-NPC05-B",
+      "persona": "WC-ST01-NPC05",
       "zone": "WizardCity/WC_Streets/WC_Unicorn",
       "loc": "ZoneLocName_114426"
     },
@@ -102,7 +102,7 @@
     },
     {
       "type": "persona",
-      "persona": "WC-ST01-NPC05-B",
+      "persona": "WC-ST01-NPC05",
       "zone": "WizardCity/WC_Streets/WC_Unicorn",
       "loc": "ZoneLocName_114426"
     },
@@ -118,9 +118,9 @@
       "portrait": "GUI/NpcPortraits/Human_WCGuard_A.dds",
       "template_id": 38119
     },
-    "WC-ST01-NPC05-B": {
+    "WC-ST01-NPC05": {
       "portrait": "GUI/NpcPortraits/Human_WCGuard_B.dds",
-      "template_id": 1451483
+      "template_id": 38133
     }
   },
   "source": {
@@ -134,5 +134,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-UNICORN-SIDE-002"
 }

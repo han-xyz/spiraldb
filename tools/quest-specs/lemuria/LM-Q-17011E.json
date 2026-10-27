@@ -2,8 +2,8 @@
   "id": "LM-Q-17011E",
   "lang": "17011E",
   "giver": {
-    "persona": "LM-HEAP-NPC01",
-    "zone": "Lemuria/LM_Z07_Heap"
+    "persona": "LM-Mandoria-NPC02",
+    "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
     "LM-Q-170119"
@@ -118,8 +118,8 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC05-01",
-      "zone": "Lemuria/Interiors/LM_Z05_I10_CellRoom",
+      "persona": "LM-Standin-Mandar-02",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -131,34 +131,34 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003874",
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC05-01",
-      "zone": "Lemuria/Interiors/LM_Z05_I10_CellRoom",
+      "persona": "LM-Standin-Mandar-02",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC01-02",
+      "persona": "LM-Mandoria-NPC01",
       "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     }
   ],
   "personas": {
-    "LM-HEAP-NPC01": {
+    "LM-Mandoria-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_A_NPC.dds",
+      "template_id": 1507624
+    },
+    "LM-Mandoria-NPC02": {
       "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
-      "template_id": 1524741
+      "template_id": 1507625
     },
-    "LM-Mandoria-NPC01-02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1507626
-    },
-    "LM-Mandoria-NPC05-01": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mander_Hero_A_NPC.dds",
-      "template_id": 1507629
+    "LM-Standin-Mandar-02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Hero_A_Mob.dds",
+      "template_id": 1487508
     }
   },
   "source": {

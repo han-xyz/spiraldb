@@ -65,6 +65,10 @@
       "loc": "ZoneLocName_465259"
     },
     {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z03_Savannah"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "Heroic_ZF_Ghostmane.AdjRef",
@@ -105,7 +109,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Queen Tanei Ghostmane's Cave",
       "blocking": false
     },

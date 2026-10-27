@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Golem_Tower"
   },
   "requires": [
-    "WC-Q-576B7"
+    "WC-GRDN-C01-001"
   ],
   "mainline": false,
   "level": 5,
@@ -192,5 +192,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-GRDN-C02-001"
 }

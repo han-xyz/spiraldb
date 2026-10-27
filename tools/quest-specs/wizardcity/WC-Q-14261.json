@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Hub"
   },
   "requires": [
-    "WC-Q-14260"
+    "WC-BFF-C01-001"
   ],
   "mainline": false,
   "level": 5,
@@ -121,5 +121,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-BFF-C01-002"
 }

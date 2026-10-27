@@ -1,0 +1,91 @@
+{
+  "id": "DS-ACAD1-CATA-SIDE-002",
+  "giver": {
+    "persona": "DS-StandIn-FelixPhotomonger_01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+  },
+  "requires": [
+    "DS-ACAD1-CATA-SIDE-001"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 0,
+    "gold": 1380
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Human_DSScholar_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003443",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "DS_Photo_Crystal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC16",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs"
+    }
+  ],
+  "personas": {
+    "DS-StandIn-FelixPhotomonger_01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_DSScholar_B_NPC.dds",
+      "template_id": 1487081
+    },
+    "WC-CATA-NPC16": {
+      "portrait": "GUI/NpcPortraits/DSVanguard_B_NPC.dds",
+      "template_id": 1487078
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Better_Halls_&_Crystals",
+    "from": "archive",
+    "timestamp": "20240119021519"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Better Halls & Crystals",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Ritual Crystal",
+      "blocking": true
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Complete the Photomantic Ritual in Hall of Inevitable Betrayal",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Felix Photomonger III: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "photo of Crystal Crawler",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Rogar Web-Fist: WC-CATA-NPC16 from ObjectData/WC",
+      "blocking": false
+    }
+  ]
+}

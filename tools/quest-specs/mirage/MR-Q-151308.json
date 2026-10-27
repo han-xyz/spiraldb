@@ -2,7 +2,7 @@
   "id": "MR-Q-151308",
   "lang": "151308",
   "giver": {
-    "persona": "MR-CARA-NPC07-B",
+    "persona": "MR-CARA-NPC07",
     "zone": "Mirage/MR_Z00_Hub"
   },
   "requires": [
@@ -42,25 +42,25 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "MR-CARA-NPC09-B",
+      "persona": "MR-CARA-NPC09",
       "zone": "Mirage/MR_Z00_Hub",
       "loc": "ZoneLocName_1254040",
       "completion": [
         {
-          "speaker": "MR-CARA-NPC09-B",
+          "speaker": "MR-CARA-NPC09",
           "line": "00000006"
         }
       ]
     }
   ],
   "personas": {
-    "MR-CARA-NPC07-B": {
+    "MR-CARA-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Stout_D_NPC.dds",
-      "template_id": 1381119
+      "template_id": 1381110
     },
-    "MR-CARA-NPC09-B": {
+    "MR-CARA-NPC09": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_C_NPC.dds",
-      "template_id": 1381132
+      "template_id": 1381129
     }
   },
   "source": {

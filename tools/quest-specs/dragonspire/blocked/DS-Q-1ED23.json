@@ -1,0 +1,79 @@
+{
+  "id": "DS-Q-1ED23",
+  "lang": "1ED23",
+  "giver": {
+    "persona": "DS-LIB3-NPC04",
+    "zone": ""
+  },
+  "requires": [
+    "DS-LIB4-C01-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2230,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": ""
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Helephant-Fire-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000415",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "DS-LIB3-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_3_Ghost_NPC.dds",
+      "template_id": 126310
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Vault_of_Fire",
+    "from": "archive",
+    "timestamp": "20240409061109"
+  },
+  "needs_review": [
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Vasek Ashweaver",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Vasek Ashweaver",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB4-C01-002"
+}

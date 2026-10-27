@@ -69,6 +69,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z10_FloatingMountains"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Jaguar-Shaman-A.AdjRef"
@@ -103,7 +107,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Ocuhaje's Cave",
       "blocking": false
     },

@@ -75,6 +75,10 @@
       "loc": "ZoneLocName_537904"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z02_HighRoad"
+    },
+    {
       "type": "persona",
       "persona": "AV-WILD-NPC01",
       "zone": "Avalon/AV_Z04_TheWild",
@@ -119,8 +123,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Sophia's House",
+      "field": "goal.waypoint (current zone)",
+      "value": "Sophia's House",
       "blocking": false
     },
     {

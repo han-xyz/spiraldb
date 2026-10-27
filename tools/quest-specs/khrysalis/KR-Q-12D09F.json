@@ -73,6 +73,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Milipede_Warrior_B.AdjRef"
@@ -127,7 +131,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hatchery Cave",
       "blocking": false
     },

@@ -6,9 +6,9 @@
     "zone": "Avalon/AV_Z06_DunDara"
   },
   "requires": [],
-  "min_level": 68,
+  "min_level": 150,
   "mainline": false,
-  "level": 68,
+  "level": 150,
   "reward": {
     "xp": 0,
     "gold": 0
@@ -102,6 +102,36 @@
       "loc": "ZoneLocName_611142"
     },
     {
+      "type": "usage",
+      "items": [
+        "DS_DSRaid_Void_Motes.AdjRef",
+        "DS_DSRaid_Void_Motes_01.AdjRef",
+        "DS_DSRaid_Void_Motes_02.AdjRef",
+        "DS_DSRaid_Void_Motes_03.AdjRef",
+        "DS_DSRaid_Void_Motes_04.AdjRef",
+        "DS_DSRaid_Void_Motes_05.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z06_DunDara",
+      "descriptor": "WizQst199053_00000025",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "DS_DSRaid_Void_Motes.AdjRef",
+        "DS_DSRaid_Void_Motes_01.AdjRef",
+        "DS_DSRaid_Void_Motes_02.AdjRef",
+        "DS_DSRaid_Void_Motes_03.AdjRef",
+        "DS_DSRaid_Void_Motes_04.AdjRef",
+        "DS_DSRaid_Void_Motes_05.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Avalon/AV_Z06_DunDara",
+      "descriptor": "WizQst199053_00000025",
+      "loc": "ZoneLocName_611142"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "DS-StandIn-DraconianScavengers_01.AdjRef"
@@ -150,14 +180,14 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Void Mote in The Tower Archives",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Void Mote in The Tower Archives: ObjectData/DS",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Void Mote",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Void Mote: ObjectData/DS",
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

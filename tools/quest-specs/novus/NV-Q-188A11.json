@@ -1,0 +1,207 @@
+{
+  "id": "NV-Q-188A11",
+  "lang": "188A11",
+  "giver": {
+    "persona": "NV-CON-NPC06",
+    "zone": "Novus/NV_Z01_Conatus"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 189240,
+    "gold": 550
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z01_Conatus"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-Rocket-Usable02.AdjRef",
+        "WL-Rocket.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "WizItems_00002117",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z07_DoomMoon",
+      "loc": "ZoneLocName_1560538"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC25",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z01_Conatus"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Dog_NavyCaptain_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004445",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC25",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265",
+      "completion": [
+        {
+          "speaker": "NV-CON-NPC25",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "NV-CON-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1546275
+    },
+    "NV-CON-NPC25": {
+      "portrait": "GUI/NpcPortraits/Portrait_Horse_Explorer_A_NPC.dds",
+      "template_id": 1608210
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bam,_Zoom,_to_the_Doom",
+    "from": "archive",
+    "timestamp": "20250905155936"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Heroes of Old",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Rocket",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Rocket: ObjectData/WL",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Engineering",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Mr. Montgomery: ObjectData/WL",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Heroes of Old replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 142
+}

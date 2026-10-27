@@ -2,7 +2,7 @@
   "id": "KM-Q-16B5B7",
   "lang": "16B5B7",
   "giver": {
-    "persona": "KM-GUTEN-NPC01-B",
+    "persona": "KM-GUTEN-NPC01",
     "zone": "Karamelle/KM_Z07_Gutenstadt"
   },
   "requires": [
@@ -106,9 +106,9 @@
     }
   ],
   "personas": {
-    "KM-GUTEN-NPC01-B": {
+    "KM-GUTEN-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Gnome_Factory_B_NPC.dds",
-      "template_id": 1506595
+      "template_id": 1488240
     }
   },
   "source": {

@@ -161,6 +161,10 @@
       "loc": "ZoneLocName_1254355"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z02_Zanadu"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Shadow_Healer_A_02.AdjRef"
@@ -204,20 +208,24 @@
     },
     {
       "type": "waypoint",
+      "zone": "Empyrea/EM_Z02_Zanadu"
+    },
+    {
+      "type": "waypoint",
       "zone": "Empyrea/Interiors/EM_Z02_LeisureDome",
       "loc": "ZoneLocName_1254361"
     },
     {
       "type": "persona",
-      "persona": "EM-ZANA-NPC01-D",
+      "persona": "EM-ZANA-NPC01",
       "zone": "Empyrea/EM_Z02_Zanadu",
       "loc": "ZoneLocName_1254355"
     }
   ],
   "personas": {
-    "EM-ZANA-NPC01-D": {
+    "EM-ZANA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
-      "template_id": 1404201
+      "template_id": 1397572
     },
     "EM-ZANA-NPC14": {
       "portrait": "GUI/NpcPortraits/Portrait_Alphoi_CasterF_A_NPC.dds",
@@ -231,7 +239,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Zigi's Estate",
       "blocking": false
     },
@@ -241,9 +249,9 @@
       "blocking": true
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Reach Sewer Main Exit",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

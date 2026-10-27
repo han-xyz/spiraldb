@@ -92,6 +92,10 @@
       "loc": "ZoneLocName_9005"
     },
     {
+      "type": "waypoint",
+      "zone": "Krokotopia/KT_Hub_Sphinx"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "WizardCity/Interiors/WC_SchoolFrost",
@@ -140,9 +144,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Locate the Icy Water",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

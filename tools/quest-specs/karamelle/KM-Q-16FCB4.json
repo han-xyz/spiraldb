@@ -103,24 +103,24 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003671",
-      "zone": "",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "loc": "ZoneLocName_1506578"
     },
     {
       "type": "persona",
-      "persona": "KM-BLACK-NPC10",
-      "zone": "Karamelle/KM_Z08_LicoriceForest",
-      "loc": "ZoneLocName_1513103"
+      "persona": "KM-NIBB-NPC06",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
+      "loc": "ZoneLocName_1506578"
     }
   ],
   "personas": {
-    "KM-BLACK-NPC10": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
-      "template_id": 1513116
-    },
     "KM-ESTATE-NPC08": {
       "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
       "template_id": 1513159
+    },
+    "KM-NIBB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1506491
     }
   },
   "source": {

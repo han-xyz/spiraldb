@@ -1,0 +1,116 @@
+{
+  "id": "Wysteria-Q-73466",
+  "lang": "73466",
+  "giver": {
+    "persona": "PA-HUB-NPC22",
+    "zone": "Wysteria/PA_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 25,
+  "reward": {
+    "xp": 1075,
+    "gold": 85
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Hub"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PA-Goblin-R5.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000971",
+      "zone": "Wysteria/PA_Hub",
+      "descriptor": "WizQst73466_00000006",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Hub"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Hub"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC22": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Pa_Student_G_05_NPC.dds",
+      "template_id": 465163
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lost_Sheep_(Wysteria)",
+    "from": "archive",
+    "timestamp": "20240118172512"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Eloise's House",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Eloise's Door",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Find Missing Students",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Detour Guide replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 25
+}

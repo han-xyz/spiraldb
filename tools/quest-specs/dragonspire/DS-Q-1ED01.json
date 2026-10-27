@@ -1,0 +1,78 @@
+{
+  "id": "DS-Q-1ED01",
+  "lang": "1ED01",
+  "giver": {
+    "persona": "DS-LIB2-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+  },
+  "requires": [
+    "DS-LIB-C01-003"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 1740,
+    "gold": 103
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Draconian-Warrior-Tan-R6.AdjRef",
+        "Draconian-Caster-Blue-R6.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00000472",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+    }
+  ],
+  "personas": {
+    "DS-LIB2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_2_Ghost_NPC.dds",
+      "template_id": 126297
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Master_Blaster",
+    "from": "archive",
+    "timestamp": "20260713183225"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB2-C01-001"
+}

@@ -82,6 +82,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z02_Zanadu"
+    },
+    {
       "type": "usage",
       "items": [
         "EM-DJBooth.AdjRef"
@@ -101,7 +105,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:A_Little_Khan_and_Dance",
     "from": "archive",
-    "timestamp": "20231126100053"
+    "timestamp": "20250905115644"
   },
   "needs_review": [
     {
@@ -110,8 +114,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Dance Floor",
+      "field": "goal.waypoint (current zone)",
+      "value": "Dance Floor",
       "blocking": false
     },
     {

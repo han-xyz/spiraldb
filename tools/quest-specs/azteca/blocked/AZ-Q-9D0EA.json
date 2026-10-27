@@ -45,9 +45,17 @@
   },
   "goals": [
     {
-      "type": "persona",
-      "persona": "AZ-COMET-NPC01",
-      "zone": "Azteca/Interiors/AZ_Z11_PyramidFallingStar_Room03",
+      "type": "bounty",
+      "mobs": [
+        "KR_Morganth.AdjRef",
+        "KR_MorgantheBlue_A_Bossfight.AdjRef",
+        "KR_MorgantheBnW_A_Bossfight.AdjRef",
+        "KR_MorgantheGrey_A_Bossfight.AdjRef",
+        "KR_MorganthePurple_A_Bossfight.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001069",
+      "zone": "Azteca/AZ_Z00_Zocalo",
       "loc": "ZoneLocName_643250"
     },
     {
@@ -58,10 +66,6 @@
     }
   ],
   "personas": {
-    "AZ-COMET-NPC01": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morganthe.dds",
-      "template_id": 701161
-    },
     "AZ-ZOCOLO-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Parrot_Shaman_C_NPC.dds",
       "template_id": 643252
@@ -89,14 +93,14 @@
       "blocking": false
     },
     {
-      "field": "dialogs",
-      "value": "speaker and role guessed from the line text",
+      "field": "goal.mobs (other folder)",
+      "value": "Morganthe: ObjectData/KR",
       "blocking": false
     },
     {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Azteca/Interiors/AZ_Z11_PyramidFallingStar_Room03",
-      "blocking": true
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

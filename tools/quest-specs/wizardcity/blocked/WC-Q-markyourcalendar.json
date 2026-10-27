@@ -43,6 +43,17 @@
       "loc": "ZoneLocName_9005"
     },
     {
+      "type": "usage",
+      "items": [
+        "AZ-WHEELSUN.AdjRef",
+        "AZ-WHEELSUNBROKEN.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizItems_00001930",
+      "loc": "ZoneLocName_9005"
+    },
+    {
       "type": "persona",
       "persona": "AV-HUB-NPC02",
       "zone": "Avalon/AV_Z00_Hub",
@@ -82,7 +93,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Vortigern's Tower, High Road",
       "blocking": false
     },
@@ -92,9 +103,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Wheel of the Sun",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Wheel of the Sun: ObjectData/AZ",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",

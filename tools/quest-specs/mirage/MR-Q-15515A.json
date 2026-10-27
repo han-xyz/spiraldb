@@ -2,7 +2,7 @@
   "id": "MR-Q-15515A",
   "lang": "15515A",
   "giver": {
-    "persona": "MR-RUBAL-NPC08-B",
+    "persona": "MR-RUBAL-NPC08",
     "zone": "Mirage/MR_Z04_RubalWastes"
   },
   "requires": [],
@@ -62,9 +62,9 @@
       "portrait": "GUI/NpcPortraits/Portraits_Cat_StoutF_A_NPC.dds",
       "template_id": 1397105
     },
-    "MR-RUBAL-NPC08-B": {
+    "MR-RUBAL-NPC08": {
       "portrait": "GUI/NpcPortraits/Portrait_Mongoose_Warrior_C_NPC.dds",
-      "template_id": 1397074
+      "template_id": 1397068
     }
   },
   "source": {

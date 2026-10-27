@@ -108,6 +108,10 @@
       "loc": "ZoneLocName_1560318"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest"
+    },
+    {
       "type": "persona",
       "persona": "WL-EUC-NPC01-A",
       "zone": "Wallaru/WL_Z07_EucalyptusForest",
@@ -143,8 +147,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Camp",
+      "field": "goal.waypoint (current zone)",
+      "value": "Camp",
       "blocking": false
     },
     {

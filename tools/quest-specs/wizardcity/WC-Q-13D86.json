@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Unicorn"
   },
   "requires": [
-    "WC-Q-13D91"
+    "WC-ST01-C02-002"
   ],
   "mainline": false,
   "level": 5,
@@ -68,5 +68,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-ST01-C03-003"
 }

@@ -2,8 +2,8 @@
   "id": "KM-Q-16B554",
   "lang": "16B554",
   "giver": {
-    "persona": "KM-KCITY-NPC21",
-    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+    "persona": "KM-SWEET-NPC01",
+    "zone": "Karamelle/KM_Z04_Sweetzburg"
   },
   "requires": [
     "KM-Q-16B550"
@@ -106,47 +106,55 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "KM-SWEET-NPC02-B",
+      "persona": "KM-SWEET-NPC02",
       "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
       "type": "persona",
-      "persona": "KM-SWEET-NPC02-B",
+      "persona": "KM-SWEET-NPC02",
       "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
       "type": "persona",
-      "persona": "KM-SWEET-NPC02-B",
+      "persona": "KM-SWEET-NPC02",
       "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z04_Sweetzburg"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z04_Sweetzburg"
+    },
+    {
       "type": "persona",
-      "persona": "KM-KCITY-NPC17",
-      "zone": "Karamelle/Interiors/KM_Z00_CavityDining",
+      "persona": "KM-SWEET-NPC03",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Karamelle/Interiors/KM_Z00_NanasHQ",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     }
   ],
   "personas": {
-    "KM-KCITY-NPC17": {
-      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Miner_A_NPC.dds",
-      "template_id": 1513260
-    },
-    "KM-KCITY-NPC21": {
+    "KM-SWEET-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
-      "template_id": 1513270
+      "template_id": 1488209
     },
-    "KM-SWEET-NPC02-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Worker_B_NPC.dds",
-      "template_id": 1488214
+    "KM-SWEET-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Worker_A_NPC.dds",
+      "template_id": 1488213
+    },
+    "KM-SWEET-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Miner_A_NPC.dds",
+      "template_id": 1488216
     }
   },
   "source": {
@@ -156,7 +164,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Nana's Ice Cream Parlor",
       "blocking": false
     },
@@ -166,8 +174,8 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Sweetzburg Square",
+      "field": "goal.waypoint (current zone)",
+      "value": "Sweetzburg Square",
       "blocking": false
     },
     {

@@ -4,8 +4,8 @@
   "title": "QuestTitle_18532B",
   "auto_start": true,
   "giver": {
-    "persona": "WL-DREAM-NPC04-A",
-    "zone": "Wallaru/WL_Z04_TheDreaming"
+    "persona": "WL-RANCH-NPC05",
+    "zone": "Wallaru/WL_Z06_CollieRanch"
   },
   "requires": [
     "WL-Q-1852DD"
@@ -51,14 +51,22 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Koala_JudgeF_B_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004412",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
     },
     {
       "type": "bounty",
@@ -67,8 +75,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004413",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
     },
     {
       "type": "bounty",
@@ -77,14 +89,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004414",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     }
   ],
   "personas": {
-    "WL-DREAM-NPC04-A": {
+    "WL-RANCH-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
-      "template_id": 1560426
+      "template_id": 1594073
     }
   },
   "source": {
@@ -99,18 +111,18 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the First Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "First Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Last Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Last Room",
       "blocking": false
     },
     {

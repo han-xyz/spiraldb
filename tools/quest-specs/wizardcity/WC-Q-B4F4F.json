@@ -6,7 +6,7 @@
     "zone": "WizardCity/Interiors/WC_SchoolMyth"
   },
   "requires": [
-    "WC-Q-173194",
+    "WC-CYCLOPS-MAIN-005",
     "MS-PLAGHub-C01-003"
   ],
   "mainline": false,
@@ -85,5 +85,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-PreAQ-C01-001"
 }

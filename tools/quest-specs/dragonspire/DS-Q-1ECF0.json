@@ -1,0 +1,72 @@
+{
+  "id": "DS-Q-1ECF0",
+  "lang": "1ECF0",
+  "giver": {
+    "persona": "DS-LIB-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_Library_Interior"
+  },
+  "requires": [
+    "DS-LIB1-C01-008"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 705,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-LIB2-NPC02",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+    }
+  ],
+  "personas": {
+    "DS-LIB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_base_1_Ghost_NPC.dds",
+      "template_id": 126293
+    },
+    "DS-LIB2-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_1_Ghost_NPC.dds",
+      "template_id": 126298
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Warkeeper",
+    "from": "archive",
+    "timestamp": "20260615223407"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB-C01-003"
+}

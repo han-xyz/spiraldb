@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z01_WildLands"
   },
   "requires": [
-    "LM-Q-173219"
+    "LM-Q-1736B7"
   ],
   "mainline": true,
   "level": 132,
@@ -128,11 +128,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "From One Darkness to the Next replaced by LM-Q-173219",
       "blocking": false
     }
   ]

@@ -165,6 +165,10 @@
       "loc": "ZoneLocName_1560535"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z04_TheDreaming"
+    },
+    {
       "type": "persona",
       "persona": "WL-DREAM-NPC01-A",
       "zone": "Wallaru/WL_Z04_TheDreaming",
@@ -195,8 +199,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Wobbegong",
+      "field": "goal.waypoint (current zone)",
+      "value": "Wobbegong",
       "blocking": false
     },
     {

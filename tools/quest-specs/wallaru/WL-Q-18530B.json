@@ -4,8 +4,8 @@
   "title": "QuestTitle_18530A",
   "auto_start": true,
   "giver": {
-    "persona": "WL-HOPE-NPC34",
-    "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse"
+    "persona": "WL-RANCH-NPC01",
+    "zone": "Wallaru/WL_Z06_CollieRanch"
   },
   "requires": [
     "WL-Q-1852CD"
@@ -114,8 +114,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004405",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
     },
     {
       "type": "bounty",
@@ -125,8 +129,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004405",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
     },
     {
       "type": "bounty",
@@ -135,14 +143,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004406",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     }
   ],
   "personas": {
-    "WL-HOPE-NPC34": {
+    "WL-RANCH-NPC01": {
       "portrait": "GUI/NpcPortraits/Koala_JudgeF_A_NPC.dds",
-      "template_id": 1608377
+      "template_id": 1594052
     }
   },
   "source": {
@@ -157,13 +165,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to next field",
+      "field": "goal.waypoint (current zone)",
+      "value": "next field",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to next field",
+      "field": "goal.waypoint (current zone)",
+      "value": "next field",
       "blocking": false
     },
     {

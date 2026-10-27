@@ -1,0 +1,85 @@
+{
+  "id": "DS-Q-1EDA1",
+  "lang": "1EDA1",
+  "giver": {
+    "persona": "DS-ACAD2-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+  },
+  "requires": [
+    "DS-ACAD2-C01-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 1895,
+    "gold": 128
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A3_Kings/Interiors/DS_Amphitheatre_T7",
+      "volume": "Forum Anteroom"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "DS_CrystalStand_ACAD2-C01-001.AdjRef",
+        "DS_KnowledgeCrystal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre",
+      "descriptor": "WizardGameObjects_00000131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-ACAD2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_soldier_3_Ghost_NPC.dds",
+      "template_id": 126326
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Read_the_Manual",
+    "from": "archive",
+    "timestamp": "20260706213749"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD2-C01-002"
+}

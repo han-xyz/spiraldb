@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Triton"
   },
   "requires": [
-    "WC-Q-1627A1"
+    "WC-TRITON-SIDE-001"
   ],
   "mainline": false,
   "level": 5,
@@ -78,5 +78,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-TRITON-SIDE-002"
 }

@@ -2,8 +2,8 @@
   "id": "MR-Q-2A4B5",
   "lang": "2A4B5",
   "giver": {
-    "persona": "MR-ALKA-NPC07",
-    "zone": "Mirage/Interiors/MR_Z01_OverlordsOssuary"
+    "persona": "MR-CHRO-NPC03",
+    "zone": "Mirage/MR_Z10_Chronoverge"
   },
   "requires": [],
   "mainline": true,
@@ -51,7 +51,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002516",
-      "zone": "",
+      "zone": "Mirage/MR_Z10_Chronoverge",
       "loc": "ZoneLocName_1397008"
     },
     {
@@ -60,8 +60,12 @@
         "MR_AgoutiChronoshard.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Mirage/MR_Z10_Chronoverge",
       "loc": "ZoneLocName_1397008"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Mirage/MR_Z10_Chronoverge"
     },
     {
       "type": "bounty",
@@ -70,7 +74,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002515",
-      "zone": "",
+      "zone": "Mirage/MR_Z10_Chronoverge",
       "loc": "ZoneLocName_1397008"
     },
     {
@@ -79,8 +83,12 @@
         "MR_AridianChronoshard.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Mirage/MR_Z10_Chronoverge",
       "loc": "ZoneLocName_1397008"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Mirage/MR_Z10_Chronoverge"
     },
     {
       "type": "bounty",
@@ -89,7 +97,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002514",
-      "zone": "",
+      "zone": "Mirage/MR_Z10_Chronoverge",
       "loc": "ZoneLocName_1397008"
     },
     {
@@ -99,30 +107,30 @@
         "MR_YakhalChronoshard.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Mirage/MR_Z10_Chronoverge",
       "loc": "ZoneLocName_1397008"
     },
     {
       "type": "persona",
-      "persona": "MR-CARA-NPC21",
-      "zone": "Mirage/MR_Z00_Hub",
-      "loc": "ZoneLocName_1254040",
+      "persona": "MR_StandIn_Mellori_NPC",
+      "zone": "Mirage/MR_Z10_Chronoverge",
+      "loc": "ZoneLocName_1397008",
       "completion": [
         {
-          "speaker": "MR-CARA-NPC21",
+          "speaker": "MR_StandIn_Mellori_NPC",
           "line": "00000005"
         }
       ]
     }
   ],
   "personas": {
-    "MR-ALKA-NPC07": {
+    "MR-CHRO-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_A_NPC.dds",
-      "template_id": 1365010
+      "template_id": 1401016
     },
-    "MR-CARA-NPC21": {
+    "MR_StandIn_Mellori_NPC": {
       "portrait": "GUI/NpcPortraits/Human_Mellori_B_NPC.dds",
-      "template_id": 1378241
+      "template_id": 1365084
     }
   },
   "source": {
@@ -142,7 +150,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "West Time Dunes",
       "blocking": false
     },
@@ -152,7 +160,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "South Time Dunes",
       "blocking": false
     },
@@ -172,5 +180,6 @@
       "blocking": false
     }
   ],
-  "min_level": 105
+  "min_level": 105,
+  "captured": "MB-XTRA-C04-003"
 }

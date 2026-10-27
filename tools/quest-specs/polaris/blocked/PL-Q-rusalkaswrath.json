@@ -5,13 +5,20 @@
     "zone": "Arcanum/AR_Z01_Hub"
   },
   "requires": [
+    {
+      "school": "Storm"
+    },
     "PL-Q-14DC09"
   ],
+  "min_level": 108,
   "mainline": false,
-  "level": 100,
+  "level": 108,
   "reward": {
     "xp": 287770,
-    "gold": 1440
+    "gold": 1440,
+    "spells": [
+      "Rusalka's Wrath"
+    ]
   },
   "dialogs": {
     "prep": [],
@@ -21,6 +28,10 @@
     {
       "type": "persona",
       "persona": "AR-ARC-NPC11",
+      "zone": "Arcanum/AR_Z01_Hub"
+    },
+    {
+      "type": "waypoint",
       "zone": "Arcanum/AR_Z01_Hub"
     },
     {
@@ -82,7 +93,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Arbiter's Arena",
       "blocking": false
     },

@@ -1,0 +1,89 @@
+{
+  "id": "Wysteria-Q-71925",
+  "lang": "71925",
+  "giver": {
+    "persona": "PA-HUB-NPC03",
+    "zone": "Wysteria/Interiors/PA_Headmistress"
+  },
+  "requires": [
+    "Wysteria-Q-71924"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 250,
+    "gold": 20
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Hub"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/Interiors/PA_Headmistress",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Belladonna_Crisp.dds",
+      "template_id": 465135
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Seek_Out_the_Source",
+    "from": "archive",
+    "timestamp": "20231124102255"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Fount of Magic",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

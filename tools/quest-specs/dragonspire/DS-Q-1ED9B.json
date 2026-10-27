@@ -1,0 +1,81 @@
+{
+  "id": "DS-Q-1ED9B",
+  "lang": "1ED9B",
+  "giver": {
+    "persona": "DS-ACAD1-NPC04",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+  },
+  "requires": [
+    "DS-ACAD-C01-002"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 840,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DS_SpiderEggSack.AdjRef"
+      ],
+      "count": 8,
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove",
+      "descriptor": "WizardGameObjects_00000105"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+    }
+  ],
+  "personas": {
+    "DS-ACAD1-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_longhair_2_Ghost_NPC.dds",
+      "template_id": 126325
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Clutch_of_the_Spider",
+    "from": "archive",
+    "timestamp": "20240409061158"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD1-C05-001"
+}

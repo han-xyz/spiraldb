@@ -2,8 +2,8 @@
   "id": "PL-Q-14E7DD",
   "lang": "14E7DD",
   "giver": {
-    "persona": "PL-KATA-NPC03-B",
-    "zone": "Polaris/Interiors/PL_Z06_TitanPod"
+    "persona": "PL-KATA-NPC03",
+    "zone": "Polaris/PL_Z06_KatabaIceblock"
   },
   "requires": [
     "PL-Q-14E7D4"
@@ -78,9 +78,9 @@
     }
   ],
   "personas": {
-    "PL-KATA-NPC03-B": {
+    "PL-KATA-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Seal_Captain_A_NPC.dds",
-      "template_id": 1370071
+      "template_id": 1370010
     },
     "PL-KATA-NPC07-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_Dockworker_A_NPC.dds",

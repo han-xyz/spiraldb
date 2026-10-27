@@ -1,0 +1,126 @@
+{
+  "id": "WC-Q-B4F5A",
+  "lang": "B4F5A",
+  "giver": {
+    "persona": "AQ-HUB-NPC01",
+    "zone": "Aquila/AQ_Z00_Hub"
+  },
+  "requires": [
+    "WC-PreAQ-C02-002"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 330,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AQ-HUB-NPC02",
+      "zone": "Aquila/AQ_Z00_Hub"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Aquila/AQ_Z00_Hub",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AQ-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Satyr_Druid_A_NPC.dds",
+      "template_id": 741209
+    },
+    "AQ-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_DruidF_D_NPC.dds",
+      "template_id": 741211
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Garden_of_Evening",
+    "from": "archive",
+    "timestamp": "20231126101752"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Silenus: AQ-HUB-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Silenus is placed in Aquila/AQ_Z00_Hub",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Aegle: AQ-HUB-NPC02 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Silenus: AQ-HUB-NPC01 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

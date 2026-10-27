@@ -1,0 +1,96 @@
+{
+  "id": "DS-Q-1ED1C",
+  "lang": "1ED1C",
+  "giver": {
+    "persona": "DS-LIB3-NPC02",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+  },
+  "requires": [
+    "DS-LIB3-C02-004"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 4750,
+    "gold": 108
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DS_TimeCrystal.AdjRef",
+        "DS_TimeCrystalTP.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm",
+      "descriptor": "WizardGameObjects_00000117"
+    },
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-LIB3-NPC01",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+    }
+  ],
+  "personas": {
+    "DS-LIB3-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_skirt_4_Ghost_NPC.dds",
+      "template_id": 126305
+    },
+    "DS-LIB3-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_base_3_Ghost_NPC.dds",
+      "template_id": 126306
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Forward..._Into_History!",
+    "from": "archive",
+    "timestamp": "20260618205513"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Find the Vault Keeper Key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB3-C02-005"
+}

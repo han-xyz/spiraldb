@@ -73,6 +73,10 @@
       "loc": "ZoneLocName_227140"
     },
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Hub"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Hub",
@@ -97,7 +101,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "The Lunarium",
       "blocking": false
     },

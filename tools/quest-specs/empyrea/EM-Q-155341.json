@@ -2,7 +2,7 @@
   "id": "EM-Q-155341",
   "lang": "155341",
   "giver": {
-    "persona": "EM-AERI-NPC03-B",
+    "persona": "EM-AERI-NPC03",
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
   "requires": [
@@ -90,7 +90,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC02-D",
+      "persona": "EM-AERI-NPC02",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
@@ -114,7 +114,7 @@
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC02-D",
+      "persona": "EM-AERI-NPC02",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
@@ -128,28 +128,28 @@
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC06-B",
+      "persona": "EM-AERI-NPC06",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB",
       "completion": [
         {
-          "speaker": "EM-AERI-NPC06-B",
+          "speaker": "EM-AERI-NPC06",
           "line": "00000014"
         }
       ]
     }
   ],
   "personas": {
-    "EM-AERI-NPC02-D": {
+    "EM-AERI-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Crewman_A_NPC.dds",
-      "template_id": 1397728
+      "template_id": 1397524
     },
-    "EM-AERI-NPC03-B": {
+    "EM-AERI-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
-      "template_id": 1397548
+      "template_id": 1397525
     },
-    "EM-AERI-NPC06-B": {
+    "EM-AERI-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
-      "template_id": 1397725
+      "template_id": 1397531
     }
   },
   "source": {

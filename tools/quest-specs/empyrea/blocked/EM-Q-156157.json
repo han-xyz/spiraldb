@@ -2,8 +2,8 @@
   "id": "EM-Q-156157",
   "lang": "156157",
   "giver": {
-    "persona": "EM-AERI-NPC17",
-    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    "persona": "EM-SEP-002",
+    "zone": "Empyrea/EM_Z05_Sepidious"
   },
   "requires": [
     "EM-Q-1553EA"
@@ -95,7 +95,7 @@
         "EM-SulphurBarrel.AdjRef"
       ],
       "count": 3,
-      "zone": "",
+      "zone": "Empyrea/EM_Z05_Sepidious",
       "descriptor": "WizQst156157_00000001"
     },
     {
@@ -104,13 +104,13 @@
         "EM-CharcoalBarrel.AdjRef"
       ],
       "count": 3,
-      "zone": "",
+      "zone": "Empyrea/EM_Z05_Sepidious",
       "descriptor": "WizQst156157_00000002"
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC01-B",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "persona": "EM-SEP-003",
+      "zone": "Empyrea/EM_Z05_Sepidious"
     },
     {
       "type": "usage",
@@ -118,37 +118,37 @@
         "EM-Blockage.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Empyrea/EM_Z05_Sepidious",
       "descriptor": "WizQst156157_00000005"
     },
     {
       "type": "persona",
-      "persona": "EM-NIMB-NPC16",
-      "zone": "Empyrea/Interiors/EM_Z07_ControlRoom",
+      "persona": "EM-SEP-001",
+      "zone": "Empyrea/EM_Z05_Sepidious",
       "completion": [
         {
-          "speaker": "EM-NIMB-NPC16",
+          "speaker": "EM-SEP-001",
           "line": "00000020"
         },
         {
-          "speaker": "EM-NIMB-NPC16",
+          "speaker": "EM-SEP-001",
           "line": "00000029"
         }
       ]
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
+    "EM-SEP-001": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pirate_Cabalist_A_NPC.dds",
+      "template_id": 1401196
     },
-    "EM-AERI-NPC17": {
+    "EM-SEP-002": {
       "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
-      "template_id": 1397735
+      "template_id": 1401197
     },
-    "EM-NIMB-NPC16": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mutant_Dynt_A_NPC.dds",
-      "template_id": 1413353
+    "EM-SEP-003": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1401198
     }
   },
   "source": {

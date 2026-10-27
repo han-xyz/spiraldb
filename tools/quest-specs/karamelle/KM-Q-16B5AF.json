@@ -2,8 +2,8 @@
   "id": "KM-Q-16B5AF",
   "lang": "16B5AF",
   "giver": {
-    "persona": "KM-BLACK-NPC09",
-    "zone": "Karamelle/KM_Z08_LicoriceForest"
+    "persona": "KM-SWEET-NPC05",
+    "zone": "Karamelle/KM_Z04_Sweetzburg"
   },
   "requires": [
     "KM-Q-16B559"
@@ -69,26 +69,30 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z04_Sweetzburg"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gnome_Burglar_A_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00003730",
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Karamelle/KM_Z08_LicoriceForest",
-      "loc": "ZoneLocName_1513103"
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
+      "loc": "ZoneLocName_1488252"
     }
   ],
   "personas": {
-    "KM-BLACK-NPC09": {
+    "KM-SWEET-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Hamster_ImperfectF_A_NPC.dds",
-      "template_id": 1513110
+      "template_id": 1488220
     }
   },
   "source": {
@@ -98,7 +102,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Jamburglar's Hideout",
       "blocking": false
     },

@@ -46,6 +46,10 @@
       "count": 1,
       "target": "WizardMobs_00002056",
       "zone": ""
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/Interiors/WC_Library"
     }
   ],
   "personas": {},
@@ -96,9 +100,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find Phylactery",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.persona",

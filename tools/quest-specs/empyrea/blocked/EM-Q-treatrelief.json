@@ -36,6 +36,10 @@
       "loc": "ZoneLocName_1254355"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z02_Zanadu"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Alphoi_Warrior_C_02.AdjRef"
@@ -70,7 +74,7 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Byrin's Vault, Zanadu Sewers",
       "blocking": false
     }

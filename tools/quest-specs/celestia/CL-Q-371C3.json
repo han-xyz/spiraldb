@@ -75,6 +75,10 @@
       "loc": "ZoneLocName_1161805"
     },
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "Cl-SharkWarrior-GreyShoulder-BossR10-2.AdjRef"
@@ -119,7 +123,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Starkwave's Lair",
       "blocking": false
     },

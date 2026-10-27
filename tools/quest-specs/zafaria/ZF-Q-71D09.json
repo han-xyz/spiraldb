@@ -41,13 +41,17 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "ZF-GorillaMiniBoss-01-R11.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00001014",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
       "loc": "ZoneLocName_465256"
     },
     {
@@ -80,7 +84,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Ogun's Hut",
       "blocking": false
     },

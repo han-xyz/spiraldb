@@ -108,6 +108,17 @@
       "zone": ""
     },
     {
+      "type": "usage",
+      "items": [
+        "AQ-Token-Legion.AdjRef",
+        "AQ-Token-Legion2.AdjRef",
+        "AQ-Token-Legion3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00008318"
+    },
+    {
       "type": "persona",
       "persona": "AQ-OLYM-NPC01-B",
       "zone": "Aquila/AQ_Z00_Hub"
@@ -125,6 +136,17 @@
       "count": 1,
       "target": "WizardMobs_00001512",
       "zone": ""
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AQ-Token-Legion.AdjRef",
+        "AQ-Token-Legion2.AdjRef",
+        "AQ-Token-Legion3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00008318"
     },
     {
       "type": "persona",
@@ -146,6 +168,17 @@
       "zone": ""
     },
     {
+      "type": "usage",
+      "items": [
+        "AQ-Token-Legion.AdjRef",
+        "AQ-Token-Legion2.AdjRef",
+        "AQ-Token-Legion3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00008318"
+    },
+    {
       "type": "persona",
       "persona": "AQ-OLYM-NPC01-B",
       "zone": "Aquila/AQ_Z00_Hub"
@@ -153,6 +186,10 @@
     {
       "type": "persona",
       "persona": "AQ-OLYM-NPC02",
+      "zone": "Aquila/AQ_Z01_MountOlympus"
+    },
+    {
+      "type": "waypoint",
       "zone": "Aquila/AQ_Z01_MountOlympus"
     },
     {
@@ -247,12 +284,17 @@
       "blocking": false
     },
     {
+      "field": "giver (other world)",
+      "value": "Silenus is placed in Aquila/AQ_Z00_Hub",
+      "blocking": true
+    },
+    {
       "field": "goal.persona (other world)",
       "value": "Athena Battle Sight: AQ-OLYM-NPC01-B from ObjectData/AQ",
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Sun Chamber",
       "blocking": false
     },
@@ -262,9 +304,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Legion Token",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Legion Token: ObjectData/AQ",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
@@ -272,7 +314,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Moon Chamber",
       "blocking": false
     },
@@ -282,9 +324,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Legion Token",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Legion Token: ObjectData/AQ",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
@@ -292,7 +334,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Sky Balcony",
       "blocking": false
     },
@@ -302,9 +344,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Legion Token",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Legion Token: ObjectData/AQ",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
@@ -317,9 +359,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Solve Puzzle Solution: Choose the Carthaginian Elephant to defeat the Minotaur Warrior Choose the Minotaur Warrior to defeat the Ophidian Archer Choose the Ophidian Archer to defeat the Carthaginian Elephant Warrior",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
@@ -327,7 +369,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hall of the Watchful Eye",
       "blocking": false
     },
@@ -352,7 +394,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hall of Battle",
       "blocking": false
     },
@@ -362,7 +404,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Throne Room",
       "blocking": false
     },

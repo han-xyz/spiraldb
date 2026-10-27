@@ -3,7 +3,7 @@
   "lang": "188A68",
   "title": "QuestTitle_1889FB",
   "giver": {
-    "persona": "WL-BILLA-NPC04-B",
+    "persona": "WL-BILLA-NPC04",
     "zone": "Wallaru/WL_Z08_BillabongResort"
   },
   "requires": [
@@ -110,6 +110,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z08_BillabongResort"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Koala_Giant_A_01.AdjRef",
@@ -119,6 +123,10 @@
       "target": "WizardMobs_00004421",
       "zone": "Wallaru/WL_Z08_BillabongResort",
       "loc": "ZoneLocName_1608171"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z08_BillabongResort"
     },
     {
       "type": "bounty",
@@ -133,6 +141,10 @@
       "loc": "ZoneLocName_1608171"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z08_BillabongResort"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Frog_Humangoish_C_01.AdjRef"
@@ -144,9 +156,9 @@
     }
   ],
   "personas": {
-    "WL-BILLA-NPC04-B": {
+    "WL-BILLA-NPC04": {
       "portrait": "GUI/NpcPortraits/Koala_JudgeF_C_NPC.dds",
-      "template_id": 1608300
+      "template_id": 1608179
     }
   },
   "source": {
@@ -162,18 +174,18 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

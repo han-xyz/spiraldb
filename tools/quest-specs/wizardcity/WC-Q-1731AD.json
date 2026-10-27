@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_HauntedCave"
   },
   "requires": [
-    "WC-Q-1731AB"
+    "WC-OLDE-MAIN-003A"
   ],
   "mainline": true,
   "level": 5,
@@ -101,5 +101,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-HAUNTED-MAIN-001"
 }

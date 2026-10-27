@@ -2,8 +2,8 @@
   "id": "EM-Q-153BCC",
   "lang": "153BCC",
   "giver": {
-    "persona": "EM-OUTER-NPC07-B",
-    "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall"
+    "persona": "EM-OUTER-NPC07-C",
+    "zone": "Empyrea/Interiors/EM_Z03_IceDwarfBunker"
   },
   "requires": [
     "EM-Q-153BC7"
@@ -114,10 +114,18 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z03_OuterAthanor"
+    },
+    {
       "type": "persona",
       "persona": "EM-INNER-NPC05",
       "zone": "Empyrea/Interiors/EM_Z04_Praesidium",
       "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z04_Praesidium"
     },
     {
       "type": "persona",
@@ -135,9 +143,9 @@
       "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_D_NPC.dds",
       "template_id": 1391566
     },
-    "EM-OUTER-NPC07-B": {
+    "EM-OUTER-NPC07-C": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
-      "template_id": 1391504
+      "template_id": 1391561
     }
   },
   "source": {
@@ -147,12 +155,12 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Streamportal",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Steam Vent Control Room",
       "blocking": false
     },

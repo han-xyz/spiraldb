@@ -2,7 +2,7 @@
   "id": "EM-Q-153B7F",
   "lang": "153B7F",
   "giver": {
-    "persona": "EM-OUTER-NPC02-C",
+    "persona": "EM-OUTER-NPC02",
     "zone": "Empyrea/EM_Z03_OuterAthanor"
   },
   "requires": [
@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z03_OuterAthanor"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Dwarf_FireSoldier_A_01.AdjRef"
@@ -60,19 +64,19 @@
     },
     {
       "type": "persona",
-      "persona": "EM-INNER-NPC01",
-      "zone": "Empyrea/EM_Z04_InnerAthanor",
-      "loc": "ZoneLocName_1413071"
+      "persona": "EM-OUTER-NPC14",
+      "zone": "Empyrea/Interiors/EM_Z03_IceAccessTunnel",
+      "loc": "ZoneLocName_1391567"
     }
   ],
   "personas": {
-    "EM-INNER-NPC01": {
-      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_A_NPC.dds",
-      "template_id": 1413076
-    },
-    "EM-OUTER-NPC02-C": {
+    "EM-OUTER-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1391518
+      "template_id": 1391490
+    },
+    "EM-OUTER-NPC14": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_A_NPC.dds",
+      "template_id": 1391519
     }
   },
   "source": {
@@ -82,7 +86,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Access Tunnel",
       "blocking": false
     },

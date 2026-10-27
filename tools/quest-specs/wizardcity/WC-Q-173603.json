@@ -1,0 +1,652 @@
+{
+  "id": "WC-Q-173603",
+  "lang": "173603",
+  "giver": {
+    "persona": "WC-RAV-NPC07",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 40000,
+    "gold": 500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000054"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000055"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000056"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000058"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000059"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000060"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000061"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000062"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000063"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000064"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000065"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000066"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000067"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000068"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000070"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000071"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000074"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000075"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000076"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000077"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000078"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000079"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000080"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000081"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000082"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000083"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000084"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000085"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000087"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000095"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000096"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000097"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000098"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC18",
+      "zone": "WizardCity/WC_Ravenwood_Teleporter",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood_Teleporter"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-HUB-NPC16",
+      "zone": "Marleybone/MB_BigBen/MB_Museum",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Marleybone/MB_BigBen/MB_Museum"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Golem_Steel_A_01.AdjRef",
+        "LM_Golem_Steel_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003821",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-HUB-NPC16",
+      "zone": "Marleybone/MB_BigBen/MB_Museum",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-RAV-NPC18",
+      "zone": "WizardCity/WC_Ravenwood_Teleporter",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood_Teleporter"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-FROZ-NPC02-B",
+      "zone": "Polaris/PL_Z03_IcefallPassage",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Polaris/PL_Z03_IcefallPassage"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_EyeBot_A_01_Death.AdjRef",
+        "LM_EyeBot_A_01_Myth.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003822",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Ravenwood"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-PanelControl.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizItems_00002073",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KT-SE-Quartermane.AdjRef",
+        "KT-SE-SELE-NPC-07.AdjRef",
+        "KT-SE-SELE-NPC-07B.AdjRef",
+        "KT-SE-TOMBS-NPC13-A.AdjRef",
+        "KT-SE-TOMBS-NPC13-B.AdjRef",
+        "KT-SE-TOMBS-StandIn-StallionQuartermane_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "NPCs_01749127",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-SE-TOMBS-NPC13-A",
+      "zone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I02_TombLight_Int",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "MB-HUB-NPC16",
+      "zone": "Marleybone/MB_BigBen/MB_Museum",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Marleybone/MB_BigBen/MB_Museum"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Dog_FormanF_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003823",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-SE-TOMBS-NPC13-A",
+      "zone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I02_TombLight_Int",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I02_TombLight_Int"
+    },
+    {
+      "type": "persona",
+      "persona": "KT-SE-TOMBS-NPC13-A",
+      "zone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I02_TombLight_Int",
+      "loc": "ZoneLocName_9005",
+      "completion": [
+        {
+          "speaker": "KT-SE-TOMBS-NPC13-A",
+          "line": "00000073"
+        },
+        {
+          "speaker": "KT-SE-TOMBS-NPC13-A",
+          "line": "00000086"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KT-SE-TOMBS-NPC13-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Horse_Explorer_A_NPC.dds",
+      "template_id": 1656162
+    },
+    "MB-HUB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_CuratorF_NPC.dds",
+      "template_id": 1521158
+    },
+    "PL-FROZ-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Yeti_Explorer_A_NPC.dds",
+      "template_id": 1217913
+    },
+    "WC-RAV-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Bartleby.dds",
+      "template_id": 38230
+    },
+    "WC-RAV-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Lincoln_A_NPC.dds",
+      "template_id": 1521157
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:La_Mort_Et_Lemuria",
+    "from": "archive",
+    "timestamp": "20240322075210"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Old Is New Again",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Royal Museum",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Conservator Olivia: MB-HUB-NPC16 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Museum Storage Warehouse",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Rampaging Potbelly: ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Conservator Olivia: MB-HUB-NPC16 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Coleridge's Tiki Bar, Walruskberg",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Zoot: PL-FROZ-NPC02-B from ObjectData/PL",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Madness Mountain, Forlorn Tayg",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Crazy Eye: ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Investigate Lab",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Control Panel: ObjectData/PL",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Stallion Quartermane: ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Stallion Quartermane: KT-SE-TOMBS-NPC13-A from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Conservator Olivia: MB-HUB-NPC16 from ObjectData/MB",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Quartermane Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter Quartermane Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Rogue Engineer: ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Stallion Quartermane: KT-SE-TOMBS-NPC13-A from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Arcanum",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Stallion Quartermane: KT-SE-TOMBS-NPC13-A from ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Old Is New Again replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

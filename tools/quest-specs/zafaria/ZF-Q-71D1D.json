@@ -39,6 +39,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "ZF-ShadowWeaver-R11-Boss-01.AdjRef",
@@ -46,7 +50,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001016",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
       "loc": "ZoneLocName_465256"
     },
     {
@@ -75,8 +79,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Unusual Looking Rock",
+      "field": "goal.waypoint (current zone)",
+      "value": "Unusual Looking Rock",
       "blocking": false
     },
     {

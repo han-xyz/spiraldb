@@ -59,6 +59,10 @@
       "loc": "ZoneLocName_1391567"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z03_OuterAthanor"
+    },
+    {
       "type": "usage",
       "items": [
         "EM-BreachPlug.AdjRef"
@@ -88,7 +92,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Ice Cutting Shed",
       "blocking": false
     },

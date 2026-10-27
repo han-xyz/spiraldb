@@ -2,8 +2,8 @@
   "id": "AV-Q-834E8",
   "lang": "834E8",
   "giver": {
-    "persona": "AV-CATA-NPC01",
-    "zone": "Avalon/AV_Z10_Catacombs"
+    "persona": "AV-DEEP-NPC01",
+    "zone": "Avalon/AV_Z09_DeepWater"
   },
   "requires": [
     "AV-Q-834E7"
@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z09_DeepWater"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Giant-Boss-R12-02.AdjRef",
@@ -60,7 +64,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001219",
-      "zone": "",
+      "zone": "Avalon/AV_Z09_DeepWater",
       "loc": "ZoneLocName_537857"
     },
     {
@@ -72,21 +76,21 @@
         "AV-Deep-Teleporter-Piece04.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Avalon/AV_Z09_DeepWater",
       "descriptor": "Items_00006570",
       "loc": "ZoneLocName_537857"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/AV_Z10_Catacombs",
+      "zone": "Avalon/AV_Z09_DeepWater",
       "loc": "ZoneLocName_537857"
     }
   ],
   "personas": {
-    "AV-CATA-NPC01": {
+    "AV-DEEP-NPC01": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
-      "template_id": 592086
+      "template_id": 537828
     }
   },
   "source": {
@@ -101,7 +105,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Diabhal Cave",
       "blocking": false
     },

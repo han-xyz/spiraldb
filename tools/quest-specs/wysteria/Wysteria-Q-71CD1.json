@@ -1,0 +1,98 @@
+{
+  "id": "Wysteria-Q-71CD1",
+  "lang": "71CD1",
+  "giver": {
+    "persona": "PA-PEG-NPC01",
+    "zone": "Wysteria/PA_Z01_Pegasus"
+  },
+  "requires": [
+    "Wysteria-Q-71CCD"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 920,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "PA_Pegasus_Chow.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "descriptor": "WizItems_00001732",
+      "loc": "ZoneLocName_465168"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "loc": "ZoneLocName_465168",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-PEG-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_M_03_NPC.dds",
+      "template_id": 465146
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:In-Flight_Meals",
+    "from": "archive",
+    "timestamp": "20231124102415"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Lapin It Up",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lapin It Up replaced by Wysteria-Q-71CCD",
+      "blocking": false
+    }
+  ]
+}

@@ -108,6 +108,10 @@
       "loc": "ZoneLocName_1520271"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z00_Hub"
+    },
+    {
       "type": "persona",
       "persona": "LM-StandIn-StallionQuartermane-B",
       "zone": "Lemuria/LM_Z00_Hub",
@@ -146,7 +150,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hall of Heroes (Standard)",
       "blocking": false
     },

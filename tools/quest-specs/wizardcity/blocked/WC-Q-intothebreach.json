@@ -18,6 +18,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/Interiors/WC_Triton_Underwater_C1",
@@ -62,9 +66,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find the King's Desk",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.persona",

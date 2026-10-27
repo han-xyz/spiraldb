@@ -9,7 +9,7 @@
     {
       "school": "Fire"
     },
-    "WC-Q-13D36"
+    "WC-Q-13D38"
   ],
   "mainline": false,
   "level": 48,
@@ -87,7 +87,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Goldfinger replaced by WC-Q-13D36",
+      "value": "Goldfinger replaced by WC-Q-13D38",
       "blocking": false
     }
   ],

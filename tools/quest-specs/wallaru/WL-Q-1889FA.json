@@ -2,7 +2,7 @@
   "id": "WL-Q-1889FA",
   "lang": "1889FA",
   "giver": {
-    "persona": "WL-BILLA-NPC01-B",
+    "persona": "WL-BILLA-NPC01",
     "zone": "Wallaru/WL_Z08_BillabongResort"
   },
   "requires": [
@@ -98,7 +98,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "WL-BILLA-NPC04-B",
+      "persona": "WL-BILLA-NPC04",
       "zone": "Wallaru/WL_Z08_BillabongResort",
       "loc": "ZoneLocName_1608171"
     },
@@ -134,13 +134,13 @@
     }
   ],
   "personas": {
-    "WL-BILLA-NPC01-B": {
+    "WL-BILLA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Frog_Joan_A_NPC.dds",
-      "template_id": 1608177
+      "template_id": 1608167
     },
-    "WL-BILLA-NPC04-B": {
+    "WL-BILLA-NPC04": {
       "portrait": "GUI/NpcPortraits/Koala_JudgeF_C_NPC.dds",
-      "template_id": 1608300
+      "template_id": 1608179
     }
   },
   "source": {

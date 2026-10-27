@@ -2,7 +2,7 @@
   "id": "MR-Q-1539EC",
   "lang": "1539EC",
   "giver": {
-    "persona": "MR-YAKH-NPC06-B",
+    "persona": "MR-YAKH-NPC06",
     "zone": "Mirage/MR_Z06_YakhalMountain"
   },
   "requires": [],
@@ -61,9 +61,9 @@
     }
   ],
   "personas": {
-    "MR-YAKH-NPC06-B": {
+    "MR-YAKH-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_E_NPC.dds",
-      "template_id": 1401000
+      "template_id": 1389043
     }
   },
   "source": {

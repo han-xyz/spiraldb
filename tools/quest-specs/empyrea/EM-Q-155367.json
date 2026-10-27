@@ -2,7 +2,7 @@
   "id": "EM-Q-155367",
   "lang": "155367",
   "giver": {
-    "persona": "EM-AERI-NPC05-B",
+    "persona": "EM-AERI-NPC05",
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
   "requires": [
@@ -49,9 +49,9 @@
     }
   ],
   "personas": {
-    "EM-AERI-NPC05-B": {
+    "EM-AERI-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Elder_A_NPC.dds",
-      "template_id": 1397722
+      "template_id": 1397530
     },
     "EM-JUNG-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Mice_TraderF_B_NPC.dds",

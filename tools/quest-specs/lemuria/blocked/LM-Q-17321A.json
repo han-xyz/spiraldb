@@ -3,7 +3,7 @@
   "lang": "17321A",
   "giver": {
     "persona": "LM-Standin-Bantam",
-    "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber"
+    "zone": "Lemuria/LM_Z02_UrsaiVillage"
   },
   "requires": [
     "LM-Q-173219"
@@ -89,7 +89,7 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099"
     }
   ],

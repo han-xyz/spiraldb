@@ -2,7 +2,7 @@
   "id": "EM-Q-1323CA",
   "lang": "1323CA",
   "giver": {
-    "persona": "EM-ZANA-NPC01-D",
+    "persona": "EM-ZANA-NPC01",
     "zone": "Empyrea/EM_Z02_Zanadu"
   },
   "requires": [
@@ -94,13 +94,13 @@
     }
   ],
   "personas": {
+    "EM-ZANA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
+      "template_id": 1397572
+    },
     "EM-ZANA-NPC01-C": {
       "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_C_NPC.dds",
       "template_id": 1254433
-    },
-    "EM-ZANA-NPC01-D": {
-      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
-      "template_id": 1404201
     }
   },
   "source": {

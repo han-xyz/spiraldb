@@ -1,0 +1,77 @@
+{
+  "id": "DS-Q-1EDAC",
+  "lang": "1EDAC",
+  "giver": {
+    "persona": "DS-ACAD2-NPC02",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+  },
+  "requires": [
+    "DS-NEC1-C04-002"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 2230,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Draconian-Zombie-R8.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00000399",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+    }
+  ],
+  "personas": {
+    "DS-ACAD2-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_colossus_obsidianBLUE.dds",
+      "template_id": 126327
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Draconians_Go_Home",
+    "from": "archive",
+    "timestamp": "20231122071053"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD2-C02-001"
+}

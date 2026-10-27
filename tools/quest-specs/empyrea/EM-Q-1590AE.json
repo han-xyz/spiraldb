@@ -3,8 +3,8 @@
   "lang": "1590AE",
   "auto_start": true,
   "giver": {
-    "persona": "EM-AERO-NPC07",
-    "zone": "Empyrea/EM_Z09_NWAeroplains"
+    "persona": "EM-NIMB-NPC08",
+    "zone": "Empyrea/EM_Z07_NimbusCitadel"
   },
   "requires": [
     "EM-Q-15909A"
@@ -104,7 +104,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003085",
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     },
     {
@@ -114,7 +114,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003086",
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     },
     {
@@ -124,14 +124,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003046",
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     }
   ],
   "personas": {
-    "EM-AERO-NPC07": {
+    "EM-NIMB-NPC08": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_HelenaF_A_NPC.dds",
-      "template_id": 1447331
+      "template_id": 1413252
     }
   },
   "source": {

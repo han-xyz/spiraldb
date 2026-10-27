@@ -1,0 +1,75 @@
+{
+  "id": "DS-Q-1ED8A",
+  "lang": "1ED8A",
+  "giver": {
+    "persona": "DS-ACAD-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Hub_Academy"
+  },
+  "requires": [
+    "DS-ACAD1-C04-004"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 5935,
+    "gold": 128
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Hub_Academy",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-ACAD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ashley.dds",
+      "template_id": 126321
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Forged_in_Fire",
+    "from": "archive",
+    "timestamp": "20260703191907"
+  },
+  "needs_review": [
+    {
+      "field": "goal.usage",
+      "value": "Use Fire Forge in the Dragonspyre School of Fire",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD-C01-003"
+}

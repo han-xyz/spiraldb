@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_OldeTown"
   },
   "requires": [
-    "WC-Q-1625D8"
+    "WC-COMMONS-MAIN-003"
   ],
   "mainline": false,
   "level": 5,
@@ -114,5 +114,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-OLDE-SIDE-002"
 }

@@ -1,0 +1,138 @@
+{
+  "id": "Wysteria-Q-71937",
+  "lang": "71937",
+  "giver": {
+    "persona": "PA-HUB-NPC03",
+    "zone": "Wysteria/Interiors/PA_Headmistress"
+  },
+  "requires": [
+    "Wysteria-Q-71936"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 540,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC02",
+      "zone": "Wysteria/Interiors/PA_Tournament_Entry",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC18",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC19",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC18",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Glendemming_NPC.dds",
+      "template_id": 465134
+    },
+    "PA-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Belladonna_Crisp.dds",
+      "template_id": 465135
+    },
+    "PA-HUB-NPC18": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Nalia_Dunestrider_NPC.dds",
+      "template_id": 465151
+    },
+    "PA-HUB-NPC19": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Pa_Student_B_02_NPC.dds",
+      "template_id": 465152
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Second_Chants",
+    "from": "archive",
+    "timestamp": "20231124102839"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

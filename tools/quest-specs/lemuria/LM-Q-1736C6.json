@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z00_Hub"
   },
   "requires": [
-    "LM-Q-174436"
+    "LM-Q-1736C3"
   ],
   "mainline": true,
   "level": 132,
@@ -110,11 +110,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The More You Hero replaced by LM-Q-174436",
       "blocking": false
     }
   ]

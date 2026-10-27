@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Golem_Tower"
   },
   "requires": [
-    "WC-Q-13D91"
+    "WC-ST01-C02-002"
   ],
   "mainline": false,
   "level": 5,

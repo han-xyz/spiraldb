@@ -2,8 +2,8 @@
   "id": "AV-Q-834E5",
   "lang": "834E5",
   "giver": {
-    "persona": "AV-CATA-NPC01",
-    "zone": "Avalon/AV_Z10_Catacombs"
+    "persona": "AV-DEEP-NPC01",
+    "zone": "Avalon/AV_Z09_DeepWater"
   },
   "requires": [
     "AV-Q-96AB3"
@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z09_DeepWater"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-DrownedKnight-R12-01.AdjRef",
@@ -56,7 +60,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001218",
-      "zone": "Avalon/AV_Z10_Catacombs",
+      "zone": "Avalon/AV_Z09_DeepWater",
       "loc": "ZoneLocName_537857"
     },
     {
@@ -68,21 +72,21 @@
         "AV-Deep-Teleporter-Piece04.AdjRef"
       ],
       "count": 1,
-      "zone": "Avalon/AV_Z10_Catacombs",
+      "zone": "Avalon/AV_Z09_DeepWater",
       "descriptor": "Items_00006570",
       "loc": "ZoneLocName_537857"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/AV_Z10_Catacombs",
+      "zone": "Avalon/AV_Z09_DeepWater",
       "loc": "ZoneLocName_537857"
     }
   ],
   "personas": {
-    "AV-CATA-NPC01": {
+    "AV-DEEP-NPC01": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
-      "template_id": 592086
+      "template_id": 537828
     }
   },
   "source": {
@@ -98,8 +102,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Cavern of Broken Virtues",
+      "field": "goal.waypoint (current zone)",
+      "value": "Cavern of Broken Virtues",
       "blocking": false
     },
     {

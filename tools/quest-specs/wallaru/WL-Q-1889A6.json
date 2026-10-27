@@ -56,6 +56,10 @@
       "loc": "ZoneLocName_1560381"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Dingo_Base_A_01.AdjRef"
@@ -84,8 +88,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Vault",
+      "field": "goal.waypoint (current zone)",
+      "value": "Vault",
       "blocking": false
     },
     {

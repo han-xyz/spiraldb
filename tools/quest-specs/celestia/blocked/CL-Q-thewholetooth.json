@@ -18,17 +18,8 @@
   },
   "goals": [
     {
-      "type": "bountycollect",
-      "mobs": [
-        "Cl-SharkWarrior-Blue-R9-1.AdjRef",
-        "CL-SharkWarrior-Tiger-R9-1.AdjRef",
-        "CL-SharkWarrior-Tiger-R9-2.AdjRef",
-        "Cl-SharkWarrior-Blue-R9-2.AdjRef"
-      ],
-      "count": 3,
-      "target": "WizardMobs_00000721",
-      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
-      "loc": "ZoneLocName_1161805"
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars"
     },
     {
       "type": "bountycollect",
@@ -70,12 +61,12 @@
       "blocking": false
     },
     {
-      "field": "goal.descriptor",
-      "value": "Shark Teeth",
-      "blocking": false
+      "field": "goal.mobs",
+      "value": "Pisceans",
+      "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Charmtooth's Lair",
       "blocking": false
     },

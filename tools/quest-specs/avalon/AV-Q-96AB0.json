@@ -65,6 +65,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z08_LakeShore"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z08_LakeShore",
@@ -90,8 +94,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Stele of Nicole",
+      "field": "goal.waypoint (current zone)",
+      "value": "Stele of Nicole",
       "blocking": false
     },
     {

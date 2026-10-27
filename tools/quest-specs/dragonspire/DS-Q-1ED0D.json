@@ -1,0 +1,70 @@
+{
+  "id": "DS-Q-1ED0D",
+  "lang": "1ED0D",
+  "giver": {
+    "persona": "DS-LIB2-NPC02",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+  },
+  "requires": [
+    "DS-LIB2-C02-008"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2180,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Hub_Necropolis"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-HUB-NPC01",
+      "zone": "DragonSpire/DS_Hub_Cathedral",
+      "completion": [
+        {
+          "speaker": "DS-HUB-NPC01",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 126291
+    },
+    "DS-LIB2-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_1_Ghost_NPC.dds",
+      "template_id": 126298
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Portal_Decay",
+    "from": "archive",
+    "timestamp": "20240120175132"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB2-C02-009"
+}

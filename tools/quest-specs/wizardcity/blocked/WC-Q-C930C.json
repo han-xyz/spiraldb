@@ -7,7 +7,7 @@
   },
   "requires": [
     "WC-Q-1625DC",
-    "WC-Q-162711"
+    "WC-COMMONS-SIDE-003"
   ],
   "mainline": false,
   "level": 5,
@@ -131,5 +131,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-PVPTUTORIAL-C01-001"
 }

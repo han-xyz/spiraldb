@@ -1,0 +1,158 @@
+{
+  "id": "LM-Q-173221",
+  "lang": "173221",
+  "giver": {
+    "persona": "LM-NIGHT-NPC05",
+    "zone": "Lemuria/LM_Z03_NightForest"
+  },
+  "requires": [
+    "LM-Q-173220"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 112840,
+    "gold": 1250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z03_NightForest"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Lemur_HierarchF_H_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003901",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z03_NightForest"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Malughast_Base_01.AdjRef",
+        "LM_Malughast_Base_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003898",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
+      "template_id": 1520136
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Super_Ghosts_and_Ghouls",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Solomon's Basement",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Find Worthier Prey in Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

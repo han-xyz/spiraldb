@@ -87,5 +87,6 @@
       "blocking": false
     }
   ],
-  "min_level": 5
+  "min_level": 5,
+  "captured": "WC-MAIN-C01-013"
 }

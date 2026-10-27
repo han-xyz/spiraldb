@@ -5,10 +5,14 @@
     "zone": "Azteca/AZ_Z01_ThreePoints"
   },
   "requires": [
+    {
+      "school": "Fire"
+    },
     "MB-FIRE-C01-002"
   ],
+  "min_level": 98,
   "mainline": false,
-  "level": 78,
+  "level": 98,
   "reward": {
     "xp": 0,
     "gold": 0

@@ -2,8 +2,8 @@
   "id": "NV-Q-18088A",
   "lang": "18088A",
   "giver": {
-    "persona": "NV-CON-NPC08-B",
-    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+    "persona": "NV-NUCLEUS-NPC02",
+    "zone": "Novus/NV_Z06_NucleusGallery"
   },
   "requires": [
     "NV-Q-17D61C"
@@ -111,19 +111,19 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004163",
-      "zone": "",
+      "zone": "Novus/NV_Z06_NucleusGallery",
       "loc": "ZoneLocName_1563028"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "zone": "Novus/NV_Z06_NucleusGallery",
       "loc": "ZoneLocName_1563028"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "zone": "Novus/NV_Z06_NucleusGallery",
       "loc": "ZoneLocName_1563028",
       "completion": [
         {
@@ -138,9 +138,9 @@
     }
   ],
   "personas": {
-    "NV-CON-NPC08-B": {
+    "NV-NUCLEUS-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
-      "template_id": 1575022
+      "template_id": 1575065
     }
   },
   "source": {

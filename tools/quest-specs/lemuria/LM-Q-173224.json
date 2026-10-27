@@ -2,7 +2,7 @@
   "id": "LM-Q-173224",
   "lang": "173224",
   "giver": {
-    "persona": "LM-NIGHT-NPC05-B",
+    "persona": "LM-NIGHT-NPC05",
     "zone": "Lemuria/LM_Z03_NightForest"
   },
   "requires": [
@@ -92,9 +92,9 @@
     }
   ],
   "personas": {
-    "LM-NIGHT-NPC05-B": {
+    "LM-NIGHT-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
-      "template_id": 1520186
+      "template_id": 1520136
     },
     "LM-NIGHT-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Crane_CitizenF_B_NPC.dds",

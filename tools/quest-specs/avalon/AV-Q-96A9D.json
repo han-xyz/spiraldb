@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z08_LakeShore"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z08_LakeShore",
@@ -73,8 +77,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Pool of Healing Waters",
+      "field": "goal.waypoint (current zone)",
+      "value": "Pool of Healing Waters",
       "blocking": false
     },
     {

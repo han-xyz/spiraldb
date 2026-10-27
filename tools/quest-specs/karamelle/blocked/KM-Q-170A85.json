@@ -90,6 +90,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Robot_Candy_A_01.AdjRef",
@@ -115,6 +119,10 @@
       "loc": "ZoneLocName_1510006"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gummy_BearHat_A_01.AdjRef",
@@ -124,6 +132,10 @@
       "target": "WizardMobs_00003702",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
     },
     {
       "type": "bounty",
@@ -154,13 +166,13 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find More Gummies",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
@@ -169,8 +181,8 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

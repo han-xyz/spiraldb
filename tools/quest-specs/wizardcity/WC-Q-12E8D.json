@@ -114,7 +114,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Myth Tower",
       "blocking": false
     },
@@ -128,5 +128,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-MAIN-C01-012"
 }

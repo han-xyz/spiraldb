@@ -4,8 +4,8 @@
   "title": "QuestTitle_16B55A",
   "auto_start": true,
   "giver": {
-    "persona": "KM-KCITY-NPC21",
-    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+    "persona": "KM-SWEET-NPC01",
+    "zone": "Karamelle/KM_Z04_Sweetzburg"
   },
   "requires": [
     "KM-Q-16B559"
@@ -82,7 +82,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003670",
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
@@ -96,7 +96,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003671",
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
@@ -106,14 +106,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003672",
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     }
   ],
   "personas": {
-    "KM-KCITY-NPC21": {
+    "KM-SWEET-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
-      "template_id": 1513270
+      "template_id": 1488209
     }
   },
   "source": {

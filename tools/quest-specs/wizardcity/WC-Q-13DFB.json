@@ -1,0 +1,100 @@
+{
+  "id": "WC-Q-13DFB",
+  "lang": "13DFB",
+  "giver": {
+    "persona": "HO-HalloweenO1",
+    "zone": "WizardCity/WC_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 5,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "HO_AppleTub.AdjRef",
+        "HO_AppleTub01.AdjRef",
+        "HO_AppleTub02.AdjRef",
+        "HO_AppleTub03.AdjRef",
+        "HO_AppleTub04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00001940",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Hub",
+      "loc": "ZoneLocName_409193"
+    }
+  ],
+  "personas": {
+    "HO-HalloweenO1": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Scarecrow_NPC.dds",
+      "template_id": 81385
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Sight_for_Core_Eyes",
+    "from": "archive",
+    "timestamp": "20251219204834"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Jack Hallow: HO-HalloweenO1 from ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {
+        "xp": 0
+      },
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Apple Tub in the Haunted Cave: ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jack Hallow: HO-HalloweenO1 from ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Pinky Swear replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

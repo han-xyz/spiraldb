@@ -1,0 +1,98 @@
+{
+  "id": "DS-Q-1ECEE",
+  "lang": "1ECEE",
+  "giver": {
+    "persona": "DS-LIB-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_Library_Interior"
+  },
+  "requires": [
+    "DS-MAIN-C01-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 1395,
+    "gold": 103
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DS_CrystalStand_ACAD2-C01-001.AdjRef",
+        "DS_KnowledgeCrystal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library",
+      "descriptor": "WizardGameObjects_00000131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_Library_Interior"
+    }
+  ],
+  "personas": {
+    "DS-LIB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_base_1_Ghost_NPC.dds",
+      "template_id": 126293
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Holger's_Crystals",
+    "from": "archive",
+    "timestamp": "20260615193731"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB-C01-001"
+}

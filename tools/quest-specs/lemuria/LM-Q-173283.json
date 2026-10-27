@@ -7,7 +7,7 @@
     "zone": "Lemuria/Interiors/LM_Z03_Crypt"
   },
   "requires": [
-    "LM-Q-173228"
+    "LM-Q-173281"
   ],
   "mainline": false,
   "level": 132,
@@ -146,11 +146,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Tales from the Script replaced by LM-Q-173228",
       "blocking": false
     }
   ]

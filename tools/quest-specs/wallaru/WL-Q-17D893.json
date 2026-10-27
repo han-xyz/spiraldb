@@ -2,8 +2,8 @@
   "id": "WL-Q-17D893",
   "lang": "17D893",
   "giver": {
-    "persona": "WL-DREAM-NPC01-A",
-    "zone": "Wallaru/WL_Z04_TheDreaming"
+    "persona": "WL-OUT-NPC01",
+    "zone": "Wallaru/WL_Z02_Outback"
   },
   "requires": [
     "WL-Q-1889DE"
@@ -58,20 +58,20 @@
       ],
       "count": 3,
       "target": "WizardMobs_00004377",
-      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     }
   ],
   "personas": {
-    "WL-DREAM-NPC01-A": {
+    "WL-OUT-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
-      "template_id": 1560362
+      "template_id": 1608160
     }
   },
   "source": {

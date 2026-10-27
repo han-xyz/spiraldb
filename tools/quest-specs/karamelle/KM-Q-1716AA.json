@@ -1,0 +1,140 @@
+{
+  "id": "KM-Q-1716AA",
+  "lang": "1716AA",
+  "giver": {
+    "persona": "KM-BLACK-NPC11",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
+  },
+  "requires": [
+    "KM-Q-17169B"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 123586,
+    "gold": 1200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z08_LicoriceForest"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z08_LicoriceForest"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Jellyfish_Base_A_01.AdjRef",
+        "KM_Jellyfish_Base_B_01.AdjRef",
+        "KM_Jellyfish_Base_C_01.AdjRef",
+        "KM_Jellyfish_Base_D_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003707",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-BLACK-NPC11-B.AdjRef",
+        "KM-BLACK-NPC11-C.AdjRef",
+        "KM-BLACK-NPC11.AdjRef",
+        "KM-GOBB-NPC01.AdjRef",
+        "KM-GOBB-NPC01_B.AdjRef",
+        "KM-GOBB-NPC01_C.AdjRef",
+        "KM-GOBB-NPC01_D.AdjRef",
+        "KM-GOBB-NPC01_E.AdjRef",
+        "KM-KCITY-NPC20.AdjRef",
+        "KM_StandIn_Rosina_01.AdjRef",
+        "KM_StandIn_Rosina_02.AdjRef",
+        "KM_StandIn_Rosina_03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "descriptor": "NPCs_01749055",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC11": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1513119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Down,_Down_to_Gobbler_Town",
+    "from": "archive",
+    "timestamp": "20240322074732"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Dock",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Jump in Lake",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

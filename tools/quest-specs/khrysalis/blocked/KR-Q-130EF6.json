@@ -72,6 +72,10 @@
       "loc": "ZoneLocName_1205023"
     },
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z00_Hub"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Khrysalis/Interiors/KR_Z00_I07_Mausoleum",
@@ -107,7 +111,7 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Lost Bastion",
       "blocking": false
     },

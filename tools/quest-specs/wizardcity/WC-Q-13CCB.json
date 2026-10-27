@@ -108,7 +108,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Commons",
       "blocking": false
     },

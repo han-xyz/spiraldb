@@ -9,7 +9,7 @@
     "CL-MAIN-C00-001"
   ],
   "mainline": false,
-  "level": 48,
+  "level": 50,
   "reward": {
     "xp": 1120,
     "gold": 60
@@ -181,7 +181,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Press_Pass",
     "from": "archive",
-    "timestamp": "20231124084704"
+    "timestamp": "20251205020804"
   },
   "needs_review": [
     {
@@ -234,5 +234,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 50
 }

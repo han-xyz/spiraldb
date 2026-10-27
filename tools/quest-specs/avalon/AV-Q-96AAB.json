@@ -101,6 +101,10 @@
       "loc": "ZoneLocName_570074"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z08_LakeShore"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-BogWitch-Boss-R12-01.AdjRef",
@@ -110,6 +114,10 @@
       "target": "WizardMobs_00001217",
       "zone": "Avalon/AV_Z08_LakeShore",
       "loc": "ZoneLocName_570074"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z08_LakeShore"
     },
     {
       "type": "persona",
@@ -136,13 +144,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Witch House",
+      "field": "goal.waypoint (current zone)",
+      "value": "Witch House",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Dolorous Tower",
+      "field": "goal.waypoint (current zone)",
+      "value": "Dolorous Tower",
       "blocking": false
     },
     {

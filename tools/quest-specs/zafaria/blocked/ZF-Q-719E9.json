@@ -87,7 +87,7 @@
       "blocking": true
     },
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Chop Down Poisonous Vine",
       "blocking": true
     },

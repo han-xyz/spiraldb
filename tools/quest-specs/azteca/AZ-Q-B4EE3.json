@@ -6,7 +6,7 @@
     "zone": "Azteca/AZ_Z00_Zocalo"
   },
   "requires": [
-    "AZ-Q-9D0D5"
+    "AZ-Q-B4EE1"
   ],
   "mainline": false,
   "level": 78,
@@ -123,11 +123,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Count of Days replaced by AZ-Q-9D0D5",
       "blocking": false
     }
   ]

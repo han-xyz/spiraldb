@@ -7,8 +7,9 @@
   "requires": [
     "ZF-Q-71D0E"
   ],
+  "min_level": 66,
   "mainline": false,
-  "level": 60,
+  "level": 66,
   "reward": {
     "xp": 1270,
     "gold": 40
@@ -38,7 +39,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Bungle_in_the_Jungle",
     "from": "archive",
-    "timestamp": "20231118225608"
+    "timestamp": "20250905023604"
   },
   "needs_review": [
     {

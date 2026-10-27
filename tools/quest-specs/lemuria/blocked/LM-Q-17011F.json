@@ -2,7 +2,7 @@
   "id": "LM-Q-17011F",
   "lang": "17011F",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-02",
+    "persona": "LM-Mandoria-NPC01",
     "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
@@ -59,7 +59,7 @@
         "LM_Mana.AdjRef"
       ],
       "count": 3,
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "descriptor": "WizardInteractionTitle_00000430",
       "loc": "ZoneLocName_1507599"
     },
@@ -77,9 +77,9 @@
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1507626
+    "LM-Mandoria-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_A_NPC.dds",
+      "template_id": 1507624
     }
   },
   "source": {

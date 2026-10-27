@@ -64,7 +64,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Purify the Leaves at Fire Pit in the Altar of Kings",
       "blocking": true
     },

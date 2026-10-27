@@ -1,0 +1,82 @@
+{
+  "id": "DS-Q-1EDA3",
+  "lang": "1EDA3",
+  "giver": {
+    "persona": "DS-ACAD2-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+  },
+  "requires": [
+    "DS-ACAD2-C01-003"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2785,
+    "gold": 128
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Draconian-Warrior-Gold-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000468",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+    }
+  ],
+  "personas": {
+    "DS-ACAD2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_soldier_3_Ghost_NPC.dds",
+      "template_id": 126326
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Overdue_Fees",
+    "from": "archive",
+    "timestamp": "20240409061105"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Knowledge Crystal in Kraysys' Tower",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD2-C01-004"
+}

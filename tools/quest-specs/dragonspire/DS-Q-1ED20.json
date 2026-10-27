@@ -1,0 +1,76 @@
+{
+  "id": "DS-Q-1ED20",
+  "lang": "1ED20",
+  "giver": {
+    "persona": "DS-LIB3-NPC03",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+  },
+  "requires": [
+    "DS-LIB3-C03-003"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 1785,
+    "gold": 108
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Undead-Caster-Grey-R7.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00000447",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm",
+      "descriptor": "WizQst1ED20_00000000"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-LIB3-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_juggernaut_1_Ghost_NPC.dds",
+      "template_id": 126307
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Puzzle_Me_This",
+    "from": "archive",
+    "timestamp": "20260722071614"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB3-C03-004"
+}

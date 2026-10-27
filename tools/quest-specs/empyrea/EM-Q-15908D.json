@@ -2,7 +2,7 @@
   "id": "EM-Q-15908D",
   "lang": "15908D",
   "giver": {
-    "persona": "EM-NIMB-NPC01-B",
+    "persona": "EM-NIMB-NPC01",
     "zone": "Empyrea/EM_Z07_NimbusCitadel"
   },
   "requires": [
@@ -78,9 +78,9 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "EM-AERO-NPC01",
-      "zone": "Empyrea/EM_Z10_PortAero",
-      "loc": "ZoneLocName_1447324"
+      "persona": "EM-NIMB-NPC07",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
+      "loc": "ZoneLocName_1413254"
     },
     {
       "type": "usage",
@@ -88,31 +88,31 @@
         "EM-Aeroship.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "descriptor": "WizQst15908D_00000017",
       "loc": "ZoneLocName_1413254"
     },
     {
       "type": "persona",
-      "persona": "EM-AERO-NPC01",
-      "zone": "Empyrea/EM_Z10_PortAero",
-      "loc": "ZoneLocName_1447324"
+      "persona": "EM-NIMB-NPC07",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
+      "loc": "ZoneLocName_1413254"
     },
     {
       "type": "persona",
-      "persona": "EM-AERO-NPC01",
-      "zone": "Empyrea/EM_Z10_PortAero",
-      "loc": "ZoneLocName_1447324"
+      "persona": "EM-NIMB-NPC07",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
+      "loc": "ZoneLocName_1413254"
     }
   ],
   "personas": {
-    "EM-AERO-NPC01": {
-      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_C_NPC.dds",
-      "template_id": 1447325
-    },
-    "EM-NIMB-NPC01-B": {
+    "EM-NIMB-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Noble_A_NPC.dds",
-      "template_id": 1413260
+      "template_id": 1413241
+    },
+    "EM-NIMB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_C_NPC.dds",
+      "template_id": 1413251
     }
   },
   "source": {

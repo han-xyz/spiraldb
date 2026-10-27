@@ -59,6 +59,10 @@
       "loc": "ZoneLocName_470302"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z04_TheWild"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "AV-Redcap-Black-Boss-R11-01.AdjRef",
@@ -96,8 +100,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Ricimer Flavel's Cave",
+      "field": "goal.waypoint (current zone)",
+      "value": "Ricimer Flavel's Cave",
       "blocking": false
     },
     {

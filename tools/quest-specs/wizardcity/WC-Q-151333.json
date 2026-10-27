@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Colossus"
   },
   "requires": [
-    "WC-Q-952E"
+    "WC-ST06-C03-002"
   ],
   "mainline": false,
   "level": 5,

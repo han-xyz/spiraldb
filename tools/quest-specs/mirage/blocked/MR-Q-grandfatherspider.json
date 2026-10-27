@@ -2,8 +2,8 @@
   "id": "MR-Q-grandfatherspider",
   "auto_start": true,
   "giver": {
-    "persona": "MR-ALKA-NPC07",
-    "zone": "Mirage/Interiors/MR_Z01_OverlordsOssuary"
+    "persona": "MR-CHRO-NPC03",
+    "zone": "Mirage/MR_Z10_Chronoverge"
   },
   "requires": [],
   "min_level": 105,
@@ -20,14 +20,14 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "MR-CARA-NPC21",
-      "zone": "Mirage/MR_Z00_Hub",
-      "loc": "ZoneLocName_1254040"
+      "persona": "MR_StandIn_Mellori_NPC",
+      "zone": "Mirage/MR_Z10_Chronoverge",
+      "loc": "ZoneLocName_1397008"
     },
     {
       "type": "persona",
-      "persona": "MR-CHRO-NPC01",
-      "zone": "Mirage/Interiors/MR_Z10_NorthTimeDunes",
+      "persona": "MR-CHRO-NPC04",
+      "zone": "Mirage/Interiors/MR_Z10_SandsofTime",
       "loc": "ZoneLocName_1397008"
     },
     {
@@ -37,22 +37,22 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002407",
-      "zone": "",
+      "zone": "Mirage/MR_Z10_Chronoverge",
       "loc": "ZoneLocName_1397008"
     }
   ],
   "personas": {
-    "MR-ALKA-NPC07": {
+    "MR-CHRO-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_A_NPC.dds",
-      "template_id": 1365010
+      "template_id": 1401016
     },
-    "MR-CARA-NPC21": {
-      "portrait": "GUI/NpcPortraits/Human_Mellori_B_NPC.dds",
-      "template_id": 1378241
-    },
-    "MR-CHRO-NPC01": {
+    "MR-CHRO-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_NPC.dds",
-      "template_id": 1379041
+      "template_id": 1401017
+    },
+    "MR_StandIn_Mellori_NPC": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_B_NPC.dds",
+      "template_id": 1365084
     }
   },
   "source": {

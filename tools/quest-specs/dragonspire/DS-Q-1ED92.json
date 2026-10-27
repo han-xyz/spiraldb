@@ -1,0 +1,66 @@
+{
+  "id": "DS-Q-1ED92",
+  "lang": "1ED92",
+  "giver": {
+    "persona": "DS-ACAD1-NPC02",
+    "zone": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_T3"
+  },
+  "requires": [
+    "DS-ACAD1-C02-002"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 5585,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_T3",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-ACAD1-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_pointyhat_2_Ghost_NPC.dds",
+      "template_id": 126323
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Quiet_Place_to_Work",
+    "from": "archive",
+    "timestamp": "20250917123608"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD1-C02-003"
+}

@@ -73,16 +73,20 @@
       "loc": "ZoneLocName_1391567"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z03_OuterAthanor"
+    },
+    {
       "type": "persona",
-      "persona": "EM-OUTER-NPC02-C",
+      "persona": "EM-OUTER-NPC02",
       "zone": "Empyrea/EM_Z03_OuterAthanor",
       "loc": "ZoneLocName_1391567"
     }
   ],
   "personas": {
-    "EM-OUTER-NPC02-C": {
+    "EM-OUTER-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1391518
+      "template_id": 1391490
     },
     "EM-OUTER-NPC13": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceSoldier_C_NPC.dds",
@@ -96,7 +100,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Access Tunnel",
       "blocking": false
     },

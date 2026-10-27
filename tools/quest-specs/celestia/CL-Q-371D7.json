@@ -65,6 +65,10 @@
       "loc": "ZoneLocName_227141"
     },
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z05_The_Floating_Land"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "CL-Treant-Dark-R10.AdjRef"
@@ -99,7 +103,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Tangleroot's Grove",
       "blocking": false
     },

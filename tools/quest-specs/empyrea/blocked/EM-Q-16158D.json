@@ -194,6 +194,10 @@
       "loc": "ZoneLocName_1447324"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z10_PortAero"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Robot_Drone_C_01.AdjRef"
@@ -202,6 +206,10 @@
       "target": "WizardMobs_00003055",
       "zone": "",
       "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z10_PortAero"
     },
     {
       "type": "bounty",
@@ -213,6 +221,10 @@
       "target": "WizardMobs_00003084",
       "zone": "",
       "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z10_PortAero"
     },
     {
       "type": "bounty",
@@ -229,6 +241,10 @@
       "persona": "EM-AERO-NPC02",
       "zone": "Empyrea/EM_Z10_PortAero",
       "loc": "ZoneLocName_1447324"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z10_PortAero"
     },
     {
       "type": "persona",
@@ -264,7 +280,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Ain't_No_Citadel_High_Enough",
     "from": "archive",
-    "timestamp": "20231126092511"
+    "timestamp": "20250904111552"
   },
   "needs_review": [
     {
@@ -273,17 +289,17 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "First Aero Dwarf House",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Second Aero Dwarf House",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Third Aero Dwarf House",
       "blocking": false
     },
@@ -293,8 +309,8 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Aeroship",
+      "field": "goal.waypoint (current zone)",
+      "value": "Aeroship",
       "blocking": false
     },
     {

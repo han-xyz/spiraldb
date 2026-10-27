@@ -8,8 +8,9 @@
   "requires": [
     "AV-Q-96A79"
   ],
+  "min_level": 71,
   "mainline": false,
-  "level": 68,
+  "level": 71,
   "reward": {
     "xp": 5730,
     "gold": 130

@@ -122,6 +122,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z00_Hub"
+    },
+    {
       "type": "persona",
       "persona": "AR_StandIn_Ione",
       "zone": "Arcanum/AR_Z01_Hub",
@@ -145,8 +149,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To World Synthesizer Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "World Synthesizer Room",
       "blocking": false
     },
     {

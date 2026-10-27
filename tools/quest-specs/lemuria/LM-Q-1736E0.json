@@ -81,6 +81,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z00_Hub"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM-Standin-OldOnesSion.AdjRef",
@@ -111,7 +115,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Scion's Chamber",
       "blocking": false
     },

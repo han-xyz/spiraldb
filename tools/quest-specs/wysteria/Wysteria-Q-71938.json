@@ -1,0 +1,122 @@
+{
+  "id": "Wysteria-Q-71938",
+  "lang": "71938",
+  "giver": {
+    "persona": "PA-HUB-NPC18",
+    "zone": "Wysteria/Interiors/PA_Dorm"
+  },
+  "requires": [
+    "Wysteria-Q-71937"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 725,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC24",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC25",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Hub"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC25",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465129",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC18": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Nalia_Dunestrider_NPC.dds",
+      "template_id": 465151
+    },
+    "PA-HUB-NPC24": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitGuard_02_NPC.dds",
+      "template_id": 465165
+    },
+    "PA-HUB-NPC25": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitGuard_03_NPC.dds",
+      "template_id": 465166
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:For_Want_of_a_Wand",
+    "from": "archive",
+    "timestamp": "20231124102755"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Tanglewood Way",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

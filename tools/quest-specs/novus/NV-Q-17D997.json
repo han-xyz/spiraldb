@@ -2,7 +2,7 @@
   "id": "NV-Q-17D997",
   "lang": "17D997",
   "giver": {
-    "persona": "NV-CON-NPC03-B",
+    "persona": "NV-CON-NPC03",
     "zone": "Novus/NV_Z01_Conatus"
   },
   "requires": [],
@@ -100,13 +100,13 @@
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC02-B",
+      "persona": "NV-CON-NPC02",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC01-B",
+      "persona": "NV-CON-NPC01",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
     },
@@ -124,17 +124,17 @@
     }
   ],
   "personas": {
-    "NV-CON-NPC01-B": {
+    "NV-CON-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
-      "template_id": 1575004
+      "template_id": 1546271
     },
-    "NV-CON-NPC02-B": {
+    "NV-CON-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
-      "template_id": 1575007
+      "template_id": 1546270
     },
-    "NV-CON-NPC03-B": {
+    "NV-CON-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_DesertExplorer_A_NPC.dds",
-      "template_id": 1575001
+      "template_id": 1546272
     },
     "NV-CON-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Monkey_SoldierBoss_A_NPC.dds",

@@ -4,8 +4,8 @@
   "title": "QuestTitle_00001776",
   "auto_start": true,
   "giver": {
-    "persona": "KM-BLACK-NPC01-B",
-    "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
+    "persona": "KM-NIBB-NPC01",
+    "zone": "Karamelle/KM_Z05_Nibbleheim"
   },
   "requires": [
     "KM-Q-16FCCC"
@@ -52,7 +52,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003675",
-      "zone": "",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "loc": "ZoneLocName_1506578"
     },
     {
@@ -61,7 +61,7 @@
         "KM-WastePipes.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "descriptor": "Items_00021913",
       "loc": "ZoneLocName_1506578"
     },
@@ -71,7 +71,7 @@
         "KM-TreacleVats.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "descriptor": "Items_00021912",
       "loc": "ZoneLocName_1506578"
     },
@@ -83,14 +83,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003687",
-      "zone": "",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "loc": "ZoneLocName_1506578"
     }
   ],
   "personas": {
-    "KM-BLACK-NPC01-B": {
+    "KM-NIBB-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513114
+      "template_id": 1506486
     }
   },
   "source": {

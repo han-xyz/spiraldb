@@ -3,8 +3,8 @@
   "lang": "185327",
   "auto_start": true,
   "giver": {
-    "persona": "WL-HOPE-NPC26-B",
-    "zone": "Wallaru/WL_Z01_Hub"
+    "persona": "WL-RANCH-NPC07",
+    "zone": "Wallaru/WL_Z06_CollieRanch"
   },
   "requires": [
     "WL-Q-1852E5"
@@ -96,8 +96,16 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004417",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
     },
     {
       "type": "bounty",
@@ -106,14 +114,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004419",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     }
   ],
   "personas": {
-    "WL-HOPE-NPC26-B": {
+    "WL-RANCH-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
-      "template_id": 1608478
+      "template_id": 1594084
     }
   },
   "source": {
@@ -123,8 +131,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
@@ -133,8 +141,8 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

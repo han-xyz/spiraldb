@@ -1,11 +1,11 @@
 {
   "id": "MR-Q-showdownwithspider",
   "giver": {
-    "persona": "MR-CARA-NPC21",
-    "zone": "Mirage/MR_Z00_Hub"
+    "persona": "MR_StandIn_Mellori_NPC",
+    "zone": "Mirage/MR_Z10_Chronoverge"
   },
   "requires": [
-    "MR-Q-2A4B5"
+    "MB-XTRA-C04-003"
   ],
   "mainline": true,
   "level": 105,
@@ -34,24 +34,24 @@
         "MR_EyeofHistory.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Mirage/MR_Z10_Chronoverge",
       "loc": "ZoneLocName_1397008"
     },
     {
       "type": "persona",
-      "persona": "MR-ALKA-NPC07",
-      "zone": "Mirage/Interiors/MR_Z01_OverlordsOssuary",
+      "persona": "MR-CHRO-NPC03",
+      "zone": "Mirage/MR_Z10_Chronoverge",
       "loc": "ZoneLocName_1397008"
     }
   ],
   "personas": {
-    "MR-ALKA-NPC07": {
+    "MR-CHRO-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_A_NPC.dds",
-      "template_id": 1365010
+      "template_id": 1401016
     },
-    "MR-CARA-NPC21": {
+    "MR_StandIn_Mellori_NPC": {
       "portrait": "GUI/NpcPortraits/Human_Mellori_B_NPC.dds",
-      "template_id": 1378241
+      "template_id": 1365084
     }
   },
   "source": {

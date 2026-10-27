@@ -2,8 +2,8 @@
   "id": "WL-Q-1852E5",
   "lang": "1852E5",
   "giver": {
-    "persona": "WL-HOPE-NPC26-B",
-    "zone": "Wallaru/WL_Z01_Hub"
+    "persona": "WL-RANCH-NPC07",
+    "zone": "Wallaru/WL_Z06_CollieRanch"
   },
   "requires": [
     "WL-Q-1852DF"
@@ -154,7 +154,7 @@
         "WL-RobotGuard.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "descriptor": "WizQst1852E5_00000037",
       "loc": "ZoneLocName_1594105"
     },
@@ -164,7 +164,7 @@
         "WL-DartTurret.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "descriptor": "WizQst1852E5_00000039",
       "loc": "ZoneLocName_1594105"
     },
@@ -174,7 +174,7 @@
         "WL-CollieRanch_Shutters.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     },
     {
@@ -188,20 +188,24 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004419",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Wallaru/WL_Z01_Hub",
-      "loc": "ZoneLocName_1560381"
+      "zone": "Wallaru/WL_Z06_CollieRanch",
+      "loc": "ZoneLocName_1594105"
     }
   ],
   "personas": {
-    "WL-HOPE-NPC26-B": {
+    "WL-RANCH-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
-      "template_id": 1608478
+      "template_id": 1594084
     }
   },
   "source": {
@@ -221,9 +225,9 @@
       "blocking": true
     },
     {
-      "field": "goal.persona",
+      "field": "goal.waypoint (current zone)",
       "value": "Follow Ned outside the House",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

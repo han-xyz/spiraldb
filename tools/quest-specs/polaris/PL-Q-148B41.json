@@ -77,6 +77,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Polaris/PL_Z02_ForlornTaig"
+    },
+    {
       "type": "persona",
       "persona": "AR-StandIn-AdventureFitzhume_03",
       "zone": "Arcanum/Interiors/AR_Z01_DeadArchive",
@@ -100,7 +104,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Panopticon, Arcanum",
       "blocking": false
     },

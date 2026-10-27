@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
-    "KM-Q-16FCE9"
+    "KM-Q-170A81"
   ],
   "mainline": true,
   "level": 122,
@@ -105,11 +105,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "World of Spycraft replaced by KM-Q-16FCE9",
       "blocking": false
     }
   ]

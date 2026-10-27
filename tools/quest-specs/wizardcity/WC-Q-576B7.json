@@ -2,8 +2,8 @@
   "id": "WC-Q-576B7",
   "lang": "576B7",
   "giver": {
-    "persona": "WC-RAV-NPC15",
-    "zone": "WizardCity/WC_Ravenwood"
+    "persona": "WC-RAV-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolLife"
   },
   "requires": [],
   "mainline": false,
@@ -124,9 +124,9 @@
       "portrait": "GUI/NpcPortraits/Art_Portrait_Gardening_Mole.dds",
       "template_id": 1452016
     },
-    "WC-RAV-NPC15": {
+    "WC-RAV-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
-      "template_id": 1459033
+      "template_id": 38204
     },
     "WC_RVW_LifeTree": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_Blossom.dds",
@@ -145,5 +145,6 @@
       "blocking": false
     }
   ],
-  "min_level": 12
+  "min_level": 12,
+  "captured": "WC-GRDN-C01-001"
 }

@@ -2,7 +2,7 @@
   "id": "LM-Q-17011B",
   "lang": "17011B",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-02",
+    "persona": "LM-Mandoria-NPC01",
     "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
@@ -189,6 +189,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z05_Mandoria"
+    },
+    {
       "type": "persona",
       "persona": "LM-Mandoria-NPC04",
       "zone": "Lemuria/LM_Z05_Mandoria",
@@ -207,7 +211,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003908",
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -216,14 +220,18 @@
         "LM_LoosePanel.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "descriptor": "WizardInteractionTitle_00000424",
       "loc": "ZoneLocName_1507599"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z05_Mandoria"
+    },
+    {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC05-01",
-      "zone": "Lemuria/Interiors/LM_Z05_I10_CellRoom",
+      "persona": "LM-Standin-Mandar-02",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -233,32 +241,32 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003910",
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
       "type": "persona",
-      "persona": "LM-HEAP-NPC01",
-      "zone": "Lemuria/LM_Z07_Heap",
-      "loc": "ZoneLocName_1524839"
+      "persona": "LM-Mandoria-NPC02",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
     }
   ],
   "personas": {
-    "LM-HEAP-NPC01": {
-      "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
-      "template_id": 1524741
+    "LM-Mandoria-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_A_NPC.dds",
+      "template_id": 1507624
     },
-    "LM-Mandoria-NPC01-02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1507626
+    "LM-Mandoria-NPC02": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
+      "template_id": 1507625
     },
     "LM-Mandoria-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Moth_Sorcerer_A_NPC.dds",
       "template_id": 1507628
     },
-    "LM-Mandoria-NPC05-01": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mander_Hero_A_NPC.dds",
-      "template_id": 1507629
+    "LM-Standin-Mandar-02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Hero_A_Mob.dds",
+      "template_id": 1487508
     }
   },
   "source": {
@@ -273,14 +281,14 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Palace of Xul-thurun",
+      "field": "goal.waypoint (current zone)",
+      "value": "Palace of Xul-thurun",
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Look for Escape Route",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

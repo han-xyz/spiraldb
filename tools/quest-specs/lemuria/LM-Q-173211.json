@@ -124,7 +124,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003348",
-      "zone": "",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "descriptor": "WizQst173211_00000030",
       "loc": "ZoneLocName_1520099"
     },
@@ -137,13 +137,17 @@
     {
       "type": "persona",
       "persona": "LM-URSAI-NPC02",
-      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage"
     },
     {
       "type": "persona",
       "persona": "LM-URSAI-NPC02",
-      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099",
       "completion": [
         {
@@ -175,8 +179,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Killawahoo Ceremony",
+      "field": "goal.waypoint (current zone)",
+      "value": "Killawahoo Ceremony",
       "blocking": false
     },
     {

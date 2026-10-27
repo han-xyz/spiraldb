@@ -1,0 +1,97 @@
+{
+  "id": "DS-Q-1EDA0",
+  "lang": "1EDA0",
+  "giver": {
+    "persona": "DS-ACAD2-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+  },
+  "requires": [
+    "DS-NEC1-C04-002"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 890,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "DS_CrystalStand_ACAD2-C01-001.AdjRef",
+        "DS_KnowledgeCrystal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre",
+      "descriptor": "WizardGameObjects_00000131"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-ACAD2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_soldier_3_Ghost_NPC.dds",
+      "template_id": 126326
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hit_the_Books",
+    "from": "archive",
+    "timestamp": "20240214173124"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "The Forum Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD2-C01-001"
+}

@@ -56,8 +56,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004208",
-      "zone": "Novus/NV_Z01_Conatus",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
     },
     {
       "type": "bounty",
@@ -67,8 +71,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004209",
-      "zone": "Novus/NV_Z01_Conatus",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
     },
     {
       "type": "bounty",
@@ -78,7 +86,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004208",
-      "zone": "Novus/NV_Z01_Conatus",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     }
   ],
@@ -96,13 +104,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Island",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Island",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Island",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Island",
       "blocking": false
     },
     {

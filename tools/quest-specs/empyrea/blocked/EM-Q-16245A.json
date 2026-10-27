@@ -3,8 +3,8 @@
   "lang": "16245A",
   "auto_start": true,
   "giver": {
-    "persona": "EM-AERI-NPC01-B",
-    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    "persona": "EM-CHAOS-NPC02",
+    "zone": "Empyrea/EM_Z14_ChaosJungle"
   },
   "requires": [
     "EM-Q-162454"
@@ -72,7 +72,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003021",
-      "zone": "",
+      "zone": "Empyrea/EM_Z14_ChaosJungle",
       "loc": "ZoneLocName_1451078"
     },
     {
@@ -82,7 +82,7 @@
         "EM-RubbleObject.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Empyrea/EM_Z14_ChaosJungle",
       "descriptor": "WizItems_00002058",
       "loc": "ZoneLocName_1451078"
     },
@@ -99,7 +99,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003037",
-      "zone": "",
+      "zone": "Empyrea/EM_Z14_ChaosJungle",
       "descriptor": "WizQst16245A_00000010",
       "loc": "ZoneLocName_1451078"
     },
@@ -111,9 +111,9 @@
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
+    "EM-CHAOS-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
+      "template_id": 1451083
     },
     "EM-CHAOS-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Kalamar_CitizenF_M_NPC.dds",

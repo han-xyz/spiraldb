@@ -57,6 +57,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Piranha-Hunter-D.AdjRef",
@@ -99,11 +103,11 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:In_a_Canoe",
     "from": "archive",
-    "timestamp": "20231125114930"
+    "timestamp": "20251203203850"
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Sunken Canoe Cave",
       "blocking": false
     },

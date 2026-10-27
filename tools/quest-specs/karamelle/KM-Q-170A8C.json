@@ -2,7 +2,7 @@
   "id": "KM-Q-170A8C",
   "lang": "170A8C",
   "giver": {
-    "persona": "KM-KCITY-NPC01-B",
+    "persona": "KM-KCITY-NPC01",
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
@@ -113,6 +113,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Karamelle/KM_Z00_HUB",
@@ -126,9 +130,9 @@
     }
   ],
   "personas": {
-    "KM-KCITY-NPC01-B": {
+    "KM-KCITY-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
-      "template_id": 1510011
+      "template_id": 1510008
     }
   },
   "source": {
@@ -138,7 +142,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Nana's Office",
       "blocking": false
     },

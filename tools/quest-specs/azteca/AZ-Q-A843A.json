@@ -6,6 +6,7 @@
     "zone": "Azteca/AZ_Z07_TierraDeBrea"
   },
   "requires": [
+    "AZ-Q-A8433",
     "AZ-Q-A841D"
   ],
   "mainline": false,
@@ -69,7 +70,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001365",
-      "zone": "",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
       "descriptor": "WizQstA843A_00000007",
       "loc": "ZoneLocName_643370"
     },
@@ -93,7 +94,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Jewel_of_Denial",
     "from": "archive",
-    "timestamp": "20231125114412"
+    "timestamp": "20240409061219"
   },
   "needs_review": [
     {
@@ -104,11 +105,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Romancing El Yollotl replaced by min_level",
       "blocking": false
     }
   ]

@@ -157,6 +157,10 @@
       "loc": "ZoneLocName_227139"
     },
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z09_Science_Center"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "CL-FishbotYellow-Boss-R10.AdjRef"
@@ -196,7 +200,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Crystal Reactor",
       "blocking": false
     },

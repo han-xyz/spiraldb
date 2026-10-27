@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_OldeTown"
   },
   "requires": [
-    "WC-Q-1625D8"
+    "WC-COMMONS-MAIN-003"
   ],
   "mainline": true,
   "level": 5,
@@ -160,6 +160,15 @@
       "zone": "WizardCity/WC_Streets/WC_OldeTown"
     },
     {
+      "type": "usage",
+      "items": [
+        "DS_DragonClaw_key.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    },
+    {
       "type": "persona",
       "persona": "WC-BFF-Commons",
       "zone": "WizardCity/WC_Hub",
@@ -233,14 +242,19 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Upper Room",
       "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.items (other folder)",
+      "value": "Key: ObjectData/DS",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
       "value": "Key",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.persona",
@@ -252,5 +266,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-OLDE-MAIN-001"
 }

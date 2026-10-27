@@ -1,0 +1,151 @@
+{
+  "id": "Wysteria-Q-71931",
+  "lang": "71931",
+  "giver": {
+    "persona": "PA-HUB-NPC01",
+    "zone": "Wysteria/PA_Hub"
+  },
+  "requires": [
+    "Wysteria-Q-71930"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 120,
+    "gold": 1515
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC02",
+      "zone": "Wysteria/Interiors/PA_Tournament_Entry",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/Interiors/PA_Tournament_Entry"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PA-Samoorai-R5.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000964",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC02",
+      "zone": "Wysteria/Interiors/PA_Tournament_Entry",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Mrs_Dowager.dds",
+      "template_id": 465133
+    },
+    "PA-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Glendemming_NPC.dds",
+      "template_id": 465134
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Show_Must_Go_On",
+    "from": "archive",
+    "timestamp": "20231124102638"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Hall of the Hydra",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -7,7 +7,7 @@
   },
   "requires": [],
   "mainline": false,
-  "level": 68,
+  "level": 80,
   "reward": {
     "xp": 25850,
     "gold": 480
@@ -104,5 +104,5 @@
       "blocking": false
     }
   ],
-  "min_level": 68
+  "min_level": 80
 }

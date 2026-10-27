@@ -1,0 +1,200 @@
+{
+  "id": "AZ-Q-9D0DD",
+  "lang": "9D0DD",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC10",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 35530,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z02_Cenote",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z03_MangroveMarsh",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z05_ZultunDock",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z06_CloudburstIsland",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z10_FloatingMountains",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-UFO.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z11_TwinGiants",
+      "descriptor": "WizQst9D0DD_00000007",
+      "loc": "ZoneLocName_643250",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 643275
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_UFOs",
+    "from": "archive",
+    "timestamp": "20241225011213"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Savage Land replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

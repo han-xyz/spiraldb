@@ -1,0 +1,81 @@
+{
+  "id": "DS-Q-1ED04",
+  "lang": "1ED04",
+  "giver": {
+    "persona": "DS-LIB2-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 2180,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Cyclops-Death-Boss-R7.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000396",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+    }
+  ],
+  "personas": {
+    "DS-LIB2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_2_Ghost_NPC.dds",
+      "template_id": 126297
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:General_Panic",
+    "from": "archive",
+    "timestamp": "20240409061158"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Stop the Advance replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 40,
+  "captured": "DS-LIB2-C01-004"
+}

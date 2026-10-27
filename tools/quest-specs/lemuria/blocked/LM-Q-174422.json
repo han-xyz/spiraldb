@@ -81,18 +81,8 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003870",
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "descriptor": "WizQst174422_00000020",
-      "loc": "ZoneLocName_1520281"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "LM_MonsterChest_MorgMerciless.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WizardInteractionTitle_00000453",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -102,7 +92,17 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003929",
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Platypus_Villan_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003929",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -111,35 +111,35 @@
         "LM_AscensionBeam_01.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "descriptor": "WizItems_00002082",
       "loc": "ZoneLocName_1520281"
     },
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC01-02",
-      "zone": "Lemuria/LM_Z05_Mandoria",
+      "persona": "LM-Standin-DuckSavage-B-01",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281",
       "completion": [
         {
-          "speaker": "LM-Mandoria-NPC01-02",
+          "speaker": "LM-Standin-DuckSavage-B-01",
           "line": "00000012"
         },
         {
-          "speaker": "LM-Mandoria-NPC01-02",
+          "speaker": "LM-Standin-DuckSavage-B-01",
           "line": "00000015"
         }
       ]
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1507626
-    },
     "LM-SKY-NPC13": {
       "portrait": "GUI/NpcPortraits/Lemur_Resistance_C_NPC.dds",
       "template_id": 1524738
+    },
+    "LM-Standin-DuckSavage-B-01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487498
     }
   },
   "source": {

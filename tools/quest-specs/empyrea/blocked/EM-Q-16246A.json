@@ -2,7 +2,7 @@
   "id": "EM-Q-16246A",
   "lang": "16246A",
   "giver": {
-    "persona": "EM-CHAOS-NPC05-B",
+    "persona": "EM-CHAOS-NPC05",
     "zone": "Empyrea/EM_Z14_ChaosJungle"
   },
   "requires": [
@@ -73,9 +73,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z14_ChaosJungle"
+    },
+    {
       "type": "persona",
-      "persona": "EM-AERI-NPC17",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "persona": "EM-CHAOS-NPC07",
+      "zone": "Empyrea/EM_Z14_ChaosJungle",
+      "loc": "ZoneLocName_1451078"
     },
     {
       "type": "bounty",
@@ -90,35 +95,36 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002807",
-      "zone": "",
+      "zone": "Empyrea/EM_Z14_ChaosJungle",
       "loc": "ZoneLocName_1451078"
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC17",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "persona": "EM-CHAOS-NPC07",
+      "zone": "Empyrea/EM_Z14_ChaosJungle",
+      "loc": "ZoneLocName_1451078"
     }
   ],
   "personas": {
-    "EM-AERI-NPC17": {
-      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
-      "template_id": 1397735
-    },
-    "EM-CHAOS-NPC05-B": {
+    "EM-CHAOS-NPC05": {
       "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
-      "template_id": 1451121
+      "template_id": 1451111
+    },
+    "EM-CHAOS-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1451113
     }
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Rebuilding_the_Bat",
     "from": "archive",
-    "timestamp": "20231126093011"
+    "timestamp": "20240413023121"
   },
   "needs_review": [
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find Fragment",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.items",

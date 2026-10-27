@@ -59,6 +59,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Tritops-Undead-G.AdjRef"
@@ -108,7 +112,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Mozar Turtle Hunter's Tomb",
       "blocking": false
     },

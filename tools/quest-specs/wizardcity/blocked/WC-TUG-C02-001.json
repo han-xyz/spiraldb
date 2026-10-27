@@ -48,7 +48,7 @@
       "blocking": true
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Access Tower",
       "blocking": false
     }

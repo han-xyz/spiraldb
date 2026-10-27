@@ -1,0 +1,110 @@
+{
+  "id": "KR-Q-12D0B2",
+  "lang": "12D0B2",
+  "giver": {
+    "persona": "KR-TyrianGorge-NPC02",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 7750,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-TyrianGorge-NPC08",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {
+    "KR-TyrianGorge-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Millipede_Warrior_H_NPC.dds",
+      "template_id": 1223193
+    },
+    "KR-TyrianGorge-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Paladin_B_NPC.dds",
+      "template_id": 1223199
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:All_You_Need_To_Do",
+    "from": "archive",
+    "timestamp": "20250904064205"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D0B2 by the proper nouns its lines share with the page (Gorge, Tyrian), within 16 of a key of the zone's quests; next best WizQst130FB9 with 1",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Hypothetically Speaking",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Hypothetically Speaking replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

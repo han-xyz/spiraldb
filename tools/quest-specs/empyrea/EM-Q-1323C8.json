@@ -3,7 +3,7 @@
   "lang": "1323C8",
   "auto_start": true,
   "giver": {
-    "persona": "EM-ZANA-NPC01-D",
+    "persona": "EM-ZANA-NPC01",
     "zone": "Empyrea/EM_Z02_Zanadu"
   },
   "requires": [
@@ -80,9 +80,9 @@
     }
   ],
   "personas": {
-    "EM-ZANA-NPC01-D": {
+    "EM-ZANA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
-      "template_id": 1404201
+      "template_id": 1397572
     }
   },
   "source": {

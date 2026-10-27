@@ -1,0 +1,50 @@
+{
+  "id": "Wysteria-Q-lapinitup",
+  "giver": {
+    "persona": "PA-HUB-NPC13",
+    "zone": "Wysteria/PA_Z01_Pegasus"
+  },
+  "requires": [
+    "Wysteria-Q-71CCD"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 155,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-PEG-NPC01",
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "loc": "ZoneLocName_465168"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Groundskeeper_Verne.dds",
+      "template_id": 465145
+    },
+    "PA-PEG-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_M_03_NPC.dds",
+      "template_id": 465146
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lapin_It_Up",
+    "from": "archive",
+    "timestamp": "20231124102400"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Lapin It Up",
+      "blocking": true
+    }
+  ]
+}

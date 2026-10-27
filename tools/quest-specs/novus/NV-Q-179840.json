@@ -2,8 +2,8 @@
   "id": "NV-Q-179840",
   "lang": "179840",
   "giver": {
-    "persona": "NV-CON-NPC06-B",
-    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+    "persona": "NV-NEWV-NPC14",
+    "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
     "NV-Q-17983E"
@@ -117,10 +117,18 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
+    },
+    {
       "type": "persona",
-      "persona": "NV-NEWV-NPC03-B",
-      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "persona": "NV-NEWV-NPC03",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
     },
     {
       "type": "bounty",
@@ -130,8 +138,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004208",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
     },
     {
       "type": "usage",
@@ -143,7 +155,7 @@
         "NV-STONE-FrameOfMind.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "descriptor": "Items_00025065",
       "loc": "ZoneLocName_1546199"
     },
@@ -155,13 +167,13 @@
     }
   ],
   "personas": {
-    "NV-CON-NPC06-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1575019
-    },
-    "NV-NEWV-NPC03-B": {
+    "NV-NEWV-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
-      "template_id": 1546206
+      "template_id": 1546204
+    },
+    "NV-NEWV-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1546298
     },
     "NV-StandIn-Dasein_v3": {
       "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
@@ -175,8 +187,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Lab",
+      "field": "goal.waypoint (current zone)",
+      "value": "Lab",
       "blocking": false
     },
     {
@@ -185,13 +197,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Splintered Lands",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Frame of Mind",
+      "field": "goal.waypoint (current zone)",
+      "value": "Frame of Mind",
       "blocking": false
     },
     {

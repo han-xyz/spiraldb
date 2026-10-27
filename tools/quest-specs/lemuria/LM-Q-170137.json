@@ -2,11 +2,11 @@
   "id": "LM-Q-170137",
   "lang": "170137",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-02",
+    "persona": "LM-Mandoria-NPC01",
     "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
-    "LM-Q-170124"
+    "LM-Q-170126"
   ],
   "mainline": true,
   "level": 132,
@@ -85,9 +85,9 @@
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1507626
+    "LM-Mandoria-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_A_NPC.dds",
+      "template_id": 1507624
     }
   },
   "source": {
@@ -110,11 +110,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Fane of the Ancient One replaced by LM-Q-170124",
       "blocking": false
     }
   ]

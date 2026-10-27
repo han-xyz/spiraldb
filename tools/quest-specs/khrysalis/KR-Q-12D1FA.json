@@ -35,6 +35,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z11_TheHive"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Moth_Priest_G_Achera.AdjRef"
@@ -76,7 +80,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Night Orb Chamber",
       "blocking": false
     },

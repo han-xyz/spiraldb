@@ -2,8 +2,8 @@
   "id": "NV-Q-179845",
   "lang": "179845",
   "giver": {
-    "persona": "NV-NEWV-NPC03-B",
-    "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
+    "persona": "NV-NEWV-NPC03",
+    "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
     "NV-Q-179843"
@@ -49,13 +49,17 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Dog_NavyCaptain_A_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004173",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     },
     {
@@ -64,7 +68,7 @@
         "NV-BoatToNP.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "descriptor": "WizItems_00002109",
       "loc": "ZoneLocName_1546199"
     },
@@ -76,9 +80,9 @@
     }
   ],
   "personas": {
-    "NV-NEWV-NPC03-B": {
+    "NV-NEWV-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
-      "template_id": 1546206
+      "template_id": 1546204
     },
     "NV-PUERT-NPC13": {
       "portrait": "GUI/NpcPortraits/Portraits_Unicorn_Guard_A_NPC.dds",
@@ -97,7 +101,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Invading Fleet",
       "blocking": false
     },

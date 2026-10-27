@@ -1,0 +1,109 @@
+{
+  "id": "DS-Q-1ED3E",
+  "lang": "1ED3E",
+  "giver": {
+    "persona": "DS-NEC2-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena"
+  },
+  "requires": [
+    "DS-NEC2-C01-005"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 5240,
+    "gold": 240
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DS_CrystalStorage.AdjRef",
+        "DS_CrystalStorageNEC2-C01-006.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena",
+      "descriptor": "WizardGameObjects_00000110"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "DS_CrystalStandDSNECHatch.AdjRef",
+        "DS_CrystalStandGreenBlue.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena",
+      "descriptor": "WizardGameObjects_00000108"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Warrior-Male-Armor-Purple-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000489",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena"
+    }
+  ],
+  "personas": {
+    "DS-NEC2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_warrior_wings_1_Ghost_NPC.dds",
+      "template_id": 126317
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:It's_an_Honor",
+    "from": "archive",
+    "timestamp": "20260630185627"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC2-C01-006"
+}

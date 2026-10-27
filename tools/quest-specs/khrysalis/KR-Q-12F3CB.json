@@ -93,6 +93,10 @@
       "loc": "ZoneLocName_1205048"
     },
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Mouse_Knight_G.AdjRef"
@@ -147,7 +151,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "CurdWright Crypt, Lost Bastion",
       "blocking": false
     },

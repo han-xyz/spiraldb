@@ -39,56 +39,101 @@
   },
   "goals": [
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "AV-BlackCrow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Avalon/AV_Z00_Hub",
-      "loc": "ZoneLocName_602072"
+      "descriptor": "WizQst96AE9_00000005",
+      "loc": "ZoneLocName_602094"
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "AV-BlackCrow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "descriptor": "WizQst96AE9_00000005",
       "loc": "ZoneLocName_602094",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "AV-BlackCrow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Avalon/AV_Z02_HighRoad",
-      "loc": "ZoneLocName_537904",
+      "descriptor": "WizQst96AE9_00000005",
+      "loc": "ZoneLocName_602094",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "AV-BlackCrow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Avalon/AV_Z03_CaerLyon",
-      "loc": "ZoneLocName_470339",
+      "descriptor": "WizQst96AE9_00000005",
+      "loc": "ZoneLocName_602094",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "AV-BlackCrow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Avalon/AV_Z04_TheWild",
-      "loc": "ZoneLocName_470302",
+      "descriptor": "WizQst96AE9_00000005",
+      "loc": "ZoneLocName_602094",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "AV-BlackCrow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Avalon/AV_Z05_TheWyrd",
-      "loc": "ZoneLocName_602089",
+      "descriptor": "WizQst96AE9_00000005",
+      "loc": "ZoneLocName_602094",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "AV-BlackCrow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Avalon/AV_Z06_DunDara",
-      "loc": "ZoneLocName_611142",
+      "descriptor": "WizQst96AE9_00000005",
+      "loc": "ZoneLocName_602094",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "AV-BlackCrow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Avalon/AV_Z07_OuterYard",
-      "loc": "ZoneLocName_592078",
+      "descriptor": "WizQst96AE9_00000005",
+      "loc": "ZoneLocName_602094",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "AV-BlackCrow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Avalon/AV_Z08_LakeShore",
-      "loc": "ZoneLocName_570074",
+      "descriptor": "WizQst96AE9_00000005",
+      "loc": "ZoneLocName_602094",
       "with_previous": true
     },
     {
@@ -107,7 +152,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Crowology",
     "from": "archive",
-    "timestamp": "20231125093231"
+    "timestamp": "20240121092345"
   },
   "needs_review": [
     {

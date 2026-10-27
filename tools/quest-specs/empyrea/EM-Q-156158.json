@@ -2,8 +2,8 @@
   "id": "EM-Q-156158",
   "lang": "156158",
   "giver": {
-    "persona": "EM-NIMB-NPC16",
-    "zone": "Empyrea/Interiors/EM_Z07_ControlRoom"
+    "persona": "EM-SEP-001",
+    "zone": "Empyrea/EM_Z05_Sepidious"
   },
   "requires": [
     "EM-Q-1553E6"
@@ -103,7 +103,7 @@
       ],
       "count": 5,
       "target": "WizardMobs_00002785",
-      "zone": "",
+      "zone": "Empyrea/EM_Z05_Sepidious",
       "descriptor": "WizQst156158_00000008"
     },
     {
@@ -112,28 +112,28 @@
         "EM-GastricFissure.AdjRef"
       ],
       "count": 4,
-      "zone": "",
+      "zone": "Empyrea/EM_Z05_Sepidious",
       "descriptor": "WizQst156158_00000009"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Empyrea/Interiors/EM_Z07_ControlRoom"
+      "zone": "Empyrea/EM_Z05_Sepidious"
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC17",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "persona": "EM-SEP-002",
+      "zone": "Empyrea/EM_Z05_Sepidious"
     }
   ],
   "personas": {
-    "EM-AERI-NPC17": {
-      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
-      "template_id": 1397735
+    "EM-SEP-001": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pirate_Cabalist_A_NPC.dds",
+      "template_id": 1401196
     },
-    "EM-NIMB-NPC16": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mutant_Dynt_A_NPC.dds",
-      "template_id": 1413353
+    "EM-SEP-002": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1401197
     }
   },
   "source": {

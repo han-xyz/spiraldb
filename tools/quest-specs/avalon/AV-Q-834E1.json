@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z03_CaerLyon"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Ogre-Boss-R11-02.AdjRef"
@@ -104,8 +108,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Ruined Tower",
+      "field": "goal.waypoint (current zone)",
+      "value": "Ruined Tower",
       "blocking": false
     },
     {

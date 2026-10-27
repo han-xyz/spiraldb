@@ -1,0 +1,127 @@
+{
+  "id": "WC-Q-B4F75",
+  "lang": "B4F75",
+  "giver": {
+    "persona": "AQ-HUB-NPC04",
+    "zone": "Aquila/AQ_Z00_Hub"
+  },
+  "requires": [
+    "WC-Q-B4F72"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 41980,
+    "gold": 510
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AQ-Immortal-Kronus.AdjRef",
+        "Adv_AQ-Immortal-Kronus.AdjRef",
+        "Heroic_AQ_Kronus.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001538",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Aquila/AQ_Z00_Hub"
+    }
+  ],
+  "personas": {
+    "AQ-HUB-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Eagle_DruidF_C_NPC.dds",
+      "template_id": 741235
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Revenge_of_the_Immortals",
+    "from": "archive",
+    "timestamp": "20240119022611"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Erytheia: AQ-HUB-NPC04 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Erytheia is placed in Aquila/AQ_Z00_Hub",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Tartarus, Cave of Nyx",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Cronus: ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Erytheia: AQ-HUB-NPC04 from ObjectData/AQ",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

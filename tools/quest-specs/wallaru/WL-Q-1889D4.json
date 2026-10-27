@@ -2,7 +2,7 @@
   "id": "WL-Q-1889D4",
   "lang": "1889D4",
   "giver": {
-    "persona": "WL-HOPE-NPC04-C",
+    "persona": "WL-HOPE-NPC04",
     "zone": "Wallaru/WL_Z01_Hub"
   },
   "requires": [
@@ -106,9 +106,9 @@
       "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Judge_D_NPC.dds",
       "template_id": 1608455
     },
-    "WL-HOPE-NPC04-C": {
+    "WL-HOPE-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_A_NPC.dds",
-      "template_id": 1608069
+      "template_id": 1608058
     }
   },
   "source": {

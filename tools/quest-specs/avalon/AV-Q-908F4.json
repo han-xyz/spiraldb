@@ -61,6 +61,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z10_Catacombs"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "AV-Froudling-BloodCaptain-R12-01.AdjRef",
@@ -68,7 +72,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001222",
-      "zone": "",
+      "zone": "Avalon/AV_Z10_Catacombs",
       "descriptor": "WizQst908F4_00000013",
       "loc": "ZoneLocName_592140"
     },
@@ -102,7 +106,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Blood Captain's Chamber",
       "blocking": false
     },

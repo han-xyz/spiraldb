@@ -1,0 +1,158 @@
+{
+  "id": "WL-Q-1889FF",
+  "lang": "1889FF",
+  "giver": {
+    "persona": "WL-BILLA-NPC07",
+    "zone": "Wallaru/WL_Z08_BillabongResort"
+  },
+  "requires": [
+    "WL-Q-1889E6"
+  ],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-RANCH-NPC08",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
+      "loc": "ZoneLocName_1608171"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_WL_Dingo_Crash_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004518",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    }
+  ],
+  "personas": {
+    "WL-BILLA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_TouristF_B_NPC.dds",
+      "template_id": 1608192
+    },
+    "WL-RANCH-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dingo_BaseF_B_NPC.dds",
+      "template_id": 1608361
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Crash_of_Us",
+    "from": "archive",
+    "timestamp": "20240121095952"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Crash's Cave, Wobbegong Territory",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Crash the Bandit Coot: ObjectData/WL/Advanced",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

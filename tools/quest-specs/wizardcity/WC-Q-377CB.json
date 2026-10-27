@@ -126,7 +126,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Science Center, Talos's Tower",
       "blocking": false
     },

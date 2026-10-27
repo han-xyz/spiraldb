@@ -4,8 +4,8 @@
   "title": "QuestTitle_00001980",
   "auto_start": true,
   "giver": {
-    "persona": "WL-DREAM-NPC01-A",
-    "zone": "Wallaru/WL_Z04_TheDreaming"
+    "persona": "WL-OUT-NPC01",
+    "zone": "Wallaru/WL_Z02_Outback"
   },
   "requires": [
     "WL-Q-17D8A4"
@@ -133,7 +133,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004379",
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     },
     {
@@ -145,7 +145,7 @@
         "WL-OUT-EmuCannon_04.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "descriptor": "WizardGameObjects_00001018",
       "loc": "ZoneLocName_1562752"
     },
@@ -157,7 +157,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004380",
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     },
     {
@@ -169,7 +169,7 @@
         "WL-OUT-EmuCannon_04.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "descriptor": "WizardGameObjects_00001018",
       "loc": "ZoneLocName_1562752"
     },
@@ -190,14 +190,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004400",
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     }
   ],
   "personas": {
-    "WL-DREAM-NPC01-A": {
+    "WL-OUT-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
-      "template_id": 1560362
+      "template_id": 1608160
     },
     "WL-StandIn-FreddieKroaker": {
       "portrait": "GUI/NpcPortraits/Portrait_Toad_EvilClaw_B_MOB.dds",

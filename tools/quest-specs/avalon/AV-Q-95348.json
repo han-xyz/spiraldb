@@ -84,6 +84,10 @@
       "loc": "ZoneLocName_602089"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z05_TheWyrd"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Ogre-Boss-R12-02.AdjRef",
@@ -161,8 +165,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Eurgh's Tower",
+      "field": "goal.waypoint (current zone)",
+      "value": "Eurgh's Tower",
       "blocking": false
     },
     {

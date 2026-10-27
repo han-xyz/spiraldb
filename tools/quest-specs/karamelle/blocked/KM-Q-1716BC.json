@@ -2,7 +2,7 @@
   "id": "KM-Q-1716BC",
   "lang": "1716BC",
   "giver": {
-    "persona": "KM-FARM-NPC01-B",
+    "persona": "KM-FARM-NPC01",
     "zone": "Karamelle/KM_Z09_CandyCornFarm"
   },
   "requires": [
@@ -164,9 +164,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
       "template_id": 1513116
     },
-    "KM-FARM-NPC01-B": {
+    "KM-FARM-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513095
+      "template_id": 1513070
     }
   },
   "source": {

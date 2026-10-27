@@ -9,7 +9,7 @@
     {
       "school": "Fire"
     },
-    "WC-Q-9958"
+    "MS-WAR3-C03-001"
   ],
   "mainline": false,
   "level": 18,
@@ -81,7 +81,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Colossus Problem replaced by WC-Q-9958",
+      "value": "Colossus Problem replaced by WC-Q-12E14",
       "blocking": false
     }
   ],

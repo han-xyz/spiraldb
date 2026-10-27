@@ -83,5 +83,6 @@
       "blocking": false
     }
   ],
-  "min_level": 5
+  "min_level": 5,
+  "captured": "WC-FIRECAT-SIDE-001"
 }

@@ -99,6 +99,10 @@
       "loc": "ZoneLocName_1510006"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Hamster_Counter_A_04.AdjRef"
@@ -107,6 +111,10 @@
       "target": "WizardMobs_00003719",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
     },
     {
       "type": "bounty",
@@ -142,13 +150,13 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to next room",
+      "field": "goal.waypoint (current zone)",
+      "value": "next room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to next room",
+      "field": "goal.waypoint (current zone)",
+      "value": "next room",
       "blocking": false
     },
     {

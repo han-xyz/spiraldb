@@ -1,0 +1,58 @@
+{
+  "id": "DS-Q-ashback",
+  "giver": {
+    "persona": "DS-ACAD-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Hub_Academy"
+  },
+  "requires": [],
+  "min_level": 40,
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 0,
+    "gold": 230
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC01-B",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs"
+    }
+  ],
+  "personas": {
+    "DS-ACAD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ashley.dds",
+      "template_id": 126321
+    },
+    "WC-CATA-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Hargrove_A_NPC.dds",
+      "template_id": 1487009
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ashback",
+    "from": "archive",
+    "timestamp": "20250917133128"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Ashback",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Veni Vidi Viggor",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Professor Hargrove: WC-CATA-NPC01-B from ObjectData/WC",
+      "blocking": false
+    }
+  ]
+}

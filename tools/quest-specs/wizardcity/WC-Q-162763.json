@@ -1,0 +1,155 @@
+{
+  "id": "WC-Q-162763",
+  "lang": "162763",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-CATA-NPC13-B",
+    "zone": "WizardCity/WC_Shop_Area"
+  },
+  "requires": [
+    "WC-UNICORN-CATA-SIDE-001"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 690
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WC-TeleportMrDeadLair.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Talk to a Horse About a Guy",
+      "loc": "ZoneLocName_1413426"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Horse_Apoc_D_01.AdjRef",
+        "CC_Horse_Apoc_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003437",
+      "zone": "",
+      "loc": "ZoneLocName_1413426"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WC-TeleportMrDeadLair.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Talk to a Horse About a Guy",
+      "loc": "ZoneLocName_1413426"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Horse_Apoc_D_01.AdjRef",
+        "CC_Horse_Apoc_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003437",
+      "zone": "",
+      "loc": "ZoneLocName_1413426"
+    }
+  ],
+  "personas": {
+    "WC-CATA-NPC13-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Prepper_A_NPC.dds",
+      "template_id": 1451855
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:How_to_End_the_World",
+    "from": "archive",
+    "timestamp": "20240409061211"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Mr. Dead: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Mr. Dead: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

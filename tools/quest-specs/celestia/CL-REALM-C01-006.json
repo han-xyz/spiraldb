@@ -91,6 +91,10 @@
       "loc": "ZoneLocName_227109"
     },
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z02_Crab_Realm"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "CL-CrabKing-Boss-R10.AdjRef"
@@ -139,8 +143,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Governor Nereus",
+      "field": "goal.waypoint (current zone)",
+      "value": "Governor Nereus",
       "blocking": false
     },
     {

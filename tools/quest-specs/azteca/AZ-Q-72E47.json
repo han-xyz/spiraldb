@@ -2,7 +2,7 @@
   "id": "AZ-Q-72E47",
   "lang": "72E47",
   "giver": {
-    "persona": "AZ-FLOAT-NPC05-Sick",
+    "persona": "AZ-FLOAT-NPC05",
     "zone": "Azteca/AZ_Z10_FloatingMountains"
   },
   "requires": [
@@ -41,6 +41,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z10_FloatingMountains"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Azteca/AZ_Z10_FloatingMountains",
@@ -48,9 +52,9 @@
     }
   ],
   "personas": {
-    "AZ-FLOAT-NPC05-Sick": {
+    "AZ-FLOAT-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_C_NPC.dds",
-      "template_id": 470600
+      "template_id": 470572
     }
   },
   "source": {
@@ -60,8 +64,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Zip Line",
+      "field": "goal.waypoint (current zone)",
+      "value": "Zip Line",
       "blocking": false
     },
     {

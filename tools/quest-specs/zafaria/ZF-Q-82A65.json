@@ -59,6 +59,10 @@
       "loc": "ZoneLocName_465392"
     },
     {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z07_Stone_Town"
+    },
+    {
       "type": "persona",
       "persona": "ZF-STONE-NPC04",
       "zone": "Zafaria/ZF_Z07_Stone_Town",
@@ -92,7 +96,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Stone Town Library",
       "blocking": false
     },

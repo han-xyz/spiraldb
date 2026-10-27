@@ -2,8 +2,8 @@
   "id": "EM-Q-1590EA",
   "lang": "1590EA",
   "giver": {
-    "persona": "EM-NIMB-NPC12-B",
-    "zone": "Empyrea/Interiors/EM_Z07_TechnologistAcademy"
+    "persona": "EM-NIMB-NPC12",
+    "zone": "Empyrea/EM_Z07_NimbusCitadel"
   },
   "requires": [
     "EM-Q-159089"
@@ -85,13 +85,17 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Nimbari_ExemplarF_A_02.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00003091",
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     },
     {
@@ -108,9 +112,9 @@
     }
   ],
   "personas": {
-    "EM-NIMB-NPC12-B": {
+    "EM-NIMB-NPC12": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Support_B_NPC.dds",
-      "template_id": 1413355
+      "template_id": 1413346
     },
     "EM-NIMB-NPC14": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Support_B_NPC.dds",
@@ -124,7 +128,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Academy of Technologists",
       "blocking": false
     },

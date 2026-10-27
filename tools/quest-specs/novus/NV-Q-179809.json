@@ -2,8 +2,8 @@
   "id": "NV-Q-179809",
   "lang": "179809",
   "giver": {
-    "persona": "NV-CON-NPC15-B",
-    "zone": "Novus/NV_Z01_Conatus"
+    "persona": "NV-NEWV-NPC02",
+    "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
     "NV-Q-179807"
@@ -100,8 +100,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004194",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
     },
     {
       "type": "usage",
@@ -110,7 +114,7 @@
         "NV-Standin-GeneralBooth.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "descriptor": "WC-NPCs_00002632",
       "loc": "ZoneLocName_1546199"
     },
@@ -126,24 +130,24 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004135",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC01-B",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265"
+      "persona": "NV-Standin-MooBu",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
     }
   ],
   "personas": {
-    "NV-CON-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
-      "template_id": 1575004
-    },
-    "NV-CON-NPC15-B": {
+    "NV-NEWV-NPC02": {
       "portrait": "GUI/NpcPortraits/Dog_Governor_A_NPC.dds",
-      "template_id": 1575027
+      "template_id": 1546202
+    },
+    "NV-Standin-MooBu": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1546251
     }
   },
   "source": {
@@ -153,8 +157,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

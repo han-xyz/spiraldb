@@ -2,7 +2,7 @@
   "id": "KM-Q-171641",
   "lang": "171641",
   "giver": {
-    "persona": "KM-FARM-NPC01-B",
+    "persona": "KM-FARM-NPC01",
     "zone": "Karamelle/KM_Z09_CandyCornFarm"
   },
   "requires": [
@@ -69,6 +69,10 @@
       "zone": "Karamelle/Interiors/KM_Z04_GummyPlant"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z04_GummyPlant"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Brudel_Toasted_A_01.AdjRef"
@@ -90,9 +94,9 @@
       "portrait": "GUI/NpcPortraits/Fairy_SisterF_B_NPC.dds",
       "template_id": 1513074
     },
-    "KM-FARM-NPC01-B": {
+    "KM-FARM-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513095
+      "template_id": 1513070
     },
     "KM-FARM-NPC02": {
       "portrait": "GUI/NpcPortraits/Fairy_FarmerF_A_NPC.dds",
@@ -106,7 +110,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Candy Corn Silo",
       "blocking": false
     },

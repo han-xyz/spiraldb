@@ -45,7 +45,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "PL-BLEAK-NPC05-B",
+      "persona": "PL-BLEAK-NPC05",
       "zone": "Polaris/PL_Z02_ForlornTaig",
       "loc": "ZoneLocName_1346179"
     },
@@ -60,9 +60,9 @@
     }
   ],
   "personas": {
-    "PL-BLEAK-NPC05-B": {
+    "PL-BLEAK-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Bear_Strongman_A_NPC.dds",
-      "template_id": 1346203
+      "template_id": 1346201
     },
     "PL-BLEAK-NPC07": {
       "portrait": "GUI/NpcPortraits/Human_Mellori_A_NPC.dds",

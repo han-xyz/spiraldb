@@ -1,0 +1,69 @@
+{
+  "id": "DS-Q-1ED9E",
+  "lang": "1ED9E",
+  "giver": {
+    "persona": "DS-ACAD1-NPC04",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+  },
+  "requires": [
+    "DS-ACAD1-C05-003"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 2095,
+    "gold": 125
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+    }
+  ],
+  "personas": {
+    "DS-ACAD1-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_longhair_2_Ghost_NPC.dds",
+      "template_id": 126325
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Grove_of_the_Spiders",
+    "from": "archive",
+    "timestamp": "20240409061202"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "North Grove Spiders",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD1-C05-004"
+}

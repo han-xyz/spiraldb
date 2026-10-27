@@ -57,6 +57,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z03_OuterAthanor"
+    },
+    {
       "type": "usage",
       "items": [
         "EM-SteamPipe.AdjRef"
@@ -86,7 +90,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Helgar's House",
       "blocking": false
     },

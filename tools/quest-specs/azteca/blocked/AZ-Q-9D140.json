@@ -43,13 +43,14 @@
     {
       "type": "usage",
       "items": [
+        "Drop-Claw-01.AdjRef",
         "AZ-VondaFish.AdjRef",
         "AZ-Anemones.AdjRef",
         "AZ-SeaCuecumbers.AdjRef"
       ],
       "count": 5,
       "zone": "Azteca/AZ_Z00_Zocalo",
-      "descriptor": "QuestTitle_00001016",
+      "descriptor": "Reagents_00000080",
       "loc": "ZoneLocName_643250"
     },
     {
@@ -82,9 +83,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "A Claw from Axantho Crabs",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "A Claw from Axantho Crabs: ObjectData/Reagents",
+      "blocking": false
     },
     {
       "field": "dialogs",

@@ -9,10 +9,40 @@
     "AV-Q-96A81"
   ],
   "mainline": false,
-  "level": 68,
+  "level": 72,
   "reward": {
     "xp": 16715,
-    "gold": 415
+    "gold": 415,
+    "spells": [
+      {
+        "spell": "Mana Burn",
+        "school": "Balance"
+      },
+      {
+        "spell": "Mass Infection",
+        "school": "Death"
+      },
+      {
+        "spell": "Detonate",
+        "school": "Fire"
+      },
+      {
+        "spell": "Snow Drift",
+        "school": "Ice"
+      },
+      {
+        "spell": "Mass Triage",
+        "school": "Life"
+      },
+      {
+        "spell": "Shift",
+        "school": "Myth"
+      },
+      {
+        "spell": "Enfeeble",
+        "school": "Storm"
+      }
+    ]
   },
   "dialogs": {
     "prep": [
@@ -117,5 +147,6 @@
       "value": "The Runedown replaced by min_level",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 72
 }

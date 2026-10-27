@@ -79,7 +79,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001031",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizQst82A75_00000017",
       "loc": "ZoneLocName_465261"
     },
@@ -90,7 +90,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001018",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizQst82A75_00000013",
       "loc": "ZoneLocName_465261"
     },
@@ -101,7 +101,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001092",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizQst82A75_00000011",
       "loc": "ZoneLocName_465261"
     },
@@ -112,7 +112,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001019",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizQst82A75_00000006",
       "loc": "ZoneLocName_465261"
     },

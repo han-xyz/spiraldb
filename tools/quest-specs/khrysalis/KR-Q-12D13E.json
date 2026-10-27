@@ -1,0 +1,87 @@
+{
+  "id": "KR-Q-12D13E",
+  "lang": "12D13E",
+  "giver": {
+    "persona": "KR-TyrianGorge-NPC08",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [
+    "KR-Q-12D09F"
+  ],
+  "mainline": true,
+  "level": 88,
+  "reward": {
+    "xp": 126085,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-Gorge-GoatweaverWeb.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizardGameObjects_00000653",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {
+    "KR-TyrianGorge-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Paladin_B_NPC.dds",
+      "template_id": 1223199
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Baa_Baa_GoatWeaver",
+    "from": "archive",
+    "timestamp": "20250914062043"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D13E by the proper nouns its lines share with the page (GoatWeaver, Gorge), within 16 of a key of the zone's quests; next best WizQst12D0AF with 1",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

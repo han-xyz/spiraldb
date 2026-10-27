@@ -171,7 +171,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Criminal Hideout, Chelsea Court",
       "blocking": false
     },

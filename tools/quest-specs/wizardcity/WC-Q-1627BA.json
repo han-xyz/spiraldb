@@ -68,5 +68,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-TRITON-MAIN-009"
 }

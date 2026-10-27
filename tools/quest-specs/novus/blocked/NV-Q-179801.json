@@ -64,6 +64,10 @@
       "zone": "Novus/Interiors/NV_Z03_SabotuerCave"
     },
     {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z03_SabotuerCave"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Dog_DogofWarF_A_03.AdjRef",
@@ -93,8 +97,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

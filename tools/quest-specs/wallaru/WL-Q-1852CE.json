@@ -2,8 +2,8 @@
   "id": "WL-Q-1852CE",
   "lang": "1852CE",
   "giver": {
-    "persona": "WL-HOPE-NPC34",
-    "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse"
+    "persona": "WL-RANCH-NPC01",
+    "zone": "Wallaru/WL_Z06_CollieRanch"
   },
   "requires": [
     "WL-Q-1852CD"
@@ -78,20 +78,20 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "WL-RANCH-NPC03-B",
+      "persona": "WL-RANCH-NPC03",
       "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     },
     {
       "type": "persona",
-      "persona": "WL-RANCH-NPC02-B",
+      "persona": "WL-RANCH-NPC02",
       "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105",
       "with_previous": true
     },
     {
       "type": "persona",
-      "persona": "WL-RANCH-NPC04-Scene",
+      "persona": "WL-RANCH-NPC04",
       "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105",
       "with_previous": true
@@ -99,7 +99,7 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     },
     {
@@ -120,21 +120,21 @@
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
       "template_id": 1560362
     },
-    "WL-HOPE-NPC34": {
+    "WL-RANCH-NPC01": {
       "portrait": "GUI/NpcPortraits/Koala_JudgeF_A_NPC.dds",
-      "template_id": 1608377
+      "template_id": 1594052
     },
-    "WL-RANCH-NPC02-B": {
+    "WL-RANCH-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Dingo_Base_C_NPC.dds",
-      "template_id": 1594080
+      "template_id": 1594053
     },
-    "WL-RANCH-NPC03-B": {
+    "WL-RANCH-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dingo_Base_A_NPC.dds",
-      "template_id": 1594082
+      "template_id": 1594055
     },
-    "WL-RANCH-NPC04-Scene": {
+    "WL-RANCH-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Dingo_Base_B_NPC.dds",
-      "template_id": 1594160
+      "template_id": 1594056
     }
   },
   "source": {

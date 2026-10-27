@@ -69,6 +69,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z01_AbbeyRoad"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Deer-Knight-Charger-Lancer-BossA-R11-01.AdjRef",
@@ -78,6 +82,10 @@
       "target": "WizardMobs_00001198",
       "zone": "Avalon/AV_Z01_AbbeyRoad",
       "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z01_AbbeyRoad"
     },
     {
       "type": "persona",
@@ -104,13 +112,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Malgrin's Tower",
+      "field": "goal.waypoint (current zone)",
+      "value": "Malgrin's Tower",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Avalon Castle",
+      "field": "goal.waypoint (current zone)",
+      "value": "Avalon Castle",
       "blocking": false
     },
     {

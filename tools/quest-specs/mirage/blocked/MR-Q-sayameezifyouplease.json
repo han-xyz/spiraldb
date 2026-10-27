@@ -20,19 +20,23 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "MR-YAKH-NPC03-B",
-      "zone": "Mirage/Interiors/MR_Z06_RotwangLab",
+      "persona": "MR-YAKH-NPC03",
+      "zone": "Mirage/Interiors/MR_Z06_ChairmanSuite",
       "loc": "ZoneLocName_1397011"
     },
     {
       "type": "persona",
-      "persona": "MR-YAKH-NPC03-B",
-      "zone": "Mirage/Interiors/MR_Z06_RotwangLab",
+      "persona": "MR-YAKH-NPC03",
+      "zone": "Mirage/Interiors/MR_Z06_ChairmanSuite",
       "loc": "ZoneLocName_1397011"
     },
     {
+      "type": "waypoint",
+      "zone": "Mirage/Interiors/MR_Z06_ChairmanSuite"
+    },
+    {
       "type": "persona",
-      "persona": "MR-YAKH-NPC06-B",
+      "persona": "MR-YAKH-NPC06",
       "zone": "Mirage/MR_Z06_YakhalMountain",
       "loc": "ZoneLocName_1397011"
     }
@@ -42,13 +46,13 @@
       "portrait": "GUI/NpcPortraits/Portrait_Djinn_MageF_A_NPC.dds",
       "template_id": 1389038
     },
-    "MR-YAKH-NPC03-B": {
+    "MR-YAKH-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Stout_B_NPC.dds",
-      "template_id": 1401009
+      "template_id": 1389040
     },
-    "MR-YAKH-NPC06-B": {
+    "MR-YAKH-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_E_NPC.dds",
-      "template_id": 1401000
+      "template_id": 1389043
     }
   },
   "source": {
@@ -63,7 +67,7 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Basking Grounds",
       "blocking": false
     }

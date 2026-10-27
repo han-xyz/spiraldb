@@ -6,7 +6,7 @@
     "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
   },
   "requires": [
-    "CL-Q-37210"
+    "CL-Q-37208"
   ],
   "mainline": true,
   "level": 48,
@@ -57,6 +57,22 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "Cl-SharkWarrior-GreyShoulder-BossR10-1.AdjRef"
@@ -86,28 +102,33 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Terrace",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Mezzanine",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Concourse",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hexfin's Hideout",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "X Marks the Spot replaced by CL-Q-37208",
       "blocking": false
     }
   ]

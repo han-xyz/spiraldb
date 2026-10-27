@@ -9,7 +9,7 @@
     "AZ-Q-A8446"
   ],
   "mainline": false,
-  "level": 78,
+  "level": 88,
   "reward": {
     "xp": 67000,
     "gold": 885
@@ -108,6 +108,10 @@
       "loc": "ZoneLocName_643250"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Parasaur-Undead-F.AdjRef"
@@ -179,7 +183,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Chamber of Red Sorrow",
       "blocking": false
     },
@@ -193,5 +197,6 @@
       "value": "In My Eyes replaced by min_level",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 88
 }

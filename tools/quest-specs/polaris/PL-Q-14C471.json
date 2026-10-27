@@ -65,7 +65,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002185",
-      "zone": "",
+      "zone": "Polaris/PL_Z04_UrvilleStation",
       "descriptor": "WizQst14C471_00000006",
       "loc": "ZoneLocName_1346322"
     },
@@ -76,7 +76,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002276",
-      "zone": "",
+      "zone": "Polaris/PL_Z04_UrvilleStation",
       "descriptor": "WizQst14C471_00000010",
       "loc": "ZoneLocName_1346322"
     },

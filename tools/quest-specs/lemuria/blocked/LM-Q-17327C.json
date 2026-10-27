@@ -2,7 +2,7 @@
   "id": "LM-Q-17327C",
   "lang": "17327C",
   "giver": {
-    "persona": "LM-URSAI-NPC01-C-NoGuitar",
+    "persona": "LM-URSAI-NPC01",
     "zone": "Lemuria/LM_Z01_WildLands"
   },
   "requires": [
@@ -71,9 +71,9 @@
     }
   ],
   "personas": {
-    "LM-URSAI-NPC01-C-NoGuitar": {
+    "LM-URSAI-NPC01": {
       "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
-      "template_id": 1520317
+      "template_id": 1520122
     }
   },
   "source": {
@@ -83,8 +83,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.unknown-verb",
-      "value": "Procure Wing Brotherhood Feather",
+      "field": "goal.items",
+      "value": "Wing Brotherhood Feather",
       "blocking": true
     },
     {

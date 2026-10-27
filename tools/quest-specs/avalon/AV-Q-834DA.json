@@ -72,6 +72,10 @@
       "loc": "ZoneLocName_470339"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z03_CaerLyon"
+    },
+    {
       "type": "persona",
       "persona": "AV-CAER-NPC07",
       "zone": "Avalon/Interiors/AV_Z03_EstateLogres",
@@ -107,8 +111,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Logres Estate",
+      "field": "goal.waypoint (current zone)",
+      "value": "Logres Estate",
       "blocking": false
     },
     {

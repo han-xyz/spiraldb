@@ -2,8 +2,8 @@
   "id": "AZ-Q-A841D",
   "lang": "A841D",
   "giver": {
-    "persona": "AZ-ALTO-NPC07",
-    "zone": "Azteca/AZ_Z09_AltoAlto"
+    "persona": "AZ-TIERRA-NPC01",
+    "zone": "Azteca/AZ_Z07_TierraDeBrea"
   },
   "requires": [],
   "mainline": true,
@@ -40,21 +40,21 @@
         "AZ-TIERRA-OBJ-FROGBAIT.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
       "descriptor": "WizItems_00001901",
       "loc": "ZoneLocName_643370"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Azteca/AZ_Z09_AltoAlto",
-      "loc": "ZoneLocName_726071"
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
+      "loc": "ZoneLocName_643370"
     }
   ],
   "personas": {
-    "AZ-ALTO-NPC07": {
+    "AZ-TIERRA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_NPC.dds",
-      "template_id": 726119
+      "template_id": 689131
     }
   },
   "source": {

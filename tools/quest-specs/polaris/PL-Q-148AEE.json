@@ -2,7 +2,7 @@
   "id": "PL-Q-148AEE",
   "lang": "148AEE",
   "giver": {
-    "persona": "PL-URVI-NPC04-B",
+    "persona": "PL-URVI-NPC04",
     "zone": "Polaris/PL_Z04_UrvilleStation"
   },
   "requires": [],
@@ -40,7 +40,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "PL-URVI-NPC05-B",
+      "persona": "PL-URVI-NPC05",
       "zone": "Polaris/PL_Z04_UrvilleStation",
       "loc": "ZoneLocName_1346322"
     },
@@ -52,13 +52,13 @@
     }
   ],
   "personas": {
-    "PL-URVI-NPC04-B": {
+    "PL-URVI-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_A_NPC.dds",
-      "template_id": 1346342
+      "template_id": 1346292
     },
-    "PL-URVI-NPC05-B": {
+    "PL-URVI-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_E_NPC.dds",
-      "template_id": 1346365
+      "template_id": 1346294
     }
   },
   "source": {

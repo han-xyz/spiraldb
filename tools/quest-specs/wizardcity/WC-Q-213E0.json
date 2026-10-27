@@ -2,8 +2,8 @@
   "id": "WC-Q-213E0",
   "lang": "213E0",
   "giver": {
-    "persona": "WC-RAV-NPC15",
-    "zone": "WizardCity/WC_Ravenwood"
+    "persona": "WC-RAV-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolLife"
   },
   "requires": [
     {
@@ -125,7 +125,7 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "WizardCity/WC_Ravenwood",
+      "zone": "WizardCity/Interiors/WC_SchoolLife",
       "loc": "ZoneLocName_9005"
     }
   ],
@@ -138,13 +138,13 @@
       "portrait": "GUI/NpcPortraits/Art_Portrait_Treant_NPC.dds",
       "template_id": 77350
     },
+    "WC-RAV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 38204
+    },
     "WC-RAV-NPC07": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_Bartleby.dds",
       "template_id": 38230
-    },
-    "WC-RAV-NPC15": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
-      "template_id": 1459033
     }
   },
   "source": {

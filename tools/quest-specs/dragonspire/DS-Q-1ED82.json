@@ -1,0 +1,100 @@
+{
+  "id": "DS-Q-1ED82",
+  "lang": "1ED82",
+  "giver": {
+    "persona": "DS-NEC1-NPC05",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+  },
+  "requires": [
+    "DS-NEC1-C04-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2345,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "DS_DragonEgg.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "descriptor": "WizQst1ED82_00000014"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_drake_mother_Ghost_NPC.dds",
+      "template_id": 126316
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Don't_Count_Your_Eggs...",
+    "from": "archive",
+    "timestamp": "20240214173122"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Secure House",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC1-C05-001"
+}

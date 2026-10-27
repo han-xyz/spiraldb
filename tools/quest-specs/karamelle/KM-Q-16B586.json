@@ -4,11 +4,11 @@
   "title": "QuestTitle_00001768",
   "auto_start": true,
   "giver": {
-    "persona": "KM-GUTEN-NPC02-B",
+    "persona": "KM-GUTEN-NPC02",
     "zone": "Karamelle/KM_Z07_Gutenstadt"
   },
   "requires": [
-    "KM-Q-16B56E"
+    "KM-Q-16B56F"
   ],
   "mainline": true,
   "level": 122,
@@ -157,9 +157,9 @@
     }
   ],
   "personas": {
-    "KM-GUTEN-NPC02-B": {
+    "KM-GUTEN-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1488266
+      "template_id": 1488241
     }
   },
   "source": {
@@ -176,11 +176,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Mage Against the Machine replaced by KM-Q-16B56E",
       "blocking": false
     }
   ]

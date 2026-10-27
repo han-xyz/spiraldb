@@ -2,7 +2,7 @@
   "id": "WL-Q-188973",
   "lang": "188973",
   "giver": {
-    "persona": "WL-HOPE-NPC01-B",
+    "persona": "WL-HOPE-NPC01",
     "zone": "Wallaru/WL_Z01_Hub"
   },
   "requires": [],
@@ -109,6 +109,14 @@
   "goals": [
     {
       "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
+      "type": "waypoint",
       "zone": "Wallaru/Interiors/WL_Z01_I05_MonquistanEmbassy"
     },
     {
@@ -123,20 +131,24 @@
       "loc": "ZoneLocName_1560381"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
       "type": "persona",
-      "persona": "WL-HOPE-NPC03-B",
+      "persona": "WL-HOPE-NPC03",
       "zone": "Wallaru/WL_Z01_Hub",
       "loc": "ZoneLocName_1560381"
     }
   ],
   "personas": {
-    "WL-HOPE-NPC01-B": {
+    "WL-HOPE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
-      "template_id": 1608052
+      "template_id": 1608049
     },
-    "WL-HOPE-NPC03-B": {
+    "WL-HOPE-NPC03": {
       "portrait": "GUI/NpcPortraits/Portraits_KangaroosF_A_NPC.dds",
-      "template_id": 1608287
+      "template_id": 1608056
     }
   },
   "source": {
@@ -151,18 +163,18 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Outback Gate",
+      "field": "goal.waypoint (current zone)",
+      "value": "Outback Gate",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Prime Minister's Office",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Prime Minister's Office",
+      "field": "goal.waypoint (current zone)",
+      "value": "Prime Minister's Office",
       "blocking": false
     },
     {

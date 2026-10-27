@@ -2,7 +2,7 @@
   "id": "WL-Q-1889DE",
   "lang": "1889DE",
   "giver": {
-    "persona": "WL-KING-NPC03-B",
+    "persona": "WL-KING-NPC03",
     "zone": "Wallaru/WL_Z03_Kingsland"
   },
   "requires": [
@@ -93,13 +93,17 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z03_Kingsland"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Koala_Drover_B_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004394",
-      "zone": "",
+      "zone": "Wallaru/WL_Z03_Kingsland",
       "loc": "ZoneLocName_1608151"
     },
     {
@@ -110,35 +114,35 @@
     },
     {
       "type": "persona",
-      "persona": "WL-DREAM-NPC01-A",
-      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "persona": "WL-KING-NPC01",
+      "zone": "Wallaru/WL_Z03_Kingsland",
       "loc": "ZoneLocName_1608151",
       "completion": [
         {
-          "speaker": "WL-DREAM-NPC01-A",
+          "speaker": "WL-KING-NPC01",
           "line": "00000020"
         }
       ]
     }
   ],
   "personas": {
-    "WL-DREAM-NPC01-A": {
+    "WL-KING-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
-      "template_id": 1560362
+      "template_id": 1608153
     },
-    "WL-KING-NPC03-B": {
+    "WL-KING-NPC03": {
       "portrait": "GUI/NpcPortraits/Portraits_ShamanF_A_NPC.dds",
-      "template_id": 1608159
+      "template_id": 1608155
     }
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Outback_Steps_In",
     "from": "archive",
-    "timestamp": "20231129122439"
+    "timestamp": "20240118172137"
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Lost King's Mine",
       "blocking": false
     },

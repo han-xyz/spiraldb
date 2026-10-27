@@ -72,6 +72,10 @@
       "loc": "ZoneLocName_724108"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Toucan-Warrior-E.AdjRef"
@@ -122,7 +126,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Bacab's Clearing",
       "blocking": false
     },

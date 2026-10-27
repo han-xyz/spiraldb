@@ -106,8 +106,8 @@
     },
     {
       "type": "persona",
-      "persona": "EM-OUTER-NPC07-B",
-      "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall",
+      "persona": "EM-OUTER-NPC07-C",
+      "zone": "Empyrea/Interiors/EM_Z03_IceDwarfBunker",
       "loc": "ZoneLocName_1391567"
     },
     {
@@ -126,9 +126,9 @@
       "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_B_NPC.dds",
       "template_id": 1391499
     },
-    "EM-OUTER-NPC07-B": {
+    "EM-OUTER-NPC07-C": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
-      "template_id": 1391504
+      "template_id": 1391561
     },
     "EM-OUTER-NPC11": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCitizen_A_NPC.dds",
@@ -138,7 +138,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Real_Politics",
     "from": "archive",
-    "timestamp": "20231126090054"
+    "timestamp": "20240327235647"
   },
   "needs_review": [
     {

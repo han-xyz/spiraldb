@@ -3,7 +3,7 @@
   "lang": "17441A",
   "giver": {
     "persona": "LM-SKY-NPC04",
-    "zone": "Lemuria/Interiors/LM_Z06_MonitoringStation"
+    "zone": "Lemuria/LM_Z06_SkyCity"
   },
   "requires": [
     "LM-Q-174419"
@@ -189,12 +189,16 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z06_SkyCity"
+    },
+    {
       "type": "usage",
       "items": [
         "LM-WILD-NPC03.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "descriptor": "NPCs_01749136",
       "loc": "ZoneLocName_1520281"
     },
@@ -209,7 +213,7 @@
         "LM_AttunementStone-Sky.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "descriptor": "WizItems_00002089",
       "loc": "ZoneLocName_1520281"
     },
@@ -232,8 +236,14 @@
       "loc": "ZoneLocName_1520281"
     },
     {
-      "type": "waypoint",
-      "zone": "Lemuria/Interiors/LM_Z06_GuestQuarters"
+      "type": "usage",
+      "items": [
+        "KT-SE-GROVE-NPC-02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "descriptor": "WizardNPC_00001160",
+      "loc": "ZoneLocName_1520281"
     },
     {
       "type": "bounty",
@@ -244,7 +254,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003870",
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -254,7 +264,7 @@
     {
       "type": "persona",
       "persona": "LM-SKY-NPC11",
-      "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281",
       "completion": [
         {
@@ -297,7 +307,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Old One's Monitoring Station",
       "blocking": false
     },
@@ -309,6 +319,11 @@
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Continue Tour",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Harmony: ObjectData/KT",
       "blocking": false
     },
     {

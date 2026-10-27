@@ -1,0 +1,86 @@
+{
+  "id": "DS-Q-14A549",
+  "lang": "14A549",
+  "giver": {
+    "persona": "DS-Fishing-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library"
+  },
+  "requires": [
+    "DS-Q-14A548"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 300,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library"
+    }
+  ],
+  "personas": {
+    "DS-Fishing-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_DS_Male_Wizard_Fisherman_NPC.dds",
+      "template_id": 1353028
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Not_If_I_Catch_'Em_First!",
+    "from": "archive",
+    "timestamp": "20231121231740"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "3 Ember Parrot Fish",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "3 Trigger Fish",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

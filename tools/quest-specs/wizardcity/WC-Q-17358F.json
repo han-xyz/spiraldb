@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_OldeTown"
   },
   "requires": [
-    "WC-Q-1625D8"
+    "WC-OLDE-MAIN-001"
   ],
   "mainline": true,
   "level": 5,
@@ -100,11 +100,7 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Secret Strife of Pets replaced by WC-Q-1625D8",
-      "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-OLDE-MAIN-002B"
 }

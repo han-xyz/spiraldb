@@ -6,7 +6,7 @@
     "zone": "WizardCity/Interiors/WC_Library"
   },
   "requires": [
-    "WC-Q-14160"
+    "MB-XTRA-C11-003"
   ],
   "mainline": false,
   "level": 5,
@@ -65,5 +65,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "MB-XTRA-C11-004"
 }

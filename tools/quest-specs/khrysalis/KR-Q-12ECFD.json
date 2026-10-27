@@ -1,0 +1,132 @@
+{
+  "id": "KR-Q-12ECFD",
+  "lang": "12ECFD",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC41",
+    "zone": "Khrysalis/Interiors/KR_Z09_I08_PaleBeautyBot"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 92980,
+    "gold": 900
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Shdweave_Warrior_I_NightFeeder.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001764",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "descriptor": "WizQst12ECFD_00000008",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Shdweave_Warrior_E_Torzek.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001767",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/Interiors/KR_Z09_I08_PaleBeautyBot",
+      "loc": "ZoneLocName_1240208"
+    }
+  ],
+  "personas": {
+    "KR-Sardonyx-NPC41": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_Drone_A_NPC.dds",
+      "template_id": 1299045
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Legendary_History",
+    "from": "archive",
+    "timestamp": "20231126063227"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ECFD matched by the words it shares with the goals; its lines name Night Feeders, Torrek WiltedBloom",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Zed's Place",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Torrek's House",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Zed's Place replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

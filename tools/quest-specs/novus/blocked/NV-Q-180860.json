@@ -2,8 +2,8 @@
   "id": "NV-Q-180860",
   "lang": "180860",
   "giver": {
-    "persona": "NV-StandIn-Dasein_v3",
-    "zone": "Novus/NV_Z01_Conatus"
+    "persona": "NV-NUCLEUS-NPC01",
+    "zone": "Novus/NV_Z06_NucleusGallery"
   },
   "requires": [
     "NV-Q-17CDE4"
@@ -106,9 +106,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
       "template_id": 1575007
     },
-    "NV-StandIn-Dasein_v3": {
-      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
-      "template_id": 1624005
+    "NV-NUCLEUS-NPC01": {
+      "portrait": "",
+      "template_id": 1546327
     }
   },
   "source": {

@@ -94,15 +94,15 @@
     },
     {
       "type": "persona",
-      "persona": "MR-CATE-NPC04-B",
+      "persona": "MR-CATE-NPC04",
       "zone": "Mirage/Interiors/MR_Z03_JezzeritCounselHall",
       "loc": "ZoneLocName_1381306"
     }
   ],
   "personas": {
-    "MR-CATE-NPC04-B": {
+    "MR-CATE-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Djinn_Wizard_A_NPC.dds",
-      "template_id": 1397056
+      "template_id": 1381311
     },
     "MR-CATE-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_B_NPC.dds",

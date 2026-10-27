@@ -2,8 +2,8 @@
   "id": "MR-Q-15139D",
   "lang": "15139D",
   "giver": {
-    "persona": "MR-AGGR-NPC04-B",
-    "zone": "Mirage/Interiors/MR_Z02_SultOffice"
+    "persona": "MR-AGGR-NPC04",
+    "zone": "Mirage/Interiors/MR_Z02_FourPoints"
   },
   "requires": [],
   "mainline": true,
@@ -56,25 +56,25 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "MR-AGGR-NPC11-B",
+      "persona": "MR-AGGR-NPC11",
       "zone": "Mirage/Interiors/MR_Z02_FourPoints",
       "loc": "ZoneLocName_1378095"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Mirage/Interiors/MR_Z02_SultOffice",
+      "zone": "Mirage/Interiors/MR_Z02_FourPoints",
       "loc": "ZoneLocName_1378095"
     }
   ],
   "personas": {
-    "MR-AGGR-NPC04-B": {
+    "MR-AGGR-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Human_SultanaF_A_NPC.dds",
-      "template_id": 1381260
+      "template_id": 1381236
     },
-    "MR-AGGR-NPC11-B": {
+    "MR-AGGR-NPC11": {
       "portrait": "GUI/NpcPortraits/Portrait_Ophidian_Thug_B_NPC.dds",
-      "template_id": 1381286
+      "template_id": 1381278
     }
   },
   "source": {

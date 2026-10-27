@@ -53,7 +53,7 @@
     },
     {
       "type": "persona",
-      "persona": "AZ-FLOAT-NPC02-2",
+      "persona": "AZ-FLOAT-NPC02",
       "zone": "Azteca/AZ_Z10_FloatingMountains",
       "loc": "ZoneLocName_470547"
     },
@@ -75,9 +75,9 @@
     }
   ],
   "personas": {
-    "AZ-FLOAT-NPC02-2": {
+    "AZ-FLOAT-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Quetzal_Messenger_D_NPC.dds",
-      "template_id": 470590
+      "template_id": 470552
     },
     "AZ-FLOAT-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_A_NPC.dds",

@@ -2,8 +2,8 @@
   "id": "WL-Q-1889D8",
   "lang": "1889D8",
   "giver": {
-    "persona": "WL-HOPE-NPC06-B",
-    "zone": "Wallaru/WL_Z01_Hub"
+    "persona": "WL-KING-NPC02",
+    "zone": "Wallaru/WL_Z03_Kingsland"
   },
   "requires": [
     "WL-Q-18898F"
@@ -83,24 +83,24 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004392",
-      "zone": "",
+      "zone": "Wallaru/WL_Z03_Kingsland",
       "loc": "ZoneLocName_1608151"
     },
     {
       "type": "persona",
-      "persona": "WL-KING-NPC03-B",
+      "persona": "WL-KING-NPC03",
       "zone": "Wallaru/WL_Z03_Kingsland",
       "loc": "ZoneLocName_1608151"
     }
   ],
   "personas": {
-    "WL-HOPE-NPC06-B": {
+    "WL-KING-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
-      "template_id": 1608076
+      "template_id": 1608154
     },
-    "WL-KING-NPC03-B": {
+    "WL-KING-NPC03": {
       "portrait": "GUI/NpcPortraits/Portraits_ShamanF_A_NPC.dds",
-      "template_id": 1608159
+      "template_id": 1608155
     }
   },
   "source": {

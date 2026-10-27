@@ -1,0 +1,81 @@
+{
+  "id": "Wysteria-Q-71CD3",
+  "lang": "71CD3",
+  "giver": {
+    "persona": "PA-PEG-NPC01",
+    "zone": "Wysteria/PA_Z01_Pegasus"
+  },
+  "requires": [
+    "Wysteria-Q-71CD1"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 920,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PA-Hobgoblin-R5.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000972",
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "descriptor": "WizQst71CD3_00000005",
+      "loc": "ZoneLocName_465168"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "loc": "ZoneLocName_465168",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-PEG-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_M_03_NPC.dds",
+      "template_id": 465146
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hobble_Gobble",
+    "from": "archive",
+    "timestamp": "20231124102425"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

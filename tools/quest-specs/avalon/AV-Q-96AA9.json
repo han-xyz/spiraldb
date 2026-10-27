@@ -55,6 +55,10 @@
       "loc": "ZoneLocName_570074"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z08_LakeShore"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z08_LakeShore",
@@ -81,8 +85,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Shoreline",
+      "field": "goal.waypoint (current zone)",
+      "value": "Shoreline",
       "blocking": false
     },
     {

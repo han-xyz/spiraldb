@@ -2,8 +2,8 @@
   "id": "EM-Q-16245F",
   "lang": "16245F",
   "giver": {
-    "persona": "EM-AERI-NPC01-B",
-    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    "persona": "EM-CHAOS-NPC02",
+    "zone": "Empyrea/EM_Z14_ChaosJungle"
   },
   "requires": [
     "EM-Q-162454"
@@ -125,29 +125,38 @@
   },
   "goals": [
     {
-      "type": "persona",
-      "persona": "EM-AERI-NPC03-B",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z14_ChaosJungle"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z14_ChaosJungle"
     },
     {
       "type": "persona",
-      "persona": "EM-CHAOS-NPC05-B",
+      "persona": "EM-CHAOS-NPC04",
+      "zone": "Empyrea/EM_Z14_ChaosJungle",
+      "loc": "ZoneLocName_1451078"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-CHAOS-NPC05",
       "zone": "Empyrea/EM_Z14_ChaosJungle",
       "loc": "ZoneLocName_1451078"
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
+    "EM-CHAOS-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
+      "template_id": 1451083
     },
-    "EM-AERI-NPC03-B": {
+    "EM-CHAOS-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
-      "template_id": 1397548
+      "template_id": 1451110
     },
-    "EM-CHAOS-NPC05-B": {
+    "EM-CHAOS-NPC05": {
       "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
-      "template_id": 1451121
+      "template_id": 1451111
     }
   },
   "source": {
@@ -162,12 +171,12 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Higher Ground",
+      "field": "goal.waypoint (current zone)",
+      "value": "Higher Ground",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Cave Entrance",
       "blocking": false
     },

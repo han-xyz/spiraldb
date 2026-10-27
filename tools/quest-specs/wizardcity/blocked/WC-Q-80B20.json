@@ -2,8 +2,8 @@
   "id": "WC-Q-80B20",
   "lang": "80B20",
   "giver": {
-    "persona": "WC-RAV-NPC15",
-    "zone": "WizardCity/WC_Ravenwood"
+    "persona": "WC-RAV-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolLife"
   },
   "requires": [
     {
@@ -107,7 +107,7 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "WizardCity/WC_Ravenwood",
+      "zone": "WizardCity/Interiors/WC_SchoolLife",
       "loc": "ZoneLocName_9005"
     }
   ],
@@ -116,9 +116,9 @@
       "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_base_1_Ghost_NPC.dds",
       "template_id": 126293
     },
-    "WC-RAV-NPC15": {
+    "WC-RAV-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
-      "template_id": 1459033
+      "template_id": 38204
     }
   },
   "source": {
@@ -133,7 +133,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "The Hoarder's Tower, Plaza of Conquests",
       "blocking": false
     },

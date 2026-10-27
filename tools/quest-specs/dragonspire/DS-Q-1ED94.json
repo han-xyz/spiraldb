@@ -1,0 +1,81 @@
+{
+  "id": "DS-Q-1ED94",
+  "lang": "1ED94",
+  "giver": {
+    "persona": "DS-ACAD1-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+  },
+  "requires": [
+    "DS-ACAD1-C03-001"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 2095,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DS_Whistle.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove",
+      "descriptor": "WizQst1ED94_00000010"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+    }
+  ],
+  "personas": {
+    "DS-ACAD1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Miner_Ghost.dds",
+      "template_id": 126322
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Whistle-Stop_Tour",
+    "from": "archive",
+    "timestamp": "20260727011622"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD1-C03-002"
+}

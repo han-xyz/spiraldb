@@ -76,8 +76,7 @@
     {
       "type": "bounty",
       "mobs": [
-        "AR_SpellMob_ShadowTrickster.AdjRef",
-        "AR_StandIn_ShadowTrickster.AdjRef"
+        "DM_Shadow_Trickster_A_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00002662",
@@ -111,7 +110,7 @@
   "needs_review": [
     {
       "field": "goal.mobs (other folder)",
-      "value": "Shadow Trickster: ObjectData/AR",
+      "value": "Shadow Trickster: ObjectData/DM",
       "blocking": false
     },
     {

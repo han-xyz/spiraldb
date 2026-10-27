@@ -2,7 +2,7 @@
   "id": "WC-Q-15E5C3",
   "lang": "15E5C3",
   "giver": {
-    "persona": "WC-ST02-NPC05-MAW",
+    "persona": "WC_StandIn_DerrickBlaze",
     "zone": "WizardCity/WC_Streets/WC_OldeTown"
   },
   "requires": [],
@@ -84,9 +84,9 @@
     }
   ],
   "personas": {
-    "WC-ST02-NPC05-MAW": {
+    "WC_StandIn_DerrickBlaze": {
       "portrait": "GUI/NpcPortraits/Portrait_Derrick_NPC.dds",
-      "template_id": 1435077
+      "template_id": 1435076
     }
   },
   "source": {
@@ -96,7 +96,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Join A Team Kiosk",
       "blocking": false
     },

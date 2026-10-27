@@ -122,12 +122,12 @@
     },
     {
       "type": "persona",
-      "persona": "LM-NIGHT-NPC05-B",
+      "persona": "LM-NIGHT-NPC05",
       "zone": "Lemuria/LM_Z03_NightForest",
       "loc": "ZoneLocName_1520100",
       "completion": [
         {
-          "speaker": "LM-NIGHT-NPC05-B",
+          "speaker": "LM-NIGHT-NPC05",
           "line": "00000003"
         }
       ]
@@ -142,9 +142,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Crane_CitizenF_A_NPC.dds",
       "template_id": 1520133
     },
-    "LM-NIGHT-NPC05-B": {
+    "LM-NIGHT-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
-      "template_id": 1520186
+      "template_id": 1520136
     },
     "LM_Standin_Malughast": {
       "portrait": "GUI/NpcPortraits/Portrait_Malughast_Base_A_MOB.dds",

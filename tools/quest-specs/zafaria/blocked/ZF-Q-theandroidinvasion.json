@@ -25,6 +25,10 @@
       "loc": "ZoneLocName_466160"
     },
     {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "ME1_Shark_Boss_A.AdjRef"
@@ -45,6 +49,10 @@
       "persona": "giver",
       "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox"
     },
     {
       "type": "bounty",
@@ -74,6 +82,10 @@
       "loc": "ZoneLocName_466160"
     },
     {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox"
+    },
+    {
       "type": "persona",
       "persona": "ME1-Boochbeard-A",
       "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z03_PirateShipInt",
@@ -91,6 +103,10 @@
       "loc": "ZoneLocName_466160"
     },
     {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "ME1_Clockwork_Marine_B.AdjRef"
@@ -98,6 +114,16 @@
       "count": 1,
       "target": "WizardMobs_00002004",
       "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "HG_SWAMP_Lifeboat_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "descriptor": "WizardGameObjects_00000993",
       "loc": "ZoneLocName_466160"
     }
   ],
@@ -132,9 +158,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Investigate Skull Island Tavern",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.mobs (other folder)",
@@ -147,8 +173,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Beach Cave Hideout",
+      "field": "goal.waypoint (current zone)",
+      "value": "Beach Cave Hideout",
       "blocking": false
     },
     {
@@ -167,9 +193,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Investigate the Coconut Crawler",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
@@ -182,8 +208,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Coconut Crawler Deck",
+      "field": "goal.waypoint (current zone)",
+      "value": "Coconut Crawler Deck",
       "blocking": false
     },
     {
@@ -192,9 +218,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
-      "value": "Find a Lifeboat",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Lifeboat: ObjectData/Gauntlet/Swamp",
+      "blocking": false
     }
   ]
 }

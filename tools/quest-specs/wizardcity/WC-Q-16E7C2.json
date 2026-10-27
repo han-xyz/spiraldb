@@ -5,7 +5,9 @@
     "persona": "WC-HUB-NPC19",
     "zone": "WizardCity/WC_Hub"
   },
-  "requires": [],
+  "requires": [
+    "WC-KMTeaser-001"
+  ],
   "mainline": false,
   "level": 5,
   "reward": {
@@ -107,12 +109,12 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Musicology Office, The Arcanum",
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Musicology Office",
       "blocking": false
     },
@@ -123,14 +125,9 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Marketing is Everything replaced by min_level",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
       "value": "Nothing to Fear replaced by min_level",
       "blocking": false
     }
   ],
-  "min_level": 5
+  "captured": "WC-KMTeaser-002"
 }

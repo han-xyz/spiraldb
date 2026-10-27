@@ -68,7 +68,7 @@
       ],
       "count": 3,
       "target": "WizardMobs_00001006",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
       "loc": "ZoneLocName_465256"
     },
     {
@@ -83,7 +83,7 @@
         "ZF_Obelisk_Moon.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
       "descriptor": "SigilText_00000053",
       "loc": "ZoneLocName_465256"
     },

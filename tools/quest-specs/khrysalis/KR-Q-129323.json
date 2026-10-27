@@ -121,13 +121,17 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z08_RadianceReborn"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Malistare_Bossfight.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00000418",
-      "zone": "",
+      "zone": "Khrysalis/KR_Z08_RadianceReborn",
       "loc": "ZoneLocName_1217288"
     },
     {
@@ -150,7 +154,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Second Chamber of the Mind",
       "blocking": false
     },

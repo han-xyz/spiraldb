@@ -47,7 +47,7 @@
       "blocking": true
     },
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Paint The Way of Itz in the Calmecac Library",
       "blocking": true
     }

@@ -90,8 +90,8 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "EM-OUTER-NPC07-B",
-      "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall",
+      "persona": "EM-OUTER-NPC07-C",
+      "zone": "Empyrea/Interiors/EM_Z03_IceDwarfBunker",
       "loc": "ZoneLocName_1391567"
     },
     {
@@ -112,9 +112,9 @@
     }
   ],
   "personas": {
-    "EM-OUTER-NPC07-B": {
+    "EM-OUTER-NPC07-C": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
-      "template_id": 1391504
+      "template_id": 1391561
     },
     "EM-OUTER-NPC12": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCitizenF_A_NPC.dds",

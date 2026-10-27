@@ -2,8 +2,8 @@
   "id": "AV-Q-96A7A",
   "lang": "96A7A",
   "giver": {
-    "persona": "AV-HUB-NPC01",
-    "zone": "Avalon/AV_Z00_Hub"
+    "persona": "AV-ABBEY-NPC05",
+    "zone": "Avalon/Interiors/AV_Z01_KnightsHall"
   },
   "requires": [
     "AV-Q-96A79"
@@ -44,13 +44,13 @@
     }
   ],
   "personas": {
+    "AV-ABBEY-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike.dds",
+      "template_id": 617182
+    },
     "AV-HIGH-NPC01": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
       "template_id": 617083
-    },
-    "AV-HUB-NPC01": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
-      "template_id": 602074
     }
   },
   "source": {

@@ -45,6 +45,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z04_TheWild"
+    },
+    {
       "type": "persona",
       "persona": "AV-WILD-NPC03",
       "zone": "Avalon/AV_Z04_TheWild",
@@ -74,8 +78,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Fire Elf Village",
+      "field": "goal.waypoint (current zone)",
+      "value": "Fire Elf Village",
       "blocking": false
     },
     {

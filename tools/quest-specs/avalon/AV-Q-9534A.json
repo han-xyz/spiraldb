@@ -80,6 +80,10 @@
       "loc": "ZoneLocName_611142"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z06_DunDara"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Fox-Knight-Female-BlackKnight-R12-01.AdjRef"
@@ -139,8 +143,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Tower of Belle Regard",
+      "field": "goal.waypoint (current zone)",
+      "value": "Tower of Belle Regard",
       "blocking": false
     },
     {

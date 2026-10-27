@@ -121,6 +121,10 @@
       "loc": "ZoneLocName_1560381"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Wallaru/Interiors/WL_Z01_JuggernautCrabTheater",
@@ -145,8 +149,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Lobby",
+      "field": "goal.waypoint (current zone)",
+      "value": "Lobby",
       "blocking": false
     },
     {

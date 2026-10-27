@@ -66,6 +66,16 @@
       "loc": "ZoneLocName_1240208"
     },
     {
+      "type": "usage",
+      "items": [
+        "LM-CourtyardGate.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "descriptor": "WizQst12EC78_00000006",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Mantis_HunterF_J_Zelda.AdjRef"
@@ -109,13 +119,13 @@
       "blocking": false
     },
     {
-      "field": "goal.usage",
-      "value": "Open the Courtyard Gate",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Courtyard Gate: ObjectData/LM",
+      "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
-      "value": "Pick up the Mystic Colossus piece",
+      "field": "goal.items",
+      "value": "Mystic Colossus piece",
       "blocking": true
     },
     {

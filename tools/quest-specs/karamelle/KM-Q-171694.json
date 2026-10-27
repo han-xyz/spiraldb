@@ -77,6 +77,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z08_LicoriceForest"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z08_LicoriceForest"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Hamster_GrandF_A_01.AdjRef",
@@ -126,12 +134,12 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Logging Camp",
+      "field": "goal.waypoint (current zone)",
+      "value": "Logging Camp",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Logging Camp Warehouse",
       "blocking": false
     },

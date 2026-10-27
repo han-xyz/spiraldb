@@ -3,7 +3,7 @@
   "lang": "17017A",
   "auto_start": true,
   "giver": {
-    "persona": "LM-BAD-NPC01-B",
+    "persona": "LM-BAD-NPC01",
     "zone": "Lemuria/LM_Z04_Badlands"
   },
   "requires": [
@@ -52,7 +52,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003985",
-      "zone": "",
+      "zone": "Lemuria/LM_Z04_Badlands",
       "loc": "ZoneLocName_1507644"
     },
     {
@@ -63,14 +63,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003988",
-      "zone": "",
+      "zone": "Lemuria/LM_Z04_Badlands",
       "loc": "ZoneLocName_1507644"
     }
   ],
   "personas": {
-    "LM-BAD-NPC01-B": {
+    "LM-BAD-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
-      "template_id": 1487607
+      "template_id": 1507681
     }
   },
   "source": {

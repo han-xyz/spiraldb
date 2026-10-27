@@ -1,0 +1,114 @@
+{
+  "id": "KR-Q-12D13F",
+  "lang": "12D13F",
+  "giver": {
+    "persona": "KR-TyrianGorge-NPC02",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 46320,
+    "gold": 560
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-Cinnabar_Rocks.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizardGameObjects_00000665",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_GreenMan_Sassafras_A.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001673",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs",
+      "descriptor": "WizQst12D13F_00000014",
+      "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {
+    "KR-TyrianGorge-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Millipede_Warrior_H_NPC.dds",
+      "template_id": 1223193
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tough_Actin'_Cinnactin",
+    "from": "archive",
+    "timestamp": "20231126061537"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Two Pieces",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Two Pieces replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

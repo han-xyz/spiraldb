@@ -1,0 +1,83 @@
+{
+  "id": "DS-Q-1ED4F",
+  "lang": "1ED4F",
+  "giver": {
+    "persona": "DS-NEC1-NPC03",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+  },
+  "requires": [
+    "DS-NEC1-C03-001"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 2345,
+    "gold": 118
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Colossus-Stone-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000394",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_drake_mother_Ghost_NPC.dds",
+      "template_id": 126314
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Soul_Winger",
+    "from": "archive",
+    "timestamp": "20260727020516"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC1-C03-002"
+}

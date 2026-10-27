@@ -2,8 +2,8 @@
   "id": "EM-Q-alessthanadmirableadmiral",
   "auto_start": true,
   "giver": {
-    "persona": "EM-AERI-NPC01-B",
-    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    "persona": "EM-NIMB-NPC02",
+    "zone": "Empyrea/EM_Z07_NimbusCitadel"
   },
   "requires": [
     "EM-Q-1590A0"
@@ -26,14 +26,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003114",
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
+    "EM-NIMB-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
+      "template_id": 1413242
     }
   },
   "source": {

@@ -102,7 +102,7 @@
     },
     {
       "type": "persona",
-      "persona": "WL-EUC-NPC11-B",
+      "persona": "WL-EUC-NPC11",
       "zone": "Wallaru/WL_Z07_EucalyptusForest",
       "loc": "ZoneLocName_1560318"
     },
@@ -128,9 +128,9 @@
       "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Judge_D_NPC.dds",
       "template_id": 1608455
     },
-    "WL-EUC-NPC11-B": {
+    "WL-EUC-NPC11": {
       "portrait": "GUI/NpcPortraits/Portrait_Frog_Tourist_B_NPC.dds",
-      "template_id": 1560504
+      "template_id": 1560501
     },
     "WL-HOPE-NPC04-C": {
       "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_A_NPC.dds",

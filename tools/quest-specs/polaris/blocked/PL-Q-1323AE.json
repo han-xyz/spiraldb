@@ -132,6 +132,17 @@
     {
       "type": "usage",
       "items": [
+        "AZ-ZOCOLO-NPC14.AdjRef",
+        "AZ_StandIn_Beans_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "descriptor": "NPCs_01748767",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "usage",
+      "items": [
         "PL-Accompany-Coosto.AdjRef",
         "PL-HAR-NPC01.AdjRef",
         "PL-HAR-NPC02.AdjRef",
@@ -162,6 +173,17 @@
       "count": 1,
       "target": "WizardMobs_00002897",
       "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AZ-ZOCOLO-NPC15-B.AdjRef",
+        "AZ-ZOCOLO-NPC15.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "descriptor": "NPCs_01748765",
       "loc": "ZoneLocName_1254306"
     },
     {
@@ -217,9 +239,9 @@
       "blocking": false
     },
     {
-      "field": "goal.persona",
-      "value": "Follow Beans",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Beans: ObjectData/AZ",
+      "blocking": false
     },
     {
       "field": "goal.mobs (other folder)",
@@ -227,9 +249,9 @@
       "blocking": false
     },
     {
-      "field": "goal.persona",
-      "value": "Free Pork",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Pork: ObjectData/AZ",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",

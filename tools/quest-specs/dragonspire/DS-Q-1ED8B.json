@@ -1,0 +1,72 @@
+{
+  "id": "DS-Q-1ED8B",
+  "lang": "1ED8B",
+  "giver": {
+    "persona": "DS-ACAD-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Hub_Academy"
+  },
+  "requires": [
+    "DS-ACAD-C01-003"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 960,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC01",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    }
+  ],
+  "personas": {
+    "DS-ACAD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ashley.dds",
+      "template_id": 126321
+    },
+    "DS-NEC1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_3_Ghost_NPC.dds",
+      "template_id": 126312
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Earn_Your_Wings",
+    "from": "archive",
+    "timestamp": "20260703193007"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD-C01-004"
+}

@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Parrot-Hunter-G.AdjRef"
@@ -91,8 +95,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Tula Gate",
+      "field": "goal.waypoint (current zone)",
+      "value": "Tula Gate",
       "blocking": false
     },
     {

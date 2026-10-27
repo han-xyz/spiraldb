@@ -34,6 +34,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Brudel_Apple_A_01.AdjRef",
@@ -45,6 +49,10 @@
       "loc": "ZoneLocName_1510005"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Brudel_Apple_B_01.AdjRef",
@@ -54,6 +62,10 @@
       "target": "WizardMobs_00003688",
       "zone": "Karamelle/KM_Z09_CandyCornFarm",
       "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm"
     },
     {
       "type": "bounty",
@@ -84,18 +96,18 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

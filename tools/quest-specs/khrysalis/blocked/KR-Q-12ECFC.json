@@ -1,0 +1,160 @@
+{
+  "id": "KR-Q-12ECFC",
+  "lang": "12ECFC",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC33",
+    "zone": "Khrysalis/KR_Z09_MantisCity"
+  },
+  "requires": [],
+  "min_level": 88,
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 92985,
+    "gold": 900
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/Interiors/KR_Z09_I22_GarrisonArmory"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mantis_HunterF_S.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001828",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Sardonyx-NPC45",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Sardonyx-NPC47",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-Sardonyx-NPC46",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Sardonyx-NPC33": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_MerchantF_F_NPC.dds",
+      "template_id": 1283215
+    },
+    "KR-Sardonyx-NPC45": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_MerchantF_H_NPC.dds",
+      "template_id": 1299036
+    },
+    "KR-Sardonyx-NPC46": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_MerchantF_I_NPC.dds",
+      "template_id": 1299037
+    },
+    "KR-Sardonyx-NPC47": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_MerchantF_G_NPC.dds",
+      "template_id": 1299049
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Snooping_For_Good",
+    "from": "archive",
+    "timestamp": "20231126063009"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ECFC matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Honor Above All",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "some Weapons",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

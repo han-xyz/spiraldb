@@ -57,7 +57,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002819",
-      "zone": ""
+      "zone": "Empyrea/EM_Z05_Sepidious"
     },
     {
       "type": "bounty",
@@ -67,7 +67,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002819",
-      "zone": ""
+      "zone": "Empyrea/EM_Z05_Sepidious"
     },
     {
       "type": "persona",
@@ -83,7 +83,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002774",
-      "zone": ""
+      "zone": "Empyrea/EM_Z05_Sepidious"
     }
   ],
   "personas": {

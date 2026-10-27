@@ -1,0 +1,85 @@
+{
+  "id": "CL-Q-371E5",
+  "lang": "371E5",
+  "giver": {
+    "persona": "CL-STORM-NPC01",
+    "zone": "Celestia/CL_Z07_Storm_Lord_Temple"
+  },
+  "requires": [
+    "CL-Q-371E1"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 845,
+    "gold": 35
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "loc": "ZoneLocName_227127"
+    }
+  ],
+  "personas": {
+    "CL-STORM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morgantine_Ghost_03_NPC.dds",
+      "template_id": 227129
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Finders_Keepers",
+    "from": "archive",
+    "timestamp": "20240515214703"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Locate Rubble Pit",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

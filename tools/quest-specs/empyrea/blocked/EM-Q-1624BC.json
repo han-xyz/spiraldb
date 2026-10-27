@@ -79,6 +79,10 @@
       "loc": "ZoneLocName_1451161"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z12_CaveOfQuickening"
+    },
+    {
       "type": "persona",
       "persona": "EM-REV-NPC01",
       "zone": "Empyrea/EM_Z15_Nexus",
@@ -117,7 +121,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Reverie",
       "blocking": false
     },

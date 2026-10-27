@@ -1,0 +1,81 @@
+{
+  "id": "DS-Q-1ED8F",
+  "lang": "1ED8F",
+  "giver": {
+    "persona": "DS-ACAD1-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+  },
+  "requires": [
+    "DS-ACAD1-C01-002"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2620,
+    "gold": 250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-ACAD1-NPC02",
+      "zone": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_T3"
+    }
+  ],
+  "personas": {
+    "DS-ACAD1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Miner_Ghost.dds",
+      "template_id": 126322
+    },
+    "DS-ACAD1-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_pointyhat_2_Ghost_NPC.dds",
+      "template_id": 126323
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cutter's_Way",
+    "from": "archive",
+    "timestamp": "20240121132625"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona",
+      "value": "Milaka Jewelbender again, after freeing her from the crystal trap",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD1-C01-003"
+}

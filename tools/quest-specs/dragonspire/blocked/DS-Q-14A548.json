@@ -1,0 +1,85 @@
+{
+  "id": "DS-Q-14A548",
+  "lang": "14A548",
+  "giver": {
+    "persona": "DS-Fishing-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library"
+  },
+  "requires": [
+    "DS-Q-14A547"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 15,
+    "gold": 180,
+    "spells": [
+      "Banish Sentinels 1"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-Fishing-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_DS_Male_Wizard_Fisherman_NPC.dds",
+      "template_id": 1353028
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Catch_'Em_If_You_Can",
+    "from": "archive",
+    "timestamp": "20250321054709"
+  },
+  "needs_review": [
+    {
+      "field": "goal.persona",
+      "value": "Catch one Armored Red Guard",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

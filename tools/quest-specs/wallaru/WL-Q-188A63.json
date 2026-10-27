@@ -4,8 +4,8 @@
   "title": "QuestTitle_00001967",
   "auto_start": true,
   "giver": {
-    "persona": "WL-DREAM-NPC01-A",
-    "zone": "Wallaru/WL_Z04_TheDreaming"
+    "persona": "WL-KING-NPC01",
+    "zone": "Wallaru/WL_Z03_Kingsland"
   },
   "requires": [
     "WL-Q-1889DE"
@@ -79,14 +79,22 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z03_Kingsland"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Wallaby_Punk_A_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004393",
-      "zone": "",
+      "zone": "Wallaru/WL_Z03_Kingsland",
       "loc": "ZoneLocName_1608151"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z03_Kingsland"
     },
     {
       "type": "bounty",
@@ -97,8 +105,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004390",
-      "zone": "",
+      "zone": "Wallaru/WL_Z03_Kingsland",
       "loc": "ZoneLocName_1608151"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z03_Kingsland"
     },
     {
       "type": "bounty",
@@ -107,14 +119,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004394",
-      "zone": "",
+      "zone": "Wallaru/WL_Z03_Kingsland",
       "loc": "ZoneLocName_1608151"
     }
   ],
   "personas": {
-    "WL-DREAM-NPC01-A": {
+    "WL-KING-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
-      "template_id": 1560362
+      "template_id": 1608153
     }
   },
   "source": {
@@ -129,18 +141,18 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Chamber",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Chamber",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Chamber",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Chamber",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Chamber",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Chamber",
       "blocking": false
     },
     {

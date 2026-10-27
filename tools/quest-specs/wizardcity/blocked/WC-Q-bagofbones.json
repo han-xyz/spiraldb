@@ -86,7 +86,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Ironworks Warehouse, The Ironworks",
       "blocking": false
     },

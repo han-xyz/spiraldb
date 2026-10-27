@@ -151,16 +151,8 @@
       "loc": "ZoneLocName_1510006"
     },
     {
-      "type": "bounty",
-      "mobs": [
-        "KM_Hamster_Counter_A_01.AdjRef",
-        "KM_Hamster_Counter_A_02.AdjRef",
-        "KM_Hamster_Counter_A_03.AdjRef"
-      ],
-      "count": 1,
-      "target": "WizardMobs_00003715",
-      "zone": "Karamelle/KM_Z00_HUB",
-      "loc": "ZoneLocName_1510006"
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
     },
     {
       "type": "bounty",
@@ -173,6 +165,26 @@
       "target": "WizardMobs_00003715",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_Counter_A_01.AdjRef",
+        "KM_Hamster_Counter_A_02.AdjRef",
+        "KM_Hamster_Counter_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003715",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
     },
     {
       "type": "bounty",
@@ -203,19 +215,19 @@
   },
   "needs_review": [
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find Spirit Eater",
-      "blocking": true
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Spirit Eater",
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
+      "value": "Spirit Eater",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
       "value": "Find Spirit Eater",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

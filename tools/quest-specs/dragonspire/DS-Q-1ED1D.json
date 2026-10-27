@@ -1,0 +1,78 @@
+{
+  "id": "DS-Q-1ED1D",
+  "lang": "1ED1D",
+  "giver": {
+    "persona": "DS-LIB3-NPC03",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+  },
+  "requires": [
+    "DS-LIB-C01-004"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 2230,
+    "gold": 108
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Elemental-Fire-Boss-R7.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000401",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm",
+      "descriptor": "WizQst1ED1D_00000000"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+    }
+  ],
+  "personas": {
+    "DS-LIB3-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_juggernaut_1_Ghost_NPC.dds",
+      "template_id": 126307
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Spiral_Crystal",
+    "from": "archive",
+    "timestamp": "20231122070615"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB3-C03-001"
+}

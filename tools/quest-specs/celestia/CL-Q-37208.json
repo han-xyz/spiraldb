@@ -6,7 +6,7 @@
     "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
   },
   "requires": [
-    "CL-Q-37206"
+    "CL-Q-3720F"
   ],
   "mainline": true,
   "level": 48,
@@ -80,6 +80,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Back Door replaced by CL-Q-3720F",
       "blocking": false
     }
   ]

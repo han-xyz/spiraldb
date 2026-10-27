@@ -96,6 +96,10 @@
       "loc": "ZoneLocName_537904"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z02_HighRoad"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Knight-Redthorn-Boss-R11-01.AdjRef"
@@ -104,6 +108,10 @@
       "target": "WizardMobs_00001196",
       "zone": "Avalon/AV_Z02_HighRoad",
       "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z02_HighRoad"
     },
     {
       "type": "bounty",
@@ -136,13 +144,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Red Thorn Tower",
+      "field": "goal.waypoint (current zone)",
+      "value": "Red Thorn Tower",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Dungeon in Red Thorn Tower",
+      "field": "goal.waypoint (current zone)",
+      "value": "Dungeon in Red Thorn Tower",
       "blocking": false
     },
     {

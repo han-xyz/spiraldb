@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Colossus"
   },
   "requires": [
-    "WC-Q-9526"
+    "WC-ST06-C01-002"
   ],
   "mainline": false,
   "level": 5,
@@ -74,5 +74,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-ST06-C02-001"
 }

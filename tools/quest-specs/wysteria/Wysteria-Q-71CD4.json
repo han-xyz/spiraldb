@@ -1,0 +1,111 @@
+{
+  "id": "Wysteria-Q-71CD4",
+  "lang": "71CD4",
+  "giver": {
+    "persona": "PA-PEG-NPC01",
+    "zone": "Wysteria/PA_Z01_Pegasus"
+  },
+  "requires": [
+    "Wysteria-Q-71CD3"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 465,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Z01_Pegasus"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC13",
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "loc": "ZoneLocName_465168"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC16",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465168"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Groundskeeper_Verne.dds",
+      "template_id": 465145
+    },
+    "PA-HUB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Beatrice_Wildwind_NPC.dds",
+      "template_id": 465149
+    },
+    "PA-PEG-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_M_03_NPC.dds",
+      "template_id": 465146
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Peg-A-Portal",
+    "from": "archive",
+    "timestamp": "20231124102425"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Strange Portal",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

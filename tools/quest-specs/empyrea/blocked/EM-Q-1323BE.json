@@ -2,7 +2,7 @@
   "id": "EM-Q-1323BE",
   "lang": "1323BE",
   "giver": {
-    "persona": "EM-ZANA-NPC01-D",
+    "persona": "EM-ZANA-NPC01",
     "zone": "Empyrea/EM_Z02_Zanadu"
   },
   "requires": [
@@ -238,9 +238,9 @@
     }
   ],
   "personas": {
-    "EM-ZANA-NPC01-D": {
+    "EM-ZANA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
-      "template_id": 1404201
+      "template_id": 1397572
     },
     "EM-ZANA-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",

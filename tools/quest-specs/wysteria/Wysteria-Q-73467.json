@@ -1,0 +1,91 @@
+{
+  "id": "Wysteria-Q-73467",
+  "lang": "73467",
+  "giver": {
+    "persona": "PA-HUB-NPC08",
+    "zone": "Wysteria/Interiors/PA_Classroom_Chaos"
+  },
+  "requires": [
+    "Wysteria-Q-71925"
+  ],
+  "mainline": false,
+  "level": 25,
+  "reward": {
+    "xp": 805,
+    "gold": 65
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "PA-Goblin-R5.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000971",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PA-Hobgoblin-R5.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000972",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/Interiors/PA_Classroom_Chaos",
+      "loc": "ZoneLocName_465129",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Heironimus_Bunch.dds",
+      "template_id": 465140
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Field_Studies",
+    "from": "archive",
+    "timestamp": "20240118174124"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

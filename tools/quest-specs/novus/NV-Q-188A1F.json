@@ -3,7 +3,7 @@
   "lang": "188A1F",
   "auto_start": true,
   "giver": {
-    "persona": "NV-CON-NPC25-C",
+    "persona": "NV-CON-NPC25",
     "zone": "Novus/NV_Z07_DoomMoon"
   },
   "requires": [
@@ -108,8 +108,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004446",
-      "zone": "",
+      "zone": "Novus/NV_Z07_DoomMoon",
       "loc": "ZoneLocName_1560538"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z07_DoomMoon"
     },
     {
       "type": "bounty",
@@ -118,8 +122,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004447",
-      "zone": "",
+      "zone": "Novus/NV_Z07_DoomMoon",
       "loc": "ZoneLocName_1560538"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z07_DoomMoon"
     },
     {
       "type": "bounty",
@@ -128,14 +136,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004448",
-      "zone": "",
+      "zone": "Novus/NV_Z07_DoomMoon",
       "loc": "ZoneLocName_1560538"
     }
   ],
   "personas": {
-    "NV-CON-NPC25-C": {
+    "NV-CON-NPC25": {
       "portrait": "GUI/NpcPortraits/Portrait_Horse_Explorer_A_NPC.dds",
-      "template_id": 1608259
+      "template_id": 1608210
     }
   },
   "source": {
@@ -150,8 +158,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
@@ -160,8 +168,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

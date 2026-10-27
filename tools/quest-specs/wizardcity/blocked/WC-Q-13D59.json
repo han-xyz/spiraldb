@@ -120,7 +120,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Purple Braziers Chamber, Royal Hall",
       "blocking": false
     },

@@ -1,0 +1,97 @@
+{
+  "id": "DS-Q-1ED16",
+  "lang": "1ED16",
+  "giver": {
+    "persona": "DS-LIB3-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+  },
+  "requires": [
+    "DS-LIB3-C02-005"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 4750,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Wizard-Male-Jacket-Blue-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000507",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm",
+      "descriptor": "WizQst1ED16_00000000"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000015"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-LIB3-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_skirt_4_Ghost_NPC.dds",
+      "template_id": 126305
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:One_Good_Deed",
+    "from": "archive",
+    "timestamp": "20260618214620"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Vault 1933",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB3-C01-003"
+}

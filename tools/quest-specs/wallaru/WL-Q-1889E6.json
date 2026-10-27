@@ -2,7 +2,7 @@
   "id": "WL-Q-1889E6",
   "lang": "1889E6",
   "giver": {
-    "persona": "WL-BILLA-NPC01-B",
+    "persona": "WL-BILLA-NPC01",
     "zone": "Wallaru/WL_Z08_BillabongResort"
   },
   "requires": [
@@ -142,13 +142,13 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "WL-BILLA-NPC02-B",
+      "persona": "WL-BILLA-NPC02",
       "zone": "Wallaru/WL_Z08_BillabongResort",
       "loc": "ZoneLocName_1608171"
     },
     {
       "type": "persona",
-      "persona": "WL-BILLA-NPC02-B",
+      "persona": "WL-BILLA-NPC02",
       "zone": "Wallaru/WL_Z08_BillabongResort",
       "loc": "ZoneLocName_1608171"
     },
@@ -166,19 +166,19 @@
     },
     {
       "type": "persona",
-      "persona": "WL-BILLA-NPC02-B",
+      "persona": "WL-BILLA-NPC02",
       "zone": "Wallaru/WL_Z08_BillabongResort",
       "loc": "ZoneLocName_1608171"
     }
   ],
   "personas": {
-    "WL-BILLA-NPC01-B": {
+    "WL-BILLA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Frog_Joan_A_NPC.dds",
-      "template_id": 1608177
+      "template_id": 1608167
     },
-    "WL-BILLA-NPC02-B": {
+    "WL-BILLA-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Frog_HostessF_A_NPC.dds",
-      "template_id": 1608170
+      "template_id": 1608168
     }
   },
   "source": {

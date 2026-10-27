@@ -81,6 +81,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Azteca/AZ_Z03_MangroveMarsh",
@@ -95,6 +99,10 @@
       "target": "WizardMobs_00001427",
       "zone": "Azteca/AZ_Z02_Cenote",
       "loc": "ZoneLocName_643349"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z02_Cenote"
     },
     {
       "type": "bounty",
@@ -142,12 +150,12 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Avian Hatchery",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Huascar Bent Wing's Mine",
       "blocking": false
     },

@@ -1,0 +1,189 @@
+{
+  "id": "LM-Q-17320E",
+  "lang": "17320E",
+  "giver": {
+    "persona": "LM-WILD-NPC06",
+    "zone": "Lemuria/LM_Z01_WildLands"
+  },
+  "requires": [
+    "LM-Q-17320D"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 193440,
+    "gold": 1925
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z01_CentaurzanCabin"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Fossa_Base_A_01.AdjRef",
+        "LM_Fossa_Base_A_02.AdjRef",
+        "LM_Fossa_Base_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003889",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_DurianFruit.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "descriptor": "WizItems_00002087",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z01_WildLands"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z01_WildLands"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC01",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    }
+  ],
+  "personas": {
+    "LM-URSAI-NPC01": {
+      "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
+      "template_id": 1520122
+    },
+    "LM-WILD-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Centaur_TarzanF_B_NPC.dds",
+      "template_id": 1520121
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Grease_a_Few_Hooves",
+    "from": "archive",
+    "timestamp": "20240322075900"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Pass through Poisonthorn Vines",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Look for the Bearfolk",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Tour de Telos replaced by LM-Q-17320D",
+      "blocking": false
+    }
+  ]
+}

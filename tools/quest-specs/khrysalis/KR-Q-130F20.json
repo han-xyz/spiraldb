@@ -43,38 +43,98 @@
   },
   "goals": [
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Khrysalis/KR_Z00_Hub",
-      "loc": "ZoneLocName_1205023"
+      "descriptor": "WizItems_00001971",
+      "loc": "ZoneLocName_1205051"
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Khrysalis/KR_Z01_SilentMarket",
+      "descriptor": "WizItems_00001971",
       "loc": "ZoneLocName_1205051",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Khrysalis/KR_Z02_MoonCliffs",
-      "loc": "ZoneLocName_1205048",
+      "descriptor": "WizItems_00001971",
+      "loc": "ZoneLocName_1205051",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Khrysalis/KR_Z03_LastWood",
-      "loc": "ZoneLocName_1205052",
+      "descriptor": "WizItems_00001971",
+      "loc": "ZoneLocName_1205051",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Khrysalis/KR_Z04_TyrianGorge",
-      "loc": "ZoneLocName_1233046",
+      "descriptor": "WizItems_00001971",
+      "loc": "ZoneLocName_1205051",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "count": 1,
       "zone": "Khrysalis/KR_Z05_FortRachias",
-      "loc": "ZoneLocName_1205054",
+      "descriptor": "WizItems_00001971",
+      "loc": "ZoneLocName_1205051",
       "with_previous": true
     },
     {
@@ -99,7 +159,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Another_Exotic_Exhibit",
     "from": "archive",
-    "timestamp": "20231125230539"
+    "timestamp": "20250911040058"
   },
   "needs_review": [
     {

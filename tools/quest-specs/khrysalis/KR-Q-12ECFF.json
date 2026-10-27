@@ -1,0 +1,136 @@
+{
+  "id": "KR-Q-12ECFF",
+  "lang": "12ECFF",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC38",
+    "zone": "Khrysalis/KR_Z09_MantisCity"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 54240,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KR-Hive-NPC12",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mantis_HunterF_W.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001768",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-Hive-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_H_NPC.dds",
+      "template_id": 1283189
+    },
+    "KR-Sardonyx-NPC38": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_MerchantF_J_NPC.dds",
+      "template_id": 1283220
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stop_'Em_Before_They_Start",
+    "from": "archive",
+    "timestamp": "20231126063229"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ECFF by the proper nouns its lines share with the page (RunningOne, Zharellia), within 16 of a key of the zone's quests; next best WizQst12ECFB with 1",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Shoulders of Giants",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Shoulders of Giants replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

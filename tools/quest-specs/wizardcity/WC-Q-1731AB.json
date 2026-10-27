@@ -6,9 +6,9 @@
     "zone": "WizardCity/WC_Streets/WC_OldeTown"
   },
   "requires": [
-    "WC-Q-1627BA",
-    "WC-Q-17359F",
-    "WC-Q-173194"
+    "WC-TRITON-MAIN-009",
+    "WC-FIRECAT-MAIN-007",
+    "WC-CYCLOPS-MAIN-005"
   ],
   "mainline": true,
   "level": 5,
@@ -186,7 +186,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Sapphyra's Tower",
       "blocking": false
     },
@@ -195,5 +195,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-OLDE-MAIN-003A"
 }

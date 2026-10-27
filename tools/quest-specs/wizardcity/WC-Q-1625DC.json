@@ -6,7 +6,7 @@
     "zone": "WizardCity/Interiors/WC_Headmistress_House"
   },
   "requires": [
-    "WC-Q-13D91"
+    "WC-ST01-C02-002"
   ],
   "mainline": false,
   "level": 5,

@@ -88,6 +88,11 @@
       "blocking": false
     },
     {
+      "field": "giver (other world)",
+      "value": "Vesper is placed in Aquila/AQ_Z00_Hub",
+      "blocking": true
+    },
+    {
       "field": "goal.mobs (other folder)",
       "value": "Sand Squid Tentacle: ObjectData/AQ",
       "blocking": false

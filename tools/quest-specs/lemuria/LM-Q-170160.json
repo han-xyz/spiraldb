@@ -2,8 +2,8 @@
   "id": "LM-Q-170160",
   "lang": "170160",
   "giver": {
-    "persona": "LM-BAD-NPC01-B",
-    "zone": "Lemuria/LM_Z04_Badlands"
+    "persona": "LM-Mandoria-NPC07",
+    "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
     "LM-Q-17015C"
@@ -63,7 +63,7 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/LM_Z04_Badlands",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -75,7 +75,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003921",
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -92,13 +92,13 @@
     }
   ],
   "personas": {
-    "LM-BAD-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
-      "template_id": 1487607
-    },
     "LM-BAD-NPC02": {
       "portrait": "GUI/NpcPortraits/Lemur_Wild_C_NPC.dds",
       "template_id": 1507682
+    },
+    "LM-Mandoria-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
+      "template_id": 1507674
     }
   },
   "source": {

@@ -3,7 +3,7 @@
   "lang": "173217",
   "giver": {
     "persona": "LM-Standin-Bantam",
-    "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber"
+    "zone": "Lemuria/LM_Z02_UrsaiVillage"
   },
   "requires": [
     "LM-Q-173215"
@@ -89,23 +89,19 @@
   },
   "goals": [
     {
-      "type": "waypoint",
-      "zone": "Lemuria/Interiors/LM_Z02_Volcano"
-    },
-    {
       "type": "bounty",
       "mobs": [
         "LM_EyeBot_B_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004020",
-      "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099",
       "completion": [
         {
@@ -122,12 +118,16 @@
     }
   },
   "source": {
-    "page": "https://therepository.fandom.com/wiki/The_Chicken%27s_Coup",
-    "from": "repository",
-    "licence": "CC-BY-SA",
-    "licence_url": "https://www.fandom.com/licensing"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Chicken's_Coup",
+    "from": "archive",
+    "timestamp": "20250907052133"
   },
   "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Killawahoo",
+      "blocking": false
+    },
     {
       "field": "goal.unknown-verb",
       "value": "Recite Door Incantation",

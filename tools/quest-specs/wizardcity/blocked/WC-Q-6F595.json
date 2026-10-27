@@ -112,7 +112,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Write a Poem at the King's Desk",
       "blocking": true
     },

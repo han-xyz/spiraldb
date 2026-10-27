@@ -2,8 +2,8 @@
   "id": "KM-Q-16FCAE",
   "lang": "16FCAE",
   "giver": {
-    "persona": "KM-BLACK-NPC01-B",
-    "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
+    "persona": "KM-NIBB-NPC01",
+    "zone": "Karamelle/KM_Z05_Nibbleheim"
   },
   "requires": [
     "KM-Q-16FCAD"
@@ -115,14 +115,18 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003678",
-      "zone": "",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "loc": "ZoneLocName_1506578"
     },
     {
       "type": "persona",
-      "persona": "KM-NIBB-NPC02-B",
+      "persona": "KM-NIBB-NPC02",
       "zone": "Karamelle/KM_Z05_Nibbleheim",
       "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z05_Nibbleheim"
     },
     {
       "type": "waypoint",
@@ -142,17 +146,17 @@
     }
   ],
   "personas": {
-    "KM-BLACK-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513114
-    },
     "KM-ESTATE-NPC08": {
       "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
       "template_id": 1513159
     },
-    "KM-NIBB-NPC02-B": {
+    "KM-NIBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1506486
+    },
+    "KM-NIBB-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Shopkeep_A_NPC.dds",
-      "template_id": 1506767
+      "template_id": 1506487
     }
   },
   "source": {
@@ -167,7 +171,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Nibbleheim Mines",
       "blocking": false
     },

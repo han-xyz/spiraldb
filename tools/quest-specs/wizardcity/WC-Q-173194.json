@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Cyclops"
   },
   "requires": [
-    "WC-Q-173190"
+    "WC-CYCLOPS-MAIN-003"
   ],
   "mainline": true,
   "level": 5,
@@ -118,7 +118,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Akilles' Tower",
       "blocking": false
     },
@@ -132,5 +132,6 @@
       "value": "Oh Me, Oh Minotaur replaced by WC-Q-173190",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-CYCLOPS-MAIN-005"
 }

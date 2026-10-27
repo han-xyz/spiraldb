@@ -1,7 +1,7 @@
 {
   "id": "WC-Q-venividiviggor",
   "giver": {
-    "persona": "WC-CATA-NPC01-B",
+    "persona": "WC-CATA-NPC01",
     "zone": "WizardCity/WC_Streets/WC_Catacombs"
   },
   "requires": [],
@@ -17,6 +17,16 @@
     "underway": []
   },
   "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Human_DSWarPrince_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003450",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
     {
       "type": "persona",
       "persona": "WC-CATA-NPC07",
@@ -59,9 +69,9 @@
       "portrait": "GUI/NpcPortraits/Art_Portrait_Ashley.dds",
       "template_id": 126321
     },
-    "WC-CATA-NPC01-B": {
+    "WC-CATA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Bear_Hargrove_A_NPC.dds",
-      "template_id": 1487009
+      "template_id": 1487008
     },
     "WC-CATA-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Human_DSWarPrince_A_NPC.dds",
@@ -90,9 +100,9 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Prince Viggor",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Prince Viggor: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
     },
     {
       "field": "goal.descriptor",

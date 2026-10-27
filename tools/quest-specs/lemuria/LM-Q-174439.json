@@ -62,6 +62,10 @@
       "loc": "ZoneLocName_1524839"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z07_Heap"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Drone_Eye_A_01.AdjRef",
@@ -91,8 +95,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

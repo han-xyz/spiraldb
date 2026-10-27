@@ -2,7 +2,7 @@
   "id": "EM-Q-162815",
   "lang": "162815",
   "giver": {
-    "persona": "EM-AERI-NPC01-B",
+    "persona": "EM-AERI-NPC01",
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
   "requires": [
@@ -97,18 +97,18 @@
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC03-B",
+      "persona": "EM-AERI-NPC03",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
+    "EM-AERI-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
+      "template_id": 1397523
     },
-    "EM-AERI-NPC03-B": {
+    "EM-AERI-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
-      "template_id": 1397548
+      "template_id": 1397525
     }
   },
   "source": {

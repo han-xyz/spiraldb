@@ -69,7 +69,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001086",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
       "loc": "ZoneLocName_465256"
     },
     {
@@ -78,7 +78,7 @@
         "ZF_Eternal_Flame.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
       "descriptor": "WizItems_00001783",
       "loc": "ZoneLocName_465256"
     },

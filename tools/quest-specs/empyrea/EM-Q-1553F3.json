@@ -57,6 +57,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z01_Jungle"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Beastman_Warrior_A_Boss_01.AdjRef"
@@ -80,7 +84,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Beastman Fight Club",
       "blocking": false
     },

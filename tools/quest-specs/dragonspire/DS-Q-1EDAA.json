@@ -1,0 +1,107 @@
+{
+  "id": "DS-Q-1EDAA",
+  "lang": "1EDAA",
+  "giver": {
+    "persona": "DS-ACAD2-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+  },
+  "requires": [
+    "DS-ACAD2-C01-010"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2785,
+    "gold": 128
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-ACAD2-NPC03",
+      "zone": "DragonSpire/DS_A3_Kings/Interiors/DS_Amphitheatre_Gauntlet_7Room_Sub/7Room_4"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-ACAD2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_soldier_3_Ghost_NPC.dds",
+      "template_id": 126326
+    },
+    "DS-ACAD2-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_drake_mother_Ghost_NPC.dds",
+      "template_id": 126334
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Scales_of_the_Dragon",
+    "from": "archive",
+    "timestamp": "20240214173121"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD2-C01-011"
+}

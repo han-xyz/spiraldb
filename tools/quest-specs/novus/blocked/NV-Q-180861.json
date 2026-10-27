@@ -118,7 +118,7 @@
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC01-B",
+      "persona": "NV-CON-NPC01",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
     },
@@ -136,6 +136,10 @@
       "loc": "ZoneLocName_1546265"
     },
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z01_Conatus"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Dog_General_A_01.AdjRef"
@@ -147,9 +151,9 @@
     }
   ],
   "personas": {
-    "NV-CON-NPC01-B": {
+    "NV-CON-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
-      "template_id": 1575004
+      "template_id": 1546271
     },
     "NV_Standin_DogofWarPN": {
       "portrait": "GUI/NpcPortraits/Dog_DogOfWar_A_NPC.dds",
@@ -169,8 +173,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To General Booth",
+      "field": "goal.waypoint (current zone)",
+      "value": "General Booth",
       "blocking": false
     },
     {

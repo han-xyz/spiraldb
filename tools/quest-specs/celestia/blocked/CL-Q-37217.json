@@ -65,6 +65,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+    },
+    {
       "type": "persona",
       "persona": "CL-CRAB-NPC08",
       "zone": "Celestia/Interiors/CL_Z10i9_Kingdom_Of_The_Crabs",
@@ -113,7 +117,7 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Senatorium",
       "blocking": false
     },

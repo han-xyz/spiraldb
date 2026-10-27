@@ -6,7 +6,7 @@
     "zone": "WizardCity/Interiors/WC_Headmistress_House"
   },
   "requires": [
-    "WC-Q-282B5",
+    "WC-GRZ-PRE-001",
     "WC-Q-9563"
   ],
   "mainline": false,

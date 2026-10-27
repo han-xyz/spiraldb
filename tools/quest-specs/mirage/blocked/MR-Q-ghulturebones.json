@@ -1,7 +1,7 @@
 {
   "id": "MR-Q-ghulturebones",
   "giver": {
-    "persona": "MR-CARA-NPC02-B",
+    "persona": "MR-CARA-NPC02",
     "zone": "Mirage/MR_Z00_Hub"
   },
   "requires": [
@@ -39,9 +39,9 @@
     }
   ],
   "personas": {
-    "MR-CARA-NPC02-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Spider_Grandfather_A_MOB.dds",
-      "template_id": 1381118
+    "MR-CARA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_A_NPC.dds",
+      "template_id": 1379034
     }
   },
   "source": {

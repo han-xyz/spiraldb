@@ -61,6 +61,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z04_InnerAthanor"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z04_InnerAthanor"
+    },
+    {
       "type": "usage",
       "items": [
         "EM-ValvePipe.AdjRef"
@@ -101,12 +109,12 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Control Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Control Room",
       "blocking": false
     },

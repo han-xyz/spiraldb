@@ -2,8 +2,8 @@
   "id": "WC-Q-16435E",
   "lang": "16435E",
   "giver": {
-    "persona": "WC-RAV-NPC15",
-    "zone": "WizardCity/WC_Ravenwood"
+    "persona": "WC-RAV-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolLife"
   },
   "requires": [
     "WC-Q-16435A"
@@ -92,13 +92,13 @@
     }
   ],
   "personas": {
+    "WC-RAV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 38204
+    },
     "WC-RAV-NPC14": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
       "template_id": 1459032
-    },
-    "WC-RAV-NPC15": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
-      "template_id": 1459033
     }
   },
   "source": {

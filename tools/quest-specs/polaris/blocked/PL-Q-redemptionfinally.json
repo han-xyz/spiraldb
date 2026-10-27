@@ -17,9 +17,9 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "PL-BLEAK-NPC12",
-      "zone": "Polaris/PL_Z02_ForlornTaig",
-      "loc": "ZoneLocName_1346179"
+      "persona": "PL-BORE-NPC06-D_Reddin",
+      "zone": "Polaris/PL_Z07_BorealisPeaks",
+      "loc": "ZoneLocName_1240829"
     },
     {
       "type": "bounty",
@@ -28,7 +28,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002253",
-      "zone": "",
+      "zone": "Polaris/PL_Z07_BorealisPeaks",
       "loc": "ZoneLocName_1240829"
     },
     {
@@ -37,7 +37,7 @@
         "PL-DufresnesVolcanicGlass.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Polaris/PL_Z07_BorealisPeaks",
       "loc": "ZoneLocName_1240829"
     },
     {
@@ -47,7 +47,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002254",
-      "zone": "",
+      "zone": "Polaris/PL_Z07_BorealisPeaks",
       "loc": "ZoneLocName_1240829"
     },
     {
@@ -56,14 +56,14 @@
         "PL-DufresnesVolcanicGlass.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Polaris/PL_Z07_BorealisPeaks",
       "loc": "ZoneLocName_1240829"
     }
   ],
   "personas": {
-    "PL-BLEAK-NPC12": {
-      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_A_NPC.dds",
-      "template_id": 1346234
+    "PL-BORE-NPC06-D_Reddin": {
+      "portrait": "",
+      "template_id": 1361096
     }
   },
   "source": {

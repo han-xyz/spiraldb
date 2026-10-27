@@ -1,0 +1,96 @@
+{
+  "id": "DS-Q-1ED3A",
+  "lang": "1ED3A",
+  "giver": {
+    "persona": "DS-NEC2-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena"
+  },
+  "requires": [
+    "DS-NEC2-C01-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 1685,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DS_CrystalStandDSNECHatch.AdjRef",
+        "DS_CrystalStandGreenBlue.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena",
+      "descriptor": "WizardGameObjects_00000108"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_warrior_wings_1_Ghost_NPC.dds",
+      "template_id": 126317
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Brief_History",
+    "from": "archive",
+    "timestamp": "20250905125024"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC2-C01-002"
+}

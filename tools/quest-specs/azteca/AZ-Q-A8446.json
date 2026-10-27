@@ -10,7 +10,7 @@
     "AZ-Q-B1446"
   ],
   "mainline": false,
-  "level": 78,
+  "level": 86,
   "reward": {
     "xp": 59610,
     "gold": 840
@@ -187,5 +187,6 @@
       "value": "Third Star on the Left replaced by AZ-Q-A6C85",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 86
 }

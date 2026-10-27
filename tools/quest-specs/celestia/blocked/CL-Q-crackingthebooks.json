@@ -18,6 +18,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z09_Science_Center"
+    },
+    {
       "type": "usage",
       "items": [
         "CL-Books.AdjRef"
@@ -57,7 +61,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Conservatory",
       "blocking": false
     }

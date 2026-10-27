@@ -2,8 +2,8 @@
   "id": "AV-Q-96A7C",
   "lang": "96A7C",
   "giver": {
-    "persona": "AV-HUB-NPC01",
-    "zone": "Avalon/AV_Z00_Hub"
+    "persona": "AV-ABBEY-NPC05",
+    "zone": "Avalon/Interiors/AV_Z01_KnightsHall"
   },
   "requires": [
     "AV-Q-96A91"
@@ -44,9 +44,9 @@
     }
   ],
   "personas": {
-    "AV-HUB-NPC01": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
-      "template_id": 602074
+    "AV-ABBEY-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike.dds",
+      "template_id": 617182
     },
     "AV-HUB-NPC03": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SumnerFieldgold_NPC.dds",

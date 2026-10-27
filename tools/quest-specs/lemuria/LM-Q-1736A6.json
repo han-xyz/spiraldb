@@ -1,0 +1,180 @@
+{
+  "id": "LM-Q-1736A6",
+  "lang": "1736A6",
+  "giver": {
+    "persona": "LM-TELOS-NPC01",
+    "zone": "Lemuria/LM_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 96720,
+    "gold": 1050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z00_Hub"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-HOPE-NPC42.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z00_Hub",
+      "descriptor": "NPCs_01749460",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Lemur_CitizenF_A_01.AdjRef",
+        "LM_Lemur_Citizen_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003885",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-TELOS-NPC03",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    }
+  ],
+  "personas": {
+    "LM-TELOS-NPC01": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_LinNoHat_A_NPC.dds",
+      "template_id": 1521317
+    },
+    "LM-TELOS-NPC03": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_C_NPC.dds",
+      "template_id": 1521323
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lord_of_the_Ringtails",
+    "from": "archive",
+    "timestamp": "20240322084123"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Lemur, Le Merrier",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Look for Lemur Citizens",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Lemurs: ObjectData/WL",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lemur, Le Merrier replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 132
+}

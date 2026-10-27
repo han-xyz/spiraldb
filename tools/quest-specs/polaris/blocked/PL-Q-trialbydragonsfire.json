@@ -35,6 +35,16 @@
       "loc": "ZoneLocName_1346179"
     },
     {
+      "type": "usage",
+      "items": [
+        "DS_DragonsMawStatue.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "descriptor": "WizardGameObjects_00000756",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Polaris/PL_Z02_ForlornTaig",
@@ -83,9 +93,9 @@
       "blocking": false
     },
     {
-      "field": "goal.usage",
-      "value": "Use the Dragon's Maw",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Dragon's Maw: ObjectData/DS",
+      "blocking": false
     }
   ]
 }

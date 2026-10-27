@@ -96,8 +96,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.unknown-verb",
-      "value": "Negotiate with Torcido in his office in Walruskberg Harbor",
+      "field": "goal.persona",
+      "value": "Torcido",
       "blocking": true
     },
     {

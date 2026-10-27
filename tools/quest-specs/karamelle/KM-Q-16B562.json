@@ -2,7 +2,7 @@
   "id": "KM-Q-16B562",
   "lang": "16B562",
   "giver": {
-    "persona": "KM-GUTEN-NPC01-B",
+    "persona": "KM-GUTEN-NPC01",
     "zone": "Karamelle/KM_Z07_Gutenstadt"
   },
   "requires": [
@@ -94,19 +94,19 @@
     },
     {
       "type": "persona",
-      "persona": "KM-GUTEN-NPC10-C",
+      "persona": "KM-GUTEN-NPC10",
       "zone": "Karamelle/KM_Z07_Gutenstadt",
       "loc": "ZoneLocName_1488224"
     }
   ],
   "personas": {
-    "KM-GUTEN-NPC01-B": {
+    "KM-GUTEN-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Gnome_Factory_B_NPC.dds",
-      "template_id": 1506595
+      "template_id": 1488240
     },
-    "KM-GUTEN-NPC10-C": {
+    "KM-GUTEN-NPC10": {
       "portrait": "GUI/NpcPortraits/Portrait_Gnome_Constable_A_NPC.dds",
-      "template_id": 1488267
+      "template_id": 1488259
     }
   },
   "source": {

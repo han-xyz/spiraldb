@@ -9,7 +9,7 @@
     "AV-Q-96A79"
   ],
   "mainline": false,
-  "level": 68,
+  "level": 74,
   "reward": {
     "xp": 18210,
     "gold": 415
@@ -133,5 +133,6 @@
       "value": "The Way of Wyrd replaced by AV-Q-96A79",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 74
 }

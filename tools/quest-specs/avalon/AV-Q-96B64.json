@@ -6,7 +6,7 @@
     "zone": "Avalon/Interiors/AV_Z01_Library"
   },
   "requires": [
-    "AV-Q-96B62"
+    "AV-Q-96B63"
   ],
   "mainline": false,
   "level": 68,
@@ -76,11 +76,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "From Whole Cloth replaced by AV-Q-96B62",
       "blocking": false
     }
   ]

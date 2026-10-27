@@ -5,7 +5,9 @@
     "persona": "WC-HUB-NPC01",
     "zone": "WizardCity/Interiors/WC_Headmistress_House"
   },
-  "requires": [],
+  "requires": [
+    "WC-COMMONS-SIDE-002"
+  ],
   "mainline": true,
   "level": 5,
   "reward": {
@@ -95,12 +97,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Tutorial replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 5
+  ]
 }

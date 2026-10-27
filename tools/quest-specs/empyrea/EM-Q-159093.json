@@ -3,8 +3,8 @@
   "lang": "159093",
   "auto_start": true,
   "giver": {
-    "persona": "EM-AERO-NPC01",
-    "zone": "Empyrea/EM_Z10_PortAero"
+    "persona": "EM-NIMB-NPC07",
+    "zone": "Empyrea/EM_Z06_NimbusHanger"
   },
   "requires": [
     "EM-Q-15908D"
@@ -52,14 +52,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002982",
-      "zone": "",
+      "zone": "Empyrea/EM_Z06_NimbusHanger",
       "loc": "ZoneLocName_1413239"
     }
   ],
   "personas": {
-    "EM-AERO-NPC01": {
+    "EM-NIMB-NPC07": {
       "portrait": "GUI/NpcPortraits/Dwarf_AeroCitizen_C_NPC.dds",
-      "template_id": 1447325
+      "template_id": 1413251
     }
   },
   "source": {

@@ -5,7 +5,9 @@
     "persona": "AR_StandIn_Ione",
     "zone": "Arcanum/AR_Z01_Hub"
   },
-  "requires": [],
+  "requires": [
+    "PL-Q-14DBD9"
+  ],
   "mainline": true,
   "level": 100,
   "reward": {
@@ -88,12 +90,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Arcanum Initiation replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 100
+  ]
 }

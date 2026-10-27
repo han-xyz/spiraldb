@@ -40,7 +40,7 @@
         "ZF_Blood_Lily_Flower.AdjRef"
       ],
       "count": 4,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizItems_00001785",
       "loc": "ZoneLocName_465261"
     },
@@ -51,7 +51,7 @@
         "ZF_Brazier_Iron_WhiteSmoke.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizQst82A73_00000007",
       "loc": "ZoneLocName_465261"
     },
@@ -62,7 +62,7 @@
         "ZF_Brazier_Iron_WhiteSmoke.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizQst82A73_00000007",
       "loc": "ZoneLocName_465261",
       "with_previous": true

@@ -2,8 +2,8 @@
   "id": "EM-Q-159089",
   "lang": "159089",
   "giver": {
-    "persona": "EM-AERI-NPC01-B",
-    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    "persona": "EM-NIMB-NPC02",
+    "zone": "Empyrea/EM_Z07_NimbusCitadel"
   },
   "requires": [
     "EM-Q-159078"
@@ -114,8 +114,16 @@
   "goals": [
     {
       "type": "waypoint",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel"
+    },
+    {
+      "type": "waypoint",
       "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel"
     },
     {
       "type": "bounty",
@@ -126,24 +134,24 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003041",
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     },
     {
       "type": "persona",
-      "persona": "EM-NIMB-NPC01-B",
+      "persona": "EM-NIMB-NPC01",
       "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
-    },
-    "EM-NIMB-NPC01-B": {
+    "EM-NIMB-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Noble_A_NPC.dds",
-      "template_id": 1413260
+      "template_id": 1413241
+    },
+    "EM-NIMB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1413242
     }
   },
   "source": {
@@ -153,12 +161,12 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Royal Courtyard",
+      "field": "goal.waypoint (current zone)",
+      "value": "Royal Courtyard",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Audience Chamber",
       "blocking": false
     },

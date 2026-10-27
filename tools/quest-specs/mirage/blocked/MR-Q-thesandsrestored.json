@@ -1,8 +1,8 @@
 {
   "id": "MR-Q-thesandsrestored",
   "giver": {
-    "persona": "MR-ALKA-NPC07",
-    "zone": "Mirage/Interiors/MR_Z01_OverlordsOssuary"
+    "persona": "MR-CHRO-NPC03",
+    "zone": "Mirage/MR_Z10_Chronoverge"
   },
   "requires": [],
   "min_level": 105,
@@ -41,10 +41,6 @@
       "portrait": "GUI/NpcPortraits/Monkey_Adventurer_A_NPC.dds",
       "template_id": 1487574
     },
-    "MR-ALKA-NPC07": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_A_NPC.dds",
-      "template_id": 1365010
-    },
     "MR-CARA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
       "template_id": 1379033
@@ -52,6 +48,10 @@
     "MR-CARA-NPC07-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Stout_D_NPC.dds",
       "template_id": 1381119
+    },
+    "MR-CHRO-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_A_NPC.dds",
+      "template_id": 1401016
     }
   },
   "source": {

@@ -6,7 +6,7 @@
     "zone": "Wallaru/WL_Z04_TheDreaming"
   },
   "requires": [
-    "WL-Q-17D8AB"
+    "WL-Q-17D8AD"
   ],
   "mainline": true,
   "level": 152,
@@ -140,11 +140,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Perchance to Scream replaced by WL-Q-17D8AB",
       "blocking": false
     }
   ]

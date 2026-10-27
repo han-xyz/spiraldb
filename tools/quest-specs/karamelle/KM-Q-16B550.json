@@ -2,8 +2,8 @@
   "id": "KM-Q-16B550",
   "lang": "16B550",
   "giver": {
-    "persona": "KM-KCITY-NPC21",
-    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+    "persona": "KM-SWEET-NPC01",
+    "zone": "Karamelle/KM_Z04_Sweetzburg"
   },
   "requires": [
     "KM-Q-16FF73"
@@ -75,7 +75,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003781",
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
@@ -84,21 +84,21 @@
         "KM-FizzleGenerator.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "descriptor": "Items_00021782",
       "loc": "ZoneLocName_1488252"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Karamelle/Interiors/KM_Z00_NanasHQ",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     }
   ],
   "personas": {
-    "KM-KCITY-NPC21": {
+    "KM-SWEET-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
-      "template_id": 1513270
+      "template_id": 1488209
     }
   },
   "source": {

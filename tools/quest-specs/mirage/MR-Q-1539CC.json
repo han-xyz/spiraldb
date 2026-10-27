@@ -2,8 +2,8 @@
   "id": "MR-Q-1539CC",
   "lang": "1539CC",
   "giver": {
-    "persona": "MR-AGGR-NPC08-B",
-    "zone": "Mirage/Interiors/MR_Z02_SultOffice"
+    "persona": "MR_StandIn_Ozzy_NPC",
+    "zone": "Mirage/MR_Z02_Aggrobah"
   },
   "requires": [],
   "mainline": false,
@@ -134,7 +134,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002505",
-      "zone": "",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "loc": "ZoneLocName_1378095"
     },
     {
@@ -143,7 +143,7 @@
         "MR_OzzyParts-Arms.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "descriptor": "WizardGameObjects_00000769",
       "loc": "ZoneLocName_1378095"
     },
@@ -158,7 +158,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002504",
-      "zone": "",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "loc": "ZoneLocName_1378095"
     },
     {
@@ -167,7 +167,7 @@
         "MR_OzzyParts-Legs.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "descriptor": "WizardGameObjects_00000770",
       "loc": "ZoneLocName_1378095"
     },
@@ -182,7 +182,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002478",
-      "zone": "",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "loc": "ZoneLocName_1378095"
     },
     {
@@ -191,20 +191,20 @@
         "MR_OzzyParts-Ribs.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "descriptor": "WizardGameObjects_00000771",
       "loc": "ZoneLocName_1378095"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Mirage/Interiors/MR_Z02_SultOffice",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "loc": "ZoneLocName_1378095"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Mirage/Interiors/MR_Z02_SultOffice",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "loc": "ZoneLocName_1378095",
       "completion": [
         {
@@ -215,9 +215,9 @@
     }
   ],
   "personas": {
-    "MR-AGGR-NPC08-B": {
+    "MR_StandIn_Ozzy_NPC": {
       "portrait": "GUI/NpcPortraits/Portrait_Skull_King_A_NPC.dds",
-      "template_id": 1381261
+      "template_id": 1365006
     }
   },
   "source": {

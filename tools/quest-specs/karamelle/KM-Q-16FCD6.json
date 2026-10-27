@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z05_Nibbleheim"
   },
   "requires": [
-    "KM-Q-171684"
+    "KM-Q-1716F6"
   ],
   "mainline": false,
   "level": 122,
@@ -49,13 +49,17 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z05_Nibbleheim"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Witches_Fairy_A_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00003727",
-      "zone": "",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "loc": "ZoneLocName_1506578"
     },
     {
@@ -64,7 +68,7 @@
         "KM-EverlastingGobblerstopper.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "descriptor": "Items_00021907",
       "loc": "ZoneLocName_1506578"
     },
@@ -99,18 +103,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Mineshaft C, Nibbleheim Mines",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Local Color Out of Space replaced by KM-Q-171684",
       "blocking": false
     }
   ]

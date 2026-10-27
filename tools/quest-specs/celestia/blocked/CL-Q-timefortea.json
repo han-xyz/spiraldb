@@ -5,9 +5,9 @@
     "zone": "Celestia/CL_Hub"
   },
   "requires": [],
-  "min_level": 48,
+  "min_level": 56,
   "mainline": false,
-  "level": 48,
+  "level": 56,
   "reward": {
     "xp": 1790,
     "gold": 75
@@ -17,6 +17,16 @@
     "underway": []
   },
   "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-TeaSet.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Hub",
+      "descriptor": "WizItems_00000096",
+      "loc": "ZoneLocName_1161792"
+    },
     {
       "type": "persona",
       "persona": "giver",
@@ -33,7 +43,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Time_for_Tea",
     "from": "archive",
-    "timestamp": "20231124085733"
+    "timestamp": "20250824091233"
   },
   "needs_review": [
     {
@@ -47,9 +57,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Tea Set",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Tea Set: ObjectData/KR",
+      "blocking": false
     }
   ]
 }

@@ -1,0 +1,109 @@
+{
+  "id": "WC-Q-13D38",
+  "lang": "13D38",
+  "giver": {
+    "persona": "WC-RAV-NPC04",
+    "zone": "WizardCity/Interiors/WC_SchoolFire"
+  },
+  "requires": [
+    {
+      "school": "Fire"
+    },
+    "WC-Q-13D36"
+  ],
+  "mainline": false,
+  "level": 38,
+  "reward": {
+    "xp": 1180,
+    "gold": 200,
+    "spells": [
+      "Smoke Screen"
+    ]
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WC_RVW_FireTree",
+      "zone": "WizardCity/WC_Ravenwood",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "Phoenix.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizardPets_00000389",
+      "loc": "ZoneLocName_9005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/Interiors/WC_SchoolFire",
+      "loc": "ZoneLocName_9005"
+    }
+  ],
+  "personas": {
+    "WC-RAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Dalia_Falmea.dds",
+      "template_id": 38208
+    },
+    "WC_RVW_FireTree": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Bernie.dds",
+      "template_id": 44207
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fire_Creature_Feature",
+    "from": "archive",
+    "timestamp": "20260605041136"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items (other folder)",
+      "value": "Phoenix at the Forlorn Tower in Firecat Alley: ObjectData/Pets",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Temper Temper... replaced by WC-Q-13D36",
+      "blocking": false
+    }
+  ],
+  "min_level": 38
+}

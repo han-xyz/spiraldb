@@ -64,7 +64,7 @@
     },
     {
       "type": "persona",
-      "persona": "EM-DEST-NPC03-B",
+      "persona": "EM-DEST-NPC03",
       "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
       "loc": "ZoneLocName_1451161"
     },
@@ -80,9 +80,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_G_NPC.dds",
       "template_id": 1451218
     },
-    "EM-DEST-NPC03-B": {
+    "EM-DEST-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Kalamar_ElderF_A_NPC.dds",
-      "template_id": 1451223
+      "template_id": 1451221
     }
   },
   "source": {

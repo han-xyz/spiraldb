@@ -1,0 +1,104 @@
+{
+  "id": "DS-Q-1ED40",
+  "lang": "1ED40",
+  "giver": {
+    "persona": "DS-NEC2-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2460,
+    "gold": 240
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-LIB3-NPC01",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+    },
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-LIB3-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_skirt_4_Ghost_NPC.dds",
+      "template_id": 126305
+    },
+    "DS-NEC2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_warrior_wings_1_Ghost_NPC.dds",
+      "template_id": 126317
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pick_Up_the_Spare",
+    "from": "archive",
+    "timestamp": "20240121081804"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Crystal Storage",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Feeling Defensive? replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 40,
+  "captured": "DS-NEC2-C01-008"
+}

@@ -1,0 +1,141 @@
+{
+  "id": "DS-Q-1ED86",
+  "lang": "1ED86",
+  "giver": {
+    "persona": "DS-NEC1-NPC05",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+  },
+  "requires": [
+    "DS-NEC1-C05-004"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 375,
+    "gold": 118
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC06",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC07",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC01",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "completion": [
+        {
+          "speaker": "DS-NEC1-NPC01",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_3_Ghost_NPC.dds",
+      "template_id": 126312
+    },
+    "DS-NEC1-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_drake_mother_Ghost_NPC.dds",
+      "template_id": 126316
+    },
+    "DS-NEC1-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_drake_mother_Ghost_NPC.dds",
+      "template_id": 126330
+    },
+    "DS-NEC1-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_drake_mother_Ghost_NPC.dds",
+      "template_id": 126331
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Words_of_Wisdom",
+    "from": "archive",
+    "timestamp": "20231122065551"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC1-C05-005"
+}

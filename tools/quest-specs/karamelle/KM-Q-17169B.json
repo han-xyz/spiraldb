@@ -122,7 +122,7 @@
     },
     {
       "type": "persona",
-      "persona": "KM-BLACK-NPC11-B",
+      "persona": "KM-BLACK-NPC11",
       "zone": "Karamelle/KM_Z08_LicoriceForest",
       "loc": "ZoneLocName_1513103"
     }
@@ -132,9 +132,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
       "template_id": 1513116
     },
-    "KM-BLACK-NPC11-B": {
+    "KM-BLACK-NPC11": {
       "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
-      "template_id": 1513122
+      "template_id": 1513119
     }
   },
   "source": {

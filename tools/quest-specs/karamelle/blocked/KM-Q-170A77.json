@@ -2,7 +2,7 @@
   "id": "KM-Q-170A77",
   "lang": "170A77",
   "giver": {
-    "persona": "KM-KCITY-NPC01-B",
+    "persona": "KM-KCITY-NPC01",
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [],
@@ -87,6 +87,10 @@
       "loc": "ZoneLocName_1510006"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gummy_Bear_Uber_A_01.AdjRef"
@@ -98,25 +102,25 @@
     },
     {
       "type": "persona",
-      "persona": "KM-KCITY-NPC02-B",
+      "persona": "KM-KCITY-NPC02",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006",
       "completion": [
         {
-          "speaker": "KM-KCITY-NPC02-B",
+          "speaker": "KM-KCITY-NPC02",
           "line": "00000013"
         }
       ]
     }
   ],
   "personas": {
-    "KM-KCITY-NPC01-B": {
+    "KM-KCITY-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
-      "template_id": 1510011
+      "template_id": 1510008
     },
-    "KM-KCITY-NPC02-B": {
+    "KM-KCITY-NPC02": {
       "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
-      "template_id": 1510012
+      "template_id": 1510009
     }
   },
   "source": {
@@ -131,8 +135,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to City Square",
+      "field": "goal.waypoint (current zone)",
+      "value": "City Square",
       "blocking": false
     },
     {

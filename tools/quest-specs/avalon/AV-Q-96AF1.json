@@ -65,6 +65,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z01_AbbeyRoad"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Deer-Knight-Lancer-Boss-R11-01.AdjRef",
@@ -100,7 +104,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hart's Hideaway",
       "blocking": false
     },

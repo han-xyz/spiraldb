@@ -19,6 +19,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z10_Kingdom_Of_The_Crabs"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "CL-UndeadMaiden-Boss-R10.AdjRef",
@@ -58,7 +62,7 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Calypso's Cavern",
       "blocking": false
     }

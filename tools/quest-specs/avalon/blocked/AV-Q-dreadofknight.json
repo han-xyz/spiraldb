@@ -19,6 +19,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z04_TheWild"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Giant-Boss-R11-01.AdjRef",
@@ -70,7 +74,7 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Dread Keep",
       "blocking": false
     }

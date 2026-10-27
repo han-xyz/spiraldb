@@ -1,7 +1,7 @@
 {
   "id": "AV-Q-thetruthaboutoldcob",
   "giver": {
-    "persona": "AV-HUB-NPC14-B",
+    "persona": "AV-HUB-NPC14",
     "zone": "Avalon/AV_Z03_CaerLyon"
   },
   "requires": [],
@@ -29,9 +29,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
       "template_id": 1401051
     },
-    "AV-HUB-NPC14-B": {
+    "AV-HUB-NPC14": {
       "portrait": "GUI/NpcPortraits/Portrait_VampireHunterF_A_NPC.dds",
-      "template_id": 1367013
+      "template_id": 1367008
     }
   },
   "source": {

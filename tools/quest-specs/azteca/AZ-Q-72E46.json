@@ -2,7 +2,7 @@
   "id": "AZ-Q-72E46",
   "lang": "72E46",
   "giver": {
-    "persona": "AZ-FLOAT-NPC05-Sick",
+    "persona": "AZ-FLOAT-NPC05",
     "zone": "Azteca/AZ_Z10_FloatingMountains"
   },
   "requires": [
@@ -71,6 +71,10 @@
       "loc": "ZoneLocName_701124"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Shdweave-Warrior-H.AdjRef"
@@ -88,9 +92,9 @@
     }
   ],
   "personas": {
-    "AZ-FLOAT-NPC05-Sick": {
+    "AZ-FLOAT-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_C_NPC.dds",
-      "template_id": 470600
+      "template_id": 470572
     },
     "AZ-SWAMP-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Parasaur_Priest_A_NPC.dds",
@@ -104,7 +108,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "River Cave",
       "blocking": false
     },

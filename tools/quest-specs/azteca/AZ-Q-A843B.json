@@ -49,13 +49,17 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Parrot-Darkshaman-B.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00001445",
-      "zone": "",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
       "loc": "ZoneLocName_643370"
     },
     {
@@ -83,7 +87,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Zemeckis Cave",
       "blocking": false
     },

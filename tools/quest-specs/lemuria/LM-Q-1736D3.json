@@ -1,0 +1,179 @@
+{
+  "id": "LM-Q-1736D3",
+  "lang": "1736D3",
+  "giver": {
+    "persona": "LM-TELOS-NPC16",
+    "zone": "Lemuria/LM_Z00_Hub"
+  },
+  "requires": [
+    "LM-Q-1736A6"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 1050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM-HeroFlower.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z00_Hub",
+      "descriptor": "WizQst1736D3_00000011",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-HeroFlower.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "descriptor": "WizQst1736D3_00000011",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-HeroFlower.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
+      "descriptor": "WizQst1736D3_00000011",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-HeroFlower.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizQst1736D3_00000011",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-HeroFlower.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "descriptor": "WizQst1736D3_00000011",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-HeroFlower.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "descriptor": "WizQst1736D3_00000011",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-HeroFlower.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "descriptor": "WizQst1736D3_00000011",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-HeroFlower.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizQst1736D3_00000011",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    }
+  ],
+  "personas": {
+    "LM-TELOS-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 1521364
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Heroes_Don't_Grow_on_Trees",
+    "from": "archive",
+    "timestamp": "20240119020643"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

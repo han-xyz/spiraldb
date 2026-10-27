@@ -58,6 +58,10 @@
       "loc": "ZoneLocName_602089"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z05_TheWyrd"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-SirMalory-R12-02.AdjRef",
@@ -92,8 +96,8 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Nameless Knight",
+      "field": "goal.waypoint (current zone)",
+      "value": "Nameless Knight",
       "blocking": false
     },
     {

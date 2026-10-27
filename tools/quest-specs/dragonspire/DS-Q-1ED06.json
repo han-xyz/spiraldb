@@ -1,0 +1,72 @@
+{
+  "id": "DS-Q-1ED06",
+  "lang": "1ED06",
+  "giver": {
+    "persona": "DS-LIB2-NPC02",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+  },
+  "requires": [
+    "DS-LIB2-C03-002"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 705,
+    "gold": 103
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-LIB2-NPC04",
+      "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_Plaza_T4"
+    }
+  ],
+  "personas": {
+    "DS-LIB2-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_1_Ghost_NPC.dds",
+      "template_id": 126298
+    },
+    "DS-LIB2-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_military_2_Ghost_NPC.dds",
+      "template_id": 126300
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Recommend_This",
+    "from": "archive",
+    "timestamp": "20260616202122"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB2-C02-002"
+}

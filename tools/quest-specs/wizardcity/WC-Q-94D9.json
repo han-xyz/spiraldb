@@ -76,7 +76,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Fireglobe Theatre",
       "blocking": false
     },

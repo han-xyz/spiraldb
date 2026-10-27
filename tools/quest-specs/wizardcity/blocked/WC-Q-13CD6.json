@@ -9,7 +9,7 @@
     {
       "school": "Fire"
     },
-    "WC-Q-12E14"
+    "MS-WAR3-C03-001"
   ],
   "min_level": 18,
   "mainline": false,
@@ -119,7 +119,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Storm Chamber, Grand Arena",
       "blocking": false
     },

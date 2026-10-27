@@ -2,10 +2,12 @@
   "id": "NV-Q-188A1A",
   "lang": "188A1A",
   "giver": {
-    "persona": "NV-CON-NPC25-C",
+    "persona": "NV-CON-NPC25",
     "zone": "Novus/NV_Z07_DoomMoon"
   },
-  "requires": [],
+  "requires": [
+    "NV-Q-188A11"
+  ],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -59,13 +61,17 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z07_DoomMoon"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Monkey_SoldierBoss_C_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004448",
-      "zone": "",
+      "zone": "Novus/NV_Z07_DoomMoon",
       "loc": "ZoneLocName_1560538"
     },
     {
@@ -76,9 +82,9 @@
     }
   ],
   "personas": {
-    "NV-CON-NPC25-C": {
+    "NV-CON-NPC25": {
       "portrait": "GUI/NpcPortraits/Portrait_Horse_Explorer_A_NPC.dds",
-      "template_id": 1608259
+      "template_id": 1608210
     }
   },
   "source": {
@@ -93,7 +99,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Weapons Wing",
       "blocking": false
     },
@@ -106,12 +112,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Bam, Zoom, to the Doom replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 142
+  ]
 }

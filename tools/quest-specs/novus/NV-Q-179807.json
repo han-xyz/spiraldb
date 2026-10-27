@@ -2,8 +2,8 @@
   "id": "NV-Q-179807",
   "lang": "179807",
   "giver": {
-    "persona": "NV-NEWV-NPC03-B",
-    "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
+    "persona": "NV-NEWV-NPC03",
+    "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
     "NV-Q-179802"
@@ -94,9 +94,9 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "NV-CON-NPC15-B",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265"
+      "persona": "NV-NEWV-NPC02",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
     },
     {
       "type": "persona",
@@ -114,30 +114,30 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004193",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC15-B",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265",
+      "persona": "NV-NEWV-NPC02",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199",
       "completion": [
         {
-          "speaker": "NV-CON-NPC15-B",
+          "speaker": "NV-NEWV-NPC02",
           "line": "00000007"
         }
       ]
     }
   ],
   "personas": {
-    "NV-CON-NPC15-B": {
+    "NV-NEWV-NPC02": {
       "portrait": "GUI/NpcPortraits/Dog_Governor_A_NPC.dds",
-      "template_id": 1575027
+      "template_id": 1546202
     },
-    "NV-NEWV-NPC03-B": {
+    "NV-NEWV-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
-      "template_id": 1546206
+      "template_id": 1546204
     },
     "NV-NEWV-NPC08": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_WorkerF_A_NPC.dds",

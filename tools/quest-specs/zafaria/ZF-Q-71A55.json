@@ -64,6 +64,10 @@
       "loc": "ZoneLocName_465257"
     },
     {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z00_Hub"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Zafaria/ZF_Z00_Hub",
@@ -85,12 +89,12 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Mane_of_Terror",
     "from": "archive",
-    "timestamp": "20241203203722"
+    "timestamp": "20250913055739"
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to The Cage in Blackmane's Cave",
+      "field": "goal.waypoint (current zone)",
+      "value": "Cage in Blackmane's Cave",
       "blocking": false
     },
     {

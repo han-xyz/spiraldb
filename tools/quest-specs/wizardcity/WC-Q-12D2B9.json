@@ -6,7 +6,7 @@
     "zone": "WizardCity/Interiors/WC_PartyRoom"
   },
   "requires": [
-    "WC-Q-1731AE"
+    "WC-Q-12D2B8"
   ],
   "mainline": false,
   "level": 20,
@@ -67,11 +67,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Fishful Thinking replaced by WC-Q-1731AE",
       "blocking": false
     }
   ],

@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z05_The_Floating_Land"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "CL-DeepOne-GreyHead-Boss-R10.AdjRef"
@@ -84,7 +88,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Gahlwok's Lair",
       "blocking": false
     },

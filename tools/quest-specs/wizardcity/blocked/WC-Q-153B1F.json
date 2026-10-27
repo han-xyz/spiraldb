@@ -96,6 +96,16 @@
       "loc": "ZoneLocName_409193"
     },
     {
+      "type": "usage",
+      "items": [
+        "Fish_Long_WilliamWalleye.AdjRef"
+      ],
+      "count": 2,
+      "zone": "",
+      "descriptor": "FishNames_00000248",
+      "loc": "ZoneLocName_409193"
+    },
+    {
       "type": "persona",
       "persona": "AV-FishingNPC-02",
       "zone": "Avalon/AV_Z03_CaerLyon",
@@ -143,9 +153,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "William Walleye on the High Road",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "William Walleye on the High Road: ObjectData/Fish",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",

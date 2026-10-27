@@ -1,0 +1,143 @@
+{
+  "id": "Wysteria-Q-179736",
+  "lang": "179736",
+  "giver": {
+    "persona": "PA-HUB-NPC28",
+    "zone": "Wysteria/PA_Hub"
+  },
+  "requires": [],
+  "min_level": 25,
+  "mainline": false,
+  "level": 25,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC28": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Wizard_A_NPC.dds",
+      "template_id": 1546037
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cantrips_102",
+    "from": "archive",
+    "timestamp": "20231121203459"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Cantrips 101",
+      "blocking": false
+    },
+    {
+      "field": "reward.spells (cantrip)",
+      "value": "Flip",
+      "blocking": false
+    },
+    {
+      "field": "reward.spells (cantrip)",
+      "value": "Magic Touch",
+      "blocking": false
+    },
+    {
+      "field": "reward.spells (cantrip)",
+      "value": "School Spirit",
+      "blocking": false
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Cast Flip",
+      "blocking": true
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Cast Magic Touch at Chest",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

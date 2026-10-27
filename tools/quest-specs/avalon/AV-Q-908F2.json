@@ -65,6 +65,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z10_Catacombs"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z10_Catacombs"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z10_Catacombs",
@@ -85,13 +93,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To The Shrine of Justice",
+      "field": "goal.waypoint (current zone)",
+      "value": "Shrine of Justice",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To King's Tomb",
+      "field": "goal.waypoint (current zone)",
+      "value": "King's Tomb",
       "blocking": false
     },
     {

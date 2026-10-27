@@ -2,8 +2,8 @@
   "id": "NV-Q-17983E",
   "lang": "17983E",
   "giver": {
-    "persona": "NV-CON-NPC06-B",
-    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+    "persona": "NV-NEWV-NPC14",
+    "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
     "NV-Q-179833"
@@ -52,20 +52,20 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004135",
-      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     }
   ],
   "personas": {
-    "NV-CON-NPC06-B": {
+    "NV-NEWV-NPC14": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1575019
+      "template_id": 1546298
     }
   },
   "source": {

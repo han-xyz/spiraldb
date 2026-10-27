@@ -97,6 +97,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel"
+    },
+    {
       "type": "persona",
       "persona": "EM-AERO-NPC27",
       "zone": "Empyrea/EM_Z11_VeloCity",
@@ -108,8 +112,12 @@
         "EM-LightningBottle.AdjRef"
       ],
       "count": 5,
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel"
     },
     {
       "type": "bounty",
@@ -118,7 +126,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003090",
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     },
     {
@@ -145,7 +153,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Northeast Aero Plains",
       "blocking": false
     },
@@ -175,7 +183,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hookworm Tunnel",
       "blocking": false
     },

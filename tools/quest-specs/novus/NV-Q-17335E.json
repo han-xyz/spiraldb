@@ -2,8 +2,8 @@
   "id": "NV-Q-17335E",
   "lang": "17335E",
   "giver": {
-    "persona": "NV-StandIn-Dasein_v3",
-    "zone": "Novus/NV_Z01_Conatus"
+    "persona": "NV-NUCLEUS-NPC01",
+    "zone": "Novus/NV_Z06_NucleusGallery"
   },
   "requires": [
     "NV-Q-17335D"
@@ -80,9 +80,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Moose_Manticore_A_NPC.dds",
       "template_id": 1575021
     },
-    "NV-StandIn-Dasein_v3": {
-      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
-      "template_id": 1624005
+    "NV-NUCLEUS-NPC01": {
+      "portrait": "",
+      "template_id": 1546327
     }
   },
   "source": {

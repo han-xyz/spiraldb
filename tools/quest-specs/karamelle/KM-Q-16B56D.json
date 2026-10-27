@@ -2,7 +2,7 @@
   "id": "KM-Q-16B56D",
   "lang": "16B56D",
   "giver": {
-    "persona": "KM-GUTEN-NPC05-C",
+    "persona": "KM-GUTEN-NPC05",
     "zone": "Karamelle/KM_Z07_Gutenstadt"
   },
   "requires": [
@@ -109,6 +109,10 @@
       "zone": "Karamelle/Interiors/KM_Z07_CandyBar"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z07_CandyBar"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gnome_Witch_A_01.AdjRef"
@@ -120,25 +124,25 @@
     },
     {
       "type": "persona",
-      "persona": "KM-GUTEN-NPC02-B",
+      "persona": "KM-GUTEN-NPC02",
       "zone": "Karamelle/KM_Z07_Gutenstadt",
       "loc": "ZoneLocName_1488224",
       "completion": [
         {
-          "speaker": "KM-GUTEN-NPC02-B",
+          "speaker": "KM-GUTEN-NPC02",
           "line": "00000022"
         }
       ]
     }
   ],
   "personas": {
-    "KM-GUTEN-NPC02-B": {
+    "KM-GUTEN-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1488266
+      "template_id": 1488241
     },
-    "KM-GUTEN-NPC05-C": {
+    "KM-GUTEN-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
-      "template_id": 1488268
+      "template_id": 1488244
     }
   },
   "source": {
@@ -148,8 +152,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Candy Bar Back Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Candy Bar Back Room",
       "blocking": false
     },
     {

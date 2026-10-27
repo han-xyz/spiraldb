@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Ravenwood"
   },
   "requires": [
-    "WC-Q-7191B"
+    "WC-PrePA-C01-001"
   ],
   "mainline": true,
   "level": 5,

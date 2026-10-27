@@ -21,8 +21,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004800",
-      "zone": "",
+      "zone": "Avalon/AV_Z10_Catacombs",
       "loc": "ZoneLocName_592140"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z10_Catacombs"
     },
     {
       "type": "bounty",
@@ -31,8 +35,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004801",
-      "zone": "",
+      "zone": "Avalon/AV_Z10_Catacombs",
       "loc": "ZoneLocName_592140"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z10_Catacombs"
     },
     {
       "type": "bounty",
@@ -41,7 +49,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004802",
-      "zone": "",
+      "zone": "Avalon/AV_Z10_Catacombs",
       "loc": "ZoneLocName_592140"
     }
   ],
@@ -68,13 +76,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to next room",
+      "field": "goal.waypoint (current zone)",
+      "value": "next room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to last room",
+      "field": "goal.waypoint (current zone)",
+      "value": "last room",
       "blocking": false
     }
   ]

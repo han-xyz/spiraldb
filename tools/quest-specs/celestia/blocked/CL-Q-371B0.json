@@ -41,6 +41,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Hub"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "Cl-SharkWarrior-Grey-Boss-R10.AdjRef"
@@ -75,7 +79,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "The Chancel",
       "blocking": false
     },
@@ -85,7 +89,7 @@
       "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Install the Sun Relic on the Grand Astrolabe in the Celestia Base Camp",
       "blocking": true
     },

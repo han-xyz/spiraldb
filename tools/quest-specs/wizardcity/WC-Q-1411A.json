@@ -2,8 +2,8 @@
   "id": "WC-Q-1411A",
   "lang": "1411A",
   "giver": {
-    "persona": "WC-RAV-NPC15",
-    "zone": "WizardCity/WC_Ravenwood"
+    "persona": "WC-RAV-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolLife"
   },
   "requires": [
     {
@@ -57,14 +57,14 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "WizardCity/WC_Ravenwood",
+      "zone": "WizardCity/Interiors/WC_SchoolLife",
       "loc": "ZoneLocName_9005"
     }
   ],
   "personas": {
-    "WC-RAV-NPC15": {
+    "WC-RAV-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
-      "template_id": 1459033
+      "template_id": 38204
     }
   },
   "source": {

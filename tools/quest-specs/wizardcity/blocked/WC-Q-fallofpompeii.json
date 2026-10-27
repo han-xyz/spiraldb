@@ -49,6 +49,10 @@
       "zone": "Aquila/AQ_Z03_Tartarus"
     },
     {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z03_Tartarus"
+    },
+    {
       "type": "persona",
       "persona": "AQ-TAR-NPC03",
       "zone": "Aquila/AQ_Z03_Tartarus"
@@ -75,6 +79,24 @@
       "type": "persona",
       "persona": "AQ-TAR-NPC05",
       "zone": "Aquila/Interiors/AQ_Z03_TempleOfLonging"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "GH2-Big-bottle.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000403"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AQ-TAR-Liontail.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000641"
     },
     {
       "type": "bounty",
@@ -145,12 +167,17 @@
       "blocking": false
     },
     {
+      "field": "giver (other world)",
+      "value": "Silenus is placed in Aquila/AQ_Z00_Hub",
+      "blocking": true
+    },
+    {
       "field": "goal.persona (other world)",
       "value": "Orpheus: AQ-TAR-NPC01 from ObjectData/AQ",
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "House of Faun",
       "blocking": false
     },
@@ -170,9 +197,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find 6 pieces of Petrified Wood",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
@@ -180,12 +207,12 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Charon's Boat",
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Garden of Statues",
       "blocking": false
     },
@@ -200,14 +227,14 @@
       "blocking": false
     },
     {
-      "field": "goal.usage",
-      "value": "Repair the Urn",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Urn: ObjectData/GH",
+      "blocking": false
     },
     {
-      "field": "goal.waypoint",
-      "value": "Find Lion's Tail Leaves",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Lion's Tail Leaves: ObjectData/AQ",
+      "blocking": false
     },
     {
       "field": "goal.persona",
@@ -230,7 +257,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hall of Hades",
       "blocking": false
     },

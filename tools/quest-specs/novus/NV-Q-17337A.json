@@ -2,7 +2,7 @@
   "id": "NV-Q-17337A",
   "lang": "17337A",
   "giver": {
-    "persona": "NV-ROSE-NPC17-B",
+    "persona": "NV-ROSE-NPC17",
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
@@ -76,9 +76,9 @@
     }
   ],
   "personas": {
-    "NV-ROSE-NPC17-B": {
+    "NV-ROSE-NPC17": {
       "portrait": "GUI/NpcPortraits/Penguin_AvantGuardF_A_NPC.dds",
-      "template_id": 1520504
+      "template_id": 1520503
     }
   },
   "source": {

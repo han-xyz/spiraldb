@@ -101,9 +101,13 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z08_RadianceReborn"
+    },
+    {
       "type": "persona",
-      "persona": "KR-CrescentBeach-NPC01",
-      "zone": "Khrysalis/Interiors/KR_Z06_I01_Hermitcave",
+      "persona": "KR-RadianceReborn-NPC11",
+      "zone": "Khrysalis/Interiors/KR_Z08_I08_Dreamroom3",
       "loc": "ZoneLocName_1217288"
     },
     {
@@ -114,7 +118,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001759",
-      "zone": "",
+      "zone": "Khrysalis/KR_Z08_RadianceReborn",
       "loc": "ZoneLocName_1217288"
     },
     {
@@ -125,13 +129,13 @@
     }
   ],
   "personas": {
-    "KR-CrescentBeach-NPC01": {
-      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_A_NPC.dds",
-      "template_id": 1283092
-    },
     "KR-RadianceReborn-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_SuGlider_RougeF_C_NPC.dds",
       "template_id": 1217303
+    },
+    "KR-RadianceReborn-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_B_NPC.dds",
+      "template_id": 1217328
     }
   },
   "source": {
@@ -141,7 +145,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Third Chamber of the Mind",
       "blocking": false
     },

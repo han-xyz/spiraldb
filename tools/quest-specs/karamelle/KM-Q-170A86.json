@@ -93,6 +93,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM-KCITY-NPC15.AdjRef",
@@ -132,7 +136,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Gingerbread Room Academy",
       "blocking": false
     },

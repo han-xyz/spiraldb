@@ -2,7 +2,7 @@
   "id": "NV-Q-173361",
   "lang": "173361",
   "giver": {
-    "persona": "NV-ROSE-NPC01-B",
+    "persona": "NV-ROSE-NPC01",
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
@@ -101,6 +101,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z05_LaVilleRose"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Novus/NV_Z05_LaVilleRose",
@@ -114,9 +118,9 @@
     }
   ],
   "personas": {
-    "NV-ROSE-NPC01-B": {
+    "NV-ROSE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1520457
+      "template_id": 1520450
     },
     "NV-ROSE-NPC14": {
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
@@ -130,7 +134,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Nouveau Basstille",
       "blocking": false
     },

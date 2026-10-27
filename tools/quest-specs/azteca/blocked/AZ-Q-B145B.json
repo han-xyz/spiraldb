@@ -2,7 +2,7 @@
   "id": "AZ-Q-B145B",
   "lang": "B145B",
   "giver": {
-    "persona": "AZ-ALTO-NPC01-2",
+    "persona": "AZ-ALTO-NPC01",
     "zone": "Azteca/AZ_Z09_AltoAlto"
   },
   "requires": [
@@ -56,9 +56,9 @@
     }
   ],
   "personas": {
-    "AZ-ALTO-NPC01-2": {
+    "AZ-ALTO-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_B_NPC.dds",
-      "template_id": 726145
+      "template_id": 726113
     },
     "AZ-FLOAT-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_A_NPC.dds",

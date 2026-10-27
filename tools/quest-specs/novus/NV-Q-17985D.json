@@ -2,7 +2,7 @@
   "id": "NV-Q-17985D",
   "lang": "17985D",
   "giver": {
-    "persona": "NV-NEWV-NPC04-B",
+    "persona": "NV-NEWV-NPC04",
     "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [],
@@ -104,9 +104,9 @@
     }
   ],
   "personas": {
-    "NV-NEWV-NPC04-B": {
+    "NV-NEWV-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_CopF_A_NPC.dds",
-      "template_id": 1546243
+      "template_id": 1546208
     },
     "NV-NEWV-NPC15": {
       "portrait": "GUI/NpcPortraits/Dog_NavyCaptain_A_NPC.dds",

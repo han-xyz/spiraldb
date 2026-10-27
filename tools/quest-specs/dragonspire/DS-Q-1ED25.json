@@ -1,0 +1,72 @@
+{
+  "id": "DS-Q-1ED25",
+  "lang": "1ED25",
+  "giver": {
+    "persona": "DS-NEC-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Hub_Necropolis"
+  },
+  "requires": [
+    "DS-MAIN-C01-003"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 390,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC01",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    }
+  ],
+  "personas": {
+    "DS-NEC-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_skirt_3_Ghost_NPC.dds",
+      "template_id": 126311
+    },
+    "DS-NEC1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_3_Ghost_NPC.dds",
+      "template_id": 126312
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Welcome_to_the_Academy",
+    "from": "archive",
+    "timestamp": "20240121081947"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC-C01-001"
+}

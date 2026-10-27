@@ -4,10 +4,14 @@
     "persona": "AV-HUB-NPC01",
     "zone": "Avalon/AV_Z00_Hub"
   },
-  "requires": [],
-  "min_level": 68,
+  "requires": [
+    {
+      "school": "Life"
+    }
+  ],
+  "min_level": 98,
   "mainline": false,
-  "level": 68,
+  "level": 98,
   "reward": {
     "xp": 55370,
     "gold": 470

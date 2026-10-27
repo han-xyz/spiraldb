@@ -2,8 +2,8 @@
   "id": "AV-Q-908FC",
   "lang": "908FC",
   "giver": {
-    "persona": "AV-CATA-NPC02",
-    "zone": "Avalon/AV_Z10_Catacombs"
+    "persona": "AV-CRYS-NPC01",
+    "zone": "Avalon/AV_Z11_CrystalCaves"
   },
   "requires": [
     "AV-Q-908F7"
@@ -37,16 +37,20 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z11_CrystalCaves"
+    },
+    {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/AV_Z10_Catacombs",
+      "zone": "Avalon/AV_Z11_CrystalCaves",
       "loc": "ZoneLocName_592130"
     }
   ],
   "personas": {
-    "AV-CATA-NPC02": {
+    "AV-CRYS-NPC01": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Patrick_NPC.dds",
-      "template_id": 592087
+      "template_id": 592089
     }
   },
   "source": {
@@ -57,8 +61,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Owl Arch",
+      "field": "goal.waypoint (current zone)",
+      "value": "Owl Arch",
       "blocking": false
     },
     {

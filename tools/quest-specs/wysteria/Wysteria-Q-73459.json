@@ -1,0 +1,124 @@
+{
+  "id": "Wysteria-Q-73459",
+  "lang": "73459",
+  "giver": {
+    "persona": "PA-HUB-NPC03",
+    "zone": "Wysteria/Interiors/PA_Headmistress"
+  },
+  "requires": [
+    "Wysteria-Q-71CCA"
+  ],
+  "mainline": false,
+  "level": 25,
+  "reward": {
+    "xp": 460,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-SHOP-NPC01",
+      "zone": "Wysteria/Interiors/PA_Store01",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-SHOP-NPC02",
+      "zone": "Wysteria/Interiors/PA_Store02",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-SHOP-NPC03",
+      "zone": "Wysteria/Interiors/PA_Store04",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/Interiors/PA_Headmistress",
+      "loc": "ZoneLocName_465129",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Belladonna_Crisp.dds",
+      "template_id": 465135
+    },
+    "PA-SHOP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_M_01_NPC.dds",
+      "template_id": 465153
+    },
+    "PA-SHOP-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_F_01_NPC.dds",
+      "template_id": 465154
+    },
+    "PA-SHOP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_M_02_NPC.dds",
+      "template_id": 465155
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:All_That_Glitters...",
+    "from": "archive",
+    "timestamp": "20231124103541"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

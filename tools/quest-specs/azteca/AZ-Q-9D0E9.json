@@ -62,6 +62,10 @@
       "loc": "ZoneLocName_643245"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Pteranodon-Knight-F.AdjRef"
@@ -107,7 +111,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Quilla Blood Sky's Hideout",
       "blocking": false
     },

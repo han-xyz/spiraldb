@@ -70,7 +70,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Volkir Rimeaxe's Crag",
       "blocking": false
     },

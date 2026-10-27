@@ -2,8 +2,8 @@
   "id": "KM-Q-16FCC8",
   "lang": "16FCC8",
   "giver": {
-    "persona": "KM-BLACK-NPC10",
-    "zone": "Karamelle/KM_Z08_LicoriceForest"
+    "persona": "KM-NIBB-NPC06",
+    "zone": "Karamelle/KM_Z05_Nibbleheim"
   },
   "requires": [
     "KM-Q-16FCB4"
@@ -132,8 +132,8 @@
     },
     {
       "type": "persona",
-      "persona": "KM-BLACK-NPC01-B",
-      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "persona": "KM-NIBB-NPC01",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "loc": "ZoneLocName_1506578"
     },
     {
@@ -144,9 +144,9 @@
     },
     {
       "type": "persona",
-      "persona": "KM-BLACK-NPC12-E",
-      "zone": "Karamelle/KM_Z08_LicoriceForest",
-      "loc": "ZoneLocName_1513103"
+      "persona": "KM-NIBB-NPC07",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
+      "loc": "ZoneLocName_1506578"
     },
     {
       "type": "bounty",
@@ -155,7 +155,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003681",
-      "zone": "",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "loc": "ZoneLocName_1506578"
     },
     {
@@ -166,25 +166,25 @@
     }
   ],
   "personas": {
-    "KM-BLACK-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513114
-    },
-    "KM-BLACK-NPC10": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
-      "template_id": 1513116
-    },
-    "KM-BLACK-NPC12-E": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_A_NPC.dds",
-      "template_id": 1513133
-    },
     "KM-ESTATE-NPC08": {
       "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
       "template_id": 1513159
     },
+    "KM-NIBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1506486
+    },
     "KM-NIBB-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Guard_A_NPC.dds",
       "template_id": 1506488
+    },
+    "KM-NIBB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1506491
+    },
+    "KM-NIBB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_A_NPC.dds",
+      "template_id": 1506492
     },
     "KM-NIBB-NPC08": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",

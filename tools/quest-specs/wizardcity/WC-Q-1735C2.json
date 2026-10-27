@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Firecat"
   },
   "requires": [
-    "WC-Q-1735C1"
+    "WC-FIRECAT-SIDE-002"
   ],
   "mainline": false,
   "level": 5,
@@ -107,7 +107,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Wormguts' Stronghold",
       "blocking": false
     },
@@ -116,5 +116,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-FIRECAT-SIDE-003"
 }

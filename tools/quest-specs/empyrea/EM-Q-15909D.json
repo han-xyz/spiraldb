@@ -2,8 +2,8 @@
   "id": "EM-Q-15909D",
   "lang": "15909D",
   "giver": {
-    "persona": "EM-AERO-NPC07",
-    "zone": "Empyrea/EM_Z09_NWAeroplains"
+    "persona": "EM-NIMB-NPC08",
+    "zone": "Empyrea/EM_Z07_NimbusCitadel"
   },
   "requires": [
     "EM-Q-15909A"
@@ -80,23 +80,24 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003047",
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC01-B",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "persona": "EM-NIMB-NPC02",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
+      "loc": "ZoneLocName_1413254"
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
+    "EM-NIMB-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
+      "template_id": 1413242
     },
-    "EM-AERO-NPC07": {
+    "EM-NIMB-NPC08": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_HelenaF_A_NPC.dds",
-      "template_id": 1447331
+      "template_id": 1413252
     }
   },
   "source": {

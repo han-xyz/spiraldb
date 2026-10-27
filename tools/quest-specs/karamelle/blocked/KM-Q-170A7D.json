@@ -2,7 +2,7 @@
   "id": "KM-Q-170A7D",
   "lang": "170A7D",
   "giver": {
-    "persona": "KM-KCITY-NPC02-B",
+    "persona": "KM-KCITY-NPC02",
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
@@ -125,10 +125,22 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
       "type": "persona",
       "persona": "KM-KCITY-NPC03",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
     },
     {
       "type": "persona",
@@ -144,9 +156,9 @@
     }
   ],
   "personas": {
-    "KM-KCITY-NPC02-B": {
+    "KM-KCITY-NPC02": {
       "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
-      "template_id": 1510012
+      "template_id": 1510009
     },
     "KM-KCITY-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Hamster_GrandF_A_NPC.dds",
@@ -169,12 +181,12 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Nana's Headquarters",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Nana's Office",
       "blocking": false
     },
@@ -184,9 +196,9 @@
       "blocking": true
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find the President",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

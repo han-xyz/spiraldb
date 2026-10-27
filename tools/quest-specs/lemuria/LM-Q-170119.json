@@ -2,11 +2,11 @@
   "id": "LM-Q-170119",
   "lang": "170119",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-02",
+    "persona": "LM-Mandoria-NPC01",
     "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
-    "LM-Q-170117"
+    "LM-Q-170118"
   ],
   "mainline": true,
   "level": 132,
@@ -55,24 +55,24 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003907",
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
       "type": "persona",
-      "persona": "LM-Mandoria-NPC03-B",
-      "zone": "Lemuria/Interiors/LM_Z05_I08_AncientTemple",
+      "persona": "LM-Mandoria-NPC03",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1507626
+    "LM-Mandoria-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_A_NPC.dds",
+      "template_id": 1507624
     },
-    "LM-Mandoria-NPC03-B": {
+    "LM-Mandoria-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_E_NPC.dds",
-      "template_id": 1487500
+      "template_id": 1507627
     }
   },
   "source": {
@@ -99,11 +99,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Lost Realm of Mandoria replaced by LM-Q-170117",
       "blocking": false
     }
   ]

@@ -2,7 +2,7 @@
   "id": "PL-Q-148A9A",
   "lang": "148A9A",
   "giver": {
-    "persona": "PL-BLEAK-NPC02-B",
+    "persona": "PL-BLEAK-NPC02",
     "zone": "Polaris/PL_Z02_ForlornTaig"
   },
   "requires": [],
@@ -106,7 +106,7 @@
     },
     {
       "type": "persona",
-      "persona": "PL-BLEAK-NPC03-B",
+      "persona": "PL-BLEAK-NPC03",
       "zone": "Polaris/PL_Z02_ForlornTaig",
       "loc": "ZoneLocName_1346179"
     },
@@ -118,19 +118,19 @@
     },
     {
       "type": "persona",
-      "persona": "PL-BLEAK-NPC03-B",
+      "persona": "PL-BLEAK-NPC03",
       "zone": "Polaris/PL_Z02_ForlornTaig",
       "loc": "ZoneLocName_1346179"
     }
   ],
   "personas": {
-    "PL-BLEAK-NPC02-B": {
+    "PL-BLEAK-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Walrus_AristocratF_B_NPC.dds",
-      "template_id": 1346204
+      "template_id": 1346197
     },
-    "PL-BLEAK-NPC03-B": {
+    "PL-BLEAK-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_F_NPC.dds",
-      "template_id": 1346206
+      "template_id": 1346196
     }
   },
   "source": {

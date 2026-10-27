@@ -2,7 +2,7 @@
   "id": "MR-Q-1539EE",
   "lang": "1539EE",
   "giver": {
-    "persona": "MR-AGGR-NPC02-C",
+    "persona": "MR-AGGR-NPC02",
     "zone": "Mirage/MR_Z02_Aggrobah"
   },
   "requires": [],
@@ -55,7 +55,7 @@
       ],
       "count": 5,
       "target": "WizardMobs_00002529",
-      "zone": "",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "loc": "ZoneLocName_1378095"
     },
     {
@@ -66,9 +66,9 @@
     }
   ],
   "personas": {
-    "MR-AGGR-NPC02-C": {
+    "MR-AGGR-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_FennecFox_Thief_A_NPC.dds",
-      "template_id": 1397214
+      "template_id": 1381190
     }
   },
   "source": {

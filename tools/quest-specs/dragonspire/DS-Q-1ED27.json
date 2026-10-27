@@ -1,0 +1,94 @@
+{
+  "id": "DS-Q-1ED27",
+  "lang": "1ED27",
+  "giver": {
+    "persona": "DS-NEC1-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+  },
+  "requires": [
+    "DS-NEC-C01-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 1875,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Draconian-Caster-Yellow-R8.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000467",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "descriptor": "WizQst1ED27_00000013"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_3_Ghost_NPC.dds",
+      "template_id": 126312
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Textbook_Example",
+    "from": "archive",
+    "timestamp": "20240120175602"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC1-C01-001"
+}

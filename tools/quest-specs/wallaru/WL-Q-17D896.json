@@ -2,11 +2,11 @@
   "id": "WL-Q-17D896",
   "lang": "17D896",
   "giver": {
-    "persona": "WL-HOPE-NPC06-B",
-    "zone": "Wallaru/WL_Z01_Hub"
+    "persona": "WL-OUT-NPC02",
+    "zone": "Wallaru/WL_Z02_Outback"
   },
   "requires": [
-    "WL-Q-17D893"
+    "WL-Q-17D895"
   ],
   "mainline": true,
   "level": 152,
@@ -98,36 +98,36 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004377",
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Wallaru/WL_Z01_Hub",
-      "loc": "ZoneLocName_1560381"
+      "zone": "Wallaru/WL_Z02_Outback",
+      "loc": "ZoneLocName_1562752"
     },
     {
       "type": "persona",
-      "persona": "WL-DREAM-NPC01-A",
-      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "persona": "WL-OUT-NPC01",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752",
       "completion": [
         {
-          "speaker": "WL-DREAM-NPC01-A",
+          "speaker": "WL-OUT-NPC01",
           "line": "00000008"
         }
       ]
     }
   ],
   "personas": {
-    "WL-DREAM-NPC01-A": {
+    "WL-OUT-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
-      "template_id": 1560362
+      "template_id": 1608160
     },
-    "WL-HOPE-NPC06-B": {
+    "WL-OUT-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
-      "template_id": 1608076
+      "template_id": 1562753
     }
   },
   "source": {
@@ -139,11 +139,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Stop and Goanna replaced by WL-Q-17D893",
       "blocking": false
     }
   ]

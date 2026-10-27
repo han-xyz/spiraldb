@@ -1,0 +1,88 @@
+{
+  "id": "ZF-Q-71A10",
+  "lang": "71A10",
+  "giver": {
+    "persona": "ZF-CROWN-NPC04",
+    "zone": "Zafaria/ZF_Z01_Baobab_Crown"
+  },
+  "requires": [
+    "ZF-Q-71A0E"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 6040,
+    "gold": 230
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-NPC-LionWarrior-Female-Ghostmane-R10.AdjRef",
+        "ZF-NPC-LionWarrior-Male-Ghostmane-R10.AdjRef",
+        "ZF-NPC-Spearfang-Slasher-R11.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001046",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    }
+  ],
+  "personas": {
+    "ZF-CROWN-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Unathi_Nightrunner_NPC.dds",
+      "template_id": 465423
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lion_Taming",
+    "from": "archive",
+    "timestamp": "20250912121202"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

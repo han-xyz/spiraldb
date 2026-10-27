@@ -1,0 +1,93 @@
+{
+  "id": "DS-Q-1ED41",
+  "lang": "1ED41",
+  "giver": {
+    "persona": "DS-NEC2-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena"
+  },
+  "requires": [
+    "DS-NEC2-C01-008"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 5240,
+    "gold": 240
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Hub_Necropolis"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena"
+    }
+  ],
+  "personas": {
+    "DS-NEC2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_warrior_wings_1_Ghost_NPC.dds",
+      "template_id": 126317
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Obsidian_in_Crystal",
+    "from": "archive",
+    "timestamp": "20260701033144"
+  },
+  "needs_review": [
+    {
+      "field": "goal.usage",
+      "value": "Use Obsidian's Tomb",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC2-C01-009"
+}

@@ -2,8 +2,8 @@
   "id": "NV-Q-17CDE1",
   "lang": "17CDE1",
   "giver": {
-    "persona": "NV-CON-NPC01-B",
-    "zone": "Novus/NV_Z01_Conatus"
+    "persona": "NV-STONE-NPC01",
+    "zone": "Novus/NV_Z02_StoneOfHeaven"
   },
   "requires": [
     "NV-Q-17CDE0"
@@ -46,26 +46,30 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z02_StoneOfHeaven"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Horse_HordeOfficer_B_02.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004141",
-      "zone": "",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
       "loc": "ZoneLocName_1529152"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265"
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
+      "loc": "ZoneLocName_1529152"
     }
   ],
   "personas": {
-    "NV-CON-NPC01-B": {
+    "NV-STONE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
-      "template_id": 1575004
+      "template_id": 1529157
     }
   },
   "source": {
@@ -85,7 +89,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Upper Passage",
       "blocking": false
     },

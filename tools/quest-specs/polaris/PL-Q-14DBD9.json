@@ -1,0 +1,183 @@
+{
+  "id": "PL-Q-14DBD9",
+  "lang": "14DBD9",
+  "giver": {
+    "persona": "AR_StandIn_Ione",
+    "zone": "Arcanum/AR_Z01_Hub"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 336200,
+    "gold": 1800
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AR-Book01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00016359"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AR-Book02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00016360"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AR-Book03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00016358"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AR-Book04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Items_00016361"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Arcanum/AR_Z01_Hub"
+    }
+  ],
+  "personas": {
+    "AR_StandIn_Ione": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
+      "template_id": 1401051
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Arcanum_Initiation",
+    "from": "archive",
+    "timestamp": "20250905072311"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Repository",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Tome of Creation: ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Tome of Knowledge: ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Tome of Insight: ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Tome of Inspiration: ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Polaris in Perspective replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

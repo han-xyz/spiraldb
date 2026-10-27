@@ -1,0 +1,107 @@
+{
+  "id": "DS-Q-1ED47",
+  "lang": "1ED47",
+  "auto_start": true,
+  "giver": {
+    "persona": "DS-NEC3-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z3_Detention"
+  },
+  "requires": [
+    "DS-NEC3-C01-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2580,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z3_Detention"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Warrior-Female-Skirt-Black-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000484",
+      "zone": ""
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Wizard-Male-Cloak-Blue-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000505",
+      "zone": "",
+      "with_previous": true
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Wizard-Female-Band-Black-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000497",
+      "zone": "",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z3_Detention",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC3-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_soldier_1_Ghost_NPC.dds",
+      "template_id": 126319
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Jail_Break",
+    "from": "archive",
+    "timestamp": "20240409061152"
+  },
+  "needs_review": [
+    {
+      "field": "goal.usage",
+      "value": "Use East Bridge Pedestal",
+      "blocking": true
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use Central Bridge Pedestal",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC3-C01-002"
+}

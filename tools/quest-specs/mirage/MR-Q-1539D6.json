@@ -2,8 +2,8 @@
   "id": "MR-Q-1539D6",
   "lang": "1539D6",
   "giver": {
-    "persona": "MR-CATE-NPC17",
-    "zone": "Mirage/MR_Z03_CaterwaulCanyon"
+    "persona": "MR-THIE-NPC10",
+    "zone": "Mirage/MR_Z07_ThievesDen"
   },
   "requires": [],
   "mainline": false,
@@ -98,30 +98,30 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002381",
-      "zone": "",
+      "zone": "Mirage/MR_Z07_ThievesDen",
       "loc": "ZoneLocName_1378165"
     },
     {
       "type": "persona",
-      "persona": "MR-CARA-NPC22-B",
-      "zone": "Mirage/MR_Z00_Hub",
-      "loc": "ZoneLocName_1254040"
+      "persona": "MR_StandIn_Sinbad",
+      "zone": "Mirage/MR_Z07_ThievesDen",
+      "loc": "ZoneLocName_1378165"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Mirage/MR_Z03_CaterwaulCanyon",
-      "loc": "ZoneLocName_1381306"
+      "zone": "Mirage/MR_Z07_ThievesDen",
+      "loc": "ZoneLocName_1378165"
     }
   ],
   "personas": {
-    "MR-CARA-NPC22-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cat_Warrior_F_NPC.dds",
-      "template_id": 1404049
-    },
-    "MR-CATE-NPC17": {
+    "MR-THIE-NPC10": {
       "portrait": "GUI/NpcPortraits/Portrait_Rat_Brigand_B_NPC.dds",
-      "template_id": 1404051
+      "template_id": 1391103
+    },
+    "MR_StandIn_Sinbad": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Warrior_F_NPC.dds",
+      "template_id": 1404050
     }
   },
   "source": {

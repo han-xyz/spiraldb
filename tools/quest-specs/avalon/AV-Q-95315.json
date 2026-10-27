@@ -57,6 +57,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z05_TheWyrd"
+    },
+    {
       "type": "persona",
       "persona": "AV-WYRD-NPC03",
       "zone": "Avalon/AV_Z05_TheWyrd",
@@ -86,8 +90,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Froudling Wagon",
+      "field": "goal.waypoint (current zone)",
+      "value": "Froudling Wagon",
       "blocking": false
     },
     {

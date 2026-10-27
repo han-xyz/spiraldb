@@ -60,6 +60,10 @@
       "loc": "ZoneLocName_470546"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Jaguar-Shaman-C.AdjRef"
@@ -93,7 +97,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Ozel Underwater Cat's Tomb",
       "blocking": false
     },

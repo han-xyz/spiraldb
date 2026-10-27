@@ -6,7 +6,7 @@
     "zone": "WizardCity/Interiors/WC_Headmistress_House"
   },
   "requires": [
-    "WC-Q-1731AE"
+    "WC-COMMONS-MAIN-004"
   ],
   "mainline": true,
   "level": 5,
@@ -122,7 +122,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "The Oasis",
       "blocking": false
     },
@@ -135,11 +135,7 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Take a Walk on the Nightside replaced by WC-Q-1731AE",
-      "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-COMMONS-MAIN-005"
 }

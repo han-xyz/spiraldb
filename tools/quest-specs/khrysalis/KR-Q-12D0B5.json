@@ -85,6 +85,10 @@
       "loc": "ZoneLocName_1205054"
     },
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z05_FortRachias"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Shdweave_Warrior_M.AdjRef"
@@ -150,7 +154,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Metamorphosis Chamber",
       "blocking": false
     },

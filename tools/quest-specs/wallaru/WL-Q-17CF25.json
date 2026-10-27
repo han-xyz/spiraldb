@@ -131,6 +131,10 @@
       "loc": "ZoneLocName_1560318"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL-StandIn-FreddieKroaker.AdjRef",
@@ -176,7 +180,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Great_Dreamscape",
     "from": "archive",
-    "timestamp": "20231220050539"
+    "timestamp": "20240121111940"
   },
   "needs_review": [
     {
@@ -185,7 +189,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Freddie's Dreamscape",
       "blocking": false
     },

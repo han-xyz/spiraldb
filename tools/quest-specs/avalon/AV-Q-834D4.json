@@ -60,6 +60,10 @@
       "loc": "ZoneLocName_470339"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z03_CaerLyon"
+    },
+    {
       "type": "persona",
       "persona": "AV-CAER-NPC05",
       "zone": "Avalon/Interiors/AV_Z03_Archive",
@@ -95,8 +99,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To The Archives",
+      "field": "goal.waypoint (current zone)",
+      "value": "Archives",
       "blocking": false
     },
     {

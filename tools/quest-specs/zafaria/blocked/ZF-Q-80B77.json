@@ -123,8 +123,8 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "ZF-GRAVE-NPC05",
-      "zone": "Zafaria/Interiors/ZF_Z10_I02_Didos_Mausoleum",
+      "persona": "ZF-LAKE-NPC01",
+      "zone": "Zafaria/ZF_Z11_Mirror_Lake",
       "loc": "ZoneLocName_527101"
     },
     {
@@ -135,8 +135,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001010",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z11_Mirror_Lake",
       "loc": "ZoneLocName_527101"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z11_Mirror_Lake"
     },
     {
       "type": "persona",
@@ -154,20 +158,21 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001087",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z11_Mirror_Lake",
       "loc": "ZoneLocName_527101"
     },
     {
-      "type": "usage",
-      "items": [
-        "ZF-GRAVE-NPC06.AdjRef",
-        "ZF-LAKE-NPC02.AdjRef",
-        "ZF-LAKE-NPC03.AdjRef",
-        "ZF-LAKE-NPC04.AdjRef"
+      "type": "bounty",
+      "mobs": [
+        "KR_Morganth.AdjRef",
+        "KR_MorgantheBlue_A_Bossfight.AdjRef",
+        "KR_MorgantheBnW_A_Bossfight.AdjRef",
+        "KR_MorgantheGrey_A_Bossfight.AdjRef",
+        "KR_MorganthePurple_A_Bossfight.AdjRef"
       ],
       "count": 1,
-      "zone": "",
-      "descriptor": "WC-NPCs_00001549",
+      "target": "WizardMobs_00001069",
+      "zone": "Zafaria/ZF_Z11_Mirror_Lake",
       "loc": "ZoneLocName_527101"
     },
     {
@@ -188,7 +193,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001106",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z11_Mirror_Lake",
       "loc": "ZoneLocName_527101"
     },
     {
@@ -198,18 +203,18 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001056",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z11_Mirror_Lake",
       "loc": "ZoneLocName_527101"
     }
   ],
   "personas": {
-    "ZF-GRAVE-NPC05": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Tse_Tse_No_Disguise.dds",
-      "template_id": 541107
-    },
     "ZF-GRAVE-NPC06": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Morganthe.dds",
       "template_id": 541108
+    },
+    "ZF-LAKE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_TseTseSnaketail_MOB.dds",
+      "template_id": 527224
     }
   },
   "source": {
@@ -229,8 +234,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Mountain Path",
+      "field": "goal.waypoint (current zone)",
+      "value": "Mountain Path",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Morganthe: ObjectData/KR",
       "blocking": false
     },
     {

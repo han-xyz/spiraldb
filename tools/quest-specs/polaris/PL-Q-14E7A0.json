@@ -2,8 +2,8 @@
   "id": "PL-Q-14E7A0",
   "lang": "14E7A0",
   "giver": {
-    "persona": "PL-KATA-NPC03-B",
-    "zone": "Polaris/Interiors/PL_Z06_TitanPod"
+    "persona": "PL-KATA-NPC03",
+    "zone": "Polaris/PL_Z06_KatabaIceblock"
   },
   "requires": [
     "PL-Q-14E798"
@@ -50,21 +50,21 @@
         "PL-FishTrough.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Polaris/PL_Z06_KatabaIceblock",
       "descriptor": "WizQst14E7A0_00000006",
       "loc": "ZoneLocName_1370005"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Polaris/Interiors/PL_Z06_TitanPod",
+      "zone": "Polaris/PL_Z06_KatabaIceblock",
       "loc": "ZoneLocName_1370005"
     }
   ],
   "personas": {
-    "PL-KATA-NPC03-B": {
+    "PL-KATA-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Seal_Captain_A_NPC.dds",
-      "template_id": 1370071
+      "template_id": 1370010
     }
   },
   "source": {

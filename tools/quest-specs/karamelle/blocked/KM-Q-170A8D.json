@@ -2,7 +2,7 @@
   "id": "KM-Q-170A8D",
   "lang": "170A8D",
   "giver": {
-    "persona": "KM-KCITY-NPC01-B",
+    "persona": "KM-KCITY-NPC01",
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
@@ -49,6 +49,15 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        ".AdjRef"
+      ],
+      "count": 2,
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Karamelle/KM_Z00_HUB",
@@ -56,9 +65,9 @@
     }
   ],
   "personas": {
-    "KM-KCITY-NPC01-B": {
+    "KM-KCITY-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
-      "template_id": 1510011
+      "template_id": 1510008
     }
   },
   "source": {
@@ -68,14 +77,19 @@
   },
   "needs_review": [
     {
-      "field": "goal.waypoint",
-      "value": "(complete instance quest)",
+      "field": "goal.items (other folder)",
+      "value": "(complete instance quest): ObjectData/LM Equipment/Wands",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Defeat Aberration",
       "blocking": true
     },
     {
-      "field": "goal.waypoint",
-      "value": "Defeat Aberration",
-      "blocking": true
+      "field": "goal.descriptor",
+      "value": "(complete instance quest)",
+      "blocking": false
     },
     {
       "field": "dialogs",

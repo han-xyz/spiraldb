@@ -89,6 +89,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Khrysalis/KR_Z06_CrescentBeach",
@@ -108,13 +116,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Edge of the Dock",
+      "field": "goal.waypoint (current zone)",
+      "value": "Edge of the Dock",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the End of the Dock",
+      "field": "goal.waypoint (current zone)",
+      "value": "End of the Dock",
       "blocking": false
     },
     {

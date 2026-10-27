@@ -42,7 +42,7 @@
         "MR_Rubal_SandCastle.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "loc": "ZoneLocName_1378095"
     },
     {
@@ -58,7 +58,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002462",
-      "zone": "",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "loc": "ZoneLocName_1378095"
     },
     {

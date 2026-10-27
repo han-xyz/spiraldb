@@ -2,7 +2,7 @@
   "id": "AZ-Q-72E5E",
   "lang": "72E5E",
   "giver": {
-    "persona": "AZ-LAKE-NPC01-1",
+    "persona": "AZ-LAKE-NPC01",
     "zone": "Azteca/AZ_Z08_PitchBlackLake"
   },
   "requires": [
@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Azteca/AZ_Z08_PitchBlackLake",
@@ -56,9 +60,9 @@
     }
   ],
   "personas": {
-    "AZ-LAKE-NPC01-1": {
-      "portrait": "GUI/NpcPortraits/Portrait_Seamonster_Ancient_A_NPC2.dds",
-      "template_id": 470621
+    "AZ-LAKE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seamonster_Ancient_A_NPC.dds",
+      "template_id": 470556
     }
   },
   "source": {
@@ -68,7 +72,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Pyramid of Mother Moon",
       "blocking": false
     },

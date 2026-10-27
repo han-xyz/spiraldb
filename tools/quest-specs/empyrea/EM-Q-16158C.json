@@ -113,6 +113,10 @@
       "zone": "Empyrea/Interiors/EM_Z09_HelenasCamp"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z09_HelenasCamp"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Nimbari_HelenaF_A_01.AdjRef"
@@ -161,7 +165,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Helena's Clearing",
       "blocking": false
     },

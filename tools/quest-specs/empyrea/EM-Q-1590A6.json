@@ -2,8 +2,8 @@
   "id": "EM-Q-1590A6",
   "lang": "1590A6",
   "giver": {
-    "persona": "EM-AERI-NPC01-B",
-    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    "persona": "EM-NIMB-NPC02",
+    "zone": "Empyrea/EM_Z07_NimbusCitadel"
   },
   "requires": [
     "EM-Q-15909D"
@@ -76,13 +76,13 @@
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
-    },
     "EM-DEST-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Citizen_E_NPC.dds",
       "template_id": 1451215
+    },
+    "EM-NIMB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1413242
     }
   },
   "source": {

@@ -1,0 +1,78 @@
+{
+  "id": "Wysteria-Q-7345B",
+  "lang": "7345B",
+  "giver": {
+    "persona": "PA-HUB-NPC03",
+    "zone": "Wysteria/Interiors/PA_Headmistress"
+  },
+  "requires": [
+    "Wysteria-Q-7345A"
+  ],
+  "mainline": false,
+  "level": 25,
+  "reward": {
+    "xp": 700,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "PA-Hobgoblin-R5.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000972",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/Interiors/PA_Headmistress",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Belladonna_Crisp.dds",
+      "template_id": 465135
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Crime_Does_Not_Pay",
+    "from": "archive",
+    "timestamp": "20240119020110"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

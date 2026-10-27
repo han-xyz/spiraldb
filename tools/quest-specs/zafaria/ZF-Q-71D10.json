@@ -43,7 +43,7 @@
       ],
       "count": 3,
       "target": "WizardMobs_00001015",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
       "descriptor": "WizQst71D10_00000000",
       "loc": "ZoneLocName_465256"
     },
@@ -53,7 +53,7 @@
         "ZF_Gazania_Flower.AdjRef"
       ],
       "count": 4,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
       "descriptor": "WizItems_00001781",
       "loc": "ZoneLocName_465256"
     },

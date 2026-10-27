@@ -98,6 +98,10 @@
       "loc": "ZoneLocName_1487147"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z10_Gobblerton"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_StandIn_RedVelvetTroll_01.AdjRef",
@@ -168,7 +172,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Abandoned Store",
       "blocking": false
     },

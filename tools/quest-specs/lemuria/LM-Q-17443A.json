@@ -5,7 +5,7 @@
   "auto_start": true,
   "giver": {
     "persona": "LM-SKY-NPC11",
-    "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
+    "zone": "Lemuria/LM_Z06_SkyCity"
   },
   "requires": [
     "LM-Q-17441A"
@@ -35,7 +35,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003870",
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     }
   ],

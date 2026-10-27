@@ -2,8 +2,8 @@
   "id": "WL-Q-1852DF",
   "lang": "1852DF",
   "giver": {
-    "persona": "WL-DREAM-NPC04-A",
-    "zone": "Wallaru/WL_Z04_TheDreaming"
+    "persona": "WL-RANCH-NPC05",
+    "zone": "Wallaru/WL_Z06_CollieRanch"
   },
   "requires": [
     "WL-Q-1852DE"
@@ -73,30 +73,38 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Kangaroo_Judge_B_02.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004415",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
+    },
+    {
       "type": "persona",
-      "persona": "WL-HOPE-NPC26-B",
-      "zone": "Wallaru/WL_Z01_Hub",
-      "loc": "ZoneLocName_1560381"
+      "persona": "WL-RANCH-NPC07",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
+      "loc": "ZoneLocName_1594105"
     }
   ],
   "personas": {
-    "WL-DREAM-NPC04-A": {
+    "WL-RANCH-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
-      "template_id": 1560426
+      "template_id": 1594073
     },
-    "WL-HOPE-NPC26-B": {
+    "WL-RANCH-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
-      "template_id": 1608478
+      "template_id": 1594084
     }
   },
   "source": {
@@ -106,13 +114,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Prison Barn",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Outside Barn",
+      "field": "goal.waypoint (current zone)",
+      "value": "Outside Barn",
       "blocking": false
     },
     {

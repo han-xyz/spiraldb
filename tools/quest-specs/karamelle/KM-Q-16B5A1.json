@@ -2,8 +2,8 @@
   "id": "KM-Q-16B5A1",
   "lang": "16B5A1",
   "giver": {
-    "persona": "KM-GUTEN-NPC12",
-    "zone": "Karamelle/KM_Z07_Gutenstadt"
+    "persona": "KM-SWEET-NPC07",
+    "zone": "Karamelle/KM_Z04_Sweetzburg"
   },
   "requires": [
     "KM-Q-16B550"
@@ -85,6 +85,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z04_Sweetzburg"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z04_Sweetzburg"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Robot_Candy_A_01.AdjRef",
@@ -94,20 +102,20 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003675",
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Karamelle/KM_Z07_Gutenstadt",
-      "loc": "ZoneLocName_1488224"
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
+      "loc": "ZoneLocName_1488252"
     }
   ],
   "personas": {
-    "KM-GUTEN-NPC12": {
+    "KM-SWEET-NPC07": {
       "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
-      "template_id": 1488308
+      "template_id": 1488290
     }
   },
   "source": {
@@ -117,13 +125,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Playhouse (Sweetzburg)",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to next room",
+      "field": "goal.waypoint (current zone)",
+      "value": "next room",
       "blocking": false
     },
     {

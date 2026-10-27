@@ -2,8 +2,8 @@
   "id": "WL-Q-17D8A0",
   "lang": "17D8A0",
   "giver": {
-    "persona": "WL-HOPE-NPC02-B",
-    "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister"
+    "persona": "WL-OUT-NPC03",
+    "zone": "Wallaru/WL_Z02_Outback"
   },
   "requires": [
     "WL-Q-1889A1"
@@ -105,14 +105,14 @@
         "WL-OUT-EmuCannon_04.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "descriptor": "WizardGameObjects_00001018",
       "loc": "ZoneLocName_1562752"
     },
     {
       "type": "persona",
       "persona": "WL-StandIn-EmuRider",
-      "zone": "Wallaru/Interiors/WL_Z02_I01_DustyCave",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     },
     {
@@ -125,7 +125,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004379",
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     },
     {
@@ -137,7 +137,7 @@
         "WL-OUT-EmuCannon_04.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "descriptor": "WizardGameObjects_00001018",
       "loc": "ZoneLocName_1562752"
     },
@@ -147,7 +147,7 @@
         "WL-EUC-NPC04-A.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "descriptor": "NPCs_01749378",
       "loc": "ZoneLocName_1562752"
     },
@@ -163,20 +163,20 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004381",
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     }
   ],
   "personas": {
-    "WL-HOPE-NPC02-B": {
+    "WL-OUT-NPC03": {
       "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Judge_A_NPC.dds",
-      "template_id": 1608108
+      "template_id": 1562759
     },
     "WL-StandIn-EmuRider": {
       "portrait": "GUI/NpcPortraits/Portrait_KoalaRider_Base_A_MOB.dds",

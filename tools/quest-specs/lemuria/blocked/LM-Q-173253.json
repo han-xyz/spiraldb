@@ -89,6 +89,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z00_Hub"
+    },
+    {
       "type": "persona",
       "persona": "LM-StandIn-StallionQuartermane-B",
       "zone": "Lemuria/LM_Z00_Hub",
@@ -137,8 +141,8 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Telepad",
+      "field": "goal.waypoint (current zone)",
+      "value": "Telepad",
       "blocking": false
     },
     {

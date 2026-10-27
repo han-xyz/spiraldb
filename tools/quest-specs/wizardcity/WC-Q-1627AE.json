@@ -2,7 +2,7 @@
   "id": "WC-Q-1627AE",
   "lang": "1627AE",
   "giver": {
-    "persona": "WC-TRITON-NPC02-B",
+    "persona": "WC-TRITON-NPC02",
     "zone": "WizardCity/WC_Streets/WC_Triton"
   },
   "requires": [
@@ -61,9 +61,9 @@
     }
   ],
   "personas": {
-    "WC-TRITON-NPC02-B": {
+    "WC-TRITON-NPC02": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Storm02.dds",
-      "template_id": 1451951
+      "template_id": 1451938
     }
   },
   "source": {
@@ -77,5 +77,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-TRITON-MAIN-001"
 }

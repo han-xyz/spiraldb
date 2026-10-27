@@ -2,8 +2,8 @@
   "id": "AV-Q-908F0",
   "lang": "908F0",
   "giver": {
-    "persona": "AV-OUTER-NPC03",
-    "zone": "Avalon/AV_Z07_OuterYard"
+    "persona": "AV-OUTER-NPC02",
+    "zone": "Avalon/Interiors/AV_Z07_TowerPrison"
   },
   "requires": [
     "AV-Q-908EF"
@@ -61,9 +61,9 @@
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Ockam.dds",
       "template_id": 617116
     },
-    "AV-OUTER-NPC03": {
+    "AV-OUTER-NPC02": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Constance.dds",
-      "template_id": 592084
+      "template_id": 592083
     }
   },
   "source": {

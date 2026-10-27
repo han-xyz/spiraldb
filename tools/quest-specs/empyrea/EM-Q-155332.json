@@ -2,7 +2,7 @@
   "id": "EM-Q-155332",
   "lang": "155332",
   "giver": {
-    "persona": "EM-JUNG-NPC03-B",
+    "persona": "EM-JUNG-NPC03",
     "zone": "Empyrea/EM_Z01_Jungle"
   },
   "requires": [
@@ -46,25 +46,25 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "EM-JUNG-NPC04-B",
+      "persona": "EM-JUNG-NPC04",
       "zone": "Empyrea/EM_Z01_Jungle",
       "loc": "ZoneLocName_1397535"
     },
     {
       "type": "persona",
-      "persona": "EM-JUNG-NPC04-B",
+      "persona": "EM-JUNG-NPC04",
       "zone": "Empyrea/EM_Z01_Jungle",
       "loc": "ZoneLocName_1397535"
     }
   ],
   "personas": {
-    "EM-JUNG-NPC03-B": {
+    "EM-JUNG-NPC03": {
       "portrait": "GUI/NpcPortraits/Beastman_Leader_A_NPC.dds",
-      "template_id": 1397660
+      "template_id": 1397550
     },
-    "EM-JUNG-NPC04-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_A_NPC.dds",
-      "template_id": 1397564
+    "EM-JUNG-NPC04": {
+      "portrait": "",
+      "template_id": 1397555
     }
   },
   "source": {

@@ -66,7 +66,7 @@
     },
     {
       "type": "persona",
-      "persona": "EM-JUNG-NPC02-B",
+      "persona": "EM-JUNG-NPC02",
       "zone": "Empyrea/EM_Z01_Jungle",
       "loc": "ZoneLocName_1397535"
     },
@@ -96,7 +96,7 @@
     },
     {
       "type": "persona",
-      "persona": "EM-JUNG-NPC02-B",
+      "persona": "EM-JUNG-NPC02",
       "zone": "Empyrea/EM_Z01_Jungle",
       "loc": "ZoneLocName_1397535"
     },
@@ -112,9 +112,9 @@
       "portrait": "GUI/NpcPortraits/Beastman_WarriorF_B_NPC.dds",
       "template_id": 1397538
     },
-    "EM-JUNG-NPC02-B": {
+    "EM-JUNG-NPC02": {
       "portrait": "GUI/NpcPortraits/Beastman_Child_A_NPC.dds",
-      "template_id": 1397541
+      "template_id": 1397539
     }
   },
   "source": {

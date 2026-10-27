@@ -2,7 +2,7 @@
   "id": "MR-Q-151305",
   "lang": "151305",
   "giver": {
-    "persona": "MR-CARA-NPC03-B",
+    "persona": "MR-CARA-NPC03",
     "zone": "Mirage/MR_Z00_Hub"
   },
   "requires": [],
@@ -62,19 +62,19 @@
     },
     {
       "type": "persona",
-      "persona": "MR-CARA-NPC07-B",
+      "persona": "MR-CARA-NPC07",
       "zone": "Mirage/MR_Z00_Hub",
       "loc": "ZoneLocName_1254040"
     }
   ],
   "personas": {
-    "MR-CARA-NPC03-B": {
+    "MR-CARA-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_B_NPC.dds",
-      "template_id": 1381126
+      "template_id": 1379035
     },
-    "MR-CARA-NPC07-B": {
+    "MR-CARA-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Stout_D_NPC.dds",
-      "template_id": 1381119
+      "template_id": 1381110
     }
   },
   "source": {

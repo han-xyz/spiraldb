@@ -2,8 +2,8 @@
   "id": "LM-Q-174424",
   "lang": "174424",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-02",
-    "zone": "Lemuria/LM_Z05_Mandoria"
+    "persona": "LM-Standin-DuckSavage-B-01",
+    "zone": "Lemuria/LM_Z06_SkyCity"
   },
   "requires": [
     "LM-Q-174421"
@@ -81,26 +81,30 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z06_SkyCity"
+    },
+    {
       "type": "persona",
       "persona": "LM-SKY-NPC04",
-      "zone": "Lemuria/Interiors/LM_Z06_MonitoringStation",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/LM_Z05_Mandoria",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1507626
-    },
     "LM-SKY-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_A_NPC.dds",
       "template_id": 1524724
+    },
+    "LM-Standin-DuckSavage-B-01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487498
     }
   },
   "source": {
@@ -110,8 +114,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Landing Platform",
+      "field": "goal.waypoint (current zone)",
+      "value": "Landing Platform",
       "blocking": false
     },
     {

@@ -2,8 +2,8 @@
   "id": "NV-Q-17CDE4",
   "lang": "17CDE4",
   "giver": {
-    "persona": "NV-CON-NPC01-B",
-    "zone": "Novus/NV_Z01_Conatus"
+    "persona": "NV-STONE-NPC01",
+    "zone": "Novus/NV_Z02_StoneOfHeaven"
   },
   "requires": [
     "NV-Q-17CDE1"
@@ -85,13 +85,17 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z02_StoneOfHeaven"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Horse_TungAk_A_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004142",
-      "zone": "",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
       "loc": "ZoneLocName_1529152"
     },
     {
@@ -123,7 +127,7 @@
         "NV-Standin-MooBu.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
       "descriptor": "WC-NPCs_00002623",
       "loc": "ZoneLocName_1529152"
     },
@@ -142,7 +146,7 @@
         "NV-STONE-FrameOfMind.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
       "descriptor": "Items_00025065",
       "loc": "ZoneLocName_1529152"
     },
@@ -154,9 +158,9 @@
     }
   ],
   "personas": {
-    "NV-CON-NPC01-B": {
+    "NV-STONE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
-      "template_id": 1575004
+      "template_id": 1529157
     },
     "NV-STONE-NPC02": {
       "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
@@ -179,7 +183,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Tung-Ak's Stronghold",
       "blocking": false
     },

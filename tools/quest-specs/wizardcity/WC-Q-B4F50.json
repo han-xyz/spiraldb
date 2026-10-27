@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Cyclops"
   },
   "requires": [
-    "WC-Q-B4F4F"
+    "WC-PreAQ-C01-001"
   ],
   "mainline": false,
   "level": 30,
@@ -124,5 +124,6 @@
       "blocking": false
     }
   ],
-  "min_level": 30
+  "min_level": 30,
+  "captured": "WC-PreAQ-C02-001"
 }

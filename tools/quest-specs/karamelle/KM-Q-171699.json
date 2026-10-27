@@ -83,15 +83,15 @@
     },
     {
       "type": "persona",
-      "persona": "KM-BLACK-NPC01-C",
+      "persona": "KM-BLACK-NPC01",
       "zone": "Karamelle/KM_Z08_LicoriceForest",
       "loc": "ZoneLocName_1513103"
     }
   ],
   "personas": {
-    "KM-BLACK-NPC01-C": {
+    "KM-BLACK-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513121
+      "template_id": 1513071
     },
     "KM-BLACK-NPC04": {
       "portrait": "GUI/NpcPortraits/Fairy_SisterF_B_NPC.dds",

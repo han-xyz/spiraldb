@@ -138,7 +138,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Well of Spirits",
       "blocking": false
     },

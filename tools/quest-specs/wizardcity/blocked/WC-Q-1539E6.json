@@ -78,17 +78,17 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "in Regent's Square",
+      "value": "Samples",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "in Baobab Crossroads",
+      "value": "Samples",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "in Walruskberg",
+      "value": "Samples",
       "blocking": true
     },
     {

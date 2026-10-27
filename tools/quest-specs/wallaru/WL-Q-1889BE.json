@@ -165,6 +165,10 @@
       "loc": "ZoneLocName_1560381"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Koala_JudgeF_D_01.AdjRef"
@@ -222,7 +226,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Della St",
       "blocking": false
     },

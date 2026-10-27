@@ -2,8 +2,8 @@
   "id": "NV-Q-1797D8",
   "lang": "1797D8",
   "giver": {
-    "persona": "NV-CON-NPC03-B",
-    "zone": "Novus/NV_Z01_Conatus"
+    "persona": "NV-NEWV-NPC01",
+    "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
     "NV-Q-17D613"
@@ -79,9 +79,9 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "NV-CON-NPC15-B",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265"
+      "persona": "NV-NEWV-NPC02",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
     },
     {
       "type": "bountycollect",
@@ -93,35 +93,35 @@
       ],
       "count": 3,
       "target": "WizardMobs_00004192",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "descriptor": "WizQst1797D8_00000015",
       "loc": "ZoneLocName_1546199"
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC15-B",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265"
+      "persona": "NV-NEWV-NPC02",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
     },
     {
       "type": "persona",
-      "persona": "NV-NEWV-NPC03-B",
-      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "persona": "NV-NEWV-NPC03",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     }
   ],
   "personas": {
-    "NV-CON-NPC03-B": {
+    "NV-NEWV-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_DesertExplorer_A_NPC.dds",
-      "template_id": 1575001
+      "template_id": 1546201
     },
-    "NV-CON-NPC15-B": {
+    "NV-NEWV-NPC02": {
       "portrait": "GUI/NpcPortraits/Dog_Governor_A_NPC.dds",
-      "template_id": 1575027
+      "template_id": 1546202
     },
-    "NV-NEWV-NPC03-B": {
+    "NV-NEWV-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
-      "template_id": 1546206
+      "template_id": 1546204
     }
   },
   "source": {

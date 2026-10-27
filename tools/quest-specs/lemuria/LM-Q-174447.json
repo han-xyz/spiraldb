@@ -40,7 +40,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003923",
-      "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -50,7 +50,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003924",
-      "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -59,7 +59,7 @@
         "LM_ControlRods.AdjRef"
       ],
       "count": 1,
-      "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "descriptor": "WizItems_00002079",
       "loc": "ZoneLocName_1520281"
     },
@@ -72,7 +72,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003870",
-      "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     }
   ],

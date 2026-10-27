@@ -116,7 +116,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Olde Town Drains",
       "blocking": false
     },
@@ -126,5 +126,6 @@
       "blocking": false
     }
   ],
-  "min_level": 15
+  "min_level": 15,
+  "captured": "WC-DRAINS-MAIN-001"
 }

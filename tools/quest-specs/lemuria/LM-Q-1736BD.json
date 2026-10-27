@@ -1,0 +1,124 @@
+{
+  "id": "LM-Q-1736BD",
+  "lang": "1736BD",
+  "giver": {
+    "persona": "LM-Mandoria-NPC01",
+    "zone": "Lemuria/LM_Z05_Mandoria"
+  },
+  "requires": [
+    "LM-Q-170126"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 72540,
+    "gold": 675
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "Stone.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "descriptor": "WizQst1736BD_00000014",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z05_Mandoria"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-BAD-NPC03",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1507599"
+    }
+  ],
+  "personas": {
+    "LM-BAD-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Deer_Hero_NPC.dds",
+      "template_id": 1487617
+    },
+    "LM-Mandoria-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_A_NPC.dds",
+      "template_id": 1507624
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Another_Stone_Down",
+    "from": "archive",
+    "timestamp": "20250904192612"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items (other folder)",
+      "value": "Stone: ObjectData/Reagent_Nodes",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Investigate Loud Noise",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

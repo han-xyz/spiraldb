@@ -3,7 +3,7 @@
   "lang": "17443E",
   "giver": {
     "persona": "LM-SKY-NPC17",
-    "zone": "Lemuria/Interiors/LM_Z06_LucysHouse"
+    "zone": "Lemuria/LM_Z06_SkyCity"
   },
   "requires": [
     "LM-Q-17441A"
@@ -121,7 +121,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003922",
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -130,7 +130,7 @@
         "LM_GenericBlocker_Sky.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "descriptor": "WizItems_00002102",
       "loc": "ZoneLocName_1520281"
     },

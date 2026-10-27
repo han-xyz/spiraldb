@@ -21,11 +21,71 @@
     {
       "type": "usage",
       "items": [
-        "PL_Walruskberg_Fireworks.AdjRef"
+        "PL-PolarRose.AdjRef"
       ],
-      "count": 7,
+      "count": 1,
       "zone": "Polaris/PL_Z00_Walruskberg",
       "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-PolarRose.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1254306",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-PolarRose.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1254306",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-PolarRose.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-PolarRose.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z04_UrvilleStation",
+      "loc": "ZoneLocName_1254306",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-PolarRose.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z05_FrigidMine",
+      "loc": "ZoneLocName_1254306",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-PolarRose.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z06_KatabaIceblock",
+      "loc": "ZoneLocName_1254306",
+      "with_previous": true
     },
     {
       "type": "persona",
@@ -52,38 +112,38 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "in Walruskberg Harbor",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "in Forlorn Tayg",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "in River of Frozen Tears",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "in Urville Station",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "in Frigid Maw",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "in Kataba IceBlock",
-      "blocking": true
+      "field": "goal.descriptor",
+      "value": "Polar Rose",
+      "blocking": false
     },
     {
       "field": "goal.descriptor",
-      "value": "in Walruskberg",
+      "value": "Polar Rose",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Polar Rose",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Polar Rose",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Polar Rose",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Polar Rose",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Polar Rose",
       "blocking": false
     }
   ]

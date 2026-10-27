@@ -5,10 +5,14 @@
     "persona": "CL-HUB-NPC001",
     "zone": "Celestia/CL_Hub"
   },
-  "requires": [],
-  "min_level": 48,
+  "requires": [
+    {
+      "school": "Storm"
+    }
+  ],
+  "min_level": 98,
   "mainline": false,
-  "level": 48,
+  "level": 98,
   "reward": {
     "xp": 83055,
     "gold": 705

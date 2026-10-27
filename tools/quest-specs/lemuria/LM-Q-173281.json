@@ -1,0 +1,152 @@
+{
+  "id": "LM-Q-173281",
+  "lang": "173281",
+  "giver": {
+    "persona": "LM-NIGHT-NPC15",
+    "zone": "Lemuria/LM_Z03_NightForest"
+  },
+  "requires": [
+    "LM-Q-173228"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 12750
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z03_NightForest"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z03_NightForest"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM-StandIn-SnowQueen_01.AdjRef",
+        "LM-StandIn-SnowQueen_02.AdjRef",
+        "LM_Lemur_HierarchF_F_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003970",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC11",
+      "zone": "Lemuria/Interiors/LM_Z03_Crypt",
+      "loc": "ZoneLocName_1520100"
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ghoul_Sitting_A_NPC.dds",
+      "template_id": 1520258
+    },
+    "LM-NIGHT-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_Citizen_A_NPC.dds",
+      "template_id": 1487463
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tales_from_the_Script",
+    "from": "archive",
+    "timestamp": "20250904105445"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst173281 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Deliver Script to Crypt of Tales",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "First Story Tomb",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "First Story Tomb",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

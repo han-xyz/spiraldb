@@ -77,6 +77,10 @@
       "loc": "ZoneLocName_1233046"
     },
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Scorpion_Queen_A.AdjRef"
@@ -125,9 +129,9 @@
       "blocking": true
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Locate the Baleful Empress",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

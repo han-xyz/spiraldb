@@ -1,0 +1,104 @@
+{
+  "id": "KR-Q-13D62B",
+  "lang": "13D62B",
+  "giver": {
+    "persona": "KR-CrescentBeach-NPC19",
+    "zone": "Khrysalis/KR_Z06_CrescentBeach"
+  },
+  "requires": [
+    "KR-Q-13D629",
+    "KR-Q-13D625"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 150,
+    "gold": 15550
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-KondhaDesert-NPC32",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239",
+      "completion": [
+        {
+          "speaker": "KR-KondhaDesert-NPC32",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KR-CrescentBeach-NPC19": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Hunter_D_NPC.dds",
+      "template_id": 1283155
+    },
+    "KR-KondhaDesert-NPC32": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Hunter_E_NPC.dds",
+      "template_id": 1299031
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:You_Can_Take_It_With_You",
+    "from": "archive",
+    "timestamp": "20231126062107"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

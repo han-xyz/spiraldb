@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z10_Gobblerton"
   },
   "requires": [
-    "KM-Q-17169B"
+    "KM-Q-1716AA"
   ],
   "mainline": true,
   "level": 122,
@@ -151,7 +151,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Get to Gobblering replaced by KM-Q-17169B",
+      "value": "Get to Gobblering replaced by KM-Q-1716AA",
       "blocking": false
     }
   ]

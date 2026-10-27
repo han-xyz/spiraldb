@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Colossus"
   },
   "requires": [
-    "WC-Q-14132"
+    "KT-HUB-C04-002"
   ],
   "mainline": false,
   "level": 5,
@@ -67,5 +67,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "KT-HUB-C04-003"
 }

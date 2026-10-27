@@ -6,7 +6,7 @@
     "zone": ""
   },
   "requires": [
-    "WC-Q-1731B0"
+    "WC-COMMONS-MAIN-005"
   ],
   "mainline": false,
   "level": 5,

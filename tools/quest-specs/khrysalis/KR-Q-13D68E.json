@@ -1,0 +1,127 @@
+{
+  "id": "KR-Q-13D68E",
+  "lang": "13D68E",
+  "giver": {
+    "persona": "KR-KondhaDesert-NPC28",
+    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+  },
+  "requires": [
+    "KR-Q-13D68D"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 54240,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KR_Scorpion_Warrior_A_Deathstalker.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001841",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "descriptor": "WizQst13D68E_00000006",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "KR-KondhaDesert-NPC29",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    }
+  ],
+  "personas": {
+    "KR-KondhaDesert-NPC28": {
+      "portrait": "GUI/NpcPortraits/Portrait_BarbQueenF_B_NPC.dds",
+      "template_id": 1283229
+    },
+    "KR-KondhaDesert-NPC29": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_Barbarian_C_NPC.dds",
+      "template_id": 1283230
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Kiss_O'_Death",
+    "from": "archive",
+    "timestamp": "20231126063812"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

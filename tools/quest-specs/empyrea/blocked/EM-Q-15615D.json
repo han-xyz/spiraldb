@@ -2,8 +2,8 @@
   "id": "EM-Q-15615D",
   "lang": "15615D",
   "giver": {
-    "persona": "EM-AERI-NPC17",
-    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    "persona": "EM-SEP-002",
+    "zone": "Empyrea/EM_Z05_Sepidious"
   },
   "requires": [
     "EM-Q-15615C"
@@ -218,12 +218,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002774",
-      "zone": ""
+      "zone": "Empyrea/EM_Z05_Sepidious"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "zone": "Empyrea/EM_Z05_Sepidious"
     },
     {
       "type": "usage",
@@ -232,7 +232,7 @@
         "EM-StreamportalBrainVersion.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Empyrea/EM_Z05_Sepidious",
       "descriptor": "WizItems_00002025"
     },
     {
@@ -242,7 +242,7 @@
         "EM-StreamportalBrainVersion.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Empyrea/EM_Z05_Sepidious",
       "descriptor": "WizItems_00002025"
     },
     {
@@ -267,13 +267,13 @@
     }
   ],
   "personas": {
-    "EM-AERI-NPC17": {
-      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
-      "template_id": 1397735
-    },
     "EM-CHAOS-NPC05-B": {
       "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
       "template_id": 1451121
+    },
+    "EM-SEP-002": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1401197
     },
     "EM_StandIn_DreamBabaYaga": {
       "portrait": "GUI/NpcPortraits/Portrait_Human_WitchF_A_NPC.dds",
@@ -287,7 +287,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Restart the Power Supply",
       "blocking": true
     },

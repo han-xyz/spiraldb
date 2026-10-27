@@ -75,8 +75,8 @@
       "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
-      "value": "Get Environmental Reading in Dragonspyre Academy",
+      "field": "goal.items",
+      "value": "Environmental Reading in Dragonspyre Academy",
       "blocking": true
     }
   ]

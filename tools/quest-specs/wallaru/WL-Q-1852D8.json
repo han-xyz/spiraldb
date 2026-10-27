@@ -2,8 +2,8 @@
   "id": "WL-Q-1852D8",
   "lang": "1852D8",
   "giver": {
-    "persona": "WL-DREAM-NPC04-A",
-    "zone": "Wallaru/WL_Z04_TheDreaming"
+    "persona": "WL-RANCH-NPC05",
+    "zone": "Wallaru/WL_Z06_CollieRanch"
   },
   "requires": [
     "WL-Q-1852D7"
@@ -107,14 +107,14 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "WL-HOPE-NPC34",
-      "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse",
+      "persona": "WL-RANCH-NPC01",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     },
     {
@@ -129,7 +129,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004411",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     },
     {
@@ -138,25 +138,25 @@
         "WL-RANCH-Documents.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "descriptor": "Interactables_00000073",
       "loc": "ZoneLocName_1594105"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     }
   ],
   "personas": {
-    "WL-DREAM-NPC04-A": {
-      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
-      "template_id": 1560426
-    },
-    "WL-HOPE-NPC34": {
+    "WL-RANCH-NPC01": {
       "portrait": "GUI/NpcPortraits/Koala_JudgeF_A_NPC.dds",
-      "template_id": 1608377
+      "template_id": 1594052
+    },
+    "WL-RANCH-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+      "template_id": 1594073
     }
   },
   "source": {

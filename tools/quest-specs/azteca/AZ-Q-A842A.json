@@ -2,8 +2,8 @@
   "id": "AZ-Q-A842A",
   "lang": "A842A",
   "giver": {
-    "persona": "AZ-ALTO-NPC07",
-    "zone": "Azteca/AZ_Z09_AltoAlto"
+    "persona": "AZ-TIERRA-NPC01",
+    "zone": "Azteca/AZ_Z07_TierraDeBrea"
   },
   "requires": [],
   "mainline": true,
@@ -57,8 +57,12 @@
       ],
       "count": 3,
       "target": "WizardMobs_00001365",
-      "zone": "",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
       "loc": "ZoneLocName_643370"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea"
     },
     {
       "type": "usage",
@@ -67,21 +71,21 @@
         "AZ-TIERRA-STATEOBJ-AZUREMOONSTONE.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
       "descriptor": "WizItems_00001908",
       "loc": "ZoneLocName_643370"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Azteca/AZ_Z09_AltoAlto",
-      "loc": "ZoneLocName_726071"
+      "zone": "Azteca/AZ_Z07_TierraDeBrea",
+      "loc": "ZoneLocName_643370"
     }
   ],
   "personas": {
-    "AZ-ALTO-NPC07": {
+    "AZ-TIERRA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_NPC.dds",
-      "template_id": 726119
+      "template_id": 689131
     }
   },
   "source": {
@@ -101,7 +105,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Tears of the Moon Shrine",
       "blocking": false
     },

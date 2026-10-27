@@ -41,6 +41,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z10_Catacombs"
+    },
+    {
       "type": "persona",
       "persona": "AV-CATA-NPC02",
       "zone": "Avalon/AV_Z10_Catacombs",
@@ -65,8 +69,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Dungeon Cells",
+      "field": "goal.waypoint (current zone)",
+      "value": "Dungeon Cells",
       "blocking": false
     },
     {

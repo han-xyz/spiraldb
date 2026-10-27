@@ -156,7 +156,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Four Falls Mill",
       "blocking": false
     },

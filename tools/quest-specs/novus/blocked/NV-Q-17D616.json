@@ -87,6 +87,10 @@
       "loc": "ZoneLocName_1520447"
     },
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+    },
+    {
       "type": "persona",
       "persona": "NV-CON-NPC06-B",
       "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
@@ -132,8 +136,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Leyline Door to La Ville Rose",
+      "field": "goal.waypoint (current zone)",
+      "value": "Leyline Door to La Ville Rose",
       "blocking": false
     },
     {

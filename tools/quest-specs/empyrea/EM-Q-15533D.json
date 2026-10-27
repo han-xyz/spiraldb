@@ -2,7 +2,7 @@
   "id": "EM-Q-15533D",
   "lang": "15533D",
   "giver": {
-    "persona": "EM-JUNG-NPC04-B",
+    "persona": "EM-JUNG-NPC04",
     "zone": "Empyrea/EM_Z01_Jungle"
   },
   "requires": [
@@ -105,10 +105,18 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z01_Jungle"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Empyrea/EM_Z01_Jungle",
       "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z01_Jungle"
     },
     {
       "type": "bounty",
@@ -143,9 +151,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
       "template_id": 1397548
     },
-    "EM-JUNG-NPC04-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_A_NPC.dds",
-      "template_id": 1397564
+    "EM-JUNG-NPC04": {
+      "portrait": "",
+      "template_id": 1397555
     }
   },
   "source": {
@@ -160,7 +168,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Tower of Sycorax",
       "blocking": false
     },
@@ -170,7 +178,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Tower of Sycorax",
       "blocking": false
     },

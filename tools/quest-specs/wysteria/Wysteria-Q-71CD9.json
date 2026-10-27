@@ -1,0 +1,92 @@
+{
+  "id": "Wysteria-Q-71CD9",
+  "lang": "71CD9",
+  "giver": {
+    "persona": "PA-HUB-NPC05",
+    "zone": "Wysteria/PA_Hub"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 1185,
+    "gold": 95
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PA-Professor-BOSS-R5.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000968",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Droors_NPC.dds",
+      "template_id": 465137
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Step_Into_My_Parlor",
+    "from": "archive",
+    "timestamp": "20231124102846"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Tree Top replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 25
+}

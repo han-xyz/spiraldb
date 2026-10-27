@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z08_Waterfront"
+    },
+    {
       "type": "usage",
       "items": [
         "ZF_History_Stone_Town.AdjRef"
@@ -78,8 +82,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Waterfront Library",
+      "field": "goal.waypoint (current zone)",
+      "value": "Waterfront Library",
       "blocking": false
     },
     {

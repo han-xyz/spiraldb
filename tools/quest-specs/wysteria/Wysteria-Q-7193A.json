@@ -1,0 +1,68 @@
+{
+  "id": "Wysteria-Q-7193A",
+  "lang": "7193A",
+  "giver": {
+    "persona": "PA-HUB-NPC03",
+    "zone": "Wysteria/Interiors/PA_Headmistress"
+  },
+  "requires": [
+    "Wysteria-Q-71939"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 145,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC25",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Belladonna_Crisp.dds",
+      "template_id": 465135
+    },
+    "PA-HUB-NPC25": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitGuard_03_NPC.dds",
+      "template_id": 465166
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Take_Your_Leave",
+    "from": "archive",
+    "timestamp": "20231124102818"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

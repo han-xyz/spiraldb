@@ -1,0 +1,90 @@
+{
+  "id": "DS-Q-14A546",
+  "lang": "14A546",
+  "giver": {
+    "persona": "DS-Fishing-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library"
+  },
+  "requires": [],
+  "min_level": 40,
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-Fishing-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_DS_Male_Wizard_Fisherman_NPC.dds",
+      "template_id": 1353028
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:For_the_Lava_Fishing",
+    "from": "archive",
+    "timestamp": "20231121231744"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Turn Up The Heat",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Catch one Fire School of Fish",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -196,6 +196,10 @@
       "loc": "ZoneLocName_592145"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-DogKnight-R12-01.AdjRef",
@@ -211,6 +215,10 @@
       "persona": "AV-ABBEY-NPC26",
       "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
       "loc": "ZoneLocName_592145"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall"
     },
     {
       "type": "bounty",
@@ -235,6 +243,10 @@
       "loc": "ZoneLocName_592145"
     },
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z12_GhostAvalon"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-YoungMorganthe-R12-01.AdjRef"
@@ -255,6 +267,10 @@
       "persona": "AV-ABBEY-NPC26",
       "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
       "loc": "ZoneLocName_592145"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall"
     },
     {
       "type": "bounty",
@@ -315,22 +331,22 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Armory",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to The Unsung Knight",
+      "field": "goal.waypoint (current zone)",
+      "value": "Unsung Knight",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Merle Ambrose's Tower",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "The Shrine to Justice",
       "blocking": false
     },

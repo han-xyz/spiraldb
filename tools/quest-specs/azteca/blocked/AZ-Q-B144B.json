@@ -63,7 +63,7 @@
       "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Tear Away the Web Barrier",
       "blocking": true
     },

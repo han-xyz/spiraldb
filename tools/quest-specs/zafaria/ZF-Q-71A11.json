@@ -6,7 +6,7 @@
     "zone": "Zafaria/ZF_Z01_Baobab_Crown"
   },
   "requires": [
-    "ZF-Q-71A0E"
+    "ZF-Q-71A10"
   ],
   "mainline": true,
   "level": 60,
@@ -70,11 +70,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Lion Taming replaced by ZF-Q-71A0E",
       "blocking": false
     }
   ]

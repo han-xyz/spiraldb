@@ -2,8 +2,8 @@
   "id": "AV-Q-96AB5",
   "lang": "96AB5",
   "giver": {
-    "persona": "AV-LAKE-NPC04",
-    "zone": "Avalon/AV_Z08_LakeShore"
+    "persona": "AV-CATA-NPC01",
+    "zone": "Avalon/AV_Z10_Catacombs"
   },
   "requires": [
     "AV-Q-908FD"
@@ -67,12 +67,16 @@
     },
     {
       "type": "persona",
-      "persona": "giver",
+      "persona": "AV-LAKE-NPC04",
       "zone": "Avalon/AV_Z08_LakeShore",
       "loc": "ZoneLocName_570074"
     }
   ],
   "personas": {
+    "AV-CATA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
+      "template_id": 592086
+    },
     "AV-LAKE-NPC04": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
       "template_id": 617137

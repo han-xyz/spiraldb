@@ -135,6 +135,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
       "type": "usage",
       "items": [
         "WL-Rules.AdjRef"
@@ -143,6 +147,10 @@
       "zone": "Wallaru/WL_Z01_Hub",
       "descriptor": "Items_00027538",
       "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
     },
     {
       "type": "bounty",
@@ -167,6 +175,10 @@
       "loc": "ZoneLocName_1560381"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Frog_Tourist_D_01-A.AdjRef",
@@ -187,6 +199,10 @@
       "zone": "Wallaru/WL_Z01_Hub",
       "descriptor": "NPCs_01749405",
       "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
     }
   ],
   "personas": {
@@ -207,23 +223,23 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Receptionist",
+      "field": "goal.waypoint (current zone)",
+      "value": "Receptionist",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Bullpen",
+      "field": "goal.waypoint (current zone)",
+      "value": "Bullpen",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Lock-Up",
+      "field": "goal.waypoint (current zone)",
+      "value": "Lock-Up",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Chief's Office",
+      "field": "goal.waypoint (current zone)",
+      "value": "Chief's Office",
       "blocking": false
     },
     {

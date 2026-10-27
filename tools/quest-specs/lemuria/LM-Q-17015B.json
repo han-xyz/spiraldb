@@ -2,11 +2,11 @@
   "id": "LM-Q-17015B",
   "lang": "17015B",
   "giver": {
-    "persona": "LM-BAD-NPC01-B",
-    "zone": "Lemuria/LM_Z04_Badlands"
+    "persona": "LM-Mandoria-NPC07",
+    "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
-    "LM-Q-170120"
+    "LM-Q-170159"
   ],
   "mainline": false,
   "level": 132,
@@ -48,7 +48,7 @@
       ],
       "count": 5,
       "target": "WizardMobs_00003891",
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "descriptor": "WizQst17015B_00000006",
       "loc": "ZoneLocName_1507599"
     },
@@ -58,7 +58,7 @@
         "LM_Sabergrass.AdjRef"
       ],
       "count": 5,
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "descriptor": "WizardInteractionTitle_00000429",
       "loc": "ZoneLocName_1507599",
       "with_previous": true
@@ -66,7 +66,7 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/LM_Z04_Badlands",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599",
       "completion": [
         {
@@ -77,9 +77,9 @@
     }
   ],
   "personas": {
-    "LM-BAD-NPC01-B": {
+    "LM-Mandoria-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
-      "template_id": 1487607
+      "template_id": 1507674
     }
   },
   "source": {
@@ -96,11 +96,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Riddle of Metal replaced by LM-Q-170120",
       "blocking": false
     }
   ]

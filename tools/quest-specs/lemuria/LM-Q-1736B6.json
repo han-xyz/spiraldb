@@ -2,7 +2,7 @@
   "id": "LM-Q-1736B6",
   "lang": "1736B6",
   "giver": {
-    "persona": "LM-TELOS-NPC01-B",
+    "persona": "LM-TELOS-NPC01",
     "zone": "Lemuria/LM_Z00_Hub"
   },
   "requires": [
@@ -74,9 +74,9 @@
     }
   ],
   "personas": {
-    "LM-TELOS-NPC01-B": {
+    "LM-TELOS-NPC01": {
       "portrait": "GUI/NpcPortraits/Khrulhu_LinNoHat_A_NPC.dds",
-      "template_id": 1521332
+      "template_id": 1521317
     },
     "LM-WILD-NPC01": {
       "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_A_NPC.dds",

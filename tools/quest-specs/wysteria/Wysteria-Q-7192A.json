@@ -1,0 +1,120 @@
+{
+  "id": "Wysteria-Q-7192A",
+  "lang": "7192A",
+  "giver": {
+    "persona": "PA-HUB-NPC16",
+    "zone": "Wysteria/Interiors/PA_Dorm"
+  },
+  "requires": [
+    "Wysteria-Q-71929"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 500,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC12",
+      "zone": "Wysteria/Interiors/PA_Library",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC03",
+      "zone": "Wysteria/Interiors/PA_Headmistress",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC12",
+      "zone": "Wysteria/Interiors/PA_Library",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465129",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Belladonna_Crisp.dds",
+      "template_id": 465135
+    },
+    "PA-HUB-NPC12": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Hugo_Chatterly.dds",
+      "template_id": 465144
+    },
+    "PA-HUB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Beatrice_Wildwind_NPC.dds",
+      "template_id": 465149
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Check_This_Out",
+    "from": "archive",
+    "timestamp": "20231124102456"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

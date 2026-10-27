@@ -2,8 +2,8 @@
   "id": "AV-Q-908FA",
   "lang": "908FA",
   "giver": {
-    "persona": "AV-CATA-NPC02",
-    "zone": "Avalon/AV_Z10_Catacombs"
+    "persona": "AV-CRYS-NPC01",
+    "zone": "Avalon/AV_Z11_CrystalCaves"
   },
   "requires": [
     "AV-Q-908F9"
@@ -89,12 +89,16 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z11_CrystalCaves"
+    },
+    {
       "type": "usage",
       "items": [
         "AV-CATA-Statue-Artorius.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Avalon/AV_Z11_CrystalCaves",
       "descriptor": "WizardGameObjects_00000518",
       "loc": "ZoneLocName_592130"
     },
@@ -104,7 +108,7 @@
         "AV-CATA-Statue-Gwen.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Avalon/AV_Z11_CrystalCaves",
       "descriptor": "WizardGameObjects_00000519",
       "loc": "ZoneLocName_592130",
       "with_previous": true
@@ -115,7 +119,7 @@
         "AV-CATA-Statue-Morganthe.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Avalon/AV_Z11_CrystalCaves",
       "descriptor": "WizardGameObjects_00000520",
       "loc": "ZoneLocName_592130",
       "with_previous": true
@@ -123,14 +127,14 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/AV_Z10_Catacombs",
+      "zone": "Avalon/AV_Z11_CrystalCaves",
       "loc": "ZoneLocName_592130"
     }
   ],
   "personas": {
-    "AV-CATA-NPC02": {
+    "AV-CRYS-NPC01": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Patrick_NPC.dds",
-      "template_id": 592087
+      "template_id": 592089
     }
   },
   "source": {
@@ -140,7 +144,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Night Garden",
       "blocking": false
     },

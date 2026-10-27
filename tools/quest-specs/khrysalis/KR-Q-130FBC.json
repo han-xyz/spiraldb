@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z06_CrescentBeach"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Mantis_ProphetF_B.AdjRef"
@@ -93,7 +97,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Spinster's Tent",
       "blocking": false
     },

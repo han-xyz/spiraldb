@@ -89,6 +89,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z07_Heap"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Cow_GangsterF_B_01.AdjRef"
@@ -126,7 +130,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Honeybee Diner",
       "blocking": false
     },

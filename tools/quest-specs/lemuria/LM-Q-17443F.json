@@ -1,0 +1,168 @@
+{
+  "id": "LM-Q-17443F",
+  "lang": "17443F",
+  "giver": {
+    "persona": "LM-SKY-NPC18",
+    "zone": "Lemuria/LM_Z06_SkyCity"
+  },
+  "requires": [
+    "LM-Q-17443E"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 14750
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-SKY-NPC17",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z06_SkyCity"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z06_SkyCity"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z06_SkyCity"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_SugarMonster_Base_A_01.AdjRef",
+        "LM_SugarMonster_Base_A_01_Minion.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003980",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-SKY-NPC17",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    }
+  ],
+  "personas": {
+    "LM-SKY-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_B_NPC.dds",
+      "template_id": 1524825
+    },
+    "LM-SKY-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_C_NPC.dds",
+      "template_id": 1524826
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sugar_is_Bad_for_You",
+    "from": "archive",
+    "timestamp": "20240322090828"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Follow Lucy Inside",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Kitchen",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Downstairs",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

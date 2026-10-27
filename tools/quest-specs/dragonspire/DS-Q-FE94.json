@@ -1,0 +1,96 @@
+{
+  "id": "DS-Q-FE94",
+  "lang": "FE94",
+  "giver": {
+    "persona": "DS-ACAD1-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 2620,
+    "gold": 250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove",
+      "volume": "Central Platform"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Warrior-Female-Wings-Green-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000488",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-ACAD1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Miner_Ghost.dds",
+      "template_id": 126322
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Piper_of_Dragonspyre",
+    "from": "archive",
+    "timestamp": "20240409061158"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "When the Whistle Blows replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 40,
+  "captured": "DS-ACAD1-C03-004"
+}

@@ -1,7 +1,7 @@
 {
   "id": "AZ-Q-skyabovefieldsbelow",
   "giver": {
-    "persona": "AZ-FLOAT-NPC05-Sick",
+    "persona": "AZ-FLOAT-NPC05",
     "zone": "Azteca/AZ_Z10_FloatingMountains"
   },
   "requires": [
@@ -26,9 +26,9 @@
     }
   ],
   "personas": {
-    "AZ-FLOAT-NPC05-Sick": {
+    "AZ-FLOAT-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_C_NPC.dds",
-      "template_id": 470600
+      "template_id": 470572
     },
     "AZ-TWIN-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Pteradon_Queen_A_NPC.dds",

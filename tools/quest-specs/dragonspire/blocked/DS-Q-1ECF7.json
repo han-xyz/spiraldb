@@ -1,0 +1,127 @@
+{
+  "id": "DS-Q-1ECF7",
+  "lang": "1ECF7",
+  "giver": {
+    "persona": "DS-LIB1-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z1_WizardTower"
+  },
+  "requires": [
+    "DS-LIB1-C01-002"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 3515,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-LIB1-NPC04",
+      "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_ToK_T3"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-LIB1-NPC04",
+      "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_ToK_T3"
+    },
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_ToK_T3"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z1_WizardTower",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-LIB1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_draconian_wizard_5BLUE.dds",
+      "template_id": 126294
+    },
+    "DS-LIB1-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_pointyhat_3_Ghost_NPC.dds",
+      "template_id": 126328
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Friend_of_My_Friend",
+    "from": "archive",
+    "timestamp": "20260615204716"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Soldiers",
+      "blocking": true
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "her Desk",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB1-C01-003"
+}

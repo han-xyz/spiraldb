@@ -2,7 +2,7 @@
   "id": "AZ-Q-72E49",
   "lang": "72E49",
   "giver": {
-    "persona": "AZ-FLOAT-NPC05-Sick",
+    "persona": "AZ-FLOAT-NPC05",
     "zone": "Azteca/AZ_Z10_FloatingMountains"
   },
   "requires": [
@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z10_FloatingMountains"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Eagle-Hunter-A.AdjRef"
@@ -74,9 +78,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Eagle_Hunter_A_NPC.dds",
       "template_id": 470554
     },
-    "AZ-FLOAT-NPC05-Sick": {
+    "AZ-FLOAT-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_C_NPC.dds",
-      "template_id": 470600
+      "template_id": 470572
     }
   },
   "source": {
@@ -86,7 +90,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Seven Stabs of the Knife Temple",
       "blocking": false
     },

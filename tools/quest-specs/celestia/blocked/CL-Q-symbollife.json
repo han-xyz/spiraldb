@@ -35,6 +35,10 @@
       "loc": "ZoneLocName_1161805"
     },
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Z03_District_Of_The_Stars",
@@ -63,7 +67,7 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hall of Congruencies",
       "blocking": false
     }

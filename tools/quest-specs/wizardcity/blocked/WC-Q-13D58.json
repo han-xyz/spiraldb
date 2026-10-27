@@ -96,8 +96,8 @@
       "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
-      "value": "Get Icy Water in the Entrance Hall",
+      "field": "goal.items",
+      "value": "Icy Water in the Entrance Hall",
       "blocking": true
     },
     {

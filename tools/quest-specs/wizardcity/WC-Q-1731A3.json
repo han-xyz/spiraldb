@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Cyclops"
   },
   "requires": [
-    "WC-Q-173190"
+    "WC-CYCLOPS-MAIN-003"
   ],
   "mainline": false,
   "level": 5,
@@ -98,7 +98,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Eyus Maximus' Tower",
       "blocking": false
     },
@@ -107,5 +107,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-CYCLOPS-SIDE-005"
 }

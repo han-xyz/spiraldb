@@ -6,7 +6,7 @@
     "zone": "WizardCity/Interiors/WC_Library"
   },
   "requires": [
-    "WC-Q-1625BF"
+    "WC-COMMONS-MAIN-001"
   ],
   "mainline": false,
   "level": 5,
@@ -112,5 +112,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-COMMON-SIDE-009"
 }

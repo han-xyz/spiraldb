@@ -1,0 +1,91 @@
+{
+  "id": "WC-Q-13E01",
+  "lang": "13E01",
+  "giver": {
+    "persona": "HO-Halloween02",
+    "zone": "WizardCity/WC_Streets/WC_Unicorn"
+  },
+  "requires": [
+    "WC-Q-1423A"
+  ],
+  "mainline": false,
+  "level": 5,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "HO_Halloween04.AdjRef",
+        "HO_Pumpkin.AdjRef",
+        "HO_Pumpkin02.AdjRef",
+        "HO_Pumpkin03.AdjRef"
+      ],
+      "count": 10,
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "descriptor": "WC-NPCs_00001048",
+      "loc": "ZoneLocName_114426"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Unicorn",
+      "loc": "ZoneLocName_114426"
+    }
+  ],
+  "personas": {
+    "HO-Halloween02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Scarecrow_NPC.dds",
+      "template_id": 126438
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Unicorn_Delight",
+    "from": "archive",
+    "timestamp": "20250906083036"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Jack Straw: HO-Halloween02 from ObjectData/Holiday/Holloween",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {
+        "xp": 0
+      },
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Jack O'Lanterns on Unicorn Way: ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jack Straw: HO-Halloween02 from ObjectData/Holiday/Holloween",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

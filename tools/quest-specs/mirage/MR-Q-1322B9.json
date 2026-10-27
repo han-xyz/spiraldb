@@ -6,7 +6,7 @@
     "zone": "Mirage/MR_Z01_AlkaliBarrows"
   },
   "requires": [
-    "MR-Q-151319"
+    "MR-Q-15131A"
   ],
   "mainline": false,
   "level": 105,
@@ -88,11 +88,6 @@
     {
       "field": "requires (not generated)",
       "value": "The Tired Nomad replaced by min_level",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Alkali Barrows replaced by MR-Q-151319",
       "blocking": false
     }
   ]

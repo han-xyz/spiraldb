@@ -105,6 +105,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z04_Badlands"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Minotaur_Skeleton_A_01.AdjRef",
@@ -112,7 +116,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003988",
-      "zone": "",
+      "zone": "Lemuria/LM_Z04_Badlands",
       "loc": "ZoneLocName_1507644"
     },
     {
@@ -123,21 +127,21 @@
     },
     {
       "type": "persona",
-      "persona": "LM-BAD-NPC01-B",
+      "persona": "LM-BAD-NPC01",
       "zone": "Lemuria/LM_Z04_Badlands",
       "loc": "ZoneLocName_1507644",
       "completion": [
         {
-          "speaker": "LM-BAD-NPC01-B",
+          "speaker": "LM-BAD-NPC01",
           "line": "00000018"
         }
       ]
     }
   ],
   "personas": {
-    "LM-BAD-NPC01-B": {
+    "LM-BAD-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
-      "template_id": 1487607
+      "template_id": 1507681
     },
     "LM-BAD-NPC02": {
       "portrait": "GUI/NpcPortraits/Lemur_Wild_C_NPC.dds",
@@ -156,7 +160,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Castle Grayschool",
       "blocking": false
     },

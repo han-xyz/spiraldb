@@ -2,7 +2,7 @@
   "id": "AZ-Q-72E5A",
   "lang": "72E5A",
   "giver": {
-    "persona": "AZ-LAKE-NPC01-1",
+    "persona": "AZ-LAKE-NPC01",
     "zone": "Azteca/AZ_Z08_PitchBlackLake"
   },
   "requires": [
@@ -64,15 +64,15 @@
     }
   ],
   "personas": {
-    "AZ-LAKE-NPC01-1": {
-      "portrait": "GUI/NpcPortraits/Portrait_Seamonster_Ancient_A_NPC2.dds",
-      "template_id": 470621
+    "AZ-LAKE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seamonster_Ancient_A_NPC.dds",
+      "template_id": 470556
     }
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:When_the_Thunder_Rolls",
     "from": "archive",
-    "timestamp": "20240123005126"
+    "timestamp": "20240205173332"
   },
   "needs_review": [
     {

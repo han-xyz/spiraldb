@@ -74,6 +74,10 @@
   "goals": [
     {
       "type": "waypoint",
+      "zone": "Azteca/AZ_Z10_FloatingMountains"
+    },
+    {
+      "type": "waypoint",
       "zone": "Azteca/Interiors/AZ_Z10_FireCave"
     },
     {
@@ -133,7 +137,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Isla del Fuego",
       "blocking": false
     },

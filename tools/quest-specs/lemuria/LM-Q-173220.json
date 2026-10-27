@@ -2,7 +2,7 @@
   "id": "LM-Q-173220",
   "lang": "173220",
   "giver": {
-    "persona": "LM-NIGHT-NPC05-B",
+    "persona": "LM-NIGHT-NPC05",
     "zone": "Lemuria/LM_Z03_NightForest"
   },
   "requires": [
@@ -69,6 +69,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z03_NightForest"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z03_NightForest"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Malughast_Base_01.AdjRef",
@@ -93,9 +101,9 @@
     }
   ],
   "personas": {
-    "LM-NIGHT-NPC05-B": {
+    "LM-NIGHT-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
-      "template_id": 1520186
+      "template_id": 1520136
     },
     "LM_Standin_Malughast": {
       "portrait": "GUI/NpcPortraits/Portrait_Malughast_Base_A_MOB.dds",
@@ -109,13 +117,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Solomon Crane's House",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Solomon Crane's Basement",
+      "field": "goal.waypoint (current zone)",
+      "value": "Solomon Crane's Basement",
       "blocking": false
     },
     {

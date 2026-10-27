@@ -152,7 +152,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Prima Donna's Tower",
       "blocking": false
     },
@@ -167,5 +167,6 @@
       "blocking": false
     }
   ],
-  "min_level": 5
+  "min_level": 5,
+  "captured": "WC-FIRECAT-MAIN-004"
 }

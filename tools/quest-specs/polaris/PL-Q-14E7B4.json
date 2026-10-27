@@ -6,14 +6,20 @@
     "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
   },
   "requires": [
+    {
+      "school": "Balance"
+    },
     "KT-BAL-C12-002",
     "PL-Q-14DC09"
   ],
   "mainline": false,
-  "level": 100,
+  "level": 108,
   "reward": {
     "xp": 287770,
-    "gold": 1440
+    "gold": 1440,
+    "spells": [
+      "Nested Fury"
+    ]
   },
   "dialogs": {
     "prep": [
@@ -104,6 +110,10 @@
       "zone": "Arcanum/AR_Z01_Hub"
     },
     {
+      "type": "waypoint",
+      "zone": "Arcanum/AR_Z01_Hub"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "PL_Cyrio_A.AdjRef",
@@ -152,7 +162,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Arbiter's Arena",
       "blocking": false
     },
@@ -171,5 +181,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 108
 }

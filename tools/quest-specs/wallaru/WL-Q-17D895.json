@@ -1,0 +1,113 @@
+{
+  "id": "WL-Q-17D895",
+  "lang": "17D895",
+  "giver": {
+    "persona": "WL-OUT-NPC01",
+    "zone": "Wallaru/WL_Z02_Outback"
+  },
+  "requires": [
+    "WL-Q-17D893"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 99600,
+    "gold": 290
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z02_Outback"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z02_Outback"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-Goanna.AdjRef",
+        "WL_BeardDragon_Base_B_01.AdjRef",
+        "WL_BeardDragon_Base_C_01.AdjRef",
+        "WL_BeardDragon_Base_C_02.AdjRef",
+        "WL_BeardDragon_Base_C_03.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00004391",
+      "zone": "Wallaru/WL_Z02_Outback",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-OUT-NPC02",
+      "zone": "Wallaru/WL_Z02_Outback",
+      "loc": "ZoneLocName_1562752"
+    }
+  ],
+  "personas": {
+    "WL-OUT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1608160
+    },
+    "WL-OUT-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
+      "template_id": 1562753
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stop_and_Goanna",
+    "from": "archive",
+    "timestamp": "20240121112244"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Dundara's Tracks",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Follow Dundara's Tracks",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

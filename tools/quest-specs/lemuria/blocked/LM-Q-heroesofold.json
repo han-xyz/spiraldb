@@ -1,8 +1,8 @@
 {
   "id": "LM-Q-heroesofold",
   "giver": {
-    "persona": "LM-TELOS-NPC10-D",
-    "zone": "Lemuria/LM_Z00_Hub"
+    "persona": "LM-TELOS-NPC10",
+    "zone": "Lemuria/Interiors/LM_Z00_I07_HallofHeroesOuter"
   },
   "requires": [
     "NV-Q-188A06"
@@ -34,6 +34,14 @@
       "loc": "ZoneLocName_1520271"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z00_Hub"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z00_Hub"
+    },
+    {
       "type": "persona",
       "persona": "NV-CON-NPC06-B",
       "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
@@ -41,9 +49,9 @@
     }
   ],
   "personas": {
-    "LM-TELOS-NPC10-D": {
+    "LM-TELOS-NPC10": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
-      "template_id": 1487584
+      "template_id": 1521344
     },
     "NV-CON-NPC06-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
@@ -67,14 +75,14 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hall of Heroes",
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Follow Heroes to Conatus",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",

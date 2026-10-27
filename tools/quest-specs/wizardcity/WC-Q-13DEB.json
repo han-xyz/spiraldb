@@ -5,7 +5,9 @@
     "persona": "HO-HalloweenO1",
     "zone": "WizardCity/WC_Hub"
   },
-  "requires": [],
+  "requires": [
+    "WC-Q-13DF6"
+  ],
   "mainline": false,
   "level": 5,
   "reward": {
@@ -97,12 +99,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Dunking Do-Nots replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 5
+  ]
 }

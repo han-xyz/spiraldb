@@ -1,0 +1,86 @@
+{
+  "id": "DS-Q-1ED2A",
+  "lang": "1ED2A",
+  "giver": {
+    "persona": "DS-NEC1-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+  },
+  "requires": [
+    "DS-NEC1-C01-003"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 755,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC09_Kimerith",
+      "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Hatchery_T4"
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_3_Ghost_NPC.dds",
+      "template_id": 126312
+    },
+    "DS-NEC1-NPC09_Kimerith": {
+      "portrait": "",
+      "template_id": 126921
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Drakester",
+    "from": "archive",
+    "timestamp": "20240121081921"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Windhammer's Tower",
+      "blocking": false
+    },
+    {
+      "field": "goal.usage",
+      "value": "Use Windhammer's Crystal Stand",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC1-C01-004"
+}

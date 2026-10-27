@@ -2,8 +2,8 @@
   "id": "PL-Q-148A5B",
   "lang": "148A5B",
   "giver": {
-    "persona": "PL-MINE-NPC02-B",
-    "zone": "Polaris/PL_Z05_FrigidMine"
+    "persona": "PL-WAL-NPC09",
+    "zone": "Polaris/Interiors/Z01_I01_PirateShip01"
   },
   "requires": [],
   "mainline": true,
@@ -41,14 +41,14 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Polaris/PL_Z05_FrigidMine",
-      "loc": "ZoneLocName_1217946"
+      "zone": "Polaris/Interiors/Z01_I01_PirateShip01",
+      "loc": "ZoneLocName_1217799"
     }
   ],
   "personas": {
-    "PL-MINE-NPC02-B": {
+    "PL-WAL-NPC09": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_A_NPC.dds",
-      "template_id": 1346307
+      "template_id": 1340496
     }
   },
   "source": {

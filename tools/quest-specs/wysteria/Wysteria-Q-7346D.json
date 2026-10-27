@@ -1,0 +1,111 @@
+{
+  "id": "Wysteria-Q-7346D",
+  "lang": "7346D",
+  "giver": {
+    "persona": "PA-HUB-NPC13",
+    "zone": "Wysteria/PA_Z01_Pegasus"
+  },
+  "requires": [
+    "Wysteria-Q-71938"
+  ],
+  "mainline": false,
+  "level": 25,
+  "reward": {
+    "xp": 405,
+    "gold": 30
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Z01_Pegasus"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PA-DoorVines.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "descriptor": "WizardGameObjects_00000465",
+      "loc": "ZoneLocName_465168"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-TANG-NPC01",
+      "zone": "Wysteria/Interiors/PA_House01",
+      "loc": "ZoneLocName_465168"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "loc": "ZoneLocName_465168",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Groundskeeper_Verne.dds",
+      "template_id": 465145
+    },
+    "PA-TANG-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitGuard_02_NPC.dds",
+      "template_id": 465167
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fast_Eddie",
+    "from": "archive",
+    "timestamp": "20231124104426"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Private Eddie's House",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

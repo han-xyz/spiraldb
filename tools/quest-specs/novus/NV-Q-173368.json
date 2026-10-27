@@ -4,7 +4,7 @@
   "title": "QuestTitle_173365",
   "auto_start": true,
   "giver": {
-    "persona": "NV-ROSE-NPC01-B",
+    "persona": "NV-ROSE-NPC01",
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
@@ -167,6 +167,10 @@
       "loc": "ZoneLocName_1520449"
     },
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z05_LaVilleRose"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Dog_DogofWar_B_01.AdjRef"
@@ -175,6 +179,10 @@
       "target": "WizardMobs_00004132",
       "zone": "Novus/NV_Z05_LaVilleRose",
       "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z05_LaVilleRose"
     },
     {
       "type": "bounty",
@@ -188,9 +196,9 @@
     }
   ],
   "personas": {
-    "NV-ROSE-NPC01-B": {
+    "NV-ROSE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1520457
+      "template_id": 1520450
     }
   },
   "source": {
@@ -205,13 +213,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

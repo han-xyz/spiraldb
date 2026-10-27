@@ -1,7 +1,7 @@
 {
   "id": "AZ-Q-unstuckpig",
   "giver": {
-    "persona": "AZ-ZOCOLO-NPC15-B",
+    "persona": "AZ-ZOCOLO-NPC15",
     "zone": "Azteca/AZ_Z00_Zocalo"
   },
   "requires": [],
@@ -29,9 +29,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
       "template_id": 1401051
     },
-    "AZ-ZOCOLO-NPC15-B": {
+    "AZ-ZOCOLO-NPC15": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1404178
+      "template_id": 1254321
     }
   },
   "source": {

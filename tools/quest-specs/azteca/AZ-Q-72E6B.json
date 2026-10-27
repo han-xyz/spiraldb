@@ -59,6 +59,10 @@
       "loc": "ZoneLocName_470546"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z08_PitchBlackLake"
+    },
+    {
       "type": "persona",
       "persona": "AZ-LAKE-NPC05",
       "zone": "Azteca/AZ_Z08_PitchBlackLake",
@@ -88,7 +92,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Sunken Courtyard",
       "blocking": false
     },

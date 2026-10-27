@@ -1,0 +1,124 @@
+{
+  "id": "WL-Q-17D8AD",
+  "lang": "17D8AD",
+  "giver": {
+    "persona": "WL-OUT-NPC01",
+    "zone": "Wallaru/WL_Z02_Outback"
+  },
+  "requires": [
+    "WL-Q-17D8AB"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 119520,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z02_Outback"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Irk_Base_I_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004491",
+      "zone": "Wallaru/WL_Z02_Outback",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z02_Outback",
+      "loc": "ZoneLocName_1562752"
+    }
+  ],
+  "personas": {
+    "WL-OUT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1608160
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Perchance_to_Scream",
+    "from": "archive",
+    "timestamp": "20240808094827"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17D8AD is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Being Journey (in Desperation Dream)",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

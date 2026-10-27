@@ -59,25 +59,25 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "PL-WAL-NPC03-B",
+      "persona": "PL-WAL-NPC03",
       "zone": "Polaris/Interiors/PL_Z00_Palace_04B",
       "loc": "ZoneLocName_1254306"
     },
     {
       "type": "persona",
-      "persona": "PL-KATA-NPC03-B",
-      "zone": "Polaris/Interiors/PL_Z06_TitanPod",
+      "persona": "PL-WAL-NPC04",
+      "zone": "Polaris/Interiors/PL_Z00_Operahouse_Dressingroom",
       "loc": "ZoneLocName_1254306"
     }
   ],
   "personas": {
-    "PL-KATA-NPC03-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Seal_Captain_A_NPC.dds",
-      "template_id": 1370071
-    },
-    "PL-WAL-NPC03-B": {
+    "PL-WAL-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Walrus_AristocratF_A_NPC.dds",
-      "template_id": 1370002
+      "template_id": 1340490
+    },
+    "PL-WAL-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seal_Captain_A_NPC.dds",
+      "template_id": 1340491
     }
   },
   "source": {

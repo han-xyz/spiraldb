@@ -102,6 +102,10 @@
       "loc": "ZoneLocName_527108"
     },
     {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Z08_I03_Black_Palace"
+    },
+    {
       "type": "persona",
       "persona": "ZF-STONE-NPC03",
       "zone": "Zafaria/Interiors/ZF_Z07_I01_Darajani_Palace",
@@ -129,9 +133,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.persona",
+      "field": "goal.waypoint (current zone)",
       "value": "Approach Palace Door",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.mobs",

@@ -95,6 +95,10 @@
       "loc": "ZoneLocName_1560395"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z04_TheDreaming"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Dingo_BaseF_B_04.AdjRef",
@@ -156,8 +160,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

@@ -1,0 +1,77 @@
+{
+  "id": "DS-Q-1ED98",
+  "lang": "1ED98",
+  "giver": {
+    "persona": "DS-ACAD1-NPC02",
+    "zone": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_T3"
+  },
+  "requires": [
+    "DS-ACAD1-C04-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 840,
+    "gold": 125
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DS_Crate.AdjRef"
+      ],
+      "count": 4,
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z1_CrystalGrove",
+      "descriptor": "WizQst1ED98_00000005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_T3"
+    }
+  ],
+  "personas": {
+    "DS-ACAD1-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_pointyhat_2_Ghost_NPC.dds",
+      "template_id": 126323
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tools_of_the_Trade",
+    "from": "archive",
+    "timestamp": "20240121143104"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD1-C04-002"
+}

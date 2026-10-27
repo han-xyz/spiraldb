@@ -1,0 +1,82 @@
+{
+  "id": "KR-Q-13D62D",
+  "lang": "13D62D",
+  "giver": {
+    "persona": "KR-CrescentBeach-NPC02",
+    "zone": "Khrysalis/KR_Z04_TyrianGorge"
+  },
+  "requires": [
+    "KR-Q-13D62C"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 23245,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-SeaSalt.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "descriptor": "WizItems_00001979",
+      "loc": "ZoneLocName_1233046"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge",
+      "loc": "ZoneLocName_1233046"
+    }
+  ],
+  "personas": {
+    "KR-CrescentBeach-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Troll_Pirate_A_NPC.dds",
+      "template_id": 1283093
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ooo_Ooo_That_Smell",
+    "from": "archive",
+    "timestamp": "20231126062226"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

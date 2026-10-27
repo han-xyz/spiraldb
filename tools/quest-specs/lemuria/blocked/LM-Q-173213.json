@@ -3,7 +3,7 @@
   "lang": "173213",
   "giver": {
     "persona": "LM-URSAI-NPC02",
-    "zone": "Lemuria/Interiors/LM_Z02_Treehut"
+    "zone": "Lemuria/LM_Z02_UrsaiVillage"
   },
   "requires": [
     "LM-Q-173212"
@@ -98,7 +98,7 @@
         "LM_SacredWrits_01.AdjRef"
       ],
       "count": 1,
-      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "descriptor": "WizardGameObjects_00000946",
       "loc": "ZoneLocName_1520099"
     },
@@ -108,14 +108,14 @@
         "LM_SacredWrits_01.AdjRef"
       ],
       "count": 1,
-      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "descriptor": "WizardGameObjects_00000946",
       "loc": "ZoneLocName_1520099"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099"
     }
   ],

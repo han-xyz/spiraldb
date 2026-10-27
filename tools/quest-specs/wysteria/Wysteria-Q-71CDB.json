@@ -1,0 +1,148 @@
+{
+  "id": "Wysteria-Q-71CDB",
+  "lang": "71CDB",
+  "giver": {
+    "persona": "PA-HUB-NPC03",
+    "zone": "Wysteria/Interiors/PA_Headmistress"
+  },
+  "requires": [
+    "Wysteria-Q-71CDA"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 1765,
+    "gold": 135
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/PA_Hub"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC02",
+      "zone": "Wysteria/Interiors/PA_Tournament_Entry",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wysteria/Interiors/PA_Tournament_Entry"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PA-Student-2-R5.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000967",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC02",
+      "zone": "Wysteria/Interiors/PA_Tournament_Entry",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/Interiors/PA_Headmistress",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Glendemming_NPC.dds",
+      "template_id": 465134
+    },
+    "PA-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Belladonna_Crisp.dds",
+      "template_id": 465135
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Last_Round",
+    "from": "archive",
+    "timestamp": "20231124102901"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Spiral Cup Pedestal",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Hall of the Gorgon",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

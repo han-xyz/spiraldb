@@ -46,19 +46,19 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "AV-ABBEY-NPC06",
-      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "persona": "AV-HIGH-NPC04",
+      "zone": "Avalon/Interiors/AV_Z02_TowerRedThorn",
       "loc": "ZoneLocName_537904"
     }
   ],
   "personas": {
-    "AV-ABBEY-NPC06": {
-      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirBrennanOnehand_NPC.dds",
-      "template_id": 617183
-    },
     "AV-HIGH-NPC02": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_DogKnight_Gilliam.dds",
       "template_id": 617088
+    },
+    "AV-HIGH-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_SirBrennanOnehand_NPC.dds",
+      "template_id": 617110
     }
   },
   "source": {

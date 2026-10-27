@@ -64,5 +64,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "MB-XTRA-C11-002"
 }

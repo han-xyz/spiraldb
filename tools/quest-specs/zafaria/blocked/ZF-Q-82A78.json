@@ -82,7 +82,7 @@
       ],
       "count": 2,
       "target": "WizardMobs_00000745",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "loc": "ZoneLocName_465261"
     },
     {
@@ -91,7 +91,7 @@
         "ZF-Grave-RobePedestal.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizardGameObjects_00000496",
       "loc": "ZoneLocName_465261"
     },
@@ -101,7 +101,7 @@
         "ZF-Grave-RingPedestal.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizardGameObjects_00000495",
       "loc": "ZoneLocName_465261"
     },
@@ -111,9 +111,13 @@
         "ZF-Grave-HornPedestal.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizardGameObjects_00000494",
       "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard"
     },
     {
       "type": "bounty",
@@ -122,7 +126,7 @@
       ],
       "count": 2,
       "target": "WizardMobs_00000746",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "loc": "ZoneLocName_465261"
     },
     {
@@ -132,7 +136,7 @@
         "ZF-TiziriDrugged.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WC-NPCs_00001972",
       "loc": "ZoneLocName_465261"
     },
@@ -176,8 +180,8 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to next chamber",
+      "field": "goal.waypoint (current zone)",
+      "value": "next chamber",
       "blocking": false
     },
     {

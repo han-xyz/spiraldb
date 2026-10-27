@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_OldeTown"
   },
   "requires": [
-    "WC-Q-1627BA",
+    "WC-TRITON-MAIN-009",
     "WC-Q-955F"
   ],
   "mainline": true,

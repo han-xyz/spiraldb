@@ -84,12 +84,12 @@
     },
     {
       "type": "persona",
-      "persona": "WL-HOPE-NPC26-B",
+      "persona": "WL-HOPE-NPC26",
       "zone": "Wallaru/WL_Z01_Hub",
       "loc": "ZoneLocName_1560381",
       "completion": [
         {
-          "speaker": "WL-HOPE-NPC26-B",
+          "speaker": "WL-HOPE-NPC26",
           "line": "00000008"
         }
       ]
@@ -100,9 +100,9 @@
       "portrait": "GUI/NpcPortraits/Koala_CitizenF_D_NPC.dds",
       "template_id": 1608127
     },
-    "WL-HOPE-NPC26-B": {
+    "WL-HOPE-NPC26": {
       "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
-      "template_id": 1608478
+      "template_id": 1608147
     }
   },
   "source": {

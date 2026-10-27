@@ -37,6 +37,16 @@
       "loc": "ZoneLocName_9005"
     },
     {
+      "type": "usage",
+      "items": [
+        "AZ-TelluricVim.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizItems_00001932",
+      "loc": "ZoneLocName_9005"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "WizardCity/Interiors/WC_SchoolStorm",
@@ -61,7 +71,7 @@
       "blocking": true
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Eel Cave (Crustacean Empire)",
       "blocking": false
     },
@@ -71,9 +81,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Telluric Vim",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Telluric Vim: ObjectData/AZ",
+      "blocking": false
     }
   ]
 }

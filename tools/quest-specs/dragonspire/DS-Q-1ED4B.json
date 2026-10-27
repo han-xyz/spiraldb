@@ -1,0 +1,86 @@
+{
+  "id": "DS-Q-1ED4B",
+  "lang": "1ED4B",
+  "auto_start": true,
+  "giver": {
+    "persona": "DS-NEC3-NPC02",
+    "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Detention_T4"
+  },
+  "requires": [
+    "DS-NEC3-C01-003"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 5500,
+    "gold": 125
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Detention_T4"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Colossus-Steel-Boss-R8-2.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000393",
+      "zone": "",
+      "descriptor": "WizQst1ED4B_00000000"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Detention_T4",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000015"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC3-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_spikycloak_3BLUE.dds",
+      "template_id": 126320
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cloak_and_Danger",
+    "from": "archive",
+    "timestamp": "20260701211302"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC3-C02-001"
+}

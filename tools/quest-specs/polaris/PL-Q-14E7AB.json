@@ -6,13 +6,19 @@
     "zone": "Arcanum/Interiors/AR_Z01_I01_DryDock"
   },
   "requires": [
+    {
+      "school": "Ice"
+    },
     "PL-Q-14DC09"
   ],
   "mainline": false,
-  "level": 100,
+  "level": 108,
   "reward": {
     "xp": 287770,
-    "gold": 1440
+    "gold": 1440,
+    "spells": [
+      "Snowball Barrage"
+    ]
   },
   "dialogs": {
     "prep": [
@@ -94,6 +100,10 @@
       "zone": "Arcanum/AR_Z01_Hub"
     },
     {
+      "type": "waypoint",
+      "zone": "Arcanum/AR_Z01_Hub"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "PL_Cyrio_A.AdjRef",
@@ -153,7 +163,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Arbiter's Arena",
       "blocking": false
     },
@@ -177,5 +187,6 @@
       "value": "Snow Day replaced by min_level",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 108
 }

@@ -126,6 +126,10 @@
       "loc": "ZoneLocName_470547"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z10_FloatingMountains"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Shdweave-Warrior-G.AdjRef"
@@ -137,7 +141,7 @@
     },
     {
       "type": "persona",
-      "persona": "AZ-FLOAT-NPC05-Sick",
+      "persona": "AZ-FLOAT-NPC05",
       "zone": "Azteca/AZ_Z10_FloatingMountains",
       "loc": "ZoneLocName_470547"
     }
@@ -147,9 +151,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_Shaman_A_NPC.dds",
       "template_id": 470553
     },
-    "AZ-FLOAT-NPC05-Sick": {
+    "AZ-FLOAT-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_C_NPC.dds",
-      "template_id": 470600
+      "template_id": 470572
     }
   },
   "source": {
@@ -164,7 +168,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Turquoise Cave",
       "blocking": false
     },

@@ -1,0 +1,76 @@
+{
+  "id": "DS-Q-1EC8B",
+  "lang": "1EC8B",
+  "giver": {
+    "persona": "DS-NEC1-NPC05",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+  },
+  "requires": [
+    "DS-NEC1-C05-002"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 1875,
+    "gold": 118
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Warrior-Male-Armor-Tan-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000490",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_drake_mother_Ghost_NPC.dds",
+      "template_id": 126316
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hammer_Time",
+    "from": "archive",
+    "timestamp": "20240409061158"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Crystal Hammer",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "KT-SPHub-C02-002"
+}

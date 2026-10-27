@@ -354,6 +354,10 @@
       "loc": "ZoneLocName_602094"
     },
     {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_Hub_Cathedral"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "Loremaster.AdjRef"
@@ -376,6 +380,10 @@
       "loc": "ZoneLocName_602094"
     },
     {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "ME1_BattleMage_B.AdjRef"
@@ -392,6 +400,10 @@
       "loc": "ZoneLocName_602094"
     },
     {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "ME1_DragonClaw_A.AdjRef"
@@ -400,6 +412,10 @@
       "target": "WizardMobs_00002009",
       "zone": "Avalon/AV_Z01_AbbeyRoad",
       "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z01_AbbeyRoad"
     },
     {
       "type": "bounty",
@@ -501,8 +517,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Loremaster's Chamber",
+      "field": "goal.waypoint (current zone)",
+      "value": "Loremaster's Chamber",
       "blocking": false
     },
     {
@@ -521,8 +537,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Grand General's Quarters",
+      "field": "goal.waypoint (current zone)",
+      "value": "Grand General's Quarters",
       "blocking": false
     },
     {
@@ -536,8 +552,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the War Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "War Room",
       "blocking": false
     },
     {
@@ -546,8 +562,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the War Room upper level",
+      "field": "goal.waypoint (current zone)",
+      "value": "War Room upper level",
       "blocking": false
     },
     {

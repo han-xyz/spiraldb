@@ -58,8 +58,8 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "KM-BLACK-NPC01-B",
-      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "persona": "KM-SWEET-NPC06",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
@@ -68,7 +68,7 @@
         "KM-PeppermintPosie.AdjRef"
       ],
       "count": 6,
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     },
     {
@@ -78,21 +78,21 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003673",
-      "zone": "",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "descriptor": "WizQst16B55F_00000005",
       "loc": "ZoneLocName_1488252"
     },
     {
       "type": "persona",
-      "persona": "KM-BLACK-NPC01-B",
-      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "persona": "KM-SWEET-NPC06",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
       "loc": "ZoneLocName_1488252"
     }
   ],
   "personas": {
-    "KM-BLACK-NPC01-B": {
+    "KM-SWEET-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513114
+      "template_id": 1488222
     }
   },
   "source": {

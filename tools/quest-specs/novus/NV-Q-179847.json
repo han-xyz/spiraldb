@@ -61,6 +61,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Unicorn_Guard_C_02.AdjRef",
@@ -68,8 +72,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004211",
-      "zone": "Novus/Interiors/NV_Z03_SoldiersHideout",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
     },
     {
       "type": "bounty",
@@ -78,8 +86,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004172",
-      "zone": "Novus/Interiors/NV_Z03_SoldiersHideout",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
     },
     {
       "type": "bounty",
@@ -88,7 +100,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004173",
-      "zone": "Novus/Interiors/NV_Z03_SoldiersHideout",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     }
   ],
@@ -111,18 +123,18 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Valencian Ship",
+      "field": "goal.waypoint (current zone)",
+      "value": "Valencian Ship",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Monquistan Ship",
+      "field": "goal.waypoint (current zone)",
+      "value": "Monquistan Ship",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Marleybonian Ship",
+      "field": "goal.waypoint (current zone)",
+      "value": "Marleybonian Ship",
       "blocking": false
     },
     {

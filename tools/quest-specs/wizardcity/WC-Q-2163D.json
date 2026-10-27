@@ -1,0 +1,99 @@
+{
+  "id": "WC-Q-2163D",
+  "lang": "2163D",
+  "giver": {
+    "persona": "WC-Shop-Recipe-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_OldeTown"
+  },
+  "requires": [
+    "WC-OLDE-MAIN-003A"
+  ],
+  "mainline": false,
+  "level": 5,
+  "reward": {
+    "xp": 30,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "Harvest-Wood-01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "descriptor": "Reagents_00000000",
+      "loc": "ZoneLocName_245504"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_OldeTown",
+      "loc": "ZoneLocName_245504"
+    }
+  ],
+  "personas": {
+    "WC-Shop-Recipe-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Wraith.dds",
+      "template_id": 136764
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wizards_in_the_Mist",
+    "from": "archive",
+    "timestamp": "20250829000320"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items (other folder)",
+      "value": "Mist Wood: ObjectData/Reagents",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

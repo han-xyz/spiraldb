@@ -60,7 +60,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Water Cotton Candy Garden",
       "blocking": true
     },

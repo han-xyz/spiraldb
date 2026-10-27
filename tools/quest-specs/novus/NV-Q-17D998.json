@@ -2,7 +2,7 @@
   "id": "NV-Q-17D998",
   "lang": "17D998",
   "giver": {
-    "persona": "NV-CON-NPC01-B",
+    "persona": "NV-CON-NPC01",
     "zone": "Novus/NV_Z01_Conatus"
   },
   "requires": [
@@ -90,7 +90,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "NV-CON-NPC08-C",
+      "persona": "NV-CON-NPC08",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
     },
@@ -101,8 +101,8 @@
     },
     {
       "type": "persona",
-      "persona": "NV-NEWV-NPC10",
-      "zone": "Novus/Interiors/NV_Z04_I01_GeneralQuarters",
+      "persona": "NV-Standin-GeneralBooth",
+      "zone": "Novus/Interiors/NV_Z01_BoothsLair",
       "loc": "ZoneLocName_1546265"
     },
     {
@@ -122,27 +122,27 @@
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC02-B",
+      "persona": "NV-CON-NPC02",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
     }
   ],
   "personas": {
-    "NV-CON-NPC01-B": {
+    "NV-CON-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
-      "template_id": 1575004
+      "template_id": 1546271
     },
-    "NV-CON-NPC02-B": {
+    "NV-CON-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
-      "template_id": 1575007
+      "template_id": 1546270
     },
-    "NV-CON-NPC08-C": {
+    "NV-CON-NPC08": {
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
-      "template_id": 1575025
+      "template_id": 1563033
     },
-    "NV-NEWV-NPC10": {
+    "NV-Standin-GeneralBooth": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_General_A_Mob.dds",
-      "template_id": 1546258
+      "template_id": 1546263
     }
   },
   "source": {

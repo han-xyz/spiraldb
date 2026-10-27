@@ -43,6 +43,16 @@
       "loc": "ZoneLocName_9005"
     },
     {
+      "type": "usage",
+      "items": [
+        "GH_Egg_Clutch.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizItems_00001866",
+      "loc": "ZoneLocName_9005"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "WizardCity/Interiors/WC_SchoolMyth",
@@ -76,7 +86,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Poacher's Home, Stone Town",
       "blocking": false
     },
@@ -86,9 +96,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Egg Clutch",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Egg Clutch: ObjectData/GH",
+      "blocking": false
     }
   ]
 }

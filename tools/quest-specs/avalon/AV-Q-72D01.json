@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z04_TheWild"
+    },
+    {
       "type": "persona",
       "persona": "AV-WILD-NPC04",
       "zone": "Avalon/AV_Z04_TheWild",
@@ -78,8 +82,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Fountain of Flame",
+      "field": "goal.waypoint (current zone)",
+      "value": "Fountain of Flame",
       "blocking": false
     },
     {

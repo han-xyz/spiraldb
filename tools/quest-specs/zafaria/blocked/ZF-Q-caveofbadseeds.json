@@ -1,8 +1,8 @@
 {
   "id": "ZF-Q-caveofbadseeds",
   "giver": {
-    "persona": "ZF-SAVA-NPC20",
-    "zone": "Zafaria/ZF_Z03_Savannah"
+    "persona": "ZF-SAVA-NPC20-B",
+    "zone": "Zafaria/Interiors/ZF_Z04_CavePainting"
   },
   "requires": [
     "PL-Q-14DBED"
@@ -31,7 +31,7 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Zafaria/ZF_Z03_Savannah",
+      "zone": "Zafaria/Interiors/ZF_Z04_CavePainting",
       "loc": "ZoneLocName_465259"
     },
     {
@@ -46,9 +46,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Jackalope_Professor_A_NPC.dds",
       "template_id": 1521310
     },
-    "ZF-SAVA-NPC20": {
+    "ZF-SAVA-NPC20-B": {
       "portrait": "GUI/NpcPortraits/Portraits_Dog_Excavator_A_NPC.dds",
-      "template_id": 1367023
+      "template_id": 1367026
     }
   },
   "source": {

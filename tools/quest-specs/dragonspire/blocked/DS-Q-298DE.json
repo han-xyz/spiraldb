@@ -1,0 +1,125 @@
+{
+  "id": "DS-Q-298DE",
+  "lang": "298DE",
+  "giver": {
+    "persona": "DS-ACAD-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Hub_Academy"
+  },
+  "requires": [
+    "DS-MAIN-C01-005"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 5585,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Hub_Academy"
+    }
+  ],
+  "personas": {
+    "DS-ACAD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ashley.dds",
+      "template_id": 126321
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wizard_Tours",
+    "from": "archive",
+    "timestamp": "20260702190031"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Haunted Cave  -- Lord Nightshade",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Royal Hall -- Biti Nirini",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Chelsea Court -- Shakes O'Leary",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Ancient Burial Grounds -- Crazed Forest Spirit",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD-C01-001"
+}

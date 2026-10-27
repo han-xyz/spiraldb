@@ -2,7 +2,7 @@
   "id": "MR-Q-15073F",
   "lang": "15073F",
   "giver": {
-    "persona": "MR-CARA-NPC07-B",
+    "persona": "MR-CARA-NPC07",
     "zone": "Mirage/MR_Z00_Hub"
   },
   "requires": [
@@ -65,9 +65,9 @@
     }
   ],
   "personas": {
-    "MR-CARA-NPC07-B": {
+    "MR-CARA-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Stout_D_NPC.dds",
-      "template_id": 1381119
+      "template_id": 1381110
     }
   },
   "source": {

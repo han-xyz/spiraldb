@@ -3,7 +3,7 @@
   "lang": "170136",
   "title": "QuestTitle_00001831",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-02",
+    "persona": "LM-Mandoria-NPC01",
     "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
@@ -111,6 +111,10 @@
       "loc": "ZoneLocName_1507599"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z05_Mandoria"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Mander_Warrior_B_03.AdjRef"
@@ -122,9 +126,9 @@
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1507626
+    "LM-Mandoria-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_A_NPC.dds",
+      "template_id": 1507624
     },
     "LM-Mandoria-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Boar_Boarbarian_Chief_A_NPC.dds",
@@ -149,9 +153,9 @@
       "blocking": true
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Investigate Noises",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

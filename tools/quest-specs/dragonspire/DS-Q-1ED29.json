@@ -1,0 +1,95 @@
+{
+  "id": "DS-Q-1ED29",
+  "lang": "1ED29",
+  "giver": {
+    "persona": "DS-NEC1-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 375,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC04",
+      "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Hatchery_T4"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC04",
+      "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Hatchery_T4"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_3_Ghost_NPC.dds",
+      "template_id": 126312
+    },
+    "DS-NEC1-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_1_Ghost_NPC.dds",
+      "template_id": 126315
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Enter_the_Dragon_Rider",
+    "from": "archive",
+    "timestamp": "20240120175827"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Et Tu, Statue? replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 40,
+  "captured": "DS-NEC1-C01-003"
+}

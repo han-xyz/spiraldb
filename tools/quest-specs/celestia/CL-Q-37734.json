@@ -137,6 +137,10 @@
       "loc": "ZoneLocName_227197"
     },
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z01_Survey_Camp"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "CL-CrabSoldier-Brown--Boss-R9-2.AdjRef"
@@ -175,7 +179,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Optio Agenor's Camp",
       "blocking": false
     },

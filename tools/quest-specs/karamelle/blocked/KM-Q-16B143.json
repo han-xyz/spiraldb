@@ -50,6 +50,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z10_Gobblerton"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "Adv_KM_Trash_Booger_A_01.AdjRef",
@@ -133,9 +137,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Make Your Way Through",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

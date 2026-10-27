@@ -1,0 +1,88 @@
+{
+  "id": "DS-Q-C932A",
+  "lang": "C932A",
+  "giver": {
+    "persona": "DS-LIB-NPC02",
+    "zone": "DragonSpire/DS_A1_Knowledge/Interiors/DS_Library_Interior"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 7300,
+    "gold": 290
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Loremaster.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001575",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Hub_Library"
+    }
+  ],
+  "personas": {
+    "DS-LIB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Witch_Loremaster_NPC.dds",
+      "template_id": 824107
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Lore_Master",
+    "from": "archive",
+    "timestamp": "20260728062232"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Loremaster's Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 40,
+  "captured": "DS-LORE-C01-001"
+}

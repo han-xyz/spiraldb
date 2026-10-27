@@ -1,0 +1,81 @@
+{
+  "id": "DS-Q-23BC4",
+  "lang": "23BC4",
+  "giver": {
+    "persona": "DS-HUB-NPC01",
+    "zone": "DragonSpire/DS_Hub_Cathedral"
+  },
+  "requires": [
+    "DS-MAIN-C01-004"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 5935,
+    "gold": 128
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-ACAD-NPC01",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Hub_Academy"
+    }
+  ],
+  "personas": {
+    "DS-ACAD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ashley.dds",
+      "template_id": 126321
+    },
+    "DS-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 126291
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Win_or_Go_Home",
+    "from": "archive",
+    "timestamp": "20260701223235"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Dragonspyre Academy",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-MAIN-C01-005"
+}

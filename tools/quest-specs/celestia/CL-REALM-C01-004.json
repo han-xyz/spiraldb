@@ -73,6 +73,10 @@
       "loc": "ZoneLocName_227109"
     },
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z02_Crab_Realm"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Z02_Crab_Realm",
@@ -97,7 +101,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Coral Castle",
       "blocking": false
     },

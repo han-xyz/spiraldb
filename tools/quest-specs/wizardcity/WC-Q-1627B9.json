@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Triton"
   },
   "requires": [
-    "WC-Q-1627B7"
+    "WC-TRITON-MAIN-007"
   ],
   "mainline": true,
   "level": 5,
@@ -88,12 +88,12 @@
     },
     {
       "type": "persona",
-      "persona": "WC-TRITON-NPC02-B",
+      "persona": "WC-TRITON-NPC02",
       "zone": "WizardCity/WC_Streets/WC_Triton",
       "loc": "ZoneLocName_91180",
       "completion": [
         {
-          "speaker": "WC-TRITON-NPC02-B",
+          "speaker": "WC-TRITON-NPC02",
           "line": "00000003"
         }
       ]
@@ -108,9 +108,9 @@
       "portrait": "GUI/NpcPortraits/Art_Portrait_Girl_Storm02.dds",
       "template_id": 38136
     },
-    "WC-TRITON-NPC02-B": {
+    "WC-TRITON-NPC02": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Storm02.dds",
-      "template_id": 1451951
+      "template_id": 1451938
     }
   },
   "source": {
@@ -124,5 +124,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-TRITON-MAIN-008"
 }

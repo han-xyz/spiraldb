@@ -1,0 +1,78 @@
+{
+  "id": "DS-Q-1EDA7",
+  "lang": "1EDA7",
+  "giver": {
+    "persona": "DS-ACAD2-NPC01",
+    "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+  },
+  "requires": [
+    "DS-ACAD2-C01-007"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2230,
+    "gold": 128
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Draconian-Warrior-Purple-R8.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000470",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre",
+      "descriptor": "WizQst1EDA7_00000000"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/DS_A3Z2_Amphitheatre"
+    }
+  ],
+  "personas": {
+    "DS-ACAD2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_soldier_3_Ghost_NPC.dds",
+      "template_id": 126326
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Repo_Mage",
+    "from": "archive",
+    "timestamp": "20240121144906"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD2-C01-008"
+}

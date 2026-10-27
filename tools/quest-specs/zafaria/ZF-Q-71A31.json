@@ -45,44 +45,79 @@
   },
   "goals": [
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "Monkey.AdjRef"
+      ],
+      "count": 1,
       "zone": "Zafaria/ZF_Z02_Baobab_Market",
-      "loc": "ZoneLocName_466160"
+      "descriptor": "WizQst71A31_00000006",
+      "loc": "ZoneLocName_465258"
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "Monkey.AdjRef"
+      ],
+      "count": 1,
       "zone": "Zafaria/ZF_Z03_Savannah",
-      "loc": "ZoneLocName_465259",
+      "descriptor": "WizQst71A31_00000006",
+      "loc": "ZoneLocName_465258",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "Monkey.AdjRef"
+      ],
+      "count": 1,
       "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
-      "loc": "ZoneLocName_466150",
+      "descriptor": "WizQst71A31_00000006",
+      "loc": "ZoneLocName_465258",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "Monkey.AdjRef"
+      ],
+      "count": 1,
       "zone": "Zafaria/ZF_Z06_Zamunda",
-      "loc": "ZoneLocName_465260",
+      "descriptor": "WizQst71A31_00000006",
+      "loc": "ZoneLocName_465258",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "Monkey.AdjRef"
+      ],
+      "count": 1,
       "zone": "Zafaria/ZF_Z07_Stone_Town",
-      "loc": "ZoneLocName_465392",
+      "descriptor": "WizQst71A31_00000006",
+      "loc": "ZoneLocName_465258",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "Monkey.AdjRef"
+      ],
+      "count": 1,
       "zone": "Zafaria/ZF_Z08_Waterfront",
-      "loc": "ZoneLocName_465268",
+      "descriptor": "WizQst71A31_00000006",
+      "loc": "ZoneLocName_465258",
       "with_previous": true
     },
     {
-      "type": "waypoint",
+      "type": "usage",
+      "items": [
+        "Monkey.AdjRef"
+      ],
+      "count": 1,
       "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
-      "loc": "ZoneLocName_465261",
+      "descriptor": "WizQst71A31_00000006",
+      "loc": "ZoneLocName_465258",
       "with_previous": true
     },
     {
@@ -104,6 +139,41 @@
     "timestamp": "20241225012743"
   },
   "needs_review": [
+    {
+      "field": "goal.items (other folder)",
+      "value": "Monkey: ObjectData/Pets",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Monkey: ObjectData/Pets",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Monkey: ObjectData/Pets",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Monkey: ObjectData/Pets",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Monkey: ObjectData/Pets",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Monkey: ObjectData/Pets",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Monkey: ObjectData/Pets",
+      "blocking": false
+    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

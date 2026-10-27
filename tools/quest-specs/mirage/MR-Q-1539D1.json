@@ -180,13 +180,13 @@
     },
     {
       "type": "persona",
-      "persona": "MR-ISTA-NPC09-B",
+      "persona": "MR-ISTA-NPC09",
       "zone": "Mirage/MR_Z05_Istanboa",
       "loc": "ZoneLocName_1378142"
     },
     {
       "type": "persona",
-      "persona": "MR-ISTA-NPC09-B",
+      "persona": "MR-ISTA-NPC09",
       "zone": "Mirage/MR_Z05_Istanboa",
       "loc": "ZoneLocName_1378142"
     },
@@ -203,7 +203,7 @@
     },
     {
       "type": "persona",
-      "persona": "MR-ISTA-NPC09-B",
+      "persona": "MR-ISTA-NPC09",
       "zone": "Mirage/MR_Z05_Istanboa",
       "loc": "ZoneLocName_1378142"
     },
@@ -227,9 +227,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Ophidian_Hunter_A_NPC.dds",
       "template_id": 1391058
     },
-    "MR-ISTA-NPC09-B": {
+    "MR-ISTA-NPC09": {
       "portrait": "GUI/NpcPortraits/Portrait_Ophidian_Brute_A_NPC.dds",
-      "template_id": 1391061
+      "template_id": 1391060
     }
   },
   "source": {

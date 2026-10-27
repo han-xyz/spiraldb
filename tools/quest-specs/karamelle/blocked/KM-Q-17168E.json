@@ -2,7 +2,7 @@
   "id": "KM-Q-17168E",
   "lang": "17168E",
   "giver": {
-    "persona": "KM-FARM-NPC01-B",
+    "persona": "KM-FARM-NPC01",
     "zone": "Karamelle/KM_Z09_CandyCornFarm"
   },
   "requires": [
@@ -85,6 +85,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm"
+    },
+    {
       "type": "usage",
       "items": [
         "KM-GummyVat.AdjRef"
@@ -93,6 +97,10 @@
       "zone": "Karamelle/KM_Z09_CandyCornFarm",
       "descriptor": "Items_00022224",
       "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm"
     },
     {
       "type": "bounty",
@@ -113,9 +121,9 @@
     }
   ],
   "personas": {
-    "KM-FARM-NPC01-B": {
+    "KM-FARM-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513095
+      "template_id": 1513070
     }
   },
   "source": {
@@ -125,12 +133,12 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Factory Floor",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Barn Division",
       "blocking": false
     },

@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Hub"
   },
   "requires": [
-    "WC-Q-1627C6"
+    "WC-COMMON-SIDE-006"
   ],
   "mainline": false,
   "level": 5,
@@ -127,5 +127,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-COMMON-SIDE-007"
 }

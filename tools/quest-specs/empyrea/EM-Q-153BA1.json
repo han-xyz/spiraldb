@@ -61,6 +61,10 @@
       "loc": "ZoneLocName_1391567"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z03_OuterAthanor"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Elementals_BallIce_A_02.AdjRef"
@@ -79,6 +83,10 @@
       "zone": "Empyrea/EM_Z03_OuterAthanor",
       "descriptor": "WizQst153BA1_00000010",
       "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z03_OuterAthanor"
     },
     {
       "type": "persona",
@@ -114,13 +122,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Snow Fury Cave",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Exit",
+      "field": "goal.waypoint (current zone)",
+      "value": "Exit",
       "blocking": false
     },
     {

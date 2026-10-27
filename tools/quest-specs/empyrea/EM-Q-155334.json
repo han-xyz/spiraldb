@@ -2,7 +2,7 @@
   "id": "EM-Q-155334",
   "lang": "155334",
   "giver": {
-    "persona": "EM-JUNG-NPC04-B",
+    "persona": "EM-JUNG-NPC04",
     "zone": "Empyrea/EM_Z01_Jungle"
   },
   "requires": [
@@ -72,9 +72,9 @@
     }
   ],
   "personas": {
-    "EM-JUNG-NPC04-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Seraph_Aerial_A_NPC.dds",
-      "template_id": 1397564
+    "EM-JUNG-NPC04": {
+      "portrait": "",
+      "template_id": 1397555
     }
   },
   "source": {

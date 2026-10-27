@@ -2,7 +2,7 @@
   "id": "WL-Q-188981",
   "lang": "188981",
   "giver": {
-    "persona": "WL-HOPE-NPC06-B",
+    "persona": "WL-HOPE-NPC06",
     "zone": "Wallaru/WL_Z01_Hub"
   },
   "requires": [
@@ -105,6 +105,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Dingo_BaseF_B_01.AdjRef",
@@ -120,7 +128,7 @@
     },
     {
       "type": "waypoint",
-      "zone": "Wallaru/Interiors/WL_Z01_I07_GroceryStore"
+      "zone": "Wallaru/WL_Z01_Hub"
     },
     {
       "type": "bounty",
@@ -135,6 +143,10 @@
       "target": "WizardMobs_00004388",
       "zone": "Wallaru/WL_Z01_Hub",
       "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
     },
     {
       "type": "bounty",
@@ -164,15 +176,15 @@
     }
   ],
   "personas": {
-    "WL-HOPE-NPC06-B": {
+    "WL-HOPE-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
-      "template_id": 1608076
+      "template_id": 1608064
     }
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Desperate_Times,_Desperate_Dingoes",
     "from": "archive",
-    "timestamp": "20231129090856"
+    "timestamp": "20240308083835"
   },
   "needs_review": [
     {
@@ -181,18 +193,23 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Local Shops",
+      "field": "goal.waypoint (current zone)",
+      "value": "Local Shops",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Stakehouse",
+      "field": "goal.waypoint (current zone)",
+      "value": "Outback Stake House",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Boomerang Shop",
+      "field": "goal.waypoint (current zone)",
+      "value": "Herb's Food-N-Stuff",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Bing, Bang, Boomerang",
       "blocking": false
     },
     {

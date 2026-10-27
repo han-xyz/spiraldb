@@ -2,7 +2,7 @@
   "id": "LM-Q-173223",
   "lang": "173223",
   "giver": {
-    "persona": "LM-NIGHT-NPC05-H",
+    "persona": "LM-NIGHT-NPC05",
     "zone": "Lemuria/LM_Z01_WildLands"
   },
   "requires": [
@@ -95,9 +95,9 @@
     }
   ],
   "personas": {
-    "LM-NIGHT-NPC05-H": {
+    "LM-NIGHT-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
-      "template_id": 1520227
+      "template_id": 1520136
     },
     "LM-NIGHT-NPC06": {
       "portrait": "GUI/NpcPortraits/Lemur_Wild_A_NPC.dds",

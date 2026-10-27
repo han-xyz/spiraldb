@@ -1,0 +1,68 @@
+{
+  "id": "Wysteria-Q-71CCB",
+  "lang": "71CCB",
+  "giver": {
+    "persona": "PA-HUB-NPC11",
+    "zone": "Wysteria/PA_Hub"
+  },
+  "requires": [
+    "Wysteria-Q-71CCA"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 155,
+    "gold": 10
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC13",
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "loc": "ZoneLocName_465168"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitGuard_01_NPC.dds",
+      "template_id": 465143
+    },
+    "PA-HUB-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Groundskeeper_Verne.dds",
+      "template_id": 465145
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hey_Verne!",
+    "from": "archive",
+    "timestamp": "20231124102343"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

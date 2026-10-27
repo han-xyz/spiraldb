@@ -2,8 +2,8 @@
   "id": "EM-Q-156159",
   "lang": "156159",
   "giver": {
-    "persona": "EM-NIMB-NPC16",
-    "zone": "Empyrea/Interiors/EM_Z07_ControlRoom"
+    "persona": "EM-SEP-001",
+    "zone": "Empyrea/EM_Z05_Sepidious"
   },
   "requires": [
     "EM-Q-156158"
@@ -117,6 +117,10 @@
       "zone": "Empyrea/Interiors/EM_Z05_Heart"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z05_Heart"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Cat_CabalistF_A_Boss_01.AdjRef"
@@ -132,33 +136,37 @@
         "EM-HeartConsole.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Empyrea/EM_Z05_Sepidious",
       "descriptor": "WizQst156159_00000028"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z05_Sepidious"
+    },
+    {
       "type": "persona",
-      "persona": "EM-AERI-NPC17",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "persona": "EM-SEP-002",
+      "zone": "Empyrea/EM_Z05_Sepidious",
       "completion": [
         {
-          "speaker": "EM-AERI-NPC17",
+          "speaker": "EM-SEP-002",
           "line": "00000018"
         },
         {
-          "speaker": "EM-AERI-NPC17",
+          "speaker": "EM-SEP-002",
           "line": "00000032"
         }
       ]
     }
   ],
   "personas": {
-    "EM-AERI-NPC17": {
-      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
-      "template_id": 1397735
+    "EM-SEP-001": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pirate_Cabalist_A_NPC.dds",
+      "template_id": 1401196
     },
-    "EM-NIMB-NPC16": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mutant_Dynt_A_NPC.dds",
-      "template_id": 1413353
+    "EM-SEP-002": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "template_id": 1401197
     }
   },
   "source": {
@@ -168,12 +176,12 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Heart Sector",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Dynt's Place, The Stomach",
       "blocking": false
     },

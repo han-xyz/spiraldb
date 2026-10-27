@@ -1,0 +1,140 @@
+{
+  "id": "KR-Q-12D22D",
+  "lang": "12D22D",
+  "giver": {
+    "persona": "KR-Hive-NPC12",
+    "zone": "Khrysalis/KR_Z11_TheHive"
+  },
+  "requires": [
+    "KR-Q-12ECFF"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 92980,
+    "gold": 900
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z11_TheHive"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Mantis_HunterF_Tribute.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001858",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KR_Shdweave_Lord_G.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001801",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "loc": "ZoneLocName_1233346"
+    }
+  ],
+  "personas": {
+    "KR-Hive-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mantis_HunterF_H_NPC.dds",
+      "template_id": 1283189
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cold_Feet",
+    "from": "archive",
+    "timestamp": "20231126064048"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12D22D matched by the words it shares with the goals; its lines name Zharellia the RunningOne, Undrek BlightClaw",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "The Weft",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Locate Undrek BlightClaw",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Weft replaced by min_level",
+      "blocking": false
+    }
+  ]
+}

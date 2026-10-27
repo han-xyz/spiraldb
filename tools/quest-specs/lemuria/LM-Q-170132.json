@@ -3,8 +3,8 @@
   "lang": "170132",
   "title": "QuestTitle_00001833",
   "giver": {
-    "persona": "LM-HEAP-NPC01",
-    "zone": "Lemuria/LM_Z07_Heap"
+    "persona": "LM-Mandoria-NPC02",
+    "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
     "LM-Q-170119"
@@ -47,7 +47,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003920",
-      "zone": "Lemuria/LM_Z07_Heap",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -57,14 +57,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003908",
-      "zone": "Lemuria/LM_Z07_Heap",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     }
   ],
   "personas": {
-    "LM-HEAP-NPC01": {
+    "LM-Mandoria-NPC02": {
       "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
-      "template_id": 1524741
+      "template_id": 1507625
     },
     "LM-Mandoria-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Moth_Sorcerer_A_NPC.dds",

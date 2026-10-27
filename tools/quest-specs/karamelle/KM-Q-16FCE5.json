@@ -6,7 +6,7 @@
     "zone": "Karamelle/KM_Z10_Gobblerton"
   },
   "requires": [
-    "KM-Q-16B12F"
+    "KM-Q-16B148"
   ],
   "mainline": true,
   "level": 122,
@@ -211,11 +211,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Mmmmm, Knowledge replaced by KM-Q-16B12F",
       "blocking": false
     }
   ]

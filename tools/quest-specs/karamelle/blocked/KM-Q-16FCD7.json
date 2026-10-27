@@ -67,6 +67,26 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "NV-STONE-NPC02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00001072",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-STONE-NPC02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00001072",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Witches_Fairy_A_01.AdjRef"
@@ -105,9 +125,9 @@
       "blocking": true
     },
     {
-      "field": "goal.persona",
-      "value": "Follow Mysterious Voice",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Mysterious Voice: ObjectData/NV",
+      "blocking": false
     },
     {
       "field": "goal.mobs",
@@ -115,9 +135,9 @@
       "blocking": true
     },
     {
-      "field": "goal.persona",
-      "value": "Follow Mysterious Voice",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Mysterious Voice: ObjectData/NV",
+      "blocking": false
     },
     {
       "field": "dialogs",

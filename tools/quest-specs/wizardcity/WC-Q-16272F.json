@@ -1,0 +1,180 @@
+{
+  "id": "WC-Q-16272F",
+  "lang": "16272F",
+  "giver": {
+    "persona": "WC-CATA-NPC011",
+    "zone": "WizardCity/WC_Streets/WC_Catacombs_B"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 1840
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "SP_AmberOrbs.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "descriptor": "WizardQuestGoals_00000636",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Druid_Warrior_B_01.AdjRef",
+        "CC_Druid_Warrior_B_02.AdjRef",
+        "CC_Druid_Warrior_B_03.AdjRef",
+        "CC_Druid_Warrior_B_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003426",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Lamprey_Boss_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003452",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_KT_SE_Poly_Devourer_Base_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003423",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-CATA-NPC01",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    }
+  ],
+  "personas": {
+    "WC-CATA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Hargrove_A_NPC.dds",
+      "template_id": 1487008
+    },
+    "WC-CATA-NPC011": {
+      "portrait": "GUI/NpcPortraits/Druid_GhostF_A_NPC.dds",
+      "template_id": 1451817
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tempus_Fugitives",
+    "from": "archive",
+    "timestamp": "20240409061212"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Be Kind, Re-Bind",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Renegade Druid: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Satharilith: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "The Devourer: ObjectData/KT",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Return to Prison Chamber",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Be Kind, Re-Bind replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 5
+}

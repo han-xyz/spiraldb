@@ -81,6 +81,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z11_VeloCity"
+    },
+    {
       "type": "persona",
       "persona": "EM_StandIn_Voltergeist",
       "zone": "Empyrea/EM_Z09_NWAeroplains",
@@ -134,7 +138,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Northeast Aero Plains",
       "blocking": false
     },

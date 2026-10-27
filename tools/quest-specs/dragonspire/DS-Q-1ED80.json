@@ -1,0 +1,74 @@
+{
+  "id": "DS-Q-1ED80",
+  "lang": "1ED80",
+  "giver": {
+    "persona": "DS-NEC1-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+  },
+  "requires": [
+    "DS-ACAD-C01-004"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 450,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC05",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "completion": [
+        {
+          "speaker": "DS-NEC1-NPC05",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_3_Ghost_NPC.dds",
+      "template_id": 126312
+    },
+    "DS-NEC1-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_drake_mother_Ghost_NPC.dds",
+      "template_id": 126316
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mother_of_Fire",
+    "from": "archive",
+    "timestamp": "20240121143651"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC1-C04-001"
+}

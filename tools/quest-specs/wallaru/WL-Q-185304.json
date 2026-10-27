@@ -100,6 +100,10 @@
       "loc": "ZoneLocName_1560535"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z04_TheDreaming"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "Adv_WL_Toad_EvilClaw_B_01.AdjRef",
@@ -133,8 +137,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

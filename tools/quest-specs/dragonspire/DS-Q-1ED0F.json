@@ -1,0 +1,66 @@
+{
+  "id": "DS-Q-1ED0F",
+  "lang": "1ED0F",
+  "giver": {
+    "persona": "DS-LIB2-NPC03",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+  },
+  "requires": [
+    "DS-LIB2-C03-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2065,
+    "gold": 206
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-LIB2-NPC02",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza",
+      "completion": [
+        {
+          "speaker": "DS-LIB2-NPC02",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-LIB2-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_1_Ghost_NPC.dds",
+      "template_id": 126298
+    },
+    "DS-LIB2-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_ponytail_2_Ghost_NPC.dds",
+      "template_id": 126299
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Blood_From_a_Stone",
+    "from": "archive",
+    "timestamp": "20240409061200"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB2-C03-002"
+}

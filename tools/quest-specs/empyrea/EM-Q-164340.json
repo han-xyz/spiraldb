@@ -152,8 +152,8 @@
     },
     {
       "type": "persona",
-      "persona": "EM-CHAOS-NPC05-B",
-      "zone": "Empyrea/EM_Z14_ChaosJungle"
+      "persona": "EM-REV-NPC02",
+      "zone": "Empyrea/EM_Z15_Nexus"
     },
     {
       "type": "bounty",
@@ -162,14 +162,10 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003023",
-      "zone": ""
+      "zone": "Empyrea/EM_Z15_Nexus"
     }
   ],
   "personas": {
-    "EM-CHAOS-NPC05-B": {
-      "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
-      "template_id": 1451121
-    },
     "EM-HUSK-NPC01-A": {
       "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",
       "template_id": 1448067
@@ -177,6 +173,10 @@
     "EM-REV-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_WispCustodian_A_NPC.dds",
       "template_id": 1459003
+    },
+    "EM-REV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Mellori_B_Ghost_NPC.dds",
+      "template_id": 1459007
     }
   },
   "source": {

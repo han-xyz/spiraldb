@@ -3,8 +3,8 @@
   "lang": "155170",
   "auto_start": true,
   "giver": {
-    "persona": "MR-AGGR-NPC04-B",
-    "zone": "Mirage/Interiors/MR_Z02_SultOffice"
+    "persona": "MR-AGGR-NPC04",
+    "zone": "Mirage/Interiors/MR_Z02_FourPoints"
   },
   "requires": [
     "MR-Q-15516D"
@@ -112,14 +112,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002494",
-      "zone": "",
+      "zone": "Mirage/MR_Z02_Aggrobah",
       "loc": "ZoneLocName_1378095"
     }
   ],
   "personas": {
-    "MR-AGGR-NPC04-B": {
+    "MR-AGGR-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Human_SultanaF_A_NPC.dds",
-      "template_id": 1381260
+      "template_id": 1381236
     }
   },
   "source": {

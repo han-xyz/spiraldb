@@ -2,7 +2,7 @@
   "id": "LM-Q-170124",
   "lang": "170124",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-02",
+    "persona": "LM-Mandoria-NPC01",
     "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
@@ -143,7 +143,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003905",
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -159,7 +159,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003917",
-      "zone": "",
+      "zone": "Lemuria/LM_Z05_Mandoria",
       "loc": "ZoneLocName_1507599"
     },
     {
@@ -182,9 +182,9 @@
     }
   ],
   "personas": {
-    "LM-Mandoria-NPC01-02": {
-      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1507626
+    "LM-Mandoria-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_A_NPC.dds",
+      "template_id": 1507624
     },
     "LM-Mandoria-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Boar_Boarbarian_Chief_A_NPC.dds",

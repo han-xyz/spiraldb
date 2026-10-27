@@ -147,6 +147,10 @@
       "loc": "ZoneLocName_1524839"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z07_Heap"
+    },
+    {
       "type": "persona",
       "persona": "LM-HEAP-NPC01",
       "zone": "Lemuria/LM_Z07_Heap",
@@ -180,8 +184,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Golden Lion's Office",
+      "field": "goal.waypoint (current zone)",
+      "value": "Golden Lion's Office",
       "blocking": false
     },
     {

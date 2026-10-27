@@ -1,0 +1,317 @@
+{
+  "id": "Wysteria-Q-71924",
+  "lang": "71924",
+  "giver": {
+    "persona": "PA-HUB-NPC03",
+    "zone": "Wysteria/Interiors/PA_Headmistress"
+  },
+  "requires": [
+    "DS-ACAD2-C02-004"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 920,
+    "gold": 80
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC05",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC09",
+      "zone": "Wysteria/Interiors/PA_Classroom_Frost",
+      "loc": "ZoneLocName_465129",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC06",
+      "zone": "Wysteria/Interiors/PA_Classroom_Ember",
+      "loc": "ZoneLocName_465129",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC08",
+      "zone": "Wysteria/Interiors/PA_Classroom_Chaos",
+      "loc": "ZoneLocName_465129",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC04",
+      "zone": "Wysteria/Interiors/PA_Classroom_Water",
+      "loc": "ZoneLocName_465129",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC10",
+      "zone": "Wysteria/Interiors/PA_Classroom_Equil",
+      "loc": "ZoneLocName_465129",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC07",
+      "zone": "Wysteria/Interiors/PA_Classroom_Spirit",
+      "loc": "ZoneLocName_465129",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/Interiors/PA_Headmistress",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Belladonna_Crisp.dds",
+      "template_id": 465135
+    },
+    "PA-HUB-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Thadeus_Price.dds",
+      "template_id": 465136
+    },
+    "PA-HUB-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Droors_NPC.dds",
+      "template_id": 465137
+    },
+    "PA-HUB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Ankhu.dds",
+      "template_id": 465138
+    },
+    "PA-HUB-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Edna_Fuligin_NPC.dds",
+      "template_id": 465139
+    },
+    "PA-HUB-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Heironimus_Bunch.dds",
+      "template_id": 465140
+    },
+    "PA-HUB-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Quentin_Burble .dds",
+      "template_id": 465141
+    },
+    "PA-HUB-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_VelmaPepper_NPC.dds",
+      "template_id": 465142
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Teacher_Teacher",
+    "from": "archive",
+    "timestamp": "20231124102334"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

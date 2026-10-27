@@ -80,7 +80,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003879",
-      "zone": "Lemuria/Interiors/LM_Z01_TempleofAnswers",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099"
     },
     {
@@ -94,7 +94,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003879",
-      "zone": "Lemuria/Interiors/LM_Z01_TempleofAnswers",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099"
     },
     {
@@ -105,7 +105,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003871",
-      "zone": "Lemuria/Interiors/LM_Z01_TempleofAnswers",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099"
     }
   ],

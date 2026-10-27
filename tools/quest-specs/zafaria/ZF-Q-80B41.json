@@ -50,16 +50,12 @@
     },
     {
       "type": "persona",
-      "persona": "ZF-HUB-NPC07",
-      "zone": "Zafaria/ZF_Z00_Hub",
-      "loc": "ZoneLocName_465257"
+      "persona": "ZF-STONE-NPC07",
+      "zone": "Zafaria/Interiors/ZF_Z07_I03_Zoo",
+      "loc": "ZoneLocName_465392"
     }
   ],
   "personas": {
-    "ZF-HUB-NPC07": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Student_Lail_Brighteyes_NPC.dds",
-      "template_id": 1546124
-    },
     "ZF-STONE-NPC05": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Hathi_Irontrunk_NPC.dds",
       "template_id": 527150
@@ -67,6 +63,10 @@
     "ZF-STONE-NPC06": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Rakstede_Steelhorn_NPC.dds",
       "template_id": 527151
+    },
+    "ZF-STONE-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Student_Lail_Brighteyes_NPC.dds",
+      "template_id": 527152
     }
   },
   "source": {

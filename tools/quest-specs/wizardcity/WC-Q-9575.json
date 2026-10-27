@@ -5,7 +5,9 @@
     "persona": "WC-ST03-NPC02",
     "zone": "WizardCity/WC_Streets/WC_Cyclops"
   },
-  "requires": [],
+  "requires": [
+    "WC-ST03-C02-002"
+  ],
   "mainline": false,
   "level": 5,
   "reward": {
@@ -80,12 +82,7 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "How Disarming replaced by min_level",
-      "blocking": false
     }
   ],
-  "min_level": 5
+  "captured": "WC-ST03-C02-003"
 }

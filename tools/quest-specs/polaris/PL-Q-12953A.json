@@ -2,7 +2,7 @@
   "id": "PL-Q-12953A",
   "lang": "12953A",
   "giver": {
-    "persona": "PL-WAL-NPC11-B",
+    "persona": "PL-WAL-NPC11",
     "zone": "Polaris/Interiors/Z01_I02_LaNettoyage"
   },
   "requires": [
@@ -98,9 +98,13 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "PL-MINE-NPC02-B",
-      "zone": "Polaris/PL_Z05_FrigidMine",
-      "loc": "ZoneLocName_1217946"
+      "persona": "PL-WAL-NPC09",
+      "zone": "Polaris/Interiors/Z01_I01_PirateShip01",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Polaris/Interiors/Z01_I01_PirateShip01"
     },
     {
       "type": "bounty",
@@ -124,19 +128,19 @@
     },
     {
       "type": "persona",
-      "persona": "PL-MINE-NPC02-B",
-      "zone": "Polaris/PL_Z05_FrigidMine",
-      "loc": "ZoneLocName_1217946"
+      "persona": "PL-WAL-NPC09",
+      "zone": "Polaris/Interiors/Z01_I01_PirateShip01",
+      "loc": "ZoneLocName_1217799"
     }
   ],
   "personas": {
-    "PL-MINE-NPC02-B": {
+    "PL-WAL-NPC09": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_A_NPC.dds",
-      "template_id": 1346307
+      "template_id": 1340496
     },
-    "PL-WAL-NPC11-B": {
+    "PL-WAL-NPC11": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_Rebel_A_NPC.dds",
-      "template_id": 1346192
+      "template_id": 1340498
     }
   },
   "source": {
@@ -146,7 +150,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Flag Tower",
       "blocking": false
     },

@@ -58,7 +58,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "WL-HOPE-NPC24-B",
+      "persona": "WL-HOPE-NPC24",
       "zone": "Wallaru/WL_Z01_Hub",
       "loc": "ZoneLocName_1560381"
     },
@@ -78,7 +78,7 @@
     },
     {
       "type": "persona",
-      "persona": "WL-HOPE-NPC24-B",
+      "persona": "WL-HOPE-NPC24",
       "zone": "Wallaru/WL_Z01_Hub",
       "loc": "ZoneLocName_1560381"
     }
@@ -88,9 +88,9 @@
       "portrait": "GUI/NpcPortraits/Koala_CitizenF_D_NPC.dds",
       "template_id": 1608127
     },
-    "WL-HOPE-NPC24-B": {
+    "WL-HOPE-NPC24": {
       "portrait": "GUI/NpcPortraits/Portrait_Dingo_BaseF_A_NPC.dds",
-      "template_id": 1608369
+      "template_id": 1608141
     }
   },
   "source": {

@@ -79,6 +79,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z06_CloudburstIsland"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Shdweave-Warrior-D.AdjRef"
@@ -133,7 +137,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Clearing",
       "blocking": false
     },

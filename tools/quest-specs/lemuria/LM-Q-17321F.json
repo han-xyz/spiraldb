@@ -2,7 +2,7 @@
   "id": "LM-Q-17321F",
   "lang": "17321F",
   "giver": {
-    "persona": "LM-NIGHT-NPC05-B",
+    "persona": "LM-NIGHT-NPC05",
     "zone": "Lemuria/LM_Z03_NightForest"
   },
   "requires": [
@@ -134,6 +134,10 @@
       "loc": "ZoneLocName_1520100"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z03_NightForest"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Fungus_Man_C_01.AdjRef",
@@ -149,6 +153,10 @@
       "persona": "giver",
       "zone": "Lemuria/LM_Z03_NightForest",
       "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z03_NightForest"
     },
     {
       "type": "usage",
@@ -197,9 +205,9 @@
       "portrait": "GUI/NpcPortraits/Lemur_Resistance_E_NPC.dds",
       "template_id": 1520132
     },
-    "LM-NIGHT-NPC05-B": {
+    "LM-NIGHT-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
-      "template_id": 1520186
+      "template_id": 1520136
     }
   },
   "source": {
@@ -214,13 +222,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Mana Font Courtyard",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Night Forest Monitoring Station",
+      "field": "goal.waypoint (current zone)",
+      "value": "Night Forest Monitoring Station",
       "blocking": false
     },
     {

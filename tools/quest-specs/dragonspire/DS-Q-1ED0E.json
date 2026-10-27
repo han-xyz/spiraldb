@@ -1,0 +1,85 @@
+{
+  "id": "DS-Q-1ED0E",
+  "lang": "1ED0E",
+  "giver": {
+    "persona": "DS-LIB2-NPC03",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+  },
+  "requires": [
+    "DS-LIB2-C02-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 4645,
+    "gold": 103
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Draconian-Warrior-Purple-Boss-R7.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000469",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+    }
+  ],
+  "personas": {
+    "DS-LIB2-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_ponytail_2_Ghost_NPC.dds",
+      "template_id": 126299
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Battle_On",
+    "from": "archive",
+    "timestamp": "20260616194700"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB2-C03-001"
+}

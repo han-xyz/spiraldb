@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z00_Hub"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-DogKnight-DarkKnight-R11-01.AdjRef",
@@ -89,8 +93,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Dark Knight's Lair",
+      "field": "goal.waypoint (current zone)",
+      "value": "Dark Knight's Lair",
       "blocking": false
     },
     {

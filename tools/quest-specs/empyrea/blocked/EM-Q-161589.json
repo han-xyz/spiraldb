@@ -275,7 +275,7 @@
       "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Play Whirlyburly",
       "blocking": true
     },

@@ -6,7 +6,7 @@
     "zone": "Wallaru/WL_Z07_EucalyptusForest"
   },
   "requires": [
-    "WL-Q-1852EA"
+    "WL-Q-17CF02"
   ],
   "mainline": true,
   "level": 152,
@@ -268,11 +268,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Drop Bear Gorgeous replaced by WL-Q-1852EA",
       "blocking": false
     }
   ]

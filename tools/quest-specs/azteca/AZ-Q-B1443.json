@@ -82,6 +82,10 @@
       "loc": "ZoneLocName_643245"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z03_MangroveMarsh"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Parrot-Darkshaman-A.AdjRef"
@@ -114,8 +118,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Caquix Nine Shadows",
+      "field": "goal.waypoint (current zone)",
+      "value": "Caquix Nine Shadows",
       "blocking": false
     },
     {

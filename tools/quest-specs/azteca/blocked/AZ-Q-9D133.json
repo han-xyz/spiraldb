@@ -83,31 +83,6 @@
       "loc": "ZoneLocName_643250"
     },
     {
-      "type": "usage",
-      "items": [
-        "AZ-ZOCALO-Ambient_Guard.AdjRef",
-        "AZ-ZOCALO-Ambient_Guard_02.AdjRef",
-        "AZ-ZOCALO-Ambient_Guard_03.AdjRef",
-        "AZ-ZOCALO-Ambient_Guard_04.AdjRef",
-        "AZ-ZOCALO-Ambient_Merch.AdjRef",
-        "AZ-ZOCALO-Ambient_Merch02.AdjRef",
-        "AZ-ZOCALO-Ambient_Merch03.AdjRef",
-        "AZ-ZOCALO-Ambient_Merch04.AdjRef",
-        "AZ-ZOCALO-Ambient_Merch05.AdjRef",
-        "AZ-ZOCALO-Ambient_Merch06.AdjRef",
-        "AZ-ZOCALO-Ambient_Pray_01.AdjRef",
-        "AZ-ZOCALO-Ambient_Pray_02.AdjRef",
-        "AZ-ZOCALO-Ambient_Pray_03.AdjRef",
-        "AZ-ZOCALO-Ambient_Preach.AdjRef",
-        "AZ-ZOCALO-Ambient_SignGuy.AdjRef",
-        "AZ-ZOCALO-Ambient_Young.AdjRef",
-        "AZ-ZOCALO-WEAVE-NPC01.AdjRef"
-      ],
-      "count": 3,
-      "zone": "Azteca/AZ_Z00_Zocalo",
-      "loc": "ZoneLocName_643250"
-    },
-    {
       "type": "persona",
       "persona": "giver",
       "zone": "Azteca/AZ_Z00_Zocalo",
@@ -139,13 +114,18 @@
     },
     {
       "field": "goal.items",
-      "value": "Three Points at the Maw leading to the Cenote",
+      "value": "Wards against the Hungry Dead",
       "blocking": true
     },
     {
-      "field": "goal.descriptor",
-      "value": "Three Points at the Maw leading to the Cenote",
-      "blocking": false
+      "field": "goal.items",
+      "value": "Wards against the Hungry Dead",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Wards against the Hungry Dead",
+      "blocking": true
     },
     {
       "field": "dialogs",

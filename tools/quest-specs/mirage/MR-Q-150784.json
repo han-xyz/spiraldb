@@ -2,8 +2,8 @@
   "id": "MR-Q-150784",
   "lang": "150784",
   "giver": {
-    "persona": "MR-CATE-NPC11-B",
-    "zone": "Mirage/MR_Z03_CaterwaulCanyon"
+    "persona": "MR-THIE-NPC01",
+    "zone": "Mirage/MR_Z07_ThievesDen"
   },
   "requires": [],
   "mainline": true,
@@ -77,7 +77,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002547",
-      "zone": "",
+      "zone": "Mirage/MR_Z07_ThievesDen",
       "loc": "ZoneLocName_1378165"
     },
     {
@@ -87,20 +87,20 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002457",
-      "zone": "",
+      "zone": "Mirage/MR_Z07_ThievesDen",
       "loc": "ZoneLocName_1378165"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Mirage/MR_Z03_CaterwaulCanyon",
-      "loc": "ZoneLocName_1381306"
+      "zone": "Mirage/MR_Z07_ThievesDen",
+      "loc": "ZoneLocName_1378165"
     }
   ],
   "personas": {
-    "MR-CATE-NPC11-B": {
+    "MR-THIE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_D_NPC.dds",
-      "template_id": 1397150
+      "template_id": 1391063
     }
   },
   "source": {

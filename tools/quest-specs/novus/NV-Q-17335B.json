@@ -1,0 +1,205 @@
+{
+  "id": "NV-Q-17335B",
+  "lang": "17335B",
+  "giver": {
+    "persona": "NV-ROSE-NPC01",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
+  "requires": [
+    "NV-Q-17335A"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 192990,
+    "gold": 570
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z05_LaVilleRose"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-ROSE-NPC06",
+      "zone": "Novus/Interiors/NV_Z05_BasseSteele",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z05_BasseSteele"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z05_BasseSteele"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z05_MathildasHouse"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Fish_CrazyLegs_B_01.AdjRef",
+        "NV_Fish_CrazyLegs_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004149",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-ROSE-NPC08",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    }
+  ],
+  "personas": {
+    "NV-ROSE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1520450
+    },
+    "NV-ROSE-NPC06": {
+      "portrait": "GUI/NpcPortraits/Dog_DogOfWarF_A_NPC.dds",
+      "template_id": 1520459
+    },
+    "NV-ROSE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_E_NPC.dds",
+      "template_id": 1520461
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pingouin_Some,_Lose_Some",
+    "from": "archive",
+    "timestamp": "20240323103625"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Follow Maxine to Nouveau Basstille",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter the Nouveau Basstille",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Investigate the Earthquake",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Residential Island",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

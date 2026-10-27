@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Hub"
   },
   "requires": [
-    "WC-Q-1731AB"
+    "WC-Q-2163D"
   ],
   "mainline": false,
   "level": 15,
@@ -162,9 +162,10 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "The Razor's Edge replaced by WC-Q-1731AB",
+      "value": "The Razor's Edge replaced by WC-Q-2163D",
       "blocking": false
     }
   ],
-  "min_level": 15
+  "min_level": 15,
+  "captured": "WC-SOCK-C01-001"
 }

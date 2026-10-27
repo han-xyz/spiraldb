@@ -107,19 +107,19 @@
   "personas": {
     "EM-INNER-NPC14": {
       "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_C_NPC.dds",
-      "template_id": 1413185
+      "template_id": 1413172
     },
     "EM-INNER-NPC15": {
       "portrait": "GUI/NpcPortraits/Dwarf_FireCitizen_C_NPC.dds",
-      "template_id": 1413186
+      "template_id": 1413173
     },
     "EM-INNER-NPC16": {
       "portrait": "GUI/NpcPortraits/Dwarf_FireCitizen_D_NPC.dds",
-      "template_id": 1413188
+      "template_id": 1413174
     },
     "EM-INNER-NPC18": {
       "portrait": "GUI/NpcPortraits/Dwarf_FireCitizen_B_NPC.dds",
-      "template_id": 1413190
+      "template_id": 1413176
     },
     "EM-INNER-NPC19": {
       "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_G_NPC.dds",

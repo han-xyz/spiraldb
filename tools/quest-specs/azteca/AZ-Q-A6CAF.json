@@ -89,6 +89,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z11_TwinGiants"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z11_TwinGiants"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Elephant-Belloq-A-Script.AdjRef",
@@ -134,12 +142,12 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Wings of the Obsidian Butterfly Shrine",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Wings of the Obsidian Butterfly Shrine",
       "blocking": false
     },

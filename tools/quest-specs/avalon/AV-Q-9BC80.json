@@ -9,10 +9,40 @@
     "AV-Q-9BC7F"
   ],
   "mainline": false,
-  "level": 68,
+  "level": 75,
   "reward": {
     "xp": 19920,
-    "gold": 415
+    "gold": 415,
+    "spells": [
+      {
+        "spell": "Supernova",
+        "school": "Balance"
+      },
+      {
+        "spell": "Bad Juju",
+        "school": "Death"
+      },
+      {
+        "spell": "Backdraft",
+        "school": "Fire"
+      },
+      {
+        "spell": "Cooldown",
+        "school": "Ice"
+      },
+      {
+        "spell": "Guardian Spirit",
+        "school": "Life"
+      },
+      {
+        "spell": "Dimension Shift",
+        "school": "Myth"
+      },
+      {
+        "spell": "Healing Current",
+        "school": "Storm"
+      }
+    ]
   },
   "dialogs": {
     "prep": [
@@ -87,7 +117,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Always_After_Me_Charms",
     "from": "archive",
-    "timestamp": "20231222133537"
+    "timestamp": "20250915110546"
   },
   "needs_review": [
     {
@@ -100,5 +130,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 75
 }

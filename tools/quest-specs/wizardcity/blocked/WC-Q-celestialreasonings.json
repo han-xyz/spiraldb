@@ -58,7 +58,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Plaza del Oro, The Zocalo",
       "blocking": false
     }

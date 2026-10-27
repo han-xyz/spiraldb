@@ -19,6 +19,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "Amulet-Craft-T6-010.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Celestia/CL_Z05_The_Floating_Land",
+      "descriptor": "Items_00004590",
+      "loc": "ZoneLocName_227141"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Z05_The_Floating_Land",
@@ -48,9 +58,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Seal of the Seven Seas",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Seal of the Seven Seas: ObjectData/CraftedEquipment/Amulets",
+      "blocking": false
     }
   ]
 }

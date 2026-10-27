@@ -1,0 +1,96 @@
+{
+  "id": "DS-Q-1ED85",
+  "lang": "1ED85",
+  "giver": {
+    "persona": "DS-NEC1-NPC05",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+  },
+  "requires": [
+    "KT-SPHub-C02-002"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2345,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Warrior-Male-Crystal-Purple-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000493",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "DS_DragonEgg.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "descriptor": "WizardGameObjects_00000123"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_drake_mother_Ghost_NPC.dds",
+      "template_id": 126316
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Break_an_Egg",
+    "from": "archive",
+    "timestamp": "20240409061158"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC1-C05-004"
+}

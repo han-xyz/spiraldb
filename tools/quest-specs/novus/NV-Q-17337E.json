@@ -2,7 +2,7 @@
   "id": "NV-Q-17337E",
   "lang": "17337E",
   "giver": {
-    "persona": "NV-ROSE-NPC17-B",
+    "persona": "NV-ROSE-NPC17",
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
@@ -90,6 +90,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z05_LaVilleRose"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Void_Elemental_A_01.AdjRef"
@@ -113,9 +117,9 @@
     }
   ],
   "personas": {
-    "NV-ROSE-NPC17-B": {
+    "NV-ROSE-NPC17": {
       "portrait": "GUI/NpcPortraits/Penguin_AvantGuardF_A_NPC.dds",
-      "template_id": 1520504
+      "template_id": 1520503
     }
   },
   "source": {
@@ -125,7 +129,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hall of Purposeful Abstraction",
       "blocking": false
     },

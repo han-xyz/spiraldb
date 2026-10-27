@@ -1,0 +1,75 @@
+{
+  "id": "DS-Q-1ED97",
+  "lang": "1ED97",
+  "giver": {
+    "persona": "DS-ACAD1-NPC02",
+    "zone": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_T3"
+  },
+  "requires": [
+    "DS-ACAD1-C02-003"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2095,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A3_Kings/Interiors/DS_Crystal_T3",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-ACAD1-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_pointyhat_2_Ghost_NPC.dds",
+      "template_id": 126323
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sit_and_Spin",
+    "from": "archive",
+    "timestamp": "20231122065433"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Spiders",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-ACAD1-C04-001"
+}

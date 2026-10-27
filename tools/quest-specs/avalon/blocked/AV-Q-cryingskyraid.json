@@ -5,9 +5,9 @@
     "zone": "Avalon/AV_Z06_DunDara"
   },
   "requires": [],
-  "min_level": 68,
+  "min_level": 160,
   "mainline": false,
-  "level": 68,
+  "level": 160,
   "reward": {
     "xp": 0,
     "gold": 0

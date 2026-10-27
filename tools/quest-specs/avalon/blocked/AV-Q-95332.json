@@ -85,6 +85,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z05_TheWyrd"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Fox-Knight-Male-Gerard-R11-01.AdjRef"
@@ -99,6 +103,10 @@
       "persona": "AV-WILD-NPC13",
       "zone": "Avalon/Interiors/AV_Z04_TowerBlueDahlia",
       "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/Interiors/AV_Z04_TowerBlueDahlia"
     },
     {
       "type": "bounty",
@@ -141,13 +149,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Tower of the Blue Dahlia",
+      "field": "goal.waypoint (current zone)",
+      "value": "Tower of the Blue Dahlia",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Lady of the Blue Dahlia",
+      "field": "goal.waypoint (current zone)",
+      "value": "Lady of the Blue Dahlia",
       "blocking": false
     },
     {

@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Golem_Tower"
   },
   "requires": [
-    "WC-Q-958A"
+    "WC-MISC-C05-002"
   ],
   "mainline": false,
   "level": 5,
@@ -83,5 +83,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-MISC-C05-003"
 }

@@ -5,10 +5,14 @@
     "zone": "Azteca/AZ_Z01_ThreePoints"
   },
   "requires": [
+    {
+      "school": "Ice"
+    },
     "MB-ICE-C01-002"
   ],
+  "min_level": 98,
   "mainline": false,
-  "level": 78,
+  "level": 98,
   "reward": {
     "xp": 73825,
     "gold": 625
@@ -26,6 +30,16 @@
       "count": 2,
       "target": "WizardMobs_00001343",
       "zone": "Azteca/AZ_Z01_ThreePoints",
+      "loc": "ZoneLocName_643242"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "Drop-SummerSnow-01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z01_ThreePoints",
+      "descriptor": "Reagents_00000289",
       "loc": "ZoneLocName_643242"
     },
     {
@@ -58,9 +72,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Summer Snow from Isla Nevadas",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Summer Snow from Isla Nevadas: ObjectData/Reagents",
+      "blocking": false
     }
   ]
 }

@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z10_PortAero"
   },
   "requires": [
-    "EM-Q-1615CD"
+    "EM-Q-1615D2"
   ],
   "mainline": false,
   "level": 112,
@@ -69,6 +69,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z10_PortAero"
+    },
+    {
       "type": "usage",
       "items": [
         "EM-EbenezerMemoryCore.AdjRef"
@@ -102,18 +106,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Evidence Locker",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Thrill is in the Chase replaced by EM-Q-1615CD",
       "blocking": false
     }
   ]

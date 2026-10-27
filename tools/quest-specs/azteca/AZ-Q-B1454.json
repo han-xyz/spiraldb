@@ -138,15 +138,15 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "AZ-ALTO-NPC01-2",
+      "persona": "AZ-ALTO-NPC01",
       "zone": "Azteca/AZ_Z09_AltoAlto",
       "loc": "ZoneLocName_726071"
     }
   ],
   "personas": {
-    "AZ-ALTO-NPC01-2": {
+    "AZ-ALTO-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_B_NPC.dds",
-      "template_id": 726145
+      "template_id": 726113
     },
     "AZ-ALTO-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Parrot_HunterF_A_NPC.dds",

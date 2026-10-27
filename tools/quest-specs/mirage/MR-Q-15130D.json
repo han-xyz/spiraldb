@@ -2,7 +2,7 @@
   "id": "MR-Q-15130D",
   "lang": "15130D",
   "giver": {
-    "persona": "MR-CARA-NPC09-B",
+    "persona": "MR-CARA-NPC09",
     "zone": "Mirage/MR_Z00_Hub"
   },
   "requires": [
@@ -63,9 +63,9 @@
     }
   ],
   "personas": {
-    "MR-CARA-NPC09-B": {
+    "MR-CARA-NPC09": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Merchant_C_NPC.dds",
-      "template_id": 1381132
+      "template_id": 1381129
     }
   },
   "source": {

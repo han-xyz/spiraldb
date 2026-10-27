@@ -35,6 +35,10 @@
       "loc": "ZoneLocName_358198"
     },
     {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Underwater"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "Tri-Gauntlet-Angler.AdjRef"
@@ -68,9 +72,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Locate Drain Valve",
-      "blocking": true
+      "blocking": false
     }
   ]
 }

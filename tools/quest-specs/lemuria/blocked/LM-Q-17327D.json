@@ -2,7 +2,7 @@
   "id": "LM-Q-17327D",
   "lang": "17327D",
   "giver": {
-    "persona": "LM-URSAI-NPC01-C-NoGuitar",
+    "persona": "LM-URSAI-NPC01",
     "zone": "Lemuria/LM_Z01_WildLands"
   },
   "requires": [
@@ -78,9 +78,9 @@
     }
   ],
   "personas": {
-    "LM-URSAI-NPC01-C-NoGuitar": {
+    "LM-URSAI-NPC01": {
       "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
-      "template_id": 1520317
+      "template_id": 1520122
     },
     "LM-URSAI-NPC04": {
       "portrait": "GUI/NpcPortraits/Bear_Islander_B_NPC.dds",

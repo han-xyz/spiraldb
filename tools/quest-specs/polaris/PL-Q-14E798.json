@@ -2,7 +2,7 @@
   "id": "PL-Q-14E798",
   "lang": "14E798",
   "giver": {
-    "persona": "PL-WAL-NPC04-B",
+    "persona": "PL-WAL-NPC04",
     "zone": "Polaris/PL_Z01_Harbor"
   },
   "requires": [
@@ -60,9 +60,9 @@
     }
   ],
   "personas": {
-    "PL-WAL-NPC04-B": {
+    "PL-WAL-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Seal_Captain_A_NPC.dds",
-      "template_id": 1370004
+      "template_id": 1340491
     }
   },
   "source": {

@@ -7,7 +7,7 @@
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
   "requires": [
-    "EM-Q-155329"
+    "EM-Q-15532B"
   ],
   "mainline": true,
   "level": 112,
@@ -126,11 +126,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Beasty Mountain High replaced by EM-Q-155329",
       "blocking": false
     }
   ]

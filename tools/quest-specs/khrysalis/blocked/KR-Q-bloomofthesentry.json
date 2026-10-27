@@ -18,6 +18,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z09_MantisCity"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Khrysalis/KR_Z09_MantisCity",
@@ -47,7 +51,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Garden of Vida",
       "blocking": false
     }

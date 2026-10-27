@@ -78,7 +78,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Nidavellir",
       "blocking": false
     },

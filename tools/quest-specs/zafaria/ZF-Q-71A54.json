@@ -9,7 +9,7 @@
     "ZF-Q-71A03"
   ],
   "mainline": false,
-  "level": 60,
+  "level": 63,
   "reward": {
     "xp": 6400,
     "gold": 230
@@ -92,5 +92,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "min_level": 63
 }

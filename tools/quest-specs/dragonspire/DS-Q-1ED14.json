@@ -1,0 +1,80 @@
+{
+  "id": "DS-Q-1ED14",
+  "lang": "1ED14",
+  "giver": {
+    "persona": "DS-LIB3-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+  },
+  "requires": [
+    "DS-LIB-C01-004"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 765,
+    "gold": 108
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-LIB3-NPC02",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+    }
+  ],
+  "personas": {
+    "DS-LIB3-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_skirt_4_Ghost_NPC.dds",
+      "template_id": 126305
+    },
+    "DS-LIB3-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_base_3_Ghost_NPC.dds",
+      "template_id": 126306
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Paper_Chase",
+    "from": "archive",
+    "timestamp": "20260617221940"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB3-C01-001"
+}

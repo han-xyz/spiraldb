@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Unicorn"
   },
   "requires": [
-    "WC-Q-1625C9",
+    "WC-UNICORN-SIDE-001",
     "WC-Q-298E2"
   ],
   "mainline": false,
@@ -107,5 +107,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-ST01-C02-002"
 }

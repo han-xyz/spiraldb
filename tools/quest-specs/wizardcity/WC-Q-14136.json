@@ -86,7 +86,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Khai Tengri's Dojo",
       "blocking": false
     },
@@ -111,5 +111,6 @@
       "blocking": false
     }
   ],
-  "min_level": 58
+  "min_level": 58,
+  "captured": "KT-HUB-C05-003"
 }

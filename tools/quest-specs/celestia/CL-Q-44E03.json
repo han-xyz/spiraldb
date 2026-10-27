@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z05_The_Floating_Land"
+    },
+    {
       "type": "persona",
       "persona": "CL-LAND-NPC05",
       "zone": "Celestia/CL_Z05_The_Floating_Land",
@@ -88,8 +92,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Guardian Tiki",
+      "field": "goal.waypoint (current zone)",
+      "value": "Guardian Tiki",
       "blocking": false
     },
     {

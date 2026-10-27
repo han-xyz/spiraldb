@@ -1,8 +1,8 @@
 {
   "id": "WC-Q-thegreenmile",
   "giver": {
-    "persona": "WC-RAV-NPC15",
-    "zone": "WizardCity/WC_Ravenwood"
+    "persona": "WC-RAV-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolLife"
   },
   "requires": [
     {
@@ -43,16 +43,27 @@
       "loc": "ZoneLocName_9005"
     },
     {
+      "type": "usage",
+      "items": [
+        "ZF_Gnome_Plant.AdjRef",
+        "ZF_Gome_Plant1.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizItems_00001867",
+      "loc": "ZoneLocName_9005"
+    },
+    {
       "type": "persona",
       "persona": "giver",
-      "zone": "WizardCity/WC_Ravenwood",
+      "zone": "WizardCity/Interiors/WC_SchoolLife",
       "loc": "ZoneLocName_9005"
     }
   ],
   "personas": {
-    "WC-RAV-NPC15": {
+    "WC-RAV-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
-      "template_id": 1459033
+      "template_id": 38204
     },
     "WC-ST02-NPC04": {
       "portrait": "GUI/NpcPortraits/Human_WCShopKeepF_D_NPC.dds",
@@ -71,7 +82,7 @@
       "blocking": true
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Jungle Clearing, Zamunda Outskirts",
       "blocking": false
     },
@@ -81,9 +92,9 @@
       "blocking": false
     },
     {
-      "field": "goal.usage",
-      "value": "Use (Harvest) Gnome Plant",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Gnome Plant: ObjectData/ZF",
+      "blocking": false
     }
   ]
 }

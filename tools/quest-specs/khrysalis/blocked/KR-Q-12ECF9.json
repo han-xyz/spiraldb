@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z09_MantisCity"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Mantis_HunterF_Z_Officer.AdjRef"
@@ -93,7 +97,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Munitions Entrance",
       "blocking": false
     },

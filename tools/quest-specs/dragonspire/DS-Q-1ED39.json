@@ -1,0 +1,88 @@
+{
+  "id": "DS-Q-1ED39",
+  "lang": "1ED39",
+  "giver": {
+    "persona": "DS-NEC2-NPC01",
+    "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena"
+  },
+  "requires": [
+    "DS-NEC-C01-002"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 4200,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Draconian-Caster-Gray-R7.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000463",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena",
+      "descriptor": "WizQst1ED39_00000000"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z2_Arena",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC2-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_warrior_wings_1_Ghost_NPC.dds",
+      "template_id": 126317
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Back_in_Session",
+    "from": "archive",
+    "timestamp": "20260630073016"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC2-C01-001"
+}

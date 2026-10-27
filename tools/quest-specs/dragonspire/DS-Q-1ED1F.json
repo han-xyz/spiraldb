@@ -1,0 +1,76 @@
+{
+  "id": "DS-Q-1ED1F",
+  "lang": "1ED1F",
+  "giver": {
+    "persona": "DS-LIB3-NPC03",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+  },
+  "requires": [
+    "DS-LIB3-C03-002"
+  ],
+  "mainline": false,
+  "level": 40,
+  "reward": {
+    "xp": 1785,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Colossus-Silver-R7.AdjRef",
+        "DS-Gauntlet-NPC01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00000390",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-LIB3-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_juggernaut_1_Ghost_NPC.dds",
+      "template_id": 126307
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Guards!_Guards!",
+    "from": "archive",
+    "timestamp": "20260727003801"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB3-C03-003"
+}

@@ -2,7 +2,7 @@
   "id": "MR-Q-150755",
   "lang": "150755",
   "giver": {
-    "persona": "MR-ISTA-NPC01-C",
+    "persona": "MR-ISTA-NPC01",
     "zone": "Mirage/MR_Z05_Istanboa"
   },
   "requires": [],
@@ -80,6 +80,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Mirage/MR_Z05_Istanboa"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "MR_Ophidian_Thug_E_Boss_01.AdjRef"
@@ -97,9 +101,9 @@
     }
   ],
   "personas": {
-    "MR-ISTA-NPC01-C": {
+    "MR-ISTA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mongoose_Warrior_C_NPC.dds",
-      "template_id": 1378145
+      "template_id": 1378128
     }
   },
   "source": {
@@ -109,7 +113,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Architect's Studio",
       "blocking": false
     },

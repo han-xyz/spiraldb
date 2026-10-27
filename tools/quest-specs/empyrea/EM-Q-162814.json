@@ -2,7 +2,7 @@
   "id": "EM-Q-162814",
   "lang": "162814",
   "giver": {
-    "persona": "EM-AERI-NPC01-B",
+    "persona": "EM-AERI-NPC01",
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
   "requires": [],
@@ -124,7 +124,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC02-D",
+      "persona": "EM-AERI-NPC02",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
@@ -139,7 +139,7 @@
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC02-D",
+      "persona": "EM-AERI-NPC02",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
@@ -155,19 +155,19 @@
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
+    "EM-AERI-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
+      "template_id": 1397523
     },
-    "EM-AERI-NPC02-D": {
+    "EM-AERI-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Crewman_A_NPC.dds",
-      "template_id": 1397728
+      "template_id": 1397524
     }
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Communications_Officer",
     "from": "archive",
-    "timestamp": "20231126090534"
+    "timestamp": "20240119020127"
   },
   "needs_review": [
     {

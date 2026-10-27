@@ -2,7 +2,7 @@
   "id": "NV-Q-17335A",
   "lang": "17335A",
   "giver": {
-    "persona": "NV-ROSE-NPC01-B",
+    "persona": "NV-ROSE-NPC01",
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
@@ -71,9 +71,9 @@
     }
   ],
   "personas": {
-    "NV-ROSE-NPC01-B": {
+    "NV-ROSE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1520457
+      "template_id": 1520450
     }
   },
   "source": {

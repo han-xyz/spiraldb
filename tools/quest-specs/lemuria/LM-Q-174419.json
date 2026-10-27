@@ -2,8 +2,8 @@
   "id": "LM-Q-174419",
   "lang": "174419",
   "giver": {
-    "persona": "LM-BAD-NPC03",
-    "zone": "Lemuria/LM_Z04_Badlands"
+    "persona": "LM-SKY-NPC01",
+    "zone": "Lemuria/LM_Z06_SkyCity"
   },
   "requires": [
     "LM-Q-170145"
@@ -84,20 +84,20 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003922",
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
       "type": "persona",
       "persona": "LM-SKY-NPC04",
-      "zone": "Lemuria/Interiors/LM_Z06_MonitoringStation",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     }
   ],
   "personas": {
-    "LM-BAD-NPC03": {
+    "LM-SKY-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Deer_Hero_NPC.dds",
-      "template_id": 1487617
+      "template_id": 1524712
     },
     "LM-SKY-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Platypus_Citizen_C_NPC.dds",

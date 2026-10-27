@@ -188,6 +188,10 @@
       "loc": "ZoneLocName_1524839"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z07_Heap"
+    },
+    {
       "type": "persona",
       "persona": "LM-HEAP-NPC13",
       "zone": "Lemuria/Interiors/LM_Z07_LionsOffice",
@@ -216,8 +220,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Tamarin House Cellar",
+      "field": "goal.waypoint (current zone)",
+      "value": "Tamarin House Cellar",
       "blocking": false
     },
     {

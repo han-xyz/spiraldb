@@ -15,9 +15,31 @@
   },
   "goals": [
     {
+      "type": "bounty",
+      "mobs": [
+        "HO-13-Bloodbat-2.AdjRef",
+        "HO-13-Bloodbat.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001584",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    },
+    {
       "type": "persona",
       "persona": "WC-NightWarrens-NPC01",
       "zone": "WizardCity/WC_Streets/Interiors/WC_HauntedCave_T2",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "HO-13-Bloodbat-2.AdjRef",
+        "HO-13-Bloodbat.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001584",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
       "loc": "ZoneLocName_818312"
     },
     {
@@ -52,6 +74,20 @@
       "loc": "ZoneLocName_818312"
     },
     {
+      "type": "bounty",
+      "mobs": [
+        "HO-13-BabyCarrots.AdjRef",
+        "HO-13-DeadBeets.AdjRef",
+        "HO-13-Disparagus.AdjRef",
+        "HO-13-EvilSnowPeas.AdjRef",
+        "HO-13-FlyTrap.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001583",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    },
+    {
       "type": "persona",
       "persona": "WC-NightWarrens-NPC02",
       "zone": "WizardCity/WC_Streets/Interiors/WC_HauntedCave_T3",
@@ -61,6 +97,30 @@
       "type": "persona",
       "persona": "WC-NightWarrens-NPC03",
       "zone": "WizardCity/WC_Streets/Interiors/WC_HauntedCave_T3",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "HO-13-BabyCarrots.AdjRef",
+        "HO-13-DeadBeets.AdjRef",
+        "HO-13-Disparagus.AdjRef",
+        "HO-13-EvilSnowPeas.AdjRef",
+        "HO-13-FlyTrap.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001583",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
+      "loc": "ZoneLocName_818312"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "HO-13-Rabbit-Vampire-Boss.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001582",
+      "zone": "WizardCity/WC_Streets/WC_HauntedCave",
       "loc": "ZoneLocName_818312"
     }
   ],
@@ -100,14 +160,14 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Blood Bats",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Blood Bats: ObjectData/Holiday/Holloween",
+      "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Blood Bats",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Blood Bats: ObjectData/Holiday/Holloween",
+      "blocking": false
     },
     {
       "field": "goal.descriptor",
@@ -115,19 +175,19 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Veggie Revanants",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Veggie Revanants: ObjectData/Holiday/Holloween",
+      "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Veggie Revanants",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Veggie Revanants: ObjectData/Holiday/Holloween",
+      "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Nosferabbit",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Nosferabbit: ObjectData/Holiday/Holloween",
+      "blocking": false
     }
   ]
 }

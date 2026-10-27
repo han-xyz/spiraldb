@@ -2,8 +2,8 @@
   "id": "WC-Q-16435B",
   "lang": "16435B",
   "giver": {
-    "persona": "WC-RAV-NPC15",
-    "zone": "WizardCity/WC_Ravenwood"
+    "persona": "WC-RAV-NPC01",
+    "zone": "WizardCity/Interiors/WC_SchoolLife"
   },
   "requires": [
     "WC-Q-16435A"
@@ -243,7 +243,7 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "WizardCity/WC_Ravenwood",
+      "zone": "WizardCity/Interiors/WC_SchoolLife",
       "loc": "ZoneLocName_9005",
       "completion": [
         {
@@ -258,13 +258,13 @@
     }
   ],
   "personas": {
+    "WC-RAV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 38204
+    },
     "WC-RAV-NPC07": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_Bartleby.dds",
       "template_id": 38230
-    },
-    "WC-RAV-NPC15": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
-      "template_id": 1459033
     },
     "WC-RAV-NPC16": {
       "portrait": "GUI/NpcPortraits/GiantTree_EvilRoots_B_NPC.dds",

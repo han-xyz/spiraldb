@@ -60,7 +60,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "MR-ALKA-NPC05-C",
+      "persona": "MR-ALKA-NPC05",
       "zone": "Mirage/MR_Z01_AlkaliBarrows",
       "loc": "ZoneLocName_1378088"
     },
@@ -72,9 +72,9 @@
     }
   ],
   "personas": {
-    "MR-ALKA-NPC05-C": {
-      "portrait": "GUI/NpcPortraits/Portrait_Skull_King_A_NPC.dds",
-      "template_id": 1381226
+    "MR-ALKA-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Skull_King_A_Lifeless_NPC.dds",
+      "template_id": 1381170
     },
     "MR-ALKA-NPC07": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_A_NPC.dds",

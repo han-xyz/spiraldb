@@ -65,7 +65,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Nightreaver's Lair, The Necropolis",
       "blocking": false
     },

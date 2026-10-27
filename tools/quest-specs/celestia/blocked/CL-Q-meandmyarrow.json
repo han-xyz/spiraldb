@@ -5,9 +5,9 @@
     "zone": "Celestia/CL_Hub"
   },
   "requires": [],
-  "min_level": 48,
+  "min_level": 54,
   "mainline": false,
-  "level": 48,
+  "level": 54,
   "reward": {
     "xp": 2100,
     "gold": 180
@@ -22,6 +22,10 @@
       "persona": "WC-PARK-NPC01",
       "zone": "WizardCity/Interiors/WC_Park_Petshop",
       "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/Interiors/WC_Park_Petshop"
     },
     {
       "type": "persona",
@@ -62,7 +66,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Ogden's Apartment, Regent's Square",
       "blocking": false
     }

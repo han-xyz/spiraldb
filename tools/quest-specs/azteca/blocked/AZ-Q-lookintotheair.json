@@ -1,7 +1,7 @@
 {
   "id": "AZ-Q-lookintotheair",
   "giver": {
-    "persona": "AZ-ALTO-NPC01-2",
+    "persona": "AZ-ALTO-NPC01",
     "zone": "Azteca/AZ_Z09_AltoAlto"
   },
   "requires": [],
@@ -18,6 +18,20 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z09_AltoAlto"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z09_AltoAlto",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "AZ-ALTO-NPC02",
       "zone": "Azteca/AZ_Z09_AltoAlto",
@@ -25,9 +39,9 @@
     }
   ],
   "personas": {
-    "AZ-ALTO-NPC01-2": {
+    "AZ-ALTO-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Jaguar_ShamanF_B_NPC.dds",
-      "template_id": 726145
+      "template_id": 726113
     },
     "AZ-ALTO-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Parrot_Hunter_E_NPC.dds",
@@ -51,19 +65,19 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Avian House",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Avian House",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Avian House",
-      "blocking": true
+      "blocking": false
     }
   ]
 }

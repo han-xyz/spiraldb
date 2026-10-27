@@ -2,8 +2,8 @@
   "id": "EM-Q-16188F",
   "lang": "16188F",
   "giver": {
-    "persona": "EM-AERI-NPC17",
-    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    "persona": "EM_StandIn_Bat",
+    "zone": "Empyrea/EM_Z16_Husk"
   },
   "requires": [
     "EM-Q-161887"
@@ -90,19 +90,19 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "EM-CHAOS-NPC05-B",
-      "zone": "Empyrea/EM_Z14_ChaosJungle",
+      "persona": "EM_StandIn_Mallori",
+      "zone": "Empyrea/EM_Z16_Husk",
       "loc": "ZoneLocName_1448066"
     }
   ],
   "personas": {
-    "EM-AERI-NPC17": {
+    "EM_StandIn_Bat": {
       "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
-      "template_id": 1397735
+      "template_id": 1254467
     },
-    "EM-CHAOS-NPC05-B": {
+    "EM_StandIn_Mallori": {
       "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
-      "template_id": 1451121
+      "template_id": 1254474
     }
   },
   "source": {
@@ -117,7 +117,7 @@
       "blocking": true
     },
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Tune the Spiritual Trees",
       "blocking": true
     },

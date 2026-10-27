@@ -2,8 +2,8 @@
   "id": "KM-Q-16FCCF",
   "lang": "16FCCF",
   "giver": {
-    "persona": "KM-BLACK-NPC01-B",
-    "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
+    "persona": "KM-NIBB-NPC01",
+    "zone": "Karamelle/KM_Z05_Nibbleheim"
   },
   "requires": [
     "KM-Q-16FCCC"
@@ -72,7 +72,7 @@
         "KM-EnrichedChocolate.AdjRef"
       ],
       "count": 3,
-      "zone": "",
+      "zone": "Karamelle/KM_Z05_Nibbleheim",
       "descriptor": "Items_00021906",
       "loc": "ZoneLocName_1506578"
     },
@@ -84,13 +84,13 @@
     }
   ],
   "personas": {
-    "KM-BLACK-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513114
-    },
     "KM-ESTATE-NPC08": {
       "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
       "template_id": 1513159
+    },
+    "KM-NIBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1506486
     }
   },
   "source": {

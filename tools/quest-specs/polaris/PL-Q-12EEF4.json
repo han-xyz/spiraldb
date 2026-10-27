@@ -47,7 +47,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002155",
-      "zone": "",
+      "zone": "Polaris/Interiors/PL_Z07_SkyAnchorPeak",
       "loc": "ZoneLocName_1367052"
     },
     {
@@ -62,7 +62,7 @@
         "PL-IvanTheGreater.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Polaris/Interiors/PL_Z07_SkyAnchorPeak",
       "loc": "ZoneLocName_1240832"
     }
   ],

@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z05_TheWyrd"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-GiantIndigo-R12-01.AdjRef",
@@ -110,7 +114,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Dun Scaith",
       "blocking": false
     },

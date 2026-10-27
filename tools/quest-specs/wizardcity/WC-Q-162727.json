@@ -78,15 +78,15 @@
     },
     {
       "type": "persona",
-      "persona": "WC-CATA-NPC011-B",
+      "persona": "WC-CATA-NPC011",
       "zone": "WizardCity/WC_Streets/WC_Catacombs_B",
       "loc": "ZoneLocName_1451811"
     }
   ],
   "personas": {
-    "WC-CATA-NPC011-B": {
+    "WC-CATA-NPC011": {
       "portrait": "GUI/NpcPortraits/Druid_GhostF_A_NPC.dds",
-      "template_id": 1451882
+      "template_id": 1451817
     },
     "WC-CATA-NPC10-A": {
       "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",

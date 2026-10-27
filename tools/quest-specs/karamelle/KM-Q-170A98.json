@@ -66,7 +66,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "KM-KCITY-NPC02-B",
+      "persona": "KM-KCITY-NPC02",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
     },
@@ -84,21 +84,21 @@
     },
     {
       "type": "persona",
-      "persona": "KM-KCITY-NPC02-B",
+      "persona": "KM-KCITY-NPC02",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006",
       "completion": [
         {
-          "speaker": "KM-KCITY-NPC02-B",
+          "speaker": "KM-KCITY-NPC02",
           "line": "00000011"
         }
       ]
     }
   ],
   "personas": {
-    "KM-KCITY-NPC02-B": {
+    "KM-KCITY-NPC02": {
       "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
-      "template_id": 1510012
+      "template_id": 1510009
     },
     "KM-KCITY-NPC11": {
       "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",

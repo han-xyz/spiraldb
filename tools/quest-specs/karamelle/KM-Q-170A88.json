@@ -101,17 +101,8 @@
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "KM_Hamster_GrandF_A_01.AdjRef",
-        "KM_Hamster_ImperfectF_A_01.AdjRef",
-        "KM_Hamster_ImperfectF_A_02.AdjRef",
-        "KM_Hamster_ImperfectF_A_03.AdjRef"
-      ],
-      "count": 1,
-      "target": "WizardMobs_00003656",
-      "zone": "Karamelle/KM_Z00_HUB",
-      "loc": "ZoneLocName_1510006"
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
     },
     {
       "type": "bounty",
@@ -125,6 +116,27 @@
       "target": "WizardMobs_00003656",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_GrandF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_02.AdjRef",
+        "KM_Hamster_ImperfectF_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003656",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
     },
     {
       "type": "bounty",
@@ -157,18 +169,18 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

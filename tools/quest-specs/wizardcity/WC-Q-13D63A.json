@@ -8,7 +8,8 @@
   "requires": [
     {
       "school": "Fire"
-    }
+    },
+    "WC-COMMONS-MAIN-002-FIRE"
   ],
   "mainline": false,
   "level": 98,
@@ -94,12 +95,8 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Firestarter replaced by min_level",
-      "blocking": false
     }
   ],
-  "min_level": 98
+  "min_level": 98,
+  "captured": "WC-FIRE-C13-001"
 }

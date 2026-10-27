@@ -99,6 +99,10 @@
       "loc": "ZoneLocName_1524839"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z07_Heap"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM-HEAP-NPC14.AdjRef",
@@ -150,8 +154,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

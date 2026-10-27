@@ -3,8 +3,8 @@
   "lang": "17554E",
   "title": "QuestTitle_00001906",
   "giver": {
-    "persona": "NV-CON-NPC01-B",
-    "zone": "Novus/NV_Z01_Conatus"
+    "persona": "NV-STONE-NPC01",
+    "zone": "Novus/NV_Z02_StoneOfHeaven"
   },
   "requires": [
     "NV-Q-17CDE1"
@@ -108,8 +108,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004196",
-      "zone": "Novus/NV_Z01_Conatus",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
       "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z02_StoneOfHeaven"
     },
     {
       "type": "bounty",
@@ -120,8 +124,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004196",
-      "zone": "Novus/NV_Z01_Conatus",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
       "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z02_StoneOfHeaven"
     },
     {
       "type": "bounty",
@@ -130,14 +138,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004141",
-      "zone": "Novus/NV_Z01_Conatus",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
       "loc": "ZoneLocName_1529152"
     }
   ],
   "personas": {
-    "NV-CON-NPC01-B": {
+    "NV-STONE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
-      "template_id": 1575004
+      "template_id": 1529157
     },
     "NV-StandIn-STONE_GoldenTung_01": {
       "portrait": "GUI/NpcPortraits/Horse_TungAk_B_Mob.dds",
@@ -157,13 +165,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Level",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Level",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Last Level",
+      "field": "goal.waypoint (current zone)",
+      "value": "Last Level",
       "blocking": false
     },
     {

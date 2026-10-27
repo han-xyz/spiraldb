@@ -1,0 +1,154 @@
+{
+  "id": "NV-Q-1797E1",
+  "lang": "1797E1",
+  "giver": {
+    "persona": "NV-NEWV-NPC02",
+    "zone": "Novus/NV_Z04_NewVicorgia"
+  },
+  "requires": [
+    "NV-Q-1797DD"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 101090,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-Well.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "descriptor": "WizQst1797E1_00000016",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC04",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
+    }
+  ],
+  "personas": {
+    "NV-NEWV-NPC02": {
+      "portrait": "GUI/NpcPortraits/Dog_Governor_A_NPC.dds",
+      "template_id": 1546202
+    },
+    "NV-NEWV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_CopF_A_NPC.dds",
+      "template_id": 1546208
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Classic_Tale",
+    "from": "archive",
+    "timestamp": "20240323102253"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1797E1 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Investigate Fuss",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Well",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -2,11 +2,11 @@
   "id": "NV-Q-1797FE",
   "lang": "1797FE",
   "giver": {
-    "persona": "NV-NEWV-NPC04-B",
+    "persona": "NV-NEWV-NPC04",
     "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
-    "NV-Q-1797DD"
+    "NV-Q-1797E1"
   ],
   "mainline": true,
   "level": 142,
@@ -68,7 +68,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004131",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     },
     {
@@ -77,7 +77,7 @@
         "NV-Lever-Mine.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "descriptor": "WizItems_00002108",
       "loc": "ZoneLocName_1546199"
     },
@@ -89,9 +89,9 @@
     }
   ],
   "personas": {
-    "NV-NEWV-NPC04-B": {
+    "NV-NEWV-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_CopF_A_NPC.dds",
-      "template_id": 1546243
+      "template_id": 1546208
     }
   },
   "source": {
@@ -103,11 +103,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "A Classic Tale replaced by NV-Q-1797DD",
       "blocking": false
     }
   ]

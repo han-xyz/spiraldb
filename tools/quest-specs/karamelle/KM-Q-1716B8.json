@@ -3,7 +3,7 @@
   "lang": "1716B8",
   "title": "QuestTitle_1716B6",
   "giver": {
-    "persona": "KM-FARM-NPC01-B",
+    "persona": "KM-FARM-NPC01",
     "zone": "Karamelle/KM_Z09_CandyCornFarm"
   },
   "requires": [
@@ -132,6 +132,10 @@
       "loc": "ZoneLocName_1510005"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gummy_Bear_B_01.AdjRef",
@@ -142,6 +146,10 @@
       "target": "WizardMobs_00003697",
       "zone": "Karamelle/KM_Z09_CandyCornFarm",
       "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm"
     },
     {
       "type": "bounty",
@@ -156,9 +164,9 @@
     }
   ],
   "personas": {
-    "KM-FARM-NPC01-B": {
+    "KM-FARM-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
-      "template_id": 1513095
+      "template_id": 1513070
     }
   },
   "source": {
@@ -174,13 +182,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

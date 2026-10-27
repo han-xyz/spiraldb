@@ -1,0 +1,104 @@
+{
+  "id": "NV-Q-175544",
+  "lang": "175544",
+  "giver": {
+    "persona": "NV-STONE-NPC01",
+    "zone": "Novus/NV_Z02_StoneOfHeaven"
+  },
+  "requires": [
+    "NV-Q-180862"
+  ],
+  "mainline": true,
+  "level": 142,
+  "reward": {
+    "xp": 91900,
+    "gold": 270
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Mustache_Bird_A_01.AdjRef",
+        "NV_Mustache_Bird_A_02.AdjRef",
+        "NV_Mustache_Bird_A_03.AdjRef",
+        "NV_Mustache_Bird_A_04.AdjRef",
+        "NV_Mustache_Bird_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004194",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
+      "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z02_StoneOfHeaven"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z02_StoneOfHeaven",
+      "loc": "ZoneLocName_1529152"
+    }
+  ],
+  "personas": {
+    "NV-STONE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
+      "template_id": 1529157
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Throwing_Stones_(Novus)",
+    "from": "archive",
+    "timestamp": "20240323102703"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst175544 is The Repository's id; the title reads 282F6",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Investigate Voice further",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -72,14 +72,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003925",
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "descriptor": "WizQst17441F_00000013",
       "loc": "ZoneLocName_1520281"
     },
     {
       "type": "persona",
-      "persona": "LM-BAD-NPC03",
-      "zone": "Lemuria/LM_Z04_Badlands",
+      "persona": "LM-SKY-NPC01",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -93,7 +93,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00003927",
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
@@ -102,26 +102,26 @@
         "LM_BuckEnergyShackles.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281"
     },
     {
       "type": "persona",
-      "persona": "LM-BAD-NPC03",
-      "zone": "Lemuria/LM_Z04_Badlands",
+      "persona": "LM-SKY-NPC01",
+      "zone": "Lemuria/LM_Z06_SkyCity",
       "loc": "ZoneLocName_1520281",
       "completion": [
         {
-          "speaker": "LM-BAD-NPC03",
+          "speaker": "LM-SKY-NPC01",
           "line": "00000010"
         }
       ]
     }
   ],
   "personas": {
-    "LM-BAD-NPC03": {
+    "LM-SKY-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Deer_Hero_NPC.dds",
-      "template_id": 1487617
+      "template_id": 1524712
     },
     "LM-SKY-NPC13": {
       "portrait": "GUI/NpcPortraits/Lemur_Resistance_C_NPC.dds",

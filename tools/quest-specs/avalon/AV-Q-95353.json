@@ -50,6 +50,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z06_DunDara"
+    },
+    {
       "type": "usage",
       "items": [
         "AV_Silver_Rose.AdjRef",
@@ -89,8 +93,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Silver Rose Garden",
+      "field": "goal.waypoint (current zone)",
+      "value": "Silver Rose Garden",
       "blocking": false
     },
     {

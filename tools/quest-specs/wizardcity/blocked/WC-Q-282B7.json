@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_OldeTown"
   },
   "requires": [
-    "WC-Q-282B5"
+    "WC-GRZ-PRE-001"
   ],
   "mainline": false,
   "level": 5,

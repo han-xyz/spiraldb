@@ -1,6 +1,7 @@
 {
   "id": "WL-Q-18546D",
   "lang": "18546D",
+  "auto_start": true,
   "giver": {
     "persona": "WL-HOPE-NPC18",
     "zone": "Wallaru/Interiors/WL_Z01_JuggernautCrabTheater"
@@ -10,6 +11,10 @@
   ],
   "mainline": false,
   "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 1080
+  },
   "dialogs": {
     "prep": [
       {
@@ -127,7 +132,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004449",
-      "zone": "Wallaru/Interiors/WL_Z01_JuggernautCrabTheater"
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
     },
     {
       "type": "bounty",
@@ -136,7 +146,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004454",
-      "zone": "Wallaru/Interiors/WL_Z01_JuggernautCrabTheater"
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
     },
     {
       "type": "bounty",
@@ -145,7 +160,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004455",
-      "zone": "Wallaru/Interiors/WL_Z01_JuggernautCrabTheater"
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
     },
     {
       "type": "bounty",
@@ -154,7 +174,8 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004459",
-      "zone": "Wallaru/Interiors/WL_Z01_JuggernautCrabTheater"
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
     }
   ],
   "personas": {
@@ -164,20 +185,14 @@
     }
   },
   "source": {
-    "page": "https://therepository.fandom.com/wiki/A_Tale_Told_By_An..._You_Know",
-    "from": "repository",
-    "licence": "CC-BY-SA",
-    "licence_url": "https://www.fandom.com/licensing"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Tale_Told_By_an..._You_Know",
+    "from": "archive",
+    "timestamp": "20240121111756"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst18546D matched by the words it shares with the goals; its lines name none of the page's names",
-      "blocking": false
-    },
-    {
-      "field": "reward",
-      "value": {},
+      "value": "WizQst18546D matched by the words it shares with the goals; its lines name The Spiral",
       "blocking": false
     },
     {
@@ -186,18 +201,18 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Play",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Play",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Play",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Play",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Play",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Play",
       "blocking": false
     },
     {

@@ -54,13 +54,13 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "MR-CARA-NPC11-B",
+      "persona": "MR-CARA-NPC11",
       "zone": "Mirage/Interiors/MR_Z00_CleanRoom",
       "loc": "ZoneLocName_1254040"
     },
     {
       "type": "persona",
-      "persona": "MR-CARA-NPC11-B",
+      "persona": "MR-CARA-NPC11",
       "zone": "Mirage/Interiors/MR_Z00_CleanRoom",
       "loc": "ZoneLocName_1254040"
     }
@@ -70,9 +70,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
       "template_id": 1379033
     },
-    "MR-CARA-NPC11-B": {
+    "MR-CARA-NPC11": {
       "portrait": "GUI/NpcPortraits/Portrait_Djinn_Scholar_A_NPC.dds",
-      "template_id": 1381137
+      "template_id": 1381136
     }
   },
   "source": {

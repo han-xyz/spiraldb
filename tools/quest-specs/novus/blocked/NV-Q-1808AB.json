@@ -3,7 +3,7 @@
   "lang": "1808AB",
   "title": "QuestTitle_00001933",
   "giver": {
-    "persona": "NV-NUCLEUS-NPC05-D",
+    "persona": "NV-NUCLEUS-NPC05",
     "zone": "Novus/NV_Z06_NucleusGallery"
   },
   "requires": [
@@ -105,9 +105,9 @@
     }
   ],
   "personas": {
-    "NV-NUCLEUS-NPC05-D": {
+    "NV-NUCLEUS-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Moose_Manticore_A_NPC.dds",
-      "template_id": 1575087
+      "template_id": 1575084
     }
   },
   "source": {

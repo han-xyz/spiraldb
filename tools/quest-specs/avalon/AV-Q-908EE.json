@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z07_OuterYard"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z07_OuterYard",
@@ -73,8 +77,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To A Good Throwing Spot",
+      "field": "goal.waypoint (current zone)",
+      "value": "Good Throwing Spot",
       "blocking": false
     },
     {

@@ -1,0 +1,87 @@
+{
+  "id": "CL-Q-3D8D1",
+  "lang": "3D8D1",
+  "giver": {
+    "persona": "CL-DIST-NPC03",
+    "zone": "Celestia/CL_Z03_District_Of_The_Stars"
+  },
+  "requires": [
+    "CL-Q-3D8D0"
+  ],
+  "mainline": false,
+  "level": 48,
+  "reward": {
+    "xp": 4760,
+    "gold": 175
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Celestia/CL_Z03_District_Of_The_Stars",
+      "loc": "ZoneLocName_1161805",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000006"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "CL-DIST-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_CL_Celestian_Protector_02_NPC.dds",
+      "template_id": 252117
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Lost_Cog",
+    "from": "archive",
+    "timestamp": "20240119022732"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Fish",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

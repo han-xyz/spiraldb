@@ -1,0 +1,114 @@
+{
+  "id": "DS-Q-1ED4D",
+  "lang": "1ED4D",
+  "giver": {
+    "persona": "DS-NEC1-NPC09_Kimerith",
+    "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Hatchery_T4"
+  },
+  "requires": [
+    "DS-NEC1-C01-006"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2345,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "DS-NEC1-NPC09_Kimerith.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "descriptor": "WC-NPCs_00001122"
+    },
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "DS_CrystalStandDSNECHatch.AdjRef",
+        "DS_CrystalStandGreenBlue.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "descriptor": "WizardGameObjects_00000108"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC01",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery",
+      "completion": [
+        {
+          "speaker": "DS-NEC1-NPC01",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_3_Ghost_NPC.dds",
+      "template_id": 126312
+    },
+    "DS-NEC1-NPC09_Kimerith": {
+      "portrait": "",
+      "template_id": 126921
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Feels_So_Good",
+    "from": "archive",
+    "timestamp": "20240409061158"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Tomar Skyblade's Tower",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC1-C02-002"
+}

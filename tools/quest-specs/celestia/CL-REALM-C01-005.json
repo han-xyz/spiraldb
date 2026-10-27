@@ -54,6 +54,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z02_Crab_Realm"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "CL-CrabSoldier-Green-Boss-R9-1.AdjRef"
@@ -88,7 +92,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Misemos's Retreat",
       "blocking": false
     },

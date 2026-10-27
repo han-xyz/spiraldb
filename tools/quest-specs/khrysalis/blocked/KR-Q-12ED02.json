@@ -1,0 +1,78 @@
+{
+  "id": "KR-Q-12ED02",
+  "lang": "12ED02",
+  "giver": {
+    "persona": "KR-KondhaDesert-NPC24",
+    "zone": "Khrysalis/KR_Z10_KondhaDesert"
+  },
+  "requires": [
+    "KR-Q-12ECC2"
+  ],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 23245,
+    "gold": 225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "loc": "ZoneLocName_1240239"
+    }
+  ],
+  "personas": {
+    "KR-KondhaDesert-NPC24": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jerboa_Hunter_B_NPC.dds",
+      "template_id": 1283226
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Prickly_Situation",
+    "from": "archive",
+    "timestamp": "20231126063614"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ED02 matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Kondha Khacti",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

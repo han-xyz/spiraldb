@@ -2,7 +2,7 @@
   "id": "AZ-Q-72E69",
   "lang": "72E69",
   "giver": {
-    "persona": "AZ-LAKE-NPC01-1",
+    "persona": "AZ-LAKE-NPC01",
     "zone": "Azteca/AZ_Z08_PitchBlackLake"
   },
   "requires": [
@@ -76,9 +76,9 @@
     }
   ],
   "personas": {
-    "AZ-LAKE-NPC01-1": {
-      "portrait": "GUI/NpcPortraits/Portrait_Seamonster_Ancient_A_NPC2.dds",
-      "template_id": 470621
+    "AZ-LAKE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seamonster_Ancient_A_NPC.dds",
+      "template_id": 470556
     },
     "AZ-LAKE-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Piranha_Hunter_A_NPC.dds",
@@ -88,7 +88,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Pretty_Teeth_Dear",
     "from": "archive",
-    "timestamp": "20240123005223"
+    "timestamp": "20240205173328"
   },
   "needs_review": [
     {

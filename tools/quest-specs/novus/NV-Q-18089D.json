@@ -4,8 +4,8 @@
   "title": "QuestTitle_00001930",
   "auto_start": true,
   "giver": {
-    "persona": "NV-CON-NPC08-B",
-    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+    "persona": "NV-NUCLEUS-NPC02",
+    "zone": "Novus/NV_Z06_NucleusGallery"
   },
   "requires": [
     "NV-Q-18088A"
@@ -67,7 +67,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004161",
-      "zone": "",
+      "zone": "Novus/NV_Z06_NucleusGallery",
       "loc": "ZoneLocName_1563028"
     },
     {
@@ -81,7 +81,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004174",
-      "zone": "",
+      "zone": "Novus/NV_Z06_NucleusGallery",
       "loc": "ZoneLocName_1563028"
     },
     {
@@ -91,14 +91,14 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004163",
-      "zone": "",
+      "zone": "Novus/NV_Z06_NucleusGallery",
       "loc": "ZoneLocName_1563028"
     }
   ],
   "personas": {
-    "NV-CON-NPC08-B": {
+    "NV-NUCLEUS-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
-      "template_id": 1575022
+      "template_id": 1575065
     }
   },
   "source": {

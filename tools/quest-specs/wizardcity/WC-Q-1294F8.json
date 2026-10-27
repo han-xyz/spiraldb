@@ -1,0 +1,188 @@
+{
+  "id": "WC-Q-1294F8",
+  "lang": "1294F8",
+  "giver": {
+    "persona": "WC-GTW-Registrar",
+    "zone": "WizardCity/WC_Ravenwood"
+  },
+  "requires": [
+    "WC-Q-1294FD"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 104660,
+    "gold": 800
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "PL-GraduationRobe.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "QuestTitle_00001506",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Tapestry.AdjRef",
+        "AV-TapestryPiece01.AdjRef",
+        "AV-TapestryPiece02.AdjRef",
+        "AV-TapestryPiece03.AdjRef",
+        "AV-TapestryPiece04.AdjRef",
+        "AV-TapestryPiece05.AdjRef",
+        "AV-TapestryPiece06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00001873",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-HUB-NPC01",
+      "zone": "WizardCity/Interiors/WC_Headmistress_House",
+      "loc": "ZoneLocName_409193"
+    },
+    {
+      "type": "persona",
+      "persona": "WC-PARTY-NPC11",
+      "zone": "WizardCity/Interiors/WC_PartyRoom",
+      "loc": "ZoneLocName_409193",
+      "completion": [
+        {
+          "speaker": "WC-PARTY-NPC11",
+          "line": "00000020"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WC-GTW-Registrar": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Registrar.dds",
+      "template_id": 39088
+    },
+    "WC-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "template_id": 38168
+    },
+    "WC-PARTY-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cow_Wu_A_NPC.dds",
+      "template_id": 1452006
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pomp_and_Circumstance",
+    "from": "archive",
+    "timestamp": "20250816143232"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items (other folder)",
+      "value": "Cap and Gown: ObjectData/PL",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Tapestry: ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

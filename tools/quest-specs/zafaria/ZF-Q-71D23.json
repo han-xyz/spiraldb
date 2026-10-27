@@ -50,7 +50,7 @@
         "ZF_Spider_Webbed_Student.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizItems_00001766",
       "loc": "ZoneLocName_465261"
     },
@@ -65,7 +65,7 @@
       ],
       "count": 2,
       "target": "WizardMobs_00001055",
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "loc": "ZoneLocName_465261"
     },
     {
@@ -74,7 +74,7 @@
         "ZF_Grave_Drum.AdjRef"
       ],
       "count": 4,
-      "zone": "",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
       "descriptor": "WizItems_00001782",
       "loc": "ZoneLocName_465261"
     },

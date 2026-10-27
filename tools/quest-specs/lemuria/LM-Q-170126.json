@@ -1,0 +1,234 @@
+{
+  "id": "LM-Q-170126",
+  "lang": "170126",
+  "giver": {
+    "persona": "LM-Mandoria-NPC01",
+    "zone": "Lemuria/LM_Z05_Mandoria"
+  },
+  "requires": [
+    "LM-Q-170124"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 233740,
+    "gold": 2200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AZ_FeatherPalace_SecretDoor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "descriptor": "WizItems_00001905",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Moth_Sorcerer_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003919",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-WILD-NPC03.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "descriptor": "NPCs_01749136",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_AttunementStone-1.AdjRef",
+        "LM_AttunementStone-2-Life.AdjRef",
+        "LM_AttunementStone-3-Death.AdjRef",
+        "LM_AttunementStone-4-Myth.AdjRef",
+        "LM_AttunementStone-Heap.AdjRef",
+        "LM_AttunementStone-Sky.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "descriptor": "WizItems_00002089",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
+    }
+  ],
+  "personas": {
+    "LM-Mandoria-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_A_NPC.dds",
+      "template_id": 1507624
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Fane_of_the_Ancient_One",
+    "from": "archive",
+    "timestamp": "20240119020629"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170126 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Secret Door: ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter Monitoring Station",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

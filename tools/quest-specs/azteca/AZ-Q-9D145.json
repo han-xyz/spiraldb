@@ -1,0 +1,91 @@
+{
+  "id": "AZ-Q-9D145",
+  "lang": "9D145",
+  "giver": {
+    "persona": "AZ-ZOCOLO-NPC06",
+    "zone": "Azteca/AZ_Z00_Zocalo"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 78,
+  "reward": {
+    "xp": 47585,
+    "gold": 705
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z00_Zocalo"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_643250"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Raptor_Warrior_B_NPC.dds",
+      "template_id": 643258
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Smoking_Mirror,_Lurking_Zombie",
+    "from": "archive",
+    "timestamp": "20231125113730"
+  },
+  "needs_review": [
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "3 Moon Skull Zombies",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "3 Thunder Horn Zombies",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Grave Concerns replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 78
+}

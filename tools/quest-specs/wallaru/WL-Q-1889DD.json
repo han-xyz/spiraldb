@@ -2,7 +2,7 @@
   "id": "WL-Q-1889DD",
   "lang": "1889DD",
   "giver": {
-    "persona": "WL-KING-NPC03-B",
+    "persona": "WL-KING-NPC03",
     "zone": "Wallaru/WL_Z03_Kingsland"
   },
   "requires": [
@@ -57,7 +57,7 @@
       ],
       "count": 3,
       "target": "WizardMobs_00004390",
-      "zone": "",
+      "zone": "Wallaru/WL_Z03_Kingsland",
       "descriptor": "WizQst1889DD_00000003",
       "loc": "ZoneLocName_1608151"
     },
@@ -69,9 +69,9 @@
     }
   ],
   "personas": {
-    "WL-KING-NPC03-B": {
+    "WL-KING-NPC03": {
       "portrait": "GUI/NpcPortraits/Portraits_ShamanF_A_NPC.dds",
-      "template_id": 1608159
+      "template_id": 1608155
     }
   },
   "source": {

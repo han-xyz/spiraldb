@@ -2,8 +2,8 @@
   "id": "LM-Q-170145",
   "lang": "170145",
   "giver": {
-    "persona": "LM-Mandoria-NPC01-02",
-    "zone": "Lemuria/LM_Z05_Mandoria"
+    "persona": "LM-Standin-DuckSavage-B-01",
+    "zone": "Lemuria/LM_Z04_Badlands"
   },
   "requires": [
     "LM-Q-1736C2"
@@ -86,7 +86,7 @@
         "LM_RubberTree.AdjRef"
       ],
       "count": 6,
-      "zone": "",
+      "zone": "Lemuria/LM_Z04_Badlands",
       "descriptor": "WizQst170145_00000000",
       "loc": "ZoneLocName_1507644"
     },
@@ -99,14 +99,14 @@
       ],
       "count": 6,
       "target": "WizardMobs_00003921",
-      "zone": "",
+      "zone": "Lemuria/LM_Z04_Badlands",
       "descriptor": "WizQst170145_00000001",
       "loc": "ZoneLocName_1507644"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Lemuria/LM_Z05_Mandoria",
+      "zone": "Lemuria/LM_Z04_Badlands",
       "loc": "ZoneLocName_1507644"
     },
     {
@@ -116,7 +116,7 @@
         "LM-Autogyro.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Lemuria/LM_Z04_Badlands",
       "descriptor": "WizItems_00002103",
       "loc": "ZoneLocName_1507644"
     },
@@ -132,9 +132,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Deer_Hero_NPC.dds",
       "template_id": 1487617
     },
-    "LM-Mandoria-NPC01-02": {
+    "LM-Standin-DuckSavage-B-01": {
       "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
-      "template_id": 1507626
+      "template_id": 1487498
     }
   },
   "source": {

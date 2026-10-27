@@ -91,6 +91,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs"
+    },
+    {
       "type": "usage",
       "items": [
         "KR-DanceShrine.AdjRef"
@@ -99,6 +103,10 @@
       "zone": "Khrysalis/KR_Z02_MoonCliffs",
       "descriptor": "WizQst12927B_00000010",
       "loc": "ZoneLocName_1205048"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs"
     },
     {
       "type": "bounty",
@@ -145,12 +153,12 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Dance Shrine",
+      "field": "goal.waypoint (current zone)",
+      "value": "Dance Shrine",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Water Cavern",
       "blocking": false
     },

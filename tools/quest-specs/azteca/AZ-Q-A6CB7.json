@@ -76,6 +76,10 @@
       "loc": "ZoneLocName_683131"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z11_TwinGiants"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AZ-Dino-Undead-A.AdjRef"
@@ -84,6 +88,10 @@
       "target": "WizardMobs_00001414",
       "zone": "Azteca/AZ_Z11_TwinGiants",
       "loc": "ZoneLocName_683131"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z11_TwinGiants"
     },
     {
       "type": "bounty",
@@ -114,13 +122,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Pyramid of the Falling Star's Second Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Pyramid of the Falling Star's Second Room",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Pyramid of the Falling Star's Ritual Chamber",
+      "field": "goal.waypoint (current zone)",
+      "value": "Pyramid of the Falling Star's Ritual Chamber",
       "blocking": false
     },
     {

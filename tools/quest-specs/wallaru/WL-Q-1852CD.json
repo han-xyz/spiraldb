@@ -2,8 +2,8 @@
   "id": "WL-Q-1852CD",
   "lang": "1852CD",
   "giver": {
-    "persona": "WL-HOPE-NPC34",
-    "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse"
+    "persona": "WL-RANCH-NPC01",
+    "zone": "Wallaru/WL_Z06_CollieRanch"
   },
   "requires": [
     "WL-Q-1852CC"
@@ -57,26 +57,30 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z06_CollieRanch"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Dingo_Ned_A_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004406",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     }
   ],
   "personas": {
-    "WL-HOPE-NPC34": {
+    "WL-RANCH-NPC01": {
       "portrait": "GUI/NpcPortraits/Koala_JudgeF_A_NPC.dds",
-      "template_id": 1608377
+      "template_id": 1594052
     }
   },
   "source": {
@@ -91,7 +95,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "West Pasture",
       "blocking": false
     },

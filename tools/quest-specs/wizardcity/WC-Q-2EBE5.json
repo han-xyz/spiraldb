@@ -145,5 +145,6 @@
       "blocking": false
     }
   ],
-  "min_level": 50
+  "min_level": 50,
+  "captured": "WC-GNT-C01-001"
 }

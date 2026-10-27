@@ -3,8 +3,8 @@
   "lang": "95359",
   "title": "QuestTitle_00000792",
   "giver": {
-    "persona": "AV-ABBEY-NPC01",
-    "zone": "Avalon/Interiors/AV_Z01_KnightsHall"
+    "persona": "AV-DARA-NPC02",
+    "zone": "Avalon/AV_Z06_DunDara"
   },
   "requires": [
     "AV-Q-95358"
@@ -36,21 +36,20 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
-      "loc": "ZoneLocName_602094"
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
     }
   ],
   "personas": {
-    "AV-ABBEY-NPC01": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Warrior.dds",
-      "template_id": 611162
+    "AV-DARA-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Gwendolyn_Druid.dds",
+      "template_id": 611138
     }
   },
   "source": {
-    "page": "https://therepository.fandom.com/wiki/Ten_Years_Gone",
-    "from": "repository",
-    "licence": "CC-BY-SA",
-    "licence_url": "https://www.fandom.com/licensing"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ten_Years_Gone",
+    "from": "archive",
+    "timestamp": "20250827082053"
   },
   "needs_review": [
     {

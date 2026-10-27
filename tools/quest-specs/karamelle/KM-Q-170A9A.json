@@ -2,7 +2,7 @@
   "id": "KM-Q-170A9A",
   "lang": "170A9A",
   "giver": {
-    "persona": "KM-KCITY-NPC02-B",
+    "persona": "KM-KCITY-NPC02",
     "zone": "Karamelle/KM_Z00_HUB"
   },
   "requires": [
@@ -69,6 +69,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Karamelle/KM_Z00_HUB",
@@ -76,9 +80,9 @@
     }
   ],
   "personas": {
-    "KM-KCITY-NPC02-B": {
+    "KM-KCITY-NPC02": {
       "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
-      "template_id": 1510012
+      "template_id": 1510009
     }
   },
   "source": {
@@ -93,7 +97,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "The Lobby",
       "blocking": false
     },

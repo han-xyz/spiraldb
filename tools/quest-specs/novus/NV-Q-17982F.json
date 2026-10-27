@@ -2,8 +2,8 @@
   "id": "NV-Q-17982F",
   "lang": "17982F",
   "giver": {
-    "persona": "NV-NEWV-NPC03-B",
-    "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
+    "persona": "NV-NEWV-NPC03",
+    "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
     "NV-Q-179826"
@@ -129,6 +129,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Flag_Monster_A_01.AdjRef",
@@ -136,20 +144,28 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004205",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     }
   ],
   "personas": {
-    "NV-NEWV-NPC03-B": {
+    "NV-NEWV-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
-      "template_id": 1546206
+      "template_id": 1546204
     }
   },
   "source": {
@@ -159,23 +175,23 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Phileas' Lab",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Storeroom",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Phileas' Lab",
+      "field": "goal.waypoint (current zone)",
+      "value": "Phileas' Lab",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

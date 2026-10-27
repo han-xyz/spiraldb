@@ -38,6 +38,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z03_GumdropForest"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_StandIn_CinnamonTroll_01.AdjRef",
@@ -74,7 +78,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Pipeline Entrance",
       "blocking": false
     },

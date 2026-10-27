@@ -1,0 +1,92 @@
+{
+  "id": "Wysteria-Q-71CCD",
+  "lang": "71CCD",
+  "giver": {
+    "persona": "PA-HUB-NPC13",
+    "zone": "Wysteria/PA_Z01_Pegasus"
+  },
+  "requires": [
+    "Wysteria-Q-71CCB"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 305,
+    "gold": 25
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "PA_Strange_Plant.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "descriptor": "WizItems_00001749",
+      "loc": "ZoneLocName_465168"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "loc": "ZoneLocName_465168",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Groundskeeper_Verne.dds",
+      "template_id": 465145
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Of_Unknown_Origin",
+    "from": "archive",
+    "timestamp": "20231124102348"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

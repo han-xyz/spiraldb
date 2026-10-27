@@ -180,7 +180,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "NV-CON-NPC24-C",
+      "persona": "NV-CON-NPC24",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
     },
@@ -188,6 +188,10 @@
       "type": "waypoint",
       "zone": "Novus/NV_Z05_LaVilleRose",
       "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z05_LaVilleRose"
     },
     {
       "type": "bounty",
@@ -201,9 +205,13 @@
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC24-C",
+      "persona": "NV-CON-NPC24",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z01_Conatus"
     },
     {
       "type": "persona",
@@ -217,9 +225,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Warlord_A_NPC.dds",
       "template_id": 1608196
     },
-    "NV-CON-NPC24-C": {
+    "NV-CON-NPC24": {
       "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
-      "template_id": 1608393
+      "template_id": 1608391
     },
     "NV_Standin_DogTracy": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
@@ -238,7 +246,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Secret Safehouse",
       "blocking": false
     },
@@ -248,7 +256,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hall of Heroes, Telos",
       "blocking": false
     },

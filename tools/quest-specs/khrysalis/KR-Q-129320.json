@@ -107,6 +107,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z08_RadianceReborn"
+    },
+    {
       "type": "persona",
       "persona": "KR-RadianceReborn-NPC10",
       "zone": "Khrysalis/Interiors/KR_Z08_I06_Dreamroom1",
@@ -125,7 +129,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001827",
-      "zone": "",
+      "zone": "Khrysalis/KR_Z08_RadianceReborn",
       "loc": "ZoneLocName_1217288"
     },
     {
@@ -134,7 +138,7 @@
         "KR-HornedCrown.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Khrysalis/KR_Z08_RadianceReborn",
       "descriptor": "Items_00009450",
       "loc": "ZoneLocName_1217288"
     },
@@ -171,7 +175,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "First Chamber of the Mind",
       "blocking": false
     },

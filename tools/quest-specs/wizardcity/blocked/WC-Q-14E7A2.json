@@ -43,6 +43,10 @@
       "zone": "Aquila/AQ_Z02_Atlantea"
     },
     {
+      "type": "waypoint",
+      "zone": "Aquila/AQ_Z02_Atlantea"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AQ-Piranha-Guard.AdjRef",
@@ -72,6 +76,15 @@
       "zone": ""
     },
     {
+      "type": "usage",
+      "items": [
+        "AQ-SeaCowAlabaster.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00001955"
+    },
+    {
       "type": "persona",
       "persona": "AQ-ATL-NPC01",
       "zone": "Aquila/AQ_Z02_Atlantea"
@@ -89,6 +102,15 @@
       "count": 1,
       "target": "WizardMobs_00001523",
       "zone": ""
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AQ-SeaCowOnyx.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00001956"
     },
     {
       "type": "persona",
@@ -132,6 +154,10 @@
       "count": 1,
       "target": "WizardMobs_00001528",
       "zone": ""
+    },
+    {
+      "type": "waypoint",
+      "zone": "Aquila/Interiors/AQ_Z02_SirenPuzzleRoom"
     },
     {
       "type": "bounty",
@@ -187,14 +213,19 @@
       "blocking": false
     },
     {
+      "field": "giver (other world)",
+      "value": "Silenus is placed in Aquila/AQ_Z00_Hub",
+      "blocking": true
+    },
+    {
       "field": "goal.persona (other world)",
       "value": "Hermes Winged Wayfarer: AQ-ATL-NPC01 from ObjectData/AQ",
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Locate Voracious Legionnaire",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.mobs (other folder)",
@@ -207,7 +238,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "House of Lost Sailors",
       "blocking": false
     },
@@ -217,9 +248,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Alabaster Sea Cow",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Alabaster Sea Cow: ObjectData/AQ",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
@@ -227,7 +258,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "House of Fury",
       "blocking": false
     },
@@ -237,9 +268,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Onyx Sea Cow",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Onyx Sea Cow: ObjectData/AQ",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
@@ -247,7 +278,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Hall of the Contriver",
       "blocking": false
     },
@@ -272,7 +303,7 @@
       "blocking": true
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Watery Graves",
       "blocking": false
     },
@@ -282,9 +313,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Locate Atlantean Trierarch",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.mobs (other folder)",
@@ -297,7 +328,7 @@
       "blocking": true
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Palace of Atlantea",
       "blocking": false
     },

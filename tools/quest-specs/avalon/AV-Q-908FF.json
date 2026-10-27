@@ -41,6 +41,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z07_OuterYard"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Pantera-Whiptail-R12-01.AdjRef"
@@ -85,7 +89,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Royal Gardens",
       "blocking": false
     },

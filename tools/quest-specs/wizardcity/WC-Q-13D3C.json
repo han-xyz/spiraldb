@@ -146,7 +146,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Angoro's Tower",
       "blocking": false
     },

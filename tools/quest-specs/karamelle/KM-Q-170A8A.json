@@ -69,6 +69,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/KM_Z00_HUB"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Alphoi_DarkF_A_01.AdjRef"
@@ -80,15 +84,15 @@
     },
     {
       "type": "persona",
-      "persona": "KM-KCITY-NPC01-B",
+      "persona": "KM-KCITY-NPC01",
       "zone": "Karamelle/KM_Z00_HUB",
       "loc": "ZoneLocName_1510006"
     }
   ],
   "personas": {
-    "KM-KCITY-NPC01-B": {
+    "KM-KCITY-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
-      "template_id": 1510011
+      "template_id": 1510008
     },
     "KM-KCITY-NPC08": {
       "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
@@ -102,7 +106,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Financial Department",
       "blocking": false
     },

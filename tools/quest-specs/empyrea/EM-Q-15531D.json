@@ -2,7 +2,7 @@
   "id": "EM-Q-15531D",
   "lang": "15531D",
   "giver": {
-    "persona": "EM-AERI-NPC05-B",
+    "persona": "EM-AERI-NPC05",
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
   "requires": [],
@@ -80,9 +80,9 @@
     }
   ],
   "personas": {
-    "EM-AERI-NPC05-B": {
+    "EM-AERI-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Elder_A_NPC.dds",
-      "template_id": 1397722
+      "template_id": 1397530
     },
     "EM-JUNG-NPC01": {
       "portrait": "GUI/NpcPortraits/Beastman_WarriorF_B_NPC.dds",

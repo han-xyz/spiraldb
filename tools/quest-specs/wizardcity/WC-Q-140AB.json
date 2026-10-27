@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Cyclops"
   },
   "requires": [
-    "WC-Q-140A8"
+    "WC-ST03-C04-003"
   ],
   "mainline": false,
   "level": 5,
@@ -60,5 +60,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-ST03-C04-003B"
 }

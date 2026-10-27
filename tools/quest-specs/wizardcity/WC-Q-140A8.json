@@ -69,5 +69,6 @@
       "blocking": false
     }
   ],
-  "min_level": 5
+  "min_level": 5,
+  "captured": "WC-ST03-C04-003"
 }

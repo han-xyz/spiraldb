@@ -90,12 +90,45 @@
   },
   "goals": [
     {
-      "type": "waypoint",
-      "zone": "WizardCity/WC_Streets/WC_Catacombs"
+      "type": "bounty",
+      "mobs": [
+        "CC_Human_DSVanguard_B_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003446",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451887"
     },
     {
       "type": "waypoint",
       "zone": "WizardCity/WC_Streets/WC_Catacombs"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Human_DSVanguard_B_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003448",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "waypoint",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Druid_Warrior_A_01.AdjRef",
+        "CC_Druid_Warrior_C_01.AdjRef",
+        "CC_Druid_Wizard_A_01.AdjRef",
+        "CC_Druid_Wizard_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003425",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
     },
     {
       "type": "usage",
@@ -122,19 +155,19 @@
       "blocking": true
     },
     {
-      "field": "goal.mobs",
-      "value": "Silas' Weariness",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Silas' Weariness: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Silas' Doubt",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Silas' Doubt: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Treeminder",
-      "blocking": true
+      "field": "goal.mobs (other folder)",
+      "value": "Treeminder: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
     },
     {
       "field": "dialogs",

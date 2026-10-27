@@ -66,7 +66,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "PL-WAL-NPC01-C",
+      "persona": "PL-WAL-NPC01",
       "zone": "Polaris/PL_Z00_Walruskberg",
       "loc": "ZoneLocName_1254306"
     },
@@ -82,9 +82,9 @@
       "portrait": "GUI/NpcPortraits/Portrait_Fox_HunterF_A_NPC.dds",
       "template_id": 1346195
     },
-    "PL-WAL-NPC01-C": {
+    "PL-WAL-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Bear_Strongman_A_NPC.dds",
-      "template_id": 1346151
+      "template_id": 1340488
     }
   },
   "source": {

@@ -1,0 +1,93 @@
+{
+  "id": "DS-Q-1ED4C",
+  "lang": "1ED4C",
+  "giver": {
+    "persona": "DS-NEC1-NPC09_Kimerith",
+    "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Hatchery_T4"
+  },
+  "requires": [
+    "DS-NEC1-C01-004"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 375,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC04",
+      "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Hatchery_T4"
+    },
+    {
+      "type": "persona",
+      "persona": "DS-NEC1-NPC01",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Z1_Hatchery"
+    }
+  ],
+  "personas": {
+    "DS-NEC1-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_3_Ghost_NPC.dds",
+      "template_id": 126312
+    },
+    "DS-NEC1-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_warrior_commander_1_Ghost_NPC.dds",
+      "template_id": 126315
+    },
+    "DS-NEC1-NPC09_Kimerith": {
+      "portrait": "",
+      "template_id": 126921
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Good_Old_Days",
+    "from": "archive",
+    "timestamp": "20240120175949"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC1-C02-001"
+}

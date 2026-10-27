@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Firecat"
   },
   "requires": [
-    "WC-Q-1735C0"
+    "WC-FIRECAT-SIDE-001"
   ],
   "mainline": false,
   "level": 5,
@@ -83,5 +83,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-FIRECAT-SIDE-002"
 }

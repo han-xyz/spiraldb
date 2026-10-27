@@ -6,7 +6,7 @@
     "zone": "Novus/NV_Z03_PuertoNuovo_VA"
   },
   "requires": [
-    "NV-Q-17D60C"
+    "NV-Q-17D60E"
   ],
   "mainline": true,
   "level": 142,
@@ -214,11 +214,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Strange Things Indeed replaced by NV-Q-17D60C",
       "blocking": false
     }
   ]

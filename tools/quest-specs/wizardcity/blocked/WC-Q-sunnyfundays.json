@@ -29,6 +29,16 @@
       "loc": "ZoneLocName_9005"
     },
     {
+      "type": "usage",
+      "items": [
+        "CL-Grand_Spiral_Chart.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizItems_00001686",
+      "loc": "ZoneLocName_9005"
+    },
+    {
       "type": "persona",
       "persona": "CL-CRAB-NPC02",
       "zone": "Celestia/Interiors/CL_Z10i2_Kingdom_Of_The_Crabs",
@@ -68,9 +78,9 @@
       "blocking": false
     },
     {
-      "field": "goal.usage",
-      "value": "Read the Grand Spiral Chart in the Chantry in District of the Stars",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Grand Spiral Chart in the Chantry in District of the Stars: ObjectData/CL",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",

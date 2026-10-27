@@ -18,6 +18,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "AZ-StelaItzamna.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizardGameObjects_00000554",
+      "loc": "ZoneLocName_9005"
+    },
+    {
       "type": "waypoint",
       "zone": "WizardCity/WC_Ravenwood"
     },
@@ -65,12 +75,12 @@
       "blocking": false
     },
     {
-      "field": "goal.usage",
-      "value": "Use (Activate) the Stela Itzamna in the Royal Museum",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Stela Itzamna in the Royal Museum: ObjectData/AZ",
+      "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Halley's Observatory",
       "blocking": false
     },

@@ -106,6 +106,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z07_Heap"
+    },
+    {
       "type": "persona",
       "persona": "LM-HEAP-NPC09",
       "zone": "Lemuria/LM_Z07_Heap",
@@ -190,8 +194,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Crime Lab",
+      "field": "goal.waypoint (current zone)",
+      "value": "Crime Lab",
       "blocking": false
     },
     {

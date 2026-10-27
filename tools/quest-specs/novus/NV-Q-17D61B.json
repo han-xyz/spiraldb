@@ -6,7 +6,7 @@
     "zone": "Novus/NV_Z03_PuertoNuovo_VA"
   },
   "requires": [
-    "NV-Q-180889"
+    "NV-Q-17D619"
   ],
   "mainline": true,
   "level": 142,
@@ -126,7 +126,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Thou Shalt Not Steel replaced by NV-Q-180889",
+      "value": "Thou Shalt Not Steel replaced by NV-Q-17D619",
       "blocking": false
     }
   ]

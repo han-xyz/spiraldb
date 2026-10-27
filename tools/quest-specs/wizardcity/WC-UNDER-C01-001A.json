@@ -88,7 +88,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Rope Anchor",
       "blocking": false
     },
@@ -98,5 +98,6 @@
       "blocking": false
     }
   ],
-  "min_level": 12
+  "min_level": 12,
+  "captured": "WC-UNDER-C01-001"
 }

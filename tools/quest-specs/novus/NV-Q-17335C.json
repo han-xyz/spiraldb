@@ -6,7 +6,7 @@
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
-    "NV-Q-17335A"
+    "NV-Q-17335B"
   ],
   "mainline": true,
   "level": 142,
@@ -77,6 +77,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z05_LaVilleRose"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Player_Cabal_B_01.AdjRef"
@@ -94,15 +98,15 @@
     },
     {
       "type": "persona",
-      "persona": "NV-ROSE-NPC01-B",
+      "persona": "NV-ROSE-NPC01",
       "zone": "Novus/NV_Z05_LaVilleRose",
       "loc": "ZoneLocName_1520449"
     }
   ],
   "personas": {
-    "NV-ROSE-NPC01-B": {
+    "NV-ROSE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1520457
+      "template_id": 1520450
     },
     "NV-ROSE-NPC06": {
       "portrait": "GUI/NpcPortraits/Dog_DogOfWarF_A_NPC.dds",
@@ -125,18 +129,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Matheus' House",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Pingouin Some, Lose Some replaced by NV-Q-17335A",
       "blocking": false
     }
   ]

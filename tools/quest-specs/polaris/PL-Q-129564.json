@@ -111,6 +111,10 @@
       "loc": "ZoneLocName_1217799"
     },
     {
+      "type": "waypoint",
+      "zone": "Polaris/PL_Z01_Harbor"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "PL_Penguin_Officer_C.AdjRef",
@@ -154,7 +158,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Customs Storage",
       "blocking": false
     },

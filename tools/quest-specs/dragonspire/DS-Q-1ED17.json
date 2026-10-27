@@ -1,0 +1,70 @@
+{
+  "id": "DS-Q-1ED17",
+  "lang": "1ED17",
+  "giver": {
+    "persona": "DS-LIB3-NPC01",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z3_GrandChasm"
+  },
+  "requires": [
+    "DS-LIB3-C01-003"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2230,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-LIB2-NPC02",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza",
+      "completion": [
+        {
+          "speaker": "DS-LIB2-NPC02",
+          "line": "00000000"
+        },
+        {
+          "speaker": "DS-LIB2-NPC02",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-LIB2-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_1_Ghost_NPC.dds",
+      "template_id": 126298
+    },
+    "DS-LIB3-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_wizard_skirt_4_Ghost_NPC.dds",
+      "template_id": 126305
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Stone_Free",
+    "from": "archive",
+    "timestamp": "20240120175028"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB3-C01-004"
+}

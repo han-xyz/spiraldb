@@ -96,7 +96,7 @@
     },
     {
       "type": "persona",
-      "persona": "PL-WAL-NPC01-C",
+      "persona": "PL-WAL-NPC01",
       "zone": "Polaris/PL_Z00_Walruskberg",
       "loc": "ZoneLocName_1254306"
     },
@@ -126,9 +126,9 @@
     }
   ],
   "personas": {
-    "PL-WAL-NPC01-C": {
+    "PL-WAL-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Bear_Strongman_A_NPC.dds",
-      "template_id": 1346151
+      "template_id": 1340488
     },
     "PL-WAL-NPC09": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_A_NPC.dds",

@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_OldeTown"
   },
   "requires": [
-    "WC-Q-1625D8"
+    "WC-COMMONS-MAIN-003"
   ],
   "mainline": true,
   "level": 5,

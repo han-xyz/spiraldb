@@ -2,8 +2,8 @@
   "id": "EM-Q-15909A",
   "lang": "15909A",
   "giver": {
-    "persona": "EM-AERO-NPC07",
-    "zone": "Empyrea/EM_Z09_NWAeroplains"
+    "persona": "EM-NIMB-NPC08",
+    "zone": "Empyrea/EM_Z07_NimbusCitadel"
   },
   "requires": [
     "EM-Q-16158C"
@@ -53,26 +53,30 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Nimbari_JusticarF_B_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00003046",
-      "zone": "",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Empyrea/EM_Z09_NWAeroplains",
+      "zone": "Empyrea/EM_Z07_NimbusCitadel",
       "loc": "ZoneLocName_1413254"
     }
   ],
   "personas": {
-    "EM-AERO-NPC07": {
+    "EM-NIMB-NPC08": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_HelenaF_A_NPC.dds",
-      "template_id": 1447331
+      "template_id": 1413252
     }
   },
   "source": {
@@ -87,7 +91,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Rear Courtyard",
       "blocking": false
     },

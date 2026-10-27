@@ -1,0 +1,150 @@
+{
+  "id": "Wysteria-Q-71929",
+  "lang": "71929",
+  "giver": {
+    "persona": "PA-HUB-NPC16",
+    "zone": "Wysteria/Interiors/PA_Dorm"
+  },
+  "requires": [
+    "Wysteria-Q-71CD4"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 750,
+    "gold": 60
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-SHOP-NPC01",
+      "zone": "Wysteria/Interiors/PA_Store01",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-SHOP-NPC02",
+      "zone": "Wysteria/Interiors/PA_Store02",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-SHOP-NPC03",
+      "zone": "Wysteria/Interiors/PA_Store04",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-SHOP-NPC04",
+      "zone": "Wysteria/Interiors/PA_Store03",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-SHOP-NPC05",
+      "zone": "Wysteria/Interiors/PA_Store05",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Beatrice_Wildwind_NPC.dds",
+      "template_id": 465149
+    },
+    "PA-SHOP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_M_01_NPC.dds",
+      "template_id": 465153
+    },
+    "PA-SHOP-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_F_01_NPC.dds",
+      "template_id": 465154
+    },
+    "PA-SHOP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_M_02_NPC.dds",
+      "template_id": 465155
+    },
+    "PA-SHOP-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_F_02_NPC.dds",
+      "template_id": 465158
+    },
+    "PA-SHOP-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitMerchant_F_03_NPC.dds",
+      "template_id": 465159
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shopping_List",
+    "from": "archive",
+    "timestamp": "20231124102538"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

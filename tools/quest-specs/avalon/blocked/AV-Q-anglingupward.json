@@ -10,7 +10,10 @@
   "level": 68,
   "reward": {
     "xp": 325,
-    "gold": 350
+    "gold": 350,
+    "spells": [
+      "Banish Sentinels 2"
+    ]
   },
   "dialogs": {
     "prep": [],
@@ -22,6 +25,18 @@
       "persona": "AV-FishingNPC-01",
       "zone": "Avalon/AV_Z00_Hub",
       "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "Fish_Short_Hamlet.AdjRef",
+        "Fish_Short_SeaFairy.AdjRef",
+        "Fish_Short_HagFish.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "FishNames_00000246",
+      "loc": "ZoneLocName_470339"
     },
     {
       "type": "persona",
@@ -43,7 +58,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Angling_Upward",
     "from": "archive",
-    "timestamp": "20231121232357"
+    "timestamp": "20240226003603"
   },
   "needs_review": [
     {
@@ -57,9 +72,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Hamlet in Dun Dara",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Hamlet in Dun Dara: ObjectData/Fish",
+      "blocking": false
     },
     {
       "field": "goal.items",
@@ -67,14 +82,14 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Sea Fairy on the High Road or in The Wyrd",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Sea Fairy on the High Road or in The Wyrd: ObjectData/Fish",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Hag Fish in The Wyrd",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Hag Fish in The Wyrd: ObjectData/Fish",
+      "blocking": false
     }
   ]
 }

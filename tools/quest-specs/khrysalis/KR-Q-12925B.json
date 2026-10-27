@@ -89,6 +89,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z02_MoonCliffs"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_BeeMonsterF_A.AdjRef",
@@ -129,7 +133,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Throne Room",
       "blocking": false
     },

@@ -2,8 +2,8 @@
   "id": "WL-Q-1852DE",
   "lang": "1852DE",
   "giver": {
-    "persona": "WL-DREAM-NPC04-A",
-    "zone": "Wallaru/WL_Z04_TheDreaming"
+    "persona": "WL-RANCH-NPC05",
+    "zone": "Wallaru/WL_Z06_CollieRanch"
   },
   "requires": [
     "WL-Q-1852DD"
@@ -56,21 +56,21 @@
       ],
       "count": 3,
       "target": "WizardMobs_00004404",
-      "zone": "",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "descriptor": "WizQst1852DE_00000007",
       "loc": "ZoneLocName_1594105"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "zone": "Wallaru/WL_Z06_CollieRanch",
       "loc": "ZoneLocName_1594105"
     }
   ],
   "personas": {
-    "WL-DREAM-NPC04-A": {
+    "WL-RANCH-NPC05": {
       "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
-      "template_id": 1560426
+      "template_id": 1594073
     }
   },
   "source": {

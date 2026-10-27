@@ -51,15 +51,6 @@
       "loc": "ZoneLocName_465259"
     },
     {
-      "type": "usage",
-      "items": [
-        "ZF_Water_Hole.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Zafaria/ZF_Z03_Savannah",
-      "loc": "ZoneLocName_465259"
-    },
-    {
       "type": "persona",
       "persona": "giver",
       "zone": "Zafaria/ZF_Z03_Savannah",
@@ -79,8 +70,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.descriptor",
-      "value": "Water Hole",
+      "field": "goal.zone (waypoint left out)",
+      "value": "Scout Water Hole",
       "blocking": false
     },
     {

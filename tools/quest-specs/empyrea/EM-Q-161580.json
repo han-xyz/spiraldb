@@ -104,8 +104,9 @@
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC17",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "persona": "EM-ZANA-NPC30",
+      "zone": "Empyrea/Interiors/EM_Z02_BeaconHope",
+      "loc": "ZoneLocName_1254355"
     },
     {
       "type": "persona",
@@ -127,10 +128,6 @@
     }
   ],
   "personas": {
-    "EM-AERI-NPC17": {
-      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
-      "template_id": 1397735
-    },
     "EM-ZANA-NPC01-C": {
       "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_C_NPC.dds",
       "template_id": 1254433
@@ -138,6 +135,10 @@
     "EM-ZANA-NPC14": {
       "portrait": "GUI/NpcPortraits/Portrait_Alphoi_CasterF_A_NPC.dds",
       "template_id": 1254375
+    },
+    "EM-ZANA-NPC30": {
+      "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_MOB.dds",
+      "template_id": 1254476
     },
     "EM-ZANA-NPC36": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_CaptainF_A_NPC.dds",

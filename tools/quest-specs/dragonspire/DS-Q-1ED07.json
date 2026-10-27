@@ -1,0 +1,72 @@
+{
+  "id": "DS-Q-1ED07",
+  "lang": "1ED07",
+  "giver": {
+    "persona": "DS-LIB2-NPC02",
+    "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+  },
+  "requires": [
+    "DS-LIB2-C04-002"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 705,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "DS-LIB2-NPC05_Warrior5",
+      "zone": "DragonSpire/DS_A1_Knowledge/DS_A1Z2_ConquestPlaza"
+    }
+  ],
+  "personas": {
+    "DS-LIB2-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_military_1_Ghost_NPC.dds",
+      "template_id": 126298
+    },
+    "DS-LIB2-NPC05_Warrior5": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_F_warrior_skirt_1_Ghost_NPC.dds",
+      "template_id": 126301
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Application_Procedures",
+    "from": "archive",
+    "timestamp": "20260616214823"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-LIB2-C02-003"
+}

@@ -149,6 +149,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+    },
+    {
       "type": "persona",
       "persona": "NV-PUERT-NPC01",
       "zone": "Novus/NV_Z03_PuertoNuovo_VA",
@@ -180,6 +184,16 @@
       "loc": "ZoneLocName_1520447"
     },
     {
+      "type": "usage",
+      "items": [
+        "LM_GenericBlocker_Sky.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizItems_00002102",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Novus/NV_Z03_PuertoNuovo_VA",
@@ -204,9 +218,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Investigate Veins of Valencian Steel",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.persona",
@@ -219,9 +233,9 @@
       "blocking": true
     },
     {
-      "field": "goal.usage",
-      "value": "Open Cell Door",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Cell Door: ObjectData/LM",
+      "blocking": false
     },
     {
       "field": "dialogs",

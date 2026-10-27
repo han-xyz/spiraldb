@@ -1,0 +1,95 @@
+{
+  "id": "DS-Q-23BC3",
+  "lang": "23BC3",
+  "giver": {
+    "persona": "DS-HUB-NPC01",
+    "zone": "DragonSpire/DS_Hub_Cathedral"
+  },
+  "requires": [
+    "DS-LIB-C02-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 2460,
+    "gold": 240
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "DragonSpire/DS_A2_Battle/DS_A2Hub_Necropolis"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "DS_Teleporter_ToNecropolis.AdjRef"
+      ],
+      "count": 1,
+      "zone": "DragonSpire/DS_Hub_Cathedral"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_Hub_Cathedral",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "DS-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Drake_A_NPC.dds",
+      "template_id": 126291
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fire_Shield",
+    "from": "archive",
+    "timestamp": "20240120182154"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Fire Medallion in The Necropolis",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-MAIN-C01-004"
+}

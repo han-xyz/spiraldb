@@ -18,8 +18,21 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "AR_ForgeOfLegends.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000768"
+    },
+    {
       "type": "persona",
       "persona": "giver",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+    },
+    {
+      "type": "waypoint",
       "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
     }
   ],
@@ -51,9 +64,9 @@
       "blocking": false
     },
     {
-      "field": "goal.usage",
-      "value": "Read The Forge of Legends in The Repository",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Forge of Legends in The Repository: ObjectData/AR",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
@@ -61,7 +74,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Arcanum Crafting Room",
       "blocking": false
     }

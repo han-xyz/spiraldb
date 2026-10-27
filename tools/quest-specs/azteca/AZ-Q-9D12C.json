@@ -55,6 +55,10 @@
       "loc": "ZoneLocName_643349"
     },
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z02_Cenote"
+    },
+    {
       "type": "persona",
       "persona": "AZ-CENOTE-NPC05",
       "zone": "Azteca/Interiors/AZ_Z02_Mine02",
@@ -94,7 +98,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Motecuma's Mine",
       "blocking": false
     },

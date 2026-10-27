@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z11_VeloCity"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Goat_Ninja_E_01.AdjRef"
@@ -83,7 +87,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Troll Den, Northeast Aero Plains",
       "blocking": false
     },

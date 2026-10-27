@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/Interiors/WC_Unicorn_HedgeMaze"
   },
   "requires": [
-    "WC-Q-1625CA"
+    "WC-UNICORN-MAIN-004"
   ],
   "mainline": true,
   "level": 5,

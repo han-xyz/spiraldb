@@ -2,8 +2,8 @@
   "id": "WL-Q-17D8A4",
   "lang": "17D8A4",
   "giver": {
-    "persona": "WL-HOPE-NPC02-B",
-    "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister"
+    "persona": "WL-OUT-NPC03",
+    "zone": "Wallaru/WL_Z02_Outback"
   },
   "requires": [
     "WL-Q-17D8A0"
@@ -139,40 +139,44 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004400",
-      "zone": "",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752"
     },
     {
       "type": "persona",
-      "persona": "WL-HOPE-NPC26-B",
-      "zone": "Wallaru/WL_Z01_Hub",
-      "loc": "ZoneLocName_1560381"
+      "persona": "WL-OUT-NPC04",
+      "zone": "Wallaru/Interiors/WL_Z02_I05_RidgeCave",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z02_I05_RidgeCave"
     },
     {
       "type": "persona",
-      "persona": "WL-DREAM-NPC01-A",
-      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "persona": "WL-OUT-NPC01",
+      "zone": "Wallaru/WL_Z02_Outback",
       "loc": "ZoneLocName_1562752",
       "completion": [
         {
-          "speaker": "WL-DREAM-NPC01-A",
+          "speaker": "WL-OUT-NPC01",
           "line": "00000004"
         }
       ]
     }
   ],
   "personas": {
-    "WL-DREAM-NPC01-A": {
+    "WL-OUT-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
-      "template_id": 1560362
+      "template_id": 1608160
     },
-    "WL-HOPE-NPC02-B": {
+    "WL-OUT-NPC03": {
       "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Judge_A_NPC.dds",
-      "template_id": 1608108
+      "template_id": 1562759
     },
-    "WL-HOPE-NPC26-B": {
+    "WL-OUT-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
-      "template_id": 1608478
+      "template_id": 1562763
     }
   },
   "source": {
@@ -192,8 +196,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go Outside",
+      "field": "goal.waypoint (current zone)",
+      "value": "Outside",
       "blocking": false
     },
     {

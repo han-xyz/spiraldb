@@ -7,7 +7,8 @@
   },
   "requires": [
     "AZ-Q-9D141",
-    "AZ-Q-B1454"
+    "AZ-Q-B1454",
+    "AZ-Q-72E2E"
   ],
   "mainline": false,
   "level": 78,
@@ -50,6 +51,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z00_Zocalo"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Azteca/AZ_Z00_Zocalo",
@@ -65,7 +70,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Sea_of_Fire",
     "from": "archive",
-    "timestamp": "20231125115000"
+    "timestamp": "20250829045034"
   },
   "needs_review": [
     {
@@ -74,8 +79,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Isla del Fuego Volcano",
+      "field": "goal.waypoint (current zone)",
+      "value": "Isla del Fuego Volcano",
       "blocking": false
     },
     {

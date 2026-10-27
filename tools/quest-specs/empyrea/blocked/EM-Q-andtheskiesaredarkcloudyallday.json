@@ -46,6 +46,10 @@
       "loc": "ZoneLocName_1413361"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Doll_Scientist_A_01.AdjRef",
@@ -95,9 +99,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find the Cabal Leader",
-      "blocking": true
+      "blocking": false
     }
   ]
 }

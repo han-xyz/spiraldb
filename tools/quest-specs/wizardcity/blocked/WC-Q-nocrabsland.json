@@ -5,7 +5,7 @@
     "zone": "WizardCity/WC_Streets/WC_Triton_Underwater/WC_Triton_Warren01"
   },
   "requires": [
-    "WC-Q-1ED91"
+    "DS-ACAD1-C02-002"
   ],
   "mainline": false,
   "level": 5,

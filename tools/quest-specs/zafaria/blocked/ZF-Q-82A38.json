@@ -113,7 +113,7 @@
       "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
+      "field": "goal.usage",
       "value": "Play Drum Near King's Cage",
       "blocking": true
     },

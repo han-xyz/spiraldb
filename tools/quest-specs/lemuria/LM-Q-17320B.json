@@ -12,7 +12,37 @@
   "level": 132,
   "reward": {
     "xp": 120900,
-    "gold": 1150
+    "gold": 1150,
+    "spells": [
+      {
+        "spell": "Old One's Endgame",
+        "school": "Balance"
+      },
+      {
+        "spell": "Grim Reader",
+        "school": "Death"
+      },
+      {
+        "spell": "Blast Off!",
+        "school": "Fire"
+      },
+      {
+        "spell": "Freeze Ray",
+        "school": "Ice"
+      },
+      {
+        "spell": "Lord of the Jungle",
+        "school": "Life"
+      },
+      {
+        "spell": "Barbarian's Saga",
+        "school": "Myth"
+      },
+      {
+        "spell": "Dark & Stormy",
+        "school": "Storm"
+      }
+    ]
   },
   "dialogs": {
     "prep": [

@@ -2,11 +2,11 @@
   "id": "WC-Q-1627B2",
   "lang": "1627B2",
   "giver": {
-    "persona": "WC-TRITON-NPC02-B",
+    "persona": "WC-TRITON-NPC02",
     "zone": "WizardCity/WC_Streets/WC_Triton"
   },
   "requires": [
-    "WC-Q-1627AE"
+    "WC-TRITON-MAIN-001"
   ],
   "mainline": true,
   "level": 5,
@@ -99,9 +99,9 @@
       "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Death02.dds",
       "template_id": 38139
     },
-    "WC-TRITON-NPC02-B": {
+    "WC-TRITON-NPC02": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_Boy_Storm02.dds",
-      "template_id": 1451951
+      "template_id": 1451938
     }
   },
   "source": {
@@ -115,5 +115,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-TRITON-MAIN-002"
 }

@@ -2,7 +2,7 @@
   "id": "WL-Q-18898B",
   "lang": "18898B",
   "giver": {
-    "persona": "WL-HOPE-NPC06-B",
+    "persona": "WL-HOPE-NPC06",
     "zone": "Wallaru/WL_Z01_Hub"
   },
   "requires": [
@@ -65,6 +65,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "WL_Kangaroo_Drover_D_01.AdjRef",
@@ -90,9 +94,9 @@
     }
   ],
   "personas": {
-    "WL-HOPE-NPC06-B": {
+    "WL-HOPE-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
-      "template_id": 1608076
+      "template_id": 1608064
     }
   },
   "source": {
@@ -107,7 +111,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Krokodile Dundara's Alley",
       "blocking": false
     },

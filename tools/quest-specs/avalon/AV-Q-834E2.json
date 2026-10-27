@@ -2,8 +2,8 @@
   "id": "AV-Q-834E2",
   "lang": "834E2",
   "giver": {
-    "persona": "AV-CAER-NPC10",
-    "zone": "Avalon/AV_Z03_CaerLyon"
+    "persona": "AV-ABBEY-NPC09",
+    "zone": "Avalon/Interiors/AV_Z01_KnightsHall"
   },
   "requires": [
     "AV-Q-834E1"
@@ -44,9 +44,9 @@
       "portrait": "GUI/NpcPortraits/Art_Portraits_AV_Blacksmith_WaylandNoye_NPC.dds",
       "template_id": 617163
     },
-    "AV-CAER-NPC10": {
+    "AV-ABBEY-NPC09": {
       "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirJeanPaul_NPC.dds",
-      "template_id": 537852
+      "template_id": 617186
     }
   },
   "source": {

@@ -1,0 +1,135 @@
+{
+  "id": "WC-Q-16271E",
+  "lang": "16271E",
+  "auto_start": true,
+  "giver": {
+    "persona": "WC-CATA-NPC01",
+    "zone": "WizardCity/WC_Streets/WC_Catacombs"
+  },
+  "requires": [
+    "WC-Q-16272F"
+  ],
+  "mainline": true,
+  "level": 5,
+  "reward": {
+    "xp": 0,
+    "gold": 1380
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Unicorn_CorsairF_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003466",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Unicorn_Guard_B_01.AdjRef",
+        "CC_Unicorn_Guard_B_01_Loot.AdjRef",
+        "CC_Unicorn_Guard_B_02.AdjRef",
+        "CC_Unicorn_Guard_B_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003468",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "CC_Lamprey_Boss_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003452",
+      "zone": "WizardCity/WC_Streets/WC_Catacombs",
+      "loc": "ZoneLocName_1451811"
+    }
+  ],
+  "personas": {
+    "WC-CATA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Hargrove_A_NPC.dds",
+      "template_id": 1487008
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Mind_Thief",
+    "from": "archive",
+    "timestamp": "20240409061211"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16271E matched by the words it shares with the goals; its lines name Valencian Swashbuckler, Valencian Royal Guard",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Palace",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Valencian Swashbuckler: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Palace",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Valencian Royal Guard: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Palace",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Satharilith: ObjectData/Gauntlet/Catacombs",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

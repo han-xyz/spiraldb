@@ -2,8 +2,8 @@
   "id": "AV-Q-834E9",
   "lang": "834E9",
   "giver": {
-    "persona": "AV-CATA-NPC01",
-    "zone": "Avalon/AV_Z10_Catacombs"
+    "persona": "AV-DEEP-NPC01",
+    "zone": "Avalon/AV_Z09_DeepWater"
   },
   "requires": [
     "AV-Q-834E8"
@@ -42,7 +42,7 @@
         "AV-DeepWater-Teleporter.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Avalon/AV_Z09_DeepWater",
       "descriptor": "Items_00006581",
       "loc": "ZoneLocName_537857"
     },
@@ -54,14 +54,14 @@
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/AV_Z10_Catacombs",
+      "zone": "Avalon/AV_Z09_DeepWater",
       "loc": "ZoneLocName_537857"
     }
   ],
   "personas": {
-    "AV-CATA-NPC01": {
+    "AV-DEEP-NPC01": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
-      "template_id": 592086
+      "template_id": 537828
     }
   },
   "source": {

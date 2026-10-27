@@ -10,13 +10,46 @@
   "level": 78,
   "reward": {
     "xp": 325,
-    "gold": 350
+    "gold": 350,
+    "spells": [
+      "Buoy Chests 1"
+    ]
   },
   "dialogs": {
     "prep": [],
     "underway": []
   },
   "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "Fish_Long_AxXolotl.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "FishNames_00000282",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "Fish_Short_Piraptha.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "FishNames_00000273",
+      "loc": "ZoneLocName_701124"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "Fish_Short_Chupacarpe.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Azteca/AZ_Z04_SaltmeadowSwamp",
+      "descriptor": "FishNames_00000277",
+      "loc": "ZoneLocName_701124"
+    },
     {
       "type": "persona",
       "persona": "giver",
@@ -33,7 +66,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Rivers_of_Gold",
     "from": "archive",
-    "timestamp": "20231121232503"
+    "timestamp": "20240818025324"
   },
   "needs_review": [
     {
@@ -47,19 +80,19 @@
       "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
-      "value": "Get an Ax-Xolotl in The Zocalo",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Ax-Xolotl in The Zocalo: ObjectData/Fish",
+      "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
-      "value": "Get a Pirahptor in Mangrove Marsh",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Pirahptor in Mangrove Marsh: ObjectData/Fish",
+      "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
-      "value": "Get a Chupacarpe in Saltmeadow Swamp",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Chupacarpe in Saltmeadow Swamp: ObjectData/Fish",
+      "blocking": false
     }
   ]
 }

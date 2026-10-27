@@ -2,8 +2,8 @@
   "id": "EM-Q-15615A",
   "lang": "15615A",
   "giver": {
-    "persona": "EM-AERI-NPC17",
-    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    "persona": "EM-SEP-002",
+    "zone": "Empyrea/EM_Z05_Sepidious"
   },
   "requires": [
     "EM-Q-156159"
@@ -77,6 +77,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z05_Sepidious"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z05_Sepidious"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Greenman_Cabalist_A_01.AdjRef",
@@ -84,31 +92,31 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002788",
-      "zone": ""
+      "zone": "Empyrea/EM_Z05_Sepidious"
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC01-B",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "persona": "EM-SEP-003",
+      "zone": "Empyrea/EM_Z05_Sepidious"
     },
     {
       "type": "persona",
-      "persona": "EM-NIMB-NPC16",
-      "zone": "Empyrea/Interiors/EM_Z07_ControlRoom"
+      "persona": "EM-SEP-001",
+      "zone": "Empyrea/EM_Z05_Sepidious"
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
+    "EM-SEP-001": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pirate_Cabalist_A_NPC.dds",
+      "template_id": 1401196
     },
-    "EM-AERI-NPC17": {
+    "EM-SEP-002": {
       "portrait": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
-      "template_id": 1397735
+      "template_id": 1401197
     },
-    "EM-NIMB-NPC16": {
-      "portrait": "GUI/NpcPortraits/Portrait_Mutant_Dynt_A_NPC.dds",
-      "template_id": 1413353
+    "EM-SEP-003": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1401198
     }
   },
   "source": {
@@ -123,7 +131,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Left Eye, Notochord",
       "blocking": false
     },
@@ -133,7 +141,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Left Eye",
       "blocking": false
     },

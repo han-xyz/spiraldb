@@ -1,0 +1,86 @@
+{
+  "id": "Wysteria-Q-71CCA",
+  "lang": "71CCA",
+  "giver": {
+    "persona": "PA-HUB-NPC11",
+    "zone": "Wysteria/PA_Hub"
+  },
+  "requires": [
+    "Wysteria-Q-71926"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 920,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "PA-Goblin-R5.AdjRef"
+      ],
+      "count": 6,
+      "target": "WizardMobs_00000971",
+      "zone": "Wysteria/PA_Z01_Pegasus",
+      "loc": "ZoneLocName_465168"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129"
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_RabbitGuard_01_NPC.dds",
+      "template_id": 465143
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Goblin_Up",
+    "from": "archive",
+    "timestamp": "20231124102322"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

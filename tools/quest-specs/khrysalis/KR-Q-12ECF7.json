@@ -1,0 +1,149 @@
+{
+  "id": "KR-Q-12ECF7",
+  "lang": "12ECF7",
+  "giver": {
+    "persona": "KR-Sardonyx-NPC52",
+    "zone": "Khrysalis/KR_Z09_MantisCity"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 88,
+  "reward": {
+    "xp": 54250,
+    "gold": 525
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KR-IronButterfly.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z06_CrescentBeach",
+      "descriptor": "WizQst12ECF7_00000000",
+      "loc": "ZoneLocName_1240208"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-IronButterfly.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z07_RuinedAlcazar",
+      "descriptor": "WizQst12ECF7_00000000",
+      "loc": "ZoneLocName_1240208",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-IronButterfly.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "descriptor": "WizQst12ECF7_00000000",
+      "loc": "ZoneLocName_1240208",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-IronButterfly.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z10_KondhaDesert",
+      "descriptor": "WizQst12ECF7_00000000",
+      "loc": "ZoneLocName_1240208",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KR-IronButterfly.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Khrysalis/KR_Z11_TheHive",
+      "descriptor": "WizQst12ECF7_00000000",
+      "loc": "ZoneLocName_1240208",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Khrysalis/KR_Z09_MantisCity",
+      "loc": "ZoneLocName_1240208"
+    }
+  ],
+  "personas": {
+    "KR-Sardonyx-NPC52": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 1217354
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Iron_Butterflies",
+    "from": "archive",
+    "timestamp": "20241226062248"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst12ECF7 by the proper nouns its lines share with the page (Butterfly, Iron), within 16 of a key of the zone's quests; next best WizQst12ECFF with 1",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Lost Light",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lost Light replaced by min_level",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Heard it Through the Leaf Vine replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 88
+}

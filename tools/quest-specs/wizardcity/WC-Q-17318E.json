@@ -6,7 +6,7 @@
     "zone": "WizardCity/WC_Streets/WC_Cyclops"
   },
   "requires": [
-    "WC-Q-1731A9"
+    "WC-OLDE-MAIN-002C"
   ],
   "mainline": true,
   "level": 5,
@@ -86,5 +86,6 @@
       "value": "speaker and role guessed from the line text",
       "blocking": false
     }
-  ]
+  ],
+  "captured": "WC-CYCLOPS-MAIN-001"
 }

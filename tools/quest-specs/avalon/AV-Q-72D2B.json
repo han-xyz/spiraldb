@@ -45,6 +45,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z04_TheWild"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Froudling-Spriggan-Spiny-R11-01.AdjRef",
@@ -101,8 +105,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Cave of Anguish",
+      "field": "goal.waypoint (current zone)",
+      "value": "Cave of Anguish",
       "blocking": false
     },
     {

@@ -7,8 +7,9 @@
   "requires": [
     "CL-MAIN-C00-001"
   ],
+  "min_level": 52,
   "mainline": false,
-  "level": 48,
+  "level": 52,
   "reward": {
     "xp": 4500,
     "gold": 430
@@ -22,6 +23,19 @@
       "type": "persona",
       "persona": "MB-SHOP-Snacks01",
       "zone": "Marleybone/MB_Hub",
+      "loc": "ZoneLocName_1161792"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PetSnacks_1_NettleRoot.AdjRef",
+        "PetSnacks_2_MediumFish.AdjRef",
+        "PetSnacks_2_StinkyCheese.AdjRef",
+        "PetSnacks_3_GoldenSquash.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Celestia/CL_Hub",
+      "descriptor": "PetSnacks_00000038",
       "loc": "ZoneLocName_1161792"
     },
     {
@@ -64,24 +78,24 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Nettle Root",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Nettle Root: ObjectData/PetSnacks",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Medium Fish",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Medium Fish: ObjectData/PetSnacks",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Stinky Cheese",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Stinky Cheese: ObjectData/PetSnacks",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Golden Squash",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Golden Squash: ObjectData/PetSnacks",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",

@@ -61,6 +61,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z03_OuterAthanor"
+    },
+    {
       "type": "persona",
       "persona": "EM-OUTER-NPC09-B",
       "zone": "Empyrea/EM_Z03_OuterAthanor",
@@ -84,8 +88,8 @@
     },
     {
       "type": "persona",
-      "persona": "EM-OUTER-NPC07-B",
-      "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall",
+      "persona": "EM-OUTER-NPC07-C",
+      "zone": "Empyrea/Interiors/EM_Z03_IceDwarfBunker",
       "loc": "ZoneLocName_1391567"
     }
   ],
@@ -94,9 +98,9 @@
       "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_B_NPC.dds",
       "template_id": 1391499
     },
-    "EM-OUTER-NPC07-B": {
+    "EM-OUTER-NPC07-C": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
-      "template_id": 1391504
+      "template_id": 1391561
     },
     "EM-OUTER-NPC09-B": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceSoldier_B_NPC.dds",
@@ -110,7 +114,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Bunker",
       "blocking": false
     },

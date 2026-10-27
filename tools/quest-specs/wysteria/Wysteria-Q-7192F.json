@@ -1,0 +1,134 @@
+{
+  "id": "Wysteria-Q-7192F",
+  "lang": "7192F",
+  "giver": {
+    "persona": "PA-HUB-NPC01",
+    "zone": "Wysteria/PA_Hub"
+  },
+  "requires": [
+    "Wysteria-Q-7192E"
+  ],
+  "mainline": true,
+  "level": 25,
+  "reward": {
+    "xp": 625,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC16",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC17",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC18",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "PA-HUB-NPC19",
+      "zone": "Wysteria/Interiors/PA_Dorm",
+      "loc": "ZoneLocName_465129"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wysteria/PA_Hub",
+      "loc": "ZoneLocName_465129",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000009"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PA-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Mrs_Dowager.dds",
+      "template_id": 465133
+    },
+    "PA-HUB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Beatrice_Wildwind_NPC.dds",
+      "template_id": 465149
+    },
+    "PA-HUB-NPC17": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kisai_Shugenja_NPC.dds",
+      "template_id": 465150
+    },
+    "PA-HUB-NPC18": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_PA_Nalia_Dunestrider_NPC.dds",
+      "template_id": 465151
+    },
+    "PA-HUB-NPC19": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Pa_Student_B_02_NPC.dds",
+      "template_id": 465152
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:One_Good_Tournament",
+    "from": "archive",
+    "timestamp": "20231124102613"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

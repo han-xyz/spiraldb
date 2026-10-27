@@ -139,7 +139,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.persona",
+      "field": "goal.waypoint",
       "value": "Follow Judge Rozzer Down the path",
       "blocking": true
     },

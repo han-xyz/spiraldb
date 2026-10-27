@@ -1,0 +1,95 @@
+{
+  "id": "WC-Q-13E0A",
+  "lang": "13E0A",
+  "giver": {
+    "persona": "HO_Halloween04",
+    "zone": "WizardCity/WC_Streets/WC_Triton"
+  },
+  "requires": [
+    "WC-Q-1423B"
+  ],
+  "mainline": false,
+  "level": 5,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "HO_Halloween04.AdjRef",
+        "HO_Pumpkin.AdjRef",
+        "HO_Pumpkin02.AdjRef",
+        "HO_Pumpkin03.AdjRef"
+      ],
+      "count": 10,
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "descriptor": "WC-NPCs_00001048",
+      "loc": "ZoneLocName_91180"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "WizardCity/WC_Streets/WC_Triton",
+      "loc": "ZoneLocName_91180"
+    }
+  ],
+  "personas": {
+    "HO_Halloween04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Scarecrow_NPC.dds",
+      "template_id": 126440
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tricks_and_Sticks",
+    "from": "archive",
+    "timestamp": "20260131031602"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Jack O'Lantern: HO_Halloween04 from ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {
+        "xp": 0
+      },
+      "blocking": false
+    },
+    {
+      "field": "goal.items (other folder)",
+      "value": "Jack O'Lanterns: ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jack O'Lantern: HO_Halloween04 from ObjectData/Holiday",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

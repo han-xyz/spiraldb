@@ -6,7 +6,7 @@
     "zone": "WizardCity/Interiors/WC_SchoolMyth"
   },
   "requires": [
-    "WC-Q-B4F6C"
+    "WC-Q-B4F68"
   ],
   "mainline": false,
   "level": 90,
@@ -112,6 +112,11 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Into the Sea replaced by WC-Q-B4F68",
       "blocking": false
     }
   ],

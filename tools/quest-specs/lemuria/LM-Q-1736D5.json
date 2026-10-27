@@ -1,0 +1,188 @@
+{
+  "id": "LM-Q-1736D5",
+  "lang": "1736D5",
+  "giver": {
+    "persona": "LM-TELOS-NPC17",
+    "zone": "Lemuria/LM_Z00_Hub"
+  },
+  "requires": [
+    "LM-Q-1736A6"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 20000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_LEDZeppelin.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z00_Hub",
+      "descriptor": "WizQst1736D5_00000012",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_LEDZeppelin.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "descriptor": "WizQst1736D5_00000012",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_LEDZeppelin.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
+      "descriptor": "WizQst1736D5_00000012",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_LEDZeppelin.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizQst1736D5_00000012",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_LEDZeppelin.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "descriptor": "WizQst1736D5_00000012",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_LEDZeppelin.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "descriptor": "WizQst1736D5_00000012",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_LEDZeppelin.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "descriptor": "WizQst1736D5_00000012",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_LEDZeppelin.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizQst1736D5_00000012",
+      "loc": "ZoneLocName_1520271",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    }
+  ],
+  "personas": {
+    "LM-TELOS-NPC17": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZekeWife.dds",
+      "template_id": 1521366
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Night_Flight_in_the_Light",
+    "from": "archive",
+    "timestamp": "20241225015325"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1736D5 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

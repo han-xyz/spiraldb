@@ -43,6 +43,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z00_Zocalo"
+    },
+    {
       "type": "usage",
       "items": [
         "AZ-Drum_Huehuetl.AdjRef",
@@ -73,7 +77,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Zocalo Dock",
       "blocking": false
     },

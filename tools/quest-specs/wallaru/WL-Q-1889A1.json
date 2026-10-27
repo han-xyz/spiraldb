@@ -6,7 +6,7 @@
     "zone": "Wallaru/WL_Z01_Hub"
   },
   "requires": [
-    "WL-Q-17D897"
+    "WL-Q-17D89C"
   ],
   "mainline": true,
   "level": 152,
@@ -138,8 +138,12 @@
       "loc": "ZoneLocName_1560381"
     },
     {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub"
+    },
+    {
       "type": "persona",
-      "persona": "WL-HOPE-NPC05-B",
+      "persona": "WL-HOPE-NPC05",
       "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister",
       "loc": "ZoneLocName_1560381"
     },
@@ -161,9 +165,9 @@
       "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Judge_A_NPC.dds",
       "template_id": 1608053
     },
-    "WL-HOPE-NPC05-B": {
+    "WL-HOPE-NPC05": {
       "portrait": "GUI/NpcPortraits/Koala_MinisterF_A_NPC.dds",
-      "template_id": 1608106
+      "template_id": 1608062
     },
     "WL-StandIn-EmuRider": {
       "portrait": "GUI/NpcPortraits/Portrait_KoalaRider_Base_A_MOB.dds",
@@ -182,18 +186,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go Outside",
+      "field": "goal.waypoint (current zone)",
+      "value": "Outside",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "I Dream of Meanie replaced by WL-Q-17D897",
       "blocking": false
     }
   ]

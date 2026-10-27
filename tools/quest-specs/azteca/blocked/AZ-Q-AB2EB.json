@@ -320,8 +320,8 @@
       "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
-      "value": "Stop Morganthe's Dark Servant",
+      "field": "goal.mobs",
+      "value": "Morganthe's Dark Servant",
       "blocking": true
     },
     {

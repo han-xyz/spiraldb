@@ -69,6 +69,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z02_Crab_Realm"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "CL-FlyingFish-RedFin-R10.AdjRef"
@@ -123,7 +127,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "The Brambles",
       "blocking": false
     },

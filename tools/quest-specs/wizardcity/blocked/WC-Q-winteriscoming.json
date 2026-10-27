@@ -49,6 +49,16 @@
       "loc": "ZoneLocName_9005"
     },
     {
+      "type": "usage",
+      "items": [
+        "AZ-Silver_Frore.AdjRef"
+      ],
+      "count": 1,
+      "zone": "WizardCity/WC_Ravenwood",
+      "descriptor": "WizardGameObjects_00000592",
+      "loc": "ZoneLocName_9005"
+    },
+    {
       "type": "persona",
       "persona": "AZ-3POINTS-NPC01",
       "zone": "Azteca/AZ_Z01_ThreePoints",
@@ -97,7 +107,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "Falling Cavern, Mangrove Marsh",
       "blocking": false
     },
@@ -107,9 +117,9 @@
       "blocking": false
     },
     {
-      "field": "goal.unknown-verb",
-      "value": "Get Silver Frore",
-      "blocking": true
+      "field": "goal.items (other folder)",
+      "value": "Silver Frore: ObjectData/AZ",
+      "blocking": false
     },
     {
       "field": "goal.persona (other world)",

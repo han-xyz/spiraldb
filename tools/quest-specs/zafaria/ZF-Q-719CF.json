@@ -6,7 +6,7 @@
     "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts"
   },
   "requires": [
-    "ZF-Q-719CB"
+    "ZF-Q-719CC"
   ],
   "mainline": true,
   "level": 60,
@@ -82,11 +82,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Water Beats Fire replaced by ZF-Q-719CB",
       "blocking": false
     }
   ]

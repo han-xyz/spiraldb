@@ -2,11 +2,11 @@
   "id": "LM-Q-17320F",
   "lang": "17320F",
   "giver": {
-    "persona": "LM-URSAI-NPC01-C-NoGuitar",
-    "zone": "Lemuria/LM_Z01_WildLands"
+    "persona": "LM-URSAI-NPC01",
+    "zone": "Lemuria/LM_Z02_UrsaiVillage"
   },
   "requires": [
-    "LM-Q-17320D"
+    "LM-Q-17320E"
   ],
   "mainline": true,
   "level": 132,
@@ -115,13 +115,13 @@
     {
       "type": "persona",
       "persona": "LM-URSAI-NPC02",
-      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099"
     },
     {
       "type": "persona",
       "persona": "LM-URSAI-NPC02",
-      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "loc": "ZoneLocName_1520099"
     },
     {
@@ -131,6 +131,10 @@
       "loc": "ZoneLocName_1520099"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "LM_Fungus_Humango_A_01.AdjRef",
@@ -138,7 +142,7 @@
       ],
       "count": 3,
       "target": "WizardMobs_00003890",
-      "zone": "",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
       "descriptor": "WizQst17320F_00000030",
       "loc": "ZoneLocName_1520099"
     },
@@ -150,9 +154,9 @@
     }
   ],
   "personas": {
-    "LM-URSAI-NPC01-C-NoGuitar": {
+    "LM-URSAI-NPC01": {
       "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
-      "template_id": 1520317
+      "template_id": 1520122
     },
     "LM-URSAI-NPC02": {
       "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_E_NPC.dds",
@@ -170,18 +174,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Mango Thicket",
+      "field": "goal.waypoint (current zone)",
+      "value": "Mango Thicket",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Grease a Few Hooves replaced by LM-Q-17320D",
       "blocking": false
     }
   ]

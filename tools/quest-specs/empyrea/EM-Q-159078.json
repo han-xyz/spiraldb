@@ -2,11 +2,11 @@
   "id": "EM-Q-159078",
   "lang": "159078",
   "giver": {
-    "persona": "EM-AERI-NPC02-B",
-    "zone": "Empyrea/Interiors/EM_Z00_ArkHold"
+    "persona": "EM-NIMB-NPC03",
+    "zone": "Empyrea/EM_Z06_NimbusHanger"
   },
   "requires": [
-    "EM-Q-161580"
+    "EM-Q-161582"
   ],
   "mainline": true,
   "level": 112,
@@ -169,6 +169,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z06_NimbusHanger"
+    },
+    {
       "type": "persona",
       "persona": "EM-NIMB-NPC04",
       "zone": "Empyrea/EM_Z07_NimbusCitadel",
@@ -181,47 +185,52 @@
       "loc": "ZoneLocName_1413239"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z07_MilitaryStronghold"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Nimbari_ExemplarF_A_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00003043",
-      "zone": "",
+      "zone": "Empyrea/EM_Z06_NimbusHanger",
       "loc": "ZoneLocName_1413239"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Empyrea/Interiors/EM_Z00_ArkHold",
+      "zone": "Empyrea/EM_Z06_NimbusHanger",
       "loc": "ZoneLocName_1413239"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Empyrea/Interiors/EM_Z00_ArkHold",
+      "zone": "Empyrea/EM_Z06_NimbusHanger",
       "loc": "ZoneLocName_1413239"
     },
     {
       "type": "persona",
-      "persona": "EM-AERI-NPC01-B",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "persona": "EM-NIMB-NPC02",
+      "zone": "Empyrea/EM_Z06_NimbusHanger",
+      "loc": "ZoneLocName_1413239",
       "completion": [
         {
-          "speaker": "EM-AERI-NPC01-B",
+          "speaker": "EM-NIMB-NPC02",
           "line": "00000027"
         }
       ]
     }
   ],
   "personas": {
-    "EM-AERI-NPC01-B": {
+    "EM-NIMB-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397532
+      "template_id": 1413242
     },
-    "EM-AERI-NPC02-B": {
+    "EM-NIMB-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_Crewman_A_NPC.dds",
-      "template_id": 1397727
+      "template_id": 1413243
     },
     "EM-NIMB-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Nimbari_JusticarF_A_NPC.dds",
@@ -239,7 +248,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Academy of Technologists",
       "blocking": false
     },
@@ -249,18 +258,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Military Training Grounds",
       "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Voyage Home replaced by EM-Q-161580",
       "blocking": false
     }
   ]

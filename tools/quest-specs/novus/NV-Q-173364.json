@@ -44,6 +44,10 @@
       "loc": "ZoneLocName_1520449"
     },
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z05_LaVilleRose"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Irk_Base_D_01.AdjRef",
@@ -69,8 +73,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

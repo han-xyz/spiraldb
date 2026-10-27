@@ -76,6 +76,10 @@
       "loc": "ZoneLocName_1524839"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z07_Heap"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Lemur_Golden_B_01.AdjRef"
@@ -105,9 +109,9 @@
       "blocking": false
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find More Demons",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

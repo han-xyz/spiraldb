@@ -37,6 +37,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Zafaria/ZF_Z09_Drum_Jungle",
@@ -56,8 +60,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Pincer Gate",
+      "field": "goal.waypoint (current zone)",
+      "value": "Pincer Gate",
       "blocking": false
     },
     {

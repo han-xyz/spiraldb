@@ -54,6 +54,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z06_DunDara"
+    },
+    {
       "type": "persona",
       "persona": "AV-DARA-NPC03",
       "zone": "Avalon/AV_Z06_DunDara",
@@ -83,8 +87,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Lightning Burnt Tree",
+      "field": "goal.waypoint (current zone)",
+      "value": "Lightning Burnt Tree",
       "blocking": false
     },
     {

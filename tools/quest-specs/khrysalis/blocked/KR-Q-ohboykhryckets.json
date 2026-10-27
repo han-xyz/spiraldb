@@ -19,41 +19,6 @@
   },
   "goals": [
     {
-      "type": "waypoint",
-      "zone": "Khrysalis/KR_Z00_Hub",
-      "loc": "ZoneLocName_1205023"
-    },
-    {
-      "type": "waypoint",
-      "zone": "Khrysalis/KR_Z01_SilentMarket",
-      "loc": "ZoneLocName_1205051",
-      "with_previous": true
-    },
-    {
-      "type": "waypoint",
-      "zone": "Khrysalis/KR_Z02_MoonCliffs",
-      "loc": "ZoneLocName_1205048",
-      "with_previous": true
-    },
-    {
-      "type": "waypoint",
-      "zone": "Khrysalis/KR_Z03_LastWood",
-      "loc": "ZoneLocName_1205052",
-      "with_previous": true
-    },
-    {
-      "type": "waypoint",
-      "zone": "Khrysalis/KR_Z04_TyrianGorge",
-      "loc": "ZoneLocName_1233046",
-      "with_previous": true
-    },
-    {
-      "type": "waypoint",
-      "zone": "Khrysalis/KR_Z05_FortRachias",
-      "loc": "ZoneLocName_1205054",
-      "with_previous": true
-    },
-    {
       "type": "persona",
       "persona": "giver",
       "zone": "Khrysalis/KR_Z01_SilentMarket",
@@ -69,12 +34,42 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Oh_Boy,_Khryckets!",
     "from": "archive",
-    "timestamp": "20231126060729"
+    "timestamp": "20241225014236"
   },
   "needs_review": [
     {
       "field": "lang",
       "value": "Oh Boy, Khryckets!",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Khrycket",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Khrycket",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Khrycket",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Khrycket",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Khrycket",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Khrycket",
       "blocking": true
     }
   ]

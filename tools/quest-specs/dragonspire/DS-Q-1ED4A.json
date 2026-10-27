@@ -1,0 +1,89 @@
+{
+  "id": "DS-Q-1ED4A",
+  "lang": "1ED4A",
+  "auto_start": true,
+  "giver": {
+    "persona": "DS-NEC3-NPC02",
+    "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Detention_T4"
+  },
+  "requires": [
+    "DS-NEC3-C02-001"
+  ],
+  "mainline": true,
+  "level": 40,
+  "reward": {
+    "xp": 5500,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Detention_T4"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "Warrior-Male-Grunt-Tan-Boss-R8.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000496",
+      "zone": "",
+      "descriptor": "WizQst1ED4A_00000000"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "DragonSpire/DS_A2_Battle/Interiors/DS_Detention_T4"
+    }
+  ],
+  "personas": {
+    "DS-NEC3-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_M_wizard_spikycloak_3BLUE.dds",
+      "template_id": 126320
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Staff_Direction",
+    "from": "archive",
+    "timestamp": "20260701211252"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "captured": "DS-NEC3-C02-002"
+}

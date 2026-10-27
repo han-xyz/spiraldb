@@ -47,69 +47,8 @@
       "items": [
         "MR_Oasis.AdjRef"
       ],
-      "count": 1,
+      "count": 7,
       "zone": "Mirage/MR_Z00_Hub",
-      "descriptor": "WizQst150736_00000014",
-      "loc": "ZoneLocName_1254040"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "MR_Oasis.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Mirage/MR_Z00_Hub",
-      "descriptor": "WizQst150736_00000014",
-      "loc": "ZoneLocName_1254040"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "MR_Oasis.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Mirage/MR_Z00_Hub",
-      "descriptor": "WizQst150736_00000014",
-      "loc": "ZoneLocName_1254040"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "MR_Oasis.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Mirage/MR_Z00_Hub",
-      "descriptor": "WizQst150736_00000014",
-      "loc": "ZoneLocName_1254040"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "MR_Oasis.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Mirage/MR_Z00_Hub",
-      "descriptor": "WizQst150736_00000014",
-      "loc": "ZoneLocName_1254040"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "MR_Oasis.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Mirage/MR_Z00_Hub",
-      "descriptor": "WizQst150736_00000014",
-      "loc": "ZoneLocName_1254040"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "MR_Oasis.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Mirage/MR_Z00_Hub",
-      "descriptor": "WizQst150736_00000014",
       "loc": "ZoneLocName_1254040"
     },
     {
@@ -128,12 +67,17 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Midday_At_The_Oasis",
     "from": "archive",
-    "timestamp": "20231126075252"
+    "timestamp": "20241226005807"
   },
   "needs_review": [
     {
       "field": "requires",
       "value": "Shifting Sands",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Oasis in Caravan",
       "blocking": false
     },
     {

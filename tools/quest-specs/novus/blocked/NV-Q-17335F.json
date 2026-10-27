@@ -2,7 +2,7 @@
   "id": "NV-Q-17335F",
   "lang": "17335F",
   "giver": {
-    "persona": "NV-ROSE-NPC02-B",
+    "persona": "NV-ROSE-NPC02",
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
@@ -94,23 +94,27 @@
   "goals": [
     {
       "type": "waypoint",
+      "zone": "Novus/NV_Z05_LaVilleRose"
+    },
+    {
+      "type": "waypoint",
       "zone": "Novus/Interiors/NV_Z05_CabalBase"
     },
     {
       "type": "persona",
-      "persona": "NV-ROSE-NPC01-B",
+      "persona": "NV-ROSE-NPC01",
       "zone": "Novus/NV_Z05_LaVilleRose",
       "loc": "ZoneLocName_1520449"
     }
   ],
   "personas": {
-    "NV-ROSE-NPC01-B": {
+    "NV-ROSE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1520457
+      "template_id": 1520450
     },
-    "NV-ROSE-NPC02-B": {
+    "NV-ROSE-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Moose_Manticore_A_NPC.dds",
-      "template_id": 1520458
+      "template_id": 1520451
     }
   },
   "source": {
@@ -120,9 +124,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find the Cabal in the Theatre District",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.mobs",

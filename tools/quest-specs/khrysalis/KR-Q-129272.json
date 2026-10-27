@@ -10,7 +10,37 @@
   "level": 88,
   "reward": {
     "xp": 15500,
-    "gold": 150
+    "gold": 150,
+    "spells": [
+      {
+        "spell": "Shadow Seraph",
+        "school": "Balance"
+      },
+      {
+        "spell": "Shadow Sentinel",
+        "school": "Death"
+      },
+      {
+        "spell": "Shadow Shrike",
+        "school": "Fire"
+      },
+      {
+        "spell": "Shadow Sentinel",
+        "school": "Ice"
+      },
+      {
+        "spell": "Shadow Seraph",
+        "school": "Life"
+      },
+      {
+        "spell": "Shadow Shrike",
+        "school": "Myth"
+      },
+      {
+        "spell": "Shadow Shrike",
+        "school": "Storm"
+      }
+    ]
   },
   "dialogs": {
     "prep": [
@@ -75,7 +105,7 @@
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Shadow_Dancer",
     "from": "archive",
-    "timestamp": "20240118180135"
+    "timestamp": "20250827095013"
   },
   "needs_review": [
     {

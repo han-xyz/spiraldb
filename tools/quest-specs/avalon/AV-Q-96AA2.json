@@ -6,7 +6,7 @@
     "zone": "Avalon/AV_Z08_LakeShore"
   },
   "requires": [
-    "AV-Q-96A9D"
+    "AV-Q-96A9E"
   ],
   "mainline": true,
   "level": 68,
@@ -99,11 +99,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Simplest Answer replaced by AV-Q-96A9D",
       "blocking": false
     }
   ]

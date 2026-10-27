@@ -1,0 +1,89 @@
+{
+  "id": "AV-Q-9531A",
+  "lang": "9531A",
+  "giver": {
+    "persona": "AV-WYRD-NPC03",
+    "zone": "Avalon/AV_Z05_TheWyrd"
+  },
+  "requires": [
+    "AV-Q-95317"
+  ],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 4830,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z05_TheWyrd"
+    }
+  ],
+  "personas": {
+    "AV-WYRD-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Imp_NPC.dds",
+      "template_id": 611094
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Two_Heads_Are_Worse",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst9531A is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint (current zone)",
+      "value": "Ettin",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

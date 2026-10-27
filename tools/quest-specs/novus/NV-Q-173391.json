@@ -2,7 +2,7 @@
   "id": "NV-Q-173391",
   "lang": "173391",
   "giver": {
-    "persona": "NV-ROSE-NPC01-B",
+    "persona": "NV-ROSE-NPC01",
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
@@ -124,7 +124,7 @@
     },
     {
       "type": "persona",
-      "persona": "NV-ROSE-NPC02-B",
+      "persona": "NV-ROSE-NPC02",
       "zone": "Novus/NV_Z05_LaVilleRose",
       "loc": "ZoneLocName_1520449"
     },
@@ -154,13 +154,13 @@
       "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
       "template_id": 1608246
     },
-    "NV-ROSE-NPC01-B": {
+    "NV-ROSE-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1520457
+      "template_id": 1520450
     },
-    "NV-ROSE-NPC02-B": {
+    "NV-ROSE-NPC02": {
       "portrait": "GUI/NpcPortraits/Portrait_Moose_Manticore_A_NPC.dds",
-      "template_id": 1520458
+      "template_id": 1520451
     }
   },
   "source": {

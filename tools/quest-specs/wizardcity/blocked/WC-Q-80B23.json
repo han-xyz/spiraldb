@@ -130,7 +130,7 @@
       "blocking": false
     },
     {
-      "field": "goal.volume (not found)",
+      "field": "goal.waypoint (current zone)",
       "value": "The Hoarder's Tower, Plaza of Conquests",
       "blocking": false
     },

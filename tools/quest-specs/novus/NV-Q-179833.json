@@ -2,8 +2,8 @@
   "id": "NV-Q-179833",
   "lang": "179833",
   "giver": {
-    "persona": "NV-NEWV-NPC03-B",
-    "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
+    "persona": "NV-NEWV-NPC03",
+    "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
     "NV-Q-17982F"
@@ -113,6 +113,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Dog_RoyalGuard_A_01.AdjRef",
@@ -120,8 +124,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004206",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
     },
     {
       "type": "bounty",
@@ -131,8 +139,12 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004165",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/NV_Z04_NewVicorgia"
     },
     {
       "type": "bounty",
@@ -146,30 +158,30 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004207",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC06-B",
-      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "persona": "NV-NEWV-NPC14",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199",
       "completion": [
         {
-          "speaker": "NV-CON-NPC06-B",
+          "speaker": "NV-NEWV-NPC14",
           "line": "00000029"
         }
       ]
     }
   ],
   "personas": {
-    "NV-CON-NPC06-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
-      "template_id": 1575019
-    },
-    "NV-NEWV-NPC03-B": {
+    "NV-NEWV-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
-      "template_id": 1546206
+      "template_id": 1546204
+    },
+    "NV-NEWV-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1546298
     }
   },
   "source": {
@@ -184,17 +196,17 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "First Tower",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Second Tower",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Third Tower",
       "blocking": false
     },

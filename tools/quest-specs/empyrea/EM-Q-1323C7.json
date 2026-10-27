@@ -2,7 +2,7 @@
   "id": "EM-Q-1323C7",
   "lang": "1323C7",
   "giver": {
-    "persona": "EM-ZANA-NPC01-D",
+    "persona": "EM-ZANA-NPC01",
     "zone": "Empyrea/EM_Z02_Zanadu"
   },
   "requires": [],
@@ -169,9 +169,9 @@
     }
   ],
   "personas": {
-    "EM-ZANA-NPC01-D": {
+    "EM-ZANA-NPC01": {
       "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
-      "template_id": 1404201
+      "template_id": 1397572
     },
     "EM-ZANA-NPC13": {
       "portrait": "GUI/NpcPortraits/Portrait_Robot_Drone_B_NPC.dds",

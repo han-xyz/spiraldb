@@ -3,8 +3,8 @@
   "lang": "90936",
   "auto_start": true,
   "giver": {
-    "persona": "AV-CATA-NPC01",
-    "zone": "Avalon/AV_Z10_Catacombs"
+    "persona": "AV-KEEP-NPC01",
+    "zone": "Avalon/AV_Z13_KeepOfGanelon"
   },
   "requires": [
     "AV-Q-96AB5"
@@ -130,6 +130,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AV-Deer-Knight-HartLancer-R12-01.AdjRef",
@@ -137,7 +141,7 @@
       ],
       "count": 4,
       "target": "WizardMobs_00001232",
-      "zone": "",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon",
       "loc": "ZoneLocName_592126"
     },
     {
@@ -146,14 +150,14 @@
         "AV_Sword_of_Kings_TZ.AdjRef"
       ],
       "count": 1,
-      "zone": "",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon",
       "descriptor": "WizQst90936_00000037",
       "loc": "ZoneLocName_592126"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/AV_Z10_Catacombs",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon",
       "loc": "ZoneLocName_592126"
     },
     {
@@ -163,8 +167,12 @@
       ],
       "count": 4,
       "target": "WizardMobs_00001231",
-      "zone": "",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon",
       "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon"
     },
     {
       "type": "bounty",
@@ -174,19 +182,19 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001233",
-      "zone": "",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon",
       "loc": "ZoneLocName_592126"
     },
     {
       "type": "persona",
-      "persona": "AV-ABBEY-NPC26",
-      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "persona": "AV-KEEP-NPC02",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon",
       "loc": "ZoneLocName_592126"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Avalon/AV_Z10_Catacombs",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon",
       "loc": "ZoneLocName_592126"
     },
     {
@@ -196,40 +204,44 @@
       ],
       "count": 1,
       "target": "WizardMobs_00001226",
-      "zone": "",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon",
+      "loc": "ZoneLocName_592126"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-KEEP-NPC02",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon",
       "loc": "ZoneLocName_592126"
     },
     {
       "type": "persona",
-      "persona": "AV-ABBEY-NPC26",
-      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
-      "loc": "ZoneLocName_592126"
-    },
-    {
-      "type": "persona",
-      "persona": "AV-ABBEY-NPC26",
-      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "persona": "AV-KEEP-NPC02",
+      "zone": "Avalon/AV_Z13_KeepOfGanelon",
       "loc": "ZoneLocName_592126",
       "completion": [
         {
-          "speaker": "AV-ABBEY-NPC26",
+          "speaker": "AV-KEEP-NPC02",
           "line": "00000012"
         },
         {
-          "speaker": "AV-ABBEY-NPC26",
+          "speaker": "AV-KEEP-NPC02",
           "line": "00000016"
         }
       ]
     }
   ],
   "personas": {
-    "AV-ABBEY-NPC26": {
-      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Artorius_NPC.dds",
-      "template_id": 1205069
-    },
-    "AV-CATA-NPC01": {
+    "AV-KEEP-NPC01": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_LadyoftheLake_NPC.dds",
-      "template_id": 592086
+      "template_id": 592096
+    },
+    "AV-KEEP-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Artorius_NPC.dds",
+      "template_id": 592097
     }
   },
   "source": {
@@ -239,13 +251,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Entry Hall",
+      "field": "goal.waypoint (current zone)",
+      "value": "Entry Hall",
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Throne Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Throne Room",
       "blocking": false
     },
     {
@@ -254,8 +266,8 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Castle Hallway",
+      "field": "goal.waypoint (current zone)",
+      "value": "Castle Hallway",
       "blocking": false
     },
     {

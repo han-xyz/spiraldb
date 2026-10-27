@@ -38,6 +38,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z04_TheWild"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Avalon/AV_Z04_TheWild",
@@ -62,8 +66,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Hanging Stones Bridge",
+      "field": "goal.waypoint (current zone)",
+      "value": "Hanging Stones Bridge",
       "blocking": false
     },
     {

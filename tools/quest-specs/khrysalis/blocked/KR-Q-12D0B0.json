@@ -124,6 +124,10 @@
       "loc": "ZoneLocName_1233046"
     },
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/KR_Z04_TyrianGorge"
+    },
+    {
       "type": "bountycollect",
       "mobs": [
         "KR_Spider_Giant_B.AdjRef"
@@ -163,9 +167,9 @@
       "blocking": true
     },
     {
-      "field": "goal.waypoint",
+      "field": "goal.waypoint (current zone)",
       "value": "Find Atlach-Leng",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

@@ -77,6 +77,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Azteca/AZ_Z11_TwinGiants"
+    },
+    {
       "type": "usage",
       "items": [
         "AZ-ChascaCage.AdjRef",
@@ -156,7 +160,7 @@
       "blocking": true
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Black Tooth Cave",
       "blocking": false
     },

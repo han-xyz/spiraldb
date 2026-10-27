@@ -2,8 +2,8 @@
   "id": "AV-Q-96A87",
   "lang": "96A87",
   "giver": {
-    "persona": "AV-HUB-NPC04",
-    "zone": "Avalon/AV_Z00_Hub"
+    "persona": "AV-WILD-NPC08",
+    "zone": "Avalon/AV_Z04_TheWild"
   },
   "requires": [
     "AV-Q-72D19"
@@ -87,10 +87,6 @@
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike_Wounded.dds",
       "template_id": 602074
     },
-    "AV-HUB-NPC04": {
-      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirRobinBravely_NPC.dds",
-      "template_id": 602077
-    },
     "AV-HUB-NPC06": {
       "portrait": "GUI/NpcPortraits/Art_Portraits_AV_SirBrennanOnehand_NPC.dds",
       "template_id": 602079
@@ -98,6 +94,10 @@
     "AV-HUB-NPC07": {
       "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Kay_NPC.dds",
       "template_id": 602080
+    },
+    "AV-WILD-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_SirRobinBravely_NPC.dds",
+      "template_id": 470296
     }
   },
   "source": {

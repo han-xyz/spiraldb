@@ -73,16 +73,6 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "ZF_Drum_Jungle_Pedestal.AdjRef",
-        "ZF_Drum_Jungle_WaterFall.AdjRef"
-      ],
-      "count": 5,
-      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
-      "loc": "ZoneLocName_465258"
-    },
-    {
       "type": "persona",
       "persona": "giver",
       "zone": "Zafaria/Interiors/ZF_Z01_I02_Library_Classroom",
@@ -103,28 +93,28 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "Baobab Crown (in Zafaria Library)",
+      "value": "Zafarian History in -",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "Savannah (in alcove near Thornpaw village)",
+      "value": "Zafarian History in -",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "Savannah (at Nemean Rock)",
+      "value": "Zafarian History in -",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "Waterfront (in Stone Town Library)",
+      "value": "Zafarian History in -",
       "blocking": true
     },
     {
-      "field": "goal.descriptor",
-      "value": "Baobab Crown (in Zafaria Library)",
-      "blocking": false
+      "field": "goal.items",
+      "value": "Zafarian History in -",
+      "blocking": true
     },
     {
       "field": "dialogs",

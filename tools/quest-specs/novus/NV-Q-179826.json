@@ -2,8 +2,8 @@
   "id": "NV-Q-179826",
   "lang": "179826",
   "giver": {
-    "persona": "NV-CON-NPC08-B",
-    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+    "persona": "NV-NEWV-NPC11",
+    "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
     "NV-Q-17D61D"
@@ -105,9 +105,13 @@
       "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
     },
     {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
+    },
+    {
       "type": "persona",
-      "persona": "NV-NEWV-NPC03-B",
-      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "persona": "NV-NEWV-NPC03",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     },
     {
@@ -119,24 +123,24 @@
       ],
       "count": 3,
       "target": "WizardMobs_00004204",
-      "zone": "",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     },
     {
       "type": "persona",
-      "persona": "NV-NEWV-NPC03-B",
-      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "persona": "NV-NEWV-NPC03",
+      "zone": "Novus/NV_Z04_NewVicorgia",
       "loc": "ZoneLocName_1546199"
     }
   ],
   "personas": {
-    "NV-CON-NPC08-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
-      "template_id": 1575022
-    },
-    "NV-NEWV-NPC03-B": {
+    "NV-NEWV-NPC03": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
-      "template_id": 1546206
+      "template_id": 1546204
+    },
+    "NV-NEWV-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
+      "template_id": 1546279
     }
   },
   "source": {
@@ -151,8 +155,8 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
+      "field": "goal.waypoint (current zone)",
+      "value": "Next Room",
       "blocking": false
     },
     {

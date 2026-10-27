@@ -4,7 +4,7 @@
   "title": "QuestTitle_188993",
   "auto_start": true,
   "giver": {
-    "persona": "WL-HOPE-NPC06-B",
+    "persona": "WL-HOPE-NPC06",
     "zone": "Wallaru/WL_Z01_Hub"
   },
   "requires": [
@@ -92,9 +92,9 @@
     }
   ],
   "personas": {
-    "WL-HOPE-NPC06-B": {
+    "WL-HOPE-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
-      "template_id": 1608076
+      "template_id": 1608064
     }
   },
   "source": {

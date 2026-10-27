@@ -57,6 +57,10 @@
       "loc": "ZoneLocName_227139"
     },
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z09_Science_Center"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Z09_Science_Center",
@@ -86,7 +90,7 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
+      "field": "goal.waypoint (current zone)",
       "value": "Conservatory",
       "blocking": false
     },

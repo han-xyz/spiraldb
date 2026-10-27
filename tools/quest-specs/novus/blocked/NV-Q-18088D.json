@@ -2,8 +2,8 @@
   "id": "NV-Q-18088D",
   "lang": "18088D",
   "giver": {
-    "persona": "NV-StandIn-Dasein_v3",
-    "zone": "Novus/NV_Z01_Conatus"
+    "persona": "NV-NUCLEUS-NPC01",
+    "zone": "Novus/NV_Z06_NucleusGallery"
   },
   "requires": [
     "NV-Q-173391"
@@ -67,26 +67,26 @@
       ],
       "count": 1,
       "target": "WizardMobs_00004185",
-      "zone": "Novus/NV_Z01_Conatus",
+      "zone": "Novus/NV_Z06_NucleusGallery",
       "loc": "ZoneLocName_1563028"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265"
+      "zone": "Novus/NV_Z06_NucleusGallery",
+      "loc": "ZoneLocName_1563028"
     },
     {
       "type": "persona",
       "persona": "giver",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265"
+      "zone": "Novus/NV_Z06_NucleusGallery",
+      "loc": "ZoneLocName_1563028"
     }
   ],
   "personas": {
-    "NV-StandIn-Dasein_v3": {
-      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
-      "template_id": 1624005
+    "NV-NUCLEUS-NPC01": {
+      "portrait": "",
+      "template_id": 1546327
     }
   },
   "source": {
