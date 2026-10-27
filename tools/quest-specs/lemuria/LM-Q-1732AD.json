@@ -1,0 +1,110 @@
+{
+  "id": "LM-Q-1732AD",
+  "lang": "1732AD",
+  "giver": {
+    "persona": "LM-URSAI-NPC04",
+    "zone": "Lemuria/LM_Z02_UrsaiVillage"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 4250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM-URSAI-NPC01-C-NoGuitar.AdjRef",
+        "LM-URSAI-NPC01-C.AdjRef",
+        "LM-URSAI-NPC01-D.AdjRef",
+        "LM-URSAI-NPC01-E.AdjRef",
+        "LM-URSAI-NPC01-F.AdjRef",
+        "LM-URSAI-NPC01-G.AdjRef",
+        "LM-URSAI-NPC01-H.AdjRef",
+        "LM-URSAI-NPC01.AdjRef",
+        "LM_StandIn_Tosh.AdjRef",
+        "LM_StandIn_Tosh_02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01749140",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC01-C-NoGuitar",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    }
+  ],
+  "personas": {
+    "LM-URSAI-NPC01-C-NoGuitar": {
+      "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
+      "template_id": 1520317
+    },
+    "LM-URSAI-NPC04": {
+      "portrait": "GUI/NpcPortraits/Bear_Islander_B_NPC.dds",
+      "template_id": 1520125
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tosh_Him_Back",
+    "timestamp": "20240322084347"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Bald-Faced Truth replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 132
+}

@@ -1,0 +1,342 @@
+{
+  "id": "LM-Q-17441A",
+  "lang": "17441A",
+  "giver": {
+    "persona": "LM-SKY-NPC04",
+    "zone": "Lemuria/Interiors/LM_Z06_MonitoringStation"
+  },
+  "requires": [
+    "LM-Q-174419"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 298220,
+    "gold": 3050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_AttunementStone-1.AdjRef",
+        "LM_AttunementStone-2-Life.AdjRef",
+        "LM_AttunementStone-3-Death.AdjRef",
+        "LM_AttunementStone-4-Myth.AdjRef",
+        "LM_AttunementStone-Heap.AdjRef",
+        "LM_AttunementStone-Sky.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00002089",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-AMBIENT_SkyCity_WatermoleCitizen_01.AdjRef",
+        "LM-AMBIENT_SkyCity_WatermoleCitizen_02.AdjRef",
+        "LM-SKY-NPC05.AdjRef",
+        "LM-SKY-NPC06.AdjRef",
+        "LM-SKY-NPC07.AdjRef",
+        "LM-SKY-NPC22.AdjRef",
+        "LMRaid_Random_Watermole_01.AdjRef",
+        "LM-SkyCity-Manhole.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00000938",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-AMBIENT_SkyCity_WatermoleCitizen_01.AdjRef",
+        "LM-AMBIENT_SkyCity_WatermoleCitizen_02.AdjRef",
+        "LM-SKY-NPC05.AdjRef",
+        "LM-SKY-NPC06.AdjRef",
+        "LM-SKY-NPC07.AdjRef",
+        "LM-SKY-NPC22.AdjRef",
+        "LMRaid_Random_Watermole_01.AdjRef",
+        "LM-SkyCity-Manhole.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00000938",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-AMBIENT_SkyCity_WatermoleCitizen_01.AdjRef",
+        "LM-AMBIENT_SkyCity_WatermoleCitizen_02.AdjRef",
+        "LM-SKY-NPC05.AdjRef",
+        "LM-SKY-NPC06.AdjRef",
+        "LM-SKY-NPC07.AdjRef",
+        "LM-SKY-NPC22.AdjRef",
+        "LMRaid_Random_Watermole_01.AdjRef",
+        "LM-SkyCity-Manhole.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00000938",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Drone_Eye_D_01.AdjRef",
+        "LM_Drone_Eye_D_02.AdjRef",
+        "LM_Drone_Eye_D_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003870",
+      "zone": "",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-SKY-NPC11",
+      "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
+      "loc": "ZoneLocName_1520281",
+      "completion": [
+        {
+          "speaker": "LM-SKY-NPC11",
+          "line": "00000012"
+        },
+        {
+          "speaker": "LM-SKY-NPC11",
+          "line": "00000046"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-SKY-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_A_NPC.dds",
+      "template_id": 1524724
+    },
+    "LM-SKY-NPC11": {
+      "portrait": "GUI/NpcPortraits/Deer_Scientist_B_NPC.dds",
+      "template_id": 1524736
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Tour_You_Know",
+    "timestamp": "20240322090433"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Old One's Monitoring Station",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Old One's Monitoring Station",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "with the Virtual Old One",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Tour",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Tour",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Harmony (in the Guest Quarters)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Guest Quarters",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

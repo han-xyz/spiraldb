@@ -1,0 +1,100 @@
+{
+  "id": "LM-Q-17327C",
+  "lang": "17327C",
+  "giver": {
+    "persona": "LM-URSAI-NPC01-C-NoGuitar",
+    "zone": "Lemuria/LM_Z01_WildLands"
+  },
+  "requires": [
+    "LM-Q-17327B"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 10750
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Chicken_Pirate_A_01.AdjRef",
+        "LM_StandIn_WingPirate_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003991",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    }
+  ],
+  "personas": {
+    "LM-URSAI-NPC01-C-NoGuitar": {
+      "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
+      "template_id": 1520317
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pirate_Combat_Is_Better",
+    "timestamp": "20240322084513"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Wing Brotherhood Feather",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Feather (in Wing's Roost)",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

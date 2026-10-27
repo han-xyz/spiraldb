@@ -1,0 +1,166 @@
+{
+  "id": "LM-Q-170118",
+  "lang": "170118",
+  "giver": {
+    "persona": "LM-Mandoria-NPC01-03",
+    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+  },
+  "requires": [],
+  "min_level": 132,
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 169260,
+    "gold": 1700
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM-Standin-Boarbarian_01.AdjRef",
+        "LM_Boar_Barbarian_A_01.AdjRef",
+        "LM_Boar_Barbarian_A_02.AdjRef",
+        "LM_Boar_Barbarian_A_03.AdjRef",
+        "LM_Boar_Barbarian_A_04.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00003905",
+      "zone": "",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Fossa_Saber_A_01.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00003906",
+      "zone": "",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "loc": "ZoneLocName_1507599",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-Mandoria-NPC01-03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487469
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Lost_Realm_of_Mandoria",
+    "timestamp": "20240322085555"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170118 matched by the words it shares with the goals; its lines name Duck Savage, Boarbarians",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Onward!",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Duck's Camp",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Duck's Camp",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Rubble",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "blocking": true
+    }
+  ]
+}

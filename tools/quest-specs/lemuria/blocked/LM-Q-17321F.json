@@ -1,0 +1,252 @@
+{
+  "id": "LM-Q-17321F",
+  "lang": "17321F",
+  "giver": {
+    "persona": "LM-NIGHT-NPC05-B",
+    "zone": "Lemuria/LM_Z03_NightForest"
+  },
+  "requires": [
+    "LM-Q-17321E"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 209560,
+    "gold": 2025
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM-CourtyardGate.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Fungus_Man_C_01.AdjRef",
+        "LM_Fungus_Man_C_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003900",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-Accompany-Solomon_ENC.AdjRef",
+        "LM-NIGHT-NPC05-B.AdjRef",
+        "LM-NIGHT-NPC05-C.AdjRef",
+        "LM-NIGHT-NPC05-D.AdjRef",
+        "LM-NIGHT-NPC05-E.AdjRef",
+        "LM-NIGHT-NPC05-F.AdjRef",
+        "LM-NIGHT-NPC05-G.AdjRef",
+        "LM-NIGHT-NPC05-H.AdjRef",
+        "LM-NIGHT-NPC05-I.AdjRef",
+        "LM-NIGHT-NPC05-J.AdjRef",
+        "LM-NIGHT-NPC05-K.AdjRef",
+        "LM-NIGHT-NPC05-L.AdjRef",
+        "LM-NIGHT-NPC05.AdjRef",
+        "LM-TELOS-NPC07-B.AdjRef",
+        "LM-TELOS-NPC07-C.AdjRef",
+        "LM-TELOS-NPC07-D.AdjRef",
+        "LM-TELOS-NPC07-E.AdjRef",
+        "LM-TELOS-NPC07-F.AdjRef",
+        "LM-TELOS-NPC07.AdjRef",
+        "LM_StandIn_Solomon.AdjRef",
+        "LM_StandIn_SolomonCrane_02.AdjRef",
+        "LM_StandIn_SolomonCrane_03.AdjRef",
+        "LM_StandIn_SolomonCrane_04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "NPCs_01749153",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_AttunementStone-1.AdjRef",
+        "LM_AttunementStone-2-Life.AdjRef",
+        "LM_AttunementStone-3-Death.AdjRef",
+        "LM_AttunementStone-4-Myth.AdjRef",
+        "LM_AttunementStone-Heap.AdjRef",
+        "LM_AttunementStone-Sky.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizItems_00002089",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC01",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100",
+      "completion": [
+        {
+          "speaker": "LM-NIGHT-NPC01",
+          "line": "00000015"
+        },
+        {
+          "speaker": "LM-NIGHT-NPC01",
+          "line": "00000027"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Lemur_Resistance_E_NPC.dds",
+      "template_id": 1520132
+    },
+    "LM-NIGHT-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
+      "template_id": 1520186
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Scion,_Sci-Off",
+    "timestamp": "20240322084836"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "the Courtyard Gate",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Mana Font Courtyard",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Night Forest Monitoring Station",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "with Virtual Old One",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

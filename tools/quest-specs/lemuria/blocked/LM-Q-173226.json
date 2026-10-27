@@ -1,0 +1,175 @@
+{
+  "id": "LM-Q-173226",
+  "lang": "173226",
+  "giver": {
+    "persona": "LM-NIGHT-NPC07",
+    "zone": "Lemuria/LM_Z03_NightForest"
+  },
+  "requires": [
+    "LM-Q-173225"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 201500,
+    "gold": 1775
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC05-B",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC05-B",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
+      "template_id": 1520186
+    },
+    "LM-NIGHT-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_CitizenF_B_NPC.dds",
+      "template_id": 1520138
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Worth_1000_Woes",
+    "timestamp": "20250920125937"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Lucien's Cellar",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance the Entire Room",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "To Next Room",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance the Next Room",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance the Malughast",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

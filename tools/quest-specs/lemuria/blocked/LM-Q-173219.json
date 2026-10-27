@@ -1,0 +1,136 @@
+{
+  "id": "LM-Q-173219",
+  "lang": "173219",
+  "giver": {
+    "persona": "LM-Standin-Bantam",
+    "zone": "Lemuria/Interiors/LM_Z00_I08_HallofHeroesInner"
+  },
+  "requires": [
+    "LM-Q-173217"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 120900,
+    "gold": 950
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_AttunementStone-1.AdjRef",
+        "LM_AttunementStone-2-Life.AdjRef",
+        "LM_AttunementStone-3-Death.AdjRef",
+        "LM_AttunementStone-4-Myth.AdjRef",
+        "LM_AttunementStone-Heap.AdjRef",
+        "LM_AttunementStone-Sky.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00002089",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z00_I08_HallofHeroesInner",
+      "loc": "ZoneLocName_1520099"
+    }
+  ],
+  "personas": {
+    "LM-Standin-Bantam": {
+      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Hero_A_NPC.dds",
+      "template_id": 1521362
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Existence_Redefined",
+    "timestamp": "20250920014150"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "with the Virtual Old One",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z00_I08_HallofHeroesInner",
+      "blocking": true
+    }
+  ]
+}

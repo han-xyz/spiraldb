@@ -1,0 +1,126 @@
+{
+  "id": "LM-Q-174427",
+  "lang": "174427",
+  "giver": {
+    "persona": "LM-HEAP-NPC02",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-174419"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 104780,
+    "gold": 1025
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM-HEAP-NPC02.AdjRef",
+        "LM-HEAP-NPC02b.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizardNPC_00000942",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_AMBIENT_GrayReaper_01.AdjRef",
+        "LM_AMBIENT_GrayReaper_03.AdjRef",
+        "LM_Cow_BullGangster_C_01.AdjRef",
+        "LM_Cow_BullGangster_C_02.AdjRef",
+        "LM_Cow_BullGangster_C_03.AdjRef",
+        "LM_Cow_BullGangster_C_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003931",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC03",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839",
+      "completion": [
+        {
+          "speaker": "LM-HEAP-NPC03",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC02": {
+      "portrait": "GUI/NpcPortraits/Cow_BullGangster_G_NPC.dds",
+      "template_id": 1524745
+    },
+    "LM-HEAP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
+      "template_id": 1524747
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pips_Aplenty",
+    "timestamp": "20231119063009"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Irregular Occurrence replaced by LM-Q-174419",
+      "blocking": false
+    }
+  ]
+}

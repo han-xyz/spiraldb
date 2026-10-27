@@ -1,0 +1,70 @@
+{
+  "id": "LM-Q-theduckofbronze",
+  "giver": {
+    "persona": "LM-Mandoria-NPC01-03",
+    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+  },
+  "requires": [
+    "LM-Q-1736BB"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 137020,
+    "gold": 1350
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_Manganese.AdjRef"
+      ],
+      "count": 3,
+      "zone": "",
+      "descriptor": "WizardInteractionTitle_00000422",
+      "loc": "ZoneLocName_1507644"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "loc": "ZoneLocName_1507644"
+    }
+  ],
+  "personas": {
+    "LM-Mandoria-NPC01-03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487469
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Duck_of_Bronze",
+    "timestamp": "20231211101208"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Duck of Bronze",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "5 Sulphur",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "4 Carnosaur Saliva (from Carnosaur (Balance))",
+      "blocking": true
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "blocking": true
+    }
+  ]
+}

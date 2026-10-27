@@ -1,0 +1,97 @@
+{
+  "id": "LM-Q-17017A",
+  "lang": "17017A",
+  "requires": [
+    "LM-Q-170156"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 12500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Minotaur_Base_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003985",
+      "zone": "",
+      "loc": "ZoneLocName_1507644"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Minotaur_Skeleton_A_01.AdjRef",
+        "LM_Standin_Skeletaur_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003988",
+      "zone": "",
+      "loc": "ZoneLocName_1507644"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Face_the_Music",
+    "timestamp": "20240322100031"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17017A matched by the words it shares with the goals; its lines name Miniontaurs, Skeletaur",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Out Evil",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Exploring",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

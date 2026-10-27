@@ -1,0 +1,97 @@
+{
+  "id": "LM-Q-173287",
+  "lang": "173287",
+  "giver": {
+    "persona": "LM-NIGHT-NPC11",
+    "zone": "Lemuria/Interiors/LM_Z03_Crypt"
+  },
+  "requires": [
+    "LM-Q-173283"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 8250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z03_Crypt",
+      "loc": "ZoneLocName_1520268"
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Ghoul_Sitting_A_NPC.dds",
+      "template_id": 1520258
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Vault_of_Lorer",
+    "timestamp": "20240322085439"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Third Story Tomb",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "The Writer",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

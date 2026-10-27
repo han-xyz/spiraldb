@@ -1,0 +1,146 @@
+{
+  "id": "LM-Q-174431",
+  "lang": "174431",
+  "giver": {
+    "persona": "LM-HEAP-NPC04",
+    "zone": "Lemuria/Interiors/LM_Z07_Precinct"
+  },
+  "requires": [
+    "LM-Q-174430"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 96720,
+    "gold": 1050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Cow_BullGangster_E_01.AdjRef",
+        "LM_Standin_CrimeMime_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003938",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC03",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839",
+      "completion": [
+        {
+          "speaker": "LM-HEAP-NPC03",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
+      "template_id": 1524747
+    },
+    "LM-HEAP-NPC04": {
+      "portrait": "GUI/NpcPortraits/Deer_Scientist_A_NPC.dds",
+      "template_id": 1524749
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Worst_Criminal_Ever",
+    "timestamp": "20240322090718"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Chatty Cafe",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Chatty Cafe",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

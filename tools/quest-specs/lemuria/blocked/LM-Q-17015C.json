@@ -1,0 +1,129 @@
+{
+  "id": "LM-Q-17015C",
+  "lang": "17015C",
+  "giver": {
+    "persona": "LM-BAD-NPC01-B",
+    "zone": "Lemuria/LM_Z04_Badlands"
+  },
+  "requires": [
+    "LM-Q-17015B"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 10500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Lemur_Wild_D_01.AdjRef",
+        "LM_StandIn_DeathLemur.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003986",
+      "zone": "",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1507599"
+    }
+  ],
+  "personas": {
+    "LM-BAD-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
+      "template_id": 1487607
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:No_Evil_Like_Ancient_Evil",
+    "timestamp": "20231119064040"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17015C matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Skeletaur's Tomb",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Interior",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": "LM-Q-173210",
+  "lang": "173210",
+  "giver": {
+    "persona": "LM-URSAI-NPC03",
+    "zone": "Lemuria/LM_Z02_UrsaiVillage"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 185380,
+    "gold": 1500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC04",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC01-C-NoGuitar",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC04",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-FishingPole.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst173210_00000018",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC05",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_Driftwood.AdjRef",
+        "LM_LabMap.AdjRef"
+      ],
+      "count": 4,
+      "zone": "",
+      "descriptor": "WizItems_00002075",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC05",
+      "zone": "Lemuria/LM_Z02_UrsaiVillage",
+      "loc": "ZoneLocName_1520099"
+    }
+  ],
+  "personas": {
+    "LM-URSAI-NPC01-C-NoGuitar": {
+      "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
+      "template_id": 1520317
+    },
+    "LM-URSAI-NPC03": {
+      "portrait": "GUI/NpcPortraits/Bear_Islander_A_NPC.dds",
+      "template_id": 1520124
+    },
+    "LM-URSAI-NPC04": {
+      "portrait": "GUI/NpcPortraits/Bear_Islander_B_NPC.dds",
+      "template_id": 1520125
+    },
+    "LM-URSAI-NPC05": {
+      "portrait": "GUI/NpcPortraits/Bear_Islander_C_NPC.dds",
+      "template_id": 1520126
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bear_Necessities",
+    "timestamp": "20240322084247"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Welcome to Bearadise replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 132
+}

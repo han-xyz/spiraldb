@@ -1,0 +1,233 @@
+{
+  "id": "LM-Q-170124",
+  "lang": "170124",
+  "giver": {
+    "persona": "LM-Mandoria-NPC01-03",
+    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+  },
+  "requires": [
+    "LM-Q-170120"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 177320,
+    "gold": 1875
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM-Standin-Boarbarian_01.AdjRef",
+        "LM_Boar_Barbarian_A_01.AdjRef",
+        "LM_Boar_Barbarian_A_02.AdjRef",
+        "LM_Boar_Barbarian_A_03.AdjRef",
+        "LM_Boar_Barbarian_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003905",
+      "zone": "",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-Mandoria-NPC06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00000934",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Mander_Warrior_B_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003917",
+      "zone": "",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC06",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "loc": "ZoneLocName_1507599",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000032"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-Mandoria-NPC01-03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487469
+    },
+    "LM-Mandoria-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Boar_Boarbarian_Chief_A_NPC.dds",
+      "template_id": 1507632
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mandar_the_Boarbarian",
+    "timestamp": "20240322090816"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170124 matched by the words it shares with the goals; its lines name Boarbarian, Krull",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "to Boarbarian Village",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Boarbarian Village",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Krull",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "blocking": true
+    }
+  ]
+}

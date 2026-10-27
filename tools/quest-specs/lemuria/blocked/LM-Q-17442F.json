@@ -1,0 +1,163 @@
+{
+  "id": "LM-Q-17442F",
+  "lang": "17442F",
+  "giver": {
+    "persona": "LM-HEAP-NPC08",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-17442E"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 177320,
+    "gold": 1700
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_WildlandCherries.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizItems_00002097",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_WildlandCherries.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizItems_00002097",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Fossa_Base_A_01.AdjRef",
+        "LM_Fossa_Base_A_02.AdjRef",
+        "LM_Fossa_Base_A_03.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003889",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizQst17442F_00000017",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC08": {
+      "portrait": "GUI/NpcPortraits/Deer_Hero_A_NPC.dds",
+      "template_id": 1524754
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Charity_for_Clarity",
+    "timestamp": "20240322090706"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Supplies to Renee Moosso",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Supplies to Paul Cudd",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Supplies to Tom Holstein",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

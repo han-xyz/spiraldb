@@ -1,0 +1,160 @@
+{
+  "id": "LM-Q-17441F",
+  "lang": "17441F",
+  "giver": {
+    "persona": "LM-SKY-NPC13",
+    "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
+  },
+  "requires": [
+    "LM-Q-17441C"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 161200,
+    "gold": 1725
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Robot_Kit10_A_01.AdjRef",
+        "LM_Standin_Kit10_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003925",
+      "zone": "",
+      "descriptor": "WizQst17441F_00000013",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-BAD-NPC03.AdjRef",
+        "LM-Mandoria-NPC011.AdjRef",
+        "LM-SKY-NPC01.AdjRef",
+        "LM-SKY-NPC01b.AdjRef",
+        "LM-SKY-NPC01c.AdjRef",
+        "LM-SKY-NPC01d.AdjRef",
+        "LM-TELOS-NPC09-B.AdjRef",
+        "LM-TELOS-NPC09-C.AdjRef",
+        "LM-TELOS-NPC09-D.AdjRef",
+        "LM-TELOS-NPC09-E.AdjRef",
+        "LM-TELOS-NPC09-F.AdjRef",
+        "LM-TELOS-NPC09-G.AdjRef",
+        "LM-TELOS-NPC09.AdjRef",
+        "LM_Standin_BuckGordon.AdjRef",
+        "LM_Standin_BuckGordon_02.AdjRef",
+        "LM_Standin_BuckGordon_03.AdjRef",
+        "LM_Standin_BuckGordon_04.AdjRef",
+        "LM_Standin_BuckGordon_05.AdjRef",
+        "LM_Standin_BuckGordon_06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00001008",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Standin_CyberBeast.AdjRef",
+        "LM_Standin_CyberBeast2.AdjRef",
+        "LM_TRex_Cyborg_A_01.AdjRef",
+        "LM_TRex_Cyborg_A_02.AdjRef",
+        "LM_TRex_Cyborg_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003927",
+      "zone": "",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-BAD-NPC03",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1520281",
+      "completion": [
+        {
+          "speaker": "LM-BAD-NPC03",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-BAD-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Deer_Hero_NPC.dds",
+      "template_id": 1487617
+    },
+    "LM-SKY-NPC13": {
+      "portrait": "GUI/NpcPortraits/Lemur_Resistance_C_NPC.dds",
+      "template_id": 1524738
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:To_the_Rescue!",
+    "timestamp": "20240322090710"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Buck's Energy Shackles",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

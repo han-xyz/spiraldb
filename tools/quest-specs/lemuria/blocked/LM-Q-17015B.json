@@ -1,0 +1,88 @@
+{
+  "id": "LM-Q-17015B",
+  "lang": "17015B",
+  "giver": {
+    "persona": "LM-BAD-NPC01-B",
+    "zone": "Lemuria/LM_Z04_Badlands"
+  },
+  "requires": [
+    "LM-Q-170159"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 11000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1507599",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000000"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-BAD-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
+      "template_id": 1487607
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:First_Things_First",
+    "timestamp": "20231119064030"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17015B matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Defeat Fiery Killipede and Collect 5 Chitin Flakes",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Collect 5 Sabergrass",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

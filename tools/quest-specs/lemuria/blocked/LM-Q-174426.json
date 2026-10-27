@@ -1,0 +1,103 @@
+{
+  "id": "LM-Q-174426",
+  "lang": "174426",
+  "giver": {
+    "persona": "LM-HEAP-NPC01",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-174425"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 80600,
+    "gold": 825
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Cow_GangsterF_A_01.AdjRef",
+        "LM_Cow_GangsterF_A_02.AdjRef",
+        "LM_Cow_GangsterF_A_03.AdjRef",
+        "LM_Cow_GangsterF_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003930",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC02",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839",
+      "completion": [
+        {
+          "speaker": "LM-HEAP-NPC02",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
+      "template_id": 1524741
+    },
+    "LM-HEAP-NPC02": {
+      "portrait": "GUI/NpcPortraits/Cow_BullGangster_G_NPC.dds",
+      "template_id": 1524745
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Irregular_Occurrence",
+    "timestamp": "20240322100458"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "for Monitoring Station",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

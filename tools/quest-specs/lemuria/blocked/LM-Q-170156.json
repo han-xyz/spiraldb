@@ -1,0 +1,172 @@
+{
+  "id": "LM-Q-170156",
+  "lang": "170156",
+  "giver": {
+    "persona": "LM_Standin_KoolakambaChief_01",
+    "zone": "Lemuria/LM_Z04_Badlands"
+  },
+  "requires": [],
+  "min_level": 132,
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 12500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Minotaur_Skeleton_A_01.AdjRef",
+        "LM_Standin_Skeletaur_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003988",
+      "zone": "",
+      "loc": "ZoneLocName_1507644"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1507644"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-BAD-NPC01-B",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1507644",
+      "completion": [
+        {
+          "speaker": "LM-BAD-NPC01-B",
+          "line": "00000018"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-BAD-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
+      "template_id": 1487607
+    },
+    "LM_Standin_KoolakambaChief_01": {
+      "portrait": "GUI/NpcPortraits/Lemur_Wild_C_NPC.dds",
+      "template_id": 1487606
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:To_Grayschool!",
+    "timestamp": "20231119064647"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "The Shadow of Skeletaur",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Castle Grayschool",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Castle Grayschool",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

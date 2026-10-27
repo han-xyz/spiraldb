@@ -1,0 +1,152 @@
+{
+  "id": "LM-Q-17320B",
+  "lang": "17320B",
+  "giver": {
+    "persona": "LM-WILD-NPC01",
+    "zone": "Lemuria/LM_Z01_WildLands"
+  },
+  "requires": [
+    "LM-Q-1736B6"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 120900,
+    "gold": 1150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_AttunementStone-1.AdjRef",
+        "LM_AttunementStone-2-Life.AdjRef",
+        "LM_AttunementStone-3-Death.AdjRef",
+        "LM_AttunementStone-4-Myth.AdjRef",
+        "LM_AttunementStone-Heap.AdjRef",
+        "LM_AttunementStone-Sky.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "descriptor": "WizItems_00002089",
+      "loc": "ZoneLocName_1520110"
+    }
+  ],
+  "personas": {
+    "LM-WILD-NPC01": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_A_NPC.dds",
+      "template_id": 1520116
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Looney_Attunes",
+    "timestamp": "20250902180018"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Mana Font Clearing",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Sanctum of Secrets",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "with Virtual Old One",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "with Virtual Old One",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

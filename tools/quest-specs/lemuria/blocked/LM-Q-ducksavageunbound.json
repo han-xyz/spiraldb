@@ -1,0 +1,59 @@
+{
+  "id": "LM-Q-ducksavageunbound",
+  "giver": {
+    "persona": "LM-Mandoria-NPC01-03",
+    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+  },
+  "requires": [],
+  "min_level": 132,
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 40300,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "loc": "ZoneLocName_1507644"
+    }
+  ],
+  "personas": {
+    "LM-Mandoria-NPC01-03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487469
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Duck_Savage_Unbound!",
+    "timestamp": "20231211101208"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Duck Savage Unbound!",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Duck of Bronze",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Duck Room",
+      "blocking": true
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "blocking": true
+    }
+  ]
+}

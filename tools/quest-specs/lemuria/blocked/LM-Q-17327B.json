@@ -1,0 +1,122 @@
+{
+  "id": "LM-Q-17327B",
+  "lang": "17327B",
+  "giver": {
+    "persona": "LM-URSAI-NPC01-C-NoGuitar",
+    "zone": "Lemuria/LM_Z01_WildLands"
+  },
+  "requires": [
+    "LM-Q-1732AD"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 10750
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Lemur_Wild_B_03.AdjRef",
+        "LM_Standin_DissidentGhost.AdjRef",
+        "LM_Standin_DissidentGhost_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003990",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_CurseOfDoubt.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "descriptor": "WizItems_00002100",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    }
+  ],
+  "personas": {
+    "LM-URSAI-NPC01-C-NoGuitar": {
+      "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
+      "template_id": 1520317
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Too_Koola_for_Schoola",
+    "timestamp": "20240322084351"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Notes in the Sanctum of Discord in Telos",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
