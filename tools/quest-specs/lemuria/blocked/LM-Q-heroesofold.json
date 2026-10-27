@@ -1,0 +1,85 @@
+{
+  "id": "LM-Q-heroesofold",
+  "giver": {
+    "persona": "LM-TELOS-NPC10-D",
+    "zone": "Lemuria/LM_Z00_Hub"
+  },
+  "requires": [
+    "NV-Q-188A06"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 139440,
+    "gold": 410
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_TRex_Base_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004442",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-CON-NPC06-B",
+      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "loc": "ZoneLocName_1520271"
+    }
+  ],
+  "personas": {
+    "LM-TELOS-NPC10-D": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
+      "template_id": 1487584
+    },
+    "NV-CON-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1575019
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Heroes_of_Old",
+    "from": "archive",
+    "timestamp": "20240815201542"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Heroes of Old",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Dr. T. Rex: ObjectData/WL",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Hall of Heroes",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Heroes to Conatus",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Maxine Rockhoppierre: NV-CON-NPC06-B from ObjectData/NV",
+      "blocking": false
+    }
+  ]
+}

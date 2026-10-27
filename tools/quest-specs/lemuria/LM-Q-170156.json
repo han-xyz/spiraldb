@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z04_Badlands"
   },
   "requires": [
-    "LM-Q-17015C"
+    "LM-Q-170160"
   ],
   "mainline": false,
   "level": 132,
@@ -151,11 +151,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "The Shadow of Skeletaur",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (no ZoneTransfer)",
       "value": "Castle Grayschool: Lemuria/Interiors/LM_Z04_I03_CastleGraySchool",
       "blocking": false
@@ -178,11 +173,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Shadow of Skeletaur replaced by LM-Q-17015C",
       "blocking": false
     }
   ]

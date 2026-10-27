@@ -1,0 +1,84 @@
+{
+  "id": "LM-Q-173716",
+  "lang": "173716",
+  "giver": {
+    "persona": "AR_StandIn_Ione",
+    "zone": "Arcanum/AR_Z01_Hub"
+  },
+  "requires": [
+    "LM-Q-1736E0"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 40300,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Horse_Explorer_A_01.AdjRef",
+        "LM_Horse_Explorer_A_01_Hard.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003872",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    }
+  ],
+  "personas": {
+    "AR_StandIn_Ione": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
+      "template_id": 1401051
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/To_Forgive%2C_Dasein",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To Err is Hero replaced by LM-Q-1736E0",
+      "blocking": false
+    }
+  ]
+}

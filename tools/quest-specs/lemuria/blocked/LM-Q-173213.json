@@ -1,0 +1,146 @@
+{
+  "id": "LM-Q-173213",
+  "lang": "173213",
+  "giver": {
+    "persona": "LM-URSAI-NPC02",
+    "zone": "Lemuria/Interiors/LM_Z02_Treehut"
+  },
+  "requires": [
+    "LM-Q-173212"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 112840,
+    "gold": 1075
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_SacredWrits_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "descriptor": "WizardGameObjects_00000946",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_SacredWrits_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "descriptor": "WizardGameObjects_00000946",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "loc": "ZoneLocName_1520099"
+    }
+  ],
+  "personas": {
+    "LM-URSAI-NPC02": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_E_NPC.dds",
+      "template_id": 1520123
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Writ_At_Large",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Sacred Writs",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

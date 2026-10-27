@@ -1,0 +1,120 @@
+{
+  "id": "LM-Q-173223",
+  "lang": "173223",
+  "giver": {
+    "persona": "LM-NIGHT-NPC05-H",
+    "zone": "Lemuria/LM_Z01_WildLands"
+  },
+  "requires": [
+    "LM-Q-173222"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 88660,
+    "gold": 800
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Lemur_Wild_A_02.AdjRef",
+        "LM_Lemur_Wild_A_06.AdjRef",
+        "LM_StandIn_Koolakamba_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003877",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC06",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC05-H": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
+      "template_id": 1520227
+    },
+    "LM-NIGHT-NPC06": {
+      "portrait": "GUI/NpcPortraits/Lemur_Wild_A_NPC.dds",
+      "template_id": 1520137
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Straight_to_The_Wildlands",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

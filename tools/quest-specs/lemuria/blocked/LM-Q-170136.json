@@ -1,0 +1,162 @@
+{
+  "id": "LM-Q-170136",
+  "lang": "170136",
+  "title": "QuestTitle_00001831",
+  "giver": {
+    "persona": "LM-Mandoria-NPC01-02",
+    "zone": "Lemuria/LM_Z05_Mandoria"
+  },
+  "requires": [
+    "LM-Q-170124"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 169260,
+    "gold": 1875
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC06",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Boar_Chief_A_01.AdjRef",
+        "LM_Standin_Krull_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003916",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Mander_Warrior_B_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003917",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
+    }
+  ],
+  "personas": {
+    "LM-Mandoria-NPC01-02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1507626
+    },
+    "LM-Mandoria-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Boar_Boarbarian_Chief_A_NPC.dds",
+      "template_id": 1507632
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Boarish_Hospitality",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170136 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Boars",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Noises",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

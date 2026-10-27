@@ -2,6 +2,10 @@
   "id": "LM-Q-173218",
   "lang": "173218",
   "auto_start": true,
+  "giver": {
+    "persona": "LM-Standin-Bantam",
+    "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber"
+  },
   "requires": [
     "LM-Q-173217"
   ],
@@ -113,6 +117,10 @@
     }
   ],
   "personas": {
+    "LM-Standin-Bantam": {
+      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Hero_A_NPC.dds",
+      "template_id": 1521362
+    },
     "LM-URSAI-NPC01-C-NoGuitar": {
       "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
       "template_id": 1520317
@@ -124,11 +132,6 @@
     "timestamp": "20250909205306"
   },
   "needs_review": [
-    {
-      "field": "giver (auto-start, no predecessor hand-in)",
-      "value": "none",
-      "blocking": true
-    },
     {
       "field": "goal.items",
       "value": "Your Way Down",

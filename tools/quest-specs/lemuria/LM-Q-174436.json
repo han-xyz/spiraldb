@@ -5,7 +5,9 @@
     "persona": "LM-HEAP-NPC01",
     "zone": "Lemuria/LM_Z07_Heap"
   },
-  "requires": [],
+  "requires": [
+    "LM-Q-174432"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -119,9 +121,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Lion's Care replaced by min_level",
+      "value": "Lion's Care replaced by LM-Q-174432",
       "blocking": false
     }
-  ],
-  "min_level": 132
+  ]
 }

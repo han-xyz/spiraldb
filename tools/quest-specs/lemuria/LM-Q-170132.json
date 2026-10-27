@@ -1,0 +1,102 @@
+{
+  "id": "LM-Q-170132",
+  "lang": "170132",
+  "title": "QuestTitle_00001833",
+  "giver": {
+    "persona": "LM-HEAP-NPC01",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-170119"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 112840,
+    "gold": 1250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC04",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Mander_Warrior_A_05.AdjRef",
+        "LM_Mander_Warrior_A_06.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003920",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Mander_Warrior_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003908",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1507599"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
+      "template_id": 1524741
+    },
+    "LM-Mandoria-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Moth_Sorcerer_A_NPC.dds",
+      "template_id": 1507628
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Palace_of_Malice",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170132 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue Searching For Moth-Amon",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Mothly Hospitality replaced by LM-Q-170119",
+      "blocking": false
+    }
+  ]
+}

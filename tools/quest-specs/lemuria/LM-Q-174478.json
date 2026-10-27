@@ -1,0 +1,126 @@
+{
+  "id": "LM-Q-174478",
+  "lang": "174478",
+  "title": "QuestTitle_174442",
+  "auto_start": true,
+  "giver": {
+    "persona": "LM-HEAP-NPC25",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-174441"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 16500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Cow_BullGangster_A_06.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003958",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Standin_PowerPink.AdjRef",
+        "LM_TRex_Cyborg_E_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003963",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Draconian_Base_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003966",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC25": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Assistant_B_NPC.dds",
+      "template_id": 1524860
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Go,_Go_Power_Grazers",
+    "from": "archive",
+    "timestamp": "20240322110532"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst174478 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

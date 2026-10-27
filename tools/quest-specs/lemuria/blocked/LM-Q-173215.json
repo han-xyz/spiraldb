@@ -1,0 +1,200 @@
+{
+  "id": "LM-Q-173215",
+  "lang": "173215",
+  "giver": {
+    "persona": "LM-URSAI-NPC02",
+    "zone": "Lemuria/Interiors/LM_Z02_Treehut"
+  },
+  "requires": [
+    "LM-Q-173213"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 112840,
+    "gold": 1075
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC01-C-NoGuitar",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_HibiscusFlower.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "descriptor": "WizItems_00002076",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC01-C-NoGuitar",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-Standin-Bantam",
+      "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
+      "loc": "ZoneLocName_1520099",
+      "completion": [
+        {
+          "speaker": "LM-Standin-Bantam",
+          "line": "00000022"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-Standin-Bantam": {
+      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Hero_A_NPC.dds",
+      "template_id": 1521362
+    },
+    "LM-URSAI-NPC01-C-NoGuitar": {
+      "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
+      "template_id": 1520317
+    },
+    "LM-URSAI-NPC02": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_E_NPC.dds",
+      "template_id": 1520123
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Tosh.Oh%21",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Hibiscus Flowers to Tosh",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Way to Volcano Caldera",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Your Way to Top of the Volcano",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

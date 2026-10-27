@@ -1,0 +1,104 @@
+{
+  "id": "LM-Q-170159",
+  "lang": "170159",
+  "giver": {
+    "persona": "LM-BAD-NPC01-B",
+    "zone": "Lemuria/LM_Z04_Badlands"
+  },
+  "requires": [
+    "LM-Q-170120"
+  ],
+  "mainline": false,
+  "level": 132,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Minotaur_Base_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003985",
+      "zone": "Lemuria/LM_Z04_Badlands"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z04_Badlands"
+    }
+  ],
+  "personas": {
+    "LM-BAD-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Warrior_C_NPC.dds",
+      "template_id": 1487607
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Riddle_of_Metal",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Lemuria",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Mander Village",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

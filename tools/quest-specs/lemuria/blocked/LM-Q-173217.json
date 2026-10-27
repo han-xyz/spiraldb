@@ -1,0 +1,147 @@
+{
+  "id": "LM-Q-173217",
+  "lang": "173217",
+  "giver": {
+    "persona": "LM-Standin-Bantam",
+    "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber"
+  },
+  "requires": [
+    "LM-Q-173215"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 96720,
+    "gold": 1050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z02_Volcano"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_EyeBot_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004020",
+      "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
+      "loc": "ZoneLocName_1520099",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000022"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-Standin-Bantam": {
+      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Hero_A_NPC.dds",
+      "template_id": 1521362
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Chicken%27s_Coup",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Door Incantation",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Monitoring Station",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

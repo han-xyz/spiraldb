@@ -1,0 +1,123 @@
+{
+  "id": "LM-Q-174445",
+  "lang": "174445",
+  "title": "QuestTitle_174435",
+  "giver": {
+    "persona": "LM_Standin_ShameDemon",
+    "zone": "Lemuria/Interiors/LM_Z07_LionsMind"
+  },
+  "requires": [
+    "LM-Q-174434"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 96720,
+    "gold": 1025
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Lemur_HierarchF_H_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003940",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Lemur_Golden_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003942",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
+  "personas": {
+    "LM_Standin_ShameDemon": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_H_MOB.dds",
+      "template_id": 1524854
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Mind_Sweeper",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst174445 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "More Demons",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z07_LionsMind",
+      "blocking": true
+    }
+  ]
+}

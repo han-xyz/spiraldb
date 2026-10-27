@@ -5,7 +5,9 @@
     "persona": "LM-StandIn-StallionQuartermane-B",
     "zone": "Lemuria/LM_Z00_Hub"
   },
-  "requires": [],
+  "requires": [
+    "LM-Q-1736DC"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -122,12 +124,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "For Whom the Treble Tolls replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 132
+  ]
 }

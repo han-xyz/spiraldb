@@ -1,0 +1,70 @@
+{
+  "id": "LM-Q-17443A",
+  "lang": "17443A",
+  "title": "QuestTitle_17441B",
+  "auto_start": true,
+  "giver": {
+    "persona": "LM-SKY-NPC11",
+    "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
+  },
+  "requires": [
+    "LM-Q-174419"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 56420,
+    "gold": 625
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Drone_Eye_D_01.AdjRef",
+        "LM_Drone_Eye_D_02.AdjRef",
+        "LM_Drone_Eye_D_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003870",
+      "zone": "",
+      "loc": "ZoneLocName_1520281"
+    }
+  ],
+  "personas": {
+    "LM-SKY-NPC11": {
+      "portrait": "GUI/NpcPortraits/Deer_Scientist_B_NPC.dds",
+      "template_id": 1524736
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Warm_Welcome?",
+    "from": "archive",
+    "timestamp": "20250904051630"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17443A is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Tour You Know replaced by LM-Q-174419",
+      "blocking": false
+    }
+  ]
+}

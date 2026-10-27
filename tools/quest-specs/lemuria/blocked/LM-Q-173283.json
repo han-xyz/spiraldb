@@ -1,18 +1,19 @@
 {
   "id": "LM-Q-173283",
   "lang": "173283",
+  "auto_start": true,
   "giver": {
-    "persona": "LM-NIGHT-NPC15",
-    "zone": "Lemuria/LM_Z03_NightForest"
+    "persona": "LM-NIGHT-NPC11",
+    "zone": "Lemuria/Interiors/LM_Z03_Crypt"
   },
   "requires": [
-    "LM-Q-173228"
+    "LM-Q-173281"
   ],
   "mainline": false,
   "level": 132,
   "reward": {
     "xp": 0,
-    "gold": 12750
+    "gold": 16500
   },
   "dialogs": {
     "prep": [
@@ -79,20 +80,40 @@
     {
       "type": "bounty",
       "mobs": [
+        "LM_Snowman_Evil_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003968",
+      "zone": "",
+      "loc": "ZoneLocName_1520268"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-StandIn-SnowQueen_01",
+      "zone": "Lemuria/Interiors/LM_Z03_StoryTombOne",
+      "loc": "ZoneLocName_1520268"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Yeti_Base_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003969",
+      "zone": "",
+      "loc": "ZoneLocName_1520268"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
         "LM-StandIn-SnowQueen_01.AdjRef",
         "LM-StandIn-SnowQueen_02.AdjRef",
         "LM_Lemur_HierarchF_F_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00003970",
-      "zone": "Lemuria/LM_Z03_NightForest",
-      "loc": "ZoneLocName_1520100"
-    },
-    {
-      "type": "persona",
-      "persona": "LM-NIGHT-NPC11",
-      "zone": "Lemuria/Interiors/LM_Z03_Crypt",
-      "loc": "ZoneLocName_1520100"
+      "zone": "",
+      "loc": "ZoneLocName_1520268"
     }
   ],
   "personas": {
@@ -100,36 +121,26 @@
       "portrait": "GUI/NpcPortraits/Portrait_Ghoul_Sitting_A_NPC.dds",
       "template_id": 1520258
     },
-    "LM-NIGHT-NPC15": {
-      "portrait": "GUI/NpcPortraits/Portrait_Crane_Citizen_A_NPC.dds",
-      "template_id": 1487463
+    "LM-StandIn-SnowQueen_01": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_F_NPC.dds",
+      "template_id": 1487471
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Tales_from_the_Script",
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Let_it_Snow",
     "from": "archive",
-    "timestamp": "20250904105445"
+    "timestamp": "20240322085159"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst173283 by chain order between WizQst173228 and WizQst173285; its lines name Snow Queen",
+      "value": "WizQst173283 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "Script to Crypt of Tales",
+      "value": "Snow Queen",
       "blocking": true
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to First Story Tomb",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "First Story Tomb",
-      "blocking": false
     },
     {
       "field": "dialogs",

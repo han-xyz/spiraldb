@@ -1,0 +1,163 @@
+{
+  "id": "LM-Q-174438",
+  "lang": "174438",
+  "title": "QuestTitle_17442C",
+  "giver": {
+    "persona": "LM_Standin_MooCrewA",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-17442B"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 153140,
+    "gold": 1650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Cow_BullGangster_A_01.AdjRef",
+        "LM_Cow_BullGangster_A_02.AdjRef",
+        "LM_Cow_BullGangster_A_03.AdjRef",
+        "LM_Cow_BullGangster_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003933",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM-HEAP-NPC14.AdjRef",
+        "LM_AMBIENT_MooCrewEnforcer_03.AdjRef",
+        "LM_Cow_BullGangster_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003934",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC09",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Cow_BullGangster_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003935",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC09": {
+      "portrait": "GUI/NpcPortraits/Cow_BullGangster_F_NPC.dds",
+      "template_id": 1524756
+    },
+    "LM_Standin_MooCrewA": {
+      "portrait": "GUI/NpcPortraits/Cow_BullGangster_A_MOB.dds",
+      "template_id": 1524840
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Lock-Up%2C_Up_and_Away%21",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst174438 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

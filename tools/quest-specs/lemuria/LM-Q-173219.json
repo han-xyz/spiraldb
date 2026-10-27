@@ -5,7 +5,9 @@
     "persona": "LM-Standin-Bantam",
     "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber"
   },
-  "requires": [],
+  "requires": [
+    "LM-Q-173212"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -133,9 +135,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "The Chicken's Coup replaced by min_level",
+      "value": "The Chicken's Coup replaced by LM-Q-173212",
       "blocking": false
     }
-  ],
-  "min_level": 132
+  ]
 }

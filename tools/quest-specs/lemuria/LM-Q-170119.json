@@ -6,7 +6,7 @@
     "zone": "Lemuria/LM_Z05_Mandoria"
   },
   "requires": [
-    "LM-Q-1736BB"
+    "LM-Q-170117"
   ],
   "mainline": true,
   "level": 132,
@@ -83,7 +83,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst170119, the only free key within 16 of its chain neighbour WizQst170118 whose lines name the page's names: Metal Door",
+      "value": "WizQst170119 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
@@ -103,7 +103,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "The Lost Realm of Mandoria replaced by LM-Q-1736BB",
+      "value": "The Lost Realm of Mandoria replaced by LM-Q-170117",
       "blocking": false
     }
   ]

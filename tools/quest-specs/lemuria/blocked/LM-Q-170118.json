@@ -5,8 +5,9 @@
     "persona": "LM-Mandoria-NPC01-02",
     "zone": "Lemuria/LM_Z05_Mandoria"
   },
-  "requires": [],
-  "min_level": 132,
+  "requires": [
+    "LM-Q-170117"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -140,12 +141,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst170118 matched by the words it shares with the goals; its lines name Duck Savage, Boarbarians",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Onward!",
+      "value": "WizQst170118 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {

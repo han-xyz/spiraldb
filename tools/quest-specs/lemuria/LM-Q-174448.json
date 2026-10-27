@@ -1,0 +1,127 @@
+{
+  "id": "LM-Q-174448",
+  "lang": "174448",
+  "title": "QuestTitle_174423",
+  "giver": {
+    "persona": "LM-BAD-NPC03",
+    "zone": "Lemuria/LM_Z04_Badlands"
+  },
+  "requires": [
+    "LM-Q-174421"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 169260,
+    "gold": 1475
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Standin_CyberBeast.AdjRef",
+        "LM_Standin_CyberBeast2.AdjRef",
+        "LM_TRex_Cyborg_A_01.AdjRef",
+        "LM_TRex_Cyborg_A_02.AdjRef",
+        "LM_TRex_Cyborg_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003927",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Robot_FutureBIG_A_01.AdjRef",
+        "LM_Robot_FutureBIG_A_02.AdjRef",
+        "LM_Robot_FutureBIG_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003928",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_MonsterChest_MorgMerciless.AdjRef"
+      ],
+      "count": 2,
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "descriptor": "WizardInteractionTitle_00000453",
+      "loc": "ZoneLocName_1520281"
+    }
+  ],
+  "personas": {
+    "LM-BAD-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Deer_Hero_NPC.dds",
+      "template_id": 1487617
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Morg_Showdown%21",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst174448 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search for Morg the Merciless",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To Save Sky City! replaced by LM-Q-174421",
+      "blocking": false
+    }
+  ]
+}

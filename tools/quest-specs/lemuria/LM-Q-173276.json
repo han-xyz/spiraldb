@@ -1,0 +1,151 @@
+{
+  "id": "LM-Q-173276",
+  "lang": "173276",
+  "giver": {
+    "persona": "LM-WILD-NPC06-B",
+    "zone": "Lemuria/LM_Z01_WildLands"
+  },
+  "requires": [
+    "LM-Q-17321B"
+  ],
+  "mainline": false,
+  "level": 132,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Krok_Tut_B_01.AdjRef",
+        "LM_Standin_Pharoah.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003951",
+      "zone": "Lemuria/LM_Z01_WildLands"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC09",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Krok_Tut_B_NPC.dds",
+      "template_id": 1520249
+    },
+    "LM-WILD-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Centaur_TarzanF_B_NPC.dds",
+      "template_id": 1520203
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Barrel_of_Monkeys",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst173276 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Lemuria",
+      "blocking": false
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search Barrel",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Horde Thief House",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Lemuria replaced by min_level",
+      "blocking": false
+    }
+  ]
+}

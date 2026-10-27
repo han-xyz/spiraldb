@@ -5,7 +5,9 @@
     "persona": "LM-StandIn-StallionQuartermane-B",
     "zone": "Lemuria/LM_Z00_Hub"
   },
-  "requires": [],
+  "requires": [
+    "LM-Q-174436"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -102,7 +104,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst1736C6, the only free key within 16 of its chain neighbour WizQst1736C3 whose lines name the page's names: Stallion Quartermane",
+      "value": "WizQst1736C6 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
@@ -112,9 +114,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "The More You Hero replaced by min_level",
+      "value": "The More You Hero replaced by LM-Q-174436",
       "blocking": false
     }
-  ],
-  "min_level": 132
+  ]
 }

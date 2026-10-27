@@ -1,0 +1,85 @@
+{
+  "id": "LM-Q-170131",
+  "lang": "170131",
+  "title": "QuestTitle_00001823",
+  "giver": {
+    "persona": "LM-Mandoria-NPC01-02",
+    "zone": "Lemuria/LM_Z05_Mandoria"
+  },
+  "requires": [
+    "LM-Q-170119"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 88860,
+    "gold": 875
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_AncientDoor.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "descriptor": "WizardInteractionTitle_00000423",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Mander_Warrior_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003907",
+      "zone": "Lemuria/LM_Z05_Mandoria",
+      "loc": "ZoneLocName_1507599"
+    }
+  ],
+  "personas": {
+    "LM-Mandoria-NPC01-02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1507626
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Meet_the_Manders",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170131 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

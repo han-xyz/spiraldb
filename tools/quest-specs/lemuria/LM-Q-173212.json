@@ -1,0 +1,161 @@
+{
+  "id": "LM-Q-173212",
+  "lang": "173212",
+  "giver": {
+    "persona": "LM-URSAI-NPC02",
+    "zone": "Lemuria/Interiors/LM_Z02_Treehut"
+  },
+  "requires": [
+    "LM-Q-173211"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 145080,
+    "gold": 1450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC01-C-NoGuitar",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Lemur_Wild_A_02.AdjRef",
+        "LM_Lemur_Wild_A_06.AdjRef",
+        "LM_StandIn_Koolakamba_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003877",
+      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "descriptor": "WizQst173212_00000031",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-URSAI-NPC01-C-NoGuitar",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z02_Treehut",
+      "loc": "ZoneLocName_1520099",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-URSAI-NPC01-C-NoGuitar": {
+      "portrait": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
+      "template_id": 1520317
+    },
+    "LM-URSAI-NPC02": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_E_NPC.dds",
+      "template_id": 1520123
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Word%2C_Sound_%26_Power",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Return to the Ceremony With Tosh",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

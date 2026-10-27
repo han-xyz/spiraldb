@@ -1,0 +1,104 @@
+{
+  "id": "LM-Q-174439",
+  "lang": "174439",
+  "title": "QuestTitle_174433",
+  "auto_start": true,
+  "giver": {
+    "persona": "LM-HEAP-NPC13",
+    "zone": "Lemuria/Interiors/LM_Z07_LionsOffice"
+  },
+  "requires": [
+    "LM-Q-174432"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 96720,
+    "gold": 1025
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Drone_Eye_A_01.AdjRef",
+        "LM_Drone_Eye_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003939",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Drone_Eye_A_01.AdjRef",
+        "LM_Drone_Eye_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003939",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC13": {
+      "portrait": "GUI/NpcPortraits/Lemur_Golden_A_NPC.dds",
+      "template_id": 1524760
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Dark_is_Eyeing",
+    "from": "archive",
+    "timestamp": "20240322090737"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst174439 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

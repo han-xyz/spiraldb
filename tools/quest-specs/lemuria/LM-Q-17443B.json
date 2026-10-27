@@ -1,0 +1,147 @@
+{
+  "id": "LM-Q-17443B",
+  "lang": "17443B",
+  "title": "QuestTitle_174420",
+  "giver": {
+    "persona": "LM_AMBIENT_NeighborhoodWatch_01",
+    "zone": "Lemuria/LM_Z06_SkyCity"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 169260,
+    "gold": 1875
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_AMBIENT_NeighborhoodWatch_01.AdjRef",
+        "LM_AMBIENT_NeighborhoodWatch_02.AdjRef",
+        "LM_Platypus_Citizen_C_01.AdjRef",
+        "LM_Platypus_Citizen_C_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003922",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-SKY-NPC01",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Drone_Eye_D_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003926",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-SKY-NPC01",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Standin_CyberBeast.AdjRef",
+        "LM_Standin_CyberBeast2.AdjRef",
+        "LM_TRex_Cyborg_A_01.AdjRef",
+        "LM_TRex_Cyborg_A_02.AdjRef",
+        "LM_TRex_Cyborg_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003927",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    }
+  ],
+  "personas": {
+    "LM-SKY-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Deer_Hero_NPC.dds",
+      "template_id": 1524712
+    },
+    "LM_AMBIENT_NeighborhoodWatch_01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Platypus_Citizen_C_NPC.dds",
+      "template_id": 1487524
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/There_Goes_the_Neighborhood..._Watch",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17443B is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "To the Rescue! (Wizard101)",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To the Rescue! (Wizard101) replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 132
+}

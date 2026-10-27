@@ -1,0 +1,123 @@
+{
+  "id": "LM-Q-174440",
+  "lang": "174440",
+  "giver": {
+    "persona": "LM-HEAP-NPC23",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-17327F"
+  ],
+  "mainline": false,
+  "level": 132,
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Krok_Tut_Fire_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003953",
+      "zone": "Lemuria/LM_Z07_Heap"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-TELOS-NPC03-B",
+      "zone": "Lemuria/Interiors/LM_Z00_I01_HierarchsSanctum"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC23": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Krok.dds",
+      "template_id": 1524857
+    },
+    "LM-TELOS-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_C_NPC.dds",
+      "template_id": 1521388
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/K._Rool_to_Be_Kind",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter Capo K. Rool's Hideout",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

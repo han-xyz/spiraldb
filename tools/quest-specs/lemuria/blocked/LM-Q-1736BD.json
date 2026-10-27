@@ -5,8 +5,9 @@
     "persona": "LM-Mandoria-NPC01-02",
     "zone": "Lemuria/LM_Z05_Mandoria"
   },
-  "requires": [],
-  "min_level": 132,
+  "requires": [
+    "LM-Q-170126"
+  ],
   "mainline": true,
   "level": 132,
   "reward": {
@@ -90,11 +91,6 @@
     "timestamp": "20250904192612"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "The Fane of the Ancient One",
-      "blocking": false
-    },
     {
       "field": "goal.items",
       "value": "Stone",
