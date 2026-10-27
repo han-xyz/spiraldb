@@ -1,0 +1,97 @@
+{
+  "id": "WL-Q-1889A6",
+  "lang": "1889A6",
+  "auto_start": true,
+  "giver": {
+    "persona": "WL-HOPE-NPC02",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-1889A1"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 139440,
+    "gold": 410
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_KoalaRider_BaseF_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004396",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Dingo_Base_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004397",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Judge_A_NPC.dds",
+      "template_id": 1608053
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bank_Run",
+    "from": "archive",
+    "timestamp": "20240808085543"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1889A6 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Vault",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

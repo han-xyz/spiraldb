@@ -1,0 +1,107 @@
+{
+  "id": "WL-Q-18534F",
+  "lang": "18534F",
+  "title": "QuestTitle_18534D",
+  "auto_start": true,
+  "giver": {
+    "persona": "WL-HOPE-NPC15",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-18534C"
+  ],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 810
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Ghost_LostSoul_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004465",
+      "zone": "",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Devil_Ghost_A_01.AdjRef",
+        "WL_Devil_Ghost_A_02.AdjRef",
+        "WL_Devil_Ghost_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004424",
+      "zone": "",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Kangaroo_Drover_F_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004466",
+      "zone": "",
+      "loc": "ZoneLocName_1560535"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Drover_A_NPC.dds",
+      "template_id": 1608119
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Trail_Razer",
+    "from": "archive",
+    "timestamp": "20231216235132"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst18534F is The Repository's id; the title reads 18534D",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Next Clearing",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Next Clearing",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

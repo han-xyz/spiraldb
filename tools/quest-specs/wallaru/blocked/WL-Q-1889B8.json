@@ -5,13 +5,14 @@
     "persona": "WL-HOPE-NPC15",
     "zone": "Wallaru/WL_Z01_Hub"
   },
-  "requires": [],
-  "min_level": 152,
+  "requires": [
+    "WL-Q-1889B6"
+  ],
   "mainline": false,
   "level": 152,
   "reward": {
     "xp": 0,
-    "gold": 190
+    "gold": 270
   },
   "dialogs": {
     "prep": [
@@ -81,24 +82,24 @@
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Where_is_Wally?",
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Wally_Walkabout",
     "from": "archive",
-    "timestamp": "20231215065455"
+    "timestamp": "20231216235130"
   },
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst1889B8 matched by the words it shares with the goals; its lines name Riley, Wally",
-      "blocking": false
-    },
-    {
-      "field": "requires",
-      "value": "Walla-Me-And-You",
+      "value": "WizQst1889B8 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "Pet Mode to find Wally in Outback",
+      "value": "Pet Mode to find Wally in Collie Ranch",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Pet Mode to find Wally in Wobbegong Territory",
       "blocking": true
     },
     {

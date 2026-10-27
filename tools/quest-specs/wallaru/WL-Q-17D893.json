@@ -1,0 +1,95 @@
+{
+  "id": "WL-Q-17D893",
+  "lang": "17D893",
+  "giver": {
+    "persona": "WL-DREAM-NPC01-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-1889DE"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 79680,
+    "gold": 230
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-EmuRider-B.AdjRef",
+        "WL-StandIn-EmuRider.AdjRef",
+        "WL-StandIn-EmuRiderF_A.AdjRef",
+        "WL_KoalaRider_BaseF_A_01.AdjRef",
+        "WL_KoalaRider_BaseF_A_02.AdjRef",
+        "WL_KoalaRider_Base_A_01.AdjRef",
+        "WL_KoalaRider_Base_A_02.AdjRef",
+        "WL_KoalaRider_NightmareLeaderF_A.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00004377",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1562752"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Out_and_Walkabout",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17D893 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

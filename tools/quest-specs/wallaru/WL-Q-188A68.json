@@ -1,0 +1,185 @@
+{
+  "id": "WL-Q-188A68",
+  "lang": "188A68",
+  "title": "QuestTitle_1889FB",
+  "giver": {
+    "persona": "WL-BILLA-NPC04-B",
+    "zone": "Wallaru/WL_Z08_BillabongResort"
+  },
+  "requires": [
+    "WL-Q-1889FA"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 229080,
+    "gold": 670
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Koala_Giant_A_01.AdjRef",
+        "WL_Koala_Giant_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004421",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Devil_Ghost_A_01.AdjRef",
+        "WL_Devil_Ghost_A_02.AdjRef",
+        "WL_Devil_Ghost_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004424",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Frog_Humangoish_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004427",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    }
+  ],
+  "personas": {
+    "WL-BILLA-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Koala_JudgeF_C_NPC.dds",
+      "template_id": 1608300
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Creatures_from_Billabong_Lagoons",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst188A68 is The Repository's id; the title reads 1889FB",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

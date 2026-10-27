@@ -1,0 +1,137 @@
+{
+  "id": "WL-Q-1889FD",
+  "lang": "1889FD",
+  "giver": {
+    "persona": "WL-BILLA-NPC01-B",
+    "zone": "Wallaru/WL_Z08_BillabongResort"
+  },
+  "requires": [
+    "WL-Q-1889FA"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 79680,
+    "gold": 230
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-BILLA-NPC03-B",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    }
+  ],
+  "personas": {
+    "WL-BILLA-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Joan_A_NPC.dds",
+      "template_id": 1608177
+    },
+    "WL-BILLA-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Owner_A_NPC.dds",
+      "template_id": 1608303
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Key_to_Locke",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

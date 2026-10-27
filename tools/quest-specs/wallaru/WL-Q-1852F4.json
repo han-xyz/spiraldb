@@ -5,7 +5,9 @@
     "persona": "WL-DREAM-NPC10-A",
     "zone": "Wallaru/WL_Z04_TheDreaming"
   },
-  "requires": [],
+  "requires": [
+    "WL-Q-1889FE"
+  ],
   "mainline": true,
   "level": 152,
   "reward": {
@@ -162,9 +164,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "The Woe Warrior replaced by min_level",
+      "value": "The Woe Warrior replaced by WL-Q-1889FE",
       "blocking": false
     }
-  ],
-  "min_level": 152
+  ]
 }

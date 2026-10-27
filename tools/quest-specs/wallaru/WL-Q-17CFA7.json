@@ -1,0 +1,169 @@
+{
+  "id": "WL-Q-17CFA7",
+  "lang": "17CFA7",
+  "title": "QuestTitle_00002005",
+  "giver": {
+    "persona": "WL-DREAM-NPC03-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-17CF73"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 209160,
+    "gold": 610
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-Dungeon-TownieA.AdjRef",
+        "WL_Kangaroo_Judge_B_04.AdjRef",
+        "WL_Kangaroo_Judge_B_06.AdjRef",
+        "WL_Koala_JudgeF_B_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004429",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Dingo_BaseF_B_04.AdjRef",
+        "WL_Dingo_Base_D_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004440",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-Dungeon-DroverB.AdjRef",
+        "WL_Kangaroo_Drover_B_01.AdjRef",
+        "WL_Koala_DroverF_A_01.AdjRef",
+        "WL_Koala_DroverF_A_02.AdjRef",
+        "WL_Koala_Drover_A_01.AdjRef",
+        "WL_Koala_KnightmareLeaderF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004430",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560395"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC03-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_KoalaRider_BaseF_B_NPC.dds",
+      "template_id": 1560425
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/The_Dream_Warriors",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17CFA7 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Furryosa's Dream: Wallaru/Interiors/WL_Z04_I04_FurryosasDream",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Furryosa's Dream",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

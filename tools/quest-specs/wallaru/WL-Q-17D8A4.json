@@ -6,7 +6,7 @@
     "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister"
   },
   "requires": [
-    "WL-Q-1889A1"
+    "WL-Q-17D8A0"
   ],
   "mainline": true,
   "level": 152,
@@ -183,7 +183,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst17D8A4, the only free key within 16 of its chain neighbour WizQst17D8A0 whose lines name the page's names: Ned Collie",
+      "value": "WizQst17D8A4 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
@@ -199,11 +199,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "There and Outback Again replaced by WL-Q-1889A1",
       "blocking": false
     }
   ]

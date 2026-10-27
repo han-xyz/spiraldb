@@ -1,0 +1,221 @@
+{
+  "id": "WL-Q-17CF77",
+  "lang": "17CF77",
+  "giver": {
+    "persona": "WL-DREAM-NPC01-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-17CF75"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 69720,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000043"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000050"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000054"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000055"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000056"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WL-Sybil_Twig-InteractObject.AdjRef",
+        "WL-Sybil_Twig.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst17CF77_00000059",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560395"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dreams_of_Nothing",
+    "from": "archive",
+    "timestamp": "20240815193156"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17CF77 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

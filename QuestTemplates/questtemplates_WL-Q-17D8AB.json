@@ -7,13 +7,49 @@
   "m_questUnderway": null,
   "m_questComplete": null,
   "m_startGoals": [
-    "1_WizardQuestGoals_Kill"
+    "1_WizardQuestGoals_TalkNPC"
   ],
   "m_goals": [
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.BountyGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "1_WizardQuestGoals_Kill",
+      "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "1_WizardQuestGoals_TalkNPC",
       "m_goalNameID": 2559431,
+      "m_goalTitle": "WizardQuestGoals_TalkNPC",
+      "m_goalUnderway": null,
+      "m_hyperlink": null,
+      "m_completeText": null,
+      "m_completeResults": {
+        "m_results": []
+      },
+      "m_goalRequirements": null,
+      "m_tallyCounter": null,
+      "m_locationName": "ZoneLocName_1562752",
+      "m_displayImage1": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "m_displayImage2": "",
+      "m_clientTags": [],
+      "m_genericEvents": [],
+      "m_autoQualify": false,
+      "m_autoComplete": false,
+      "m_destinationZone": "Wallaru/WL_Z04_TheDreaming",
+      "m_dialogList": {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
+        "m_dialogs": []
+      },
+      "m_goalType": "GOAL_TYPE_PERSONA",
+      "m_noQuestHelper": false,
+      "m_petOnlyQuest": false,
+      "m_activateResults": {
+        "m_results": []
+      },
+      "m_hideGoalFloatyText": false,
+      "m_behaviors": null,
+      "m_personaName": "WL-DREAM-NPC01-A",
+      "m_usePatron": false
+    },
+    {
+      "$type": "Imcodec.ObjectProperty.TypeCache.BountyGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "2_WizardQuestGoals_Kill",
+      "m_goalNameID": 572984775,
       "m_goalTitle": "WizardQuestGoals_Kill",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -25,13 +61,13 @@
       "m_tallyCounter": {
         "m_percentChance": 1.0,
         "m_descriptor": "",
-        "m_descriptor2": "WizardMobs_00004439",
-        "m_count": 1,
+        "m_descriptor2": "WizardMobs_00004401",
+        "m_count": 3,
         "m_tallyResults": {
           "m_results": []
         }
       },
-      "m_locationName": "ZoneLocName_1560395",
+      "m_locationName": "ZoneLocName_1562752",
       "m_displayImage1": "",
       "m_displayImage2": "",
       "m_clientTags": [],
@@ -48,16 +84,17 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_bountyTotal": 1,
+      "m_bountyTotal": 3,
       "m_bountyType": "BT_MOB_KILL",
       "m_npcAdjectives": [
-        "WL_Kangaroo_Cabal_A_01.AdjRef"
+        "WL_Wombat_Base_A_01.AdjRef",
+        "WL_Wombat_Base_A_02.AdjRef"
       ]
     },
     {
       "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "2_WizardQuestGoals_TalkNPC",
-      "m_goalNameID": 572984775,
+      "m_goalName": "3_WizardQuestGoals_TalkNPC",
+      "m_goalNameID": 606539207,
       "m_goalTitle": "WizardQuestGoals_TalkNPC",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -67,8 +104,8 @@
       },
       "m_goalRequirements": null,
       "m_tallyCounter": null,
-      "m_locationName": "ZoneLocName_1560395",
-      "m_displayImage1": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+      "m_locationName": "ZoneLocName_1562752",
+      "m_displayImage1": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
@@ -83,7 +120,7 @@
             "m_dialogEntries": [
               {
                 "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-                "m_personaName": "WL-DREAM-NPC04-A_Persona",
+                "m_personaName": "WL-DREAM-NPC01-A_Persona",
                 "m_nameOverride": "",
                 "m_nameSTKey": null,
                 "m_guiDisplay": "",
@@ -91,11 +128,11 @@
                 "m_invisible": false,
                 "m_requirements": null,
                 "m_dialog": "WizQst17D8AB_00000010",
-                "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+                "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
                 "m_soundFile": "",
                 "m_action": "",
                 "m_dialogEvent": "",
-                "m_actorTemplateID": 1560426,
+                "m_actorTemplateID": 1560362,
                 "m_cameraName": "",
                 "m_interpolationDuration": 1.0,
                 "m_cameraOffsetX": 0.0,
@@ -165,7 +202,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "WL-DREAM-NPC04-A",
+      "m_personaName": "WL-DREAM-NPC01-A",
       "m_usePatron": false
     }
   ],
@@ -189,8 +226,17 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "WL-Q-1852F4",
+        "m_questName": "WL-Q-17D8A4",
         "m_applyNOT": false,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "WL-Q-1852CA",
+        "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }
     ],
@@ -204,18 +250,29 @@
   "m_goalLogic": [
     {
       "m_goalsAND": [
-        "1_WizardQuestGoals_Kill"
+        "1_WizardQuestGoals_TalkNPC"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
-        "2_WizardQuestGoals_TalkNPC"
+        "2_WizardQuestGoals_Kill"
       ],
       "m_completeQuest": false,
       "m_requiredORCount": 1
     },
     {
       "m_goalsAND": [
-        "2_WizardQuestGoals_TalkNPC"
+        "2_WizardQuestGoals_Kill"
+      ],
+      "m_goalsOR": [],
+      "m_goalsToAdd": [
+        "3_WizardQuestGoals_TalkNPC"
+      ],
+      "m_completeQuest": false,
+      "m_requiredORCount": 1
+    },
+    {
+      "m_goalsAND": [
+        "3_WizardQuestGoals_TalkNPC"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [],
@@ -235,7 +292,7 @@
         "m_dialogEntries": [
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -243,11 +300,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000000",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -303,7 +360,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -311,11 +368,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000001",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -371,7 +428,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -379,11 +436,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000002",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -439,7 +496,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -447,11 +504,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000003",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -507,7 +564,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -515,11 +572,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000004",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -575,7 +632,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -583,11 +640,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000005",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -643,7 +700,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -651,11 +708,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000006",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -711,7 +768,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -719,11 +776,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000007",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -779,7 +836,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -787,11 +844,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000008",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -847,7 +904,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -855,11 +912,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000009",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -915,7 +972,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -923,11 +980,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000011",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -983,7 +1040,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -991,11 +1048,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000012",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1051,7 +1108,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "WL-DREAM-NPC04-A_Persona",
+            "m_personaName": "WL-DREAM-NPC01-A_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1059,11 +1116,11 @@
             "m_invisible": false,
             "m_requirements": null,
             "m_dialog": "WizQst17D8AB_00000013",
-            "m_picture": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+            "m_picture": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1560426,
+            "m_actorTemplateID": 1560362,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,

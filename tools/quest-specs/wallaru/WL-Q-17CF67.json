@@ -1,0 +1,151 @@
+{
+  "id": "WL-Q-17CF67",
+  "lang": "17CF67",
+  "giver": {
+    "persona": "WL-DREAM-NPC04-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-17CF25"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 119520,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Frog_Tourist_E_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004438",
+      "zone": "",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-BILLA-NPC01-B",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171",
+      "completion": [
+        {
+          "speaker": "WL-BILLA-NPC01-B",
+          "line": "00000015"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-BILLA-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Joan_A_NPC.dds",
+      "template_id": 1608177
+    },
+    "WL-DREAM-NPC04-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+      "template_id": 1560426
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Dream_Master",
+    "from": "archive",
+    "timestamp": "20240815165220"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17CF67 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Waters",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Joan Locke's Dream",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

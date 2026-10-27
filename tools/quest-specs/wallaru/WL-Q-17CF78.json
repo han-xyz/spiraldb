@@ -1,0 +1,163 @@
+{
+  "id": "WL-Q-17CF78",
+  "lang": "17CF78",
+  "giver": {
+    "persona": "WL-EUC-NPC07",
+    "zone": "Wallaru/WL_Z07_EucalyptusForest"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Kangaroo_Drover_E_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004475",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC11-B",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC04-C",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381",
+      "completion": [
+        {
+          "speaker": "WL-HOPE-NPC04-C",
+          "line": "00000009"
+        },
+        {
+          "speaker": "WL-HOPE-NPC04-C",
+          "line": "00000021"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-EUC-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Judge_D_NPC.dds",
+      "template_id": 1608455
+    },
+    "WL-EUC-NPC11-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Tourist_B_NPC.dds",
+      "template_id": 1560504
+    },
+    "WL-HOPE-NPC04-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_A_NPC.dds",
+      "template_id": 1608069
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Uncanny_Rally",
+    "from": "archive",
+    "timestamp": "20240121113111"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17CF78 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Hex-Mangrove",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ],
+  "min_level": 152
+}

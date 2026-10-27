@@ -1,0 +1,170 @@
+{
+  "id": "WL-Q-188B15",
+  "lang": "188B15",
+  "title": "QuestTitle_188A01",
+  "giver": {
+    "persona": "WL-HOPE-NPC05-B",
+    "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister"
+  },
+  "requires": [
+    "WL-Q-1889A1"
+  ],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 580
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-OUT-NPC05",
+      "zone": "Wallaru/WL_Z02_Outback",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z02_I06_TransmitterShack"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Koala_MinisterF_A_NPC.dds",
+      "template_id": 1608106
+    },
+    "WL-OUT-NPC05": {
+      "portrait": "GUI/NpcPortraits/Koala_DroverF_A_NPC.dds",
+      "template_id": 1562768
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:No_News_is_Good_News",
+    "from": "archive",
+    "timestamp": "20240121111652"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst188B15 is The Repository's id; the title reads 188A01",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Outback Gate",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Judge Saboteurs",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

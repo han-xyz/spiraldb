@@ -1,0 +1,279 @@
+{
+  "id": "WL-Q-17CF09",
+  "lang": "17CF09",
+  "giver": {
+    "persona": "WL-EUC-NPC02-A",
+    "zone": "Wallaru/WL_Z07_EucalyptusForest"
+  },
+  "requires": [
+    "WL-Q-1852EA"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 318720,
+    "gold": 930
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC03-A",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_KoalaRider_Base_C_01.AdjRef",
+        "WL_KoalaRider_Base_C_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004422",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Wallaby_Punk_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004423",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Koala_Giant_A_01.AdjRef",
+        "WL_Koala_Giant_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004421",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC03-A",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    }
+  ],
+  "personas": {
+    "WL-EUC-NPC02-A": {
+      "portrait": "GUI/NpcPortraits/Koala_LeaderF_A_NPC.dds",
+      "template_id": 1560328
+    },
+    "WL-EUC-NPC03-A": {
+      "portrait": "GUI/NpcPortraits/Portraits_Kangaroos_Drover_C_NPC.dds",
+      "template_id": 1560332
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mighty_Drover_Kanga-Rangers",
+    "from": "archive",
+    "timestamp": "20240813110204"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17CF09 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "First Forest Clearing",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Second Forest Clearing",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Third Forest Clearing",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Drop Bear Gorgeous replaced by WL-Q-1852EA",
+      "blocking": false
+    }
+  ]
+}

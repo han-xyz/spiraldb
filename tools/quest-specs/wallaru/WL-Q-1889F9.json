@@ -5,7 +5,9 @@
     "persona": "WL-BILLA-NPC04-B",
     "zone": "Wallaru/WL_Z08_BillabongResort"
   },
-  "requires": [],
+  "requires": [
+    "WL-Q-1889F2"
+  ],
   "mainline": true,
   "level": 152,
   "reward": {
@@ -112,12 +114,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Not-So-Jolly Rozzer replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 152
+  ]
 }

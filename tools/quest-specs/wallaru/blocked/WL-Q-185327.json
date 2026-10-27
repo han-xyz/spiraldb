@@ -1,6 +1,11 @@
 {
   "id": "WL-Q-185327",
   "lang": "185327",
+  "auto_start": true,
+  "giver": {
+    "persona": "WL-HOPE-NPC26-B",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
   "requires": [
     "WL-Q-1852E5"
   ],
@@ -105,18 +110,18 @@
       "loc": "ZoneLocName_1594105"
     }
   ],
-  "personas": {},
+  "personas": {
+    "WL-HOPE-NPC26-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
+      "template_id": 1608478
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:You_Can_Go_Home_Again",
     "from": "archive",
     "timestamp": "20240812205709"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to the Next Room",

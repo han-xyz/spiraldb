@@ -1,0 +1,146 @@
+{
+  "id": "WL-Q-185304",
+  "lang": "185304",
+  "title": "QuestTitle_185303",
+  "giver": {
+    "persona": "WL-DREAM-NPC04-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-1852D3"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 139440,
+    "gold": 410
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z05_I02_BunyipWarrens"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Spider_WarriorMage_C_06.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004488",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_WL_Toad_EvilClaw_B_01.AdjRef",
+        "Adv_WL_Toad_EvilClaw_B_02.AdjRef",
+        "WL_Toad_EvilClaw_B_01.AdjRef",
+        "WL_Toad_EvilClaw_B_02.AdjRef",
+        "WL_Toad_EvilClaw_B_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004400",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560535"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC04-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+      "template_id": 1560426
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/What_Dreams_May_Bun",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst185304 is The Repository's id; the title reads 185303",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

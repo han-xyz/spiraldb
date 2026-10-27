@@ -192,6 +192,15 @@
         "m_questName": "WL-Q-185344",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "WL-Q-18534F",
+        "m_applyNOT": true,
+        "m_operator": "ROP_AND"
       }
     ],
     "m_applyNOT": false,

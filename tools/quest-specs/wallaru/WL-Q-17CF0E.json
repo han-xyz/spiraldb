@@ -1,0 +1,156 @@
+{
+  "id": "WL-Q-17CF0E",
+  "lang": "17CF0E",
+  "giver": {
+    "persona": "WL-EUC-NPC02-A",
+    "zone": "Wallaru/WL_Z07_EucalyptusForest"
+  },
+  "requires": [
+    "WL-Q-17CF09"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 139440,
+    "gold": 410
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WL-EUC-DropBear.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "descriptor": "NPCs_01749434",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC01-A",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC01-A",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    }
+  ],
+  "personas": {
+    "WL-EUC-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Joan_A_NPC.dds",
+      "template_id": 1560323
+    },
+    "WL-EUC-NPC02-A": {
+      "portrait": "GUI/NpcPortraits/Koala_LeaderF_A_NPC.dds",
+      "template_id": 1560328
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Dreamwalking%2C_Dreamtalking",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17CF0E is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go To Camp",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

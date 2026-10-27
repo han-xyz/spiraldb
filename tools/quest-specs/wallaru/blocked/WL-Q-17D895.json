@@ -5,8 +5,9 @@
     "persona": "WL-DREAM-NPC01-A",
     "zone": "Wallaru/WL_Z04_TheDreaming"
   },
-  "requires": [],
-  "min_level": 152,
+  "requires": [
+    "WL-Q-17D893"
+  ],
   "mainline": true,
   "level": 152,
   "reward": {
@@ -85,11 +86,6 @@
     "timestamp": "20240121112244"
   },
   "needs_review": [
-    {
-      "field": "requires",
-      "value": "Out and Walkabout",
-      "blocking": false
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Follow (Go to) Dundara's Tracks",

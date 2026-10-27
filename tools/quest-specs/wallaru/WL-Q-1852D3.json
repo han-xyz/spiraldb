@@ -5,7 +5,9 @@
     "persona": "WL-DREAM-NPC04-A",
     "zone": "Wallaru/WL_Z04_TheDreaming"
   },
-  "requires": [],
+  "requires": [
+    "WL-Q-1852D2"
+  ],
   "mainline": true,
   "level": 152,
   "reward": {
@@ -112,12 +114,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Funyips with Bunyips replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 152
+  ]
 }

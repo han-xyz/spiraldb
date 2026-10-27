@@ -1,0 +1,197 @@
+{
+  "id": "WL-Q-1889E6",
+  "lang": "1889E6",
+  "giver": {
+    "persona": "WL-BILLA-NPC01-B",
+    "zone": "Wallaru/WL_Z08_BillabongResort"
+  },
+  "requires": [
+    "WL-Q-17CF0E"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 239040,
+    "gold": 700
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-BILLA-NPC02-B",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-BILLA-NPC02-B",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Devil_Ghost_A_01.AdjRef",
+        "WL_Devil_Ghost_A_02.AdjRef",
+        "WL_Devil_Ghost_A_03.AdjRef"
+      ],
+      "count": 6,
+      "target": "WizardMobs_00004424",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-BILLA-NPC02-B",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171"
+    }
+  ],
+  "personas": {
+    "WL-BILLA-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Joan_A_NPC.dds",
+      "template_id": 1608177
+    },
+    "WL-BILLA-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_HostessF_A_NPC.dds",
+      "template_id": 1608170
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Thrills_and_Bills",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

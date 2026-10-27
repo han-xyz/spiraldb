@@ -169,6 +169,15 @@
       "loc": "ZoneLocName_1594105"
     },
     {
+      "type": "usage",
+      "items": [
+        "WL-CollieRanch_Shutters.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
       "type": "waypoint",
       "zone": "Wallaru/Interiors/WL_Z06_I06_CollieHomestead"
     },
@@ -202,9 +211,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.descriptor",
       "value": "Shutters near Fuse Box",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.persona",

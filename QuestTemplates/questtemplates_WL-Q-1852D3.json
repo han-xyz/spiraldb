@@ -278,11 +278,30 @@
     "$type": "Imcodec.ObjectProperty.TypeCache.RequirementList, Imcodec.ObjectProperty",
     "m_requirements": [
       {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqMagicLevel, Imcodec.ObjectProperty",
-        "m_magicSchool": "",
-        "m_numericValue": 152,
-        "m_operatorType": "OPERATOR_GREATER_THAN_EQ",
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Complete",
+        "m_displayName": null,
+        "m_isQuestRegistry": true,
+        "m_questName": "WL-Q-1852D2",
         "m_applyNOT": false,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "WL-Q-1852D5",
+        "m_applyNOT": true,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "WL-Q-185304",
+        "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }
     ],

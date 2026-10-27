@@ -6,7 +6,7 @@
     "zone": "Wallaru/WL_Z04_TheDreaming"
   },
   "requires": [
-    "WL-Q-17D8AD"
+    "WL-Q-17D8AB"
   ],
   "mainline": true,
   "level": 152,
@@ -133,11 +133,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Perchance to Scream",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Explore Region",
       "blocking": false
@@ -149,7 +144,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Perchance to Scream replaced by WL-Q-17D8AD",
+      "value": "Perchance to Scream replaced by WL-Q-17D8AB",
       "blocking": false
     }
   ]

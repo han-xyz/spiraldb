@@ -1,0 +1,160 @@
+{
+  "id": "WL-Q-1852D2",
+  "lang": "1852D2",
+  "giver": {
+    "persona": "WL-DREAM-NPC04-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-1852CF"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 179280,
+    "gold": 520
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC26-B",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-WarrigalGreens.AdjRef"
+      ],
+      "count": 2,
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "descriptor": "WizQst1852D2_00000023",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "WL_Bunyip_Base_A_01.AdjRef",
+        "WL_Bunyip_Base_A_02.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00004408",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "descriptor": "WizQst1852D2_00000021",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560535"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC04-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+      "template_id": 1560426
+    },
+    "WL-HOPE-NPC26-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
+      "template_id": 1608478
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Funyips_with_Bunyips",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1852D2 is The Repository's id; the title reads 1852D1",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

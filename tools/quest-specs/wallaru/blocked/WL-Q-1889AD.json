@@ -1,0 +1,116 @@
+{
+  "id": "WL-Q-1889AD",
+  "lang": "1889AD",
+  "giver": {
+    "persona": "WL-DREAM-NPC01-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-17CF77"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 49800,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-DREAM-NPC04-A",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-WOBB-NPC06",
+      "zone": ""
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    },
+    "WL-DREAM-NPC04-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+      "template_id": 1560426
+    },
+    "WL-WOBB-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Warlord_A_NPC.dds",
+      "template_id": 1594087
+    }
+  },
+  "source": {
+    "page": "https://therepository.fandom.com/wiki/Yes%2C_to_Novus%21",
+    "from": "repository",
+    "licence": "CC-BY-SA",
+    "licence_url": "https://www.fandom.com/licensing"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1889AD is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Luigi di Mario",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

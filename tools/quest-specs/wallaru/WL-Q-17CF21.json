@@ -1,0 +1,224 @@
+{
+  "id": "WL-Q-17CF21",
+  "lang": "17CF21",
+  "giver": {
+    "persona": "WL-EUC-NPC05-A",
+    "zone": "Wallaru/WL_Z07_EucalyptusForest"
+  },
+  "requires": [
+    "WL-Q-17CF11"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 179280,
+    "gold": 520
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC02-A",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Koala_LeaderF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004431",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC02-A",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-EUC-NPC01-A",
+      "zone": "Wallaru/WL_Z07_EucalyptusForest",
+      "loc": "ZoneLocName_1560318"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-BILLA-NPC04-B",
+      "zone": "Wallaru/WL_Z08_BillabongResort",
+      "loc": "ZoneLocName_1608171",
+      "completion": [
+        {
+          "speaker": "WL-BILLA-NPC04-B",
+          "line": "00000031"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-BILLA-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Koala_JudgeF_C_NPC.dds",
+      "template_id": 1608300
+    },
+    "WL-EUC-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Frog_Joan_A_NPC.dds",
+      "template_id": 1560323
+    },
+    "WL-EUC-NPC02-A": {
+      "portrait": "GUI/NpcPortraits/Koala_LeaderF_A_NPC.dds",
+      "template_id": 1560328
+    },
+    "WL-EUC-NPC05-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560335
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Morp_and_Memories",
+    "from": "archive",
+    "timestamp": "20240308083834"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17CF21 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Great Barrier Gatehouse",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

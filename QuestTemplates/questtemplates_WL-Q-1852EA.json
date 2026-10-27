@@ -156,6 +156,15 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
+        "m_questName": "WL-Q-17CF09",
+        "m_applyNOT": true,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
         "m_questName": "WL-Q-1889BE",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"

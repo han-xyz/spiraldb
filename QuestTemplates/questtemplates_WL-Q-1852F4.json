@@ -222,10 +222,11 @@
     "$type": "Imcodec.ObjectProperty.TypeCache.RequirementList, Imcodec.ObjectProperty",
     "m_requirements": [
       {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqMagicLevel, Imcodec.ObjectProperty",
-        "m_magicSchool": "",
-        "m_numericValue": 152,
-        "m_operatorType": "OPERATOR_GREATER_THAN_EQ",
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Complete",
+        "m_displayName": null,
+        "m_isQuestRegistry": true,
+        "m_questName": "WL-Q-1889FE",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -234,7 +235,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "WL-Q-17D8AB",
+        "m_questName": "WL-Q-17CF25",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

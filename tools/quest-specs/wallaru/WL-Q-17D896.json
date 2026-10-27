@@ -5,7 +5,9 @@
     "persona": "WL-HOPE-NPC06-B",
     "zone": "Wallaru/WL_Z01_Hub"
   },
-  "requires": [],
+  "requires": [
+    "WL-Q-17D893"
+  ],
   "mainline": true,
   "level": 152,
   "reward": {
@@ -141,9 +143,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Stop and Goanna replaced by min_level",
+      "value": "Stop and Goanna replaced by WL-Q-17D893",
       "blocking": false
     }
-  ],
-  "min_level": 152
+  ]
 }

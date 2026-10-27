@@ -1,0 +1,129 @@
+{
+  "id": "WL-Q-17CF85",
+  "lang": "17CF85",
+  "title": "QuestTitle_00002002",
+  "auto_start": true,
+  "giver": {
+    "persona": "WL-DREAM-NPC01-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-17CF70"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 139440,
+    "gold": 410
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Khrulhu_Lincoln_A_01.AdjRef",
+        "WL_Khrulhu_Lincoln_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004385",
+      "zone": "",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Player_Cabal_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003671",
+      "zone": "",
+      "loc": "ZoneLocName_1560395"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_New_Nightmare",
+    "from": "archive",
+    "timestamp": "20250918052513"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17CF85 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Waters",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

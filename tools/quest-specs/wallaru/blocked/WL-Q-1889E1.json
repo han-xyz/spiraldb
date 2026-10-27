@@ -1,0 +1,240 @@
+{
+  "id": "WL-Q-1889E1",
+  "lang": "1889E1",
+  "title": "QuestTitle_1889D1",
+  "auto_start": true,
+  "giver": {
+    "persona": "WL-HOPE-NPC20",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-1889CE"
+  ],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 1340
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WL-Rules.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Wallaru/WL_Z01_Hub",
+      "descriptor": "Items_00027538",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Kangaroo_Judge_C_01-A.AdjRef",
+        "WL_Kangaroo_Judge_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004471",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-HOPE-NPC36.AdjRef",
+        "WL-StandIn-JudgeEddie.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Wallaru/WL_Z01_Hub",
+      "descriptor": "NPCs_01749407",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Frog_Tourist_D_01-A.AdjRef",
+        "WL_Frog_Tourist_D_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000177",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-HOPE-NPC38.AdjRef",
+        "WL-Hooligan.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Wallaru/WL_Z01_Hub",
+      "descriptor": "NPCs_01749405",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC20": {
+      "portrait": "GUI/NpcPortraits/Koala_CitizenF_D_NPC.dds",
+      "template_id": 1608127
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Who_Judges_the_Judges?",
+    "from": "archive",
+    "timestamp": "20240121112502"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst1889E1 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Receptionist",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Bullpen",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Lock-Up",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Chief's Office",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Judges",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

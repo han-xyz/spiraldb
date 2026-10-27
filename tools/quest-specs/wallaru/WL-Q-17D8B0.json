@@ -1,0 +1,229 @@
+{
+  "id": "WL-Q-17D8B0",
+  "lang": "17D8B0",
+  "title": "QuestTitle_00001980",
+  "auto_start": true,
+  "giver": {
+    "persona": "WL-DREAM-NPC01-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-17D8A4"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 288840,
+    "gold": 850
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-PunkWallaby-B.AdjRef",
+        "WL-StandIn-PunkWallaby.AdjRef",
+        "WL_Wallaby_Punk_A_02.AdjRef",
+        "WL_Wallaby_Punk_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004379",
+      "zone": "",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-OUT-EmuCannon.AdjRef",
+        "WL-OUT-EmuCannon_02.AdjRef",
+        "WL-OUT-EmuCannon_03.AdjRef",
+        "WL-OUT-EmuCannon_04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00001018",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-AirRider.AdjRef",
+        "WL_KoalaRider_CapF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004380",
+      "zone": "",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-OUT-EmuCannon.AdjRef",
+        "WL-OUT-EmuCannon_02.AdjRef",
+        "WL-OUT-EmuCannon_03.AdjRef",
+        "WL-OUT-EmuCannon_04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00001018",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-StandIn-FreddieKroaker",
+      "zone": "Wallaru/Interiors/WL_Z04_I05_FreddiesDomain",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_WL_Toad_EvilClaw_B_01.AdjRef",
+        "Adv_WL_Toad_EvilClaw_B_02.AdjRef",
+        "WL_Toad_EvilClaw_B_01.AdjRef",
+        "WL_Toad_EvilClaw_B_02.AdjRef",
+        "WL_Toad_EvilClaw_B_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004400",
+      "zone": "",
+      "loc": "ZoneLocName_1562752"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    },
+    "WL-StandIn-FreddieKroaker": {
+      "portrait": "GUI/NpcPortraits/Portrait_Toad_EvilClaw_B_MOB.dds",
+      "template_id": 1562790
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Ridgy-Didge",
+    "from": "archive",
+    "timestamp": "20240808092901"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17D8B0 is The Repository's id; the title reads no key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue on",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Name": "WL-Q-188A68",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 670,
+  "MaxGold": 670,
+  "ExperienceAmount": 229080,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T10:00:06.146977Z",
+  "ModifiedAt": "2026-10-27T10:00:06.146977Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

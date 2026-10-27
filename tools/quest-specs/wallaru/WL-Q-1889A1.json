@@ -5,7 +5,9 @@
     "persona": "WL-HOPE-NPC02",
     "zone": "Wallaru/WL_Z01_Hub"
   },
-  "requires": [],
+  "requires": [
+    "WL-Q-17D897"
+  ],
   "mainline": true,
   "level": 152,
   "reward": {
@@ -176,7 +178,7 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst1889A1 matched by the words it shares with the goals; its lines name Judge Hopner, Chris Collie",
+      "value": "WizQst1889A1 is The Repository's id; the title reads no key",
       "blocking": false
     },
     {
@@ -191,9 +193,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "I Dream of Meanie replaced by min_level",
+      "value": "I Dream of Meanie replaced by WL-Q-17D897",
       "blocking": false
     }
-  ],
-  "min_level": 152
+  ]
 }
