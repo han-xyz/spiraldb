@@ -65,6 +65,7 @@ SUFFIXED_NPC = re.compile(r"NPC\d+[-_]")
 REVIEWED_WAYPOINT_VERBS = {"go", "locate"}
 NAME_CUTOFF = 0.8
 MOB_NAME_CUTOFF = 0.9
+LOOSE_MOB_NAME_LENGTH = 5
 TITLE_CUTOFF = 0.95
 DIALOGUE_CUTOFF = 0.85
 # Goals without a count: a line repeated on consecutive lines is that many goals.
@@ -529,6 +530,12 @@ def read_page(page):
     }
 
 
+def before_note(line):
+    """A goal line up to its first parenthesised note, the brackets of its links not counted."""
+    note = re.sub(r"\[\w+:[^\]]*\]", lambda link: "_" * len(link.group()), line).find("(")
+    return line[:note] if note >= 0 else line
+
+
 def school_requirement(fields):
     """The `requires` entry of a quest only one school's wizards take, as a list to prepend."""
     return [{"school": fields["school"]}] if fields["school"] else []
@@ -565,7 +572,7 @@ def singular_forms(text):
     """Normalised spellings of a name as it may appear in the plural on the wiki."""
     base = norm(re.sub(r"^(the|a|an)\s+", "", text.strip(), flags=re.I))
     forms = [base]
-    for suffix, replacement in (("ies", "y"), ("es", ""), ("s", "")):
+    for suffix, replacement in (("ies", "y"), ("es", ""), ("s", ""), ("i", "us")):
         if base.endswith(suffix):
             forms.append(base[:-len(suffix)] + replacement)
     return forms
@@ -818,9 +825,11 @@ class ClientData:
 
     def mob_entries_named_loosely(self, name):
         """The entries of the one world mob the name reads without the mob's article or epithet (`Bantam`: The Bantam,
-        `Eurgh`: Eurgh the Grinder), else of the one mob spelled closely (`Abberant`: Aberrant)."""
+        `Eurgh`: Eurgh the Grinder) or the words before its name (`Yaxche`: Blighted Yaxche), else of the one mob
+        spelled closely (`Abberant`: Aberrant)."""
         wanted = norm(name)
-        keys = [key for key in self.mobs if key == "the" + wanted or key.startswith(wanted + "the")]
+        keys = [key for key in self.mobs if key == "the" + wanted or key.startswith(wanted + "the")
+                or (len(wanted) >= LOOSE_MOB_NAME_LENGTH and key.endswith(wanted))]
         if not keys:
             keys = difflib.get_close_matches(wanted, self.mobs, n=2, cutoff=MOB_NAME_CUTOFF)
         return self.mobs[keys[0]] if len(keys) == 1 else []
@@ -1237,12 +1246,7 @@ class SpecBuilder:
                 return [self.usage_goal([name], number * times)]
             return [self.persona_goal(name)]
         if kind == "bounty":
-            note = re.sub(r"\[\w+:[^\]]*\]", lambda link: "_" * len(link.group()), line).find("(")
-            before_note = line[:note] if note >= 0 else line
-            if (creatures and not links(before_note, "Creature") and target_text(plain(before_note))
-                    and not any(self.data.mob_entries(strip_notes(creature)) for creature in creatures)):
-                creatures = [target_text(plain(before_note))]
-            creatures = creatures or [re.sub(r"\s+and\s+.*$|\s+in\s+.*$", "", target_text(text))]
+            creatures = self.noted_creatures(line, target_text(plain(before_note(line)))) or [re.sub(r"\s+and\s+.*$|\s+in\s+.*$", "", target_text(text))]
             collect = re.search(r"\bcollect\s+(?:(\d+)\s+)?(.+)$", text, re.I)
             place = (places or [None])[0]
             zone = next((zone for zone in map(self.place_zone, places) if zone), None)
@@ -1262,6 +1266,15 @@ class SpecBuilder:
         if verb in COLLECT_VERBS or self.data.usage_entries(item, self.zone, number * times):
             return [self.usage_goal([item], number * times)]
         return [self.goal_elsewhere(verb, text, places)]
+
+    def noted_creatures(self, line, named):
+        """The creatures a line links; links only in a note, reading no mob, qualify the creature it names before the
+        note (`Pisceans ([Creature:Piscean Centurions])`, `Bandit ([Creature:Female] or [Creature:Male])`)."""
+        creatures = links(line, "Creature")
+        if (creatures and named and not links(before_note(line), "Creature")
+                and not any(self.data.mob_entries(strip_notes(creature)) for creature in creatures)):
+            return [named]
+        return creatures
 
     def goal_elsewhere(self, verb, text, places):
         """A line no item reads: a waypoint to where it sends the player or to the place it names whole, else a talk
@@ -1293,13 +1306,20 @@ class SpecBuilder:
             item = re.search(r"collect\s+(?:(\d+)\s+)?(.+?)\s+from", text, re.I)
             creatures = [c for sub in subs for c in (links(sub, "Creature") or [plain(sub)])]
             return [self.bounty_goal(creatures, int(item.group(1) or 1), item.group(2), None)]
+        if verb == "defeat" and re.search(r"\bcollect:$", text, re.I) and links(line, "Creature"):
+            place = (links(line, "Location") or [None])[0]
+            drops = [re.match(r"(?:(\d+)\s+)?(.+)$", plain(sub)) for sub in subs]
+            return [self.bounty_goal(links(line, "Creature"), int(drop.group(1) or 1), drop.group(2), place, i > 0,
+                                     place and self.place_zone(place)) for i, drop in enumerate(drops)]
         if verb == "defeat":
             goals = []
             for i, sub in enumerate(subs):
-                creatures = links(sub, "Creature") or [plain(sub)]
-                collect = re.search(r"for\s+(\d+)\s+(.+)$", plain(sub))
+                named = re.sub(r"\s+in\s+.*$", "", plain(before_note(sub))).strip()
+                creatures = self.noted_creatures(sub, named) or [plain(sub)]
+                collect = (re.search(r"for\s+(\d+)\s+(.+)$", plain(sub))
+                           or re.search(r"\bcollect\s+(?:(\d+)\s+)?(.+)$", plain(sub), re.I))
                 place = (links(sub, "Location") or [None])[0]
-                goals.append(self.bounty_goal(creatures, int(collect.group(1)) if collect else 1,
+                goals.append(self.bounty_goal(creatures, int(collect.group(1) or 1) if collect else 1,
                                               collect.group(2) if collect else None, place, i > 0))
             return goals
         item = re.sub(r"\s+(?:in|from|at)$", "", target_text(text.rstrip(":")), flags=re.I)

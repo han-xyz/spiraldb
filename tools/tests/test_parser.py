@@ -362,6 +362,26 @@ class GoalLineTest(unittest.TestCase):
         goals, blocked = self.goals_of(["@Defeat 4 Pisceans ([Creature:Piscean Centurions])"], data)
         self.assertEqual((goals, blocked), ([("bounty", ["Piscean Centurion.AdjRef"])], []))
 
+    def test_a_defeat_header_ending_in_collect_reads_its_lines_as_the_drops(self):
+        data = Data(personas=["Dalton Prescott"], mobs=["Hobgoblin Plunderer"])
+        goals, blocked = self.goals_of(["@Defeat [Creature:Hobgoblin Plunderers] and Collect:", "@@Sir Brennan's Armor",
+                                        "@@4 Patolli Pieces"], data)
+        self.assertEqual((goals, blocked), ([("bountycollect", ["Hobgoblin Plunderer.AdjRef"])] * 2, []))
+        fields = {**fields_of("Survivors"), "goals": ["@Defeat [Creature:Hobgoblin Plunderers] and Collect:",
+                                                     "@@4 Patolli Pieces"]}
+        self.assertEqual(build("Like_Dockwork", data, fields=fields)["goals"][0]["count"], 4)
+
+    def test_creature_links_in_a_note_of_a_defeat_header_line_qualify_the_creature_before_it(self):
+        data = Data(personas=["Dalton Prescott"], mobs=["Inzinebu Bandit"])
+        goals, blocked = self.goals_of(["@Defeat", "@@Inzinebu Bandit ([Creature:Female] or [Creature:Male]) in "
+                                                   "[Location:Baobab Market] and Collect Spices"], data)
+        self.assertEqual((goals, blocked), ([("bountycollect", ["Inzinebu Bandit.AdjRef"])], []))
+
+    def test_a_latin_plural_creature_reads_its_singular(self):
+        goals, blocked = self.goals_of(["@Defeat the [Creature:Death Fungi]"],
+                                       Data(personas=["Dalton Prescott"], mobs=["Death Fungus"]))
+        self.assertEqual((goals, blocked), ([("bounty", ["Death Fungus.AdjRef"])], []))
+
     def test_a_movement_line_read_as_nothing_is_a_waypoint_into_the_current_zone_to_review(self):
         lines = ["@Make Your Way Up", "@Investigate Strange Noise", "@Follow the Ox Alarm to Dark Cloud Base",
                  "@Follow the Trail of Papers", "@Approach Duck's Camp"]
@@ -600,6 +620,9 @@ class ClientLookupTest(unittest.TestCase):
     def test_a_mob_named_without_its_article_or_epithet_reads_the_one_mob_named_so(self):
         self.assertIn("LM_Chicken_Hero_A_01.AdjRef", self.adjectives("Lemuria", "Bantam"))
         self.assertIn("AV-Ogre-Boss-R12-02.AdjRef", self.adjectives("Avalon", "Eurgh"))
+
+    def test_a_mob_named_without_the_words_before_its_name_reads_the_one_mob_named_so(self):
+        self.assertEqual(self.adjectives("Azteca", "Yaxche"), {"AZ-Treant-Flower-B.AdjRef"})
 
     def test_a_misspelt_mob_name_reads_the_one_close_name(self):
         self.assertEqual(self.adjectives("Novus", "Abberant Marleybonian Dog"),
