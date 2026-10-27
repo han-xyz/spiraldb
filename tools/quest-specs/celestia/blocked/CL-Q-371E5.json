@@ -75,11 +75,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Celestia/CL_Z07_Storm_Lord_Temple",
-      "blocking": true
     }
   ]
 }

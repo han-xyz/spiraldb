@@ -6,7 +6,7 @@
     "zone": "Celestia/CL_Z07_Storm_Lord_Temple"
   },
   "requires": [
-    "CL-Q-371E1"
+    "CL-Q-371E9"
   ],
   "mainline": true,
   "level": 48,
@@ -118,9 +118,9 @@
       "blocking": false
     },
     {
-      "field": "zone (no ZoneTransfer)",
-      "value": "Celestia/CL_Z07_Storm_Lord_Temple",
-      "blocking": true
+      "field": "requires (not generated)",
+      "value": "Storm Shards replaced by CL-Q-371E9",
+      "blocking": false
     }
   ]
 }
