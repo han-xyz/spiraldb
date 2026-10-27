@@ -51,6 +51,16 @@
     {
       "type": "usage",
       "items": [
+        "AV_Rainbow_Fountain.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "descriptor": "WizItems_00001815",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "usage",
+      "items": [
         "AV_Burning_Tree.AdjRef"
       ],
       "count": 1,
@@ -81,11 +91,6 @@
       "field": "lang",
       "value": "WizQst95317 is The Repository's id; the title reads no key",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Water from the Rainbow Fountain",
-      "blocking": true
     },
     {
       "field": "dialogs",

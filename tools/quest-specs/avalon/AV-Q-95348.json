@@ -84,6 +84,17 @@
       "loc": "ZoneLocName_602089"
     },
     {
+      "type": "bounty",
+      "mobs": [
+        "AV-Ogre-Boss-R12-02.AdjRef",
+        "AV_StandIn_EurghtheGrinder.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001294",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    },
+    {
       "type": "usage",
       "items": [
         "AV_ShrineShield_Sacred_Unpainted.AdjRef",
@@ -153,11 +164,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Go To Eurgh's Tower",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Eurgh",
-      "blocking": true
     },
     {
       "field": "dialogs",
