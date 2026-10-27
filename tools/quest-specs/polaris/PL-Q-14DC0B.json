@@ -1,18 +1,16 @@
 {
-  "id": "PL-Q-12EEF4",
-  "lang": "12EEF4",
+  "id": "PL-Q-14DC0B",
+  "lang": "14DC0B",
   "giver": {
-    "persona": "PL-BLEAK-NPC07-B",
-    "zone": "Polaris/Interiors/PL_Z02_BabaYagaHut_Int"
+    "persona": "PL-BLEAK-NPC07",
+    "zone": "Polaris/PL_Z02_ForlornTaig"
   },
-  "requires": [
-    "PL-Q-12EEF3"
-  ],
+  "requires": [],
   "mainline": true,
   "level": 100,
   "reward": {
-    "xp": 298580,
-    "gold": 1330
+    "xp": 38490,
+    "gold": 180
   },
   "dialogs": {
     "prep": [
@@ -37,22 +35,26 @@
         "line": "00000004"
       }
     ],
-    "underway": []
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ]
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "PL_Rasputin.AdjRef"
-      ],
-      "count": 1,
-      "target": "WizardMobs_00002155",
-      "zone": "",
-      "loc": "ZoneLocName_1367052"
-    },
-    {
       "type": "persona",
       "persona": "PL-BLEAK-NPC05-B",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-IvanTheGreater.AdjRef"
+      ],
+      "count": 1,
       "zone": "Polaris/PL_Z02_ForlornTaig",
       "loc": "ZoneLocName_1346179"
     }
@@ -62,26 +64,32 @@
       "portrait": "GUI/NpcPortraits/Portrait_Bear_Strongman_A_NPC.dds",
       "template_id": 1346203
     },
-    "PL-BLEAK-NPC07-B": {
+    "PL-BLEAK-NPC07": {
       "portrait": "GUI/NpcPortraits/Human_Mellori_A_NPC.dds",
-      "template_id": 1346213
+      "template_id": 1346212
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Saving_the_Sky_Anchor",
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Back_to_Walruskberg",
     "from": "archive",
-    "timestamp": "20240118174139"
+    "timestamp": "20250905160632"
   },
   "needs_review": [
     {
-      "field": "goal.persona",
+      "field": "goal.descriptor",
       "value": "Ivan the Great",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Hunting a Rat replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 100
 }

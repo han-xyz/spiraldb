@@ -45,6 +45,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "PL-FishTrough.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst14E7A0_00000006",
+      "loc": "ZoneLocName_1370005"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Polaris/Interiors/PL_Z06_TitanPod",
@@ -63,11 +73,6 @@
     "timestamp": "20231126070355"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Fish from Aqualung Fish Trough",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

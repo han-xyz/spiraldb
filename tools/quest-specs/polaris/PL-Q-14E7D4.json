@@ -6,7 +6,7 @@
     "zone": "Polaris/Interiors/PL_Z02_BabaYagaHut_Int"
   },
   "requires": [
-    "PL-Q-14E798"
+    "PL-Q-14E7A0"
   ],
   "mainline": true,
   "level": 100,
@@ -117,7 +117,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Rasputin's Surprises replaced by PL-Q-14E798",
+      "value": "Rasputin's Surprises replaced by PL-Q-14E7A0",
       "blocking": false
     }
   ]

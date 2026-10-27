@@ -1,5 +1,10 @@
 {
   "id": "PL-Q-thebasstille",
+  "auto_start": true,
+  "giver": {
+    "persona": "PL-WAL-NPC11-B",
+    "zone": "Polaris/Interiors/Z01_I02_LaNettoyage"
+  },
   "requires": [
     "PL-Q-148A63"
   ],
@@ -38,13 +43,13 @@
     },
     {
       "type": "persona",
-      "persona": "PL-WAL-NPC11-B",
+      "persona": "giver",
       "zone": "Polaris/Interiors/Z01_I02_LaNettoyage",
       "loc": "ZoneLocName_1217803"
     },
     {
       "type": "persona",
-      "persona": "PL-WAL-NPC11-B",
+      "persona": "giver",
       "zone": "Polaris/Interiors/Z01_I02_LaNettoyage",
       "loc": "ZoneLocName_1217803"
     },
@@ -60,7 +65,7 @@
     },
     {
       "type": "persona",
-      "persona": "PL-WAL-NPC11-B",
+      "persona": "giver",
       "zone": "Polaris/Interiors/Z01_I02_LaNettoyage",
       "loc": "ZoneLocName_1217803"
     },
@@ -76,7 +81,7 @@
     },
     {
       "type": "persona",
-      "persona": "PL-WAL-NPC11-B",
+      "persona": "giver",
       "zone": "Polaris/Interiors/Z01_I02_LaNettoyage",
       "loc": "ZoneLocName_1217803"
     },
@@ -111,11 +116,6 @@
     {
       "field": "lang",
       "value": "The Basstille",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     }
   ]

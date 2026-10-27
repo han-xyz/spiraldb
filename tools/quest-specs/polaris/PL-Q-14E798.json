@@ -5,7 +5,9 @@
     "persona": "PL-WAL-NPC04-B",
     "zone": "Polaris/PL_Z01_Harbor"
   },
-  "requires": [],
+  "requires": [
+    "PL-Q-14DC0B"
+  ],
   "mainline": true,
   "level": 100,
   "reward": {
@@ -81,9 +83,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "The Empress and the Rat replaced by min_level",
+      "value": "The Empress and the Rat replaced by PL-Q-14DC0B",
       "blocking": false
     }
-  ],
-  "min_level": 100
+  ]
 }

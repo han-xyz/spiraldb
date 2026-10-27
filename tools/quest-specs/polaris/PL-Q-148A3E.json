@@ -5,9 +5,7 @@
     "persona": "PL-MINE-NPC02-B",
     "zone": "Polaris/PL_Z05_FrigidMine"
   },
-  "requires": [
-    "PL-Q-148A38"
-  ],
+  "requires": [],
   "mainline": true,
   "level": 100,
   "reward": {
@@ -91,6 +89,16 @@
       "loc": "ZoneLocName_1217799"
     },
     {
+      "type": "usage",
+      "items": [
+        "PL_HarbormasterReport_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z01_Harbor",
+      "descriptor": "WizItems_00002002",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Polaris/PL_Z05_FrigidMine",
@@ -126,14 +134,15 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Harbormaster's Report",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Down to the Harbor replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 100
 }

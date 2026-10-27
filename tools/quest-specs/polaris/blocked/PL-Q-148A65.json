@@ -61,6 +61,15 @@
       "persona": "PL-WAL-NPC01-C",
       "zone": "Polaris/PL_Z00_Walruskberg",
       "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-IvanTheGreater.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306"
     }
   ],
   "personas": {
@@ -90,9 +99,9 @@
       "blocking": false
     },
     {
-      "field": "goal.persona",
+      "field": "goal.descriptor",
       "value": "Ivan the Great",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

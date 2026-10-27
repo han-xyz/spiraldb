@@ -428,16 +428,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "PL-Q-12953A",
-        "m_applyNOT": true,
-        "m_operator": "ROP_AND"
-      },
-      {
-        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
-        "m_entryName": "Completed",
-        "m_displayName": null,
-        "m_isQuestRegistry": false,
-        "m_questName": "PL-Q-12956E",
+        "m_questName": "PL-Q-148A63",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

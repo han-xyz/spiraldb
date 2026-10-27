@@ -1,6 +1,11 @@
 {
   "id": "PL-Q-12956F",
   "lang": "12956F",
+  "auto_start": true,
+  "giver": {
+    "persona": "PL-BLEAK-NPC12",
+    "zone": "Polaris/PL_Z02_ForlornTaig"
+  },
   "requires": [
     "PL-Q-12956E"
   ],
@@ -58,18 +63,18 @@
       "loc": "ZoneLocName_1217803"
     }
   ],
-  "personas": {},
+  "personas": {
+    "PL-BLEAK-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_A_NPC.dds",
+      "template_id": 1346234
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Save_Him_From..._Himself?",
     "from": "archive",
     "timestamp": "20231126071259"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Explore Cell Block B",

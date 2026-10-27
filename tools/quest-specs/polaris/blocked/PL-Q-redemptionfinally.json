@@ -1,5 +1,6 @@
 {
   "id": "PL-Q-redemptionfinally",
+  "auto_start": true,
   "requires": [
     "PL-Q-12EF09"
   ],
@@ -77,8 +78,8 @@
       "blocking": true
     },
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "Dufresne",
       "blocking": true
     },
     {

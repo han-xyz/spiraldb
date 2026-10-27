@@ -92,6 +92,16 @@
       "zone": "",
       "descriptor": "WizQst12EF09_00000011",
       "loc": "ZoneLocName_1240829"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-DufresnesVolcanicGlass.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst12EF09_00000011",
+      "loc": "ZoneLocName_1240829"
     }
   ],
   "personas": {
@@ -114,11 +124,6 @@
     {
       "field": "goal.items",
       "value": "Reddín the Clue",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona",
-      "value": "Dufresne",
       "blocking": true
     },
     {

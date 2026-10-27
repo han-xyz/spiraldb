@@ -5,7 +5,9 @@
     "persona": "PL-HAR-NPC02",
     "zone": "Polaris/PL_Z01_Harbor"
   },
-  "requires": [],
+  "requires": [
+    "PL-Q-148A3E"
+  ],
   "mainline": false,
   "level": 100,
   "reward": {
@@ -117,9 +119,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Haunting Wails replaced by min_level",
+      "value": "Haunting Wails replaced by PL-Q-148A3E",
       "blocking": false
     }
-  ],
-  "min_level": 100
+  ]
 }

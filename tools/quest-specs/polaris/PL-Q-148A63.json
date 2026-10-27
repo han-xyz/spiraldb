@@ -85,6 +85,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "PL-WAL-EmpressPillow.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "descriptor": "WizItems_00002006",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
       "type": "persona",
       "persona": "PL-WAL-NPC01-C",
       "zone": "Polaris/PL_Z00_Walruskberg",
@@ -139,11 +149,6 @@
       "field": "lang",
       "value": "WizQst148A63 matched by the words it shares with the goals; its lines name Danton, Ivan",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Key to Open the Main Gate to the The Basstille",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",

@@ -1,5 +1,6 @@
 {
   "id": "PL-Q-horizonhold",
+  "auto_start": true,
   "requires": [
     "PL-Q-12EEF4"
   ],
@@ -38,8 +39,8 @@
       "blocking": true
     },
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "Ivan the Great",
       "blocking": true
     },
     {

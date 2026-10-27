@@ -1,0 +1,17 @@
+{
+  "Name": "PL-Q-12956F",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 2100,
+  "MaxGold": 2100,
+  "ExperienceAmount": 112000,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T10:00:06.089306Z",
+  "ModifiedAt": "2026-10-27T10:00:06.089306Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

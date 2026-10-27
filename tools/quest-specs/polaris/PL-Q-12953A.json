@@ -6,7 +6,7 @@
     "zone": "Polaris/Interiors/Z01_I02_LaNettoyage"
   },
   "requires": [
-    "PL-Q-148A5E"
+    "PL-Q-148A63"
   ],
   "mainline": true,
   "level": 100,
@@ -153,11 +153,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Storming the Basstille replaced by PL-Q-148A5E",
       "blocking": false
     }
   ]
