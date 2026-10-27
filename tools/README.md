@@ -249,7 +249,7 @@ drop-table timestamps included.
   "min_level": 48,
   "mainline": false,
   "level": 48,
-  "reward": {"xp": 2155, "gold": 160},
+  "reward": {"xp": 2155, "gold": 160, "spells": [{"spell": "Spirit Shield", "school": "Balance"}]},
   "dialogs": {"prep": [{"speaker": "giver", "line": "00000005"}], "underway": [{"speaker": "giver", "line": "00000004"}]},
   "goals": [
     {"type": "bountycollect", "mobs": ["CL-Eel-Green-R9.AdjRef"], "count": 3, "descriptor": "WizQst371B8_00000002",
@@ -270,6 +270,11 @@ drop-table timestamps included.
   it, or from a `successors` list.
 - `reward` is the drop table's XP and gold. Without it the tool takes the median quest reward of the pack's world for
   `level`: `REWARD_BANDS` at the top of `quests/generate.py` (40 and up is Dragonspyre's 3805 XP and 103 gold).
+  `reward.spells` adds a `ResLearnSpell` to the quest's end results for each item: a spell name, or
+  `{"spell": name, "school": School}` for a spell only that school learns (a `ReqSchoolOfFocus` on the result, as in
+  the pack's quests). The name is matched to a template under `Spells/` in the root wad's `TemplateManifest.xml` by
+  file name, else by display name, both without case or punctuation; a name with no match or several is a
+  `quests check` problem and stops `generate`.
 - Goals run in order; a goal with `"with_previous": true` runs alongside the one before it. Each is named
   `<n>_<title>`, its `m_goalNameID` the string id of `Goal` / `Goal <n-1>`, as in the builder-made pack quests.
 
@@ -409,6 +414,8 @@ without a snapshot is fetched only live.
 - a giver placed in another registered world's zone blocks the spec (`giver (other world)`): the quest belongs to that
   world. Zones of unregistered hubs such as Arcanum are allowed.
 - prerequisites to the ids of the other specs, or of the pack's quests with that title.
+- the Reward section's `[Spell:...]` links to `reward.spells`: the school form when a school icon comes just before
+  the link (a page with one spell per school), a plain name otherwise.
 
 The id is the hand-authored spec's for the same lang, else the internal name in `QuestTitle.lang`, else
 `<folder>-Q-<lang>`. The wiki has no level, so every quest gets the world's. A ready spec's prerequisite that will

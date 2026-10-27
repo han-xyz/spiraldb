@@ -7,8 +7,10 @@ import urllib.error
 
 import client  # noqa: F401
 from spiraltools.quests.archive import (USER_AGENT, LiveWiki, cached, enumerate_world, fetch_category, fetch_quest,
-                                        match_by_proper_nouns)
+                                        match_by_proper_nouns, read_page)
 from spiraltools.worlds import world
+
+FIXTURES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures")
 
 
 class Lines:
@@ -243,6 +245,23 @@ class TypedSubcategoryTest(unittest.TestCase):
         self.assertTrue(index["Quest:Tree_Only"]["missing_snapshot"])
         self.assertEqual(index["Quest:Bank_Run"]["timestamp"], "20231212083813")
         self.assertTrue(all(entry["zones"] == [] for entry in index.values()))
+
+
+class RewardTest(unittest.TestCase):
+    def read(self, name):
+        with open(os.path.join(FIXTURES, name), encoding="utf-8") as f:
+            return read_page(f.read())
+
+    def test_a_spell_without_a_school_icon_is_a_plain_name(self):
+        fields = self.read("quest_page_spell_reward.html")
+        self.assertEqual(fields["reward"], {"gold": 350, "xp": 325})
+        self.assertEqual(fields["reward_spells"], ["Buoy Chests 1"])
+
+    def test_one_spell_per_school_names_the_school_of_its_icon(self):
+        fields = self.read("quest_page_school_spell_rewards.html")
+        self.assertEqual(fields["reward_spells"], [{"spell": "Shadow Sentinel", "school": "Death"},
+                                                   {"spell": "Shadow Shrike", "school": "Fire"},
+                                                   {"spell": "Shadow Sentinel", "school": "Ice"}])
 
 
 if __name__ == "__main__":

@@ -13,6 +13,7 @@ from .worlds import world
 
 ZLIB_HEADER = b"\x78\x9c"
 MANIFEST_ENTRY = re.compile(rb"(?s)\xbc\x90\xce\xb9(.)(ObjectData/[ -~]+?\.xml)\x60\x00\x00\x00\x3a\x8f\x35\x89(.{4})")
+SPELL_MANIFEST_ENTRY = re.compile(MANIFEST_ENTRY.pattern.replace(b"ObjectData/", b"Spells/"), re.S)
 ADJECTIVE_LIST = b"\x06\x16\x73\xbe"
 DISPLAY_NAME = b"\x92\xbc\xd8\x91"
 MOB_LANG = "WizardMobs"
@@ -68,14 +69,38 @@ def string_list_field(data, field_hash):
     return found
 
 
-def template_ids(rootwad):
-    """ObjectData manifest path -> template id."""
+def template_ids(rootwad, entry=MANIFEST_ENTRY):
+    """ObjectData manifest path -> template id; another folder's with its own entry pattern."""
     manifest = read_binary_xml(os.path.join(rootwad, "TemplateManifest.xml"))
     ids = {}
-    for m in MANIFEST_ENTRY.finditer(manifest):
+    for m in entry.finditer(manifest):
         if m.group(1)[0] == 2 * len(m.group(2)):
             ids[m.group(2).decode()] = struct.unpack("<I", m.group(3))[0]
     return ids
+
+
+@functools.cache
+def spell_templates(rootwad):
+    """(manifest path, template id, display name) of every spell template, in manifest order."""
+    langs = {}
+    rows = []
+    for path, template_id in template_ids(rootwad, SPELL_MANIFEST_ENTRY).items():
+        key = string_field(read_binary_xml(os.path.join(rootwad, path)), DISPLAY_NAME) or ""
+        rows.append((path, template_id, display_name(rootwad, key, langs) if key else ""))
+    return rows
+
+
+def _spell_key(name):
+    return re.sub(r"[^0-9a-z]", "", name.lower())
+
+
+def spell_candidates(rootwad, name):
+    """The (manifest path, template id) of the spell templates a spell name can mean: those whose file name reads
+    it, else those whose display name does, both compared without case, spaces or punctuation."""
+    key = _spell_key(name)
+    rows = spell_templates(rootwad)
+    by_file = [(path, template_id) for path, template_id, _ in rows if _spell_key(os.path.basename(path)[:-4]) == key]
+    return by_file or [(path, template_id) for path, template_id, display in rows if _spell_key(display) == key]
 
 
 def mobs(rootwad, folder):
