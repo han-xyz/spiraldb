@@ -113,7 +113,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "NV-Q-1797D8",
+        "m_questName": "NV-Q-179809",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
@@ -122,7 +122,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "NV-Q-17335A",
+        "m_questName": "NV-Q-173359",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

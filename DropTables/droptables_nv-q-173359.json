@@ -1,0 +1,17 @@
+{
+  "Name": "NV-Q-173359",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 430,
+  "MaxGold": 430,
+  "ExperienceAmount": 147040,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T06:30:18.898427Z",
+  "ModifiedAt": "2026-10-27T06:30:18.898427Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
