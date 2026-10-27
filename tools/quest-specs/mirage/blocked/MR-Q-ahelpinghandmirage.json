@@ -1,0 +1,66 @@
+{
+  "id": "MR-Q-ahelpinghandmirage",
+  "requires": [
+    "MR-Q-15132F"
+  ],
+  "mainline": true,
+  "level": 105,
+  "reward": {
+    "xp": 169500,
+    "gold": 1300
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "MR_Durvish_Sergeant_A_Boss_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002580",
+      "zone": "Mirage/MR_Z01_AlkaliBarrows",
+      "loc": "ZoneLocName_1378088"
+    },
+    {
+      "type": "persona",
+      "persona": "MR-ALKA-NPC05-C",
+      "zone": "Mirage/MR_Z01_AlkaliBarrows",
+      "loc": "ZoneLocName_1378088"
+    }
+  ],
+  "personas": {
+    "MR-ALKA-NPC05-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Skull_King_A_NPC.dds",
+      "template_id": 1381226
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Helping_Hand_(Mirage)",
+    "timestamp": "20250905042134"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A Helping Hand (Mirage)",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "Ozzy (Mirage)",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Magic Gemstone in the Tomb of the Forgotten",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Ozzy (Mirage)",
+      "blocking": true
+    }
+  ]
+}
