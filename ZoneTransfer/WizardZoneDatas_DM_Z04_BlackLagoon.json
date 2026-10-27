@@ -67,6 +67,17 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "Darkmoor/Interiors/DM_Z04I15_BurblingBog"
       }
+    },
+    {
+      "TriggerName": "Sigil_DM_Z04I05_BogOfSwords_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z04I05_BogOfSwords"
+      }
     }
   ]
 }
