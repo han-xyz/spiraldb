@@ -4,8 +4,9 @@
     "persona": "ZF-SAVA-NPC20",
     "zone": "Zafaria/ZF_Z03_Savannah"
   },
-  "requires": [],
-  "min_level": 60,
+  "requires": [
+    "PL-Q-14DBED"
+  ],
   "mainline": true,
   "level": 60,
   "reward": {
@@ -60,11 +61,6 @@
       "field": "lang",
       "value": "Cave of Bad Seeds",
       "blocking": true
-    },
-    {
-      "field": "requires",
-      "value": "Ancient Insights",
-      "blocking": false
     },
     {
       "field": "goal.persona (other world)",
