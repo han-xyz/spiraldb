@@ -1,0 +1,17 @@
+{
+  "Name": "PL-Q-148A5B",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 160,
+  "MaxGold": 160,
+  "ExperienceAmount": 22400,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:01:58.955975Z",
+  "ModifiedAt": "2026-10-27T09:01:58.955975Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

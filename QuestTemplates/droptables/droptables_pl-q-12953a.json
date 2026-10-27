@@ -1,0 +1,17 @@
+{
+  "Name": "PL-Q-12953A",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 1610,
+  "MaxGold": 1610,
+  "ExperienceAmount": 224000,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:01:58.955975Z",
+  "ModifiedAt": "2026-10-27T09:01:58.955975Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
