@@ -273,7 +273,21 @@
       "m_goalType": "GOAL_TYPE_PERSONA",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
-      "m_activateResults": null,
+      "m_activateResults": {
+        "m_results": [
+          {
+            "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
+            "m_dynaModClientTag": "WC-HUB-Explorer instance",
+            "m_dynaModRemove": false,
+            "m_useQuestAsOriginator": false,
+            "m_dynaModState": "",
+            "m_zoneName": "WizardCity/WC_Hub",
+            "m_bShowsObject": true,
+            "m_persist": true,
+            "m_requirements": null
+          }
+        ]
+      },
       "m_hideGoalFloatyText": false,
       "m_hideGoal": false,
       "m_requiresMagicWeavingSchool": "",

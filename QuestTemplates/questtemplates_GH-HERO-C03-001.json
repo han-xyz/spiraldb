@@ -213,7 +213,21 @@
       "m_goalType": "GOAL_TYPE_PERSONA",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
-      "m_activateResults": null,
+      "m_activateResults": {
+        "m_results": [
+          {
+            "$type": "Imcodec.ObjectProperty.TypeCache.ResAddDynaMod, Imcodec.ObjectProperty",
+            "m_dynaModClientTag": "GH-HERO-NPC03_EinarB instance",
+            "m_dynaModRemove": false,
+            "m_useQuestAsOriginator": false,
+            "m_dynaModState": "",
+            "m_zoneName": "Grizzleheim/GH_Hero",
+            "m_bShowsObject": true,
+            "m_persist": true,
+            "m_requirements": null
+          }
+        ]
+      },
       "m_hideGoalFloatyText": false,
       "m_hideGoal": false,
       "m_requiresMagicWeavingSchool": "",

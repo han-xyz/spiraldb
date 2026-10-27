@@ -3,7 +3,7 @@ import argparse
 import glob
 import os
 
-from . import crownshop, templates, zones
+from . import crownshop, reveals, templates, twins, zones
 from .lang import ROOTWAD_DIR
 from .pack import PACK, QUEST_SPECS_DIR, duplicate_trigger_names
 from .quests import archive, generate
@@ -95,6 +95,14 @@ def build_parser():
     sub = commands.add_parser("npcs", help=templates.NPCS_DESCRIPTION, description=templates.NPCS_DESCRIPTION)
     templates.add_npcs_arguments(sub)
     sub.set_defaults(run=lambda args, _: templates.run_npcs(args))
+
+    sub = commands.add_parser("twins", help=twins.DESCRIPTION, description=twins.DESCRIPTION)
+    twins.add_arguments(sub)
+    sub.set_defaults(run=lambda args, _: twins.run(args))
+
+    sub = commands.add_parser("reveals", help=reveals.DESCRIPTION, description=reveals.DESCRIPTION)
+    reveals.add_arguments(sub)
+    sub.set_defaults(run=lambda args, _: reveals.run(args))
 
     quests = commands.add_parser("quests", help=generate.DESCRIPTION, description=generate.DESCRIPTION)
     modes = quests.add_subparsers(dest="mode", required=True)
