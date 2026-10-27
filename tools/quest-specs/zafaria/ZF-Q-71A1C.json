@@ -75,6 +75,16 @@
       "loc": "ZoneLocName_465257"
     },
     {
+      "type": "usage",
+      "items": [
+        "ZF-Library_Book.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "descriptor": "WizQst71A1C_00000014",
+      "loc": "ZoneLocName_465257"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Zafaria/ZF_Z00_Hub",
@@ -97,11 +107,6 @@
     "timestamp": "20231125073607"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Book",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

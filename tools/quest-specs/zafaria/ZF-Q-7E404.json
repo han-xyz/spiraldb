@@ -65,6 +65,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "ZF_Cage_Wooden.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "descriptor": "WizQst7E404_00000011",
+      "loc": "ZoneLocName_465259"
+    },
+    {
       "type": "persona",
       "persona": "ZF-SAV-NPC03",
       "zone": "Zafaria/ZF_Z03_Savannah",
@@ -93,11 +103,6 @@
     "timestamp": "20231125072911"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Cage",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

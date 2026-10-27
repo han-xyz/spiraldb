@@ -6,7 +6,7 @@
     "zone": "Zafaria/ZF_Z03_Savannah"
   },
   "requires": [
-    "ZF-Q-7E400"
+    "ZF-Q-7E404"
   ],
   "mainline": true,
   "level": 60,
@@ -76,11 +76,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Open Cages replaced by ZF-Q-7E400",
       "blocking": false
     }
   ]
