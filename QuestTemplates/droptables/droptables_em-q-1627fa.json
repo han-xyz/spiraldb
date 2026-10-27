@@ -1,0 +1,17 @@
+{
+  "Name": "EM-Q-1627FA",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 13800,
+  "MaxGold": 13800,
+  "ExperienceAmount": 0,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T05:56:17.891816Z",
+  "ModifiedAt": "2026-10-27T05:56:17.891816Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
