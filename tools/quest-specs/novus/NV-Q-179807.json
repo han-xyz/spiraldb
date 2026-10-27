@@ -6,7 +6,7 @@
     "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
   },
   "requires": [
-    "NV-Q-1797FE"
+    "NV-Q-179802"
   ],
   "mainline": true,
   "level": 142,
@@ -151,11 +151,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "All's Well that Cleanses Well",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Chocolate Ship",
       "blocking": false
@@ -163,11 +158,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "All's Well that Cleanses Well replaced by NV-Q-1797FE",
       "blocking": false
     }
   ]

@@ -47,7 +47,41 @@
     ],
     "underway": []
   },
-  "goals": [],
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_AberrantNavy_A_01.AdjRef",
+        "NV_Dog_AberrantNavy_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004208",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_AberrantDogofWar_A_01.AdjRef",
+        "NV_Dog_AberrantDogofWar_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004209",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_AberrantNavy_A_01.AdjRef",
+        "NV_Dog_AberrantNavy_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004208",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546199"
+    }
+  ],
   "personas": {
     "NV-StandIn-Dasein_v3": {
       "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
@@ -62,40 +96,14 @@
   },
   "needs_review": [
     {
-      "field": "goal.mobs",
-      "value": "Abberant Marleybonian Dog",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Go To Next Island",
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Abberant Marleybonians Cat",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Go To Next Island",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Abberant Marleybonian Dog",
-      "blocking": true
-    },
-    {
-      "field": "goals",
-      "value": [
-        "@Defeat Abberant Marleybonian Dog",
-        "@Go To Next Island",
-        "@Defeat Abberant Marleybonians Cat",
-        "@Go To Next Island",
-        "@Defeat Abberant Marleybonian Dog"
-      ],
-      "blocking": true
     },
     {
       "field": "dialogs",

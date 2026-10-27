@@ -1,5 +1,6 @@
 {
-  "id": "NV-Q-allswellthatcleanseswell",
+  "id": "NV-Q-179802",
+  "lang": "179802",
   "giver": {
     "persona": "NV-NEWV-NPC04-B",
     "zone": "Novus/NV_Z04_NewVicorgia"
@@ -14,7 +15,72 @@
     "gold": 570
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -56,6 +122,7 @@
       ],
       "count": 1,
       "zone": "",
+      "descriptor": "WizQst179802_00000016",
       "loc": "ZoneLocName_1546199"
     },
     {
@@ -87,12 +154,12 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "All's Well that Cleanses Well",
-      "blocking": true
+      "value": "WizQst179802 is The Repository's id; the title reads no key",
+      "blocking": false
     },
     {
-      "field": "goal.descriptor",
-      "value": "Well",
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     }
   ]
