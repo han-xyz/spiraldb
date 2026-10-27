@@ -1,0 +1,163 @@
+{
+  "id": "WL-Q-1889CE",
+  "lang": "1889CE",
+  "giver": {
+    "persona": "WL-HOPE-NPC24-B",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-1889C9"
+  ],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 770
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC20",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC20",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z01_I03_HallOfJudgement"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-WallOfShame.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Wallaru/WL_Z01_Hub",
+      "descriptor": "Items_00027555",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC20",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC20": {
+      "portrait": "GUI/NpcPortraits/Koala_CitizenF_D_NPC.dds",
+      "template_id": 1608127
+    },
+    "WL-HOPE-NPC24-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dingo_BaseF_A_NPC.dds",
+      "template_id": 1608369
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Case_of_the_Jaded_Judges",
+    "from": "archive",
+    "timestamp": "20240121112454"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Judges",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

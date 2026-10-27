@@ -1,0 +1,119 @@
+{
+  "id": "PL-Q-14C471",
+  "lang": "14C471",
+  "giver": {
+    "persona": "PL-URVI-NPC08",
+    "zone": "Polaris/PL_Z04_UrvilleStation"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 301860,
+    "gold": 1870
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PL_Polar_Bear_Soldier_F.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002185",
+      "zone": "",
+      "descriptor": "WizQst14C471_00000006",
+      "loc": "ZoneLocName_1346322"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PL_Sea_Lion_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002276",
+      "zone": "",
+      "descriptor": "WizQst14C471_00000010",
+      "loc": "ZoneLocName_1346322"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z04_UrvilleStation",
+      "loc": "ZoneLocName_1346322"
+    }
+  ],
+  "personas": {
+    "PL-URVI-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Cossack_A_NPC.dds",
+      "template_id": 1361008
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Broken_Dreamer",
+    "from": "archive",
+    "timestamp": "20231126071928"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst14C471 matched by the words it shares with the goals; its lines name Aleksandr, Gulag Guards, Watch Lions",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The One Who Sees replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

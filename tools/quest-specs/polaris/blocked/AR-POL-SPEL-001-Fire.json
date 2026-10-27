@@ -1,0 +1,191 @@
+{
+  "id": "AR-POL-SPEL-001-Fire",
+  "lang": "14E7AD",
+  "title": "QuestTitle_15DDAF",
+  "giver": {
+    "persona": "AR-StandIn-AdventureFitzhume_03",
+    "zone": "Arcanum/Interiors/AR_Z01_DeadArchive"
+  },
+  "requires": [],
+  "min_level": 100,
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 0,
+    "gold": 10000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC03-E",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+    },
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC03-E",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice",
+      "completion": [
+        {
+          "speaker": "AR-ARC-NPC03-E",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC03-E": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dwarf_Porfessor_A_NPC.dds",
+      "template_id": 1521474
+    },
+    "AR-StandIn-AdventureFitzhume_03": {
+      "portrait": "GUI/NpcPortraits/Monkey_Adventurer_A_NPC.dds",
+      "template_id": 1487574
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Legendary_Tomfoolery",
+    "from": "archive",
+    "timestamp": "20240119020907"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst14E7AD by the proper nouns its lines share with the page (Arcanum, Fire, Fitzhume, Ice), within 16 of a key of the zone's quests; next best WizQst14E7B2 with 3",
+      "blocking": false
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Librarian Fitzhume: AR-StandIn-AdventureFitzhume_03 from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Forging A Legend",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ignus Ferric: AR-ARC-NPC03-E from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Arcanum Crafting Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Baba Yaga's Legendary Mace (for Myth)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Ignus' Legendary Torchstaff (for Fire)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Ione's Legendary Sword (for Storm)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Jaki's Legendary Bow (for Balance)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Qismah's Legendary Dagger (for Death)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Tarrak's Legendary Frostome (for Ice)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Zander's Legendary Staff (for Life)",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ignus Ferric: AR-ARC-NPC03-E from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

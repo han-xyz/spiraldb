@@ -1,0 +1,80 @@
+{
+  "id": "WL-Q-thedreamchild",
+  "giver": {
+    "persona": "WL-DREAM-NPC04-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-17D8AB"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 119520,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-Dungeon-DroverB.AdjRef",
+        "WL_Kangaroo_Drover_B_01.AdjRef",
+        "WL_Koala_DroverF_A_01.AdjRef",
+        "WL_Koala_DroverF_A_02.AdjRef",
+        "WL_Koala_Drover_A_01.AdjRef",
+        "WL_Koala_KnightmareLeaderF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004430",
+      "zone": "",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-DREAM-NPC03-A",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560395"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC03-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_KoalaRider_BaseF_B_NPC.dds",
+      "template_id": 1560425
+    },
+    "WL-DREAM-NPC04-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+      "template_id": 1560426
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Dream_Child",
+    "from": "archive",
+    "timestamp": "20240815184416"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "The Dream Child",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Waters",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Furryosa's Dream: Wallaru/Interiors/WL_Z04_I04_FurryosasDream",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Furryosa's Dream",
+      "blocking": false
+    }
+  ]
+}

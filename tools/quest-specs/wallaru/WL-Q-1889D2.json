@@ -1,0 +1,125 @@
+{
+  "id": "WL-Q-1889D2",
+  "lang": "1889D2",
+  "giver": {
+    "persona": "WL-HOPE-NPC20",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-1889C9"
+  ],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 150
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC26-B",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381",
+      "completion": [
+        {
+          "speaker": "WL-HOPE-NPC26-B",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC20": {
+      "portrait": "GUI/NpcPortraits/Koala_CitizenF_D_NPC.dds",
+      "template_id": 1608127
+    },
+    "WL-HOPE-NPC26-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
+      "template_id": 1608478
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Case_of_the_Sickened_Society",
+    "from": "archive",
+    "timestamp": "20240121112422"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Case of the Jaded Judges replaced by WL-Q-1889C9",
+      "blocking": false
+    }
+  ]
+}

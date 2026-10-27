@@ -1,0 +1,178 @@
+{
+  "id": "WL-Q-1852D8",
+  "lang": "1852D8",
+  "giver": {
+    "persona": "WL-DREAM-NPC04-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 199200,
+    "gold": 580
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC34",
+      "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z06_I03_JudgeJudisOffice"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Wallaby_Judge_A_01.AdjRef",
+        "WL_Wallaby_Judge_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004411",
+      "zone": "",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-RANCH-Documents.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "Interactables_00000073",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1594105"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC04-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+      "template_id": 1560426
+    },
+    "WL-HOPE-NPC34": {
+      "portrait": "GUI/NpcPortraits/Koala_JudgeF_A_NPC.dds",
+      "template_id": 1608377
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Judging_Judges",
+    "from": "archive",
+    "timestamp": "20240812201004"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Despairing is Caring replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 152
+}

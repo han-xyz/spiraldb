@@ -1,0 +1,96 @@
+{
+  "id": "WL-Q-1852CC",
+  "lang": "1852CC",
+  "giver": {
+    "persona": "WL-HOPE-NPC34",
+    "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse"
+  },
+  "requires": [
+    "WL-Q-1852CB"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 89640,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "WL_Wombat_Combat_A_01.AdjRef",
+        "WL_Wombat_Combat_A_02.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00004404",
+      "zone": "",
+      "descriptor": "WizQst1852CC_00000012",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse",
+      "loc": "ZoneLocName_1594105"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC34": {
+      "portrait": "GUI/NpcPortraits/Koala_JudgeF_A_NPC.dds",
+      "template_id": 1608377
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mortal_Wombat!",
+    "from": "archive",
+    "timestamp": "20240808100100"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

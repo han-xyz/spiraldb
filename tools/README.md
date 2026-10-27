@@ -52,8 +52,9 @@ in a run of encounter quests, Karamelle's anchored run holds 11 of its files, Em
 Khrysalis's quests lie in runs from 0x126322 to 0x13D76F that its few titles do not anchor, and Avalon's and
 Azteca's quests are spread over runs their few titles do not anchor, interleaved with each other's. A declared range
 is exclusive: `archive parse` takes no title key outside it, so a title read only outside it stays blocked on `lang`
-(a title of the same name in another world). Zafaria's range was widened to cover the keys its titles read. Polaris's and Wallaru's ranges span the runs their
-quest titles read (Polaris 0x1294F8 to 0x14E7DF, Wallaru 0x17D895 to 0x188A01); the few far keys are left out. A world outside the table is refused with the list of the known ones.
+(a title of the same name in another world). Zafaria's range was widened to cover the keys its titles read.
+Polaris's and Wallaru's ranges span the runs their quest titles read (Polaris 0x1294F8 to 0x14E7DF, Wallaru 0x17D895
+to 0x188A01); the few far keys are left out. A world outside the table is refused with the list of the known ones.
 
 ## check
 
@@ -384,6 +385,8 @@ without a snapshot is fetched only live.
   waypoint. A defeat in a place with its own zone (`Defeat Morganthe (in Morganthe's Chamber)`) sends the player
   there.
 - the zone from the zone category, else the giver's location, to the zone where most of that zone's givers stand.
+- a giver placed in another registered world's zone blocks the spec (`giver (other world)`): the quest belongs to that
+  world. Zones of unregistered hubs such as Arcanum are allowed.
 - prerequisites to the ids of the other specs, or of the pack's quests with that title.
 
 The id is the hand-authored spec's for the same lang, else the internal name in `QuestTitle.lang`, else

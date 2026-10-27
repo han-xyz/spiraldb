@@ -1,0 +1,62 @@
+{
+  "id": "PL-Q-spellements101",
+  "giver": {
+    "persona": "TEST-CAM-NPC-001",
+    "zone": ""
+  },
+  "requires": [
+    "WC-COMMONS-MAIN-005"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {
+    "TEST-CAM-NPC-001": {
+      "portrait": "GUI/NpcPortraits/Portrait_Player_Spellement_A_NPC.dds",
+      "template_id": 1634239
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Spellements101",
+    "from": "archive",
+    "timestamp": "20251210214336"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Spellements101",
+      "blocking": true
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Abner K. Doodle: TEST-CAM-NPC-001 from ObjectData/WC",
+      "blocking": false
+    },
+    {
+      "field": "giver.zone (placed in no zone)",
+      "value": "Abner K. Doodle",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "about Spellements",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Learn about Spellements",
+        "(completes automatically upon accepting)"
+      ],
+      "blocking": true
+    }
+  ]
+}

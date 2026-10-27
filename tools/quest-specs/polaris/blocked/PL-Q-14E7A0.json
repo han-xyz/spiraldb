@@ -1,0 +1,77 @@
+{
+  "id": "PL-Q-14E7A0",
+  "lang": "14E7A0",
+  "giver": {
+    "persona": "PL-KATA-NPC03-B",
+    "zone": "Polaris/Interiors/PL_Z06_TitanPod"
+  },
+  "requires": [
+    "PL-Q-14E798"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 123550,
+    "gold": 550
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/Interiors/PL_Z06_TitanPod",
+      "loc": "ZoneLocName_1370005"
+    }
+  ],
+  "personas": {
+    "PL-KATA-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seal_Captain_A_NPC.dds",
+      "template_id": 1370071
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Yummy_Sushi",
+    "from": "archive",
+    "timestamp": "20231126070355"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Fish from Aqualung Fish Trough",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

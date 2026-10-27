@@ -1,0 +1,89 @@
+{
+  "id": "PL-Q-12EEF3",
+  "lang": "12EEF3",
+  "giver": {
+    "persona": "PL-KATA-NPC07-B",
+    "zone": "Polaris/Interiors/PL_Z06_Kalypso_AboveDeck"
+  },
+  "requires": [
+    "PL-Q-14E7DD"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 247100,
+    "gold": 1100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC07-B",
+      "zone": "Polaris/Interiors/PL_Z02_BabaYagaHut_Int",
+      "loc": "ZoneLocName_1240829"
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_A_NPC.dds",
+      "template_id": 1346213
+    },
+    "PL-KATA-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Dockworker_A_NPC.dds",
+      "template_id": 1370078
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Climbing_the_Peaks",
+    "from": "archive",
+    "timestamp": "20240118175621"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Jeweled Slopes",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

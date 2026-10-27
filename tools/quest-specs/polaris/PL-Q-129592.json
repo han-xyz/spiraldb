@@ -1,0 +1,106 @@
+{
+  "id": "PL-Q-129592",
+  "lang": "129592",
+  "giver": {
+    "persona": "PL-MINE-NPC05",
+    "zone": "Polaris/PL_Z05_FrigidMine"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 234890,
+    "gold": 1370
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "PL-PitBossMinak.AdjRef",
+        "PL_Moosetaur_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002174",
+      "zone": "Polaris/PL_Z05_FrigidMine",
+      "descriptor": "WizQst129592_00000004",
+      "loc": "ZoneLocName_1217946"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL_CharmedMiner.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Polaris/PL_Z05_FrigidMine",
+      "descriptor": "Items_00016351",
+      "loc": "ZoneLocName_1217946"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z05_FrigidMine",
+      "loc": "ZoneLocName_1217946"
+    }
+  ],
+  "personas": {
+    "PL-MINE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Miner_A_NPC.dds",
+      "template_id": 1346312
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Charm_of_the_Mine",
+    "from": "archive",
+    "timestamp": "20240118172519"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Secrets of the Mine replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

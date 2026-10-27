@@ -19,6 +19,7 @@ def fields_of(name):
 
 class Data:
     """The client lookups a spec needs, over a handful of names."""
+    world = "W"
     folder = "W"
     level = 1
 
@@ -64,6 +65,19 @@ class Data:
         return None
 
 
+class GiverPlacedIn(Data):
+    """Every persona placed in one zone, for a world of the registry."""
+    world = "Polaris"
+
+    def __init__(self, zone, **kwargs):
+        super().__init__(**kwargs)
+        self.zone = zone
+
+    def persona(self, name, zone):
+        found = super().persona(name, zone)
+        return found and dict(found, zones=[self.zone])
+
+
 def build(name, data, known_zones=(ZONE,), fields=None, predecessor_hand_in=None):
     fields = fields or fields_of(name)
     entry = {"name": name, "page": f"Quest:{name}", "zones": ["Quest Zone"], "fetched": "20250101000000",
@@ -82,6 +96,17 @@ def summary(goal):
 
 
 class GoalLineTest(unittest.TestCase):
+    def test_a_giver_placed_in_another_registered_world_blocks_the_spec(self):
+        personas = ["Edgar Ableton", "Mackenzie Trowel", "Peter Cheswick", "Dalton Prescott"]
+        spec = build("Survivors", GiverPlacedIn("Avalon/AV_Z03_CaerLyon", personas=personas))
+        self.assertIn("giver (other world)", [field for field, _ in blocking(spec)])
+
+    def test_a_giver_placed_in_an_unregistered_hub_does_not_block_the_spec(self):
+        personas = ["Edgar Ableton", "Mackenzie Trowel", "Peter Cheswick", "Dalton Prescott"]
+        spec = build("Survivors", GiverPlacedIn("Arcanum/AR_Z01_Hub", personas=personas))
+        self.assertEqual(spec["giver"]["zone"], "Arcanum/AR_Z01_Hub")
+        self.assertNotIn("giver (other world)", [field for field, _ in blocking(spec)])
+
     def test_a_talk_to_header_is_one_step_of_its_npcs(self):
         data = Data(personas=["Edgar Ableton", "Mackenzie Trowel", "Peter Cheswick", "Dalton Prescott"])
         spec = build("Survivors", data)

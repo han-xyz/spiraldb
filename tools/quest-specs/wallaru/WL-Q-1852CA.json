@@ -1,0 +1,156 @@
+{
+  "id": "WL-Q-1852CA",
+  "lang": "1852CA",
+  "giver": {
+    "persona": "WL-DREAM-NPC01-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-17D8AD"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 149400,
+    "gold": 440
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Shark_Wobbegong_A_01.AdjRef",
+        "WL_Shark_Wobbegong_A_02.AdjRef",
+        "WL_Shark_Wobbegong_A_03.AdjRef",
+        "WL_Shark_Wobbegong_A_04.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00004402",
+      "zone": "",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC34",
+      "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC34",
+      "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC34",
+      "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse",
+      "loc": "ZoneLocName_1560535"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1560362
+    },
+    "WL-HOPE-NPC34": {
+      "portrait": "GUI/NpcPortraits/Koala_JudgeF_A_NPC.dds",
+      "template_id": 1608377
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wobbegong_with_the_Wind",
+    "from": "archive",
+    "timestamp": "20240808095546"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Perchance to Scream",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Region",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Perchance to Scream replaced by WL-Q-17D8AD",
+      "blocking": false
+    }
+  ]
+}

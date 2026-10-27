@@ -1,0 +1,89 @@
+{
+  "id": "PL-Q-129562",
+  "lang": "129562",
+  "giver": {
+    "persona": "PL-HAR-NPC04",
+    "zone": "Polaris/PL_Z01_Harbor"
+  },
+  "requires": [
+    "PL-Q-148A3E"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 20930,
+    "gold": 160
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {
+    "PL-HAR-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_E_NPC.dds",
+      "template_id": 1217895
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Haunting_Wails",
+    "from": "archive",
+    "timestamp": "20260329221727"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Ice Floe Spirits",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Appease the Ice Floe Spirits"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

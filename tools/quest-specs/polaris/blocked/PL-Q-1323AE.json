@@ -1,0 +1,245 @@
+{
+  "id": "PL-Q-1323AE",
+  "lang": "1323AE",
+  "giver": {
+    "persona": "KR-CrescentBeach-NPC01",
+    "zone": "Khrysalis/Interiors/KR_Z06_I01_Hermitcave"
+  },
+  "requires": [],
+  "min_level": 100,
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 134373,
+    "gold": 2450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AZ-ZOCOLO-NPC14",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-Accompany-Coosto.AdjRef",
+        "PL-HAR-NPC01.AdjRef",
+        "PL-HAR-NPC02.AdjRef",
+        "PL-HAR-NPC05.AdjRef",
+        "PL-KATA-NPC03-B.AdjRef",
+        "PL-KATA-NPC03.AdjRef",
+        "PL-WAL-NPC04-B.AdjRef",
+        "PL-WAL-NPC04.AdjRef",
+        "PL-KATA-NPC07-B.AdjRef",
+        "PL-KATA-NPC07-C.AdjRef",
+        "PL-KATA-NPC07.AdjRef",
+        "PL-WAL-NPC41.AdjRef",
+        "PL_StandIn_CaptColeridge_01.AdjRef",
+        "PL_StandIn_CaptColeridge_02.AdjRef",
+        "PL_StandIn_Coleridge_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "descriptor": "WC-NPCs_00002454",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Parasaur_DrkPriestF_A_01.AdjRef",
+        "EM_Parasaur_DrkPriestF_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002897",
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "persona",
+      "persona": "AZ-ZOCOLO-NPC15-B",
+      "zone": "Azteca/AZ_Z00_Zocalo",
+      "loc": "ZoneLocName_1254306"
+    }
+  ],
+  "personas": {
+    "AZ-ZOCOLO-NPC14": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1254319
+    },
+    "AZ-ZOCOLO-NPC15-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1404178
+    },
+    "KR-CrescentBeach-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Rat_Captain_A_NPC.dds",
+      "template_id": 1283092
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Swine_of_the_Ancient_Mariner",
+    "from": "archive",
+    "timestamp": "20250827043133"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Taylor Coleridge: KR-CrescentBeach-NPC01 from ObjectData/KR",
+      "blocking": false
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Taylor Coleridge is placed in Khrysalis/Interiors/KR_Z06_I01_Hermitcave",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Captain No Captain",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "The Zocalo",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Beans: AZ-ZOCOLO-NPC14 from ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Beans",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Crying Sky Priestess: ObjectData/EM",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Pork",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Pork: AZ-ZOCOLO-NPC15-B from ObjectData/AZ",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

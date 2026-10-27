@@ -1,0 +1,102 @@
+{
+  "id": "WL-Q-18897C",
+  "lang": "18897C",
+  "giver": {
+    "persona": "WL-HOPE-NPC03-B",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-188973"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 59760,
+    "gold": 170
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC05-B",
+      "zone": "Wallaru/Interiors/WL_Z01_I00_PrimeMinister",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC06-B",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portraits_KangaroosF_A_NPC.dds",
+      "template_id": 1608287
+    },
+    "WL-HOPE-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Koala_MinisterF_A_NPC.dds",
+      "template_id": 1608106
+    },
+    "WL-HOPE-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
+      "template_id": 1608076
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Woop_Woop_Workaround",
+    "from": "archive",
+    "timestamp": "20240808060521"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

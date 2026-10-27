@@ -1,0 +1,55 @@
+{
+  "id": "PL-Q-operationicebath",
+  "giver": {
+    "persona": "PL-KATA-NPC03-B",
+    "zone": "Polaris/Interiors/PL_Z06_TitanPod"
+  },
+  "requires": [
+    "PL-Q-14E7A0"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 82360,
+    "gold": 360
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC07-B",
+      "zone": "Polaris/Interiors/PL_Z02_BabaYagaHut_Int",
+      "loc": "ZoneLocName_1370005"
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_A_NPC.dds",
+      "template_id": 1346213
+    },
+    "PL-KATA-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Seal_Captain_A_NPC.dds",
+      "template_id": 1370071
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Operation_Icebath",
+    "from": "archive",
+    "timestamp": "20231126070356"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Operation Icebath",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Rasputin's Secret Base",
+      "blocking": true
+    }
+  ]
+}

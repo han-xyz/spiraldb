@@ -1,0 +1,120 @@
+{
+  "id": "WL-Q-18898B",
+  "lang": "18898B",
+  "giver": {
+    "persona": "WL-HOPE-NPC06-B",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-188981"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 119520,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Kangaroo_Drover_D_01.AdjRef",
+        "WL_Kangaroo_Drover_D_02.AdjRef",
+        "WL_Kangaroo_Drover_D_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004390",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
+      "template_id": 1608076
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Another_Day,_Another_Ambush",
+    "from": "archive",
+    "timestamp": "20250909062628"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst18898B matched by the words it shares with the goals; its lines name Krokodile Dundara, Kangaroo Bushwhacker",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Krokodile Dundara's Alley",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

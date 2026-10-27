@@ -1,0 +1,154 @@
+{
+  "id": "PL-Q-148A9A",
+  "lang": "148A9A",
+  "giver": {
+    "persona": "PL-BLEAK-NPC02-B",
+    "zone": "Polaris/PL_Z02_ForlornTaig"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 215720,
+    "gold": 1510
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Polaris/Interiors/PL_Z02_BullhemothCave"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Mammoth_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002171",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC03-B",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC03-B",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Walrus_AristocratF_B_NPC.dds",
+      "template_id": 1346204
+    },
+    "PL-BLEAK-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_F_NPC.dds",
+      "template_id": 1346206
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Hand_for_a_Handmaiden",
+    "from": "archive",
+    "timestamp": "20250905075201"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Highway Bullies replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

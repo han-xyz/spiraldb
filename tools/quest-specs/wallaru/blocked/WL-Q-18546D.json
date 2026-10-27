@@ -1,0 +1,182 @@
+{
+  "id": "WL-Q-18546D",
+  "lang": "18546D",
+  "requires": [],
+  "min_level": 152,
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 139440,
+    "gold": 410
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Khrulhu_Lincoln_A_01.AdjRef",
+        "WL_Khrulhu_Lincoln_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004385",
+      "zone": "",
+      "loc": "ZoneLocName_1560395"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Player_Cabal_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003671",
+      "zone": "",
+      "loc": "ZoneLocName_1560395"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_New_Nightmare",
+    "from": "archive",
+    "timestamp": "20250918052513"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst18546D matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Nightmare on Memory Lane",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Waters",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Sandiago to Next Room",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "PL-Q-12EF09",
+  "lang": "12EF09",
+  "giver": {
+    "persona": "PL-BLEAK-NPC12",
+    "zone": "Polaris/PL_Z02_ForlornTaig"
+  },
+  "requires": [
+    "PL-Q-148ABB",
+    "PL-Q-14E7DD"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 125680,
+    "gold": 680
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-DufresnesVolcanicGlass.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizQst12EF09_00000011",
+      "loc": "ZoneLocName_1240829"
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_A_NPC.dds",
+      "template_id": 1346234
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:...Or_Get_Busy_Dying",
+    "from": "archive",
+    "timestamp": "20231126071644"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Clue",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Reddín the Clue",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona",
+      "value": "Dufresne",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

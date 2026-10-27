@@ -1,0 +1,84 @@
+{
+  "id": "PL-Q-12956F",
+  "lang": "12956F",
+  "requires": [
+    "PL-Q-12956E"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 112000,
+    "gold": 2100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Polar_Bear_Soldier_B.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002162",
+      "zone": "",
+      "loc": "ZoneLocName_1217803"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_PolarBear_Soldier_N.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002263",
+      "zone": "",
+      "loc": "ZoneLocName_1217803"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Save_Him_From..._Himself?",
+    "from": "archive",
+    "timestamp": "20231126071259"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Cell Block B",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

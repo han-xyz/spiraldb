@@ -1,0 +1,118 @@
+{
+  "id": "PL-Q-148B41",
+  "lang": "148B41",
+  "giver": {
+    "persona": "PL-BLEAK-NPC10",
+    "zone": "Polaris/Interiors/PL_Z02_BabaYagaHut_Int"
+  },
+  "requires": [
+    "PL-Q-148B40"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 125680,
+    "gold": 690
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AR-StandIn-AdventureFitzhume_03",
+      "zone": "Arcanum/Interiors/AR_Z01_DeadArchive",
+      "loc": "ZoneLocName_1346179"
+    }
+  ],
+  "personas": {
+    "AR-StandIn-AdventureFitzhume_03": {
+      "portrait": "GUI/NpcPortraits/Monkey_Adventurer_A_NPC.dds",
+      "template_id": 1487574
+    },
+    "PL-BLEAK-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_WitchF_A_NPC.dds",
+      "template_id": 1346220
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Arcanum",
+    "from": "archive",
+    "timestamp": "20240406004827"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Panopticon, Arcanum",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Librarian Fitzhume: AR-StandIn-AdventureFitzhume_03 from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "id": "WL-Q-188981",
+  "lang": "188981",
+  "giver": {
+    "persona": "WL-HOPE-NPC06-B",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [
+    "WL-Q-18897C"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 258960,
+    "gold": 760
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Dingo_BaseF_B_01.AdjRef",
+        "WL_Dingo_BaseF_B_02.AdjRef",
+        "WL_Dingo_BaseF_B_05.AdjRef",
+        "WL_Dingo_Base_D_01.AdjRef",
+        "WL_Dingo_Base_D_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004388",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z01_I07_GroceryStore"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Dingo_BaseF_B_01.AdjRef",
+        "WL_Dingo_BaseF_B_02.AdjRef",
+        "WL_Dingo_BaseF_B_05.AdjRef",
+        "WL_Dingo_Base_D_01.AdjRef",
+        "WL_Dingo_Base_D_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004388",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Dingo_BaseF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004389",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000017"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000030"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gator_Hunter_A_NPC.dds",
+      "template_id": 1608076
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Desperate_Times,_Desperate_Dingoes",
+    "from": "archive",
+    "timestamp": "20231129090856"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst188981 matched by the words it shares with the goals; its lines name Krokodile Dundara, Dingo Bandit, Matilda Collie",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Local Shops",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Stakehouse",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Boomerang Shop",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

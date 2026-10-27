@@ -1,0 +1,139 @@
+{
+  "id": "PL-Q-148A3E",
+  "lang": "148A3E",
+  "giver": {
+    "persona": "PL-MINE-NPC02-B",
+    "zone": "Polaris/PL_Z05_FrigidMine"
+  },
+  "requires": [
+    "PL-Q-148A38"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 336000,
+    "gold": 2420
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Penguin_Officer_C.AdjRef",
+        "PL_Penguin_Officer_C02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002273",
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Penguin_Inspector.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002158",
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z05_FrigidMine",
+      "loc": "ZoneLocName_1217946",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000023"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "PL-MINE-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_A_NPC.dds",
+      "template_id": 1346307
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fishy_Business",
+    "from": "archive",
+    "timestamp": "20260329221659"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Inspectors Brigade Headquarters",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the second room",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Harbormaster's Report",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

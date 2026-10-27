@@ -1,0 +1,181 @@
+{
+  "id": "WL-Q-17D89A",
+  "lang": "17D89A",
+  "requires": [
+    "WL-Q-17D898"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 209160,
+    "gold": 610
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-PunkWallaby-B.AdjRef",
+        "WL-StandIn-PunkWallaby.AdjRef",
+        "WL_Wallaby_Punk_A_02.AdjRef",
+        "WL_Wallaby_Punk_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004379",
+      "zone": "",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-EmuRider-B.AdjRef",
+        "WL-StandIn-EmuRider.AdjRef",
+        "WL-StandIn-EmuRiderF_A.AdjRef",
+        "WL_KoalaRider_BaseF_A_01.AdjRef",
+        "WL_KoalaRider_BaseF_A_02.AdjRef",
+        "WL_KoalaRider_Base_A_01.AdjRef",
+        "WL_KoalaRider_Base_A_02.AdjRef",
+        "WL_KoalaRider_NightmareLeaderF_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004377",
+      "zone": "",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-KING-NPC04",
+      "zone": "Wallaru/WL_Z03_Kingsland",
+      "loc": "ZoneLocName_1562752"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL-StandIn-LordVeryTall.AdjRef",
+        "WL_KoalaRider_Mask_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004378",
+      "zone": "",
+      "loc": "ZoneLocName_1562752"
+    }
+  ],
+  "personas": {
+    "WL-KING-NPC04": {
+      "portrait": "GUI/NpcPortraits/Koala_Drover_B_NPC.dds",
+      "template_id": 1608293
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Little_Big_Man",
+    "from": "archive",
+    "timestamp": "20240121112221"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17D89A, the only free key within 16 of its chain neighbour WizQst17D898 and WizQst17D898 whose lines name the page's names: Lord Very-Tall",
+      "blocking": false
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Wallabies",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (closest name)",
+      "value": "Krok Hunter read as Krokodile Hunter",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "PL-Q-12953A",
+  "lang": "12953A",
+  "giver": {
+    "persona": "PL-WAL-NPC11-B",
+    "zone": "Polaris/Interiors/Z01_I02_LaNettoyage"
+  },
+  "requires": [
+    "PL-Q-148A5E"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 224000,
+    "gold": 1610
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-MINE-NPC02-B",
+      "zone": "Polaris/PL_Z05_FrigidMine",
+      "loc": "ZoneLocName_1217946"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Polar_Bear_Soldier_D.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002164",
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "PL-Lever-TowerTop.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Polaris/PL_Z01_Harbor",
+      "descriptor": "Items_00016767",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-MINE-NPC02-B",
+      "zone": "Polaris/PL_Z05_FrigidMine",
+      "loc": "ZoneLocName_1217946"
+    }
+  ],
+  "personas": {
+    "PL-MINE-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_A_NPC.dds",
+      "template_id": 1346307
+    },
+    "PL-WAL-NPC11-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Rebel_A_NPC.dds",
+      "template_id": 1346192
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Flag_Tower",
+    "from": "archive",
+    "timestamp": "20240308214327"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Flag Tower",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Storming the Basstille replaced by PL-Q-148A5E",
+      "blocking": false
+    }
+  ]
+}

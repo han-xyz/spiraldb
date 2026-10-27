@@ -1,0 +1,64 @@
+{
+  "id": "PL-Q-acraftynote",
+  "giver": {
+    "persona": "AR-StandIn-AdventureFitzhume_03",
+    "zone": "Arcanum/Interiors/AR_Z01_DeadArchive"
+  },
+  "requires": [
+    "PL-Q-14DBF8"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 0,
+    "gold": 10000
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC03-E",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC03-E": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dwarf_Porfessor_A_NPC.dds",
+      "template_id": 1521474
+    },
+    "AR-StandIn-AdventureFitzhume_03": {
+      "portrait": "GUI/NpcPortraits/Monkey_Adventurer_A_NPC.dds",
+      "template_id": 1487574
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Crafty_Note",
+    "from": "archive",
+    "timestamp": "20240426033817"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A Crafty Note",
+      "blocking": true
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Librarian Fitzhume: AR-StandIn-AdventureFitzhume_03 from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Stop! HammerTail",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ignus Ferric: AR-ARC-NPC03-E from ObjectData/LM",
+      "blocking": false
+    }
+  ]
+}

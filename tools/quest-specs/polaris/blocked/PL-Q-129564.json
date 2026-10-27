@@ -1,0 +1,163 @@
+{
+  "id": "PL-Q-129564",
+  "lang": "129564",
+  "giver": {
+    "persona": "PL-HAR-NPC02",
+    "zone": "Polaris/PL_Z01_Harbor"
+  },
+  "requires": [
+    "PL-Q-129563"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 201600,
+    "gold": 1450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-HAR-NPC04",
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Penguin_Officer_C.AdjRef",
+        "PL_Penguin_Officer_C02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002273",
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1217799"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z01_Harbor",
+      "loc": "ZoneLocName_1217799"
+    }
+  ],
+  "personas": {
+    "PL-HAR-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Explorer_A_NPC.dds",
+      "template_id": 1340510
+    },
+    "PL-HAR-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_E_NPC.dds",
+      "template_id": 1217895
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Save_the_Wailers!",
+    "from": "archive",
+    "timestamp": "20240119020113"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Customs Storage",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Crate",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

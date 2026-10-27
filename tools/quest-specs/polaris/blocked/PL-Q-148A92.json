@@ -1,0 +1,107 @@
+{
+  "id": "PL-Q-148A92",
+  "lang": "148A92",
+  "requires": [
+    "PL-Q-148A65"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 403200,
+    "gold": 320
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-WAL-NPC01-C",
+      "zone": "Polaris/PL_Z00_Walruskberg",
+      "loc": "ZoneLocName_1254306"
+    },
+    {
+      "type": "persona",
+      "persona": "PL-BLEAK-NPC04",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC04": {
+      "portrait": "GUI/NpcPortraits/Portrait_Fox_HunterF_A_NPC.dds",
+      "template_id": 1346195
+    },
+    "PL-WAL-NPC01-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Bear_Strongman_A_NPC.dds",
+      "template_id": 1346151
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Into_the_Bleaks",
+    "from": "archive",
+    "timestamp": "20231126071507"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "Ivan the Great",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

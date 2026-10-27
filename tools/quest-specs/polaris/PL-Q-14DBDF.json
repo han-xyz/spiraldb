@@ -1,0 +1,99 @@
+{
+  "id": "PL-Q-14DBDF",
+  "lang": "14DBDF",
+  "giver": {
+    "persona": "AR_StandIn_Ione",
+    "zone": "Arcanum/AR_Z01_Hub"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 67240,
+    "gold": 360
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-HUB-NPC14-B",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "completion": [
+        {
+          "speaker": "AV-HUB-NPC14-B",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AR_StandIn_Ione": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_StormTrainerF_A_NPC.dds",
+      "template_id": 1401051
+    },
+    "AV-HUB-NPC14-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_VampireHunterF_A_NPC.dds",
+      "template_id": 1367013
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Chasing_a_Shadow",
+    "from": "archive",
+    "timestamp": "20231126065901"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Ione Virga: AR_StandIn_Ione from ObjectData/MR",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Velma von Venkman: AV-HUB-NPC14-B from ObjectData/AV",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Arcanum Initiation replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

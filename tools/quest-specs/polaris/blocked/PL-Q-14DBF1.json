@@ -1,0 +1,139 @@
+{
+  "id": "PL-Q-14DBF1",
+  "lang": "14DBF1",
+  "giver": {
+    "persona": "ZF-SAVA-NPC20-B",
+    "zone": "Zafaria/Interiors/ZF_Z04_CavePainting"
+  },
+  "requires": [
+    "PL-Q-14DBED"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 296770,
+    "gold": 1490
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Painted_Monster_A.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002224",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Z04_CavePainting"
+    },
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC07-B",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC07-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Jackalope_Professor_A_NPC.dds",
+      "template_id": 1521310
+    },
+    "ZF-SAVA-NPC20-B": {
+      "portrait": "GUI/NpcPortraits/Portraits_Dog_Excavator_A_NPC.dds",
+      "template_id": 1367026
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cave_of_Bad_Seeds",
+    "from": "archive",
+    "timestamp": "20250819005148"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Airdale Guthrie: ZF-SAVA-NPC20-B from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "giver (other world)",
+      "value": "Airdale Guthrie is placed in Zafaria/Interiors/ZF_Z04_CavePainting",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Painted Cave Monster: ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Airdale Guthrie: ZF-SAVA-NPC20-B from ObjectData/ZF",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Jaki Whisperwind: AR-ARC-NPC07-B from ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

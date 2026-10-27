@@ -1,0 +1,179 @@
+{
+  "id": "PL-Q-14E7AE",
+  "lang": "14E7AE",
+  "giver": {
+    "persona": "AR-ARC-NPC03-E",
+    "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+  },
+  "requires": [
+    "PL-Q-14DC09"
+  ],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 287770,
+    "gold": 1440
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AR-ARC-NPC11",
+      "zone": "Arcanum/AR_Z01_Hub"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Cyrio_A.AdjRef",
+        "PL_Cyrio_Balance.AdjRef",
+        "PL_Cyrio_Death.AdjRef",
+        "PL_Cyrio_Fire.AdjRef",
+        "PL_Cyrio_Ice.AdjRef",
+        "PL_Cyrio_Life.AdjRef",
+        "PL_Cyrio_Myth.AdjRef",
+        "PL_Cyrio_Storm.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002236",
+      "zone": ""
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Arcanum/Interiors/AR_Z01_OldOnesOffice"
+    }
+  ],
+  "personas": {
+    "AR-ARC-NPC03-E": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dwarf_Porfessor_A_NPC.dds",
+      "template_id": 1521474
+    },
+    "AR-ARC-NPC11": {
+      "portrait": "GUI/NpcPortraits/Portrait_Horse_Wizard_A_NPC.dds",
+      "template_id": 1370028
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Raging_Bull",
+    "from": "archive",
+    "timestamp": "20231222130329"
+  },
+  "needs_review": [
+    {
+      "field": "giver (other world)",
+      "value": "Ignus Ferric: AR-ARC-NPC03-E from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Invisible Sun",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Cyrio Cassini: AR-ARC-NPC11 from ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Arbiter's Arena",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Cyrio Cassini: ObjectData/AR",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona (other world)",
+      "value": "Ignus Ferric: AR-ARC-NPC03-E from ObjectData/LM",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Invisible Sun replaced by min_level",
+      "blocking": false
+    }
+  ]
+}

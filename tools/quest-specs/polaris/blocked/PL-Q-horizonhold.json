@@ -1,0 +1,51 @@
+{
+  "id": "PL-Q-horizonhold",
+  "requires": [
+    "PL-Q-12EEF4"
+  ],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 82360,
+    "gold": 360
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Rasputin.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002155",
+      "zone": "",
+      "loc": "ZoneLocName_1240832"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Horizon_Hold",
+    "from": "archive",
+    "timestamp": "20240512200849"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Horizon Hold",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore Horizon Hold",
+      "blocking": false
+    }
+  ]
+}

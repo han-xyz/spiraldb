@@ -1117,6 +1117,9 @@ class SpecBuilder:
             giver, giver_zone = self.persona_ref(giver_name, "giver")
             if giver:
                 spec["giver"] = {"persona": giver, "zone": giver_zone or self.zone}
+                giver_world = spec["giver"]["zone"].split("/")[0]
+                if giver_world != self.data.world and giver_world in {w.name for w in WORLDS}:
+                    self.unresolved("giver (other world)", f"{giver_name} is placed in {spec['giver']['zone']}", True)
         elif not fields["auto_start"]:
             self.unresolved("giver", "none", True)
         requires = []

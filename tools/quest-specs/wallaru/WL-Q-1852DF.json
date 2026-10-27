@@ -1,0 +1,124 @@
+{
+  "id": "WL-Q-1852DF",
+  "lang": "1852DF",
+  "giver": {
+    "persona": "WL-DREAM-NPC04-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [
+    "WL-Q-1852DE"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 119520,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Kangaroo_Judge_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004415",
+      "zone": "",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC26-B",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC04-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+      "template_id": 1560426
+    },
+    "WL-HOPE-NPC26-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dingo_Ned_A_NPC.dds",
+      "template_id": 1608478
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hems_for_All_He's_Worth",
+    "from": "archive",
+    "timestamp": "20240205171642"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Prison Barn",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Outside Barn",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

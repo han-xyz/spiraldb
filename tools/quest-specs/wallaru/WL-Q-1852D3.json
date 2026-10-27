@@ -1,0 +1,123 @@
+{
+  "id": "WL-Q-1852D3",
+  "lang": "1852D3",
+  "giver": {
+    "persona": "WL-DREAM-NPC04-A",
+    "zone": "Wallaru/WL_Z04_TheDreaming"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 139440,
+    "gold": 410
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z05_I02_BunyipWarrens"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_WL_Toad_EvilClaw_B_01.AdjRef",
+        "Adv_WL_Toad_EvilClaw_B_02.AdjRef",
+        "WL_Toad_EvilClaw_B_01.AdjRef",
+        "WL_Toad_EvilClaw_B_02.AdjRef",
+        "WL_Toad_EvilClaw_B_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004400",
+      "zone": "",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-Dungeon-DreamWaterDrop-001.AdjRef",
+        "WL-GreenPuddle.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00001036",
+      "loc": "ZoneLocName_1560535"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/WL_Z04_TheDreaming",
+      "loc": "ZoneLocName_1560535",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "WL-DREAM-NPC04-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kangaroo_Cabal_B_NPC.dds",
+      "template_id": 1560426
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Smoothie_Operator",
+    "from": "archive",
+    "timestamp": "20240812193038"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Funyips with Bunyips replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 152
+}

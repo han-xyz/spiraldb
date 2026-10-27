@@ -1,0 +1,115 @@
+{
+  "id": "WL-Q-whojudgesthejudges",
+  "requires": [
+    "WL-Q-1889CE"
+  ],
+  "mainline": false,
+  "level": 152,
+  "reward": {
+    "xp": 0,
+    "gold": 1340
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "WL-Rules.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Wallaru/WL_Z01_Hub",
+      "descriptor": "Items_00027538",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Kangaroo_Judge_C_01-A.AdjRef",
+        "WL_Kangaroo_Judge_C_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004471",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-HOPE-NPC36.AdjRef",
+        "WL-StandIn-JudgeEddie.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Wallaru/WL_Z01_Hub",
+      "descriptor": "NPCs_01749407",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Frog_Tourist_D_01-A.AdjRef",
+        "WL_Frog_Tourist_D_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000177",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "WL-HOPE-NPC38.AdjRef",
+        "WL-Hooligan.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Wallaru/WL_Z01_Hub",
+      "descriptor": "NPCs_01749405",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Who_Judges_the_Judges?",
+    "from": "archive",
+    "timestamp": "20240121112502"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Who Judges the Judges?",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Receptionist",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Bullpen",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Lock-Up",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Chief's Office",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Judges",
+      "blocking": true
+    }
+  ]
+}

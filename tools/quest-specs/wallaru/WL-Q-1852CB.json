@@ -1,0 +1,100 @@
+{
+  "id": "WL-Q-1852CB",
+  "lang": "1852CB",
+  "giver": {
+    "persona": "WL-HOPE-NPC34",
+    "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse"
+  },
+  "requires": [
+    "WL-Q-1852CA"
+  ],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 99600,
+    "gold": 290
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_BeardDragon_Spike_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004403",
+      "zone": "",
+      "loc": "ZoneLocName_1594105"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Wallaru/Interiors/WL_Z01_I02_Courthouse",
+      "loc": "ZoneLocName_1594105"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC34": {
+      "portrait": "GUI/NpcPortraits/Koala_JudgeF_A_NPC.dds",
+      "template_id": 1608377
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Judicial_Ranch",
+    "from": "archive",
+    "timestamp": "20240808095803"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Collie Tunnel: Wallaru/Interiors/WL_Z06_I01_CollieTunnel",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Collie Tunnel",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

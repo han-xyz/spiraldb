@@ -1,0 +1,87 @@
+{
+  "id": "PL-Q-148AEE",
+  "lang": "148AEE",
+  "giver": {
+    "persona": "PL-URVI-NPC04-B",
+    "zone": "Polaris/PL_Z04_UrvilleStation"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 100,
+  "reward": {
+    "xp": 268800,
+    "gold": 1930
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "PL-URVI-NPC05-B",
+      "zone": "Polaris/PL_Z04_UrvilleStation",
+      "loc": "ZoneLocName_1346322"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z04_UrvilleStation",
+      "loc": "ZoneLocName_1346322"
+    }
+  ],
+  "personas": {
+    "PL-URVI-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_Prisoner_A_NPC.dds",
+      "template_id": 1346342
+    },
+    "PL-URVI-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_E_NPC.dds",
+      "template_id": 1346365
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pebble_and_the_Penguin",
+    "from": "archive",
+    "timestamp": "20231126065759"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst148AEE by the proper nouns its lines share with the page (Station, Urville), within 16 of a key of the zone's quests; next best WizQst14C473 with 1",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Borealis Majoris replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}

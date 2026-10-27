@@ -1,0 +1,180 @@
+{
+  "id": "WL-Q-188973",
+  "lang": "188973",
+  "giver": {
+    "persona": "WL-HOPE-NPC01-B",
+    "zone": "Wallaru/WL_Z01_Hub"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 152,
+  "reward": {
+    "xp": 159360,
+    "gold": 470
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Wallaru/Interiors/WL_Z01_I05_MonquistanEmbassy"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "WL_Spider_WarriorMage_C_01.AdjRef",
+        "WL_Spider_WarriorMage_C_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004387",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    },
+    {
+      "type": "persona",
+      "persona": "WL-HOPE-NPC03-B",
+      "zone": "Wallaru/WL_Z01_Hub",
+      "loc": "ZoneLocName_1560381"
+    }
+  ],
+  "personas": {
+    "WL-HOPE-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dromel_Wizard_A_NPC.dds",
+      "template_id": 1608052
+    },
+    "WL-HOPE-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portraits_KangaroosF_A_NPC.dds",
+      "template_id": 1608287
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gatekeepers_Galore",
+    "from": "archive",
+    "timestamp": "20240808055101"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Walla-Me-And-You",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Outback Gate",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Prime Minister's Office",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Prime Minister's Office",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Walla-Me-And-You replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 152
+}

@@ -1,0 +1,95 @@
+{
+  "id": "PL-Q-14C46F",
+  "lang": "14C46F",
+  "giver": {
+    "persona": "PL-BLEAK-NPC08",
+    "zone": "Polaris/PL_Z02_ForlornTaig"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 100,
+  "reward": {
+    "xp": 153880,
+    "gold": 1010
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "PL_Treant_Snow_A.AdjRef"
+      ],
+      "count": 6,
+      "target": "WizardMobs_00002167",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Polaris/PL_Z02_ForlornTaig",
+      "loc": "ZoneLocName_1346179"
+    }
+  ],
+  "personas": {
+    "PL-BLEAK-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Treant_SnowPine_B_NPC.dds",
+      "template_id": 1346214
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shake_It_Off!",
+    "from": "archive",
+    "timestamp": "20231126071924"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst14C46F matched by the words it shares with the goals; its lines name Snow Treants",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Veiled Vale replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 100
+}
