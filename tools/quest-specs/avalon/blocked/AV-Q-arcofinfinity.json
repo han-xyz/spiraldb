@@ -1,5 +1,10 @@
 {
   "id": "AV-Q-arcofinfinity",
+  "auto_start": true,
+  "giver": {
+    "persona": "ZF_Professor_Who",
+    "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox"
+  },
   "requires": [],
   "min_level": 68,
   "mainline": false,
@@ -15,7 +20,7 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "ZF_Professor_Who",
+      "persona": "giver",
       "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_602094"
     },
@@ -39,7 +44,7 @@
     },
     {
       "type": "persona",
-      "persona": "ZF_Professor_Who",
+      "persona": "giver",
       "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_602094"
     },
@@ -51,7 +56,7 @@
     },
     {
       "type": "persona",
-      "persona": "ZF_Professor_Who",
+      "persona": "giver",
       "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_602094"
     },
@@ -101,7 +106,7 @@
     },
     {
       "type": "persona",
-      "persona": "ZF_Professor_Who",
+      "persona": "giver",
       "zone": "Zafaria/Interiors/ZF_Event_Maestro/ZF_Z00_TelegraphBox",
       "loc": "ZoneLocName_602094"
     },
@@ -160,9 +165,9 @@
       "blocking": true
     },
     {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
+      "field": "giver (other world)",
+      "value": "The Professor: ZF_Professor_Who from ObjectData/ZF",
+      "blocking": false
     },
     {
       "field": "requires",

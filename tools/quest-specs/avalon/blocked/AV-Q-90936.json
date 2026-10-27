@@ -1,6 +1,7 @@
 {
   "id": "AV-Q-90936",
   "lang": "90936",
+  "auto_start": true,
   "requires": [
     "AV-Q-96AB5"
   ],
@@ -234,8 +235,8 @@
   },
   "needs_review": [
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {

@@ -1,5 +1,6 @@
 {
   "id": "AV-Q-idyllsoftheking",
+  "auto_start": true,
   "requires": [],
   "min_level": 68,
   "mainline": false,
@@ -58,8 +59,8 @@
       "blocking": true
     },
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {

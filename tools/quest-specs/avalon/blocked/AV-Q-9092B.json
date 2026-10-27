@@ -1,6 +1,11 @@
 {
   "id": "AV-Q-9092B",
   "lang": "9092B",
+  "auto_start": true,
+  "giver": {
+    "persona": "AV-CATA-NPC01",
+    "zone": "Avalon/AV_Z10_Catacombs"
+  },
   "requires": [
     "AV-Q-908FD"
   ],
@@ -274,16 +279,16 @@
     },
     {
       "type": "persona",
-      "persona": "AV-CATA-NPC01",
+      "persona": "giver",
       "zone": "Avalon/AV_Z10_Catacombs",
       "loc": "ZoneLocName_592145",
       "completion": [
         {
-          "speaker": "AV-CATA-NPC01",
+          "speaker": "giver",
           "line": "00000018"
         },
         {
-          "speaker": "AV-CATA-NPC01",
+          "speaker": "giver",
           "line": "00000019"
         }
       ]
@@ -309,11 +314,6 @@
     "timestamp": "20240118180108"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Armory",
