@@ -1,0 +1,17 @@
+{
+  "Name": "KR-Q-13D629",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 600,
+  "MaxGold": 600,
+  "ExperienceAmount": 61985,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T06:30:18.572592Z",
+  "ModifiedAt": "2026-10-27T06:30:18.572592Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
