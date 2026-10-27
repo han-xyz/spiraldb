@@ -131,8 +131,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Friendly Barbarian",
+      "field": "goal.persona",
+      "value": "Approach a Friendly Barbarian",
       "blocking": true
     },
     {
@@ -141,13 +141,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Mouse Sign",
+      "field": "goal.waypoint",
+      "value": "Find the Mouse Sign",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Mouse Sign",
+      "field": "goal.persona",
+      "value": "Follow the Mouse Sign",
       "blocking": true
     },
     {

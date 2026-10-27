@@ -163,8 +163,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Atlach-Leng",
+      "field": "goal.waypoint",
+      "value": "Find Atlach-Leng",
       "blocking": true
     },
     {

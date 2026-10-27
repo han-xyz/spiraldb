@@ -57,6 +57,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/Interiors/KR_Z06_I02_AntLionWarren"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Khrysalis/KR_Z06_CrescentBeach",
@@ -75,11 +79,6 @@
     "timestamp": "20250904103053"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Ant Lion's Warren",
-      "blocking": false
-    },
     {
       "field": "goal.persona",
       "value": "Desert Hoppers",

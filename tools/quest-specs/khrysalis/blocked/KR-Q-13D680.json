@@ -102,8 +102,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Khrysalis Obelisks",
+      "field": "goal.usage",
+      "value": "Restore Khrysalis Obelisks",
       "blocking": true
     },
     {

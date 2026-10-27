@@ -138,13 +138,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Zealous Colossus in Sardonyx",
+      "field": "goal.usage",
+      "value": "Restore the Zealous Colossus in Sardonyx",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Rubicund Colossus in Bastion",
+      "field": "goal.usage",
+      "value": "Restore the Rubicund Colossus in Bastion",
       "blocking": true
     },
     {

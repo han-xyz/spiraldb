@@ -120,13 +120,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Burrower Staff",
+      "field": "goal.usage",
+      "value": "Examine the Burrower Staff",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Baleful Empress",
+      "field": "goal.waypoint",
+      "value": "Locate the Baleful Empress",
       "blocking": true
     },
     {

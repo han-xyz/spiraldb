@@ -162,8 +162,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Ethereal Bridge",
+      "field": "goal.usage",
+      "value": "Use the Ethereal Bridge",
       "blocking": true
     },
     {

@@ -90,8 +90,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Mysterious Activity",
+      "field": "goal.waypoint",
+      "value": "Investigate the Mysterious Activity",
       "blocking": true
     },
     {

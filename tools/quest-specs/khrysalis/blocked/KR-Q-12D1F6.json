@@ -111,8 +111,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Spinner Crystals",
+      "field": "goal.usage",
+      "value": "Use the Spinner Crystals",
       "blocking": true
     },
     {

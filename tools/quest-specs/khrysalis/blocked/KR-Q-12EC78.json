@@ -109,13 +109,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Courtyard Gate",
+      "field": "goal.usage",
+      "value": "Open the Courtyard Gate",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Mystic Colossus piece",
+      "field": "goal.unknown-verb",
+      "value": "Pick up the Mystic Colossus piece",
       "blocking": true
     },
     {

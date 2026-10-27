@@ -76,8 +76,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Metastasis Arch",
+      "field": "goal.unknown-verb",
+      "value": "Unravel the Metastasis Arch",
       "blocking": true
     },
     {

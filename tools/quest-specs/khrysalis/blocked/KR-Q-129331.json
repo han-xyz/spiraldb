@@ -75,8 +75,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Radiance Temple Teleporter",
+      "field": "goal.usage",
+      "value": "Use (Activate) the Radiance Temple Teleporter",
       "blocking": true
     },
     {

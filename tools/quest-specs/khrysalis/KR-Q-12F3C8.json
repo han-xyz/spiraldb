@@ -70,6 +70,10 @@
       "loc": "ZoneLocName_1205052"
     },
     {
+      "type": "waypoint",
+      "zone": "Khrysalis/Interiors/KR_Z03_WorldRazer_Tent"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KR_Shdweave_Lord_E.AdjRef"
@@ -111,11 +115,6 @@
     {
       "field": "requires",
       "value": "Cry Havoc",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "WorldRazer's Tent",
       "blocking": false
     },
     {

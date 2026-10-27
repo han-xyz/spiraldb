@@ -122,8 +122,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Undrek BlightClaw",
+      "field": "goal.waypoint",
+      "value": "Locate Undrek BlightClaw",
       "blocking": true
     },
     {

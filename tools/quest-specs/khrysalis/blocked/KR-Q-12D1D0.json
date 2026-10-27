@@ -131,8 +131,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "True Essence",
+      "field": "goal.usage",
+      "value": "Use the True Essence",
       "blocking": true
     },
     {
