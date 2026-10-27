@@ -118,6 +118,11 @@
       "blocking": false
     },
     {
+      "field": "giver (other world)",
+      "value": "Halston Balestrom is placed in WizardCity/Interiors/WC_PartyRoom",
+      "blocking": true
+    },
+    {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Test of the Stars (in Sanctum of the Stars)",
       "blocking": false
