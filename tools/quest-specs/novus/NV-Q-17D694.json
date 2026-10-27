@@ -1,6 +1,11 @@
 {
   "id": "NV-Q-17D694",
   "lang": "17D694",
+  "auto_start": true,
+  "giver": {
+    "persona": "NV-CON-NPC06-B",
+    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+  },
   "requires": [
     "NV-Q-17D620"
   ],
@@ -70,18 +75,18 @@
       "loc": "ZoneLocName_1520447"
     }
   ],
-  "personas": {},
+  "personas": {
+    "NV-CON-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1575019
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Battle_of_the_Three_Armies",
     "from": "archive",
     "timestamp": "20240409061203"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Take Rowboat to Shore",

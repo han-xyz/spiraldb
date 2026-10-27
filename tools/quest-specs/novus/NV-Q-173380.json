@@ -1,14 +1,19 @@
 {
-  "id": "NV-Q-188A1F",
-  "lang": "188A1F",
+  "id": "NV-Q-173380",
+  "lang": "173380",
+  "auto_start": true,
+  "giver": {
+    "persona": "NV-ROSE-NPC17-B",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
   "requires": [
-    "NV-Q-188A1A"
+    "NV-Q-17337E"
   ],
-  "mainline": true,
+  "mainline": false,
   "level": 142,
   "reward": {
-    "xp": 209160,
-    "gold": 610
+    "xp": 0,
+    "gold": 300
   },
   "dialogs": {
     "prep": [
@@ -62,7 +67,7 @@
       },
       {
         "speaker": "giver",
-        "line": "00000013"
+        "line": "00000014"
       },
       {
         "speaker": "giver",
@@ -79,18 +84,6 @@
       {
         "speaker": "giver",
         "line": "00000018"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000019"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000020"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000021"
       }
     ],
     "underway": []
@@ -99,69 +92,40 @@
     {
       "type": "bounty",
       "mobs": [
-        "WL_Unicorn_Guard_A_01.AdjRef"
+        "NV_Penguin_AvantGuardF_B_01.AdjRef",
+        "NV_Penguin_AvantGuardF_C_01.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00004446",
-      "zone": "",
-      "loc": "ZoneLocName_1560538"
+      "target": "WizardMobs_00004243",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
     },
     {
       "type": "bounty",
       "mobs": [
-        "WL_Monkey_Monquistador_A_01.AdjRef"
+        "NV_Void_Elemental_A_01.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00004447",
-      "zone": "",
-      "loc": "ZoneLocName_1560538"
-    },
-    {
-      "type": "bounty",
-      "mobs": [
-        "WL_Monkey_SoldierBoss_C_01.AdjRef"
-      ],
-      "count": 1,
-      "target": "WizardMobs_00004448",
-      "zone": "",
-      "loc": "ZoneLocName_1560538"
+      "target": "WizardMobs_00004232",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
     }
   ],
-  "personas": {},
+  "personas": {
+    "NV-ROSE-NPC17-B": {
+      "portrait": "GUI/NpcPortraits/Penguin_AvantGuardF_A_NPC.dds",
+      "template_id": 1520504
+    }
+  },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Wailers_on_the_Moon",
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Nonsense_Stares_Back",
     "from": "archive",
-    "timestamp": "20240121095636"
+    "timestamp": "20260329064152"
   },
   "needs_review": [
     {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs (other folder)",
-      "value": "Master Duelist: ObjectData/WL",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Next Room",
-      "blocking": false
-    },
-    {
-      "field": "goal.mobs (other folder)",
-      "value": "Magus Monquistador: ObjectData/WL",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to Next Room",
-      "blocking": false
-    },
-    {
-      "field": "goal.mobs (other folder)",
-      "value": "Major Marado: ObjectData/WL",
       "blocking": false
     },
     {

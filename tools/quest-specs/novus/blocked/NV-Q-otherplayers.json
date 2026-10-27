@@ -1,5 +1,10 @@
 {
   "id": "NV-Q-otherplayers",
+  "auto_start": true,
+  "giver": {
+    "persona": "NV-ROSE-NPC17-B",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
   "requires": [
     "NV-Q-17337A"
   ],
@@ -26,7 +31,12 @@
       "loc": "ZoneLocName_1520449"
     }
   ],
-  "personas": {},
+  "personas": {
+    "NV-ROSE-NPC17-B": {
+      "portrait": "GUI/NpcPortraits/Penguin_AvantGuardF_A_NPC.dds",
+      "template_id": 1520504
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Other_Players",
     "from": "archive",
@@ -36,11 +46,6 @@
     {
       "field": "lang",
       "value": "Other Players",
-      "blocking": true
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
       "blocking": true
     },
     {

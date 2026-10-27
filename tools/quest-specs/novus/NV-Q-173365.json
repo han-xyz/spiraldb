@@ -1,6 +1,11 @@
 {
   "id": "NV-Q-173365",
   "lang": "173365",
+  "auto_start": true,
+  "giver": {
+    "persona": "NV-ROSE-NPC01-B",
+    "zone": "Novus/NV_Z05_LaVilleRose"
+  },
   "requires": [
     "NV-Q-17335C"
   ],
@@ -176,18 +181,18 @@
       "loc": "ZoneLocName_1520449"
     }
   ],
-  "personas": {},
+  "personas": {
+    "NV-ROSE-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1520457
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Revenge!",
     "from": "archive",
     "timestamp": "20240323095324"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "goal.descriptor",
       "value": "Crack in the Floor",

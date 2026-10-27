@@ -1,0 +1,17 @@
+{
+  "Name": "NV-Q-17D694",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 760,
+  "MaxGold": 760,
+  "ExperienceAmount": 257320,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T09:21:19.454767Z",
+  "ModifiedAt": "2026-10-27T09:21:19.454767Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
