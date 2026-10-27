@@ -7,7 +7,7 @@ import unittest
 
 from client import needs_gamedata, needs_rootwad
 from spiraltools.lang import ROOTWAD_DIR
-from spiraltools.pack import QUEST_SPECS_DIR, quest_output_paths, tolerant_load
+from spiraltools.pack import QUEST_SPECS_DIR, quest_output_paths, tolerant_load, zone_transfer_files
 from spiraltools.quests.generate import diff, quest_template, requirements, reward, steps
 from spiraltools.quests.spec import SpecError, check_spec, load_specs, location_key
 from spiraltools.wad import GAMEDATA_DIR
@@ -59,6 +59,13 @@ class SpecTest(unittest.TestCase):
         broken["dialogs"]["prep"][0]["line"] = "99999999"
         problems = check_spec(broken, rootwad, gamedata, {}, set())
         self.assertIn(f"line 99999999 not in WizQst{broken['lang']}.lang", problems)
+
+    @needs_rootwad
+    @needs_gamedata
+    def test_check_passes_the_round_trip_specs_whose_giver_has_no_zone(self):
+        for loaded in load_specs(ROUNDTRIP, ROOTWAD_DIR):
+            with self.subTest(loaded["id"]):
+                self.assertEqual(check_spec(loaded, ROOTWAD_DIR, GAMEDATA_DIR, {}, set(zone_transfer_files())), [])
 
 
 class GenerateTest(unittest.TestCase):

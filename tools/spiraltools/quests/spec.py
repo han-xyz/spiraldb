@@ -53,7 +53,7 @@ def check_spec(spec, rootwad, gamedata, zone_cache, known_zones):
             problems.append(f"line {entry['line']} not in {lang_name}.lang")
     personas = [(spec["giver"]["persona"], spec["giver"]["zone"])]
     personas += [(goal["persona"], goal.get("zone", "")) for goal in spec["goals"] if goal["type"] == "persona"]
-    zones = {spec["giver"]["zone"]} | {goal["zone"] for goal in spec["goals"] if goal.get("zone")}
+    zones = {zone for zone in [spec["giver"]["zone"]] + [goal.get("zone") for goal in spec["goals"]] if zone}
     for zone in sorted(zones):
         if zone not in known_zones:
             problems.append(f"zone {zone} has no ZoneTransfer file")
