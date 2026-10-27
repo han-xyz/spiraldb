@@ -5,7 +5,9 @@
     "persona": "MR-ALKA-NPC07",
     "zone": "Mirage/Interiors/MR_Z01_OverlordsOssuary"
   },
-  "requires": [],
+  "requires": [
+    "MR-Q-1507B2"
+  ],
   "mainline": true,
   "level": 105,
   "reward": {
@@ -53,6 +55,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Slipping_Time",
+    "from": "archive",
     "timestamp": "20250911230902"
   },
   "needs_review": [
@@ -60,12 +63,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Against Time replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 105
+  ]
 }

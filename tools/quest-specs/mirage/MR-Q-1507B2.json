@@ -6,7 +6,6 @@
     "zone": "Mirage/MR_Z00_Hub"
   },
   "requires": [],
-  "min_level": 105,
   "mainline": true,
   "level": 105,
   "reward": {
@@ -103,6 +102,16 @@
       "loc": "ZoneLocName_1254040"
     },
     {
+      "type": "usage",
+      "items": [
+        "MR-Chronocle.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Mirage/MR_Z00_Hub",
+      "descriptor": "WizQst1507B2_00000059",
+      "loc": "ZoneLocName_1254040"
+    },
+    {
       "type": "persona",
       "persona": "MR-CATE-NPC15",
       "zone": "Mirage/MR_Z03_CaterwaulCanyon",
@@ -127,6 +136,7 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Against_Time",
+    "from": "archive",
     "timestamp": "20250913063613"
   },
   "needs_review": [
@@ -139,11 +149,6 @@
       "field": "goal.zone (no ZoneTransfer)",
       "value": "Zruvan Grotto: Mirage/MR_Z09_ZruvanGrotto",
       "blocking": false
-    },
-    {
-      "field": "goal.persona",
-      "value": "Chronocle",
-      "blocking": true
     },
     {
       "field": "goal.zone (no ZoneTransfer)",
@@ -159,6 +164,12 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Return to Mirage replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 105
 }

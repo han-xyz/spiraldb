@@ -37,6 +37,15 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "MR_Rubal_SandCastle.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_1378095"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Mirage/MR_Z02_Aggrobah",
@@ -103,13 +112,14 @@
   },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Real_Estate?",
+    "from": "archive",
     "timestamp": "20240405065729"
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.descriptor",
       "value": "Sands Castle in the Rubal Wastes",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

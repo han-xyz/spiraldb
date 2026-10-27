@@ -99,22 +99,28 @@
     {
       "type": "waypoint",
       "zone": "Mirage/Interiors/MR_Z02_NorthGate"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "MR_Shadow_Xerxes_A_Boss_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002494",
+      "zone": "",
+      "loc": "ZoneLocName_1378095"
     }
   ],
   "personas": {},
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Battle_of_Aggrobah",
+    "from": "archive",
     "timestamp": "20250912185351"
   },
   "needs_review": [
     {
       "field": "giver",
       "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "The Scorpion",
       "blocking": true
     },
     {
