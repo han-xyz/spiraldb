@@ -127,6 +127,28 @@
     {
       "type": "bounty",
       "mobs": [
+        "NV_Fish_CrazyLegs_B_01.AdjRef",
+        "NV_Fish_CrazyLegs_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004149",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Player_Cabal_A_01.AdjRef",
+        "NV_Player_Cabal_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003671",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
         "NV_Dog_DogofWar_B_01.AdjRef"
       ],
       "count": 1,
@@ -157,18 +179,8 @@
       "blocking": true
     },
     {
-      "field": "goal.mobs",
-      "value": "Megraine (Ice-Myth)",
-      "blocking": true
-    },
-    {
       "field": "goal.items",
       "value": "Crack in the Floor",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Cabal Soldier (Fire)",
       "blocking": true
     },
     {

@@ -201,12 +201,28 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Dog_NavyOfficer_A_04.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004306",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Irks_Super_A_01.AdjRef",
+        "NV_Irks_Super_A_02.AdjRef",
+        "NV_Irks_Super_A_03.AdjRef"
+      ],
+      "count": 22,
+      "target": "WizardMobs_00004146",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
     },
@@ -245,32 +261,22 @@
     },
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Conference Tent",
+      "value": "Enter the Main Conference Tent",
       "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Main Conference Tent",
+      "value": "Duel",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "a Duel",
+      "value": "Duel",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "the Duel",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Tantrum (Death-Life, Rank 22)",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Delegates (outside)",
+      "value": "Delegates",
       "blocking": true
     },
     {

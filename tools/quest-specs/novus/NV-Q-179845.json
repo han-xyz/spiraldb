@@ -5,7 +5,9 @@
     "persona": "NV-NEWV-NPC03-B",
     "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
   },
-  "requires": [],
+  "requires": [
+    "NV-Q-179840"
+  ],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -94,6 +96,11 @@
       "blocking": false
     },
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Invading Fleet: Novus/Interiors/NV_Z04_InvadingFleet",
+      "blocking": false
+    },
+    {
       "field": "goal.zone (waypoint left out)",
       "value": "Invading Fleet",
       "blocking": false
@@ -105,9 +112,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Vive La Several Revolutions replaced by min_level",
+      "value": "Vive La Several Revolutions replaced by NV-Q-179840",
       "blocking": false
     }
-  ],
-  "min_level": 142
+  ]
 }

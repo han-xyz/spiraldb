@@ -103,6 +103,17 @@
       "loc": "ZoneLocName_1520449"
     },
     {
+      "type": "bounty",
+      "mobs": [
+        "NV_Irk_Base_D_01.AdjRef",
+        "NV_Irk_Base_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004148",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
       "type": "persona",
       "persona": "NV-ROSE-NPC03",
       "zone": "Novus/NV_Z05_LaVilleRose",
@@ -131,14 +142,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Café Melee",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Brain Freeze (Ice-Myth)",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

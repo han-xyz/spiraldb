@@ -23,10 +23,39 @@
     {
       "type": "bounty",
       "mobs": [
+        "NV_Penguin_RevolutionaryF_A_01.AdjRef",
+        "NV_Penguin_Revolutionary_A_03.AdjRef",
+        "NV_Penguin_Revolutionary_A_04.AdjRef",
+        "NV_Penguin_Revolutionary_A_05.AdjRef",
+        "NV_Penguin_Revolutionary_D_01.AdjRef",
+        "NV_Penguin_Revolutionary_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004207",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
         "NV_Unicorn_Guard_A_02.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00004298",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Standin_AberrantGuard.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_01.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_02.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_03.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004174",
       "zone": "Novus/NV_Z03_PuertoNuovo_VA",
       "loc": "ZoneLocName_1520447"
     },
@@ -53,34 +82,24 @@
       "blocking": true
     },
     {
-      "field": "goal.mobs",
-      "value": "Pingouin Revolutionary (Balance)",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Take Rowboat to Shore",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Rowboat to Shore",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Shore",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Shore",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search for the Exit",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "for the Exit",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Aberrant Valencian (Sun-Storm)",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "on",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue on",
+      "blocking": false
     },
     {
       "field": "dialogs",

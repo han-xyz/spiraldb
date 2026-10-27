@@ -56,6 +56,11 @@
       "blocking": false
     },
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Upper Passage: Novus/Interiors/NV_Z02_UpperPassage",
+      "blocking": false
+    },
+    {
       "field": "goal.zone (waypoint left out)",
       "value": "Upper Passage",
       "blocking": false

@@ -1,17 +1,18 @@
 {
-  "id": "NV-Q-179807",
-  "lang": "179807",
+  "id": "NV-Q-18088A",
+  "lang": "18088A",
   "giver": {
-    "persona": "NV-NEWV-NPC03-B",
-    "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
+    "persona": "NV-CON-NPC08-B",
+    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
   },
-  "requires": [],
-  "min_level": 142,
+  "requires": [
+    "NV-Q-17D61B"
+  ],
   "mainline": true,
   "level": 142,
   "reward": {
-    "xp": 147040,
-    "gold": 494
+    "xp": 119470,
+    "gold": 350
   },
   "dialogs": {
     "prep": [
@@ -45,10 +46,6 @@
       },
       {
         "speaker": "giver",
-        "line": "00000008"
-      },
-      {
-        "speaker": "giver",
         "line": "00000009"
       },
       {
@@ -77,6 +74,14 @@
       },
       {
         "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
         "line": "00000018"
       },
       {
@@ -85,74 +90,82 @@
       },
       {
         "speaker": "giver",
-        "line": "00000020"
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "persona",
-      "persona": "NV-CON-NPC15-B",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265"
+      "type": "bounty",
+      "mobs": [
+        "NV_Dino_AberrantUndead_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004163",
+      "zone": "",
+      "loc": "ZoneLocName_1563028"
     },
     {
       "type": "persona",
-      "persona": "NV-NEWV-NPC08",
-      "zone": "Novus/NV_Z04_NewVicorgia",
-      "loc": "ZoneLocName_1546199"
+      "persona": "giver",
+      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "loc": "ZoneLocName_1563028"
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC15-B",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265",
+      "persona": "giver",
+      "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
+      "loc": "ZoneLocName_1563028",
       "completion": [
         {
-          "speaker": "NV-CON-NPC15-B",
+          "speaker": "giver",
           "line": "00000007"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000020"
         }
       ]
     }
   ],
   "personas": {
-    "NV-CON-NPC15-B": {
-      "portrait": "GUI/NpcPortraits/Dog_Governor_A_NPC.dds",
-      "template_id": 1575027
-    },
-    "NV-NEWV-NPC03-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
-      "template_id": 1546206
-    },
-    "NV-NEWV-NPC08": {
-      "portrait": "GUI/NpcPortraits/Portrait_Dog_WorkerF_A_NPC.dds",
-      "template_id": 1546248
+    "NV-CON-NPC08-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
+      "template_id": 1575022
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Let_Ship_the_Dogs_of_War",
-    "timestamp": "20240323102554"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Duel_Perspectives",
+    "timestamp": "20240323103736"
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "All's Well that Cleanses Well",
+      "field": "lang",
+      "value": "WizQst18088A matched by the words it shares with the goals; its lines name Mario di Mario",
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Chocolate Ship",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Dog of War (Balance)",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Dueling Space",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "A Challenging Challenge replaced by NV-Q-17D61B",
       "blocking": false
     }
   ]

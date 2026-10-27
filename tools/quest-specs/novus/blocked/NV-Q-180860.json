@@ -2,8 +2,8 @@
   "id": "NV-Q-180860",
   "lang": "180860",
   "giver": {
-    "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
-    "zone": "Novus/NV_Z05_LaVilleRose"
+    "persona": "NV-StandIn-Dasein_v3",
+    "zone": "Novus/NV_Z01_Conatus"
   },
   "requires": [],
   "min_level": 142,
@@ -97,10 +97,6 @@
     }
   ],
   "personas": {
-    "MS-StandIn-StringCasterFuzhi-Dasein": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
-      "template_id": 1608246
-    },
     "NV-CON-NPC01-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
       "template_id": 1575004
@@ -108,6 +104,10 @@
     "NV-CON-NPC02-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
       "template_id": 1575007
+    },
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
     }
   },
   "source": {
@@ -126,8 +126,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "about the Frames of Mind in Conatus",
+      "field": "goal.persona",
+      "value": "about the Frames of Mind",
       "blocking": true
     },
     {

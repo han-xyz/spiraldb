@@ -19,6 +19,43 @@
   },
   "goals": [
     {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_RoyalGuard_A_01.AdjRef",
+        "NV_Dog_RoyalGuard_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004206",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Flag_Monster_A_03.AdjRef",
+        "NV_Flag_Monster_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004165",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Penguin_RevolutionaryF_A_01.AdjRef",
+        "NV_Penguin_Revolutionary_A_03.AdjRef",
+        "NV_Penguin_Revolutionary_A_04.AdjRef",
+        "NV_Penguin_Revolutionary_A_05.AdjRef",
+        "NV_Penguin_Revolutionary_D_01.AdjRef",
+        "NV_Penguin_Revolutionary_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004207",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
       "type": "persona",
       "persona": "NV-CON-NPC06-B",
       "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
@@ -51,19 +88,9 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Royal Marleybonian Guard (Balance)",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Second Tower",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Standard Bears (Death-Ice)",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",
@@ -71,18 +98,8 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Pingouin Revolutionary (Storm)",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Tower",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona (closest name)",
-      "value": "Maxine Rockhoppierre (outside) read as Maxine Rockhoppierre",
+      "field": "goal.zone (waypoint left out)",
+      "value": "Leave Tower",
       "blocking": false
     }
   ]

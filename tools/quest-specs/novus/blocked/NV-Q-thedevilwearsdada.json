@@ -35,9 +35,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Readymade Gallery",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.mobs",

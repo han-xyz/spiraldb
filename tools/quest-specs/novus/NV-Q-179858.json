@@ -6,7 +6,7 @@
     "zone": "Novus/NV_Z04_NewVicorgia"
   },
   "requires": [
-    "NV-Q-1797D8"
+    "NV-Q-1797FE"
   ],
   "mainline": false,
   "level": 142,
@@ -128,7 +128,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "All's Well that Cleanses Well replaced by NV-Q-1797D8",
+      "value": "All's Well that Cleanses Well replaced by NV-Q-1797FE",
       "blocking": false
     }
   ]

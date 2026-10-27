@@ -5,9 +5,7 @@
     "persona": "NV-CON-NPC06-B",
     "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
   },
-  "requires": [
-    "NV-Q-17983E"
-  ],
+  "requires": [],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -123,6 +121,17 @@
       "loc": "ZoneLocName_1546199"
     },
     {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_AberrantNavy_A_01.AdjRef",
+        "NV_Dog_AberrantNavy_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004208",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
       "type": "usage",
       "items": [
         "NV-FrameOfMind.AdjRef",
@@ -138,16 +147,12 @@
     },
     {
       "type": "persona",
-      "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
-      "zone": "Novus/NV_Z05_LaVilleRose",
-      "loc": "ZoneLocName_1520449"
+      "persona": "NV-StandIn-Dasein_v3",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
     }
   ],
   "personas": {
-    "MS-StandIn-StringCasterFuzhi-Dasein": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
-      "template_id": 1608246
-    },
     "NV-CON-NPC06-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
       "template_id": 1575019
@@ -155,6 +160,10 @@
     "NV-NEWV-NPC03-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
       "template_id": 1546206
+    },
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
     }
   },
   "source": {
@@ -168,19 +177,14 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Cave",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter the Cave",
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Splintered Lands",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Aberrant Marleybonian Dog (Sun-Fire)",
-      "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",
@@ -191,6 +195,12 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Naval Razing replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 142
 }

@@ -134,7 +134,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "the Marleyboneans in Conatus",
+      "value": "Marleyboneans in Conatus",
       "blocking": true
     },
     {

@@ -13,7 +13,19 @@
     "prep": [],
     "underway": []
   },
-  "goals": [],
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Hellephant_Aberrant_A_01.AdjRef",
+        "NV_Hellephant_Aberrant_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004230",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    }
+  ],
   "personas": {},
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Other_Players",
@@ -39,20 +51,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Backstage",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Aberrant Helephant (Balance-Death)",
-      "blocking": true
-    },
-    {
-      "field": "goals",
-      "value": [
-        "@Defeat [Creature:Other People]",
-        "@Go to Backstage",
-        "@Defeat [Creature:Aberrant Helephant (Balance-Death)]"
-      ],
-      "blocking": true
     }
   ]
 }

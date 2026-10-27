@@ -111,9 +111,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Grim Cave",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

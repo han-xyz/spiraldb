@@ -119,6 +119,11 @@
   },
   "needs_review": [
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Matheus' House: Novus/Interiors/NV_Z05_MatheusHouse",
+      "blocking": false
+    },
+    {
       "field": "goal.zone (waypoint left out)",
       "value": "Matheus' House",
       "blocking": false

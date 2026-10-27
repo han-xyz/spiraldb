@@ -171,24 +171,24 @@
   },
   "needs_review": [
     {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Next Vale",
+      "blocking": false
+    },
+    {
       "field": "goal.items",
-      "value": "the Next Vale",
+      "value": "Trail of Cogs & Gears",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "the Trail of Cogs & Gears",
+      "value": "Lost Surveyor",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Lost Surveyor",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Warped Valley",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter the Warped Valley",
+      "blocking": false
     },
     {
       "field": "dialogs",

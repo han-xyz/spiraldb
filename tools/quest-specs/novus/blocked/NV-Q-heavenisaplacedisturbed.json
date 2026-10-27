@@ -24,36 +24,9 @@
       "loc": "ZoneLocName_1546265"
     },
     {
-      "type": "usage",
-      "items": [
-        "MS-CAT-NPC01-K.AdjRef",
-        "NV-CON-NPC01-B.AdjRef",
-        "NV-CON-NPC01.AdjRef",
-        "NV-NEWV-NPC09-B.AdjRef",
-        "NV-NEWV-NPC09-C.AdjRef",
-        "NV-NEWV-NPC09-D.AdjRef",
-        "NV-NEWV-NPC09.AdjRef",
-        "NV-STONE-NPC01-B.AdjRef",
-        "NV-STONE-NPC01-C.AdjRef",
-        "NV-STONE-NPC01-D.AdjRef",
-        "NV-STONE-NPC01-E.AdjRef",
-        "NV-STONE-NPC01-F.AdjRef",
-        "NV-STONE-NPC01-G.AdjRef",
-        "NV-STONE-NPC01-H.AdjRef",
-        "NV-STONE-NPC01-I.AdjRef",
-        "NV-STONE-NPC01-J.AdjRef",
-        "NV-STONE-NPC01-K.AdjRef",
-        "NV-STONE-NPC01-L.AdjRef",
-        "NV-STONE-NPC01.AdjRef",
-        "NV-StandIn-STONE_MooBu_01.AdjRef",
-        "NV-Standin-MooBu-02.AdjRef",
-        "NV-Standin-MooBu-03.AdjRef",
-        "NV-Standin-MooBu-04.AdjRef",
-        "NV-Standin-MooBu.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "NV-CON-NPC01-B",
       "zone": "Novus/NV_Z01_Conatus",
-      "descriptor": "WC-NPCs_00002623",
       "loc": "ZoneLocName_1546265"
     },
     {

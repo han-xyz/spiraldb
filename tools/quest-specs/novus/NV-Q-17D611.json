@@ -1,11 +1,12 @@
 {
-  "id": "NV-Q-dontdrinkthewaternovus",
+  "id": "NV-Q-17D611",
+  "lang": "17D611",
   "giver": {
     "persona": "NV-PUERT-NPC06",
     "zone": "Novus/NV_Z03_PuertoNuovo_VA"
   },
   "requires": [
-    "NV-Q-17D610"
+    "NV-Q-17D60F"
   ],
   "mainline": true,
   "level": 142,
@@ -14,28 +15,63 @@
     "gold": 529
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
     "underway": []
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "NV-CON-NPC04.AdjRef",
-        "NV-PUERT-NPC03.AdjRef",
-        "NV-PUERT-NPC03_C.AdjRef",
-        "NV-PUERT-NPC03_D.AdjRef",
-        "NV-PUERT-NPC03_b.AdjRef",
-        "NV-PUERT-NPC27.AdjRef",
-        "NV_Standin_Ponce.AdjRef",
-        "NV_Standin_Ponce_02.AdjRef",
-        "NV_Standin_Ponce_03.AdjRef",
-        "NV_Standin_Ponce_04.AdjRef",
-        "NV_Standin_Ponce_05.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "NV-PUERT-NPC03",
       "zone": "Novus/NV_Z03_PuertoNuovo_VA",
-      "descriptor": "WC-NPCs_00002634",
       "loc": "ZoneLocName_1520447"
     },
     {
@@ -53,23 +89,9 @@
       "loc": "ZoneLocName_1520447"
     },
     {
-      "type": "usage",
-      "items": [
-        "NV-CON-NPC04.AdjRef",
-        "NV-PUERT-NPC03.AdjRef",
-        "NV-PUERT-NPC03_C.AdjRef",
-        "NV-PUERT-NPC03_D.AdjRef",
-        "NV-PUERT-NPC03_b.AdjRef",
-        "NV-PUERT-NPC27.AdjRef",
-        "NV_Standin_Ponce.AdjRef",
-        "NV_Standin_Ponce_02.AdjRef",
-        "NV_Standin_Ponce_03.AdjRef",
-        "NV_Standin_Ponce_04.AdjRef",
-        "NV_Standin_Ponce_05.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "NV-PUERT-NPC03",
       "zone": "Novus/NV_Z03_PuertoNuovo_VA",
-      "descriptor": "WC-NPCs_00002634",
       "loc": "ZoneLocName_1520447"
     },
     {
@@ -91,6 +113,10 @@
     }
   ],
   "personas": {
+    "NV-PUERT-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_SoldierBoss_A_NPC.dds",
+      "template_id": 1562150
+    },
     "NV-PUERT-NPC06": {
       "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_B_NPC.dds",
       "template_id": 1562153
@@ -102,9 +128,14 @@
   },
   "needs_review": [
     {
-      "field": "lang",
-      "value": "Don't Drink the Water (Novus)",
-      "blocking": true
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Yours and Vines replaced by NV-Q-17D60F",
+      "blocking": false
     }
   ]
 }

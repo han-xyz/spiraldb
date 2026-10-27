@@ -2,11 +2,11 @@
   "id": "NV-Q-17335E",
   "lang": "17335E",
   "giver": {
-    "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
-    "zone": "Novus/NV_Z05_LaVilleRose"
+    "persona": "NV-StandIn-Dasein_v3",
+    "zone": "Novus/NV_Z01_Conatus"
   },
   "requires": [
-    "NV-Q-17335C"
+    "NV-Q-17335D"
   ],
   "mainline": true,
   "level": 142,
@@ -76,13 +76,13 @@
     }
   ],
   "personas": {
-    "MS-StandIn-StringCasterFuzhi-Dasein": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
-      "template_id": 1608246
-    },
     "NV-CON-NPC07-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Moose_Manticore_A_NPC.dds",
       "template_id": 1575021
+    },
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
     }
   },
   "source": {
@@ -93,11 +93,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Where is His Mind? replaced by NV-Q-17335C",
       "blocking": false
     }
   ]

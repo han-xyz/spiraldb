@@ -1,5 +1,6 @@
 {
-  "id": "NV-Q-monkeybusinessnovus",
+  "id": "NV-Q-155196",
+  "lang": "155196",
   "giver": {
     "persona": "NV-PUERT-NPC04",
     "zone": "Novus/NV_Z03_PuertoNuovo_VA"
@@ -14,7 +15,48 @@
     "gold": 700
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -23,6 +65,12 @@
       "persona": "giver",
       "zone": "Novus/NV_Z03_PuertoNuovo_VA",
       "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-StandIn-Dasein_v3",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
     },
     {
       "type": "bounty",
@@ -83,16 +131,12 @@
     },
     {
       "type": "persona",
-      "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
-      "zone": "Novus/NV_Z05_LaVilleRose",
-      "loc": "ZoneLocName_1520449"
+      "persona": "NV-StandIn-Dasein_v3",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
     }
   ],
   "personas": {
-    "MS-StandIn-StringCasterFuzhi-Dasein": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
-      "template_id": 1608246
-    },
     "NV-PUERT-NPC04": {
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ExplorerF_A_NPC.dds",
       "template_id": 1562151
@@ -100,6 +144,10 @@
     "NV-PUERT-NPC16": {
       "portrait": "",
       "template_id": 1562166
+    },
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
     }
   },
   "source": {
@@ -108,24 +156,19 @@
   },
   "needs_review": [
     {
-      "field": "lang",
-      "value": "Monkey Business (Novus)",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "out Dasein",
-      "blocking": true
-    },
-    {
       "field": "goal.descriptor",
       "value": "Fireflies",
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "out Dasein on High",
+      "field": "goal.persona",
+      "value": "Dasein on High",
       "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

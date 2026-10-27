@@ -124,45 +124,24 @@
         "NV_OreSample_02.AdjRef",
         "NV_OreSample_03.AdjRef"
       ],
-      "count": 1,
+      "count": 4,
       "zone": "Novus/NV_Z01_Conatus",
       "descriptor": "WizardGameObjects_00000977",
       "loc": "ZoneLocName_1546265"
     },
     {
-      "type": "usage",
-      "items": [
-        "NV_OreSample_01.AdjRef",
-        "NV_OreSample_02.AdjRef",
-        "NV_OreSample_03.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Novus/NV_Z01_Conatus",
-      "descriptor": "WizardGameObjects_00000977",
-      "loc": "ZoneLocName_1546265"
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z04_I08_Gaol"
     },
     {
-      "type": "usage",
-      "items": [
-        "NV_OreSample_01.AdjRef",
-        "NV_OreSample_02.AdjRef",
-        "NV_OreSample_03.AdjRef"
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_NavyOfficer_A_08.AdjRef",
+        "NV_Dog_NavyOfficer_A_09.AdjRef"
       ],
       "count": 1,
+      "target": "WizardMobs_00004242",
       "zone": "Novus/NV_Z01_Conatus",
-      "descriptor": "WizardGameObjects_00000977",
-      "loc": "ZoneLocName_1546265"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "NV_OreSample_01.AdjRef",
-        "NV_OreSample_02.AdjRef",
-        "NV_OreSample_03.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Novus/NV_Z01_Conatus",
-      "descriptor": "WizardGameObjects_00000977",
       "loc": "ZoneLocName_1546265"
     },
     {
@@ -191,38 +170,28 @@
   "needs_review": [
     {
       "field": "lang",
-      "value": "WizQst1808C9 matched by the words it shares with the goals; its lines name none of the page's names",
+      "value": "WizQst1808C9 matched by the words it shares with the goals; its lines name Corrupt Soldier",
       "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "Z to Photomance a Photo in New Vicorgia",
+      "value": "Photo in New Vicorgia",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Few Steps Back",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Few More Steps Back",
       "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Gaol",
+      "value": "Continue Taking More Steps Back",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Corrupt Soldier (Death)",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "a Few Steps Back",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "a Few More Steps Back",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Taking More Steps Back",
-      "blocking": true
     },
     {
       "field": "goal.items",

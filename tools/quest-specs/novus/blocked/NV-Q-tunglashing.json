@@ -30,12 +30,40 @@
     {
       "type": "usage",
       "items": [
-        "NV-STONE-NPC02.AdjRef"
+        "MS-CAT-NPC01-K.AdjRef",
+        "NV-CON-NPC01-B.AdjRef",
+        "NV-CON-NPC01.AdjRef",
+        "NV-NEWV-NPC09-B.AdjRef",
+        "NV-NEWV-NPC09-C.AdjRef",
+        "NV-NEWV-NPC09-D.AdjRef",
+        "NV-NEWV-NPC09.AdjRef",
+        "NV-STONE-NPC01-B.AdjRef",
+        "NV-STONE-NPC01-C.AdjRef",
+        "NV-STONE-NPC01-D.AdjRef",
+        "NV-STONE-NPC01-E.AdjRef",
+        "NV-STONE-NPC01-F.AdjRef",
+        "NV-STONE-NPC01-G.AdjRef",
+        "NV-STONE-NPC01-H.AdjRef",
+        "NV-STONE-NPC01-I.AdjRef",
+        "NV-STONE-NPC01-J.AdjRef",
+        "NV-STONE-NPC01-K.AdjRef",
+        "NV-STONE-NPC01-L.AdjRef",
+        "NV-STONE-NPC01.AdjRef",
+        "NV-StandIn-STONE_MooBu_01.AdjRef",
+        "NV-Standin-MooBu-02.AdjRef",
+        "NV-Standin-MooBu-03.AdjRef",
+        "NV-Standin-MooBu-04.AdjRef",
+        "NV-Standin-MooBu.AdjRef"
       ],
       "count": 1,
       "zone": "",
-      "descriptor": "WizardNPC_00001072",
+      "descriptor": "WC-NPCs_00002623",
       "loc": "ZoneLocName_1529152"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-STONE-NPC02",
+      "zone": ""
     },
     {
       "type": "usage",
@@ -53,19 +81,23 @@
     },
     {
       "type": "persona",
-      "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
-      "zone": "Novus/NV_Z05_LaVilleRose",
-      "loc": "ZoneLocName_1520449"
+      "persona": "NV-StandIn-Dasein_v3",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
     }
   ],
   "personas": {
-    "MS-StandIn-StringCasterFuzhi-Dasein": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
-      "template_id": 1608246
-    },
     "NV-CON-NPC01-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Cow_Ronin_A_NPC.dds",
       "template_id": 1575004
+    },
+    "NV-STONE-NPC02": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
+      "template_id": 1529158
+    },
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
     }
   },
   "source": {
@@ -89,13 +121,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "for Moo Bu",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona",
-      "value": "Dasein (in Nucleus Gallery)",
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Mysterious Voice",
       "blocking": true
     }
   ]

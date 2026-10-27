@@ -1,18 +1,18 @@
 {
-  "id": "NV-Q-18088A",
-  "lang": "18088A",
+  "id": "NV-Q-17D620",
+  "lang": "17D620",
   "giver": {
-    "persona": "NV-CON-NPC08-B",
-    "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
+    "persona": "NV-PUERT-NPC29",
+    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
   },
   "requires": [
-    "NV-Q-17D61C"
+    "NV-Q-17D61F"
   ],
   "mainline": true,
   "level": 142,
   "reward": {
-    "xp": 119470,
-    "gold": 350
+    "xp": 147040,
+    "gold": 430
   },
   "dialogs": {
     "prep": [
@@ -43,6 +43,14 @@
       {
         "speaker": "giver",
         "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
       },
       {
         "speaker": "giver",
@@ -90,73 +98,85 @@
       },
       {
         "speaker": "giver",
-        "line": "00000021"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000022"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000023"
+        "line": "00000020"
       }
     ],
     "underway": []
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "NV_Dino_AberrantUndead_A_01.AdjRef"
+      "type": "usage",
+      "items": [
+        "NV_SkyShips.AdjRef",
+        "NV_SkyShips_02.AdjRef",
+        "NV_SkyShips_03.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00004163",
-      "zone": "",
-      "loc": "ZoneLocName_1563028"
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizQst17D620_00000023",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_Governor_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004179",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-CON-NPC15-B.AdjRef",
+        "NV-CON-NPC15-C.AdjRef",
+        "NV-CON-NPC15-D.AdjRef",
+        "NV-CON-NPC15-E.AdjRef",
+        "NV-CON-NPC15-F.AdjRef",
+        "NV-CON-NPC15.AdjRef",
+        "NV-NEWV-NPC02-B.AdjRef",
+        "NV-NEWV-NPC02-C.AdjRef",
+        "NV-NEWV-NPC02.AdjRef",
+        "NV_Standin_Weiler.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardNPC_00001035",
+      "loc": "ZoneLocName_1520447"
     },
     {
       "type": "persona",
-      "persona": "giver",
+      "persona": "NV-CON-NPC06-B",
       "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
-      "loc": "ZoneLocName_1563028"
+      "loc": "ZoneLocName_1520447"
     },
     {
       "type": "persona",
-      "persona": "giver",
+      "persona": "NV-CON-NPC06-B",
       "zone": "Novus/Interiors/NV_Z01_ConferenceTent",
-      "loc": "ZoneLocName_1563028",
-      "completion": [
-        {
-          "speaker": "giver",
-          "line": "00000007"
-        },
-        {
-          "speaker": "giver",
-          "line": "00000020"
-        }
-      ]
+      "loc": "ZoneLocName_1520447"
     }
   ],
   "personas": {
-    "NV-CON-NPC08-B": {
-      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
-      "template_id": 1575022
+    "NV-CON-NPC06-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
+      "template_id": 1575019
+    },
+    "NV-PUERT-NPC29": {
+      "portrait": "GUI/NpcPortraits/Unicorn_NobleF_A_NPC.dds",
+      "template_id": 1562179
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Duel_Perspectives",
-    "timestamp": "20240323103736"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Leyline_and_the_Unicorn",
+    "timestamp": "20240409061203"
   },
   "needs_review": [
     {
-      "field": "lang",
-      "value": "WizQst18088A matched by the words it shares with the goals; its lines name Mario di Mario",
+      "field": "goal.zone (waypoint left out)",
+      "value": "Take Sky Ship to Contest Shard",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "the Dueling Space",
-      "blocking": true
     },
     {
       "field": "dialogs",

@@ -93,6 +93,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z05_CabalBase"
+    },
+    {
       "type": "persona",
       "persona": "NV-ROSE-NPC01-B",
       "zone": "Novus/NV_Z05_LaVilleRose",
@@ -116,12 +120,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "the Cabal in the Theatre District",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Cabal Base",
+      "value": "Cabal in the Theatre District",
       "blocking": true
     },
     {

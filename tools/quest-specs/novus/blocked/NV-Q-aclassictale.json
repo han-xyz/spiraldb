@@ -72,11 +72,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Go To Well",
       "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Well",
-      "blocking": false
     }
   ]
 }

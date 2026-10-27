@@ -6,7 +6,7 @@
     "zone": "Novus/NV_Z03_PuertoNuovo_VA"
   },
   "requires": [
-    "NV-Q-17D60F"
+    "NV-Q-17D611"
   ],
   "mainline": true,
   "level": 142,
@@ -166,18 +166,8 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Don't Drink the Water (Novus)",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Don't Drink the Water (Novus) replaced by NV-Q-17D60F",
       "blocking": false
     }
   ]

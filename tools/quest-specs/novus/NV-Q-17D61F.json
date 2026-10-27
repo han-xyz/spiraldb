@@ -5,9 +5,7 @@
     "persona": "NV-PUERT-NPC13",
     "zone": "Novus/NV_Z03_PuertoNuovo_VA"
   },
-  "requires": [
-    "NV-Q-17D61E"
-  ],
+  "requires": [],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -72,25 +70,25 @@
     },
     {
       "type": "persona",
-      "persona": "NV-CON-NPC16-C",
-      "zone": "Novus/NV_Z01_Conatus",
-      "loc": "ZoneLocName_1546265",
+      "persona": "NV-PUERT-NPC29",
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "loc": "ZoneLocName_1520447",
       "completion": [
         {
-          "speaker": "NV-CON-NPC16-C",
+          "speaker": "NV-PUERT-NPC29",
           "line": "00000008"
         }
       ]
     }
   ],
   "personas": {
-    "NV-CON-NPC16-C": {
-      "portrait": "GUI/NpcPortraits/Unicorn_NobleF_A_NPC.dds",
-      "template_id": 1608268
-    },
     "NV-PUERT-NPC13": {
       "portrait": "GUI/NpcPortraits/Portraits_Unicorn_Guard_A_NPC.dds",
       "template_id": 1562160
+    },
+    "NV-PUERT-NPC29": {
+      "portrait": "GUI/NpcPortraits/Unicorn_NobleF_A_NPC.dds",
+      "template_id": 1562179
     }
   },
   "source": {
@@ -99,14 +97,20 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Governor's Saferoom",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Aberrants Go Marching replaced by min_level",
+      "blocking": false
     }
-  ]
+  ],
+  "min_level": 142
 }

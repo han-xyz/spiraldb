@@ -95,9 +95,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Surveying the Architecture",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue Surveying the Architecture",
+      "blocking": false
     },
     {
       "field": "goal.items",

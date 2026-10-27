@@ -13,6 +13,32 @@
     {
       "type": "bounty",
       "mobs": [
+        "NV_Monkey_AberrantSoldierBoss_A_01.AdjRef",
+        "NV_Monkey_AberrantSoldierBoss_A_02.AdjRef",
+        "NV_Monkey_AberrantSoldierBoss_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004161",
+      "zone": "",
+      "loc": "ZoneLocName_1563028"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Standin_AberrantGuard.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_01.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_02.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_03.AdjRef",
+        "NV_Unicorn_AberrantGuard_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004174",
+      "zone": "",
+      "loc": "ZoneLocName_1563028"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
         "NV_Dino_AberrantUndead_A_01.AdjRef"
       ],
       "count": 1,
@@ -45,24 +71,14 @@
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Aberrant Monquistan (Shadow-Fire)",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue exploring the Next Dueling Space",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "exploring the Next Dueling Space",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Aberrant Valencian (Balance-Myth)",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "exploring the Next Dueling Space",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue exploring the Next Dueling Space",
+      "blocking": false
     }
   ]
 }

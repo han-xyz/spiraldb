@@ -33,6 +33,12 @@
       "loc": "ZoneLocName_1529152"
     },
     {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Mustache_Bird_B_01.AdjRef",
@@ -74,11 +80,6 @@
       "field": "requires",
       "value": "Step By Step",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "on Moo Bu",
-      "blocking": true
     }
   ]
 }

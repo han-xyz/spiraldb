@@ -6,8 +6,8 @@
     "zone": "Novus/NV_Z01_Conatus"
   },
   "requires": [
-    "NV-Q-180863",
-    "NV-Q-1808CF"
+    "NV-Q-179809",
+    "NV-Q-17D613"
   ],
   "mainline": false,
   "level": 142,
@@ -70,6 +70,17 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "NV_Standin_Megrim.AdjRef",
+        "NV_Standin_Megrim_02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "NPCs_01749255",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Fish_CrazyLegs_A_01.AdjRef",
@@ -105,13 +116,18 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Z to Photomance Megrims in La Ville Rose",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Piece Conference replaced by NV-Q-179809",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Feathers and Stone replaced by NV-Q-179809, NV-Q-17D613",
       "blocking": false
     }
   ]

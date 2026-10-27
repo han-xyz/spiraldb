@@ -63,51 +63,15 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "NV-CON-NPC09-B.AdjRef",
-        "NV-CON-NPC09-C.AdjRef",
-        "NV-CON-NPC09-D.AdjRef",
-        "NV-CON-NPC09-E.AdjRef",
-        "NV-CON-NPC09-F.AdjRef",
-        "NV-CON-NPC09-G.AdjRef",
-        "NV-CON-NPC09.AdjRef",
-        "NV-NEWV-NPC13-B.AdjRef",
-        "NV-NEWV-NPC13-C.AdjRef",
-        "NV-NEWV-NPC13-D.AdjRef",
-        "NV-NEWV-NPC13.AdjRef",
-        "NV-NUCLEUS-NPC04-B.AdjRef",
-        "NV-NUCLEUS-NPC04-C.AdjRef",
-        "NV-NUCLEUS-NPC04-D.AdjRef",
-        "NV-NUCLEUS-NPC04-E.AdjRef",
-        "NV-NUCLEUS-NPC04.AdjRef",
-        "NV-PUERT-NPC06.AdjRef",
-        "NV-PUERT-NPC06_H.AdjRef",
-        "NV-PUERT-NPC06_b.AdjRef",
-        "NV-PUERT-NPC06_c.AdjRef",
-        "NV-PUERT-NPC06_d.AdjRef",
-        "NV-PUERT-NPC06_e.AdjRef",
-        "NV-PUERT-NPC06_f.AdjRef",
-        "NV-PUERT-NPC06_g.AdjRef",
-        "NV-PUERT-NPC06_i.AdjRef",
-        "NV_Standin_DonManzana.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "NV-PUERT-NPC06",
       "zone": "Novus/NV_Z03_PuertoNuovo_VA",
-      "descriptor": "WC-NPCs_00002640",
       "loc": "ZoneLocName_1520447"
     },
     {
-      "type": "usage",
-      "items": [
-        "NV-PUERT-NPC13.AdjRef",
-        "NV-PUERT-NPC13_b.AdjRef",
-        "NV-PUERT-NPC13_c.AdjRef",
-        "NV_Standin_Argento.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "NV-PUERT-NPC13",
       "zone": "Novus/NV_Z03_PuertoNuovo_VA",
-      "descriptor": "WizardNPC_00001052",
       "loc": "ZoneLocName_1520447"
     },
     {
@@ -134,6 +98,14 @@
     }
   ],
   "personas": {
+    "NV-PUERT-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_B_NPC.dds",
+      "template_id": 1562153
+    },
+    "NV-PUERT-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portraits_Unicorn_Guard_A_NPC.dds",
+      "template_id": 1562160
+    },
     "NV-PUERT-NPC14": {
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
       "template_id": 1562164

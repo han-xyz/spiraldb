@@ -158,11 +158,6 @@
       "blocking": false
     },
     {
-      "field": "goal.persona",
-      "value": "Moo Bu (in Conatus)",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false

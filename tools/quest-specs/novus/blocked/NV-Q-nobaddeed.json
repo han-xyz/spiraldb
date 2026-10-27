@@ -25,6 +25,17 @@
       "loc": "ZoneLocName_1546265"
     },
     {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z01_BoothsLair",
+      "loc": "ZoneLocName_1575006"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC10",
+      "zone": "Novus/Interiors/NV_Z04_I01_GeneralQuarters",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Dog_General_A_01.AdjRef"
@@ -33,6 +44,11 @@
       "target": "WizardMobs_00004136",
       "zone": "Novus/NV_Z01_Conatus",
       "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z01_BoothsLair",
+      "loc": "ZoneLocName_1575006"
     },
     {
       "type": "persona",
@@ -53,6 +69,10 @@
     "NV-CON-NPC08-C": {
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
       "template_id": 1575025
+    },
+    "NV-NEWV-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_General_A_Mob.dds",
+      "template_id": 1546258
     }
   },
   "source": {
@@ -63,21 +83,6 @@
     {
       "field": "lang",
       "value": "No Bad Deed",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "for Booth's Lair",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "for General Benedict Brutus von Booth (in Booth's Lair)",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Booth's Lair",
       "blocking": true
     }
   ]

@@ -149,14 +149,14 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "to the Spiral Leaders",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Return to the Spiral Leaders",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "through the World Door to Arcanum",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Arcanum",
+      "blocking": false
     },
     {
       "field": "dialogs",

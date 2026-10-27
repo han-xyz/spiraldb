@@ -18,6 +18,21 @@
   },
   "goals": [
     {
+      "type": "bounty",
+      "mobs": [
+        "NV_Penguin_RevolutionaryF_A_01.AdjRef",
+        "NV_Penguin_Revolutionary_A_03.AdjRef",
+        "NV_Penguin_Revolutionary_A_04.AdjRef",
+        "NV_Penguin_Revolutionary_A_05.AdjRef",
+        "NV_Penguin_Revolutionary_D_01.AdjRef",
+        "NV_Penguin_Revolutionary_D_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004207",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
@@ -49,11 +64,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Bowl and Biscuit",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Pingouin Revolutionary (Fire)",
-      "blocking": true
     }
   ]
 }

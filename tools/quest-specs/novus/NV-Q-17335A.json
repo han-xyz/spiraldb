@@ -6,7 +6,7 @@
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
-    "NV-Q-173358"
+    "NV-Q-173359"
   ],
   "mainline": true,
   "level": 142,
@@ -84,11 +84,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Table Flip replaced by NV-Q-173358",
       "blocking": false
     }
   ]

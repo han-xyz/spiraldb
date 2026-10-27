@@ -5,8 +5,9 @@
     "persona": "NV-NEWV-NPC04-B",
     "zone": "Novus/NV_Z04_NewVicorgia"
   },
-  "requires": [],
-  "min_level": 142,
+  "requires": [
+    "NV-Q-1797D8"
+  ],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -56,6 +57,21 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z04_I06_Mine"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Dog_DogofWarF_A_03.AdjRef",
+        "NV_Dog_DogofWar_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004131",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
       "type": "usage",
       "items": [
         "NV-Lever-Mine.AdjRef"
@@ -89,18 +105,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Mine",
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
       "blocking": false
     },
     {
-      "field": "goal.mobs",
-      "value": "Dogs of War (Ice)",
-      "blocking": true
-    },
-    {
-      "field": "dialogs",
-      "value": "speaker and role guessed from the line text",
+      "field": "requires (not generated)",
+      "value": "A Classic Tale replaced by NV-Q-1797D8",
       "blocking": false
     }
   ]

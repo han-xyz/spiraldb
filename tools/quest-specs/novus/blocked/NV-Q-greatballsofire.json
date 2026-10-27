@@ -19,6 +19,16 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC03-B",
+      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Irks_Base_B_01.AdjRef",
@@ -59,18 +69,8 @@
     },
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Go to the Governor's Mansion",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
       "value": "Go to Next Room",
       "blocking": false
-    },
-    {
-      "field": "goal.persona",
-      "value": "Phileas Dogg (outside)",
-      "blocking": true
     }
   ]
 }

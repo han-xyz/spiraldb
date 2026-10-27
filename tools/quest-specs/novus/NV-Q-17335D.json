@@ -1,18 +1,18 @@
 {
-  "id": "NV-Q-173361",
-  "lang": "173361",
+  "id": "NV-Q-17335D",
+  "lang": "17335D",
   "giver": {
     "persona": "NV-ROSE-NPC01-B",
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
   "requires": [
-    "NV-Q-17335F"
+    "NV-Q-17335C"
   ],
   "mainline": true,
   "level": 142,
   "reward": {
-    "xp": 64330,
-    "gold": 190
+    "xp": 165420,
+    "gold": 490
   },
   "dialogs": {
     "prep": [
@@ -34,15 +34,15 @@
       },
       {
         "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
         "line": "00000005"
       },
       {
         "speaker": "giver",
         "line": "00000006"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000007"
       },
       {
         "speaker": "giver",
@@ -70,67 +70,85 @@
       },
       {
         "speaker": "giver",
-        "line": "00000014"
-      },
-      {
-        "speaker": "giver",
         "line": "00000015"
       },
       {
         "speaker": "giver",
-        "line": "00000016"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000018"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000019"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000020"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000021"
+        "line": "00000017"
       }
     ],
     "underway": []
   },
   "goals": [
     {
+      "type": "bountycollect",
+      "mobs": [
+        "NV_Fish_CrazyLegs_A_01.AdjRef",
+        "NV_Fish_CrazyLegs_A_02.AdjRef",
+        "NV_Fish_CrazyLegs_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004197",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "descriptor": "WizQst17335D_00000014",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
       "type": "persona",
-      "persona": "NV-ROSE-NPC14",
+      "persona": "giver",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-PUERT-DingyInviso.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "descriptor": "WizardGameObjects_00000974",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "NV-FrameOfMind.AdjRef",
+        "NV-NEWVIC-FrameOfMind.AdjRef",
+        "NV-PUERT-FrameOfMind.AdjRef",
+        "NV-ROSE-FrameOfMind.AdjRef",
+        "NV-STONE-FrameOfMind.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "descriptor": "Items_00025065",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
+      "type": "persona",
+      "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
       "zone": "Novus/NV_Z05_LaVilleRose",
       "loc": "ZoneLocName_1520449"
     }
   ],
   "personas": {
+    "MS-StandIn-StringCasterFuzhi-Dasein": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
+      "template_id": 1608246
+    },
     "NV-ROSE-NPC01-B": {
       "portrait": "GUI/NpcPortraits/Portrait_Penguin_MaxineF_A_NPC.dds",
       "template_id": 1520457
-    },
-    "NV-ROSE-NPC14": {
-      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
-      "template_id": 1520470
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Greed_Isn't_Good",
-    "timestamp": "20240119022718"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Where_is_His_Mind?",
+    "timestamp": "20240323103632"
   },
   "needs_review": [
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Nouveau Basstille",
+      "value": "Take Rowboat to Frame of Mind Island",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "to Maxine Rockhoppierre",
-      "blocking": true
     },
     {
       "field": "dialogs",

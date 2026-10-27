@@ -5,7 +5,9 @@
     "persona": "NV-ROSE-NPC20",
     "zone": "Novus/NV_Z05_LaVilleRose"
   },
-  "requires": [],
+  "requires": [
+    "NV-Q-17D621"
+  ],
   "mainline": false,
   "level": 142,
   "reward": {
@@ -79,6 +81,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z05_SournoisPas"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Dog_Rintintin_A_01.AdjRef"
@@ -111,20 +117,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Sournois Pas",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Rough Waiters replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 142
+  ]
 }

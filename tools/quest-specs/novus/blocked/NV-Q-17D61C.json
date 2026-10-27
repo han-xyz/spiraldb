@@ -96,19 +96,19 @@
     },
     {
       "type": "persona",
-      "persona": "MS-StandIn-StringCasterFuzhi-Dasein",
-      "zone": "Novus/NV_Z05_LaVilleRose",
-      "loc": "ZoneLocName_1520449"
+      "persona": "NV-StandIn-Dasein_v3",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
     }
   ],
   "personas": {
-    "MS-StandIn-StringCasterFuzhi-Dasein": {
-      "portrait": "GUI/NpcPortraits/Portrait_Cat_MonkF_A_NPC.dds",
-      "template_id": 1608246
-    },
     "NV-PUERT-NPC14": {
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
       "template_id": 1562164
+    },
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
     }
   },
   "source": {
@@ -118,7 +118,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "the Nobles to Dasein",
+      "value": "Nobles to Dasein",
       "blocking": true
     },
     {

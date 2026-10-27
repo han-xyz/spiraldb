@@ -63,18 +63,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "NV-PUERT-NPC04.AdjRef",
-        "NV-PUERT-NPC04_b.AdjRef",
-        "NV-PUERT-NPC04_c.AdjRef",
-        "NV-PUERT-NPC04_d.AdjRef",
-        "NV-PUERT-NPC04_e.AdjRef",
-        "NV_Standin_Fernanda.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "NV-PUERT-NPC04",
       "zone": "Novus/NV_Z03_PuertoNuovo_VA",
-      "descriptor": "WizardNPC_00001044",
       "loc": "ZoneLocName_1520447"
     },
     {

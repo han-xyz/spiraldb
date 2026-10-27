@@ -1,17 +1,18 @@
 {
-  "id": "NV-Q-17D621",
-  "lang": "17D621",
+  "id": "NV-Q-179807",
+  "lang": "179807",
   "giver": {
-    "persona": "NV-PUERT-NPC31",
-    "zone": "Novus/NV_Z03_PuertoNuovo_VA"
+    "persona": "NV-NEWV-NPC03-B",
+    "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion"
   },
-  "requires": [],
-  "min_level": 142,
-  "mainline": false,
+  "requires": [
+    "NV-Q-1797FE"
+  ],
+  "mainline": true,
   "level": 142,
   "reward": {
-    "xp": 0,
-    "gold": 600
+    "xp": 147040,
+    "gold": 494
   },
   "dialogs": {
     "prep": [
@@ -42,10 +43,6 @@
       {
         "speaker": "giver",
         "line": "00000006"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000007"
       },
       {
         "speaker": "giver",
@@ -81,14 +78,6 @@
       },
       {
         "speaker": "giver",
-        "line": "00000016"
-      },
-      {
-        "speaker": "giver",
-        "line": "00000017"
-      },
-      {
-        "speaker": "giver",
         "line": "00000018"
       },
       {
@@ -105,70 +94,79 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "NV-PUERT-NPC32",
-      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
-      "loc": "ZoneLocName_1520447"
+      "persona": "NV-CON-NPC15-B",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC08",
+      "zone": "Novus/NV_Z04_NewVicorgia",
+      "loc": "ZoneLocName_1546199"
     },
     {
       "type": "bounty",
       "mobs": [
-        "NV_Penguin_Cook_A_01.AdjRef"
+        "NV_Dog_DogofWarF_A_01.AdjRef",
+        "NV_Dog_DogofWarF_A_02.AdjRef",
+        "NV_Dog_DogofWar_A_02.AdjRef",
+        "NV_Dog_DogofWar_A_03.AdjRef"
       ],
       "count": 1,
-      "target": "WizardMobs_00004234",
-      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
-      "loc": "ZoneLocName_1520447"
+      "target": "WizardMobs_00004193",
+      "zone": "",
+      "loc": "ZoneLocName_1546199"
     },
     {
       "type": "persona",
-      "persona": "NV-PUERT-NPC32",
-      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
-      "loc": "ZoneLocName_1520447"
-    },
-    {
-      "type": "persona",
-      "persona": "NV-ROSE-NPC20",
-      "zone": "Novus/NV_Z05_LaVilleRose",
-      "loc": "ZoneLocName_1520449"
+      "persona": "NV-CON-NPC15-B",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265",
+      "completion": [
+        {
+          "speaker": "NV-CON-NPC15-B",
+          "line": "00000007"
+        }
+      ]
     }
   ],
   "personas": {
-    "NV-PUERT-NPC31": {
-      "portrait": "GUI/NpcPortraits/Portrait_Monkey_Noble_C_NPC.dds",
-      "template_id": 1562185
+    "NV-CON-NPC15-B": {
+      "portrait": "GUI/NpcPortraits/Dog_Governor_A_NPC.dds",
+      "template_id": 1575027
     },
-    "NV-PUERT-NPC32": {
-      "portrait": "GUI/NpcPortraits/Portrait_Unicorn_ServantF_B_NPC.dds",
-      "template_id": 1562186
+    "NV-NEWV-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_SteampunkF_A_NPC.dds",
+      "template_id": 1546206
     },
-    "NV-ROSE-NPC20": {
-      "portrait": "GUI/NpcPortraits/Portrait_Penguin_TownieF_E_NPC.dds",
-      "template_id": 1520517
+    "NV-NEWV-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_WorkerF_A_NPC.dds",
+      "template_id": 1546248
     }
   },
   "source": {
-    "page": "https://wiki.wizard101central.com/wiki/Quest:Rough_Waiters",
-    "timestamp": "20240323102454"
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Let_Ship_the_Dogs_of_War",
+    "timestamp": "20240323102554"
   },
   "needs_review": [
     {
       "field": "requires",
-      "value": "Dogs of the Regiment",
+      "value": "All's Well that Cleanses Well",
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Angry Tent",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Sournois Pas in La Ville Rose",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Chocolate Ship",
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "All's Well that Cleanses Well replaced by NV-Q-1797FE",
       "blocking": false
     }
   ]

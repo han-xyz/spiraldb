@@ -31,6 +31,12 @@
       "loc": "ZoneLocName_1546199"
     },
     {
+      "type": "persona",
+      "persona": "NV-NEWV-NPC03-B",
+      "zone": "Novus/Interiors/NV_Z04_I02_GovernorsMansion",
+      "loc": "ZoneLocName_1546199"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Irks_Base_A_01.AdjRef",
@@ -81,11 +87,6 @@
     {
       "field": "lang",
       "value": "All's Well that Cleanses Well",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona",
-      "value": "Phileas Dogg (outside)",
       "blocking": true
     },
     {

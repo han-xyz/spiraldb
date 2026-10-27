@@ -87,6 +87,11 @@
   },
   "needs_review": [
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Weapons Wing: Novus/Interiors/NV_Z07_I02_WeaponsWing",
+      "blocking": false
+    },
+    {
       "field": "goal.zone (waypoint left out)",
       "value": "Weapons Wing",
       "blocking": false

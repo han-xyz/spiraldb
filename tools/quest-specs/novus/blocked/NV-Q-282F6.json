@@ -1,5 +1,6 @@
 {
-  "id": "NV-Q-throwingstonesnovus",
+  "id": "NV-Q-282F6",
+  "lang": "282F6",
   "giver": {
     "persona": "NV-CON-NPC01-B",
     "zone": "Novus/NV_Z01_Conatus"
@@ -13,7 +14,28 @@
     "gold": 270
   },
   "dialogs": {
-    "prep": [],
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
     "underway": []
   },
   "goals": [
@@ -50,11 +72,6 @@
   },
   "needs_review": [
     {
-      "field": "lang",
-      "value": "Throwing Stones (Novus)",
-      "blocking": true
-    },
-    {
       "field": "requires",
       "value": "Heaven is a Place Disturbed",
       "blocking": false
@@ -63,6 +80,11 @@
       "field": "goal.items",
       "value": "Voice further",
       "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
     }
   ]
 }

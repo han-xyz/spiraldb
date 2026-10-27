@@ -103,6 +103,16 @@
     {
       "type": "usage",
       "items": [
+        "NV-Trees.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Novus/NV_Z03_PuertoNuovo_VA",
+      "descriptor": "WizardGameObjects_00000968",
+      "loc": "ZoneLocName_1520447"
+    },
+    {
+      "type": "usage",
+      "items": [
         "NV-GroomingSupplies.AdjRef"
       ],
       "count": 1,
@@ -134,12 +144,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "the Plants",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "with the Tree Vines",
+      "value": "Plants",
       "blocking": true
     },
     {

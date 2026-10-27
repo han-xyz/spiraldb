@@ -4,8 +4,9 @@
     "persona": "NV-CON-NPC01-B",
     "zone": "Novus/NV_Z01_Conatus"
   },
-  "requires": [],
-  "min_level": 142,
+  "requires": [
+    "NV-Q-282F6"
+  ],
   "mainline": true,
   "level": 142,
   "reward": {
@@ -17,6 +18,17 @@
     "underway": []
   },
   "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Horse_AberrantTungAk_A_01.AdjRef",
+        "NV_Horse_AberrantTungAk_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004138",
+      "zone": "",
+      "loc": "ZoneLocName_1529152"
+    },
     {
       "type": "persona",
       "persona": "giver",
@@ -41,19 +53,14 @@
       "blocking": true
     },
     {
-      "field": "requires",
-      "value": "Throwing Stones (Novus)",
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Lower Passage: Novus/Interiors/NV_Z02_LowerPassage",
       "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Lower Passage",
       "blocking": false
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Aberrant Tung Ak (Myth-Life)",
-      "blocking": true
     }
   ]
 }

@@ -123,6 +123,21 @@
       "loc": "ZoneLocName_1520449"
     },
     {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z05_MathildasHouse"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "NV_Fish_CrazyLegs_B_01.AdjRef",
+        "NV_Fish_CrazyLegs_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004149",
+      "zone": "Novus/NV_Z05_LaVilleRose",
+      "loc": "ZoneLocName_1520449"
+    },
+    {
       "type": "persona",
       "persona": "NV-ROSE-NPC08",
       "zone": "Novus/NV_Z05_LaVilleRose",
@@ -154,29 +169,19 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Nouveau Basstille",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter the Nouveau Basstille",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Earthquake",
+      "value": "Earthquake",
       "blocking": true
     },
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to Residential Island",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Mathilda's House",
-      "blocking": true
-    },
-    {
-      "field": "goal.mobs",
-      "value": "Megraine (Myth-Ice)",
-      "blocking": true
     },
     {
       "field": "dialogs",

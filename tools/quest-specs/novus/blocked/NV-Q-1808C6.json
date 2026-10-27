@@ -72,6 +72,22 @@
   },
   "goals": [
     {
+      "type": "bountycollect",
+      "mobs": [
+        "NV_BananaSpider_Base_A_01.AdjRef",
+        "NV_BananaSpider_Base_A_02.AdjRef",
+        "NV_BananaSpider_Base_A_03.AdjRef",
+        "NV_BananaSpider_Base_A_04.AdjRef",
+        "NV_BananaSpider_Base_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004126",
+      "zone": "Novus/NV_Z01_Conatus",
+      "descriptor": "WizQst1808C6_00000013",
+      "loc": "ZoneLocName_1546265",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Novus/NV_Z01_Conatus",
@@ -101,12 +117,7 @@
     },
     {
       "field": "goal.items",
-      "value": "Press Z to Photomance the Vale of Perfection in Puerto Nuovo",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Defeat Banana Spiders and Collect Yellow Dye",
+      "value": "Vale of Perfection in Puerto Nuovo",
       "blocking": true
     },
     {

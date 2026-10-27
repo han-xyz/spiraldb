@@ -58,11 +58,6 @@
       "field": "requires",
       "value": "Heaven is a Place Disturbed",
       "blocking": false
-    },
-    {
-      "field": "goal.persona",
-      "value": "Nigel Scruffington (NPC moves closer to exit)",
-      "blocking": true
     }
   ]
 }
