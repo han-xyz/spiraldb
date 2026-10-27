@@ -228,6 +228,14 @@
       "loc": "ZoneLocName_1451078"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z14_Rift"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z14_Rift"
+    },
+    {
       "type": "usage",
       "items": [
         "EM-AnchorFragments.AdjRef"
@@ -243,21 +251,8 @@
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
-      "type": "usage",
-      "items": [
-        "EM-Pod.AdjRef",
-        "EM-PodArk.AdjRef",
-        "EM-TeleporterHusk.AdjRef",
-        "EM-TeleporterMandalla.AdjRef",
-        "EM-TeleporterNeumia.AdjRef",
-        "EM-TeleporterOuterAthanor.AdjRef",
-        "EM-TeleporterSepidious.AdjRef",
-        "EM-TeleporterZanadu.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "Items_00019958",
-      "loc": "ZoneLocName_1451078"
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
       "type": "persona",
@@ -306,17 +301,7 @@
     },
     {
       "field": "goal.items",
-      "value": "(Collect) other Anchor Fragment",
-      "blocking": true
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go to The Rift",
-      "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "The Rift",
+      "value": "other Anchor Fragment",
       "blocking": true
     },
     {

@@ -137,9 +137,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "to the Scholars in the Arcanum",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Arcanum",
+      "blocking": false
     },
     {
       "field": "dialogs",

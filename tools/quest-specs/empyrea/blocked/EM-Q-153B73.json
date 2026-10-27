@@ -106,13 +106,13 @@
     },
     {
       "type": "persona",
-      "persona": "EM-OUTER-NPC07",
-      "zone": "Empyrea/Interiors/EM_Z03_IceCouncilChamber",
+      "persona": "EM-OUTER-NPC07-B",
+      "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall",
       "loc": "ZoneLocName_1391567"
     },
     {
       "type": "persona",
-      "persona": "EM_StandIn_Jonas",
+      "persona": "EM-OUTER-NPC11",
       "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall",
       "loc": "ZoneLocName_1391567"
     }
@@ -126,13 +126,13 @@
       "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_B_NPC.dds",
       "template_id": 1391499
     },
-    "EM-OUTER-NPC07": {
+    "EM-OUTER-NPC07-B": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
-      "template_id": 1391500
+      "template_id": 1391504
     },
-    "EM_StandIn_Jonas": {
+    "EM-OUTER-NPC11": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCitizen_A_NPC.dds",
-      "template_id": 1435020
+      "template_id": 1391508
     }
   },
   "source": {
@@ -141,13 +141,8 @@
   },
   "needs_review": [
     {
-      "field": "giver.zone (placed in no zone)",
-      "value": "Sven Icecutter",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "to the Council (in the Ice Council Chamber)",
+      "field": "goal.persona",
+      "value": "Council",
       "blocking": true
     },
     {

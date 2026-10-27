@@ -162,13 +162,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Shipwrecks",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Shipwrecks",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Sulfur and Charcoal",
+      "value": "Sulfur and Charcoal",
       "blocking": true
     },
     {

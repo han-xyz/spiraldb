@@ -45,9 +45,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "to the Waking World",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Waking World",
+      "blocking": false
     }
   ]
 }

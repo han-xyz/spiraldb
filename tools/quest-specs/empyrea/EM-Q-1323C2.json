@@ -6,7 +6,7 @@
     "zone": "Empyrea/Interiors/EM_Z02_DanceHall"
   },
   "requires": [
-    "EM-Q-155335"
+    "EM-Q-1323C0"
   ],
   "mainline": true,
   "level": 112,
@@ -112,11 +112,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Welcome to the Leisure Dome replaced by EM-Q-155335",
       "blocking": false
     }
   ]

@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
   "requires": [
-    "EM-Q-16249D"
+    "EM-Q-16433E"
   ],
   "mainline": true,
   "level": 112,
@@ -86,7 +86,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "'Til Wizard Voices Wake Us replaced by EM-Q-16249D",
+      "value": "'Til Wizard Voices Wake Us replaced by EM-Q-16433E",
       "blocking": false
     }
   ]

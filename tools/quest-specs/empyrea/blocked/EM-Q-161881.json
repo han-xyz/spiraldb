@@ -186,6 +186,11 @@
       "blocking": false
     },
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Astral Grove: Empyrea/Interiors/EM_Z16_I01_AstralGrove",
+      "blocking": false
+    },
+    {
       "field": "goal.zone (waypoint left out)",
       "value": "Astral Grove",
       "blocking": false

@@ -1,0 +1,108 @@
+{
+  "id": "EM-Q-153B7A",
+  "lang": "153B7A",
+  "giver": {
+    "persona": "EM-OUTER-NPC13",
+    "zone": "Empyrea/EM_Z03_OuterAthanor"
+  },
+  "requires": [
+    "EM-Q-153B79"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 108927,
+    "gold": 2010
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z03_Vault"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Titan_MediumIce_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002863",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-TreasuryCabinet.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "descriptor": "WizQst153B7A_00000011",
+      "loc": "ZoneLocName_1391567"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-OUTER-NPC02-C",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567"
+    }
+  ],
+  "personas": {
+    "EM-OUTER-NPC02-C": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1391518
+    },
+    "EM-OUTER-NPC13": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceSoldier_C_NPC.dds",
+      "template_id": 1391513
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cold_Storage_(Empyrea)",
+    "timestamp": "20251219091212"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Access Tunnel",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

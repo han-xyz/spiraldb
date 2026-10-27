@@ -1,0 +1,202 @@
+{
+  "id": "EM-Q-1624F3",
+  "lang": "1624F3",
+  "giver": {
+    "persona": "EM-DEST-NPC06",
+    "zone": "Empyrea/EM_Z13_SamsaraDestroyed"
+  },
+  "requires": [
+    "EM-Q-1624CD"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 33750
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-InjuredKalamar01.AdjRef",
+        "EM-InjuredKalamar01_Healed.AdjRef",
+        "EM-InjuredKalamar02.AdjRef",
+        "EM-InjuredKalamar03.AdjRef",
+        "EM-InjuredKalamar03_Healed.AdjRef",
+        "EM-InjuredKalamar04.AdjRef",
+        "EM-InjuredKalamar05.AdjRef",
+        "EM-InjuredKalamar05_Healed.AdjRef",
+        "EM-InjuredKalamar06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizQst1624F3_00000006",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-InjuredKalamar01.AdjRef",
+        "EM-InjuredKalamar01_Healed.AdjRef",
+        "EM-InjuredKalamar02.AdjRef",
+        "EM-InjuredKalamar03.AdjRef",
+        "EM-InjuredKalamar03_Healed.AdjRef",
+        "EM-InjuredKalamar04.AdjRef",
+        "EM-InjuredKalamar05.AdjRef",
+        "EM-InjuredKalamar05_Healed.AdjRef",
+        "EM-InjuredKalamar06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizQst1624F3_00000006",
+      "loc": "ZoneLocName_1451161",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-InjuredKalamar01.AdjRef",
+        "EM-InjuredKalamar01_Healed.AdjRef",
+        "EM-InjuredKalamar02.AdjRef",
+        "EM-InjuredKalamar03.AdjRef",
+        "EM-InjuredKalamar03_Healed.AdjRef",
+        "EM-InjuredKalamar04.AdjRef",
+        "EM-InjuredKalamar05.AdjRef",
+        "EM-InjuredKalamar05_Healed.AdjRef",
+        "EM-InjuredKalamar06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizQst1624F3_00000006",
+      "loc": "ZoneLocName_1451161",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-InjuredKalamar01.AdjRef",
+        "EM-InjuredKalamar01_Healed.AdjRef",
+        "EM-InjuredKalamar02.AdjRef",
+        "EM-InjuredKalamar03.AdjRef",
+        "EM-InjuredKalamar03_Healed.AdjRef",
+        "EM-InjuredKalamar04.AdjRef",
+        "EM-InjuredKalamar05.AdjRef",
+        "EM-InjuredKalamar05_Healed.AdjRef",
+        "EM-InjuredKalamar06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizQst1624F3_00000006",
+      "loc": "ZoneLocName_1451161",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-InjuredKalamar01.AdjRef",
+        "EM-InjuredKalamar01_Healed.AdjRef",
+        "EM-InjuredKalamar02.AdjRef",
+        "EM-InjuredKalamar03.AdjRef",
+        "EM-InjuredKalamar03_Healed.AdjRef",
+        "EM-InjuredKalamar04.AdjRef",
+        "EM-InjuredKalamar05.AdjRef",
+        "EM-InjuredKalamar05_Healed.AdjRef",
+        "EM-InjuredKalamar06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizQst1624F3_00000006",
+      "loc": "ZoneLocName_1451161",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-InjuredKalamar01.AdjRef",
+        "EM-InjuredKalamar01_Healed.AdjRef",
+        "EM-InjuredKalamar02.AdjRef",
+        "EM-InjuredKalamar03.AdjRef",
+        "EM-InjuredKalamar03_Healed.AdjRef",
+        "EM-InjuredKalamar04.AdjRef",
+        "EM-InjuredKalamar05.AdjRef",
+        "EM-InjuredKalamar05_Healed.AdjRef",
+        "EM-InjuredKalamar06.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizQst1624F3_00000006",
+      "loc": "ZoneLocName_1451161",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000004"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-DEST-NPC06": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_CitizenF_K_NPC.dds",
+      "template_id": 1451238
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Wizard_of_Mercy",
+    "timestamp": "20231126100710"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

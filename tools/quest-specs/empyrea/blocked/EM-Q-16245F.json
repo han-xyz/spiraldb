@@ -125,43 +125,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "AZ-ZOCOLO-NPC14-B.AdjRef",
-        "EM-AERI-NPC03-B.AdjRef",
-        "EM-AERI-NPC03-C.AdjRef",
-        "EM-AERI-NPC03-D.AdjRef",
-        "EM-AERI-NPC03-E.AdjRef",
-        "EM-AERI-NPC03-F.AdjRef",
-        "EM-AERI-NPC03.AdjRef",
-        "EM-Accompany-Beans-C.AdjRef",
-        "EM-Accompany-Beans.AdjRef",
-        "EM-Accompany-ENC-Beans.AdjRef",
-        "EM-CHAOS-NPC04-B.AdjRef",
-        "EM-CHAOS-NPC04.AdjRef",
-        "EM-OUTER-NPC03-B.AdjRef",
-        "EM-OUTER-NPC03.AdjRef",
-        "EM-SAMS-NPC02-B.AdjRef",
-        "EM-SAMS-NPC02-C.AdjRef",
-        "EM-SAMS-NPC02-D.AdjRef",
-        "EM-SAMS-NPC02-E.AdjRef",
-        "EM-SAMS-NPC02.AdjRef",
-        "EM-SEP-NPC005-A.AdjRef",
-        "EM-SEP-NPC005-B.AdjRef",
-        "EM-SEP-NPC005.AdjRef",
-        "EM-SEPI-NPC005.AdjRef",
-        "EM-ZANA-NPC03-B.AdjRef",
-        "EM-ZANA-NPC03.AdjRef",
-        "EM-ZANA-NPC03_Throne.AdjRef",
-        "EM_StandIn_Beans.AdjRef",
-        "EM_StandIn_Beans_Mob.AdjRef",
-        "EM_StandIn_Beans_WithPod.AdjRef",
-        "EM_StandIn_Beans_WithPod_B.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "NPCs_01748767",
-      "loc": "ZoneLocName_1451078"
+      "type": "persona",
+      "persona": "EM-AERI-NPC03-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
       "type": "persona",
@@ -175,6 +141,10 @@
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
       "template_id": 1397532
     },
+    "EM-AERI-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Crewman_A_NPC.dds",
+      "template_id": 1397548
+    },
     "EM-CHAOS-NPC05-B": {
       "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
       "template_id": 1451121
@@ -187,7 +157,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "Third Reading (follow quest tracker)",
+      "value": "Third Reading",
       "blocking": true
     },
     {

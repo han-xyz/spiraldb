@@ -6,7 +6,7 @@
     "zone": "Empyrea/Interiors/EM_Z14_FeralClearing"
   },
   "requires": [
-    "EM-Q-162814"
+    "EM-Q-162493"
   ],
   "mainline": true,
   "level": 112,
@@ -66,6 +66,7 @@
       ],
       "count": 1,
       "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizQst16249D_00000009",
       "loc": "ZoneLocName_1451161"
     },
     {
@@ -91,18 +92,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.descriptor",
-      "value": "(Approach) the Skyboat",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Into the Jungle replaced by EM-Q-162814",
       "blocking": false
     }
   ]

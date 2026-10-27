@@ -254,23 +254,23 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "into the Cavern",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Cavern",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Sphinx's Cavern",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Proceed to Round 2",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Sphinx's Cavern",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "to Round 2",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Final Round",
+      "value": "Final Round",
       "blocking": true
     },
     {

@@ -97,6 +97,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_Aethyrium"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Alphoi_Caster_A_07.AdjRef",
@@ -108,6 +112,10 @@
       "loc": "ZoneLocName_1254355"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_Aethyrium"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Alphoi_Caster_A_06.AdjRef"
@@ -116,6 +124,10 @@
       "target": "WizardMobs_00002869",
       "zone": "Empyrea/EM_Z02_Zanadu",
       "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_Aethyrium"
     },
     {
       "type": "bounty",
@@ -137,21 +149,6 @@
     {
       "field": "giver",
       "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Aethyrium",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Aethyrium",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Aethyrium",
       "blocking": true
     },
     {

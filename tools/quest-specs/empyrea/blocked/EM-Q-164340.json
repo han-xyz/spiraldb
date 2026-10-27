@@ -137,56 +137,30 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "EM-CHAOS-NPC12.AdjRef",
-        "EM-HUSK-NPC01-A.AdjRef",
-        "EM-HUSK-NPC01-B.AdjRef",
-        "EM-HUSK-NPC01-C.AdjRef",
-        "EM-HUSK-NPC01-E.AdjRef",
-        "EM-REV-NPC07.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "NPCs_01748880"
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z15_DreamShrine"
     },
     {
-      "type": "usage",
-      "items": [
-        "EM-Accompany-Melori_C.AdjRef",
-        "EM-Accompany-Melori_C_ENC.AdjRef",
-        "EM-CHAOS-NPC05-B.AdjRef",
-        "EM-CHAOS-NPC05-C.AdjRef",
-        "EM-CHAOS-NPC05-RIFT.AdjRef",
-        "EM-CHAOS-NPC05.AdjRef",
-        "EM-HUSK-NPC02-A.AdjRef",
-        "EM-HUSK-NPC02-B-ENC01.AdjRef",
-        "EM-HUSK-NPC02-B.AdjRef",
-        "EM-HUSK-NPC02-C.AdjRef",
-        "EM-HUSK-NPC02-D.AdjRef",
-        "EM-HUSK-NPC02-E.AdjRef",
-        "EM-HUSK-NPC02-F.AdjRef",
-        "EM-HUSK-NPC02-G.AdjRef",
-        "EM-HUSK-NPC02-H.AdjRef",
-        "EM-HUSK-NPC02-I.AdjRef",
-        "EM-HUSK-NPC02-J.AdjRef",
-        "EM-HUSK-NPC02-L.AdjRef",
-        "EM-HUSK-NPC02-M.AdjRef",
-        "EM-REV-NPC02.AdjRef",
-        "EM-SAMS-NPC10.AdjRef",
-        "EM-ZANA-NPC29.AdjRef",
-        "EM_StandIn_Mallori.AdjRef",
-        "EM_StandIn_Mallori_02.AdjRef",
-        "EM_StandIn_Mallori_BatEssence.AdjRef",
-        "EM_StandIn_Mallori_C.AdjRef",
-        "EM_Standin_DreamMellori.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "NPCs_01748482"
+      "type": "persona",
+      "persona": "EM-HUSK-NPC01-A",
+      "zone": "Empyrea/EM_Z16_Husk"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-CHAOS-NPC05-B",
+      "zone": "Empyrea/EM_Z14_ChaosJungle"
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM-CHAOS-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
+      "template_id": 1451121
+    },
+    "EM-HUSK-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",
+      "template_id": 1448067
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:The_Dreaming_Begins",
     "timestamp": "20250827080858"
@@ -195,11 +169,6 @@
     {
       "field": "giver",
       "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Dream Shrine",
       "blocking": true
     },
     {

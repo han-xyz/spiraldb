@@ -41,6 +41,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z12_GladeOfShavarram"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Bramble_Death_B_01.AdjRef"
@@ -68,11 +72,6 @@
     "timestamp": "20231126100837"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Glade of Shavarram",
-      "blocking": false
-    },
     {
       "field": "goal.items",
       "value": "Sacred Stones",

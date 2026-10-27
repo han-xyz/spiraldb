@@ -6,7 +6,7 @@
     "zone": "Empyrea/Interiors/EM_Z07_ControlRoom"
   },
   "requires": [
-    "EM-Q-158FF1"
+    "EM-Q-1553E6"
   ],
   "mainline": true,
   "level": 112,
@@ -148,7 +148,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Gut Bomb replaced by EM-Q-158FF1",
+      "value": "Gut Bomb replaced by EM-Q-1553E6",
       "blocking": false
     }
   ]

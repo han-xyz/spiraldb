@@ -57,6 +57,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "EM-FallenScrolls.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
@@ -101,14 +111,19 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Defeat Feral Kalamari (Fire or Myth)",
+      "field": "goal.mobs",
+      "value": "Fire",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Collect 4 Fallen Scrolls",
+      "field": "goal.mobs",
+      "value": "Myth",
       "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Fallen Scrolls",
+      "blocking": false
     },
     {
       "field": "dialogs",

@@ -135,19 +135,34 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Rear Courtyard",
-      "blocking": true
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Rear Courtyard: Empyrea/Interiors/EM_Z07_RearCourtyard",
+      "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Rear Courtyard",
-      "blocking": true
+      "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Rear Courtyard: Empyrea/Interiors/EM_Z07_RearCourtyard",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
       "value": "Rear Courtyard",
-      "blocking": true
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Rear Courtyard: Empyrea/Interiors/EM_Z07_RearCourtyard",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Rear Courtyard",
+      "blocking": false
     },
     {
       "field": "dialogs",

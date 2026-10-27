@@ -34,7 +34,7 @@
   "goals": [
     {
       "type": "waypoint",
-      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+      "zone": "Empyrea/Interiors/EM_Z01_TrollRallyCave"
     },
     {
       "type": "bounty",

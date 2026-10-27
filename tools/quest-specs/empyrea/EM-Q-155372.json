@@ -5,7 +5,9 @@
     "persona": "EM-JUNG-NPC08",
     "zone": "Empyrea/EM_Z01_Jungle"
   },
-  "requires": [],
+  "requires": [
+    "EM-Q-155354"
+  ],
   "mainline": false,
   "level": 112,
   "reward": {
@@ -41,7 +43,7 @@
       ],
       "count": 3,
       "target": "WizardMobs_00002794",
-      "zone": "Empyrea/EM_Z01_Jungle",
+      "zone": "Empyrea/Interiors/EM_Z01_MonkeySpiderCave",
       "loc": "ZoneLocName_1397535"
     },
     {
@@ -71,12 +73,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "May the Beastman Win replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 112
+  ]
 }

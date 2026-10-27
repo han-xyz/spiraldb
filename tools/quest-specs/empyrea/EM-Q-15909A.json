@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z09_NWAeroplains"
   },
   "requires": [
-    "EM-Q-161585"
+    "EM-Q-16158C"
   ],
   "mainline": true,
   "level": 112,
@@ -81,6 +81,11 @@
   },
   "needs_review": [
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Rear Courtyard: Empyrea/Interiors/EM_Z07_RearCourtyard",
+      "blocking": false
+    },
+    {
       "field": "goal.zone (waypoint left out)",
       "value": "Rear Courtyard",
       "blocking": false
@@ -92,7 +97,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Ain't No Citadel High Enough replaced by EM-Q-161585",
+      "value": "Ain't No Citadel High Enough replaced by EM-Q-16158C",
       "blocking": false
     }
   ]

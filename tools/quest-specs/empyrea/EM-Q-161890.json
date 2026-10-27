@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z14_ChaosJungle"
   },
   "requires": [
-    "EM-Q-1624D9"
+    "EM-Q-162449"
   ],
   "mainline": true,
   "level": 112,
@@ -150,7 +150,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Spirit of the Grove replaced by EM-Q-1624D9",
+      "value": "Spirit of the Grove replaced by EM-Q-162449",
       "blocking": false
     }
   ]

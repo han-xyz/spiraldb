@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z03_MeltingHouse"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Vapor_Monster_A_01.AdjRef"
@@ -76,11 +80,6 @@
     "timestamp": "20250904070136"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Melting House",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

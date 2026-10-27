@@ -45,6 +45,38 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "EM-Urn_Black.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "GUI_00008946",
+      "loc": "ZoneLocName_1451161"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Urn_Red.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "GUI_00008947",
+      "loc": "ZoneLocName_1451161",
+      "with_previous": true
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-Urn_Gold.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "descriptor": "WizItems_00002052",
+      "loc": "ZoneLocName_1451161",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Empyrea/EM_Z12_SamsaraVillage",
@@ -62,21 +94,6 @@
     "timestamp": "20231126091108"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Use Black Urn",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Use Red Urn",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Use Gold Urn",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

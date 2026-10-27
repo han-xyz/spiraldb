@@ -74,14 +74,14 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "On",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Press On",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Pressing Onward",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Continue Pressing Onward",
+      "blocking": false
     }
   ]
 }

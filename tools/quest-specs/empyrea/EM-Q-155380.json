@@ -1,0 +1,88 @@
+{
+  "id": "EM-Q-155380",
+  "lang": "155380",
+  "giver": {
+    "persona": "EM-AERI-NPC12",
+    "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+  },
+  "requires": [
+    "EM-Q-155329"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 5000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-Debris.AdjRef",
+        "EM-Debris02.AdjRef",
+        "EM-Debris03.AdjRef"
+      ],
+      "count": 5,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "Items_00019791"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_MonkeySpider_Hunter_A_01.AdjRef"
+      ],
+      "count": 5,
+      "target": "WizardMobs_00002794",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_CitizenF_A_NPC.dds",
+      "template_id": 1397633
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Home_Improvement",
+    "timestamp": "20231126094419"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Silk",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

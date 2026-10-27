@@ -2,11 +2,11 @@
   "id": "EM-Q-153B76",
   "lang": "153B76",
   "giver": {
-    "persona": "EM_StandIn_Jonas",
+    "persona": "EM-OUTER-NPC11",
     "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall"
   },
   "requires": [
-    "EM-Q-1323CA"
+    "EM-Q-153B71"
   ],
   "mainline": true,
   "level": 112,
@@ -56,13 +56,13 @@
     }
   ],
   "personas": {
+    "EM-OUTER-NPC11": {
+      "portrait": "GUI/NpcPortraits/Dwarf_IceCitizen_A_NPC.dds",
+      "template_id": 1391508
+    },
     "EM-OUTER-NPC12": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCitizenF_A_NPC.dds",
       "template_id": 1391509
-    },
-    "EM_StandIn_Jonas": {
-      "portrait": "GUI/NpcPortraits/Dwarf_IceCitizen_A_NPC.dds",
-      "template_id": 1435020
     }
   },
   "source": {
@@ -77,7 +77,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Real Politics replaced by EM-Q-1323CA",
+      "value": "Real Politics replaced by EM-Q-153B71",
       "blocking": false
     }
   ]

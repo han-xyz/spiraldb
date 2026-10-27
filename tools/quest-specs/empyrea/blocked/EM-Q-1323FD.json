@@ -77,6 +77,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_KanesHouse"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Robot_Drone_A_03.AdjRef"
@@ -108,11 +112,6 @@
       "field": "lang",
       "value": "WizQst1323FD matched by the words it shares with the goals; its lines name Ben'ana Foster Kane, Rosie",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Kane's House",
-      "blocking": true
     },
     {
       "field": "goal.items",

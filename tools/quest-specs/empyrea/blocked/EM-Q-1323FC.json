@@ -132,13 +132,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Delta Channel",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Delta Channel",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Sani-Leader",
+      "value": "Sani-Leader",
       "blocking": true
     },
     {

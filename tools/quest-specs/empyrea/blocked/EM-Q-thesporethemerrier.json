@@ -15,6 +15,18 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z12_AshenCaves"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z12_AshenCaves"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z12_AshenCaves"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_WolfGryphon_Warrior_D_01.AdjRef",
@@ -43,28 +55,13 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Ashen Caves",
-      "blocking": true
-    },
-    {
       "field": "goal.mobs",
       "value": "Death Fungi",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Ashen Caves",
-      "blocking": true
-    },
-    {
       "field": "goal.mobs",
-      "value": "the Death Fungi",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Ashen Caves",
+      "value": "Death Fungi",
       "blocking": true
     }
   ]

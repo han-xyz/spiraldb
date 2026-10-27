@@ -159,15 +159,9 @@
       "loc": "ZoneLocName_1447324"
     },
     {
-      "type": "usage",
-      "items": [
-        "EM-AERO-NPC18.AdjRef",
-        "EM-AERO-NPC18_CBField.AdjRef",
-        "EM-AERO-NPC18_SWPlains.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Empyrea/EM_Z10_PortAero",
-      "descriptor": "NPCs_01748908",
+      "type": "persona",
+      "persona": "EM-AERO-NPC18",
+      "zone": "Empyrea/EM_Z08_SWAeroplains",
       "loc": "ZoneLocName_1447324"
     },
     {
@@ -213,6 +207,10 @@
     "EM-AERO-NPC17": {
       "portrait": "GUI/NpcPortraits/Portrait_Robot_Drone_E_NPC.dds",
       "template_id": 1447377
+    },
+    "EM-AERO-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Oxen_Shaggy_C_NPC.dds",
+      "template_id": 1447379
     }
   },
   "source": {
@@ -227,7 +225,7 @@
     },
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Southwest Aero Plains",
+      "value": "Cretan Bull's Den, Southwest Aero Plains",
       "blocking": false
     },
     {
@@ -236,9 +234,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Ebenezer's House",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Exit Ebenezer's House",
+      "blocking": false
     },
     {
       "field": "dialogs",

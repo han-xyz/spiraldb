@@ -90,8 +90,8 @@
   "goals": [
     {
       "type": "persona",
-      "persona": "EM-OUTER-NPC07",
-      "zone": "Empyrea/Interiors/EM_Z03_IceCouncilChamber",
+      "persona": "EM-OUTER-NPC07-B",
+      "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall",
       "loc": "ZoneLocName_1391567"
     },
     {
@@ -101,6 +101,10 @@
       "loc": "ZoneLocName_1391567"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z03_Vault"
+    },
+    {
       "type": "persona",
       "persona": "EM-OUTER-NPC13",
       "zone": "Empyrea/EM_Z03_OuterAthanor",
@@ -108,9 +112,9 @@
     }
   ],
   "personas": {
-    "EM-OUTER-NPC07": {
+    "EM-OUTER-NPC07-B": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
-      "template_id": 1391500
+      "template_id": 1391504
     },
     "EM-OUTER-NPC12": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCitizenF_A_NPC.dds",
@@ -130,11 +134,6 @@
     "timestamp": "20231126090110"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Vault",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

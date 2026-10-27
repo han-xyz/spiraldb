@@ -51,6 +51,12 @@
   "goals": [
     {
       "type": "persona",
+      "persona": "EM-ZANA-NPC21",
+      "zone": "Empyrea/Interiors/EM_Z02_TwylightsHouse",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
       "persona": "giver",
       "zone": "Empyrea/EM_Z02_Zanadu",
       "loc": "ZoneLocName_1254355",
@@ -66,6 +72,10 @@
     "EM-ZANA-NPC19": {
       "portrait": "GUI/NpcPortraits/Portrait_Alphoi_Merchant_C_NPC.dds",
       "template_id": 1254388
+    },
+    "EM-ZANA-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_Merchant_B_NPC.dds",
+      "template_id": 1254391
     }
   },
   "source": {
@@ -73,11 +83,6 @@
     "timestamp": "20231126095008"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Catalogs to Twylight in Twylight's House",
-      "blocking": true
-    },
     {
       "field": "goal.items",
       "value": "Common House Spiders",

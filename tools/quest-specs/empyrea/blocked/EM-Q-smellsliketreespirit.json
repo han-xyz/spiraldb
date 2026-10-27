@@ -42,9 +42,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "for the Primordial Trees",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search for the Primordial Trees",
+      "blocking": false
     },
     {
       "field": "goal.mobs",

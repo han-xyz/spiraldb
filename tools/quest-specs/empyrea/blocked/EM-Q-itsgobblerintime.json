@@ -18,13 +18,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "EM-ZANA-NPC18.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "giver",
       "zone": "Empyrea/EM_Z02_Zanadu",
-      "descriptor": "NPCs_01748831",
       "loc": "ZoneLocName_1254355"
     },
     {

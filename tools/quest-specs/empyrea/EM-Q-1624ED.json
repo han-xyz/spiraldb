@@ -88,31 +88,7 @@
         "EM-PrayerColumn02.AdjRef",
         "EM-PrayerColumn03.AdjRef"
       ],
-      "count": 1,
-      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
-      "descriptor": "WizQst1624ED_00000016",
-      "loc": "ZoneLocName_1451161"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "EM-PrayerColumn01.AdjRef",
-        "EM-PrayerColumn02.AdjRef",
-        "EM-PrayerColumn03.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
-      "descriptor": "WizQst1624ED_00000016",
-      "loc": "ZoneLocName_1451161"
-    },
-    {
-      "type": "usage",
-      "items": [
-        "EM-PrayerColumn01.AdjRef",
-        "EM-PrayerColumn02.AdjRef",
-        "EM-PrayerColumn03.AdjRef"
-      ],
-      "count": 1,
+      "count": 3,
       "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
       "descriptor": "WizQst1624ED_00000016",
       "loc": "ZoneLocName_1451161"

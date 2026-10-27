@@ -199,6 +199,10 @@
       "loc": "ZoneLocName_1447344"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z11_VeloCityInn"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Dwarf_AeroHunter_B_01.AdjRef"
@@ -270,18 +274,13 @@
       "blocking": false
     },
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Velo City Inn",
-      "blocking": false
-    },
-    {
       "field": "goal.items",
       "value": "Whirlyburly",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "up Injured Justicar",
+      "value": "Injured Justicar",
       "blocking": true
     },
     {

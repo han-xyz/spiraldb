@@ -25,58 +25,9 @@
       "loc": "ZoneLocName_1413361"
     },
     {
-      "type": "usage",
-      "items": [
-        "EM-AERI-NPC01-B.AdjRef",
-        "EM-AERI-NPC01-C.AdjRef",
-        "EM-AERI-NPC01-D.AdjRef",
-        "EM-AERI-NPC01-E.AdjRef",
-        "EM-AERI-NPC01-F.AdjRef",
-        "EM-AERI-NPC01.AdjRef",
-        "EM-AERO-NPC11.AdjRef",
-        "EM-AERO-NPC11_1stHouse.AdjRef",
-        "EM-AERO-NPC11_Camp.AdjRef",
-        "EM-AERO-NPC11_SWAeroDC.AdjRef",
-        "EM-AERO-NPC11_Ship.AdjRef",
-        "EM-Accompany-Pork.AdjRef",
-        "EM-Accompany-Pork_ENC.AdjRef",
-        "EM-CHAOS-NPC02-B.AdjRef",
-        "EM-CHAOS-NPC02-C.AdjRef",
-        "EM-CHAOS-NPC02-D.AdjRef",
-        "EM-CHAOS-NPC02.AdjRef",
-        "EM-DEST-NPC04.AdjRef",
-        "EM-INNER-NPC11.AdjRef",
-        "EM-JUNG-NPC05-B.AdjRef",
-        "EM-JUNG-NPC05-C.AdjRef",
-        "EM-JUNG-NPC05-D.AdjRef",
-        "EM-JUNG-NPC05.AdjRef",
-        "EM-NIMB-NPC02-B.AdjRef",
-        "EM-NIMB-NPC02-C.AdjRef",
-        "EM-NIMB-NPC02-D.AdjRef",
-        "EM-NIMB-NPC02-E.AdjRef",
-        "EM-NIMB-NPC02-F.AdjRef",
-        "EM-NIMB-NPC02.AdjRef",
-        "EM-OUTER-NPC02-B.AdjRef",
-        "EM-OUTER-NPC02-C.AdjRef",
-        "EM-OUTER-NPC02-D.AdjRef",
-        "EM-OUTER-NPC02.AdjRef",
-        "EM-SEP-003-A.AdjRef",
-        "EM-SEP-003-B.AdjRef",
-        "EM-SEP-003-C.AdjRef",
-        "EM-SEP-003.AdjRef",
-        "EM-ZANA-02_Palace.AdjRef",
-        "EM-ZANA-NPC02.AdjRef",
-        "EM-ZANA-NPC02_Palace.AdjRef",
-        "EM-ZANA-NPC02_Sewers.AdjRef",
-        "EM_StandIn_Pork.AdjRef",
-        "EM_StandIn_Pork02.AdjRef",
-        "EM_StandIn_Pork_03.AdjRef",
-        "EM_StandIn_Pork_Mob.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "NPCs_01748765",
-      "loc": "ZoneLocName_1413361"
+      "type": "persona",
+      "persona": "EM-AERI-NPC01-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
     },
     {
       "type": "bounty",
@@ -101,7 +52,12 @@
       "loc": "ZoneLocName_1413361"
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM-AERI-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
+      "template_id": 1397532
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:...And_the_Skies_Are_Dark_Cloudy_All_Day",
     "timestamp": "20250911042533"
@@ -119,17 +75,22 @@
     },
     {
       "field": "goal.items",
-      "value": "the Ox Alarm to Dark Cloud Base",
+      "value": "Ox Alarm to Dark Cloud Base",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Dark Cloud Base",
-      "blocking": true
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Dark Cloud Base: Empyrea/Interiors/EM_Z08_DarkCloudBase",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Dark Cloud Base",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Cabal Leader",
+      "value": "Cabal Leader",
       "blocking": true
     }
   ]

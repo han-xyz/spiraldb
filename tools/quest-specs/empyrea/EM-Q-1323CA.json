@@ -5,7 +5,9 @@
     "persona": "EM-ZANA-NPC01-D",
     "zone": "Empyrea/EM_Z02_Zanadu"
   },
-  "requires": [],
+  "requires": [
+    "EM-Q-1323C9"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -63,15 +65,8 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "EM-ZANA-NPC34_B.AdjRef",
-        "EM_StandIn_Alphoi_PalaceGuard_01.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Empyrea/EM_Z02_Zanadu",
-      "descriptor": "WizardNPC_00000814",
-      "loc": "ZoneLocName_1254355"
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_Palace"
     },
     {
       "type": "bounty",
@@ -117,12 +112,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Rebel Rebel replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 112
+  ]
 }

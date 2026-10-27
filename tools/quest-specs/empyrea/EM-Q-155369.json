@@ -1,0 +1,113 @@
+{
+  "id": "EM-Q-155369",
+  "lang": "155369",
+  "giver": {
+    "persona": "EM-JUNG-NPC07",
+    "zone": "Empyrea/EM_Z01_Jungle"
+  },
+  "requires": [
+    "EM-Q-155367"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 6000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Beastman_Nerd_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002768",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-AERI-NPC05-B",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "completion": [
+        {
+          "speaker": "EM-AERI-NPC05-B",
+          "line": "00000019"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-AERI-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Kalamar_Elder_A_NPC.dds",
+      "template_id": 1397722
+    },
+    "EM-JUNG-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mice_TraderF_B_NPC.dds",
+      "template_id": 1397608
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Destroyer_of_Words",
+    "timestamp": "20231126094603"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Beastman Leader's Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

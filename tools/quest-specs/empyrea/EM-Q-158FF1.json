@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z04_InnerAthanor"
   },
   "requires": [
-    "EM-Q-153BCC"
+    "EM-Q-158FEC"
   ],
   "mainline": true,
   "level": 112,
@@ -63,11 +63,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Insulation Insurrection replaced by EM-Q-153BCC",
       "blocking": false
     }
   ]

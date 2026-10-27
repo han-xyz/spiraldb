@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z04_InnerAthanor"
   },
   "requires": [
-    "EM-Q-158FDD"
+    "EM-Q-158FDE"
   ],
   "mainline": true,
   "level": 112,
@@ -53,6 +53,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z04_Cistern"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Titan_MediumLava_A_01.AdjRef"
@@ -91,18 +95,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Cistern",
-      "blocking": false
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Peace Pipe replaced by EM-Q-158FDD",
       "blocking": false
     }
   ]

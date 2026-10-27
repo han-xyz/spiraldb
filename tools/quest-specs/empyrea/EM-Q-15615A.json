@@ -117,8 +117,18 @@
   },
   "needs_review": [
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Left Eye: Empyrea/Interiors/EM_Z05_LeftEye",
+      "blocking": false
+    },
+    {
       "field": "goal.zone (waypoint left out)",
-      "value": "Notochord",
+      "value": "Left Eye, Notochord",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Left Eye: Empyrea/Interiors/EM_Z05_LeftEye",
       "blocking": false
     },
     {

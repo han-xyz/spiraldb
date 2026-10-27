@@ -63,7 +63,7 @@
     {
       "type": "persona",
       "persona": "EM-SAMS-NPC06",
-      "zone": "Empyrea/EM_Z12_SamsaraVillage",
+      "zone": "Empyrea/Interiors/EM_Z12_DyingJungle",
       "loc": "ZoneLocName_1451161"
     },
     {
@@ -94,7 +94,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "the Sky Canoe",
+      "value": "Sky Canoe",
       "blocking": true
     },
     {

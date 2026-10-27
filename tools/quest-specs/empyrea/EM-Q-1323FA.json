@@ -1,0 +1,77 @@
+{
+  "id": "EM-Q-1323FA",
+  "lang": "1323FA",
+  "giver": {
+    "persona": "EM-ZANA-NPC23",
+    "zone": "Empyrea/Interiors/EM_Z02_Sewers"
+  },
+  "requires": [
+    "EM-Q-1323C3"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 4000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/Interiors/EM_Z02_Sewers",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/Interiors/EM_Z02_Sewers",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC23": {
+      "portrait": "GUI/NpcPortraits/Portraits_Alphoi_Warrior_A_NPC.dds",
+      "template_id": 1254395
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Insani-Bots!",
+    "timestamp": "20231126095011"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

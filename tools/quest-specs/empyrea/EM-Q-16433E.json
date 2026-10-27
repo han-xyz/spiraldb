@@ -1,0 +1,84 @@
+{
+  "id": "EM-Q-16433E",
+  "lang": "16433E",
+  "giver": {
+    "persona": "EM-REV-NPC01",
+    "zone": "Empyrea/EM_Z15_Nexus"
+  },
+  "requires": [
+    "EM-Q-1624B4"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 28450,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-CHAOS-NPC05-B",
+      "zone": "Empyrea/EM_Z14_ChaosJungle"
+    }
+  ],
+  "personas": {
+    "EM-CHAOS-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
+      "template_id": 1451121
+    },
+    "EM-REV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Portrait_WispCustodian_A_NPC.dds",
+      "template_id": 1459003
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dream_Deeper",
+    "timestamp": "20240328000320"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Deepest Memory",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Into the Great Beyond replaced by EM-Q-1624B4",
+      "blocking": false
+    }
+  ]
+}

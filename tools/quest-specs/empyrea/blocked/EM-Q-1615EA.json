@@ -144,13 +144,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "EM-AERO-NPC25.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Empyrea/EM_Z11_VeloCity",
-      "descriptor": "NPCs_01748925",
+      "type": "persona",
+      "persona": "EM-AERO-NPC25",
+      "zone": "Empyrea/EM_Z09_NWAeroplains",
       "loc": "ZoneLocName_1447344"
     },
     {
@@ -165,13 +161,9 @@
       "loc": "ZoneLocName_1447344"
     },
     {
-      "type": "usage",
-      "items": [
-        "EM-AERO-NPC26.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Empyrea/EM_Z11_VeloCity",
-      "descriptor": "NPCs_01748918",
+      "type": "persona",
+      "persona": "EM_StandIn_BadWolf",
+      "zone": "Empyrea/Interiors/EM_Z09_GrandmotherHouse",
       "loc": "ZoneLocName_1447344"
     },
     {
@@ -201,6 +193,14 @@
     "EM-AERO-NPC04": {
       "portrait": "GUI/NpcPortraits/Dwarf_AeroHunterF_A_NPC.dds",
       "template_id": 1447328
+    },
+    "EM-AERO-NPC25": {
+      "portrait": "GUI/NpcPortraits/Porrait_Human_SeamstressF_B_NPC.dds",
+      "template_id": 1447403
+    },
+    "EM_StandIn_BadWolf": {
+      "portrait": "GUI/NpcPortraits/Portrait_Werewolf_Granny_A_NPC.dds",
+      "template_id": 1447444
     }
   },
   "source": {
@@ -214,14 +214,19 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Grandma's House",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Empyrea/Interiors/EM_Z09_GrandmotherHouse",
+      "blocking": true
     }
   ]
 }

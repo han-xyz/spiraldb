@@ -1,0 +1,112 @@
+{
+  "id": "EM-Q-161588",
+  "lang": "161588",
+  "giver": {
+    "persona": "EM-AERO-NPC07",
+    "zone": "Empyrea/EM_Z09_NWAeroplains"
+  },
+  "requires": [
+    "EM-Q-161585"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 369359,
+    "gold": 1590
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z09_NWAeroplains",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Snipe_Base_A_01.AdjRef",
+        "EM_Snipe_Base_B_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003063",
+      "zone": "",
+      "loc": "ZoneLocName_1447290"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z09_NWAeroplains",
+      "loc": "ZoneLocName_1447290"
+    }
+  ],
+  "personas": {
+    "EM-AERO-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Nimbari_HelenaF_A_NPC.dds",
+      "template_id": 1447331
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_For_Real_Snipe_Hunt",
+    "timestamp": "20250919103142"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst161588 by chain order between WizQst161585 and WizQst161589; its lines name Snipes",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Newts Hate Frogs",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Newts Hate Frogs replaced by EM-Q-161585",
+      "blocking": false
+    }
+  ]
+}

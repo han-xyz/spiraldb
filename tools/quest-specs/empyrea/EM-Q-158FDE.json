@@ -1,0 +1,118 @@
+{
+  "id": "EM-Q-158FDE",
+  "lang": "158FDE",
+  "giver": {
+    "persona": "EM-INNER-NPC06",
+    "zone": "Empyrea/EM_Z04_InnerAthanor"
+  },
+  "requires": [
+    "EM-Q-158FDD"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 10558,
+    "gold": 1460
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "EM-ValvePipe.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "descriptor": "WizardGameObjects_00000424",
+      "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Titan_SmallLava_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002903",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z04_InnerAthanor",
+      "loc": "ZoneLocName_1413071"
+    }
+  ],
+  "personas": {
+    "EM-INNER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Dwarf_FireSoldier_B_NPC.dds",
+      "template_id": 1413082
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Peace_Pipe",
+    "timestamp": "20240327235744"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Control Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Control Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

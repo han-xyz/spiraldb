@@ -2,11 +2,11 @@
   "id": "EM-Q-153B7F",
   "lang": "153B7F",
   "giver": {
-    "persona": "EM_StandIn_Pork",
+    "persona": "EM-OUTER-NPC02-C",
     "zone": "Empyrea/EM_Z03_OuterAthanor"
   },
   "requires": [
-    "EM-Q-153B79"
+    "EM-Q-153B7A"
   ],
   "mainline": true,
   "level": 112,
@@ -70,9 +70,9 @@
       "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_A_NPC.dds",
       "template_id": 1413076
     },
-    "EM_StandIn_Pork": {
+    "EM-OUTER-NPC02-C": {
       "portrait": "GUI/NpcPortraits/Portrait_Pig_Captain_A_NPC.dds",
-      "template_id": 1397674
+      "template_id": 1391518
     }
   },
   "source": {
@@ -81,11 +81,6 @@
   },
   "needs_review": [
     {
-      "field": "requires",
-      "value": "Cold Storage (Empyrea)",
-      "blocking": false
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Access Tunnel",
       "blocking": false
@@ -93,11 +88,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Cold Storage (Empyrea) replaced by EM-Q-153B79",
       "blocking": false
     }
   ]

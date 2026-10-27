@@ -181,6 +181,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_Aethyrium"
+    },
+    {
       "type": "persona",
       "persona": "EM-ZANA-NPC04",
       "zone": "Empyrea/EM_Z02_Zanadu",
@@ -257,13 +261,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Aethyrium",
-      "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Ben'Jamyn's Mother in the Abandoned House",
+      "field": "goal.persona",
+      "value": "Ben'Jamyn's Mother",
       "blocking": true
     },
     {

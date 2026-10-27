@@ -5,7 +5,9 @@
     "persona": "EM-AERI-NPC05-B",
     "zone": "Empyrea/EM_Z00_Aeriel_HUB"
   },
-  "requires": [],
+  "requires": [
+    "EM-Q-155354"
+  ],
   "mainline": false,
   "level": 112,
   "reward": {
@@ -68,9 +70,8 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "Presporo's Books replaced by min_level",
+      "value": "Presporo's Books replaced by EM-Q-155354",
       "blocking": false
     }
-  ],
-  "min_level": 112
+  ]
 }

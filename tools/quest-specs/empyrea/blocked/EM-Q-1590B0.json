@@ -98,16 +98,9 @@
   },
   "goals": [
     {
-      "type": "bounty",
-      "mobs": [
-        "EM_Robot_Drone_D_01.AdjRef",
-        "EM_Robot_Drone_D_02.AdjRef",
-        "EM_Robot_Drone_D_03.AdjRef"
-      ],
-      "count": 1,
-      "target": "WizardMobs_00003057",
-      "zone": "",
-      "loc": "ZoneLocName_1413254"
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z07_PrivateWing",
+      "loc": "ZoneLocName_1413278"
     },
     {
       "type": "bounty",
@@ -120,6 +113,28 @@
       "target": "WizardMobs_00003057",
       "zone": "",
       "loc": "ZoneLocName_1413254"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z07_PrivateWing",
+      "loc": "ZoneLocName_1413278"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Robot_Drone_D_01.AdjRef",
+        "EM_Robot_Drone_D_02.AdjRef",
+        "EM_Robot_Drone_D_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003057",
+      "zone": "",
+      "loc": "ZoneLocName_1413254"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z07_PrivateWing",
+      "loc": "ZoneLocName_1413278"
     },
     {
       "type": "bounty",
@@ -141,21 +156,6 @@
     {
       "field": "giver",
       "value": "starts automatically",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Private Wing",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Private Wing",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Private Wing",
       "blocking": true
     },
     {

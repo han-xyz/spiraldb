@@ -69,6 +69,11 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z07_PrivateWing",
+      "loc": "ZoneLocName_1413278"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Nimbari_Noble_A_01.AdjRef"
@@ -99,11 +104,6 @@
     "timestamp": "20240328003019"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Private Wing",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

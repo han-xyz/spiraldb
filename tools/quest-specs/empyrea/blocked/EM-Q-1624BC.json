@@ -111,9 +111,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "the Pillar of Light",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter the Pillar of Light",
+      "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",

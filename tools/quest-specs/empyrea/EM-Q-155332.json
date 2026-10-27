@@ -5,7 +5,9 @@
     "persona": "EM-JUNG-NPC03-B",
     "zone": "Empyrea/EM_Z01_Jungle"
   },
-  "requires": [],
+  "requires": [
+    "EM-Q-155331"
+  ],
   "mainline": true,
   "level": 112,
   "reward": {
@@ -43,15 +45,9 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "EM-JUNG-NPC04-B.AdjRef",
-        "EM-JUNG-NPC04-C.AdjRef",
-        "EM-JUNG-NPC04.AdjRef"
-      ],
-      "count": 1,
+      "type": "persona",
+      "persona": "EM-JUNG-NPC04-B",
       "zone": "Empyrea/EM_Z01_Jungle",
-      "descriptor": "NPCs_01748774",
       "loc": "ZoneLocName_1397535"
     },
     {
@@ -80,12 +76,6 @@
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
       "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Khan Found It! replaced by min_level",
-      "blocking": false
     }
-  ],
-  "min_level": 112
+  ]
 }

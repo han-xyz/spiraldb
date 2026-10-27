@@ -87,29 +87,29 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Beast Mountain",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Vine Barrier",
+      "value": "Vine Barrier",
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Beast Mountain",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the Vine Barrier",
+      "value": "Vine Barrier",
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.zone (waypoint left out)",
       "value": "Beast Mountain",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

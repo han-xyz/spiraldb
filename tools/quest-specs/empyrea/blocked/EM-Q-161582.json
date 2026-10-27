@@ -97,6 +97,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
       "type": "persona",
       "persona": "EM-NIMB-NPC01-B",
       "zone": "Empyrea/EM_Z07_NimbusCitadel",
@@ -122,11 +126,6 @@
       "field": "lang",
       "value": "WizQst161582 matched by the words it shares with the goals; its lines name Pork",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "to the Ark in Aeriel Shores",
-      "blocking": true
     },
     {
       "field": "goal.items",

@@ -122,12 +122,32 @@
       "zone": "",
       "descriptor": "WizQst1618DA_00000000",
       "loc": "ZoneLocName_1448066"
+    },
+    {
+      "type": "persona",
+      "persona": "EM-HUSK-NPC01-A",
+      "zone": "Empyrea/EM_Z16_Husk",
+      "loc": "ZoneLocName_1448066",
+      "completion": [
+        {
+          "speaker": "EM-HUSK-NPC01-A",
+          "line": "00000016"
+        },
+        {
+          "speaker": "EM-HUSK-NPC01-A",
+          "line": "00000022"
+        }
+      ]
     }
   ],
   "personas": {
     "EM-CHAOS-NPC05-B": {
       "portrait": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
       "template_id": 1451121
+    },
+    "EM-HUSK-NPC01-A": {
+      "portrait": "GUI/NpcPortraits/Portrait_Tree_BartlebyProjection_A_NPC.dds",
+      "template_id": 1448067
     }
   },
   "source": {
@@ -147,12 +167,7 @@
     },
     {
       "field": "goal.items",
-      "value": "the Paradox",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "to Bartleby",
+      "value": "Paradox",
       "blocking": true
     },
     {

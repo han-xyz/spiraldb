@@ -113,13 +113,17 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z05_Heart"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Cat_CabalistF_A_Boss_01.AdjRef"
       ],
       "count": 1,
       "target": "WizardMobs_00002845",
-      "zone": "",
+      "zone": "Empyrea/Interiors/EM_Z05_Heart",
       "loc": "ZoneLocName_1401191"
     },
     {
@@ -164,17 +168,12 @@
   "needs_review": [
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "Notochord",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
       "value": "Heart Sector",
       "blocking": false
     },
     {
       "field": "goal.zone (waypoint left out)",
-      "value": "The Stomach",
+      "value": "Dynt's Place, The Stomach",
       "blocking": false
     },
     {

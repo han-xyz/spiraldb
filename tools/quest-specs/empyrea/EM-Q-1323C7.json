@@ -1,0 +1,198 @@
+{
+  "id": "EM-Q-1323C7",
+  "lang": "1323C7",
+  "giver": {
+    "persona": "EM-ZANA-NPC01-D",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 159894,
+    "gold": 2630
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000041"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000042"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000044"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000045"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000046"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC13",
+      "zone": "Empyrea/Interiors/EM_Z02_Sewers",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_ChargingStation"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Shadow_Trickster_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002952",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-ShadowWallEmitter.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizItems_00002034",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_Sewers",
+      "loc": "ZoneLocName_1254403"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-BeaconofHope.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "descriptor": "WizItems_00002035",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000050"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC01-D": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_King_A_NPC.dds",
+      "template_id": 1404201
+    },
+    "EM-ZANA-NPC13": {
+      "portrait": "GUI/NpcPortraits/Portrait_Robot_Drone_B_NPC.dds",
+      "template_id": 1254374
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Negative_Reinforcement",
+    "timestamp": "20240327235213"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "A Hazy Cosmic Jive replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 112
+}

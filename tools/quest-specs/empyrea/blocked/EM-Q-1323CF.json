@@ -77,9 +77,14 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB"
+    },
+    {
       "type": "persona",
       "persona": "EM-OUTER-NPC01",
-      "zone": "",
+      "zone": "Empyrea/EM_Z03_OuterAthanor",
+      "loc": "ZoneLocName_1391567",
       "completion": [
         {
           "speaker": "EM-OUTER-NPC01",
@@ -105,23 +110,13 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "to the Ark in Aeriel Shores",
+      "value": "Pod to Outer Athanor",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Pod to Outer Athanor",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "the Pod to Athanor",
-      "blocking": true
-    },
-    {
-      "field": "goal.persona.zone (placed in no zone)",
-      "value": "Sven Icecutter",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Take the Pod to Athanor",
+      "blocking": false
     },
     {
       "field": "dialogs",

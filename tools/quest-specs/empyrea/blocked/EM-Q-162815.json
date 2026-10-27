@@ -65,6 +65,28 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "EM-Pod.AdjRef",
+        "EM-PodArk.AdjRef",
+        "EM-TeleporterHusk.AdjRef",
+        "EM-TeleporterMandalla.AdjRef",
+        "EM-TeleporterNeumia.AdjRef",
+        "EM-TeleporterOuterAthanor.AdjRef",
+        "EM-TeleporterSepidious.AdjRef",
+        "EM-TeleporterZanadu.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "descriptor": "Items_00019958"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z13_SamsaraDestroyed",
+      "loc": "ZoneLocName_1451161",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "EM-AERI-NPC03-B",
       "zone": "Empyrea/EM_Z00_Aeriel_HUB"
@@ -92,17 +114,7 @@
     },
     {
       "field": "goal.items",
-      "value": "(Approach) the Pod to Mandalla",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Use the Pod",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Search for Samsara Village",
+      "value": "Pod to Mandalla",
       "blocking": true
     },
     {

@@ -181,6 +181,11 @@
       "loc": "ZoneLocName_1254355"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_Sewers",
+      "loc": "ZoneLocName_1254403"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Robot_Drone_A_01.AdjRef",
@@ -196,6 +201,11 @@
       "target": "WizardMobs_00002855",
       "zone": "Empyrea/EM_Z02_Zanadu",
       "loc": "ZoneLocName_1254333"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_LeisureDome",
+      "loc": "ZoneLocName_1254361"
     },
     {
       "type": "persona",
@@ -231,18 +241,8 @@
     },
     {
       "field": "goal.items",
-      "value": "to Sewers",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
       "value": "Sewer Main Exit",
       "blocking": true
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Leisure Dome",
-      "blocking": false
     },
     {
       "field": "dialogs",

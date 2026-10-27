@@ -45,27 +45,28 @@
   },
   "goals": [
     {
-      "type": "usage",
-      "items": [
-        "EM-SEP-NPC006.AdjRef"
-      ],
-      "count": 1,
-      "zone": "",
-      "descriptor": "WC-NPCs_00002496"
+      "type": "persona",
+      "persona": "EM_StandIn_Medulla_01",
+      "zone": "Empyrea/Interiors/EM_Z02_BatCave"
     },
     {
-      "type": "usage",
-      "items": [
-        "EM-SEP-NPC007.AdjRef",
-        "EM_StandIn_MedullaChained_01.AdjRef",
-        "EM_StandIn_Medulla_01.AdjRef"
+      "type": "bounty",
+      "mobs": [
+        "EM-ZANA-NPC31.AdjRef",
+        "EM_Brain_Master_A_Boss_01.AdjRef",
+        "EM_Brain_Master_A_Boss_01_Hard.AdjRef"
       ],
       "count": 1,
-      "zone": "",
-      "descriptor": "WC-NPCs_00002497"
+      "target": "WizardMobs_00002774",
+      "zone": ""
     }
   ],
-  "personas": {},
+  "personas": {
+    "EM_StandIn_Medulla_01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Brain_Master_A_MOB.dds",
+      "template_id": 1404180
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Massive_Headache",
     "timestamp": "20240409061220"
@@ -83,7 +84,7 @@
     },
     {
       "field": "goal.mobs",
-      "value": "Medulla (Standard)",
+      "value": "The Quizzler",
       "blocking": true
     },
     {

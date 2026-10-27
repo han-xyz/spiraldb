@@ -1,0 +1,100 @@
+{
+  "id": "EM-Q-1323F8",
+  "lang": "1323F8",
+  "giver": {
+    "persona": "EM-ZANA-NPC19",
+    "zone": "Empyrea/EM_Z02_Zanadu"
+  },
+  "requires": [
+    "EM-Q-1323F3"
+  ],
+  "mainline": false,
+  "level": 112,
+  "reward": {
+    "xp": 0,
+    "gold": 5000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "EM-ZANA-NPC22",
+      "zone": "Empyrea/Interiors/EM_Z02_NuhnesHouse",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "EM_Alphoi_Warrior_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002764",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z02_Zanadu",
+      "loc": "ZoneLocName_1254355"
+    }
+  ],
+  "personas": {
+    "EM-ZANA-NPC19": {
+      "portrait": "GUI/NpcPortraits/Portrait_Alphoi_Merchant_C_NPC.dds",
+      "template_id": 1254388
+    },
+    "EM-ZANA-NPC22": {
+      "portrait": "GUI/NpcPortraits/Portraits_Alphoi_Warrior_A_NPC.dds",
+      "template_id": 1254393
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Reasonable_Reaction",
+    "timestamp": "20231126095126"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Postal Stamping replaced by EM-Q-1323F3",
+      "blocking": false
+    }
+  ]
+}

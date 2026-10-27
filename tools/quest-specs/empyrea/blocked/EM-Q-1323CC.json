@@ -138,7 +138,7 @@
       ],
       "count": 1,
       "target": "WizardMobs_00002811",
-      "zone": "Empyrea/EM_Z02_Zanadu",
+      "zone": "Empyrea/Interiors/EM_Z02_BatCave",
       "loc": "ZoneLocName_1254410"
     },
     {
@@ -170,19 +170,19 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "the Bat's Lair in Zanadu Sewers",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Zanadu Sewers",
+      "blocking": false
     },
     {
       "field": "goal.items",
-      "value": "the West Channel Bulkhead",
+      "value": "West Channel Bulkhead",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Runoff Drain",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Runoff Drain",
+      "blocking": false
     },
     {
       "field": "dialogs",

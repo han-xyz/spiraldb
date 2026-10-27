@@ -80,6 +80,10 @@
       "loc": "ZoneLocName_1413071"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z04_Praesidium"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Elementals_BallLava_A_01.AdjRef",
@@ -89,6 +93,10 @@
       "target": "WizardMobs_00002882",
       "zone": "Empyrea/EM_Z04_InnerAthanor",
       "loc": "ZoneLocName_1413071"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z04_Praesidium"
     },
     {
       "type": "persona",
@@ -112,16 +120,6 @@
     "timestamp": "20231126090128"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Praesidium",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Praesidium",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

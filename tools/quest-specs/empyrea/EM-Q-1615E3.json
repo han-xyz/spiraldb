@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z11_VeloCity"
   },
   "requires": [
-    "EM-Q-161585"
+    "EM-Q-161588"
   ],
   "mainline": false,
   "level": 112,
@@ -79,7 +79,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "When the Whirlyburly's Done replaced by EM-Q-161585",
+      "value": "When the Whirlyburly's Done replaced by EM-Q-161588",
       "blocking": false
     }
   ]

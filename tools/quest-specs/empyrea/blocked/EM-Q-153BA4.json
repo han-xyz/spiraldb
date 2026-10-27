@@ -66,22 +66,22 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "(first) Sconce",
+      "value": "Sconce",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "(second) Sconce",
+      "value": "Sconce",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "(third) Sconce",
+      "value": "Sconce",
       "blocking": true
     },
     {
       "field": "goal.items",
-      "value": "(fourth) Sconce",
+      "value": "Sconce",
       "blocking": true
     },
     {

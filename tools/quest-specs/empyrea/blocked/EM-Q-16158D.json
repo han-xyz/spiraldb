@@ -189,6 +189,11 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z10_PortAero",
+      "loc": "ZoneLocName_1447324"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Robot_Drone_C_01.AdjRef"
@@ -267,11 +272,6 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "to Port Aero",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "First Aero Dwarf House",
       "blocking": false
@@ -287,8 +287,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "your friends in Port Aero",
+      "field": "goal.persona",
+      "value": "your friends",
       "blocking": true
     },
     {
@@ -297,9 +297,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Aeroship to Nimbus",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nimbus",
+      "blocking": false
     },
     {
       "field": "dialogs",

@@ -83,6 +83,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z01_MonkeySpiderNest"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_MonkeySpider_Hunter_D_01.AdjRef"
@@ -134,11 +138,6 @@
     {
       "field": "lang",
       "value": "WizQst1627FA matched by the words it shares with the goals; its lines name The Custodian, Mother Monkey Spider",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Monkey Spider Nest",
       "blocking": false
     },
     {

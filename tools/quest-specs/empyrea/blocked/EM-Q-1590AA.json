@@ -97,19 +97,19 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Military Training Grounds",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Military Training Grounds",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Military Training Grounds",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Military Training Grounds",
+      "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Military Training Grounds",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the Military Training Grounds",
+      "blocking": false
     },
     {
       "field": "dialogs",

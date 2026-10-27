@@ -88,9 +88,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "a Reading (use quest tracker to find)",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Take a Reading (use quest tracker to find)",
+      "blocking": false
     },
     {
       "field": "goal.items",

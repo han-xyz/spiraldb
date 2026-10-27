@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z02_Zanadu"
   },
   "requires": [
-    "EM-Q-1323C2"
+    "EM-Q-1323C3"
   ],
   "mainline": false,
   "level": 112,
@@ -89,11 +89,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Ruumbaya replaced by EM-Q-1323C2",
       "blocking": false
     }
   ]

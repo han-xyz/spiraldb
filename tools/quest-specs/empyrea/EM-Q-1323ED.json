@@ -6,7 +6,7 @@
     "zone": "Empyrea/EM_Z02_Zanadu"
   },
   "requires": [
-    "EM-Q-155335"
+    "EM-Q-1323BF"
   ],
   "mainline": false,
   "level": 112,
@@ -119,11 +119,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Out of His Comfort Zone replaced by EM-Q-155335",
       "blocking": false
     }
   ]

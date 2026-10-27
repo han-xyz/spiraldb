@@ -2,11 +2,11 @@
   "id": "EM-Q-153BCC",
   "lang": "153BCC",
   "giver": {
-    "persona": "EM-OUTER-NPC07",
-    "zone": "Empyrea/Interiors/EM_Z03_IceCouncilChamber"
+    "persona": "EM-OUTER-NPC07-B",
+    "zone": "Empyrea/Interiors/EM_Z03_IceGreatHall"
   },
   "requires": [
-    "EM-Q-158FE1"
+    "EM-Q-153BC7"
   ],
   "mainline": true,
   "level": 112,
@@ -135,9 +135,9 @@
       "portrait": "GUI/NpcPortraits/Dwarf_FireCitizenF_D_NPC.dds",
       "template_id": 1391566
     },
-    "EM-OUTER-NPC07": {
+    "EM-OUTER-NPC07-B": {
       "portrait": "GUI/NpcPortraits/Dwarf_IceCouncilor_D_NPC.dds",
-      "template_id": 1391500
+      "template_id": 1391504
     }
   },
   "source": {
@@ -158,11 +158,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Bunker Busters replaced by EM-Q-158FE1",
       "blocking": false
     }
   ]

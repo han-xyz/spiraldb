@@ -79,7 +79,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "the Disguised Pod",
+      "value": "Disguised Pod",
       "blocking": true
     },
     {

@@ -56,6 +56,11 @@
       "blocking": true
     },
     {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Humongishfrog Battlefield: Empyrea/Interiors/EM_Z09_HumongishfrogBattlefield",
+      "blocking": false
+    },
+    {
       "field": "goal.zone (waypoint left out)",
       "value": "Humongishfrog Battlefield",
       "blocking": false

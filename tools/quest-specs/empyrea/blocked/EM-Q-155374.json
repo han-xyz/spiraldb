@@ -48,6 +48,11 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Beastman_Warrior_D_01.AdjRef",
@@ -87,12 +92,7 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "the Hollow Deck in Aeriel Jungle",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
+      "field": "goal.persona",
       "value": "Trinculo",
       "blocking": true
     },

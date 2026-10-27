@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/Em_Z13_PossessedShrine"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Kalamar_ElderF_B_01.AdjRef"
@@ -86,11 +90,6 @@
     "timestamp": "20240328002917"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Possessed Shrine",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

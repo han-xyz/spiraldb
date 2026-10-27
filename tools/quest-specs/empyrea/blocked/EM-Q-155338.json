@@ -70,17 +70,6 @@
       "loc": "ZoneLocName_1397535"
     },
     {
-      "type": "usage",
-      "items": [
-        "EM-Incantation.AdjRef",
-        "EM-IncantationRecited.AdjRef"
-      ],
-      "count": 1,
-      "zone": "Empyrea/EM_Z01_Jungle",
-      "descriptor": "WizardQuestGoals_00000557",
-      "loc": "ZoneLocName_1397535"
-    },
-    {
       "type": "persona",
       "persona": "giver",
       "zone": "Empyrea/EM_Z01_Jungle",
@@ -105,8 +94,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "the Cave of Sycorax",
+      "field": "goal.zone (waypoint left out)",
+      "value": "Cave of Sycorax",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Incantation",
       "blocking": true
     },
     {

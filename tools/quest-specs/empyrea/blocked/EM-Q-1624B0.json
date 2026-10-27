@@ -50,6 +50,11 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z12_DyingJungle",
+      "loc": "ZoneLocName_1451180"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Empyrea/Interiors/EM_Z12_DyingJungle",
@@ -69,12 +74,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "the Gulmohar Tree Fruit in the Dying Glade",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "to the Dying Jungle",
+      "value": "Gulmohar Tree Fruit in the Dying Glade",
       "blocking": true
     },
     {

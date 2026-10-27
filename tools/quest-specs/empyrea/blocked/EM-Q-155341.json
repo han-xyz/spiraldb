@@ -150,7 +150,7 @@
   "needs_review": [
     {
       "field": "goal.items",
-      "value": "the Pod to Zanadu",
+      "value": "Pod to Zanadu",
       "blocking": true
     },
     {

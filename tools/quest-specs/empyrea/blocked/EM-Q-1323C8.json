@@ -49,6 +49,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_ChargingStation"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "EM_Robot_Drone_A_Boss_01.AdjRef",
@@ -82,14 +86,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "the Charging Station",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "for the Negativity Transmutator",
-      "blocking": true
+      "field": "goal.zone (waypoint left out)",
+      "value": "Search for the Negativity Transmutator",
+      "blocking": false
     },
     {
       "field": "dialogs",

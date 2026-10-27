@@ -1,0 +1,101 @@
+{
+  "id": "EM-Q-155329",
+  "lang": "155329",
+  "giver": {
+    "persona": "EM-JUNG-NPC01",
+    "zone": "Empyrea/EM_Z01_Jungle"
+  },
+  "requires": [
+    "EM-Q-155354"
+  ],
+  "mainline": true,
+  "level": 112,
+  "reward": {
+    "xp": 435657,
+    "gold": 2040
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "EM_Kalamar_Raider_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00002695",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "EM-RaiderHorn.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "descriptor": "WizardQuestGoals_00000551",
+      "loc": "ZoneLocName_1397535"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Empyrea/EM_Z01_Jungle",
+      "loc": "ZoneLocName_1397535"
+    }
+  ],
+  "personas": {
+    "EM-JUNG-NPC01": {
+      "portrait": "GUI/NpcPortraits/Beastman_WarriorF_B_NPC.dds",
+      "template_id": 1397538
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Raiders_Raided",
+    "timestamp": "20240327235018"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "the Key",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Secret Tunnel",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
