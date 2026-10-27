@@ -1,0 +1,215 @@
+{
+  "id": "KM-Q-16FCE5",
+  "lang": "16FCE5",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [],
+  "min_level": 122,
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 123586,
+    "gold": 1200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000035"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_KM_Trash_Booger_A_01.AdjRef",
+        "Adv_KM_Trash_Booger_A_02.AdjRef",
+        "Adv_KM_Trash_Booger_A_03.AdjRef",
+        "Adv_KM_Trash_Booger_A_04.AdjRef",
+        "Adv_KM_Trash_Booger_A_05.AdjRef",
+        "Adv_KM_Trash_Booger_A_06.AdjRef",
+        "Adv_KM_Trash_Booger_A_07.AdjRef",
+        "Adv_KM_Trash_Booger_A_08.AdjRef",
+        "KM_Trash_Booger_A_01.AdjRef",
+        "KM_Trash_Booger_A_02.AdjRef",
+        "KM_Trash_Booger_A_03.AdjRef",
+        "KM_Trash_Booger_A_04.AdjRef",
+        "KM_Trash_Booger_A_05.AdjRef",
+        "KM_Trash_Booger_A_06.AdjRef",
+        "KM_Trash_Booger_A_07.AdjRef",
+        "KM_Trash_Booger_A_08.AdjRef",
+        "KM_Trash_Booger_A_09.AdjRef",
+        "KM_Trash_Booger_A_10.AdjRef",
+        "KM_Trash_Booger_A_11.AdjRef",
+        "KM_Trash_Booger_A_12.AdjRef",
+        "KM_Trash_Booger_A_13.AdjRef",
+        "KM_Trash_Booger_A_14.AdjRef",
+        "KM_Trash_Booger_A_15.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003756",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gobbsmacked!",
+    "timestamp": "20240322071118"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCE5 matched by the words it shares with the goals; its lines name King Gobbsmack, Alphoi Relics",
+      "blocking": false
+    },
+    {
+      "field": "requires",
+      "value": "Mmmmm, Knowledge",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "to Castle Gobbsmack",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "audience with King Gobbsmack in Castle Gobbsmack Throne Room",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Hoard for Alphoi Relics",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

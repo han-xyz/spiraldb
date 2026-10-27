@@ -1,0 +1,142 @@
+{
+  "id": "KM-Q-17168E",
+  "lang": "17168E",
+  "giver": {
+    "persona": "KM-FARM-NPC01-B",
+    "zone": "Karamelle/KM_Z09_CandyCornFarm"
+  },
+  "requires": [
+    "KM-Q-171686"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 176553,
+    "gold": 1460
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gummy_BearHat_A_01.AdjRef",
+        "KM_Gummy_BearHat_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003702",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    }
+  ],
+  "personas": {
+    "KM-FARM-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513095
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Words_of_Power",
+    "timestamp": "20240322074915"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Factory Floor",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance Gummy Vats",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Barn Division",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance Molds",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

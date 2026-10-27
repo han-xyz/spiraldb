@@ -1,0 +1,151 @@
+{
+  "id": "KM-Q-170A8E",
+  "lang": "170A8E",
+  "giver": {
+    "persona": "KM-KCITY-NPC01-B",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [
+    "KM-Q-170A8D"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 123586,
+    "gold": 1225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KM-KCITY-NPC04-B.AdjRef",
+        "KM-KCITY-NPC04-C.AdjRef",
+        "KM-KCITY-NPC04-D.AdjRef",
+        "KM-KCITY-NPC04.AdjRef",
+        "KM_StandIn_GrandNana-B.AdjRef",
+        "KM_StandIn_GrandNana-C.AdjRef",
+        "KM_StandIn_GrandNana.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z00_HUB",
+      "descriptor": "NPCs_01748996",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC08",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1510011
+    },
+    "KM-KCITY-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1510023
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Ultimate_Mystery",
+    "timestamp": "20240322075012"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Strange Noise",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Strange Noise",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Executive Dining",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nana's Office",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

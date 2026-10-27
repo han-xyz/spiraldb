@@ -1,0 +1,75 @@
+{
+  "id": "KM-Q-kingsizedconundrum",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [],
+  "min_level": 122,
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 123586,
+    "gold": 1200
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gobbler_Guard_B_01.AdjRef",
+        "KM_Gobbler_Guard_B_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003708",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:King_Sized_Conundrum",
+    "timestamp": "20240322074914"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "King Sized Conundrum",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "You Are What You Gobble",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Castle Guards",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "up with Rosina in Castle Gobbsmack Throne Room",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "audience with King Gobbsmack",
+      "blocking": true
+    }
+  ]
+}

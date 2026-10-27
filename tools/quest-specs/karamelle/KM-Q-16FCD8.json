@@ -1,0 +1,150 @@
+{
+  "id": "KM-Q-16FCD8",
+  "lang": "16FCD8",
+  "giver": {
+    "persona": "KM-NIBB-NPC08",
+    "zone": "Karamelle/KM_Z05_Nibbleheim"
+  },
+  "requires": [
+    "KM-Q-16FCD6"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 12250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-ESTATE-NPC08",
+      "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_WizardF_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003728",
+      "zone": "",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM_Kroknom-nomicon.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000933",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-ESTATE-NPC08",
+      "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02",
+      "loc": "ZoneLocName_1506597"
+    }
+  ],
+  "personas": {
+    "KM-ESTATE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1513159
+    },
+    "KM-NIBB-NPC08": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",
+      "template_id": 1506493
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Karma_Karamellion",
+    "timestamp": "20240322074522"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Orson's Office",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

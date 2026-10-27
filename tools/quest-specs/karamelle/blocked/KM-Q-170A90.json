@@ -1,0 +1,62 @@
+{
+  "id": "KM-Q-170A90",
+  "lang": "170A90",
+  "requires": [
+    "KM-Q-170A8E"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 61793,
+    "gold": 605
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:...And_They_Is_Us!",
+    "timestamp": "20250916123031"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "for Grand Nana",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "The Divine Paradox",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Search for [NPC:Grand Nana]",
+        "@Defeat [Creature:The Divine Paradox]"
+      ],
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

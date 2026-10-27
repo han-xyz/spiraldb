@@ -1,0 +1,143 @@
+{
+  "id": "KM-Q-16B549",
+  "lang": "16B549",
+  "giver": {
+    "persona": "KM-BLACK-NPC10",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 158897,
+    "gold": 1325
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Ram_Candied_A_01.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00003662",
+      "zone": "",
+      "loc": "ZoneLocName_1488188"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gummy_Worm_A_01.AdjRef",
+        "KM_Gummy_Worm_A_02.AdjRef",
+        "KM_Gummy_Worm_B_01.AdjRef",
+        "KM_Gummy_Worm_B_02.AdjRef",
+        "KM_Gummy_Worm_C_01.AdjRef",
+        "KM_Gummy_Worm_C_02.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00003663",
+      "zone": "",
+      "loc": "ZoneLocName_1488188"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC02-B",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1513116
+    },
+    "KM-KCITY-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
+      "template_id": 1510012
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Candy_Crushing",
+    "timestamp": "20240322062208"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Mining Camp",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Monsters Cabal replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 122
+}

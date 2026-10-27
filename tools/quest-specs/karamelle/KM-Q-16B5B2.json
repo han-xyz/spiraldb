@@ -1,0 +1,99 @@
+{
+  "id": "KM-Q-16B5B2",
+  "lang": "16B5B2",
+  "giver": {
+    "persona": "KM-GUTEN-NPC11",
+    "zone": "Karamelle/KM_Z07_Gutenstadt"
+  },
+  "requires": [
+    "KM-Q-16B549",
+    "KM-Q-16B5A1"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 3800
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-GUTEN-NPC12",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GUTEN-NPC12",
+      "zone": "Karamelle/KM_Z07_Gutenstadt",
+      "loc": "ZoneLocName_1488224"
+    }
+  ],
+  "personas": {
+    "KM-GUTEN-NPC11": {
+      "portrait": "GUI/NpcPortraits/Hamster_Beggar_A_NPC.dds",
+      "template_id": 1488307
+    },
+    "KM-GUTEN-NPC12": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1488308
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Guten-Free",
+    "timestamp": "20240322072810"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Hightails from the Crypt replaced by KM-Q-16B549",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "KM-Q-170A93",
+  "lang": "170A93",
+  "giver": {
+    "persona": "KM-KCITY-NPC02-B",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [
+    "KM-Q-170A77"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 167725,
+    "gold": 1385
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC01-B",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-Accompany-Maulwurf-ENC.AdjRef",
+        "KM-Accompany-Maulwurf.AdjRef",
+        "KM-BLACK-NPC10.AdjRef",
+        "KM-ESTATE-NPC06-B.AdjRef",
+        "KM-ESTATE-NPC06.AdjRef",
+        "KM-GUTEN-NPC05-C.AdjRef",
+        "KM-GUTEN-NPC05.AdjRef",
+        "KM-KCITY-NPC01-B.AdjRef",
+        "KM-KCITY-NPC01-C.AdjRef",
+        "KM-KCITY-NPC01-D.AdjRef",
+        "KM-KCITY-NPC01-E.AdjRef",
+        "KM-KCITY-NPC01-F.AdjRef",
+        "KM-KCITY-NPC01-G.AdjRef",
+        "KM-KCITY-NPC01-H.AdjRef",
+        "KM-KCITY-NPC01-J.AdjRef",
+        "KM-KCITY-NPC01-K.AdjRef",
+        "KM-KCITY-NPC01.AdjRef",
+        "KM-NIBB-NPC06-B.AdjRef",
+        "KM-NIBB-NPC06.AdjRef",
+        "KM-RCM-NPC01-B.AdjRef",
+        "KM-RCM-NPC01.AdjRef",
+        "KM_StandIn_Maulwurf-B.AdjRef",
+        "KM_StandIn_Maulwurf-C.AdjRef",
+        "KM_StandIn_Maulwurf-D.AdjRef",
+        "KM_StandIn_Maulwurf.AdjRef",
+        "KM_StandIn_Maulwurf_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z00_HUB",
+      "descriptor": "NPCs_01748992",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC01-B",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1510011
+    },
+    "KM-KCITY-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
+      "template_id": 1510012
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Monsters_Cabal",
+    "timestamp": "20240322062113"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Gondola to von Trap Estate",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Summit",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the Summit",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "the Old One's hand",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "up to Maulwurf von Trap in Rock Candy Mountains",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

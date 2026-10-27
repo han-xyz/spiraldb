@@ -1,0 +1,157 @@
+{
+  "id": "KM-Q-17169B",
+  "lang": "17169B",
+  "giver": {
+    "persona": "KM-BLACK-NPC10",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
+  },
+  "requires": [
+    "KM-Q-1716BC"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 141242,
+    "gold": 1225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "Adv_KM_Kangaroo_Cabal_A_01.AdjRef",
+        "KM_Kangaroo_Cabal_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003706",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-Cage-Greta.AdjRef",
+        "KM-Cage-Gustav.AdjRef",
+        "KM-Cage-Hans.AdjRef",
+        "KM-Cage-Rosina.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "descriptor": "NPCs_01749056",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC11-B",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1513116
+    },
+    "KM-BLACK-NPC11-B": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1513122
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Screams_in_the_Witch-House",
+    "timestamp": "20250624210359"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Rosina's House",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Outside",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

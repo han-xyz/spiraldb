@@ -1,0 +1,143 @@
+{
+  "id": "KM-Q-171694",
+  "lang": "171694",
+  "giver": {
+    "persona": "KM-BLACK-NPC06",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
+  },
+  "requires": [
+    "KM-Q-171690"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 141242,
+    "gold": 1225
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Hamster_GrandF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_01.AdjRef",
+        "KM_Hamster_ImperfectF_A_02.AdjRef",
+        "KM_Hamster_ImperfectF_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003656",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-Gummy-SherryShack.AdjRef",
+        "KM-Gummy-Warehouse.AdjRef",
+        "KM-UnsweetenedGummies01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "descriptor": "Items_00021783",
+      "loc": "ZoneLocName_1513103"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC06": {
+      "portrait": "GUI/NpcPortraits/Fairy_BakerF_A_NPC.dds",
+      "template_id": 1513076
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sugar_Plum_Rotten",
+    "timestamp": "20250910163732"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst171694 matched by the words it shares with the goals; its lines name Sugar Plum Sherry, Nana",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Logging Camp",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Logging Camp Warehouse",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

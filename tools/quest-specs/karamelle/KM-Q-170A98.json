@@ -1,0 +1,119 @@
+{
+  "id": "KM-Q-170A98",
+  "lang": "170A98",
+  "giver": {
+    "persona": "KM-KCITY-NPC11",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [
+    "KM-Q-16B549"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 10200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC02-B",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KM_Marshmallow_Critter_A_01.AdjRef",
+        "KM_Marshmallow_Critter_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003674",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "descriptor": "WizQst170A98_00000012",
+      "loc": "ZoneLocName_1510006"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC02-B",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006",
+      "completion": [
+        {
+          "speaker": "KM-KCITY-NPC02-B",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Hamster_Mayor_A_NPC.dds",
+      "template_id": 1510012
+    },
+    "KM-KCITY-NPC11": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1510041
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Good_Will_Stunting",
+    "timestamp": "20240322072422"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

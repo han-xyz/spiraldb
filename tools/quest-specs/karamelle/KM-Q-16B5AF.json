@@ -1,0 +1,115 @@
+{
+  "id": "KM-Q-16B5AF",
+  "lang": "16B5AF",
+  "giver": {
+    "persona": "KM-BLACK-NPC09",
+    "zone": "Karamelle/KM_Z08_LicoriceForest"
+  },
+  "requires": [
+    "KM-Q-16B559"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 7950
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gnome_Burglar_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003730",
+      "zone": "",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC09": {
+      "portrait": "GUI/NpcPortraits/Portrait_Hamster_ImperfectF_A_NPC.dds",
+      "template_id": 1513110
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Robber,_Robber",
+    "timestamp": "20250827111953"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Jamburglar's Hideout",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Holey Factory Floor! replaced by KM-Q-16B559",
+      "blocking": false
+    }
+  ]
+}

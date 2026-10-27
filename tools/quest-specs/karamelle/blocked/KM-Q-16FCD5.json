@@ -1,0 +1,113 @@
+{
+  "id": "KM-Q-16FCD5",
+  "lang": "16FCD5",
+  "giver": {
+    "persona": "KM-NIBB-NPC12",
+    "zone": "Karamelle/Interiors/KM_Z05_TreacleFoundry"
+  },
+  "requires": [
+    "KM-Q-16FCD4"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 10450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KM-KCITY-NPC02-B.AdjRef",
+        "KM-KCITY-NPC02-C.AdjRef",
+        "KM-KCITY-NPC02.AdjRef",
+        "KM-NIBB-NPC10.AdjRef",
+        "KM-StandIn-Burgomaster.AdjRef",
+        "KM-StandIn-Burgomaster_02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01748994",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "KM_Gummy_Bunny_A_01.AdjRef",
+        "KM_Gummy_Bunny_B_01.AdjRef",
+        "KM_Gummy_Bunny_C_01.AdjRef",
+        "KM_Gummy_Bunny_D_01.AdjRef",
+        "KM_Gummy_Bunny_E_01.AdjRef",
+        "KM_Gummy_Bunny_F_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003679",
+      "zone": "",
+      "descriptor": "WizQst16FCD5_00000005",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-MINES-NPC03",
+      "zone": "",
+      "completion": [
+        {
+          "speaker": "KM-MINES-NPC03",
+          "line": "00000004"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "KM-MINES-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Miner_B_NPC.dds",
+      "template_id": 1506596
+    },
+    "KM-NIBB-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Foundry_A_NPC.dds",
+      "template_id": 1506497
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Burgo-Disaster",
+    "timestamp": "20240322072656"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCD5 matched by the words it shares with the goals; its lines name none of the page's names",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Jurgen",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

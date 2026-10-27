@@ -1,0 +1,85 @@
+{
+  "id": "KM-Q-170A8D",
+  "lang": "170A8D",
+  "giver": {
+    "persona": "KM-KCITY-NPC01-B",
+    "zone": "Karamelle/KM_Z00_HUB"
+  },
+  "requires": [
+    "KM-Q-170A8C"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 88276,
+    "gold": 795
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z00_HUB",
+      "loc": "ZoneLocName_1510006"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1510011
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Into_the_Unknown",
+    "timestamp": "20240322074810"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "(complete instance quest)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Defeat Aberration",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

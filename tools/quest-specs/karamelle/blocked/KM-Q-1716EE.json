@@ -1,0 +1,72 @@
+{
+  "id": "KM-Q-1716EE",
+  "lang": "1716EE",
+  "giver": {
+    "persona": "KM-FARM-NPC02",
+    "zone": "Karamelle/KM_Z09_CandyCornFarm"
+  },
+  "requires": [
+    "KM-Q-171684"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 4050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    }
+  ],
+  "personas": {
+    "KM-FARM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Fairy_FarmerF_A_NPC.dds",
+      "template_id": 1513080
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cotton_Candy_for_the_Soul",
+    "timestamp": "20240409061135"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Cotton Candy Garden",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

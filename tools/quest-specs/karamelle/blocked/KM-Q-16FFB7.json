@@ -1,0 +1,193 @@
+{
+  "id": "KM-Q-16FFB7",
+  "lang": "16FFB7",
+  "giver": {
+    "persona": "KM-BLACK-NPC01-B",
+    "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse"
+  },
+  "requires": [
+    "KM-Q-16FCCB"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 123586,
+    "gold": 1200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Fairy_AlchemistF_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003684",
+      "zone": "",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-ESTATE-NPC08.AdjRef",
+        "KM-KCITY-NPC22.AdjRef",
+        "KM-NIBB-NPC04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "NPCs_01749064",
+      "loc": "ZoneLocName_1506597"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/Interiors/KM_Z08_RosinasHouse",
+      "loc": "ZoneLocName_1506597"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_WorkerF_A_NPC.dds",
+      "template_id": 1513114
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cursed-Case_Scenario",
+    "timestamp": "20250623214253"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FFB7 matched by the words it shares with the goals; its lines name Greta, Witches, Blair, Orson",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Pet Mode to follow Witches' trail",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "for Witches in Witch Tunnel",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Greta's Protest",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

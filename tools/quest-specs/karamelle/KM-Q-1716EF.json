@@ -1,0 +1,164 @@
+{
+  "id": "KM-Q-1716EF",
+  "lang": "1716EF",
+  "giver": {
+    "persona": "KM-FARM-NPC02",
+    "zone": "Karamelle/KM_Z09_CandyCornFarm"
+  },
+  "requires": [
+    "KM-Q-171641"
+  ],
+  "mainline": false,
+  "level": 122,
+  "reward": {
+    "xp": 0,
+    "gold": 26250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Ram_Sour_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003700",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Ram_Sour_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003733",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_StandIn_CinnamonTroll_01.AdjRef",
+        "KM_Troll_Sweets_A_01.AdjRef",
+        "KM_Troll_Sweets_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003676",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "KM-BLACK-NPC13.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "descriptor": "NPCs_01749080",
+      "loc": "ZoneLocName_1510005"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z09_CandyCornFarm",
+      "loc": "ZoneLocName_1510005"
+    }
+  ],
+  "personas": {
+    "KM-FARM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Fairy_FarmerF_A_NPC.dds",
+      "template_id": 1513080
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:We_All_Goat_Down_Here",
+    "timestamp": "20240322074526"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Black Licorice Cave",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Cinnamon Troll Cave",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Cotton Candy for the Soul replaced by KM-Q-171641",
+      "blocking": false
+    }
+  ]
+}

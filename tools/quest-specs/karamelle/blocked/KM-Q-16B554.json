@@ -1,0 +1,178 @@
+{
+  "id": "KM-Q-16B554",
+  "lang": "16B554",
+  "giver": {
+    "persona": "KM-KCITY-NPC21",
+    "zone": "Karamelle/Interiors/KM_Z00_NanasHQ"
+  },
+  "requires": [
+    "KM-Q-16B550"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185380,
+    "gold": 1510
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "KM-SWEET-NPC02-B",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-SWEET-NPC02-B",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-SWEET-NPC02-B",
+      "zone": "Karamelle/KM_Z04_Sweetzburg",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-KCITY-NPC17",
+      "zone": "Karamelle/Interiors/KM_Z00_CavityDining",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/Interiors/KM_Z00_NanasHQ",
+      "loc": "ZoneLocName_1488252"
+    }
+  ],
+  "personas": {
+    "KM-KCITY-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Miner_A_NPC.dds",
+      "template_id": 1513260
+    },
+    "KM-KCITY-NPC21": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Foreman_A_NPC.dds",
+      "template_id": 1513270
+    },
+    "KM-SWEET-NPC02-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gnome_Worker_B_NPC.dds",
+      "template_id": 1488214
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Witching_Scour",
+    "timestamp": "20250615161418"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nana's Ice Cream Parlor",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs",
+      "value": "The Weird Sisters",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Sweetzburg Square",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

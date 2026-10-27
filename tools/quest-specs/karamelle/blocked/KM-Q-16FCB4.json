@@ -1,0 +1,148 @@
+{
+  "id": "KM-Q-16FCB4",
+  "lang": "16FCB4",
+  "giver": {
+    "persona": "KM-ESTATE-NPC08",
+    "zone": "Karamelle/Interiors/KM_Z01_VonTrapLodge_02"
+  },
+  "requires": [
+    "KM-Q-16FCAE"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 105931,
+    "gold": 970
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Player_Cabal_A_01.AdjRef",
+        "KM_Player_Cabal_A_02.AdjRef",
+        "KM_Player_Cabal_A_03.AdjRef",
+        "KM_Player_Cabal_A_04.AdjRef",
+        "KM_Player_Cabal_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003671",
+      "zone": "",
+      "loc": "ZoneLocName_1506578"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-BLACK-NPC10",
+      "zone": "Karamelle/KM_Z08_LicoriceForest",
+      "loc": "ZoneLocName_1513103"
+    }
+  ],
+  "personas": {
+    "KM-BLACK-NPC10": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
+      "template_id": 1513116
+    },
+    "KM-ESTATE-NPC08": {
+      "portrait": "GUI/NpcPortraits/Hamster_Ambassador_A_NPC.dds",
+      "template_id": 1513159
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Foundry_Most_Foul",
+    "timestamp": "20250907195152"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCB4 matched by the words it shares with the goals; its lines name Maulwurf von Trap",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "for a Way into the Mines",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Toffee House",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

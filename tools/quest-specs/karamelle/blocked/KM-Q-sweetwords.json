@@ -1,0 +1,96 @@
+{
+  "id": "KM-Q-sweetwords",
+  "requires": [
+    "KM-Q-16B559"
+  ],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 185379,
+    "gold": 1755
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Gnome_Worker_A_01.AdjRef",
+        "KM_Gnome_Worker_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003670",
+      "zone": "",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "KM_Player_Cabal_A_01.AdjRef",
+        "KM_Player_Cabal_A_02.AdjRef",
+        "KM_Player_Cabal_A_03.AdjRef",
+        "KM_Player_Cabal_A_04.AdjRef",
+        "KM_Player_Cabal_A_05.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003671",
+      "zone": "",
+      "loc": "ZoneLocName_1488252"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "DM-GRAVE-NPC45A.AdjRef",
+        "NV_Chicken_Miner_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004154",
+      "zone": "",
+      "loc": "ZoneLocName_1488252"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sweet_Words",
+    "timestamp": "20240322063550"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Sweet Words",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Les Bon-Bon Mots",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Les Bon-Bon Mots",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Les Bon-Bon Mots",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "The Quake Charmer: ObjectData/DM",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "The Quake Charmer: ObjectData/NV",
+      "blocking": false
+    }
+  ]
+}

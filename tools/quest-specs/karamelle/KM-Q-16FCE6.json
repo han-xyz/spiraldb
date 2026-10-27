@@ -1,0 +1,200 @@
+{
+  "id": "KM-Q-16FCE6",
+  "lang": "16FCE6",
+  "giver": {
+    "persona": "KM-GOBB-NPC01",
+    "zone": "Karamelle/KM_Z10_Gobblerton"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 122,
+  "reward": {
+    "xp": 167726,
+    "gold": 1160
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "KM_HoloDisk_02.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "descriptor": "WizardGameObjects_00000927",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC15",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC16",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "KM-GOBB-NPC17",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Karamelle/KM_Z10_Gobblerton",
+      "loc": "ZoneLocName_1487147"
+    }
+  ],
+  "personas": {
+    "KM-GOBB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Alphoi_WitchF_A_NPC.dds",
+      "template_id": 1487149
+    },
+    "KM-GOBB-NPC15": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_Skinny_A_NPC.dds",
+      "template_id": 1506529
+    },
+    "KM-GOBB-NPC16": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_Skinny_A_NPC.dds",
+      "template_id": 1506530
+    },
+    "KM-GOBB-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Gobbler_Skinny_A_NPC.dds",
+      "template_id": 1506531
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Nothingburger_Extra_Cheese",
+    "timestamp": "20240322071510"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst16FCE6 by the proper nouns its lines share with the page (Alphoi, Gobbler, Relic), within 16 of a key of the zone's quests; next best WizQst16FCD9 with 0",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Gobbsmacked! replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 122
+}
