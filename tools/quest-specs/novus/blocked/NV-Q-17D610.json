@@ -144,8 +144,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Plants",
+      "field": "goal.waypoint",
+      "value": "Investigate the Plants",
       "blocking": true
     },
     {

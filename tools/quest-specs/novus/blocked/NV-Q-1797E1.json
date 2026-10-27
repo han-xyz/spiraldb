@@ -124,8 +124,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Fuss",
+      "field": "goal.waypoint",
+      "value": "Investigate Fuss",
       "blocking": true
     },
     {

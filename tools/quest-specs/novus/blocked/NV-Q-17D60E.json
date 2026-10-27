@@ -177,13 +177,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Trail of Cogs & Gears",
+      "field": "goal.persona",
+      "value": "Follow the Trail of Cogs & Gears",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Lost Surveyor",
+      "field": "goal.waypoint",
+      "value": "Find the Lost Surveyor",
       "blocking": true
     },
     {

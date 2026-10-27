@@ -81,6 +81,12 @@
   },
   "goals": [
     {
+      "type": "persona",
+      "persona": "NV-StandIn-Dasein_v3",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
       "type": "usage",
       "items": [
         "NV-FrameOfMind.AdjRef",
@@ -117,11 +123,6 @@
     "timestamp": "20250915112824"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Nobles to Dasein",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

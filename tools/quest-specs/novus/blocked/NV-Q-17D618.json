@@ -120,8 +120,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Phollicle Phoenix Nests",
+      "field": "goal.usage",
+      "value": "Destroy Phollicle Phoenix Nests",
       "blocking": true
     },
     {

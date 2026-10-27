@@ -101,6 +101,12 @@
   },
   "goals": [
     {
+      "type": "persona",
+      "persona": "NV-StandIn-Dasein_v3",
+      "zone": "Novus/NV_Z01_Conatus",
+      "loc": "ZoneLocName_1546265"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Player_Cabal_C_01.AdjRef",
@@ -130,6 +136,10 @@
     "NV-PUERT-NPC14": {
       "portrait": "GUI/NpcPortraits/Portrait_Unicorn_Prince_A_NPC.dds",
       "template_id": 1562164
+    },
+    "NV-StandIn-Dasein_v3": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "template_id": 1624005
     }
   },
   "source": {
@@ -140,13 +150,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Mario to Dasein",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Cabal Goons",
+      "field": "goal.waypoint",
+      "value": "Find the Cabal Goons",
       "blocking": true
     },
     {

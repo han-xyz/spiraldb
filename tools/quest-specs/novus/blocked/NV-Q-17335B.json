@@ -165,8 +165,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Maxine to Nouveau Basstille",
+      "field": "goal.waypoint",
+      "value": "Follow Maxine to Nouveau Basstille",
       "blocking": true
     },
     {
@@ -175,8 +175,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Earthquake",
+      "field": "goal.waypoint",
+      "value": "Investigate the Earthquake",
       "blocking": true
     },
     {

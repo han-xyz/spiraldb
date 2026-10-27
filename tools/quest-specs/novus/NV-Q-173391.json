@@ -109,6 +109,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Novus/Interiors/NV_Z05_MaxineOffice"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "NV_Penguin_MaxineF_A_01.AdjRef"
@@ -166,11 +170,6 @@
     "licence_url": "https://www.fandom.com/licensing"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Go To Maxine's Office",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

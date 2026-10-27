@@ -175,18 +175,18 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Photo in New Vicorgia",
+      "field": "goal.usage",
+      "value": "Press Z to Photomance a Photo in New Vicorgia",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Few Steps Back",
+      "field": "goal.persona",
+      "value": "Take a Few Steps Back",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Few More Steps Back",
+      "field": "goal.persona",
+      "value": "Take a Few More Steps Back",
       "blocking": true
     },
     {
@@ -195,8 +195,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Juuuust a Few More Steps Back",
+      "field": "goal.persona",
+      "value": "Take Juuuust a Few More Steps Back",
       "blocking": true
     },
     {

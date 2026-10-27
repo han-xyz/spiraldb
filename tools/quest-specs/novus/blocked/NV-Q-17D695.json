@@ -94,13 +94,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Phollicle Phoenix Nests",
+      "field": "goal.waypoint",
+      "value": "Find Phollicle Phoenix Nests",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Phollicle Phoenix Nests",
+      "field": "goal.waypoint",
+      "value": "Find Phollicle Phoenix Nests",
       "blocking": true
     },
     {

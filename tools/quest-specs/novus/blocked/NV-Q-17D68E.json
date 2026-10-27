@@ -71,13 +71,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Door to the Clockwork Surveyor",
+      "field": "goal.waypoint",
+      "value": "Find the Door to the Clockwork Surveyor",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Correct Door",
+      "field": "goal.unknown-verb",
+      "value": "Choose the Correct Door",
       "blocking": true
     },
     {

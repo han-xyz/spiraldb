@@ -6,7 +6,7 @@
     "zone": "Novus/Interiors/NV_Z01_ConferenceTent"
   },
   "requires": [
-    "NV-Q-17D61B"
+    "NV-Q-17D61C"
   ],
   "mainline": true,
   "level": 142,
@@ -162,11 +162,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "A Challenging Challenge replaced by NV-Q-17D61B",
       "blocking": false
     }
   ]

@@ -102,8 +102,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Manticore's Plan",
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Manticore's Plan: Novus/Interiors/NV_Z06_ManticoresPlan",
+      "blocking": false
+    },
+    {
+      "field": "goal.unknown-verb",
+      "value": "Judge The Manticore's Plan",
       "blocking": true
     },
     {

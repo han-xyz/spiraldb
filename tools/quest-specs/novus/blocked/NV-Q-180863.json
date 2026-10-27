@@ -266,18 +266,18 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Duel",
+      "field": "goal.unknown-verb",
+      "value": "Prevent a Duel",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Duel",
+      "field": "goal.unknown-verb",
+      "value": "Stop the Duel",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Delegates",
+      "field": "goal.persona",
+      "value": "Follow the Delegates (outside)",
       "blocking": true
     },
     {

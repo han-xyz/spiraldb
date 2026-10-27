@@ -117,8 +117,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Vale of Perfection in Puerto Nuovo",
+      "field": "goal.usage",
+      "value": "Press Z to Photomance the Vale of Perfection in Puerto Nuovo",
       "blocking": true
     },
     {

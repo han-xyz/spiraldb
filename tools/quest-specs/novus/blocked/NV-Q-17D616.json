@@ -137,8 +137,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "in Negotiations",
+      "field": "goal.unknown-verb",
+      "value": "Engage in Negotiations",
       "blocking": true
     },
     {

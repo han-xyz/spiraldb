@@ -151,8 +151,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Manticore's Paradise",
+      "field": "goal.unknown-verb",
+      "value": "Witness Manticore's Paradise",
       "blocking": true
     },
     {

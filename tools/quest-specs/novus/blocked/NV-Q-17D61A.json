@@ -204,23 +204,23 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Veins of Valencian Steel",
+      "field": "goal.waypoint",
+      "value": "Investigate Veins of Valencian Steel",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Principe Mario",
+      "field": "goal.persona",
+      "value": "Rescue Principe Mario",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Principe Mario",
+      "field": "goal.persona",
+      "value": "Rescue Principe Mario",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Cell Door",
+      "field": "goal.usage",
+      "value": "Open Cell Door",
       "blocking": true
     },
     {

@@ -134,8 +134,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Marleyboneans in Conatus",
+      "field": "goal.persona",
+      "value": "Confront the Marleyboneans in Conatus",
       "blocking": true
     },
     {

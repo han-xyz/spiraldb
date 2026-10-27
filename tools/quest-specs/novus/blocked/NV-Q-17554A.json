@@ -116,8 +116,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Tantrum",
+      "field": "goal.persona",
+      "value": "Approach Tantrum",
       "blocking": true
     },
     {

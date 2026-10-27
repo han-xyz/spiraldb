@@ -93,8 +93,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Photo in Stone of Heaven",
+      "field": "goal.usage",
+      "value": "Press Z to Photomance a Photo in Stone of Heaven",
       "blocking": true
     },
     {

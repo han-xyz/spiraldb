@@ -120,8 +120,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Cabal in the Theatre District",
+      "field": "goal.waypoint",
+      "value": "Find the Cabal in the Theatre District",
       "blocking": true
     },
     {

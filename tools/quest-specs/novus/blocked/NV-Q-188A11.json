@@ -160,8 +160,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Rocket",
+      "field": "goal.usage",
+      "value": "Use Rocket",
       "blocking": true
     },
     {
