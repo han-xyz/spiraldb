@@ -1,6 +1,11 @@
 {
   "id": "MR-Q-155170",
   "lang": "155170",
+  "auto_start": true,
+  "giver": {
+    "persona": "MR-AGGR-NPC04-B",
+    "zone": "Mirage/Interiors/MR_Z02_SultOffice"
+  },
   "requires": [
     "MR-Q-15516D"
   ],
@@ -111,18 +116,18 @@
       "loc": "ZoneLocName_1378095"
     }
   ],
-  "personas": {},
+  "personas": {
+    "MR-AGGR-NPC04-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_SultanaF_A_NPC.dds",
+      "template_id": 1381260
+    }
+  },
   "source": {
     "page": "https://wiki.wizard101central.com/wiki/Quest:Battle_of_Aggrobah",
     "from": "archive",
     "timestamp": "20250912185351"
   },
   "needs_review": [
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

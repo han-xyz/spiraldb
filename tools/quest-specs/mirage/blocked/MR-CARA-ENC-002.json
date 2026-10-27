@@ -2,6 +2,11 @@
   "id": "MR-CARA-ENC-002",
   "lang": "1507BC",
   "title": "QuestTitle_00001617",
+  "auto_start": true,
+  "giver": {
+    "persona": "MR-ALKA-NPC07",
+    "zone": "Mirage/Interiors/MR_Z01_OverlordsOssuary"
+  },
   "requires": [
     "MR-Q-1507B2"
   ],
@@ -279,6 +284,10 @@
     }
   ],
   "personas": {
+    "MR-ALKA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Cat_Sorcerer_A_NPC.dds",
+      "template_id": 1365010
+    },
     "MR-CARA-NPC18": {
       "portrait": "GUI/NpcPortraits/Portrait_WolfGryphon_Warrior_A_NPC.dds",
       "template_id": 1378224
@@ -294,11 +303,6 @@
       "field": "lang",
       "value": "WizQst1507BC matched by the words it shares with the goals; its lines name First Guardians, Scrollkeeper",
       "blocking": false
-    },
-    {
-      "field": "giver",
-      "value": "starts automatically",
-      "blocking": true
     },
     {
       "field": "goal.zone (no ZoneTransfer)",

@@ -1,5 +1,6 @@
 {
   "id": "MR-Q-feralsalleyway",
+  "auto_start": true,
   "requires": [
     "MR-Q-151387"
   ],
@@ -49,8 +50,8 @@
       "blocking": true
     },
     {
-      "field": "giver",
-      "value": "starts automatically",
+      "field": "giver (auto-start, no predecessor hand-in)",
+      "value": "none",
       "blocking": true
     },
     {
