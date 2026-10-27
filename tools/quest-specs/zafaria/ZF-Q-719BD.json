@@ -1,0 +1,97 @@
+{
+  "id": "ZF-Q-719BD",
+  "lang": "719BD",
+  "giver": {
+    "persona": "ZF-ZAM-NPC02",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [
+    "ZF-Q-719BC"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 7200,
+    "gold": 250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Elephant-Shaman-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001049",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Rhino-Guard-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001044",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_TseTseSnaketail_NPC.dds",
+      "template_id": 465285
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Don't_Impress_Me_Much",
+    "timestamp": "20250907213707"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

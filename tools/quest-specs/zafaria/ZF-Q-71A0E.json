@@ -1,0 +1,71 @@
+{
+  "id": "ZF-Q-71A0E",
+  "lang": "71A0E",
+  "giver": {
+    "persona": "ZF-CROWN-NPC02",
+    "zone": "Zafaria/ZF_Z01_Baobab_Crown"
+  },
+  "requires": [
+    "ZF-Q-71A0C"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1005,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-CROWN-NPC04",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    }
+  ],
+  "personas": {
+    "ZF-CROWN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kakenya_Brokenfang_NPC.dds",
+      "template_id": 465419
+    },
+    "ZF-CROWN-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Unathi_Nightrunner_NPC.dds",
+      "template_id": 465423
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Night_Running",
+    "timestamp": "20231125071904"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "ZF-Q-82A78",
+  "lang": "82A78",
+  "requires": [
+    "ZF-Q-82A77"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 30310,
+    "gold": 1000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-GRAVE-NPC01",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-ShadowWeaver-R11-01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000745",
+      "zone": "",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-ShadowWeaver-R11.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00000746",
+      "zone": "",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-GRAVE-NPC02",
+      "zone": "Zafaria/Interiors/ZF_Z10_I02_Didos_Mausoleum",
+      "loc": "ZoneLocName_465261",
+      "completion": [
+        {
+          "speaker": "ZF-GRAVE-NPC02",
+          "line": "00000022"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-GRAVE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Elissa_NPC.dds",
+      "template_id": 466210
+    },
+    "ZF-GRAVE-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Tiziri_Silvertusk_NPC.dds",
+      "template_id": 535187
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Spin_Me_Right_Round",
+    "timestamp": "20240308084251"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Bracelets on Pedestal",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Robe on Pedestal",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Ring on Pedestal",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Horn on Pedestal",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to next chamber",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona",
+      "value": "Prince Tiziri",
+      "blocking": true
+    },
+    {
+      "field": "goal.persona (closest name)",
+      "value": "Prince Tiziri Silvertusk read as Tziri Silvertusk",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

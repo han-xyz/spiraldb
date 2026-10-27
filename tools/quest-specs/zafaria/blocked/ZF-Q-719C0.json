@@ -1,0 +1,116 @@
+{
+  "id": "ZF-Q-719C0",
+  "lang": "719C0",
+  "giver": {
+    "persona": "ZF-ZAM-NPC02",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [
+    "ZF-Q-719BD"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 10800,
+    "gold": 390
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Z06_I01_Barracks"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF-Zebra-Prisoner.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WizItems_00001759",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-ZAM-NPC01",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260",
+      "completion": [
+        {
+          "speaker": "ZF-ZAM-NPC01",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sizana_Sunrunner_NPC.dds",
+      "template_id": 465284
+    },
+    "ZF-ZAM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_TseTseSnaketail_NPC.dds",
+      "template_id": 465285
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Prisoner_of_Zamunda",
+    "timestamp": "20231125074940"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Painted Rhino Soldiers",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

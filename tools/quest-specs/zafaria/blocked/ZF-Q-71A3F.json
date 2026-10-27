@@ -1,0 +1,96 @@
+{
+  "id": "ZF-Q-71A3F",
+  "lang": "71A3F",
+  "giver": {
+    "persona": "ZF-MARKET-NPC05",
+    "zone": "Zafaria/ZF_Z02_Baobab_Market"
+  },
+  "requires": [
+    "ZF-Q-71A3E"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 11735,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-NPC-LionWarrior-Female-Thornpaw-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001057",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "descriptor": "WizQst71A3F_00000010",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    }
+  ],
+  "personas": {
+    "ZF-MARKET-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Ladies_Lower06.dds",
+      "template_id": 465468
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:T.I.Z.",
+    "timestamp": "20231125082516"
+  },
+  "needs_review": [
+    {
+      "field": "goal.mobs",
+      "value": "Male",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Female",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

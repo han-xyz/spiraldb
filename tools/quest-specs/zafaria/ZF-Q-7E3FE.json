@@ -1,0 +1,84 @@
+{
+  "id": "ZF-Q-7E3FE",
+  "lang": "7E3FE",
+  "giver": {
+    "persona": "ZF-SAV-NPC01",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-71A16"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 2130,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_TikTik_Snaketongue_NPC.dds",
+      "template_id": 466161
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Master_of_Disaster",
+    "timestamp": "20231125072801"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Msizi Redband's Hut",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

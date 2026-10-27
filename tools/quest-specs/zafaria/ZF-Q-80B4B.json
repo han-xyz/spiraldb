@@ -1,0 +1,86 @@
+{
+  "id": "ZF-Q-80B4B",
+  "lang": "80B4B",
+  "giver": {
+    "persona": "ZF-STONE-NPC04",
+    "zone": "Zafaria/ZF_Z07_Stone_Town"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 8080,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Elephant-Blacktusk-R10.AdjRef",
+        "ZF_StandIn_BlacktuskCultist.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001006",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sobaka_NPC.dds",
+      "template_id": 527094
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Down_the_Crazy_River",
+    "timestamp": "20250910174246"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "The Cat Who Could replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

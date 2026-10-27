@@ -1,0 +1,112 @@
+{
+  "id": "ZF-Q-71A31",
+  "lang": "71A31",
+  "giver": {
+    "persona": "ZF-CROWN-NPC07",
+    "zone": "Zafaria/ZF_Z01_Baobab_Crown"
+  },
+  "requires": [
+    "ZF-Q-71A03"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 0,
+    "gold": 75
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "loc": "ZoneLocName_466150",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "loc": "ZoneLocName_465268",
+      "with_previous": true
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
+      "loc": "ZoneLocName_465261",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    }
+  ],
+  "personas": {
+    "ZF-CROWN-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Human_Zeke_A_NPC.dds",
+      "template_id": 465462
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Hey_Hey_It's_The_Monkeys",
+    "timestamp": "20241225012743"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

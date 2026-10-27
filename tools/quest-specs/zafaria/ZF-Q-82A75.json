@@ -1,0 +1,168 @@
+{
+  "id": "ZF-Q-82A75",
+  "lang": "82A75",
+  "giver": {
+    "persona": "ZF-GRAVE-NPC01",
+    "zone": "Zafaria/ZF_Z10_Elephant_Graveyard"
+  },
+  "requires": [
+    "ZF-Q-82A73"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 35025,
+    "gold": 1160
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF_Gorilla_SpiderWitch_Maroon-R11.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001031",
+      "zone": "",
+      "descriptor": "WizQst82A75_00000017",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Elephant-Shaman-Red-R11-Boss.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001018",
+      "zone": "",
+      "descriptor": "WizQst82A75_00000013",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Goliath-R11-Boss-02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001092",
+      "zone": "",
+      "descriptor": "WizQst82A75_00000011",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-ShadowWeaver-R11-Boss-03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001019",
+      "zone": "",
+      "descriptor": "WizQst82A75_00000006",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
+      "loc": "ZoneLocName_465261"
+    }
+  ],
+  "personas": {
+    "ZF-GRAVE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Elissa_NPC.dds",
+      "template_id": 466210
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tomb_Raiders",
+    "timestamp": "20250901165931"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "her tomb",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "his tomb",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "his tomb",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "his tomb",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Opening Beat replaced by ZF-Q-82A73",
+      "blocking": false
+    }
+  ]
+}

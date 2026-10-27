@@ -1,0 +1,83 @@
+{
+  "id": "ZF-Q-71A16",
+  "lang": "71A16",
+  "giver": {
+    "persona": "ZF-HUB-NPC02",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [
+    "ZF-Q-71A15"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1005,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-SAV-NPC01",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Lethu_BluntFoot_NPC.dds",
+      "template_id": 465265
+    },
+    "ZF-SAV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_TikTik_Snaketongue_NPC.dds",
+      "template_id": 466161
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:In_the_Grass",
+    "timestamp": "20231125072150"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

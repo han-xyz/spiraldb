@@ -1,0 +1,91 @@
+{
+  "id": "ZF-Q-82A30",
+  "lang": "82A30",
+  "giver": {
+    "persona": "ZF-SAV-NPC08",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-71A1B"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1065,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-HUB-NPC01",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257"
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    },
+    "ZF-SAV-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Elsa_Ghostmane_NPC.dds",
+      "template_id": 466169
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Heal_Me",
+    "timestamp": "20231125073646"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

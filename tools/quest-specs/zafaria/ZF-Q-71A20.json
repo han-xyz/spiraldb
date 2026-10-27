@@ -1,0 +1,153 @@
+{
+  "id": "ZF-Q-71A20",
+  "lang": "71A20",
+  "giver": {
+    "persona": "ZF-HUB-NPC01",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [
+    "ZF-Q-82A30"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 5330,
+    "gold": 290
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-CROWN-NPC04",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-CROWN-NPC05",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-MARKET-NPC02",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-MARKET-NPC03",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160",
+      "with_previous": true
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000013"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-CROWN-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Unathi_Nightrunner_NPC.dds",
+      "template_id": 465423
+    },
+    "ZF-CROWN-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Vir_Goodheart2_NPC.dds",
+      "template_id": 465426
+    },
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    },
+    "ZF-MARKET-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Merchent_Ntokozo_Truestride_NPC.dds",
+      "template_id": 465442
+    },
+    "ZF-MARKET-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Marwa_Jadetusk_NPC.dds",
+      "template_id": 465443
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Local_Treasures",
+    "timestamp": "20231125073644"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Book of Babalawo replaced by ZF-Q-82A30",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "ZF-Q-82A2B",
+  "lang": "82A2B",
+  "giver": {
+    "persona": "ZF-SAV-NPC05",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-82A2A"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 3200,
+    "gold": 110
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Student_Eden_Windforest_NPC.dds",
+      "template_id": 466166
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Does_Your_Garden_Grow",
+    "timestamp": "20231125073126"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "seeds in Soil",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

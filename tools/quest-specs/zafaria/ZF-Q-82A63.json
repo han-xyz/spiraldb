@@ -1,0 +1,99 @@
+{
+  "id": "ZF-Q-82A63",
+  "lang": "82A63",
+  "giver": {
+    "persona": "ZF-STONE-NPC16",
+    "zone": "Zafaria/Interiors/ZF_Z07_I03_Zoo"
+  },
+  "requires": [
+    "ZF-Q-80B42"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 14815,
+    "gold": 495
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Rhino-Guard-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001044",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "descriptor": "WizQst82A63_00000008",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-NPC-LionWarrior-Male-Fire-R10.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001042",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "descriptor": "WizQst82A63_00000009",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Z07_I03_Zoo",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Amar Sharptusk_NPC.dds",
+      "template_id": 541121
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Savaberries",
+    "timestamp": "20231125082633"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Cool Cat",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Cool Cat replaced by ZF-Q-80B42",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "ZF-Q-82A3E",
+  "lang": "82A3E",
+  "giver": {
+    "persona": "ZF-SAV-NPC06",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-82A36"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 2260,
+    "gold": 70
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Behki_Blackhoof_NPC.dds",
+      "template_id": 466167
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Out_of_the_Sun",
+    "timestamp": "20231125074120"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Captain Blackhoof's Hut",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Top of the Rock replaced by ZF-Q-82A36",
+      "blocking": false
+    }
+  ]
+}

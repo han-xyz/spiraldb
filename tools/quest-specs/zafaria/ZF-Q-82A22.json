@@ -1,0 +1,79 @@
+{
+  "id": "ZF-Q-82A22",
+  "lang": "82A22",
+  "giver": {
+    "persona": "ZF-SAV-NPC05",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-82A21"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1065,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-SAV-NPC06",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Student_Eden_Windforest_NPC.dds",
+      "template_id": 466166
+    },
+    "ZF-SAV-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Behki_Blackhoof_NPC.dds",
+      "template_id": 466167
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Plight_of_the_Lions",
+    "timestamp": "20231125073021"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

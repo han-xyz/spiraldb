@@ -1,0 +1,133 @@
+{
+  "id": "ZF-Q-71A0C",
+  "lang": "71A0C",
+  "giver": {
+    "persona": "ZF-CROWN-NPC02",
+    "zone": "Zafaria/ZF_Z01_Baobab_Crown"
+  },
+  "requires": [
+    "ZF-Q-71A0A"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 9310,
+    "gold": 360
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Goliath-R10-Boss-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00000991",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-CROWN-NPC03",
+      "zone": "Zafaria/Interiors/ZF_Z01_I01_Safari_Lodge_Dormitory",
+      "loc": "ZoneLocName_465258"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z01_Baobab_Crown",
+      "loc": "ZoneLocName_465258"
+    }
+  ],
+  "personas": {
+    "ZF-CROWN-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Kakenya_Brokenfang_NPC.dds",
+      "template_id": 465419
+    },
+    "ZF-CROWN-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Student_Simone_Brightlance_NPC.dds",
+      "template_id": 465421
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Lost_Your_Way",
+    "timestamp": "20250920054444"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Zafaria Student Dormitory",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

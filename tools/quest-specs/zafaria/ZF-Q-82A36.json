@@ -1,0 +1,75 @@
+{
+  "id": "ZF-Q-82A36",
+  "lang": "82A36",
+  "giver": {
+    "persona": "ZF-SAV-NPC09",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-82A35"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1130,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-SAV-NPC08",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Elsa_Ghostmane_NPC.dds",
+      "template_id": 466169
+    },
+    "ZF-SAV-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Esop_Thornpaw.dds",
+      "template_id": 466170
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Drum_Queen",
+    "timestamp": "20231125073850"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

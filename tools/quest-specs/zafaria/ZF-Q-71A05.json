@@ -1,0 +1,84 @@
+{
+  "id": "ZF-Q-71A05",
+  "lang": "71A05",
+  "giver": {
+    "persona": "ZF-HUB-NPC03",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [
+    "ZF-Q-71A04"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 6040,
+    "gold": 230
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Zebra-Inzinzebu-Bandit-R11.AdjRef",
+        "ZF-Zebra-Warrior-Female-R10.AdjRef",
+        "ZF-Zebra-Warrior-Male-R10.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001045",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "descriptor": "WizQst71A05_00000006",
+      "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257"
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Tau_Ghostmane_NPC.dds",
+      "template_id": 465267
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Going_to_Market",
+    "timestamp": "20250911202836"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

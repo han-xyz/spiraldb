@@ -1,0 +1,92 @@
+{
+  "id": "ZF-Q-719CF",
+  "lang": "719CF",
+  "giver": {
+    "persona": "ZF-OUT-NPC01",
+    "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts"
+  },
+  "requires": [
+    "ZF-Q-719CB"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 4800,
+    "gold": 170
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Paint_Cans.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "descriptor": "WizQst719CF_00000007",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "loc": "ZoneLocName_466150"
+    }
+  ],
+  "personas": {
+    "ZF-OUT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sizana_Sunrunner_NPC.dds",
+      "template_id": 465281
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Back_on_the_Trail",
+    "timestamp": "20250904082705"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Water Beats Fire replaced by ZF-Q-719CB",
+      "blocking": false
+    }
+  ]
+}

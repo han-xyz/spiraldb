@@ -1,0 +1,119 @@
+{
+  "id": "ZF-Q-82A2F",
+  "lang": "82A2F",
+  "giver": {
+    "persona": "ZF-SAV-NPC01",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-82A2D"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 8800,
+    "gold": 370
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Goliath-R10-Boss-02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001073",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-HUB-NPC01",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257",
+      "completion": [
+        {
+          "speaker": "ZF-HUB-NPC01",
+          "line": "00000002"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    },
+    "ZF-SAV-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_TikTik_Snaketongue_NPC.dds",
+      "template_id": 466161
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Meddling_Wizards",
+    "timestamp": "20250910194632"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Tik-tik's Hut",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Exit Tik-tik's Hut",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Poisoned Well replaced by ZF-Q-82A2D",
+      "blocking": false
+    }
+  ]
+}

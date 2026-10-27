@@ -1,0 +1,77 @@
+{
+  "id": "ZF-Q-prideinthename",
+  "requires": [
+    "ZF-Q-82A38"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 24025,
+    "gold": 850
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Spider-Model-Brownmonkey-R10.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001048",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-HUB-NPC09",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Nergal-Burned-Lion-R10-Boss.AdjRef",
+        "ZF_StandIn_Nergal.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001072",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC09": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Student_Johanna_Crowflyer_NPC.dds",
+      "template_id": 1546126
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Pride_in_the_Name",
+    "timestamp": "20231125074044"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Pride in the Name",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Enter further into Nemean Cave",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Johanna's Cage",
+      "blocking": true
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "ZF-Q-71A07",
+  "lang": "71A07",
+  "giver": {
+    "persona": "ZF-HUB-NPC02",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [
+    "ZF-Q-71A06"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1005,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-HUB-NPC01",
+      "zone": "Zafaria/ZF_Z00_Hub",
+      "loc": "ZoneLocName_465257",
+      "completion": [
+        {
+          "speaker": "ZF-HUB-NPC01",
+          "line": "00000001"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    },
+    "ZF-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Lethu_BluntFoot_NPC.dds",
+      "template_id": 465265
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Restricted_Access",
+    "timestamp": "20231125071801"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

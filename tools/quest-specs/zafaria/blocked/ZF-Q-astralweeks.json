@@ -1,0 +1,53 @@
+{
+  "id": "ZF-Q-astralweeks",
+  "giver": {
+    "persona": "ZF-HUB-NPC01",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [],
+  "min_level": 60,
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 1270,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-ZAM-NPC04",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    },
+    "ZF-ZAM-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Mandisa_Autumnrain_NPC.dds",
+      "template_id": 465287
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Astral_Weeks",
+    "timestamp": "20241120025240"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Astral Weeks",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Sun of All Fears",
+      "blocking": false
+    }
+  ]
+}

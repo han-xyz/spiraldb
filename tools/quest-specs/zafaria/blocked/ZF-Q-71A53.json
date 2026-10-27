@@ -1,0 +1,81 @@
+{
+  "id": "ZF-Q-71A53",
+  "lang": "71A53",
+  "giver": {
+    "persona": "ZF-MARKET-NPC01",
+    "zone": "Zafaria/ZF_Z02_Baobab_Market"
+  },
+  "requires": [
+    "ZF-Q-71A3B"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 3500,
+    "gold": 7981
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    }
+  ],
+  "personas": {
+    "ZF-MARKET-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_TseTseSnaketail_MOB.dds",
+      "template_id": 465441
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Drum_a_Little_Drum",
+    "timestamp": "20240119021245"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "That Seven Seas Show",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Spirit Caller Drums",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

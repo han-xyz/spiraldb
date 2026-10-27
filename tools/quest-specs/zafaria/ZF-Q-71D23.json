@@ -1,0 +1,105 @@
+{
+  "id": "ZF-Q-71D23",
+  "lang": "71D23",
+  "giver": {
+    "persona": "ZF-GRAVE-NPC01",
+    "zone": "Zafaria/ZF_Z10_Elephant_Graveyard"
+  },
+  "requires": [
+    "ZF-Q-71D20"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 13470,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Spider_Webbed_Student.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00001766",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Z10_I03_Drum_House"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Spider-Model-GreyOgre-R11.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001055",
+      "zone": "",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Grave_Drum.AdjRef"
+      ],
+      "count": 4,
+      "zone": "",
+      "descriptor": "WizItems_00001782",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z10_Elephant_Graveyard",
+      "loc": "ZoneLocName_465261"
+    }
+  ],
+  "personas": {
+    "ZF-GRAVE-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Elissa_NPC.dds",
+      "template_id": 466210
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Drum_House",
+    "timestamp": "20250905111137"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

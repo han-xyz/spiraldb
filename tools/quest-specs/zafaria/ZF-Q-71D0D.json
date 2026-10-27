@@ -1,0 +1,83 @@
+{
+  "id": "ZF-Q-71D0D",
+  "lang": "71D0D",
+  "giver": {
+    "persona": "ZF-DRUM-NPC02",
+    "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+  },
+  "requires": [
+    "ZF-Q-71D0B"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 8080,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Elephant-Blacktusk-R10.AdjRef",
+        "ZF_StandIn_BlacktuskCultist.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001006",
+      "zone": "",
+      "descriptor": "WizQst71D0D_00000006",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256"
+    }
+  ],
+  "personas": {
+    "ZF-DRUM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hanabiko_Smokesign_NPC.dds",
+      "template_id": 466186
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fall_From_Grace",
+    "timestamp": "20231125080322"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

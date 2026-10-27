@@ -1,0 +1,90 @@
+{
+  "id": "ZF-Q-coolcat",
+  "giver": {
+    "persona": "ZF-STONE-NPC16",
+    "zone": "Zafaria/Interiors/ZF_Z07_I03_Zoo"
+  },
+  "requires": [
+    "ZF-Q-80B42"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 9425,
+    "gold": 315
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-STONE-NPC06",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-STONE-NPC15",
+      "zone": "Zafaria/Interiors/ZF_Z07_I05_Aleksis_Tower",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Aleksi-Flowers-R11.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001102",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Basket_Cat.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "descriptor": "WizItems_00001777",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Z07_I03_Zoo",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Rakstede_Steelhorn_NPC.dds",
+      "template_id": 527151
+    },
+    "ZF-STONE-NPC15": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Aleksi_Flowers_NPC.dds",
+      "template_id": 535194
+    },
+    "ZF-STONE-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Amar Sharptusk_NPC.dds",
+      "template_id": 541121
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cool_Cat",
+    "timestamp": "20250906035748"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Cool Cat",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Ice Cat's Pen",
+      "blocking": true
+    }
+  ]
+}

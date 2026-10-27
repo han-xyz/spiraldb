@@ -1,0 +1,198 @@
+{
+  "id": "ZF-Q-80B61",
+  "lang": "80B61",
+  "giver": {
+    "persona": "ZF-WATER-NPC05",
+    "zone": "Zafaria/ZF_Z08_Waterfront"
+  },
+  "requires": [
+    "ZF-Q-155141"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 20290,
+    "gold": 950
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000034"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Nathi-Yellowstripe-R11.AdjRef",
+        "ZF_StandIn_NathiYellowstripe.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001096",
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "descriptor": "WizQst80B61_00000027",
+      "loc": "ZoneLocName_465268"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-NPC-Jata-Brokenspear-R11.AdjRef",
+        "ZF_StandIn_JataBrokenspear.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001095",
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "descriptor": "WizQst80B61_00000027",
+      "loc": "ZoneLocName_465268"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Amedras-Lightstep-R11.AdjRef",
+        "ZF_StandIn_AmedrasLightstep.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001097",
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "descriptor": "WizQst80B61_00000027",
+      "loc": "ZoneLocName_465268"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Bolu-Bigfist-R11.AdjRef",
+        "ZF_StandIn_BoluBigfist.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001098",
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "descriptor": "WizQst80B61_00000027",
+      "loc": "ZoneLocName_465268"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "loc": "ZoneLocName_465268",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000025"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000028"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-WATER-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Zeddgan_Spellfeather.dds",
+      "template_id": 527100
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Four_Feathers",
+    "timestamp": "20250917072507"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Do I Look Fat In This? replaced by ZF-Q-155141",
+      "blocking": false
+    }
+  ]
+}

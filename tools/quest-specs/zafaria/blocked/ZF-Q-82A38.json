@@ -1,0 +1,125 @@
+{
+  "id": "ZF-Q-82A38",
+  "lang": "82A38",
+  "giver": {
+    "persona": "ZF-SAV-NPC08",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-82A36"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 6780,
+    "gold": 200
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-SAV-NPC10",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-SAV-NPC06",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259",
+      "completion": [
+        {
+          "speaker": "ZF-SAV-NPC06",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Behki_Blackhoof_NPC.dds",
+      "template_id": 466167
+    },
+    "ZF-SAV-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Elsa_Ghostmane_NPC.dds",
+      "template_id": 466169
+    },
+    "ZF-SAV-NPC10": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_King_Mansa_NPC.dds",
+      "template_id": 466171
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Top_of_the_Rock",
+    "timestamp": "20231125073924"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Nemean Rock",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Drum Near King's Cage",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

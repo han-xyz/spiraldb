@@ -1,0 +1,100 @@
+{
+  "id": "ZF-Q-tombofthezebrakings",
+  "requires": [
+    "ZF-Q-719DD"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 25740,
+    "gold": 930
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Zebra-Warrior-Male-R10-02.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001004",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Spider-Model-Brownmonkey-R10.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001048",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Zebra-Senzan-Zebu-R10-Boss.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001077",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-ZAM-NPC13",
+      "zone": ""
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF-Axe_Quagga_Blade.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WC-NPCs_00001918",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC13": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Zebra_Senzan_Zebo.dds",
+      "template_id": 465378
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Tomb_of_the_Zebra_Kings",
+    "timestamp": "20240613124333"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Tomb of the Zebra Kings",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "King's Tomb: Zafaria/Interiors/ZF_Z06_I04_Kings_Tomb",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Explore the King's Tomb",
+      "blocking": false
+    },
+    {
+      "field": "goal.persona.zone (placed in no zone)",
+      "value": "Zanga Zebu",
+      "blocking": true
+    }
+  ]
+}

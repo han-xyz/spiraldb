@@ -1,0 +1,89 @@
+{
+  "id": "ZF-Q-71A67",
+  "lang": "71A67",
+  "giver": {
+    "persona": "ZF-ZAM-NPC06",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [
+    "ZF-Q-71A65"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 2540,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-ZAM-NPC04",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Mandisa_Autumnrain_NPC.dds",
+      "template_id": 465287
+    },
+    "ZF-ZAM-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Themba_TrueStride_NPC.dds",
+      "template_id": 465303
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:You've_Got_Mail",
+    "timestamp": "20231125082155"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

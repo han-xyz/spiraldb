@@ -1,0 +1,103 @@
+{
+  "id": "ZF-Q-719D5",
+  "lang": "719D5",
+  "giver": {
+    "persona": "ZF-ZAM-NPC03",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [
+    "ZF-Q-719CF"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 5010,
+    "gold": 170
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-ZAM-NPC08",
+      "zone": "Zafaria/Interiors/ZF_Z06_I02_Kings_Court03",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Queen_Amahle_NPC.dds",
+      "template_id": 465286
+    },
+    "ZF-ZAM-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Shaka_Zebu_CrazyEyes_MOB.dds",
+      "template_id": 465304
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Shadow_of_a_King",
+    "timestamp": "20240121111532"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "King's Court",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Snake in the Grass replaced by ZF-Q-719CF",
+      "blocking": false
+    }
+  ]
+}

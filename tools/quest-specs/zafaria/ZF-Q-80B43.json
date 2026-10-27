@@ -1,0 +1,71 @@
+{
+  "id": "ZF-Q-80B43",
+  "lang": "80B43",
+  "giver": {
+    "persona": "ZF-STONE-NPC03",
+    "zone": "Zafaria/Interiors/ZF_Z07_I01_Darajani_Palace"
+  },
+  "requires": [
+    "ZF-Q-80B42"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1345,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-STONE-NPC05",
+      "zone": "Zafaria/Interiors/ZF_Z07_I02_War_Olyphants_Tower",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Silvertusk_NPC.dds",
+      "template_id": 527093
+    },
+    "ZF-STONE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Hathi_Irontrunk_NPC.dds",
+      "template_id": 527150
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Quiet_Riot",
+    "timestamp": "20231125075524"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

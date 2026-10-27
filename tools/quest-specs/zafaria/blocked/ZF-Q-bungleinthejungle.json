@@ -1,0 +1,49 @@
+{
+  "id": "ZF-Q-bungleinthejungle",
+  "giver": {
+    "persona": "ZF-HUB-NPC01",
+    "zone": "Zafaria/ZF_Z00_Hub"
+  },
+  "requires": [
+    "ZF-Q-71D0E"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 1270,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-DRUM-NPC02",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465257"
+    }
+  ],
+  "personas": {
+    "ZF-DRUM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hanabiko_Smokesign_NPC.dds",
+      "template_id": 466186
+    },
+    "ZF-HUB-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Inyanga_WhiteStripe_NPC.dds",
+      "template_id": 465266
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bungle_in_the_Jungle",
+    "timestamp": "20231118225608"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Bungle in the Jungle",
+      "blocking": true
+    }
+  ]
+}

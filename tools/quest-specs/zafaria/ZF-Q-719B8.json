@@ -1,0 +1,87 @@
+{
+  "id": "ZF-Q-719B8",
+  "lang": "719B8",
+  "giver": {
+    "persona": "ZF-ZAM-NPC01",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 9600,
+    "gold": 640
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Rhino-Guard-R10.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001044",
+      "zone": "Zafaria/ZF_Z05_Zamunda_Outskirts",
+      "loc": "ZoneLocName_466150"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sizana_Sunrunner_NPC.dds",
+      "template_id": 465284
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Back_Into_the_Fray",
+    "timestamp": "20250919101706"
+  },
+  "needs_review": [
+    {
+      "field": "goal.descriptor",
+      "value": "Shields in the Zamunda Outskirts",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Through the Zorse Gates replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

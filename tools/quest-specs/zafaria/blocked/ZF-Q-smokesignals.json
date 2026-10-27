@@ -1,0 +1,55 @@
+{
+  "id": "ZF-Q-smokesignals",
+  "giver": {
+    "persona": "ZF-DRUM-NPC01",
+    "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+  },
+  "requires": [
+    "ZF-Q-71D06"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 8080,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-GorillaSoldier-01-R11.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001013",
+      "zone": "",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256"
+    }
+  ],
+  "personas": {
+    "ZF-DRUM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Mango_Onetusk_NPC.dds",
+      "template_id": 466183
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Smoke_Signals",
+    "timestamp": "20250912091257"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Smoke Signals",
+      "blocking": true
+    }
+  ]
+}

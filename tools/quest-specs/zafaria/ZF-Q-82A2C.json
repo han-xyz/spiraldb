@@ -1,0 +1,72 @@
+{
+  "id": "ZF-Q-82A2C",
+  "lang": "82A2C",
+  "giver": {
+    "persona": "ZF-SAV-NPC05",
+    "zone": "Zafaria/ZF_Z03_Savannah"
+  },
+  "requires": [
+    "ZF-Q-82A2A"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1065,
+    "gold": 40
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-SAV-NPC04",
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    }
+  ],
+  "personas": {
+    "ZF-SAV-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Chief_Leboo_NPC.dds",
+      "template_id": 466164
+    },
+    "ZF-SAV-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Student_Eden_Windforest_NPC.dds",
+      "template_id": 466166
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:My_Work_Is_Done",
+    "timestamp": "20231125073148"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Does Your Garden Grow replaced by ZF-Q-82A2A",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ZF-Q-zafariaquesttree",
+  "requires": [],
+  "min_level": 60,
+  "mainline": false,
+  "level": 60,
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Zafaria_Quest_Tree",
+    "timestamp": "20250824045242"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Zafaria Quest Tree",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goals",
+      "value": [],
+      "blocking": true
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "id": "ZF-Q-80B57",
+  "lang": "80B57",
+  "giver": {
+    "persona": "ZF-WATER-NPC07",
+    "zone": "Zafaria/ZF_Z08_Waterfront"
+  },
+  "requires": [
+    "ZF-Q-155141"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 5380,
+    "gold": 350
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-WATER-NPC05",
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "loc": "ZoneLocName_465268"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Cauldron.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z08_Waterfront",
+      "descriptor": "WizItems_00001775",
+      "loc": "ZoneLocName_465268"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Z08_I03_Black_Palace",
+      "loc": "ZoneLocName_527108"
+    },
+    {
+      "type": "persona",
+      "persona": "ZF-STONE-NPC03",
+      "zone": "Zafaria/Interiors/ZF_Z07_I01_Darajani_Palace",
+      "loc": "ZoneLocName_465268"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Queen_Silvertusk_NPC.dds",
+      "template_id": 527093
+    },
+    "ZF-WATER-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Zeddgan_Spellfeather.dds",
+      "template_id": 527100
+    },
+    "ZF-WATER-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Vir_Goodheart2_NPC.dds",
+      "template_id": 527189
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Do_I_Look_Fat_In_This?",
+    "timestamp": "20250909175034"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Palace Door",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Source of Corruption",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

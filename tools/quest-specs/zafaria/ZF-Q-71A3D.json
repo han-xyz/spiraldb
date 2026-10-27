@@ -1,0 +1,76 @@
+{
+  "id": "ZF-Q-71A3D",
+  "lang": "71A3D",
+  "giver": {
+    "persona": "ZF-MARKET-NPC05",
+    "zone": "Zafaria/ZF_Z02_Baobab_Market"
+  },
+  "requires": [
+    "ZF-Q-71A26"
+  ],
+  "mainline": false,
+  "level": 60,
+  "reward": {
+    "xp": 6400,
+    "gold": 245
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Zebra-Inzinzebu-Bandit-R11.AdjRef",
+        "ZF-Zebra-Warrior-Female-R10.AdjRef",
+        "ZF-Zebra-Warrior-Male-R10.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001045",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "descriptor": "WizQst71A3D_00000004",
+      "loc": "ZoneLocName_466160"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z02_Baobab_Market",
+      "loc": "ZoneLocName_466160"
+    }
+  ],
+  "personas": {
+    "ZF-MARKET-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_MB_Ladies_Lower06.dds",
+      "template_id": 465468
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bad_Vacation",
+    "timestamp": "20250912210508"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

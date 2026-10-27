@@ -1,0 +1,77 @@
+{
+  "id": "ZF-Q-80B44",
+  "lang": "80B44",
+  "giver": {
+    "persona": "ZF-STONE-NPC05",
+    "zone": "Zafaria/Interiors/ZF_Z07_I02_War_Olyphants_Tower"
+  },
+  "requires": [
+    "ZF-Q-80B43"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 8080,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Rhino-Guard-R10.AdjRef"
+      ],
+      "count": 4,
+      "target": "WizardMobs_00001044",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/Interiors/ZF_Z07_I02_War_Olyphants_Tower",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Hathi_Irontrunk_NPC.dds",
+      "template_id": 527150
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Calm_Like_a_Bomb",
+    "timestamp": "20250907083048"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

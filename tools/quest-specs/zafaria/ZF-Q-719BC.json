@@ -1,0 +1,71 @@
+{
+  "id": "ZF-Q-719BC",
+  "lang": "719BC",
+  "giver": {
+    "persona": "ZF-ZAM-NPC01",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [
+    "ZF-Q-719B9"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 1200,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "ZF-ZAM-NPC02",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sizana_Sunrunner_NPC.dds",
+      "template_id": 465284
+    },
+    "ZF-ZAM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_TseTseSnaketail_NPC.dds",
+      "template_id": 465285
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_King's_Shadow",
+    "timestamp": "20231125074811"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "ZF-Q-719B9",
+  "lang": "719B9",
+  "giver": {
+    "persona": "ZF-ZAM-NPC01",
+    "zone": "Zafaria/ZF_Z06_Zamunda"
+  },
+  "requires": [
+    "ZF-Q-719B8"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 10800,
+    "gold": 580
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "ZF-Zebra-Warriors.AdjRef"
+      ],
+      "count": 4,
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WizItems_00001760",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Z06_I01_Barracks"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-Zebra-Warrior-Male-R10-05.AdjRef",
+        "ZF-Zebra-Warrior-Male-R10-2.AdjRef",
+        "ZF_StandIn_IgokaDefender.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001103",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "loc": "ZoneLocName_465260",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000007"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-ZAM-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Sizana_Sunrunner_NPC.dds",
+      "template_id": 465284
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Muster_the_Troops",
+    "timestamp": "20240409061212"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

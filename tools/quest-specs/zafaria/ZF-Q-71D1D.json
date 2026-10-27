@@ -1,0 +1,93 @@
+{
+  "id": "ZF-Q-71D1D",
+  "lang": "71D1D",
+  "giver": {
+    "persona": "ZF-DRUM-NPC02",
+    "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 12460,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-ShadowWeaver-R11-Boss-01.AdjRef",
+        "ZF_StandIn_GhadirDreamdrinker.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001016",
+      "zone": "",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000005"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "ZF-DRUM-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Hanabiko_Smokesign_NPC.dds",
+      "template_id": 466186
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cutting_Through_the_Mist",
+    "timestamp": "20250918235342"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Unusual Looking Rock",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Shango's Swords replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}

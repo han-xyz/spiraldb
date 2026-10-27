@@ -1,0 +1,90 @@
+{
+  "id": "ZF-Q-80B47",
+  "lang": "80B47",
+  "giver": {
+    "persona": "ZF-STONE-NPC11",
+    "zone": "Zafaria/ZF_Z07_Stone_Town"
+  },
+  "requires": [
+    "ZF-Q-80B46"
+  ],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 8080,
+    "gold": 260
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "ZF-Elephant-Beserker-R10.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00001043",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "descriptor": "WizQst80B47_00000008",
+      "loc": "ZoneLocName_465392"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "loc": "ZoneLocName_465392"
+    }
+  ],
+  "personas": {
+    "ZF-STONE-NPC11": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_ZF_Tala_Snakesquasher_NPC.dds",
+      "template_id": 527156
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Across_the_Spiral",
+    "timestamp": "20250904001918"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

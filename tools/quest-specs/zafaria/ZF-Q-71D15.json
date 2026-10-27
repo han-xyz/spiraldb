@@ -1,0 +1,121 @@
+{
+  "id": "ZF-Q-71D15",
+  "lang": "71D15",
+  "giver": {
+    "persona": "ZF-DRUM-NPC03",
+    "zone": "Zafaria/ZF_Z09_Drum_Jungle"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 60,
+  "reward": {
+    "xp": 13810,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "waypoint",
+      "zone": "Zafaria/Interiors/ZF_Z09_I04_Overseers_Tower"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "ZF-ShadowWeaver-R11-Boss-02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001086",
+      "zone": "",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Eternal_Flame.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00001783",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Zafaria/ZF_Z09_Drum_Jungle",
+      "loc": "ZoneLocName_465256"
+    }
+  ],
+  "personas": {
+    "ZF-DRUM-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Assistant_Professor_Umlilo_Sunchaser.dds",
+      "template_id": 466194
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:What_Is_This_Burning?",
+    "timestamp": "20231125080409"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Caged Follies replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 60
+}
