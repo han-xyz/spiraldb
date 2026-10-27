@@ -57,6 +57,8 @@ SCHOOL_ICON = re.compile(r"\[File:\(Icon\)_(Balance|Death|Fire|Ice|Life|Myth|Sto
 LEVEL_NOTE = re.compile(r"Level (?:Level )?(\d+)\+? is needed to start", re.I)
 SCHOOL_NOTE = re.compile(r"must be in the School of (\w+)", re.I)
 CANTRIP_PREFIX = "Spells/Cantrip"
+# Registered worlds whose NPCs also give other worlds' quests (Polaris starts in the Arcanum).
+HUB_WORLDS = {"Arcanum"}
 # An NPC template with something after its number is a copy (WC-RAV-NPC04-B, WC-ST05-NPC05-OK).
 SUFFIXED_NPC = re.compile(r"NPC\d+[-_]")
 # Verbs whose line is a waypoint even when nothing it names is found: kept into the current zone, to review.
@@ -620,7 +622,7 @@ class ClientData:
         self.other_folders = nearest_folders(registered, [
             folder for folder in os.listdir(os.path.join(ROOTWAD_DIR, "ObjectData"))
             if folder != self.folder and os.path.isdir(os.path.join(ROOTWAD_DIR, "ObjectData", folder))])
-        self.other_mobs, self.other_personas = None, None
+        self.other_mobs, self.other_personas, self.other_items = None, None, None
         item_rows = list(templates.items(ROOTWAD_DIR, self.folder))
         self.objects = item_index(item_rows, self.folder)
         self.item_words = item_words(item_rows, self.folder)
@@ -821,7 +823,17 @@ class ClientData:
             zones = self.zones_of_items(candidates)
             placed = {template: entry for template, entry in candidates.items() if zones[template]}
             candidates = {template: entry for template, entry in placed.items() if zone in zones[template]} or placed
-        return list(candidates.values()) if len(candidates) == 1 else []
+        return list(candidates.values()) if len(candidates) == 1 else self.other_world_items(name)
+
+    def other_world_items(self, name):
+        """The entries of the item the name reads whole, without place or article, in the nearest other ObjectData folder
+        that has one, each with its folder."""
+        if self.other_items is None:
+            self.other_items = [(folder, item_index(list(templates.items(ROOTWAD_DIR, folder)), folder))
+                                for folder in self.other_folders]
+        forms = singular_forms(ITEM_ORDINAL.sub("", ITEM_PLACE.sub("", name).strip()))
+        return next(([dict(entry, folder=folder) for entry in index[form]] for folder, index in self.other_items
+                     for form in forms if form in index), [])
 
     def zones_of_items(self, names):
         """template name -> the zones of the world that place the item."""
@@ -1061,17 +1073,20 @@ class SpecBuilder:
             goal["with_previous"] = True
         return goal
 
-    def usage_goal(self, names, count):
+    def usage_goal(self, names, count, zone=None):
+        zone = zone or self.zone
         items, descriptor = [], ""
         for name in names:
-            entries = self.data.usage_entries(name, self.zone)
+            entries = self.data.usage_entries(name, zone)
             if not entries:
                 self.unresolved("goal.items", name, True)
+            for folder in sorted({entry["folder"] for entry in entries if "folder" in entry}):
+                self.unresolved("goal.items (other folder)", f"{name}: ObjectData/{folder}", False)
             items += [e["adjective"] for e in entries]
             descriptor = descriptor or next((e["descriptor"] for e in entries if e["descriptor"]), "")
         if not items:
             return None
-        goal = {"type": "usage", "items": list(dict.fromkeys(items)), "count": count, "zone": self.zone}
+        goal = {"type": "usage", "items": list(dict.fromkeys(items)), "count": count, "zone": zone}
         goal["descriptor"] = descriptor or self.descriptor(names[0]) or ""
         if not goal["descriptor"]:
             del goal["descriptor"]
@@ -1114,10 +1129,18 @@ class SpecBuilder:
         if quiet:
             return None
         if verb_of(plain(text)) in REVIEWED_WAYPOINT_VERBS and self.current_zone:
-            self.unresolved("goal.volume (not found)", ", ".join(places) or name, False)
-            return {"type": "waypoint", "zone": self.current_zone}
+            return self.waypoint_here(", ".join(places) or name)
         self.unresolved("goal.zone (waypoint left out)", ", ".join(places) or text, False)
         return None
+
+    def waypoint_here(self, text):
+        """A waypoint into the zone the goals before it end in, for a movement line nothing reads, listed to review;
+        blocked under goal.waypoint when there is no such zone."""
+        if not self.current_zone:
+            self.unresolved("goal.waypoint", text, True)
+            return None
+        self.unresolved("goal.waypoint (current zone)", text, False)
+        return {"type": "waypoint", "zone": self.current_zone}
 
     def volume_goal(self, place):
         """A waypoint to the volume that bears the place's name in the current zone, else in the world's one zone that
@@ -1210,7 +1233,10 @@ class SpecBuilder:
                 return goal
             if self.data.has_persona(place):
                 return self.persona_goal(place)
-        self.unresolved("goal.waypoint" if ends else unread_field(verb, text), text, True)
+        field = "goal.waypoint" if ends else unread_field(verb, text)
+        if field == "goal.waypoint":
+            return self.waypoint_here(text)
+        self.unresolved(field, text, True)
         return None
 
     def header_goals(self, line, text, verb, subs, number):
@@ -1230,6 +1256,9 @@ class SpecBuilder:
                 goals.append(self.bounty_goal(creatures, int(collect.group(1)) if collect else 1,
                                               collect.group(2) if collect else None, place, i > 0))
             return goals
+        item = re.sub(r"\s+(?:in|from|at)$", "", target_text(text.rstrip(":")), flags=re.I)
+        if verb not in MOVE_VERBS and item and all(self.is_place_line(sub) for sub in subs):
+            return [self.usage_in_place(item, sub, i > 0) for i, sub in enumerate(subs)]
         if all(is_goal_line(plain(sub)) or plain(sub) in links(sub, "Location") for sub in subs):
             goals = []
             for i, sub in enumerate(subs):
@@ -1244,11 +1273,25 @@ class SpecBuilder:
             return [self.waypoint_of_list(sub, i > 0) for i, sub in enumerate(subs)]
         return [self.usage_goal([plain(sub) for sub in subs], len(subs))]
 
+    def is_place_line(self, sub):
+        """Whether a sub-item only names a place: `in [Location:Telos]`, `[Location:Caer Lyon] (in ...)`."""
+        if links(sub, "NPC") or links(sub, "Creature") or is_goal_line(plain(sub)):
+            return False
+        return bool(links(sub, "Location") or self.zone_paths.get(plain(sub)) or self.data.zone_by_place(plain(sub)))
+
+    def usage_in_place(self, item, sub, with_previous):
+        """A usage goal on the item in the place a sub-item names, its innermost place first."""
+        places = list(reversed(links(sub, "Location"))) or [plain(sub)]
+        zone = next((zone for zone in map(self.place_zone, places) if zone), self.zone)
+        goal = self.usage_goal([item], 1, zone)
+        if goal and with_previous:
+            goal["with_previous"] = True
+        return goal
+
     def waypoint_of_list(self, sub, with_previous):
-        goal = self.waypoint_goal(links(sub, "Location") or [plain(sub)], plain(sub), quiet=True)
-        if goal is None:
-            self.unresolved("goal.waypoint", plain(sub), True)
-        elif with_previous:
+        goal = (self.waypoint_goal(links(sub, "Location") or [plain(sub)], plain(sub), quiet=True)
+                or self.waypoint_here(plain(sub)))
+        if goal and with_previous:
             goal["with_previous"] = True
         return goal
 
@@ -1281,7 +1324,7 @@ class SpecBuilder:
                 if not self.zone and self.entry["fetched_from"] == "repository":
                     self.zone = giver_zone
                 giver_world = spec["giver"]["zone"].split("/")[0]
-                if giver_world != self.data.world and giver_world in {w.name for w in WORLDS}:
+                if giver_world != self.data.world and giver_world in {w.name for w in WORLDS} - HUB_WORLDS:
                     self.unresolved("giver (other world)", f"{giver_name} is placed in {spec['giver']['zone']}", True)
         elif not fields["auto_start"]:
             self.unresolved("giver", "none", True)

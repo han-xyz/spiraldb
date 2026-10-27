@@ -409,17 +409,24 @@ and Reward, and resolves:
   goal. A place no zone is named for is a zone volume of that name (`Locate Dragon's Mouth Cave`, `Go to Living
   Flame`): the one in the zone the goals before it end in, else the world's one zone that has it, as a waypoint with
   `volume`. A `Go to` or `Locate` line that resolves to none of these is a waypoint into the zone the goals before it
-  end in, listed as `goal.volume (not found)`; any other is left out and listed. A find-like line that names no item but
+  end in, listed as `goal.waypoint (current zone)`; any other is left out and listed. A find-like line that names no item but
   a place is a waypoint. A defeat in a place with its own zone (`Defeat Morganthe (in Morganthe's Chamber)`) sends
   the player there. A movement header over names no item reads (`Go to:` Test of Vision...) is one step of waypoints.
+  A header that names an item over sub-items that only name places (`Find Hero Flower` / `in Telos`, `Collect
+  Tapestry from:` / `Caer Lyon (in Nosebiter's Hideout)`) is one step of usage goals on that item, each in its place's
+  innermost zone.
 - a goal line no item reads, unless its verb collects (collect, gather, recover...): a waypoint to the place a
   parenthesised note enters (`Rest by the fire (Enter Rage Dream)`), else to what follows its "to" or "into" (`Follow
   Freddie to the Next Room`), else to the place its whole target names (`Clear out Centaurzan's Cabin`), or a persona
   goal when that names an NPC (`Lead the Nobles to Dasein`). An item verb (use, open, examine...) reads only the
   whole target, and only when it is a place link. A line that resolves to none of these blocks under the field its
-  verb asks for: `goal.waypoint` (movement and find-like verbs, reach, ascend, infiltrate, "make your way"..., or a
-  line with a destination), `goal.usage` (item verbs), `goal.persona` (person verbs), `goal.unknown-verb` (any
-  other verb); a collect line no item reads stays `goal.items`. `update` is a talk verb.
+  verb asks for: `goal.usage` (item verbs), `goal.persona` (person verbs), `goal.unknown-verb` (any other verb); a
+  collect line no item reads stays `goal.items`. A movement or find-like line (reach, ascend, infiltrate, "make your
+  way"..., or a line with a destination) becomes a waypoint into the zone the goals before it end in, listed as
+  `goal.waypoint (current zone)`, and blocks as `goal.waypoint` only without one. `update`, `convince` and
+  `negotiate` are talk verbs; `smoosh`, `challenge` and `stop` kill verbs; `get`, `procure` and `pick` (up) collect.
+  An item the world's folder lacks is the one the nearest other ObjectData folder names exactly (Wizard City's Stone of
+  Mazzaroth is `DS_Mazzaroth_Stone`), listed as `goal.items (other folder)`.
 - the zone from the zone category, else the giver's location, to the zone where most of that zone's givers stand,
   else to the world's zone named for it. The giver is the persona placed in the zone its Giver Location names, else in
   a zone whose only way out leads there (Dalia Falmea `Giver Location: Ravenwood` is `WC-RAV-NPC04` in
@@ -429,7 +436,7 @@ and Reward, and resolves:
 - `Note: Level N is needed to start this quest.` to `level` and `min_level` N, kept when prerequisites are rewired;
   `must be in the School of Fire` to a `{"school": "Fire"}` entry first in `requires`.
 - a giver placed in another registered world's zone blocks the spec (`giver (other world)`): the quest belongs to that
-  world. Zones of unregistered worlds such as MonthlyEvents are allowed.
+  world. Zones of unregistered worlds and of the Arcanum hub (`HUB_WORLDS`) are allowed.
 - prerequisites to the ids of the other specs, or of the pack's quests with that title.
 - the Reward section's `[Spell:...]` links to `reward.spells`: the school form when a school icon comes just before
   the link (a page with one spell per school), a plain name otherwise. A cantrip (`Spells/Cantrips/`, `To

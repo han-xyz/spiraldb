@@ -127,10 +127,10 @@ class GoalLineTest(unittest.TestCase):
         spec = build("Survivors", GiverPlacedIn("Avalon/AV_Z03_CaerLyon", personas=personas))
         self.assertIn("giver (other world)", [field for field, _ in blocking(spec)])
 
-    def test_a_giver_placed_in_an_unregistered_hub_does_not_block_the_spec(self):
+    def test_a_giver_placed_in_the_arcanum_hub_does_not_block_the_spec(self):
         personas = ["Edgar Ableton", "Mackenzie Trowel", "Peter Cheswick", "Dalton Prescott"]
-        spec = build("Survivors", GiverPlacedIn("MonthlyEvents/ME_Z00_Hub", personas=personas))
-        self.assertEqual(spec["giver"]["zone"], "MonthlyEvents/ME_Z00_Hub")
+        spec = build("Survivors", GiverPlacedIn("Arcanum/AR_Z01_Hub", personas=personas))
+        self.assertEqual(spec["giver"]["zone"], "Arcanum/AR_Z01_Hub")
         self.assertNotIn("giver (other world)", [field for field, _ in blocking(spec)])
 
     def test_a_talk_to_header_is_one_step_of_its_npcs(self):
@@ -305,22 +305,43 @@ class GoalLineTest(unittest.TestCase):
         self.assertEqual(goals, [("persona", "Villagers")])
 
     def test_a_line_read_as_nothing_blocks_under_the_field_its_verb_asks_for(self):
-        lines = ["@Make Your Way Up", "@Investigate Strange Noise", "@Celebrate Your Victory", "@Open Cell Door",
-                 "@Collect 5 Comestibles", "@Rescue Principe Mario", "@Follow the Ox Alarm to Dark Cloud Base"]
+        lines = ["@Celebrate Your Victory", "@Open Cell Door", "@Collect 5 Comestibles", "@Rescue Principe Mario"]
         _, blocked = self.goals_of(lines, Data(personas=["Dalton Prescott"]))
-        self.assertEqual(blocked, [("goal.waypoint", "Make Your Way Up"),
-                                   ("goal.waypoint", "Investigate Strange Noise"),
-                                   ("goal.unknown-verb", "Celebrate Your Victory"),
+        self.assertEqual(blocked, [("goal.unknown-verb", "Celebrate Your Victory"),
                                    ("goal.usage", "Open Cell Door"),
                                    ("goal.items", "Comestibles"),
-                                   ("goal.persona", "Rescue Principe Mario"),
-                                   ("goal.waypoint", "Follow the Ox Alarm to Dark Cloud Base")])
+                                   ("goal.persona", "Rescue Principe Mario")])
+
+    def test_study_break_and_smoosh_read_as_item_and_kill_verbs(self):
+        data = Data(personas=["Dalton Prescott"], items=["Tome of Insight", "Vine Barrier"], mobs=["Common House Spider"])
+        goals, blocked = self.goals_of(["@Study Tome of Insight", "@Break the Vine Barrier",
+                                        "@Smoosh 2 Common House Spiders", "@Pick up the Vine Barrier"], data)
+        self.assertEqual((goals, blocked), ([("usage", ["W-tomeofinsight.AdjRef"]), ("usage", ["W-vinebarrier.AdjRef"]),
+                                             ("bounty", ["Common House Spider.AdjRef"]),
+                                             ("usage", ["W-vinebarrier.AdjRef"])], []))
+
+    def test_a_movement_line_read_as_nothing_is_a_waypoint_into_the_current_zone_to_review(self):
+        lines = ["@Make Your Way Up", "@Investigate Strange Noise", "@Follow the Ox Alarm to Dark Cloud Base"]
+        goals, blocked = self.goals_of(lines, Data(personas=["Dalton Prescott"]))
+        self.assertEqual((goals, blocked), ([("waypoint", ZONE)] * 3, []))
 
     def test_a_movement_header_over_names_no_item_reads_is_one_step_of_waypoints(self):
         data = Data(personas=["Dalton Prescott"], places={"Test of Vision": "W/Vision"})
         goals, blocked = self.goals_of(["@Go to:", "@@Test of Vision", "@@Test of Constellation"], data,
                                        (ZONE, "W/Vision"))
-        self.assertEqual((goals, blocked), ([("waypoint", "W/Vision")], [("goal.waypoint", "Test of Constellation")]))
+        self.assertEqual((goals, blocked), ([("waypoint", "W/Vision"), ("waypoint", ZONE)], []))
+
+    def test_an_item_header_over_places_is_that_item_in_each_place(self):
+        data = Data(personas=["Dalton Prescott"], items=["Hero Flower", "Tapestry"],
+                    places={"Telos": "W/Telos", "Heap": "W/Heap", "Nosebiter's Hideout": "W/Hideout"})
+        zones = (ZONE, "W/Telos", "W/Heap", "W/Hideout")
+        goals, blocked = self.goals_of(["@Find Hero Flower", "@@in [Location:Telos]", "@@in [Location:Heap]"], data,
+                                       zones)
+        self.assertEqual((goals, blocked), ([("usage", ["W-heroflower.AdjRef"])] * 2, []))
+        fields = {**fields_of("Survivors"), "goals": [
+            "@Collect Tapestry from:", "@@[Location:Caer Lyon] (in [Location:Nosebiter's Hideout])"]}
+        spec = build("Like_Dockwork", data, known_zones=zones, fields=fields)
+        self.assertEqual((spec["goals"][0]["items"], spec["goals"][0]["zone"]), (["W-tapestry.AdjRef"], "W/Hideout"))
 
 
 class SchoolQuestTest(unittest.TestCase):
@@ -355,7 +376,7 @@ class SchoolQuestTest(unittest.TestCase):
         self.assertEqual([(goal["type"], goal["zone"]) for goal in spec["goals"]],
                          [("waypoint", ZONE), ("waypoint", ZONE), ("persona", ZONE)])
         self.assertEqual(blocking(spec), [])
-        self.assertIn(("goal.volume (not found)", "Living Flame", False),
+        self.assertIn(("goal.waypoint (current zone)", "Living Flame", False),
                       [(item["field"], item["value"], item["blocking"]) for item in spec["needs_review"]])
 
     def test_the_giver_stands_in_the_zone_its_giver_location_names(self):
@@ -551,6 +572,11 @@ class ClientLookupTest(unittest.TestCase):
         data = ClientData(world("WizardCity"))
         self.assertEqual(data.persona("Moolinda Wu", "WizardCity/WC_Ravenwood")["template"], "WC-RAV-NPC01")
         self.assertEqual(data.persona("Malorn Ashthorn", "WizardCity/WC_Ravenwood_Lite")["template"], "WC-RAV-NPC08")
+
+    def test_an_item_the_world_lacks_comes_from_the_nearest_folder_that_has_it(self):
+        entries = ClientData(world("WizardCity")).usage_entries("the Stone of Mazzaroth", "")
+        self.assertEqual([(entry["adjective"], entry["folder"]) for entry in entries],
+                         [("DS_Mazzaroth_Stone.AdjRef", "DS")])
 
     def test_a_volume_name_reads_the_zones_that_hold_it(self):
         data = ClientData(world("WizardCity"))

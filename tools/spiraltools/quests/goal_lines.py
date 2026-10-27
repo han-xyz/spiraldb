@@ -2,17 +2,21 @@
 wiki's notes."""
 import re
 
-KILL_VERBS = {"defeat", "fight", "battle", "beat", "vanquish", "duel", "slay", "kill", "subdue", "banish"}
-TALK_VERBS = {"talk", "speak", "meet", "visit", "report", "ask", "greet", "tell", "consult", "seek", "update"}
+KILL_VERBS = {"defeat", "fight", "battle", "beat", "vanquish", "duel", "slay", "kill", "subdue", "banish", "smoosh",
+              "challenge", "stop"}
+TALK_VERBS = {"talk", "speak", "meet", "visit", "report", "ask", "greet", "tell", "consult", "seek", "update",
+              "convince", "negotiate"}
 MOVE_VERBS = {"go", "enter", "explore", "search", "return", "exit", "continue", "head", "travel", "journey",
               "proceed", "venture", "leave", "climb", "descend", "ride", "sail", "fly", "teleport", "flee",
-              "escape", "walk", "run", "board", "press"}
+              "escape", "walk", "run", "board", "press", "scout"}
 # Verbs whose object is a thing to click even when the wiki links it as an NPC (an Examine [NPC:Stellar Protector]).
 ITEM_VERBS = {"use", "activate", "examine", "inspect", "interact", "photomance", "photograph", "open", "light",
               "place", "plant", "fish", "release", "repair", "fix", "read", "restore", "remove", "clear", "collect",
-              "gather", "recover", "retrieve", "craft", "destroy"}
+              "gather", "recover", "retrieve", "craft", "destroy", "study", "tune", "unlock", "chop", "trim", "water",
+              "install", "paint", "purify", "restart", "write", "play", "break", "tear", "unravel", "get", "procure",
+              "pick"}
 # Item verbs whose line names an item to collect, which stays a usage goal even when no item reads it.
-COLLECT_VERBS = {"collect", "gather", "recover", "retrieve", "craft"}
+COLLECT_VERBS = {"collect", "gather", "recover", "retrieve", "craft", "get", "procure", "pick"}
 FIND_VERBS = {"find", "locate", "look", "investigate", "check", "survey", "track"}
 PERSON_VERBS = {"rescue", "free", "save", "escort", "follow", "approach", "help", "assist", "deliver", "give",
                 "bring", "show", "wake", "pursue", "confront", "protect", "heal", "aid", "warn", "catch", "chase",
