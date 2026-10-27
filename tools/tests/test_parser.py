@@ -1,0 +1,176 @@
+import os
+import unittest
+
+from client import needs_gamedata, needs_rootwad
+from spiraltools import templates
+from spiraltools.quests.archive import (ClientData, SpecBuilder, item_entries, item_index, norm, read_page,
+                                       singular_forms)
+from spiraltools.wad import GAMEDATA_DIR
+from spiraltools.worlds import world
+
+PAGES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures", "pages")
+ZONE = "W/Z_Quest"
+
+
+def fields_of(name):
+    with open(os.path.join(PAGES, f"Quest_{name}.html"), encoding="utf-8") as f:
+        return read_page(f.read())
+
+
+class Data:
+    """The client lookups a spec needs, over a handful of names."""
+    folder = "W"
+    level = 1
+
+    def __init__(self, personas=(), mobs=(), items=(), places=None):
+        self.personas = {norm(name): name for name in personas}
+        self.mobs = {norm(name): name for name in mobs}
+        self.objects = item_index([{"template": f"W-{norm(name)}", "name": name, "name_key": f"Items_{i}",
+                                    "icon": "", "adjectives": [f"W-{norm(name)}.AdjRef"]}
+                                   for i, name in enumerate(items)], "W")
+        self.places = places or {}
+
+    def persona(self, name, zone):
+        found = self.personas.get(norm(name))
+        return found and {"name": found, "persona": found, "folder": "W", "portrait": "", "template_id": 1,
+                          "zones": [ZONE]}
+
+    def mob_entries(self, name):
+        found = next((self.mobs[form] for form in singular_forms(name) if form in self.mobs), None)
+        return [{"adjective": f"{found}.AdjRef", "target": "", "folder": "W"}] if found else []
+
+    def object_entries(self, name):
+        return item_entries(self.objects, name)
+
+    def zone_by_place(self, place):
+        return self.places.get(place)
+
+    def has_persona(self, name):
+        return norm(name) in self.personas
+
+    def location(self, place):
+        return None
+
+    def quest_lines(self, key):
+        return {}
+
+    def title_keys(self, title):
+        return []
+
+    def internal_name(self, key):
+        return None
+
+
+def build(name, data, known_zones=(ZONE,)):
+    fields = fields_of(name)
+    entry = {"name": name, "page": f"Quest:{name}", "zones": ["Quest Zone"], "fetched": "20250101000000"}
+    builder = SpecBuilder(data, entry, fields, {"Quest Zone": ZONE}, {}, set(known_zones))
+    return builder.build("ABC", "T-1")
+
+
+def blocking(spec):
+    return [(item["field"], item["value"]) for item in spec["needs_review"] if item["blocking"]]
+
+
+def summary(goal):
+    return (goal["type"], goal.get("persona") or goal.get("mobs") or goal.get("items") or goal.get("zone"),
+            goal.get("count"), goal.get("with_previous", False))
+
+
+class GoalLineTest(unittest.TestCase):
+    def test_a_talk_to_header_is_one_step_of_its_npcs(self):
+        data = Data(personas=["Edgar Ableton", "Mackenzie Trowel", "Peter Cheswick", "Dalton Prescott"])
+        spec = build("Survivors", data)
+        self.assertEqual([summary(goal) for goal in spec["goals"]],
+                         [("persona", "Edgar Ableton", None, False), ("persona", "Mackenzie Trowel", None, True),
+                          ("persona", "Peter Cheswick", None, True), ("persona", "giver", None, False)])
+
+    def test_repeated_lines_count_and_a_collect_hint_reads_as_an_item(self):
+        data = Data(mobs=["Stellar Protector", "Selenor"],
+                    items=["Stellar Protector", "Crystal Pylon", "Moon Relic"])
+        spec = build("Pylon_Raiders", data)
+        self.assertEqual([summary(goal) for goal in spec["goals"]],
+                         [("usage", ["W-stellarprotector.AdjRef"], 1, False),
+                          ("usage", ["W-crystalpylon.AdjRef"], 3, False),
+                          ("bounty", ["Stellar Protector.AdjRef"], 2, False),
+                          ("bounty", ["Selenor.AdjRef"], 1, False),
+                          ("usage", ["W-moonrelic.AdjRef"], 1, False)])
+        self.assertIsNone(fields_of("Pylon_Raiders")["hand_in"])
+
+    def test_school_and_rank_tags_are_not_part_of_a_creature_name(self):
+        data = Data(mobs=["Pingouin Revolutionary", "Principe Guard", "Aberrant Valencian",
+                          "Governor Rottingham Weiler"])
+        spec = build("Battle_of_the_Three_Armies", data)
+        self.assertEqual([goal["mobs"] for goal in spec["goals"]],
+                         [["Pingouin Revolutionary.AdjRef"], ["Principe Guard.AdjRef"],
+                          ["Aberrant Valencian.AdjRef"], ["Governor Rottingham Weiler.AdjRef"]])
+
+    def test_place_lines_are_waypoints_or_left_out_never_items(self):
+        spec = build("Battle_of_the_Three_Armies", Data(mobs=["Pingouin Revolutionary", "Principe Guard",
+                                                              "Aberrant Valencian", "Governor Rottingham Weiler"]))
+        self.assertNotIn("goal.items", [field for field, _ in blocking(spec)])
+        data = Data(personas=["Queen Elissa"], mobs=["Grey Ogre Spider"], items=["Spider Web", "Drum"],
+                    places={"Drum House": "W/Interiors/Z_Drum_House"})
+        spec = build("Drum_House", data, known_zones=(ZONE, "W/Interiors/Z_Drum_House"))
+        self.assertEqual([summary(goal) for goal in spec["goals"]],
+                         [("usage", ["W-spiderweb.AdjRef"], 1, False),
+                          ("waypoint", "W/Interiors/Z_Drum_House", None, False),
+                          ("bounty", ["Grey Ogre Spider.AdjRef"], 2, False),
+                          ("usage", ["W-drum.AdjRef"], 4, False),
+                          ("persona", "giver", None, False)])
+
+    def test_a_defeat_in_another_zone_sends_the_player_there(self):
+        data = Data(personas=["Old Cob"], mobs=["Morganthe"], places={"Morganthe's Chamber": "W/Boss_Room"})
+        spec = build("Final_Challenge", data, known_zones=(ZONE, "W/Boss_Room"))
+        self.assertEqual((spec["goals"][0]["type"], spec["goals"][0]["zone"]), ("bounty", "W/Boss_Room"))
+        spec = build("Final_Challenge", data)
+        self.assertEqual(spec["goals"][0]["zone"], ZONE)
+
+    def test_a_task_list_header_reads_each_task_as_its_own_goal(self):
+        data = Data(personas=["Doctor Witch"], mobs=["Wight Rhino"], items=["Wisp Speck"])
+        spec = build("Apothecary_Now", data)
+        self.assertEqual([summary(goal) for goal in spec["goals"]],
+                         [("bountycollect", ["Wight Rhino.AdjRef"], 3, False),
+                          ("usage", ["W-wispspeck.AdjRef"], 4, True),
+                          ("persona", "giver", None, False)])
+        data = Data(personas=["Don Leonardo"], mobs=["Banana Spider"], items=["Vale of Perfection"])
+        spec = build("Dye_For_Art", data)
+        self.assertEqual([summary(goal) for goal in spec["goals"]],
+                         [("usage", ["W-valeofperfection.AdjRef"], 1, False),
+                          ("bountycollect", ["Banana Spider.AdjRef"], 1, True),
+                          ("persona", "giver", None, False)])
+
+    def test_npc_verbs_and_notes_on_npc_names(self):
+        data = Data(personas=["Fernanda Maregellan", "Dasein", "Dasein on High", "Dasein Anomaly"],
+                    mobs=["Banana Spider"], items=["Firefly", "Frame of Mind"])
+        spec = build("Monkey_Business_(Novus)", data)
+        self.assertEqual([summary(goal)[:2] for goal in spec["goals"]],
+                         [("persona", "giver"), ("persona", "Dasein"), ("bounty", ["Banana Spider.AdjRef"]),
+                          ("usage", ["W-firefly.AdjRef"]), ("persona", "Dasein on High"), ("persona", "Dasein Anomaly"),
+                          ("usage", ["W-frameofmind.AdjRef"]), ("usage", ["W-frameofmind.AdjRef"]),
+                          ("persona", "Dasein")])
+
+
+@needs_rootwad
+@needs_gamedata
+class ClientLookupTest(unittest.TestCase):
+    def test_an_npc_placed_by_template_id_has_its_zone(self):
+        placed = templates.zone_placements(GAMEDATA_DIR, "Khrysalis", {"KR-Bastion-NPC23": 1223156})
+        self.assertEqual(placed["KR-Bastion-NPC23"], ["Khrysalis/KR_Z00_Hub"])
+
+    def test_a_mob_the_world_lacks_comes_from_the_nearest_world_only(self):
+        data = ClientData(world("Karamelle"))
+        self.assertEqual({entry["folder"] for entry in data.mob_entries("The Quake Charmer")}, {"NV"})
+
+    def test_a_place_resolves_to_the_world_zone_of_that_name(self):
+        data = ClientData(world("Zafaria"))
+        self.assertEqual(data.zone_by_place("the Drum House"), "Zafaria/Interiors/ZF_Z10_I03_Drum_House")
+        self.assertIsNone(data.zone_by_place("Nowhere At All"))
+
+    def test_a_title_with_the_wiki_world_tag_matches_the_title(self):
+        data = ClientData(world("Novus"))
+        self.assertIn("17D615", data.title_keys("Monkey Business (Novus)"))
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -20,6 +20,8 @@ PERSONA_SUFFIX = b"_Persona"
 PORTRAIT = re.compile(rb"GUI/NpcPortraits/[ -~]+?\.dds")
 QUEST_ICON = re.compile(rb"GUI/QuestButtons/Quest_([ -~]+?)(?:_off)?\.dds")
 INTERACTABLE = b"InteractableBehavior"
+# A zone object's template id: this field hash, then the id as a 64-bit integer.
+TEMPLATE_ID_FIELD = b"\xaf\xa9\xc8\x25"
 MOBS_DESCRIPTION = "List the mobs of a world's object templates: display name, template, template id and adjectives."
 ITEMS_DESCRIPTION = ("List the items of a world's object templates, the objects a usage goal names: display name, "
                      "quest icon name, template, template id and adjectives.")
@@ -150,13 +152,14 @@ def display_name(rootwad, key, langs):
 
 
 def zone_placements(gamedata, world, templates):
-    """template name -> zones whose gamedata.bin names it."""
+    """template name -> zones whose gamedata.bin names it or places an object by its template id, for a mapping of
+    template name -> template id."""
     placed = {name: [] for name in templates}
     for path in sorted(glob.glob(os.path.join(gamedata, f"{world}-*.wad"))):
         data = read_wad(path, {"gamedata.bin"}).get("gamedata.bin", b"")
         zone = zone_of_wad(path)
-        for name in templates:
-            if name.encode() in data:
+        for name, template_id in templates.items():
+            if name.encode() in data or (template_id and TEMPLATE_ID_FIELD + struct.pack("<Q", template_id) in data):
                 placed[name].append(zone)
     return placed
 
@@ -225,7 +228,7 @@ def add_npcs_arguments(parser):
 
 def run_npcs(args):
     rows = list(npcs(args.rootwad, args.folder))
-    placed = zone_placements(args.gamedata, args.world, [row["template"] for row in rows])
+    placed = zone_placements(args.gamedata, args.world, {row["template"]: row["template_id"] for row in rows})
     print("persona\tname\tname key\ttemplate\ttemplate id\tportrait\tzones")
     for row in sorted(rows, key=lambda r: r["persona"]):
         print("\t".join([row["persona"], row["name"], row["name_key"], row["template"], str(row["template_id"]),

@@ -18,9 +18,11 @@ import urllib.request
 from .. import templates
 from ..lang import LANG_SUBDIR, ROOTWAD_DIR, read_lang
 from ..pack import PACK, QUEST_SPECS_DIR, quest_template_paths, zone_transfer_files
-from ..wad import GAMEDATA_DIR
-from ..worlds import lang_cluster, world
+from ..wad import GAMEDATA_DIR, zone_of_wad
+from ..worlds import WORLDS, lang_cluster, world
 from .generate import diff
+from .goal_lines import (FIND_VERBS, goal_kind, is_goal_line, place_readings, repeated, strip_notes, target_text,
+                         verb_of)
 
 DESCRIPTION = "Build questgen specs for a world from the Internet Archive's copies of the Wizard101 Central wiki."
 DEFAULT_CACHE = os.path.join(PACK, ".scratch", "friends-server", "task-A1", "cache")
@@ -39,6 +41,7 @@ QUEST_TYPES = ("storyline", "side", "instance")
 MIN_SHARED_WEIGHT, CLEAR_MARGIN = 4.0, 1.5
 CHAIN_WINDOW = 16
 NAME_CUTOFF = 0.8
+ZONE_PREFIX = re.compile(r"^[A-Z]{2}_(?:Z\d+[A-Za-z]?_)?(?:I\d+_)?(?:the_)?", re.I)
 
 
 class ArchiveUnavailable(Exception):
@@ -297,7 +300,11 @@ def grouped_goals(goal_lines):
         if depth >= 2 and groups:
             groups[-1][1].append(line.lstrip("@"))
         elif depth == 0 and groups:
-            if not line.startswith("("):
+            if line.startswith("("):
+                continue
+            if groups[-1][1]:
+                groups[-1][1][-1] += " " + line
+            else:
                 groups[-1][0] += " " + line
         else:
             groups.append([line.lstrip("@"), []])
@@ -322,6 +329,14 @@ def singular_forms(text):
     return forms
 
 
+def nearest_folders(registered, folders):
+    """ObjectData folders, the registered worlds' first, nearest the world in WORLDS order (the earlier of two equally
+    near), then the rest by name."""
+    here = WORLDS.index(registered)
+    order = {w.folder: (abs(i - here), i) for i, w in enumerate(WORLDS)}
+    return sorted(folders, key=lambda folder: (order.get(folder, (len(WORLDS), 0)), folder))
+
+
 class ClientData:
     """The lookups a spec needs: titles, personas, mobs, objects, zone locations and the pack's quests."""
 
@@ -334,7 +349,8 @@ class ClientData:
         self.lang_range = lang_cluster(registered, ROOTWAD_DIR)
         self.lang_dir = os.path.join(ROOTWAD_DIR, LANG_SUBDIR)
         rows = list(templates.npcs(ROOTWAD_DIR, self.folder))
-        placed = templates.zone_placements(GAMEDATA_DIR, self.world, [row["template"] for row in rows])
+        placed = templates.zone_placements(GAMEDATA_DIR, self.world, {row["template"]: row["template_id"]
+                                                                      for row in rows})
         zones_of_persona = {}
         for row in rows:
             zones_of_persona.setdefault(row["persona"], []).extend(placed[row["template"]])
@@ -350,11 +366,15 @@ class ClientData:
         for key, text in self.read_lang("WizardMobs").items():
             self.mob_keys.setdefault(text, key)
         self.mobs = self.mob_index([self.folder])
-        self.other_folders = sorted(folder for folder in os.listdir(os.path.join(ROOTWAD_DIR, "ObjectData"))
-                                    if folder != self.folder
-                                    and os.path.isdir(os.path.join(ROOTWAD_DIR, "ObjectData", folder)))
+        self.other_folders = nearest_folders(registered, [
+            folder for folder in os.listdir(os.path.join(ROOTWAD_DIR, "ObjectData"))
+            if folder != self.folder and os.path.isdir(os.path.join(ROOTWAD_DIR, "ObjectData", folder))])
         self.other_mobs, self.other_personas = None, None
         self.objects = item_index(templates.items(ROOTWAD_DIR, self.folder), self.folder)
+        self.zone_names = {}
+        for path in glob.glob(os.path.join(GAMEDATA_DIR, f"{self.world}-*.wad")):
+            zone = zone_of_wad(path)
+            self.zone_names.setdefault(norm(ZONE_PREFIX.sub("", zone.rsplit("/", 1)[-1])), []).append(zone)
         self.zone_locations = {}
         # Of the keys that read the same, the unpadded one with the lowest number is the zone's own.
         for key, text in sorted(self.read_lang("ZoneLocName").items(),
@@ -393,7 +413,8 @@ class ClientData:
         rows = self.other_personas.get(wanted, [])
         unplaced = [row for row in rows if row["zones"] is None]
         if unplaced:
-            placed = templates.zone_placements(GAMEDATA_DIR, "*", [row["template"] for row in unplaced])
+            placed = templates.zone_placements(GAMEDATA_DIR, "*", {row["template"]: row["template_id"]
+                                                                  for row in unplaced})
             for row in unplaced:
                 row["zones"] = placed[row["template"]]
         return rows
@@ -405,8 +426,13 @@ class ClientData:
         return os.path.exists(os.path.join(self.lang_dir, f"WizQst{key}.lang"))
 
     def title_keys(self, title):
-        wanted = title_norm(title)
-        return [key for key, text in self.titles.items() if title_norm(text) == wanted]
+        """The QuestTitle keys that read the title; a title the wiki tagged with its world, `Monkey Business
+        (Novus)`, is read without the tag when nothing reads it whole."""
+        for wanted in dict.fromkeys([title_norm(title), title_norm(strip_notes(title))]):
+            found = [key for key, text in self.titles.items() if title_norm(text) == wanted]
+            if found:
+                return found
+        return []
 
     def internal_name(self, key):
         text = self.titles.get(key, "")
@@ -423,6 +449,15 @@ class ClientData:
     def location(self, place):
         return self.zone_locations.get(norm(f"{self.world}|{place}"))
 
+    def zone_by_place(self, place):
+        """The world's one zone whose wad is named for the place (`the Drum House`: ZF_Z10_I03_Drum_House), else
+        None."""
+        zones = self.zone_names.get(norm(re.sub(r"^the\s+", "", place.strip(), flags=re.I)), [])
+        return zones[0] if len(zones) == 1 else None
+
+    def has_persona(self, name):
+        return norm(name) in self.personas
+
     def persona(self, name, zone):
         """The persona row for an NPC name, preferring one placed in the zone; None when the world has none."""
         wanted = norm(name)
@@ -437,13 +472,15 @@ class ClientData:
         return next((row for row in rows if zone in row["zones"]), next((r for r in rows if r["zones"]), rows[0]))
 
     def mob_entries(self, name):
-        """The mob entries for a name, from the world's folder, else from any other folder."""
+        """The mob entries for a name, from the world's folder, else from the nearest other folder that has it."""
         found = next((self.mobs[form] for form in singular_forms(name) if form in self.mobs), [])
         if found:
             return found
         if self.other_mobs is None:
             self.other_mobs = self.mob_index(self.other_folders)
-        return next((self.other_mobs[form] for form in singular_forms(name) if form in self.other_mobs), [])
+        found = next((self.other_mobs[form] for form in singular_forms(name) if form in self.other_mobs), [])
+        nearest = min((entry["folder"] for entry in found), key=self.other_folders.index, default=None)
+        return [entry for entry in found if entry["folder"] == nearest]
 
     def object_entries(self, name):
         return item_entries(self.objects, name)
@@ -535,6 +572,7 @@ class SpecBuilder:
         return self.data.location(self.zone_name) if self.zone_name else None
 
     def persona_ref(self, name, field):
+        name = strip_notes(name)
         row = self.data.persona(name, self.zone)
         if row is None:
             self.unresolved(field, name, True)
@@ -565,9 +603,9 @@ class SpecBuilder:
     def place_of(self, zone):
         return next((name for name, path in self.zone_paths.items() if path == zone), self.zone_name or "")
 
-    def bounty_goal(self, creatures, count, item, place, with_previous=False):
+    def bounty_goal(self, creatures, count, item, place, with_previous=False, zone=None):
         mobs, target = [], ""
-        for creature in creatures:
+        for creature in map(strip_notes, creatures):
             entries = self.data.mob_entries(creature)
             if not entries:
                 self.unresolved("goal.mobs", creature, True)
@@ -578,7 +616,7 @@ class SpecBuilder:
         if not mobs:
             return None
         goal = {"type": "bountycollect" if item else "bounty", "mobs": list(dict.fromkeys(mobs)), "count": count,
-                "target": target, "zone": self.zone}
+                "target": target, "zone": zone or self.zone}
         if item:
             descriptor = self.descriptor(item)
             if descriptor:
@@ -612,16 +650,35 @@ class SpecBuilder:
             goal["loc"] = loc
         return goal
 
-    def waypoint_goal(self, place):
-        zone = self.zone_paths.get(place)
-        if not zone:
-            self.unresolved("goal.zone (waypoint left out)", place, False)
+    def place_zone(self, place):
+        """The zone path of a place: the zone its category's givers stand in, else the world's zone named for it
+        when that zone has a ZoneTransfer file."""
+        if place in self.zone_paths:
+            return self.zone_paths[place]
+        zone = self.data.zone_by_place(place)
+        if zone and zone not in self.known_zones:
+            self.unresolved("goal.zone (no ZoneTransfer)", f"{place}: {zone}", False)
             return None
-        goal = {"type": "waypoint", "zone": zone}
-        loc = self.data.location(place)
-        if loc:
-            goal["loc"] = loc
-        return goal
+        return zone
+
+    def waypoint_goal(self, places, text, quiet=False):
+        """A waypoint to the first place that has a zone: the linked places, else the line's target; a line naming
+        one of the world's NPCs instead is a persona goal. None, listed unless quiet, when nothing resolves."""
+        readings = places or place_readings(target_text(text))
+        for place in readings:
+            zone = self.place_zone(place)
+            if zone:
+                goal = {"type": "waypoint", "zone": zone}
+                loc = self.data.location(place)
+                if loc:
+                    goal["loc"] = loc
+                return goal
+        name = target_text(text)
+        if not places and name and self.data.has_persona(name):
+            return self.persona_goal(name)
+        if not quiet:
+            self.unresolved("goal.zone (waypoint left out)", ", ".join(places) or text, False)
+        return None
 
     def fallback_prep(self, giver):
         """The line that offers the quest when no line reads as an offer: the first naming the giver, else the first."""
@@ -643,35 +700,38 @@ class SpecBuilder:
 
     def goals(self):
         built = []
-        for line, subs in grouped_goals(self.fields["goals"]):
-            built += [goal for goal in self.goals_of(line, subs) if goal is not None]
+        for line, subs, times in repeated(grouped_goals(self.fields["goals"])):
+            built += [goal for goal in self.goals_of(line, subs, times) if goal is not None]
         return built
 
-    def goals_of(self, line, subs):
+    def goals_of(self, line, subs, times=1):
+        """The goals of a goal line; a line repeated on consecutive lines (`times`) counts that often."""
         text = plain(line)
         count = re.search(r"\b(\d+)\b", text)
         number = int(count.group(1)) if count else 1
-        verb = text.split(" ", 1)[0].rstrip(":").lower()
+        verb = verb_of(text)
         if subs:
             return self.header_goals(line, text, verb, subs, number)
-        if verb == "talk":
-            name = (links(line, "NPC") or [re.sub(r"^Talk to\s+|\s+in\s+.*$", "", text, flags=re.I)])[0]
-            return [self.persona_goal(name)]
-        if verb == "defeat":
-            creatures = links(line, "Creature") or [re.sub(r"^Defeat\s+(\d+\s+)?|\s+and\s+.*$|\s+in\s+.*$", "", text)]
+        npcs, creatures, places = links(line, "NPC"), links(line, "Creature"), links(line, "Location")
+        kind = goal_kind(verb, text, npcs, creatures, places)
+        if kind == "persona":
+            return [self.persona_goal(npcs[0] if npcs else target_text(re.sub(r"\s+(in|at)\s+.*$", "", text)))]
+        if kind == "bounty":
+            creatures = creatures or [re.sub(r"\s+and\s+.*$|\s+in\s+.*$", "", target_text(text))]
             collect = re.search(r"\bcollect\s+(?:(\d+)\s+)?(.+)$", text, re.I)
-            place = (links(line, "Location") or [None])[0]
+            place = (places or [None])[0]
+            zone = next((zone for zone in map(self.place_zone, places) if zone), None)
             if collect:
-                return [self.bounty_goal(creatures, int(collect.group(1) or 1), collect.group(2), place)]
-            return [self.bounty_goal(creatures, number, None, place)]
-        if verb == "go":
-            places = links(line, "Location")
-            if not places:
-                self.unresolved("goal.zone (waypoint left out)", text, False)
-                return []
-            return [self.waypoint_goal(places[-1])]
-        item = re.sub(rf"^\S+\s+(\d+\s+)?", "", text)
-        return [self.usage_goal([item], number)]
+                return [self.bounty_goal(creatures, int(collect.group(1) or 1), collect.group(2), place, zone=zone)]
+            return [self.bounty_goal(creatures, number * times, None, place, zone=zone)]
+        if kind == "waypoint":
+            return [self.waypoint_goal(places, text)]
+        item = target_text(text)
+        if verb in FIND_VERBS and not self.data.object_entries(item):
+            found = self.waypoint_goal(places, text, quiet=True)
+            if found:
+                return [found]
+        return [self.usage_goal([item], number * times)]
 
     def header_goals(self, line, text, verb, subs, number):
         if verb == "talk" or all(links(sub, "NPC") and not links(sub, "Creature") for sub in subs):
@@ -689,6 +749,14 @@ class SpecBuilder:
                 place = (links(sub, "Location") or [None])[0]
                 goals.append(self.bounty_goal(creatures, int(collect.group(1)) if collect else 1,
                                               collect.group(2) if collect else None, place, i > 0))
+            return goals
+        if all(is_goal_line(plain(sub)) for sub in subs):
+            goals = []
+            for i, sub in enumerate(subs):
+                built = [goal for goal in self.goals_of(sub, []) if goal is not None]
+                if i > 0 and built:
+                    built[0]["with_previous"] = True
+                goals += built
             return goals
         return [self.usage_goal([plain(sub) for sub in subs], len(subs))]
 
@@ -792,7 +860,7 @@ def quest_names(fields):
     """The NPCs, creatures and items a quest page names: what its WizQst lines should mention too."""
     names = [fields["giver"], fields["hand_in"]]
     for line in fields["goals"]:
-        names += links(line, "NPC") + links(line, "Creature")
+        names += [strip_notes(name) for name in links(line, "NPC") + links(line, "Creature")]
         names += re.findall(r"\b(?:for|collect|find|gather)\s+(?:\d+\s+)?([A-Z][\w'-]*(?:\s+(?:of\s+)?[A-Z][\w'-]*)*)",
                             plain(line))
     return [name for name in dict.fromkeys(names) if name]
