@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z09_SkeletonKey_Landing",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_2_Sewers",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_SkeletonKey_Landing",
+        "m_destinationZone": "Empyrea/EM_Z09_NWAeroplains"
+      }
+    }
+  ]
+}

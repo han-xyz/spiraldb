@@ -1,0 +1,28 @@
+{
+  "ZoneName": "Lemuria/Interiors/LM_Z06_GuardComplex",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_SkyCity",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_GuardComplex",
+        "m_destinationZone": "Lemuria/LM_Z06_SkyCity"
+      }
+    },
+    {
+      "TriggerName": "Teleport_SkyCity_3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_GuardComplex",
+        "m_destinationZone": "Lemuria/LM_Z06_SkyCity"
+      }
+    }
+  ]
+}

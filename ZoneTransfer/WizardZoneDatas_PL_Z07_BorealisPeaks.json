@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Polaris/PL_Z07_BorealisPeaks",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_JeweledSlopes",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z07_JeweledSlopes"
+      }
+    }
+  ]
+}

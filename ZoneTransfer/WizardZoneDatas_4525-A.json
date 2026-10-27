@@ -12,6 +12,39 @@
         "m_destinationLoc": "-543.9056,-19360.21,-751.4737,2.47048",
         "m_destinationZone": "Polaris/PL_Z04_UrvilleStation"
       }
+    },
+    {
+      "TriggerName": "TeleportTo_MammothCave03",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z05_MammothCave03"
+      }
+    },
+    {
+      "TriggerName": "Teleport-MineLift",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_FrigidMaw",
+        "m_destinationZone": "Polaris/Interiors/PL_Z05_MineLiftChamber_B"
+      }
+    },
+    {
+      "TriggerName": "Teleport-PebbleTrough",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z05_PebbleTrough"
+      }
     }
   ]
 }

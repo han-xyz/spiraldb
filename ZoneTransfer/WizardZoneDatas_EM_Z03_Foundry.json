@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z03_Foundry",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to EM_Z03_MagicalArchive",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Teleport from EM_Z03_Foundry",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z03_MagicalArchive"
+      }
+    }
+  ]
+}

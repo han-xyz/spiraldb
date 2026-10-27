@@ -1,0 +1,72 @@
+{
+  "ZoneName": "Krokotopia/KT_Selenopolis/KT_Z06_Forgotten",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Sigil Chamber of Almathea",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I08_ChamberAmalthea_Int"
+      }
+    },
+    {
+      "TriggerName": "Sigil Chamber of Mimas",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I07_ChamberMimas_Int"
+      }
+    },
+    {
+      "TriggerName": "Sigil Chamber of Light",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I02_TombLight_Int"
+      }
+    },
+    {
+      "TriggerName": "Sigil Chamber of Night",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I03_TombNight_Int"
+      }
+    },
+    {
+      "TriggerName": "Sigil ChamberOfTethys",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I05_ChamberTethys_Int"
+      }
+    },
+    {
+      "TriggerName": "Sigil Field of Reeds",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I04_FieldReeds_Int"
+      }
+    }
+  ]
+}

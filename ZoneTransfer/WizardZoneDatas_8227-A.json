@@ -23,6 +23,72 @@
         "m_destinationLoc": "-7163.613,-7021.372,2619.124,-2.46028",
         "m_destinationZone": "Khrysalis/KR_Z04_TyrianGorge"
       }
+    },
+    {
+      "TriggerName": "Teleport to KR-Blind Tower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z00_I04_Bastion_BlindTower"
+      }
+    },
+    {
+      "TriggerName": "Teleport to DoomMask",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z01_DoomMask"
+      }
+    },
+    {
+      "TriggerName": "Teleport to LimeBrights Lair",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z01_LimeBright"
+      }
+    },
+    {
+      "TriggerName": "Teleport to QuietOne",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z01_QuietOne"
+      }
+    },
+    {
+      "TriggerName": "Teleport to KR-WarRoom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z01_WarRoom"
+      }
+    },
+    {
+      "TriggerName": "Teleport to BurrowBreaker",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z01_ZanzaQuarters"
+      }
     }
   ]
 }

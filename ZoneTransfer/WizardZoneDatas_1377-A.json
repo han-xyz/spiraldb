@@ -78,6 +78,17 @@
         "m_destinationLoc": "Target location (Krok_Pyramid03 Krok_Pyramid_Level04 Entrance) (LEFT)",
         "m_destinationZone": "Krokotopia/KT_Pyramid/KT_ThroneRoom"
       }
+    },
+    {
+      "TriggerName": "Teleport_2_KrokonominautLair",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_PalaceOfFire",
+        "m_destinationZone": "Krokotopia/Interiors/KT_KrokonominautLair"
+      }
     }
   ]
 }

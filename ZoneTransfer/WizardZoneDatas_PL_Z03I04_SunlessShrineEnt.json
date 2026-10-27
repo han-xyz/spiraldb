@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Polaris/Interiors/PL_Z03I04_SunlessShrineEnt",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location-Exit",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-FromSunlessShrine",
+        "m_destinationZone": "Polaris/PL_Z03_IcefallPassage"
+      }
+    }
+  ]
+}

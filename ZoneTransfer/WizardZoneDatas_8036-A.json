@@ -45,6 +45,50 @@
         "m_destinationLoc": "-609.8817,325.0032,-78.94992,1.911836",
         "m_destinationZone": "Azteca/AZ_Z08_PitchBlackLake"
       }
+    },
+    {
+      "TriggerName": "Bad Taste",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z07_Cave01"
+      }
+    },
+    {
+      "TriggerName": "Cipactli",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z07_CipactliCave"
+      }
+    },
+    {
+      "TriggerName": "Zemeckis Cave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z07_GoldMines"
+      }
+    },
+    {
+      "TriggerName": "Big Mother Quetzal",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z07_MotherQuetzalCave"
+      }
     }
   ]
 }

@@ -12,6 +12,17 @@
         "m_destinationLoc": "-2741.976,16322.68,272.9577,0",
         "m_destinationZone": "Empyrea/EM_Z09_NWAeroplains"
       }
+    },
+    {
+      "TriggerName": "Teleport_2_HelenaBattle",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Camp",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z09_HelenasBattle"
+      }
     }
   ]
 }

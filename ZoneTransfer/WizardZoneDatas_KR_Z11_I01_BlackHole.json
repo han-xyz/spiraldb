@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Khrysalis/Interiors/KR_Z11_I01_BlackHole",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BackToHive",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromtheBlackHole",
+        "m_destinationZone": "Khrysalis/KR_Z11_TheHive"
+      }
+    }
+  ]
+}

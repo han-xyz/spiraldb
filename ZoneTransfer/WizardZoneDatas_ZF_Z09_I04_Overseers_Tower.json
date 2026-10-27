@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z09_I04_Overseers_Tower",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_DrumJungle_Quarry",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Overseer_Tower",
+        "m_destinationZone": "Zafaria/ZF_Z09_Drum_Jungle"
+      }
+    }
+  ]
+}

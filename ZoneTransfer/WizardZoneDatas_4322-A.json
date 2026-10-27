@@ -12,6 +12,17 @@
         "m_destinationLoc": "2074.722,-4329.316,3.431379,2.973511",
         "m_destinationZone": "Karamelle/Interiors/KM_Z00_NanasHQ"
       }
+    },
+    {
+      "TriggerName": "Teleport to Cavity Chamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z00_TheCavity_Adv"
+      }
     }
   ]
 }

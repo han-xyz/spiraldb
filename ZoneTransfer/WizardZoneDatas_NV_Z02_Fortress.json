@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Novus/Interiors/NV_Z02_Fortress",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportSource_Exit",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetLocation_Tung-AkStronghold",
+        "m_destinationZone": "Novus/NV_Z02_StoneOfHeaven"
+      }
+    }
+  ]
+}

@@ -56,6 +56,138 @@
         "m_destinationLoc": "133.2469,376.7939,-6.662155,0",
         "m_destinationZone": "Khrysalis/Interiors/KR_Z03_Foothold"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_AsphodelMeadow",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_LastWood",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_AsphodelMeadow"
+      }
+    },
+    {
+      "TriggerName": "Sigil_To_LastWood_Cave_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_LastWood",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_Cave_01"
+      }
+    },
+    {
+      "TriggerName": "Sigil_To_LastWood_Clearing_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_LastWood",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_Clearing_01"
+      }
+    },
+    {
+      "TriggerName": "Sigil_To_DeathsHead_Cave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_LastWood",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_DeathsHead_Cave_Int"
+      }
+    },
+    {
+      "TriggerName": "Teleport to GardeningQuest",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_GardeningQuest"
+      }
+    },
+    {
+      "TriggerName": "Sigil_to_ShadowWeaverLeader",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_LastWood",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_I05_UmbraTent"
+      }
+    },
+    {
+      "TriggerName": "Teleport-RagweedMeadow",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "InRagwoodMeadow",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_RagweedMeadow"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Reverence Cave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_ReverenceCave"
+      }
+    },
+    {
+      "TriggerName": "SkeletonKey_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_SKB_LightbaneLair_Landing"
+      }
+    },
+    {
+      "TriggerName": "Teleport to UlleksTent",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_LastWood",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_UlleksTent"
+      }
+    },
+    {
+      "TriggerName": "Sigil_to_WeaponTent",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_LastWood",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_WeaponTent_Int"
+      }
+    },
+    {
+      "TriggerName": "Sigil_To_WorldRazer_Tent",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_LastWood",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z03_WorldRazer_Tent"
+      }
     }
   ]
 }

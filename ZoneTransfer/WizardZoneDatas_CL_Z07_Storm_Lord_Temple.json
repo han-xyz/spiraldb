@@ -1,0 +1,39 @@
+{
+  "ZoneName": "Celestia/CL_Z07_Storm_Lord_Temple",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToAvatarTemple",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z07i1_Storm_Lord_Temple"
+      }
+    },
+    {
+      "TriggerName": "ToTower2FlyingFish",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z07i2_Storm_Lord_Temple"
+      }
+    },
+    {
+      "TriggerName": "Sigil To StormSurgeCavern",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CS_StormSurgeCaverns"
+      }
+    }
+  ]
+}

@@ -34,6 +34,39 @@
         "m_destinationLoc": "3130.627,15.0496,0.8966675,1.573891",
         "m_destinationZone": "Empyrea/EM_Z11_VeloCity"
       }
+    },
+    {
+      "TriggerName": "SkeletonKeySigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z09_SkeletonKey_Landing"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_SphinxCavern",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_SWPlains",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z09_SphinxCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_VoltergeistCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_NEPlains",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z09_VoltergeistCave"
+      }
     }
   ]
 }

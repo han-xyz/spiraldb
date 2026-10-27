@@ -23,6 +23,17 @@
         "m_destinationLoc": "-13375.26,6595.829,130.8478,3.072034",
         "m_destinationZone": "Celestia/CL_Z02_Crab_Realm"
       }
+    },
+    {
+      "TriggerName": "To_Crab_Lieutenant",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z01i1_Survey_Camp"
+      }
     }
   ]
 }

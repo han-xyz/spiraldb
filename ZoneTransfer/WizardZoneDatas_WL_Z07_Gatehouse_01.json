@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Wallaru/Interiors/WL_Z07_Gatehouse_01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportSource_Exit_To_EUC-Forest",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_Location_From_GateHouse_01",
+        "m_destinationZone": "Wallaru/WL_Z07_EucalyptusForest"
+      }
+    }
+  ]
+}

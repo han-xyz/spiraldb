@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportT0_OldOnesComplex",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetFrom_BassChamger",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z00_I09_OldOnesComplex"
+      }
+    }
+  ]
+}

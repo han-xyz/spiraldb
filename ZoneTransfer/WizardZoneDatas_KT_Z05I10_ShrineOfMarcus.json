@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Krokotopia/KT_Selenopolis/Interiors/KT_Z05I10_ShrineOfMarcus",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportSource_To_UndergroundMarket",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetLocation_From_ShrineOfMarcus",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z05I08_Storage_A_Int"
+      }
+    }
+  ]
+}

@@ -12,6 +12,17 @@
         "m_destinationLoc": "-9094.863,-3113.325,586.4683,-1.598883",
         "m_destinationZone": "Novus/NV_Z01_Conatus"
       }
+    },
+    {
+      "TriggerName": "Sigil_to_ManticoresMadness",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_NucleusGallery",
+        "m_destinationZone": "Novus/Interiors/NV_Z06_ManticoresMadness"
+      }
     }
   ]
 }

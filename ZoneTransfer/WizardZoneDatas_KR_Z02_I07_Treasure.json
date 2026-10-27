@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Khrysalis/Interiors/KR_Z02_I07_Treasure",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport-ExitingGoldenHoardChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target-FromGoldenHordeChamber",
+        "m_destinationZone": "Khrysalis/KR_Z02_MoonCliffs"
+      }
+    }
+  ]
+}

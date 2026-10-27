@@ -12,6 +12,105 @@
         "m_destinationLoc": "-0.3768158,-10088.66,-5.33432,3.124079",
         "m_destinationZone": "Zafaria/ZF_Z10_Elephant_Graveyard"
       }
+    },
+    {
+      "TriggerName": "Silverback_Shack_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Spider_Bridge",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z09_I01_Silverbacks_Shack"
+      }
+    },
+    {
+      "TriggerName": "To_Bolus_Hut",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z09_I02_Gorilla_Shack"
+      }
+    },
+    {
+      "TriggerName": "Elephant_Barge_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Barge_Exterior",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z09_I03_Barge_from_Stone_Town"
+      }
+    },
+    {
+      "TriggerName": "Overseer_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Drum_Jungle_Quarry",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z09_I04_Overseers_Tower"
+      }
+    },
+    {
+      "TriggerName": "Waterfall_Cave_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Waterfall",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z09_I05_Waterfall_Cliff_Cave"
+      }
+    },
+    {
+      "TriggerName": "Ranzan_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Drum_Jungle_Ranzan_Cave",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z09_I06_Jungle_Clearing"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_LionessDen",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_DrumJungle",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z09_LionessDen"
+      }
+    },
+    {
+      "TriggerName": "Ogun_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z09_Ogun_Daggertooth_Shack"
+      }
+    },
+    {
+      "TriggerName": "Oya_Bloodstorm_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Oya_Cave_DrumJungle",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z09_Oya_Redstorm_Cave"
+      }
     }
   ]
 }

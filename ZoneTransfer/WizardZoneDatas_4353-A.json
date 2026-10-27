@@ -23,6 +23,17 @@
         "m_destinationLoc": "-28.21277,116.1274,-169.0214,3.070503",
         "m_destinationZone": "Empyrea/Interiors/EM_Z00_ArkHold"
       }
+    },
+    {
+      "TriggerName": "Teleport to EM_TrollRallyCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z01_TrollRallyCave"
+      }
     }
   ]
 }

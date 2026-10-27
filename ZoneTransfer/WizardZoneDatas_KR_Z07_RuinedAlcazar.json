@@ -1,0 +1,83 @@
+{
+  "ZoneName": "Khrysalis/KR_Z07_RuinedAlcazar",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ReceptionHallSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z07_I03_ReceptionCave"
+      }
+    },
+    {
+      "TriggerName": "HallOfZodiacSigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z07_I01_ZodiacCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Combat Sigil sigil - Astrolabe",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z07_I02_AstrolabeCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Combat Sigil sigil-Crab",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z07_I15_CrabBot"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Combat Sigil sigil-Phoenix",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z07_I06_PhoenixBot"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Combat Sigil sigil-Serpent",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z07_I09_SerpBot"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Combat Sigil sigl-Stag",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z07_I12_StagBot"
+      }
+    }
+  ]
+}

@@ -23,6 +23,50 @@
         "m_destinationLoc": "-15407.75,-16303.66,230.6457,-3.137255",
         "m_destinationZone": "Empyrea/EM_Z09_NWAeroplains"
       }
+    },
+    {
+      "TriggerName": "Teleport_CretanBullsDen",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_SWPlains",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z08_CretanBullCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_CretanBullField",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_SWPlains",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z08_CretanBullField"
+      }
+    },
+    {
+      "TriggerName": "Teleport_EarWorms",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z08_EarWorm"
+      }
+    },
+    {
+      "TriggerName": "Teleport_2_MeowlsDen",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z08_MeowlsDen"
+      }
     }
   ]
 }

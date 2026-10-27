@@ -45,6 +45,72 @@
         "m_destinationLoc": "4.176117,-822.4521,82.36121,-3.118328",
         "m_destinationZone": "Avalon/Interiors/AV_Z05_TowerChromatic"
       }
+    },
+    {
+      "TriggerName": "AV-WYRD-C08-007_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Indigo_Giant",
+        "m_destinationZone": "Avalon/Interiors/AV_Z05_IndigoGiant"
+      }
+    },
+    {
+      "TriggerName": "Lost_Abbey_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z05_LostAbbey"
+      }
+    },
+    {
+      "TriggerName": "To Tomb of the Nameless",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_TheWyrd",
+        "m_destinationZone": "Avalon/Interiors/AV_Z05_TombNameless"
+      }
+    },
+    {
+      "TriggerName": "AV-WYRD-C06-001_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Froundling_Village",
+        "m_destinationZone": "Avalon/Interiors/AV_Z05_TowerFroudling01"
+      }
+    },
+    {
+      "TriggerName": "AV-WYRD-C08-004_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Froundling_Village",
+        "m_destinationZone": "Avalon/Interiors/AV_Z05_TowerFroudling02"
+      }
+    },
+    {
+      "TriggerName": "AV-DARA-C04-001_sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Froundling_Village1",
+        "m_destinationZone": "Avalon/Interiors/AV_Z05_TowerFroundling3"
+      }
     }
   ]
 }

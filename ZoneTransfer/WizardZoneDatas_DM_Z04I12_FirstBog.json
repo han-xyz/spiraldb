@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Darkmoor/Interiors/DM_Z04I12_FirstBog",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportSource_Exit_BlackLagoon_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetLocation_From_CloudyBog_01",
+        "m_destinationZone": "Darkmoor/DM_Z04_BlackLagoon"
+      }
+    }
+  ]
+}

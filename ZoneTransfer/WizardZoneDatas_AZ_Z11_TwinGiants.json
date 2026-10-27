@@ -1,0 +1,72 @@
+{
+  "ZoneName": "Azteca/AZ_Z11_TwinGiants",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To AZ-Cave01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_FromTwinGiants",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z11_Cave01"
+      }
+    },
+    {
+      "TriggerName": "To AZ-Cave02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_FromTwinGiants",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z11_Cave02"
+      }
+    },
+    {
+      "TriggerName": "To AZ-ButterflyShrine",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_FromTwinGiants",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z11_Butterfly_Shrine"
+      }
+    },
+    {
+      "TriggerName": "To AZ-Cave03",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_FromTwinGiants",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z11_Cave03"
+      }
+    },
+    {
+      "TriggerName": "To AZ-Cave04",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_FromTwinGiants",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z11_Cave04"
+      }
+    },
+    {
+      "TriggerName": "To AZ-Cave05",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_FromTwinGiants",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z11_Cave05"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Karamelle/Interiors/KM_Z10_Gym",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_to_Gobb",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Gym",
+        "m_destinationZone": "Karamelle/KM_Z10_Gobblerton"
+      }
+    }
+  ]
+}

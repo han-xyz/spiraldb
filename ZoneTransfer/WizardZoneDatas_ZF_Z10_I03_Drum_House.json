@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z10_I03_Drum_House",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Drum_House",
+        "m_destinationZone": "Zafaria/ZF_Z10_Elephant_Graveyard"
+      }
+    }
+  ]
+}

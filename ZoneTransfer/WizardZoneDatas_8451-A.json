@@ -45,6 +45,171 @@
         "m_destinationLoc": "13913.97,-16069.45,-510.2999,2.393861",
         "m_destinationZone": "Khrysalis/KR_Z10_KondhaDesert"
       }
+    },
+    {
+      "TriggerName": "To_NadezhaHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I02_NadezhaHouseLG"
+      }
+    },
+    {
+      "TriggerName": "To_SeaTower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I04_SeaTowerBot"
+      }
+    },
+    {
+      "TriggerName": "To_DeadLeafTower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I06_DeadLeafBot"
+      }
+    },
+    {
+      "TriggerName": "To_DiabolicaGarrison01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I10_GarrisonBot"
+      }
+    },
+    {
+      "TriggerName": "To_PatronGate",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I14_TroikaPalacePatronGate"
+      }
+    },
+    {
+      "TriggerName": "To_SoothsayerGate",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I14_TroikaPalaceSoothsayerGate"
+      }
+    },
+    {
+      "TriggerName": "To_WalkingStickGate",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I14_TroikaPalaceWSGate"
+      }
+    },
+    {
+      "TriggerName": "To_DzoraksHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I16_ZoraksHouseLG"
+      }
+    },
+    {
+      "TriggerName": "To_MunitionsRoom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I20_MunitionsRoom"
+      }
+    },
+    {
+      "TriggerName": "To_ViziviaHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I21_VaziviaHouseLG"
+      }
+    },
+    {
+      "TriggerName": "To_GarrisonArmory",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I22_GarrisonArmory"
+      }
+    },
+    {
+      "TriggerName": "To_TorrekHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I23_TorrekHouseLG"
+      }
+    },
+    {
+      "TriggerName": "To_RozimundHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I24_RozimundHouseLG"
+      }
+    },
+    {
+      "TriggerName": "To_ZarelliaHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I25_ZharelliaHouseLG"
+      }
+    },
+    {
+      "TriggerName": "To_ZoudicaHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_MantisCity",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z09_I26_ZoudicaHouseLG"
+      }
     }
   ]
 }

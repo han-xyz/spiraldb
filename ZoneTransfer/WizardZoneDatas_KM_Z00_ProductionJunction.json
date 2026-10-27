@@ -1,0 +1,39 @@
+{
+  "ZoneName": "Karamelle/Interiors/KM_Z00_ProductionJunction",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location teleport to hub",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_ProductionJunction",
+        "m_destinationZone": "Karamelle/KM_Z00_HUB"
+      }
+    },
+    {
+      "TriggerName": "Teleport location teleport to Hub",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_ProductionJunction",
+        "m_destinationZone": "Karamelle/KM_Z00_HUB"
+      }
+    },
+    {
+      "TriggerName": "Teleport locationTeleport to Hub",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_ProductionJunction",
+        "m_destinationZone": "Karamelle/KM_Z00_HUB"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Celestia/Interiors/CL_Z07i2_Storm_Lord_Temple",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToZone7",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromTower2",
+        "m_destinationZone": "Celestia/CL_Z07_Storm_Lord_Temple"
+      }
+    }
+  ]
+}

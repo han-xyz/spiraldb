@@ -12,6 +12,61 @@
         "m_destinationLoc": "4022.869,12454.45,-946.5974,1.574917",
         "m_destinationZone": "Celestia/CL_Hub"
       }
+    },
+    {
+      "TriggerName": "To_Guppys_Lair",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z09i1_Science_Center"
+      }
+    },
+    {
+      "TriggerName": "To_Amphibaton",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z09i2_Science_Center"
+      }
+    },
+    {
+      "TriggerName": "To_ChargingChamber",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z09i3_Science_Center"
+      }
+    },
+    {
+      "TriggerName": "To_Conservatory",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z09i4_Science_Center"
+      }
+    },
+    {
+      "TriggerName": "ToConservatory",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z09i5_Science_Center"
+      }
     }
   ]
 }

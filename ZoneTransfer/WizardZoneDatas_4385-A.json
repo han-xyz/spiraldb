@@ -89,6 +89,116 @@
         "m_destinationLoc": "1100.005,5758.715,1.119385,1.570796",
         "m_destinationZone": "Empyrea/Interiors/EM_Z02_AethyriumArchives"
       }
+    },
+    {
+      "TriggerName": "Teleport to ByrinsHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_ByrinsHouse"
+      }
+    },
+    {
+      "TriggerName": "Sigil_To_Gatehouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_Gatehouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to JineesHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_JineeHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_KanesHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_KanesHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to NuhnesHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_NuhnesHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_ShadowHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_ShadowHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to TwylightsHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_TwylightsHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to ZigiHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_ZigisHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to BeaconofHope",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_BeaconHope"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Palace",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Zanadu",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_Palace"
+      }
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Darkmoor/Interiors/DM_Z02_HouseOfAMillionEyes",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportSource_To_MortalPlains_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetLocation_From_HouseOfAMillionEyes_01",
+        "m_destinationZone": "Darkmoor/DM_Z02_MortalPlain"
+      }
+    }
+  ]
+}

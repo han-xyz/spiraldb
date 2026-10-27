@@ -34,6 +34,17 @@
         "m_destinationLoc": "3880.696,5816.43,65.59,-0.7950962",
         "m_destinationZone": "Zafaria/ZF_Z00_Hub"
       }
+    },
+    {
+      "TriggerName": "To_ZF_Z01_Dorm",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z01_I01_Safari_Lodge_Dormitory"
+      }
     }
   ]
 }

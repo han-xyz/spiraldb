@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Darkmoor/Interiors/DM_Z02_MayorHouse_A",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport source-OutsideMayor",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-FromMayor",
+        "m_destinationZone": "Darkmoor/DM_Z02_MortalPlain"
+      }
+    }
+  ]
+}

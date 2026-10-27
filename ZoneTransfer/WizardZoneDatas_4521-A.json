@@ -34,6 +34,83 @@
         "m_destinationLoc": "161.9847,3834.25,-196.3945,0.08342031",
         "m_destinationZone": "Polaris/PL_Z04_UrvilleStation"
       }
+    },
+    {
+      "TriggerName": "TeleportToPL_Z02_ControlRoom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z02_BridgeControl"
+      }
+    },
+    {
+      "TriggerName": "TeleporTo_PL_BullhemothCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z02_BullhemothCave"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_PL_Z02_Detolli",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z02_Detolli"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_MadnessMountian",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z02_MadnessMountian_A"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_MammothCave01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z02_MammothCave01"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_ScareMonsterLair",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z02_ScaryMonsterLair"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_PL_Z02_Snowbeard",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z02_Snowbeard"
+      }
     }
   ]
 }

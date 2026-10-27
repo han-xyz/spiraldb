@@ -23,6 +23,50 @@
         "m_destinationLoc": "-4981.906,625.8555,-42.78528,2.562249",
         "m_destinationZone": "Avalon/AV_Z08_LakeShore"
       }
+    },
+    {
+      "TriggerName": "Sigil-To-Cave01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z09_Cave01"
+      }
+    },
+    {
+      "TriggerName": "Sigil-To-Cave02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z09_Cave02"
+      }
+    },
+    {
+      "TriggerName": "Sigil-To-Cave03",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z09_Cave03"
+      }
+    },
+    {
+      "TriggerName": "Sigil-To-Cave04",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z09_Cave04"
+      }
     }
   ]
 }

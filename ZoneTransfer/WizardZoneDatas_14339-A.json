@@ -23,6 +23,61 @@
         "m_destinationLoc": "344.6882,-2295.238,-0.6181945,-3.071923",
         "m_destinationZone": "Wallaru/WL_Z04_TheDreaming"
       }
+    },
+    {
+      "TriggerName": "Teleport_Interior_EUC_Sigil_07 - Clearing 1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z07_Clearing_01"
+      }
+    },
+    {
+      "TriggerName": "Teleport_Interior_EUC_Sigil_02 - Clearing 2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z07_Clearing_02"
+      }
+    },
+    {
+      "TriggerName": "Teleport_Interior_EUC_Sigil_01 - Clearing 3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z07_Clearing_03"
+      }
+    },
+    {
+      "TriggerName": "Teleport_Interior_EUC_Sigil_08 - Gatehouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z07_Gatehouse_01"
+      }
+    },
+    {
+      "TriggerName": "Teleport_Interior_EUC_Sigil_04 - Hex-Mangrove",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z07_Hex_Mangrove_01"
+      }
     }
   ]
 }

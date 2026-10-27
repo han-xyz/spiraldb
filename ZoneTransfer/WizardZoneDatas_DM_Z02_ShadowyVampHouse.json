@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Darkmoor/Interiors/DM_Z02_ShadowyVampHouse",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportSource_To_MortalPlain_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "TargetLocation_From_ShadowyVampHouse_01",
+        "m_destinationZone": "Darkmoor/DM_Z02_MortalPlain"
+      }
+    }
+  ]
+}

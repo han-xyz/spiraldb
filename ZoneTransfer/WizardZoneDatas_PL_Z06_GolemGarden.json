@@ -1,0 +1,28 @@
+{
+  "ZoneName": "Polaris/Interiors/PL_Z06_GolemGarden",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportTo_SteelVault",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z06_ColdSteel01"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_Lab",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z06_RasputinsLaboratory"
+      }
+    }
+  ]
+}

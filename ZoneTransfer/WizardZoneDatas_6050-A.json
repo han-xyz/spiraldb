@@ -67,6 +67,72 @@
         "m_destinationLoc": "277.1509,-993.5967,9.37241E-05,2.996958",
         "m_destinationZone": "Azteca/Interiors/AZ_Z04_SwampCavern"
       }
+    },
+    {
+      "TriggerName": "To AZ_Z03_Clearing01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z03_Clearing01"
+      }
+    },
+    {
+      "TriggerName": "AV-MANG-C01-001_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Mangrove_Marsh",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z03_Tomb01"
+      }
+    },
+    {
+      "TriggerName": "To AZ_Z03_ Poca Cruel Star",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z03_Tomb02"
+      }
+    },
+    {
+      "TriggerName": "AZ-MANG-C02-001_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Mangrove_Marsh",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z03_Tomb03"
+      }
+    },
+    {
+      "TriggerName": "To AZ_Z03_Tomb04",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z03_Tomb04"
+      }
+    },
+    {
+      "TriggerName": "AZ-SWAMP-C11-002Tomb05",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z03_Tomb05"
+      }
     }
   ]
 }

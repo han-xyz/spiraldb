@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Wallaru/Interiors/WL_Z03_I02_WallabyCave",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport source",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From WL_Z03_I02_WallabyCave",
+        "m_destinationZone": "Wallaru/WL_Z03_Kingsland"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Wallaru/Interiors/WL_Z08_I01_SolidGoldLounge",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport source (1)",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From WL_Z08_I01_SolidGoldLounge",
+        "m_destinationZone": "Wallaru/WL_Z08_BillabongResort"
+      }
+    }
+  ]
+}

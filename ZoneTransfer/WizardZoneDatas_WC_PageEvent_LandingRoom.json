@@ -1,0 +1,17 @@
+{
+  "ZoneName": "WizardCity/WC_Streets/Interiors/WC_PageEvent_LandingRoom",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Mob_Room",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_PageEvent_MobRoom"
+      }
+    }
+  ]
+}

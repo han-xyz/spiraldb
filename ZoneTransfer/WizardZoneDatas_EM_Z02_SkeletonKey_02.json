@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z02_SkeletonKey_02",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_2_SkeletonKey01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_SkeletonKey02",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z02_SkeletonKey_01"
+      }
+    }
+  ]
+}

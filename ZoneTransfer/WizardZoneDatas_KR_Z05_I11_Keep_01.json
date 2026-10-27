@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Khrysalis/Interiors/KR_Z05_I11_Keep_01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "ToInnerKeep",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromGhostDog",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z05_I10_CentralKeep"
+      }
+    }
+  ]
+}

@@ -78,6 +78,83 @@
         "m_destinationLoc": "2115.97,210.5723,1.626713,1.570796",
         "m_destinationZone": "Mirage/Interiors/MR_Z05_TetrusPrison"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-Architect",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z05_ArchitectHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-Constractor",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z05_ConstractorDepot"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior MR_Z05_Gatehouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z05_Gatehouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to KobraKaiDojo",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z05_KobraKaiDojo_Room01"
+      }
+    },
+    {
+      "TriggerName": "Teleport to OfficersClub",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z05_OfficersClub"
+      }
+    },
+    {
+      "TriggerName": "Teleport to TetrusSolitaryBlock",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z05_TetrusSolitaryBlock"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior-VipersDen",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z05_VipersDen"
+      }
     }
   ]
 }

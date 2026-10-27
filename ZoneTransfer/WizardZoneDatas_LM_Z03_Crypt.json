@@ -1,0 +1,39 @@
+{
+  "ZoneName": "Lemuria/Interiors/LM_Z03_Crypt",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Interior sigil-Tale1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z03_StoryTombOne"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-Tale2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z03_StoryTombTwo"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-Tale3",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z03_StoryTombThree"
+      }
+    }
+  ]
+}

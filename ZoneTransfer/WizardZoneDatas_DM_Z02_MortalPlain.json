@@ -1,0 +1,94 @@
+{
+  "ZoneName": "Darkmoor/DM_Z02_MortalPlain",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "DM-MORT-Teleport-Sanguine",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z02_SanguineHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WoodedClearing",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z02_WoodedClearing_A"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Deeper Woods",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z02_DeeperWoods_A"
+      }
+    },
+    {
+      "TriggerName": "Teleport toWisperWood",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z02_WhisperingWoods"
+      }
+    },
+    {
+      "TriggerName": "Teleport to MayorsHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z02_MayorHouse_A"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_HouseOfAMillionEyes_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z02_HouseOfAMillionEyes"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_ShadowyVampHouse_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z02_ShadowyVampHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_StudentHouse_A",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z02I01_StudentHouse_A"
+      }
+    }
+  ]
+}

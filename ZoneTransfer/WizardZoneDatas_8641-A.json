@@ -56,6 +56,39 @@
         "m_destinationLoc": "7756.206,2071.724,-2888.462,1.537066",
         "m_destinationZone": "Mirage/MR_Z06_YakhalMountain"
       }
+    },
+    {
+      "TriggerName": "Teleport to ChestCavity",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z04_ChestCavity"
+      }
+    },
+    {
+      "TriggerName": "Teleport to NepetaMine",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z04_NepetaMine_Cave01"
+      }
+    },
+    {
+      "TriggerName": "Teleport to QhaysHideaway",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z04_QhaysHideaway"
+      }
     }
   ]
 }

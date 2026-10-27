@@ -133,6 +133,17 @@
         "m_destinationLoc": "FromRavenFortress",
         "m_destinationZone": "Grizzleheim/Interiors/GH_RavenFortress_T9"
       }
+    },
+    {
+      "TriggerName": "Teleport_2_SecludedCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Raven",
+        "m_destinationZone": "Grizzleheim/Interiors/GH_SecludedCave"
+      }
     }
   ]
 }

@@ -12,6 +12,17 @@
         "m_destinationLoc": "6506.168,2161.539,35.80021,3.093859",
         "m_destinationZone": "Wallaru/WL_Z01_Hub"
       }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z01_I12_FourthLark",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z01_I12_FourthLark"
+      }
     }
   ]
 }

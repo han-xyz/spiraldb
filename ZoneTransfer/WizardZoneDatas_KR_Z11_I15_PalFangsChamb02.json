@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Khrysalis/Interiors/KR_Z11_I15_PalFangsChamb02",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BacktoCourtyard",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From2ndChamber",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z11_I13_PalFangsMain"
+      }
+    }
+  ]
+}

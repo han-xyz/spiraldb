@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Novus/Interiors/NV_Z01_BoothsLair",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_to_Conatus",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_BoothsLair",
+        "m_destinationZone": "Novus/NV_Z01_Conatus"
+      }
+    }
+  ]
+}

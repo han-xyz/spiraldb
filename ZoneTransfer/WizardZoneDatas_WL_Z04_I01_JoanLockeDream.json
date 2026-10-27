@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Wallaru/Interiors/WL_Z04_I01_JoanLockeDream",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport source",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_JoanLockesDream",
+        "m_destinationZone": "Wallaru/WL_Z04_TheDreaming"
+      }
+    }
+  ]
+}

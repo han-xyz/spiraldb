@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Krokotopia/KT_Selenopolis/Interiors/KT_Z05I09_Storage_B_Int",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_To_MARK_Gatehouse_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z05I07_Gatehouse"
+      }
+    }
+  ]
+}

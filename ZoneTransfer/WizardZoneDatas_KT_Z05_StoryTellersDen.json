@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Krokotopia/KT_Selenopolis/Interiors/KT_Z05_StoryTellersDen",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_To_Market",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_StorytellersDen",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/KT_Z05_Market"
+      }
+    }
+  ]
+}

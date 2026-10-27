@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Lemuria/Interiors/LM_Z05_I04_Tomb",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Mandoria",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_HeManderTomb",
+        "m_destinationZone": "Lemuria/LM_Z05_Mandoria"
+      }
+    }
+  ]
+}

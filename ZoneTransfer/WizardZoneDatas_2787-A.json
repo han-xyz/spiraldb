@@ -67,6 +67,72 @@
         "m_destinationLoc": "-179.0814,-1264.753,3.150009,-3.056168",
         "m_destinationZone": "Zafaria/Interiors/ZF_Z04_I06_Cave_01"
       }
+    },
+    {
+      "TriggerName": "To_ZF_Z03_TiktikHut",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Savannah_TikTik",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z03_I03_Snaketongues_Hut"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_Z03_CavePainting",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z04_CavePainting"
+      }
+    },
+    {
+      "TriggerName": "To_ZF_Z03_QueensCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z04_I01_Queens_Cave"
+      }
+    },
+    {
+      "TriggerName": "To_ZF_Z03_SpiritCave01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z04_I04_Spirit_Cave_01"
+      }
+    },
+    {
+      "TriggerName": "To_ZF_Z03_SpiritCave02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z04_I05_Spirit_Cave_02"
+      }
+    },
+    {
+      "TriggerName": "To_ZF_Z03_JatasCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z04_I07_Jatas_Cave_01"
+      }
     }
   ]
 }

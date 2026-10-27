@@ -12,6 +12,61 @@
         "m_destinationLoc": "4220.56,-859.6302,-35.16297,0.9346646",
         "m_destinationZone": "Lemuria/LM_Z04_Badlands"
       }
+    },
+    {
+      "TriggerName": "To_Tomb_ofSkeletaur",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z05_I03_SkeletaurTomb"
+      }
+    },
+    {
+      "TriggerName": "To_HeManderTomb",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Mandoria",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z05_I04_Tomb"
+      }
+    },
+    {
+      "TriggerName": "To_ChiefsTent",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Mandoria",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z05_I05_ChiefsTent"
+      }
+    },
+    {
+      "TriggerName": "To_MonitoringStation",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Mandoria",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z05_I06_Cavern"
+      }
+    },
+    {
+      "TriggerName": "To_MandoriaAncientShrine",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Lemuria/Interiors/LM_Z05_I08_AncientTemple"
+      }
     }
   ]
 }

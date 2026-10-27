@@ -45,6 +45,50 @@
         "m_destinationLoc": "-1029.711,2898.783,380.6586,-0.7026536",
         "m_destinationZone": "Karamelle/Interiors/KM_Z08_ColaLake"
       }
+    },
+    {
+      "TriggerName": "To_BlackGoatCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z08_BlackLicoriceCave"
+      }
+    },
+    {
+      "TriggerName": "To_CinnamonTrollCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z08_CinnamonTrollCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil KM_Z09_Warehouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z08_LoggingCampWahehouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil To_RosinasHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z08_RosinasHouse_Adv"
+      }
     }
   ]
 }

@@ -1,0 +1,61 @@
+{
+  "ZoneName": "Wallaru/WL_Z06_CollieRanch",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Interior sigil-CollieCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z06_I01_CollieTunnel"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil - JudysOffice",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z06_I03_JudgeJudisOffice"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-DemolitionTunnels",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z06_I04_DemolitionTunnels"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-PrisonBarn",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z06_I05_BarnPrison"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil-CollieHomestead",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z06_I06_CollieHomestead"
+      }
+    }
+  ]
+}

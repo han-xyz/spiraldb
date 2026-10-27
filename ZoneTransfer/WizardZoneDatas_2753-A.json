@@ -45,6 +45,83 @@
         "m_destinationLoc": "-28.49374,71.76929,-0.0001100498,0.08098277",
         "m_destinationZone": "Mirage/Interiors/MR_Z03_TabbiManor"
       }
+    },
+    {
+      "TriggerName": "Teleport_MR_Z03_BurialGarden",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z03_BuriedGardens"
+      }
+    },
+    {
+      "TriggerName": "Teleport_CavernOfTheWurm",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z03_CavernOfTheWurm"
+      }
+    },
+    {
+      "TriggerName": "Teleport_Z03_FemoralTomb",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z03_FemoralTomb"
+      }
+    },
+    {
+      "TriggerName": "Teleport_Z03_GhostMaze",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z03_GhostMaze"
+      }
+    },
+    {
+      "TriggerName": "Teleport_Z03_JezzeritMonastery",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z03_JezzeritMonastery"
+      }
+    },
+    {
+      "TriggerName": "Teleport_Z03_TraitorsCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z03_TraitorsCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport_Z03_VassalManse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Mirage/Interiors/MR_Z03_VassalManse"
+      }
     }
   ]
 }

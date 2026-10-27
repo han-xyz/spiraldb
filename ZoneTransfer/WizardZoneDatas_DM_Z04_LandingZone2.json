@@ -1,0 +1,28 @@
+{
+  "ZoneName": "G14_DM/DM_Z04_LandingZone2",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Castle_Darkmoor_Instance2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "G14_DM/Interiors/DM_Z05_I01_Hallway"
+      }
+    },
+    {
+      "TriggerName": "SkeletonKey_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "G14_DM/Interiors/DM_Z05_I04_Staircase"
+      }
+    }
+  ]
+}

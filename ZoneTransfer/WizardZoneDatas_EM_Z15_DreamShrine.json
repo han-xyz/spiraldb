@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z15_DreamShrine",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Nexus",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Teleport from Dream",
+        "m_destinationZone": "Empyrea/EM_Z15_Nexus"
+      }
+    }
+  ]
+}

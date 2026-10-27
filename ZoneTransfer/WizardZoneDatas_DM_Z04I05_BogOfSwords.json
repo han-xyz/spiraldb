@@ -1,0 +1,28 @@
+{
+  "ZoneName": "Darkmoor/Interiors/DM_Z04I05_BogOfSwords",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportSource_Exit_to_BlackLagoon_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_Location_DM_Z04I05_BogOfSwords_01",
+        "m_destinationZone": "Darkmoor/DM_Z04_BlackLagoon"
+      }
+    },
+    {
+      "TriggerName": "TeleportSource_Exit_to_BlackLagoon_02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_Location_DM_Z04I05_BogOfSwords_01",
+        "m_destinationZone": "Darkmoor/DM_Z04_BlackLagoon"
+      }
+    }
+  ]
+}

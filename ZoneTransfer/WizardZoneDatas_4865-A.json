@@ -23,6 +23,50 @@
         "m_destinationLoc": "-0.7744141,-1683.262,131.0891,-3.13941",
         "m_destinationZone": "Empyrea/Interiors/EM_Z14_Rift"
       }
+    },
+    {
+      "TriggerName": "Teleport to EM_Z12_GladeOfShavarram",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z12_GladeOfShavarram"
+      }
+    },
+    {
+      "TriggerName": "Teleport to EM_Z14_Cave Refuge",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z14_CaveRefuge"
+      }
+    },
+    {
+      "TriggerName": "Teleport to EM_Z14_FeralClearing",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z14_FeralClearing"
+      }
+    },
+    {
+      "TriggerName": "Teleport to EM_Z14_SecondClearing",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z14_SecondClearing"
+      }
     }
   ]
 }

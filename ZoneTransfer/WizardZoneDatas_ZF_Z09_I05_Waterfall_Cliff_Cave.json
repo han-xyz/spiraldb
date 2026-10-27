@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z09_I05_Waterfall_Cliff_Cave",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Waterfall",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Waterfall_Cave",
+        "m_destinationZone": "Zafaria/ZF_Z09_Drum_Jungle"
+      }
+    }
+  ]
+}

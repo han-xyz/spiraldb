@@ -34,6 +34,94 @@
         "m_destinationLoc": "234.4796,-1077.874,4.495911,3.024959",
         "m_destinationZone": "Khrysalis/Interiors/KR_Z06_I01_Hermitcave"
       }
+    },
+    {
+      "TriggerName": "Teleport to StarfallSea",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z06_I01_BeastControl"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Z06_AntLionWarren",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z06_I02_AntLionWarren"
+      }
+    },
+    {
+      "TriggerName": "Teleport to CB Guard Tent",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z06_I04_UmbraGuardTent"
+      }
+    },
+    {
+      "TriggerName": "To KR-Z06-GuardedTent",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z06_I05_UmbraTentSm01"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Z06_SpinstersTent",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z06_I06_UmbraTentSm02"
+      }
+    },
+    {
+      "TriggerName": "Teleport to NavigatorsTent",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z06_I07_UmbraTentSm03"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Z06_Stig Cave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z06_I09_BeachCave01"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Combat KR_Z06_I09_Cave02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z06_I10_BeachCave02"
+      }
     }
   ]
 }

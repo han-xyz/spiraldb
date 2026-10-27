@@ -34,6 +34,17 @@
         "m_destinationLoc": "-739.5971,43.6894,2.183903,-1.467889",
         "m_destinationZone": "Avalon/Interiors/AV_Z01_Library"
       }
+    },
+    {
+      "TriggerName": "Teleport to Malgrin's Hideaway",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z01_Clearing01"
+      }
     }
   ]
 }

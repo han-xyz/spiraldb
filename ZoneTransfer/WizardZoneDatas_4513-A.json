@@ -111,6 +111,28 @@
         "m_destinationLoc": "0.8890533,120.8594,5.767784,0",
         "m_destinationZone": "Polaris/Interiors/PL_Z00_LeonsHouse"
       }
+    },
+    {
+      "TriggerName": "TeleportTo-FirstPrecinct",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z00_FirstPrecinct"
+      }
+    },
+    {
+      "TriggerName": "TelepotTo_ImperialRecords",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z00__ImperialRecords"
+      }
     }
   ]
 }

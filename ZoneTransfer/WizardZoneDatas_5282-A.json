@@ -12,6 +12,83 @@
         "m_destinationLoc": "12701.45,10725.26,-31.59179,1.554539",
         "m_destinationZone": "Zafaria/ZF_Z09_Drum_Jungle"
       }
+    },
+    {
+      "TriggerName": "Teleport to Crypt of Ages",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z10_Crypt_Of_Ages"
+      }
+    },
+    {
+      "TriggerName": "To_Tomb_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z10_I01_Little_Mausoleum"
+      }
+    },
+    {
+      "TriggerName": "To_Didos_Tomb",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z10_I02_Didos_Mausoleum"
+      }
+    },
+    {
+      "TriggerName": "To_Drum_House",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z10_I03_Drum_House"
+      }
+    },
+    {
+      "TriggerName": "To_Tomb_02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z10_I04_Little_Mausoleum_02"
+      }
+    },
+    {
+      "TriggerName": "To_Tomb_03",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z10_I05_Little_Mausoleum_03"
+      }
+    },
+    {
+      "TriggerName": "To_Tomb_04",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z10_I06_Little_Mausoleum_04"
+      }
     }
   ]
 }

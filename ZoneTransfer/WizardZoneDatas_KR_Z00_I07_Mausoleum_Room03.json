@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Khrysalis/Interiors/KR_Z00_I07_Mausoleum_Room03",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_To_Mausoleum",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Mausoleum03",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z00_I07_Mausoleum"
+      }
+    }
+  ]
+}

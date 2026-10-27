@@ -12,6 +12,50 @@
         "m_destinationLoc": "-4676.18,-4396.508,-81.76597,-2.884986",
         "m_destinationZone": "Empyrea/EM_Z05_Sepidious"
       }
+    },
+    {
+      "TriggerName": "To_Heart",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_NodoChord",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z05_HeartPath"
+      }
+    },
+    {
+      "TriggerName": "To_InkGland",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_NodoChord",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z05_InkTubing"
+      }
+    },
+    {
+      "TriggerName": "To_LeftEye",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_NodoChord",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z05_LeftEyePath"
+      }
+    },
+    {
+      "TriggerName": "To_EyeRight",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_NodoChord",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z05_RightEyePath"
+      }
     }
   ]
 }

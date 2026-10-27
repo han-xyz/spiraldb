@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/Interiors/AV_Z05_TowerFroundling3",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Froundling_Village1",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Eurgh_Tower",
+        "m_destinationZone": "Avalon/AV_Z05_TheWyrd"
+      }
+    }
+  ]
+}

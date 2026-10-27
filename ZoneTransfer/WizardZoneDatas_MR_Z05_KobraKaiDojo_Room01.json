@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Mirage/Interiors/MR_Z05_KobraKaiDojo_Room01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_to_Istanboa",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From KobraKaiDojo",
+        "m_destinationZone": "Mirage/MR_Z05_Istanboa"
+      }
+    }
+  ]
+}

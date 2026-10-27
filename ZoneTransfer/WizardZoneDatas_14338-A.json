@@ -34,6 +34,105 @@
         "m_destinationLoc": "6160.668,-9099.97,1037.888,-2.876921",
         "m_destinationZone": "Wallaru/WL_Z07_EucalyptusForest"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interio - BanditCootCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z05_BanditCootCave_Hard"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil - Drover Cave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z05_DroverCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil - Collie Den",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z05_I01_ColliesDen"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil - Bunnyip Warrens",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z05_I02_BunyipWarrens"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil - Hostage Cave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z05_I03_HostageCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil - YaraCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z05_I04_YaramayhaCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil - MysteryBox",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z05_I07_MysteryBoxZone"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil - WOBBWestClearing",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z05_I08_WestClearing"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil - WOBBEastClearing",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z05_I09_EastClearing"
+      }
     }
   ]
 }

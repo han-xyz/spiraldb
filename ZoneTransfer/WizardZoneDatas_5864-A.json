@@ -12,6 +12,28 @@
         "m_destinationLoc": "-64.69702,-55.77893,3.001984,0",
         "m_destinationZone": "Karamelle/KM_Z09_CandyCornFarm"
       }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil To_Barn",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z09_Barn"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil To_FarmersHouse",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z09_FarmersHouse"
+      }
     }
   ]
 }

@@ -12,6 +12,61 @@
         "m_destinationLoc": "-6534.581,8200.383,-872.1653,-1.584665",
         "m_destinationZone": "Celestia/CL_Hub"
       }
+    },
+    {
+      "TriggerName": "To_CL_Z05i1_FloatingLand",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z05i1_FloatingLand"
+      }
+    },
+    {
+      "TriggerName": "To_CL_Z05i2_FloatingLand",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z05i2_FloatingLand"
+      }
+    },
+    {
+      "TriggerName": "To_Zone05i3_FloatingLand",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z05i3_FloatingLand"
+      }
+    },
+    {
+      "TriggerName": "To_Zone05i4_FloatingLand",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z05i4_FloatingLand"
+      }
+    },
+    {
+      "TriggerName": "To_Zone05i5_FloatingLand",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z05i5_FloatingLand"
+      }
     }
   ]
 }

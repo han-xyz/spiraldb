@@ -12,6 +12,17 @@
         "m_destinationLoc": "5547.545,-6077.12,-844.2185,2.03894",
         "m_destinationZone": "Polaris/PL_Z00_Walruskberg"
       }
+    },
+    {
+      "TriggerName": "TeleportToFestingHall",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z00_MidnightInn_Hall"
+      }
     }
   ]
 }

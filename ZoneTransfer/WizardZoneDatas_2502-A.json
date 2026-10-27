@@ -12,6 +12,28 @@
         "m_destinationLoc": "-32.62984,10003.27,-899.9998,-3.120524",
         "m_destinationZone": "Celestia/CL_Hub"
       }
+    },
+    {
+      "TriggerName": "CL-DIST-C03-002Charmtooth_Sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "To_Churium",
+        "m_destinationZone": "Celestia/Interiors/CL_Z03i3_District_of_the_Stars"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_CelestianResearchLab",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z03i4_District_of_the_Stars"
+      }
     }
   ]
 }

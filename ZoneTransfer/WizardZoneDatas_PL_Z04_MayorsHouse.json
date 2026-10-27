@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Polaris/Interiors/PL_Z04_MayorsHouse",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_CommandantsQuarters",
+        "m_destinationZone": "Polaris/PL_Z04_UrvilleStation"
+      }
+    }
+  ]
+}

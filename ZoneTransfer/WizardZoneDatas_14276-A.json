@@ -23,6 +23,28 @@
         "m_destinationLoc": "18003.11,-1122.324,103.3421,0.6998924",
         "m_destinationZone": "Wallaru/WL_Z02_Outback"
       }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z03_I01_KangaGuruShrine",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z03_I01_KangaGuruShrine"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z03_I02_WallabyCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z03_I02_WallabyCave"
+      }
     }
   ]
 }

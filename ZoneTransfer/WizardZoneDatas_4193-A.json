@@ -23,6 +23,94 @@
         "m_destinationLoc": "-164.9735,1139.304,-124.5726,3.13338",
         "m_destinationZone": "Novus/Interiors/NV_Z04_SkyCave"
       }
+    },
+    {
+      "TriggerName": "Teleport_To_GeneralsQuarters",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_I01_GeneralQuarters"
+      }
+    },
+    {
+      "TriggerName": "Telepor_To_NV_Z04_I06_Mine",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_I06_Mine"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_ChocolateShip",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_I07_Ship"
+      }
+    },
+    {
+      "TriggerName": "Sigil_to_NewVicorgia_Gaol",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_NewVicorgia",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_I08_Gaol"
+      }
+    },
+    {
+      "TriggerName": "Telepor_To_NV_Z04_Tower01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_Tower01"
+      }
+    },
+    {
+      "TriggerName": "Telepor_To_NV_Z04_Tower02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_Tower02"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_NV_Z04_Tower03",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_Tower03"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_Z04_WateringHole",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Novus/Interiors/NV_Z04_WateringHole"
+      }
     }
   ]
 }

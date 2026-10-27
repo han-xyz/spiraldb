@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Lemuria/Interiors/LM_Z00_I04_SanctumofMana",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_Hub",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_SanctumOfMana",
+        "m_destinationZone": "Lemuria/LM_Z00_Hub"
+      }
+    }
+  ]
+}

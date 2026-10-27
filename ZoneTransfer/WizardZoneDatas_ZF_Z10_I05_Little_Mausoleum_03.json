@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z10_I05_Little_Mausoleum_03",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Tomb_03",
+        "m_destinationZone": "Zafaria/ZF_Z10_Elephant_Graveyard"
+      }
+    }
+  ]
+}

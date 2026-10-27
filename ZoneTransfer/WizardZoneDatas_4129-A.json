@@ -45,6 +45,17 @@
         "m_destinationLoc": "-102.2535,1007.378,-3.027771,-0.03484365",
         "m_destinationZone": "Novus/Interiors/NV_Z01_ConferenceTent"
       }
+    },
+    {
+      "TriggerName": "Sigil_to_BoothsLair",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Conatus",
+        "m_destinationZone": "Novus/Interiors/NV_Z01_BoothsLair"
+      }
     }
   ]
 }

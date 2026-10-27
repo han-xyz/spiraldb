@@ -12,6 +12,50 @@
         "m_destinationLoc": "-12675.23,9006.296,186.6849,-1.570796",
         "m_destinationZone": "Wallaru/WL_Z05_Wobbegong_JT"
       }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z08_I01_SolidGoldLounge",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z08_I01_SolidGoldLounge"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z08_I02_LagoonPipeline",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z08_I02_LagoonPipeline"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z08_I03_HotelRoom",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z08_I03_HotelRoom"
+      }
+    },
+    {
+      "TriggerName": "Teleport to WL_Z08_I04_AdminOffice",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Wallaru/Interiors/WL_Z08_I04_AdminOffice"
+      }
     }
   ]
 }

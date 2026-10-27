@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Wallaru/Interiors/WL_Z04_I05_FreddiesDomain_Hard",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_Exit",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_FreddiesDomain",
+        "m_destinationZone": "Wallaru/WL_Z04_TheDreaming"
+      }
+    }
+  ]
+}

@@ -12,6 +12,28 @@
         "m_destinationLoc": "-2955.947,-1161.215,-14.61841,-1.570796",
         "m_destinationZone": "Polaris/PL_Z01_Harbor"
       }
+    },
+    {
+      "TriggerName": "TeleportTo-PL_CellblockB_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/Z01_CellblockB_01"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo-PL_ProcessingWard",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/Z01_I10_ProcessingWard"
+      }
     }
   ]
 }

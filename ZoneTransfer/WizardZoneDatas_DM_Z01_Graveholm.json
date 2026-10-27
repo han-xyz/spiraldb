@@ -1,0 +1,61 @@
+{
+  "ZoneName": "Darkmoor/DM_Z01_Graveholm",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_to_Gargoyle_Watchhouse_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z01I04_GargoyleWatchtower_Hard"
+      }
+    },
+    {
+      "TriggerName": "Teleport_to_WitchsDen_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z01I14_WitchsDen"
+      }
+    },
+    {
+      "TriggerName": "Teleport_to_OldHouse_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z01I15_OldHouse"
+      }
+    },
+    {
+      "TriggerName": "Teleport_to_SandersonHouse_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z01I17_SandersonHouse_Hard"
+      }
+    },
+    {
+      "TriggerName": "Teleport_to_Were-Den_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Darkmoor/Interiors/DM_Z01I07_Wereden"
+      }
+    }
+  ]
+}

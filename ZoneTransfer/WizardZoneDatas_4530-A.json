@@ -23,6 +23,61 @@
         "m_destinationLoc": "-2.976196,-289.6753,0.4998779,0",
         "m_destinationZone": "Polaris/Interiors/Z03_ZootsCave"
       }
+    },
+    {
+      "TriggerName": "Teleport-SunlessTemple",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z03I04_SunlessShrineEnt"
+      }
+    },
+    {
+      "TriggerName": "TeleportTo_MammothCave02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z03_MommothCave02"
+      }
+    },
+    {
+      "TriggerName": "SkeletonKeySigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/PL_Z03_SkeletonKeyT2"
+      }
+    },
+    {
+      "TriggerName": "TeleportAlornaCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/Z03_AlornasCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport-GroffCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Polaris/Interiors/Z03_GroffsCave"
+      }
     }
   ]
 }

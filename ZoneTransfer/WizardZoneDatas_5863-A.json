@@ -23,6 +23,39 @@
         "m_destinationLoc": "7.231567,-3850.545,0.007123719,3.09628",
         "m_destinationZone": "Karamelle/Interiors/KM_Z09_FactoryFarm"
       }
+    },
+    {
+      "TriggerName": "To_ChocolateMooitaurCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z09_ChocolateMooitaurCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Interior sigil KM_Z09_Hot_House",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z09_HotHouse"
+      }
+    },
+    {
+      "TriggerName": "To_KM_Z09_Silo",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z09_Silo"
+      }
     }
   ]
 }

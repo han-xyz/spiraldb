@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/Interiors/AV_Z08_TowerDolorous",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From AV_Z08_TowerDolorous",
+        "m_destinationZone": "Avalon/AV_Z08_LakeShore"
+      }
+    }
+  ]
+}

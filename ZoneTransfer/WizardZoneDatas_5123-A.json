@@ -12,6 +12,28 @@
         "m_destinationLoc": "-11052.74,18011.6,-1808.714,0.8510914",
         "m_destinationZone": "Avalon/AV_Z10_Catacombs"
       }
+    },
+    {
+      "TriggerName": "AV-Ghost-Keep",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/AV_Z12_GhostAvalon"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Combat Sigil sigil",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z11_CrystalCave_SkeleKey"
+      }
     }
   ]
 }

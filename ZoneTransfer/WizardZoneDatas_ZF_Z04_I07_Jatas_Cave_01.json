@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Zafaria/Interiors/ZF_Z04_I07_Jatas_Cave_01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "BacktoSav",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Jatas_Cave",
+        "m_destinationZone": "Zafaria/ZF_Z03_Savannah"
+      }
+    }
+  ]
+}

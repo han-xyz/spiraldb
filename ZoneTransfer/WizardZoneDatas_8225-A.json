@@ -56,6 +56,50 @@
         "m_destinationLoc": "-0.6509642,1605.229,-0.02089977,0",
         "m_destinationZone": "Khrysalis/Interiors/KR_Z00_I07_Mausoleum"
       }
+    },
+    {
+      "TriggerName": "Teleport to TymenWhiteFlame",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z000_Tymen_WhiteFlame"
+      }
+    },
+    {
+      "TriggerName": "Teleport to Broken Tower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z00_I05_Bastion_BrokenTower"
+      }
+    },
+    {
+      "TriggerName": "Teleport_To_Book_Discarditory_01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z00_I10_Book_Discarditory"
+      }
+    },
+    {
+      "TriggerName": "Teleport to TwoFace",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z00_TwoFaced"
+      }
     }
   ]
 }

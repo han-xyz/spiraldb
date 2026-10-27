@@ -12,6 +12,17 @@
         "m_destinationLoc": "5123.21,217.6997,1157.67,-1.047696",
         "m_destinationZone": "Khrysalis/KR_Z02_MoonCliffs"
       }
+    },
+    {
+      "TriggerName": "Teleport-EclipseTower2",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "EclipseTowerA",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z02_MoonCliffs_Int01_A"
+      }
     }
   ]
 }

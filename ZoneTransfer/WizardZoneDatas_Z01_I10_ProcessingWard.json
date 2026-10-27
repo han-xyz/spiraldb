@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Polaris/Interiors/Z01_I10_ProcessingWard",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-FromCellBlockA",
+        "m_destinationZone": "Polaris/Interiors/Z01_I06_Basstille"
+      }
+    }
+  ]
+}

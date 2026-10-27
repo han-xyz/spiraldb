@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Empyrea/Interiors/EM_Z05_RightEyePath",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_NodoChord",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_EyeRight",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z05_NodoChord"
+      }
+    }
+  ]
+}

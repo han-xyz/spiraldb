@@ -34,6 +34,39 @@
         "m_destinationLoc": "-1209.488,-7293.803,-20.65804,3.136045",
         "m_destinationZone": "Zafaria/ZF_Z06_Zamunda"
       }
+    },
+    {
+      "TriggerName": "To_ZF_Z05_JungleClearing01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z05_I05_Jungle_Clearing_01"
+      }
+    },
+    {
+      "TriggerName": "To_ZF_Z05_JungleClearing02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z05_I05_Jungle_Clearing_02"
+      }
+    },
+    {
+      "TriggerName": "To_ZF_Z05_JungleClearing03",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z05_I05_Jungle_Clearing_03"
+      }
     }
   ]
 }

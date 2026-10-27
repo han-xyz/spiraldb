@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Krokotopia/KT_Selenopolis/Interiors/KT_Z07I01_Vivarium",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport to Interior sigil-DarkAbode",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/Interiors/KT_Z07I03_DarkAbode_Hard"
+      }
+    }
+  ]
+}

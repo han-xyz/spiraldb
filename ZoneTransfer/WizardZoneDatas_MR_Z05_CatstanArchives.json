@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Mirage/Interiors/MR_Z05_CatstanArchives",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location-ToRuins",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-FromArchives",
+        "m_destinationZone": "Mirage/Interiors/MR_Z05_CatstanRuins"
+      }
+    }
+  ]
+}

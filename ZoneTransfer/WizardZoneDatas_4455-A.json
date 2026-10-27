@@ -34,6 +34,61 @@
         "m_destinationLoc": "-147.7123,-983.0033,0.9500809,-3.141593",
         "m_destinationZone": "Avalon/Interiors/AV_Z04_HrefnaCave"
       }
+    },
+    {
+      "TriggerName": "Sigil-WILD-C12-001",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Location-FromWild",
+        "m_destinationZone": "Avalon/Interiors/AV_Z04_Cave01"
+      }
+    },
+    {
+      "TriggerName": "Sigil-Wild-C13-003",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Location-FromWild",
+        "m_destinationZone": "Avalon/Interiors/AV_Z04_Cave02"
+      }
+    },
+    {
+      "TriggerName": "Telepor_2_ChateauFuzz",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_From_Wild",
+        "m_destinationZone": "Avalon/Interiors/AV_Z04_ChateauFuzzlewort"
+      }
+    },
+    {
+      "TriggerName": "SigilToDreadKeep",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z04_TowerDreadKeep"
+      }
+    },
+    {
+      "TriggerName": "Sigil-WhiteOwlTower",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From Wyld",
+        "m_destinationZone": "Avalon/Interiors/AV_Z04_WOwlGarden"
+      }
     }
   ]
 }

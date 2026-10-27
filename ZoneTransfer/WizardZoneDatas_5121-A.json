@@ -34,6 +34,28 @@
         "m_destinationLoc": "225.5781,461.2715,1.999847,-2.697404",
         "m_destinationZone": "Avalon/AV_Z11_CrystalCaves"
       }
+    },
+    {
+      "TriggerName": "AV-CaptainsQuarters",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Avalon/Interiors/AV_Z10_CptnChamber"
+      }
+    },
+    {
+      "TriggerName": "Teleport_DeadKingsCrypt",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_TheCatacombs",
+        "m_destinationZone": "Avalon/Interiors/AV_Z10_DeadKingsCrypt"
+      }
     }
   ]
 }

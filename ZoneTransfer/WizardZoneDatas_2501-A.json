@@ -23,6 +23,28 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "Celestia/Interiors/CL_Z06i1_StormHaven"
       }
+    },
+    {
+      "TriggerName": "To_Z06i2_GeneralsGrave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z06i2_StormHaven"
+      }
+    },
+    {
+      "TriggerName": "To_Z06i3_OutsideDome",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Celestia/Interiors/CL_Z06i3_StormHaven"
+      }
     }
   ]
 }

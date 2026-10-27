@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Wallaru/Interiors/WL_Z07_Hex_Mangrove_01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TeleportSource_To_EUC_Exit",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target_Location_From_Hex-Mangrove_01",
+        "m_destinationZone": "Wallaru/WL_Z07_EucalyptusForest"
+      }
+    }
+  ]
+}

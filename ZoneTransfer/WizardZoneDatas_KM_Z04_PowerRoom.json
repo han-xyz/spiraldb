@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Karamelle/Interiors/KM_Z04_PowerRoom",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Start (1)",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-From PowerRoom",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z04_GummyPlant"
+      }
+    }
+  ]
+}

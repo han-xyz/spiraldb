@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Krokotopia/KT_Selenopolis/Interiors/KT_Z06I04_FieldReeds_Int",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "TP to TombOfForgottenFromFieldReeds",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Field of Reeds",
+        "m_destinationZone": "Krokotopia/KT_Selenopolis/KT_Z06_Forgotten"
+      }
+    }
+  ]
+}

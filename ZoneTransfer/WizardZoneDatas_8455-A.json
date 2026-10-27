@@ -45,6 +45,83 @@
         "m_destinationLoc": "42.31682,3362.61,20.9837,0",
         "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I08_SolarArcMain"
       }
+    },
+    {
+      "TriggerName": "TeleportToAlluviumCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I05_AlluviumCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to DryGulchCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I05_DryGulchCave"
+      }
+    },
+    {
+      "TriggerName": "Teleport to MetasomaCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I05_MetasomaCave01"
+      }
+    },
+    {
+      "TriggerName": "To_TreebeardCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Kondha",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I05_TreeBeardCave"
+      }
+    },
+    {
+      "TriggerName": "To_WaterBugCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Kondha",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I06_WBugCave"
+      }
+    },
+    {
+      "TriggerName": "To_BloodstoneCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Kondha",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I17_BloodStoneCave"
+      }
+    },
+    {
+      "TriggerName": "To_FoodCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Kondha",
+        "m_destinationZone": "Khrysalis/Interiors/KR_Z10_I18_FoodCave"
+      }
     }
   ]
 }

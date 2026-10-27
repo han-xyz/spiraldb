@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Avalon/Interiors/AV_Z05_TowerFroudling01",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "To_Froundling_Village",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Ginther_House",
+        "m_destinationZone": "Avalon/AV_Z05_TheWyrd"
+      }
+    }
+  ]
+}

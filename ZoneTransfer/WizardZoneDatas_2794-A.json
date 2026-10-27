@@ -23,6 +23,39 @@
         "m_destinationLoc": "9.700195,-1177.491,0,3.074411",
         "m_destinationZone": "Zafaria/Interiors/ZF_Z06_I04_Kings_Tomb_Anteroom"
       }
+    },
+    {
+      "TriggerName": "ZF_Z06_To_Barracks",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z06_I01_Barracks"
+      }
+    },
+    {
+      "TriggerName": "To_ZF_Z06_KingsCourt",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z06_I02_Kings_Court03"
+      }
+    },
+    {
+      "TriggerName": "ZF_Z06_Magicians_House",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Zafaria/Interiors/ZF_Z06_I03_Magicians_House"
+      }
     }
   ]
 }

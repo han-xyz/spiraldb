@@ -12,6 +12,94 @@
         "m_destinationLoc": "13422.2,2888.887,0.0001103874,2.808859",
         "m_destinationZone": "Azteca/AZ_Z03_MangroveMarsh"
       }
+    },
+    {
+      "TriggerName": "Sigil-RiverCave",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "FromSwamp",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z04_CaveByRiver"
+      }
+    },
+    {
+      "TriggerName": "AZ_Z04_Clearing01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z04_Clearing01"
+      }
+    },
+    {
+      "TriggerName": "AZ_Z04_Clearing02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z04_Clearing02"
+      }
+    },
+    {
+      "TriggerName": "To AZ_Z04_DeadTree",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z04_DeadTreeCavern"
+      }
+    },
+    {
+      "TriggerName": "AZ_Z04_MonquistanHold",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z04_MonquistanShipHold"
+      }
+    },
+    {
+      "TriggerName": "To AZ-Z04_TreeOfSecrets01",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z04_TreeOfSecrets01"
+      }
+    },
+    {
+      "TriggerName": "To AZ-Z04_TreeOfSecrets02",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z04_TreeOfSecrets02"
+      }
+    },
+    {
+      "TriggerName": "To AZ-Z04_TreeOfSecrets03",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Azteca/Interiors/AZ_Z04_TreeOfSecrets03"
+      }
     }
   ]
 }

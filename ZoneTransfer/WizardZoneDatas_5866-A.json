@@ -34,6 +34,61 @@
         "m_destinationLoc": "5413.743,-22.28076,1.99999,1.576475",
         "m_destinationZone": "Karamelle/Interiors/KM_Z10_ThroneRoom_A"
       }
+    },
+    {
+      "TriggerName": "Sigil_to_GobblertonLibrary",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Gobblerton",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z10_GobblertonLibrary"
+      }
+    },
+    {
+      "TriggerName": "Sigil_to_Gym",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Gobblerton",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z10_Gym"
+      }
+    },
+    {
+      "TriggerName": "Sigil_to_AbandonedStore",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Gobblerton",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z10_Store"
+      }
+    },
+    {
+      "TriggerName": "Sigil_to_ThroneRoomB",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z10_ThroneRoom_B_Adv"
+      }
+    },
+    {
+      "TriggerName": "Sigil_to_UnderwaterGrotto",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_Gobblerton",
+        "m_destinationZone": "Karamelle/Interiors/KM_Z10_UnderwaterGrotto"
+      }
     }
   ]
 }

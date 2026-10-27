@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Lemuria/Interiors/LM_Z06_GuestQuarters",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport_SkyCity",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "From_GuestQuarters_01",
+        "m_destinationZone": "Lemuria/LM_Z06_SkyCity"
+      }
+    }
+  ]
+}

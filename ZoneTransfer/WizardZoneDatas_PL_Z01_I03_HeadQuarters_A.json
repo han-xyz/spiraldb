@@ -1,0 +1,17 @@
+{
+  "ZoneName": "Polaris/Interiors/PL_Z01_I03_HeadQuarters_A",
+  "Events": [],
+  "Teleports": [
+    {
+      "TriggerName": "Teleport location-ToHarbor",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Target location-FromHarbormaster",
+        "m_destinationZone": "Polaris/PL_Z01_Harbor"
+      }
+    }
+  ]
+}

@@ -23,6 +23,17 @@
         "m_destinationLoc": "-311.3575,-244.609,-14.68896,0.6367309",
         "m_destinationZone": "Empyrea/EM_Z12_SamsaraVillage"
       }
+    },
+    {
+      "TriggerName": "TeleportToEM_Z12_I09_Clearing_C",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "Start",
+        "m_destinationZone": "Empyrea/Interiors/EM_Z12_I09_Clearing_C"
+      }
     }
   ]
 }
