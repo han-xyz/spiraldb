@@ -328,7 +328,9 @@ without a snapshot is fetched only live.
 
 `parse` reads each page's Prequest, Given By, Giver Location, type sentence, Goals, Hand In and Reward, and resolves:
 
-- the title to `lang` through `QuestTitle.lang`, compared without case, punctuation or a leading "The". Most Celestia
+- the title to `lang` through `QuestTitle.lang`, compared without case, punctuation or a leading "The"; a title no
+  key reads takes the one in-range key whose title reads within `TITLE_CUTOFF` of it (the wiki's `'Til Wizard Voices
+  Wake Us` is `Till Wizard Voices Wake Us`). Most Celestia
   quests keep their real title under a placeholder key (`QuestTitle_00000103`) and the internal name, or nothing, under
   the lang key; those are matched to a free `WizQst` file in three ways, each recorded with its evidence under `lang`
   in `needs_review`:
@@ -345,12 +347,21 @@ without a snapshot is fetched only live.
   Chain order and chain window keep a key only when its lines name the page's giver, hand-in NPC, or a goal NPC,
   creature or item.
 - NPC names to personas as `npcs` lists them, mobs to their `.AdjRef` adjectives as `mobs` lists them, objects to the adjectives of the world's items (`items`) by display name, quest icon name or
-  template name, read without the place, article, measure word ("Pieces of") or trailing number of the goal line, and item names to a line of the quest's own `WizQst` file. A named NPC template that no zone wad places takes
+  template name, read without the place, article, measure word ("Pieces of") or trailing number of the goal line, and
+  item names to a line of the quest's own `WizQst` file. An item a usage goal names that no name reads is the one item
+  whose words read it: the words of its display name, quest icon or template name (camel case split, each word singular,
+  no articles, prepositions or possessives; editor stand-ins and the objects the quest helper skips, `NoQH`, left out),
+  the same words, else all the goal's words, else, for a goal without a preposition, two or more of its words all in the
+  goal (`Horn on Pedestal` is `ZF-Grave-HornPedestal`, `Moon Gardens Gate` is `ZF_Gate_Moon`); without one, the one item
+  the words before the goal's preposition read, or whose words are those after it (`seeds in Soil` is `ZF_Soil`).
+  Several items reading it leave it unresolved. A persona goal on a name no NPC has but an item has (`Statue of
+  Artorius`) is a usage goal on that item. Mob names are read with their article and each word singular too (`The
+  Scorpion`, `Left Talons of the Sky`). A named NPC template that no zone wad places takes
   the zones of an unnamed template with the same persona (Queen Calypso is placed as `CL-CalypsoReset`). A name the
   world's folder lacks is taken from the one world name close to it (`NAME_CUTOFF`; the wiki's Koltan Grimfane is
   Koltan Gloomfane), else from the other ObjectData folders, placed by every zone wad; a mob the world's folder lacks
   comes from the other folders too (the Spellwrit Wildclaws are in `PageEvent`), from the nearest one that has it:
-  the registered worlds' folders by distance in the registry (Karamelle's Quake Charmer is Novus's, not Darkmoor's),
+  the registered worlds' folders by distance in the registry (Karamelle's Vexxor is Novus's, not Darkmoor's),
   then the rest. Each of these is listed in `needs_review` with the folder used. A title the wiki tagged with its
   world (`Monkey Business (Novus)`) is matched without the tag when nothing reads it whole.
 - goal lines by their verb (`quests/goal_lines.py`): defeat-like verbs are bounty goals, talk-like verbs and person

@@ -42,6 +42,9 @@ class Data:
     def object_entries(self, name):
         return item_entries(self.objects, name)
 
+    def usage_entries(self, name):
+        return self.object_entries(name)
+
     def zone_by_place(self, place):
         return self.places.get(place)
 
@@ -171,6 +174,16 @@ class GoalLineTest(unittest.TestCase):
         self.assertEqual([summary(goal)[:2] for goal in spec["goals"]],
                          [("persona", "Dog Tracy"), ("persona", "Edgar Ableton"), ("persona", "giver")])
 
+    def test_a_persona_name_an_item_reads_only_without_its_place_stays_a_persona(self):
+        fields = {**fields_of("Survivors"), "goals": ["@Talk to [NPC:Dasein on High]"]}
+        spec = build("Like_Dockwork", Data(personas=["Dalton Prescott"], items=["Dasein"]), fields=fields)
+        self.assertIn(("goal.persona", "Dasein on High"), blocking(spec))
+
+    def test_a_person_followed_to_a_place_is_a_persona_goal(self):
+        fields = {**fields_of("Survivors"), "goals": ["@Follow Josiah into [Location:Town]"]}
+        spec = build("Crime_and_Punishment", Data(personas=["Josiah", "Dalton Prescott"]), fields=fields)
+        self.assertEqual(summary(spec["goals"][0])[:2], ("persona", "Josiah"))
+
     def test_npc_verbs_and_notes_on_npc_names(self):
         data = Data(personas=["Fernanda Maregellan", "Dasein", "Dasein on High", "Dasein Anomaly"],
                     mobs=["Banana Spider"], items=["Firefly", "Frame of Mind"])
@@ -180,6 +193,12 @@ class GoalLineTest(unittest.TestCase):
                           ("usage", ["W-firefly.AdjRef"]), ("persona", "Dasein on High"), ("persona", "Dasein Anomaly"),
                           ("usage", ["W-frameofmind.AdjRef"]), ("usage", ["W-frameofmind.AdjRef"]),
                           ("persona", "Dasein")])
+
+    def test_a_persona_name_only_an_item_reads_is_a_usage_goal(self):
+        fields = {**fields_of("Survivors"), "goals": ["@Talk to [NPC:Statue of Artorius]"]}
+        spec = build("Like_Dockwork", Data(personas=["Dalton Prescott"], items=["Statue of Artorius"]), fields=fields)
+        self.assertEqual([summary(goal)[:2] for goal in spec["goals"]][0], ("usage", ["W-statueofartorius.AdjRef"]))
+        self.assertNotIn("goal.persona", [field for field, _ in blocking(spec)])
 
 
 @needs_rootwad
@@ -191,7 +210,7 @@ class ClientLookupTest(unittest.TestCase):
 
     def test_a_mob_the_world_lacks_comes_from_the_nearest_world_only(self):
         data = ClientData(world("Karamelle"))
-        self.assertEqual({entry["folder"] for entry in data.mob_entries("The Quake Charmer")}, {"NV"})
+        self.assertEqual({entry["folder"] for entry in data.mob_entries("Vexxor")}, {"NV"})
 
     def test_a_place_resolves_to_the_world_zone_of_that_name(self):
         data = ClientData(world("Zafaria"))
@@ -207,6 +226,15 @@ class ClientLookupTest(unittest.TestCase):
 
     def test_a_title_read_inside_and_outside_the_declared_range_takes_the_key_inside(self):
         self.assertEqual(ClientData(world("Avalon")).title_lang("Running Free"), "908F3")
+
+    def test_a_title_spelled_slightly_differently_matches_one_close_title_in_the_range(self):
+        self.assertEqual(ClientData(world("Empyrea")).title_lang("'Til Wizard Voices Wake Us"), "16434E")
+
+    def test_a_mob_name_reads_with_its_article_and_each_word_singular(self):
+        self.assertTrue(ClientData(world("Mirage")).mob_entries("The Scorpion"))
+        self.assertTrue(ClientData(world("Azteca")).mob_entries("Left Talons of the Sky"))
+        karamelle = ClientData(world("Karamelle"))
+        self.assertEqual({entry["folder"] for entry in karamelle.mob_entries("The Quake Charmer")}, {"KM"})
 
 
 if __name__ == "__main__":

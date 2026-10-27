@@ -51,6 +51,7 @@ QUEST_TYPES = ("storyline", "side", "instance")
 MIN_SHARED_WEIGHT, CLEAR_MARGIN = 4.0, 1.5
 CHAIN_WINDOW = 16
 NAME_CUTOFF = 0.8
+TITLE_CUTOFF = 0.95
 # Goals without a count: a line repeated on consecutive lines is that many goals.
 UNCOUNTED_GOALS = ("persona", "waypoint")
 ZONE_PREFIX = re.compile(r"^[A-Z]{2}_(?:Z\d+[A-Za-z]?_)?(?:I\d+_)?(?:the_)?", re.I)
@@ -540,6 +541,16 @@ def singular_forms(text):
     return forms
 
 
+def singular(word):
+    if word.endswith("ies") and len(word) > 4:
+        return word[:-3] + "y"
+    if word.endswith(("sses", "xes", "ches", "shes")):
+        return word[:-2]
+    if word.endswith("s") and not word.endswith("ss") and len(word) > 3:
+        return word[:-1]
+    return word
+
+
 def nearest_folders(registered, folders):
     """ObjectData folders, the registered worlds' first, nearest the world in WORLDS order (the earlier of two equally
     near), then the rest by name."""
@@ -582,7 +593,9 @@ class ClientData:
             folder for folder in os.listdir(os.path.join(ROOTWAD_DIR, "ObjectData"))
             if folder != self.folder and os.path.isdir(os.path.join(ROOTWAD_DIR, "ObjectData", folder))])
         self.other_mobs, self.other_personas = None, None
-        self.objects = item_index(templates.items(ROOTWAD_DIR, self.folder), self.folder)
+        item_rows = list(templates.items(ROOTWAD_DIR, self.folder))
+        self.objects = item_index(item_rows, self.folder)
+        self.item_words = item_words(item_rows, self.folder)
         self.known_zones = set(zone_transfer_files())
         self.zone_names = {}
         for path in glob.glob(os.path.join(GAMEDATA_DIR, f"{self.world}-*.wad")):
@@ -650,10 +663,20 @@ class ClientData:
     def title_lang(self, title):
         """The quest lang key that reads the title: in the world's range first; only in it when the range is
         declared."""
-        keys = [k for k in self.title_keys(title) if self.has_quest_lang(k)]
+        keys = [k for k in self.title_keys(title) if self.has_quest_lang(k)] or self.close_title_keys(title)
         if self.range_is_declared:
             keys = [k for k in keys if self.in_range(k)]
         return min(keys, key=lambda k: not self.in_range(k), default=None)
+
+    def close_title_keys(self, title):
+        """The one in-range quest lang key whose title reads nearly as the title (`Till` for the wiki's `'Til`), when
+        no key reads it exactly."""
+        texts = {}
+        for key, text in self.titles.items():
+            if self.in_range(key) and self.has_quest_lang(key) and text.strip() and not self.internal_name(key):
+                texts.setdefault(title_norm(text), []).append(key)
+        close = difflib.get_close_matches(title_norm(strip_notes(title)), texts, n=2, cutoff=TITLE_CUTOFF)
+        return texts[close[0]] if len(close) == 1 and len(texts[close[0]]) == 1 else []
 
     def internal_name(self, key):
         text = self.titles.get(key, "")
@@ -696,17 +719,28 @@ class ClientData:
 
     def mob_entries(self, name):
         """The mob entries for a name, from the world's folder, else from the nearest other folder that has it."""
-        found = next((self.mobs[form] for form in singular_forms(name) if form in self.mobs), [])
+        forms = mob_forms(name)
+        found = next((self.mobs[form] for form in forms if form in self.mobs), [])
         if found:
             return found
         if self.other_mobs is None:
             self.other_mobs = self.mob_index(self.other_folders)
-        found = next((self.other_mobs[form] for form in singular_forms(name) if form in self.other_mobs), [])
+        found = next((self.other_mobs[form] for form in forms if form in self.other_mobs), [])
         nearest = min((entry["folder"] for entry in found), key=self.other_folders.index, default=None)
         return [entry for entry in found if entry["folder"] == nearest]
 
     def object_entries(self, name):
         return item_entries(self.objects, name)
+
+    def usage_entries(self, name):
+        """The entries of the item a usage goal names: by its name, else by its words when one item reads them."""
+        return self.object_entries(name) or word_entries(self.item_words, name)
+
+
+def mob_forms(name):
+    """Normalised spellings of a mob name: singular, with its article (`The Scorpion`), each word singular."""
+    words = [norm(word) for word in re.findall(r"[\w'’-]+", name)]
+    return list(dict.fromkeys(singular_forms(name) + [norm(name), "".join(map(singular, words))]))
 
 
 def item_index(rows, folder):
@@ -727,6 +761,62 @@ def item_index(rows, folder):
     return {form: [entry for i, entry in enumerate(entries)
                    if entry["adjective"] not in {e["adjective"] for e in entries[:i]}]
             for form, entries in index.items()}
+
+
+ITEM_STOP_WORDS = {"the", "a", "an", "of", "and", "in", "on", "at", "into", "to", "from", "near", "with", "for",
+                   "away", "down", "up", "out", "off", "your"}
+# Editor stand-ins, and objects the quest helper never points at (Mirage's carpets `To Alkali Barrows`).
+UNMATCHED_ADJECTIVES = {"EditorOnly", "NoQH"}
+ITEM_PREPOSITION = re.compile(r"\s+(?:in|on|at|into|near|from|to|with|for)\s+", re.I)
+
+
+def name_words(text):
+    """The words of a name or template name, camel case split, digits and possessives dropped, each singular, without
+    articles, prepositions and particles."""
+    text = re.sub(r"['’]s\b|['’]", "", text)
+    words = (word.lower() for word in re.findall(r"[A-Z]?[a-z]+|[A-Z]+(?![a-z])", text))
+    return frozenset(singular(word) for word in words if word not in ITEM_STOP_WORDS)
+
+
+def item_words(rows, folder):
+    """(template, word sets of its display name, quest icon and template name, usage goal entry) per item that a
+    goal can name: not the editor's stand-ins or the objects the quest helper skips."""
+    found = []
+    for row in rows:
+        if UNMATCHED_ADJECTIVES.intersection(row["adjectives"]):
+            continue
+        own = f"{row['template']}.AdjRef"
+        adjective = own if own in row["adjectives"] else row["adjectives"][0]
+        descriptor = row["name_key"] if row["name"] and not row["name_key"].startswith("WizardMobs_") else ""
+        texts = [row["name"], row["icon"], re.sub(rf"^{folder}[-_]", "", row["template"], flags=re.I)]
+        found.append((row["template"], [name_words(text) for text in texts if text],
+                      {"adjective": adjective, "descriptor": descriptor}))
+    return found
+
+
+def word_matches(items, wanted, readings=3):
+    """The items whose words read the wanted words, by the first of `readings` that any item meets: the same words,
+    all of them, (two or more of the item's words) a part of them."""
+    if not wanted:
+        return []
+    for reads in (lambda words: words == wanted, lambda words: wanted <= words,
+                  lambda words: len(words) >= 2 and words <= wanted)[:readings]:
+        found = [item for item in items if any(map(reads, item[1]))]
+        if found:
+            return found
+    return []
+
+
+def word_entries(items, phrase):
+    """The entry of the one item whose words read the goal phrase, else of the one item that its head or, by the same
+    words, the object after its preposition reads (`seeds in Soil`); none when several items read it."""
+    phrase = re.sub(r"\s*\([^)]*\)?|#", " ", phrase).strip()
+    parts = ITEM_PREPOSITION.split(phrase)
+    found = word_matches(items, name_words(phrase), 3 if len(parts) == 1 else 2)
+    if not found and len(parts) > 1:
+        found = word_matches(items, name_words(parts[0])) + word_matches(items, name_words(parts[-1]), 1)
+    templates_found = {template: entry for template, _, entry in found}
+    return list(templates_found.values()) if len(templates_found) == 1 else []
 
 
 ITEM_PLACE = re.compile(r"\s*\(.*?\)|\s+(in|at|on|near|with|for|from)\s+.*$|#")
@@ -813,6 +903,13 @@ class SpecBuilder:
         return row["persona"], zone
 
     def persona_goal(self, name, with_previous=False):
+        bare = strip_notes(name)
+        if (self.data.persona(bare, self.zone) is None and ITEM_PLACE.sub("", bare).strip() == bare
+                and self.data.object_entries(bare)):
+            goal = self.usage_goal([bare], 1)
+            if with_previous:
+                goal["with_previous"] = True
+            return goal
         persona, zone = self.persona_ref(name, "goal.persona")
         if persona is None:
             return None
@@ -857,7 +954,7 @@ class SpecBuilder:
     def usage_goal(self, names, count):
         items, descriptor = [], ""
         for name in names:
-            entries = self.data.object_entries(name)
+            entries = self.data.usage_entries(name)
             if not entries:
                 self.unresolved("goal.items", name, True)
             items += [e["adjective"] for e in entries]
@@ -956,7 +1053,7 @@ class SpecBuilder:
             return [self.bounty_goal(creatures, number * times, None, place, zone=zone)]
         if kind == "waypoint":
             return [self.waypoint_goal(places, text)]
-        name = target_text(re.sub(r"\s+(in|at)\s+.*$", "", text))
+        name = target_text(re.sub(r"\s+(in|at|into|to)\s+.*$", "", text))
         if verb in PERSON_VERBS and self.data.has_persona(name):
             return [self.persona_goal(name)]
         item = target_text(text)
