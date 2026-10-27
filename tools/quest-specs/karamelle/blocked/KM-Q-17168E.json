@@ -135,8 +135,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Molds",
+      "field": "goal.usage",
+      "value": "Press Z to Photomance Molds",
       "blocking": true
     },
     {

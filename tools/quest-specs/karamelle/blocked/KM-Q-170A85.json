@@ -154,8 +154,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "More Gummies",
+      "field": "goal.waypoint",
+      "value": "Find More Gummies",
       "blocking": true
     },
     {
@@ -164,8 +164,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Creme Beret",
+      "field": "goal.usage",
+      "value": "Use Creme Beret",
       "blocking": true
     },
     {

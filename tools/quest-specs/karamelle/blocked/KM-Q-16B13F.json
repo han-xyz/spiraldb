@@ -79,6 +79,10 @@
       "loc": "ZoneLocName_1487147"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z10_Gym"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Karamelle/KM_Z10_Gobblerton",
@@ -110,13 +114,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Other Door to Gym",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Your Way Through",
+      "field": "goal.waypoint",
+      "value": "Make Your Way Through",
       "blocking": true
     },
     {

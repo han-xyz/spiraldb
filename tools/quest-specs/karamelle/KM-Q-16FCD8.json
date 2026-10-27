@@ -95,6 +95,10 @@
       "loc": "ZoneLocName_1506597"
     },
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z05_OrsonOffice"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Hamster_WizardF_B_01.AdjRef"
@@ -137,11 +141,6 @@
     "timestamp": "20240322074522"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Orson's Office",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

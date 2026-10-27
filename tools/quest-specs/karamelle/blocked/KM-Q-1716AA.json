@@ -119,8 +119,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "in Lake",
+      "field": "goal.waypoint",
+      "value": "Jump in Lake",
       "blocking": true
     },
     {

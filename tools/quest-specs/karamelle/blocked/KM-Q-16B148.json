@@ -138,8 +138,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Cookbook",
+      "field": "goal.waypoint",
+      "value": "Look For a Cookbook",
       "blocking": true
     },
     {

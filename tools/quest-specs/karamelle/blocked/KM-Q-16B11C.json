@@ -221,8 +221,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Summit",
+      "field": "goal.unknown-verb",
+      "value": "Attend the Summit",
       "blocking": true
     },
     {

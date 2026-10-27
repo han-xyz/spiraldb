@@ -105,8 +105,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Mysterious Voice",
+      "field": "goal.persona",
+      "value": "Follow Mysterious Voice",
       "blocking": true
     },
     {
@@ -115,8 +115,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Mysterious Voice",
+      "field": "goal.persona",
+      "value": "Follow Mysterious Voice",
       "blocking": true
     },
     {

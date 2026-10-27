@@ -196,8 +196,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Nana & the Cabalists",
+      "field": "goal.persona",
+      "value": "Rescue Nana & the Cabalists",
       "blocking": true
     },
     {

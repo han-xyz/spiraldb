@@ -168,8 +168,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Strange Noise",
+      "field": "goal.waypoint",
+      "value": "Investigate Strange Noise",
       "blocking": true
     },
     {

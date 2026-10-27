@@ -203,8 +203,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Spirit Eater",
+      "field": "goal.waypoint",
+      "value": "Find Spirit Eater",
       "blocking": true
     },
     {
@@ -213,8 +213,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Spirit Eater",
+      "field": "goal.waypoint",
+      "value": "Find Spirit Eater",
       "blocking": true
     },
     {

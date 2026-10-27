@@ -175,8 +175,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Mysterious Fanfare",
+      "field": "goal.waypoint",
+      "value": "Investigate Mysterious Fanfare",
       "blocking": true
     },
     {

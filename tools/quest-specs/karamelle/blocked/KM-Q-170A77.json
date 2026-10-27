@@ -136,8 +136,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Trapped Singers in the Glockenspiel",
+      "field": "goal.persona",
+      "value": "Rescue Trapped Singers in the Glockenspiel",
       "blocking": true
     },
     {

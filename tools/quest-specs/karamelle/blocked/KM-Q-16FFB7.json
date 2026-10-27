@@ -169,8 +169,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Pet Mode to follow Witches' trail",
+      "field": "goal.usage",
+      "value": "Use Pet Mode to follow Witches' trail",
       "blocking": true
     },
     {
@@ -184,8 +184,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Greta's Protest",
+      "field": "goal.unknown-verb",
+      "value": "Join Greta's Protest",
       "blocking": true
     },
     {

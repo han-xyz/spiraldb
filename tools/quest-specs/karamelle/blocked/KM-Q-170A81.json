@@ -135,8 +135,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Explodey Thing",
+      "field": "goal.waypoint",
+      "value": "Investigate the Explodey Thing",
       "blocking": true
     },
     {

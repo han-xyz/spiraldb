@@ -166,8 +166,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Treacle Recipe",
+      "field": "goal.waypoint",
+      "value": "Look for Treacle Recipe",
       "blocking": true
     },
     {

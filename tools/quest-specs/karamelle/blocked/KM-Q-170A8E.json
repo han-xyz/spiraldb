@@ -118,13 +118,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Strange Noise",
+      "field": "goal.waypoint",
+      "value": "Investigate Strange Noise",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Strange Noise",
+      "field": "goal.persona",
+      "value": "Follow Strange Noise",
       "blocking": true
     },
     {

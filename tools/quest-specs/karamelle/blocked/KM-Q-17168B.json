@@ -210,8 +210,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Lever",
+      "field": "goal.usage",
+      "value": "Use Lever",
       "blocking": true
     },
     {

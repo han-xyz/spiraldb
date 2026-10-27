@@ -207,8 +207,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Rosina's speech",
+      "field": "goal.unknown-verb",
+      "value": "Attend Rosina's speech",
       "blocking": true
     },
     {

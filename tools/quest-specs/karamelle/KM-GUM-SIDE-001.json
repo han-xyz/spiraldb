@@ -74,6 +74,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Karamelle/Interiors/KM_Z03_I03_TreemuggerHideout"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "KM_Gnome_Mugger_A_01.AdjRef"
@@ -105,11 +109,6 @@
     {
       "field": "lang",
       "value": "WizQst16FF77 is The Repository's id; the title reads no key",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Treemugger's Hideout",
       "blocking": false
     },
     {

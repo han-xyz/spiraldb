@@ -133,8 +133,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Your Way Through",
+      "field": "goal.waypoint",
+      "value": "Make Your Way Through",
       "blocking": true
     },
     {

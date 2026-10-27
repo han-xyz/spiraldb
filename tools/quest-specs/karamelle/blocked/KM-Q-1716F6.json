@@ -133,8 +133,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Strange Blight",
+      "field": "goal.waypoint",
+      "value": "Investigate Strange Blight",
       "blocking": true
     },
     {

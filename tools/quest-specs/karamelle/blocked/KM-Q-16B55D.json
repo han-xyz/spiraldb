@@ -157,8 +157,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "mysterious 'big hole'",
+      "field": "goal.waypoint",
+      "value": "Investigate mysterious 'big hole'",
       "blocking": true
     },
     {

@@ -137,8 +137,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Tour",
+      "field": "goal.persona",
+      "value": "Take Tour",
       "blocking": true
     },
     {

@@ -68,12 +68,12 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.waypoint",
       "value": "(complete instance quest)",
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.waypoint",
       "value": "Defeat Aberration",
       "blocking": true
     },
