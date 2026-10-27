@@ -85,8 +85,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Evil",
+      "field": "goal.unknown-verb",
+      "value": "Drive Out Evil",
       "blocking": true
     },
     {

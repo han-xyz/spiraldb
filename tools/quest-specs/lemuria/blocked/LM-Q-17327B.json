@@ -110,8 +110,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Notes in the Sanctum of Discord in Telos",
+      "field": "goal.persona",
+      "value": "Take Notes in the Sanctum of Discord in Telos",
       "blocking": true
     },
     {

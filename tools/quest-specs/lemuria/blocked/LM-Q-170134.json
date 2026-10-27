@@ -104,8 +104,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Bridge of Destiny",
+      "field": "goal.waypoint",
+      "value": "Cross Bridge of Destiny",
       "blocking": true
     },
     {

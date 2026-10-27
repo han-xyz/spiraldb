@@ -232,6 +232,10 @@
       "loc": "ZoneLocName_1520281"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z06_GuestQuarters"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Drone_Eye_D_01.AdjRef",
@@ -306,11 +310,6 @@
       "field": "goal.zone (waypoint left out)",
       "value": "Continue Tour",
       "blocking": false
-    },
-    {
-      "field": "goal.items",
-      "value": "Harmony",
-      "blocking": true
     },
     {
       "field": "dialogs",

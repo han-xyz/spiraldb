@@ -133,8 +133,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Your Way Down",
+      "field": "goal.waypoint",
+      "value": "Make Your Way Down",
       "blocking": true
     },
     {

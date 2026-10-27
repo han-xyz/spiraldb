@@ -72,8 +72,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Heroes to Conatus",
+      "field": "goal.waypoint",
+      "value": "Follow Heroes to Conatus",
       "blocking": true
     },
     {

@@ -83,6 +83,11 @@
   "goals": [
     {
       "type": "persona",
+      "persona": "LM-URSAI-NPC08",
+      "zone": ""
+    },
+    {
+      "type": "persona",
       "persona": "giver",
       "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
       "loc": "ZoneLocName_1520099"
@@ -92,6 +97,10 @@
     "LM-Standin-Bantam": {
       "portrait": "GUI/NpcPortraits/Portrait_Chicken_Hero_A_NPC.dds",
       "template_id": 1521362
+    },
+    "LM-URSAI-NPC08": {
+      "portrait": "GUI/NpcPortraits/Bear_IslanderF_A_NPC.dds",
+      "template_id": 1520129
     }
   },
   "source": {
@@ -101,7 +110,7 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.persona.zone (placed in no zone)",
       "value": "Villagers",
       "blocking": true
     },

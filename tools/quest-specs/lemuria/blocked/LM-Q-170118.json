@@ -145,13 +145,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Duck's Camp",
+      "field": "goal.waypoint",
+      "value": "Locate Duck's Camp",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Duck's Camp",
+      "field": "goal.persona",
+      "value": "Approach Duck's Camp",
       "blocking": true
     },
     {

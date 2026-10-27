@@ -6,7 +6,7 @@
     "zone": "Lemuria/Interiors/LM_Z06_LucysHouse"
   },
   "requires": [
-    "LM-Q-174419"
+    "LM-Q-17441A"
   ],
   "mainline": false,
   "level": 132,
@@ -170,11 +170,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "The Tour You Know replaced by LM-Q-174419",
       "blocking": false
     }
   ]

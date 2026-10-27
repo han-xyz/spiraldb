@@ -149,8 +149,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Your Victory",
+      "field": "goal.unknown-verb",
+      "value": "Celebrate Your Victory",
       "blocking": true
     },
     {

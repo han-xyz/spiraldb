@@ -206,8 +206,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Secret Door",
+      "field": "goal.waypoint",
+      "value": "Find Secret Door",
       "blocking": true
     },
     {

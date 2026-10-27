@@ -121,8 +121,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Script to Crypt of Tales",
+      "field": "goal.waypoint",
+      "value": "Deliver Script to Crypt of Tales",
       "blocking": true
     },
     {

@@ -123,8 +123,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Stone",
+      "field": "goal.usage",
+      "value": "Place Stone",
       "blocking": true
     },
     {

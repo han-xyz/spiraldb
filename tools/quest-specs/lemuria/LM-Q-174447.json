@@ -7,7 +7,7 @@
     "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
   },
   "requires": [
-    "LM-Q-174419"
+    "LM-Q-17441A"
   ],
   "mainline": true,
   "level": 132,
@@ -106,7 +106,7 @@
     },
     {
       "field": "requires (not generated)",
-      "value": "The Secret Struggle replaced by LM-Q-174419",
+      "value": "The Secret Struggle replaced by LM-Q-17441A",
       "blocking": false
     }
   ]

@@ -92,13 +92,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Stone",
+      "field": "goal.usage",
+      "value": "Place Stone",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Loud Noise",
+      "field": "goal.waypoint",
+      "value": "Investigate Loud Noise",
       "blocking": true
     },
     {

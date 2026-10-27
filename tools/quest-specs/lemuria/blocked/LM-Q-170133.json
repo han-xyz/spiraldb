@@ -115,18 +115,18 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Jailor",
+      "field": "goal.waypoint",
+      "value": "Find Jailor",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Jailor",
+      "field": "goal.waypoint",
+      "value": "Find Jailor",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Jailor",
+      "field": "goal.waypoint",
+      "value": "Find Jailor",
       "blocking": true
     },
     {

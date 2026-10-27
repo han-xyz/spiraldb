@@ -158,8 +158,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Entire Room",
+      "field": "goal.usage",
+      "value": "Press Z to Photomance the Entire Room",
       "blocking": true
     },
     {
@@ -168,8 +168,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Next Room",
+      "field": "goal.usage",
+      "value": "Press Z to Photomance the Next Room",
       "blocking": true
     },
     {

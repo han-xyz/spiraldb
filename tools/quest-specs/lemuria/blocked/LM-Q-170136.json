@@ -149,8 +149,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Noises",
+      "field": "goal.waypoint",
+      "value": "Investigate Noises",
       "blocking": true
     },
     {

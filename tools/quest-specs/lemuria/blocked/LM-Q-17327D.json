@@ -98,8 +98,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Ritual Combat",
+      "field": "goal.unknown-verb",
+      "value": "Perform Ritual Combat",
       "blocking": true
     },
     {

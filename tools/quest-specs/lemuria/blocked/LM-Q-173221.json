@@ -137,8 +137,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Worthier Prey in Next Room",
+      "field": "goal.waypoint",
+      "value": "Find Worthier Prey in Next Room",
       "blocking": true
     },
     {

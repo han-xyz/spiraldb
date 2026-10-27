@@ -132,8 +132,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Stone into Harmonic Gate",
+      "field": "goal.usage",
+      "value": "Place Stone into Harmonic Gate",
       "blocking": true
     },
     {

@@ -155,8 +155,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Lemuria",
+      "field": "goal.persona",
+      "value": "Save Lemuria",
       "blocking": true
     },
     {

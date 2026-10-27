@@ -97,6 +97,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z01_CentaurzanCabin"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Fossa_Base_A_01.AdjRef",
@@ -154,18 +158,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Centaurzan's Cabin",
+      "field": "goal.waypoint",
+      "value": "Pass through Poisonthorn Vines",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Poisonthorn Vines",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Bearfolk",
+      "field": "goal.waypoint",
+      "value": "Look for the Bearfolk",
       "blocking": true
     },
     {

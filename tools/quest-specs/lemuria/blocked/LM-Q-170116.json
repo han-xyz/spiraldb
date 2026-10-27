@@ -77,8 +77,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Duck Room",
+      "field": "goal.persona",
+      "value": "Give Duck Room",
       "blocking": true
     },
     {

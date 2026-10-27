@@ -133,8 +133,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Lucy Inside",
+      "field": "goal.persona",
+      "value": "Follow Lucy Inside",
       "blocking": true
     },
     {

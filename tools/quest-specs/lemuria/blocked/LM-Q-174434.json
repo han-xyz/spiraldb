@@ -185,8 +185,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Farewells",
+      "field": "goal.unknown-verb",
+      "value": "Say Farewells",
       "blocking": true
     },
     {

@@ -77,6 +77,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z05_I03_SkeletaurTomb"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Lemur_Wild_D_01.AdjRef",
@@ -109,11 +113,6 @@
     {
       "field": "lang",
       "value": "WizQst17015C is The Repository's id; the title reads no key",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Skeletaur's Tomb",
       "blocking": false
     },
     {

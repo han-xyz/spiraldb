@@ -37,8 +37,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Mandar the Barbarian",
+      "field": "goal.unknown-verb",
+      "value": "Convince Mandar the Barbarian",
       "blocking": true
     },
     {

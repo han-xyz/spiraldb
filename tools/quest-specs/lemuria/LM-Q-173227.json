@@ -117,6 +117,10 @@
       "loc": "ZoneLocName_1520100"
     },
     {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z03_LucienHouse"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Lemur_Resistance_E_01.AdjRef"
@@ -153,11 +157,6 @@
     "timestamp": "20240322084925"
   },
   "needs_review": [
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Lucien's House",
-      "blocking": false
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

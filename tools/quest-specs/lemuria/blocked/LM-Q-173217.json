@@ -129,8 +129,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Door Incantation",
+      "field": "goal.unknown-verb",
+      "value": "Recite Door Incantation",
       "blocking": true
     },
     {

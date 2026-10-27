@@ -83,8 +83,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Wing Brotherhood Feather",
+      "field": "goal.unknown-verb",
+      "value": "Procure Wing Brotherhood Feather",
       "blocking": true
     },
     {

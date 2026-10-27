@@ -97,13 +97,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Your Way Up",
+      "field": "goal.waypoint",
+      "value": "Make Your Way Up",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Your Way Up",
+      "field": "goal.waypoint",
+      "value": "Make Your Way Up",
       "blocking": true
     },
     {

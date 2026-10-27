@@ -144,6 +144,12 @@
     },
     {
       "type": "persona",
+      "persona": "LM-URSAI-NPC01-C-NoGuitar",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
       "persona": "LM-Standin-Bantam",
       "zone": "Lemuria/Interiors/LM_Z00_I10_BassChamber",
       "loc": "ZoneLocName_1520099",
@@ -177,18 +183,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Hibiscus Flowers to Tosh",
+      "field": "goal.waypoint",
+      "value": "Find Way to Volcano Caldera",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Way to Volcano Caldera",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Your Way to Top of the Volcano",
+      "field": "goal.waypoint",
+      "value": "Make Your Way to Top of the Volcano",
       "blocking": true
     },
     {

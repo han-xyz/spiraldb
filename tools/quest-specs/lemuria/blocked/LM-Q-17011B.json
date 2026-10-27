@@ -278,8 +278,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Escape Route",
+      "field": "goal.waypoint",
+      "value": "Look for Escape Route",
       "blocking": true
     },
     {
@@ -288,8 +288,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Barbarian's Cell",
+      "field": "goal.usage",
+      "value": "Open the Barbarian's Cell",
       "blocking": true
     },
     {

@@ -104,6 +104,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Lemuria/Interiors/LM_Z00_I01_HierarchsSanctum"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "LM_Lemur_CitizenF_A_01.AdjRef",
@@ -143,13 +147,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Lemur Citizens",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Lemurs",
+      "field": "goal.waypoint",
+      "value": "Look for Lemur Citizens",
       "blocking": true
     },
     {
