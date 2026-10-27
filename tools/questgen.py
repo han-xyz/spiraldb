@@ -5,13 +5,16 @@ See tools/README.md for the spec format, the lookups and how to author a world.
 """
 import argparse
 import datetime
+import functools
 import glob
+import importlib.util
 import json
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from client_data import GAMEDATA_DIR, ROOTWAD_DIR, lang_exists, read_lang, tolerant_load, zone_strings
+from client_data import (GAMEDATA_DIR, ROOTWAD_DIR, lang_exists, read_binary_xml, read_lang, tolerant_load,
+                         zone_strings)
 
 PACK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TYPE = "Imcodec.ObjectProperty.TypeCache.{}, Imcodec.ObjectProperty"
@@ -465,7 +468,8 @@ def check_spec(spec, rootwad, gamedata, zone_cache, known_zones):
             zone_cache[zone] = zone_strings(gamedata, zone)
         if zone_cache[zone] is None:
             problems.append(f"zone {zone} has no wad")
-        elif not any(s.startswith(persona) for s in zone_cache[zone]):
+        elif not any(s.startswith(name) for name in [persona, *persona_templates(rootwad).get(persona, [])]
+                     for s in zone_cache[zone]):
             problems.append(f"persona {persona} not placed in {zone}")
     for goal in spec["goals"]:
         try:
@@ -473,6 +477,21 @@ def check_spec(spec, rootwad, gamedata, zone_cache, known_zones):
         except SpecError as e:
             problems.append(str(e))
     return problems
+
+
+@functools.cache
+def persona_templates(rootwad):
+    """persona -> the object templates of every ObjectData folder that carry it; a zone may place any of them."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "npc-personas-from-wad.py")
+    module_spec = importlib.util.spec_from_file_location("npc_personas_from_wad", path)
+    npc_module = importlib.util.module_from_spec(module_spec)
+    module_spec.loader.exec_module(npc_module)
+    templates = {}
+    for path in sorted(glob.glob(os.path.join(rootwad, "ObjectData", "*", "*.xml"))):
+        persona = npc_module.persona_of(read_binary_xml(path))
+        if persona:
+            templates.setdefault(persona[:-len(PERSONA_SUFFIX)], []).append(os.path.basename(path)[:-4])
+    return templates
 
 
 def zone_transfer_zones():

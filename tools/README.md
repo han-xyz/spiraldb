@@ -138,7 +138,7 @@ name, and a missing portrait, from the persona.
 
 `--check` reports, per spec: a missing `WizQst<lang>.lang`, an empty `dialogs.prep` (no NPC would offer the quest), a
 title or line key the lang files lack, a `loc` text ZoneLocName.lang lacks, a zone with no ZoneTransfer entry, and a
-persona whose zone wad does not place it.
+persona whose zone wad places none of the templates that carry it.
 
 ### Not generated
 
