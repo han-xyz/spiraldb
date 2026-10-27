@@ -7,19 +7,19 @@
   "m_questUnderway": null,
   "m_questComplete": null,
   "m_startGoals": [
-    "1_WizardQuestGoals_ExploreZone",
-    "2_WizardQuestGoals_ExploreZone",
-    "3_WizardQuestGoals_ExploreZone",
-    "4_WizardQuestGoals_ExploreZone",
-    "5_WizardQuestGoals_ExploreZone",
-    "6_WizardQuestGoals_ExploreZone"
+    "1_WizardQuestGoals_UseItem",
+    "2_WizardQuestGoals_UseItem",
+    "3_WizardQuestGoals_UseItem",
+    "4_WizardQuestGoals_UseItem",
+    "5_WizardQuestGoals_UseItem",
+    "6_WizardQuestGoals_UseItem"
   ],
   "m_goals": [
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "1_WizardQuestGoals_ExploreZone",
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "1_WizardQuestGoals_UseItem",
       "m_goalNameID": 2559431,
-      "m_goalTitle": "WizardQuestGoals_ExploreZone",
+      "m_goalTitle": "WizardQuestGoals_UseItem",
       "m_goalUnderway": null,
       "m_hyperlink": null,
       "m_completeText": null,
@@ -29,14 +29,14 @@
       "m_goalRequirements": null,
       "m_tallyCounter": {
         "m_percentChance": 1.0,
-        "m_descriptor": "",
+        "m_descriptor": "WizItems_00001971",
         "m_descriptor2": "",
-        "m_count": 0,
+        "m_count": 1,
         "m_tallyResults": {
           "m_results": []
         }
       },
-      "m_locationName": "ZoneLocName_1205023",
+      "m_locationName": "ZoneLocName_1205051",
       "m_displayImage1": "",
       "m_displayImage2": "",
       "m_clientTags": [],
@@ -45,7 +45,7 @@
       "m_autoComplete": false,
       "m_destinationZone": "Khrysalis/KR_Z00_Hub",
       "m_dialogList": null,
-      "m_goalType": "GOAL_TYPE_WAYPOINT",
+      "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": {
@@ -53,16 +53,23 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_zoneEntry": true,
-      "m_zoneTag": "Khrysalis/KR_Z00_Hub",
-      "m_proximityTag": "",
-      "m_zoneExit": false
+      "m_itemAdjectives": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "m_itemTotal": 1,
+      "m_hideGoal": false,
+      "m_requiresMagicWeavingSchool": ""
     },
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "2_WizardQuestGoals_ExploreZone",
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "2_WizardQuestGoals_UseItem",
       "m_goalNameID": 572984775,
-      "m_goalTitle": "WizardQuestGoals_ExploreZone",
+      "m_goalTitle": "WizardQuestGoals_UseItem",
       "m_goalUnderway": null,
       "m_hyperlink": null,
       "m_completeText": null,
@@ -72,9 +79,9 @@
       "m_goalRequirements": null,
       "m_tallyCounter": {
         "m_percentChance": 1.0,
-        "m_descriptor": "",
+        "m_descriptor": "WizItems_00001971",
         "m_descriptor2": "",
-        "m_count": 0,
+        "m_count": 1,
         "m_tallyResults": {
           "m_results": []
         }
@@ -88,7 +95,7 @@
       "m_autoComplete": false,
       "m_destinationZone": "Khrysalis/KR_Z01_SilentMarket",
       "m_dialogList": null,
-      "m_goalType": "GOAL_TYPE_WAYPOINT",
+      "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": {
@@ -96,16 +103,23 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_zoneEntry": true,
-      "m_zoneTag": "Khrysalis/KR_Z01_SilentMarket",
-      "m_proximityTag": "",
-      "m_zoneExit": false
+      "m_itemAdjectives": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "m_itemTotal": 1,
+      "m_hideGoal": false,
+      "m_requiresMagicWeavingSchool": ""
     },
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "3_WizardQuestGoals_ExploreZone",
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "3_WizardQuestGoals_UseItem",
       "m_goalNameID": 606539207,
-      "m_goalTitle": "WizardQuestGoals_ExploreZone",
+      "m_goalTitle": "WizardQuestGoals_UseItem",
       "m_goalUnderway": null,
       "m_hyperlink": null,
       "m_completeText": null,
@@ -115,14 +129,14 @@
       "m_goalRequirements": null,
       "m_tallyCounter": {
         "m_percentChance": 1.0,
-        "m_descriptor": "",
+        "m_descriptor": "WizItems_00001971",
         "m_descriptor2": "",
-        "m_count": 0,
+        "m_count": 1,
         "m_tallyResults": {
           "m_results": []
         }
       },
-      "m_locationName": "ZoneLocName_1205048",
+      "m_locationName": "ZoneLocName_1205051",
       "m_displayImage1": "",
       "m_displayImage2": "",
       "m_clientTags": [],
@@ -131,7 +145,7 @@
       "m_autoComplete": false,
       "m_destinationZone": "Khrysalis/KR_Z02_MoonCliffs",
       "m_dialogList": null,
-      "m_goalType": "GOAL_TYPE_WAYPOINT",
+      "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": {
@@ -139,16 +153,23 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_zoneEntry": true,
-      "m_zoneTag": "Khrysalis/KR_Z02_MoonCliffs",
-      "m_proximityTag": "",
-      "m_zoneExit": false
+      "m_itemAdjectives": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "m_itemTotal": 1,
+      "m_hideGoal": false,
+      "m_requiresMagicWeavingSchool": ""
     },
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "4_WizardQuestGoals_ExploreZone",
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "4_WizardQuestGoals_UseItem",
       "m_goalNameID": 640093639,
-      "m_goalTitle": "WizardQuestGoals_ExploreZone",
+      "m_goalTitle": "WizardQuestGoals_UseItem",
       "m_goalUnderway": null,
       "m_hyperlink": null,
       "m_completeText": null,
@@ -158,14 +179,14 @@
       "m_goalRequirements": null,
       "m_tallyCounter": {
         "m_percentChance": 1.0,
-        "m_descriptor": "",
+        "m_descriptor": "WizItems_00001971",
         "m_descriptor2": "",
-        "m_count": 0,
+        "m_count": 1,
         "m_tallyResults": {
           "m_results": []
         }
       },
-      "m_locationName": "ZoneLocName_1205052",
+      "m_locationName": "ZoneLocName_1205051",
       "m_displayImage1": "",
       "m_displayImage2": "",
       "m_clientTags": [],
@@ -174,7 +195,7 @@
       "m_autoComplete": false,
       "m_destinationZone": "Khrysalis/KR_Z03_LastWood",
       "m_dialogList": null,
-      "m_goalType": "GOAL_TYPE_WAYPOINT",
+      "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": {
@@ -182,16 +203,23 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_zoneEntry": true,
-      "m_zoneTag": "Khrysalis/KR_Z03_LastWood",
-      "m_proximityTag": "",
-      "m_zoneExit": false
+      "m_itemAdjectives": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "m_itemTotal": 1,
+      "m_hideGoal": false,
+      "m_requiresMagicWeavingSchool": ""
     },
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "5_WizardQuestGoals_ExploreZone",
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "5_WizardQuestGoals_UseItem",
       "m_goalNameID": 673648071,
-      "m_goalTitle": "WizardQuestGoals_ExploreZone",
+      "m_goalTitle": "WizardQuestGoals_UseItem",
       "m_goalUnderway": null,
       "m_hyperlink": null,
       "m_completeText": null,
@@ -201,14 +229,14 @@
       "m_goalRequirements": null,
       "m_tallyCounter": {
         "m_percentChance": 1.0,
-        "m_descriptor": "",
+        "m_descriptor": "WizItems_00001971",
         "m_descriptor2": "",
-        "m_count": 0,
+        "m_count": 1,
         "m_tallyResults": {
           "m_results": []
         }
       },
-      "m_locationName": "ZoneLocName_1233046",
+      "m_locationName": "ZoneLocName_1205051",
       "m_displayImage1": "",
       "m_displayImage2": "",
       "m_clientTags": [],
@@ -217,7 +245,7 @@
       "m_autoComplete": false,
       "m_destinationZone": "Khrysalis/KR_Z04_TyrianGorge",
       "m_dialogList": null,
-      "m_goalType": "GOAL_TYPE_WAYPOINT",
+      "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": {
@@ -225,16 +253,23 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_zoneEntry": true,
-      "m_zoneTag": "Khrysalis/KR_Z04_TyrianGorge",
-      "m_proximityTag": "",
-      "m_zoneExit": false
+      "m_itemAdjectives": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "m_itemTotal": 1,
+      "m_hideGoal": false,
+      "m_requiresMagicWeavingSchool": ""
     },
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "6_WizardQuestGoals_ExploreZone",
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "6_WizardQuestGoals_UseItem",
       "m_goalNameID": 707202503,
-      "m_goalTitle": "WizardQuestGoals_ExploreZone",
+      "m_goalTitle": "WizardQuestGoals_UseItem",
       "m_goalUnderway": null,
       "m_hyperlink": null,
       "m_completeText": null,
@@ -244,14 +279,14 @@
       "m_goalRequirements": null,
       "m_tallyCounter": {
         "m_percentChance": 1.0,
-        "m_descriptor": "",
+        "m_descriptor": "WizItems_00001971",
         "m_descriptor2": "",
-        "m_count": 0,
+        "m_count": 1,
         "m_tallyResults": {
           "m_results": []
         }
       },
-      "m_locationName": "ZoneLocName_1205054",
+      "m_locationName": "ZoneLocName_1205051",
       "m_displayImage1": "",
       "m_displayImage2": "",
       "m_clientTags": [],
@@ -260,7 +295,7 @@
       "m_autoComplete": false,
       "m_destinationZone": "Khrysalis/KR_Z05_FortRachias",
       "m_dialogList": null,
-      "m_goalType": "GOAL_TYPE_WAYPOINT",
+      "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": {
@@ -268,10 +303,17 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_zoneEntry": true,
-      "m_zoneTag": "Khrysalis/KR_Z05_FortRachias",
-      "m_proximityTag": "",
-      "m_zoneExit": false
+      "m_itemAdjectives": [
+        "KR_Krysanthamum_Blue.AdjRef",
+        "KR_Krysanthamum_Green.AdjRef",
+        "KR_Krysanthamum_Orange.AdjRef",
+        "KR_Krysanthamum_Red.AdjRef",
+        "KR_Krysanthamum_White.AdjRef",
+        "KR_Krysanthamum_Yellow.AdjRef"
+      ],
+      "m_itemTotal": 1,
+      "m_hideGoal": false,
+      "m_requiresMagicWeavingSchool": ""
     },
     {
       "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
@@ -422,12 +464,12 @@
   "m_goalLogic": [
     {
       "m_goalsAND": [
-        "1_WizardQuestGoals_ExploreZone",
-        "2_WizardQuestGoals_ExploreZone",
-        "3_WizardQuestGoals_ExploreZone",
-        "4_WizardQuestGoals_ExploreZone",
-        "5_WizardQuestGoals_ExploreZone",
-        "6_WizardQuestGoals_ExploreZone"
+        "1_WizardQuestGoals_UseItem",
+        "2_WizardQuestGoals_UseItem",
+        "3_WizardQuestGoals_UseItem",
+        "4_WizardQuestGoals_UseItem",
+        "5_WizardQuestGoals_UseItem",
+        "6_WizardQuestGoals_UseItem"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [

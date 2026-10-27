@@ -23,14 +23,14 @@
       },
       "m_goalRequirements": null,
       "m_tallyCounter": null,
-      "m_locationName": "ZoneLocName_1546265",
-      "m_displayImage1": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "m_locationName": "ZoneLocName_1520447",
+      "m_displayImage1": "",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Novus/NV_Z01_Conatus",
+      "m_destinationZone": "Novus/Interiors/NV_Z03_SoldiersHideout",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -43,7 +43,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "NV-StandIn-Dasein_v3",
+      "m_personaName": "NV_StandIn_Dasein_AberrantUnicorn_01",
       "m_usePatron": false
     },
     {
@@ -108,14 +108,14 @@
       },
       "m_goalRequirements": null,
       "m_tallyCounter": null,
-      "m_locationName": "ZoneLocName_1546265",
-      "m_displayImage1": "GUI/NpcPortraits/Portrait_Khrulhu_Dasein_C_NPC.dds",
+      "m_locationName": "ZoneLocName_1520447",
+      "m_displayImage1": "",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Novus/NV_Z01_Conatus",
+      "m_destinationZone": "Novus/Interiors/NV_Z03_SoldiersHideout",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -128,7 +128,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "NV-StandIn-Dasein_v3",
+      "m_personaName": "NV_StandIn_Dasein_AberrantUnicorn_01",
       "m_usePatron": false
     }
   ],

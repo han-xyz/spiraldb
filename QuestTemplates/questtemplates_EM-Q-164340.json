@@ -103,13 +103,13 @@
       "m_goalRequirements": null,
       "m_tallyCounter": null,
       "m_locationName": "",
-      "m_displayImage1": "GUI/NpcPortraits/Human_Mellori_C_NPC.dds",
+      "m_displayImage1": "GUI/NpcPortraits/Portrait_Human_Mellori_B_Ghost_NPC.dds",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Empyrea/EM_Z14_ChaosJungle",
+      "m_destinationZone": "Empyrea/EM_Z15_Nexus",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -122,7 +122,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "EM-CHAOS-NPC05-B",
+      "m_personaName": "EM-REV-NPC02",
       "m_usePatron": false
     },
     {
@@ -153,7 +153,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Empyrea/EM_Z15_Nexus",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_BOUNTY",
       "m_noQuestHelper": false,

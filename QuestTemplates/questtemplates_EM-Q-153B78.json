@@ -30,7 +30,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Empyrea/Interiors/EM_Z03_IceGreatHall",
+      "m_destinationZone": "Empyrea/Interiors/EM_Z03_IceDwarfBunker",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -43,7 +43,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "EM-OUTER-NPC07-B",
+      "m_personaName": "EM-OUTER-NPC07-C",
       "m_usePatron": false
     },
     {

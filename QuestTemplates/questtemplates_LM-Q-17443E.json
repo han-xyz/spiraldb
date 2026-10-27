@@ -117,7 +117,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_BOUNTY",
       "m_noQuestHelper": false,
@@ -164,7 +164,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
@@ -240,6 +240,15 @@
         "m_isQuestRegistry": true,
         "m_questName": "LM-Q-17441A",
         "m_applyNOT": false,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "LM-Q-17443F",
+        "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }
     ],

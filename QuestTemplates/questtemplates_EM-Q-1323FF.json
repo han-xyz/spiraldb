@@ -94,8 +94,7 @@
       "m_bountyTotal": 1,
       "m_bountyType": "BT_MOB_KILL",
       "m_npcAdjectives": [
-        "AR_SpellMob_ShadowTrickster.AdjRef",
-        "AR_StandIn_ShadowTrickster.AdjRef"
+        "DM_Shadow_Trickster_A_01.AdjRef"
       ]
     },
     {

@@ -1,0 +1,17 @@
+{
+  "Name": "LM-Q-1736D3",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 1050,
+  "MaxGold": 1050,
+  "ExperienceAmount": 0,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:16:01.894620Z",
+  "ModifiedAt": "2026-10-27T16:16:01.894620Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

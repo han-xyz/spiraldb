@@ -1,0 +1,17 @@
+{
+  "Name": "KM-Q-16FCCB",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 1425,
+  "MaxGold": 1425,
+  "ExperienceAmount": 141242,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:15:29.224634Z",
+  "ModifiedAt": "2026-10-27T16:15:29.224634Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

@@ -24,7 +24,7 @@
       "m_goalRequirements": null,
       "m_tallyCounter": null,
       "m_locationName": "ZoneLocName_1378088",
-      "m_displayImage1": "GUI/NpcPortraits/Portrait_Skull_King_A_NPC.dds",
+      "m_displayImage1": "GUI/NpcPortraits/Portrait_Skull_King_A_Lifeless_NPC.dds",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
@@ -43,7 +43,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "MR-ALKA-NPC05-C",
+      "m_personaName": "MR-ALKA-NPC05",
       "m_usePatron": false
     },
     {

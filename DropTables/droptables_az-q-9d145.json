@@ -1,0 +1,17 @@
+{
+  "Name": "AZ-Q-9D145",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 705,
+  "MaxGold": 705,
+  "ExperienceAmount": 47585,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:15:28.880237Z",
+  "ModifiedAt": "2026-10-27T16:15:28.880237Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

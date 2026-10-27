@@ -81,7 +81,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Karamelle/KM_Z05_Nibbleheim",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_BOUNTY",
       "m_noQuestHelper": false,
@@ -114,14 +114,14 @@
       },
       "m_goalRequirements": null,
       "m_tallyCounter": null,
-      "m_locationName": "ZoneLocName_1513103",
+      "m_locationName": "ZoneLocName_1506578",
       "m_displayImage1": "GUI/NpcPortraits/Portrait_Mole_Scholar_A_NPC.dds",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Karamelle/KM_Z08_LicoriceForest",
+      "m_destinationZone": "Karamelle/KM_Z05_Nibbleheim",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -134,7 +134,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "KM-BLACK-NPC10",
+      "m_personaName": "KM-NIBB-NPC06",
       "m_usePatron": false
     }
   ],

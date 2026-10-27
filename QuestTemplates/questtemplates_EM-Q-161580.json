@@ -59,14 +59,14 @@
       },
       "m_goalRequirements": null,
       "m_tallyCounter": null,
-      "m_locationName": "",
-      "m_displayImage1": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_NPC.dds",
+      "m_locationName": "ZoneLocName_1254355",
+      "m_displayImage1": "GUI/NpcPortraits/Portrait_Shadow_Bat_A_MOB.dds",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Empyrea/EM_Z00_Aeriel_HUB",
+      "m_destinationZone": "Empyrea/Interiors/EM_Z02_BeaconHope",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -79,7 +79,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "EM-AERI-NPC17",
+      "m_personaName": "EM-ZANA-NPC30",
       "m_usePatron": false
     },
     {
@@ -262,7 +262,7 @@
         "m_entryName": "Completed",
         "m_displayName": null,
         "m_isQuestRegistry": false,
-        "m_questName": "EM-Q-159078",
+        "m_questName": "EM-Q-161582",
         "m_applyNOT": true,
         "m_operator": "ROP_AND"
       }

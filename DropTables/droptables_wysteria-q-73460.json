@@ -1,0 +1,17 @@
+{
+  "Name": "Wysteria-Q-73460",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 65,
+  "MaxGold": 65,
+  "ExperienceAmount": 750,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:15:31.929587Z",
+  "ModifiedAt": "2026-10-27T16:15:31.929587Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

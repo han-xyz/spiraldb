@@ -1,0 +1,17 @@
+{
+  "Name": "PL-Q-12EC75",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 4760,
+  "MaxGold": 4760,
+  "ExperienceAmount": 1070760,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:15:30.284153Z",
+  "ModifiedAt": "2026-10-27T16:15:30.284153Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

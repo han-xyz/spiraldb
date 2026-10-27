@@ -1,0 +1,17 @@
+{
+  "Name": "EM-Q-1323FC",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 16000,
+  "MaxGold": 16000,
+  "ExperienceAmount": 0,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:15:29.118287Z",
+  "ModifiedAt": "2026-10-27T16:15:29.118287Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

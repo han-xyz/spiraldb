@@ -1,0 +1,17 @@
+{
+  "Name": "PL-Q-14E7C9",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 2560,
+  "MaxGold": 2560,
+  "ExperienceAmount": 576560,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T16:15:30.284153Z",
+  "ModifiedAt": "2026-10-27T16:15:30.284153Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

@@ -23,14 +23,14 @@
       },
       "m_goalRequirements": null,
       "m_tallyCounter": null,
-      "m_locationName": "ZoneLocName_1520110",
+      "m_locationName": "ZoneLocName_1520099",
       "m_displayImage1": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Lemuria/LM_Z01_WildLands",
+      "m_destinationZone": "Lemuria/LM_Z02_UrsaiVillage",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -43,7 +43,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "LM-URSAI-NPC01-C-NoGuitar",
+      "m_personaName": "LM-URSAI-NPC01",
       "m_usePatron": false
     },
     {
@@ -59,14 +59,14 @@
       },
       "m_goalRequirements": null,
       "m_tallyCounter": null,
-      "m_locationName": "ZoneLocName_1520110",
+      "m_locationName": "ZoneLocName_1520099",
       "m_displayImage1": "GUI/NpcPortraits/Lemur_Musician_A_NPC.dds",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Lemuria/LM_Z01_WildLands",
+      "m_destinationZone": "Lemuria/LM_Z02_UrsaiVillage",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -79,7 +79,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "LM-URSAI-NPC01-C-NoGuitar",
+      "m_personaName": "LM-URSAI-NPC01",
       "m_usePatron": false
     }
   ],

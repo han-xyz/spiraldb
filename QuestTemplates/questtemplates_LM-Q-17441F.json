@@ -38,7 +38,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_BOUNTYCOLLECT",
       "m_noQuestHelper": false,
@@ -75,7 +75,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Lemuria/LM_Z04_Badlands",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -88,7 +88,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "LM-BAD-NPC03",
+      "m_personaName": "LM-SKY-NPC01",
       "m_usePatron": false
     },
     {
@@ -119,7 +119,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_BOUNTY",
       "m_noQuestHelper": false,
@@ -167,7 +167,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": null,
       "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
@@ -204,7 +204,7 @@
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Lemuria/LM_Z04_Badlands",
+      "m_destinationZone": "Lemuria/LM_Z06_SkyCity",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": [
@@ -213,7 +213,7 @@
             "m_dialogEntries": [
               {
                 "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-                "m_personaName": "LM-BAD-NPC03_Persona",
+                "m_personaName": "LM-SKY-NPC01_Persona",
                 "m_nameOverride": "",
                 "m_nameSTKey": null,
                 "m_guiDisplay": "",
@@ -225,7 +225,7 @@
                 "m_soundFile": "",
                 "m_action": "",
                 "m_dialogEvent": "",
-                "m_actorTemplateID": 1487617,
+                "m_actorTemplateID": 1524712,
                 "m_cameraName": "",
                 "m_interpolationDuration": 1.0,
                 "m_cameraOffsetX": 0.0,
@@ -295,7 +295,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "LM-BAD-NPC03",
+      "m_personaName": "LM-SKY-NPC01",
       "m_usePatron": false
     }
   ],

@@ -146,9 +146,52 @@
       ]
     },
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.BountyGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "4_WizardQuestGoals_Kill",
+      "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "4_WizardQuestGoals_ExploreZone",
       "m_goalNameID": 640093639,
+      "m_goalTitle": "WizardQuestGoals_ExploreZone",
+      "m_goalUnderway": null,
+      "m_hyperlink": null,
+      "m_completeText": null,
+      "m_completeResults": {
+        "m_results": []
+      },
+      "m_goalRequirements": null,
+      "m_tallyCounter": {
+        "m_percentChance": 1.0,
+        "m_descriptor": "",
+        "m_descriptor2": "",
+        "m_count": 0,
+        "m_tallyResults": {
+          "m_results": []
+        }
+      },
+      "m_locationName": "",
+      "m_displayImage1": "",
+      "m_displayImage2": "",
+      "m_clientTags": [],
+      "m_genericEvents": [],
+      "m_autoQualify": false,
+      "m_autoComplete": false,
+      "m_destinationZone": "Novus/NV_Z05_LaVilleRose",
+      "m_dialogList": null,
+      "m_goalType": "GOAL_TYPE_WAYPOINT",
+      "m_noQuestHelper": false,
+      "m_petOnlyQuest": false,
+      "m_activateResults": {
+        "m_results": []
+      },
+      "m_hideGoalFloatyText": false,
+      "m_behaviors": null,
+      "m_zoneEntry": true,
+      "m_zoneTag": "Novus/NV_Z05_LaVilleRose",
+      "m_proximityTag": "",
+      "m_zoneExit": false
+    },
+    {
+      "$type": "Imcodec.ObjectProperty.TypeCache.BountyGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "5_WizardQuestGoals_Kill",
+      "m_goalNameID": 673648071,
       "m_goalTitle": "WizardQuestGoals_Kill",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -190,9 +233,52 @@
       ]
     },
     {
+      "$type": "Imcodec.ObjectProperty.TypeCache.WaypointGoalTemplate, Imcodec.ObjectProperty",
+      "m_goalName": "6_WizardQuestGoals_ExploreZone",
+      "m_goalNameID": 707202503,
+      "m_goalTitle": "WizardQuestGoals_ExploreZone",
+      "m_goalUnderway": null,
+      "m_hyperlink": null,
+      "m_completeText": null,
+      "m_completeResults": {
+        "m_results": []
+      },
+      "m_goalRequirements": null,
+      "m_tallyCounter": {
+        "m_percentChance": 1.0,
+        "m_descriptor": "",
+        "m_descriptor2": "",
+        "m_count": 0,
+        "m_tallyResults": {
+          "m_results": []
+        }
+      },
+      "m_locationName": "",
+      "m_displayImage1": "",
+      "m_displayImage2": "",
+      "m_clientTags": [],
+      "m_genericEvents": [],
+      "m_autoQualify": false,
+      "m_autoComplete": false,
+      "m_destinationZone": "Novus/NV_Z05_LaVilleRose",
+      "m_dialogList": null,
+      "m_goalType": "GOAL_TYPE_WAYPOINT",
+      "m_noQuestHelper": false,
+      "m_petOnlyQuest": false,
+      "m_activateResults": {
+        "m_results": []
+      },
+      "m_hideGoalFloatyText": false,
+      "m_behaviors": null,
+      "m_zoneEntry": true,
+      "m_zoneTag": "Novus/NV_Z05_LaVilleRose",
+      "m_proximityTag": "",
+      "m_zoneExit": false
+    },
+    {
       "$type": "Imcodec.ObjectProperty.TypeCache.BountyGoalTemplate, Imcodec.ObjectProperty",
-      "m_goalName": "5_WizardQuestGoals_Kill",
-      "m_goalNameID": 673648071,
+      "m_goalName": "7_WizardQuestGoals_Kill",
+      "m_goalNameID": 740756935,
       "m_goalTitle": "WizardQuestGoals_Kill",
       "m_goalUnderway": null,
       "m_hyperlink": null,
@@ -295,14 +381,14 @@
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
-        "4_WizardQuestGoals_Kill"
+        "4_WizardQuestGoals_ExploreZone"
       ],
       "m_completeQuest": false,
       "m_requiredORCount": 1
     },
     {
       "m_goalsAND": [
-        "4_WizardQuestGoals_Kill"
+        "4_WizardQuestGoals_ExploreZone"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [
@@ -314,6 +400,28 @@
     {
       "m_goalsAND": [
         "5_WizardQuestGoals_Kill"
+      ],
+      "m_goalsOR": [],
+      "m_goalsToAdd": [
+        "6_WizardQuestGoals_ExploreZone"
+      ],
+      "m_completeQuest": false,
+      "m_requiredORCount": 1
+    },
+    {
+      "m_goalsAND": [
+        "6_WizardQuestGoals_ExploreZone"
+      ],
+      "m_goalsOR": [],
+      "m_goalsToAdd": [
+        "7_WizardQuestGoals_Kill"
+      ],
+      "m_completeQuest": false,
+      "m_requiredORCount": 1
+    },
+    {
+      "m_goalsAND": [
+        "7_WizardQuestGoals_Kill"
       ],
       "m_goalsOR": [],
       "m_goalsToAdd": [],
@@ -333,7 +441,7 @@
         "m_dialogEntries": [
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -345,7 +453,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -401,7 +509,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -413,7 +521,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -469,7 +577,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -481,7 +589,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -537,7 +645,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -549,7 +657,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -605,7 +713,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -617,7 +725,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -673,7 +781,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -685,7 +793,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -741,7 +849,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -753,7 +861,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -809,7 +917,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -821,7 +929,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -877,7 +985,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -889,7 +997,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -945,7 +1053,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -957,7 +1065,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1013,7 +1121,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1025,7 +1133,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1081,7 +1189,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1093,7 +1201,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1149,7 +1257,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1161,7 +1269,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1217,7 +1325,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1229,7 +1337,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1285,7 +1393,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1297,7 +1405,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1353,7 +1461,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1365,7 +1473,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1421,7 +1529,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1433,7 +1541,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1489,7 +1597,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1501,7 +1609,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1557,7 +1665,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1569,7 +1677,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1625,7 +1733,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1637,7 +1745,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1693,7 +1801,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1705,7 +1813,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1761,7 +1869,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1773,7 +1881,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1829,7 +1937,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1841,7 +1949,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1897,7 +2005,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1909,7 +2017,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -1965,7 +2073,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -1977,7 +2085,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -2033,7 +2141,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -2045,7 +2153,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -2101,7 +2209,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -2113,7 +2221,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
@@ -2169,7 +2277,7 @@
           },
           {
             "$type": "Imcodec.ObjectProperty.TypeCache.NPCDialogEntry, Imcodec.ObjectProperty",
-            "m_personaName": "NV-ROSE-NPC01-B_Persona",
+            "m_personaName": "NV-ROSE-NPC01_Persona",
             "m_nameOverride": "",
             "m_nameSTKey": null,
             "m_guiDisplay": "",
@@ -2181,7 +2289,7 @@
             "m_soundFile": "",
             "m_action": "",
             "m_dialogEvent": "",
-            "m_actorTemplateID": 1520457,
+            "m_actorTemplateID": 1520450,
             "m_cameraName": "",
             "m_interpolationDuration": 1.0,
             "m_cameraOffsetX": 0.0,
