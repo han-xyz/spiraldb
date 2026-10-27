@@ -6,7 +6,7 @@
     "zone": "Zafaria/ZF_Z06_Zamunda"
   },
   "requires": [
-    "ZF-Q-719C0"
+    "ZF-Q-719BD"
   ],
   "mainline": true,
   "level": 60,
@@ -43,11 +43,31 @@
     {
       "type": "usage",
       "items": [
+        "ZF_Hole-in-Wall.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WizQst719C3_00000007",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "usage",
+      "items": [
         "ZF_Wooden_Planks.AdjRef"
       ],
       "count": 3,
       "zone": "Zafaria/ZF_Z06_Zamunda",
       "descriptor": "WizItems_00001807",
+      "loc": "ZoneLocName_465260"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF_Hole-in-Wall.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WizQst719C3_00000004",
       "loc": "ZoneLocName_465260"
     },
     {
@@ -76,18 +96,13 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Hole-In-The-Wall",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Hole in Wall",
-      "blocking": true
-    },
-    {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Prisoner of Zamunda replaced by ZF-Q-719BD",
       "blocking": false
     }
   ]

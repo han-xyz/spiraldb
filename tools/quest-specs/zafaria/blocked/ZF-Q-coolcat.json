@@ -51,6 +51,16 @@
       "loc": "ZoneLocName_465392"
     },
     {
+      "type": "usage",
+      "items": [
+        "ZF-IceCatCage.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z07_Stone_Town",
+      "descriptor": "WizardGameObjects_00000489",
+      "loc": "ZoneLocName_465392"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Zafaria/Interiors/ZF_Z07_I03_Zoo",
@@ -80,11 +90,6 @@
     {
       "field": "lang",
       "value": "Cool Cat",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Ice Cat's Pen",
       "blocking": true
     }
   ]

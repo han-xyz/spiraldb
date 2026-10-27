@@ -1,8 +1,7 @@
 {
   "id": "ZF-Q-theandroidinvasion",
-  "requires": [
-    "ZF-Q-1293B8"
-  ],
+  "requires": [],
+  "min_level": 60,
   "mainline": false,
   "level": 60,
   "reward": {
@@ -126,6 +125,11 @@
       "field": "giver",
       "value": "starts automatically",
       "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "The Pirate Planet",
+      "blocking": false
     },
     {
       "field": "goal.items",

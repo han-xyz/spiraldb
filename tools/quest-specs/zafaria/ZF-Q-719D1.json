@@ -45,6 +45,16 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "ZF_Gate_Moon.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z06_Zamunda",
+      "descriptor": "WizQst719D1_00000006",
+      "loc": "ZoneLocName_465260"
+    },
+    {
       "type": "persona",
       "persona": "ZF-ZAM-NPC03",
       "zone": "Zafaria/ZF_Z06_Zamunda",
@@ -67,11 +77,6 @@
     "timestamp": "20231125075032"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Moon Gardens Gate",
-      "blocking": true
-    },
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",

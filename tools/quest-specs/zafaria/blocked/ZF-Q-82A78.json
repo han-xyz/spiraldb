@@ -85,6 +85,36 @@
       "loc": "ZoneLocName_465261"
     },
     {
+      "type": "usage",
+      "items": [
+        "ZF-Grave-RobePedestal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000496",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF-Grave-RingPedestal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000495",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF-Grave-HornPedestal.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardGameObjects_00000494",
+      "loc": "ZoneLocName_465261"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "ZF-ShadowWeaver-R11.AdjRef"
@@ -92,6 +122,17 @@
       "count": 2,
       "target": "WizardMobs_00000746",
       "zone": "",
+      "loc": "ZoneLocName_465261"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "ZF-StoneSavedPrince.AdjRef",
+        "ZF-TiziriDrugged.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WC-NPCs_00001972",
       "loc": "ZoneLocName_465261"
     },
     {
@@ -134,29 +175,9 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Robe on Pedestal",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Ring on Pedestal",
-      "blocking": true
-    },
-    {
-      "field": "goal.items",
-      "value": "Horn on Pedestal",
-      "blocking": true
-    },
-    {
       "field": "goal.zone (waypoint left out)",
       "value": "Go to next chamber",
       "blocking": false
-    },
-    {
-      "field": "goal.persona",
-      "value": "Prince Tiziri",
-      "blocking": true
     },
     {
       "field": "goal.persona (closest name)",

@@ -6,7 +6,7 @@
     "zone": "Zafaria/ZF_Z06_Zamunda"
   },
   "requires": [
-    "ZF-Q-719CF"
+    "ZF-Q-719D1"
   ],
   "mainline": true,
   "level": 60,
@@ -93,11 +93,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Snake in the Grass replaced by ZF-Q-719CF",
       "blocking": false
     }
   ]

@@ -51,6 +51,16 @@
     {
       "type": "usage",
       "items": [
+        "ZF_Bundle_of_Sticks.AdjRef"
+      ],
+      "count": 3,
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "descriptor": "WizItems_00001763",
+      "loc": "ZoneLocName_465259"
+    },
+    {
+      "type": "usage",
+      "items": [
         "ZF_Camp_Fence.AdjRef"
       ],
       "count": 1,
@@ -76,11 +86,6 @@
     "timestamp": "20231125073041"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Bundles of Sticks",
-      "blocking": true
-    },
     {
       "field": "goal.descriptor",
       "value": "Camp Fence",

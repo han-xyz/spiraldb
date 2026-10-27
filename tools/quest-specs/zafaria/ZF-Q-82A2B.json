@@ -33,6 +33,15 @@
   },
   "goals": [
     {
+      "type": "usage",
+      "items": [
+        "ZF_Soil.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Zafaria/ZF_Z03_Savannah",
+      "loc": "ZoneLocName_465259"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Zafaria/ZF_Z03_Savannah",
@@ -52,9 +61,9 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
+      "field": "goal.descriptor",
       "value": "seeds in Soil",
-      "blocking": true
+      "blocking": false
     },
     {
       "field": "dialogs",

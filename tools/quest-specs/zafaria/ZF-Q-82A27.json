@@ -6,7 +6,7 @@
     "zone": "Zafaria/ZF_Z03_Savannah"
   },
   "requires": [
-    "ZF-Q-82A22"
+    "ZF-Q-82A23"
   ],
   "mainline": true,
   "level": 60,
@@ -79,11 +79,6 @@
     {
       "field": "dialogs",
       "value": "speaker and role guessed from the line text",
-      "blocking": false
-    },
-    {
-      "field": "requires (not generated)",
-      "value": "Picket Fences replaced by ZF-Q-82A22",
       "blocking": false
     }
   ]
