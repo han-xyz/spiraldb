@@ -44,8 +44,8 @@ WORLDS = (
     World("Celestia", "CL", "Celestia", 48),
     # Widened from 0x71A69 to cover the keys its quest titles read.
     World("Zafaria", "ZF", "Zafaria", 60, (0x718AF, 0x82A92)),
-    World("Avalon", "AV", "Avalon", 68, (0x908E2, 0x96B64)),
-    World("Azteca", "AZ", "Azteca", 78, (0x9D00C, 0xB4FAF)),
+    World("Avalon", "AV", "Avalon", 68, (0x72D11, 0x96B64)),
+    World("Azteca", "AZ", "Azteca", 78, (0x72E2E, 0xB4FAF)),
     World("Khrysalis", "KR", "Khrysalis", 88, (0x126322, 0x13D76F)),
     World("Polaris", "PL", "Polaris", 100, (0x14DBD8, 0x14DC0D), source="none"),
     World("Mirage", "MR", "Mirage", 105),
