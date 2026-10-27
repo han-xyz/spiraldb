@@ -60,13 +60,13 @@
       "m_goalRequirements": null,
       "m_tallyCounter": null,
       "m_locationName": "ZoneLocName_643250",
-      "m_displayImage1": "GUI/NpcPortraits/Art_Portrait_Ambrose.dds",
+      "m_displayImage1": "GUI/NpcPortraits/Portrait_Human_Headmaster_A_NPC.dds",
       "m_displayImage2": "",
       "m_clientTags": [],
       "m_genericEvents": [],
       "m_autoQualify": false,
       "m_autoComplete": false,
-      "m_destinationZone": "Arcanum/AR_Z01_Hub",
+      "m_destinationZone": "Khrysalis/KR_Z00_Hub",
       "m_dialogList": {
         "$type": "Imcodec.ObjectProperty.TypeCache.ActorDialogList, Imcodec.ObjectProperty",
         "m_dialogs": []
@@ -79,7 +79,7 @@
       },
       "m_hideGoalFloatyText": false,
       "m_behaviors": null,
-      "m_personaName": "AR-ARC-NPC22",
+      "m_personaName": "KR-Bastion-NPC40",
       "m_usePatron": false
     }
   ],
@@ -103,7 +103,7 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "AZ-Q-72E4A",
+        "m_questName": "AZ-Q-A6CBB",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       }

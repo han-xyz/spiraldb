@@ -1,0 +1,17 @@
+{
+  "Name": "AZ-Q-A6CC6",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 850,
+  "MaxGold": 850,
+  "ExperienceAmount": 57320,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T07:14:14.181602Z",
+  "ModifiedAt": "2026-10-27T07:14:14.181602Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

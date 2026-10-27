@@ -1,17 +1,17 @@
 {
-  "Name": "AZ-Q-129343",
+  "Name": "AZ-Q-B1498",
   "Description": "",
   "RollChance": 1.0,
   "Weight": 100,
   "NoneChance": 0.0,
   "PityCounter": 0.0,
-  "MinGold": 70,
-  "MaxGold": 70,
-  "ExperienceAmount": 5790,
+  "MinGold": 380,
+  "MaxGold": 380,
+  "ExperienceAmount": 25955,
   "TrainingPoints": 0,
   "Items": [],
-  "CreatedAt": "2026-10-27T07:05:45.098208Z",
-  "ModifiedAt": "2026-10-27T07:05:45.098208Z",
+  "CreatedAt": "2026-10-27T07:14:14.181602Z",
+  "ModifiedAt": "2026-10-27T07:14:14.181602Z",
   "CreatedBy": "questgen",
   "ModifiedBy": "questgen"
 }

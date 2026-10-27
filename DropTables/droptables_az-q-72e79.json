@@ -1,0 +1,17 @@
+{
+  "Name": "AZ-Q-72E79",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 190,
+  "MaxGold": 190,
+  "ExperienceAmount": 15460,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T07:14:14.181602Z",
+  "ModifiedAt": "2026-10-27T07:14:14.181602Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}

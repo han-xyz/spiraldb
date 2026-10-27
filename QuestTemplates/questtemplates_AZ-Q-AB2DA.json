@@ -147,6 +147,15 @@
         "m_operatorType": "OPERATOR_GREATER_THAN_EQ",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Completed",
+        "m_displayName": null,
+        "m_isQuestRegistry": false,
+        "m_questName": "AZ-Q-AB321",
+        "m_applyNOT": true,
+        "m_operator": "ROP_AND"
       }
     ],
     "m_applyNOT": false,

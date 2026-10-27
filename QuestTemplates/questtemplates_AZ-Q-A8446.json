@@ -349,7 +349,16 @@
         "m_entryName": "Complete",
         "m_displayName": null,
         "m_isQuestRegistry": true,
-        "m_questName": "AZ-Q-9D0F2",
+        "m_questName": "AZ-Q-A6C85",
+        "m_applyNOT": false,
+        "m_operator": "ROP_AND"
+      },
+      {
+        "$type": "Imcodec.ObjectProperty.TypeCache.ReqHasEntry, Imcodec.ObjectProperty",
+        "m_entryName": "Complete",
+        "m_displayName": null,
+        "m_isQuestRegistry": true,
+        "m_questName": "AZ-Q-B1445",
         "m_applyNOT": false,
         "m_operator": "ROP_AND"
       },
