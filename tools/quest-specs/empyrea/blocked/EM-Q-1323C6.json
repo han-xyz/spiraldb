@@ -236,13 +236,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Secret Hiding Place Statue",
+      "field": "goal.usage",
+      "value": "Activate Secret Hiding Place Statue",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Sewer Main Exit",
+      "field": "goal.waypoint",
+      "value": "Reach Sewer Main Exit",
       "blocking": true
     },
     {

@@ -98,8 +98,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Vine Barrier",
+      "field": "goal.unknown-verb",
+      "value": "Break the Vine Barrier",
       "blocking": true
     },
     {
@@ -108,8 +108,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Vine Barrier",
+      "field": "goal.unknown-verb",
+      "value": "Break the Vine Barrier",
       "blocking": true
     },
     {

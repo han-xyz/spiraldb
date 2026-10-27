@@ -129,8 +129,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Pod to Neumia",
+      "field": "goal.waypoint",
+      "value": "Launch Pod to Neumia",
       "blocking": true
     },
     {

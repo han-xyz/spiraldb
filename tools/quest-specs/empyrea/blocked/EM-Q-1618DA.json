@@ -167,8 +167,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Paradox",
+      "field": "goal.unknown-verb",
+      "value": "Become the Paradox",
       "blocking": true
     },
     {

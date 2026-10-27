@@ -94,13 +94,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "First Reading",
+      "field": "goal.persona",
+      "value": "Take First Reading",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Second Reading in Kalamar Clearing",
+      "field": "goal.persona",
+      "value": "Take Second Reading in Kalamar Clearing",
       "blocking": true
     },
     {

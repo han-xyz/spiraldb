@@ -94,8 +94,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Sky Canoe",
+      "field": "goal.usage",
+      "value": "Use the Sky Canoe",
       "blocking": true
     },
     {

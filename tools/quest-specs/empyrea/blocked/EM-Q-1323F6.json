@@ -85,8 +85,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Common House Spiders",
+      "field": "goal.unknown-verb",
+      "value": "Smoosh 2 Common House Spiders",
       "blocking": true
     },
     {

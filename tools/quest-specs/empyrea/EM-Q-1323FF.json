@@ -70,6 +70,10 @@
   },
   "goals": [
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z02_ShadowHouse"
+    },
+    {
       "type": "bounty",
       "mobs": [
         "AR_SpellMob_ShadowTrickster.AdjRef",
@@ -105,11 +109,6 @@
     "timestamp": "20231126095231"
   },
   "needs_review": [
-    {
-      "field": "goal.items",
-      "value": "Shadow House",
-      "blocking": true
-    },
     {
       "field": "goal.mobs (other folder)",
       "value": "Shadow Trickster: ObjectData/AR",

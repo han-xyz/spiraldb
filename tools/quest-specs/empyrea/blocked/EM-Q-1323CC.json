@@ -176,8 +176,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "West Channel Bulkhead",
+      "field": "goal.usage",
+      "value": "Open the West Channel Bulkhead",
       "blocking": true
     },
     {

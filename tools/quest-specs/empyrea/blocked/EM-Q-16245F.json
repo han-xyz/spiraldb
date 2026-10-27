@@ -157,8 +157,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Third Reading",
+      "field": "goal.persona",
+      "value": "Take Third Reading (follow quest tracker)",
       "blocking": true
     },
     {

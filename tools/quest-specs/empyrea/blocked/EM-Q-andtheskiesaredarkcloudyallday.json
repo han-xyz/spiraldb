@@ -75,8 +75,13 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Ox Alarm to Dark Cloud Base",
+      "field": "goal.zone (no ZoneTransfer)",
+      "value": "Dark Cloud Base: Empyrea/Interiors/EM_Z08_DarkCloudBase",
+      "blocking": false
+    },
+    {
+      "field": "goal.waypoint",
+      "value": "Follow the Ox Alarm to Dark Cloud Base",
       "blocking": true
     },
     {
@@ -90,8 +95,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Cabal Leader",
+      "field": "goal.waypoint",
+      "value": "Find the Cabal Leader",
       "blocking": true
     }
   ]

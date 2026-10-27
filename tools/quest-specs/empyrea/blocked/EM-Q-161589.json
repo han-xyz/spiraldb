@@ -275,13 +275,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Whirlyburly",
+      "field": "goal.unknown-verb",
+      "value": "Play Whirlyburly",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Injured Justicar",
+      "field": "goal.persona",
+      "value": "Wake up Injured Justicar",
       "blocking": true
     },
     {

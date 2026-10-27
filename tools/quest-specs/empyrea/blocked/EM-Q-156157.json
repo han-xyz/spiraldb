@@ -168,8 +168,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Sulfur and Charcoal",
+      "field": "goal.usage",
+      "value": "Place the Sulfur and Charcoal",
       "blocking": true
     },
     {

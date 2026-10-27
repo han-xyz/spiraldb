@@ -287,8 +287,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Power Supply",
+      "field": "goal.unknown-verb",
+      "value": "Restart the Power Supply",
       "blocking": true
     },
     {

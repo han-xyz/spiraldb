@@ -315,8 +315,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Spider's Lair",
+      "field": "goal.waypoint",
+      "value": "Find Spider's Lair",
       "blocking": true
     },
     {

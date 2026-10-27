@@ -187,6 +187,10 @@
       "loc": "ZoneLocName_1447324"
     },
     {
+      "type": "waypoint",
+      "zone": "Empyrea/Interiors/EM_Z10_EbenezerHouse"
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Empyrea/EM_Z10_PortAero",
@@ -230,14 +234,9 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Ebenezer into his house",
+      "field": "goal.waypoint",
+      "value": "Pursue Ebenezer into his house",
       "blocking": true
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Exit Ebenezer's House",
-      "blocking": false
     },
     {
       "field": "dialogs",

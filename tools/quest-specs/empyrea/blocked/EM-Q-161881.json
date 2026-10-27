@@ -197,13 +197,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Astral Trees",
+      "field": "goal.waypoint",
+      "value": "Find Astral Trees",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Astral Trees",
+      "field": "goal.unknown-verb",
+      "value": "Tune Astral Trees",
       "blocking": true
     },
     {

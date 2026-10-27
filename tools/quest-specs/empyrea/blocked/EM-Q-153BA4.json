@@ -66,23 +66,23 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Sconce",
+      "field": "goal.usage",
+      "value": "Use (first) Sconce",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Sconce",
+      "field": "goal.usage",
+      "value": "Use (second) Sconce",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Sconce",
+      "field": "goal.usage",
+      "value": "Use (third) Sconce",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Sconce",
+      "field": "goal.usage",
+      "value": "Use (fourth) Sconce",
       "blocking": true
     },
     {

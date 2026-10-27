@@ -79,8 +79,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Disguised Pod",
+      "field": "goal.usage",
+      "value": "Use the Disguised Pod",
       "blocking": true
     },
     {

@@ -306,13 +306,13 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Talisman",
+      "field": "goal.usage",
+      "value": "Place Talisman",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "it to) Search for Bartleby in Husk",
+      "field": "goal.usage",
+      "value": "(Use it to) Search for Bartleby in Husk",
       "blocking": true
     },
     {

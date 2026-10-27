@@ -150,13 +150,13 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Second Gruff Goat",
+      "field": "goal.waypoint",
+      "value": "Find the Second Gruff Goat",
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Third Gruff Goat",
+      "field": "goal.waypoint",
+      "value": "Find the Third Gruff Goat",
       "blocking": true
     },
     {

@@ -117,8 +117,8 @@
       "blocking": true
     },
     {
-      "field": "goal.items",
-      "value": "Spiritual Trees",
+      "field": "goal.unknown-verb",
+      "value": "Tune the Spiritual Trees",
       "blocking": true
     },
     {

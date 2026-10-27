@@ -127,8 +127,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Second Reading",
+      "field": "goal.persona",
+      "value": "Take Second Reading",
       "blocking": true
     },
     {

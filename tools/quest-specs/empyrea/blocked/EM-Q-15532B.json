@@ -327,8 +327,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Beastman Fort",
+      "field": "goal.waypoint",
+      "value": "Assault Beastman Fort",
       "blocking": true
     },
     {

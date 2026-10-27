@@ -138,8 +138,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Sani-Leader",
+      "field": "goal.waypoint",
+      "value": "Find the Sani-Leader",
       "blocking": true
     },
     {
