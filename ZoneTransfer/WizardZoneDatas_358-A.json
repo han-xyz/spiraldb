@@ -78,6 +78,72 @@
         "m_destinationLoc": "Target (Street6 WC_Street6_GobblerKing_ThroneRoom Entrance)",
         "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_Colossus_ThroneRoom"
       }
+    },
+    {
+      "TriggerName": "WC_Colossus_TeleporterA_ToMain",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "7220.743,-13301.19,-396.8739,-1.003441",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Colossus"
+      }
+    },
+    {
+      "TriggerName": "WC_Colossus_TeleporterB_ToMain",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "7247.75,-13623.72,-397.3014,1.03155",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Colossus"
+      }
+    },
+    {
+      "TriggerName": "WC_Colossus_TeleporterC_ToMain",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "7580.848,-13319.32,-397.2828,-2.566363",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Colossus"
+      }
+    },
+    {
+      "TriggerName": "WC_Colossus_TeleporterA",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "-5120.508,-2237.649,95.83371,0",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Colossus"
+      }
+    },
+    {
+      "TriggerName": "WC_Colossus_TeleporterB",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "30802.93,-4925.993,-397.6919,0",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Colossus"
+      }
+    },
+    {
+      "TriggerName": "WC_Colossus_TeleporterC",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "42166.96,11136.33,-618.1421,0",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Colossus"
+      }
     }
   ]
 }

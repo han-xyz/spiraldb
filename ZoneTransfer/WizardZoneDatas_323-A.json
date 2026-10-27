@@ -122,6 +122,72 @@
         "m_destinationLoc": "Start",
         "m_destinationZone": "WizardCity/WC_Streets/Interiors/WC_FireCat_BerniceAndLarryHouse"
       }
+    },
+    {
+      "TriggerName": "WC_Firecat_TeleporterA_ToMain",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "-7358.821,-10041.03,-968.8312,-2.835064",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Firecat"
+      }
+    },
+    {
+      "TriggerName": "WC_Firecat_TeleporterB_ToMain",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "-7774.91,-10379.57,-968.8325,1.390328",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Firecat"
+      }
+    },
+    {
+      "TriggerName": "WC_Firecat_TeleporterC_ToMain",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "-8217.047,-10033.05,-999.2974,-0.2575332",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Firecat"
+      }
+    },
+    {
+      "TriggerName": "WC_Firecat_TeleporterA",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "779.2841,-1256.131,31.00645,-1.540006",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Firecat"
+      }
+    },
+    {
+      "TriggerName": "WC_Firecat_TeleporterB",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "-23419.52,-7652.926,31.00162,-1.117127",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Firecat"
+      }
+    },
+    {
+      "TriggerName": "WC_Firecat_TeleporterC",
+      "Teleport": {
+        "m_exitTeleporter": 0,
+        "m_teleporterTag": 0,
+        "m_teleportType": "TELEPORT_STATIC",
+        "m_transitionID": 0,
+        "m_destinationLoc": "-19421.96,623.329,63.50394,-0.320462",
+        "m_destinationZone": "WizardCity/WC_Streets/WC_Firecat"
+      }
     }
   ]
 }
