@@ -46,7 +46,8 @@ quest names and ObjectData folder (`ZF`), its wiki category (`Category:Zafaria_Q
 gets when the wiki gives none. The world's `WizQst` lang cluster is derived: the run of quest lang files (keys at
 most `CLUSTER_GAP` apart) holding the most `QuestTitle.lang` entries that read as one of the world's internal quest
 names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`. Zafaria and Polaris have no such
-title, so their row declares `lang_range`. A world outside the table is refused with the list of the known ones.
+title, so their row declares `lang_range`; Empyrea's anchored run holds few of its quests, so its row declares one
+too. A declared `lang_range` wins over the derived cluster. A world outside the table is refused with the list of the known ones.
 
 ## check
 

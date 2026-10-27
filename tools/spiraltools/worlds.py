@@ -29,8 +29,8 @@ class World(NamedTuple):
 
 
 # name: the zone wad prefix (Celestia-*.wad); prefix: the quest names (CL-CAMP-C01-001) and the ObjectData folder.
-# level: the quest level a spec gets when the wiki gives none. lang_range: declared only where QuestTitle.lang has no
-# internal quest name of the world to anchor its cluster.
+# level: the quest level a spec gets when the wiki gives none. lang_range: declared where QuestTitle.lang has no
+# internal quest name of the world to anchor its cluster, or where the anchored run misses most of its quests.
 WORLDS = (
     World("WizardCity", "WC", "Wizard_City", 5),
     World("Krokotopia", "KT", "Krokotopia", 15),
@@ -45,7 +45,7 @@ WORLDS = (
     World("Khrysalis", "KR", "Khrysalis", 88),
     World("Polaris", "PL", "Polaris", 100, (0x14DBD8, 0x14DC0D)),
     World("Mirage", "MR", "Mirage", 105),
-    World("Empyrea", "EM", "Empyrea", 112),
+    World("Empyrea", "EM", "Empyrea", 112, (0x132297, 0x16437F)),
     World("Karamelle", "KM", "Karamelle", 122),
     World("Lemuria", "LM", "Lemuria", 132),
     World("Novus", "NV", "Novus", 142),
@@ -80,7 +80,9 @@ def key_groups(keys):
 def lang_cluster(registered, rootwad):
     """(first, last) WizQst key of the world's quests: the run of quest lang files that holds the most QuestTitle
     entries carrying one of the world's internal quest names (CL-CAMP-C01-001), widened to the other anchored runs
-    within CLUSTER_REACH; the declared lang_range when no title anchors the world."""
+    within CLUSTER_REACH; the declared lang_range when the world has one."""
+    if registered.lang_range:
+        return registered.lang_range
     titles = read_lang(rootwad, "QuestTitle")
     anchors = [int(key, 16) for key, text in titles.items()
                if HEX_KEY.fullmatch(key) and INTERNAL_NAME.fullmatch(text.strip())
