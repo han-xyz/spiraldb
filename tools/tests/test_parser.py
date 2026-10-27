@@ -334,6 +334,21 @@ class GoalLineTest(unittest.TestCase):
         self.assertEqual((goals, blocked), ([("usage", ["W-obeliskstar.AdjRef"]), ("usage", ["W-babysister.AdjRef"])],
                                             []))
 
+    def test_a_sub_line_naming_a_place_after_in_is_a_place_line(self):
+        data = Data(personas=["Dalton Prescott"], items=["Vanilla Ice"],
+                    places={"Walruskberg": "W/Walrus", "Harbor": "W/Harbor"})
+        fields = {**fields_of("Survivors"), "goals": ["@Find Vanilla Ice", "@@in Walruskberg", "@@in [Location:Harbor]"]}
+        spec = build("Like_Dockwork", data, known_zones=(ZONE, "W/Walrus", "W/Harbor"), fields=fields)
+        self.assertEqual([(goal["type"], goal["zone"]) for goal in spec["goals"][:-1]],
+                         [("usage", "W/Walrus"), ("usage", "W/Harbor")])
+        self.assertEqual(blocking(spec), [])
+
+    def test_a_list_of_names_no_item_reads_sharing_a_last_word_counts_the_item_of_that_word(self):
+        data = Data(personas=["Dalton Prescott"], items=["Scroll"])
+        fields = {**fields_of("Survivors"), "goals": ["@Collect:", "@@Toadstool Forest Scroll", "@@Graveyard Scroll"]}
+        spec = build("Like_Dockwork", data, fields=fields)
+        self.assertEqual((summary(spec["goals"][0]), blocking(spec)), (("usage", ["W-scroll.AdjRef"], 2, False), []))
+
     def test_update_is_a_talk_verb(self):
         goals, _ = self.goals_of(["@Update the Villagers"], Data(personas=["Dalton Prescott", "Villagers"]))
         self.assertEqual(goals, [("persona", "Villagers")])

@@ -536,6 +536,11 @@ def before_note(line):
     return line[:note] if note >= 0 else line
 
 
+def place_text(sub):
+    """A sub-item's place name without the preposition it starts with (`in Walruskberg`)."""
+    return re.sub(r"^(?:in|at|near)\s+", "", plain(sub), flags=re.I)
+
+
 def school_requirement(fields):
     """The `requires` entry of a quest only one school's wizards take, as a list to prepend."""
     return [{"school": fields["school"]}] if fields["school"] else []
@@ -1117,7 +1122,13 @@ class SpecBuilder:
         return goal
 
     def usage_goal(self, names, count, zone=None):
+        """A usage goal on the items the names read; names no item reads that share their last word (`Graveyard
+        Scroll`, `Toadstool Forest Scroll`) read as the item of that word, listed to review."""
         zone = zone or self.zone
+        heads = {name.split()[-1] for name in names if name.split()}
+        if len(names) > 1 and len(heads) == 1 and not any(self.data.usage_entries(name, zone) for name in names):
+            self.unresolved("goal.items (shared last word)", ", ".join(names), False)
+            names = list(heads)
         items, descriptor = [], ""
         for name in names:
             entries = self.data.usage_entries(name, zone, count if len(names) == 1 else 1)
@@ -1343,11 +1354,12 @@ class SpecBuilder:
         """Whether a sub-item only names a place: `in [Location:Telos]`, `[Location:Caer Lyon] (in ...)`."""
         if links(sub, "NPC") or links(sub, "Creature") or is_goal_line(plain(sub)):
             return False
-        return bool(links(sub, "Location") or self.zone_paths.get(plain(sub)) or self.data.zone_by_place(plain(sub)))
+        place = place_text(sub)
+        return bool(links(sub, "Location") or self.zone_paths.get(place) or self.data.zone_by_place(place))
 
     def usage_in_place(self, item, sub, with_previous):
         """A usage goal on the item in the place a sub-item names, its innermost place first."""
-        places = list(reversed(links(sub, "Location"))) or [plain(sub)]
+        places = list(reversed(links(sub, "Location"))) or [place_text(sub)]
         zone = next((zone for zone in map(self.place_zone, places) if zone), self.zone)
         goal = self.usage_goal([item], 1, zone)
         if goal and with_previous:
