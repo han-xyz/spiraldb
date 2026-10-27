@@ -1,0 +1,167 @@
+{
+  "id": "AV-Q-96B4D",
+  "lang": "96B4D",
+  "giver": {
+    "persona": "AV-HIGH-NPC06",
+    "zone": "Avalon/AV_Z02_HighRoad"
+  },
+  "requires": [
+    "AV-Q-95314"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 20765,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC20",
+      "zone": "Avalon/Interiors/AV_Z01_Library",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Froudling-GreenCap-Boss-R11-01.AdjRef",
+        "AV_StandIn_ViridiantheVile.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001265",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000021"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC20": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Scribe_Francis.dds",
+      "template_id": 617241
+    },
+    "AV-HIGH-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_KnightOfSecretWords_NPC.dds",
+      "template_id": 617294
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Knight_of_the_Sacred_Words",
+    "from": "archive",
+    "timestamp": "20231125093723"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst96B4D matched by the words it shares with the goals; its lines name Knight of the Sacred Words, Francis Lux, Viridian the Vile",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

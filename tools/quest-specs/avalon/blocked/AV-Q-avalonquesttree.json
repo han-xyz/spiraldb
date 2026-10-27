@@ -1,0 +1,40 @@
+{
+  "id": "AV-Q-avalonquesttree",
+  "requires": [],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Avalon_Quest_Tree",
+    "from": "archive",
+    "timestamp": "20231124101248"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Avalon Quest Tree",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "none",
+      "blocking": true
+    },
+    {
+      "field": "reward",
+      "value": {},
+      "blocking": false
+    },
+    {
+      "field": "goals",
+      "value": [],
+      "blocking": true
+    }
+  ]
+}

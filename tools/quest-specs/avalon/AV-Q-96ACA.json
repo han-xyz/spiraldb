@@ -1,0 +1,83 @@
+{
+  "id": "AV-Q-96ACA",
+  "lang": "96ACA",
+  "giver": {
+    "persona": "AV-ABBEY-NPC04",
+    "zone": "Avalon/AV_Z01_AbbeyRoad"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 5730,
+    "gold": 145
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-IronBark.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "descriptor": "WizItems_00001837",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_Blacksmith_WaylandNoye_NPC.dds",
+      "template_id": 617163
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Burning_Iron",
+    "from": "archive",
+    "timestamp": "20240319213207"
+  },
+  "needs_review": [
+    {
+      "field": "requires",
+      "value": "Show Me the Way",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Show Me the Way replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

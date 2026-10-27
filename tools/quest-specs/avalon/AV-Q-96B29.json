@@ -1,0 +1,113 @@
+{
+  "id": "AV-Q-96B29",
+  "lang": "96B29",
+  "giver": {
+    "persona": "AV-HUB-NPC02",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [
+    "AV-Q-95314"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 2450,
+    "gold": 55
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Giant-Fomori-R11-01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001192",
+      "zone": "Avalon/AV_Z00_Hub",
+      "descriptor": "WizQst96B29_00000007",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-BirdFeeder-StateObject-Test.AdjRef",
+        "AV-BirdFeeder.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z00_Hub",
+      "descriptor": "WizItems_00001854",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Friar_Nolan.dds",
+      "template_id": 602075
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:For_the_Birds",
+    "from": "archive",
+    "timestamp": "20240827200300"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst96B29 matched by the words it shares with the goals; its lines name Fomori Giants",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "AV-Q-96B12",
+  "lang": "96B12",
+  "giver": {
+    "persona": "AV-ABBEY-NPC15",
+    "zone": "Avalon/AV_Z01_AbbeyRoad"
+  },
+  "requires": [
+    "AV-Q-96AF3"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 3820,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC16",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC15": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Siban_NPC.dds",
+      "template_id": 617205
+    },
+    "AV-ABBEY-NPC16": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Merchant_Clover_NPC.dds",
+      "template_id": 617235
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Needle_and_Thread",
+    "from": "archive",
+    "timestamp": "20231125093858"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

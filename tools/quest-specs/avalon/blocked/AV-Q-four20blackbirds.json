@@ -1,0 +1,115 @@
+{
+  "id": "AV-Q-four20blackbirds",
+  "giver": {
+    "persona": "AV-DARA-NPC01",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 58860,
+    "gold": 1275
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Redcap-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001200",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-SpectreOfTheBrocken-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001256",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-DogKnight-AmberKnight-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001171",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Knight-Redthorn-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001164",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Aodh.dds",
+      "template_id": 611129
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Four_+_20_Blackbirds",
+    "from": "archive",
+    "timestamp": "20231125094834"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Four + 20 Blackbirds",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "A Song of George",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Messenger Raven",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Messenger Raven",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Messenger Raven",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Messenger Raven",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Ravens (to the Cage) in Dun Dara",
+      "blocking": true
+    }
+  ]
+}

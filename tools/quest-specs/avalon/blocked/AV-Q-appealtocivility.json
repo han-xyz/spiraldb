@@ -1,0 +1,60 @@
+{
+  "id": "AV-Q-appealtocivility",
+  "giver": {
+    "persona": "AV-CAER-NPC06",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 4300,
+    "gold": 90
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-CAER-NPC08",
+      "zone": "Avalon/Interiors/AV_Z03_EstateLogres",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC06": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Treant_Ancient.dds",
+      "template_id": 537805
+    },
+    "AV-CAER-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Knight_Malick_NPC.dds",
+      "template_id": 537807
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Appeal_to_Civility",
+    "from": "archive",
+    "timestamp": "20250909014215"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Appeal to Civility",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Great Wild Wood",
+      "blocking": false
+    }
+  ]
+}

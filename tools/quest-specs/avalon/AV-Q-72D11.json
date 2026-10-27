@@ -1,0 +1,72 @@
+{
+  "id": "AV-Q-72D11",
+  "lang": "72D11",
+  "giver": {
+    "persona": "AV-WILD-NPC07",
+    "zone": "Avalon/AV_Z04_TheWild"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 2275,
+    "gold": 50
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-WILD-NPC03",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    }
+  ],
+  "personas": {
+    "AV-WILD-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fire_Elf_Roidh.dds",
+      "template_id": 470272
+    },
+    "AV-WILD-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Shane_MacGobbhann_NPC.dds",
+      "template_id": 470287
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:In_These_Shoes",
+    "from": "archive",
+    "timestamp": "20240602225618"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Weirwood Rover replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

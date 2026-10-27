@@ -1,0 +1,127 @@
+{
+  "id": "AV-Q-96B21",
+  "lang": "96B21",
+  "giver": {
+    "persona": "AV-ABBEY-NPC25",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 14430,
+    "gold": 390
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC04",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Goblin-Night-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001163",
+      "zone": "Avalon/AV_Z00_Hub",
+      "descriptor": "WizQst96B21_00000009",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC04",
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000008"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC04": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_Blacksmith_WaylandNoye_NPC.dds",
+      "template_id": 617163
+    },
+    "AV-ABBEY-NPC25": {
+      "portrait": "GUI/NpcPortraits/Art_Portraits_AV_Gascoigne_NPC.dds",
+      "template_id": 643086
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Field_of_Gules",
+    "from": "archive",
+    "timestamp": "20231125095038"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst96B21 matched by the words it shares with the goals; its lines name Wayland Noye, Night Goblin",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Variations of the Field replaced by min_level",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Call The Banners replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

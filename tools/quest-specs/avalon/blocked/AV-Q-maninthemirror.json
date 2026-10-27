@@ -1,0 +1,71 @@
+{
+  "id": "AV-Q-maninthemirror",
+  "giver": {
+    "persona": "AV-WYRD-NPC08",
+    "zone": "Avalon/AV_Z05_TheWyrd"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 14485,
+    "gold": 330
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Froudling-Spriggan-Spiny-Boss-R12-01.AdjRef",
+        "AV_StandIn_HeidiIronNails.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001250",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    }
+  ],
+  "personas": {
+    "AV-WYRD-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Human_Knight_Malory.dds",
+      "template_id": 611117
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Man_In_The_Mirror",
+    "from": "archive",
+    "timestamp": "20231125090811"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Man In The Mirror",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Guest Right",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Spiny Spriggan's House",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Divining Treasure",
+      "blocking": false
+    }
+  ]
+}

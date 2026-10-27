@@ -1,0 +1,78 @@
+{
+  "id": "AV-Q-96A7D",
+  "lang": "96A7D",
+  "giver": {
+    "persona": "AV-HUB-NPC03",
+    "zone": "Avalon/AV_Z00_Hub"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 5410,
+    "gold": 145
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-BagsOfGrain.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Avalon/AV_Z00_Hub",
+      "descriptor": "WizItems_00001814",
+      "loc": "ZoneLocName_602072"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z00_Hub",
+      "loc": "ZoneLocName_602072"
+    }
+  ],
+  "personas": {
+    "AV-HUB-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Badger_Merchant_SumnerFieldgold_NPC.dds",
+      "template_id": 602076
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Fields_of_Barley",
+    "from": "archive",
+    "timestamp": "20231125084911"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Fields of Gold replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

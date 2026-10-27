@@ -1,0 +1,61 @@
+{
+  "id": "AV-Q-alwaysaftermecharms",
+  "giver": {
+    "persona": "AV-HIGH-NPC01",
+    "zone": "Avalon/AV_Z02_HighRoad"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 19920,
+    "gold": 415
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Raven-Witch-Nightfeather-R12-01.AdjRef",
+        "AV_StandIn_HrefnaNightfeather.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001279",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    }
+  ],
+  "personas": {
+    "AV-HIGH-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+      "template_id": 617083
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Always_After_Me_Charms",
+    "from": "archive",
+    "timestamp": "20231222133537"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Always After Me Charms",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "No Pain, No Agravaine",
+      "blocking": false
+    }
+  ]
+}

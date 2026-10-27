@@ -1,0 +1,83 @@
+{
+  "id": "AV-Q-96A8C",
+  "lang": "96A8C",
+  "giver": {
+    "persona": "AV-HIGH-NPC01",
+    "zone": "Avalon/AV_Z02_HighRoad"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 12155,
+    "gold": 300
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Goblin-Night-R11-01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001163",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "descriptor": "WizQst96A8C_00000003",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    }
+  ],
+  "personas": {
+    "AV-HIGH-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+      "template_id": 617083
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Taste_of_Poison",
+    "from": "archive",
+    "timestamp": "20250905013700"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Crab Leg replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

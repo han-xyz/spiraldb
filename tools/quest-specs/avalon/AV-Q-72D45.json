@@ -1,0 +1,100 @@
+{
+  "id": "AV-Q-72D45",
+  "lang": "72D45",
+  "giver": {
+    "persona": "AV-WILD-NPC14",
+    "zone": "Avalon/AV_Z04_TheWild"
+  },
+  "requires": [
+    "AV-Q-72D3B"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 18215,
+    "gold": 400
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Skirker-R11-01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001170",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Moonflower.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z04_TheWild",
+      "descriptor": "WizItems_00001856",
+      "loc": "ZoneLocName_470302"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z04_TheWild",
+      "loc": "ZoneLocName_470302"
+    }
+  ],
+  "personas": {
+    "AV-WILD-NPC14": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Unicorn.dds",
+      "template_id": 470340
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Meaner_Than_a_Lemon",
+    "from": "archive",
+    "timestamp": "20231125094659"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

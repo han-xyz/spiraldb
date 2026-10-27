@@ -1,0 +1,65 @@
+{
+  "id": "AV-Q-skyfullofsulfur",
+  "giver": {
+    "persona": "AV-WYRD-NPC03",
+    "zone": "Avalon/AV_Z05_TheWyrd"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 12075,
+    "gold": 270
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV_Burning_Tree.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "descriptor": "WizItems_00001846",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z05_TheWyrd",
+      "loc": "ZoneLocName_602089"
+    }
+  ],
+  "personas": {
+    "AV-WYRD-NPC03": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_Imp_NPC.dds",
+      "template_id": 611094
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Sky_Full_of_Sulfur",
+    "from": "archive",
+    "timestamp": "20231125090607"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Sky Full of Sulfur",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Man With No Country",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Water from the Rainbow Fountain",
+      "blocking": true
+    }
+  ]
+}

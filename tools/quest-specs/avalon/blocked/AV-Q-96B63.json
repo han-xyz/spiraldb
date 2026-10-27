@@ -1,0 +1,111 @@
+{
+  "id": "AV-Q-96B63",
+  "lang": "96B63",
+  "giver": {
+    "persona": "AV-ABBEY-NPC20",
+    "zone": "Avalon/Interiors/AV_Z01_Library"
+  },
+  "requires": [
+    "AV-Q-96B62"
+  ],
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 24830,
+    "gold": 650
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV_DunDara_Raven.AdjRef"
+      ],
+      "count": 6,
+      "zone": "Avalon/AV_Z01_AbbeyRoad",
+      "loc": "ZoneLocName_602094"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/Interiors/AV_Z01_Library",
+      "loc": "ZoneLocName_602094"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC20": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Otter_Scribe_Francis.dds",
+      "template_id": 617241
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:From_Whole_Cloth",
+    "from": "archive",
+    "timestamp": "20231125093336"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "High Road (in Red Thorn Tower)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Caer Lyon (in Nosebiter's Hideout)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Wild (in White Owl Tower)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Wyrd (in the Tomb of the Nameless)",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "The Catacombs (in the Captain's Chamber)",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "High Road (in Red Thorn Tower)",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

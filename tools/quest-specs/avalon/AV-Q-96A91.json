@@ -1,0 +1,82 @@
+{
+  "id": "AV-Q-96A91",
+  "lang": "96A91",
+  "giver": {
+    "persona": "AV-HIGH-NPC01",
+    "zone": "Avalon/AV_Z02_HighRoad"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 2025,
+    "gold": 45
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC05",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-ABBEY-NPC05",
+      "zone": "Avalon/Interiors/AV_Z01_KnightsHall",
+      "loc": "ZoneLocName_537904"
+    }
+  ],
+  "personas": {
+    "AV-ABBEY-NPC05": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_CrabKnight_SirPike.dds",
+      "template_id": 617182
+    },
+    "AV-HIGH-NPC01": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Owls_Fianna.dds",
+      "template_id": 617083
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:I'm_Getting_Better",
+    "from": "archive",
+    "timestamp": "20240121093948"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Pound Some Sense replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 68
+}

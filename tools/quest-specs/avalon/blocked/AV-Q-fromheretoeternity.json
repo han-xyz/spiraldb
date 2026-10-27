@@ -1,0 +1,73 @@
+{
+  "id": "AV-Q-fromheretoeternity",
+  "giver": {
+    "persona": "AV-CAER-NPC02",
+    "zone": "Avalon/AV_Z03_CaerLyon"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 10740,
+    "gold": 250
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "AV-Book-Tele-Repair.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "Items_00006557",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-Caer-Teleporter.AdjRef",
+        "AV-TeleporterArch.AdjRef",
+        "AV-TeleporterArchEffects-StateObject-Test.AdjRef",
+        "AV-TeleporterArchEffects.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "descriptor": "Items_00006558",
+      "loc": "ZoneLocName_470339"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z03_CaerLyon",
+      "loc": "ZoneLocName_470339"
+    }
+  ],
+  "personas": {
+    "AV-CAER-NPC02": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Artisan_Ashlynn_NPC.dds",
+      "template_id": 537801
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:From_Here_To_Eternity",
+    "from": "archive",
+    "timestamp": "20231125085314"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "From Here To Eternity",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Painting the Town Red",
+      "blocking": false
+    }
+  ]
+}

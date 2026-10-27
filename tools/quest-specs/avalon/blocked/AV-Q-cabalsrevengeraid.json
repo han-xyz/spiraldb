@@ -1,0 +1,66 @@
+{
+  "id": "AV-Q-cabalsrevengeraid",
+  "giver": {
+    "persona": "AV-DARA-NPC12",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC12": {
+      "portrait": "GUI/NpcPortraits/Portrait_Druid_RaidmasterF_A_NPC.dds",
+      "template_id": 1562695
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Cabal's_Revenge_Raid",
+    "from": "archive",
+    "timestamp": "20240620022650"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Cabal's Revenge Raid",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Gulag Guard in Urville Station",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Secret Cabal Hideout",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "Dog of War (Ice)",
+      "blocking": true
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "AV-Q-overthehillsandfaraway",
+  "giver": {
+    "persona": "AV-DARA-NPC07",
+    "zone": "Avalon/AV_Z06_DunDara"
+  },
+  "requires": [],
+  "min_level": 68,
+  "mainline": true,
+  "level": 68,
+  "reward": {
+    "xp": 15335,
+    "gold": 320
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "AV-Skirker-R11-01.AdjRef"
+      ],
+      "count": 2,
+      "target": "WizardMobs_00001170",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_602089"
+    },
+    {
+      "type": "persona",
+      "persona": "AV-DARA-NPC08",
+      "zone": "Avalon/AV_Z06_DunDara",
+      "loc": "ZoneLocName_611142"
+    }
+  ],
+  "personas": {
+    "AV-DARA-NPC07": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_Fox_Mermaid_Melusine_NPC.dds",
+      "template_id": 611150
+    },
+    "AV-DARA-NPC08": {
+      "portrait": "GUI/NpcPortraits/Art_Portrait_AV_HumanDruid_Lewelyn.dds",
+      "template_id": 611152
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Over_the_Hills_and_Far_Away",
+    "from": "archive",
+    "timestamp": "20231125091030"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Over the Hills and Far Away",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "Stairway to Belle Regard",
+      "blocking": false
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Silver",
+      "blocking": false
+    }
+  ]
+}

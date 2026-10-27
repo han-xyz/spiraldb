@@ -1,0 +1,94 @@
+{
+  "id": "AV-Q-AB3CB",
+  "lang": "AB3CB",
+  "requires": [],
+  "min_level": 68,
+  "mainline": false,
+  "level": 68,
+  "reward": {
+    "xp": 25,
+    "gold": 145
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "AV-Giant-Fomori-PageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001472",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "AV-PageEvent-Boss.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "descriptor": "NPCs_01748048",
+      "loc": "ZoneLocName_537904"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "Student-Myth-PageEvent.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00001473",
+      "zone": "Avalon/AV_Z02_HighRoad",
+      "loc": "ZoneLocName_537904"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Idylls_of_the_King",
+    "from": "archive",
+    "timestamp": "20240121094154"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "requires",
+      "value": "A Wizard in Artorius's Court",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Spellwrit Fomori: ObjectData/PageEvent",
+      "blocking": false
+    },
+    {
+      "field": "goal.mobs (other folder)",
+      "value": "Quinn Legendbreaker: ObjectData/PageEvent",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

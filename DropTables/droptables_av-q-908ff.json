@@ -1,0 +1,17 @@
+{
+  "Name": "AV-Q-908FF",
+  "Description": "",
+  "RollChance": 1.0,
+  "Weight": 100,
+  "NoneChance": 0.0,
+  "PityCounter": 0.0,
+  "MinGold": 500,
+  "MaxGold": 500,
+  "ExperienceAmount": 24420,
+  "TrainingPoints": 0,
+  "Items": [],
+  "CreatedAt": "2026-10-27T06:35:22.651557Z",
+  "ModifiedAt": "2026-10-27T06:35:22.651557Z",
+  "CreatedBy": "questgen",
+  "ModifiedBy": "questgen"
+}
