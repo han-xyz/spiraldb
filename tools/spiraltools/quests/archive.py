@@ -24,9 +24,9 @@ from ..pack import (PACK, QUEST_SPECS_DIR, quest_output_paths, quest_template_pa
 from ..wad import GAMEDATA_DIR, VOLUME_NAME, compact_strings, read_wad, zone_of_wad
 from ..worlds import WORLDS, lang_cluster, world
 from .generate import diff, is_others_quest
-from .goal_lines import (COLLECT_VERBS, FIND_VERBS, ITEM_VERBS, MOVE_VERBS, PERSON_VERBS, TALK_VERBS, destinations,
-                         goal_kind, is_goal_line, place_readings, repeated, strip_notes, target_text, unread_field,
-                         verb_of)
+from .goal_lines import (COLLECT_VERBS, FIND_VERBS, ITEM_VERBS, MOVE_VERBS, PERSON_VERBS, PET_MODE, TALK_VERBS,
+                         destinations, goal_kind, is_goal_line, place_readings, repeated, strip_notes, target_text,
+                         unread_field, verb_of)
 from .spec import spell_name
 
 DESCRIPTION = ("Build questgen specs for a world from the Wizard101 Central wiki, live first, else the Internet "
@@ -828,9 +828,11 @@ class ClientData:
     def object_entries(self, name):
         return item_entries(self.objects, name)
 
-    def usage_entries(self, name, zone=""):
+    def usage_entries(self, name, zone="", count=1):
         """The entries of the item a usage goal names: by its name, else by its words when one item reads them, or
-        one of the items they read that a zone places: the one in the goal's zone, else the one placed at all."""
+        one of the items they read that a zone places: the one in the goal's zone, else the one placed at all. A goal
+        counting several reads, failing that, the as many items one zone places under its head word (`6 Unlit
+        Lanterns`: AV-CRYS-Lanterns, Lanterns2 to Lanterns6)."""
         found = self.object_entries(name)
         if found:
             return found
@@ -839,7 +841,23 @@ class ClientData:
             zones = self.zones_of_items(candidates)
             placed = {template: entry for template, entry in candidates.items() if zones[template]}
             candidates = {template: entry for template, entry in placed.items() if zone in zones[template]} or placed
-        return list(candidates.values()) if len(candidates) == 1 else self.other_world_items(name)
+        if len(candidates) == 1:
+            return list(candidates.values())
+        return (count > 1 and self.counted_entries(name, zone, count)) or self.other_world_items(name)
+
+    def counted_entries(self, name, zone, count):
+        words = re.findall(r"[A-Za-z]+", ITEM_PLACE.sub("", name))
+        head = singular(words[-1].lower()) if words else ""
+        family = {template: entry for template, word_sets, entry in self.item_words
+                  if any(head in words for words in word_sets)}
+        zones = self.zones_of_items(family)
+        by_zone = {}
+        for template, entry in family.items():
+            for placed in zones[template]:
+                by_zone.setdefault(placed, []).append(entry)
+        fits = [entries for placed, entries in sorted(by_zone.items(), key=lambda item: item[0] != zone)
+                if len(entries) == count]
+        return fits[0] if fits else []
 
     def other_world_items(self, name):
         """The entries of the item the name reads whole, without place or article, in the nearest other ObjectData folder
@@ -1093,7 +1111,7 @@ class SpecBuilder:
         zone = zone or self.zone
         items, descriptor = [], ""
         for name in names:
-            entries = self.data.usage_entries(name, zone)
+            entries = self.data.usage_entries(name, zone, count if len(names) == 1 else 1)
             if not entries:
                 self.unresolved("goal.items", name, True)
             for folder in sorted({entry["folder"] for entry in entries if "folder" in entry}):
@@ -1203,6 +1221,8 @@ class SpecBuilder:
 
     def goals_of(self, line, subs, times=1):
         """The goals of a goal line; a line repeated on consecutive lines (`times`) counts that often."""
+        if PET_MODE.match(line):
+            return self.goals_of(PET_MODE.sub("", line, count=1), subs, times)
         text = plain(line)
         count = re.search(r"\b(\d+)\b", text)
         number = int(count.group(1)) if count else 1
@@ -1239,7 +1259,7 @@ class SpecBuilder:
             found = self.waypoint_goal(places, text, quiet=not places)
             if found or places:
                 return [found]
-        if verb in COLLECT_VERBS or self.data.usage_entries(item, self.zone):
+        if verb in COLLECT_VERBS or self.data.usage_entries(item, self.zone, number * times):
             return [self.usage_goal([item], number * times)]
         return [self.goal_elsewhere(verb, text, places)]
 

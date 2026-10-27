@@ -28,6 +28,8 @@ WAY_VERBS = {"reach", "ascend", "cross", "pass", "infiltrate", "assault", "sneak
 FOLLOW_VERBS = {"follow", "approach", "pursue", "chase"}
 
 PHOTOMANCE = re.compile(r"^Press Z to Photomance\b", re.I)
+# What the pet does is the goal: `Use Pet Mode to find Wally`, `(Use it to) Search for Bartleby`.
+PET_MODE = re.compile(r"^(?:Use Pet Mode to|\(Use it to\))\s+", re.I)
 VERB_HINT = re.compile(r"^\(?(\w+)\)?(?:\s+\((\w+)[^)]*\))?")
 PARTICLE = re.compile(r"^(?:(?:to|into|for|through|out|up|on|off|with|at|back|onto|inside|exploring|"
                       r"investigating|pressing|onward|the|a|an)\b\s*)+", re.I)

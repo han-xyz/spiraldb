@@ -57,7 +57,7 @@ class Data:
     def object_entries(self, name):
         return item_entries(self.objects, name)
 
-    def usage_entries(self, name, zone=""):
+    def usage_entries(self, name, zone="", count=1):
         return self.object_entries(name)
 
     def zone_by_place(self, place):
@@ -299,6 +299,12 @@ class GoalLineTest(unittest.TestCase):
         data = Data(personas=["Dalton Prescott"], places={"Library": "W/Library"})
         goals, blocked = self.goals_of(["@Use the Way of Itz (in the [Location:Library])"], data, (ZONE, "W/Library"))
         self.assertEqual((goals, blocked), ([], [("goal.usage", "Use the Way of Itz (in the Library)")]))
+
+    def test_a_pet_mode_line_reads_as_what_the_pet_does(self):
+        data = Data(personas=["Dalton Prescott", "Wally"], items=["Key"], places={"Outback": "W/Outback"})
+        goals, blocked = self.goals_of(["@Use Pet Mode to find Wally in [Location:Outback]",
+                                        "@Use Pet Mode to find Key"], data, (ZONE, "W/Outback"))
+        self.assertEqual((goals, blocked), ([("persona", "Wally"), ("usage", ["W-key.AdjRef"])], []))
 
     def test_update_is_a_talk_verb(self):
         goals, _ = self.goals_of(["@Update the Villagers"], Data(personas=["Dalton Prescott", "Villagers"]))
@@ -586,6 +592,14 @@ class ClientLookupTest(unittest.TestCase):
         entries = ClientData(world("WizardCity")).usage_entries("the Stone of Mazzaroth", "")
         self.assertEqual([(entry["adjective"], entry["folder"]) for entry in entries],
                          [("DS_Mazzaroth_Stone.AdjRef", "DS")])
+
+    def test_a_counted_item_reads_the_as_many_items_one_zone_places_under_its_head_word(self):
+        entries = ClientData(world("Avalon")).usage_entries("Unlit Lanterns", "", 6)
+        self.assertEqual({entry["adjective"] for entry in entries},
+                         {"AV-CRYS-Lanterns.AdjRef"} | {f"AV-CRYS-Lanterns{i}.AdjRef" for i in range(2, 7)})
+        entries = ClientData(world("Wysteria")).usage_entries("Topiary", "", 3)
+        self.assertEqual(len(entries), 3)
+        self.assertEqual(ClientData(world("Wysteria")).usage_entries("Topiary", "", 2), [])
 
     def test_a_mob_and_an_npc_of_a_nested_object_folder_are_found(self):
         data = ClientData(world("WizardCity"))
