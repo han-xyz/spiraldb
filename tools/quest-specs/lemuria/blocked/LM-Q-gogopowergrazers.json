@@ -1,0 +1,77 @@
+{
+  "id": "LM-Q-gogopowergrazers",
+  "requires": [
+    "LM-Q-174441"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 16500
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Cow_BullGangster_A_06.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003958",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Standin_PowerPink.AdjRef",
+        "LM_TRex_Cyborg_E_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003963",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-HEAP-NPC25.AdjRef",
+        "LM_Standin_Goldaur.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizardNPC_00000981",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Draconian_Base_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003966",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Go,_Go_Power_Grazers",
+    "timestamp": "20240322110532"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Go, Go Power Grazers",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    }
+  ]
+}

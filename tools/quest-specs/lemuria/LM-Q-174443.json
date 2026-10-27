@@ -1,0 +1,103 @@
+{
+  "id": "LM-Q-174443",
+  "lang": "174443",
+  "giver": {
+    "persona": "LM-HEAP-NPC26",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-174427"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 6000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_AMBIENT_GrayReaper_01.AdjRef",
+        "LM_AMBIENT_GrayReaper_03.AdjRef",
+        "LM_Cow_BullGangster_C_01.AdjRef",
+        "LM_Cow_BullGangster_C_02.AdjRef",
+        "LM_Cow_BullGangster_C_03.AdjRef",
+        "LM_Cow_BullGangster_C_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003931",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC26": {
+      "portrait": "GUI/NpcPortraits/Portrait_Minotaur_Skeleton_A_NPC.dds",
+      "template_id": 1524864
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Master_of_the_Moooooniverse",
+    "timestamp": "20231119063049"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "To Grayschool! replaced by min_level",
+      "blocking": false
+    }
+  ]
+}

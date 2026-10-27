@@ -1,0 +1,185 @@
+{
+  "id": "LM-Q-17321C",
+  "lang": "17321C",
+  "giver": {
+    "persona": "LM-NIGHT-NPC01",
+    "zone": "Lemuria/LM_Z03_NightForest"
+  },
+  "requires": [
+    "LM-Q-17321B"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 161200,
+    "gold": 1550
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC02",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_BrokenWall-1.AdjRef",
+        "LM_BrokenWall-2.AdjRef",
+        "LM_BrokenWall-3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizItems_00002084",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_BrokenWall-1.AdjRef",
+        "LM_BrokenWall-2.AdjRef",
+        "LM_BrokenWall-3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizItems_00002084",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_BrokenWall-1.AdjRef",
+        "LM_BrokenWall-2.AdjRef",
+        "LM_BrokenWall-3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizItems_00002084",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Rhino_Zombie_A_01.AdjRef"
+      ],
+      "count": 3,
+      "target": "WizardMobs_00003897",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizQst17321C_00000018",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC02",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100",
+      "completion": [
+        {
+          "speaker": "LM-NIGHT-NPC02",
+          "line": "00000011"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Lemur_Resistance_E_NPC.dds",
+      "template_id": 1520132
+    },
+    "LM-NIGHT-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_CitizenF_A_NPC.dds",
+      "template_id": 1520133
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Night_Forest_of_the_Living_Dead",
+    "timestamp": "20240322084901"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Up Window",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Up Window",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Up Window",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

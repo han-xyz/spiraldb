@@ -1,0 +1,208 @@
+{
+  "id": "LM-Q-17441C",
+  "lang": "17441C",
+  "giver": {
+    "persona": "LM-SKY-NPC11",
+    "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
+  },
+  "requires": [
+    "LM-Q-17441A"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 185380,
+    "gold": 1950
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-SKY-NPC12",
+      "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-SKY-NPC11.AdjRef",
+        "LM-SKY-NPC11b.AdjRef",
+        "LM-SKY-NPC11c.AdjRef",
+        "LM_Standin_WilmaDeering.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00000939",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_ControlRods.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Drone_Eye_D_01.AdjRef",
+        "LM_Drone_Eye_D_02.AdjRef",
+        "LM_Drone_Eye_D_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003870",
+      "zone": "",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_ControlRods.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00002079",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-SKY-NPC13",
+      "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
+      "loc": "ZoneLocName_1520281"
+    }
+  ],
+  "personas": {
+    "LM-SKY-NPC11": {
+      "portrait": "GUI/NpcPortraits/Deer_Scientist_B_NPC.dds",
+      "template_id": 1524736
+    },
+    "LM-SKY-NPC12": {
+      "portrait": "GUI/NpcPortraits/Lemur_Resistance_B_NPC.dds",
+      "template_id": 1524737
+    },
+    "LM-SKY-NPC13": {
+      "portrait": "GUI/NpcPortraits/Lemur_Resistance_C_NPC.dds",
+      "template_id": 1524738
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Secret_Struggle",
+    "timestamp": "20231211101423"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "With the Resistance",
+      "blocking": true
+    },
+    {
+      "field": "goal.descriptor",
+      "value": "Control Rods in the Water Purification Plant",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "to the Resistance",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

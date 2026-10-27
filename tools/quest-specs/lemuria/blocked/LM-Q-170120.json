@@ -1,0 +1,235 @@
+{
+  "id": "LM-Q-170120",
+  "lang": "170120",
+  "giver": {
+    "persona": "LM-Mandoria-NPC01-03",
+    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+  },
+  "requires": [
+    "LM-Q-17011F"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 153140,
+    "gold": 1700
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM-Accompany-Mandar_ENC.AdjRef",
+        "LM-Mandoria-NPC05-01.AdjRef",
+        "LM-Mandoria-NPC05-02.AdjRef",
+        "LM-Mandoria-NPC05-03.AdjRef",
+        "LM-Standin-Mandar-02.AdjRef",
+        "LM-Standin-Mandar-03.AdjRef",
+        "LM-Standin-Mandar-04.AdjRef",
+        "LM-Standin-Mandar-05.AdjRef",
+        "LM-Standin-Mandar-06.AdjRef",
+        "LM-Standin-Mandar-07.AdjRef",
+        "LM-Standin-Mandar-08.AdjRef",
+        "LM-Standin-Mandar-09.AdjRef",
+        "LM-Standin-Mandar-B-01.AdjRef",
+        "LM-Standin-Mandar-B-02.AdjRef",
+        "LM-Standin-Mandar.AdjRef",
+        "LM-TELOS-MandarFighter.AdjRef",
+        "LM-TELOS-NPC13-B.AdjRef",
+        "LM-TELOS-NPC13-C.AdjRef",
+        "LM-TELOS-NPC13-D.AdjRef",
+        "LM-TELOS-NPC13-E.AdjRef",
+        "LM-TELOS-NPC13.AdjRef",
+        "LM-WILD-NPC12.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00000933",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-Accompany-Mandar_ENC.AdjRef",
+        "LM-Mandoria-NPC05-01.AdjRef",
+        "LM-Mandoria-NPC05-02.AdjRef",
+        "LM-Mandoria-NPC05-03.AdjRef",
+        "LM-Standin-Mandar-02.AdjRef",
+        "LM-Standin-Mandar-03.AdjRef",
+        "LM-Standin-Mandar-04.AdjRef",
+        "LM-Standin-Mandar-05.AdjRef",
+        "LM-Standin-Mandar-06.AdjRef",
+        "LM-Standin-Mandar-07.AdjRef",
+        "LM-Standin-Mandar-08.AdjRef",
+        "LM-Standin-Mandar-09.AdjRef",
+        "LM-Standin-Mandar-B-01.AdjRef",
+        "LM-Standin-Mandar-B-02.AdjRef",
+        "LM-Standin-Mandar.AdjRef",
+        "LM-TELOS-MandarFighter.AdjRef",
+        "LM-TELOS-NPC13-B.AdjRef",
+        "LM-TELOS-NPC13-C.AdjRef",
+        "LM-TELOS-NPC13-D.AdjRef",
+        "LM-TELOS-NPC13-E.AdjRef",
+        "LM-TELOS-NPC13.AdjRef",
+        "LM-WILD-NPC12.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardNPC_00000933",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Mander_Mummy_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003914",
+      "zone": "",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC05-02",
+      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "loc": "ZoneLocName_1507599",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000016"
+        },
+        {
+          "speaker": "giver",
+          "line": "00000021"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-Mandoria-NPC01-03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487469
+    },
+    "LM-Mandoria-NPC05-02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Hero_A_NPC.dds",
+      "template_id": 1487470
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mandar_the_Swordsmander",
+    "timestamp": "20240322085735"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170120 by the proper nouns its lines share with the page (Cliff, Sword), within 16 of a key of the zone's quests; next best WizQst170126 with 1",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "Cliff",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "for the Sword of He-Mander in his tomb",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "blocking": true
+    }
+  ]
+}

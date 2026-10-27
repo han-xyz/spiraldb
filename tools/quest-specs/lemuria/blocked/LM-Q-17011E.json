@@ -1,0 +1,184 @@
+{
+  "id": "LM-Q-17011E",
+  "lang": "17011E",
+  "giver": {
+    "persona": "LM-HEAP-NPC01",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-17011B"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 104780,
+    "gold": 1025
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000033"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Mander_Hero_A_01.AdjRef",
+        "LM_Mander_Hero_B_01.AdjRef",
+        "LM_Mander_Hero_B_01_Hard.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003874",
+      "zone": "",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC05-02",
+      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "loc": "ZoneLocName_1507599"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC01-03",
+      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "loc": "ZoneLocName_1507599"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
+      "template_id": 1524741
+    },
+    "LM-Mandoria-NPC01-03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487469
+    },
+    "LM-Mandoria-NPC05-02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Mander_Hero_A_NPC.dds",
+      "template_id": 1487470
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Mandar_the_Superstitious",
+    "timestamp": "20240322085629"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst17011E, the only free key within 16 of its chain neighbour WizQst17011B whose lines name the page's names: Mandar",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "up with Mandar in his refuge",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "blocking": true
+    }
+  ]
+}

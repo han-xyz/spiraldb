@@ -1,0 +1,98 @@
+{
+  "id": "LM-Q-174421",
+  "lang": "174421",
+  "giver": {
+    "persona": "LM-SKY-NPC13",
+    "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
+  },
+  "requires": [
+    "LM-Q-17441F"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 56420,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z06_Headquarters",
+      "loc": "ZoneLocName_1520281",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000010"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-SKY-NPC13": {
+      "portrait": "GUI/NpcPortraits/Lemur_Resistance_C_NPC.dds",
+      "template_id": 1524738
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:As_the_Mana_Flows",
+    "timestamp": "20250913112249"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance Mana Fountain",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

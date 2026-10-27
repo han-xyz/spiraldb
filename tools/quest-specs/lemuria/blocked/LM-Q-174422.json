@@ -1,0 +1,166 @@
+{
+  "id": "LM-Q-174422",
+  "lang": "174422",
+  "giver": {
+    "persona": "LM-SKY-NPC13",
+    "zone": "Lemuria/Interiors/LM_Z06_Headquarters"
+  },
+  "requires": [
+    "LM-Q-174421"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 153140,
+    "gold": 1750
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Drone_Eye_D_01.AdjRef",
+        "LM_Drone_Eye_D_02.AdjRef",
+        "LM_Drone_Eye_D_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003870",
+      "zone": "",
+      "descriptor": "WizQst174422_00000020",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_MonsterChest_MorgMerciless.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizardInteractionTitle_00000453",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Platypus_Villan_A_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003929",
+      "zone": "",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_AscensionBeam_01.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00002082",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-Mandoria-NPC01-03",
+      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "loc": "ZoneLocName_1520281",
+      "completion": [
+        {
+          "speaker": "LM-Mandoria-NPC01-03",
+          "line": "00000012"
+        },
+        {
+          "speaker": "LM-Mandoria-NPC01-03",
+          "line": "00000015"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-Mandoria-NPC01-03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487469
+    },
+    "LM-SKY-NPC13": {
+      "portrait": "GUI/NpcPortraits/Lemur_Resistance_C_NPC.dds",
+      "template_id": 1524738
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:To_Save_Sky_City!",
+    "timestamp": "20240322100638"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Your Victory",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "blocking": true
+    }
+  ]
+}

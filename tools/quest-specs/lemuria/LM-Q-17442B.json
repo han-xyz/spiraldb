@@ -1,0 +1,122 @@
+{
+  "id": "LM-Q-17442B",
+  "lang": "17442B",
+  "giver": {
+    "persona": "LM-HEAP-NPC03",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-174428"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 96720,
+    "gold": 1050
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM-LockUp_Gate.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizQst17442B_00000009",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Cow_BullGangster_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003935",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_Standin_MooCrewA.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizardNPC_00000968",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC01",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
+      "template_id": 1524741
+    },
+    "LM-HEAP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
+      "template_id": 1524747
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Dinner_is_for_Closers",
+    "timestamp": "20240322090644"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Prune Disgrace replaced by LM-Q-174428",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "LM-Q-17321B",
+  "lang": "17321B",
+  "giver": {
+    "persona": "LM-Standin-Dasein",
+    "zone": "Lemuria/LM_Z01_WildLands"
+  },
+  "requires": [
+    "LM-Q-1736B7"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 104780,
+    "gold": 1025
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Millipede_Centi_A_01.AdjRef",
+        "LM_Millipede_Centi_A_03.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003348",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-WILD-NPC07",
+      "zone": "Lemuria/LM_Z01_WildLands",
+      "loc": "ZoneLocName_1520110"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC01-B",
+      "zone": "Lemuria/Interiors/LM_Z03_LucienHouseCombat",
+      "loc": "ZoneLocName_1520110"
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC01-B": {
+      "portrait": "GUI/NpcPortraits/Lemur_Resistance_E_NPC.dds",
+      "template_id": 1487462
+    },
+    "LM-Standin-Dasein": {
+      "portrait": "GUI/NpcPortraits/Portrait_Khrulhu_Lincoln_A_NPC.dds",
+      "template_id": 1521360
+    },
+    "LM-WILD-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_Citizen_D_NPC.dds",
+      "template_id": 1520130
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:No_Crane,_No_Gain",
+    "timestamp": "20250907124253"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "for Hierarch Lucien in Night Forest",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

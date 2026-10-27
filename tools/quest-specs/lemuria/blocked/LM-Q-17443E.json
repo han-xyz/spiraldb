@@ -1,0 +1,171 @@
+{
+  "id": "LM-Q-17443E",
+  "lang": "17443E",
+  "giver": {
+    "persona": "LM-SKY-NPC17",
+    "zone": "Lemuria/Interiors/LM_Z06_LucysHouse"
+  },
+  "requires": [
+    "LM-Q-17441A"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 15000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-SKY-NPC18",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_AMBIENT_NeighborhoodWatch_01.AdjRef",
+        "LM_AMBIENT_NeighborhoodWatch_02.AdjRef",
+        "LM_Platypus_Citizen_C_01.AdjRef",
+        "LM_Platypus_Citizen_C_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003922",
+      "zone": "",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_GenericBlocker_Sky.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00002102",
+      "loc": "ZoneLocName_1520281"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-SKY-NPC18",
+      "zone": "Lemuria/LM_Z06_SkyCity",
+      "loc": "ZoneLocName_1520281"
+    }
+  ],
+  "personas": {
+    "LM-SKY-NPC17": {
+      "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_B_NPC.dds",
+      "template_id": 1524825
+    },
+    "LM-SKY-NPC18": {
+      "portrait": "GUI/NpcPortraits/Portrait_Platypus_CitizenF_C_NPC.dds",
+      "template_id": 1524826
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Simple_Fetch_Quest",
+    "timestamp": "20240322090503"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Ethyl's House",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Basement",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

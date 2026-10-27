@@ -1,0 +1,158 @@
+{
+  "id": "LM-Q-1736BB",
+  "lang": "1736BB",
+  "giver": {
+    "persona": "LM-TELOS-NPC11",
+    "zone": "Lemuria/LM_Z00_Hub"
+  },
+  "requires": [
+    "LM-Q-173228"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 112840,
+    "gold": 1100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_AttunementStone-1.AdjRef",
+        "LM_AttunementStone-2-Life.AdjRef",
+        "LM_AttunementStone-3-Death.AdjRef",
+        "LM_AttunementStone-4-Myth.AdjRef",
+        "LM_AttunementStone-Heap.AdjRef",
+        "LM_AttunementStone-Sky.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z00_Hub",
+      "descriptor": "WizItems_00002089",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-StandIn-StallionQuartermane-B",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-Standin-DuckSavage-B-01",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    }
+  ],
+  "personas": {
+    "LM-StandIn-StallionQuartermane-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Horse_Explorer_A_NPC.dds",
+      "template_id": 1521321
+    },
+    "LM-Standin-DuckSavage-B-01": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487498
+    },
+    "LM-TELOS-NPC11": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_LinNoHat_A_NPC.dds",
+      "template_id": 1521345
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Being_in_the_World",
+    "timestamp": "20231211101203"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Hall of Heroes (Standard)",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "for Route to Mandoria",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "LM-Q-173286",
+  "lang": "173286",
+  "requires": [
+    "LM-Q-173285"
+  ],
+  "mainline": false,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 16500
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Shark_Warrior_A_01.AdjRef",
+        "LM_Standin_Shark_TA_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003971",
+      "zone": "",
+      "loc": "ZoneLocName_1520268"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Shark_Warrior_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003972",
+      "zone": "",
+      "loc": "ZoneLocName_1520268"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Shark_Warrior_A_03.AdjRef",
+        "LM_Standin_Shark_Principal_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003973",
+      "zone": "",
+      "loc": "ZoneLocName_1520268"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Jaws_Well_that_Ends_Well",
+    "timestamp": "20240322085208"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Next Room",
+      "blocking": false
+    },
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to Next Room",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

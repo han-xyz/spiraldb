@@ -1,0 +1,75 @@
+{
+  "id": "LM-Q-173225",
+  "lang": "173225",
+  "giver": {
+    "persona": "LM-NIGHT-NPC07",
+    "zone": "Lemuria/LM_Z03_NightForest"
+  },
+  "requires": [
+    "LM-Q-173224"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 104780,
+    "gold": 1100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_CitizenF_B_NPC.dds",
+      "template_id": 1520138
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Apothecary_Now",
+    "timestamp": "20250902233209"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Defeat Wight Rhino and",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Collect 4 Wisp Specks",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

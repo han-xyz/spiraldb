@@ -1,0 +1,143 @@
+{
+  "id": "LM-Q-173224",
+  "lang": "173224",
+  "giver": {
+    "persona": "LM-NIGHT-NPC05-B",
+    "zone": "Lemuria/LM_Z03_NightForest"
+  },
+  "requires": [],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 88660,
+    "gold": 800
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_Watchman1.AdjRef",
+        "LM_Watchman2.AdjRef",
+        "LM_Watchman3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizItems_00002092",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_Watchman1.AdjRef",
+        "LM_Watchman2.AdjRef",
+        "LM_Watchman3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizItems_00002092",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_Watchman1.AdjRef",
+        "LM_Watchman2.AdjRef",
+        "LM_Watchman3.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizItems_00002092",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC07",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
+      "template_id": 1520186
+    },
+    "LM-NIGHT-NPC07": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_CitizenF_B_NPC.dds",
+      "template_id": 1520138
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Night_Forest's_Watch",
+    "timestamp": "20250906234911"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "requires (not generated)",
+      "value": "Straight to the Wildlands replaced by min_level",
+      "blocking": false
+    }
+  ],
+  "min_level": 132
+}

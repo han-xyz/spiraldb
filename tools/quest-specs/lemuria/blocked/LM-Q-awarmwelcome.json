@@ -1,0 +1,47 @@
+{
+  "id": "LM-Q-awarmwelcome",
+  "requires": [
+    "LM-Q-17441A"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 56420,
+    "gold": 625
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Drone_Eye_D_01.AdjRef",
+        "LM_Drone_Eye_D_02.AdjRef",
+        "LM_Drone_Eye_D_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003870",
+      "zone": "",
+      "loc": "ZoneLocName_1520281"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:A_Warm_Welcome?",
+    "timestamp": "20250904051630"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "A Warm Welcome?",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    }
+  ]
+}

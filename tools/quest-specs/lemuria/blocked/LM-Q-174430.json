@@ -1,0 +1,184 @@
+{
+  "id": "LM-Q-174430",
+  "lang": "174430",
+  "giver": {
+    "persona": "LM-HEAP-NPC04",
+    "zone": "Lemuria/Interiors/LM_Z07_Precinct"
+  },
+  "requires": [
+    "LM-Q-17442F"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 217620,
+    "gold": 2000
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_Swarm_Bees_A_01.AdjRef",
+        "LM_Swarm_Bees_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003937",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z07_Precinct",
+      "loc": "ZoneLocName_1524839",
+      "completion": [
+        {
+          "speaker": "giver",
+          "line": "00000014"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC04": {
+      "portrait": "GUI/NpcPortraits/Deer_Scientist_A_NPC.dds",
+      "template_id": 1524749
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:The_Buzzing_Brain",
+    "timestamp": "20240322090714"
+  },
+  "needs_review": [
+    {
+      "field": "goal.zone (waypoint left out)",
+      "value": "Go to the Crime Lab",
+      "blocking": false
+    },
+    {
+      "field": "goal.items",
+      "value": "the mind of Bumbles",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Bumbles Mind",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance First Memory",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance Second Memory",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance Third Memory",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Bumbles Mind",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

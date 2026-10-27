@@ -1,0 +1,164 @@
+{
+  "id": "LM-Q-17321D",
+  "lang": "17321D",
+  "giver": {
+    "persona": "LM-NIGHT-NPC02",
+    "zone": "Lemuria/LM_Z03_NightForest"
+  },
+  "requires": [
+    "LM-Q-17321C"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 120900,
+    "gold": 1250
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000019"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000020"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC01",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM_Standin_Malughast.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "descriptor": "WizardNPC_00000995",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-NIGHT-NPC05-B",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100",
+      "completion": [
+        {
+          "speaker": "LM-NIGHT-NPC05-B",
+          "line": "00000003"
+        }
+      ]
+    }
+  ],
+  "personas": {
+    "LM-NIGHT-NPC01": {
+      "portrait": "GUI/NpcPortraits/Lemur_Resistance_E_NPC.dds",
+      "template_id": 1520132
+    },
+    "LM-NIGHT-NPC02": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_CitizenF_A_NPC.dds",
+      "template_id": 1520133
+    },
+    "LM-NIGHT-NPC05-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Crane_Hero_A_NPC.dds",
+      "template_id": 1520186
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Gasp!_Malughast!",
+    "timestamp": "20240322084805"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "for The Malughast in his nest",
+      "blocking": true
+    },
+    {
+      "field": "goal.mobs",
+      "value": "The Malughast",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

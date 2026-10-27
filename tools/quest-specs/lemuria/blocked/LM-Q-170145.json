@@ -1,0 +1,161 @@
+{
+  "id": "LM-Q-170145",
+  "lang": "170145",
+  "giver": {
+    "persona": "LM-Mandoria-NPC01-03",
+    "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation"
+  },
+  "requires": [
+    "LM-Q-1736C2"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 161200,
+    "gold": 1550
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "usage",
+      "items": [
+        "LM_RubberTree.AdjRef"
+      ],
+      "count": 6,
+      "zone": "",
+      "descriptor": "WizQst170145_00000000",
+      "loc": "ZoneLocName_1507644"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Lemur_Wild_A_07.AdjRef",
+        "LM_Lemur_Wild_A_09.AdjRef",
+        "LM_StandIn_Koolakamba_Renegade_01.AdjRef"
+      ],
+      "count": 6,
+      "target": "WizardMobs_00003921",
+      "zone": "",
+      "descriptor": "WizQst170145_00000001",
+      "loc": "ZoneLocName_1507644"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "loc": "ZoneLocName_1507644"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-Autogyro-Fixed.AdjRef",
+        "LM-Autogyro.AdjRef"
+      ],
+      "count": 1,
+      "zone": "",
+      "descriptor": "WizItems_00002103",
+      "loc": "ZoneLocName_1507644"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-BAD-NPC03",
+      "zone": "Lemuria/LM_Z04_Badlands",
+      "loc": "ZoneLocName_1507644"
+    }
+  ],
+  "personas": {
+    "LM-BAD-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Deer_Hero_NPC.dds",
+      "template_id": 1487617
+    },
+    "LM-Mandoria-NPC01-03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Duck_HeroineF_B_NPC.dds",
+      "template_id": 1487469
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Emergency_Repairs",
+    "timestamp": "20240322090458"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "WizQst170145 matched by the words it shares with the goals; its lines name Mongofruit",
+      "blocking": false
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z05_I07_MonitoringStation",
+      "blocking": true
+    }
+  ]
+}

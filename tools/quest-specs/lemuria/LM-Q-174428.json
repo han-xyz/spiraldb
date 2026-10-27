@@ -1,0 +1,228 @@
+{
+  "id": "LM-Q-174428",
+  "lang": "174428",
+  "giver": {
+    "persona": "LM-HEAP-NPC03",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-174427"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 185380,
+    "gold": 1875
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000023"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000024"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000025"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000026"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000027"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000028"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000029"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000030"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000031"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000032"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000036"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000037"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000038"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000039"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000040"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC04",
+      "zone": "Lemuria/Interiors/LM_Z07_Precinct",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC04",
+      "zone": "Lemuria/Interiors/LM_Z07_Precinct",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "usage",
+      "items": [
+        "LM-HEAP-NPC03.AdjRef",
+        "LM-HEAP-NPC03b.AdjRef",
+        "LM-HEAP-NPC03c.AdjRef",
+        "LM-HEAP-NPC03d.AdjRef",
+        "LM-HEAP-NPC03e.AdjRef",
+        "LM-HEAP-NPC03f.AdjRef",
+        "LM-HEAP-NPC03g.AdjRef",
+        "LM-SKY-NPC23.AdjRef",
+        "LM-TELOS-NPC10-B.AdjRef",
+        "LM-TELOS-NPC10-C.AdjRef",
+        "LM-TELOS-NPC10-D.AdjRef",
+        "LM-TELOS-NPC10.AdjRef",
+        "LM_Standin_DogTracy.AdjRef",
+        "LM_Standin_DogTracy_02.AdjRef",
+        "LM_Standin_DogTracy_03.AdjRef",
+        "LM_Standin_DogTracy_04.AdjRef"
+      ],
+      "count": 1,
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizardNPC_00000943",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_AMBIENT_GrayReaper_01.AdjRef",
+        "LM_AMBIENT_GrayReaper_03.AdjRef",
+        "LM_Cow_BullGangster_C_01.AdjRef",
+        "LM_Cow_BullGangster_C_02.AdjRef",
+        "LM_Cow_BullGangster_C_03.AdjRef",
+        "LM_Cow_BullGangster_C_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003931",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizQst174428_00000041",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC06",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC03": {
+      "portrait": "GUI/NpcPortraits/Portrait_Dog_Hero_A_NPC.dds",
+      "template_id": 1524747
+    },
+    "LM-HEAP-NPC04": {
+      "portrait": "GUI/NpcPortraits/Deer_Scientist_A_NPC.dds",
+      "template_id": 1524749
+    },
+    "LM-HEAP-NPC06": {
+      "portrait": "GUI/NpcPortraits/Cow_BullGangster_C_NPC.dds",
+      "template_id": 1524752
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Crime_and_Punishment",
+    "timestamp": "20240322100440"
+  },
+  "needs_review": [
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

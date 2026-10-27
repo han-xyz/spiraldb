@@ -1,0 +1,94 @@
+{
+  "id": "LM-Q-17442D",
+  "lang": "17442D",
+  "giver": {
+    "persona": "LM-HEAP-NPC01",
+    "zone": "Lemuria/LM_Z07_Heap"
+  },
+  "requires": [
+    "LM-Q-17442B"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 88660,
+    "gold": 1075
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bountycollect",
+      "mobs": [
+        "LM_Cow_BullGangster_A_01.AdjRef",
+        "LM_Cow_BullGangster_A_02.AdjRef",
+        "LM_Cow_BullGangster_A_03.AdjRef",
+        "LM_Cow_BullGangster_A_04.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003933",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "descriptor": "WizQst17442D_00000006",
+      "loc": "ZoneLocName_1524839"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-HEAP-NPC08",
+      "zone": "Lemuria/LM_Z07_Heap",
+      "loc": "ZoneLocName_1524839"
+    }
+  ],
+  "personas": {
+    "LM-HEAP-NPC01": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_Nothing_NPC.dds",
+      "template_id": 1524741
+    },
+    "LM-HEAP-NPC08": {
+      "portrait": "GUI/NpcPortraits/Deer_Hero_A_NPC.dds",
+      "template_id": 1524754
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Nose_for_Clues",
+    "timestamp": "20231211101513"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Pet Mode to Find Bumbles",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

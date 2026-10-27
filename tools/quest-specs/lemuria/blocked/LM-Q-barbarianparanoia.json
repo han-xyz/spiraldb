@@ -1,0 +1,46 @@
+{
+  "id": "LM-Q-barbarianparanoia",
+  "requires": [
+    "LM-Q-17011E"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 0,
+    "gold": 0
+  },
+  "dialogs": {
+    "prep": [],
+    "underway": []
+  },
+  "goals": [],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Barbarian_Paranoia",
+    "timestamp": "20250916130452"
+  },
+  "needs_review": [
+    {
+      "field": "lang",
+      "value": "Barbarian Paranoia",
+      "blocking": true
+    },
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Mandar the Barbarian",
+      "blocking": true
+    },
+    {
+      "field": "goals",
+      "value": [
+        "@Convince [Creature:Mandar the Barbarian]"
+      ],
+      "blocking": true
+    }
+  ]
+}

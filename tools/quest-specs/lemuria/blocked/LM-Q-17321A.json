@@ -1,0 +1,118 @@
+{
+  "id": "LM-Q-17321A",
+  "lang": "17321A",
+  "giver": {
+    "persona": "LM-Standin-Bantam",
+    "zone": "Lemuria/Interiors/LM_Z00_I08_HallofHeroesInner"
+  },
+  "requires": [
+    "LM-Q-173219"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 40300,
+    "gold": 425
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000018"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000021"
+      }
+    ],
+    "underway": [
+      {
+        "speaker": "giver",
+        "line": "00000022"
+      }
+    ]
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "giver",
+      "zone": "Lemuria/Interiors/LM_Z00_I08_HallofHeroesInner",
+      "loc": "ZoneLocName_1520099"
+    }
+  ],
+  "personas": {
+    "LM-Standin-Bantam": {
+      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Hero_A_NPC.dds",
+      "template_id": 1521362
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Bald-Faced_Truth",
+    "timestamp": "20250903225613"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "the Villagers",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    },
+    {
+      "field": "zone (no ZoneTransfer)",
+      "value": "Lemuria/Interiors/LM_Z00_I08_HallofHeroesInner",
+      "blocking": true
+    }
+  ]
+}

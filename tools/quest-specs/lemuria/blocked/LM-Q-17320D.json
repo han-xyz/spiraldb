@@ -1,0 +1,110 @@
+{
+  "id": "LM-Q-17320D",
+  "lang": "17320D",
+  "requires": [
+    "LM-Q-17320B"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 56420,
+    "gold": 450
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000047"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000048"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000049"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000051"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000052"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000053"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000055"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000057"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000058"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000059"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-TELOS-NPC03-B",
+      "zone": "Lemuria/Interiors/LM_Z00_I01_HierarchsSanctum",
+      "loc": "ZoneLocName_1520110"
+    }
+  ],
+  "personas": {
+    "LM-TELOS-NPC03-B": {
+      "portrait": "GUI/NpcPortraits/Lemur_Hierarchs_C_NPC.dds",
+      "template_id": 1521388
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:As_Daseined",
+    "timestamp": "20250905055918"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Z to Photomance Map",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "to Quartermane & the Supreme Hierarch in Telos",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

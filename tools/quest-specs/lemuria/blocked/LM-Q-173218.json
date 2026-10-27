@@ -1,0 +1,140 @@
+{
+  "id": "LM-Q-173218",
+  "lang": "173218",
+  "requires": [
+    "LM-Q-173217"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 84630,
+    "gold": 1875
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000002"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000017"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_SeaMonster_Lava_A_01.AdjRef",
+        "LM_SeaMonster_Lava_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003894",
+      "zone": "",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_SeaMonster_Lava_A_01.AdjRef",
+        "LM_SeaMonster_Lava_A_02.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00003894",
+      "zone": "",
+      "loc": "ZoneLocName_1520099"
+    },
+    {
+      "type": "bounty",
+      "mobs": [
+        "LM_EyeBot_B_01.AdjRef"
+      ],
+      "count": 1,
+      "target": "WizardMobs_00004020",
+      "zone": "",
+      "loc": "ZoneLocName_1520099"
+    }
+  ],
+  "personas": {},
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:Killawhat_Now?",
+    "timestamp": "20250909205306"
+  },
+  "needs_review": [
+    {
+      "field": "giver",
+      "value": "starts automatically",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "for Tosh",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Your Way Down",
+      "blocking": true
+    },
+    {
+      "field": "goal.items",
+      "value": "Searching For Tosh",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}

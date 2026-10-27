@@ -1,0 +1,135 @@
+{
+  "id": "LM-Q-1736B7",
+  "lang": "1736B7",
+  "giver": {
+    "persona": "LM-Standin-Bantam",
+    "zone": "Lemuria/LM_Z00_Hub"
+  },
+  "requires": [
+    "LM-Q-17321A"
+  ],
+  "mainline": true,
+  "level": 132,
+  "reward": {
+    "xp": 112840,
+    "gold": 1100
+  },
+  "dialogs": {
+    "prep": [
+      {
+        "speaker": "giver",
+        "line": "00000000"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000001"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000003"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000004"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000005"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000006"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000007"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000008"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000009"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000010"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000011"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000012"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000013"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000014"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000015"
+      },
+      {
+        "speaker": "giver",
+        "line": "00000016"
+      }
+    ],
+    "underway": []
+  },
+  "goals": [
+    {
+      "type": "persona",
+      "persona": "LM-StandIn-StallionQuartermane-B",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    },
+    {
+      "type": "waypoint",
+      "zone": "Lemuria/LM_Z03_NightForest",
+      "loc": "ZoneLocName_1520100"
+    },
+    {
+      "type": "persona",
+      "persona": "LM-TELOS-NPC11",
+      "zone": "Lemuria/LM_Z00_Hub",
+      "loc": "ZoneLocName_1520271"
+    }
+  ],
+  "personas": {
+    "LM-StandIn-StallionQuartermane-B": {
+      "portrait": "GUI/NpcPortraits/Portrait_Horse_Explorer_A_NPC.dds",
+      "template_id": 1521321
+    },
+    "LM-Standin-Bantam": {
+      "portrait": "GUI/NpcPortraits/Portrait_Chicken_Hero_A_NPC.dds",
+      "template_id": 1521362
+    },
+    "LM-TELOS-NPC11": {
+      "portrait": "GUI/NpcPortraits/Khrulhu_LinNoHat_A_NPC.dds",
+      "template_id": 1521345
+    }
+  },
+  "source": {
+    "page": "https://wiki.wizard101central.com/wiki/Quest:From_One_Darkness_to_the_Next",
+    "timestamp": "20250905004623"
+  },
+  "needs_review": [
+    {
+      "field": "goal.items",
+      "value": "Stone",
+      "blocking": true
+    },
+    {
+      "field": "dialogs",
+      "value": "speaker and role guessed from the line text",
+      "blocking": false
+    }
+  ]
+}
