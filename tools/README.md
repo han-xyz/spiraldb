@@ -45,8 +45,9 @@ then check. `quests` takes spec files or `--world <World>` (every spec of `tools
 quest names and ObjectData folder (`ZF`), its wiki category (`Category:Zafaria_Quests`) and the quest level a spec
 gets when the wiki gives none. The world's `WizQst` lang cluster is derived: the run of quest lang files (keys at
 most `CLUSTER_GAP` apart) holding the most `QuestTitle.lang` entries that read as one of the world's internal quest
-names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`. Zafaria and Polaris have no such
-title, so their row declares `lang_range`. A world outside the table is refused with the list of the known ones.
+names (`CL-CAMP-C01-001`), widened to the other such runs within `CLUSTER_REACH`. A row's declared `lang_range`
+wins: Zafaria and Polaris have no such title, and Khrysalis's quests lie in runs from 0x126322 to 0x13D76F that its
+few titles do not anchor. A world outside the table is refused with the list of the known ones.
 
 ## check
 

@@ -25,6 +25,12 @@ class WorldsTest(unittest.TestCase):
     def test_celestia_cluster_is_the_one_its_quests_were_matched_in(self):
         self.assertEqual(lang_cluster(world("Celestia"), ROOTWAD_DIR), (0x371A8, 0x3780E))
 
+    @needs_rootwad
+    def test_a_declared_range_wins_over_the_anchored_runs(self):
+        self.assertEqual(lang_cluster(world("Khrysalis"), ROOTWAD_DIR), (0x126322, 0x13D76F))
+        self.assertEqual(lang_cluster(world("Zafaria"), ROOTWAD_DIR), (0x718AF, 0x71A69))
+        self.assertEqual(lang_cluster(world("Polaris"), ROOTWAD_DIR), (0x14DBD8, 0x14DC0D))
+
 
 if __name__ == "__main__":
     unittest.main()

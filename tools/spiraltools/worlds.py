@@ -29,8 +29,8 @@ class World(NamedTuple):
 
 
 # name: the zone wad prefix (Celestia-*.wad); prefix: the quest names (CL-CAMP-C01-001) and the ObjectData folder.
-# level: the quest level a spec gets when the wiki gives none. lang_range: declared only where QuestTitle.lang has no
-# internal quest name of the world to anchor its cluster.
+# level: the quest level a spec gets when the wiki gives none. lang_range: declared where QuestTitle.lang has no
+# internal quest name of the world to anchor its cluster, or where the anchored runs miss most of its quests.
 WORLDS = (
     World("WizardCity", "WC", "Wizard_City", 5),
     World("Krokotopia", "KT", "Krokotopia", 15),
@@ -42,7 +42,7 @@ WORLDS = (
     World("Zafaria", "ZF", "Zafaria", 60, (0x718AF, 0x71A69)),
     World("Avalon", "AV", "Avalon", 68),
     World("Azteca", "AZ", "Azteca", 78),
-    World("Khrysalis", "KR", "Khrysalis", 88),
+    World("Khrysalis", "KR", "Khrysalis", 88, (0x126322, 0x13D76F)),
     World("Polaris", "PL", "Polaris", 100, (0x14DBD8, 0x14DC0D)),
     World("Mirage", "MR", "Mirage", 105),
     World("Empyrea", "EM", "Empyrea", 112),
@@ -80,7 +80,9 @@ def key_groups(keys):
 def lang_cluster(registered, rootwad):
     """(first, last) WizQst key of the world's quests: the run of quest lang files that holds the most QuestTitle
     entries carrying one of the world's internal quest names (CL-CAMP-C01-001), widened to the other anchored runs
-    within CLUSTER_REACH; the declared lang_range when no title anchors the world."""
+    within CLUSTER_REACH; the declared lang_range when the row has one."""
+    if registered.lang_range is not None:
+        return registered.lang_range
     titles = read_lang(rootwad, "QuestTitle")
     anchors = [int(key, 16) for key, text in titles.items()
                if HEX_KEY.fullmatch(key) and INTERNAL_NAME.fullmatch(text.strip())
@@ -88,9 +90,7 @@ def lang_cluster(registered, rootwad):
     groups = [(g, sum(g[0] <= a <= g[1] for a in anchors)) for g in key_groups(quest_lang_keys(rootwad))]
     anchored = [(g, n) for g, n in groups if n]
     if not anchored:
-        if registered.lang_range is None:
-            raise UnknownWorld(f"{registered.name}: no QuestTitle entry anchors its quest langs; declare lang_range")
-        return registered.lang_range
+        raise UnknownWorld(f"{registered.name}: no QuestTitle entry anchors its quest langs; declare lang_range")
     main = max(anchored, key=lambda item: item[1])[0]
     near = [g for g, _ in anchored if g[0] - main[1] <= CLUSTER_REACH and main[0] - g[1] <= CLUSTER_REACH]
     return min(g[0] for g in near), max(g[1] for g in near)
