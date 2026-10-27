@@ -368,6 +368,10 @@ without a snapshot is fetched only live.
   the registered worlds' folders by distance in the registry (Karamelle's Vexxor is Novus's, not Darkmoor's),
   then the rest. Each of these is listed in `needs_review` with the folder used. A title the wiki tagged with its
   world (`Monkey Business (Novus)`) is matched without the tag when nothing reads it whole.
+- the title to The Repository's `lang_hex` instead, when the world has a Repository index, that key's `WizQst` file
+  exists, and it holds no fewer of the page's dialogue lines than the title's key does (a few pages give a
+  neighbouring quest's id); listed under `lang`, not blocking. A page whose title key a Repository key took is matched
+  as a placeholder.
 - the giver of a quest that starts automatically to the hand-in NPC of its first prerequisite that names one, with
   `auto_start: true` on the spec (the generator ignores it); without one it stays blocked on `giver (auto-start, no
   predecessor hand-in)`.
@@ -402,7 +406,8 @@ line that names the giver is the Prep line, else the file's first line, listed a
 Each spec carries `source` (page, `live` or `archive`, and the timestamp) and `needs_review`: what did not resolve,
 `blocking` or not. A spec with a blocking gap goes to `quest-specs/<world>/blocked/`, where the questgen glob does not
 reach; a waypoint whose place has no zone path is left out and listed. A spec for a lang that a hand-authored spec
-already covers is written to `<cache>/reference-<world>/` instead, and the differences are printed. A rerun replaces the specs it wrote before.
+already covers is written to `<cache>/reference-<world>/` instead, and the differences are printed. A rerun replaces the
+specs it wrote from the pages it reads; a spec whose page the cache does not hold stays.
 
 ## repository and tracker
 

@@ -52,6 +52,7 @@ MIN_SHARED_WEIGHT, CLEAR_MARGIN = 4.0, 1.5
 CHAIN_WINDOW = 16
 NAME_CUTOFF = 0.8
 TITLE_CUTOFF = 0.95
+DIALOGUE_CUTOFF = 0.85
 # Goals without a count: a line repeated on consecutive lines is that many goals.
 UNCOUNTED_GOALS = ("persona", "waypoint")
 ZONE_PREFIX = re.compile(r"^[A-Z]{2}_(?:Z\d+[A-Za-z]?_)?(?:I\d+_)?(?:the_)?", re.I)
@@ -1380,6 +1381,41 @@ def hand_authored(world_dir):
     return found
 
 
+def remove_parsed_specs(paths, source_pages):
+    """Remove the tool's specs whose source page this parse reads again; a spec of a page it does not read stays."""
+    for path in paths:
+        with open(path, encoding="utf-8") as f:
+            if json.load(f).get("source", {}).get("page") in source_pages:
+                os.remove(path)
+
+
+def repository_quests(cache, world):
+    """title_norm of the name -> quest entry of The Repository's index for the world; empty without an index."""
+    path = os.path.join(cache, "repository", f"index-repository-{world.lower()}.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return {title_norm(quest["name"]): quest for quest in json.load(f)["quests"]}
+
+
+def dialogue_hits(data, key, quest):
+    """How many of a Repository page's dialogue lines the quest's lang file holds, read loosely."""
+    lines = [norm(text) for text in data.quest_lines(key).values()]
+    return sum(1 for line in quest["dialogue"]
+               if difflib.get_close_matches(norm(line["text"]), lines, n=1, cutoff=DIALOGUE_CUTOFF))
+
+
+def preferred_lang(data, title_key, quest):
+    """The Repository's lang key, the game's own id, over the one the title reads, when its WizQst file exists and
+    holds no fewer of the page's dialogue lines: some pages give a neighbouring quest's id."""
+    key = quest and quest["lang_hex"]
+    if not key or key == title_key or not data.has_quest_lang(key):
+        return title_key
+    if title_key and dialogue_hits(data, title_key, quest) > dialogue_hits(data, key, quest):
+        return title_key
+    return key
+
+
 def predecessor_hand_in(pages, by_title, fields):
     """The hand-in NPC of the first prerequisite page that names one: who gives a quest that starts automatically."""
     hand_ins = (pages.get(by_title.get(title_norm(title)), {}).get("hand_in") for title in fields["prequests"])
@@ -1425,16 +1461,22 @@ def parse_world(cache, registered):
     os.makedirs(blocked_dir, exist_ok=True)
     os.makedirs(reference_dir, exist_ok=True)
     authored = hand_authored(world_dir)
-    for path in glob.glob(os.path.join(world_dir, "*.json")) + glob.glob(os.path.join(blocked_dir, "*.json")):
-        with open(path, encoding="utf-8") as f:
-            if "source" in json.load(f):
-                os.remove(path)
+    remove_parsed_specs(glob.glob(os.path.join(world_dir, "*.json")) + glob.glob(os.path.join(blocked_dir, "*.json")),
+                        {WIKI + page for page in pages})
     placeholders = data.placeholder_langs()
-    langs, ids = {}, {}
+    repository = repository_quests(cache, world)
+    langs, ids, evidence = {}, {}, {}
     for entry in index:
-        langs[entry["page"]] = data.title_lang(entry["name"])
+        title_key = data.title_lang(entry["name"])
+        key = preferred_lang(data, title_key, repository.get(title_norm(entry["name"])))
+        langs[entry["page"]] = key
+        if key != title_key:
+            evidence[entry["page"]] = f"WizQst{key} is The Repository's id; the title reads {title_key or 'no key'}"
+    taken = {langs[page] for page in evidence}
+    for page, key in langs.items():
+        if page not in evidence and key in taken:
+            langs[page] = None
     by_title = {title_norm(entry["name"]): entry["page"] for entry in index}
-    evidence = {}
 
     def chain_pass(rules):
         while True:

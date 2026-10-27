@@ -1,10 +1,12 @@
+import json
 import os
+import tempfile
 import unittest
 
 from client import needs_gamedata, needs_rootwad
 from spiraltools import templates
-from spiraltools.quests.archive import (ClientData, SpecBuilder, item_entries, item_index, norm, read_page,
-                                       singular_forms)
+from spiraltools.quests.archive import (ClientData, SpecBuilder, item_entries, item_index, norm, preferred_lang,
+                                       read_page, remove_parsed_specs, singular_forms)
 from spiraltools.wad import GAMEDATA_DIR
 from spiraltools.worlds import world
 
@@ -238,6 +240,50 @@ class GoalLineTest(unittest.TestCase):
         spec = build("Like_Dockwork", Data(personas=["Dalton Prescott"], items=["Statue of Artorius"]), fields=fields)
         self.assertEqual([summary(goal)[:2] for goal in spec["goals"]][0], ("usage", ["W-statueofartorius.AdjRef"]))
         self.assertNotIn("goal.persona", [field for field, _ in blocking(spec)])
+
+class Langs:
+    """Quest lang files by key."""
+
+    def __init__(self, files):
+        self.files = files
+
+    def has_quest_lang(self, key):
+        return key in self.files
+
+    def quest_lines(self, key):
+        return dict(enumerate(self.files.get(key, [])))
+
+
+def repository_quest(lang_hex, *lines):
+    return {"name": "Q", "lang_hex": lang_hex, "dialogue": [{"speaker": "A", "text": line} for line in lines]}
+
+
+class RepositoryLangTest(unittest.TestCase):
+    def test_the_repository_key_wins_when_its_file_holds_the_dialogue(self):
+        data = Langs({"A1": ["Something else entirely."], "B2": ["Hello there, young Wizard!", "Off you go."]})
+        quest = repository_quest("B2", "Hello there, young wizard!", "Off you go.")
+        self.assertEqual(preferred_lang(data, "A1", quest), "B2")
+
+    def test_the_title_key_stays_when_the_repository_file_lacks_the_dialogue(self):
+        data = Langs({"A1": ["Hello there, young Wizard!"], "B2": ["A neighbouring quest's line."]})
+        self.assertEqual(preferred_lang(data, "A1", repository_quest("B2", "Hello there, young Wizard!")), "A1")
+
+    def test_a_repository_key_without_a_lang_file_is_not_taken(self):
+        self.assertEqual(preferred_lang(Langs({}), None, repository_quest("B2", "Hello")), None)
+        self.assertEqual(preferred_lang(Langs({"B2": ["Hello"]}), None, repository_quest("B2", "Hello")), "B2")
+
+
+class RemoveParsedSpecsTest(unittest.TestCase):
+    def test_only_the_specs_of_pages_this_parse_reads_are_removed(self):
+        with tempfile.TemporaryDirectory() as folder:
+            specs = {"parsed": {"source": {"page": "https://wiki/Quest:A"}},
+                     "unread": {"source": {"page": "https://wiki/Quest:B"}},
+                     "authored": {"id": "hand"}}
+            for name, spec in specs.items():
+                with open(os.path.join(folder, f"{name}.json"), "w", encoding="utf-8") as f:
+                    json.dump(spec, f)
+            remove_parsed_specs([os.path.join(folder, f"{name}.json") for name in specs], {"https://wiki/Quest:A"})
+            self.assertEqual(sorted(os.listdir(folder)), ["authored.json", "unread.json"])
 
 
 @needs_rootwad
