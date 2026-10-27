@@ -85,8 +85,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Sun Relic on the Grand Astrolabe in the Celestia Base Camp",
+      "field": "goal.unknown-verb",
+      "value": "Install the Sun Relic on the Grand Astrolabe in the Celestia Base Camp",
       "blocking": true
     },
     {

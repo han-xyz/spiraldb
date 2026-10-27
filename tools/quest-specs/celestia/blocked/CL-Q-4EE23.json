@@ -128,17 +128,17 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
+      "field": "goal.waypoint",
       "value": "Test of Vision",
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.waypoint",
       "value": "Test of Constellation",
       "blocking": true
     },
     {
-      "field": "goal.items",
+      "field": "goal.waypoint",
       "value": "Test of the Shining Stars",
       "blocking": true
     },

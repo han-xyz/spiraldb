@@ -160,6 +160,12 @@
       "with_previous": true
     },
     {
+      "type": "waypoint",
+      "zone": "Celestia/CL_Z07_Storm_Lord_Temple",
+      "loc": "ZoneLocName_1180190",
+      "with_previous": true
+    },
+    {
       "type": "persona",
       "persona": "giver",
       "zone": "Celestia/CL_Hub",
@@ -196,11 +202,6 @@
     {
       "field": "goal.zone (waypoint left out)",
       "value": "Sorcerer's Sanctum",
-      "blocking": false
-    },
-    {
-      "field": "goal.zone (waypoint left out)",
-      "value": "Storm Lord's Temple",
       "blocking": false
     },
     {

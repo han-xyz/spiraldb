@@ -77,8 +77,8 @@
       "blocking": false
     },
     {
-      "field": "goal.items",
-      "value": "Rubbing near The Grotto",
+      "field": "goal.persona",
+      "value": "Take a Rubbing near The Grotto",
       "blocking": true
     },
     {

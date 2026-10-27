@@ -68,8 +68,8 @@
   },
   "needs_review": [
     {
-      "field": "goal.items",
-      "value": "Rubble Pit",
+      "field": "goal.waypoint",
+      "value": "Locate Rubble Pit",
       "blocking": true
     },
     {
