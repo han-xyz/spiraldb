@@ -1381,14 +1381,6 @@ def hand_authored(world_dir):
     return found
 
 
-def remove_parsed_specs(paths, source_pages):
-    """Remove the tool's specs whose source page this parse reads again; a spec of a page it does not read stays."""
-    for path in paths:
-        with open(path, encoding="utf-8") as f:
-            if json.load(f).get("source", {}).get("page") in source_pages:
-                os.remove(path)
-
-
 def repository_quests(cache, world):
     """title_norm of the name -> quest entry of The Repository's index for the world; empty without an index."""
     path = os.path.join(cache, "repository", f"index-repository-{world.lower()}.json")
@@ -1461,8 +1453,10 @@ def parse_world(cache, registered):
     os.makedirs(blocked_dir, exist_ok=True)
     os.makedirs(reference_dir, exist_ok=True)
     authored = hand_authored(world_dir)
-    remove_parsed_specs(glob.glob(os.path.join(world_dir, "*.json")) + glob.glob(os.path.join(blocked_dir, "*.json")),
-                        {WIKI + page for page in pages})
+    for path in glob.glob(os.path.join(world_dir, "*.json")) + glob.glob(os.path.join(blocked_dir, "*.json")):
+        with open(path, encoding="utf-8") as f:
+            if "source" in json.load(f):
+                os.remove(path)
     placeholders = data.placeholder_langs()
     repository = repository_quests(cache, world)
     langs, ids, evidence = {}, {}, {}

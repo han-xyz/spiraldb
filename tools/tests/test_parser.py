@@ -1,12 +1,10 @@
-import json
 import os
-import tempfile
 import unittest
 
 from client import needs_gamedata, needs_rootwad
 from spiraltools import templates
 from spiraltools.quests.archive import (ClientData, SpecBuilder, item_entries, item_index, norm, preferred_lang,
-                                       read_page, remove_parsed_specs, singular_forms)
+                                       read_page, singular_forms)
 from spiraltools.wad import GAMEDATA_DIR
 from spiraltools.worlds import world
 
@@ -271,19 +269,6 @@ class RepositoryLangTest(unittest.TestCase):
     def test_a_repository_key_without_a_lang_file_is_not_taken(self):
         self.assertEqual(preferred_lang(Langs({}), None, repository_quest("B2", "Hello")), None)
         self.assertEqual(preferred_lang(Langs({"B2": ["Hello"]}), None, repository_quest("B2", "Hello")), "B2")
-
-
-class RemoveParsedSpecsTest(unittest.TestCase):
-    def test_only_the_specs_of_pages_this_parse_reads_are_removed(self):
-        with tempfile.TemporaryDirectory() as folder:
-            specs = {"parsed": {"source": {"page": "https://wiki/Quest:A"}},
-                     "unread": {"source": {"page": "https://wiki/Quest:B"}},
-                     "authored": {"id": "hand"}}
-            for name, spec in specs.items():
-                with open(os.path.join(folder, f"{name}.json"), "w", encoding="utf-8") as f:
-                    json.dump(spec, f)
-            remove_parsed_specs([os.path.join(folder, f"{name}.json") for name in specs], {"https://wiki/Quest:A"})
-            self.assertEqual(sorted(os.listdir(folder)), ["authored.json", "unread.json"])
 
 
 @needs_rootwad

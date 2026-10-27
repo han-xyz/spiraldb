@@ -407,7 +407,7 @@ Each spec carries `source` (page, `live` or `archive`, and the timestamp) and `n
 `blocking` or not. A spec with a blocking gap goes to `quest-specs/<world>/blocked/`, where the questgen glob does not
 reach; a waypoint whose place has no zone path is left out and listed. A spec for a lang that a hand-authored spec
 already covers is written to `<cache>/reference-<world>/` instead, and the differences are printed. A rerun replaces the
-specs it wrote from the pages it reads; a spec whose page the cache does not hold stays.
+specs it wrote before.
 
 ## repository and tracker
 
