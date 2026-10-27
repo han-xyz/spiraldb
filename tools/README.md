@@ -12,7 +12,7 @@ python3 -I tools/spiraltools.py <command> --help
 | --- | --- |
 | `zones` | ZoneTransfer entries from the zone wads ([zones](#zones)) |
 | `crownshop` | the crown shop's Gear tab ([crownshop](#crownshop)) |
-| `mobs`, `npcs` | the mob adjectives and NPC personas a quest spec names ([mobs and npcs](#mobs-and-npcs)) |
+| `mobs`, `items`, `npcs` | the mob and item adjectives and NPC personas a quest spec names ([mobs and npcs](#mobs-and-npcs)) |
 | `quests check\|generate\|diff` | quest templates and drop tables from specs ([quests](#quests)) |
 | `archive enumerate\|fetch\|parse` | specs for a world from the wiki archive ([archive](#archive)) |
 | `check` | everything missing across the pack ([check](#check)) |
@@ -322,8 +322,8 @@ newest capture, and the CDX timestamp when the newest capture is an error page.
 
   Chain order and chain window keep a key only when its lines name the page's giver, hand-in NPC, or a goal NPC,
   creature or item.
-- NPC names to personas as `npcs` lists them, mobs to their `.AdjRef` adjectives as `mobs` lists them, objects to the adjectives of the world's object templates by display name or template
-  name, and item names to a line of the quest's own `WizQst` file. A named NPC template that no zone wad places takes
+- NPC names to personas as `npcs` lists them, mobs to their `.AdjRef` adjectives as `mobs` lists them, objects to the adjectives of the world's items (`items`) by display name, quest icon name or
+  template name, read without the place, article, measure word ("Pieces of") or trailing number of the goal line, and item names to a line of the quest's own `WizQst` file. A named NPC template that no zone wad places takes
   the zones of an unnamed template with the same persona (Queen Calypso is placed as `CL-CalypsoReset`). A name the
   world's folder lacks is taken from the one world name close to it (`NAME_CUTOFF`; the wiki's Koltan Grimfane is
   Koltan Gloomfane), else from the other ObjectData folders, placed by every zone wad; a mob the world's folder lacks
@@ -354,13 +354,16 @@ the zone wads:
 
 ```sh
 python3 -I tools/spiraltools.py mobs   # CL: display name, template, template id, adjectives
+python3 -I tools/spiraltools.py items Celestia   # display name, quest icon name, template, template id, adjectives
 python3 -I tools/spiraltools.py npcs   # CL / Celestia: persona, name, template id, portrait, zones
 python3 -I tools/spiraltools.py npcs --folder WC --world WizardCity
 ```
 
 A bounty goal counts a defeated mob once for each of its adjectives in `mobs`, so name one adjective per mob: its
 own `<template>.AdjRef`. A shared adjective (`Crustacean_Pincer`, `MONST_Fish`) catches every template that has it.
-A persona goal's `persona` is the persona without `_Persona`; the zones column is where to send the player.
+A usage goal's `items` are adjectives of `items`: the world's object templates with an adjective that the player
+interacts with or whose display name is not a mob's (`CL-TeslaTower.AdjRef`, a Galvanic Tower), the pattern of the
+pack's `m_itemAdjectives`. A persona goal's `persona` is the persona without `_Persona`; the zones column is where to send the player.
 
 ## Authoring a world by hand
 

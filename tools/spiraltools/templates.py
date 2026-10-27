@@ -9,6 +9,7 @@ import zlib
 
 from .lang import ROOTWAD_DIR, lang_exists, read_lang
 from .wad import GAMEDATA_DIR, read_wad, zone_of_wad
+from .worlds import world
 
 ZLIB_HEADER = b"\x78\x9c"
 MANIFEST_ENTRY = re.compile(rb"(?s)\xbc\x90\xce\xb9(.)(ObjectData/[ -~]+?\.xml)\x60\x00\x00\x00\x3a\x8f\x35\x89(.{4})")
@@ -17,7 +18,11 @@ DISPLAY_NAME = b"\x92\xbc\xd8\x91"
 MOB_LANG = "WizardMobs"
 PERSONA_SUFFIX = b"_Persona"
 PORTRAIT = re.compile(rb"GUI/NpcPortraits/[ -~]+?\.dds")
+QUEST_ICON = re.compile(rb"GUI/QuestButtons/Quest_([ -~]+?)(?:_off)?\.dds")
+INTERACTABLE = b"InteractableBehavior"
 MOBS_DESCRIPTION = "List the mobs of a world's object templates: display name, template, template id and adjectives."
+ITEMS_DESCRIPTION = ("List the items of a world's object templates, the objects a usage goal names: display name, quest "
+                     "icon name, template, template id and adjectives.")
 NPCS_DESCRIPTION = ("List the quest NPCs of a world: persona, display name, template id, portrait and the zones that "
                     "place them.")
 
@@ -87,6 +92,39 @@ def mobs(rootwad, folder):
         template = filename[:-4]
         yield (names.get(key, display), template, ids.get(f"ObjectData/{folder}/{filename}", 0),
                string_list_field(data, ADJECTIVE_LIST))
+
+
+def icon_name(data, folder):
+    """The words of the object's quest button icon, without the folder prefix and numbering: `kraken statue`."""
+    icon = QUEST_ICON.search(data)
+    if not icon:
+        return ""
+    words = re.sub(rf"^{folder}_", "", icon.group(1).decode(), flags=re.I).replace("_", " ")
+    return re.sub(r"[\s\d]+$", "", words).lower()
+
+
+def items(rootwad, folder):
+    """The object templates of an ObjectData folder that a usage goal can name: those with an adjective that the
+    player can interact with or whose display name is not a mob's."""
+    ids = template_ids(rootwad)
+    langs = {}
+    directory = os.path.join(rootwad, "ObjectData", folder)
+    for filename in sorted(os.listdir(directory)):
+        if not filename.endswith(".xml"):
+            continue
+        data = read_binary_xml(os.path.join(directory, filename))
+        adjectives = string_list_field(data, ADJECTIVE_LIST)
+        key = string_field(data, DISPLAY_NAME) or ""
+        if not adjectives or (key.startswith(MOB_LANG + "_") and INTERACTABLE not in data):
+            continue
+        yield {
+            "template": filename[:-4],
+            "name": display_name(rootwad, key, langs) if key else "",
+            "name_key": key,
+            "icon": icon_name(data, folder),
+            "template_id": ids.get(f"ObjectData/{folder}/{filename}", 0),
+            "adjectives": adjectives,
+        }
 
 
 def persona_of(data):
@@ -168,6 +206,14 @@ def run_mobs(args):
     print("display name\ttemplate\ttemplate id\tadjectives")
     for name, template, template_id, adjectives in rows:
         print(f"{name}\t{template}\t{template_id}\t{','.join(adjectives)}")
+
+
+def run_items(args):
+    folder = world(args.world).folder
+    print("display name\ticon name\ttemplate\ttemplate id\tadjectives")
+    for row in sorted(items(args.rootwad, folder), key=lambda row: (row["name"], row["template"])):
+        print("\t".join([row["name"], row["icon"], row["template"], str(row["template_id"]),
+                         ",".join(row["adjectives"])]))
 
 
 def add_npcs_arguments(parser):

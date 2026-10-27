@@ -16,7 +16,6 @@ import urllib.parse
 import urllib.request
 
 from .. import templates
-from ..templates import ADJECTIVE_LIST, DISPLAY_NAME, read_binary_xml, string_field, string_list_field
 from ..lang import LANG_SUBDIR, ROOTWAD_DIR, read_lang
 from ..pack import PACK, QUEST_SPECS_DIR, quest_template_paths, zone_transfer_files
 from ..wad import GAMEDATA_DIR
@@ -355,29 +354,7 @@ class ClientData:
                                     if folder != self.folder
                                     and os.path.isdir(os.path.join(ROOTWAD_DIR, "ObjectData", folder)))
         self.other_mobs, self.other_personas = None, None
-        self.objects = {}
-        langs = {}
-        directory = os.path.join(ROOTWAD_DIR, "ObjectData", self.folder)
-        for filename in sorted(os.listdir(directory)):
-            if not filename.endswith(".xml"):
-                continue
-            data = read_binary_xml(os.path.join(directory, filename))
-            adjectives = string_list_field(data, ADJECTIVE_LIST)
-            template = filename[:-4]
-            adjective = f"{template}.AdjRef" if f"{template}.AdjRef" in adjectives else (adjectives or [None])[0]
-            if not adjective or norm(template) in self.mobs:
-                continue
-            key = string_field(data, DISPLAY_NAME) or ""
-            lang_name, _, entry = key.rpartition("_")
-            if lang_name and lang_name != "WizardMobs":
-                if lang_name not in langs:
-                    langs[lang_name] = self.read_lang(lang_name) if os.path.exists(
-                        os.path.join(self.lang_dir, lang_name + ".lang")) else {}
-                name = langs[lang_name].get(entry)
-                if name:
-                    self.objects.setdefault(norm(name), []).append({"adjective": adjective, "descriptor": key})
-            stem = re.sub(r"0*(\d+)$", r"\1", norm(re.sub(rf"^{self.folder}[-_]", "", template, flags=re.I)))
-            self.objects.setdefault(stem, []).append({"adjective": adjective, "descriptor": ""})
+        self.objects = item_index(templates.items(ROOTWAD_DIR, self.folder), self.folder)
         self.zone_locations = {}
         # Of the keys that read the same, the unpadded one with the lowest number is the zone's own.
         for key, text in sorted(self.read_lang("ZoneLocName").items(),
@@ -469,17 +446,51 @@ class ClientData:
         return next((self.other_mobs[form] for form in singular_forms(name) if form in self.other_mobs), [])
 
     def object_entries(self, name):
-        name = re.sub(r"\s*\(.*?\)|\s+(in|at|on|with|for|from)\s+.*$|#", "", name)
-        name = re.sub(r"^(pieces|piles|bottles|measures|bits|chunks) of\s+", "", name, flags=re.I)
-        for form in singular_forms(name):
-            if form in self.objects:
-                return self.objects[form]
-        for form in singular_forms(name):
-            prefixed = [entry for key, entries in self.objects.items() if key.startswith(form) and len(form) >= 6
-                        for entry in entries]
-            if prefixed:
-                return prefixed
-        return []
+        return item_entries(self.objects, name)
+
+
+def item_index(rows, folder):
+    """Name form -> the usage goal entries (adjective, descriptor) of the items that go by it: the display name,
+    the quest icon name and the template name without folder prefix and number padding."""
+    index = {}
+    for row in rows:
+        own = f"{row['template']}.AdjRef"
+        adjective = own if own in row["adjectives"] else row["adjectives"][0]
+        lang_name = row["name_key"].rpartition("_")[0]
+        if row["name"]:
+            descriptor = row["name_key"] if lang_name != "WizardMobs" else ""
+            index.setdefault(norm(row["name"]), []).append({"adjective": adjective, "descriptor": descriptor})
+        if row["icon"]:
+            index.setdefault(norm(row["icon"]), []).append({"adjective": adjective, "descriptor": ""})
+        stem = re.sub(r"0*(\d+)$", r"\1", norm(re.sub(rf"^{folder}[-_]", "", row["template"], flags=re.I)))
+        index.setdefault(stem, []).append({"adjective": adjective, "descriptor": ""})
+    return {form: [entry for i, entry in enumerate(entries)
+                   if entry["adjective"] not in {e["adjective"] for e in entries[:i]}]
+            for form, entries in index.items()}
+
+
+ITEM_PLACE = re.compile(r"\s*\(.*?\)|\s+(in|at|on|near|with|for|from)\s+.*$|#")
+ITEM_ORDINAL = re.compile(r"^(a|an|the|first|second|third|final|last)\s+", re.I)
+ITEM_MEASURE = re.compile(r"^(pieces?|piles?|bottles?|measures?|bits?|chunks?) of\s+", re.I)
+
+
+def item_entries(index, phrase):
+    """The item entries a goal phrase names, read without its place, article, measure word or trailing number."""
+    name = ITEM_PLACE.sub("", phrase).strip()
+    bare = ITEM_MEASURE.sub("", ITEM_ORDINAL.sub("", name))
+    readings = list(dict.fromkeys(text for reading in (name, ITEM_ORDINAL.sub("", name), bare)
+                                  for text in (reading, re.sub(r"\s+\d+$", "", reading))))
+    forms = [form for reading in readings
+             for form in singular_forms(reading) + [norm(re.sub(r"(?<=\w\w)s\b", "", reading))]]
+    for form in dict.fromkeys(forms):
+        if form in index:
+            return index[form]
+    for form in singular_forms(bare):
+        prefixed = [entry for key, entries in index.items() if key.startswith(form) and len(form) >= 6
+                    for entry in entries]
+        if prefixed:
+            return prefixed
+    return []
 
 
 UNDERWAY = re.compile(r"\b(in the middle of|you were (going|getting|supposed|meant)|thought you were|still need|"

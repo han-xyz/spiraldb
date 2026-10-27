@@ -87,6 +87,11 @@ def build_parser():
     templates.add_mobs_arguments(sub)
     sub.set_defaults(run=lambda args, _: templates.run_mobs(args))
 
+    sub = commands.add_parser("items", help=templates.ITEMS_DESCRIPTION, description=templates.ITEMS_DESCRIPTION)
+    sub.add_argument("world", help=f"one of {', '.join(w.name for w in WORLDS)}")
+    sub.add_argument("--rootwad", default=ROOTWAD_DIR, help="the unpacked root wad")
+    sub.set_defaults(run=lambda args, _: templates.run_items(args))
+
     sub = commands.add_parser("npcs", help=templates.NPCS_DESCRIPTION, description=templates.NPCS_DESCRIPTION)
     templates.add_npcs_arguments(sub)
     sub.set_defaults(run=lambda args, _: templates.run_npcs(args))
