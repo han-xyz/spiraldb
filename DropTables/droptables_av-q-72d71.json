@@ -1,17 +1,17 @@
 {
-  "Name": "AV-Q-14DBE2",
+  "Name": "AV-Q-72D71",
   "Description": "",
   "RollChance": 1.0,
   "Weight": 100,
   "NoneChance": 0.0,
   "PityCounter": 0.0,
-  "MinGold": 1260,
-  "MaxGold": 1260,
-  "ExperienceAmount": 251800,
+  "MinGold": 415,
+  "MaxGold": 415,
+  "ExperienceAmount": 18210,
   "TrainingPoints": 0,
   "Items": [],
-  "CreatedAt": "2026-10-27T06:35:22.651557Z",
-  "ModifiedAt": "2026-10-27T06:35:22.651557Z",
+  "CreatedAt": "2026-10-27T07:14:14.108339Z",
+  "ModifiedAt": "2026-10-27T07:14:14.108339Z",
   "CreatedBy": "questgen",
   "ModifiedBy": "questgen"
 }
