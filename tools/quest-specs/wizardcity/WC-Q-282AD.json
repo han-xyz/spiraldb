@@ -7,7 +7,7 @@
   },
   "requires": [
     "WC-GRZ-PRE-001",
-    "WC-Q-9563"
+    "WC-COMMONS-MAIN-005"
   ],
   "mainline": false,
   "level": 5,

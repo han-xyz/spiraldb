@@ -269,6 +269,8 @@ drop-table timestamps included.
   quest only that school's wizards take, as the professors' quests in the pack); `min_level` a `ReqMagicLevel` at or
   above it. Every quest also gets a `ReqHasEntry Completed` NOT on its successors, taken from the other specs of the
   same run that require it, or from a `successors` list.
+- `outdated: true` marks a quest the game no longer has (a retired wiki page): it is still written, but no NPC offers
+  it.
 - `reward` is the drop table's XP and gold. Without it the tool takes the median quest reward of the pack's world for
   `level`: `REWARD_BANDS` at the top of `quests/generate.py` (40 and up is Dragonspyre's 3805 XP and 103 gold).
   `reward.spells` adds a `ResLearnSpell` to the quest's end results for each item: a spell name, or

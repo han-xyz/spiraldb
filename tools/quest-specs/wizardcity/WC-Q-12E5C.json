@@ -9,6 +9,7 @@
     "WC-Q-9504"
   ],
   "mainline": true,
+  "outdated": true,
   "level": 5,
   "reward": {
     "xp": 20,

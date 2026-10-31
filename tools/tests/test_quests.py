@@ -142,6 +142,11 @@ class GenerateTest(unittest.TestCase):
         self.assertEqual((goal["m_zoneTag"], goal["m_zoneEntry"], goal["m_proximityTag"]),
                          ("WizardCity/Interiors/WC_Fire_Cave", False, "Enter_Living Flame"))
 
+    def test_an_outdated_spec_is_a_quest_no_one_is_offered(self):
+        goals = [{"type": "waypoint", "zone": "WizardCity/WC_Ravenwood"}]
+        self.assertTrue(quest_template(spec(goals=goals, outdated=True))["m_outdated"])
+        self.assertFalse(quest_template(spec(goals=goals))["m_outdated"])
+
     def test_a_gardening_spell_is_added_by_name_as_the_pack_does(self):
         spells = {"Small Soil": [("Spells/Gardening Spells/Small Soil.xml", 1)]}
         built = quest_template(spec(goals=[{"type": "persona", "persona": "giver"}], _spell_ids=spells,

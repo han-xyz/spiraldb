@@ -9,6 +9,7 @@
     "WC-Q-1625C0"
   ],
   "mainline": true,
+  "outdated": true,
   "level": 5,
   "reward": {
     "xp": 35,

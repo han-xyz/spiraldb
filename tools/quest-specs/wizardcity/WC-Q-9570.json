@@ -9,6 +9,7 @@
     "WC-Q-956F"
   ],
   "mainline": true,
+  "outdated": true,
   "level": 5,
   "reward": {
     "xp": 30,

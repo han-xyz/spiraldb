@@ -698,7 +698,7 @@
   "m_missionDoors": null,
   "m_dynaMods": null,
   "m_isHidden": false,
-  "m_outdated": false,
+  "m_outdated": true,
   "m_noQuestHelper": false,
   "m_mainline": true,
   "m_defaultDialogAnimation": null,

@@ -9,6 +9,7 @@
     "WC-OLDE-MAIN-001"
   ],
   "mainline": true,
+  "outdated": true,
   "level": 5,
   "reward": {
     "xp": 15,

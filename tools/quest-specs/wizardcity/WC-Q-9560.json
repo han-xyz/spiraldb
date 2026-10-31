@@ -9,6 +9,7 @@
     "WC-Q-955E"
   ],
   "mainline": true,
+  "outdated": true,
   "level": 5,
   "reward": {
     "xp": 275,

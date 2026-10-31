@@ -320,7 +320,7 @@ def quest_template(spec):
         "m_missionDoors": None,
         "m_dynaMods": None,
         "m_isHidden": False,
-        "m_outdated": False,
+        "m_outdated": spec.get("outdated", False),
         "m_noQuestHelper": False,
         "m_mainline": spec.get("mainline", False),
         "m_defaultDialogAnimation": None,

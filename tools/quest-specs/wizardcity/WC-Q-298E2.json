@@ -9,6 +9,7 @@
     "WC-UNICORN-MAIN-007"
   ],
   "mainline": true,
+  "outdated": true,
   "level": 5,
   "reward": {
     "xp": 100,
