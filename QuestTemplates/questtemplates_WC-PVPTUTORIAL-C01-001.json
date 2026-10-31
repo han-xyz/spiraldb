@@ -15,9 +15,11 @@
   ],
   "m_goals": [
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
-      "m_personaName": "WC-ST01-PVPPractice_Persona",
-      "m_usePatron": false,
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_itemAdjectives": [
+        "PVP5thAgeMasterLeagueKiosk.AdjRef"
+      ],
+      "m_itemTotal": 1,
       "m_goalName": "Goal",
       "m_goalNameID": 0,
       "m_goalTitle": "WizardQuestGoals_00000013",
@@ -26,11 +28,19 @@
       "m_completeText": "",
       "m_completeResults": null,
       "m_goalRequirements": null,
-      "m_tallyCounter": null,
+      "m_tallyCounter": {
+        "m_percentChance": 100,
+        "m_descriptor": "WizardNPC_00000031",
+        "m_descriptor2": "",
+        "m_count": 1,
+        "m_tallyResults": null
+      },
       "m_locationName": "ZoneLocName_823078",
       "m_displayImage1": "GUI/QuestButtons/Use_WC_Scroll_Pedestal.dds",
       "m_displayImage2": "",
-      "m_clientTags": null,
+      "m_clientTags": [
+        "PVP5thAgeMasterLeagueKiosk"
+      ],
       "m_genericEvents": null,
       "m_autoQualify": false,
       "m_autoComplete": false,
@@ -185,7 +195,7 @@
           }
         ]
       },
-      "m_goalType": "GOAL_TYPE_PERSONA",
+      "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": null,
@@ -195,9 +205,11 @@
       "m_behaviors": null
     },
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
-      "m_personaName": "WC-ST01-PVPRanked_Persona",
-      "m_usePatron": false,
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_itemAdjectives": [
+        "PVP5thAgeMasterLeagueKiosk.AdjRef"
+      ],
+      "m_itemTotal": 1,
       "m_goalName": "Goal 1",
       "m_goalNameID": 0,
       "m_goalTitle": "WizardQuestGoals_00000013",
@@ -206,11 +218,19 @@
       "m_completeText": "",
       "m_completeResults": null,
       "m_goalRequirements": null,
-      "m_tallyCounter": null,
+      "m_tallyCounter": {
+        "m_percentChance": 100,
+        "m_descriptor": "WizardNPC_00000030",
+        "m_descriptor2": "",
+        "m_count": 1,
+        "m_tallyResults": null
+      },
       "m_locationName": "ZoneLocName_823078",
       "m_displayImage1": "GUI/QuestButtons/Use_WC_Scroll_Pedestal.dds",
       "m_displayImage2": "",
-      "m_clientTags": null,
+      "m_clientTags": [
+        "PVP5thAgeMasterLeagueKiosk"
+      ],
       "m_genericEvents": null,
       "m_autoQualify": false,
       "m_autoComplete": false,
@@ -433,7 +453,7 @@
           }
         ]
       },
-      "m_goalType": "GOAL_TYPE_PERSONA",
+      "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": null,
@@ -623,9 +643,11 @@
       "m_behaviors": null
     },
     {
-      "$type": "Imcodec.ObjectProperty.TypeCache.PersonaGoalTemplate, Imcodec.ObjectProperty",
-      "m_personaName": "WC-ST01-PVPLeaderboard_Persona",
-      "m_usePatron": false,
+      "$type": "Imcodec.ObjectProperty.TypeCache.ScavengeGoalTemplate, Imcodec.ObjectProperty",
+      "m_itemAdjectives": [
+        "WC_Leaderboard_PVP-01.AdjRef"
+      ],
+      "m_itemTotal": 1,
       "m_goalName": "Goal 3",
       "m_goalNameID": 0,
       "m_goalTitle": "WizardQuestGoals_00000013",
@@ -634,11 +656,19 @@
       "m_completeText": "",
       "m_completeResults": null,
       "m_goalRequirements": null,
-      "m_tallyCounter": null,
+      "m_tallyCounter": {
+        "m_percentChance": 100,
+        "m_descriptor": "WizardNPC_00000680",
+        "m_descriptor2": "",
+        "m_count": 1,
+        "m_tallyResults": null
+      },
       "m_locationName": "ZoneLocName_823078",
       "m_displayImage1": "GUI/QuestButtons/Use_WC_Scroll_Pedestal.dds",
       "m_displayImage2": "",
-      "m_clientTags": null,
+      "m_clientTags": [
+        "WC_Leaderboard_PVP-01"
+      ],
       "m_genericEvents": null,
       "m_autoQualify": false,
       "m_autoComplete": false,
@@ -861,7 +891,7 @@
           }
         ]
       },
-      "m_goalType": "GOAL_TYPE_PERSONA",
+      "m_goalType": "GOAL_TYPE_USAGE",
       "m_noQuestHelper": false,
       "m_petOnlyQuest": false,
       "m_activateResults": null,
